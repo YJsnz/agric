@@ -1,0 +1,80 @@
+export type EntityStatus = 'normal' | 'attention' | 'warning' | 'danger' | 'offline'
+export type BusinessModule = 'overview' | 'monitoring' | 'environment' | 'devices' | 'irrigation' | 'crops' | 'alerts'
+export type ViewMode = 'aerial' | 'digital-twin'
+
+export interface SceneEntity {
+  id: string
+  name: string
+  type: 'field' | 'greenhouse' | 'device' | 'camera' | 'water' | 'robot' | 'station'
+  status: EntityStatus
+  metric: string
+  x: number
+  y: number
+  health?: number
+  position3D?: { x: number; y: number; z: number }
+}
+
+export interface FarmZone {
+  id: string
+  entityId: string
+  polygon: Array<[number, number]>
+  crop: string
+  area: string
+  stage: string
+  environment: string
+}
+
+export interface DockModuleDefinition {
+  key: BusinessModule
+  label: string
+  icon: string
+  description: string
+  badge?: number
+  subLayers: Array<{ key: string; label: string; value?: string }>
+}
+
+export interface DeviceRecord {
+  id: string
+  entityId: string
+  name: string
+  category: 'sensor' | 'actuator' | 'camera' | 'robot'
+  location: string
+  online: boolean
+  enabled: boolean
+  value: string
+  lastSeen: string
+}
+
+export interface IrrigationUnit {
+  id: string
+  entityId: string
+  name: string
+  target: string
+  kind: 'source' | 'valve' | 'fertigation' | 'zone'
+  x: number
+  y: number
+  enabled: boolean
+  flow: string
+}
+
+export interface MetricItem {
+  label: string
+  value: string
+  delta?: string
+  tone?: 'success' | 'warning' | 'danger' | 'info'
+}
+
+export interface PageDefinition {
+  key: string
+  title: string
+  eyebrow: string
+  description: string
+  primaryAction: string
+  metrics: MetricItem[]
+  chartTitle: string
+  chartSeries: number[]
+  columns: string[]
+  rows: string[][]
+  insight: string
+  filters: string[]
+}
