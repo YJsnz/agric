@@ -1,7 +1,8 @@
 import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
 import type { BusinessModule, SceneEntity, ViewMode } from '@/types'
-import { sceneEntities } from '@/data/farm'
+import { applyDashboard, sceneEntities } from '@/data/farm'
+import { fetchDashboard } from '@/api/dashboard'
 
 export const useWorkspaceStore = defineStore('workspace', () => {
   const viewMode = ref<ViewMode>('aerial')
@@ -11,6 +12,9 @@ export const useWorkspaceStore = defineStore('workspace', () => {
   const environmentMetric = ref('soilMoisture')
   const layersOpen = ref(false)
   const activeSubLayer = ref('health')
+  const loading = ref(false)
+  const loadError = ref('')
+  const lastSyncedAt = ref<string | null>(null)
 
   const selectedEntity = computed<SceneEntity | undefined>(() =>
     sceneEntities.find(item => item.id === selectedEntityId.value)
@@ -28,6 +32,22 @@ export const useWorkspaceStore = defineStore('workspace', () => {
     if (module === 'alerts') selectEntity('field-04')
   }
 
+  async function loadDashboard(force = false) {
+    if (loading.value || (lastSyncedAt.value && !force)) return
+    loading.value = true
+    loadError.value = ''
+    try {
+      const snapshot = await fetchDashboard('farm-01')
+      applyDashboard(snapshot)
+      lastSyncedAt.value = snapshot.generatedAt
+    } catch (error) {
+      loadError.value = error instanceof Error ? error.message : '数据加载失败'
+      throw error
+    } finally {
+      loading.value = false
+    }
+  }
+
   return {
     viewMode,
     activeModule,
@@ -37,7 +57,11 @@ export const useWorkspaceStore = defineStore('workspace', () => {
     environmentMetric,
     layersOpen,
     activeSubLayer,
+    loading,
+    loadError,
+    lastSyncedAt,
     selectEntity,
-    selectModule
+    selectModule,
+    loadDashboard
   }
 })

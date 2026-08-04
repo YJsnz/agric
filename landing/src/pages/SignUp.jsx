@@ -34,6 +34,7 @@ export default function SignUp() {
   const [error, setError] = useState('')
   const [step, setStep] = useState('form') // 'form' | 'face'
   const [faceBusy, setFaceBusy] = useState(false)
+  const [submitBusy, setSubmitBusy] = useState(false)
 
   const handleSignUp = async (e) => {
     e.preventDefault()
@@ -43,12 +44,15 @@ export default function SignUp() {
       setError('两次输入的密码不一致，请重新输入。')
       return
     }
+    setSubmitBusy(true)
     try {
       const auth = await register({ name: data.name, email: data.email, password: data.password })
       saveAuth(auth)
       setStep('face')
+      setSubmitBusy(false)
     } catch (err) {
       setError(err.message || '注册失败，请稍后再试')
+      setSubmitBusy(false)
     }
   }
 
@@ -104,8 +108,8 @@ export default function SignUp() {
       heroImageSrc="/assets/uc.png"
       testimonials={TESTIMONIALS}
       error={error}
+      submitBusy={submitBusy}
       onSignUp={handleSignUp}
-      onGoogleSignIn={() => setError('演示环境：Google 登录暂未接入。')}
       onSignInLink={() => navigate('/sign-in')}
       backHref="/#/"
       backLabel="返回官网"

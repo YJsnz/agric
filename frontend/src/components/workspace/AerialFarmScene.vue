@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import type { BusinessModule } from '@/types'
-import { farmZones, irrigationUnits, sceneEntities } from '@/data/farm'
+import { alerts, farmZones, irrigationUnits, sceneEntities } from '@/data/farm'
 import SceneEntityLabel from './SceneEntityLabel.vue'
 
 const props = defineProps<{
@@ -11,6 +11,7 @@ const props = defineProps<{
   scale: number
   offsetX: number
   offsetY: number
+  layers?: Record<string, boolean>
 }>()
 const emit = defineEmits<{
   (event: 'select', id: string | null): void
@@ -23,6 +24,10 @@ const AERIAL_URL = `${import.meta.env.BASE_URL}assets/farm-aerial.png`
 
 const hoveredZone = computed(() => farmZones.find(zone => zone.entityId === hoveredId.value))
 const hoveredEntity = computed(() => sceneEntities.find(entity => entity.id === hoveredId.value))
+const activeAlertEntities = computed(() => alerts
+  .filter(alert => alert.entityId && !['已处理', '已恢复'].includes(alert.status))
+  .map(alert => sceneEntities.find(entity => entity.id === alert.entityId))
+  .filter((entity): entity is NonNullable<typeof entity> => Boolean(entity)))
 
 const visibleEntities = computed(() => {
   if (props.activeModule === 'monitoring') return sceneEntities.filter(entity => ['greenhouse','field'].includes(entity.type))
@@ -55,7 +60,7 @@ function setHover(id: string | null) {
         <image :href="AERIAL_URL" width="1535" height="1024" />
       </svg>
 
-      <svg v-if="activeModule === 'irrigation'" class="pipes" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <svg v-if="activeModule === 'irrigation' || layers?.irrigation" class="pipes" viewBox="0 0 100 100" preserveAspectRatio="none">
         <path class="main" d="M15 72 C27 70 34 75 43 65 S58 59 67 49 S78 46 84 35"/>
         <path d="M43 65 L35 50 M57 59 L53 40 M68 49 L62 31 M70 51 L77 64"/>
       </svg>
@@ -65,9 +70,10 @@ function setHover(id: string | null) {
           <span><svg viewBox="0 0 24 24"><path d="M12 3c3.5 4.7 5.5 7.3 5.5 10.5a5.5 5.5 0 0 1-11 0C6.5 10.3 8.5 7.7 12 3Z"/><path d="M9 15c.7 1.1 1.6 1.6 3 1.6"/></svg></span><b>{{ unit.name }}</b><small>{{ unit.enabled ? '运行中' : '已关闭' }}</small>
         </button>
       </div>
-      <div v-if="activeModule === 'alerts'" class="alerts-layer"><i class="alert-ring field"></i><i class="alert-ring greenhouse"></i></div>
+      <div v-if="activeModule === 'alerts' || layers?.alerts" class="alerts-layer"><i v-for="entity in activeAlertEntities" :key="entity.id" class="alert-ring" :class="entity.type" :style="{left:`${entity.x - 9}%`,top:`${entity.y - 9}%`}"></i></div>
+      <div v-if="layers?.cameras" class="camera-coverage"><i></i><span>CAM-03 AI 覆盖范围</span></div>
 
-      <svg class="zones" viewBox="0 0 1535 1024" preserveAspectRatio="xMidYMid slice">
+      <svg v-if="layers?.zones !== false" class="zones" viewBox="0 0 1535 1024" preserveAspectRatio="xMidYMid slice">
         <g
           v-for="zone in farmZones"
           :key="zone.id"
@@ -76,7 +82,7 @@ function setHover(id: string | null) {
             selected: selectedId === zone.entityId,
             selectable: activeModule === 'monitoring',
             crop: activeModule === 'crops',
-            alert: activeModule === 'alerts' && sceneEntities.find(entity => entity.id === zone.entityId)?.status !== 'normal'
+            alert: activeModule === 'alerts' && activeAlertEntities.some(entity => entity.id === zone.entityId)
           }"
         >
           <polygon class="zone-shape" :points="zonePoints(zone.polygon)" />
@@ -92,7 +98,7 @@ function setHover(id: string | null) {
       </svg>
 
       <SceneEntityLabel
-        v-for="entity in visibleEntities"
+        v-for="entity in layers?.devices === false ? [] : visibleEntities"
         :key="entity.id"
         :entity="entity"
         :active="selectedId === entity.id"
@@ -122,4 +128,7 @@ function setHover(id: string | null) {
 .zone-preview{position:absolute;z-index:18;width:236px;padding:13px 14px 11px;color:white;background:rgba(8,35,27,.96);border:1px solid rgba(139,255,164,.28);border-radius:14px;box-shadow:0 12px 28px rgba(0,0,0,.3);pointer-events:none;contain:layout paint}.preview-head{display:flex;justify-content:space-between;color:rgba(255,255,255,.42);font-size:9px;letter-spacing:1px}.preview-head i{width:7px;height:7px;border-radius:50%;background:#58e67c;box-shadow:0 0 8px #58e67c}.preview-head i.warning,.preview-head i.attention{background:#ffae2e;box-shadow:0 0 8px #ffae2e}.zone-preview>strong{display:block;font-size:14px;margin:5px 0 9px}.zone-preview dl{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0;padding:10px 0;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}.zone-preview dl div{display:flex;flex-direction:column;gap:2px}.zone-preview dt{font-size:8px;color:rgba(255,255,255,.43)}.zone-preview dd{font-size:10px;margin:0}.zone-preview footer{display:flex;align-items:baseline;gap:6px;padding-top:8px}.zone-preview footer span{font-size:9px;color:rgba(255,255,255,.45)}.zone-preview footer b{font-size:17px;color:#8aea9c}.zone-preview footer em{margin-left:auto;font:normal 8px sans-serif;color:#77dc8b}.preview-enter-active,.preview-leave-active{transition:opacity .1s}.preview-enter-from,.preview-leave-to{opacity:0}
 @keyframes flow{to{stroke-dashoffset:-2.2}}@keyframes pulse{0%{opacity:.95;transform:scale(.84)}80%,100%{opacity:.08;transform:scale(1.18)}}@keyframes nodePulse{50%{opacity:.48;transform:scale(1.25)}}@keyframes fade{from{opacity:0}}
 @media(max-width:900px){.zone-preview{display:none}.zone-shape{stroke-width:2}.monitoring-hint{top:16%}.irrigation-units button{min-width:0}.irrigation-units button b,.irrigation-units button small{display:none}}
+</style>
+<style scoped>
+.camera-coverage{position:absolute;z-index:6;left:59%;top:59%;width:22%;aspect-ratio:1;border:2px dashed rgba(90,220,255,.8);border-radius:50%;background:radial-gradient(circle,rgba(64,190,224,.2),transparent 68%);pointer-events:none;animation:pulse 2s infinite}.camera-coverage i{position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;background:#63dcfa}.camera-coverage span{position:absolute;left:50%;top:53%;transform:translateX(-50%);padding:4px 7px;border-radius:6px;background:rgba(4,29,35,.8);color:white;font-size:8px;white-space:nowrap}
 </style>

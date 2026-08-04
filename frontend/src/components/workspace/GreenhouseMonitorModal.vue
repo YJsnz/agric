@@ -34,6 +34,9 @@ const cameras = ['入口全景', '种植区 A', '种植区 B']
 const VIDEO_URL = `${import.meta.env.BASE_URL}assets/media/greenhouse-monitor.mp4`
 const DETECTIONS_URL = `${import.meta.env.BASE_URL}assets/media/greenhouse-monitor.detections.json`
 const openedAt = ref(Date.now())
+const recording = ref(false)
+let recorder: MediaRecorder | undefined
+let recordingChunks: Blob[] = []
 let frameRequest = 0
 
 const crop = computed(() => props.zone?.crop || (props.entity?.type === 'field' ? '露天作物' : '温室作物'))
@@ -110,9 +113,40 @@ async function toggleFullscreen() {
   }
 }
 
+function takeSnapshot() {
+  const video = videoRef.value
+  if (!video || !video.videoWidth) return emit('action', '画面尚未加载完成')
+  const canvas = document.createElement('canvas')
+  canvas.width = video.videoWidth; canvas.height = video.videoHeight
+  canvas.getContext('2d')?.drawImage(video, 0, 0)
+  const link = document.createElement('a')
+  link.download = `farm-camera-${Date.now()}.jpg`
+  link.href = canvas.toDataURL('image/jpeg', .92); link.click()
+  emit('action', '当前监控画面已保存')
+}
+function toggleRecording() {
+  const stream = (videoRef.value as (HTMLVideoElement & { captureStream?: () => MediaStream }) | undefined)?.captureStream?.()
+  if (!stream || typeof MediaRecorder === 'undefined') return emit('action', '当前浏览器不支持视频录制')
+  if (recording.value) { recorder?.stop(); return }
+  recordingChunks = []
+  recorder = new MediaRecorder(stream, { mimeType: MediaRecorder.isTypeSupported('video/webm') ? 'video/webm' : '' })
+  recorder.ondataavailable = event => { if (event.data.size) recordingChunks.push(event.data) }
+  recorder.onstop = () => {
+    const link = document.createElement('a'); const url = URL.createObjectURL(new Blob(recordingChunks, { type: 'video/webm' }))
+    link.href = url; link.download = `farm-recording-${Date.now()}.webm`; link.click(); URL.revokeObjectURL(url)
+    recording.value = false; emit('action', '监控录像已保存')
+  }
+  recorder.start(); recording.value = true; emit('action', '录像已开始，再次点击即可结束并保存')
+}
+function openPlayback() {
+  if (!videoRef.value) return
+  videoRef.value.controls = true; videoRef.value.currentTime = 0; videoRef.value.pause()
+  emit('action', '已进入录像回放，可拖动进度条播放')
+}
+
 watch(() => props.entity?.id, () => { camera.value = 0 })
 watch(() => props.open, open => open ? startVideo() : cancelAnimationFrame(frameRequest))
-onBeforeUnmount(() => cancelAnimationFrame(frameRequest))
+onBeforeUnmount(() => { cancelAnimationFrame(frameRequest); if (recorder?.state === 'recording') recorder.stop() })
 </script>
 
 <template>
@@ -147,8 +181,8 @@ onBeforeUnmount(() => cancelAnimationFrame(frameRequest))
             </div>
             <div class="legend"><span class="person"><i></i>人员 {{ yoloReady ? personCount : '--' }}</span><span class="crop"><i></i>作物 {{ yoloReady ? `${cropConfidence}%` : '--' }}</span></div>
             <div class="video-actions">
-              <button @click="emit('action','已截取当前监控画面')">截图</button>
-              <button @click="emit('action','录像任务已开始')">录像</button>
+              <button @click="takeSnapshot">截图</button>
+              <button @click="toggleRecording">{{ recording ? '结束录像' : '录像' }}</button>
               <button @click="toggleFullscreen">全屏</button>
             </div>
           </div>
@@ -171,7 +205,7 @@ onBeforeUnmount(() => cancelAnimationFrame(frameRequest))
               </dl>
             </div>
             <div class="model-card" :class="{pending:!yoloReady}"><span>Y</span><div><b>目标检测服务</b><small>{{ yoloReady ? `${detectionFile?.model.file} · ${detectionFile?.model.tracker}` : '请先训练并导出检测结果' }}</small></div><i>{{ yoloReady ? '已接入' : '待部署' }}</i></div>
-            <button class="playback" @click="emit('action','正在打开监控回放')">查看录像回放 <span>→</span></button>
+            <button class="playback" @click="openPlayback">查看录像回放 <span>→</span></button>
           </aside>
         </div>
       </section>

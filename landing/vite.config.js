@@ -6,6 +6,15 @@ export default {
   plugins: [react()],
   build: {
     outDir: '../src/main/resources/static',
+    // static 下还包含 /platform 与公共媒体，不能整体清空；入口使用稳定文件名避免残留旧 hash。
+    emptyOutDir: false,
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/index.js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name][extname]'
+      }
+    },
     chunkSizeWarningLimit: 1000
   },
   server: {

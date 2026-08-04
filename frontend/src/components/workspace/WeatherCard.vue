@@ -1,11 +1,17 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { environmentMetrics } from '@/data/farm'
 defineEmits<{ detail: [] }>()
+const metric = (key: string) => computed(() => environmentMetrics.find(item => (item as { key?: string }).key === key)?.value || '--')
+const temperature = metric('temperature')
+const humidity = metric('airHumidity')
+const light = metric('light')
 </script>
 
 <template>
   <section class="weather glass-dark">
-    <div class="summary"><span class="sun"><i v-for="n in 8" :key="n"></i></span><div><strong>28°C</strong><small>晴 · 体感舒适</small></div></div>
-    <div class="facts"><span>湿度 <b>56%</b></span><span>风速 <b>2.1m/s</b></span><span>光照 <b>680 lx</b></span></div>
+    <div class="summary"><span class="sun"><i v-for="n in 8" :key="n"></i></span><div><strong>{{ temperature }}</strong><small>虚拟气象 · 实时更新</small></div></div>
+    <div class="facts"><span>湿度 <b>{{ humidity }}</b></span><span>风速 <b>2.1m/s</b></span><span>光照 <b>{{ light }}</b></span></div>
     <button @click="$emit('detail')">查看更多 <span>→</span></button>
   </section>
 </template>

@@ -31,17 +31,20 @@ export default function SignIn() {
   const navigate = useNavigate()
   const [error, setError] = useState('')
   const [faceBusy, setFaceBusy] = useState(false)
+  const [submitBusy, setSubmitBusy] = useState(false)
 
   const handleSignIn = async (e) => {
     e.preventDefault()
     setError('')
     const data = Object.fromEntries(new FormData(e.currentTarget).entries())
+    setSubmitBusy(true)
     try {
       const auth = await login({ email: data.email, password: data.password })
-      saveAuth(auth)
+      saveAuth(auth, data.rememberMe === 'on')
       window.location.href = PLATFORM_URL
     } catch (err) {
       setError(err.message || '登录失败，请稍后再试')
+      setSubmitBusy(false)
     }
   }
 
@@ -66,12 +69,12 @@ export default function SignIn() {
       heroImageSrc="/assets/uc.png"
       testimonials={TESTIMONIALS}
       error={error}
+      submitBusy={submitBusy}
       enableFace
       faceBusy={faceBusy}
       onFaceLogin={handleFaceLogin}
       onSignIn={handleSignIn}
-      onGoogleSignIn={() => setError('演示环境：Google 登录暂未接入。')}
-      onResetPassword={() => setError('演示环境暂未接入找回密码，请直接邮件联系支持。')}
+      onResetPassword={() => { window.location.href = 'mailto:support@tianyan.agri?subject=田言耕智账号密码重置' }}
       onCreateAccount={() => navigate('/sign-up')}
       backHref="/#/"
       backLabel="返回官网"

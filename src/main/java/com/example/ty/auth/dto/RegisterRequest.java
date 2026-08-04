@@ -4,6 +4,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
+import lombok.ToString;
 
 @Data
 public class RegisterRequest {
@@ -19,5 +20,6 @@ public class RegisterRequest {
 
     @NotBlank(message = "请输入密码")
     @Size(min = 6, max = 64, message = "密码长度需在 6-64 位之间")
+    @ToString.Exclude
     private String password;
 }

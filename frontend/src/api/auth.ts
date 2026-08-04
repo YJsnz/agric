@@ -2,25 +2,32 @@
 const TOKEN_KEY = 'ty_token'
 const USER_KEY = 'ty_user'
 
+function readStorage(key: string): string | null {
+  return localStorage.getItem(key) ?? sessionStorage.getItem(key)
+}
+
 export function getToken(): string | null {
-  return localStorage.getItem(TOKEN_KEY)
+  return readStorage(TOKEN_KEY)
 }
 
 export function getUser(): { name?: string; email?: string } | null {
   try {
-    return JSON.parse(localStorage.getItem(USER_KEY) || 'null')
+    return JSON.parse(readStorage(USER_KEY) || 'null')
   } catch {
     return null
   }
 }
 
 export function saveUser(user: unknown) {
-  localStorage.setItem(USER_KEY, JSON.stringify(user))
+  const storage = localStorage.getItem(TOKEN_KEY) ? localStorage : sessionStorage
+  storage.setItem(USER_KEY, JSON.stringify(user))
 }
 
 export function clearAuth() {
-  localStorage.removeItem(TOKEN_KEY)
-  localStorage.removeItem(USER_KEY)
+  for (const storage of [localStorage, sessionStorage]) {
+    storage.removeItem(TOKEN_KEY)
+    storage.removeItem(USER_KEY)
+  }
 }
 
 async function request<T = unknown>(
@@ -33,7 +40,13 @@ async function request<T = unknown>(
     headers: { ...(isForm ? {} : { 'Content-Type': 'application/json' }), ...headers }
   })
   const data = (await res.json().catch(() => ({}))) as { message?: string } & T
-  if (!res.ok) throw new Error(data.message || `请求失败（${res.status}）`)
+  if (!res.ok) {
+    if (res.status === 401) {
+      clearAuth()
+      window.location.replace('/#/sign-in')
+    }
+    throw new Error(data.message || `请求失败（${res.status}）`)
+  }
   return data
 }
 

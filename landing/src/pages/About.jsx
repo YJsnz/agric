@@ -134,7 +134,7 @@ export default function About() {
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-5 rounded-3xl border border-emerald-100 bg-emerald-50/60 px-8 py-12 text-center">
           <Users className="h-8 w-8 text-emerald-600" strokeWidth={1.5} />
           <p className="max-w-xl text-sm font-light text-muted leading-relaxed">
-            当前版本为 Mock 数据驱动的完整静态原型，预留后端与 AI 大模型接口。数据工作台、数字孪生与官网营销由当前分支实现，智能问农、大棚内部等专业页面由团队其他模块接入。
+            当前版本已接入 Spring Boot、MySQL 与虚拟传感器数据，支持登录注册、数据工作台、数字孪生、设备及灌溉控制、监控分析和智能问农。无实体传感器时由服务端持续生成演示数据。
           </p>
         </div>
       </section>

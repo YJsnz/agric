@@ -1,8 +1,8 @@
 import { ArrowRight, Play } from 'lucide-react'
 import { PLATFORM_URL, ASSISTANT_URL } from '../links'
 
-const VIDEO_URL =
-  'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204103_f607742e-09da-4cf5-bb06-4e67b0a531de.mp4'
+// 本地同源视频，避免首页依赖外部 CloudFront 的网络质量与可用性。
+const VIDEO_URL = '/assets/home-hero.mp4'
 
 export default function Home() {
   return (

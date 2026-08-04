@@ -83,6 +83,7 @@ export const SignInPage = ({
   onSignUp,
   onFaceLogin,
   faceBusy = false,
+  submitBusy = false,
   enableFace = false,
   onGoogleSignIn,
   onResetPassword,
@@ -210,8 +211,8 @@ export const SignInPage = ({
                     </div>
                   )}
 
-                  <button type="submit" className={`animate-element ${d.submit} w-full rounded-2xl bg-primary py-4 font-medium text-primary-foreground hover:bg-primary/90 transition-colors`}>
-                    {isSignUp ? 'Create Account' : 'Sign In'}
+                  <button type="submit" disabled={submitBusy} className={`animate-element ${d.submit} w-full rounded-2xl bg-primary py-4 font-medium text-primary-foreground hover:bg-primary/90 transition-colors disabled:cursor-not-allowed disabled:opacity-60`}>
+                    {submitBusy ? '请稍候…' : (isSignUp ? 'Create Account' : 'Sign In')}
                   </button>
                 </form>
               </>
@@ -223,7 +224,7 @@ export const SignInPage = ({
               </div>
             )}
 
-            {!faceMode && (
+            {!faceMode && onGoogleSignIn && (
               <>
                 <div className={`animate-element ${d.divider} relative flex items-center justify-center`}>
                   <span className="w-full border-t border-border"></span>

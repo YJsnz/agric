@@ -55,6 +55,31 @@ export interface IrrigationUnit {
   y: number
   enabled: boolean
   flow: string
+  durationMinutes?: number
+}
+
+export interface DashboardSummary {
+  health: number
+  totalDevices: number
+  onlineDevices: number
+  runningDevices: number
+  openAlerts: number
+  waterLevel: number
+  todayWaterUsage: number
+}
+
+export interface DashboardSnapshot {
+  farmId: string
+  farmName: string
+  generatedAt: string
+  virtualData: boolean
+  summary: DashboardSummary
+  entities: SceneEntity[]
+  zones: FarmZone[]
+  environmentMetrics: Array<MetricItem & { key: string; numericValue: number; unit: string; measuredAt: string }>
+  devices: DeviceRecord[]
+  irrigationUnits: IrrigationUnit[]
+  alerts: Array<{ id: number; entityId?: string; time: string; title: string; level: string; status: string }>
 }
 
 export interface MetricItem {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import FarmTopBar from '@/components/workspace/FarmTopBar.vue'
 import WeatherCard from '@/components/workspace/WeatherCard.vue'
 import AerialFarmScene from '@/components/workspace/AerialFarmScene.vue'
@@ -13,10 +13,16 @@ import LayerPopover from '@/components/workspace/LayerPopover.vue'
 import ToastMessage from '@/components/ToastMessage.vue'
 import FarmAiAssistant from '@/components/workspace/FarmAiAssistant.vue'
 import { useWorkspaceStore } from '@/stores/workspace'
-import { farmZones } from '@/data/farm'
+import { alerts, dashboardSummary, farmZones, sceneEntities } from '@/data/farm'
 import type { BusinessModule } from '@/types'
 
 const store = useWorkspaceStore()
+let refreshTimer = 0
+onMounted(() => {
+  store.loadDashboard().catch(error => showToast(error instanceof Error ? error.message : '虚拟数据加载失败'))
+  refreshTimer = window.setInterval(() => store.loadDashboard(true).catch(() => undefined), 30_000)
+})
+onUnmounted(() => window.clearInterval(refreshTimer))
 const scale = ref(1)
 const offsetX = ref(0)
 const offsetY = ref(0)
@@ -26,6 +32,9 @@ const notificationsOpen = ref(false)
 const monitorOpen = ref(false)
 const firstPersonActive = ref(false)
 const assistantOpen = ref(false)
+const measuring = ref(false)
+const measureStart = ref<string | null>(null)
+const layerVisibility = ref<Record<string, boolean>>({ zones:true, devices:true, cameras:false, irrigation:false, alerts:true })
 const threeScene = ref<{ resumeAfterOverlay: () => void } | null>(null)
 let toastTimer = 0
 
@@ -44,11 +53,29 @@ function showToast(message: string) {
 function resetView(){scale.value=1;offsetX.value=0;offsetY.value=0;showToast('已恢复农场全景视角')}
 function focusEntity(id:string){store.selectEntity(id);scale.value=1.18;offsetX.value=id==='field-04'?-35:15;offsetY.value=-12;showToast('已聚焦选中对象')}
 function selectEntity(id:string|null){
+  if (measuring.value && id) {
+    if (!measureStart.value) { measureStart.value = id; showToast('已选择起点，请选择终点'); return }
+    const start = sceneEntities.find(item => item.id === measureStart.value)
+    const end = sceneEntities.find(item => item.id === id)
+    if (start?.position3D && end?.position3D) {
+      const dx=start.position3D.x-end.position3D.x, dy=start.position3D.y-end.position3D.y, dz=start.position3D.z-end.position3D.z
+      showToast(`${start.name} 至 ${end.name}：${Math.sqrt(dx*dx+dy*dy+dz*dz).toFixed(1)} 米`)
+    } else showToast('所选对象缺少空间坐标')
+    measuring.value=false; measureStart.value=null; return
+  }
   if (store.activeModule === 'monitoring' && id && farmZones.some(zone => zone.entityId === id)) {
     store.selectedEntityId = id; store.drawerOpen = false; monitorOpen.value = true; return
   }
   store.selectEntity(id)
 }
+function searchEntity(query:string) {
+  const normalized = query.toLowerCase()
+  const found = sceneEntities.find(item => `${item.name} ${item.metric} ${item.type}`.toLowerCase().includes(normalized))
+  if (!found) return showToast(`未找到“${query}”`)
+  focusEntity(found.id)
+}
+function startMeasure(){measuring.value=true;measureStart.value=null;store.drawerOpen=false;showToast('测距模式：请选择两个地图对象')}
+function showAllAlerts(){notificationsOpen.value=false;handleModule('alerts')}
 function handleModule(module: BusinessModule){
   const labels: Record<BusinessModule, string> = {overview:'总览',monitoring:'监控',environment:'环境',devices:'设备',irrigation:'灌溉',crops:'作物',alerts:'告警'}
   monitorOpen.value = false; store.selectModule(module)
@@ -68,24 +95,23 @@ function handleAssistantOpen(open:boolean){assistantOpen.value=open;if(!open)thr
 <template>
   <main class="workspace" :class="{ 'drawer-open': store.drawerOpen }">
     <Transition name="scene" mode="out-in">
-      <AerialFarmScene v-if="store.viewMode === 'aerial'" key="aerial" :selected-id="store.selectedEntityId" :active-module="store.activeModule" :active-sub-layer="store.activeSubLayer" :scale="scale" :offset-x="offsetX" :offset-y="offsetY" @select="selectEntity" @focus="focusEntity" />
+      <AerialFarmScene v-if="store.viewMode === 'aerial'" key="aerial" :selected-id="store.selectedEntityId" :active-module="store.activeModule" :active-sub-layer="store.activeSubLayer" :scale="scale" :offset-x="offsetX" :offset-y="offsetY" :layers="layerVisibility" @select="selectEntity" @focus="focusEntity" />
       <ThreeFarmScene v-else ref="threeScene" key="three" :active-module="store.activeModule" :active-sub-layer="store.activeSubLayer" :selected-id="store.selectedEntityId" :drawer-open="store.drawerOpen" :overlay-open="store.drawerOpen || monitorOpen || assistantOpen" @select="selectEntity" @module="handleModule" @walk="firstPersonActive=$event" />
     </Transition>
 
-    <FarmTopBar dark @search="showToast(`正在搜索：${$event}`)" @notify="notificationsOpen = !notificationsOpen" />
+    <FarmTopBar dark :notification-count="dashboardSummary.openAlerts" @search="searchEntity" @notify="notificationsOpen = !notificationsOpen" />
     <WeatherCard :class="{ 'detail-mode-hidden': store.drawerOpen }" @detail="handleModule('environment')" />
     <div class="scene-name"><span class="status-dot"></span>{{ sceneLabel }}</div>
 
     <ViewSwitcher v-model="store.viewMode" :drawer-open="store.drawerOpen" />
-    <SceneToolbar :class="{ 'drawer-closed': !store.drawerOpen }" @zoom-in="scale=Math.min(1.4,scale+.1)" @zoom-out="scale=Math.max(.85,scale-.1)" @reset="resetView" @layers="store.layersOpen=!store.layersOpen" @measure="showToast('测量工具已开启，请选择两个位置')" />
-    <LayerPopover :open="store.layersOpen" />
+    <SceneToolbar :class="{ 'drawer-closed': !store.drawerOpen }" @zoom-in="scale=Math.min(1.4,scale+.1)" @zoom-out="scale=Math.max(.85,scale-.1)" @reset="resetView" @layers="store.layersOpen=!store.layersOpen" @measure="startMeasure" />
+    <LayerPopover :open="store.layersOpen" @change="(key,on)=>layerVisibility[key]=on" />
 
     <Transition name="notice-panel">
       <aside v-if="notificationsOpen" class="notifications">
         <header><strong>消息通知</strong><button @click="notificationsOpen=false">×</button></header>
-        <article><i class="warning">△</i><div><b>土壤湿度持续偏低</b><small>4号生菜种植区 · 2分钟前</small></div></article>
-        <article><i>✓</i><div><b>机器人巡检任务完成</b><small>农业机器人01 · 18分钟前</small></div></article>
-        <button class="all">查看全部消息</button>
+        <article v-for="item in alerts.slice(0,3)" :key="item.id || item.time"><i :class="{warning:item.status!=='已处理'&&item.status!=='已恢复'}">△</i><div><b>{{ item.title }}</b><small>{{ item.time }} · {{ item.status }}</small></div></article>
+        <button class="all" @click="showAllAlerts">查看全部消息</button>
       </aside>
     </Transition>
 

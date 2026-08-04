@@ -4,6 +4,10 @@ const API_BASE = '/api'
 const TOKEN_KEY = 'ty_token'
 const USER_KEY = 'ty_user'
 
+function readStorage(key) {
+  return localStorage.getItem(key) ?? sessionStorage.getItem(key)
+}
+
 async function request(path, { headers = {}, body, ...rest } = {}) {
   const isForm = body instanceof FormData
   const res = await fetch(`${API_BASE}${path}`, {
@@ -56,24 +60,28 @@ export function faceLogin(photo) {
   return request('/auth/face-login', { method: 'POST', body: fd })
 }
 
-export function saveAuth({ token, user }) {
-  localStorage.setItem(TOKEN_KEY, token)
-  localStorage.setItem(USER_KEY, JSON.stringify(user))
+export function saveAuth({ token, user }, remember = true) {
+  clearAuth()
+  const storage = remember ? localStorage : sessionStorage
+  storage.setItem(TOKEN_KEY, token)
+  storage.setItem(USER_KEY, JSON.stringify(user))
 }
 
 export function getToken() {
-  return localStorage.getItem(TOKEN_KEY)
+  return readStorage(TOKEN_KEY)
 }
 
 export function getUser() {
   try {
-    return JSON.parse(localStorage.getItem(USER_KEY) || 'null')
+    return JSON.parse(readStorage(USER_KEY) || 'null')
   } catch {
     return null
   }
 }
 
 export function clearAuth() {
-  localStorage.removeItem(TOKEN_KEY)
-  localStorage.removeItem(USER_KEY)
+  for (const storage of [localStorage, sessionStorage]) {
+    storage.removeItem(TOKEN_KEY)
+    storage.removeItem(USER_KEY)
+  }
 }

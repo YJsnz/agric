@@ -11,7 +11,15 @@
 | 官网（多页营销站） | `/`、`#/product`、`#/solutions`、`#/digital-twin`、`#/about`、`#/contact`、`#/sign-in`、`#/sign-up` | React 18 + Tailwind + lucide-react + react-router | `landing/` | `src/main/resources/static` 根目录 |
 | 智慧农业平台 | `/platform/` | Vue 3 + Vite + Three.js | `frontend/` | `src/main/resources/static/platform` |
 
-官网首页为全屏背景视频 hero，导航栏提供「产品 / 解决方案 / 数字孪生 / 关于我们」四个独立营销页（HashRouter 路由，`#/xxx`）；「进入平台」等按钮指向 `/platform/`，实现“官网 → 平台”的站内联动跳转。`/platform`、`/platform/` 及 `/platform/**` 深链由 `PlatformSpaForwardController` / `PlatformSpaForward` 转发到平台首页。登录、人脸识别和 AI 助手已接入 Spring Boot 后端，其余农场业务数据目前仍以 Mock 数据展示。
+官网首页为全屏背景视频 hero，导航栏提供「产品 / 解决方案 / 数字孪生 / 关于我们」四个独立营销页（HashRouter 路由，`#/xxx`）；「进入平台」等按钮指向 `/platform/`，实现“官网 → 平台”的站内联动跳转。`/platform`、`/platform/` 及 `/platform/**` 深链由 `PlatformSpaForwardController` / `PlatformSpaForward` 转发到平台首页。登录、人脸识别、AI 助手和数据主界面均已接入 Spring Boot 后端。
+
+数据主界面没有连接真实传感器，后端会初始化一套“智慧农场01”虚拟数据，并每 30 秒生成新的环境读数写入 MySQL。设备开关和灌溉控制会真实持久化，刷新页面后状态仍保留。相关表为 `farm_assets`、`farm_devices`、`environment_metrics`、`irrigation_units` 和 `farm_alerts`；接口均受 JWT 保护：
+
+- `GET /api/farms/farm-01/dashboard`：获取主界面完整快照；
+- `PATCH /api/farms/farm-01/devices/{entityId}`：控制设备开关；
+- `PATCH /api/farms/farm-01/irrigation/{unitId}`：控制灌溉并保存时长；
+- `POST /api/farms/farm-01/devices/{entityId}/self-test`：执行在线设备自检；
+- `PATCH /api/farms/farm-01/alerts/{alertId}/handle`：处理告警并持久化状态。
 
 ## 已实现
 
@@ -49,6 +57,26 @@
 
 ## 本地启动
 
+### 一键启动完整 Demo（推荐）
+
+根目录脚本会启动已有的 `mysql` Docker 容器、安装缺失的前端依赖、构建官网与平台，
+最后启动 Spring Boot：
+
+```bash
+chmod +x start.sh   # 首次执行
+./start.sh
+```
+
+启动后访问 `http://localhost:8080/`，按 `Ctrl+C` 停止。仅修改 Java 或已经手动构建前端时，
+可快速启动：
+
+```bash
+./start.sh --skip-build
+```
+
+MySQL 容器名不是 `mysql` 时使用 `MYSQL_CONTAINER=你的容器名 ./start.sh`。AI 助手和人脸识别的
+Key 仍通过下文所列环境变量按需注入。
+
 环境内 Node 版本为 12，因此依赖已固定到兼容版本。
 
 ```bash
@@ -82,12 +110,20 @@ npm run build
 
 ### 启动后端
 
+默认连接本机 Docker MySQL：`localhost:3306/tianyan`，用户名 `root`、密码
+`Root_123456`。可通过 `DB_URL`、`DB_USERNAME`、`DB_PASSWORD` 覆盖；部署环境还必须设置
+至少 32 字节的 `JWT_SECRET`。
+
 ```bash
+export JWT_SECRET="请替换为至少32字节的随机密钥"
 export DEEPSEEK_API_KEY="你的 DeepSeek API Key"
 ./mvnw spring-boot:run
 ```
 
 一个进程同时托管官网（`/`）与平台（`/platform/`）。
+
+平台路由会在进入时调用 `/api/auth/me` 校验登录态；未登录或 JWT 过期会自动返回官网登录页。
+登录页的「Keep me signed in」勾选后使用 `localStorage`，未勾选时仅在当前浏览器会话中保持登录。
 
 AI 助手默认使用 `deepseek-v4-flash`。如需切换模型或兼容地址，可在启动前设置：
 
