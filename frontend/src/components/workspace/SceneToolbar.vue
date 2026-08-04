@@ -14,6 +14,9 @@ defineEmits<{ zoomIn: []; zoomOut: []; reset: []; layers: []; measure: [] }>()
   </aside>
 </template>
 <style scoped lang="scss">
-.toolbar{position:absolute;z-index:15;right:calc(clamp(0px, 29vw, 420px) + 22px);top:171px;display:flex;flex-direction:column;gap:5px;padding:6px;background:rgba(10,31,25,.64);border:1px solid rgba(255,255,255,.12);border-radius:999px;backdrop-filter:blur(14px);transition:right .25s}.toolbar button{position:relative;width:43px;height:43px;border:0;border-radius:50%;display:grid;place-items:center;background:transparent;color:white;cursor:pointer;transition:.18s}.toolbar button:hover{background:rgba(255,255,255,.12);transform:scale(1.05)}.toolbar button svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.toolbar i{height:1px;background:rgba(255,255,255,.12);margin:0 7px}.compass{position:absolute;font:700 7px sans-serif;top:3px;left:19px;color:#8bf0a0}
-.toolbar.drawer-closed{right:22px}@media(max-width:1000px){.toolbar{right:12px;top:160px}}@media(max-width:700px){.toolbar{display:none}}
+.toolbar{position:absolute;z-index:15;right:calc(clamp(360px,30vw,440px) + 32px);top:171px;display:flex;flex-direction:column;gap:5px;padding:6px;background:rgba(10,31,25,.64);border:1px solid rgba(255,255,255,.12);border-radius:999px;backdrop-filter:blur(14px);transition:right .25s}.toolbar button{position:relative;width:43px;height:43px;border:0;border-radius:50%;display:grid;place-items:center;background:transparent;color:white;cursor:pointer;transition:.18s}.toolbar button:hover{background:rgba(255,255,255,.12);transform:scale(1.05)}.toolbar button svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.toolbar i{height:1px;background:rgba(255,255,255,.12);margin:0 7px}.compass{position:absolute;font:700 7px sans-serif;top:3px;left:19px;color:#8bf0a0}
+.toolbar.drawer-closed{right:22px}@media(max-width:1000px){.toolbar{right:12px;top:140px;transition:opacity .2s,transform .2s}.toolbar:not(.drawer-closed){opacity:0;pointer-events:none;transform:translateX(8px)}}@media(max-width:700px){.toolbar{display:none}}
+</style>
+<style scoped lang="scss">
+.toolbar:not(.drawer-closed){opacity:0;pointer-events:none;transform:translateX(8px)}
 </style>

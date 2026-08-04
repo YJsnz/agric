@@ -18,6 +18,9 @@ const emit = defineEmits<{
 }>()
 const hoveredId = ref<string | null>(null)
 
+// 场景底图：跟随部署基址（/platform/）的公共资源 URL，避免编译期被当作模块导入解析
+const AERIAL_URL = `${import.meta.env.BASE_URL}assets/farm-aerial.png`
+
 const hoveredZone = computed(() => farmZones.find(zone => zone.entityId === hoveredId.value))
 const hoveredEntity = computed(() => sceneEntities.find(entity => entity.id === hoveredId.value))
 
@@ -49,7 +52,7 @@ function setHover(id: string | null) {
   <div class="aerial" @click="$emit('select', null)">
     <div class="scene-plane" :style="{ transform: `translate(${offsetX}px, ${offsetY}px) scale(${scale})` }">
       <svg class="scene-image" viewBox="0 0 1535 1024" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <image href="/assets/farm-aerial.png" width="1535" height="1024" />
+        <image :href="AERIAL_URL" width="1535" height="1024" />
       </svg>
 
       <svg v-if="activeModule === 'irrigation'" class="pipes" viewBox="0 0 100 100" preserveAspectRatio="none">

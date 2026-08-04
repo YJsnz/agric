@@ -3,7 +3,7 @@ import FarmWorkspaceView from '@/views/FarmWorkspaceView.vue'
 import AssistantPreviewView from '@/views/AssistantPreviewView.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/platform/'),
   routes: [
     { path: '/', redirect: '/workspaces/farm-01' },
     { path: '/assistant', component: AssistantPreviewView, meta: { title: '智能问农' } },

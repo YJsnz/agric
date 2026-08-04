@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import BrandLogo from '@/components/BrandLogo.vue'
 import ModeSwitch from '@/components/ModeSwitch.vue'
+import UserMenu from './UserMenu.vue'
 
 defineProps<{ dark?: boolean }>()
 const emit = defineEmits<{
@@ -11,11 +12,17 @@ const emit = defineEmits<{
 }>()
 const router = useRouter()
 const query = ref('')
+const currentTime = ref('--:--:--')
+let clockTimer = 0
+
+function updateClock(){currentTime.value=new Date().toLocaleTimeString('zh-CN',{hour12:false,hour:'2-digit',minute:'2-digit',second:'2-digit'})}
 
 function onSearch() {
   if (query.value.trim()) emit('search', query.value.trim())
 }
 function openFullscreen() { document.documentElement.requestFullscreen?.() }
+onMounted(()=>{updateClock();clockTimer=window.setInterval(updateClock,1000)})
+onBeforeUnmount(()=>window.clearInterval(clockTimer))
 </script>
 
 <template>
@@ -29,9 +36,10 @@ function openFullscreen() { document.documentElement.requestFullscreen?.() }
       <form class="search" @submit.prevent="onSearch">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg><input v-model="query" aria-label="全局搜索" placeholder="搜索设备、地块、数据…" />
       </form>
-      <button class="time"><span>今天</span> 08:00–18:00 <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 10h18"/></svg></button>
+      <button class="time"><span>今天</span> {{ currentTime }} <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 10h18"/></svg></button>
       <button class="top-icon notice" aria-label="通知" @click="$emit('notify')"><svg viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M9.5 21h5"/></svg><i>3</i></button>
       <button class="top-icon" aria-label="全屏" @click="openFullscreen"><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M8 21H3v-5m13 5h5v-5"/></svg></button>
+      <UserMenu :dark="dark" />
     </div>
   </header>
 </template>

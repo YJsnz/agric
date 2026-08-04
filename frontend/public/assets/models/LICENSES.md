@@ -12,5 +12,6 @@
 | `farm-building-a.glb` | Farm | https://poly.pizza/m/91wMLb9kKo |
 | `farm-building-b.glb` | Farm | https://poly.pizza/m/INctJkmEAl |
 | `barn.glb` | Barn | https://poly.pizza/m/vSqQNA7ez6 |
+| `round-rover.glb` | Round Rover | https://poly.pizza/m/ejdkcNgMpr |
 
 CC0 不要求署名，但项目保留本文件用于资产审计和后续维护。

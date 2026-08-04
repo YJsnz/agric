@@ -1,0 +1,8 @@
+# train.py 会将 path 转换为绝对路径，避免 Windows 工作目录差异。
+path: dataset
+train: images/train
+val: images/val
+
+names:
+  0: person
+  1: crop

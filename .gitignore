@@ -35,4 +35,23 @@ build/
 ### Frontend ###
 frontend/node_modules/
 frontend/.vite/
+landing/node_modules/
+landing/.vite/
 npm-debug.log*
+
+### Local YOLO training data and outputs ###
+tools/yolo/.venv/
+tools/yolo/__pycache__/
+tools/yolo/dataset/images/train/*
+tools/yolo/dataset/images/val/*
+tools/yolo/dataset/labels/train/*
+tools/yolo/dataset/labels/val/*
+tools/yolo/dataset/labels/*.cache
+tools/yolo/dataset/annotations/
+!tools/yolo/dataset/images/train/.gitkeep
+!tools/yolo/dataset/images/val/.gitkeep
+!tools/yolo/dataset/labels/train/.gitkeep
+!tools/yolo/dataset/labels/val/.gitkeep
+tools/yolo/runs/
+tools/yolo/weights/
+/yolo*.pt
