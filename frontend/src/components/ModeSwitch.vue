@@ -13,7 +13,7 @@ const router = useRouter()
 
 <style scoped lang="scss">
 .mode-switch { padding:5px; display:flex; gap:3px; border-radius:999px; background:rgba(232,233,226,.82); box-shadow:inset 0 1px 2px rgba(0,0,0,.04); backdrop-filter:blur(18px); }
-button { border:0; padding:10px 22px; border-radius:999px; display:flex;align-items:center;gap:7px;background:transparent; cursor:pointer; font-weight:700; color:var(--text-secondary); transition:.2s ease; }
+button { border:0; padding:10px 22px; border-radius:999px; display:flex;align-items:center;gap:7px;background:transparent; cursor:pointer; font-family:var(--font-sans); font-size:13px; line-height:1.4; font-weight:650; letter-spacing:.1px; color:var(--text-secondary); transition:.2s ease; }
 button svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}
 button:first-child svg{fill:currentColor;stroke:none}
 button.active { color:white; background:linear-gradient(135deg,#4f6746,#267643); box-shadow:0 7px 18px rgba(44,93,55,.25); }

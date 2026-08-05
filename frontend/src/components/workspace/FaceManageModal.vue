@@ -2,6 +2,7 @@
 import { ref, watch } from 'vue'
 import FaceCapture from './FaceCapture.vue'
 import { faceDelete, faceRegister, fetchMe, saveUser } from '@/api/auth'
+import ProgressBar from '@/components/ui/ProgressBar.vue'
 
 const props = defineProps<{ open: boolean }>()
 const emit = defineEmits<{ (e: 'close'): void }>()
@@ -78,7 +79,7 @@ function close() {
           <button aria-label="关闭" @click="close">×</button>
         </header>
         <div class="body">
-          <p v-if="loading" class="hint">加载中…</p>
+          <ProgressBar v-if="loading" :value="null" label="读取人脸绑定状态" pending-label="连接服务" />
           <template v-else>
             <p class="status" :class="{ bound: faceBound }">
               <i></i>{{ faceBound ? '已绑定人脸，可在官网一键刷脸登录' : '未绑定人脸' }}
@@ -96,6 +97,7 @@ function close() {
             </template>
 
             <p v-if="error" class="error" role="alert">{{ error }}</p>
+            <ProgressBar v-if="busy" :value="null" label="正在处理人脸信息" pending-label="请稍候" compact />
           </template>
         </div>
       </section>

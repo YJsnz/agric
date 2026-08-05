@@ -1,41 +1,42 @@
 import { Link } from 'react-router-dom'
 import { NAV_LINKS, PLATFORM_URL, ASSISTANT_URL, TWIN_URL } from '../links'
 
+const platformLinks = [
+  { label: '数据工作台', href: PLATFORM_URL },
+  { label: '智能问农', href: ASSISTANT_URL },
+  { label: '数字孪生', href: TWIN_URL }
+]
+
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-white px-6 py-14 md:px-12 lg:px-16">
-      <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-4">
-        <div className="md:col-span-2">
-          <p className="font-semibold text-lg tracking-tight text-ink">田言耕智</p>
-          <p className="mt-3 max-w-sm text-sm font-light text-muted leading-relaxed">
-            AI 原生智慧农业与数字孪生平台。不用寻找数据，直接询问数据；不必浏览报表，直接进入农场。
-          </p>
+    <footer className="site-footer">
+      <div className="footer-shell">
+        <div className="footer-grid">
+          <section className="footer-brand">
+            <div className="footer-wordmark"><span aria-hidden="true">✦</span><strong>田言耕智</strong></div>
+            <p>AI 原生智慧农业与数字孪生平台。不用寻找数据，直接询问数据；不必浏览报表，直接进入农场。</p>
+            <a className="footer-cta" href={PLATFORM_URL}>进入智慧农场 <span>↗</span></a>
+          </section>
+
+          <nav className="footer-column" aria-label="官网导航">
+            <h3>探索官网</h3>
+            <ul>{NAV_LINKS.map(link => <li key={link.to}><Link to={link.to}>{link.label}</Link></li>)}</ul>
+          </nav>
+          <nav className="footer-column" aria-label="平台入口">
+            <h3>产品能力</h3>
+            <ul>{platformLinks.map(link => <li key={link.href}><a href={link.href}>{link.label}</a></li>)}</ul>
+          </nav>
+          <nav className="footer-column" aria-label="联系信息">
+            <h3>关于我们</h3>
+            <ul><li><Link to="/about">平台愿景</Link></li><li><Link to="/solutions">行业方案</Link></li><li><Link to="/contact">联系我们</Link></li></ul>
+          </nav>
         </div>
-        <div>
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-muted">导航</p>
-          <ul className="space-y-3 text-sm font-light text-muted">
-            {NAV_LINKS.map(link => (
-              <li key={link.to}>
-                <Link to={link.to} className="transition-colors duration-200 hover:text-ink">
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+
+        <div className="footer-meta">
+          <span>© 2026 田言耕智</span>
+          <span className="footer-status"><i></i>所有服务运行正常</span>
+          <span>智慧农业 · AI 原生</span>
         </div>
-        <div>
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-muted">进入平台</p>
-          <ul className="space-y-3 text-sm font-light text-muted">
-            <li><a href={PLATFORM_URL} className="transition-colors duration-200 hover:text-ink">数据工作台</a></li>
-            <li><a href={ASSISTANT_URL} className="transition-colors duration-200 hover:text-ink">智能问农</a></li>
-            <li><a href={TWIN_URL} className="transition-colors duration-200 hover:text-ink">数字孪生</a></li>
-            <li><Link to="/contact" className="transition-colors duration-200 hover:text-ink">联系我们</Link></li>
-          </ul>
-        </div>
-      </div>
-      <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-6 text-xs font-light text-muted sm:flex-row">
-        <span>© 2026 田言耕智 · AI 原生智慧农业与数字孪生平台</span>
-        <span>为现代农业而设计</span>
       </div>
     </footer>
   )

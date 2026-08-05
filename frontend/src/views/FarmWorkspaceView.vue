@@ -12,6 +12,7 @@ import GreenhouseMonitorModal from '@/components/workspace/GreenhouseMonitorModa
 import LayerPopover from '@/components/workspace/LayerPopover.vue'
 import ToastMessage from '@/components/ToastMessage.vue'
 import FarmAiAssistant from '@/components/workspace/FarmAiAssistant.vue'
+import ProgressBar from '@/components/ui/ProgressBar.vue'
 import { useWorkspaceStore } from '@/stores/workspace'
 import { alerts, dashboardSummary, farmZones, sceneEntities } from '@/data/farm'
 import type { BusinessModule } from '@/types'
@@ -99,7 +100,13 @@ function handleAssistantOpen(open:boolean){assistantOpen.value=open;if(!open)thr
       <ThreeFarmScene v-else ref="threeScene" key="three" :active-module="store.activeModule" :active-sub-layer="store.activeSubLayer" :selected-id="store.selectedEntityId" :drawer-open="store.drawerOpen" :overlay-open="store.drawerOpen || monitorOpen || assistantOpen" @select="selectEntity" @module="handleModule" @walk="firstPersonActive=$event" />
     </Transition>
 
-    <FarmTopBar dark :notification-count="dashboardSummary.openAlerts" @search="searchEntity" @notify="notificationsOpen = !notificationsOpen" />
+    <Transition name="data-loading">
+      <div v-if="store.loading && !store.lastSyncedAt" class="data-loading-card">
+        <ProgressBar :value="null" label="同步智慧农场数据" pending-label="连接数据中心" />
+      </div>
+    </Transition>
+
+    <FarmTopBar :notification-count="dashboardSummary.openAlerts" @search="searchEntity" @notify="notificationsOpen = !notificationsOpen" />
     <WeatherCard :class="{ 'detail-mode-hidden': store.drawerOpen }" @detail="handleModule('environment')" />
     <div class="scene-name"><span class="status-dot"></span>{{ sceneLabel }}</div>
 
@@ -126,6 +133,7 @@ function handleAssistantOpen(open:boolean){assistantOpen.value=open;if(!open)thr
 <style scoped lang="scss">
 .workspace{position:fixed;inset:0;overflow:hidden;background:#173a2b}.scene-enter-active,.scene-leave-active{transition:opacity .65s ease,filter .65s ease,transform .65s ease}.scene-enter-from{opacity:0;filter:blur(8px);transform:scale(1.025)}.scene-leave-to{opacity:0;filter:blur(7px);transform:scale(.985)}.scene-name{position:absolute;z-index:11;left:25px;bottom:31px;padding:8px 12px;border-radius:999px;background:rgba(8,29,23,.55);color:rgba(255,255,255,.78);font-size:11px;backdrop-filter:blur(10px)}.notifications{position:absolute;z-index:40;right:72px;top:68px;width:290px;padding:14px;background:rgba(245,247,240,.94);border:1px solid rgba(255,255,255,.7);border-radius:17px;box-shadow:var(--shadow-lg);backdrop-filter:blur(24px)}.notifications header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.notifications header button{border:0;background:transparent;font-size:22px;cursor:pointer}.notifications article{display:flex;gap:10px;padding:12px 4px;border-top:1px solid var(--border-soft)}.notifications article i{font-style:normal;color:#4c895c}.notifications article i.warning{color:#e4952d}.notifications article div{display:flex;flex-direction:column;gap:4px}.notifications article b{font-size:12px}.notifications article small{font-size:10px;color:var(--text-tertiary)}.notifications .all{width:100%;border:0;border-radius:9px;padding:9px;background:#e8ece2;color:#3e5b44;cursor:pointer}.notice-panel-enter-active,.notice-panel-leave-active{transition:.2s}.notice-panel-enter-from,.notice-panel-leave-to{opacity:0;transform:translateY(-7px)}
 .detail-mode-hidden{opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity .22s,transform .22s}.drawer-open .scene-name{opacity:0;pointer-events:none}
+.data-loading-card{position:absolute;z-index:55;left:50%;top:94px;transform:translateX(-50%);width:min(360px,calc(100vw - 32px));padding:13px 15px;border:1px solid rgba(255,255,255,.76);border-radius:15px;background:rgba(247,250,245,.92);box-shadow:0 18px 50px rgba(7,35,20,.25);backdrop-filter:blur(24px)}.data-loading-enter-active,.data-loading-leave-active{transition:.3s}.data-loading-enter-from,.data-loading-leave-to{opacity:0;transform:translate(-50%,-10px) scale(.96)}
 @media(max-width:1000px){.scene-name{display:none}}
 @media(max-width:700px){.notifications{right:10px;top:65px;width:calc(100vw - 20px)}}
 </style>

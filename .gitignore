@@ -39,6 +39,11 @@ landing/node_modules/
 landing/.vite/
 npm-debug.log*
 
+# Local secrets (never commit real API keys)
+.env
+.env.local
+.env.*.local
+
 ### Local YOLO training data and outputs ###
 tools/yolo/.venv/
 tools/yolo/__pycache__/

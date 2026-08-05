@@ -57,14 +57,14 @@ function goSignIn() {
 
 <style scoped lang="scss">
 .user-menu { position: relative; }
-.avatar { height: 42px; padding: 0 15px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,.34); background: rgba(255,255,255,.3); backdrop-filter: blur(18px); border-radius: 999px; color: #15251c; font-size: 12px; font-weight: 600; cursor: pointer; }
+.avatar { height: 42px; padding: 0 15px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,.34); background: rgba(255,255,255,.3); backdrop-filter: blur(18px); border-radius: 999px; color: #15251c; font-size: 13px; font-weight: 600; cursor: pointer; }
 .avatar.dark { background: rgba(7,35,28,.32); border-color: rgba(255,255,255,.14); color: #fff; }
 .avatar-inner { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 50%; background: #3e7c4f; color: #fff; font-size: 11px; }
 .dropdown { position: absolute; right: 0; top: 50px; width: 210px; padding: 8px; border: 1px solid rgba(255,255,255,.7); border-radius: 14px; background: rgba(245,247,240,.96); box-shadow: var(--shadow-lg); backdrop-filter: blur(24px); z-index: 60; }
 .dropdown .info { display: flex; flex-direction: column; gap: 2px; padding: 8px 10px 10px; border-bottom: 1px solid var(--border-soft); margin-bottom: 6px; }
-.dropdown .info strong { font-size: 13px; color: var(--text-primary); }
-.dropdown .info small { font-size: 11px; color: var(--text-tertiary); }
-.item { width: 100%; text-align: left; padding: 10px; border: 0; border-radius: 9px; background: transparent; font-size: 12px; color: var(--text-primary); cursor: pointer; }
+.dropdown .info strong { font-size: 14px; color: var(--text-primary); }
+.dropdown .info small { font-size: 12px; color: var(--text-tertiary); }
+.item { width: 100%; text-align: left; padding: 10px; border: 0; border-radius: 9px; background: transparent; font-size: 13px; color: var(--text-primary); cursor: pointer; }
 .item:hover { background: #e8ece2; color: #3e5b44; }
 .menu-enter-active, .menu-leave-active { transition: .18s; }
 .menu-enter-from, .menu-leave-to { opacity: 0; transform: translateY(-6px); }

@@ -18,8 +18,8 @@ defineProps<{ compact?: boolean; inverse?: boolean }>()
 .mark b { right:0; top:0; transform:scaleX(-1) rotate(-25deg); }
 .mark em { right:1px; top:17px; transform:scaleX(-1) rotate(-52deg); width:17px; height:23px; }
 .copy { display:flex; flex-direction:column; line-height:1.15; }
-.copy strong { font-size:20px; letter-spacing:2px; font-weight:800; }
-.copy small { margin-top:4px; font-size:10px; color:var(--text-secondary); letter-spacing:1.5px; }
+.copy strong { font-family:var(--font-display); font-size:21px; letter-spacing:1px; font-weight:750; }
+.copy small { margin-top:4px; font-size:11px; color:var(--text-secondary); letter-spacing:.8px; font-weight:500; }
 .inverse .copy strong,.inverse .copy small { color:white; }
 .compact .mark { transform:scale(.88); }
 @media(max-width:720px){ .copy small{display:none}.copy strong{font-size:17px}.mark{width:31px;transform:scale(.8);transform-origin:left center} }

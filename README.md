@@ -67,6 +67,16 @@ chmod +x start.sh   # 首次执行
 ./start.sh
 ```
 
+需要 AI 助手时，只需首次创建本机配置文件，之后无需每次 `export`：
+
+```bash
+cp .env.example .env.local
+# 编辑 .env.local，填写新生成的 DEEPSEEK_API_KEY
+./start.sh
+```
+
+`.env.local` 已被 Git 忽略，不会进入提交记录。
+
 启动后访问 `http://localhost:8080/`，按 `Ctrl+C` 停止。仅修改 Java 或已经手动构建前端时，
 可快速启动：
 

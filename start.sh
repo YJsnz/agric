@@ -2,12 +2,23 @@
 set -Eeuo pipefail
 
 ROOT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+
+# 本机私密配置只需填写一次。
+if [[ -f "$ROOT_DIR/.env.local" ]]; then
+  set -a
+  # shellcheck disable=SC1091
+  source "$ROOT_DIR/.env.local"
+  set +a
+fi
+
 MYSQL_CONTAINER="${MYSQL_CONTAINER:-mysql}"
 SKIP_BUILD=false
 
 usage() {
   cat <<'EOF'
 用法：./start.sh [选项]
+
+启动时会自动读取根目录的 .env.local（该文件已被 Git 忽略）。
 
 选项：
   --skip-build   跳过两套前端构建，直接启动 Spring Boot
