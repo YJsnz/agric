@@ -64,6 +64,7 @@ public class DashboardService {
                 .filter(item -> "greenhouse".equals(item.getType()))
                 .orElseThrow(() -> BizException.notFound("大棚不存在"));
         int index = greenhouseIndex(greenhouseId);
+        GreenhouseDetail.SceneProfile sceneProfile = greenhouseScene(index);
         List<EnvironmentMetric> readings = metrics.findByFarmIdOrderById(farmId);
         List<GreenhouseDetail.Metric> detailMetrics = readings.stream().map(item -> {
             double value = item.getValue() + switch (item.getMetricKey()) {
@@ -78,22 +79,28 @@ public class DashboardService {
             String tone = "需要关注".equals(note) ? "warning" : item.getTone();
             return new GreenhouseDetail.Metric(item.getMetricKey(), item.getLabel(), round(value, 1), item.getUnit(), note, tone);
         }).toList();
-        List<GreenhouseDetail.Device> greenhouseDevices = List.of(
-                new GreenhouseDetail.Device(greenhouseId + "-fertigation", "水肥一体机", "fertigation", true, true, "EC 1.32 mS/cm"),
-                new GreenhouseDetail.Device(greenhouseId + "-valve", "滴灌阀门组", "irrigation", true, index % 2 == 1, index % 2 == 1 ? "运行 · 8.4 m³/h" : "待机"),
-                new GreenhouseDetail.Device(greenhouseId + "-fan", "环流风机", "fan", true, true, "自动 · 42%"),
-                new GreenhouseDetail.Device(greenhouseId + "-sensor", "温湿度传感器", "sensor", true, true, "实时采集")
-        );
+        List<GreenhouseDetail.Device> greenhouseDevices = greenhouseDevices(greenhouseId, index, sceneProfile);
         int baseHealth = greenhouse.getHealth() == null ? 92 : greenhouse.getHealth();
-        List<GreenhouseDetail.Plant> plantRows = java.util.stream.IntStream.range(0, 12).mapToObj(i ->
-                new GreenhouseDetail.Plant("P-" + String.format(Locale.ROOT, "%02d", i + 1),
-                        String.valueOf((char) ('A' + i / 4)), Math.max(0, baseHealth - i % 5) < 85 ? "attention" : "normal",
-                        Math.max(70, baseHealth - i % 5), round(48 + index * 4 + i * 1.35, 1),
-                        round(44 + (i * 3 + index) % 17, 1))).toList();
+        int columns = sceneProfile.bedCount();
+        int sampleRows = (int) Math.ceil(12.0 / columns);
+        double baseHeight = switch (index) { case 1 -> 148; case 2 -> 24; case 3 -> 172; case 4 -> 12; case 5 -> 68; case 6 -> 29; default -> 60; };
+        String cultivar = switch (index) { case 1 -> "千禧红"; case 2 -> "红颜"; case 3 -> "津优 35"; case 4 -> "砧木苗"; case 5 -> "普罗旺斯"; case 6 -> "奶油生菜"; default -> greenhouse.getCrop(); };
+        List<GreenhouseDetail.Plant> plantRows = java.util.stream.IntStream.range(0, 12).mapToObj(i -> {
+            int column = i % columns;
+            int row = i / columns;
+            double x = columns == 1 ? 0 : -6.2 + column * (12.4 / (columns - 1));
+            double z = sampleRows == 1 ? 0 : -4.6 + row * (9.2 / (sampleRows - 1));
+            int health = Math.max(70, baseHealth - i % 5);
+            return new GreenhouseDetail.Plant("P-" + String.format(Locale.ROOT, "%02d", i + 1),
+                    String.valueOf((char) ('A' + Math.min(2, row))), health < 85 ? "attention" : "normal",
+                    health, round(baseHeight + (i % 4 - 1.5) * Math.max(1.2, baseHeight * .025), 1),
+                    round(44 + (i * 3 + index) % 17, 1), cultivar, 18 + index * 7 + i % 4,
+                    round(.8 + index * .22 + i % 3 * .08, 2), round(x, 2), round(z, 2));
+        }).toList();
         LocalDate today = LocalDate.now();
         List<GreenhouseDetail.TrendPoint> trend = java.util.stream.IntStream.range(0, 7).mapToObj(i ->
                 new GreenhouseDetail.TrendPoint(today.minusDays(6L - i).format(DateTimeFormatter.ofPattern("MM-dd")),
-                        round(42 + index * 3 + i * (1.8 + index * .1), 1))).toList();
+                        round(baseHeight * .88 + i * (baseHeight * .02), 1))).toList();
         List<DashboardSnapshot.Alert> greenhouseAlerts = alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
                 .filter(item -> greenhouseId.equals(item.getEntityId())).map(this::alertDto).toList();
         GreenhouseDetail.Greenhouse summary = new GreenhouseDetail.Greenhouse(greenhouse.getId(), greenhouse.getName(),
@@ -102,8 +109,50 @@ public class DashboardService {
         String suggestion = greenhouseId.equals("gh-02")
                 ? "西侧土壤含水率偏低，建议 16:00 开启滴灌 15 分钟，并复查叶片蒸腾状态。"
                 : "棚内环境处于适宜区间，建议维持当前通风与水肥策略，今日傍晚完成一次叶面巡检。";
-        return new GreenhouseDetail(farmId, LocalDateTime.now(), summary, detailMetrics, greenhouseDevices,
-                plantRows, trend, greenhouseAlerts, suggestion);
+        List<GreenhouseDetail.Zone> zoneRows = greenhouseZones(index, greenhouse.getCrop(), baseHealth);
+        return new GreenhouseDetail(farmId, LocalDateTime.now(), summary, sceneProfile, detailMetrics, greenhouseDevices,
+                zoneRows, plantRows, trend, greenhouseAlerts, suggestion);
+    }
+
+    private GreenhouseDetail.SceneProfile greenhouseScene(int index) {
+        return switch (index) {
+            case 1 -> new GreenhouseDetail.SceneProfile("双拱薄膜棚", "高垄土培", "tomato-vine", 4, 8, 640, "压力补偿滴灌");
+            case 2 -> new GreenhouseDetail.SceneProfile("连栋保温棚", "高架基质栽培", "strawberry", 4, 8, 1820, "滴箭水肥循环");
+            case 3 -> new GreenhouseDetail.SceneProfile("单体拱棚", "吊蔓土培", "cucumber-vine", 4, 8, 720, "膜下滴灌");
+            case 4 -> new GreenhouseDetail.SceneProfile("智能育苗棚", "穴盘潮汐育苗", "seedling-tray", 6, 12, 4608, "潮汐苗床");
+            case 5 -> new GreenhouseDetail.SceneProfile("生态日光温室", "有机高垄栽培", "bush-tomato", 4, 8, 580, "滴灌与覆草保墒");
+            case 6 -> new GreenhouseDetail.SceneProfile("多跨水培棚", "NFT 水培", "leafy-hydroponic", 6, 12, 2160, "营养液闭环循环");
+            default -> new GreenhouseDetail.SceneProfile("标准薄膜棚", "土培", "mixed-crop", 4, 8, 600, "滴灌");
+        };
+    }
+
+    private List<GreenhouseDetail.Device> greenhouseDevices(String greenhouseId, int index, GreenhouseDetail.SceneProfile scene) {
+        String irrigationName = switch (index) { case 2 -> "基质回液机组"; case 4 -> "潮汐供液泵"; case 6 -> "营养液循环泵"; default -> "水肥一体机"; };
+        String cropDevice = switch (index) { case 1, 3 -> "自动卷膜器"; case 2 -> "除湿热泵"; case 4 -> "育苗补光灯"; case 5 -> "昆虫诱捕监测器"; case 6 -> "溶氧控制器"; default -> "环境控制器"; };
+        String cropCategory = switch (index) { case 1, 3 -> "vent"; case 2 -> "dehumidifier"; case 4 -> "grow-light"; case 5 -> "trap"; case 6 -> "oxygenator"; default -> "controller"; };
+        return List.of(
+                new GreenhouseDetail.Device(greenhouseId + "-fertigation", irrigationName, "fertigation", true, true, "EC 1.32 mS/cm", "西北设备间", scene.irrigationMode(), -7.1, .5, -5.1),
+                new GreenhouseDetail.Device(greenhouseId + "-valve", "分区灌溉阀组", "irrigation", true, index % 2 == 1, index % 2 == 1 ? "8.4 m³/h" : "待机", "栽培区入口", "控制 A-C 区供液", -5.8, .35, 5.7),
+                new GreenhouseDetail.Device(greenhouseId + "-fan", "环流风机组", "fan", true, true, "自动 42%", "东侧立柱", "均衡冠层温湿度", 7.7, 2.8, 0),
+                new GreenhouseDetail.Device(greenhouseId + "-sensor", "冠层传感器", "sensor", true, true, "12 秒前", "棚内中心", "温湿度与 CO₂ 采集", 0, 2.2, 0),
+                new GreenhouseDetail.Device(greenhouseId + "-camera", "AI 巡检相机", "camera", true, true, "识别在线", "南侧横梁", "病虫害与长势识别", 0, 3.7, 5.8),
+                new GreenhouseDetail.Device(greenhouseId + "-crop", cropDevice, cropCategory, true, index != 3, index == 3 ? "待机" : "策略运行", "北侧控制区", "匹配" + scene.cultivationMode(), 5.9, index == 4 ? 3.2 : 1.0, -5.3)
+        );
+    }
+
+    private List<GreenhouseDetail.Zone> greenhouseZones(int index, String crop, int health) {
+        String[] tasks = switch (index) {
+            case 1 -> new String[]{"疏花绑蔓", "坐果巡检", "采前水肥"};
+            case 2 -> new String[]{"匍匐茎整理", "授粉检查", "果实转色"};
+            case 3 -> new String[]{"落蔓整枝", "雌花计数", "分批采收"};
+            case 4 -> new String[]{"出苗统计", "炼苗通风", "移栽筛选"};
+            case 5 -> new String[]{"有机覆草", "天敌释放", "果穗巡检"};
+            case 6 -> new String[]{"根系检查", "营养液校准", "批次采收"};
+            default -> new String[]{"日常巡检", "环境复核", "作业记录"};
+        };
+        return java.util.stream.IntStream.range(0, 3).mapToObj(i -> new GreenhouseDetail.Zone(
+                String.valueOf((char) ('A' + i)), (char) ('A' + i) + " 区", crop, tasks[i],
+                Math.max(72, health - i * 2), round(31.8 + i * 1.4, 1))).toList();
     }
 
     @Transactional

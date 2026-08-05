@@ -86,9 +86,11 @@ export interface GreenhouseDetail {
   farmId: string
   generatedAt: string
   greenhouse: { id: string; name: string; status: EntityStatus; health: number; crop: string; area: string; stage: string; environment: string }
+  scene: { structure: string; cultivationMode: string; cropModel: string; bedCount: number; rowCount: number; nominalPlantCount: number; irrigationMode: string }
   metrics: Array<{ key: string; label: string; value: number; unit: string; note: string; tone: string }>
-  devices: Array<{ id: string; name: string; category: string; online: boolean; enabled: boolean; value: string }>
-  plants: Array<{ id: string; zone: string; status: EntityStatus; health: number; height: number; soilMoisture: number }>
+  devices: Array<{ id: string; name: string; category: string; online: boolean; enabled: boolean; value: string; location: string; responsibility: string; positionX: number; positionY: number; positionZ: number }>
+  zones: Array<{ id: string; name: string; crop: string; task: string; health: number; coverage: number }>
+  plants: Array<{ id: string; zone: string; status: EntityStatus; health: number; height: number; soilMoisture: number; cultivar: string; ageDays: number; leafAreaIndex: number; positionX: number; positionZ: number }>
   heightTrend: Array<{ date: string; height: number }>
   alerts: DashboardSnapshot['alerts']
   aiSuggestion: string

@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { NAV_LINKS, PLATFORM_URL } from '../links'
+import BrandLogo from './BrandLogo'
 
 const EASE = 'ease-[cubic-bezier(0.76,0,0.24,1)]'
 
@@ -22,8 +23,8 @@ export default function MobileMenu({ open, onClose }) {
 
       <div className="relative z-10 flex h-full flex-col px-6 py-5">
         <div className="flex items-center justify-between">
-          <NavLink to="/" onClick={onClose} className="font-semibold text-lg tracking-tight text-ink">
-            田言耕智
+          <NavLink to="/" onClick={onClose} aria-label="田言耕智首页">
+            <BrandLogo compact />
           </NavLink>
           <button
             type="button"

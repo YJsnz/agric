@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from 'react'
 import { Camera, RefreshCw, Upload } from 'lucide-react'
 
 /**
- * 人脸采集组件：优先摄像头实时取景拍照，失败时回退到图片上传。
+ * 人脸采集组件：优先摄像头实时取景拍照；人脸绑定场景可选择允许图片上传。
  * 拍照结果压缩为 ~512px JPEG，通过 onCapture(blob) 回调交给调用方。
  */
-export default function FaceCapture({ onCapture, busy = false, label = '识别' }) {
+export default function FaceCapture({ onCapture, busy = false, label = '识别', allowUpload = true }) {
   const videoRef = useRef(null)
   const streamRef = useRef(null)
   const [camError, setCamError] = useState('')
@@ -29,7 +29,11 @@ export default function FaceCapture({ onCapture, busy = false, label = '识别' 
           videoRef.current.play().catch(() => {})
         }
       } catch {
-        if (!cancelled) setCamError('无法打开摄像头，请允许访问权限，或改用下方图片上传')
+        if (!cancelled) {
+          setCamError(allowUpload
+            ? '无法打开摄像头，请允许访问权限，或改用下方图片上传'
+            : '无法打开摄像头，请允许浏览器访问摄像头后重试')
+        }
       }
     }
     start()
@@ -118,10 +122,12 @@ export default function FaceCapture({ onCapture, busy = false, label = '识别' 
             >
               <Camera className="h-4 w-4" /> 拍照
             </button>
-            <label className="flex cursor-pointer items-center gap-2 rounded-2xl border border-border px-4 py-3 text-sm transition-colors hover:bg-secondary">
-              <Upload className="h-4 w-4" /> 上传图片
-              <input type="file" accept="image/*" className="hidden" onChange={onFile} />
-            </label>
+            {allowUpload && (
+              <label className="flex cursor-pointer items-center gap-2 rounded-2xl border border-border px-4 py-3 text-sm transition-colors hover:bg-secondary">
+                <Upload className="h-4 w-4" /> 上传图片
+                <input type="file" accept="image/*" className="hidden" onChange={onFile} />
+              </label>
+            )}
           </>
         )}
       </div>

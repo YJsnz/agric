@@ -41,10 +41,27 @@ class DashboardIntegrationTests {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.greenhouse.id").value("gh-01"))
                 .andExpect(jsonPath("$.greenhouse.crop").value("樱桃番茄"))
+                .andExpect(jsonPath("$.scene.cropModel").value("tomato-vine"))
+                .andExpect(jsonPath("$.scene.nominalPlantCount").value(640))
                 .andExpect(jsonPath("$.metrics.length()").value(5))
-                .andExpect(jsonPath("$.devices.length()").value(4))
+                .andExpect(jsonPath("$.devices.length()").value(6))
+                .andExpect(jsonPath("$.devices[0].positionX").value(-7.1))
+                .andExpect(jsonPath("$.zones.length()").value(3))
                 .andExpect(jsonPath("$.plants.length()").value(12))
+                .andExpect(jsonPath("$.plants[0].cultivar").value("千禧红"))
                 .andExpect(jsonPath("$.heightTrend.length()").value(7));
+
+        mockMvc.perform(get("/api/farms/farm-01/greenhouses/gh-02").header("Authorization", "Bearer " + token))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.scene.cropModel").value("strawberry"))
+                .andExpect(jsonPath("$.scene.cultivationMode").value("高架基质栽培"))
+                .andExpect(jsonPath("$.plants[0].cultivar").value("红颜"));
+
+        mockMvc.perform(get("/api/farms/farm-01/greenhouses/gh-06").header("Authorization", "Bearer " + token))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.scene.cropModel").value("leafy-hydroponic"))
+                .andExpect(jsonPath("$.scene.bedCount").value(6))
+                .andExpect(jsonPath("$.devices[5].category").value("oxygenator"));
 
         mockMvc.perform(patch("/api/farms/farm-01/devices/valve-02")
                         .header("Authorization", "Bearer " + token)

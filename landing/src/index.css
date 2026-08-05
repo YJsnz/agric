@@ -31,14 +31,7 @@ body {
 }
 .footer-shell { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 72px 0 34px; }
 .footer-grid { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 54px; padding-bottom: 58px; }
-.footer-wordmark { display: flex; align-items: center; gap: 10px; color: #142319; }
-.footer-wordmark span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: #245d3b; color: #e5f4d3; font-size: 13px; }
-.footer-wordmark strong {
-  font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", monospace;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: .14em;
-}
+.footer-wordmark { display: flex; align-items: center; color: #142319; }
 .footer-brand p { max-width: 390px; margin-top: 20px; color: #677169; font-family: "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 14px; font-weight: 400; line-height: 1.9; }
 .footer-cta { display: inline-flex; align-items: center; gap: 14px; margin-top: 28px; padding: 11px 15px; border: 1px solid rgba(28,55,35,.16); border-radius: 9px; color: #1c3824; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-decoration: none; transition: .25s ease; }
 .footer-cta:hover { transform: translateY(-2px); border-color: #315f3e; background: rgba(255,255,255,.42); }

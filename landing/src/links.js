@@ -9,7 +9,7 @@ export const NAV_LINKS = [
 
 // FormSubmit 收件邮箱：把这里换成你自己的邮箱，
 // 并在首次提交后点击 FormSubmit 发来的激活邮件即可生效。
-export const CONTACT_EMAIL = 'hello@tianyan-agri.com'
+export const CONTACT_EMAIL = '1478838114@qq.com'
 
 export const PLATFORM_URL = '/platform/'
 export const ASSISTANT_URL = '/platform/assistant'

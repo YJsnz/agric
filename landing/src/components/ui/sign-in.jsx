@@ -150,7 +150,7 @@ export const SignInPage = ({
                   <p className="mt-2 text-muted-foreground">保持面部正对摄像头，光线充足即可识别</p>
                 </div>
                 <div className="animate-element animate-delay-200">
-                  <FaceCapture onCapture={onFaceLogin} busy={faceBusy} label="登录" />
+                  <FaceCapture onCapture={onFaceLogin} busy={faceBusy} label="登录" allowUpload={false} />
                 </div>
               </>
             ) : (

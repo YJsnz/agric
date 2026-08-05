@@ -5,6 +5,7 @@ import BrandLogo from '@/components/BrandLogo.vue'
 import UserMenu from '@/components/workspace/UserMenu.vue'
 import ProgressBar from '@/components/ui/ProgressBar.vue'
 import PersonalizedWorkbench from '@/components/assistant/PersonalizedWorkbench.vue'
+import MarkdownDocumentViewer from '@/components/assistant/MarkdownDocumentViewer.vue'
 import { useAssistantWorkbenches } from '@/composables/useAssistantWorkbenches'
 import { getUser } from '@/api/auth'
 import { fetchAssistantState, saveAssistantState, sendAssistantMessage, type ChatMessage } from '@/api/assistant'
@@ -12,6 +13,16 @@ import { alerts, dashboardSummary, deviceRecords, environmentMetrics, farmZones,
 import type { SceneEntity } from '@/types'
 import type { AssistantWorkbench, WorkbenchWidgetType } from '@/types/workbench'
 import xiaotianAvatar from '@/assets/xiaotian-avatar.png'
+import userManualMarkdown from '../../../docs/用户使用手册.md?raw'
+import technicalManualMarkdown from '../../../docs/技术说明手册.md?raw'
+import screenshotWebsite from '../../../docs/截图/官网.png'
+import screenshotLogin from '../../../docs/截图/登陆.png'
+import screenshotWorkspace from '../../../docs/截图/主界面.png'
+import screenshotThree from '../../../docs/截图/3D.png'
+import screenshotFirstPerson from '../../../docs/截图/第一人称.png'
+import screenshotAsk from '../../../docs/截图/问农.png'
+import screenshotCustomWorkbench from '../../../docs/截图/自定义工作台.png'
+import screenshotGreenhouse from '../../../docs/截图/大棚内部.png'
 
 interface Conversation {
   id: number
@@ -20,6 +31,16 @@ interface Conversation {
   messages: ChatMessage[]
   panelMode?: PanelMode | null
   panelEntityId?: string | null
+}
+
+interface LibraryDocument {
+  id: 'user-manual' | 'technical-manual'
+  title: string
+  description: string
+  audience: string
+  pages: string
+  updatedAt: string
+  content: string
 }
 
 type PanelMode = 'entity' | 'overview' | 'environment' | 'devices' | 'irrigation' | 'alerts' | 'crops'
@@ -38,6 +59,7 @@ const panelMode = ref<PanelMode | null>(null)
 const searchQuery = ref('')
 const activeOverlay = ref<'files' | 'projects' | 'filters' | 'apps' | null>(null)
 const attachment = ref<{ name: string; content: string } | null>(null)
+const selectedLibraryDocument = ref<LibraryDocument | null>(null)
 const demoRunning = ref(false)
 const recording = ref(false)
 const chatExpanded = ref(false)
@@ -56,6 +78,20 @@ const conversations = ref<Conversation[]>([
   { id: 1, title: '新的问农会话', time: '刚刚', messages: [] }
 ])
 const quickQuestions = ['分析今日状态', '查看异常地块', '生成灌溉方案', '对比温室数据']
+const libraryDocuments: LibraryDocument[] = [
+  { id: 'user-manual', title: '用户使用手册', description: '从注册登录到农场工作台、3D 巡场、大棚内部与智能问农的完整操作指南。', audience: '平台用户', pages: '19 个章节', updatedAt: '2026-08-05', content: userManualMarkdown },
+  { id: 'technical-manual', title: '技术说明手册', description: '系统架构、部署、接口、数据模型，以及 LingBot-Map、机器人导航和视觉识别规划。', audience: '开发与运维', pages: '27 个章节', updatedAt: '2026-08-05', content: technicalManualMarkdown }
+]
+const documentImageMap: Record<string, string> = {
+  './截图/官网.png': screenshotWebsite,
+  './截图/登陆.png': screenshotLogin,
+  './截图/主界面.png': screenshotWorkspace,
+  './截图/3D.png': screenshotThree,
+  './截图/第一人称.png': screenshotFirstPerson,
+  './截图/问农.png': screenshotAsk,
+  './截图/自定义工作台.png': screenshotCustomWorkbench,
+  './截图/大棚内部.png': screenshotGreenhouse
+}
 const activeConversation = computed(() => conversations.value.find(item => item.id === activeId.value) || conversations.value[0])
 const messages = computed(() => activeConversation.value?.messages || [])
 const workbenchActive = computed(() => showWorkbench.value || messages.value.length > 0)
@@ -311,6 +347,19 @@ async function onFileSelected(event: Event) {
   await nextTick(() => inputRef.value?.focus())
 }
 
+function openLibraryDocument(document: LibraryDocument) {
+  selectedLibraryDocument.value = document
+}
+
+function attachLibraryDocument(document: LibraryDocument | null) {
+  if (!document) return
+  attachment.value = { name: `${document.title}.md`, content: document.content }
+  selectedLibraryDocument.value = null
+  activeOverlay.value = null
+  input.value = `请结合《${document.title}》回答我的问题：`
+  nextTick(() => inputRef.value?.focus())
+}
+
 async function onWorkbenchImported(event: Event) {
   const inputElement = event.target as HTMLInputElement
   const file = inputElement.files?.[0]
@@ -408,7 +457,7 @@ onBeforeUnmount(() => { controller.value?.abort(); window.clearTimeout(stateSync
       </button>
 
       <nav class="library-nav" aria-label="智能问农功能">
-        <button @click="activeOverlay = 'files'"><svg viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM15 3v5h5M8 13h8M8 17h6"/></svg>文件库<span>{{ attachment ? '1 个文件' : '上传' }}</span></button>
+        <button @click="activeOverlay = 'files'; selectedLibraryDocument = null"><svg viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM15 3v5h5M8 13h8M8 17h6"/></svg>文件库<span>{{ libraryDocuments.length }} 本手册</span></button>
         <button @click="activeOverlay = 'projects'"><svg viewBox="0 0 24 24"><path d="M4 6h6l2 2h8v11H4z"/></svg>项目<span>{{ conversations.length }} 个会话</span></button>
         <button @click="activeOverlay = 'apps'"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>更多<span>全部应用</span></button>
       </nav>
@@ -506,9 +555,29 @@ onBeforeUnmount(() => { controller.value?.abort(); window.clearTimeout(stateSync
 
       <Transition name="overlay">
         <div v-if="activeOverlay" class="feature-overlay" @click.self="activeOverlay = null">
-          <section class="feature-card">
+          <MarkdownDocumentViewer
+            v-if="activeOverlay === 'files' && selectedLibraryDocument"
+            :title="selectedLibraryDocument.title"
+            :content="selectedLibraryDocument.content"
+            :updated-at="selectedLibraryDocument.updatedAt"
+            :image-map="documentImageMap"
+            @close="selectedLibraryDocument = null"
+            @attach="attachLibraryDocument(selectedLibraryDocument)"
+          />
+          <section v-else class="feature-card" :class="{ 'library-card': activeOverlay === 'files' }">
             <button class="feature-close" @click="activeOverlay = null">×</button>
-            <template v-if="activeOverlay === 'files'"><small>知识上下文</small><h2>文件库</h2><p>上传文本、Markdown、CSV 或 JSON，内容会作为当前会话的分析依据。</p><div v-if="attachment" class="file-row"><strong>{{ attachment.name }}</strong><button @click="attachment = null">移除</button></div><button class="primary-action" @click="fileInput?.click()">选择文件</button></template>
+            <template v-if="activeOverlay === 'files'">
+              <small>平台知识库</small><h2>文件库</h2><p>阅读项目手册，或将文档加入当前问农上下文。你也可以上传自己的文本资料。</p>
+              <div class="built-in-documents">
+                <button v-for="document in libraryDocuments" :key="document.id" class="document-row" @click="openLibraryDocument(document)">
+                  <span class="document-mark"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM15 3v5h5M9 12h7M9 16h7"/></svg></span>
+                  <span class="document-copy"><strong>{{ document.title }}</strong><small>{{ document.description }}</small><em>{{ document.audience }} · {{ document.pages }} · {{ document.updatedAt }}</em></span>
+                  <span class="document-open">阅读 <svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></span>
+                </button>
+              </div>
+              <div v-if="attachment" class="file-row"><div><small>当前会话附件</small><strong>{{ attachment.name }}</strong></div><button @click="attachment = null">移除</button></div>
+              <button class="secondary-action" @click="fileInput?.click()"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>上传自己的文件</button>
+            </template>
             <template v-else-if="activeOverlay === 'projects'"><small>会话项目</small><h2>智慧农场01</h2><p>当前项目包含 {{ conversations.length }} 个问农会话，已自动保存在本机浏览器。</p><button class="primary-action" @click="newConversation(); activeOverlay = null">新建项目会话</button></template>
             <template v-else-if="activeOverlay === 'filters'"><small>面板筛选</small><h2>选择数据中心</h2><div class="app-grid"><button v-for="item in [{m:'overview',n:'农场总览'},{m:'environment',n:'环境中心'},{m:'devices',n:'设备中心'},{m:'irrigation',n:'灌溉中心'},{m:'crops',n:'作物中心'},{m:'alerts',n:'告警中心'}]" :key="item.m" @click="ask(`打开${item.n}`); activeOverlay = null">{{ item.n }}</button></div></template>
             <template v-else><small>田言耕智</small><h2>全部应用</h2><div class="app-grid"><button @click="ask('分析今日农场状态'); activeOverlay = null">智能总览</button><button @click="ask('查看农场环境'); activeOverlay = null">环境监测</button><button @click="ask('查看设备状态'); activeOverlay = null">设备管理</button><button @click="ask('生成灌溉方案'); activeOverlay = null">智能灌溉</button><button @click="router.push('/workspaces/farm-01')">数字孪生</button><button @click="ask('查看全部告警'); activeOverlay = null">告警中心</button></div></template>
@@ -562,6 +631,10 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 .metric-grid article{position:relative;padding:10px 12px;overflow:hidden}.metric-grid article::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:linear-gradient(90deg,#5ca66f,transparent);transform:scaleX(0);transform-origin:left;animation:metric-in .8s .25s forwards}@keyframes metric-in{to{transform:scaleX(1)}}.ai-data-panel>footer{gap:12px}.ai-data-panel>footer .insight{display:flex;align-items:center;min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#526456}.insight>i{margin-right:6px;padding:2px 5px;border-radius:5px;background:#3d7d50;color:white;font-style:normal;font-size:7px}
 @media(max-width:1050px){.visual-dashboard{grid-template-columns:130px 1fr}.distribution-chart{display:none}.chatting .conversation{width:calc(100% - 80px)}}
 @media(max-width:700px){.visual-dashboard{grid-template-columns:1fr}.health-gauge{display:none}.visual-dashboard>section{height:132px}.chatting .conversation{width:100%;padding-right:0}.ai-data-panel>footer .insight{display:none}}
+
+/* 文件库：内置手册与站内阅读器 */
+.feature-card.library-card{width:min(760px,calc(100vw - 40px));max-height:calc(100vh - 48px);padding:30px;overflow:auto;background:#f8fbf6}.library-card>p{max-width:58ch}.built-in-documents{display:grid;gap:10px;margin:22px 0}.document-row{width:100%;display:grid;grid-template-columns:48px minmax(0,1fr) auto;align-items:center;gap:14px;padding:16px;border:1px solid #dce7da;border-radius:14px;background:#fff;color:#314538;text-align:left;cursor:pointer;box-shadow:0 5px 16px rgba(27,61,35,.05);transition:transform .25s cubic-bezier(.22,.8,.2,1),border-color .2s,box-shadow .25s}.document-row:hover,.document-row:focus-visible{transform:translateY(-2px);border-color:#a9c9ae;box-shadow:0 14px 30px rgba(27,61,35,.11);outline:0}.document-mark{width:46px;height:46px;display:grid;place-items:center;border-radius:12px;background:#e7f2e5;color:#39784c}.document-mark svg{width:23px;height:23px}.document-copy{min-width:0;display:flex;flex-direction:column}.document-copy strong{color:#24452f;font-size:14px}.document-copy small{margin-top:4px;color:#69786c;font-size:11px;line-height:1.55}.document-copy em{margin-top:8px;color:#829087;font-size:9px;font-style:normal}.document-open{display:flex;align-items:center;gap:4px;color:#36764a;font-size:11px;font-weight:700}.document-open svg{width:15px}.library-card .file-row{margin:18px 0 12px;border:1px solid #e0e7de;background:#f1f5ef}.library-card .file-row>div{display:flex;flex-direction:column;gap:3px}.library-card .file-row small{color:#819087;font-size:9px}.library-card .file-row strong{color:#33483a;font-size:12px}.secondary-action{display:flex;align-items:center;gap:7px;padding:10px 13px;border:1px solid #cfddce;border-radius:10px;background:#fff;color:#41644a;font-size:11px;font-weight:650;cursor:pointer}.secondary-action:hover{border-color:#9dbc9f;background:#f5faf3}.secondary-action svg{width:16px}.feature-overlay:has(.document-reader){padding:24px;background:rgba(5,28,17,.58)}
+@media(max-width:650px){.feature-card.library-card{width:calc(100vw - 24px);padding:22px 16px}.document-row{grid-template-columns:42px minmax(0,1fr);padding:13px}.document-mark{width:40px;height:40px}.document-open{grid-column:2}.feature-overlay:has(.document-reader){padding:0}}
 /* 与数据工作台统一：真实场景 + 农业绿液态玻璃 */
 .ask-farm{background:#173a2b}.sidebar{border-right:1px solid rgba(255,255,255,.68);background:linear-gradient(145deg,rgba(244,249,242,.94),rgba(224,235,224,.86));box-shadow:12px 0 44px rgba(7,32,19,.18);backdrop-filter:blur(32px) saturate(155%)}
 .sidebar::before{content:"";position:absolute;inset:0 0 auto;height:110px;background:linear-gradient(180deg,rgba(255,255,255,.48),transparent);pointer-events:none}.sidebar>*{position:relative}.new-chat{background:linear-gradient(145deg,#43845a,#236540);box-shadow:0 11px 28px rgba(18,77,42,.28),inset 0 1px rgba(255,255,255,.34)}.library-nav button:hover,.recent button:hover,.recent button.active{background:rgba(255,255,255,.48);box-shadow:inset 0 1px rgba(255,255,255,.7)}.sidebar-user{border:1px solid rgba(255,255,255,.7);background:rgba(255,255,255,.48);box-shadow:0 10px 24px rgba(33,66,40,.1);backdrop-filter:blur(18px)}

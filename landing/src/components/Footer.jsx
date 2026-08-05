@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { NAV_LINKS, PLATFORM_URL, ASSISTANT_URL, TWIN_URL } from '../links'
+import BrandLogo from './BrandLogo'
 
 const platformLinks = [
   { label: '数据工作台', href: PLATFORM_URL },
@@ -13,7 +14,7 @@ export default function Footer() {
       <div className="footer-shell">
         <div className="footer-grid">
           <section className="footer-brand">
-            <div className="footer-wordmark"><span aria-hidden="true">✦</span><strong>田言耕智</strong></div>
+            <div className="footer-wordmark"><BrandLogo /></div>
             <p>AI 原生智慧农业与数字孪生平台。不用寻找数据，直接询问数据；不必浏览报表，直接进入农场。</p>
             <a className="footer-cta" href={PLATFORM_URL}>进入智慧农场 <span>↗</span></a>
           </section>
