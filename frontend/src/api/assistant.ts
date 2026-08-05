@@ -12,6 +12,28 @@ export interface AssistantReply {
   model: string
 }
 
+export interface AssistantUserState {
+  workbenchesJson: string
+  conversationsJson: string
+  updatedAt?: string | null
+}
+
+async function stateRequest(options: RequestInit = {}): Promise<AssistantUserState> {
+  const response = await fetch('/api/assistant/state', {
+    ...options,
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${getToken()}`, ...(options.headers || {}) }
+  })
+  const payload = await response.json().catch(() => ({})) as AssistantUserState & { message?: string }
+  if (!response.ok) throw new Error(payload.message || `用户工作台同步失败（${response.status}）`)
+  return payload
+}
+
+export function fetchAssistantState() { return stateRequest() }
+
+export function saveAssistantState(workbenches: unknown, conversations: unknown) {
+  return stateRequest({ method: 'PUT', body: JSON.stringify({ workbenchesJson: JSON.stringify(workbenches), conversationsJson: JSON.stringify(conversations) }) })
+}
+
 export async function sendAssistantMessage(
   messages: ChatMessage[],
   context = '',

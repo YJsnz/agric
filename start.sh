@@ -26,6 +26,7 @@ usage() {
 
 可选环境变量：
   MYSQL_CONTAINER  MySQL 容器名，默认 mysql
+  SERVER_PORT       服务端口，默认 8081
   DB_URL            JDBC 地址
   DB_USERNAME       数据库用户名，默认 root
   DB_PASSWORD       数据库密码，默认 Root_123456
@@ -53,7 +54,8 @@ fi
 
 if ! docker inspect "$MYSQL_CONTAINER" >/dev/null 2>&1; then
   echo "错误：找不到 Docker 容器 '$MYSQL_CONTAINER'。" >&2
-  echo "请先创建 MySQL 容器，或通过 MYSQL_CONTAINER 指定容器名。" >&2
+  echo "首次部署请执行：chmod +x setup-mysql.sh && ./setup-mysql.sh" >&2
+  echo "已有其他容器时，可在 .env.local 中通过 MYSQL_CONTAINER 指定容器名。" >&2
   exit 1
 fi
 
@@ -90,7 +92,7 @@ fi
 export JWT_SECRET="${JWT_SECRET:-ty-local-demo-jwt-secret-not-for-production-2026}"
 
 echo
-echo "==> 启动完成后访问：http://localhost:8080/"
+echo "==> 启动完成后访问：http://localhost:${SERVER_PORT:-8081}/"
 echo "==> 按 Ctrl+C 停止服务"
 echo
 cd "$ROOT_DIR"

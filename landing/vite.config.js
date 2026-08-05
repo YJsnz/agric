@@ -20,7 +20,7 @@ export default {
   server: {
     port: 5174,
     // 开发环境把 /api 代理到本地后端，与生产同源部署保持一致
-    proxy: { '/api': 'http://localhost:8080' },
+    proxy: { '/api': 'http://localhost:8081' },
     fs: { allow: ['..'] }
   }
 }

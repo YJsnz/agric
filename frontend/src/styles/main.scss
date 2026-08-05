@@ -1,5 +1,8 @@
 @use './tokens';
 
+@tailwind components;
+@tailwind utilities;
+
 * { box-sizing: border-box; }
 
 html, body, #app { min-height: 100%; margin: 0; }

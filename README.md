@@ -20,6 +20,8 @@
 - `PATCH /api/farms/farm-01/irrigation/{unitId}`：控制灌溉并保存时长；
 - `POST /api/farms/farm-01/devices/{entityId}/self-test`：执行在线设备自检；
 - `PATCH /api/farms/farm-01/alerts/{alertId}/handle`：处理告警并持久化状态。
+- `GET /api/assistant/state`：读取当前登录用户独有的问农工作台与聊天记录；
+- `PUT /api/assistant/state`：保存当前用户的工作台布局和聊天记录，账号之间完全隔离。
 
 ## 已实现
 
@@ -63,9 +65,14 @@
 最后启动 Spring Boot：
 
 ```bash
-chmod +x start.sh   # 首次执行
+chmod +x setup-mysql.sh start.sh mvnw
+./setup-mysql.sh    # 首次部署只执行一次：自动创建 MySQL 8.4、数据库和持久化卷
 ./start.sh
 ```
+
+同学首次部署只需要安装并打开 Docker Desktop，然后在项目根目录复制执行上面三行。MySQL
+固定使用容器名 `mysql`、数据库 `tianyan`、端口 `3306`、数据卷 `tianyan-mysql-data`；项目首次启动时
+会自动建表和初始化演示数据，不需要导入 SQL。后续启动只执行 `./start.sh`。
 
 需要 AI 助手时，只需首次创建本机配置文件，之后无需每次 `export`：
 
@@ -77,7 +84,7 @@ cp .env.example .env.local
 
 `.env.local` 已被 Git 忽略，不会进入提交记录。
 
-启动后访问 `http://localhost:8080/`，按 `Ctrl+C` 停止。仅修改 Java 或已经手动构建前端时，
+启动后访问 `http://localhost:8081/`，按 `Ctrl+C` 停止。仅修改 Java 或已经手动构建前端时，
 可快速启动：
 
 ```bash
@@ -167,3 +174,4 @@ Three.js 会按模型包围盒自动归一化尺寸并落到地面，因此后�
 大棚内部以及其他专业业务页面仍由团队其他模块接入。本模块对外共享的核心状态位于 `frontend/src/stores/workspace.ts`，AI 助手实现集中在 `FarmAiAssistant.vue` 与后端 `assistant` 包中，方便后续独立维护。
 
 团队成员首次参与开发前，请阅读 [Git 团队协作手册（Windows）](docs/Git团队协作手册_Windows.md)。
+Windows 团队成员可按照 [Windows + Docker Desktop 部署手册](docs/Windows_DockerDesktop部署手册.md) 创建与开发机一致的 MySQL 8.4 容器并一键启动。

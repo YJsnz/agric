@@ -4,10 +4,14 @@ import { useRouter } from 'vue-router'
 import BrandLogo from '@/components/BrandLogo.vue'
 import UserMenu from '@/components/workspace/UserMenu.vue'
 import ProgressBar from '@/components/ui/ProgressBar.vue'
+import PersonalizedWorkbench from '@/components/assistant/PersonalizedWorkbench.vue'
+import { useAssistantWorkbenches } from '@/composables/useAssistantWorkbenches'
 import { getUser } from '@/api/auth'
-import { sendAssistantMessage, type ChatMessage } from '@/api/assistant'
+import { fetchAssistantState, saveAssistantState, sendAssistantMessage, type ChatMessage } from '@/api/assistant'
 import { alerts, dashboardSummary, deviceRecords, environmentMetrics, farmZones, irrigationUnits, sceneEntities } from '@/data/farm'
 import type { SceneEntity } from '@/types'
+import type { AssistantWorkbench, WorkbenchWidgetType } from '@/types/workbench'
+import xiaotianAvatar from '@/assets/xiaotian-avatar.png'
 
 interface Conversation {
   id: number
@@ -36,17 +40,33 @@ const activeOverlay = ref<'files' | 'projects' | 'filters' | 'apps' | null>(null
 const attachment = ref<{ name: string; content: string } | null>(null)
 const demoRunning = ref(false)
 const recording = ref(false)
+const chatExpanded = ref(false)
+const showWorkbench = ref(false)
+const workbenchShelfOpen = ref(false)
+const openLibraryOnCreate = ref(false)
+const pendingDeleteWorkbenchId = ref<string | null>(null)
 const fileInput = ref<HTMLInputElement>()
+const workbenchFileInput = ref<HTMLInputElement>()
+const stateHydrated = ref(false)
+const stateSyncing = ref(false)
+const stateSyncError = ref('')
+let stateSyncTimer: number | undefined
+let deleteConfirmTimer: number | undefined
 const conversations = ref<Conversation[]>([
-  { id: 1, title: '新的问农会话', time: '刚刚', messages: [] },
-  { id: 2, title: '分析今日农场状态', time: '10:23', messages: [] },
-  { id: 3, title: '查看 2 号温室异常原因', time: '09:48', messages: [] },
-  { id: 4, title: '生成灌溉建议方案', time: '昨天', messages: [] },
-  { id: 5, title: '对比 1 号和 2 号温室', time: '昨天', messages: [] }
+  { id: 1, title: '新的问农会话', time: '刚刚', messages: [] }
 ])
 const quickQuestions = ['分析今日状态', '查看异常地块', '生成灌溉方案', '对比温室数据']
 const activeConversation = computed(() => conversations.value.find(item => item.id === activeId.value) || conversations.value[0])
 const messages = computed(() => activeConversation.value?.messages || [])
+const workbenchActive = computed(() => showWorkbench.value || messages.value.length > 0)
+const visibleMessages = computed(() => chatExpanded.value ? messages.value : messages.value.slice(-2))
+const assistantContextSummary = computed(() => `${activeWorkbench.value?.name || '当前工作台'} · ${activeWorkbench.value?.widgets.length || 0} 个组件${panelEntity.value ? ` · ${panelEntity.value.name}` : ''}`)
+const contextUsage = computed(() => {
+  const characters = messages.value.reduce((total, message) => total + message.content.length, 0) + buildAssistantContext().length
+  const used = Math.max(.1, characters / 3.5 / 1000)
+  return `${used.toFixed(1)}K / 64K 上下文`
+})
+const { workbenches, activeWorkbench, replaceWorkbenches, selectWorkbench, createWorkbench, createRoutineWorkbench, renameActiveWorkbench, addWidget, ensureWidget, removeWidget, updateWidget, moveWidget, duplicateActiveWorkbench, deleteWorkbench, clearActiveWorkbench, toggleActivePinned, importWorkbench } = useAssistantWorkbenches()
 const filteredConversations = computed(() => conversations.value.filter(item => item.title.toLowerCase().includes(searchQuery.value.trim().toLowerCase())))
 const panelZone = computed(() => farmZones.find(zone => zone.entityId === panelEntity.value?.id))
 const panelMetrics = computed(() => {
@@ -110,8 +130,79 @@ function newConversation() {
   loading.value = false
   panelEntity.value = null
   panelMode.value = null
+  showWorkbench.value = false
   sidebarOpen.value = false
   nextTick(() => inputRef.value?.focus())
+}
+
+function toggleWorkbenchShelf() {
+  workbenchShelfOpen.value = !workbenchShelfOpen.value
+}
+
+async function createCustomWorkbench() {
+  const count = workbenches.value.length + 1
+  createWorkbench(`我的工作台 ${count}`)
+  showWorkbench.value = true
+  workbenchShelfOpen.value = true
+  openLibraryOnCreate.value = true
+  chatExpanded.value = false
+  await nextTick()
+  openLibraryOnCreate.value = false
+}
+
+function openWorkbench(id: string) {
+  selectWorkbench(id)
+  showWorkbench.value = true
+}
+
+function removeWorkbench(id: string) {
+  const target = workbenches.value.find(item => item.id === id)
+  if (!target) return
+  deleteWorkbench(id)
+  pendingDeleteWorkbenchId.value = null
+  if (!workbenches.value.length) {
+    showWorkbench.value = false
+    chatExpanded.value = false
+  }
+}
+
+function requestWorkbenchDelete(id: string) {
+  window.clearTimeout(deleteConfirmTimer)
+  if (pendingDeleteWorkbenchId.value === id) return removeWorkbench(id)
+  pendingDeleteWorkbenchId.value = id
+  deleteConfirmTimer = window.setTimeout(() => { pendingDeleteWorkbenchId.value = null }, 3500)
+}
+
+function removeActiveWorkbench() {
+  if (activeWorkbench.value) removeWorkbench(activeWorkbench.value.id)
+}
+
+function appendPanelWidget(mode: PanelMode | null, entity: SceneEntity | null) {
+  if (entity) {
+    ensureWidget('greenhouse', { title: entity.name, entityIds: [entity.id], size: 'small' })
+    return
+  }
+  const widgetTypes: Partial<Record<PanelMode, WorkbenchWidgetType>> = {
+    overview: 'summary', environment: 'environment', devices: 'devices', irrigation: 'irrigation', alerts: 'alerts', crops: 'greenhouse'
+  }
+  const type = mode ? widgetTypes[mode] : undefined
+  if (type) ensureWidget(type)
+}
+
+function prepareRoutineWorkbench(content: string) {
+  const asksAllGreenhouses = /(?:0?1|一).*(?:0?6|六).*(?:大棚|温室)|(?:大棚|温室).*(?:0?1|一).*(?:0?6|六)/.test(content)
+  const recurring = /每天|每日|例行|固定|常用|巡检/.test(content)
+  if (!asksAllGreenhouses || !/灌溉|用水|水分|阀门/.test(content)) return false
+  createRoutineWorkbench(recurring ? '每日灌溉巡检' : '六棚灌溉对比', [
+    { type: 'irrigation', options: { title: '01—06号大棚灌溉状态', size: 'wide' } },
+    { type: 'metric', options: { title: '今日用水', metricKey: 'todayWaterUsage', size: 'small', accent: 'blue' } },
+    { type: 'metric', options: { title: '平均土壤湿度', metricKey: 'soilMoisture', size: 'small', threshold: 40 } },
+    { type: 'irrigation-schedule', options: { title: '今日灌溉计划' } },
+    { type: 'ai-insight', options: { title: 'AI 灌溉洞察' } }
+  ])
+  panelMode.value = 'irrigation'
+  panelEntity.value = null
+  return true
 }
 
 function selectConversation(id: number) {
@@ -137,14 +228,17 @@ async function scrollToBottom() {
 async function ask(question?: string) {
   const content = (question || input.value).trim()
   if (!content || loading.value || !activeConversation.value) return
+  showWorkbench.value = true
   input.value = ''
-  const matchedEntity = resolveEntity(content)
+  const routinePrepared = prepareRoutineWorkbench(content)
+  const matchedEntity = routinePrepared ? null : resolveEntity(content)
   if (matchedEntity) { panelEntity.value = matchedEntity; panelMode.value = 'entity' }
   else {
     const resolvedMode = resolvePanelMode(content)
     if (resolvedMode) { panelMode.value = resolvedMode; panelEntity.value = null }
     else panelMode.value = panelMode.value || 'overview'
   }
+  if (!routinePrepared && /创建|打开|查看|生成|对比|面板|工作台|灌溉|环境|设备|告警/.test(content)) appendPanelWidget(panelMode.value, panelEntity.value)
   const conversation = activeConversation.value
   conversation.panelMode = panelMode.value
   conversation.panelEntityId = panelEntity.value?.id || null
@@ -217,6 +311,20 @@ async function onFileSelected(event: Event) {
   await nextTick(() => inputRef.value?.focus())
 }
 
+async function onWorkbenchImported(event: Event) {
+  const inputElement = event.target as HTMLInputElement
+  const file = inputElement.files?.[0]
+  if (!file) return
+  try {
+    importWorkbench(JSON.parse(await file.text()))
+    showWorkbench.value = true
+  } catch (error) {
+    window.alert(error instanceof Error ? error.message : '工作台导入失败')
+  } finally {
+    inputElement.value = ''
+  }
+}
+
 function startVoice() {
   const SpeechRecognition = (window as unknown as { SpeechRecognition?: new () => any; webkitSpeechRecognition?: new () => any }).SpeechRecognition || (window as unknown as { webkitSpeechRecognition?: new () => any }).webkitSpeechRecognition
   if (!SpeechRecognition) { window.alert('当前浏览器不支持语音识别，请使用 Chrome 或 Edge'); return }
@@ -250,18 +358,38 @@ function onKeydown(event: KeyboardEvent) {
   }
 }
 
-watch(conversations, value => localStorage.setItem('ty_assistant_conversations', JSON.stringify(value.slice(0, 30))), { deep: true })
-onMounted(() => {
+function scheduleStateSync() {
+  if (!stateHydrated.value) return
+  window.clearTimeout(stateSyncTimer)
+  stateSyncTimer = window.setTimeout(async () => {
+    stateSyncing.value = true
+    stateSyncError.value = ''
+    try { await saveAssistantState(workbenches.value, conversations.value.slice(0, 30)) }
+    catch (error) { stateSyncError.value = error instanceof Error ? error.message : '同步失败' }
+    finally { stateSyncing.value = false }
+  }, 650)
+}
+
+watch([workbenches, conversations], scheduleStateSync, { deep: true })
+onMounted(async () => {
   try {
-    const saved = JSON.parse(localStorage.getItem('ty_assistant_conversations') || 'null') as Conversation[] | null
-    if (saved?.length) { conversations.value = saved; activeId.value = saved[0].id }
-  } catch { /* ignore damaged local cache */ }
+    const state = await fetchAssistantState()
+    const savedWorkbenches = JSON.parse(state.workbenchesJson || '[]') as AssistantWorkbench[]
+    const savedConversations = JSON.parse(state.conversationsJson || '[]') as Conversation[]
+    if (state.updatedAt || savedWorkbenches.length) replaceWorkbenches(savedWorkbenches)
+    if (savedConversations.length) { conversations.value = savedConversations; activeId.value = savedConversations[0].id }
+  } catch (error) {
+    stateSyncError.value = error instanceof Error ? error.message : '用户数据加载失败'
+  } finally {
+    stateHydrated.value = true
+    scheduleStateSync()
+  }
 })
-onBeforeUnmount(() => controller.value?.abort())
+onBeforeUnmount(() => { controller.value?.abort(); window.clearTimeout(stateSyncTimer); window.clearTimeout(deleteConfirmTimer) })
 </script>
 
 <template>
-  <main class="ask-farm" :class="{ chatting: messages.length }">
+  <main class="ask-farm" :class="{ chatting: workbenchActive }">
     <button class="mobile-menu" aria-label="打开会话列表" @click="sidebarOpen = true">
       <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -304,8 +432,8 @@ onBeforeUnmount(() => controller.value?.abort())
         <UserMenu />
       </header>
 
-      <div v-if="!messages.length" class="welcome">
-        <span class="sprout">✦</span>
+      <Transition name="workspace-swap" mode="out-in">
+      <div v-if="!workbenchActive" key="welcome" class="welcome">
         <h1>{{ greeting }}，{{ user?.name || '农场管理者' }} <em>🌱</em></h1>
         <p>我是田言耕智智能助手，随时为您提供农场数据分析和管理建议</p>
         <div class="composer welcome-composer">
@@ -322,76 +450,59 @@ onBeforeUnmount(() => controller.value?.abort())
         </div>
       </div>
 
-      <section v-else class="conversation">
-        <header><small>当前会话</small><h1>{{ activeConversation.title }}</h1></header>
-        <Transition name="data-panel">
-          <section v-if="panelMode" class="ai-data-panel">
-            <header>
-              <div><small>AI 已调取实时面板</small><h2>{{ panelTitle }}</h2></div>
-              <span><i></i> 数据已同步</span>
-            </header>
-            <div class="visual-dashboard">
-              <section class="health-gauge">
-                <svg viewBox="0 0 120 120" aria-label="综合健康度">
-                  <circle class="gauge-track" cx="60" cy="60" r="45" />
-                  <circle class="gauge-value" cx="60" cy="60" r="45" :style="{ '--gauge': panelHealth }" />
-                </svg>
-                <div><strong>{{ panelHealth }}</strong><small>综合健康度</small></div>
-                <span :class="{ warning: panelHealth < 85 }">{{ panelHealth >= 90 ? '运行优秀' : panelHealth >= 80 ? '状态良好' : '需要关注' }}</span>
-              </section>
-              <section class="trend-chart">
-                <header><div><small>12 小时趋势</small><strong>{{ panelMetrics[1]?.value || '稳定' }}</strong></div><span>实时</span></header>
-                <svg viewBox="0 0 264 96" preserveAspectRatio="none" aria-label="指标趋势图">
-                  <defs><linearGradient id="trendFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#63a878" stop-opacity=".36"/><stop offset="1" stop-color="#63a878" stop-opacity="0"/></linearGradient></defs>
-                  <path class="chart-grid" d="M0 24H264M0 48H264M0 72H264" />
-                  <polygon class="trend-area" :points="`0,96 ${trendPoints} 264,96`" />
-                  <polyline class="trend-line" :points="trendPoints" />
-                  <circle class="trend-pulse" :cx="(panelTrend.length - 1) * 24" :cy="92 - panelTrend[panelTrend.length - 1] * .72" r="4" />
-                </svg>
-                <footer><span>06:00</span><span>12:00</span><span>现在</span></footer>
-              </section>
-              <section class="distribution-chart">
-                <header><small>指标分布</small><strong>实时构成</strong></header>
-                <div class="bar-list">
-                  <div v-for="bar in panelBars" :key="bar.label"><span>{{ bar.label }}</span><i><b :style="{ '--bar': `${bar.value}%` }"></b></i><em>{{ bar.value }}</em></div>
-                </div>
-                <div class="living-visual" aria-hidden="true"><i></i><i></i><i></i><span></span></div>
-              </section>
-            </div>
-            <div class="metric-grid">
-              <article v-for="item in panelMetrics" :key="item.label" :class="item.tone">
-                <small>{{ item.label }}</small><strong>{{ item.value }}</strong>
-              </article>
-            </div>
-            <footer>
-              <span class="insight"><i>AI</i>{{ panelInsight }}</span>
-              <span>{{ panelZone?.area || '智慧农场实时数据' }}</span>
-              <span>{{ panelZone?.environment || '数据已聚合分析' }}</span>
-              <button @click="router.push('/workspaces/farm-01')">在数据工作台查看 →</button>
-            </footer>
-          </section>
-        </Transition>
-        <div ref="listRef" class="message-list">
-          <article v-for="(message, index) in messages" :key="index" :class="message.role">
-            <span v-if="message.role === 'assistant'" class="bot-avatar">田</span>
+      <section v-else key="workbench" class="conversation personalized-conversation">
+        <PersonalizedWorkbench
+          v-if="activeWorkbench"
+          :key="activeWorkbench.id"
+          :workbench="activeWorkbench"
+          :initial-library-open="openLibraryOnCreate"
+          @add="addWidget"
+          @remove="removeWidget"
+          @update="updateWidget"
+          @move="moveWidget"
+          @rename="renameActiveWorkbench"
+          @duplicate="duplicateActiveWorkbench"
+          @delete="removeActiveWorkbench"
+          @clear="clearActiveWorkbench"
+          @toggle-pin="toggleActivePinned"
+        />
+        <section class="compact-chat" :class="{ expanded: chatExpanded }">
+          <header class="chat-dock-head"><button class="chat-toggle" @click="chatExpanded = !chatExpanded"><img class="bot-orb" :src="xiaotianAvatar" alt="小田助手头像" /><div><strong>小田助手</strong><small>{{ assistantContextSummary }}</small></div></button><div class="sync-state" :class="{ error: stateSyncError }"><i></i>{{ stateSyncing ? '正在同步' : stateSyncError || '已保存到个人云端' }}</div><button class="expand-chat" @click="chatExpanded = !chatExpanded"><svg viewBox="0 0 24 24"><path :d="chatExpanded ? 'm7 14 5-5 5 5' : 'm7 10 5 5 5-5'"/></svg></button></header>
+          <div ref="listRef" class="message-list">
+          <article v-for="(message, index) in visibleMessages" :key="index" :class="message.role">
+            <img v-if="message.role === 'assistant'" class="bot-avatar" :src="xiaotianAvatar" alt="小田助手头像" />
             <div><small>{{ message.role === 'assistant' ? '小田助手' : (user?.name || '我') }}</small><p>{{ message.content }}</p></div>
           </article>
-          <article v-if="loading" class="assistant progress-message"><span class="bot-avatar">田</span><div><ProgressBar :value="null" label="小田正在分析农场数据" pending-label="生成回答" /></div></article>
-        </div>
-        <div class="composer conversation-composer">
-          <textarea ref="inputRef" v-model="input" rows="1" maxlength="1200" placeholder="继续询问农场问题……" @keydown="onKeydown"></textarea>
-          <div class="composer-tools"><button class="mini-tool" @click="fileInput?.click()">＋ 文件</button><button class="mini-tool" :class="{ recording }" @click="startVoice">语音</button><span>Enter 发送 · Shift + Enter 换行</span><button class="send" :disabled="!input.trim() || loading" aria-label="发送" @click="ask()"><svg viewBox="0 0 24 24"><path d="m4 12 16-8-6 16-2.5-6.5L4 12Zm7.5 1.5L20 4"/></svg></button></div>
-        </div>
+          <article v-if="loading" class="assistant progress-message"><img class="bot-avatar" :src="xiaotianAvatar" alt="小田助手头像" /><div><ProgressBar :value="null" label="小田正在分析农场数据" pending-label="生成回答" /></div></article>
+          </div>
+          <div class="conversation-composer">
+            <div v-if="attachment" class="context-strip"><span><i>附件</i>{{ attachment.name }}<button @click="attachment = null">×</button></span></div>
+            <textarea ref="inputRef" v-model="input" rows="1" maxlength="1200" placeholder="询问数据、调整面板或控制农场设备……" @keydown="onKeydown"></textarea>
+            <footer class="composer-tools"><div><span class="context-meter" title="当前会话估算用量">{{ contextUsage }}</span><button class="composer-tool" title="添加附件" @click="fileInput?.click()"><svg viewBox="0 0 24 24"><path d="m9 12 5-5a3 3 0 0 1 4 4l-7 7a5 5 0 0 1-7-7l7-7"/></svg><span>附件</span></button><button class="composer-tool" :class="{ recording }" title="语音输入" @click="startVoice"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><span>{{ recording ? '聆听中' : '语音' }}</span></button></div><span class="model-chip">DeepSeek · 农业智能体</span><button class="send send-rich" :disabled="!input.trim() || loading" aria-label="发送" @click="ask()"><svg viewBox="0 0 24 24"><path d="m5 12 14-7-5 14-2.5-5.5L5 12Zm6.5 1.5L19 5"/></svg></button></footer>
+          </div>
+        </section>
       </section>
+      </Transition>
 
-      <footer class="action-dock" :class="{ compact: messages.length }">
-        <button @click="ask('创建今日农场总览面板')"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>新建面板</span></button>
-        <button @click="activeOverlay = 'filters'"><svg viewBox="0 0 24 24"><path d="M4 5h16M7 12h10M10 19h4"/></svg><span>筛选条件</span></button>
-        <button @click="exportSnapshot"><svg viewBox="0 0 24 24"><path d="M4 8h4l2-3h4l2 3h4v11H4z"/><circle cx="12" cy="13" r="3"/></svg><span>快照</span></button>
+      <footer class="action-dock" :class="{ compact: workbenchActive }">
+        <button :class="{ active: workbenchShelfOpen }" @click="toggleWorkbenchShelf"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>自定义面板</span></button>
+        <button @click="workbenchFileInput?.click()"><svg viewBox="0 0 24 24"><path d="M12 3v13M7 11l5 5 5-5M5 20h14"/></svg><span>导入面板</span></button>
         <button :class="{ active: demoRunning }" @click="runDemo"><svg viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z"/></svg><span>演示模式</span></button>
         <button @click="activeOverlay = 'apps'"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><rect x="14" y="14" width="6" height="6"/></svg><span>全部应用</span></button>
       </footer>
+      <Transition name="shelf">
+        <nav v-if="workbenchShelfOpen" class="saved-workbenches" aria-label="自定义面板">
+          <button class="shelf-add" title="新建面板" aria-label="新建面板" @click="createCustomWorkbench">＋</button>
+          <small>我的面板</small>
+          <span v-if="!workbenches.length" class="shelf-empty">还没有面板</span>
+          <div v-for="item in workbenches" :key="item.id" class="shelf-item" :class="{ active: activeWorkbench?.id === item.id && workbenchActive }">
+            <button class="shelf-open" @click="openWorkbench(item.id)"><span>{{ item.icon }}</span><b>{{ item.name }}</b></button>
+            <button class="shelf-delete" :class="{ confirming: pendingDeleteWorkbenchId === item.id }" :aria-label="pendingDeleteWorkbenchId === item.id ? `确认删除${item.name}` : `删除${item.name}`" :title="pendingDeleteWorkbenchId === item.id ? '再次点击确认删除' : '删除面板'" @click="requestWorkbenchDelete(item.id)">{{ pendingDeleteWorkbenchId === item.id ? '确认' : '×' }}</button>
+          </div>
+        </nav>
+      </Transition>
       <input ref="fileInput" class="sr-only" type="file" accept=".txt,.md,.csv,.json" @change="onFileSelected" />
+      <input ref="workbenchFileInput" class="sr-only" type="file" accept=".json" @change="onWorkbenchImported" />
 
       <Transition name="overlay">
         <div v-if="activeOverlay" class="feature-overlay" @click.self="activeOverlay = null">
@@ -465,4 +576,48 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 .progress-message>div{width:min(360px,72%);padding:12px 14px;border:1px solid rgba(255,255,255,.68);border-radius:4px 16px 16px 16px;background:rgba(245,250,243,.9);box-shadow:0 12px 32px rgba(6,30,17,.16);backdrop-filter:blur(20px)}
 /* 问农保留原始明亮航拍背景，组件材质继续与数据工作台一致。 */
 .ask-farm{background:#edf0e9}.workspace{background:linear-gradient(180deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.78) 38%,rgba(239,245,235,.42) 100%),url('/platform/assets/farm-aerial.png') center/cover}.workspace::before{background:linear-gradient(180deg,rgba(255,255,255,.2),rgba(242,247,239,.06));backdrop-filter:blur(2px)}
+/* 个性化工作台：画布优先，对话收敛为可展开的最近一轮。 */
+.chatting .personalized-conversation{width:min(1320px,calc(100% - 105px));padding:0 70px 92px 0}.compact-chat{flex:none;margin:0 24px;padding:7px 9px;border:1px solid rgba(255,255,255,.75);border-radius:17px;background:linear-gradient(145deg,rgba(250,252,248,.94),rgba(228,238,226,.88));box-shadow:0 13px 34px rgba(25,58,31,.13);backdrop-filter:blur(24px);transition:.3s}.compact-chat.expanded{position:absolute;z-index:35;left:24px;right:92px;bottom:92px;max-height:62vh;display:flex;flex-direction:column;box-shadow:0 28px 80px rgba(20,48,26,.28)}.chat-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;padding:4px 7px;border:0;background:transparent;color:#31533a;cursor:pointer}.chat-toggle span{font-size:11px;font-weight:700}.chat-toggle small{color:#7d897b;font-size:9px}.compact-chat .message-list{max-height:94px;padding:4px 7px;overflow:auto}.compact-chat.expanded .message-list{max-height:none;flex:1;padding:12px}.compact-chat .message-list article{margin:4px 0;align-items:center}.compact-chat .message-list article>div{max-width:84%;display:flex;flex-direction:row;align-items:center!important;gap:7px}.compact-chat .message-list article.user>div{flex-direction:row-reverse}.compact-chat .message-list p{max-width:760px;padding:6px 10px;border-radius:10px;font-size:11px;line-height:1.45;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.compact-chat.expanded .message-list article>div{display:flex;flex-direction:column;align-items:flex-start!important}.compact-chat.expanded .message-list article.user>div{align-items:flex-end!important}.compact-chat.expanded .message-list p{font-size:13px;line-height:1.7;white-space:pre-wrap}.compact-chat .bot-avatar{width:24px;height:24px;border-radius:8px}.compact-chat .conversation-composer{margin:5px 0 0;padding:7px 9px}.compact-chat .conversation-composer textarea{height:24px;font-size:12px;line-height:24px}.compact-chat .composer-tools{display:none}.compact-chat.expanded .composer-tools{display:flex}.action-dock.compact{max-height:82vh;overflow:auto}.action-dock .dock-letter{width:20px;height:20px;display:grid;place-items:center;border-radius:7px;background:rgba(64,126,80,.12);color:#2d7244;font-size:10px;font-weight:800}.action-dock.compact button.active{border-radius:14px;background:rgba(48,119,70,.14);color:#1f6638}@media(max-width:900px){.chatting .personalized-conversation{width:100%;padding-right:62px}.compact-chat{margin:0 10px}.compact-chat.expanded{left:10px;right:72px}}@media(max-width:650px){.chatting .personalized-conversation{padding-right:0}.compact-chat{margin:0 10px}.compact-chat.expanded{left:5px;right:5px;bottom:82px}.compact-chat .message-list article>div{max-width:76%}.action-dock.compact{max-width:calc(100vw - 16px);overflow-x:auto;overflow-y:hidden}}
+/* Assistant liquid-glass shell and richer composer. */
+.ask-farm{font-family:var(--font-sans);letter-spacing:-.08px}.sidebar{border-right:1px solid rgba(255,255,255,.78);background:linear-gradient(145deg,rgba(250,253,248,.69),rgba(218,233,219,.46));box-shadow:18px 0 60px rgba(16,51,27,.16),inset -1px 0 rgba(255,255,255,.7);backdrop-filter:blur(38px) saturate(165%)}.sidebar::after{content:"";position:absolute;left:10%;right:10%;top:-55px;height:170px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.78),transparent 70%);pointer-events:none}.new-chat,.sidebar-user,.recent button.active{border:1px solid rgba(255,255,255,.68);box-shadow:0 10px 28px rgba(27,73,39,.13),inset 0 1px rgba(255,255,255,.75)}.library-nav button,.recent button{transition:background .26s,transform .26s,box-shadow .26s}.library-nav button:hover,.recent button:hover{transform:translateX(3px)}.compact-chat{padding:0;border:1px solid rgba(255,255,255,.82);border-radius:22px;background:linear-gradient(145deg,rgba(253,255,251,.78),rgba(221,235,222,.64));box-shadow:0 22px 60px rgba(16,51,26,.2),inset 0 1px rgba(255,255,255,.95);backdrop-filter:blur(36px) saturate(165%);overflow:hidden;transition:max-height .46s cubic-bezier(.2,.8,.2,1),transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .35s}.chat-dock-head{display:flex;align-items:center;padding:9px 12px;border-bottom:1px solid rgba(67,102,72,.08)}.chat-toggle{width:auto;flex:1;justify-content:flex-start;gap:9px;text-align:left}.chat-toggle>div{display:flex;flex-direction:column}.chat-toggle strong{color:#2b5035;font-size:11px}.chat-toggle small{margin-top:1px;color:#829084;font-size:8px}.bot-orb{width:27px;height:27px;display:grid;place-items:center;border-radius:9px;background:linear-gradient(145deg,#4d9b63,#286b43);color:white;font-size:9px;font-weight:750;box-shadow:0 6px 15px rgba(35,111,61,.25)}.sync-state{display:flex;align-items:center;gap:5px;color:#708073;font-size:8px}.sync-state i{width:6px;height:6px;border-radius:50%;background:#56a86b;box-shadow:0 0 0 3px rgba(86,168,107,.12)}.sync-state.error{color:#b55e50}.sync-state.error i{background:#ce6b59}.expand-chat{width:28px;height:28px;display:grid;place-items:center;margin-left:8px;border:0;border-radius:9px;background:rgba(255,255,255,.45);color:#56705c;cursor:pointer;transition:.25s}.expand-chat:hover{background:#fff;transform:translateY(-2px)}.expand-chat svg{width:15px}.compact-chat .conversation-composer{margin:6px 9px 9px;padding:8px 10px;border:1px solid rgba(255,255,255,.85);border-radius:16px;background:rgba(255,255,255,.62);box-shadow:inset 0 1px rgba(255,255,255,.9),0 7px 20px rgba(25,60,33,.07);transition:border-color .25s,box-shadow .25s}.compact-chat .conversation-composer:focus-within{border-color:rgba(71,142,89,.42);box-shadow:0 0 0 4px rgba(71,142,89,.08),0 12px 28px rgba(25,60,33,.1)}.compact-chat .conversation-composer textarea{height:auto;min-height:27px;max-height:90px;padding:2px 3px;color:#294332;font-size:11px;line-height:1.6}.compact-chat .composer-tools{display:flex!important;margin-top:6px}.compact-chat .composer-tools>div{display:flex;gap:4px}.composer-tool{height:28px;display:flex;align-items:center;gap:4px;padding:0 7px;border:0;border-radius:8px;background:transparent;color:#738078;font-size:8px;cursor:pointer;transition:.22s}.composer-tool svg{width:13px}.composer-tool:hover,.composer-tool.active{background:rgba(70,139,87,.1);color:#397d4c}.composer-tool.recording{color:#c85d51}.model-chip{margin-left:auto!important;padding:4px 7px;border-radius:8px;background:rgba(74,137,88,.07);color:#66806d!important;font-size:7px}.send-rich{width:30px;height:30px;margin-left:7px}.context-strip{display:flex;gap:5px;margin-bottom:5px}.context-strip>span{display:flex;align-items:center;gap:5px;padding:4px 6px;border:1px solid rgba(65,125,80,.12);border-radius:8px;background:rgba(228,241,228,.72);color:#597060;font-size:8px}.context-strip i{color:#367b49;font-style:normal;font-weight:700}.context-strip button{border:0;background:transparent;color:#839087;cursor:pointer}.compact-chat .message-list{transition:max-height .4s cubic-bezier(.2,.8,.2,1)}.compact-chat .message-list article{animation:message-in .38s cubic-bezier(.2,.8,.2,1)}@keyframes message-in{from{opacity:0;transform:translateY(8px) scale(.985);filter:blur(3px)}}.compact-chat .message-list p{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.58);box-shadow:0 5px 16px rgba(29,65,37,.07);backdrop-filter:blur(12px)}.compact-chat .message-list .user p{background:linear-gradient(145deg,rgba(67,139,87,.92),rgba(36,104,62,.94))}.workbench-head h2,.welcome h1{font-family:var(--font-display);font-weight:720;letter-spacing:-.6px}
+@media(max-width:650px){.sync-state,.model-chip,.composer-tool span{display:none}.compact-chat .conversation-composer{margin:5px}.sidebar{backdrop-filter:blur(28px) saturate(150%)}}
+/* 2026 workbench readability pass: roomier cards, a true glass dock and a borderless composer. */
+.welcome{padding-top:6px}.welcome h1{margin-top:0}
+.chatting .personalized-conversation{width:min(1460px,calc(100% - 48px));padding:0 0 154px}
+.compact-chat{margin:8px 10px 0;border-radius:24px}
+.compact-chat.expanded{left:28px;right:28px;bottom:112px}
+.chat-dock-head{padding:11px 15px}.chat-toggle strong{font-size:13px}.chat-toggle small{font-size:10px}
+.bot-orb,.bot-avatar{object-fit:cover;object-position:center;background:#dfeee0}
+.bot-orb{width:34px;height:34px;border:1px solid rgba(255,255,255,.86);border-radius:11px;box-shadow:0 7px 18px rgba(35,92,52,.2)}
+.compact-chat .bot-avatar{width:30px;height:30px;border:1px solid rgba(255,255,255,.86);border-radius:10px}
+.compact-chat .message-list{max-height:112px;padding:7px 12px}.compact-chat .message-list p{max-width:920px;padding:8px 12px;font-size:13px}
+.compact-chat .message-list small{font-size:10px}
+.compact-chat .conversation-composer,.compact-chat .conversation-composer:focus-within{margin:0;padding:10px 14px 11px;border:0;border-top:1px solid rgba(67,102,72,.1);border-radius:0;background:transparent;box-shadow:none}
+.compact-chat .conversation-composer textarea{display:block;width:100%;min-height:30px;padding:3px 1px;border:0!important;border-radius:0;outline:0;resize:none;background:transparent!important;box-shadow:none!important;color:#294332;font:500 13px/1.65 var(--font-sans);appearance:none}
+.compact-chat .conversation-composer textarea:focus{outline:0;box-shadow:none}.compact-chat .composer-tools{margin-top:7px}
+.composer-tool{height:31px;padding:0 9px;font-size:10px}.composer-tool svg{width:15px}.model-chip{padding:5px 9px;font-size:9px}.send-rich{width:34px;height:34px}
+.context-meter{display:inline-flex;align-items:center;height:31px;padding:0 9px;border-radius:9px;background:rgba(69,132,85,.08);color:#55705d;font-size:10px;font-weight:650;white-space:nowrap}
+.action-dock,.action-dock.compact{z-index:32;left:50%;right:auto;bottom:20px;max-height:none;transform:translateX(-50%);flex-direction:row;gap:5px;padding:8px 10px;border:1px solid rgba(255,255,255,.72);border-radius:28px;background:linear-gradient(135deg,rgba(246,253,246,.54),rgba(178,211,188,.32));box-shadow:0 26px 70px rgba(8,37,20,.32),inset 0 1px 1px rgba(255,255,255,.96),inset 0 -14px 28px rgba(50,101,65,.08);backdrop-filter:blur(42px) saturate(210%);overflow:visible}
+.action-dock::before{content:"";position:absolute;left:13px;right:13px;top:3px;height:46%;border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,.42),transparent);pointer-events:none}
+.action-dock button,.action-dock.compact button{position:relative;min-width:92px;height:58px;padding:6px 12px;justify-content:center;gap:4px;border-radius:19px;font-size:11px;font-weight:650;transition:transform .3s cubic-bezier(.2,.8,.2,1),background .25s,color .25s}
+.action-dock button span{font-size:11px}.action-dock button:hover,.action-dock.compact button:hover{transform:translateY(-3px);background:rgba(255,255,255,.4)}
+.action-dock button.active{background:rgba(67,135,85,.18);box-shadow:inset 0 1px rgba(255,255,255,.58)}
+.saved-workbenches{position:absolute;z-index:31;left:28px;bottom:28px;max-width:calc(50% - 250px);display:flex;align-items:center;gap:5px;padding:7px;border:1px solid rgba(255,255,255,.68);border-radius:18px;background:rgba(232,244,232,.5);box-shadow:0 15px 38px rgba(12,43,24,.18),inset 0 1px rgba(255,255,255,.86);backdrop-filter:blur(30px) saturate(175%);overflow-x:auto}
+.saved-workbenches>small{padding:0 7px;color:#607364;font-size:10px;white-space:nowrap}.saved-workbenches button{display:flex;align-items:center;gap:6px;height:34px;padding:0 10px;border:0;border-radius:11px;background:transparent;color:#36533d;font-size:10px;white-space:nowrap;cursor:pointer}.saved-workbenches button span{width:21px;height:21px;display:grid;place-items:center;border-radius:7px;background:rgba(69,137,86,.12);font-weight:750}.saved-workbenches .shelf-add{width:36px;min-width:36px;padding:0;justify-content:center;background:linear-gradient(145deg,#4b9360,#2f7048);color:white;font-size:21px;box-shadow:0 7px 16px rgba(37,105,61,.22)}.shelf-empty{padding:0 8px;color:#7b897e;font-size:10px;white-space:nowrap}.shelf-item{display:flex;align-items:center;border-radius:12px;transition:background .25s ease,box-shadow .3s ease}.shelf-item.active{background:rgba(255,255,255,.62);box-shadow:inset 0 1px rgba(255,255,255,.8)}.saved-workbenches .shelf-open{padding:0 7px}.shelf-open b{max-width:116px;overflow:hidden;text-overflow:ellipsis;font-size:10px}.saved-workbenches .shelf-delete{width:27px;min-width:27px;padding:0;justify-content:center;color:#829087;font-size:16px;opacity:.55}.saved-workbenches .shelf-delete:hover{background:rgba(190,76,65,.11);color:#a7463e;opacity:1}.saved-workbenches .shelf-delete.confirming{width:46px;min-width:46px;background:rgba(190,76,65,.13);color:#a7463e;font-size:9px;font-weight:700;opacity:1}.shelf-enter-active,.shelf-leave-active{transition:opacity .3s ease,transform .42s cubic-bezier(.22,.8,.2,1),filter .3s ease}.shelf-enter-from,.shelf-leave-to{opacity:0;transform:translateY(14px) scale(.96);filter:blur(6px)}
+@media(max-width:1100px){.chatting .personalized-conversation{width:calc(100% - 20px)}.saved-workbenches{left:12px;right:12px;bottom:94px;max-width:none}}
+@media(max-width:650px){.chatting .personalized-conversation{padding-bottom:128px}.compact-chat.expanded{left:6px;right:6px;bottom:102px}.action-dock,.action-dock.compact{max-width:calc(100vw - 14px);bottom:10px;overflow-x:auto}.action-dock button,.action-dock.compact button{min-width:75px;height:52px;padding:4px 7px}.action-dock button span{font-size:9px}.context-meter{font-size:9px}.saved-workbenches{bottom:78px;overflow-x:auto}.saved-workbenches>small{display:none}}
+/* Unified interaction motion. */
+.workspace-swap-enter-active,.workspace-swap-leave-active{transition:opacity .38s ease,transform .52s cubic-bezier(.22,.8,.2,1),filter .36s ease}
+.workspace-swap-enter-from{opacity:0;transform:translateY(22px) scale(.985);filter:blur(8px)}.workspace-swap-leave-to{opacity:0;transform:translateY(-12px) scale(.992);filter:blur(5px)}
+.welcome>*{animation:welcome-rise .58s cubic-bezier(.22,.8,.2,1) both}.welcome>p{animation-delay:.07s}.welcome-composer{animation-delay:.13s}.quick-buttons{animation-delay:.2s}@keyframes welcome-rise{from{opacity:0;transform:translateY(16px);filter:blur(5px)}}
+.welcome-composer,.quick-buttons button,.new-chat,.library-nav button,.recent button,.tool,.voice,.send,.expand-chat,.composer-tool,.feature-card button,.saved-workbenches button{transition:color .25s ease,background .25s ease,border-color .25s ease,box-shadow .32s ease,transform .32s cubic-bezier(.22,.8,.2,1),opacity .25s ease}
+.welcome-composer:focus-within{transform:translateY(-3px);border-color:rgba(68,139,86,.42);box-shadow:0 28px 72px rgba(6,29,16,.3),0 0 0 5px rgba(69,138,86,.08),inset 0 1px rgba(255,255,255,.96)}
+.quick-buttons button:hover,.tool:hover,.voice:hover{transform:translateY(-3px)}button:active{transform:scale(.96)!important;transition-duration:.08s!important}
+.compact-chat.expanded{animation:chat-open .46s cubic-bezier(.2,.82,.2,1)}@keyframes chat-open{from{opacity:.25;transform:translateY(22px) scale(.97);filter:blur(6px)}}
+.chat-dock-head,.conversation-composer,.message-list{transition:padding .42s cubic-bezier(.2,.8,.2,1),max-height .46s cubic-bezier(.2,.8,.2,1),background .3s ease}
+.message-list article{animation:message-pop .42s cubic-bezier(.2,.8,.2,1) both}@keyframes message-pop{from{opacity:0;transform:translateY(10px) scale(.985);filter:blur(4px)}}
+.sync-state i{animation:sync-breathe 2.2s ease-in-out infinite}@keyframes sync-breathe{50%{transform:scale(1.28);box-shadow:0 0 0 6px rgba(86,168,107,.06)}}
+.feature-overlay{animation:overlay-in .3s ease}.feature-card{animation:feature-in .42s cubic-bezier(.22,.8,.2,1)}@keyframes overlay-in{from{opacity:0}}@keyframes feature-in{from{opacity:0;transform:translateY(24px) scale(.96);filter:blur(7px)}}
+.sidebar-user,.mode-switch,.action-dock{transition:box-shadow .35s ease,background .35s ease,transform .45s cubic-bezier(.22,.8,.2,1)}
+@media(prefers-reduced-motion:reduce){.ask-farm *,.ask-farm *::before,.ask-farm *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 </style>
