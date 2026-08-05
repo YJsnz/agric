@@ -3,6 +3,7 @@ package com.example.ty.dashboard;
 import com.example.ty.auth.exception.BizException;
 import com.example.ty.dashboard.dto.ControlRequest;
 import com.example.ty.dashboard.dto.DashboardSnapshot;
+import com.example.ty.dashboard.dto.GreenhouseDetail;
 import com.example.ty.dashboard.entity.*;
 import com.example.ty.dashboard.repository.*;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +21,7 @@ import java.util.Locale;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.concurrent.ThreadLocalRandom;
+import java.time.LocalDate;
 
 @Service
 @RequiredArgsConstructor
@@ -54,6 +56,54 @@ public class DashboardService {
                 deviceRows.stream().map(this::deviceDto).toList(),
                 irrigationRows.stream().map(this::irrigationDto).toList(),
                 alertRows.stream().map(this::alertDto).toList());
+    }
+
+    @Transactional(readOnly = true)
+    public GreenhouseDetail greenhouse(String farmId, String greenhouseId) {
+        FarmAsset greenhouse = assets.findByFarmIdAndId(farmId, greenhouseId)
+                .filter(item -> "greenhouse".equals(item.getType()))
+                .orElseThrow(() -> BizException.notFound("大棚不存在"));
+        int index = greenhouseIndex(greenhouseId);
+        List<EnvironmentMetric> readings = metrics.findByFarmIdOrderById(farmId);
+        List<GreenhouseDetail.Metric> detailMetrics = readings.stream().map(item -> {
+            double value = item.getValue() + switch (item.getMetricKey()) {
+                case "temperature" -> (index - 3) * .18;
+                case "airHumidity" -> (index % 3 - 1) * 2.0;
+                case "soilMoisture" -> greenhouseId.equals("gh-02") ? -7.0 : (index % 2 == 0 ? 2.0 : 0.0);
+                case "light" -> index * 7.0;
+                case "co2" -> index * 5.0;
+                default -> 0.0;
+            };
+            String note = "soilMoisture".equals(item.getMetricKey()) && value < 40 ? "需要关注" : "适宜";
+            String tone = "需要关注".equals(note) ? "warning" : item.getTone();
+            return new GreenhouseDetail.Metric(item.getMetricKey(), item.getLabel(), round(value, 1), item.getUnit(), note, tone);
+        }).toList();
+        List<GreenhouseDetail.Device> greenhouseDevices = List.of(
+                new GreenhouseDetail.Device(greenhouseId + "-fertigation", "水肥一体机", "fertigation", true, true, "EC 1.32 mS/cm"),
+                new GreenhouseDetail.Device(greenhouseId + "-valve", "滴灌阀门组", "irrigation", true, index % 2 == 1, index % 2 == 1 ? "运行 · 8.4 m³/h" : "待机"),
+                new GreenhouseDetail.Device(greenhouseId + "-fan", "环流风机", "fan", true, true, "自动 · 42%"),
+                new GreenhouseDetail.Device(greenhouseId + "-sensor", "温湿度传感器", "sensor", true, true, "实时采集")
+        );
+        int baseHealth = greenhouse.getHealth() == null ? 92 : greenhouse.getHealth();
+        List<GreenhouseDetail.Plant> plantRows = java.util.stream.IntStream.range(0, 12).mapToObj(i ->
+                new GreenhouseDetail.Plant("P-" + String.format(Locale.ROOT, "%02d", i + 1),
+                        String.valueOf((char) ('A' + i / 4)), Math.max(0, baseHealth - i % 5) < 85 ? "attention" : "normal",
+                        Math.max(70, baseHealth - i % 5), round(48 + index * 4 + i * 1.35, 1),
+                        round(44 + (i * 3 + index) % 17, 1))).toList();
+        LocalDate today = LocalDate.now();
+        List<GreenhouseDetail.TrendPoint> trend = java.util.stream.IntStream.range(0, 7).mapToObj(i ->
+                new GreenhouseDetail.TrendPoint(today.minusDays(6L - i).format(DateTimeFormatter.ofPattern("MM-dd")),
+                        round(42 + index * 3 + i * (1.8 + index * .1), 1))).toList();
+        List<DashboardSnapshot.Alert> greenhouseAlerts = alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
+                .filter(item -> greenhouseId.equals(item.getEntityId())).map(this::alertDto).toList();
+        GreenhouseDetail.Greenhouse summary = new GreenhouseDetail.Greenhouse(greenhouse.getId(), greenhouse.getName(),
+                greenhouse.getStatus(), baseHealth, greenhouse.getCrop(), greenhouse.getArea(),
+                greenhouse.getGrowthStage(), greenhouse.getEnvironmentSummary());
+        String suggestion = greenhouseId.equals("gh-02")
+                ? "西侧土壤含水率偏低，建议 16:00 开启滴灌 15 分钟，并复查叶片蒸腾状态。"
+                : "棚内环境处于适宜区间，建议维持当前通风与水肥策略，今日傍晚完成一次叶面巡检。";
+        return new GreenhouseDetail(farmId, LocalDateTime.now(), summary, detailMetrics, greenhouseDevices,
+                plantRows, trend, greenhouseAlerts, suggestion);
     }
 
     @Transactional
@@ -150,4 +200,6 @@ public class DashboardService {
     private double defaultFlow(String kind) { return switch(kind){case "fertigation"->12.6;case "valve"->10.2;case "zone"->8.4;default->0;}; }
     private double random(double min,double max){return ThreadLocalRandom.current().nextDouble(min,max);}
     private double clamp(String key,double value){return switch(key){case "temperature"->Math.max(20,Math.min(34,value));case "airHumidity"->Math.max(35,Math.min(85,value));case "soilMoisture"->Math.max(25,Math.min(75,value));case "light"->Math.max(0,Math.min(1200,value));case "co2"->Math.max(350,Math.min(1000,value));default->value;};}
+    private int greenhouseIndex(String id) { try { return Integer.parseInt(id.substring(id.length() - 2)); } catch (Exception ignored) { return 1; } }
+    private double round(double value, int places) { double scale = Math.pow(10, places); return Math.round(value * scale) / scale; }
 }

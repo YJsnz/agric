@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import FarmTopBar from '@/components/workspace/FarmTopBar.vue'
 import WeatherCard from '@/components/workspace/WeatherCard.vue'
 import AerialFarmScene from '@/components/workspace/AerialFarmScene.vue'
@@ -18,6 +19,8 @@ import { alerts, dashboardSummary, farmZones, sceneEntities } from '@/data/farm'
 import type { BusinessModule } from '@/types'
 
 const store = useWorkspaceStore()
+const route = useRoute()
+const router = useRouter()
 let refreshTimer = 0
 onMounted(() => {
   store.loadDashboard().catch(error => showToast(error instanceof Error ? error.message : '虚拟数据加载失败'))
@@ -90,6 +93,7 @@ function handleModule(module: BusinessModule){
 }
 function closeDrawer(){store.drawerOpen=false;threeScene.value?.resumeAfterOverlay()}
 function closeMonitor(){monitorOpen.value=false;threeScene.value?.resumeAfterOverlay()}
+function enterGreenhouse(id:string){router.push(`/workspaces/${String(route.params.id || 'farm-01')}/greenhouses/${id}`)}
 function handleAssistantOpen(open:boolean){assistantOpen.value=open;if(!open)threeScene.value?.resumeAfterOverlay()}
 </script>
 
@@ -97,7 +101,7 @@ function handleAssistantOpen(open:boolean){assistantOpen.value=open;if(!open)thr
   <main class="workspace" :class="{ 'drawer-open': store.drawerOpen }">
     <Transition name="scene" mode="out-in">
       <AerialFarmScene v-if="store.viewMode === 'aerial'" key="aerial" :selected-id="store.selectedEntityId" :active-module="store.activeModule" :active-sub-layer="store.activeSubLayer" :scale="scale" :offset-x="offsetX" :offset-y="offsetY" :layers="layerVisibility" @select="selectEntity" @focus="focusEntity" />
-      <ThreeFarmScene v-else ref="threeScene" key="three" :active-module="store.activeModule" :active-sub-layer="store.activeSubLayer" :selected-id="store.selectedEntityId" :drawer-open="store.drawerOpen" :overlay-open="store.drawerOpen || monitorOpen || assistantOpen" @select="selectEntity" @module="handleModule" @walk="firstPersonActive=$event" />
+      <ThreeFarmScene v-else ref="threeScene" key="three" :active-module="store.activeModule" :active-sub-layer="store.activeSubLayer" :selected-id="store.selectedEntityId" :drawer-open="store.drawerOpen" :overlay-open="store.drawerOpen || monitorOpen || assistantOpen" @select="selectEntity" @module="handleModule" @walk="firstPersonActive=$event" @enter-greenhouse="enterGreenhouse" />
     </Transition>
 
     <Transition name="data-loading">
@@ -122,7 +126,7 @@ function handleAssistantOpen(open:boolean){assistantOpen.value=open;if(!open)thr
       </aside>
     </Transition>
 
-    <FarmContextDrawer :entity="store.selectedEntity" :open="store.drawerOpen" :module="store.activeModule" @close="closeDrawer" @select="selectEntity" @action="showToast($event)" />
+    <FarmContextDrawer :entity="store.selectedEntity" :open="store.drawerOpen" :module="store.activeModule" @close="closeDrawer" @select="selectEntity" @action="showToast($event)" @enter-greenhouse="enterGreenhouse" />
     <FarmBusinessDock :active="store.activeModule" :show-shortcuts="firstPersonActive" @change="handleModule" />
     <GreenhouseMonitorModal :open="monitorOpen" :entity="store.selectedEntity" :zone="monitorZone" @close="closeMonitor" @action="showToast($event)" />
     <FarmAiAssistant :open="assistantOpen" :context="assistantContext" @update:open="handleAssistantOpen" />

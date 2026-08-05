@@ -1,5 +1,5 @@
 import { clearAuth, getToken } from './auth'
-import type { DashboardSnapshot, DeviceRecord, IrrigationUnit } from '@/types'
+import type { DashboardSnapshot, DeviceRecord, GreenhouseDetail, IrrigationUnit } from '@/types'
 
 async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
   const response = await fetch(`/api${path}`, {
@@ -23,6 +23,10 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
 
 export function fetchDashboard(farmId = 'farm-01') {
   return request<DashboardSnapshot>(`/farms/${farmId}/dashboard`)
+}
+
+export function fetchGreenhouseDetail(greenhouseId: string, farmId = 'farm-01') {
+  return request<GreenhouseDetail>(`/farms/${farmId}/greenhouses/${greenhouseId}`)
 }
 
 export function setDeviceEnabled(entityId: string, enabled: boolean, farmId = 'farm-01') {

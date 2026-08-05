@@ -82,6 +82,18 @@ export interface DashboardSnapshot {
   alerts: Array<{ id: number; entityId?: string; time: string; title: string; level: string; status: string }>
 }
 
+export interface GreenhouseDetail {
+  farmId: string
+  generatedAt: string
+  greenhouse: { id: string; name: string; status: EntityStatus; health: number; crop: string; area: string; stage: string; environment: string }
+  metrics: Array<{ key: string; label: string; value: number; unit: string; note: string; tone: string }>
+  devices: Array<{ id: string; name: string; category: string; online: boolean; enabled: boolean; value: string }>
+  plants: Array<{ id: string; zone: string; status: EntityStatus; health: number; height: number; soilMoisture: number }>
+  heightTrend: Array<{ date: string; height: number }>
+  alerts: DashboardSnapshot['alerts']
+  aiSuggestion: string
+}
+
 export interface MetricItem {
   label: string
   value: string

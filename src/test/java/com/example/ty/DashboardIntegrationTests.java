@@ -37,6 +37,15 @@ class DashboardIntegrationTests {
                 .andExpect(jsonPath("$.irrigationUnits.length()").value(5))
                 .andExpect(jsonPath("$.alerts.length()").value(3));
 
+        mockMvc.perform(get("/api/farms/farm-01/greenhouses/gh-01").header("Authorization", "Bearer " + token))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.greenhouse.id").value("gh-01"))
+                .andExpect(jsonPath("$.greenhouse.crop").value("樱桃番茄"))
+                .andExpect(jsonPath("$.metrics.length()").value(5))
+                .andExpect(jsonPath("$.devices.length()").value(4))
+                .andExpect(jsonPath("$.plants.length()").value(12))
+                .andExpect(jsonPath("$.heightTrend.length()").value(7));
+
         mockMvc.perform(patch("/api/farms/farm-01/devices/valve-02")
                         .header("Authorization", "Bearer " + token)
                         .contentType(MediaType.APPLICATION_JSON).content("{\"enabled\":true}"))

@@ -235,22 +235,16 @@ export const SignInPage = ({
                   <GoogleIcon />
                   Continue with Google
                 </button>
-
-                <p className={`animate-element ${d.footer} text-center text-sm text-muted-foreground`}>
-                  {isSignUp ? (
-                    <>
-                      Already have an account?{' '}
-                      <a href="#" onClick={(e) => { e.preventDefault(); onSignInLink?.(); }} className="text-violet-400 hover:underline transition-colors">Sign In</a>
-                    </>
-                  ) : (
-                    <>
-                      New to our platform?{' '}
-                      <a href="#" onClick={(e) => { e.preventDefault(); onCreateAccount?.(); }} className="text-violet-400 hover:underline transition-colors">Create Account</a>
-                    </>
-                  )}
-                </p>
               </>
             )}
+
+            <button
+              type="button"
+              onClick={isSignUp ? onSignInLink : onCreateAccount}
+              className={`animate-element ${d.footer} w-full rounded-2xl border border-border bg-background/55 py-3.5 text-sm font-medium text-foreground transition-all hover:border-primary/35 hover:bg-primary/5 hover:text-primary`}
+            >
+              {isSignUp ? '已有账号，返回登录' : '还没有账号？立即注册'}
+            </button>
           </div>
         </div>
       </section>

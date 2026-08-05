@@ -2,6 +2,7 @@ package com.example.ty.dashboard;
 
 import com.example.ty.dashboard.dto.ControlRequest;
 import com.example.ty.dashboard.dto.DashboardSnapshot;
+import com.example.ty.dashboard.dto.GreenhouseDetail;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,11 @@ public class DashboardController {
 
     @GetMapping("/dashboard")
     public DashboardSnapshot dashboard(@PathVariable String farmId) { return service.snapshot(farmId); }
+
+    @GetMapping("/greenhouses/{greenhouseId}")
+    public GreenhouseDetail greenhouse(@PathVariable String farmId, @PathVariable String greenhouseId) {
+        return service.greenhouse(farmId, greenhouseId);
+    }
 
     @PatchMapping("/devices/{entityId}")
     public DashboardSnapshot.Device controlDevice(@PathVariable String farmId, @PathVariable String entityId, @Valid @RequestBody ControlRequest request) {

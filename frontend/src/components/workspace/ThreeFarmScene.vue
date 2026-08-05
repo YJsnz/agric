@@ -9,7 +9,7 @@ import { sceneEntities } from '@/data/farm'
 import ProgressBar from '@/components/ui/ProgressBar.vue'
 
 const props = defineProps<{ activeModule: BusinessModule; activeSubLayer: string; selectedId: string | null; drawerOpen?: boolean; overlayOpen?: boolean }>()
-const emit = defineEmits<{ (event: 'select', id: string | null): void; (event: 'module', module: BusinessModule): void; (event: 'walk', active: boolean): void }>()
+const emit = defineEmits<{ (event: 'select', id: string | null): void; (event: 'module', module: BusinessModule): void; (event: 'walk', active: boolean): void; (event: 'enter-greenhouse', id: string): void }>()
 const host = ref<HTMLDivElement>()
 const loading = ref(true)
 const progress = ref(0)
@@ -25,6 +25,7 @@ let camera: THREE.PerspectiveCamera | undefined
 let controls: OrbitControls | undefined
 let fpsControls: PointerLockControls | undefined
 let frame = 0
+let clickTimer = 0
 let raycastTargets: THREE.Object3D[] = []
 const animated: Array<{ object: THREE.Object3D; kind: string; seed?: number }> = []
 const moduleLayers: Partial<Record<BusinessModule, THREE.Group>> = {}
@@ -556,7 +557,7 @@ function init() {
   addTrees();addWaterAndEquipment();addEnvironmentAndAlerts();addOperationalLayers()
   ;['gh-01','gh-02','gh-03','gh-04','gh-06','gh-05'].forEach((id,index)=>{const position=entityPosition(id,[index*8-16,0,0]);addGreenhouse(position[0],position[2],id)})
   const field04=entityPosition('field-04',[-3,0,15]);const field05=entityPosition('field-05',[14,0,15]);addCropPlot(field04[0],field04[2],11,8,'field-04','leafy');addCropPlot(field05[0],field05[2],9,7,'field-05','leafy')
-  renderer.domElement.addEventListener('click',onClick);renderer.domElement.addEventListener('pointermove',onPointerMove);renderer.domElement.addEventListener('pointerleave',clearHover);window.addEventListener('resize',resize);window.addEventListener('keydown',onKeyDown);window.addEventListener('keyup',onKeyUp);updateDayNight(true);loadPublicModels();animate();updateModuleLayers();setSelectionHelper(props.selectedId)
+  renderer.domElement.addEventListener('click',onClick);renderer.domElement.addEventListener('dblclick',onDoubleClick);renderer.domElement.addEventListener('pointermove',onPointerMove);renderer.domElement.addEventListener('pointerleave',clearHover);window.addEventListener('resize',resize);window.addEventListener('keydown',onKeyDown);window.addEventListener('keyup',onKeyUp);updateDayNight(true);loadPublicModels();animate();updateModuleLayers();setSelectionHelper(props.selectedId)
 }
 
 function animate(){
@@ -593,7 +594,16 @@ function onClick(event:MouseEvent){
   if(!renderer||!camera)return
   if(walkMode.value&&!fpsControls?.isLocked){fpsControls?.lock();return}
   const rect=renderer.domElement.getBoundingClientRect();const mouse=walkMode.value?new THREE.Vector2(0,0):new THREE.Vector2((event.clientX-rect.left)/rect.width*2-1,-((event.clientY-rect.top)/rect.height)*2+1)
-  emit('select',raycastAt(mouse)?.object.userData.id||null)
+  const id=raycastAt(mouse)?.object.userData.id||null
+  if(walkMode.value){emit('select',id);return}
+  window.clearTimeout(clickTimer);clickTimer=window.setTimeout(()=>emit('select',id),220)
+}
+function onDoubleClick(event:MouseEvent){
+  if(!renderer||!camera||walkMode.value)return
+  window.clearTimeout(clickTimer)
+  const rect=renderer.domElement.getBoundingClientRect();const mouse=new THREE.Vector2((event.clientX-rect.left)/rect.width*2-1,-((event.clientY-rect.top)/rect.height)*2+1)
+  const id=raycastAt(mouse)?.object.userData.id as string|undefined
+  if(id&&sceneEntities.some(entity=>entity.id===id&&entity.type==='greenhouse'))emit('enter-greenhouse',id)
 }
 
 function pick(event:PointerEvent){if(!renderer||!camera)return null;const rect=renderer.domElement.getBoundingClientRect();const mouse=walkMode.value?new THREE.Vector2(0,0):new THREE.Vector2((event.clientX-rect.left)/rect.width*2-1,-((event.clientY-rect.top)/rect.height)*2+1);return raycastAt(mouse)?.object.userData.id as string|undefined}
@@ -643,7 +653,7 @@ watch(()=>props.overlayOpen,open=>{
 onMounted(init)
 onBeforeUnmount(()=>{
   cancelAnimationFrame(frame);if(walkMode.value)emit('walk',false);window.removeEventListener('resize',resize);window.removeEventListener('keydown',onKeyDown);window.removeEventListener('keyup',onKeyUp)
-  renderer?.domElement.removeEventListener('click',onClick);renderer?.domElement.removeEventListener('pointermove',onPointerMove);renderer?.domElement.removeEventListener('pointerleave',clearHover)
+  window.clearTimeout(clickTimer);renderer?.domElement.removeEventListener('click',onClick);renderer?.domElement.removeEventListener('dblclick',onDoubleClick);renderer?.domElement.removeEventListener('pointermove',onPointerMove);renderer?.domElement.removeEventListener('pointerleave',clearHover)
   if(fpsControls?.isLocked)fpsControls.unlock();fpsControls?.removeEventListener('lock',onPointerLock);fpsControls?.removeEventListener('unlock',onPointerUnlock);fpsControls?.dispose();controls?.dispose()
   scene?.traverse(obj=>{const mesh=obj as THREE.Mesh;if(mesh.geometry)mesh.geometry.dispose();if(mesh.material){const mats=Array.isArray(mesh.material)?mesh.material:[mesh.material];mats.forEach(m=>m.dispose())}})
   renderer?.dispose();renderer?.domElement.remove();raycastTargets=[];entityObjects.clear();walkColliders.length=0
@@ -659,7 +669,7 @@ onBeforeUnmount(()=>{
         <ProgressBar class="model-progress" :value="progress" :label="loadingText" pending-label="准备资源" complete-label="数字孪生加载完成" tone="dark" />
       </div>
     </Transition>
-    <div v-if="!walkMode" class="tip"><span>3D</span> 左键旋转 · 右键平移 · 滚轮缩放 · 点击选择</div>
+    <div v-if="!walkMode" class="tip"><span>3D</span> 左键旋转 · 右键平移 · 滚轮缩放 · 单击选择 · 双击大棚进入</div>
     <Transition name="walk-control">
       <button v-if="!walkMode && !loading" class="walk-toggle" :class="{ 'drawer-open': drawerOpen }" type="button" @click.stop="enterWalkMode">
         <span class="walk-icon" aria-hidden="true">
