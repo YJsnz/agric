@@ -137,8 +137,8 @@ public class DeepSeekAssistantService {
     private String buildSystemPrompt(String context, List<KnowledgeSearchResult> retrieved) {
         StringBuilder prompt = new StringBuilder(SYSTEM_PROMPT);
         if (context != null && !context.isBlank()) {
-            String safeContext = context.strip().substring(0, Math.min(context.strip().length(), 600));
-            prompt.append("\n当前工作台上下文：").append(safeContext);
+            String safeContext = context.strip().substring(0, Math.min(context.strip().length(), 30_000));
+            prompt.append("\n当前系统数据与界面操作结果：").append(safeContext);
         }
         if (!retrieved.isEmpty()) {
             prompt.append("\n以下是知识库检索到的资料。仅在与问题相关时引用，并在回答末尾用“参考：文档名”注明来源：");

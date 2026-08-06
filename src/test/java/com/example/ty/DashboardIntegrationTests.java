@@ -9,9 +9,11 @@ import org.springframework.http.MediaType;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
+import tools.jackson.core.type.TypeReference;
 import tools.jackson.databind.ObjectMapper;
 
 import java.util.Map;
+import java.util.List;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -123,8 +125,19 @@ class DashboardIntegrationTests {
                         .contentType(MediaType.APPLICATION_JSON).content("{\"value\":30}"))
                 .andExpect(status().isOk()).andExpect(jsonPath("$.numericValue").value(30));
 
-        mockMvc.perform(get("/api/farms/farm-01/dashboard").header("Authorization", auth))
-                .andExpect(status().isOk()).andExpect(jsonPath("$.environmentMetrics[2].numericValue").value(30));
+        String lowMoistureDashboard = mockMvc.perform(get("/api/farms/farm-01/dashboard").header("Authorization", auth))
+                .andExpect(status().isOk()).andExpect(jsonPath("$.environmentMetrics[2].numericValue").value(30))
+                .andExpect(jsonPath("$.alerts[?(@.entityId == 'field-04' && @.status == '未处理')].title").exists())
+                .andReturn().getResponse().getContentAsString();
+        Map<String, Object> dashboard = objectMapper.readValue(lowMoistureDashboard, new TypeReference<>() {});
+        Long soilAlertId = ((List<Map<String, Object>>) dashboard.get("alerts")).stream()
+                .filter(item -> "field-04".equals(item.get("entityId")) && String.valueOf(item.get("title")).contains("土壤湿度")
+                        && !List.of("已处理", "已恢复").contains(item.get("status")))
+                .map(item -> ((Number) item.get("id")).longValue()).findFirst().orElseThrow();
+
+        mockMvc.perform(patch("/api/farms/farm-01/alerts/{id}/handle", soilAlertId).header("Authorization", auth))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.message").value("土壤湿度仍为 30%，低于 50% 阈值，请先完成灌溉处理"));
 
         mockMvc.perform(patch("/api/farms/farm-01/irrigation/zone-field-04").header("Authorization", auth)
                         .contentType(MediaType.APPLICATION_JSON).content("{\"enabled\":true,\"durationMinutes\":18}"))
@@ -132,7 +145,17 @@ class DashboardIntegrationTests {
 
         mockMvc.perform(get("/api/farms/farm-01/dashboard").header("Authorization", auth))
                 .andExpect(status().isOk()).andExpect(jsonPath("$.environmentMetrics[2].numericValue").value(90))
-                .andExpect(jsonPath("$.entities[?(@.id == 'field-04')].status").value("normal"));
+                .andExpect(jsonPath("$.entities[?(@.id == 'field-04')].status").value("normal"))
+                .andExpect(jsonPath("$.alerts[?(@.id == " + soilAlertId + ")].status").value("已恢复"));
+
+        mockMvc.perform(patch("/api/farms/farm-01/irrigation/zone-field-05").header("Authorization", auth)
+                        .contentType(MediaType.APPLICATION_JSON).content("{\"enabled\":true,\"durationMinutes\":20}"))
+                .andExpect(status().isOk()).andExpect(jsonPath("$.enabled").value(true));
+
+        mockMvc.perform(get("/api/farms/farm-01/dashboard").header("Authorization", auth))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.entities[?(@.id == 'field-05')].metric").value("土壤湿度 90%"))
+                .andExpect(jsonPath("$.alerts[?(@.entityId == 'field-05')].status").value("已恢复"));
 
         mockMvc.perform(delete("/api/farms/farm-01/devices/soil-test-01").header("Authorization", auth))
                 .andExpect(status().isOk());

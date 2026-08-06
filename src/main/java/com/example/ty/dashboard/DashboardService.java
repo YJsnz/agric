@@ -256,7 +256,10 @@ public class DashboardService {
         unit.setFlowRate(request.enabled() ? defaultFlow(unit.getKind()) : 0);
         unit.setUpdatedAt(LocalDateTime.now());
         IrrigationUnitEntity saved = irrigation.save(unit);
-        if (request.enabled() && "field-04".equals(unit.getEntityId())) setSoilMoisture(farmId, 90, true);
+        if (request.enabled() && unit.getEntityId() != null && unit.getEntityId().startsWith("field-")) {
+            if ("field-04".equals(unit.getEntityId())) setSoilMoisture(farmId, 90, true);
+            else setZoneSoilMoisture(farmId, unit.getEntityId(), 90);
+        }
         return irrigationDto(saved);
     }
 
@@ -278,6 +281,16 @@ public class DashboardService {
     public DashboardSnapshot.Alert handleAlert(String farmId, Long alertId) {
         FarmAlert alert = alerts.findById(alertId).filter(item -> farmId.equals(item.getFarmId()))
                 .orElseThrow(() -> BizException.notFound("告警不存在"));
+        if ("field-04".equals(alert.getEntityId()) && alert.getTitle().contains("土壤湿度")
+                && !List.of("已处理", "已恢复").contains(alert.getStatus())) {
+            MetricThreshold threshold = thresholds.findByFarmIdAndMetricKey(farmId, "soilMoisture").orElse(null);
+            EnvironmentMetric metric = metrics.findByFarmIdOrderById(farmId).stream()
+                    .filter(item -> "soilMoisture".equals(item.getMetricKey())).findFirst().orElse(null);
+            if (threshold != null && threshold.isEnabled() && metric != null && metric.getValue() < threshold.getMinimumValue()) {
+                throw BizException.badRequest(String.format(Locale.ROOT,
+                        "土壤湿度仍为 %.0f%%，低于 %.0f%% 阈值，请先完成灌溉处理", metric.getValue(), threshold.getMinimumValue()));
+            }
+        }
         alert.setStatus("已处理");
         FarmAlert saved = alerts.save(alert);
         boolean hasActiveAlert = alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
@@ -349,17 +362,35 @@ public class DashboardService {
         metric.setPreviousValue(metric.getValue());
         metric.setValue(value);
         metric.setMeasuredAt(LocalDateTime.now());
-        metric.setTone(value < 40 ? "warning" : "success");
+        double minimum = thresholds.findByFarmIdAndMetricKey(farmId, "soilMoisture")
+                .filter(MetricThreshold::isEnabled).map(MetricThreshold::getMinimumValue).orElse(40.0);
+        boolean belowThreshold = value < minimum;
+        metric.setTone(belowThreshold ? "warning" : "success");
         EnvironmentMetric saved = metrics.save(metric);
         assets.findByFarmIdAndId(farmId, "field-04").ifPresent(asset -> {
             asset.setMetric(String.format(Locale.ROOT, "土壤湿度 %.0f%%", value));
             asset.setEnvironmentSummary(String.format(Locale.ROOT, "土壤湿度 %.0f%%", value));
-            asset.setStatus(value < 40 ? "warning" : "normal");
+            asset.setStatus(belowThreshold ? "warning" : "normal");
             if (irrigationCompleted) asset.setHealth(96);
             assets.save(asset);
         });
         evaluateSoilMoisture(farmId);
         return saved;
+    }
+
+    private void setZoneSoilMoisture(String farmId, String entityId, double value) {
+        FarmAsset asset = assets.findByFarmIdAndId(farmId, entityId)
+                .orElseThrow(() -> BizException.notFound("灌溉地块不存在"));
+        String moisture = String.format(Locale.ROOT, "土壤湿度 %.0f%%", value);
+        asset.setMetric(moisture);
+        asset.setEnvironmentSummary(moisture);
+        asset.setStatus("normal");
+        if (asset.getHealth() != null && asset.getHealth() < 96) asset.setHealth(96);
+        assets.save(asset);
+        alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
+                .filter(item -> entityId.equals(item.getEntityId()) && item.getTitle().contains("土壤湿度")
+                        && !List.of("已处理", "已恢复").contains(item.getStatus()))
+                .forEach(item -> { item.setStatus("已恢复"); alerts.save(item); });
     }
 
     private void applyDevice(FarmDevice device, String farmId, DeviceUpsertRequest request) {

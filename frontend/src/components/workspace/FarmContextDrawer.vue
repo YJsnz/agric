@@ -11,6 +11,7 @@ const emit = defineEmits<{
   (event: 'action', label: string): void
   (event: 'enter-greenhouse', id: string): void
   (event: 'refresh'): void
+  (event: 'irrigate', entityId: string): void
 }>()
 const devicePower = reactive(Object.fromEntries(deviceRecords.map(item => [item.entityId, item.enabled])) as Record<string, boolean>)
 const irrigationPower = reactive(Object.fromEntries(irrigationUnits.map(item => [item.entityId, item.enabled])) as Record<string, boolean>)
@@ -36,6 +37,9 @@ const zoneForm = reactive<ZoneInput>({ id: '', name: '', crop: '', area: '', sta
 const selectedDevice = computed(() => deviceRecords.find(item => item.entityId === selectedDeviceEntityId.value)
   || deviceRecords.find(item => item.entityId === props.entity?.id) || deviceRecords[0])
 const selectedUnit = computed(() => irrigationUnits.find(item => item.entityId === props.entity?.id) || irrigationUnits[0])
+const activeSoilAlert = computed(() => alerts.find(item => item.entityId === selectedUnit.value?.entityId
+  && item.title.includes('土壤湿度') && !['已处理', '已恢复'].includes(item.status)))
+const soilMoisture = computed(() => environmentMetrics.find(item => item.label === '土壤湿度')?.value || '--')
 watchEffect(() => { duration.value = selectedUnit.value?.durationMinutes || 18 })
 const selectedZone = computed(() => farmZones.find(item => item.entityId === props.entity?.id))
 const cropZone = computed(() => selectedZone.value || farmZones[0] || { id: '', entityId: '', polygon: [], crop: '暂无种植区', area: '--', stage: '--', environment: '--' })
@@ -206,9 +210,9 @@ async function toggleIrrigation(id: string) {
   try {
     const updated = await setIrrigationEnabled(unit.id, irrigationPower[id], Number(duration.value))
     Object.assign(unit, updated)
-    if (updated.enabled && updated.entityId === 'field-04') {
+    if (updated.enabled && updated.entityId.startsWith('field-')) {
       emit('refresh')
-      emit('action', `${updated.name}已开启，模拟灌溉完成：土壤湿度恢复至 90%`)
+      emit('action', `${updated.name}已开启，模拟灌溉完成：${updated.target}土壤湿度恢复至 90%`)
       return
     }
     emit('action', `${updated.name}${updated.enabled ? '开始灌溉' : '停止灌溉'}`)
@@ -220,8 +224,15 @@ async function toggleIrrigation(id: string) {
 async function saveIrrigationPlan() {
   const unit = selectedUnit.value
   try {
-    const updated = await setIrrigationEnabled(unit.id, irrigationPower[unit.entityId], Number(duration.value))
+    const shouldRecoverSoilAlert = Boolean(activeSoilAlert.value)
+    const updated = await setIrrigationEnabled(unit.id, shouldRecoverSoilAlert ? true : irrigationPower[unit.entityId], Number(duration.value))
     Object.assign(unit, updated)
+    irrigationPower[unit.entityId] = updated.enabled
+    if (shouldRecoverSoilAlert) {
+      emit('refresh')
+      emit('action', `${updated.name}计划已执行，土壤湿度恢复至 90%，低湿告警已自动解除`)
+      return
+    }
     emit('action', `${updated.name}灌溉计划已保存（${updated.durationMinutes}分钟）`)
   } catch (error) { emit('action', error instanceof Error ? error.message : '计划保存失败') }
 }
@@ -247,6 +258,13 @@ async function resolveAlert(id?: number) {
     emit('action', '告警已处理并写入数据库')
   } catch (error) { emit('action', error instanceof Error ? error.message : '告警处理失败') }
   finally { alertBusyId.value = null }
+}
+function processAlert(item: (typeof alerts)[number]) {
+  if (item.title.includes('土壤湿度') && !['已处理', '已恢复'].includes(item.status)) {
+    emit('irrigate', item.entityId || 'field-04')
+    return
+  }
+  resolveAlert(item.id)
 }
 </script>
 
@@ -274,7 +292,7 @@ async function resolveAlert(id?: number) {
       <div v-else-if="module === 'irrigation'" class="content irrigation-panel">
         <section class="water-summary"><div class="water-ring"><b>{{ dashboardSummary.waterLevel }}%</b><small>蓄水量</small></div><dl><div><dt>主管流量</dt><dd>12.6 m³/h</dd></div><div><dt>今日用水</dt><dd>{{ dashboardSummary.todayWaterUsage }} m³</dd></div><div><dt>运行单元</dt><dd>{{ irrigationUnits.filter(item=>item.enabled).length }} / {{ irrigationUnits.length }}</dd></div></dl></section>
         <section><div class="section-title"><h3>灌溉控制单元</h3><small>点击地图或列表选择</small></div><div class="unit-list"><button v-for="unit in irrigationUnits" :key="unit.id" :class="{active:selectedUnit.entityId===unit.entityId}" @click="$emit('select',unit.entityId)"><i :class="{running:irrigationPower[unit.entityId]}"></i><span><b>{{ unit.name }}</b><small>{{ unit.target }}</small></span><em>{{ irrigationPower[unit.entityId]?'运行':'关闭' }}</em></button></div></section>
-        <section class="irrigation-control"><div class="control-head"><div><small>选中单元</small><h3>{{ selectedUnit.name }}</h3></div><label class="switch water"><input type="checkbox" :checked="irrigationPower[selectedUnit.entityId]" @change="toggleIrrigation(selectedUnit.entityId)"><span></span></label></div><div class="duration"><span>本次灌溉时长</span><b>{{ duration }} 分钟</b><input v-model="duration" type="range" min="5" max="60"></div><dl><div><dt>灌溉对象</dt><dd>{{ selectedUnit.target }}</dd></div><div><dt>当前流量</dt><dd>{{ selectedUnit.flow }}</dd></div><div><dt>控制策略</dt><dd>土壤墒情联动</dd></div></dl><button class="schedule" @click="saveIrrigationPlan">保存灌溉计划</button></section>
+        <section class="irrigation-control"><div class="control-head"><div><small>选中单元</small><h3>{{ selectedUnit.name }}</h3></div><label class="switch water"><input type="checkbox" :checked="irrigationPower[selectedUnit.entityId]" @change="toggleIrrigation(selectedUnit.entityId)"><span></span></label></div><div v-if="activeSoilAlert" class="irrigation-alert"><b>低湿告警处理中</b><span>当前湿度 {{ soilMoisture }}，需恢复至 {{ soilThreshold }}% 以上才会自动解除告警。</span></div><div class="duration"><span>本次灌溉时长</span><b>{{ duration }} 分钟</b><input v-model="duration" type="range" min="5" max="60"></div><dl><div><dt>灌溉对象</dt><dd>{{ selectedUnit.target }}</dd></div><div><dt>当前流量</dt><dd>{{ selectedUnit.flow }}</dd></div><div><dt>控制策略</dt><dd>土壤墒情联动</dd></div></dl><button class="schedule" @click="saveIrrigationPlan">{{ activeSoilAlert ? '保存并开始灌溉' : '保存灌溉计划' }}</button></section>
         <section class="threshold-panel"><div class="control-head"><div><small>自动告警规则</small><h3>土壤湿度下限</h3></div><label class="switch water"><input v-model="thresholdEnabled" type="checkbox"><span></span></label></div><div class="threshold-value"><strong>{{ soilThreshold }}%</strong><p>实时湿度低于该值时生成告警；恢复到阈值以上后自动标记恢复。</p></div><input v-model.number="soilThreshold" type="range" min="10" max="80" step="1" :disabled="!thresholdEnabled"><div class="threshold-actions"><button class="simulation-action" :disabled="simulationBusy" @click="runLowMoistureSimulation">{{ simulationBusy ? '模拟中…' : '模拟湿度降至 30%' }}</button><button class="schedule" :disabled="thresholdSaving" @click="saveThreshold">{{ thresholdSaving ? '保存中…' : '保存告警阈值' }}</button></div></section>
       </div>
 
@@ -290,7 +308,7 @@ async function resolveAlert(id?: number) {
       <div v-else class="content overview-panel">
         <section class="summary-row"><article><small>农场健康</small><b class="green">{{ dashboardSummary.health }}</b></article><article><small>在线设备</small><b>{{ Math.round(dashboardSummary.onlineDevices/Math.max(1,dashboardSummary.totalDevices)*100) }}%</b></article><article><small>今日任务</small><b>12</b></article><article><small>待处理</small><b class="orange">{{ dashboardSummary.openAlerts }}</b></article></section>
         <section><div class="section-title"><h3>{{ entity?.name || '重点对象' }}</h3><small>{{ entity?.metric }}</small></div><div v-if="selectedZone" class="overview-card"><div class="leaf"><svg viewBox="0 0 24 24"><path d="M19.5 4.5C13 4.5 8.6 7.2 7 11.6c-.8 2.4-.3 5.3 1.4 7.9 1-5.7 3.8-9.5 8.4-12M7.4 13C5.2 12.6 3.6 13.4 2.5 15c2.3-.8 4.2-.5 5.6.8"/></svg></div><div><b>{{ selectedZone.crop }}</b><small>{{ selectedZone.area }} · {{ selectedZone.stage }}</small><p>{{ selectedZone.environment }}</p></div><strong>{{ entity?.health || 92 }}</strong></div><div v-else class="overview-card object-card"><div class="object-glyph"><svg viewBox="0 0 24 24"><path v-if="entity?.type === 'water'" d="M12 3c3.5 4.7 5.5 7.3 5.5 10.5a5.5 5.5 0 0 1-11 0C6.5 10.3 8.5 7.7 12 3Z"/><path v-else-if="entity?.type === 'camera'" d="M4 8h11v9H4zM15 11l5-2v7l-5-2zM8 12.5a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z"/><path v-else-if="entity?.type === 'robot'" d="M5 7h14v10H5zM12 7V4M8 20v-3M16 20v-3M9 12h.1M15 12h.1"/><path v-else d="M9 4h6l.6 2.2 1.5.8 2.2-.6 2 3.5-1.6 1.6v1.7l1.6 1.6-2 3.5-2.2-.6-1.5.8L15 20H9l-.6-2.1-1.5-.8-2.2.6-2-3.5 1.6-1.6v-1.7L2.7 9.9l2-3.5 2.2.6 1.5-.8L9 4Zm0 8a3 3 0 1 0 6 0 3 3 0 0 0-6 0Z"/></svg></div><div><b>{{ entity?.name || '农场对象' }}</b><small>{{ entity?.type === 'water' ? '农业水源设施' : entity?.type === 'camera' ? '视频监控设备' : entity?.type === 'robot' ? '智能巡检设备' : '农业物联网设备' }}</small><p>{{ entity?.metric || '运行状态正常' }}</p></div><strong class="object-state">{{ entity?.status === 'offline' ? '离线' : '在线' }}</strong></div></section>
-        <section><div class="section-title"><h3>最新告警</h3></div><article v-for="item in alerts" :key="item.id || item.time" class="alert-item"><span>!</span><div><b>{{ item.title }}</b><small>{{ item.time }} · {{ item.status }}</small></div><button v-if="item.id && !['已处理','已恢复'].includes(item.status)" class="resolve-alert" :disabled="alertBusyId === item.id" @click="resolveAlert(item.id)"><i>{{ alertBusyId === item.id ? '···' : '✓' }}</i>{{ alertBusyId === item.id ? '处理中' : '标记处理' }}</button></article></section>
+        <section><div class="section-title"><h3>最新告警</h3></div><article v-for="item in alerts" :key="item.id || item.time" class="alert-item"><span>!</span><div><b>{{ item.title }}</b><small>{{ item.time }} · {{ item.status }}</small></div><button v-if="item.id && !['已处理','已恢复'].includes(item.status)" class="resolve-alert" :disabled="alertBusyId === item.id" @click="processAlert(item)"><i>{{ item.title.includes('土壤湿度') ? '→' : alertBusyId === item.id ? '···' : '✓' }}</i>{{ item.title.includes('土壤湿度') ? '去灌溉处理' : alertBusyId === item.id ? '处理中' : '标记处理' }}</button></article></section>
       </div>
     </aside>
   </Transition>
@@ -326,6 +344,7 @@ async function resolveAlert(id?: number) {
 .section-title{margin-bottom:13px}.section-title h3,.control-head h3{font-size:15px;line-height:1.35}.section-title small,.control-head small,.section-title button{font-size:10px}.summary-row{padding:10px!important;gap:8px}.summary-row article{padding:12px 9px;border-color:rgba(255,255,255,.11);background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.035));box-shadow:inset 0 1px rgba(255,255,255,.08)}.summary-row article:nth-child(1){background:linear-gradient(145deg,rgba(77,175,106,.18),rgba(255,255,255,.025))}.summary-row article:nth-child(2){background:linear-gradient(145deg,rgba(63,154,183,.17),rgba(255,255,255,.025))}.summary-row article:nth-child(3){background:linear-gradient(145deg,rgba(146,117,67,.17),rgba(255,255,255,.025))}.summary-row article:nth-child(4){background:linear-gradient(145deg,rgba(189,101,55,.17),rgba(255,255,255,.025))}.summary-row small{font-size:10px;line-height:1.25}.summary-row b{font-size:21px;margin-top:7px}
 .hero-card{height:160px!important;padding:20px!important;border:1px solid rgba(152,239,177,.2)!important;background:radial-gradient(circle at 80% 10%,rgba(134,233,162,.22),transparent 35%),linear-gradient(135deg,rgba(49,144,82,.4),rgba(24,78,62,.14))!important}.hero-card>span{font-size:12px}.hero-card>strong{font-size:50px}.hero-card>strong small{font-size:14px}.hero-card>em{font-size:12px}.metric-grid{gap:9px}.metric-grid article{min-height:65px;padding:12px;border-color:rgba(255,255,255,.1);background:rgba(255,255,255,.055)}.metric-grid article:nth-child(1){background:linear-gradient(145deg,rgba(227,128,63,.2),rgba(255,255,255,.03))}.metric-grid article:nth-child(2){background:linear-gradient(145deg,rgba(63,151,206,.2),rgba(255,255,255,.03))}.metric-grid article:nth-child(3){background:linear-gradient(145deg,rgba(50,173,154,.2),rgba(255,255,255,.03))}.metric-grid article:nth-child(4){background:linear-gradient(145deg,rgba(222,174,60,.2),rgba(255,255,255,.03))}.metric-grid article:nth-child(5){background:linear-gradient(145deg,rgba(137,99,190,.2),rgba(255,255,255,.03))}.metric-icon{width:34px;height:34px;font-size:12px}.metric-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.metric-grid small{font-size:10px}.metric-grid b{font-size:15px}.metric-grid em{font-size:10px}.line-chart>div{font-size:9px}.advice{gap:12px}.advice>span{width:36px;height:36px;font-size:11px}.advice b{font-size:13px}.advice p{font-size:11px;line-height:1.65}
 .device-list,.unit-list{gap:8px}.device-list button,.unit-list button{min-height:53px;padding:10px 11px;border-color:rgba(255,255,255,.1);background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025))}.device-list button.active,.unit-list button.active{border-color:rgba(111,230,148,.5);background:linear-gradient(145deg,rgba(61,163,95,.28),rgba(47,115,91,.1));box-shadow:inset 0 1px rgba(255,255,255,.13)}.device-symbol{width:35px;height:35px;font-size:12px}.device-list b,.unit-list b{font-size:12px;line-height:1.3}.device-list small,.unit-list small{font-size:10px;line-height:1.35}.unit-list em{font-size:10px}.control-card,.irrigation-control{margin-top:12px!important;background:linear-gradient(145deg,rgba(57,148,91,.2),rgba(35,86,75,.08))!important}.irrigation-control{background:linear-gradient(145deg,rgba(47,146,171,.22),rgba(28,78,85,.08))!important}dt,dd{font-size:11px;line-height:1.4}.control-card dl div,.irrigation-control dl div{padding:9px 0}.actions button,.schedule{padding:11px;font-size:11px}.water-summary{gap:25px}.water-ring{width:86px;height:86px}.water-ring b{font-size:20px}.water-ring small{font-size:9px}.duration span,.duration b{font-size:11px}
+.irrigation-alert{display:flex;flex-direction:column;gap:5px;margin-top:13px;padding:11px 12px;border:1px solid rgba(255,183,92,.32);border-radius:11px;background:rgba(218,128,43,.13)}.irrigation-alert b{font-size:10px;color:#ffc47c}.irrigation-alert span{font-size:9px;line-height:1.55;color:rgba(255,244,226,.68)}
 .crop-hero{grid-template-columns:72px 1fr 70px}.leaf{height:72px;border:1px solid rgba(181,239,135,.18);background:radial-gradient(circle at 35% 25%,rgba(211,255,174,.28),transparent 35%),linear-gradient(145deg,#6c9d4b,#244e34)}.leaf svg{width:34px;height:34px;fill:none;stroke:#d5ffbd;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.crop-hero small,.crop-hero span,.score small{font-size:10px}.crop-hero h3{font-size:18px}.score b{font-size:28px}.growth{gap:9px}.growth article{padding:12px;border-color:rgba(255,255,255,.1);background:linear-gradient(145deg,rgba(112,157,66,.13),rgba(255,255,255,.025))}.growth span,.growth em{font-size:10px}.growth b{font-size:14px}.stages>div{font-size:9px}.task{padding:11px 0}.task b{font-size:12px}.task small,.task em{font-size:10px}
 .overview-card{grid-template-columns:72px 1fr auto;gap:13px}.overview-card b{font-size:14px}.overview-card small,.overview-card p{font-size:11px;line-height:1.45}.overview-card>strong{font-size:27px}.object-glyph{width:64px;height:64px;display:grid!important;place-items:center;border:1px solid rgba(119,213,228,.22);border-radius:16px;background:radial-gradient(circle at 35% 25%,rgba(167,236,247,.2),transparent 34%),linear-gradient(145deg,rgba(50,137,153,.38),rgba(29,75,78,.18));color:#9fe5ef}.object-glyph svg{width:31px;height:31px;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}.object-state{font-size:13px!important;padding:6px 9px;border-radius:99px;background:rgba(76,194,111,.13);color:#78e39a!important}.alert-item{padding:12px 0}.alert-item>span{width:28px;height:28px}.alert-item b{font-size:11px;line-height:1.4}.alert-item small{font-size:10px}.drawer button:focus-visible,.drawer input:focus-visible{outline:2px solid rgba(145,242,175,.9);outline-offset:2px}
 .greenhouse-entry button{width:100%;display:flex;align-items:center;justify-content:space-between;padding:13px 14px;border:1px solid rgba(112,229,145,.3);border-radius:13px;background:linear-gradient(135deg,rgba(64,157,90,.3),rgba(51,116,86,.12));color:#eaffee;text-align:left;cursor:pointer}.greenhouse-entry span{display:flex;flex-direction:column;gap:4px}.greenhouse-entry b{font-size:12px}.greenhouse-entry small{font-size:9px;color:rgba(225,255,234,.5)}.greenhouse-entry strong{font-size:21px;color:#83e89e}.greenhouse-entry button:hover{transform:translateY(-2px);border-color:rgba(126,238,156,.58);box-shadow:0 12px 26px rgba(0,20,9,.2)}

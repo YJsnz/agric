@@ -41,3 +41,8 @@ deepseek:
   api-key: ${DEEPSEEK_API_KEY:}
   base-url: ${DEEPSEEK_BASE_URL:https://api.deepseek.com}
   model: ${DEEPSEEK_MODEL:deepseek-v4-flash}
+
+weather:
+  # 农场 WGS84 坐标；默认北京，部署时请改成真实农场位置。
+  latitude: ${WEATHER_LATITUDE:39.9042}
+  longitude: ${WEATHER_LONGITUDE:116.4074}

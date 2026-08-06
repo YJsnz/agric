@@ -80,7 +80,18 @@ function searchEntity(query:string) {
 }
 function startMeasure(){measuring.value=true;measureStart.value=null;store.drawerOpen=false;showToast('测距模式：请选择两个地图对象')}
 function showAllAlerts(){notificationsOpen.value=false;handleModule('alerts')}
+function isActiveSoilAlert(item: (typeof alerts)[number]) {
+  return item.title.includes('土壤湿度') && !['已处理', '已恢复'].includes(item.status)
+}
+function openIrrigationForAlert(entityId = 'field-04') {
+  notificationsOpen.value = false
+  monitorOpen.value = false
+  store.selectModule('irrigation')
+  store.selectEntity(entityId)
+  showToast('已定位低湿地块，请保存并开始灌溉；湿度恢复后告警将自动解除')
+}
 function openAlert(item: (typeof alerts)[number]) {
+  if (isActiveSoilAlert(item)) { openIrrigationForAlert(item.entityId || 'field-04'); return }
   notificationsOpen.value = false
   monitorOpen.value = false
   store.selectModule('alerts')
@@ -138,7 +149,7 @@ function handleAssistantOpen(open:boolean){assistantOpen.value=open;if(!open)thr
       </aside>
     </Transition>
 
-    <FarmContextDrawer :entity="store.selectedEntity" :open="store.drawerOpen" :module="store.activeModule" @close="closeDrawer" @select="selectEntity" @action="showToast($event)" @refresh="refreshDashboard" @enter-greenhouse="enterGreenhouse" />
+    <FarmContextDrawer :entity="store.selectedEntity" :open="store.drawerOpen" :module="store.activeModule" @close="closeDrawer" @select="selectEntity" @action="showToast($event)" @refresh="refreshDashboard" @irrigate="openIrrigationForAlert" @enter-greenhouse="enterGreenhouse" />
     <FarmBusinessDock :active="store.activeModule" :show-shortcuts="firstPersonActive" @change="handleModule" />
     <GreenhouseMonitorModal :open="monitorOpen" :entity="store.selectedEntity" :zone="monitorZone" @close="closeMonitor" @action="showToast($event)" />
     <FarmAiAssistant :open="assistantOpen" :context="assistantContext" @update:open="handleAssistantOpen" />

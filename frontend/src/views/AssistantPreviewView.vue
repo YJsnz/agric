@@ -9,8 +9,9 @@ import MarkdownDocumentViewer from '@/components/assistant/MarkdownDocumentViewe
 import { useAssistantWorkbenches } from '@/composables/useAssistantWorkbenches'
 import { getUser } from '@/api/auth'
 import { deleteKnowledgeDocument, fetchAssistantState, fetchKnowledgeDocuments, saveAssistantState, saveKnowledgeDocument, sendAssistantMessage, type ChatMessage, type KnowledgeDocumentSummary } from '@/api/assistant'
-import { alerts, dashboardSummary, deviceRecords, environmentMetrics, farmZones, irrigationUnits, sceneEntities } from '@/data/farm'
-import type { SceneEntity } from '@/types'
+import { fetchDashboard, fetchGreenhouseDetail, fetchMetricThresholds } from '@/api/dashboard'
+import { alerts, applyDashboard, dashboardSummary, deviceRecords, environmentMetrics, farmZones, irrigationUnits, sceneEntities } from '@/data/farm'
+import type { GreenhouseDetail, MetricThreshold, SceneEntity } from '@/types'
 import type { AssistantWorkbench, WorkbenchWidgetType } from '@/types/workbench'
 import xiaotianAvatar from '@/assets/xiaotian-avatar.png'
 import userManualMarkdown from '../../../docs/用户使用手册.md?raw'
@@ -31,6 +32,7 @@ interface Conversation {
   messages: ChatMessage[]
   panelMode?: PanelMode | null
   panelEntityId?: string | null
+  workbenchVisible?: boolean
 }
 
 interface LibraryDocument {
@@ -66,6 +68,10 @@ const knowledgeError = ref('')
 const demoRunning = ref(false)
 const recording = ref(false)
 const chatExpanded = ref(false)
+const chatMinimized = ref(false)
+const greenhouseDetails = ref<GreenhouseDetail[]>([])
+const metricThresholds = ref<MetricThreshold[]>([])
+const workbenchAction = ref('')
 const showWorkbench = ref(false)
 const workbenchShelfOpen = ref(false)
 const openLibraryOnCreate = ref(false)
@@ -97,7 +103,8 @@ const documentImageMap: Record<string, string> = {
 }
 const activeConversation = computed(() => conversations.value.find(item => item.id === activeId.value) || conversations.value[0])
 const messages = computed(() => activeConversation.value?.messages || [])
-const workbenchActive = computed(() => showWorkbench.value || messages.value.length > 0)
+const workbenchActive = computed(() => showWorkbench.value)
+const conversationActive = computed(() => messages.value.length > 0)
 const visibleMessages = computed(() => chatExpanded.value ? messages.value : messages.value.slice(-2))
 const assistantContextSummary = computed(() => `${activeWorkbench.value?.name || '当前工作台'} · ${activeWorkbench.value?.widgets.length || 0} 个组件${panelEntity.value ? ` · ${panelEntity.value.name}` : ''}`)
 const contextUsage = computed(() => {
@@ -244,9 +251,49 @@ function prepareRoutineWorkbench(content: string) {
   return true
 }
 
+function requestedGreenhouseIds(content: string) {
+  if (!/大棚|温室/.test(content)) return []
+  const normalized = content.replace(/一/g, '1').replace(/二/g, '2').replace(/三/g, '3').replace(/四/g, '4').replace(/五/g, '5').replace(/六/g, '6')
+  const ids = [...normalized.matchAll(/0?([1-6])(?:号)?/g)].map(match => `gh-0${match[1]}`)
+  return [...new Set(ids)]
+}
+
+function prepareRequestedWorkbench(content: string) {
+  const greenhouseIds = requestedGreenhouseIds(content)
+  const isDataView = /查看|对比|监控|展示|分析|汇总/.test(content)
+  if (!greenhouseIds.length || !isDataView) return false
+  const numbers = greenhouseIds.map(id => Number(id.slice(-2))).join('、')
+  if (/灌溉|用水|水分|土壤湿度|阀门/.test(content)) {
+    const name = `自定义面板｜${numbers}号大棚灌溉`
+    createWorkbench(name)
+    addWidget('irrigation', { title: `${numbers}号大棚灌溉状态`, entityIds: greenhouseIds, size: 'wide' })
+    addWidget('metric', { title: '平均土壤湿度', entityIds: greenhouseIds, metricKey: 'soilMoisture', size: 'small', threshold: 40 })
+    addWidget('irrigation-schedule', { title: `${numbers}号大棚灌溉计划`, entityIds: greenhouseIds, size: 'medium' })
+    addWidget('alerts', { title: '相关灌溉告警', entityIds: greenhouseIds, size: 'medium' })
+    addWidget('ai-insight', { title: 'AI 灌溉建议', entityIds: greenhouseIds, size: 'medium' })
+    workbenchAction.value = `界面操作已完成：新建了“${name}”，并在其中加入“灌溉状态、平均土壤湿度、灌溉计划、相关告警、AI灌溉建议”5个子面板，当前已经打开。回答时必须确认创建成功，不得声称无权访问或要求用户手工添加。`
+    panelMode.value = 'irrigation'
+  } else {
+    const name = `自定义面板｜${numbers}号大棚数据`
+    createWorkbench(name)
+    greenhouseIds.forEach(id => {
+      const entity = sceneEntities.find(item => item.id === id)
+      addWidget('greenhouse', { title: entity?.name || `${Number(id.slice(-2))}号大棚`, entityIds: [id], size: 'small' })
+    })
+    addWidget('environment', { title: `${numbers}号大棚环境对比`, entityIds: greenhouseIds, size: 'wide' })
+    addWidget('alerts', { title: '相关告警', entityIds: greenhouseIds, size: 'medium' })
+    addWidget('ai-insight', { title: 'AI 综合分析', entityIds: greenhouseIds, size: 'medium' })
+    workbenchAction.value = `界面操作已完成：新建了“${name}”，并在其中加入所选大棚状态、环境对比、相关告警和AI综合分析子面板，当前已经打开。回答时必须确认创建成功，不得要求用户手工添加。`
+    panelMode.value = 'crops'
+  }
+  panelEntity.value = null
+  return true
+}
+
 function selectConversation(id: number) {
   activeId.value = id
   const selected = conversations.value.find(item => item.id === id)
+  showWorkbench.value = Boolean(selected?.workbenchVisible)
   panelMode.value = selected?.panelMode || null
   panelEntity.value = sceneEntities.find(item => item.id === selected?.panelEntityId) || null
   sidebarOpen.value = false
@@ -264,21 +311,41 @@ async function scrollToBottom() {
   if (listRef.value) listRef.value.scrollTop = listRef.value.scrollHeight
 }
 
+function toggleChatBody() {
+  if (chatMinimized.value) {
+    chatMinimized.value = false
+    return
+  }
+  chatExpanded.value = !chatExpanded.value
+}
+
+function minimizeChat() {
+  chatExpanded.value = false
+  chatMinimized.value = true
+}
+
 async function ask(question?: string) {
   const content = (question || input.value).trim()
   if (!content || loading.value || !activeConversation.value) return
-  showWorkbench.value = true
+  chatMinimized.value = false
+  workbenchAction.value = ''
   input.value = ''
-  const routinePrepared = prepareRoutineWorkbench(content)
-  const matchedEntity = routinePrepared ? null : resolveEntity(content)
-  if (matchedEntity) { panelEntity.value = matchedEntity; panelMode.value = 'entity' }
-  else {
-    const resolvedMode = resolvePanelMode(content)
-    if (resolvedMode) { panelMode.value = resolvedMode; panelEntity.value = null }
-    else panelMode.value = panelMode.value || 'overview'
+  const inferredWorkbench = prepareRequestedWorkbench(content)
+  const requestsWorkbench = inferredWorkbench || /(?:打开|创建|生成|调出|切换|调整|编辑|查看|展示).{0,10}(?:面板|工作台)|(?:面板|工作台).{0,10}(?:打开|创建|生成|调出|切换|调整|编辑|查看|展示)/.test(content)
+  const routinePrepared = !inferredWorkbench && requestsWorkbench && prepareRoutineWorkbench(content)
+  if (requestsWorkbench) {
+    showWorkbench.value = true
+    const matchedEntity = routinePrepared || inferredWorkbench ? null : resolveEntity(content)
+    if (matchedEntity) { panelEntity.value = matchedEntity; panelMode.value = 'entity' }
+    else {
+      const resolvedMode = resolvePanelMode(content)
+      if (resolvedMode) { panelMode.value = resolvedMode; panelEntity.value = null }
+      else panelMode.value = panelMode.value || 'overview'
+    }
+    if (!routinePrepared && !inferredWorkbench) appendPanelWidget(panelMode.value, panelEntity.value)
   }
-  if (!routinePrepared && /创建|打开|查看|生成|对比|面板|工作台|灌溉|环境|设备|告警/.test(content)) appendPanelWidget(panelMode.value, panelEntity.value)
   const conversation = activeConversation.value
+  conversation.workbenchVisible = showWorkbench.value
   conversation.panelMode = panelMode.value
   conversation.panelEntityId = panelEntity.value?.id || null
   conversation.messages.push({ role: 'user', content })
@@ -333,11 +400,31 @@ function resolvePanelMode(content: string): PanelMode | null {
 }
 
 function buildAssistantContext() {
-  const base = '智慧农场01 · 智能问农数据面板。请依据提供的数据回答，缺少数据时明确说明。'
+  const base = '智慧农场01 · 智能问农。以下是系统当前可访问的完整实时数据，请直接依据这些数据回答，不要声称只能看到当前面板。若界面已创建工作台，请明确告诉用户工作台和对应组件已打开。'
   const fileContext = attachment.value ? `用户附件“${attachment.value.name}”内容：${attachment.value.content.slice(0, 1200)}。` : ''
-  if (panelMode.value !== 'entity' || !panelEntity.value) return `${base} 当前面板：${panelTitle.value}；面板指标：${panelMetrics.value.map(item => `${item.label}${item.value}`).join('、')}；当前全场环境：${environmentMetrics.map(item => `${item.label}${item.value}`).join('、')}。${fileContext}`
-  const zone = panelZone.value
-  return `${base} 当前面板对象：${panelEntity.value.name}；状态：${panelEntity.value.status}；指标：${panelEntity.value.metric}；健康度：${panelEntity.value.health ?? '暂无'}；作物：${zone?.crop || '暂无'}；面积：${zone?.area || '暂无'}；生长阶段：${zone?.stage || '暂无'}；环境：${zone?.environment || '暂无'}；相关未处理告警：${alerts.filter(item => item.entityId === panelEntity.value?.id && item.status !== '已处理').map(item => item.title).join('、') || '无'}。${fileContext}`
+  const context = {
+    farmSummary: dashboardSummary,
+    globalEnvironment: environmentMetrics,
+    allSceneEntities: sceneEntities,
+    allPlantingZones: farmZones,
+    allDevices: deviceRecords,
+    allIrrigationUnits: irrigationUnits,
+    allAlerts: alerts,
+    allMetricThresholds: metricThresholds.value,
+    greenhouseDetails: greenhouseDetails.value,
+    currentWorkbench: showWorkbench.value ? activeWorkbench.value : null,
+    currentPanel: { mode: panelMode.value, entity: panelEntity.value, title: panelTitle.value, metrics: panelMetrics.value }
+  }
+  return `${base}\n${workbenchAction.value || '本轮没有执行界面创建操作。'}\n系统数据：${JSON.stringify(context)}\n${fileContext}`
+}
+
+async function loadCompleteFarmContext() {
+  const [dashboard, thresholds] = await Promise.all([fetchDashboard(), fetchMetricThresholds()])
+  applyDashboard(dashboard)
+  metricThresholds.value = thresholds
+  const greenhouseIds = dashboard.entities.filter(item => item.type === 'greenhouse').map(item => item.id)
+  const results = await Promise.allSettled(greenhouseIds.map(id => fetchGreenhouseDetail(id)))
+  greenhouseDetails.value = results.flatMap(result => result.status === 'fulfilled' ? [result.value] : [])
 }
 
 async function onFileSelected(event: Event) {
@@ -445,6 +532,9 @@ function scheduleStateSync() {
 watch([workbenches, conversations], scheduleStateSync, { deep: true })
 watch(activeOverlay, value => { if (value === 'files') void loadKnowledgeDocuments() })
 onMounted(async () => {
+  const farmContextRequest = loadCompleteFarmContext().catch(error => {
+    stateSyncError.value = error instanceof Error ? `农场数据加载失败：${error.message}` : '农场数据加载失败'
+  })
   try {
     const state = await fetchAssistantState()
     const savedWorkbenches = JSON.parse(state.workbenchesJson || '[]') as AssistantWorkbench[]
@@ -454,6 +544,7 @@ onMounted(async () => {
   } catch (error) {
     stateSyncError.value = error instanceof Error ? error.message : '用户数据加载失败'
   } finally {
+    await farmContextRequest
     stateHydrated.value = true
     scheduleStateSync()
   }
@@ -462,7 +553,7 @@ onBeforeUnmount(() => { controller.value?.abort(); window.clearTimeout(stateSync
 </script>
 
 <template>
-  <main class="ask-farm" :class="{ chatting: workbenchActive }">
+  <main class="ask-farm" :class="{ chatting: workbenchActive || conversationActive }">
     <button class="mobile-menu" aria-label="打开会话列表" @click="sidebarOpen = true">
       <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -506,7 +597,7 @@ onBeforeUnmount(() => { controller.value?.abort(); window.clearTimeout(stateSync
       </header>
 
       <Transition name="workspace-swap" mode="out-in">
-      <div v-if="!workbenchActive" key="welcome" class="welcome">
+      <div v-if="!workbenchActive && !conversationActive" key="welcome" class="welcome">
         <h1>{{ greeting }}，{{ user?.name || '农场管理者' }} <em>🌱</em></h1>
         <p>我是田言耕智智能助手，随时为您提供农场数据分析和管理建议</p>
         <div class="composer welcome-composer">
@@ -522,6 +613,22 @@ onBeforeUnmount(() => { controller.value?.abort(); window.clearTimeout(stateSync
           <button v-for="item in quickQuestions" :key="item" @click="ask(item)">{{ item }}</button>
         </div>
       </div>
+
+      <section v-else-if="!workbenchActive" key="conversation" class="conversation">
+        <header><small>智慧问农</small><h1>{{ activeConversation?.title || '新的问农会话' }}</h1></header>
+        <div ref="listRef" class="message-list">
+          <article v-for="(message, index) in messages" :key="index" :class="message.role">
+            <img v-if="message.role === 'assistant'" class="bot-avatar" :src="xiaotianAvatar" alt="小田助手头像" />
+            <div><small>{{ message.role === 'assistant' ? '小田助手' : (user?.name || '我') }}</small><p>{{ message.content }}</p></div>
+          </article>
+          <article v-if="loading" class="assistant progress-message"><img class="bot-avatar" :src="xiaotianAvatar" alt="小田助手头像" /><div><ProgressBar :value="null" label="小田正在分析农场数据" pending-label="生成回答" /></div></article>
+        </div>
+        <div class="composer conversation-composer">
+          <div v-if="attachment" class="context-strip"><span><i>附件</i>{{ attachment.name }}<button @click="attachment = null">×</button></span></div>
+          <textarea ref="inputRef" v-model="input" rows="2" maxlength="1200" placeholder="继续询问农场数据或管理建议……" @keydown="onKeydown"></textarea>
+          <footer class="composer-tools"><button class="tool" title="添加附件" @click="fileInput?.click()"><svg viewBox="0 0 24 24"><path d="m9 12 5-5a3 3 0 0 1 4 4l-7 7a5 5 0 0 1-7-7l7-7"/></svg></button><span>{{ contextUsage }}</span><button class="send" :disabled="!input.trim() || loading" aria-label="发送" @click="ask()"><svg viewBox="0 0 24 24"><path d="m5 12 14-7-5 14-2.5-5.5L5 12Zm6.5 1.5L19 5"/></svg></button></footer>
+        </div>
+      </section>
 
       <section v-else key="workbench" class="conversation personalized-conversation">
         <PersonalizedWorkbench
@@ -539,8 +646,8 @@ onBeforeUnmount(() => { controller.value?.abort(); window.clearTimeout(stateSync
           @clear="clearActiveWorkbench"
           @toggle-pin="toggleActivePinned"
         />
-        <section class="compact-chat" :class="{ expanded: chatExpanded }">
-          <header class="chat-dock-head"><button class="chat-toggle" @click="chatExpanded = !chatExpanded"><img class="bot-orb" :src="xiaotianAvatar" alt="小田助手头像" /><div><strong>小田助手</strong><small>{{ assistantContextSummary }}</small></div></button><div class="sync-state" :class="{ error: stateSyncError }"><i></i>{{ stateSyncing ? '正在同步' : stateSyncError || '已保存到个人云端' }}</div><button class="expand-chat" @click="chatExpanded = !chatExpanded"><svg viewBox="0 0 24 24"><path :d="chatExpanded ? 'm7 14 5-5 5 5' : 'm7 10 5 5 5-5'"/></svg></button></header>
+        <section class="compact-chat" :class="{ expanded: chatExpanded, minimized: chatMinimized }">
+          <header class="chat-dock-head"><button class="chat-toggle" :aria-label="chatMinimized ? '展开小田助手' : '切换对话大小'" @click="toggleChatBody"><img class="bot-orb" :src="xiaotianAvatar" alt="小田助手头像" /><div><strong>小田助手</strong><small>{{ chatMinimized ? '点击恢复对话' : assistantContextSummary }}</small></div></button><div class="sync-state" :class="{ error: stateSyncError }"><i></i>{{ stateSyncing ? '正在同步' : stateSyncError || '已保存到个人云端' }}</div><button class="expand-chat" :aria-label="chatMinimized ? '已收起' : '收起对话'" :title="chatMinimized ? '点击左侧恢复对话' : '收起对话'" :disabled="chatMinimized" @click="minimizeChat"><svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></button></header>
           <div ref="listRef" class="message-list">
           <article v-for="(message, index) in visibleMessages" :key="index" :class="message.role">
             <img v-if="message.role === 'assistant'" class="bot-avatar" :src="xiaotianAvatar" alt="小田助手头像" />
@@ -691,6 +798,17 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 .compact-chat .bot-avatar{width:30px;height:30px;border:1px solid rgba(255,255,255,.86);border-radius:10px}
 .compact-chat .message-list{max-height:112px;padding:7px 12px}.compact-chat .message-list p{max-width:920px;padding:8px 12px;font-size:13px}
 .compact-chat .message-list small{font-size:10px}
+.compact-chat:not(.expanded){position:absolute;z-index:31;left:28px;right:28px;bottom:112px;margin:0}
+.compact-chat.minimized{left:auto;right:28px;width:min(420px,calc(100% - 56px))}
+.compact-chat.minimized .message-list,.compact-chat.minimized .conversation-composer{display:none}
+.compact-chat.minimized .chat-dock-head{border-bottom:0}
+.compact-chat.minimized .expand-chat:disabled{opacity:.45;cursor:default}
+.compact-chat:not(.expanded) .message-list{max-height:112px;scrollbar-gutter:stable}
+.compact-chat:not(.expanded) .message-list article.assistant{align-items:flex-start}
+.compact-chat:not(.expanded) .message-list article.assistant>div{min-width:0;max-width:min(920px,calc(100% - 44px));flex-direction:column;align-items:flex-start!important;gap:4px}
+.compact-chat:not(.expanded) .message-list article.assistant p{max-width:100%;overflow:visible;text-overflow:clip;white-space:pre-wrap;overflow-wrap:anywhere}
+.compact-chat .message-list::-webkit-scrollbar{width:7px}.compact-chat .message-list::-webkit-scrollbar-track{background:transparent}.compact-chat .message-list::-webkit-scrollbar-thumb{border:2px solid transparent;border-radius:999px;background:rgba(64,111,73,.28);background-clip:padding-box}
+@media(max-width:650px){.compact-chat:not(.expanded){left:8px;right:8px;bottom:82px}.compact-chat.minimized{left:8px;width:auto}}
 .compact-chat .conversation-composer,.compact-chat .conversation-composer:focus-within{margin:0;padding:10px 14px 11px;border:0;border-top:1px solid rgba(67,102,72,.1);border-radius:0;background:transparent;box-shadow:none}
 .compact-chat .conversation-composer textarea{display:block;width:100%;min-height:30px;padding:3px 1px;border:0!important;border-radius:0;outline:0;resize:none;background:transparent!important;box-shadow:none!important;color:#294332;font:500 13px/1.65 var(--font-sans);appearance:none}
 .compact-chat .conversation-composer textarea:focus{outline:0;box-shadow:none}.compact-chat .composer-tools{margin-top:7px}

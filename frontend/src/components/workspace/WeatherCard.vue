@@ -1,17 +1,50 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { environmentMetrics } from '@/data/farm'
+import { fetchLiveWeather, type LiveWeather } from '@/api/weather'
 defineEmits<{ detail: [] }>()
 const metric = (key: string) => computed(() => environmentMetrics.find(item => (item as { key?: string }).key === key)?.value || '--')
-const temperature = metric('temperature')
-const humidity = metric('airHumidity')
-const light = metric('light')
+const sensorTemperature = metric('temperature')
+const sensorHumidity = metric('airHumidity')
+const weather = ref<LiveWeather | null>(null)
+const loading = ref(false)
+const error = ref('')
+let refreshTimer = 0
+let controller: AbortController | undefined
+const temperature = computed(() => weather.value ? `${weather.value.temperature.toFixed(1)}°C` : sensorTemperature.value)
+const humidity = computed(() => weather.value ? `${Math.round(weather.value.humidity)}%` : sensorHumidity.value)
+const wind = computed(() => weather.value ? `${weather.value.windSpeed.toFixed(1)}m/s` : '2.1m/s')
+const radiation = computed(() => weather.value ? `${Math.round(weather.value.radiation)}W/m²` : '--')
+const observedLabel = computed(() => {
+  if (loading.value && !weather.value) return '正在连接实时天气…'
+  if (!weather.value) return error.value ? '农场传感器 · 天气服务暂不可用' : '农场传感器数据'
+  const time = new Date(weather.value.observedAt)
+  const label = Number.isNaN(time.getTime()) ? weather.value.observedAt.slice(11, 16) : time.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' })
+  return `${weather.value.source} · ${label} 更新`
+})
+
+async function refreshWeather() {
+  controller?.abort()
+  controller = new AbortController()
+  loading.value = true
+  error.value = ''
+  try { weather.value = await fetchLiveWeather(controller.signal) }
+  catch (reason) {
+    if ((reason as Error).name !== 'AbortError') error.value = reason instanceof Error ? reason.message : '实时天气读取失败'
+  } finally { loading.value = false }
+}
+
+onMounted(() => {
+  void refreshWeather()
+  refreshTimer = window.setInterval(refreshWeather, 10 * 60 * 1000)
+})
+onBeforeUnmount(() => { controller?.abort(); window.clearInterval(refreshTimer) })
 </script>
 
 <template>
   <section class="weather glass-dark">
-    <div class="summary"><span class="sun"><i v-for="n in 8" :key="n"></i></span><div><strong>{{ temperature }}</strong><small>虚拟气象 · 实时更新</small></div></div>
-    <div class="facts"><span>湿度 <b>{{ humidity }}</b></span><span>风速 <b>2.1m/s</b></span><span>光照 <b>{{ light }}</b></span></div>
+    <div class="summary"><span class="sun"><i v-for="n in 8" :key="n"></i></span><div><strong>{{ temperature }}</strong><small :title="error">{{ observedLabel }}</small></div></div>
+    <div class="facts"><span>湿度 <b>{{ humidity }}</b></span><span>风速 <b>{{ wind }}</b></span><span>辐射 <b>{{ radiation }}</b></span></div>
     <button @click="$emit('detail')">查看更多 <span>→</span></button>
   </section>
 </template>
