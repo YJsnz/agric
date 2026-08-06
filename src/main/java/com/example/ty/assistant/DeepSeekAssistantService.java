@@ -3,6 +3,8 @@ package com.example.ty.assistant;
 import com.example.ty.assistant.dto.AssistantChatRequest;
 import com.example.ty.assistant.dto.AssistantChatResponse;
 import com.example.ty.auth.exception.BizException;
+import com.example.ty.assistant.knowledge.KnowledgeSearchResult;
+import com.example.ty.assistant.knowledge.KnowledgeService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import tools.jackson.databind.JsonNode;
@@ -40,16 +42,19 @@ public class DeepSeekAssistantService {
     private final String apiKey;
     private final String endpoint;
     private final String model;
+    private final KnowledgeService knowledgeService;
 
     public DeepSeekAssistantService(@Value("${deepseek.api-key:}") String apiKey,
                                     @Value("${deepseek.base-url:https://api.deepseek.com}") String baseUrl,
                                     @Value("${deepseek.model:deepseek-v4-flash}") String model,
-                                    ObjectMapper objectMapper) {
+                                    ObjectMapper objectMapper,
+                                    KnowledgeService knowledgeService) {
         this.apiKey = apiKey == null ? "" : apiKey.trim();
         String normalizedBaseUrl = baseUrl == null ? "https://api.deepseek.com" : baseUrl.trim();
         this.endpoint = normalizedBaseUrl.replaceAll("/+$", "") + "/chat/completions";
         this.model = model == null || model.isBlank() ? "deepseek-v4-flash" : model.trim();
         this.objectMapper = objectMapper;
+        this.knowledgeService = knowledgeService;
         this.httpClient = HttpClient.newBuilder()
                 .connectTimeout(Duration.ofSeconds(8))
                 .build();
@@ -60,9 +65,11 @@ public class DeepSeekAssistantService {
             throw new BizException("AI_NOT_CONFIGURED", "AI 助手尚未配置 DEEPSEEK_API_KEY", 503);
         }
         List<AssistantChatRequest.Message> messages = validate(request);
+        String question = messages.get(messages.size() - 1).content();
+        List<KnowledgeSearchResult> retrieved = knowledgeService.search(question, 4);
 
         List<Map<String, String>> upstreamMessages = new ArrayList<>();
-        upstreamMessages.add(message("system", buildSystemPrompt(request.context())));
+        upstreamMessages.add(message("system", buildSystemPrompt(request.context(), retrieved)));
         messages.forEach(item -> upstreamMessages.add(message(item.role(), item.content().trim())));
 
         Map<String, Object> body = new LinkedHashMap<>();
@@ -91,7 +98,7 @@ public class DeepSeekAssistantService {
             if (reply.isEmpty()) {
                 throw new BizException("AI_EMPTY_RESPONSE", "AI 助手暂时没有返回有效内容，请稍后重试", 502);
             }
-            return new AssistantChatResponse(reply, root.path("model").asString(model));
+            return new AssistantChatResponse(reply, root.path("model").asString(model), retrieved.stream().map(KnowledgeSearchResult::source).distinct().toList());
         } catch (BizException e) {
             throw e;
         } catch (InterruptedException e) {
@@ -127,10 +134,20 @@ public class DeepSeekAssistantService {
         return messages;
     }
 
-    private String buildSystemPrompt(String context) {
-        if (context == null || context.isBlank()) return SYSTEM_PROMPT;
-        String safeContext = context.strip().substring(0, Math.min(context.strip().length(), 600));
-        return SYSTEM_PROMPT + "\n当前工作台上下文：" + safeContext;
+    private String buildSystemPrompt(String context, List<KnowledgeSearchResult> retrieved) {
+        StringBuilder prompt = new StringBuilder(SYSTEM_PROMPT);
+        if (context != null && !context.isBlank()) {
+            String safeContext = context.strip().substring(0, Math.min(context.strip().length(), 600));
+            prompt.append("\n当前工作台上下文：").append(safeContext);
+        }
+        if (!retrieved.isEmpty()) {
+            prompt.append("\n以下是知识库检索到的资料。仅在与问题相关时引用，并在回答末尾用“参考：文档名”注明来源：");
+            for (int i = 0; i < retrieved.size(); i++) {
+                KnowledgeSearchResult item = retrieved.get(i);
+                prompt.append("\n[资料").append(i + 1).append("｜").append(item.source()).append("]\n").append(item.content());
+            }
+        }
+        return prompt.toString();
     }
 
     private Map<String, String> message(String role, String content) {

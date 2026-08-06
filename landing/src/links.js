@@ -4,7 +4,8 @@ export const NAV_LINKS = [
   { label: '解决方案', to: '/solutions' },
   { label: '数字孪生', to: '/digital-twin' },
   { label: '关于我们', to: '/about' },
-  { label: '联系我们', to: '/contact' }
+  { label: '联系我们', to: '/contact' },
+  { label: '文档说明', to: '/docs' }
 ]
 
 // FormSubmit 收件邮箱：把这里换成你自己的邮箱，

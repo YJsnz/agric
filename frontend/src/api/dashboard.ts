@@ -1,5 +1,5 @@
 import { clearAuth, getToken } from './auth'
-import type { DashboardSnapshot, DeviceRecord, GreenhouseDetail, IrrigationUnit } from '@/types'
+import type { DashboardSnapshot, DeviceInput, DeviceRecord, FarmZone, GreenhouseDetail, IrrigationUnit, MetricThreshold, ZoneInput } from '@/types'
 
 async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
   const response = await fetch(`/api${path}`, {
@@ -47,4 +47,44 @@ export function runDeviceSelfTest(entityId: string, farmId = 'farm-01') {
 
 export function handleFarmAlert(alertId: number, farmId = 'farm-01') {
   return request<DashboardSnapshot['alerts'][number]>(`/farms/${farmId}/alerts/${alertId}/handle`, { method: 'PATCH' })
+}
+
+export function createFarmDevice(device: DeviceInput, farmId = 'farm-01') {
+  return request<DeviceRecord>(`/farms/${farmId}/devices`, { method: 'POST', body: JSON.stringify(device) })
+}
+
+export function updateFarmDevice(entityId: string, device: DeviceInput, farmId = 'farm-01') {
+  return request<DeviceRecord>(`/farms/${farmId}/devices/${entityId}`, { method: 'PUT', body: JSON.stringify(device) })
+}
+
+export function deleteFarmDevice(entityId: string, farmId = 'farm-01') {
+  return request<void>(`/farms/${farmId}/devices/${entityId}`, { method: 'DELETE' })
+}
+
+export function createFarmZone(zone: ZoneInput, farmId = 'farm-01') {
+  return request<FarmZone>(`/farms/${farmId}/zones`, { method: 'POST', body: JSON.stringify(zone) })
+}
+
+export function updateFarmZone(entityId: string, zone: ZoneInput, farmId = 'farm-01') {
+  return request<FarmZone>(`/farms/${farmId}/zones/${entityId}`, { method: 'PUT', body: JSON.stringify(zone) })
+}
+
+export function deleteFarmZone(entityId: string, farmId = 'farm-01') {
+  return request<void>(`/farms/${farmId}/zones/${entityId}`, { method: 'DELETE' })
+}
+
+export function fetchMetricThresholds(farmId = 'farm-01') {
+  return request<MetricThreshold[]>(`/farms/${farmId}/thresholds`)
+}
+
+export function saveSoilMoistureThreshold(minimumValue: number, enabled: boolean, farmId = 'farm-01') {
+  return request<MetricThreshold>(`/farms/${farmId}/thresholds/soil-moisture`, {
+    method: 'PUT', body: JSON.stringify({ minimumValue, enabled })
+  })
+}
+
+export function simulateSoilMoisture(value = 30, farmId = 'farm-01') {
+  return request<DashboardSnapshot['environmentMetrics'][number]>(`/farms/${farmId}/simulation/soil-moisture`, {
+    method: 'POST', body: JSON.stringify({ value })
+  })
 }

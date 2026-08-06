@@ -1,8 +1,6 @@
 package com.example.ty.dashboard;
 
-import com.example.ty.dashboard.dto.ControlRequest;
-import com.example.ty.dashboard.dto.DashboardSnapshot;
-import com.example.ty.dashboard.dto.GreenhouseDetail;
+import com.example.ty.dashboard.dto.*;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -24,6 +22,48 @@ public class DashboardController {
     @PatchMapping("/devices/{entityId}")
     public DashboardSnapshot.Device controlDevice(@PathVariable String farmId, @PathVariable String entityId, @Valid @RequestBody ControlRequest request) {
         return service.controlDevice(farmId, entityId, request);
+    }
+
+    @PostMapping("/devices")
+    public DashboardSnapshot.Device createDevice(@PathVariable String farmId, @Valid @RequestBody DeviceUpsertRequest request) {
+        return service.createDevice(farmId, request);
+    }
+
+    @PutMapping("/devices/{entityId}")
+    public DashboardSnapshot.Device updateDevice(@PathVariable String farmId, @PathVariable String entityId,
+                                                  @Valid @RequestBody DeviceUpsertRequest request) {
+        return service.updateDevice(farmId, entityId, request);
+    }
+
+    @DeleteMapping("/devices/{entityId}")
+    public void deleteDevice(@PathVariable String farmId, @PathVariable String entityId) { service.deleteDevice(farmId, entityId); }
+
+    @PostMapping("/zones")
+    public DashboardSnapshot.Zone createZone(@PathVariable String farmId, @Valid @RequestBody ZoneUpsertRequest request) {
+        return service.createZone(farmId, request);
+    }
+
+    @PutMapping("/zones/{entityId}")
+    public DashboardSnapshot.Zone updateZone(@PathVariable String farmId, @PathVariable String entityId,
+                                              @Valid @RequestBody ZoneUpsertRequest request) {
+        return service.updateZone(farmId, entityId, request);
+    }
+
+    @DeleteMapping("/zones/{entityId}")
+    public void deleteZone(@PathVariable String farmId, @PathVariable String entityId) { service.deleteZone(farmId, entityId); }
+
+    @GetMapping("/thresholds")
+    public java.util.List<ThresholdResponse> thresholds(@PathVariable String farmId) { return service.thresholds(farmId); }
+
+    @PutMapping("/thresholds/soil-moisture")
+    public ThresholdResponse updateSoilThreshold(@PathVariable String farmId, @Valid @RequestBody ThresholdRequest request) {
+        return service.updateSoilThreshold(farmId, request);
+    }
+
+    @PostMapping("/simulation/soil-moisture")
+    public DashboardSnapshot.Metric simulateSoilMoisture(@PathVariable String farmId,
+                                                          @Valid @RequestBody MetricSimulationRequest request) {
+        return service.simulateSoilMoisture(farmId, request.value());
     }
 
     @PatchMapping("/irrigation/{unitId}")

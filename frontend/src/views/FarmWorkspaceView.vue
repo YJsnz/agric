@@ -80,6 +80,18 @@ function searchEntity(query:string) {
 }
 function startMeasure(){measuring.value=true;measureStart.value=null;store.drawerOpen=false;showToast('测距模式：请选择两个地图对象')}
 function showAllAlerts(){notificationsOpen.value=false;handleModule('alerts')}
+function openAlert(item: (typeof alerts)[number]) {
+  notificationsOpen.value = false
+  monitorOpen.value = false
+  store.selectModule('alerts')
+  if (item.entityId) store.selectEntity(item.entityId)
+  else store.drawerOpen = true
+  showToast(item.entityId ? '已定位告警对象，请在右侧处理' : '已打开告警处理栏目')
+}
+async function refreshDashboard() {
+  try { await store.loadDashboard(true) }
+  catch (error) { showToast(error instanceof Error ? error.message : '数据同步失败') }
+}
 function handleModule(module: BusinessModule){
   const labels: Record<BusinessModule, string> = {overview:'总览',monitoring:'监控',environment:'环境',devices:'设备',irrigation:'灌溉',crops:'作物',alerts:'告警'}
   monitorOpen.value = false; store.selectModule(module)
@@ -121,12 +133,12 @@ function handleAssistantOpen(open:boolean){assistantOpen.value=open;if(!open)thr
     <Transition name="notice-panel">
       <aside v-if="notificationsOpen" class="notifications">
         <header><strong>消息通知</strong><button @click="notificationsOpen=false">×</button></header>
-        <article v-for="item in alerts.slice(0,3)" :key="item.id || item.time"><i :class="{warning:item.status!=='已处理'&&item.status!=='已恢复'}">△</i><div><b>{{ item.title }}</b><small>{{ item.time }} · {{ item.status }}</small></div></article>
+        <article v-for="item in alerts.slice(0,3)" :key="item.id || item.time"><i :class="{warning:item.status!=='已处理'&&item.status!=='已恢复'}">△</i><div><b>{{ item.title }}</b><small>{{ item.time }} · {{ item.status }}</small></div><button class="notice-action" @click="openAlert(item)">{{ item.status === '已处理' || item.status === '已恢复' ? '查看' : '处理' }}</button></article>
         <button class="all" @click="showAllAlerts">查看全部消息</button>
       </aside>
     </Transition>
 
-    <FarmContextDrawer :entity="store.selectedEntity" :open="store.drawerOpen" :module="store.activeModule" @close="closeDrawer" @select="selectEntity" @action="showToast($event)" @enter-greenhouse="enterGreenhouse" />
+    <FarmContextDrawer :entity="store.selectedEntity" :open="store.drawerOpen" :module="store.activeModule" @close="closeDrawer" @select="selectEntity" @action="showToast($event)" @refresh="refreshDashboard" @enter-greenhouse="enterGreenhouse" />
     <FarmBusinessDock :active="store.activeModule" :show-shortcuts="firstPersonActive" @change="handleModule" />
     <GreenhouseMonitorModal :open="monitorOpen" :entity="store.selectedEntity" :zone="monitorZone" @close="closeMonitor" @action="showToast($event)" />
     <FarmAiAssistant :open="assistantOpen" :context="assistantContext" @update:open="handleAssistantOpen" />
@@ -135,7 +147,7 @@ function handleAssistantOpen(open:boolean){assistantOpen.value=open;if(!open)thr
 </template>
 
 <style scoped lang="scss">
-.workspace{position:fixed;inset:0;overflow:hidden;background:#173a2b}.scene-enter-active,.scene-leave-active{transition:opacity .65s ease,filter .65s ease,transform .65s ease}.scene-enter-from{opacity:0;filter:blur(8px);transform:scale(1.025)}.scene-leave-to{opacity:0;filter:blur(7px);transform:scale(.985)}.scene-name{position:absolute;z-index:11;left:25px;bottom:31px;padding:8px 12px;border-radius:999px;background:rgba(8,29,23,.55);color:rgba(255,255,255,.78);font-size:11px;backdrop-filter:blur(10px)}.notifications{position:absolute;z-index:40;right:72px;top:68px;width:290px;padding:14px;background:rgba(245,247,240,.94);border:1px solid rgba(255,255,255,.7);border-radius:17px;box-shadow:var(--shadow-lg);backdrop-filter:blur(24px)}.notifications header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.notifications header button{border:0;background:transparent;font-size:22px;cursor:pointer}.notifications article{display:flex;gap:10px;padding:12px 4px;border-top:1px solid var(--border-soft)}.notifications article i{font-style:normal;color:#4c895c}.notifications article i.warning{color:#e4952d}.notifications article div{display:flex;flex-direction:column;gap:4px}.notifications article b{font-size:12px}.notifications article small{font-size:10px;color:var(--text-tertiary)}.notifications .all{width:100%;border:0;border-radius:9px;padding:9px;background:#e8ece2;color:#3e5b44;cursor:pointer}.notice-panel-enter-active,.notice-panel-leave-active{transition:.2s}.notice-panel-enter-from,.notice-panel-leave-to{opacity:0;transform:translateY(-7px)}
+.workspace{position:fixed;inset:0;overflow:hidden;background:#173a2b}.scene-enter-active,.scene-leave-active{transition:opacity .65s ease,filter .65s ease,transform .65s ease}.scene-enter-from{opacity:0;filter:blur(8px);transform:scale(1.025)}.scene-leave-to{opacity:0;filter:blur(7px);transform:scale(.985)}.scene-name{position:absolute;z-index:11;left:25px;bottom:31px;padding:8px 12px;border-radius:999px;background:rgba(8,29,23,.55);color:rgba(255,255,255,.78);font-size:11px;backdrop-filter:blur(10px)}.notifications{position:absolute;z-index:40;right:72px;top:68px;width:310px;padding:14px;background:rgba(245,247,240,.94);border:1px solid rgba(255,255,255,.7);border-radius:17px;box-shadow:var(--shadow-lg);backdrop-filter:blur(24px)}.notifications header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.notifications header button{border:0;background:transparent;font-size:22px;cursor:pointer}.notifications article{display:flex;align-items:center;gap:10px;padding:12px 4px;border-top:1px solid var(--border-soft)}.notifications article i{font-style:normal;color:#4c895c}.notifications article i.warning{color:#e4952d}.notifications article div{min-width:0;display:flex;flex:1;flex-direction:column;gap:4px}.notifications article b{font-size:12px}.notifications article small{font-size:10px;color:var(--text-tertiary)}.notice-action{flex:none;padding:6px 8px;border:1px solid #d6e2d4!important;border-radius:8px;background:#f7faf5!important;color:#477454;font-size:9px!important;cursor:pointer}.notifications .all{width:100%;border:0;border-radius:9px;padding:9px;background:#e8ece2;color:#3e5b44;cursor:pointer}.notice-panel-enter-active,.notice-panel-leave-active{transition:.2s}.notice-panel-enter-from,.notice-panel-leave-to{opacity:0;transform:translateY(-7px)}
 .detail-mode-hidden{opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity .22s,transform .22s}.drawer-open .scene-name{opacity:0;pointer-events:none}
 .data-loading-card{position:absolute;z-index:55;left:50%;top:94px;transform:translateX(-50%);width:min(360px,calc(100vw - 32px));padding:13px 15px;border:1px solid rgba(255,255,255,.76);border-radius:15px;background:rgba(247,250,245,.92);box-shadow:0 18px 50px rgba(7,35,20,.25);backdrop-filter:blur(24px)}.data-loading-enter-active,.data-loading-leave-active{transition:.3s}.data-loading-enter-from,.data-loading-leave-to{opacity:0;transform:translate(-50%,-10px) scale(.96)}
 @media(max-width:1000px){.scene-name{display:none}}

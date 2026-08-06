@@ -20,6 +20,7 @@ public class DashboardDataInitializer implements ApplicationRunner {
     private final EnvironmentMetricRepository metrics;
     private final IrrigationUnitRepository irrigation;
     private final FarmAlertRepository alerts;
+    private final MetricThresholdRepository thresholds;
 
     @Override @Transactional
     public void run(ApplicationArguments args) {
@@ -28,6 +29,9 @@ public class DashboardDataInitializer implements ApplicationRunner {
         if (metrics.count() == 0) seedMetrics();
         if (irrigation.count() == 0) seedIrrigation();
         if (alerts.count() == 0) seedAlerts();
+        ensureDemoAlerts();
+        if (thresholds.count() == 0) thresholds.save(MetricThreshold.builder().farmId(FARM_ID).metricKey("soilMoisture")
+                .label("土壤湿度下限").minimumValue(40).enabled(true).updatedAt(LocalDateTime.now()).build());
     }
 
     private void seedAssets() {
@@ -84,5 +88,16 @@ public class DashboardDataInitializer implements ApplicationRunner {
     private void seedAlerts() {
         LocalDateTime now=LocalDateTime.now();
         alerts.saveAll(List.of(FarmAlert.builder().farmId(FARM_ID).entityId("field-04").title("4号生菜区土壤湿度偏低").level("预警").status("未处理").occurredAt(now.minusMinutes(2)).build(),FarmAlert.builder().farmId(FARM_ID).entityId("gh-02").title("2号温室西侧叶片轻度萎蔫").level("关注").status("处理中").occurredAt(now.minusMinutes(37)).build(),FarmAlert.builder().farmId(FARM_ID).entityId("fertilizer-01").title("水肥一体机 EC 短时偏高").level("提醒").status("已恢复").occurredAt(now.minusHours(2)).build()));
+    }
+
+    private void ensureDemoAlerts() {
+        addDemoAlertIfMissing("field-05", "5号露天种植区土壤湿度低于 35%", "预警", LocalDateTime.now().minusMinutes(8));
+        addDemoAlertIfMissing("gh-02", "2号草莓温室空气温度超过 32°C", "预警", LocalDateTime.now().minusMinutes(15));
+    }
+
+    private void addDemoAlertIfMissing(String entityId, String title, String level, LocalDateTime occurredAt) {
+        if (alerts.existsByFarmIdAndTitle(FARM_ID, title)) return;
+        alerts.save(FarmAlert.builder().farmId(FARM_ID).entityId(entityId).title(title).level(level)
+                .status("未处理").occurredAt(occurredAt).build());
     }
 }

@@ -10,6 +10,15 @@ export interface ChatMessage {
 export interface AssistantReply {
   reply: string
   model: string
+  sources: string[]
+}
+
+export interface KnowledgeDocumentSummary {
+  key: string
+  title: string
+  characters: number
+  chunks: number
+  updatedAt: string
 }
 
 export interface AssistantUserState {
@@ -59,6 +68,23 @@ export async function sendAssistantMessage(
   }
   return {
     reply: payload.reply || '暂时没有获得有效回答，请稍后重试。',
-    model: payload.model || 'DeepSeek'
+    model: payload.model || 'DeepSeek',
+    sources: payload.sources || []
   }
 }
+
+async function knowledgeRequest<T>(path = '', options: RequestInit = {}): Promise<T> {
+  const response = await fetch(`/api/assistant/knowledge${path}`, {
+    ...options,
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${getToken()}`, ...(options.headers || {}) }
+  })
+  const payload = await response.json().catch(() => ({})) as T & { message?: string }
+  if (!response.ok) throw new Error(payload.message || `知识库请求失败（${response.status}）`)
+  return payload
+}
+
+export function fetchKnowledgeDocuments() { return knowledgeRequest<KnowledgeDocumentSummary[]>() }
+export function saveKnowledgeDocument(key: string, title: string, content: string) {
+  return knowledgeRequest<KnowledgeDocumentSummary>(`/${key}`, { method: 'PUT', body: JSON.stringify({ title, content }) })
+}
+export function deleteKnowledgeDocument(key: string) { return knowledgeRequest<void>(`/${key}`, { method: 'DELETE' }) }

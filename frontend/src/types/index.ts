@@ -24,6 +24,19 @@ export interface FarmZone {
   environment: string
 }
 
+export interface ZoneInput {
+  id: string
+  name: string
+  crop: string
+  area: string
+  stage: string
+  environment: string
+  health: number
+  mapX: number
+  mapY: number
+  polygon: Array<[number, number]>
+}
+
 export interface DockModuleDefinition {
   key: BusinessModule
   label: string
@@ -43,6 +56,25 @@ export interface DeviceRecord {
   enabled: boolean
   value: string
   lastSeen: string
+}
+
+export interface DeviceInput {
+  id: string
+  entityId: string
+  name: string
+  category: DeviceRecord['category']
+  location: string
+  online: boolean
+  enabled: boolean
+  currentValue: string
+}
+
+export interface MetricThreshold {
+  metricKey: string
+  label: string
+  minimumValue: number
+  enabled: boolean
+  updatedAt: string
 }
 
 export interface IrrigationUnit {

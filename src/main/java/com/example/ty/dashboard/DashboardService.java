@@ -1,9 +1,7 @@
 package com.example.ty.dashboard;
 
 import com.example.ty.auth.exception.BizException;
-import com.example.ty.dashboard.dto.ControlRequest;
-import com.example.ty.dashboard.dto.DashboardSnapshot;
-import com.example.ty.dashboard.dto.GreenhouseDetail;
+import com.example.ty.dashboard.dto.*;
 import com.example.ty.dashboard.entity.*;
 import com.example.ty.dashboard.repository.*;
 import lombok.RequiredArgsConstructor;
@@ -31,6 +29,7 @@ public class DashboardService {
     private final EnvironmentMetricRepository metrics;
     private final IrrigationUnitRepository irrigation;
     private final FarmAlertRepository alerts;
+    private final MetricThresholdRepository thresholds;
     private final ObjectMapper objectMapper;
 
     @Transactional(readOnly = true)
@@ -166,13 +165,104 @@ public class DashboardService {
     }
 
     @Transactional
+    public DashboardSnapshot.Device createDevice(String farmId, DeviceUpsertRequest request) {
+        if (devices.existsById(request.id()) || devices.findByFarmIdAndEntityId(farmId, request.entityId()).isPresent()) {
+            throw BizException.badRequest("设备编号或实体编号已存在");
+        }
+        FarmDevice device = new FarmDevice();
+        applyDevice(device, farmId, request);
+        return deviceDto(devices.save(device));
+    }
+
+    @Transactional
+    public DashboardSnapshot.Device updateDevice(String farmId, String entityId, DeviceUpsertRequest request) {
+        FarmDevice device = devices.findByFarmIdAndEntityId(farmId, entityId).orElseThrow(() -> BizException.notFound("设备不存在"));
+        devices.findByFarmIdAndEntityId(farmId, request.entityId())
+                .filter(other -> !other.getId().equals(device.getId()))
+                .ifPresent(other -> { throw BizException.badRequest("实体编号已被其他设备使用"); });
+        device.setEntityId(request.entityId());
+        device.setName(request.name().trim());
+        device.setCategory(request.category());
+        device.setLocation(request.location().trim());
+        device.setOnline(request.online() == null || request.online());
+        device.setEnabled(Boolean.TRUE.equals(request.enabled()));
+        device.setCurrentValue(blankDefault(request.currentValue(), "暂无数据"));
+        device.setLastSeenAt(LocalDateTime.now());
+        return deviceDto(devices.save(device));
+    }
+
+    @Transactional
+    public void deleteDevice(String farmId, String entityId) {
+        FarmDevice device = devices.findByFarmIdAndEntityId(farmId, entityId).orElseThrow(() -> BizException.notFound("设备不存在"));
+        if (devices.countByFarmId(farmId) <= 1) throw BizException.badRequest("至少保留一台设备");
+        devices.delete(device);
+    }
+
+    @Transactional
+    public DashboardSnapshot.Zone createZone(String farmId, ZoneUpsertRequest request) {
+        if (assets.existsById(request.id())) throw BizException.badRequest("种植区编号已存在");
+        FarmAsset zone = new FarmAsset();
+        applyZone(zone, farmId, request, true);
+        return zoneDto(assets.save(zone));
+    }
+
+    @Transactional
+    public DashboardSnapshot.Zone updateZone(String farmId, String entityId, ZoneUpsertRequest request) {
+        FarmAsset zone = assets.findByFarmIdAndId(farmId, entityId)
+                .filter(item -> "field".equals(item.getType()))
+                .orElseThrow(() -> BizException.notFound("种植区不存在"));
+        if (!entityId.equals(request.id())) throw BizException.badRequest("已存在种植区的编号不能修改");
+        applyZone(zone, farmId, request, false);
+        return zoneDto(assets.save(zone));
+    }
+
+    @Transactional
+    public void deleteZone(String farmId, String entityId) {
+        FarmAsset zone = assets.findByFarmIdAndId(farmId, entityId)
+                .filter(item -> "field".equals(item.getType()))
+                .orElseThrow(() -> BizException.notFound("种植区不存在"));
+        List<IrrigationUnitEntity> linkedUnits = irrigation.findByFarmIdAndEntityId(farmId, entityId);
+        if (linkedUnits.stream().anyMatch(IrrigationUnitEntity::isEnabled)) {
+            throw BizException.badRequest("该种植区仍在灌溉，请先停止灌溉后再删除");
+        }
+        irrigation.deleteAll(linkedUnits);
+        assets.delete(zone);
+    }
+
+    @Transactional(readOnly = true)
+    public List<ThresholdResponse> thresholds(String farmId) {
+        return thresholds.findByFarmIdOrderByMetricKey(farmId).stream().map(this::thresholdDto).toList();
+    }
+
+    @Transactional
+    public ThresholdResponse updateSoilThreshold(String farmId, ThresholdRequest request) {
+        MetricThreshold threshold = thresholds.findByFarmIdAndMetricKey(farmId, "soilMoisture").orElseGet(MetricThreshold::new);
+        threshold.setFarmId(farmId);
+        threshold.setMetricKey("soilMoisture");
+        threshold.setLabel("土壤湿度下限");
+        threshold.setMinimumValue(request.minimumValue());
+        threshold.setEnabled(request.enabled());
+        threshold.setUpdatedAt(LocalDateTime.now());
+        MetricThreshold saved = thresholds.save(threshold);
+        evaluateSoilMoisture(farmId);
+        return thresholdDto(saved);
+    }
+
+    @Transactional
     public DashboardSnapshot.Irrigation controlIrrigation(String farmId, String unitId, ControlRequest request) {
         IrrigationUnitEntity unit = irrigation.findByFarmIdAndId(farmId, unitId).orElseThrow(() -> BizException.notFound("灌溉单元不存在"));
         unit.setEnabled(request.enabled());
         if (request.durationMinutes() != null) unit.setDurationMinutes(request.durationMinutes());
         unit.setFlowRate(request.enabled() ? defaultFlow(unit.getKind()) : 0);
         unit.setUpdatedAt(LocalDateTime.now());
-        return irrigationDto(irrigation.save(unit));
+        IrrigationUnitEntity saved = irrigation.save(unit);
+        if (request.enabled() && "field-04".equals(unit.getEntityId())) setSoilMoisture(farmId, 90, true);
+        return irrigationDto(saved);
+    }
+
+    @Transactional
+    public DashboardSnapshot.Metric simulateSoilMoisture(String farmId, double value) {
+        return metricDto(setSoilMoisture(farmId, value, false));
     }
 
     @Transactional
@@ -223,7 +313,92 @@ public class DashboardService {
         for (FarmDevice device : devices.findByFarmIdOrderById(DashboardDataInitializer.FARM_ID)) {
             if (device.isOnline()) device.setLastSeenAt(now.minusSeconds(ThreadLocalRandom.current().nextInt(0, 13)));
         }
+        evaluateSoilMoisture(DashboardDataInitializer.FARM_ID);
     }
+
+    private void evaluateSoilMoisture(String farmId) {
+        MetricThreshold threshold = thresholds.findByFarmIdAndMetricKey(farmId, "soilMoisture").orElse(null);
+        EnvironmentMetric metric = metrics.findByFarmIdOrderById(farmId).stream()
+                .filter(item -> "soilMoisture".equals(item.getMetricKey())).findFirst().orElse(null);
+        if (threshold == null || metric == null || !threshold.isEnabled()) return;
+        String title = String.format(Locale.ROOT, "土壤湿度低于 %.0f%% 阈值", threshold.getMinimumValue());
+        alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
+                .filter(item -> item.getTitle().startsWith("土壤湿度低于 ") && !title.equals(item.getTitle())
+                        && !List.of("已处理", "已恢复").contains(item.getStatus()))
+                .forEach(item -> { item.setStatus("已恢复"); alerts.save(item); });
+        if (metric.getValue() < threshold.getMinimumValue()) {
+            boolean hasActiveSoilAlert = alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
+                    .anyMatch(item -> "field-04".equals(item.getEntityId()) && item.getTitle().contains("土壤湿度")
+                            && !List.of("已处理", "已恢复").contains(item.getStatus()));
+            if (!hasActiveSoilAlert) {
+                alerts.save(FarmAlert.builder().farmId(farmId).entityId("field-04").title(title).level("预警")
+                        .status("未处理").occurredAt(LocalDateTime.now()).build());
+            }
+        } else {
+            alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
+                    .filter(item -> "field-04".equals(item.getEntityId()) && item.getTitle().contains("土壤湿度")
+                            && !List.of("已处理", "已恢复").contains(item.getStatus()))
+                    .forEach(item -> { item.setStatus("已恢复"); alerts.save(item); });
+        }
+    }
+
+    private EnvironmentMetric setSoilMoisture(String farmId, double value, boolean irrigationCompleted) {
+        EnvironmentMetric metric = metrics.findByFarmIdOrderById(farmId).stream()
+                .filter(item -> "soilMoisture".equals(item.getMetricKey())).findFirst()
+                .orElseThrow(() -> BizException.notFound("土壤湿度指标不存在"));
+        metric.setPreviousValue(metric.getValue());
+        metric.setValue(value);
+        metric.setMeasuredAt(LocalDateTime.now());
+        metric.setTone(value < 40 ? "warning" : "success");
+        EnvironmentMetric saved = metrics.save(metric);
+        assets.findByFarmIdAndId(farmId, "field-04").ifPresent(asset -> {
+            asset.setMetric(String.format(Locale.ROOT, "土壤湿度 %.0f%%", value));
+            asset.setEnvironmentSummary(String.format(Locale.ROOT, "土壤湿度 %.0f%%", value));
+            asset.setStatus(value < 40 ? "warning" : "normal");
+            if (irrigationCompleted) asset.setHealth(96);
+            assets.save(asset);
+        });
+        evaluateSoilMoisture(farmId);
+        return saved;
+    }
+
+    private void applyDevice(FarmDevice device, String farmId, DeviceUpsertRequest request) {
+        device.setId(request.id());
+        device.setFarmId(farmId);
+        device.setEntityId(request.entityId());
+        device.setName(request.name().trim());
+        device.setCategory(request.category());
+        device.setLocation(request.location().trim());
+        device.setOnline(request.online() == null || request.online());
+        device.setEnabled(Boolean.TRUE.equals(request.enabled()));
+        device.setCurrentValue(blankDefault(request.currentValue(), "暂无数据"));
+        device.setLastSeenAt(LocalDateTime.now());
+    }
+
+    private void applyZone(FarmAsset zone, String farmId, ZoneUpsertRequest request, boolean creating) {
+        zone.setId(request.id());
+        zone.setFarmId(farmId);
+        zone.setName(request.name().trim());
+        zone.setType("field");
+        zone.setStatus("normal");
+        zone.setMetric(request.environment().trim());
+        zone.setMapX(request.mapX());
+        zone.setMapY(request.mapY());
+        zone.setHealth(request.health() == null ? 90 : request.health());
+        zone.setPositionX((request.mapX() - 50) * .65);
+        zone.setPositionY(0d);
+        zone.setPositionZ((request.mapY() - 50) * .55);
+        zone.setZoneId("zone-" + request.id());
+        try { zone.setPolygonJson(objectMapper.writeValueAsString(request.polygon())); }
+        catch (Exception error) { throw BizException.badRequest("种植区边界数据格式不正确"); }
+        zone.setCrop(request.crop().trim());
+        zone.setArea(request.area().trim());
+        zone.setGrowthStage(request.stage().trim());
+        zone.setEnvironmentSummary(request.environment().trim());
+    }
+
+    private String blankDefault(String value, String fallback) { return value == null || value.isBlank() ? fallback : value.trim(); }
+    private ThresholdResponse thresholdDto(MetricThreshold item) { return new ThresholdResponse(item.getMetricKey(), item.getLabel(), item.getMinimumValue(), item.isEnabled(), item.getUpdatedAt()); }
 
     private DashboardSnapshot.Asset assetDto(FarmAsset item, Set<String> activeAlertEntityIds) {
         String status = item.getStatus();

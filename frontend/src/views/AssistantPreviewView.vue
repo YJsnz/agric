@@ -8,7 +8,7 @@ import PersonalizedWorkbench from '@/components/assistant/PersonalizedWorkbench.
 import MarkdownDocumentViewer from '@/components/assistant/MarkdownDocumentViewer.vue'
 import { useAssistantWorkbenches } from '@/composables/useAssistantWorkbenches'
 import { getUser } from '@/api/auth'
-import { fetchAssistantState, saveAssistantState, sendAssistantMessage, type ChatMessage } from '@/api/assistant'
+import { deleteKnowledgeDocument, fetchAssistantState, fetchKnowledgeDocuments, saveAssistantState, saveKnowledgeDocument, sendAssistantMessage, type ChatMessage, type KnowledgeDocumentSummary } from '@/api/assistant'
 import { alerts, dashboardSummary, deviceRecords, environmentMetrics, farmZones, irrigationUnits, sceneEntities } from '@/data/farm'
 import type { SceneEntity } from '@/types'
 import type { AssistantWorkbench, WorkbenchWidgetType } from '@/types/workbench'
@@ -60,6 +60,9 @@ const searchQuery = ref('')
 const activeOverlay = ref<'files' | 'projects' | 'filters' | 'apps' | null>(null)
 const attachment = ref<{ name: string; content: string } | null>(null)
 const selectedLibraryDocument = ref<LibraryDocument | null>(null)
+const knowledgeDocuments = ref<KnowledgeDocumentSummary[]>([])
+const knowledgeBusyKey = ref('')
+const knowledgeError = ref('')
 const demoRunning = ref(false)
 const recording = ref(false)
 const chatExpanded = ref(false)
@@ -340,8 +343,12 @@ function buildAssistantContext() {
 async function onFileSelected(event: Event) {
   const file = (event.target as HTMLInputElement).files?.[0]
   if (!file) return
-  if (file.size > 1024 * 1024) { window.alert('文件不能超过 1MB'); return }
-  attachment.value = { name: file.name, content: await file.text() }
+  if (file.size > 180 * 1024) { window.alert('知识文档不能超过 180KB'); return }
+  const content = await file.text()
+  attachment.value = { name: file.name, content }
+  const key = `upload-${Date.now()}`
+  try { await saveKnowledgeDocument(key, file.name, content); await loadKnowledgeDocuments() }
+  catch (error) { knowledgeError.value = error instanceof Error ? error.message : '知识文档索引失败' }
   activeOverlay.value = null
   input.value = `请分析附件 ${file.name}`
   await nextTick(() => inputRef.value?.focus())
@@ -351,13 +358,29 @@ function openLibraryDocument(document: LibraryDocument) {
   selectedLibraryDocument.value = document
 }
 
-function attachLibraryDocument(document: LibraryDocument | null) {
+async function attachLibraryDocument(document: LibraryDocument | null) {
   if (!document) return
+  knowledgeBusyKey.value = document.id
+  try { await saveKnowledgeDocument(document.id, document.title, document.content); await loadKnowledgeDocuments() }
+  catch (error) { knowledgeError.value = error instanceof Error ? error.message : '知识文档索引失败' }
+  finally { knowledgeBusyKey.value = '' }
   attachment.value = { name: `${document.title}.md`, content: document.content }
   selectedLibraryDocument.value = null
   activeOverlay.value = null
   input.value = `请结合《${document.title}》回答我的问题：`
   nextTick(() => inputRef.value?.focus())
+}
+
+async function loadKnowledgeDocuments() {
+  try { knowledgeDocuments.value = await fetchKnowledgeDocuments(); knowledgeError.value = '' }
+  catch (error) { knowledgeError.value = error instanceof Error ? error.message : '知识库加载失败' }
+}
+
+async function removeKnowledgeDocument(key: string) {
+  knowledgeBusyKey.value = key
+  try { await deleteKnowledgeDocument(key); await loadKnowledgeDocuments() }
+  catch (error) { knowledgeError.value = error instanceof Error ? error.message : '知识文档删除失败' }
+  finally { knowledgeBusyKey.value = '' }
 }
 
 async function onWorkbenchImported(event: Event) {
@@ -420,6 +443,7 @@ function scheduleStateSync() {
 }
 
 watch([workbenches, conversations], scheduleStateSync, { deep: true })
+watch(activeOverlay, value => { if (value === 'files') void loadKnowledgeDocuments() })
 onMounted(async () => {
   try {
     const state = await fetchAssistantState()
@@ -571,10 +595,11 @@ onBeforeUnmount(() => { controller.value?.abort(); window.clearTimeout(stateSync
               <div class="built-in-documents">
                 <button v-for="document in libraryDocuments" :key="document.id" class="document-row" @click="openLibraryDocument(document)">
                   <span class="document-mark"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM15 3v5h5M9 12h7M9 16h7"/></svg></span>
-                  <span class="document-copy"><strong>{{ document.title }}</strong><small>{{ document.description }}</small><em>{{ document.audience }} · {{ document.pages }} · {{ document.updatedAt }}</em></span>
+                  <span class="document-copy"><strong>{{ document.title }}</strong><small>{{ document.description }}</small><em>{{ document.audience }} · {{ document.pages }} · {{ knowledgeDocuments.some(item => item.key === document.id) ? 'RAG 已索引' : '阅读后可加入 RAG' }}</em></span>
                   <span class="document-open">阅读 <svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></span>
                 </button>
               </div>
+              <div class="rag-inventory"><div class="section-copy"><strong>RAG 知识库</strong><small>提问时自动检索最相关的文档片段，并把来源交给小田。</small></div><p v-if="knowledgeError" class="knowledge-error">{{ knowledgeError }}</p><div v-if="knowledgeDocuments.length" class="knowledge-list"><article v-for="document in knowledgeDocuments" :key="document.key"><span><b>{{ document.title }}</b><small>{{ document.chunks }} 个检索分块 · {{ document.characters.toLocaleString() }} 字符</small></span><button :disabled="knowledgeBusyKey === document.key" @click="removeKnowledgeDocument(document.key)">{{ knowledgeBusyKey === document.key ? '处理中' : '移除' }}</button></article></div><p v-else class="knowledge-empty">暂无索引文档。上传文本资料，或阅读内置手册并点击“加入问农上下文”。</p></div>
               <div v-if="attachment" class="file-row"><div><small>当前会话附件</small><strong>{{ attachment.name }}</strong></div><button @click="attachment = null">移除</button></div>
               <button class="secondary-action" @click="fileInput?.click()"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>上传自己的文件</button>
             </template>
@@ -634,6 +659,7 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 
 /* 文件库：内置手册与站内阅读器 */
 .feature-card.library-card{width:min(760px,calc(100vw - 40px));max-height:calc(100vh - 48px);padding:30px;overflow:auto;background:#f8fbf6}.library-card>p{max-width:58ch}.built-in-documents{display:grid;gap:10px;margin:22px 0}.document-row{width:100%;display:grid;grid-template-columns:48px minmax(0,1fr) auto;align-items:center;gap:14px;padding:16px;border:1px solid #dce7da;border-radius:14px;background:#fff;color:#314538;text-align:left;cursor:pointer;box-shadow:0 5px 16px rgba(27,61,35,.05);transition:transform .25s cubic-bezier(.22,.8,.2,1),border-color .2s,box-shadow .25s}.document-row:hover,.document-row:focus-visible{transform:translateY(-2px);border-color:#a9c9ae;box-shadow:0 14px 30px rgba(27,61,35,.11);outline:0}.document-mark{width:46px;height:46px;display:grid;place-items:center;border-radius:12px;background:#e7f2e5;color:#39784c}.document-mark svg{width:23px;height:23px}.document-copy{min-width:0;display:flex;flex-direction:column}.document-copy strong{color:#24452f;font-size:14px}.document-copy small{margin-top:4px;color:#69786c;font-size:11px;line-height:1.55}.document-copy em{margin-top:8px;color:#829087;font-size:9px;font-style:normal}.document-open{display:flex;align-items:center;gap:4px;color:#36764a;font-size:11px;font-weight:700}.document-open svg{width:15px}.library-card .file-row{margin:18px 0 12px;border:1px solid #e0e7de;background:#f1f5ef}.library-card .file-row>div{display:flex;flex-direction:column;gap:3px}.library-card .file-row small{color:#819087;font-size:9px}.library-card .file-row strong{color:#33483a;font-size:12px}.secondary-action{display:flex;align-items:center;gap:7px;padding:10px 13px;border:1px solid #cfddce;border-radius:10px;background:#fff;color:#41644a;font-size:11px;font-weight:650;cursor:pointer}.secondary-action:hover{border-color:#9dbc9f;background:#f5faf3}.secondary-action svg{width:16px}.feature-overlay:has(.document-reader){padding:24px;background:rgba(5,28,17,.58)}
+.rag-inventory{margin:8px 0 18px;padding:16px;border:1px solid #d8e5d7;border-radius:14px;background:#eef5ec}.section-copy{display:flex;flex-direction:column;gap:4px}.section-copy strong{color:#2c5637;font-size:13px}.section-copy small{color:#748178;font-size:10px;line-height:1.5}.knowledge-list{margin-top:12px;border-top:1px solid #d7e2d5}.knowledge-list article{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #d7e2d5}.knowledge-list article>span{min-width:0;display:flex;flex:1;flex-direction:column;gap:3px}.knowledge-list b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#365640;font-size:11px}.knowledge-list small,.knowledge-empty{color:#7d8980;font-size:9px}.knowledge-list button{padding:6px 8px;border:1px solid #cfdbcd;border-radius:8px;background:white;color:#7c584d;font-size:9px;cursor:pointer}.knowledge-list button:disabled{opacity:.5}.knowledge-error{color:#a4493c;font-size:10px}.knowledge-empty{margin:11px 0 0;line-height:1.55}
 @media(max-width:650px){.feature-card.library-card{width:calc(100vw - 24px);padding:22px 16px}.document-row{grid-template-columns:42px minmax(0,1fr);padding:13px}.document-mark{width:40px;height:40px}.document-open{grid-column:2}.feature-overlay:has(.document-reader){padding:0}}
 /* 与数据工作台统一：真实场景 + 农业绿液态玻璃 */
 .ask-farm{background:#173a2b}.sidebar{border-right:1px solid rgba(255,255,255,.68);background:linear-gradient(145deg,rgba(244,249,242,.94),rgba(224,235,224,.86));box-shadow:12px 0 44px rgba(7,32,19,.18);backdrop-filter:blur(32px) saturate(155%)}
