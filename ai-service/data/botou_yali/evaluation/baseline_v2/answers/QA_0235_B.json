@@ -1,0 +1,246 @@
+{
+  "id": "QA_0235",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0015",
+    "chunk:PAPER_005_C0020",
+    "chunk:PAPER_005_C0008",
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0018"
+  ],
+  "service_response": {
+    "status": "insufficient_evidence",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "no_factual_claims",
+          "reason": "结论为“现有证据不足以回答该问题”，属于无事实的拒答，未提出任何事实主张，因此不涉及证据支持问题。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis称所提供证据均为鸭梨贮藏品质、挥发性物质及相关基因表达内容，未包含GC-MS升温程序具体参数。E1仅涉及吸附时间与仪器型号，E2/E5涉及果实品质，E3涉及挥发性物质与基因表达综述，E4涉及基因表达与香气结论，均未给出升温速率或温度程序，故该缺口陈述与引用证据一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning指出问题询问GC-MS从100℃升温至250℃的速率，而E1仅涉及吸附时间与仪器型号，E2至E5涉及果实品质、香气物质与基因表达，均未提及升温速率或相关温度程序。逐项核对引用证据后，确无该参数，推理与证据缺口一致。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "建议为请补充GC-MS方法部分原文或包含该参数的具体段落，属于请求补充资料，未提出可核查的事实主张。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0015",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+        "text": "重复3 次。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0020",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0018",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "窖藏条件下，鸭梨贮藏1 个月时硬度有所增加，此后缓慢降低，至3 个月时最小。窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "现有证据不足以回答该问题。",
+    "basis": "所提供的证据均为鸭梨贮藏品质、挥发性物质及相关基因表达的内容，未包含GC-MS升温程序的具体参数。 [E1]  [E2]  [E3]  [E4]  [E5] ",
+    "reasoning": "问题询问的是论文中GC-MS从100℃升温至250℃的速率，属于仪器分析方法的参数细节。检索到的证据中，[E1]仅涉及吸附时间与仪器型号，[E2]至[E5]涉及果实品质、香气物质与基因表达，均未提及升温速率或相关温度程序。 [E1]  [E2]  [E3]  [E4]  [E5] ",
+    "advice": "请补充该论文中GC-MS方法部分（升温程序）的原文内容，或提供包含该参数的具体段落。",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出升温速率，仅说明现有证据不足；但题目所附原文证据明确包含GC-MS升温程序，因此属于有证据可答却拒答。",
+      "claims": [
+        {
+          "claim": "所提供的证据均为鸭梨贮藏品质、挥发性物质及相关基因表达的内容，未包含GC-MS升温程序的具体参数。",
+          "status": "contradicted",
+          "reason": "题目提供的original_evidence明确包含GC-MS升温程序：40℃保持1 min；2℃·min-1升温至100℃，保持2 min；5℃·min-1升温至250℃，保持5 min。"
+        },
+        {
+          "claim": "[E1]仅涉及吸附时间与仪器型号。",
+          "status": "supported",
+          "reason": "检索证据E1文本为“重复3 次。”，其section提到“65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱”，可支持其涉及吸附时间与仪器型号。"
+        },
+        {
+          "claim": "[E2]至[E5]涉及果实品质、香气物质与基因表达，均未提及升温速率或相关温度程序。",
+          "status": "supported",
+          "reason": "E2、E5涉及果实品质，E3涉及香气物质与相关基因，E4涉及基因表达与香气合成；这些检索片段均未提及GC-MS升温速率或温度程序。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2216,
+      "completion_tokens": 283,
+      "total_tokens": 2499,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1576
+    },
+    "model": "deepseek-flash",
+    "response_id": "6bd90374-b2e0-4ba9-8cc7-e218f740efa3",
+    "seconds": 6.998018300000695,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "现有证据不足以回答该问题。",
+        "basis": "所提供的证据均为鸭梨贮藏品质、挥发性物质及相关基因表达的内容，未包含GC-MS升温程序的具体参数。[E1][E2][E3][E4][E5]",
+        "reasoning": "问题询问的是论文中GC-MS从100℃升温至250℃的速率，属于仪器分析方法的参数细节。检索到的证据中，E1仅涉及吸附时间与仪器型号，E2至E5涉及果实品质、香气物质与基因表达，均未提及升温速率或相关温度程序。[E1][E2][E3][E4][E5]",
+        "advice": "请补充该论文中GC-MS方法部分（升温程序）的原文内容，或提供包含该参数的具体段落。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 1646,
+        "completion_tokens": 203,
+        "total_tokens": 1849,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1518
+      },
+      "model": "deepseek-flash",
+      "response_id": "6722767a-4ece-47fa-b150-4d74e5f46dd7",
+      "seconds": 7.0746130000043195,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 20.795062899996992
+}

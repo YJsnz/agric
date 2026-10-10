@@ -1,0 +1,71 @@
+{
+  "model_name": "jujube_fruit_freshness_yolo11n_cls_v1",
+  "version": "v1",
+  "status": "frozen",
+  "architecture": "YOLO11n-cls",
+  "task": "binary image classification",
+  "framework": "Ultralytics / PyTorch",
+  "ultralytics_version": "8.3.40",
+  "classes": [
+    "fresh",
+    "rotten"
+  ],
+  "imgsz": 224,
+  "dataset_version": "jujube_fruit_freshness_classifier_v1",
+  "train_size": 280,
+  "val_size": 60,
+  "test_size": 60,
+  "test_accuracy": 0.9333333333333333,
+  "confusion_matrix": [
+    [
+      30,
+      0
+    ],
+    [
+      4,
+      26
+    ]
+  ],
+  "confusion_matrix_order": [
+    "fresh",
+    "rotten"
+  ],
+  "evaluation_level": "image_level_internal",
+  "fruit_independent_verified": false,
+  "training_ready_image_level": true,
+  "training_ready_fruit_independent": false,
+  "model_sha256": "f5554560e60df3a61ed78848c56087cd33a18fb29c0cfc3cf1b8091f681f844b",
+  "source_model": "runs\\jujube_fruit_freshness_yolo11n_cls_v1\\weights\\best.pt",
+  "decision_rule": "argmax; no threshold calibration",
+  "group_isolation_provenance": "Prior stage audit/user declaration; local B2 group manifest absent, not reverified in this evaluation",
+  "training": {
+    "max_epochs": 80,
+    "actual_epochs": 30,
+    "best_val_top1": 0.98333,
+    "patience": 20,
+    "epochs_tied_best_val_top1": [
+      7,
+      10
+    ],
+    "stop_reason": "Not verified: server stopping log unavailable; 30 epochs completed, best Top-1 tied at 7 and 10"
+  },
+  "class_semantics": {
+    "fresh": "新鲜果实外观",
+    "rotten": "腐败 / 变质类视觉表现"
+  },
+  "rotten_missed_as_fresh": 4,
+  "wrong_confidence_ge_08": 1,
+  "wrong_confidence_ge_09": 1,
+  "macro_precision": 0.9411764705882353,
+  "macro_recall": 0.9333333333333333,
+  "macro_f1": 0.9330357142857143,
+  "balanced_accuracy": 0.9333333333333333,
+  "weighted_f1": 0.9330357142857143,
+  "roc_auc": 0.9855555555555555,
+  "fresh_precision": 0.8823529411764706,
+  "fresh_recall": 1.0,
+  "fresh_f1": 0.9375,
+  "rotten_precision": 1.0,
+  "rotten_recall": 0.8666666666666667,
+  "rotten_f1": 0.9285714285714286
+}

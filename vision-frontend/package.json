@@ -1,0 +1,1 @@
+{"name":"agric-vision-workbench","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"vite --host 127.0.0.1","build":"vite build","preview":"vite preview --host 127.0.0.1","test":"playwright test"},"dependencies":{"vue":"^3.5.22","axios":"^1.12.2"},"devDependencies":{"vite":"^7.1.7","@vitejs/plugin-vue":"^6.0.1","@playwright/test":"^1.55.1"}}

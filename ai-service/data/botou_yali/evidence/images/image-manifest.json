@@ -1,0 +1,222 @@
+[
+  {
+    "filename": "pear-blue-mold.jpg",
+    "names": [
+      "青绿霉病"
+    ],
+    "subject": "腐烂梨上的蓝霉孢子近景（青绿霉病中的蓝霉参考）",
+    "author": "H.J. Larsen, Bugwood.org",
+    "source": "https://commons.wikimedia.org/wiki/File:Penicillium_expansum.jpg",
+    "license": "CC BY 3.0 US",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/us/",
+    "review_status": "参考图，不作为本地发生记录",
+    "status": "download_blocked_429"
+  },
+  {
+    "filename": "pear-fire-blight.png",
+    "names": [
+      "梨火疫病"
+    ],
+    "subject": "普通梨火疫病参考照片",
+    "author": "Ninjatacoshell",
+    "source": "https://commons.wikimedia.org/wiki/File:Fire_blight_(Erwinia_amylovora)_of_pear.png",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "review_status": "非泊头现场照片，不作为本地发生记录",
+    "status": "download_blocked_429"
+  },
+  {
+    "filename": "user-果子有问题.png",
+    "subject": "果子有问题（用户提供示意图）",
+    "original_filename": "01_果子有问题.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "2200f378b2d829e68f9136f273c111bf28ecc29be527e1fceab0cc5aee130747",
+    "topic": "pear"
+  },
+  {
+    "filename": "user-叶子有斑.png",
+    "subject": "叶子有斑（用户提供示意图）",
+    "original_filename": "02_叶子有斑.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "49d3a4e2d3ab8e8a6f9b7e4c37a0c6db0d302cf5d6f25cda567eed593ccd2de1",
+    "topic": "spots"
+  },
+  {
+    "filename": "user-叶子卷了.png",
+    "subject": "叶子卷了（用户提供示意图）",
+    "original_filename": "03_叶子卷了.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "2c95804e7be6522303a41b60de35cb0c1a27b482b39274883a40ae0b3c23f0f6",
+    "topic": "leaf"
+  },
+  {
+    "filename": "user-看见虫子.png",
+    "subject": "看见虫子（用户提供示意图）",
+    "original_filename": "04_看见虫子.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "7a25effe4250d13f7d6009cc83c66e4065ea47d2f99c1194def4c64b01d7da4d",
+    "topic": "bug"
+  },
+  {
+    "filename": "user-树长得不好.png",
+    "subject": "树长得不好（用户提供示意图）",
+    "original_filename": "05_树长得不好.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "ba9bf48680914a0c172e0e8076d72dc201652724a60dff1c131560c1a9ab7675",
+    "topic": "tree"
+  },
+  {
+    "filename": "user-果子不好存.png",
+    "subject": "果子不好存（用户提供示意图）",
+    "original_filename": "06_果子不好存.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "da50060f4e9846012ffdd5c7b3464f0960f691d4c15ca80c6972454b1f9c8f82",
+    "topic": "crate"
+  },
+  {
+    "filename": "user-黑色小斑点.png",
+    "subject": "黑色小斑点（用户提供示意图）",
+    "original_filename": "07_黑色小斑点.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "b3148f1602418f0a69fc308741308b8b6951b352d2cadcb18637b71fae95a3b9",
+    "names": [
+      "叶片黑色斑点"
+    ],
+    "illustration": "黑色小斑点"
+  },
+  {
+    "filename": "user-大片褐色斑.png",
+    "subject": "大片褐色斑（用户提供示意图）",
+    "original_filename": "08_大片褐色斑.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "a707eebcbe2e4a8b2b16d7509a6b605949ebac27ecebe0ac413aad3333c8da15",
+    "illustration": "大片褐色斑"
+  },
+  {
+    "filename": "user-叶片卷曲.png",
+    "subject": "叶片卷曲（用户提供示意图）",
+    "original_filename": "09_叶片卷曲.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "7fd18fb1362aaa3e2953435c3209e8086e06d59939f27850a826326a06429867",
+    "names": [
+      "叶片卷曲"
+    ],
+    "illustration": "叶片卷曲"
+  },
+  {
+    "filename": "user-看不出来_健康叶.png",
+    "subject": "看不出来_健康叶（用户提供示意图）",
+    "original_filename": "10_看不出来_健康叶.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "b0702b2a78fc8ec410320e9adc1ad780e155b55d8ec130288c0fee9528b0907c",
+    "illustration": "健康叶参考"
+  },
+  {
+    "filename": "user-黑星病详情主图.png",
+    "subject": "黑星病详情主图（用户提供示意图）",
+    "original_filename": "11_黑星病详情主图.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "7e777618d275c2d1645af9ac6c48b323c2d804ad98b0804c2bb44b147da472c7",
+    "names": [
+      "黑星病",
+      "梨黑星病"
+    ]
+  },
+  {
+    "filename": "user-典型症状_黑色小斑点.png",
+    "subject": "典型症状_黑色小斑点（用户提供示意图）",
+    "original_filename": "12_典型症状_黑色小斑点.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "0a25b1dad6a90d621fbec5996110180b91e84fc46b65ffb25618d9a9cc8206f9",
+    "gallery": "黑星病",
+    "caption": "黑色小斑点"
+  },
+  {
+    "filename": "user-典型症状_病斑扩大.png",
+    "subject": "典型症状_病斑扩大（用户提供示意图）",
+    "original_filename": "13_典型症状_病斑扩大.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "10c496f66451261031c823edd1d6111714683f84b34470ca47e0d6fa19df3fc1",
+    "gallery": "黑星病",
+    "caption": "病斑扩大"
+  },
+  {
+    "filename": "user-典型症状_严重叶片枯黄.png",
+    "subject": "典型症状_严重叶片枯黄（用户提供示意图）",
+    "original_filename": "14_典型症状_严重叶片枯黄.png",
+    "author": "用户提供",
+    "source": "",
+    "license": "待用户确认",
+    "license_url": "",
+    "review_status": "图片病种与拍摄地点未经核验，仅供参考",
+    "status": "local",
+    "sha256": "60d388c7d892d255dc623febbe8c0e3d789789ad3371e9f2cb25afb98766a6a3",
+    "gallery": "黑星病",
+    "caption": "叶片枯黄"
+  }
+]

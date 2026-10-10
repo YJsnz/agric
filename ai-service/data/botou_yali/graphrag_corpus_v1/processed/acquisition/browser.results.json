@@ -1,0 +1,26 @@
+[
+  {
+    "source_id": "GOV_001",
+    "status": "downloaded_pending_review",
+    "url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+    "title": "鸭梨黑星病夏季如何防治 - 市农业农村局",
+    "error": null,
+    "characters": 796
+  },
+  {
+    "source_id": "UNI_001",
+    "status": "navigation_failed",
+    "url": "chrome-error://chromewebdata/",
+    "title": "隐私错误",
+    "error": "net::ERR_CERT_AUTHORITY_INVALID",
+    "characters": 95
+  },
+  {
+    "source_id": "GOV_002",
+    "status": "downloaded_pending_review",
+    "url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+    "title": "鸭梨的贮藏保鲜技术 - 湖南省林业局",
+    "error": null,
+    "characters": 1711
+  }
+]

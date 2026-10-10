@@ -1,0 +1,25 @@
+{
+  "sources_processed": 9,
+  "chunks": 139,
+  "sections": 93,
+  "in_500_1000": 44,
+  "short": 89,
+  "long_unsplit": 6,
+  "skipped": [
+    {
+      "source_id": "STD_001",
+      "reason": "no_fulltext"
+    },
+    {
+      "source_id": "PAPER_002",
+      "reason": "needs_ocr"
+    },
+    {
+      "source_id": "PAPER_004",
+      "reason": "no_fulltext"
+    }
+  ],
+  "target_chars": 800,
+  "max_chars_except_unsplit_sentence": 1000,
+  "overlap_budget": 100
+}

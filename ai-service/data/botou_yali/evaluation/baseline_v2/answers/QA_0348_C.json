@@ -1,0 +1,241 @@
+{
+  "id": "QA_0348",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0005",
+    "chunk:PAPER_001_C0029",
+    "chunk:PAPER_001_C0001"
+  ],
+  "service_response": {
+    "status": "validation_failed",
+    "grounding_audit": {
+      "passed": false,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称证据未说明黑心病直接原因，仅提示1.0% O2处理增加贮藏末期黑心病风险；E1、E2、E4均只表述该风险关联，未给出直接病因，故该结论得到引用证据支持。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis准确复述E1、E2、E4中与黑心病相关的唯一表述：1.0% O2处理在一定程度上增加鸭梨贮藏末期黑心病风险，未超出引用证据。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "unsupported",
+          "reason": "事实字段没有实际引用证据。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice建议补充病因或机制研究证据，并明确现有证据仅支持1.0% O2处理与贮藏末期黑心病风险增加相关、不能推断因果；该表述与E1、E2、E4一致，未补造剂量、百分比或因果结论。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "failure": "存在未由引用证据支持的内容"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0005",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " Besides that, the lower O2 treatments maintained TA and AA contents at a higher level in the early storage period, and delayed the yellow-turning of peel; ethanol was accumulated much more under the lower O2 concentration, which ranged from 150.89 mg·L-1 to 806.12 mg·L-1 after storage for 150 d; while with the increasing senescence browning of fruit in air, the ethanol content peaking at 1 500 mg·L-1 after storage for 270 d. 5.0% and lower O2 inhibited the ethylene biosynthesis and delayed the peaking time, and 1.0%-3.0% O2 could prohibit the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue significantly.【Conclusion】1.0%—3.0% O2 prohibited the superficial scald occurrence significantly, and delayed the decrease of TA and AA, inhibited the biosynthesis of ethylene and delayed the peaking time, down-regulated the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue, prolonged the storage period of Yali pear significantly.",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0029",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "4  结论",
+        "text": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，能更好地维持果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。因此，建议生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "中国农业科学  2020,53(23):4918-4928 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2020.23.016收稿日期：2020-03-30；接受日期：2020-06-09基金项目：国家现代梨产业技术体系（CARS-28）、国家自然科学基金（32001761）联系方式：杜艳民，E-mail：duyanmin@caas.cn。通信作者王文辉，E-mail：wangwenhui@caas.cn开放科学（资源服务）标识码（OSID）：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响杜艳民，王文辉，贾晓辉，佟伟，王阳，张鑫楠（中国农业科学院果树研究所/辽宁省果品贮藏与加工重点实验室，辽宁兴城 125100）摘要：【目的】明确环境氧气（O2）浓度对鸭梨采后贮藏品质及生理代谢的影响，为鸭梨采后生理病害防控，延长贮藏期提供理论依据。【方法】将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱，设置1.0%、2.0%、3.0%、5.0%及10.0%等不同O2浓度梯度，CO2浓度为0.5%，以空气处理为对照，分别于贮藏150、210 和270 d 及货架7 或10 d，调查鸭梨虎皮指数和黑心指数，测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血酸（AA）及色泽变化情况，利用气相色谱分析测定果肉和果心组织乙醇含量变化情况，监测果实呼吸速率和乙烯产量；利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS 和PbACO 表达变化情况进行测定。【结果】低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数，贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2；同时，延缓了贮藏早期果实TA 和AA 下降，推迟了果实果面转黄。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "error": "validation_failed",
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据未说明鸭梨黑心病发生的直接原因，仅提示1.0% O2处理在一定程度上增加了贮藏末期黑心病风险 [E1][E2][E4]。",
+        "basis": "证据中与黑心病相关的表述为：1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险 [E1][E2][E4]；低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数 [E5]。这些均为风险或发病程度的关联性描述，未给出黑心病发生的直接原因。",
+        "reasoning": "检索证据仅涉及不同O2浓度与黑心病风险/黑心指数之间的关联，未提供关于黑心病直接病因（如代谢途径、组织病变机制或致病因子）的证据，因此无法回答直接原因，判定证据不足。",
+        "advice": "如需明确黑心病发生的直接原因，请补充涉及该病害病因或机制的研究证据；现有证据仅支持1.0% O2处理与贮藏末期黑心病风险增加相关 [E1][E2][E4]，不能据此推断因果。",
+        "citations": [
+          "E1",
+          "E2",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2414,
+        "completion_tokens": 266,
+        "total_tokens": 2680,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2286
+      },
+      "model": "deepseek-flash",
+      "response_id": "9398a7a1-c4fd-4f1c-9488-3dac8bef8bbc",
+      "seconds": 7.221037700001034,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据未说明鸭梨黑心病发生的直接原因，仅提示1.0% O2处理在一定程度上增加了贮藏末期黑心病风险 [E1][E2][E4]。",
+        "basis": "证据中与黑心病相关的表述为：1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险 [E1][E2][E4]。",
+        "reasoning": "检索证据仅涉及不同O2浓度与黑心病风险之间的关联，未提供关于黑心病直接病因的证据，因此无法回答直接原因，判定证据不足。",
+        "advice": "如需明确黑心病发生的直接原因，请补充涉及该病害病因或机制的研究证据；现有证据仅支持1.0% O2处理与贮藏末期黑心病风险增加相关 [E1][E2][E4]，不能据此推断因果。",
+        "citations": [
+          "E1",
+          "E2",
+          "E4"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 3063,
+        "completion_tokens": 195,
+        "total_tokens": 3258,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 759
+      },
+      "model": "deepseek-flash",
+      "response_id": "dfa3944b-baaa-433f-9411-13e05dad1740",
+      "seconds": 5.928444800010766,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 26.78909219999332
+}

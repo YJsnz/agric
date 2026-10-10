@@ -1,0 +1,6127 @@
+{
+  "domain": "qingxian_facility_vegetables",
+  "crop_id": "qingxian_facility_vegetables",
+  "nodes": [
+    {
+      "id": "qingxian_facility_vegetables:3fc78f10627bfe15",
+      "name": "青县设施蔬菜",
+      "type": "Crop",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:7d9dc9b95ec13d2d",
+      "name": "青县",
+      "type": "Region",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:b157e68d59b59a4e",
+      "name": "黄瓜",
+      "type": "Crop",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:812d0b92aa957cb7",
+      "name": "番茄",
+      "type": "Crop",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:35129340565f8059",
+      "name": "黄瓜猝倒病",
+      "type": "Disease",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "猝倒病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "name": "黄瓜",
+      "type": "Crop",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:7df9d726ae2c15b6",
+      "name": "苗期",
+      "type": "GrowthStage",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:510f64cc30d3abad",
+      "name": "黄瓜立枯病",
+      "type": "Disease",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "立枯病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "name": "黄瓜细菌性角斑病",
+      "type": "Disease",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "细菌性角斑病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:41f194a201fc3bf4",
+      "name": "定植和生长期",
+      "type": "GrowthStage",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:d203317750876463",
+      "name": "黄瓜白粉病",
+      "type": "Disease",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "白粉病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:2d30d170ffcf385c",
+      "name": "黄瓜灰霉病",
+      "type": "Disease",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "灰霉病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:d06b416015e36f90",
+      "name": "黄瓜霜霉病",
+      "type": "Disease",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "霜霉病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:405e3d8efe6650c9",
+      "name": "黄瓜炭疽病",
+      "type": "Disease",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "炭疽病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:fee3c6e2e86547d5",
+      "name": "黄瓜病毒病",
+      "type": "Disease",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "病毒病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:0fb2ff753201d020",
+      "name": "蚜虫",
+      "type": "Pest",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:b2b7fd0899ae21c8",
+      "name": "粉虱",
+      "type": "Pest",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:5dbbf8a0537db1c2",
+      "name": "蓟马",
+      "type": "Pest",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:b5e38aa931785a7d",
+      "name": "斑潜蝇",
+      "type": "Pest",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:a76197b2e59f15e9",
+      "name": "通风口防虫网",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:d5595d68f9909f21",
+      "name": "黄板诱杀",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:61398d36c6dc0f36",
+      "name": "蓝板诱杀",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:a0f03592323360f3",
+      "name": "捕食螨",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:3cd446057412fe90",
+      "name": "丽蚜小蜂",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:57a758cc619aa06f",
+      "name": "放风排湿",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:621b8fcda8b92ec6",
+      "name": "空气相对湿度",
+      "type": "EnvironmentFactor",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:323fbdbef89ed487",
+      "name": "定植后",
+      "type": "GrowthStage",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:3aced4edcf8a0de9",
+      "name": "缓苗后空气相对湿度60%～80%",
+      "type": "EnvironmentFactor",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:318a2b6a1ea8ff06",
+      "name": "缓苗后",
+      "type": "GrowthStage",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:6ab716608bcf050f",
+      "name": "缓苗期空气相对湿度80%～90%",
+      "type": "EnvironmentFactor",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:0896c843dd0fe10c",
+      "name": "缓苗期",
+      "type": "GrowthStage",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:3cbbe94d88412ed6",
+      "name": "保证温度时早揭晚盖",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:b9b72b36503b4c4d",
+      "name": "连阴天光照",
+      "type": "EnvironmentFactor",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:49577024525b5ca8",
+      "name": "植株调整",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:fbb6dd9baa5bd16c",
+      "name": "去除黄老病叶",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:3a1445a0875ed80d",
+      "name": "覆盖遮阳网",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:87e4a5d3865b81f9",
+      "name": "高温",
+      "type": "EnvironmentFactor",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:a7356d0c9740fc8a",
+      "name": "加盖保温被",
+      "type": "Intervention",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:051cbeb807d78113",
+      "name": "夜间低温",
+      "type": "EnvironmentFactor",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:21774bf86b0837de",
+      "name": "测土施肥",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:04958bbefdc2ebbb",
+      "name": "土壤供肥",
+      "type": "ManagementFactor",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:64eec1e53cb3e2af",
+      "name": "农药控施",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:d2586e8fe5a11471",
+      "name": "农业物理生物防治",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:6bdf083d6cb44c5d",
+      "name": "番茄",
+      "type": "Crop",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:d6b142c00d9df3c7",
+      "name": "与非茄科作物轮作",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:bf407044910ad266",
+      "name": "定植前",
+      "type": "GrowthStage",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:ee7874550e059c7f",
+      "name": "清洁棚室",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:c545ddd8e94db2ee",
+      "name": "作物残体与田间杂草",
+      "type": "ManagementFactor",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:0503f7bb291ddd71",
+      "name": "通风口及门口防虫网",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:ab3c64ee0aeca1ee",
+      "name": "黄板诱杀",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:4790bb2957515d43",
+      "name": "蚜虫",
+      "type": "Pest",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:50b86330b6fe7bfd",
+      "name": "定植期",
+      "type": "GrowthStage",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:4757f654fb4fa91f",
+      "name": "粉虱",
+      "type": "Pest",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:d38e02e16cd151dd",
+      "name": "丽蚜小蜂",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:2c470bf1aa5da942",
+      "name": "定植后至开花坐果期",
+      "type": "GrowthStage",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:45eb8825d106e30e",
+      "name": "通风",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:02bba23ef657fae0",
+      "name": "空气湿度",
+      "type": "EnvironmentFactor",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:538f994e2d733359",
+      "name": "地膜覆盖",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:a5260fba1b97d279",
+      "name": "保湿",
+      "type": "ManagementFactor",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:995f67a437552094",
+      "name": "病株及时拔除并消毒",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:7d1020551d3c87ab",
+      "name": "补光灯和反光幕",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:02081dde7bd8b33c",
+      "name": "光照",
+      "type": "EnvironmentFactor",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:acff150ce2d97db1",
+      "name": "开花结果期",
+      "type": "GrowthStage",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:d673ebde0cfb03f4",
+      "name": "整枝打杈",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:c0a4ee6a1fddc72c",
+      "name": "摘除老病叶",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:9eec056d643bbc07",
+      "name": "施肥前后清水灌溉",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:dabab3fc712ec63a",
+      "name": "检查冲洗过滤器前主管道",
+      "type": "Intervention",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:31f3060fc677ae08",
+      "name": "系统淤泥沉淀",
+      "type": "ManagementFactor",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:b2173ee7359d4bdf",
+      "name": "阴雪天气灌水",
+      "type": "ManagementFactor",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:cbdc1de674a4906e",
+      "name": "地温",
+      "type": "EnvironmentFactor",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:bbba1005b2cb502a",
+      "name": "根系生长",
+      "type": "ManagementFactor",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:aa64be7d54b16b63",
+      "name": "病虫害绿色防控",
+      "type": "Intervention",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:e97db282c7f35c16",
+      "name": "抗病耐虫品种",
+      "type": "Intervention",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:b33030eeb8da787c",
+      "name": "嫁接栽培",
+      "type": "Intervention",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:a24a963036f43a41",
+      "name": "轮作",
+      "type": "Intervention",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:62f0be9b69b65a92",
+      "name": "控温调湿",
+      "type": "Intervention",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:e07ab70bfd674c83",
+      "name": "防虫网",
+      "type": "Intervention",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:c975f0a07f86e4af",
+      "name": "释放天敌",
+      "type": "Intervention",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:bb847e1a27979129",
+      "name": "叶背水浸状小点",
+      "type": "Symptom",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:f11dfadcef465111",
+      "name": "多角形水浸状斑",
+      "type": "Symptom",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:7948b0b127fb7b8b",
+      "name": "叶背灰黑色霉层",
+      "type": "Symptom",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:d71adb26a2beea34",
+      "name": "黄褐色坏死斑",
+      "type": "Symptom",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:1c8693c843c24bb3",
+      "name": "叶片",
+      "type": "PlantOrgan",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:0cdd2046486c9152",
+      "name": "水浸状褪绿色病斑",
+      "type": "Symptom",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:2e3e164589b92ec2",
+      "name": "叶背白色菌脓",
+      "type": "Symptom",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:d3153a78a3a089b4",
+      "name": "病斑穿孔或破碎",
+      "type": "Symptom",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:51c1a8228136a4a6",
+      "name": "病瓜臭味",
+      "type": "Symptom",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:25f0686da979249a",
+      "name": "叶柄",
+      "type": "PlantOrgan",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:47a898015a8bb089",
+      "name": "卷须",
+      "type": "PlantOrgan",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:8bf04a703ff81a59",
+      "name": "果实",
+      "type": "PlantOrgan",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:1758127e9224878c",
+      "name": "茎蔓",
+      "type": "PlantOrgan",
+      "crop": [
+        "黄瓜"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:9790d687a5ffda4b",
+      "name": "番茄枯萎病",
+      "type": "Disease",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "枯萎病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:0f207dee59ff2a90",
+      "name": "下部叶片萎蔫",
+      "type": "Symptom",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:f549472b9b819b3b",
+      "name": "维管束变褐色",
+      "type": "Symptom",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:4c57046297ac07db",
+      "name": "叶片",
+      "type": "PlantOrgan",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:3e15bf45718faa46",
+      "name": "茎",
+      "type": "PlantOrgan",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:15f279d74b901125",
+      "name": "番茄晚疫病",
+      "type": "Disease",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "晚疫病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:b8fada10edee18e4",
+      "name": "叶尖叶缘褐色水浸状斑",
+      "type": "Symptom",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:5d1a6955b8ebe082",
+      "name": "病斑边缘白色霉层",
+      "type": "Symptom",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:4ac8d7ad4f74b13a",
+      "name": "果面褐色云纹状病斑",
+      "type": "Symptom",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:3f934fda7230e9b0",
+      "name": "果实",
+      "type": "PlantOrgan",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:ec6abe24aea56a9a",
+      "name": "番茄白粉病",
+      "type": "Disease",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "白粉病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:c33fc95e82626e43",
+      "name": "白色粉斑",
+      "type": "Symptom",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:9484b88befb6b447",
+      "name": "叶片布满白粉",
+      "type": "Symptom",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:66381805a8184990",
+      "name": "番茄脐腐病",
+      "type": "Disease",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "脐腐病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:901bc01125365650",
+      "name": "果实脐部暗绿色水渍斑",
+      "type": "Symptom",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:7d336d41826c1fdb",
+      "name": "脐部干腐凹陷",
+      "type": "Symptom",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:af1a2bb50842fae5",
+      "name": "低温寡照",
+      "type": "EnvironmentFactor",
+      "crop": [],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": []
+    },
+    {
+      "id": "qingxian_facility_vegetables:6b2d8baaf1089ac1",
+      "name": "番茄叶霉病",
+      "type": "Disease",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "叶霉病"
+      ]
+    },
+    {
+      "id": "qingxian_facility_vegetables:8f5203662c91d341",
+      "name": "番茄灰霉病",
+      "type": "Disease",
+      "crop": [
+        "番茄"
+      ],
+      "domain": "qingxian_facility_vegetables",
+      "aliases": [
+        "灰霉病"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "QXE001",
+      "source": "qingxian_facility_vegetables:7d9dc9b95ec13d2d",
+      "target": "qingxian_facility_vegetables:3fc78f10627bfe15",
+      "subject": "青县",
+      "subject_type": "Region",
+      "object": "青县设施蔬菜",
+      "object_type": "Crop",
+      "relation": "HAS_INDUSTRY",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [],
+      "region": "青县",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "QX_LOCAL_2018",
+      "source_title": "河北青县：从追高产到重“口感” 蔬菜卖出好价钱",
+      "evidence_ids": [
+        "QX_LOCAL_2018",
+        "QXC001"
+      ],
+      "chunk_id": "QXC001",
+      "evidence_text": "羊角脆、黄瓜、韭菜、番茄……青县的蔬菜对接京津多家专业市场，３０多种农产品实现网上销售，京津市民足不出户就能购买到青县的新鲜蔬菜和果品。如今，种菜收入已经占到全县农民人均纯收入的一半左右，不仅鼓足青县农民的“钱袋子”，也丰富了京津市民的“菜篮子”。",
+      "page": null,
+      "section": "青县蔬菜产业背景",
+      "locator": {
+        "page": null,
+        "section": "青县蔬菜产业背景",
+        "file": "evidence\\raw\\government\\QX_LOCAL_2018.html",
+        "normalized_start": 1109,
+        "normalized_end": 1233
+      },
+      "evidence_level": "local_verified",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：青县"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE002",
+      "source": "qingxian_facility_vegetables:3fc78f10627bfe15",
+      "target": "qingxian_facility_vegetables:b157e68d59b59a4e",
+      "subject": "青县设施蔬菜",
+      "subject_type": "Crop",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "INCLUDES_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [],
+      "region": "青县",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "QX_LOCAL_2018",
+      "source_title": "河北青县：从追高产到重“口感” 蔬菜卖出好价钱",
+      "evidence_ids": [
+        "QX_LOCAL_2018",
+        "QXC001"
+      ],
+      "chunk_id": "QXC001",
+      "evidence_text": "羊角脆、黄瓜、韭菜、番茄……青县的蔬菜对接京津多家专业市场，３０多种农产品实现网上销售，京津市民足不出户就能购买到青县的新鲜蔬菜和果品。如今，种菜收入已经占到全县农民人均纯收入的一半左右，不仅鼓足青县农民的“钱袋子”，也丰富了京津市民的“菜篮子”。",
+      "page": null,
+      "section": "青县蔬菜产业背景",
+      "locator": {
+        "page": null,
+        "section": "青县蔬菜产业背景",
+        "file": "evidence\\raw\\government\\QX_LOCAL_2018.html",
+        "normalized_start": 1109,
+        "normalized_end": 1233
+      },
+      "evidence_level": "local_verified",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：青县"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE003",
+      "source": "qingxian_facility_vegetables:3fc78f10627bfe15",
+      "target": "qingxian_facility_vegetables:812d0b92aa957cb7",
+      "subject": "青县设施蔬菜",
+      "subject_type": "Crop",
+      "object": "番茄",
+      "object_type": "Crop",
+      "relation": "INCLUDES_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [],
+      "region": "青县",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "QX_LOCAL_2018",
+      "source_title": "河北青县：从追高产到重“口感” 蔬菜卖出好价钱",
+      "evidence_ids": [
+        "QX_LOCAL_2018",
+        "QXC001"
+      ],
+      "chunk_id": "QXC001",
+      "evidence_text": "羊角脆、黄瓜、韭菜、番茄……青县的蔬菜对接京津多家专业市场，３０多种农产品实现网上销售，京津市民足不出户就能购买到青县的新鲜蔬菜和果品。如今，种菜收入已经占到全县农民人均纯收入的一半左右，不仅鼓足青县农民的“钱袋子”，也丰富了京津市民的“菜篮子”。",
+      "page": null,
+      "section": "青县蔬菜产业背景",
+      "locator": {
+        "page": null,
+        "section": "青县蔬菜产业背景",
+        "file": "evidence\\raw\\government\\QX_LOCAL_2018.html",
+        "normalized_start": 1109,
+        "normalized_end": 1233
+      },
+      "evidence_level": "local_verified",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：青县"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE004",
+      "source": "qingxian_facility_vegetables:35129340565f8059",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "黄瓜猝倒病",
+      "subject_type": "Disease",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "苗期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:7df9d726ae2c15b6"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC002"
+      ],
+      "chunk_id": "QXC002",
+      "evidence_text": "苗期主要病害为猝倒病和立枯病，",
+      "page": 5,
+      "section": "5 苗期主要病害",
+      "locator": {
+        "page": 5,
+        "section": "5 苗期主要病害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 640,
+        "normalized_end": 655
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "苗期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE005",
+      "source": "qingxian_facility_vegetables:510f64cc30d3abad",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "黄瓜立枯病",
+      "subject_type": "Disease",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "苗期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:7df9d726ae2c15b6"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC002"
+      ],
+      "chunk_id": "QXC002",
+      "evidence_text": "苗期主要病害为猝倒病和立枯病，",
+      "page": 5,
+      "section": "5 苗期主要病害",
+      "locator": {
+        "page": 5,
+        "section": "5 苗期主要病害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 640,
+        "normalized_end": 655
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "苗期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE006",
+      "source": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "黄瓜细菌性角斑病",
+      "subject_type": "Disease",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC003"
+      ],
+      "chunk_id": "QXC003",
+      "evidence_text": "定植和生长期主要病害有细菌性角斑病、白粉病、灰霉病、霜霉病、炭疽病和病毒病等。",
+      "page": 6,
+      "section": "6.4 定植与生长期主要病害",
+      "locator": {
+        "page": 6,
+        "section": "6.4 定植与生长期主要病害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 556,
+        "normalized_end": 595
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE007",
+      "source": "qingxian_facility_vegetables:d203317750876463",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "黄瓜白粉病",
+      "subject_type": "Disease",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC003"
+      ],
+      "chunk_id": "QXC003",
+      "evidence_text": "定植和生长期主要病害有细菌性角斑病、白粉病、灰霉病、霜霉病、炭疽病和病毒病等。",
+      "page": 6,
+      "section": "6.4 定植与生长期主要病害",
+      "locator": {
+        "page": 6,
+        "section": "6.4 定植与生长期主要病害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 556,
+        "normalized_end": 595
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE008",
+      "source": "qingxian_facility_vegetables:2d30d170ffcf385c",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "黄瓜灰霉病",
+      "subject_type": "Disease",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC003"
+      ],
+      "chunk_id": "QXC003",
+      "evidence_text": "定植和生长期主要病害有细菌性角斑病、白粉病、灰霉病、霜霉病、炭疽病和病毒病等。",
+      "page": 6,
+      "section": "6.4 定植与生长期主要病害",
+      "locator": {
+        "page": 6,
+        "section": "6.4 定植与生长期主要病害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 556,
+        "normalized_end": 595
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE009",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC003"
+      ],
+      "chunk_id": "QXC003",
+      "evidence_text": "定植和生长期主要病害有细菌性角斑病、白粉病、灰霉病、霜霉病、炭疽病和病毒病等。",
+      "page": 6,
+      "section": "6.4 定植与生长期主要病害",
+      "locator": {
+        "page": 6,
+        "section": "6.4 定植与生长期主要病害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 556,
+        "normalized_end": 595
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE010",
+      "source": "qingxian_facility_vegetables:405e3d8efe6650c9",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "黄瓜炭疽病",
+      "subject_type": "Disease",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC003"
+      ],
+      "chunk_id": "QXC003",
+      "evidence_text": "定植和生长期主要病害有细菌性角斑病、白粉病、灰霉病、霜霉病、炭疽病和病毒病等。",
+      "page": 6,
+      "section": "6.4 定植与生长期主要病害",
+      "locator": {
+        "page": 6,
+        "section": "6.4 定植与生长期主要病害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 556,
+        "normalized_end": 595
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE011",
+      "source": "qingxian_facility_vegetables:fee3c6e2e86547d5",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "黄瓜病毒病",
+      "subject_type": "Disease",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC003"
+      ],
+      "chunk_id": "QXC003",
+      "evidence_text": "定植和生长期主要病害有细菌性角斑病、白粉病、灰霉病、霜霉病、炭疽病和病毒病等。",
+      "page": 6,
+      "section": "6.4 定植与生长期主要病害",
+      "locator": {
+        "page": 6,
+        "section": "6.4 定植与生长期主要病害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 556,
+        "normalized_end": 595
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE012",
+      "source": "qingxian_facility_vegetables:0fb2ff753201d020",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "蚜虫",
+      "subject_type": "Pest",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC004"
+      ],
+      "chunk_id": "QXC004",
+      "evidence_text": "定植和生长期主要虫害有蚜虫、粉虱、蓟马、斑潜蝇等。",
+      "page": 7,
+      "section": "6.5 主要虫害",
+      "locator": {
+        "page": 7,
+        "section": "6.5 主要虫害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 189,
+        "normalized_end": 214
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE013",
+      "source": "qingxian_facility_vegetables:b2b7fd0899ae21c8",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "粉虱",
+      "subject_type": "Pest",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC004"
+      ],
+      "chunk_id": "QXC004",
+      "evidence_text": "定植和生长期主要虫害有蚜虫、粉虱、蓟马、斑潜蝇等。",
+      "page": 7,
+      "section": "6.5 主要虫害",
+      "locator": {
+        "page": 7,
+        "section": "6.5 主要虫害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 189,
+        "normalized_end": 214
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE014",
+      "source": "qingxian_facility_vegetables:5dbbf8a0537db1c2",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "蓟马",
+      "subject_type": "Pest",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC004"
+      ],
+      "chunk_id": "QXC004",
+      "evidence_text": "定植和生长期主要虫害有蚜虫、粉虱、蓟马、斑潜蝇等。",
+      "page": 7,
+      "section": "6.5 主要虫害",
+      "locator": {
+        "page": 7,
+        "section": "6.5 主要虫害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 189,
+        "normalized_end": 214
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE015",
+      "source": "qingxian_facility_vegetables:b5e38aa931785a7d",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "斑潜蝇",
+      "subject_type": "Pest",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC004"
+      ],
+      "chunk_id": "QXC004",
+      "evidence_text": "定植和生长期主要虫害有蚜虫、粉虱、蓟马、斑潜蝇等。",
+      "page": 7,
+      "section": "6.5 主要虫害",
+      "locator": {
+        "page": 7,
+        "section": "6.5 主要虫害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 189,
+        "normalized_end": 214
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE016",
+      "source": "qingxian_facility_vegetables:a76197b2e59f15e9",
+      "target": "qingxian_facility_vegetables:0fb2ff753201d020",
+      "subject": "通风口防虫网",
+      "subject_type": "Intervention",
+      "object": "蚜虫",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5197_2020",
+      "source_title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "evidence_ids": [
+        "DB13_T5197_2020",
+        "QXC005"
+      ],
+      "chunk_id": "QXC005",
+      "evidence_text": "10.1物理防治10.1.1设置防虫网在温室大棚通风口用40～60目尼龙网纱密封，防止外界蚜虫、斑潜蝇、蓟马和粉虱等害虫进入。10.1.2色板诱杀黄板诱杀蚜虫、斑潜蝇和粉虱等害虫。蓝板诱杀蓟马等害虫。每亩悬挂25cm×20cm诱虫板40片，垂直挂在两行中间植株中上部或上部。",
+      "page": 8,
+      "section": "10.1 物理防治",
+      "locator": {
+        "page": 8,
+        "section": "10.1 物理防治",
+        "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+        "normalized_start": 23,
+        "normalized_end": 160
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：越冬长季节",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "越冬长季节",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE017",
+      "source": "qingxian_facility_vegetables:a76197b2e59f15e9",
+      "target": "qingxian_facility_vegetables:b5e38aa931785a7d",
+      "subject": "通风口防虫网",
+      "subject_type": "Intervention",
+      "object": "斑潜蝇",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5197_2020",
+      "source_title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "evidence_ids": [
+        "DB13_T5197_2020",
+        "QXC005"
+      ],
+      "chunk_id": "QXC005",
+      "evidence_text": "10.1物理防治10.1.1设置防虫网在温室大棚通风口用40～60目尼龙网纱密封，防止外界蚜虫、斑潜蝇、蓟马和粉虱等害虫进入。10.1.2色板诱杀黄板诱杀蚜虫、斑潜蝇和粉虱等害虫。蓝板诱杀蓟马等害虫。每亩悬挂25cm×20cm诱虫板40片，垂直挂在两行中间植株中上部或上部。",
+      "page": 8,
+      "section": "10.1 物理防治",
+      "locator": {
+        "page": 8,
+        "section": "10.1 物理防治",
+        "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+        "normalized_start": 23,
+        "normalized_end": 160
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：越冬长季节",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "越冬长季节",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE018",
+      "source": "qingxian_facility_vegetables:a76197b2e59f15e9",
+      "target": "qingxian_facility_vegetables:5dbbf8a0537db1c2",
+      "subject": "通风口防虫网",
+      "subject_type": "Intervention",
+      "object": "蓟马",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5197_2020",
+      "source_title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "evidence_ids": [
+        "DB13_T5197_2020",
+        "QXC005"
+      ],
+      "chunk_id": "QXC005",
+      "evidence_text": "10.1物理防治10.1.1设置防虫网在温室大棚通风口用40～60目尼龙网纱密封，防止外界蚜虫、斑潜蝇、蓟马和粉虱等害虫进入。10.1.2色板诱杀黄板诱杀蚜虫、斑潜蝇和粉虱等害虫。蓝板诱杀蓟马等害虫。每亩悬挂25cm×20cm诱虫板40片，垂直挂在两行中间植株中上部或上部。",
+      "page": 8,
+      "section": "10.1 物理防治",
+      "locator": {
+        "page": 8,
+        "section": "10.1 物理防治",
+        "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+        "normalized_start": 23,
+        "normalized_end": 160
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：越冬长季节",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "越冬长季节",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE019",
+      "source": "qingxian_facility_vegetables:a76197b2e59f15e9",
+      "target": "qingxian_facility_vegetables:b2b7fd0899ae21c8",
+      "subject": "通风口防虫网",
+      "subject_type": "Intervention",
+      "object": "粉虱",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5197_2020",
+      "source_title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "evidence_ids": [
+        "DB13_T5197_2020",
+        "QXC005"
+      ],
+      "chunk_id": "QXC005",
+      "evidence_text": "10.1物理防治10.1.1设置防虫网在温室大棚通风口用40～60目尼龙网纱密封，防止外界蚜虫、斑潜蝇、蓟马和粉虱等害虫进入。10.1.2色板诱杀黄板诱杀蚜虫、斑潜蝇和粉虱等害虫。蓝板诱杀蓟马等害虫。每亩悬挂25cm×20cm诱虫板40片，垂直挂在两行中间植株中上部或上部。",
+      "page": 8,
+      "section": "10.1 物理防治",
+      "locator": {
+        "page": 8,
+        "section": "10.1 物理防治",
+        "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+        "normalized_start": 23,
+        "normalized_end": 160
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：越冬长季节",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "越冬长季节",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE020",
+      "source": "qingxian_facility_vegetables:d5595d68f9909f21",
+      "target": "qingxian_facility_vegetables:0fb2ff753201d020",
+      "subject": "黄板诱杀",
+      "subject_type": "Intervention",
+      "object": "蚜虫",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5197_2020",
+      "source_title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "evidence_ids": [
+        "DB13_T5197_2020",
+        "QXC005"
+      ],
+      "chunk_id": "QXC005",
+      "evidence_text": "10.1物理防治10.1.1设置防虫网在温室大棚通风口用40～60目尼龙网纱密封，防止外界蚜虫、斑潜蝇、蓟马和粉虱等害虫进入。10.1.2色板诱杀黄板诱杀蚜虫、斑潜蝇和粉虱等害虫。蓝板诱杀蓟马等害虫。每亩悬挂25cm×20cm诱虫板40片，垂直挂在两行中间植株中上部或上部。",
+      "page": 8,
+      "section": "10.1 物理防治",
+      "locator": {
+        "page": 8,
+        "section": "10.1 物理防治",
+        "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+        "normalized_start": 23,
+        "normalized_end": 160
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：越冬长季节",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "越冬长季节",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE021",
+      "source": "qingxian_facility_vegetables:d5595d68f9909f21",
+      "target": "qingxian_facility_vegetables:b5e38aa931785a7d",
+      "subject": "黄板诱杀",
+      "subject_type": "Intervention",
+      "object": "斑潜蝇",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5197_2020",
+      "source_title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "evidence_ids": [
+        "DB13_T5197_2020",
+        "QXC005"
+      ],
+      "chunk_id": "QXC005",
+      "evidence_text": "10.1物理防治10.1.1设置防虫网在温室大棚通风口用40～60目尼龙网纱密封，防止外界蚜虫、斑潜蝇、蓟马和粉虱等害虫进入。10.1.2色板诱杀黄板诱杀蚜虫、斑潜蝇和粉虱等害虫。蓝板诱杀蓟马等害虫。每亩悬挂25cm×20cm诱虫板40片，垂直挂在两行中间植株中上部或上部。",
+      "page": 8,
+      "section": "10.1 物理防治",
+      "locator": {
+        "page": 8,
+        "section": "10.1 物理防治",
+        "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+        "normalized_start": 23,
+        "normalized_end": 160
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：越冬长季节",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "越冬长季节",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE022",
+      "source": "qingxian_facility_vegetables:d5595d68f9909f21",
+      "target": "qingxian_facility_vegetables:b2b7fd0899ae21c8",
+      "subject": "黄板诱杀",
+      "subject_type": "Intervention",
+      "object": "粉虱",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5197_2020",
+      "source_title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "evidence_ids": [
+        "DB13_T5197_2020",
+        "QXC005"
+      ],
+      "chunk_id": "QXC005",
+      "evidence_text": "10.1物理防治10.1.1设置防虫网在温室大棚通风口用40～60目尼龙网纱密封，防止外界蚜虫、斑潜蝇、蓟马和粉虱等害虫进入。10.1.2色板诱杀黄板诱杀蚜虫、斑潜蝇和粉虱等害虫。蓝板诱杀蓟马等害虫。每亩悬挂25cm×20cm诱虫板40片，垂直挂在两行中间植株中上部或上部。",
+      "page": 8,
+      "section": "10.1 物理防治",
+      "locator": {
+        "page": 8,
+        "section": "10.1 物理防治",
+        "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+        "normalized_start": 23,
+        "normalized_end": 160
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：越冬长季节",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "越冬长季节",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE023",
+      "source": "qingxian_facility_vegetables:61398d36c6dc0f36",
+      "target": "qingxian_facility_vegetables:5dbbf8a0537db1c2",
+      "subject": "蓝板诱杀",
+      "subject_type": "Intervention",
+      "object": "蓟马",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5197_2020",
+      "source_title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "evidence_ids": [
+        "DB13_T5197_2020",
+        "QXC005"
+      ],
+      "chunk_id": "QXC005",
+      "evidence_text": "10.1物理防治10.1.1设置防虫网在温室大棚通风口用40～60目尼龙网纱密封，防止外界蚜虫、斑潜蝇、蓟马和粉虱等害虫进入。10.1.2色板诱杀黄板诱杀蚜虫、斑潜蝇和粉虱等害虫。蓝板诱杀蓟马等害虫。每亩悬挂25cm×20cm诱虫板40片，垂直挂在两行中间植株中上部或上部。",
+      "page": 8,
+      "section": "10.1 物理防治",
+      "locator": {
+        "page": 8,
+        "section": "10.1 物理防治",
+        "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+        "normalized_start": 23,
+        "normalized_end": 160
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：越冬长季节",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "越冬长季节",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE024",
+      "source": "qingxian_facility_vegetables:a0f03592323360f3",
+      "target": "qingxian_facility_vegetables:5dbbf8a0537db1c2",
+      "subject": "捕食螨",
+      "subject_type": "Intervention",
+      "object": "蓟马",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5197_2020",
+      "source_title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "evidence_ids": [
+        "DB13_T5197_2020",
+        "QXC006"
+      ],
+      "chunk_id": "QXC006",
+      "evidence_text": "10.2.1虫害防治捕食螨防治蓟马：定植初期，在根部附近土壤中撒放捕食螨，防治蓟马的地下虫态——蛹，每平方米300～500头，每2周撒放一次。害虫发生初期，每1周释放一次捕食螨，主要防治蓟马幼虫，每平方米100～500头，直至拉秧。丽蚜小蜂防治粉虱（包括白粉虱和烟粉虱）：害虫发生初期，在叶片上挂放丽蚜小蜂蜂卡，每平方米3～5头，每周释放1次，需要释放4～5次。",
+      "page": 8,
+      "section": "10.2.1 天敌防治",
+      "locator": {
+        "page": 8,
+        "section": "10.2.1 天敌防治",
+        "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+        "normalized_start": 208,
+        "normalized_end": 389
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：越冬长季节",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "越冬长季节",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE025",
+      "source": "qingxian_facility_vegetables:3cd446057412fe90",
+      "target": "qingxian_facility_vegetables:b2b7fd0899ae21c8",
+      "subject": "丽蚜小蜂",
+      "subject_type": "Intervention",
+      "object": "粉虱",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5197_2020",
+      "source_title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "evidence_ids": [
+        "DB13_T5197_2020",
+        "QXC006"
+      ],
+      "chunk_id": "QXC006",
+      "evidence_text": "10.2.1虫害防治捕食螨防治蓟马：定植初期，在根部附近土壤中撒放捕食螨，防治蓟马的地下虫态——蛹，每平方米300～500头，每2周撒放一次。害虫发生初期，每1周释放一次捕食螨，主要防治蓟马幼虫，每平方米100～500头，直至拉秧。丽蚜小蜂防治粉虱（包括白粉虱和烟粉虱）：害虫发生初期，在叶片上挂放丽蚜小蜂蜂卡，每平方米3～5头，每周释放1次，需要释放4～5次。",
+      "page": 8,
+      "section": "10.2.1 天敌防治",
+      "locator": {
+        "page": 8,
+        "section": "10.2.1 天敌防治",
+        "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+        "normalized_start": 208,
+        "normalized_end": 389
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：越冬长季节",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "越冬长季节",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE026",
+      "source": "qingxian_facility_vegetables:57a758cc619aa06f",
+      "target": "qingxian_facility_vegetables:621b8fcda8b92ec6",
+      "subject": "放风排湿",
+      "subject_type": "Intervention",
+      "object": "空气相对湿度",
+      "object_type": "EnvironmentFactor",
+      "relation": "REGULATES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植后",
+      "stage_ids": [
+        "qingxian_facility_vegetables:323fbdbef89ed487"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5532_2022",
+      "source_title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+      "evidence_ids": [
+        "DB13_T5532_2022",
+        "QXC007"
+      ],
+      "chunk_id": "QXC007",
+      "evidence_text": "7.5.1温湿度管理缓苗期，白天温度25℃～32℃，夜间不低于15℃，此阶段基本不放风，空气相对湿度控制在80%～90%；缓苗后，白天温度22℃～26℃，夜间不低于12℃，中午前后不超过30℃，注意放风排湿，空气相对湿度调控为60%～80%。结瓜期，白天温度25℃～30℃，夜间不低于13℃。当外界最低温度达15℃以上时，昼夜通风。",
+      "page": 6,
+      "section": "7.5.1 早春黄瓜温湿度",
+      "locator": {
+        "page": 6,
+        "section": "7.5.1 早春黄瓜温湿度",
+        "file": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+        "normalized_start": 255,
+        "normalized_end": 421
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：早春茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植后",
+        "season": "早春茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE027",
+      "source": "qingxian_facility_vegetables:3aced4edcf8a0de9",
+      "target": "qingxian_facility_vegetables:318a2b6a1ea8ff06",
+      "subject": "缓苗后空气相对湿度60%～80%",
+      "subject_type": "EnvironmentFactor",
+      "object": "缓苗后",
+      "object_type": "GrowthStage",
+      "relation": "APPLIES_AT",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植后",
+      "stage_ids": [
+        "qingxian_facility_vegetables:323fbdbef89ed487"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5532_2022",
+      "source_title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+      "evidence_ids": [
+        "DB13_T5532_2022",
+        "QXC007"
+      ],
+      "chunk_id": "QXC007",
+      "evidence_text": "7.5.1温湿度管理缓苗期，白天温度25℃～32℃，夜间不低于15℃，此阶段基本不放风，空气相对湿度控制在80%～90%；缓苗后，白天温度22℃～26℃，夜间不低于12℃，中午前后不超过30℃，注意放风排湿，空气相对湿度调控为60%～80%。结瓜期，白天温度25℃～30℃，夜间不低于13℃。当外界最低温度达15℃以上时，昼夜通风。",
+      "page": 6,
+      "section": "7.5.1 早春黄瓜温湿度",
+      "locator": {
+        "page": 6,
+        "section": "7.5.1 早春黄瓜温湿度",
+        "file": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+        "normalized_start": 255,
+        "normalized_end": 421
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：早春茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植后",
+        "season": "早春茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE028",
+      "source": "qingxian_facility_vegetables:6ab716608bcf050f",
+      "target": "qingxian_facility_vegetables:0896c843dd0fe10c",
+      "subject": "缓苗期空气相对湿度80%～90%",
+      "subject_type": "EnvironmentFactor",
+      "object": "缓苗期",
+      "object_type": "GrowthStage",
+      "relation": "APPLIES_AT",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植后",
+      "stage_ids": [
+        "qingxian_facility_vegetables:323fbdbef89ed487"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5532_2022",
+      "source_title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+      "evidence_ids": [
+        "DB13_T5532_2022",
+        "QXC007"
+      ],
+      "chunk_id": "QXC007",
+      "evidence_text": "7.5.1温湿度管理缓苗期，白天温度25℃～32℃，夜间不低于15℃，此阶段基本不放风，空气相对湿度控制在80%～90%；缓苗后，白天温度22℃～26℃，夜间不低于12℃，中午前后不超过30℃，注意放风排湿，空气相对湿度调控为60%～80%。结瓜期，白天温度25℃～30℃，夜间不低于13℃。当外界最低温度达15℃以上时，昼夜通风。",
+      "page": 6,
+      "section": "7.5.1 早春黄瓜温湿度",
+      "locator": {
+        "page": 6,
+        "section": "7.5.1 早春黄瓜温湿度",
+        "file": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+        "normalized_start": 255,
+        "normalized_end": 421
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：早春茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植后",
+        "season": "早春茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE029",
+      "source": "qingxian_facility_vegetables:3cbbe94d88412ed6",
+      "target": "qingxian_facility_vegetables:b9b72b36503b4c4d",
+      "subject": "保证温度时早揭晚盖",
+      "subject_type": "Intervention",
+      "object": "连阴天光照",
+      "object_type": "EnvironmentFactor",
+      "relation": "REGULATES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5532_2022",
+      "source_title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+      "evidence_ids": [
+        "DB13_T5532_2022",
+        "QXC008"
+      ],
+      "chunk_id": "QXC008",
+      "evidence_text": "7.5.3光照调节连阴天，在保证温度的情况下早揭晚盖。植株调整植株25cm～30cm高时，拉绳绕蔓；高度超过拉绳顶部时及时落蔓，并保留12～16片功能叶；及时打掉卷须、黄、老、病叶。",
+      "page": 6,
+      "section": "7.5.3 光照与植株调整",
+      "locator": {
+        "page": 6,
+        "section": "7.5.3 光照与植株调整",
+        "file": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+        "normalized_start": 599,
+        "normalized_end": 690
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：早春茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "早春茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE030",
+      "source": "qingxian_facility_vegetables:49577024525b5ca8",
+      "target": "qingxian_facility_vegetables:fbb6dd9baa5bd16c",
+      "subject": "植株调整",
+      "subject_type": "Intervention",
+      "object": "去除黄老病叶",
+      "object_type": "Intervention",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5532_2022",
+      "source_title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+      "evidence_ids": [
+        "DB13_T5532_2022",
+        "QXC008"
+      ],
+      "chunk_id": "QXC008",
+      "evidence_text": "7.5.3光照调节连阴天，在保证温度的情况下早揭晚盖。植株调整植株25cm～30cm高时，拉绳绕蔓；高度超过拉绳顶部时及时落蔓，并保留12～16片功能叶；及时打掉卷须、黄、老、病叶。",
+      "page": 6,
+      "section": "7.5.3 光照与植株调整",
+      "locator": {
+        "page": 6,
+        "section": "7.5.3 光照与植株调整",
+        "file": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+        "normalized_start": 599,
+        "normalized_end": 690
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：早春茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "早春茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE031",
+      "source": "qingxian_facility_vegetables:3a1445a0875ed80d",
+      "target": "qingxian_facility_vegetables:87e4a5d3865b81f9",
+      "subject": "覆盖遮阳网",
+      "subject_type": "Intervention",
+      "object": "高温",
+      "object_type": "EnvironmentFactor",
+      "relation": "REGULATES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5532_2022",
+      "source_title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+      "evidence_ids": [
+        "DB13_T5532_2022",
+        "QXC009"
+      ],
+      "chunk_id": "QXC009",
+      "evidence_text": "8.5.1温湿度管理播种后，温度保持25℃～33℃，高温时采取覆盖遮阳网、喷水等措施降低温度。苗期，小水勤浇，以降低地温，白天温度控制在25℃～30℃；结瓜期白天温度25℃～30℃，夜温15℃～18℃，外界最低气温15℃以上时，昼夜通风。结瓜后期，夜温低于13℃时封闭温室，夜间最低温度降到8℃时，加盖保温被保温。",
+      "page": 7,
+      "section": "8.5.1 秋延后黄瓜温湿度",
+      "locator": {
+        "page": 7,
+        "section": "8.5.1 秋延后黄瓜温湿度",
+        "file": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+        "normalized_start": 65,
+        "normalized_end": 222
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：秋延后",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "秋延后",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE032",
+      "source": "qingxian_facility_vegetables:a7356d0c9740fc8a",
+      "target": "qingxian_facility_vegetables:051cbeb807d78113",
+      "subject": "加盖保温被",
+      "subject_type": "Intervention",
+      "object": "夜间低温",
+      "object_type": "EnvironmentFactor",
+      "relation": "REGULATES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5532_2022",
+      "source_title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+      "evidence_ids": [
+        "DB13_T5532_2022",
+        "QXC009"
+      ],
+      "chunk_id": "QXC009",
+      "evidence_text": "8.5.1温湿度管理播种后，温度保持25℃～33℃，高温时采取覆盖遮阳网、喷水等措施降低温度。苗期，小水勤浇，以降低地温，白天温度控制在25℃～30℃；结瓜期白天温度25℃～30℃，夜温15℃～18℃，外界最低气温15℃以上时，昼夜通风。结瓜后期，夜温低于13℃时封闭温室，夜间最低温度降到8℃时，加盖保温被保温。",
+      "page": 7,
+      "section": "8.5.1 秋延后黄瓜温湿度",
+      "locator": {
+        "page": 7,
+        "section": "8.5.1 秋延后黄瓜温湿度",
+        "file": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+        "normalized_start": 65,
+        "normalized_end": 222
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：秋延后",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": "秋延后",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE033",
+      "source": "qingxian_facility_vegetables:21774bf86b0837de",
+      "target": "qingxian_facility_vegetables:04958bbefdc2ebbb",
+      "subject": "测土施肥",
+      "subject_type": "Intervention",
+      "object": "土壤供肥",
+      "object_type": "ManagementFactor",
+      "relation": "CONSIDERS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC010"
+      ],
+      "chunk_id": "QXC010",
+      "evidence_text": "4控施原则4.1化肥控施原则以低肥力提高、中肥力维持、高肥力降低的原则，以目标产量和作物带走养分量及土壤供应确定有机肥施用量和化肥施用量，化肥的施用按NY/T394执行。4.2农药控施原则预防为主、综合防治，优先采用农业防治、物理防治、生物防治，配合化学药剂防治。利用高效低毒低残留化学农药进行病虫害防治，农药的使用按GB/T8321.1-5及NY/T393执行。",
+      "page": 5,
+      "section": "4 控施原则",
+      "locator": {
+        "page": 5,
+        "section": "4 控施原则",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 411,
+        "normalized_end": 593
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE034",
+      "source": "qingxian_facility_vegetables:64eec1e53cb3e2af",
+      "target": "qingxian_facility_vegetables:d2586e8fe5a11471",
+      "subject": "农药控施",
+      "subject_type": "Intervention",
+      "object": "农业物理生物防治",
+      "object_type": "Intervention",
+      "relation": "PRIORITIZES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC010"
+      ],
+      "chunk_id": "QXC010",
+      "evidence_text": "4控施原则4.1化肥控施原则以低肥力提高、中肥力维持、高肥力降低的原则，以目标产量和作物带走养分量及土壤供应确定有机肥施用量和化肥施用量，化肥的施用按NY/T394执行。4.2农药控施原则预防为主、综合防治，优先采用农业防治、物理防治、生物防治，配合化学药剂防治。利用高效低毒低残留化学农药进行病虫害防治，农药的使用按GB/T8321.1-5及NY/T393执行。",
+      "page": 5,
+      "section": "4 控施原则",
+      "locator": {
+        "page": 5,
+        "section": "4 控施原则",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 411,
+        "normalized_end": 593
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE035",
+      "source": "qingxian_facility_vegetables:6bdf083d6cb44c5d",
+      "target": "qingxian_facility_vegetables:d6b142c00d9df3c7",
+      "subject": "番茄",
+      "subject_type": "Crop",
+      "object": "与非茄科作物轮作",
+      "object_type": "Intervention",
+      "relation": "USES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "定植前",
+      "stage_ids": [
+        "qingxian_facility_vegetables:bf407044910ad266"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC011"
+      ],
+      "chunk_id": "QXC011",
+      "evidence_text": "5.3.1轮作倒茬实行番茄与非茄科作物3年轮作制。5.3.2清洁棚室在6～7月上茬作物收获后，清除作物的残体，除尽田间杂草，运出棚外集中深埋或烧毁。5.3.3高温闷棚深翻耕地30cm，大水漫灌，覆盖地膜，封闭大棚膜20d～25d。5.3.4覆盖防虫网在温室通风口及门口应用40～60目防虫网，其中通风口防虫网需要卡槽密封。",
+      "page": 6,
+      "section": "5.3 轮作与棚室管理",
+      "locator": {
+        "page": 6,
+        "section": "5.3 轮作与棚室管理",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 317,
+        "normalized_end": 478
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "定植前",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE036",
+      "source": "qingxian_facility_vegetables:ee7874550e059c7f",
+      "target": "qingxian_facility_vegetables:c545ddd8e94db2ee",
+      "subject": "清洁棚室",
+      "subject_type": "Intervention",
+      "object": "作物残体与田间杂草",
+      "object_type": "ManagementFactor",
+      "relation": "REMOVES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "定植前",
+      "stage_ids": [
+        "qingxian_facility_vegetables:bf407044910ad266"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC011"
+      ],
+      "chunk_id": "QXC011",
+      "evidence_text": "5.3.1轮作倒茬实行番茄与非茄科作物3年轮作制。5.3.2清洁棚室在6～7月上茬作物收获后，清除作物的残体，除尽田间杂草，运出棚外集中深埋或烧毁。5.3.3高温闷棚深翻耕地30cm，大水漫灌，覆盖地膜，封闭大棚膜20d～25d。5.3.4覆盖防虫网在温室通风口及门口应用40～60目防虫网，其中通风口防虫网需要卡槽密封。",
+      "page": 6,
+      "section": "5.3 轮作与棚室管理",
+      "locator": {
+        "page": 6,
+        "section": "5.3 轮作与棚室管理",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 317,
+        "normalized_end": 478
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "定植前",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE037",
+      "source": "qingxian_facility_vegetables:0503f7bb291ddd71",
+      "target": "qingxian_facility_vegetables:6bdf083d6cb44c5d",
+      "subject": "通风口及门口防虫网",
+      "subject_type": "Intervention",
+      "object": "番茄",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "定植前",
+      "stage_ids": [
+        "qingxian_facility_vegetables:bf407044910ad266"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC011"
+      ],
+      "chunk_id": "QXC011",
+      "evidence_text": "5.3.1轮作倒茬实行番茄与非茄科作物3年轮作制。5.3.2清洁棚室在6～7月上茬作物收获后，清除作物的残体，除尽田间杂草，运出棚外集中深埋或烧毁。5.3.3高温闷棚深翻耕地30cm，大水漫灌，覆盖地膜，封闭大棚膜20d～25d。5.3.4覆盖防虫网在温室通风口及门口应用40～60目防虫网，其中通风口防虫网需要卡槽密封。",
+      "page": 6,
+      "section": "5.3 轮作与棚室管理",
+      "locator": {
+        "page": 6,
+        "section": "5.3 轮作与棚室管理",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 317,
+        "normalized_end": 478
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "定植前",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE038",
+      "source": "qingxian_facility_vegetables:ab3c64ee0aeca1ee",
+      "target": "qingxian_facility_vegetables:4790bb2957515d43",
+      "subject": "黄板诱杀",
+      "subject_type": "Intervention",
+      "object": "蚜虫",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "定植期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:50b86330b6fe7bfd"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC012"
+      ],
+      "chunk_id": "QXC012",
+      "evidence_text": "6.2.2色板诱杀采用黄板诱杀蚜虫、粉虱。",
+      "page": 7,
+      "section": "6.2.2 黄板诱杀",
+      "locator": {
+        "page": 7,
+        "section": "6.2.2 黄板诱杀",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 70,
+        "normalized_end": 91
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "定植期",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE039",
+      "source": "qingxian_facility_vegetables:ab3c64ee0aeca1ee",
+      "target": "qingxian_facility_vegetables:4757f654fb4fa91f",
+      "subject": "黄板诱杀",
+      "subject_type": "Intervention",
+      "object": "粉虱",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "定植期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:50b86330b6fe7bfd"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC012"
+      ],
+      "chunk_id": "QXC012",
+      "evidence_text": "6.2.2色板诱杀采用黄板诱杀蚜虫、粉虱。",
+      "page": 7,
+      "section": "6.2.2 黄板诱杀",
+      "locator": {
+        "page": 7,
+        "section": "6.2.2 黄板诱杀",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 70,
+        "normalized_end": 91
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "定植期",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE040",
+      "source": "qingxian_facility_vegetables:d38e02e16cd151dd",
+      "target": "qingxian_facility_vegetables:4757f654fb4fa91f",
+      "subject": "丽蚜小蜂",
+      "subject_type": "Intervention",
+      "object": "粉虱",
+      "object_type": "Pest",
+      "relation": "CONTROLS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "定植后至开花坐果期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:2c470bf1aa5da942"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC013"
+      ],
+      "chunk_id": "QXC013",
+      "evidence_text": "7.2.1天敌防治采用丽蚜小蜂防治粉虱。",
+      "page": 7,
+      "section": "7.2.1 天敌防治",
+      "locator": {
+        "page": 7,
+        "section": "7.2.1 天敌防治",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 179,
+        "normalized_end": 199
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "定植后至开花坐果期",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE041",
+      "source": "qingxian_facility_vegetables:45eb8825d106e30e",
+      "target": "qingxian_facility_vegetables:02bba23ef657fae0",
+      "subject": "通风",
+      "subject_type": "Intervention",
+      "object": "空气湿度",
+      "object_type": "EnvironmentFactor",
+      "relation": "REGULATES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "定植后至开花坐果期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:2c470bf1aa5da942"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC014"
+      ],
+      "chunk_id": "QXC014",
+      "evidence_text": "7.3管理措施7.3.1温度管理定植后3d～5d，保持昼温28℃～30℃，夜温17℃～20℃，室内湿度过大时，中午适当放风。缓苗后，开始通风以降温、降湿，控制昼温20℃～25℃，夜温12℃～18℃。7.3.2水分管理坐果前一般不浇水，必要时浇小水，浇水量每亩6～8方。7.3.3湿度管理采用覆盖地膜保湿，加强通风，降低空气湿度。7.3.4病株处理发现病株及时拔除，并进行消毒处理。",
+      "page": 7,
+      "section": "7.3 温湿度及病株处理",
+      "locator": {
+        "page": 7,
+        "section": "7.3 温湿度及病株处理",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 308,
+        "normalized_end": 498
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "定植后至开花坐果期",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE042",
+      "source": "qingxian_facility_vegetables:538f994e2d733359",
+      "target": "qingxian_facility_vegetables:a5260fba1b97d279",
+      "subject": "地膜覆盖",
+      "subject_type": "Intervention",
+      "object": "保湿",
+      "object_type": "ManagementFactor",
+      "relation": "REGULATES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "定植后至开花坐果期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:2c470bf1aa5da942"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC014"
+      ],
+      "chunk_id": "QXC014",
+      "evidence_text": "7.3管理措施7.3.1温度管理定植后3d～5d，保持昼温28℃～30℃，夜温17℃～20℃，室内湿度过大时，中午适当放风。缓苗后，开始通风以降温、降湿，控制昼温20℃～25℃，夜温12℃～18℃。7.3.2水分管理坐果前一般不浇水，必要时浇小水，浇水量每亩6～8方。7.3.3湿度管理采用覆盖地膜保湿，加强通风，降低空气湿度。7.3.4病株处理发现病株及时拔除，并进行消毒处理。",
+      "page": 7,
+      "section": "7.3 温湿度及病株处理",
+      "locator": {
+        "page": 7,
+        "section": "7.3 温湿度及病株处理",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 308,
+        "normalized_end": 498
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "定植后至开花坐果期",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE043",
+      "source": "qingxian_facility_vegetables:995f67a437552094",
+      "target": "qingxian_facility_vegetables:6bdf083d6cb44c5d",
+      "subject": "病株及时拔除并消毒",
+      "subject_type": "Intervention",
+      "object": "番茄",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "定植后至开花坐果期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:2c470bf1aa5da942"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC014"
+      ],
+      "chunk_id": "QXC014",
+      "evidence_text": "7.3管理措施7.3.1温度管理定植后3d～5d，保持昼温28℃～30℃，夜温17℃～20℃，室内湿度过大时，中午适当放风。缓苗后，开始通风以降温、降湿，控制昼温20℃～25℃，夜温12℃～18℃。7.3.2水分管理坐果前一般不浇水，必要时浇小水，浇水量每亩6～8方。7.3.3湿度管理采用覆盖地膜保湿，加强通风，降低空气湿度。7.3.4病株处理发现病株及时拔除，并进行消毒处理。",
+      "page": 7,
+      "section": "7.3 温湿度及病株处理",
+      "locator": {
+        "page": 7,
+        "section": "7.3 温湿度及病株处理",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 308,
+        "normalized_end": 498
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "定植后至开花坐果期",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE044",
+      "source": "qingxian_facility_vegetables:7d1020551d3c87ab",
+      "target": "qingxian_facility_vegetables:02081dde7bd8b33c",
+      "subject": "补光灯和反光幕",
+      "subject_type": "Intervention",
+      "object": "光照",
+      "object_type": "EnvironmentFactor",
+      "relation": "REGULATES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "开花结果期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:acff150ce2d97db1"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC015"
+      ],
+      "chunk_id": "QXC015",
+      "evidence_text": "8.3.3光照管理及时揭盖草苫，尽量延长光照时间。可采用补光灯、反光幕等增加光照。8.3.4植株调整及时整枝打杈、疏花疏果，及早摘除老、病叶。8.3.5适时采收果实处于变色期后，陆续采收上市。",
+      "page": 8,
+      "section": "8.3.3 光照与植株调整",
+      "locator": {
+        "page": 8,
+        "section": "8.3.3 光照与植株调整",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 545,
+        "normalized_end": 641
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "开花结果期",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE045",
+      "source": "qingxian_facility_vegetables:d673ebde0cfb03f4",
+      "target": "qingxian_facility_vegetables:6bdf083d6cb44c5d",
+      "subject": "整枝打杈",
+      "subject_type": "Intervention",
+      "object": "番茄",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "开花结果期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:acff150ce2d97db1"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC015"
+      ],
+      "chunk_id": "QXC015",
+      "evidence_text": "8.3.3光照管理及时揭盖草苫，尽量延长光照时间。可采用补光灯、反光幕等增加光照。8.3.4植株调整及时整枝打杈、疏花疏果，及早摘除老、病叶。8.3.5适时采收果实处于变色期后，陆续采收上市。",
+      "page": 8,
+      "section": "8.3.3 光照与植株调整",
+      "locator": {
+        "page": 8,
+        "section": "8.3.3 光照与植株调整",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 545,
+        "normalized_end": 641
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "开花结果期",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE046",
+      "source": "qingxian_facility_vegetables:c0a4ee6a1fddc72c",
+      "target": "qingxian_facility_vegetables:6bdf083d6cb44c5d",
+      "subject": "摘除老病叶",
+      "subject_type": "Intervention",
+      "object": "番茄",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": "开花结果期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:acff150ce2d97db1"
+      ],
+      "organ": null,
+      "source_id": "DB13_T2980_2019",
+      "source_title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "evidence_ids": [
+        "DB13_T2980_2019",
+        "QXC015"
+      ],
+      "chunk_id": "QXC015",
+      "evidence_text": "8.3.3光照管理及时揭盖草苫，尽量延长光照时间。可采用补光灯、反光幕等增加光照。8.3.4植株调整及时整枝打杈、疏花疏果，及早摘除老、病叶。8.3.5适时采收果实处于变色期后，陆续采收上市。",
+      "page": 8,
+      "section": "8.3.3 光照与植株调整",
+      "locator": {
+        "page": 8,
+        "section": "8.3.3 光照与植株调整",
+        "file": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+        "normalized_start": 545,
+        "normalized_end": 641
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：越冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": "开花结果期",
+        "season": "越冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE047",
+      "source": "qingxian_facility_vegetables:9eec056d643bbc07",
+      "target": "qingxian_facility_vegetables:6bdf083d6cb44c5d",
+      "subject": "施肥前后清水灌溉",
+      "subject_type": "Intervention",
+      "object": "番茄",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T2993_2019",
+      "source_title": "日光温室秋冬茬番茄滴灌水肥一体化技术规程",
+      "evidence_ids": [
+        "DB13_T2993_2019",
+        "QXC016"
+      ],
+      "chunk_id": "QXC016",
+      "evidence_text": "6灌溉系统运行管理施肥前，用清水灌溉10min～15min；施肥完成后，用清水继续灌溉10min～15min。灌溉结束，检查和冲洗过滤器前主管道，特别是毛管，以防系统内淤泥沉淀。",
+      "page": 6,
+      "section": "6 灌溉系统运行管理",
+      "locator": {
+        "page": 6,
+        "section": "6 灌溉系统运行管理",
+        "file": "evidence\\raw\\standards\\DB13_T2993_2019.pdf",
+        "normalized_start": 460,
+        "normalized_end": 549
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：秋冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": "秋冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE048",
+      "source": "qingxian_facility_vegetables:dabab3fc712ec63a",
+      "target": "qingxian_facility_vegetables:31f3060fc677ae08",
+      "subject": "检查冲洗过滤器前主管道",
+      "subject_type": "Intervention",
+      "object": "系统淤泥沉淀",
+      "object_type": "ManagementFactor",
+      "relation": "DECREASES_RISK_OF",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T2993_2019",
+      "source_title": "日光温室秋冬茬番茄滴灌水肥一体化技术规程",
+      "evidence_ids": [
+        "DB13_T2993_2019",
+        "QXC016"
+      ],
+      "chunk_id": "QXC016",
+      "evidence_text": "6灌溉系统运行管理施肥前，用清水灌溉10min～15min；施肥完成后，用清水继续灌溉10min～15min。灌溉结束，检查和冲洗过滤器前主管道，特别是毛管，以防系统内淤泥沉淀。",
+      "page": 6,
+      "section": "6 灌溉系统运行管理",
+      "locator": {
+        "page": 6,
+        "section": "6 灌溉系统运行管理",
+        "file": "evidence\\raw\\standards\\DB13_T2993_2019.pdf",
+        "normalized_start": 460,
+        "normalized_end": 549
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：秋冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": "秋冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE049",
+      "source": "qingxian_facility_vegetables:b2173ee7359d4bdf",
+      "target": "qingxian_facility_vegetables:cbdc1de674a4906e",
+      "subject": "阴雪天气灌水",
+      "subject_type": "ManagementFactor",
+      "object": "地温",
+      "object_type": "EnvironmentFactor",
+      "relation": "DECREASES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T2993_2019",
+      "source_title": "日光温室秋冬茬番茄滴灌水肥一体化技术规程",
+      "evidence_ids": [
+        "DB13_T2993_2019",
+        "QXC017"
+      ],
+      "chunk_id": "QXC017",
+      "evidence_text": "9注意事项冬季浇水应在上午10：00～12:00；其他季节灌水时间在清晨或傍晚进行，在预报高温天气时，须在清晨气温升高之前完成。阴雪天气不可灌水，以免降低地温，影响根系生长，如果非灌水不可时，也只能滴水救急，等待天晴后缓慢灌水。",
+      "page": 7,
+      "section": "9 灌水注意事项",
+      "locator": {
+        "page": 7,
+        "section": "9 灌水注意事项",
+        "file": "evidence\\raw\\standards\\DB13_T2993_2019.pdf",
+        "normalized_start": 403,
+        "normalized_end": 517
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：秋冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": "秋冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE050",
+      "source": "qingxian_facility_vegetables:b2173ee7359d4bdf",
+      "target": "qingxian_facility_vegetables:bbba1005b2cb502a",
+      "subject": "阴雪天气灌水",
+      "subject_type": "ManagementFactor",
+      "object": "根系生长",
+      "object_type": "ManagementFactor",
+      "relation": "AFFECTS",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河北",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T2993_2019",
+      "source_title": "日光温室秋冬茬番茄滴灌水肥一体化技术规程",
+      "evidence_ids": [
+        "DB13_T2993_2019",
+        "QXC017"
+      ],
+      "chunk_id": "QXC017",
+      "evidence_text": "9注意事项冬季浇水应在上午10：00～12:00；其他季节灌水时间在清晨或傍晚进行，在预报高温天气时，须在清晨气温升高之前完成。阴雪天气不可灌水，以免降低地温，影响根系生长，如果非灌水不可时，也只能滴水救急，等待天晴后缓慢灌水。",
+      "page": 7,
+      "section": "9 灌水注意事项",
+      "locator": {
+        "page": 7,
+        "section": "9 灌水注意事项",
+        "file": "evidence\\raw\\standards\\DB13_T2993_2019.pdf",
+        "normalized_start": 403,
+        "normalized_end": 517
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：秋冬茬",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": "秋冬茬",
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE051",
+      "source": "qingxian_facility_vegetables:aa64be7d54b16b63",
+      "target": "qingxian_facility_vegetables:e97db282c7f35c16",
+      "subject": "病虫害绿色防控",
+      "subject_type": "Intervention",
+      "object": "抗病耐虫品种",
+      "object_type": "Intervention",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [],
+      "region": "河北冀中南地区",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5574_2022",
+      "source_title": "日光温室蔬菜安全高效生产技术规程",
+      "evidence_ids": [
+        "DB13_T5574_2022",
+        "QXC018"
+      ],
+      "chunk_id": "QXC018",
+      "evidence_text": "9病虫害绿色防控技术农业防治选用无病虫种苗、抗病耐虫品种，嫁接栽培，调节播期、轮作；土壤耕作，科学浇水施肥，增强寄主抗性，控温调湿。物理防治温汤浸种、高温闷棚消毒；覆盖防虫网，利用灯光、色板，毒饵诱杀害虫。生物防治保护天敌和有益微生物，使用生物制剂处理种苗和土壤；使用微生物和农用抗生素制剂；释放天敌；利用性信息素诱杀。",
+      "page": 8,
+      "section": "9 农业物理生物防治",
+      "locator": {
+        "page": 8,
+        "section": "9 农业物理生物防治",
+        "file": "evidence\\raw\\standards\\DB13_T5574_2022.pdf",
+        "normalized_start": 978,
+        "normalized_end": 1138
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：河北冀中南地区"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE052",
+      "source": "qingxian_facility_vegetables:aa64be7d54b16b63",
+      "target": "qingxian_facility_vegetables:b33030eeb8da787c",
+      "subject": "病虫害绿色防控",
+      "subject_type": "Intervention",
+      "object": "嫁接栽培",
+      "object_type": "Intervention",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [],
+      "region": "河北冀中南地区",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5574_2022",
+      "source_title": "日光温室蔬菜安全高效生产技术规程",
+      "evidence_ids": [
+        "DB13_T5574_2022",
+        "QXC018"
+      ],
+      "chunk_id": "QXC018",
+      "evidence_text": "9病虫害绿色防控技术农业防治选用无病虫种苗、抗病耐虫品种，嫁接栽培，调节播期、轮作；土壤耕作，科学浇水施肥，增强寄主抗性，控温调湿。物理防治温汤浸种、高温闷棚消毒；覆盖防虫网，利用灯光、色板，毒饵诱杀害虫。生物防治保护天敌和有益微生物，使用生物制剂处理种苗和土壤；使用微生物和农用抗生素制剂；释放天敌；利用性信息素诱杀。",
+      "page": 8,
+      "section": "9 农业物理生物防治",
+      "locator": {
+        "page": 8,
+        "section": "9 农业物理生物防治",
+        "file": "evidence\\raw\\standards\\DB13_T5574_2022.pdf",
+        "normalized_start": 978,
+        "normalized_end": 1138
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：河北冀中南地区"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE053",
+      "source": "qingxian_facility_vegetables:aa64be7d54b16b63",
+      "target": "qingxian_facility_vegetables:a24a963036f43a41",
+      "subject": "病虫害绿色防控",
+      "subject_type": "Intervention",
+      "object": "轮作",
+      "object_type": "Intervention",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [],
+      "region": "河北冀中南地区",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5574_2022",
+      "source_title": "日光温室蔬菜安全高效生产技术规程",
+      "evidence_ids": [
+        "DB13_T5574_2022",
+        "QXC018"
+      ],
+      "chunk_id": "QXC018",
+      "evidence_text": "9病虫害绿色防控技术农业防治选用无病虫种苗、抗病耐虫品种，嫁接栽培，调节播期、轮作；土壤耕作，科学浇水施肥，增强寄主抗性，控温调湿。物理防治温汤浸种、高温闷棚消毒；覆盖防虫网，利用灯光、色板，毒饵诱杀害虫。生物防治保护天敌和有益微生物，使用生物制剂处理种苗和土壤；使用微生物和农用抗生素制剂；释放天敌；利用性信息素诱杀。",
+      "page": 8,
+      "section": "9 农业物理生物防治",
+      "locator": {
+        "page": 8,
+        "section": "9 农业物理生物防治",
+        "file": "evidence\\raw\\standards\\DB13_T5574_2022.pdf",
+        "normalized_start": 978,
+        "normalized_end": 1138
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：河北冀中南地区"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE054",
+      "source": "qingxian_facility_vegetables:aa64be7d54b16b63",
+      "target": "qingxian_facility_vegetables:62f0be9b69b65a92",
+      "subject": "病虫害绿色防控",
+      "subject_type": "Intervention",
+      "object": "控温调湿",
+      "object_type": "Intervention",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [],
+      "region": "河北冀中南地区",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5574_2022",
+      "source_title": "日光温室蔬菜安全高效生产技术规程",
+      "evidence_ids": [
+        "DB13_T5574_2022",
+        "QXC018"
+      ],
+      "chunk_id": "QXC018",
+      "evidence_text": "9病虫害绿色防控技术农业防治选用无病虫种苗、抗病耐虫品种，嫁接栽培，调节播期、轮作；土壤耕作，科学浇水施肥，增强寄主抗性，控温调湿。物理防治温汤浸种、高温闷棚消毒；覆盖防虫网，利用灯光、色板，毒饵诱杀害虫。生物防治保护天敌和有益微生物，使用生物制剂处理种苗和土壤；使用微生物和农用抗生素制剂；释放天敌；利用性信息素诱杀。",
+      "page": 8,
+      "section": "9 农业物理生物防治",
+      "locator": {
+        "page": 8,
+        "section": "9 农业物理生物防治",
+        "file": "evidence\\raw\\standards\\DB13_T5574_2022.pdf",
+        "normalized_start": 978,
+        "normalized_end": 1138
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：河北冀中南地区"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE055",
+      "source": "qingxian_facility_vegetables:aa64be7d54b16b63",
+      "target": "qingxian_facility_vegetables:e07ab70bfd674c83",
+      "subject": "病虫害绿色防控",
+      "subject_type": "Intervention",
+      "object": "防虫网",
+      "object_type": "Intervention",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [],
+      "region": "河北冀中南地区",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5574_2022",
+      "source_title": "日光温室蔬菜安全高效生产技术规程",
+      "evidence_ids": [
+        "DB13_T5574_2022",
+        "QXC018"
+      ],
+      "chunk_id": "QXC018",
+      "evidence_text": "9病虫害绿色防控技术农业防治选用无病虫种苗、抗病耐虫品种，嫁接栽培，调节播期、轮作；土壤耕作，科学浇水施肥，增强寄主抗性，控温调湿。物理防治温汤浸种、高温闷棚消毒；覆盖防虫网，利用灯光、色板，毒饵诱杀害虫。生物防治保护天敌和有益微生物，使用生物制剂处理种苗和土壤；使用微生物和农用抗生素制剂；释放天敌；利用性信息素诱杀。",
+      "page": 8,
+      "section": "9 农业物理生物防治",
+      "locator": {
+        "page": 8,
+        "section": "9 农业物理生物防治",
+        "file": "evidence\\raw\\standards\\DB13_T5574_2022.pdf",
+        "normalized_start": 978,
+        "normalized_end": 1138
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：河北冀中南地区"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE056",
+      "source": "qingxian_facility_vegetables:aa64be7d54b16b63",
+      "target": "qingxian_facility_vegetables:c975f0a07f86e4af",
+      "subject": "病虫害绿色防控",
+      "subject_type": "Intervention",
+      "object": "释放天敌",
+      "object_type": "Intervention",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [],
+      "region": "河北冀中南地区",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "DB13_T5574_2022",
+      "source_title": "日光温室蔬菜安全高效生产技术规程",
+      "evidence_ids": [
+        "DB13_T5574_2022",
+        "QXC018"
+      ],
+      "chunk_id": "QXC018",
+      "evidence_text": "9病虫害绿色防控技术农业防治选用无病虫种苗、抗病耐虫品种，嫁接栽培，调节播期、轮作；土壤耕作，科学浇水施肥，增强寄主抗性，控温调湿。物理防治温汤浸种、高温闷棚消毒；覆盖防虫网，利用灯光、色板，毒饵诱杀害虫。生物防治保护天敌和有益微生物，使用生物制剂处理种苗和土壤；使用微生物和农用抗生素制剂；释放天敌；利用性信息素诱杀。",
+      "page": 8,
+      "section": "9 农业物理生物防治",
+      "locator": {
+        "page": 8,
+        "section": "9 农业物理生物防治",
+        "file": "evidence\\raw\\standards\\DB13_T5574_2022.pdf",
+        "normalized_start": 978,
+        "normalized_end": 1138
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：河北冀中南地区"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE057",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:bb847e1a27979129",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "叶背水浸状小点",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE058",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:f11dfadcef465111",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "多角形水浸状斑",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE059",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:7948b0b127fb7b8b",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "叶背灰黑色霉层",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE060",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:d71adb26a2beea34",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "黄褐色坏死斑",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE061",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:1c8693c843c24bb3",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "叶片",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE062",
+      "source": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "target": "qingxian_facility_vegetables:0cdd2046486c9152",
+      "subject": "黄瓜细菌性角斑病",
+      "subject_type": "Disease",
+      "object": "水浸状褪绿色病斑",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC020"
+      ],
+      "chunk_id": "QXC020",
+      "evidence_text": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "page": null,
+      "section": "症状特点：黄瓜细菌性角斑病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 429,
+        "normalized_end": 573
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE063",
+      "source": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "target": "qingxian_facility_vegetables:2e3e164589b92ec2",
+      "subject": "黄瓜细菌性角斑病",
+      "subject_type": "Disease",
+      "object": "叶背白色菌脓",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC020"
+      ],
+      "chunk_id": "QXC020",
+      "evidence_text": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "page": null,
+      "section": "症状特点：黄瓜细菌性角斑病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 429,
+        "normalized_end": 573
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE064",
+      "source": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "target": "qingxian_facility_vegetables:d3153a78a3a089b4",
+      "subject": "黄瓜细菌性角斑病",
+      "subject_type": "Disease",
+      "object": "病斑穿孔或破碎",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC020"
+      ],
+      "chunk_id": "QXC020",
+      "evidence_text": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "page": null,
+      "section": "症状特点：黄瓜细菌性角斑病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 429,
+        "normalized_end": 573
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE065",
+      "source": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "target": "qingxian_facility_vegetables:51c1a8228136a4a6",
+      "subject": "黄瓜细菌性角斑病",
+      "subject_type": "Disease",
+      "object": "病瓜臭味",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC020"
+      ],
+      "chunk_id": "QXC020",
+      "evidence_text": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "page": null,
+      "section": "症状特点：黄瓜细菌性角斑病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 429,
+        "normalized_end": 573
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE066",
+      "source": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "target": "qingxian_facility_vegetables:1c8693c843c24bb3",
+      "subject": "黄瓜细菌性角斑病",
+      "subject_type": "Disease",
+      "object": "叶片",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC020"
+      ],
+      "chunk_id": "QXC020",
+      "evidence_text": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "page": null,
+      "section": "症状特点：黄瓜细菌性角斑病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 429,
+        "normalized_end": 573
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE067",
+      "source": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "target": "qingxian_facility_vegetables:25f0686da979249a",
+      "subject": "黄瓜细菌性角斑病",
+      "subject_type": "Disease",
+      "object": "叶柄",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC020"
+      ],
+      "chunk_id": "QXC020",
+      "evidence_text": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "page": null,
+      "section": "症状特点：黄瓜细菌性角斑病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 429,
+        "normalized_end": 573
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE068",
+      "source": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "target": "qingxian_facility_vegetables:47a898015a8bb089",
+      "subject": "黄瓜细菌性角斑病",
+      "subject_type": "Disease",
+      "object": "卷须",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC020"
+      ],
+      "chunk_id": "QXC020",
+      "evidence_text": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "page": null,
+      "section": "症状特点：黄瓜细菌性角斑病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 429,
+        "normalized_end": 573
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE069",
+      "source": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "target": "qingxian_facility_vegetables:8bf04a703ff81a59",
+      "subject": "黄瓜细菌性角斑病",
+      "subject_type": "Disease",
+      "object": "果实",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC020"
+      ],
+      "chunk_id": "QXC020",
+      "evidence_text": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "page": null,
+      "section": "症状特点：黄瓜细菌性角斑病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 429,
+        "normalized_end": 573
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE070",
+      "source": "qingxian_facility_vegetables:4f29e5d65146ec19",
+      "target": "qingxian_facility_vegetables:1758127e9224878c",
+      "subject": "黄瓜细菌性角斑病",
+      "subject_type": "Disease",
+      "object": "茎蔓",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC020"
+      ],
+      "chunk_id": "QXC020",
+      "evidence_text": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "page": null,
+      "section": "症状特点：黄瓜细菌性角斑病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 429,
+        "normalized_end": 573
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE071",
+      "source": "qingxian_facility_vegetables:9790d687a5ffda4b",
+      "target": "qingxian_facility_vegetables:0f207dee59ff2a90",
+      "subject": "番茄枯萎病",
+      "subject_type": "Disease",
+      "object": "下部叶片萎蔫",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC021"
+      ],
+      "chunk_id": "QXC021",
+      "evidence_text": "一、枯萎病1、田间症状：发病初期下部叶片萎蔫，并逐渐向中上部叶片发展。在植株茎基部接近地面处可见湿渍状，表面生有少量淡粉红色霉层，病害严重时整株叶片变黄枯萎，导致死亡。切开病茎可见维管束变褐色。",
+      "page": null,
+      "section": "田间症状：番茄枯萎病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄枯萎病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 222,
+        "normalized_end": 319
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE072",
+      "source": "qingxian_facility_vegetables:9790d687a5ffda4b",
+      "target": "qingxian_facility_vegetables:f549472b9b819b3b",
+      "subject": "番茄枯萎病",
+      "subject_type": "Disease",
+      "object": "维管束变褐色",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC021"
+      ],
+      "chunk_id": "QXC021",
+      "evidence_text": "一、枯萎病1、田间症状：发病初期下部叶片萎蔫，并逐渐向中上部叶片发展。在植株茎基部接近地面处可见湿渍状，表面生有少量淡粉红色霉层，病害严重时整株叶片变黄枯萎，导致死亡。切开病茎可见维管束变褐色。",
+      "page": null,
+      "section": "田间症状：番茄枯萎病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄枯萎病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 222,
+        "normalized_end": 319
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE073",
+      "source": "qingxian_facility_vegetables:9790d687a5ffda4b",
+      "target": "qingxian_facility_vegetables:4c57046297ac07db",
+      "subject": "番茄枯萎病",
+      "subject_type": "Disease",
+      "object": "叶片",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC021"
+      ],
+      "chunk_id": "QXC021",
+      "evidence_text": "一、枯萎病1、田间症状：发病初期下部叶片萎蔫，并逐渐向中上部叶片发展。在植株茎基部接近地面处可见湿渍状，表面生有少量淡粉红色霉层，病害严重时整株叶片变黄枯萎，导致死亡。切开病茎可见维管束变褐色。",
+      "page": null,
+      "section": "田间症状：番茄枯萎病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄枯萎病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 222,
+        "normalized_end": 319
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE074",
+      "source": "qingxian_facility_vegetables:9790d687a5ffda4b",
+      "target": "qingxian_facility_vegetables:3e15bf45718faa46",
+      "subject": "番茄枯萎病",
+      "subject_type": "Disease",
+      "object": "茎",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC021"
+      ],
+      "chunk_id": "QXC021",
+      "evidence_text": "一、枯萎病1、田间症状：发病初期下部叶片萎蔫，并逐渐向中上部叶片发展。在植株茎基部接近地面处可见湿渍状，表面生有少量淡粉红色霉层，病害严重时整株叶片变黄枯萎，导致死亡。切开病茎可见维管束变褐色。",
+      "page": null,
+      "section": "田间症状：番茄枯萎病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄枯萎病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 222,
+        "normalized_end": 319
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE075",
+      "source": "qingxian_facility_vegetables:15f279d74b901125",
+      "target": "qingxian_facility_vegetables:b8fada10edee18e4",
+      "subject": "番茄晚疫病",
+      "subject_type": "Disease",
+      "object": "叶尖叶缘褐色水浸状斑",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC022"
+      ],
+      "chunk_id": "QXC022",
+      "evidence_text": "二、晚疫病1、田间症状：在叶片尖端或叶缘产生大块褐色水浸状斑块，湿度大时病斑边缘长有白色霉层。果实上表现为果面出现边缘不整齐的大型褐色云纹状病斑。湿度大时病斑边缘有稀疏白霉。病果初始不软，后期软化腐烂。晚疫病是大棚重要病害，低温阴雨天易流行。",
+      "page": null,
+      "section": "田间症状：番茄晚疫病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄晚疫病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 478,
+        "normalized_end": 599
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE076",
+      "source": "qingxian_facility_vegetables:15f279d74b901125",
+      "target": "qingxian_facility_vegetables:5d1a6955b8ebe082",
+      "subject": "番茄晚疫病",
+      "subject_type": "Disease",
+      "object": "病斑边缘白色霉层",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC022"
+      ],
+      "chunk_id": "QXC022",
+      "evidence_text": "二、晚疫病1、田间症状：在叶片尖端或叶缘产生大块褐色水浸状斑块，湿度大时病斑边缘长有白色霉层。果实上表现为果面出现边缘不整齐的大型褐色云纹状病斑。湿度大时病斑边缘有稀疏白霉。病果初始不软，后期软化腐烂。晚疫病是大棚重要病害，低温阴雨天易流行。",
+      "page": null,
+      "section": "田间症状：番茄晚疫病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄晚疫病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 478,
+        "normalized_end": 599
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE077",
+      "source": "qingxian_facility_vegetables:15f279d74b901125",
+      "target": "qingxian_facility_vegetables:4ac8d7ad4f74b13a",
+      "subject": "番茄晚疫病",
+      "subject_type": "Disease",
+      "object": "果面褐色云纹状病斑",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC022"
+      ],
+      "chunk_id": "QXC022",
+      "evidence_text": "二、晚疫病1、田间症状：在叶片尖端或叶缘产生大块褐色水浸状斑块，湿度大时病斑边缘长有白色霉层。果实上表现为果面出现边缘不整齐的大型褐色云纹状病斑。湿度大时病斑边缘有稀疏白霉。病果初始不软，后期软化腐烂。晚疫病是大棚重要病害，低温阴雨天易流行。",
+      "page": null,
+      "section": "田间症状：番茄晚疫病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄晚疫病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 478,
+        "normalized_end": 599
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE078",
+      "source": "qingxian_facility_vegetables:15f279d74b901125",
+      "target": "qingxian_facility_vegetables:4c57046297ac07db",
+      "subject": "番茄晚疫病",
+      "subject_type": "Disease",
+      "object": "叶片",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC022"
+      ],
+      "chunk_id": "QXC022",
+      "evidence_text": "二、晚疫病1、田间症状：在叶片尖端或叶缘产生大块褐色水浸状斑块，湿度大时病斑边缘长有白色霉层。果实上表现为果面出现边缘不整齐的大型褐色云纹状病斑。湿度大时病斑边缘有稀疏白霉。病果初始不软，后期软化腐烂。晚疫病是大棚重要病害，低温阴雨天易流行。",
+      "page": null,
+      "section": "田间症状：番茄晚疫病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄晚疫病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 478,
+        "normalized_end": 599
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE079",
+      "source": "qingxian_facility_vegetables:15f279d74b901125",
+      "target": "qingxian_facility_vegetables:3f934fda7230e9b0",
+      "subject": "番茄晚疫病",
+      "subject_type": "Disease",
+      "object": "果实",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC022"
+      ],
+      "chunk_id": "QXC022",
+      "evidence_text": "二、晚疫病1、田间症状：在叶片尖端或叶缘产生大块褐色水浸状斑块，湿度大时病斑边缘长有白色霉层。果实上表现为果面出现边缘不整齐的大型褐色云纹状病斑。湿度大时病斑边缘有稀疏白霉。病果初始不软，后期软化腐烂。晚疫病是大棚重要病害，低温阴雨天易流行。",
+      "page": null,
+      "section": "田间症状：番茄晚疫病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄晚疫病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 478,
+        "normalized_end": 599
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE080",
+      "source": "qingxian_facility_vegetables:ec6abe24aea56a9a",
+      "target": "qingxian_facility_vegetables:c33fc95e82626e43",
+      "subject": "番茄白粉病",
+      "subject_type": "Disease",
+      "object": "白色粉斑",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC023"
+      ],
+      "chunk_id": "QXC023",
+      "evidence_text": "三、白粉病1、田间症状：中下部叶片发病，逐渐向上部叶片发展，初期在叶片上产生大小不一的白色粉斑，并逐渐扩展，使叶片布满白粉，抹去白粉可见病部组织退绿。严重时叶片提早枯黄，植株拉秧。",
+      "page": null,
+      "section": "田间症状：番茄白粉病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄白粉病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 801,
+        "normalized_end": 891
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE081",
+      "source": "qingxian_facility_vegetables:ec6abe24aea56a9a",
+      "target": "qingxian_facility_vegetables:9484b88befb6b447",
+      "subject": "番茄白粉病",
+      "subject_type": "Disease",
+      "object": "叶片布满白粉",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC023"
+      ],
+      "chunk_id": "QXC023",
+      "evidence_text": "三、白粉病1、田间症状：中下部叶片发病，逐渐向上部叶片发展，初期在叶片上产生大小不一的白色粉斑，并逐渐扩展，使叶片布满白粉，抹去白粉可见病部组织退绿。严重时叶片提早枯黄，植株拉秧。",
+      "page": null,
+      "section": "田间症状：番茄白粉病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄白粉病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 801,
+        "normalized_end": 891
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE082",
+      "source": "qingxian_facility_vegetables:ec6abe24aea56a9a",
+      "target": "qingxian_facility_vegetables:4c57046297ac07db",
+      "subject": "番茄白粉病",
+      "subject_type": "Disease",
+      "object": "叶片",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC023"
+      ],
+      "chunk_id": "QXC023",
+      "evidence_text": "三、白粉病1、田间症状：中下部叶片发病，逐渐向上部叶片发展，初期在叶片上产生大小不一的白色粉斑，并逐渐扩展，使叶片布满白粉，抹去白粉可见病部组织退绿。严重时叶片提早枯黄，植株拉秧。",
+      "page": null,
+      "section": "田间症状：番茄白粉病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄白粉病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 801,
+        "normalized_end": 891
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE083",
+      "source": "qingxian_facility_vegetables:66381805a8184990",
+      "target": "qingxian_facility_vegetables:901bc01125365650",
+      "subject": "番茄脐腐病",
+      "subject_type": "Disease",
+      "object": "果实脐部暗绿色水渍斑",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC024"
+      ],
+      "chunk_id": "QXC024",
+      "evidence_text": "四、脐腐病1、田间症状：发病初期果实脐部出现暗绿色水渍色斑点，然后逐渐扩大至直径1―2厘米，甚至半个果实，病部组织变褐色至黑褐色，然后干腐收缩，使脐部呈扁平或凹陷形状。",
+      "page": null,
+      "section": "田间症状：番茄脐腐病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄脐腐病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 954,
+        "normalized_end": 1038
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE084",
+      "source": "qingxian_facility_vegetables:66381805a8184990",
+      "target": "qingxian_facility_vegetables:7d336d41826c1fdb",
+      "subject": "番茄脐腐病",
+      "subject_type": "Disease",
+      "object": "脐部干腐凹陷",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC024"
+      ],
+      "chunk_id": "QXC024",
+      "evidence_text": "四、脐腐病1、田间症状：发病初期果实脐部出现暗绿色水渍色斑点，然后逐渐扩大至直径1―2厘米，甚至半个果实，病部组织变褐色至黑褐色，然后干腐收缩，使脐部呈扁平或凹陷形状。",
+      "page": null,
+      "section": "田间症状：番茄脐腐病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄脐腐病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 954,
+        "normalized_end": 1038
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE085",
+      "source": "qingxian_facility_vegetables:66381805a8184990",
+      "target": "qingxian_facility_vegetables:3f934fda7230e9b0",
+      "subject": "番茄脐腐病",
+      "subject_type": "Disease",
+      "object": "果实",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "河南南召",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_TOMATO",
+      "source_title": "大棚番茄典型病害及防治技术",
+      "evidence_ids": [
+        "CAAS_TOMATO",
+        "QXC024"
+      ],
+      "chunk_id": "QXC024",
+      "evidence_text": "四、脐腐病1、田间症状：发病初期果实脐部出现暗绿色水渍色斑点，然后逐渐扩大至直径1―2厘米，甚至半个果实，病部组织变褐色至黑褐色，然后干腐收缩，使脐部呈扁平或凹陷形状。",
+      "page": null,
+      "section": "田间症状：番茄脐腐病",
+      "locator": {
+        "page": null,
+        "section": "田间症状：番茄脐腐病",
+        "file": "evidence\\raw\\government\\CAAS_TOMATO.html",
+        "normalized_start": 954,
+        "normalized_end": 1038
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：番茄",
+        "茬口：原文未限定",
+        "地域：河南南召"
+      ],
+      "condition": {
+        "crop": "番茄",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE086",
+      "source": "qingxian_facility_vegetables:af1a2bb50842fae5",
+      "target": "qingxian_facility_vegetables:d06b416015e36f90",
+      "subject": "低温寡照",
+      "subject_type": "EnvironmentFactor",
+      "object": "黄瓜霜霉病",
+      "object_type": "Disease",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "association",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "吉林",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_ENV",
+      "source_title": "做好夏菜定植和蔬菜管理工作",
+      "evidence_ids": [
+        "CAAS_ENV",
+        "QXC025"
+      ],
+      "chunk_id": "QXC025",
+      "evidence_text": "阴天多、低温寡照不利于棚室蔬菜的正常生长，有利于蔬菜病害的发生发展，如棚室黄瓜的角斑病、霜霉病、黑星病、灰霉病，番茄的叶霉病、灰霉病、晚疫病，豆角的灰霉病等。",
+      "page": null,
+      "section": "棚室低温寡照风险",
+      "locator": {
+        "page": null,
+        "section": "棚室低温寡照风险",
+        "file": "evidence\\raw\\government\\CAAS_ENV.html",
+        "normalized_start": 920,
+        "normalized_end": 999
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：吉林"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE087",
+      "source": "qingxian_facility_vegetables:af1a2bb50842fae5",
+      "target": "qingxian_facility_vegetables:2d30d170ffcf385c",
+      "subject": "低温寡照",
+      "subject_type": "EnvironmentFactor",
+      "object": "黄瓜灰霉病",
+      "object_type": "Disease",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "association",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "吉林",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_ENV",
+      "source_title": "做好夏菜定植和蔬菜管理工作",
+      "evidence_ids": [
+        "CAAS_ENV",
+        "QXC025"
+      ],
+      "chunk_id": "QXC025",
+      "evidence_text": "阴天多、低温寡照不利于棚室蔬菜的正常生长，有利于蔬菜病害的发生发展，如棚室黄瓜的角斑病、霜霉病、黑星病、灰霉病，番茄的叶霉病、灰霉病、晚疫病，豆角的灰霉病等。",
+      "page": null,
+      "section": "棚室低温寡照风险",
+      "locator": {
+        "page": null,
+        "section": "棚室低温寡照风险",
+        "file": "evidence\\raw\\government\\CAAS_ENV.html",
+        "normalized_start": 920,
+        "normalized_end": 999
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：吉林"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE088",
+      "source": "qingxian_facility_vegetables:af1a2bb50842fae5",
+      "target": "qingxian_facility_vegetables:6b2d8baaf1089ac1",
+      "subject": "低温寡照",
+      "subject_type": "EnvironmentFactor",
+      "object": "番茄叶霉病",
+      "object_type": "Disease",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "association",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "吉林",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_ENV",
+      "source_title": "做好夏菜定植和蔬菜管理工作",
+      "evidence_ids": [
+        "CAAS_ENV",
+        "QXC025"
+      ],
+      "chunk_id": "QXC025",
+      "evidence_text": "阴天多、低温寡照不利于棚室蔬菜的正常生长，有利于蔬菜病害的发生发展，如棚室黄瓜的角斑病、霜霉病、黑星病、灰霉病，番茄的叶霉病、灰霉病、晚疫病，豆角的灰霉病等。",
+      "page": null,
+      "section": "棚室低温寡照风险",
+      "locator": {
+        "page": null,
+        "section": "棚室低温寡照风险",
+        "file": "evidence\\raw\\government\\CAAS_ENV.html",
+        "normalized_start": 920,
+        "normalized_end": 999
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：吉林"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE089",
+      "source": "qingxian_facility_vegetables:af1a2bb50842fae5",
+      "target": "qingxian_facility_vegetables:8f5203662c91d341",
+      "subject": "低温寡照",
+      "subject_type": "EnvironmentFactor",
+      "object": "番茄灰霉病",
+      "object_type": "Disease",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "association",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "吉林",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_ENV",
+      "source_title": "做好夏菜定植和蔬菜管理工作",
+      "evidence_ids": [
+        "CAAS_ENV",
+        "QXC025"
+      ],
+      "chunk_id": "QXC025",
+      "evidence_text": "阴天多、低温寡照不利于棚室蔬菜的正常生长，有利于蔬菜病害的发生发展，如棚室黄瓜的角斑病、霜霉病、黑星病、灰霉病，番茄的叶霉病、灰霉病、晚疫病，豆角的灰霉病等。",
+      "page": null,
+      "section": "棚室低温寡照风险",
+      "locator": {
+        "page": null,
+        "section": "棚室低温寡照风险",
+        "file": "evidence\\raw\\government\\CAAS_ENV.html",
+        "normalized_start": 920,
+        "normalized_end": 999
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：吉林"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE090",
+      "source": "qingxian_facility_vegetables:af1a2bb50842fae5",
+      "target": "qingxian_facility_vegetables:15f279d74b901125",
+      "subject": "低温寡照",
+      "subject_type": "EnvironmentFactor",
+      "object": "番茄晚疫病",
+      "object_type": "Disease",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "association",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "番茄"
+      ],
+      "region": "吉林",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_ENV",
+      "source_title": "做好夏菜定植和蔬菜管理工作",
+      "evidence_ids": [
+        "CAAS_ENV",
+        "QXC025"
+      ],
+      "chunk_id": "QXC025",
+      "evidence_text": "阴天多、低温寡照不利于棚室蔬菜的正常生长，有利于蔬菜病害的发生发展，如棚室黄瓜的角斑病、霜霉病、黑星病、灰霉病，番茄的叶霉病、灰霉病、晚疫病，豆角的灰霉病等。",
+      "page": null,
+      "section": "棚室低温寡照风险",
+      "locator": {
+        "page": null,
+        "section": "棚室低温寡照风险",
+        "file": "evidence\\raw\\government\\CAAS_ENV.html",
+        "normalized_start": 920,
+        "normalized_end": 999
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：吉林"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    }
+  ],
+  "sources": [
+    {
+      "id": "DB13_T2980_2019",
+      "title": "日光温室越冬茬番茄化肥农药控施技术规程",
+      "type": "local_standard",
+      "authority": "河北省市场监督管理局",
+      "year": 2019,
+      "standard_no": "DB13/T 2980-2019",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=998CD9170D367BDCE05397BE0A0A3A74",
+      "scope": [
+        "河北",
+        "设施番茄",
+        "越冬茬",
+        "化肥",
+        "农药",
+        "减施"
+      ],
+      "verified_facts": [
+        "河北省现行推荐性地方标准；适合作为番茄投入品管理和干预措施来源。"
+      ],
+      "fulltext_available": true,
+      "review_status": "fulltext_requires_review",
+      "landing_path": "evidence\\raw\\standards\\DB13_T2980_2019.html",
+      "local_path": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+      "sha256": "4f83e9d03887de13e5ff6f8065a44d89ba6860b2f05468e273aedac0116d9cb8",
+      "pages": 9,
+      "download_url": "https://dbba.sacinfo.org.cn/portal/download/3866a9f1c23dff3de2da59d5395db560c86e930b07e8117a6e3aa19b417b7a52",
+      "source_id": "DB13_T2980_2019",
+      "domain": "qingxian_facility_vegetables",
+      "standard_status": "current",
+      "region": "河北",
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A"
+    },
+    {
+      "id": "CAAS_CUCUMBER",
+      "title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "type": "extension",
+      "authority": "中国农业科技信息网（中国农业科学院）",
+      "year": 2021,
+      "url": "https://cast.caas.cn/kj/syjs/zwbhjs/317422.html",
+      "scope": [
+        "黄瓜",
+        "症状鉴别"
+      ],
+      "fulltext_available": true,
+      "review_status": "passages_reviewed",
+      "landing_path": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+      "local_path": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+      "sha256": "3349680d95ea6df1cd6f5e61f18563f35f04f97dd12efa2672d7ee7db5ac4044",
+      "source_id": "CAAS_CUCUMBER",
+      "domain": "qingxian_facility_vegetables",
+      "standard_status": "not_a_standard",
+      "region": "适用地域未标定；河北科技报原文",
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "original_publisher": "河北科技报"
+    },
+    {
+      "id": "DB13_T5574_2022",
+      "title": "日光温室蔬菜安全高效生产技术规程",
+      "type": "local_standard",
+      "authority": "河北省市场监督管理局",
+      "year": 2022,
+      "standard_no": "DB13/T 5574-2022",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=E3BC3892F373E7C0E05397BE0A0AEE87",
+      "scope": [
+        "河北",
+        "日光温室",
+        "设施蔬菜",
+        "生产技术"
+      ],
+      "verified_facts": [
+        "河北省现行推荐性地方标准；发布日期2022-05-31，实施日期2022-07-01。"
+      ],
+      "fulltext_available": true,
+      "review_status": "fulltext_requires_review",
+      "landing_path": "evidence\\raw\\standards\\DB13_T5574_2022.html",
+      "local_path": "evidence\\raw\\standards\\DB13_T5574_2022.pdf",
+      "sha256": "bab48012f9b4492252d7fb6fe0fc25ad4f578b04ec0dcbfae901e6e72daccffe",
+      "pages": 9,
+      "download_url": "https://dbba.sacinfo.org.cn/portal/download/1d11853d637ed148dc6972913a206696e8b36fa54baacec066afa52eac3e7267",
+      "source_id": "DB13_T5574_2022",
+      "domain": "qingxian_facility_vegetables",
+      "standard_status": "current",
+      "region": "河北冀中南地区",
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A"
+    },
+    {
+      "id": "DB13_T5532_2022",
+      "title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+      "type": "local_standard",
+      "authority": "河北省市场监督管理局",
+      "year": 2022,
+      "standard_no": "DB13/T 5532-2022",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=DB94746D085AA27BE05397BE0A0AF49A",
+      "scope": [
+        "河北",
+        "设施黄瓜",
+        "春黄瓜",
+        "秋黄瓜",
+        "栽培"
+      ],
+      "verified_facts": [
+        "河北省现行推荐性地方标准；规定春黄瓜、秋黄瓜等日光温室栽培模式相关要求。"
+      ],
+      "fulltext_available": true,
+      "review_status": "fulltext_requires_review",
+      "landing_path": "evidence\\raw\\standards\\DB13_T5532_2022.html",
+      "local_path": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+      "sha256": "0f1afcec35ca8982034955b34b3c3028c987e843658b5e01e57ac57c685bfc0d",
+      "pages": 8,
+      "download_url": "https://dbba.sacinfo.org.cn/portal/download/f58b32699fbe02a83fbc297f1c4395d75153ebfa59b74b50a7716c0ee091a258",
+      "source_id": "DB13_T5532_2022",
+      "domain": "qingxian_facility_vegetables",
+      "standard_status": "current",
+      "region": "河北",
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A"
+    },
+    {
+      "id": "CAAS_ENV",
+      "title": "做好夏菜定植和蔬菜管理工作",
+      "type": "extension",
+      "authority": "中国农业科技信息网（中国农业科学院）",
+      "year": 2015,
+      "url": "https://cast.caas.cn/kj/syjs/zzyjs/257044.html",
+      "scope": [
+        "设施蔬菜",
+        "环境管理"
+      ],
+      "fulltext_available": true,
+      "review_status": "passages_reviewed",
+      "landing_path": "evidence\\raw\\government\\CAAS_ENV.html",
+      "local_path": "evidence\\raw\\government\\CAAS_ENV.html",
+      "sha256": "2e2a021158d70bfc0675b22bc32c5685ec36931f759cb7b32fb5da599b5a4b60",
+      "source_id": "CAAS_ENV",
+      "domain": "qingxian_facility_vegetables",
+      "standard_status": "not_a_standard",
+      "region": "吉林",
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "original_publisher": "吉林农村报",
+      "permitted_use": "reviewed_mechanism_comparison_only"
+    },
+    {
+      "id": "DB13_T5197_2020",
+      "title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "type": "local_standard",
+      "authority": "河北省市场监督管理局",
+      "year": 2020,
+      "standard_no": "DB13/T 5197-2020",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=B01C34C54C14ED69E05397BE0A0AF49A",
+      "scope": [
+        "河北",
+        "设施黄瓜",
+        "越冬长季节",
+        "化肥",
+        "农药",
+        "减施"
+      ],
+      "verified_facts": [
+        "河北省现行推荐性地方标准；发布日期2020-06-28，实施日期2020-07-28。"
+      ],
+      "fulltext_available": true,
+      "review_status": "fulltext_requires_review",
+      "landing_path": "evidence\\raw\\standards\\DB13_T5197_2020.html",
+      "local_path": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+      "sha256": "ef67a9d9f2ee81bebe5101abfaed73b4b3e306d94157ffd76062ca09246c240f",
+      "pages": 10,
+      "download_url": "https://dbba.sacinfo.org.cn/portal/download/e6b594f33bb0a1a8b8951c5c92536f2d80b887b9ff20edf64b5c76b6c637cc0f",
+      "source_id": "DB13_T5197_2020",
+      "domain": "qingxian_facility_vegetables",
+      "standard_status": "current",
+      "region": "河北",
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A"
+    },
+    {
+      "id": "DB13_T2993_2019",
+      "title": "日光温室秋冬茬番茄滴灌水肥一体化技术规程",
+      "type": "local_standard",
+      "authority": "河北省市场监督管理局",
+      "year": 2019,
+      "standard_no": "DB13/T 2993-2019",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=998CD9170D4D7BDCE05397BE0A0A3A74",
+      "scope": [
+        "河北",
+        "设施番茄",
+        "滴灌",
+        "水肥一体化"
+      ],
+      "verified_facts": [
+        "河北省现行推荐性地方标准；发布日期2019-07-04，实施日期2019-08-01。"
+      ],
+      "fulltext_available": true,
+      "review_status": "fulltext_requires_review",
+      "landing_path": "evidence\\raw\\standards\\DB13_T2993_2019.html",
+      "local_path": "evidence\\raw\\standards\\DB13_T2993_2019.pdf",
+      "sha256": "ceaf2670701b028979be2143d48b6a06eb9c55961cda44d4f3223e6efc79bb3f",
+      "pages": 7,
+      "download_url": "https://dbba.sacinfo.org.cn/portal/download/c583d0e929617fc370b22863aae7ad857ea2cfc1761d93571be4caff0ed180a5",
+      "source_id": "DB13_T2993_2019",
+      "domain": "qingxian_facility_vegetables",
+      "standard_status": "current",
+      "region": "河北",
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A"
+    },
+    {
+      "id": "QX_LOCAL_2018",
+      "title": "河北青县：从追高产到重“口感” 蔬菜卖出好价钱",
+      "type": "authoritative_media",
+      "authority": "新华社/新华网",
+      "year": 2018,
+      "url": "https://www.xinhuanet.com/politics/2018-07/25/c_1123175856.htm",
+      "scope": [
+        "青县",
+        "设施蔬菜",
+        "甜瓜",
+        "黄瓜",
+        "番茄",
+        "绿色防控"
+      ],
+      "verified_facts": [
+        "报道明确提到青县设施生产中的甜瓜、黄瓜、韭菜、番茄。",
+        "甜瓜试验棚采用太阳能杀虫灯和丽蚜小蜂等病虫害防控手段，并通过改善通风透光等方式提升品质。"
+      ],
+      "fulltext_available": true,
+      "review_status": "industry_background_only",
+      "landing_path": "evidence\\raw\\government\\QX_LOCAL_2018.html",
+      "local_path": "evidence\\raw\\government\\QX_LOCAL_2018.html",
+      "sha256": "8198a01b556f69ddac1e0d6329772855ba95e12feb708c85cb006b7a1913a0c7",
+      "source_id": "QX_LOCAL_2018",
+      "domain": "qingxian_facility_vegetables",
+      "standard_status": "not_a_standard",
+      "region": "青县",
+      "evidence_level": "local_verified",
+      "evidence_grade": "C"
+    },
+    {
+      "id": "CAAS_TOMATO",
+      "title": "大棚番茄典型病害及防治技术",
+      "type": "extension",
+      "authority": "中国农业科技信息网（中国农业科学院）",
+      "year": 2013,
+      "url": "https://cast.caas.cn/kj/syjs/zwbhjs/229746.html",
+      "scope": [
+        "番茄",
+        "病害"
+      ],
+      "fulltext_available": true,
+      "review_status": "passages_reviewed",
+      "landing_path": "evidence\\raw\\government\\CAAS_TOMATO.html",
+      "local_path": "evidence\\raw\\government\\CAAS_TOMATO.html",
+      "sha256": "d7e42fdc5c2baa0cb7190b354bc20dd7ac28f2926c74114c0f006970a2298186",
+      "source_id": "CAAS_TOMATO",
+      "domain": "qingxian_facility_vegetables",
+      "standard_status": "not_a_standard",
+      "region": "河南南召",
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "original_publisher": "河南南召县农技中心",
+      "permitted_use": "reviewed_symptom_comparison_only"
+    },
+    {
+      "id": "DB13_T5463_2021",
+      "title": "设施黄瓜主要病虫害生物防控技术规程",
+      "type": "local_standard",
+      "authority": "河北省市场监督管理局",
+      "year": 2021,
+      "standard_no": "DB13/T 5463-2021",
+      "url": "https://dbba.sacinfo.org.cn/stdDetail/c0b155e42c74ef0d05dcd4f48e181010e33c546b6899f4efa573634dcf9cee71",
+      "scope": [
+        "河北",
+        "设施黄瓜",
+        "病害",
+        "虫害",
+        "生物防控"
+      ],
+      "verified_facts": [
+        "河北省现行地方标准；发布日期2021-12-13，实施日期2022-01-13。"
+      ],
+      "fulltext_available": true,
+      "review_status": "fulltext_requires_review",
+      "landing_path": "evidence\\raw\\standards\\DB13_T5463_2021.html",
+      "local_path": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+      "sha256": "532a34be20ad7417a8f55386e158f9924f6e3b163847ccd87ad54484a051140d",
+      "pages": 10,
+      "download_url": "https://dbba.sacinfo.org.cn/portal/download/c0b155e42c74ef0d05dcd4f48e181010e33c546b6899f4efa573634dcf9cee71",
+      "source_id": "DB13_T5463_2021",
+      "domain": "qingxian_facility_vegetables",
+      "standard_status": "current",
+      "region": "河北",
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A"
+    }
+  ]
+}

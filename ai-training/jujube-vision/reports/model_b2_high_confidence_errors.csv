@@ -1,0 +1,2 @@
+﻿filename,image_path,true_class,predicted_class,confidence,correct,prob_fresh,prob_rotten
+original_image__rotten__42e583cc615b_bb1458f1385e__RottenJujube (8).jpg,F:\AIC2026\AIC-SmartAgriculture\agric\ai-training\jujube-vision\data\jujube_fruit_freshness_classifier_v1\test\rotten\original_image__rotten__42e583cc615b_bb1458f1385e__RottenJujube (8).jpg,rotten,fresh,0.9955407977104187,False,0.9955407977104187,0.004459137097001076

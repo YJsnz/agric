@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "crop": "jujube",
+      "circles": 27,
+      "errors": []
+    },
+    {
+      "crop": "pear",
+      "circles": 29,
+      "errors": []
+    },
+    {
+      "crop": "wheat",
+      "circles": 32,
+      "errors": []
+    },
+    {
+      "crop": "jujube",
+      "circles": 27,
+      "errors": []
+    }
+  ],
+  "errors": []
+}

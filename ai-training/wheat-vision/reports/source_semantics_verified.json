@@ -1,0 +1,19 @@
+{
+  "url": "https://data.mendeley.com/datasets/th422bg4yd/1",
+  "doi": "10.17632/th422bg4yd.1",
+  "verification": "Official description supports healthy controls and nitrogen deficiency / leaf rust subdatasets. Archive member folders and labels.txt checked. Actual Ndeficient archive has 300 control plus 300 deficiency; source wording about 300 is ambiguous. No claim of independent plants or no pre-processing.",
+  "local_metadata": [
+    {
+      "path": "nitrogen_rust/Ndeficient.zip::Ndeficient/labels.txt",
+      "text": "control\nNitrogen_deficient\n"
+    },
+    {
+      "path": "nitrogen_rust/WheatLeafRust.zip::WheatLeafRust/labels.txt",
+      "text": "healthy\r\nleaf_rust\r\n"
+    },
+    {
+      "path": "wheat_disease_original/Disease Dataset of Wheat Original, Augmented, and Balanced for Deep Learning/Wheat Disease.zip::Wheat Disease/README.txt",
+      "text": "This dataset, collected from a crop field in Bangladesh, includes 1,603 wheat leaf images across \r\nfive disease categories: BlackPoint (303), FusariumFootRot (250), HealthyLeaf (250), LeafBlight (400), \r\nand WheatBlast (400). Data augmentation was applied to generate 1,000 images per class, resulting in a \r\nbalanced augmented dataset of 5,000 images. The augmented data is split into training (70%), validation (20%), \r\nand testing (10%) sets. Organized into Original, Augmented, and Splitted datasets, this resource is ideal for \r\nwheat disease classification and deep learning applications in agriculture.\r\n\r\nHere is a well-structured directory tree based on the mentioned dataset:\r\n\r\n\\Wheat_Disease\r\n   ├── \\Original_Dataset\r\n   │     ├── \\BlackPoint\r\n   │     ├── \\FusariumFootRot\r\n   │     ├── \\HealthyLeaf\r\n   │     ├── \\LeafBlight\r\n   │     └── \\WheatBlast\r\n   │\r\n   ├── \\Augmented_Dataset\r\n   │     ├── \\BlackPoint\r\n   │     ├── \\FusariumFootRot\r\n   │     ├── \\HealthyLeaf\r\n   │     ├── \\LeafBlight\r\n   │     └── \\WheatBlast\r\n   │\r\n   ├── \\Splitted_Dataset\r\n   │     ├── \\Train\r\n   │     │     ├── \\BlackPoint\r\n   │     │     ├── \\FusariumFootRot\r\n   │     │     ├── \\HealthyLeaf\r\n   │     │     ├── \\LeafBlight\r\n   │     │     └── \\WheatBlast\r\n   │     │\r\n   │     ├── \\Validation\r\n   │     │     ├── \\BlackPoint\r\n   │     │     ├── \\FusariumFootRot\r\n   │     │     ├── \\HealthyLeaf\r\n   │     │     ├── \\LeafBlight\r\n   │     │     └── \\WheatBlast\r\n   │     │\r\n   │     ├── \\Test\r\n   │           ├── \\BlackPoint\r\n   │           ├── \\FusariumFootRot\r\n   │           ├── \\HealthyLeaf\r\n   │           ├── \\LeafBlight\r\n   │           └── \\WheatBlast\r\n"
+    }
+  ]
+}

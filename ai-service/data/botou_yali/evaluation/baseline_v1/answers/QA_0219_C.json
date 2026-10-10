@@ -1,0 +1,199 @@
+{
+  "id": "QA_0219",
+  "arm": "C",
+  "generation": {
+    "result": {
+      "sufficient": true,
+      "conclusion": "该试验中，鸭梨果实采后当天进行了解袋、分拣（除去病虫害和残次果），并选取大小一致的果实（平均单果重238 g）装入纸箱，每箱40个果实。[E4]",
+      "basis": "证据E4记载：供试套袋鸭梨于2019年9月27日采于赵县基地果园，果实采后当天解袋，进行分拣，除去病虫害和残次果；选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40个果实。次日存放于当地冷库和地下通风窖。[E4]",
+      "reasoning": "问题询问采后当天的处理。E4明确描述了采后当天的操作流程：解袋→分拣（去除病虫害和残次果）→选取大小一致果实→装纸箱（每箱40个）。入库贮藏发生在次日，不属于采后当天处理。其余证据（E1、E2、E3、E5）涉及贮藏期结果与结论，未描述采后当天处理，故不引用。",
+      "advice": "如需复现该试验的采后处理流程，可参考E4所述步骤：采后当天解袋、分拣去除病虫害和残次果、选取大小一致果实并装箱，次日再入库贮藏。具体贮藏条件与后续取样安排见E4。",
+      "citations": [
+        "E4"
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 1857,
+      "completion_tokens": 307,
+      "total_tokens": 2164,
+      "prompt_tokens_details": {
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 193
+    },
+    "model": "deepseek-flash",
+    "response_id": "de15ac4f-7fac-466c-a67a-90ce883a8c7e",
+    "seconds": 14.967477499999859,
+    "attempts": 2,
+    "prior_errors": [
+      "ExtractionError"
+    ]
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0007",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": " The analysis on expression of genes related to ethylene and aroma compound synthesis showed that the expression of ACC oxidase (PbACO2), lipoxygenase (PbLOX1) and alcohol acyltransferase (PbAAT1) genes were significantly increased, and the expression of ethylene insensitive transcriptional regulator gene (PbEIN3) was down regulated in cellar storage in contrast to cold storage. 【Conclusion】Compared with cold storage, cellar storage condition promoted ethylene production and the expression of genes related to ethylene biosynthesis (PbACO2) and aroma compound synthesis (PbLOX1 and PbAAT1), thus, made more kinds and contents of aroma substances, and exhibited more rich aroma in Yali pear. Key words: Yali pear; quality; volatile compound; electronic nose; ethylene; gene expression",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0009",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "1.1  试验材料",
+        "text": "供试套袋（外灰内黑单层纸袋）鸭梨于2019 年9月27 日采于赵县基地果园，果实采后当天解袋，进行分拣，除去病虫害和残次果。选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40 个果实。次日存放于当地冷库（库容量：175 t；（0±0.5）℃，21 期岳盈肖等：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析空气湿度（79.47±4.16）%）和地下通风窖（库容量：150 t；温度从入库初期的20℃逐渐下降至12 月的7℃，空气湿度（78.70±8.35）%）。在贮藏初期（入库当天）、1 个月、2 个月、3 个月时，将贮藏的果实（每次每处理3 箱）运回实验室，经室温（25±1℃℃）过夜后进行品质和生理指标检测，并对果皮和果肉分别进行取样，经液氮速冻后，于-80℃冻藏备用。",
+        "pages": [
+          2,
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0041",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "4  结论",
+        "text": "冷藏能更好地维持鸭梨果实硬度，保持较高的SSC，适合长期贮藏，以保持果实口感，但挥发性物质较少。相对冷藏而言，窖藏过程中，鸭梨容易软化，但生成更多酯类、醇类等香气物质，拥有较多的香气成分，香味浓郁。相关基因表达分析表明，鸭梨果实香气物质的生成与PbACO2、PbAAT1、PbLOX1 的表达呈正相关关系，而与PbEIN3 呈负相关关系。",
+        "pages": [
+          14
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    }
+  ],
+  "candidate_ids": [
+    "chunk:PAPER_005_C0002",
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0007",
+    "chunk:PAPER_005_C0009",
+    "chunk:PAPER_005_C0041"
+  ],
+  "citation_gold_chunk_hit": 1,
+  "citation_gold_source_hit": 1,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答准确覆盖了参考答案的关键点：采后当天解袋、分拣、除去病虫害和残次果；并补充了选取大小一致果实（平均单果重238 g）装入纸箱（每箱40个）的原文信息，未与原文矛盾。",
+      "claims": [
+        {
+          "claim": "鸭梨果实采后当天进行了解袋。",
+          "status": "supported",
+          "reason": "E4原文明确记载“果实采后当天解袋”。"
+        },
+        {
+          "claim": "采后当天进行了分拣，除去病虫害和残次果。",
+          "status": "supported",
+          "reason": "E4原文明确记载“进行分拣，除去病虫害和残次果”。"
+        },
+        {
+          "claim": "选取大小一致的果实（平均单果重238 g）装入纸箱，每箱40个果实。",
+          "status": "supported",
+          "reason": "E4原文明确记载“选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40 个果实”。"
+        },
+        {
+          "claim": "入库贮藏发生在次日。",
+          "status": "supported",
+          "reason": "E4原文明确记载“次日存放于当地冷库……和地下通风窖”。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2513,
+      "completion_tokens": 243,
+      "total_tokens": 2756,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2001
+    },
+    "model": "deepseek-flash",
+    "response_id": "7d2f9acc-b567-4481-8ab4-d8926770e8ed",
+    "seconds": 5.8103784999998425,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "model_name": "jujube_fruit_bruise_yolo11n_cls_v1",
+  "version": "v1",
+  "status": "frozen",
+  "imgsz": 224,
+  "classes": [
+    "healthy",
+    "bruised"
+  ],
+  "model_sha256": "ad52101dca33fe9eb642994ee7246bb21522cada3dd0bf89b98ecacf164608c7",
+  "ultralytics_version": "8.3.40",
+  "restoration_provenance": "Byte copy of source verified against previously frozen B1 SHA256; no retraining or export"
+}

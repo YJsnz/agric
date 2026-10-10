@@ -1,0 +1,70 @@
+{
+  "id": "QA_0110",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法依据现有证据回答缓慢降温对早采鸭梨果心亚麻酸和亚油酸相对含量的具体影响。",
+    "basis": "未提供该论文的原文、摘要或数据，证据列表为空。",
+    "reasoning": "问题涉及特定论文中的具体实验指标（早采鸭梨果心亚麻酸和亚油酸相对含量）及处理效应，需要原文数据支持；在无证据情况下不能编造结论。",
+    "advice": "请提供该论文的摘要、结果部分或相关数据表，以便提取缓慢降温处理对早采鸭梨果心亚麻酸和亚油酸相对含量的影响。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出缓慢降温对早采鸭梨果心亚麻酸和亚油酸相对含量的影响，仅以证据不足为由拒答；但提供的论文摘要明确支持该结论，因此属于可回答题中的拒答，不计为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1048,
+      "completion_tokens": 68,
+      "total_tokens": 1116,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 280
+    },
+    "model": "deepseek-flash",
+    "response_id": "1efdfc83-3ada-4ad5-999d-8480358c8162",
+    "seconds": 5.769966599997133,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法依据现有证据回答缓慢降温对早采鸭梨果心亚麻酸和亚油酸相对含量的具体影响。",
+        "basis": "未提供该论文的原文、摘要或数据，证据列表为空。",
+        "reasoning": "问题涉及特定论文中的具体实验指标（早采鸭梨果心亚麻酸和亚油酸相对含量）及处理效应，需要原文数据支持；在无证据情况下不能编造结论。",
+        "advice": "请提供该论文的摘要、结果部分或相关数据表，以便提取缓慢降温处理对早采鸭梨果心亚麻酸和亚油酸相对含量的影响。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 209,
+        "completion_tokens": 156,
+        "total_tokens": 365,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 209
+      },
+      "model": "deepseek-flash",
+      "response_id": "289c31d3-10bd-4770-a49d-7e875027ae14",
+      "seconds": 5.8620389999996405,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 11.63296449999325
+}

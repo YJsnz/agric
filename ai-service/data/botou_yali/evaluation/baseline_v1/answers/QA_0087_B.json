@@ -1,0 +1,219 @@
+{
+  "id": "QA_0087",
+  "arm": "B",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "所提供的证据未包含图4的具体内容，无法确定图4展示了不同O2浓度下哪些基因的表达情况。",
+      "basis": "证据E4仅提及测定了乙烯合成基因PbACS和PbACO的相对表达量[E4]；证据E5列出了6个乙烯合成途径关键基因（PbACO1、PbACO2、PbACO3、PbACS1、PbACS2、PbACS3）的引物信息[E5]。但没有任何证据描述图4的内容或图4所展示的基因表达结果。",
+      "reasoning": "问题要求根据图4说明不同O2浓度下哪些基因的表达情况。现有证据中，E4和E5仅涉及乙烯合成基因的测定方法和基因列表，未提供图4的具体数据或描述。因此无法从证据中推断图4展示的基因表达情况。",
+      "advice": "如需了解图4内容，请提供该图的具体描述或相关数据。",
+      "citations": [
+        "E4",
+        "E5"
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2261,
+      "completion_tokens": 229,
+      "total_tokens": 2490,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2261
+    },
+    "model": "deepseek-flash",
+    "response_id": "f960f2dc-8aae-4e92-b36d-76101bc3e69f",
+    "seconds": 6.411600300000373,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0021",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.2  不同O2浓度处理对内在品质的影响",
+        "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0017",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "1.3  数据处理与分析",
+        "text": "应用Excel 和SPSS 13.0 进行作图和方差分析。",
+        "pages": [
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0004",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+        "pages": [
+          1,
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0016",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "1.2.6  乙烯合成基因表达分析  通过检索梨基因组",
+        "text": "（Pear Genome Project，http://peargenome.niau.edu.cn），获得梨乙烯合成途径关键基因6 个，特异定量引物序列参考慕茜[25]方法（表1），委托上海生工公司合成引物序列。参照SG Fast qPCR Master Mix（2X）（BBI）（Roche 罗氏）（B639271）说明书配置总体积为20 µL的实时荧光定量PCR 反应液，包含10 µL 2×SybrGreen qPCR Master Mix、上下游引物各0.4 µL、7.2 µL ddH2O、2 µL 模板。在LightCycler480 Software Setup（Roche 罗氏）荧光定量PCR 仪上进行扩增，扩增程序为：95℃预变性3 min；95℃变性7 s，57℃退火10 s，72℃延伸15 s，45 个循环。PCR 循环结束立即进行熔解程序。在Eppendorf 的Mastercycler® ep realplex 软件中自动生成标准曲线、熔解曲线和样品Ct 值。每个样品重复3 次。采用2-∆∆Ct 法计算基因在各样品中的相对表达量。表1  引物序列Table 1  Primer sequences基因名称 Gene name基因ID  Gene ID正向引物 Forward primer sequence (5′-3′)反向引物 Reverse primer sequence (5′-3′) PbACO1 Pbr000093.1 GACGCTGGTGGTATCATCCT TTCCGTCCGACTGAGCTATC PbACO2 Pbr005179.1 GCAGTGATGCGGTGATCTAC CCCAAACCAAAACTGGCCTT PbACO3 Pbr031954.1 CAAGGATGGTGAATGGGTGGA TCATCGCCTGGGTTGTAGAAC PbACS1 Pbr015575.1 CCTGGGGTTCAAAGGGATCA CCGCCGTTAAGACTACCCTA PbACS2 Pbr019796.1 GTTGTGTCCGCAGCTACAAA TGAGCCCACAAACAAGCATC PbACS3 Pbr029891.1 GAAGTTTGGCAGCGAGTTCA CAGATAGCATGGCGGAGAGA",
+        "pages": [
+          3,
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    }
+  ],
+  "candidate_ids": [
+    "chunk:PAPER_001_C0021",
+    "chunk:PAPER_001_C0017",
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0004",
+    "chunk:PAPER_001_C0016"
+  ],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 1,
+  "answer_entity_surface_recall": 0.6666666666666666,
+  "judge": {
+    "result": {
+      "correctness": "incorrect",
+      "reason": "参考答案明确指出图4展示的是PbACO1、PbACO3及PbACS1的表达情况，而回答以证据不足为由拒答，未给出该关键信息，属于对可回答问题的错误处理。",
+      "claims": [
+        {
+          "claim": "所提供的证据未包含图4的具体内容，无法确定图4展示了不同O2浓度下哪些基因的表达情况。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence中明确包含图4标题及描述：图4 不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况，因此该断言与证据相反。"
+        },
+        {
+          "claim": "证据E4仅提及测定了乙烯合成基因PbACS和PbACO的相对表达量。",
+          "status": "supported",
+          "reason": "E4原文确实提到测定了乙烯合成基因PbACS和PbACO的相对表达量。"
+        },
+        {
+          "claim": "证据E5列出了6个乙烯合成途径关键基因（PbACO1、PbACO2、PbACO3、PbACS1、PbACS2、PbACS3）的引物信息。",
+          "status": "supported",
+          "reason": "E5原文列出了PbACO1、PbACO2、PbACO3、PbACS1、PbACS2、PbACS3的引物序列信息。"
+        },
+        {
+          "claim": "没有任何证据描述图4的内容或图4所展示的基因表达结果。",
+          "status": "contradicted",
+          "reason": "original_evidence中直接给出了图4标题及图注：图4 不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况，因此该断言与证据相反。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3078,
+      "completion_tokens": 363,
+      "total_tokens": 3441,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 2438
+    },
+    "model": "deepseek-flash",
+    "response_id": "7fd152b8-0839-4626-8c23-a4beb7746ab8",
+    "seconds": 6.443110100000013,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

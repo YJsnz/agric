@@ -1,0 +1,240 @@
+{
+  "id": "QA_0246",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0014",
+    "chunk:PAPER_005_C0025",
+    "chunk:PAPER_005_C0024",
+    "chunk:PAPER_005_C0017",
+    "chunk:PAPER_005_C0023"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称W3S传感器对长链烷烃敏感，直接引用证据E1的表1明确列出W3S对应敏感化合物为“长链烷烃 Long chain alkanes”，与问题所问的化合物类别一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据E1表1的传感器阵列对应关系，W3S传感器名称对应的敏感化合物确为“长链烷烃 Long chain alkanes”，表述与证据一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理正确引用E1直接给出W3S对应长链烷烃；E2仅涉及W1W、W5S、W2W、W1S，未涉及W3S，故不用于回答，符合证据使用逻辑。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议基于E1中W3S对长链烷烃敏感的阵列定义进行解读，并补充需结合实际检测数据判断，未超出证据范围或添加未支持的剂量、收益等。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0014",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+        "text": "联用（GC-MS）（日本岛津公司）测定挥发性物质成分[20]。GC 条件：SH-Rxi-5Sil MS 毛细管柱（30 m×0.25 mm，0.25 μm）；升温程序：40℃下保持1 min；2℃·min-1 升温至100℃，保持2 min；5℃·min-1 升温至250℃，保持5 min。进样口温度250℃，载气：高纯氦，柱流量1 mL·min-1。MS 条件：电离方式为电子电离源，电子能量70 eV，接口温度250℃，离子源温度200℃，溶剂延迟时间3 min，m/z 35—500 下进行质量扫描，测定时加入200 ng 2-辛酮作为内标物，通过匹配质谱数据库NIST17 及保留指数对挥发性物质进行定性分析，计算各成分的含量，并进行差异显著性表1  PEN3 型电子鼻传感器阵列Table 1  PEN3 type electronic nose sensor array序列号Order number传感器名称Sensor name敏感化合物Sensitive compound W1C芳香成分 Aromatic components W5S灵敏度大，氮氧化合物 Broad range, oxynitride W3C氨类、芳香成分 Ammonia, aromatic components W6S氢化物 Hydrogen W5C短链烷烃、芳香成分Short chain alkanes, aromatic components W1S甲烷 Methane W1W硫化物、萜烯类 Sulphur-organic compound, terpenes W2S醇类、醛酮Alcohol, aldehyde ketone W2W有机硫化物、芳香成分 Organic sulfur compounds, aromatic components W3S长链烷烃 Long chain alkanes分析。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0025",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "3 个月时，交叉叠加分布，然后窖藏1 个月、3 个月、",
+        "text": "2 个月，逐步外延。就传感器的变化而言，W1W（代表硫化物、萜烯类）、W5S（代表氮氧化合物）、W2W（代表有机硫化物、芳香成分）、W1S（代表甲烷）变化程度较大。因此，这4 种传感器对挥发性物质的区分起主要作用（图4）。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0024",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.3   电子鼻检测结果",
+        "text": "下同Different lowercase letters indicate significant difference (P＜0.05). The same as below图1  鸭梨窖藏和冷藏期间呼吸速率和乙烯释放速率变化Fig. 1  Changes of respiration rate and ethylene production rate of Yali pear during cellar and cold storage小的区域。贮藏初期鸭梨气味对应的PC1 特征值最小，冷藏鸭梨试样呈相互交叉分布，位于贮藏初期和窖藏1 月之间，与贮藏初期位置更相近。窖藏鸭梨在PC1上变化范围大，相对应PC1 值由小到大排列分别是：窖藏1 月、窖藏3 月、窖藏2 月（图2）。表明冷藏期间鸭梨气味较初始时变化较小，挥发性成分性质相近；窖藏鸭梨挥发性物质成分变化大，其含量较高，并以贮藏2 月时最高。进一步采用线性判别分析（LDA）表明，不同贮藏时期鸭梨样品均能集中独立分布且不存在相互交叉现象，并且窖藏2 个月时的距离最远，说明此时分离程度最大（图3），这表明电子鼻可有效区分窖藏、冷藏鸭梨的挥发性物质，反映出贮藏方式显著影响果实的挥发性物质含量。电子鼻传感器响应雷达图分析表明，由雷达图中心向外扩展始于贮藏初期，之后冷藏1 个月、2 个月、",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0017",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "1.3  统计分析",
+        "text": "采用Excel 2007 软件对数据进行统计处理，利用SPSS 20.0 软件Duncan 多重比较法进行差异显著性分析，P＜0.05 为差异显著；电子鼻信号采用系统自带的Winmuster 软件进行主成分分析（PCA）和线性判别分析（LDA）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0023",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.3   电子鼻检测结果",
+        "text": "PCA 结果表明，电子鼻检测数据可降维成主成分1（PC1）和主成分2（PC2）。其中PC1 贡献率97.75%，为影响各样品的主要因素。根据图形分布将坐标图分为两个区域，其中贮藏初期、冷藏鸭梨处于PC1 值较21 期岳盈肖等：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析表3  鸭梨窖藏、冷藏期硬度、可溶性固形物和可滴定酸含量变化Table 3  Changes of firmness, SSC and TA content of Yali pear during cellar and cold storage condition硬度 Firmness (kg·cm-2)可溶性固形物 SSC (%)可滴定酸 TA (%)贮藏时间（月）Storage time (Month)窖藏Cellar storage冷藏Cold storage窖藏Cellar storage冷藏Cold storage窖藏Cellar storage冷藏Cold storage 6.25±0.28bc 6.25±0.28bc 12.81±0.40d 12.81±0.40d 1.32±0.03c 1.32±0.03c 6.81±0.05a 6.21±0.24bc 13.73±0.22abc 13.35±0.09bcd 1.50±0.02a 1.14±0.02d 6.49±0.13ab 6.17±0.26bc 13.15±0.31cd 13.86±0.37ab 1.38±0.01b 1.10±0.02de 5.75±0.25c 6.53±0.12ab 13.80±0.52abc 14.24±0.31a 1.49±0.03a 1.09±0.03f不同小写字母表示差异显著（P＜0.05）。下同Different lowercase letters indicate significant difference (P＜0.05). The same as below呼吸速率Respiration rate (mg CO2·kg-1 FW·h-1)乙烯释放速率Ehylene production rate (μL·kg-1 FW·h-1)不同小写字母表示差异显著（P＜0.05）。",
+        "pages": [
+          4,
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "在PEN3型电子鼻传感器阵列中，W3S传感器对长链烷烃敏感  [E1] 。",
+    "basis": "证据[E1]中的表1“PEN3型电子鼻传感器阵列”列出：W3S传感器名称对应的敏感化合物为“长链烷烃 Long chain alkanes”  [E1] 。",
+    "reasoning": "问题询问W3S传感器的敏感化合物类别。[E1]直接给出传感器阵列的对应关系，W3S对应长链烷烃  [E1] 。[E2]仅说明W1W、W5S、W2W、W1S在区分挥发性物质中起主要作用，未涉及W3S的敏感类别  [E2] ，故不用于回答该问题。",
+    "advice": "如需在鸭梨贮藏挥发性物质检测中解读W3S信号，可依据该传感器对长链烷烃敏感这一阵列定义进行对应分析  [E1] ；但传感器响应与实际化合物归属仍需结合具体检测数据判断。",
+    "citations": [
+      "E1",
+      "E2"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出W3S传感器对长链烷烃敏感，与参考答案一致；证据E1中的表1明确列出W3S对应长链烷烃，关键点完整且无矛盾。",
+      "claims": [
+        {
+          "claim": "在PEN3型电子鼻传感器阵列中，W3S传感器对长链烷烃敏感。",
+          "status": "supported",
+          "reason": "证据E1表1明确列出W3S的敏感化合物为长链烷烃 Long chain alkanes。"
+        },
+        {
+          "claim": "证据[E1]中的表1列出W3S传感器名称对应的敏感化合物为“长链烷烃 Long chain alkanes”。",
+          "status": "supported",
+          "reason": "证据E1原文包含表1内容，其中W3S对应长链烷烃 Long chain alkanes。"
+        },
+        {
+          "claim": "[E2]仅说明W1W、W5S、W2W、W1S在区分挥发性物质中起主要作用，未涉及W3S的敏感类别。",
+          "status": "supported",
+          "reason": "证据E2原文只提及W1W、W5S、W2W、W1S变化程度较大并起主要作用，未提及W3S。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2949,
+      "completion_tokens": 259,
+      "total_tokens": 3208,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 1925
+    },
+    "model": "deepseek-flash",
+    "response_id": "b5e95f5b-e7a1-4fb5-b7fc-b55e4cd2b125",
+    "seconds": 6.22323060000781,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在PEN3型电子鼻传感器阵列中，W3S传感器对长链烷烃敏感 [E1]。",
+        "basis": "证据E1中的表1“PEN3型电子鼻传感器阵列”列出：W3S传感器名称对应的敏感化合物为“长链烷烃 Long chain alkanes” [E1]。",
+        "reasoning": "问题询问W3S传感器的敏感化合物类别。E1直接给出传感器阵列的对应关系，W3S对应长链烷烃 [E1]。E2仅说明W1W、W5S、W2W、W1S在区分挥发性物质中起主要作用，未涉及W3S的敏感类别 [E2]，故不用于回答该问题。",
+        "advice": "如需在鸭梨贮藏挥发性物质检测中解读W3S信号，可依据该传感器对长链烷烃敏感这一阵列定义进行对应分析 [E1]；但传感器响应与实际化合物归属仍需结合具体检测数据判断。",
+        "citations": [
+          "E1"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2360,
+        "completion_tokens": 226,
+        "total_tokens": 2586,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2232
+      },
+      "model": "deepseek-flash",
+      "response_id": "1c615cd1-3fa1-43d7-b1d5-a5564fc93d37",
+      "seconds": 7.0442239999974845,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 19.74567209999077
+}

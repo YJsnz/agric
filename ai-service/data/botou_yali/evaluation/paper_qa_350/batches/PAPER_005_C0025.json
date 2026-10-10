@@ -1,0 +1,41 @@
+[
+  {
+    "question": "在窖藏和冷藏条件下，鸭梨挥发性物质检测中变化程度较大的传感器有哪几种？",
+    "type": "factual",
+    "answer_quote": "W1W（代表硫化物、萜烯类）、W5S（代表氮氧化合物）、W2W（代表有机硫化物、芳香成分）、W1S（代表甲烷）变化程度较大。",
+    "gold_entities": [
+      "W1W",
+      "W5S",
+      "W2W",
+      "W1S"
+    ]
+  },
+  {
+    "question": "根据原文，对挥发性物质区分起主要作用的传感器有几种？",
+    "type": "factual",
+    "answer_quote": "因此，这4 种传感器对挥发性物质的区分起主要作用（图4）。",
+    "gold_entities": [
+      "4 种传感器"
+    ]
+  },
+  {
+    "question": "W1W传感器在原文中代表哪类物质？",
+    "type": "factual",
+    "answer_quote": "W1W（代表硫化物、萜烯类）",
+    "gold_entities": [
+      "W1W",
+      "硫化物",
+      "萜烯类"
+    ]
+  },
+  {
+    "question": "W2W传感器在原文中代表哪类物质？",
+    "type": "factual",
+    "answer_quote": "W2W（代表有机硫化物、芳香成分）",
+    "gold_entities": [
+      "W2W",
+      "有机硫化物",
+      "芳香成分"
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "sample": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\data\\jujube_leaf_classifier_v3_final\\test\\anthracnose\\58py9f3nsy__anthracnose__0027ded0791669b1__90568fb0a7ecc85ba380.jpg",
+  "response": {
+    "success": true,
+    "crop": "jujube",
+    "task": "leaf",
+    "model_name": "jujube_leaf_yolo11n_cls_v1",
+    "model_version": "v1",
+    "prediction": {
+      "class": "anthracnose",
+      "label_zh": "炭疽病类视觉表现",
+      "confidence": 0.4312133491039276,
+      "topk": [
+        {
+          "class": "anthracnose",
+          "label_zh": "炭疽病类视觉表现",
+          "confidence": 0.4312133491039276
+        },
+        {
+          "class": "healthy",
+          "label_zh": "健康叶片视觉状态",
+          "confidence": 0.2946964204311371
+        },
+        {
+          "class": "yellow_leaf",
+          "label_zh": "黄化视觉表现",
+          "confidence": 0.1406516283750534
+        },
+        {
+          "class": "powdery_mildew",
+          "label_zh": "白粉病类视觉表现",
+          "confidence": 0.11734961718320847
+        },
+        {
+          "class": "insect_damage",
+          "label_zh": "虫害损伤视觉表现",
+          "confidence": 0.01608905754983425
+        }
+      ]
+    },
+    "risk_semantics": {
+      "type": "leaf visual symptom evidence",
+      "is_diagnosis": false
+    },
+    "disclaimer": "仅为视觉证据，不是食品安全、是否可食用、储藏寿命、疾病最终确诊或腐败原因诊断；分类得分不是确诊概率。黄化不能直接解释为缺氮、缺铁或盐害。"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "QA_0113",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何实质内容，仅表示证据不足并请求补充资料，属于没有作答。参考答案明确给出了晚采鸭梨更易褐变的原因（U/S值升高、膜相变温度降低，但果实衰老快、后期LOX活性快速升高、膜脂过氧化严重），而回答未涉及这些关键点。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 954,
+      "completion_tokens": 85,
+      "total_tokens": 1039,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 186
+    },
+    "model": "deepseek-flash",
+    "response_id": "1e87bd8c-fa3f-454e-ba00-78577872e232",
+    "seconds": 5.427601700000196,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

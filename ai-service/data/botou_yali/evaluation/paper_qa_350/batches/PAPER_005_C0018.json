@@ -1,0 +1,54 @@
+[
+  {
+    "question": "窖藏条件下鸭梨果实硬度在贮藏1个月时如何变化？",
+    "type": "factual",
+    "answer_quote": "窖藏条件下，鸭梨贮藏1 个月时硬度有所增加，此后缓慢降低，至3 个月时最小。",
+    "gold_entities": [
+      "鸭梨",
+      "窖藏",
+      "硬度"
+    ]
+  },
+  {
+    "question": "窖藏条件下鸭梨果实硬度在贮藏3个月时达到什么状态？",
+    "type": "factual",
+    "answer_quote": "此后缓慢降低，至3 个月时最小。",
+    "gold_entities": [
+      "鸭梨",
+      "窖藏",
+      "硬度"
+    ]
+  },
+  {
+    "question": "窖藏条件下鸭梨果实SSC的变化趋势是什么？",
+    "type": "factual",
+    "answer_quote": "窖藏时果实的SSC先明显增加，之后下降；",
+    "gold_entities": [
+      "鸭梨",
+      "窖藏",
+      "SSC"
+    ]
+  },
+  {
+    "question": "冷藏和窖藏条件下鸭梨果实SSC有何差异？",
+    "type": "factual",
+    "answer_quote": "冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。",
+    "gold_entities": [
+      "鸭梨",
+      "冷藏",
+      "窖藏",
+      "SSC"
+    ]
+  },
+  {
+    "question": "冷藏和窖藏条件下鸭梨果实TA含量的变化有何不同？",
+    "type": "factual",
+    "answer_quote": "冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+    "gold_entities": [
+      "鸭梨",
+      "冷藏",
+      "窖藏",
+      "TA"
+    ]
+  }
+]

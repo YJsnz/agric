@@ -1,0 +1,238 @@
+[
+  {
+    "question": "本研究中GC-MS测定鸭梨挥发性物质时，使用的毛细管柱型号和规格是什么？",
+    "type": "factual",
+    "answer_quote": "SH-Rxi-5Sil MS 毛细管柱（30 m×0.25 mm，0.25 μm）",
+    "gold_entities": [
+      "SH-Rxi-5Sil MS 毛细管柱"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的升温程序在40℃下保持多长时间？",
+    "type": "factual",
+    "answer_quote": "40℃下保持1 min",
+    "gold_entities": [
+      "40℃",
+      "1 min"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的升温程序从40℃以多少速率升温至100℃？",
+    "type": "factual",
+    "answer_quote": "2℃·min-1 升温至100℃",
+    "gold_entities": [
+      "2℃·min-1",
+      "100℃"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的升温程序在100℃下保持多长时间？",
+    "type": "factual",
+    "answer_quote": "保持2 min",
+    "gold_entities": [
+      "100℃",
+      "2 min"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的升温程序从100℃以多少速率升温至250℃？",
+    "type": "factual",
+    "answer_quote": "5℃·min-1 升温至250℃",
+    "gold_entities": [
+      "5℃·min-1",
+      "250℃"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的升温程序在250℃下保持多长时间？",
+    "type": "factual",
+    "answer_quote": "保持5 min",
+    "gold_entities": [
+      "250℃",
+      "5 min"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的进样口温度是多少？",
+    "type": "factual",
+    "answer_quote": "进样口温度250℃",
+    "gold_entities": [
+      "进样口温度",
+      "250℃"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS使用的载气是什么？",
+    "type": "factual",
+    "answer_quote": "载气：高纯氦",
+    "gold_entities": [
+      "载气",
+      "高纯氦"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的柱流量是多少？",
+    "type": "factual",
+    "answer_quote": "柱流量1 mL·min-1",
+    "gold_entities": [
+      "柱流量",
+      "1 mL·min-1"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的MS条件中，电子能量是多少？",
+    "type": "factual",
+    "answer_quote": "电子能量70 eV",
+    "gold_entities": [
+      "电子能量",
+      "70 eV"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的MS条件中，接口温度是多少？",
+    "type": "factual",
+    "answer_quote": "接口温度250℃",
+    "gold_entities": [
+      "接口温度",
+      "250℃"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的MS条件中，离子源温度是多少？",
+    "type": "factual",
+    "answer_quote": "离子源温度200℃",
+    "gold_entities": [
+      "离子源温度",
+      "200℃"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的MS条件中，溶剂延迟时间是多少？",
+    "type": "factual",
+    "answer_quote": "溶剂延迟时间3 min",
+    "gold_entities": [
+      "溶剂延迟时间",
+      "3 min"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS的MS条件中，质量扫描范围是多少？",
+    "type": "factual",
+    "answer_quote": "m/z 35—500 下进行质量扫描",
+    "gold_entities": [
+      "m/z 35—500"
+    ]
+  },
+  {
+    "question": "本研究中GC-MS测定时加入的内标物是什么？",
+    "type": "factual",
+    "answer_quote": "200 ng 2-辛酮作为内标物",
+    "gold_entities": [
+      "200 ng",
+      "2-辛酮"
+    ]
+  },
+  {
+    "question": "本研究中用于挥发性物质定性分析的质谱数据库是什么？",
+    "type": "factual",
+    "answer_quote": "NIST17",
+    "gold_entities": [
+      "NIST17"
+    ]
+  },
+  {
+    "question": "本研究中PEN3型电子鼻传感器阵列中，W1C传感器对哪类化合物敏感？",
+    "type": "factual",
+    "answer_quote": "W1C芳香成分 Aromatic components",
+    "gold_entities": [
+      "W1C",
+      "芳香成分"
+    ]
+  },
+  {
+    "question": "本研究中PEN3型电子鼻传感器阵列中，W5S传感器对哪类化合物敏感？",
+    "type": "factual",
+    "answer_quote": "W5S灵敏度大，氮氧化合物 Broad range, oxynitride",
+    "gold_entities": [
+      "W5S",
+      "氮氧化合物"
+    ]
+  },
+  {
+    "question": "本研究中PEN3型电子鼻传感器阵列中，W3C传感器对哪类化合物敏感？",
+    "type": "factual",
+    "answer_quote": "W3C氨类、芳香成分 Ammonia, aromatic components",
+    "gold_entities": [
+      "W3C",
+      "氨类",
+      "芳香成分"
+    ]
+  },
+  {
+    "question": "本研究中PEN3型电子鼻传感器阵列中，W6S传感器对哪类化合物敏感？",
+    "type": "factual",
+    "answer_quote": "W6S氢化物 Hydrogen",
+    "gold_entities": [
+      "W6S",
+      "氢化物"
+    ]
+  },
+  {
+    "question": "本研究中PEN3型电子鼻传感器阵列中，W5C传感器对哪类化合物敏感？",
+    "type": "factual",
+    "answer_quote": "W5C短链烷烃、芳香成分Short chain alkanes, aromatic components",
+    "gold_entities": [
+      "W5C",
+      "短链烷烃",
+      "芳香成分"
+    ]
+  },
+  {
+    "question": "本研究中PEN3型电子鼻传感器阵列中，W1S传感器对哪类化合物敏感？",
+    "type": "factual",
+    "answer_quote": "W1S甲烷 Methane",
+    "gold_entities": [
+      "W1S",
+      "甲烷"
+    ]
+  },
+  {
+    "question": "本研究中PEN3型电子鼻传感器阵列中，W1W传感器对哪类化合物敏感？",
+    "type": "factual",
+    "answer_quote": "W1W硫化物、萜烯类 Sulphur-organic compound, terpenes",
+    "gold_entities": [
+      "W1W",
+      "硫化物",
+      "萜烯类"
+    ]
+  },
+  {
+    "question": "本研究中PEN3型电子鼻传感器阵列中，W2S传感器对哪类化合物敏感？",
+    "type": "factual",
+    "answer_quote": "W2S醇类、醛酮Alcohol, aldehyde ketone",
+    "gold_entities": [
+      "W2S",
+      "醇类",
+      "醛酮"
+    ]
+  },
+  {
+    "question": "本研究中PEN3型电子鼻传感器阵列中，W2W传感器对哪类化合物敏感？",
+    "type": "factual",
+    "answer_quote": "W2W有机硫化物、芳香成分 Organic sulfur compounds, aromatic components",
+    "gold_entities": [
+      "W2W",
+      "有机硫化物",
+      "芳香成分"
+    ]
+  },
+  {
+    "question": "本研究中PEN3型电子鼻传感器阵列中，W3S传感器对哪类化合物敏感？",
+    "type": "factual",
+    "answer_quote": "W3S长链烷烃 Long chain alkanes",
+    "gold_entities": [
+      "W3S",
+      "长链烷烃"
+    ]
+  }
+]

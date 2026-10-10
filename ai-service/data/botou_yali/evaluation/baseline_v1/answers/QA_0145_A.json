@@ -1,0 +1,72 @@
+{
+  "id": "QA_0145",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法提供该研究中贮藏末期（采后180 d）早采缓慢降温和急速降温处理的鸭梨果心褐变指数具体数值。",
+      "basis": "现有证据为空，且我未掌握该论文的具体实验数据。",
+      "reasoning": "问题要求引用特定论文中的精确数值，但未提供原文或数据，我无法凭已有知识确认这些数值，因此不能给出答案。",
+      "advice": "建议查阅《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》原文，或提供相关数据表格，以便准确获取数值。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 165,
+      "completion_tokens": 134,
+      "total_tokens": 299,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 165
+    },
+    "model": "deepseek-flash",
+    "response_id": "89e0f8fc-77c4-4bf5-8c24-2cac130b4b92",
+    "seconds": 5.945220199999767,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.6,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何数值，明确表示无法提供，属于拒答；而该题在提供的原文证据中有明确答案（0.21和0.37），因此不是正确作答。",
+      "claims": [
+        {
+          "claim": "无法提供该研究中贮藏末期（采后180 d）早采缓慢降温和急速降温处理的鸭梨果心褐变指数具体数值。",
+          "status": "contradicted",
+          "reason": "原文证据明确给出到贮藏末期（采后180 d）果心褐变指数分别为0.21和0.37，因此该断言与提供证据相反。"
+        },
+        {
+          "claim": "现有证据为空，且我未掌握该论文的具体实验数据。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence包含该论文相关结果，并非证据为空；且其中直接给出所需数值。"
+        },
+        {
+          "claim": "问题要求引用特定论文中的精确数值，但未提供原文或数据，我无法凭已有知识确认这些数值，因此不能给出答案。",
+          "status": "contradicted",
+          "reason": "输入中已提供original_evidence，其中明确包含早采缓慢降温和急速降温处理到采后180 d的果心褐变指数0.21和0.37。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 1060,
+      "completion_tokens": 258,
+      "total_tokens": 1318,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 932
+    },
+    "model": "deepseek-flash",
+    "response_id": "e6036cab-f203-456a-b1f2-16f16e7c02ca",
+    "seconds": 6.452649400000155,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

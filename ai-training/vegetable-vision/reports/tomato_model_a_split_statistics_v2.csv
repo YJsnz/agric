@@ -1,0 +1,8 @@
+﻿class_name,clean,train,val,test
+bacterial_spot,2348,1644,352,352
+bacterial_spot_and_leaf_miner,2496,1747,375,374
+healthy,2510,1757,377,376
+leaf_miner,2170,1519,326,325
+powdery_mildew,1854,1298,278,278
+powdery_mildew_and_leaf_miner,2316,1621,348,347
+whitefly,328,230,49,49

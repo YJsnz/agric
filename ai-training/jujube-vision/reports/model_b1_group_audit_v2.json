@@ -1,0 +1,32 @@
+{
+  "raw_total": 1464,
+  "healthy": 732,
+  "bruised": 732,
+  "candidate_pairs": 6702,
+  "review_pairs": 95,
+  "review_decisions": {
+    "confirmed_same_fruit": 42,
+    "uncertain": 53
+  },
+  "confirmed_fruit_groups": 28,
+  "confirmed_grouped_images": 63,
+  "singleton_unverified_images": 1401,
+  "confirmed_healthy_fruit_groups": 8,
+  "confirmed_bruised_fruit_groups": 20,
+  "split_counts": {
+    "train": 1022,
+    "test": 223,
+    "val": 219
+  },
+  "split_reassigned_images": 9,
+  "seed": 42,
+  "cross_split_fruit_group_id": 0,
+  "cross_split_sha256": 0,
+  "cross_split_pixel_hash": 0,
+  "raw_unchanged": true,
+  "model_a_unchanged": true,
+  "training_ready_image_level": true,
+  "training_ready_fruit_independent": false,
+  "fruit_independent_test_proven": false,
+  "dataset": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\data\\jujube_fruit_bruise_classifier_v2_level_a"
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "source_id": "PAPER_001",
+    "url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21248",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+    "attempted_at": "2026-09-15T06:22:21.908654+00:00",
+    "resolved_url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21248",
+    "status": "downloaded_pending_review",
+    "bytes": 533731,
+    "sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7"
+  },
+  {
+    "source_id": "PAPER_002",
+    "url": "https://www.spgykj.com/cn/article/pdf/preview/10.13386/j.issn1002-0306.2013.15.074.pdf",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/original.pdf",
+    "attempted_at": "2026-09-15T06:22:21.909159+00:00",
+    "resolved_url": "https://www.spgykj.com/cn/article/pdf/preview/10.13386/j.issn1002-0306.2013.15.074.pdf",
+    "status": "downloaded_pending_review",
+    "bytes": 906370,
+    "sha256": "c610983dbd1e494e73a4dbd9ef6a70d67be926e70d2e4e5ae23d3c03fbaee801"
+  },
+  {
+    "source_id": "PAPER_004",
+    "url": "https://www.spkx.net.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=9726",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/original.pdf",
+    "attempted_at": "2026-09-15T06:22:21.910165+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "source_id": "PAPER_005",
+    "url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21870",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+    "attempted_at": "2026-09-15T06:22:21.911167+00:00",
+    "resolved_url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21870",
+    "status": "downloaded_pending_review",
+    "bytes": 1533916,
+    "sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923"
+  }
+]

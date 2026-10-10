@@ -1,0 +1,72 @@
+{
+  "id": "QA_0235",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法确定该论文GC-MS升温程序中100℃升温至250℃的具体速率。",
+      "basis": "所提供的证据为空，且我无法确认或回忆该论文中GC-MS升温程序的具体参数。",
+      "reasoning": "问题要求引用特定论文中的仪器升温速率，属于精确实验参数。在没有原文或可靠证据的情况下，不能编造数字或标准。",
+      "advice": "请提供该论文的原文或相关方法段落，以便准确查找GC-MS升温程序中的速率参数。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 168,
+      "completion_tokens": 114,
+      "total_tokens": 282,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 168
+    },
+    "model": "deepseek-flash",
+    "response_id": "6a8c7662-2c61-4e07-9ee0-8255f0bf12ad",
+    "seconds": 5.96036869999989,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出升温速率，仅表示无法确定，属于拒答；在可回答题中拒答不算正确。",
+      "claims": [
+        {
+          "claim": "无法确定该论文GC-MS升温程序中100℃升温至250℃的具体速率。",
+          "status": "contradicted",
+          "reason": "原文明确给出5℃·min-1升温至250℃，保持5 min。"
+        },
+        {
+          "claim": "所提供的证据为空。",
+          "status": "supported",
+          "reason": "检索上下文retrieved_evidence为空列表。"
+        },
+        {
+          "claim": "无法确认或回忆该论文中GC-MS升温程序的具体参数。",
+          "status": "unverifiable",
+          "reason": "这是回答者自身认知状态的陈述，提供资料无法验证。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 849,
+      "completion_tokens": 148,
+      "total_tokens": 997,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 721
+    },
+    "model": "deepseek-flash",
+    "response_id": "94d1b893-06cf-43d1-86a3-cda0d123e0d3",
+    "seconds": 5.96553589999985,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

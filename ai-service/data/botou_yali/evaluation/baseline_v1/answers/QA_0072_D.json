@@ -1,0 +1,44 @@
+{
+  "id": "QA_0072",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于呼吸速率差异显著性的结论，仅表示证据不足并请求补充资料，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 822,
+      "completion_tokens": 40,
+      "total_tokens": 862,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 182
+    },
+    "model": "deepseek-flash",
+    "response_id": "4c09254c-4154-4183-8510-90041dc4ee66",
+    "seconds": 5.342439699999886,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

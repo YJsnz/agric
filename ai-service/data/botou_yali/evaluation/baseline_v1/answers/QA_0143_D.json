@@ -1,0 +1,44 @@
+{
+  "id": "QA_0143",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关于早采缓慢降温和急速降温处理鸭梨果实果心褐变开始时间的答案，仅表示证据不足，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 969,
+      "completion_tokens": 48,
+      "total_tokens": 1017,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 201
+    },
+    "model": "deepseek-flash",
+    "response_id": "68bda2c5-c58d-4928-95e5-d64973fcb2bf",
+    "seconds": 5.375235099999827,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

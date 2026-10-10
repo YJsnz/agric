@@ -1,0 +1,238 @@
+{
+  "id": "QA_0253",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0019",
+    "chunk:PAPER_005_C0008",
+    "chunk:PAPER_005_C0020",
+    "chunk:PAPER_005_C0018",
+    "chunk:PAPER_005_C0003"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称窖藏试验中鸭梨SSC先明显增加后下降、窖藏果实SSC较低，E1和E4均直接记载“窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC较低”，与结论一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis准确复述E1与E4中关于窖藏SSC先明显增加后下降、冷藏后期SSC较高、窖藏SSC较低的内容，引用证据支持其陈述。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning说明问题限定于该文献窖藏试验SSC趋势，并指出E1、E4为同一文献同一章节直接描述该趋势；对E2、E3、E5未提供额外窖藏SSC趋势信息的排除也符合证据内容。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅建议查阅该文献表3原始数据以了解具体时间节点与数值，并声明不构成生产指导；E1、E4均提及表3，且未添加证据外的剂量、收益或普遍建议。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0019",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0020",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0018",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "窖藏条件下，鸭梨贮藏1 个月时硬度有所增加，此后缓慢降低，至3 个月时最小。窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "在窖藏试验中，鸭梨果实SSC的变化趋势为先明显增加，之后下降；且窖藏果实的SSC较低。 [E1]  [E4] ",
+    "basis": "证据[E1]与[E4]均记载：窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC较低。 [E1]  [E4] ",
+    "reasoning": "问题限定于该文献窖藏试验中鸭梨果实SSC的变化趋势。[E1]与[E4]为同一文献同一章节（2.1 果实品质变化）的记载，直接描述窖藏条件下SSC先明显增加、之后下降，并指出窖藏果实SSC较低。[E2]、[E3]、[E5]未提供窖藏SSC变化趋势的额外信息，故不纳入结论依据。 [E1]  [E4] ",
+    "advice": "如需了解SSC变化的具体时间节点与数值，请查阅该文献表3的原始数据；本结论仅反映文献所述趋势，不构成生产指导。 [E1]  [E4] ",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出窖藏试验中鸭梨果实SSC的变化趋势：先明显增加，之后下降，并补充窖藏果实SSC较低，与参考答案及原文证据一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "在窖藏试验中，鸭梨果实SSC的变化趋势为先明显增加，之后下降。",
+          "status": "supported",
+          "reason": "原文证据明确记载“窖藏时果实的SSC先明显增加，之后下降”。"
+        },
+        {
+          "claim": "窖藏果实的SSC较低。",
+          "status": "supported",
+          "reason": "原文证据明确记载“冷藏果实后期具有较高的SSC，窖藏果实的SSC较低”。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2011,
+      "completion_tokens": 145,
+      "total_tokens": 2156,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1755
+    },
+    "model": "deepseek-flash",
+    "response_id": "7ba63dc2-0180-4c64-9133-7af504b6b17a",
+    "seconds": 6.423855100001674,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在窖藏试验中，鸭梨果实SSC的变化趋势为先明显增加，之后下降；且窖藏果实的SSC较低。[E1][E4]",
+        "basis": "证据E1与E4均记载：窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC较低。[E1][E4]",
+        "reasoning": "问题限定于该文献窖藏试验中鸭梨果实SSC的变化趋势。E1与E4为同一文献同一章节（2.1 果实品质变化）的记载，直接描述窖藏条件下SSC先明显增加、之后下降，并指出窖藏果实SSC较低。E2、E3、E5未提供窖藏SSC变化趋势的额外信息，故不纳入结论依据。[E1][E4]",
+        "advice": "如需了解SSC变化的具体时间节点与数值，请查阅该文献表3的原始数据；本结论仅反映文献所述趋势，不构成生产指导。[E1][E4]",
+        "citations": [
+          "E1",
+          "E4"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 1678,
+        "completion_tokens": 246,
+        "total_tokens": 1924,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1550
+      },
+      "model": "deepseek-flash",
+      "response_id": "dd27b6a3-9d19-4a04-80e3-c8b0bfc7a6c6",
+      "seconds": 6.753045500008739,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 19.849773599999025
+}

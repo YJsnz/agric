@@ -1,0 +1,70 @@
+{
+  "id": "QA_0337",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法依据现有证据回答该问题。",
+    "basis": "未提供《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的引言内容，也未提供任何检索证据。",
+    "reasoning": "问题要求依据该论文引言给出我国鸭梨气调贮藏的商业应用参数，但证据列表为空，且我无法确认该论文的具体表述，因此不能给出参数。",
+    "advice": "请提供该论文引言原文或相关段落；也可查阅鸭梨气调贮藏的行业标准、综述或权威资料以获取商业应用参数。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.3333333333333333,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何参数，仅以证据不足为由拒答；但提供的原文证据明确包含商业应用参数（10% O2+1% CO2），因此该题可回答，拒答不构成正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1066,
+      "completion_tokens": 61,
+      "total_tokens": 1127,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 298
+    },
+    "model": "deepseek-flash",
+    "response_id": "37d0dc04-f95a-4580-9e36-f9efd5d24c5f",
+    "seconds": 5.381054199999198,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法依据现有证据回答该问题。",
+        "basis": "未提供《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的引言内容，也未提供任何检索证据。",
+        "reasoning": "问题要求依据该论文引言给出我国鸭梨气调贮藏的商业应用参数，但证据列表为空，且我无法确认该论文的具体表述，因此不能给出参数。",
+        "advice": "请提供该论文引言原文或相关段落；也可查阅鸭梨气调贮藏的行业标准、综述或权威资料以获取商业应用参数。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 178,
+        "completion_tokens": 139,
+        "total_tokens": 317,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 178
+      },
+      "model": "deepseek-flash",
+      "response_id": "5fc04b2b-bfbd-4229-91d8-4dc3786f7a31",
+      "seconds": 5.945748800004367,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 11.32937999999558
+}

@@ -1,0 +1,43 @@
+{
+  "crop_id": "huanghua_hanjianmai",
+  "types": [
+    "AgriculturalPractice",
+    "Crop",
+    "Disease",
+    "EnvironmentFactor",
+    "GrowthStage",
+    "KGStatement",
+    "Pest",
+    "Process",
+    "Product",
+    "QualityIndicator",
+    "Region",
+    "Requirement",
+    "SoilType",
+    "Source",
+    "Stress",
+    "Variety",
+    "WeatherRisk"
+  ],
+  "relations": [
+    "APPLIES_IN",
+    "ASSOCIATED_WITH",
+    "HAS_INDICATOR",
+    "HAS_RISK",
+    "INCLUDES",
+    "INCREASES_RISK",
+    "INHIBITS",
+    "OCCURS_AT_STAGE",
+    "PROCESSED_INTO",
+    "REFERENCES_STANDARD",
+    "REQUIRES",
+    "RESEARCH_TARGET",
+    "SELECTS"
+  ],
+  "rules": [
+    "No ungrounded CAUSES",
+    "RESEARCH_TARGET is not a production recommendation",
+    "Unknown stage is null, not all stages",
+    "Source jurisdiction is not universal local validation"
+  ]
+}

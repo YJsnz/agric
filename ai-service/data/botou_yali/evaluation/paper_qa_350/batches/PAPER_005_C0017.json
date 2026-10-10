@@ -1,0 +1,38 @@
+[
+  {
+    "question": "本研究使用哪个软件对数据进行统计处理？",
+    "type": "factual",
+    "answer_quote": "采用Excel 2007 软件对数据进行统计处理",
+    "gold_entities": [
+      "Excel 2007"
+    ]
+  },
+  {
+    "question": "本研究采用哪个软件及何种方法进行差异显著性分析？",
+    "type": "factual",
+    "answer_quote": "利用SPSS 20.0 软件Duncan 多重比较法进行差异显著性分析",
+    "gold_entities": [
+      "SPSS 20.0",
+      "Duncan 多重比较法"
+    ]
+  },
+  {
+    "question": "本研究中差异显著的判定标准是什么？",
+    "type": "factual",
+    "answer_quote": "P＜0.05 为差异显著",
+    "gold_entities": [
+      "P＜0.05"
+    ]
+  },
+  {
+    "question": "本研究中电子鼻信号采用什么软件进行主成分分析和线性判别分析？",
+    "type": "factual",
+    "answer_quote": "电子鼻信号采用系统自带的Winmuster 软件进行主成分分析（PCA）和线性判别分析（LDA）",
+    "gold_entities": [
+      "电子鼻信号",
+      "Winmuster 软件",
+      "主成分分析（PCA）",
+      "线性判别分析（LDA）"
+    ]
+  }
+]

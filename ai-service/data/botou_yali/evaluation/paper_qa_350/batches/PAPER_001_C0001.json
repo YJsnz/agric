@@ -1,0 +1,141 @@
+[
+  {
+    "question": "本研究将鸭梨采自哪个地区？",
+    "type": "factual",
+    "answer_quote": "将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱",
+    "gold_entities": [
+      "河北石家庄地区",
+      "鸭梨"
+    ]
+  },
+  {
+    "question": "本研究设置了哪些O2浓度梯度？",
+    "type": "factual",
+    "answer_quote": "设置1.0%、2.0%、3.0%、5.0%及10.0%等不同O2浓度梯度",
+    "gold_entities": [
+      "1.0%",
+      "2.0%",
+      "3.0%",
+      "5.0%",
+      "10.0%",
+      "O2浓度梯度"
+    ]
+  },
+  {
+    "question": "本研究中CO2浓度设置为多少？",
+    "type": "factual",
+    "answer_quote": "CO2浓度为0.5%",
+    "gold_entities": [
+      "CO2浓度",
+      "0.5%"
+    ]
+  },
+  {
+    "question": "本研究的对照处理是什么？",
+    "type": "factual",
+    "answer_quote": "以空气处理为对照",
+    "gold_entities": [
+      "空气处理",
+      "对照"
+    ]
+  },
+  {
+    "question": "本研究在贮藏后哪些时间点进行调查和测定？",
+    "type": "factual",
+    "answer_quote": "分别于贮藏150、210 和270 d 及货架7 或10 d，调查鸭梨虎皮指数和黑心指数",
+    "gold_entities": [
+      "贮藏150 d",
+      "贮藏210 d",
+      "贮藏270 d",
+      "货架7 d",
+      "货架10 d",
+      "虎皮指数",
+      "黑心指数"
+    ]
+  },
+  {
+    "question": "本研究测定了鸭梨果实的哪些品质指标？",
+    "type": "factual",
+    "answer_quote": "测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血酸（AA）及色泽变化情况",
+    "gold_entities": [
+      "果实硬度",
+      "可溶性固形物（SSC）",
+      "可滴定酸（TA）",
+      "抗坏血酸（AA）",
+      "色泽"
+    ]
+  },
+  {
+    "question": "本研究利用气相色谱分析测定了鸭梨哪些组织的乙醇含量？",
+    "type": "factual",
+    "answer_quote": "利用气相色谱分析测定果肉和果心组织乙醇含量变化情况",
+    "gold_entities": [
+      "气相色谱",
+      "果肉",
+      "果心",
+      "乙醇含量"
+    ]
+  },
+  {
+    "question": "本研究监测了鸭梨果实的哪些生理指标？",
+    "type": "factual",
+    "answer_quote": "监测果实呼吸速率和乙烯产量",
+    "gold_entities": [
+      "呼吸速率",
+      "乙烯产量"
+    ]
+  },
+  {
+    "question": "本研究利用实时荧光定量PCR测定了哪些基因的表达变化？",
+    "type": "factual",
+    "answer_quote": "利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS 和PbACO 表达变化情况进行测定",
+    "gold_entities": [
+      "实时荧光定量PCR",
+      "PbACS",
+      "PbACO"
+    ]
+  },
+  {
+    "question": "低氧处理对鸭梨贮藏期间果实黑心指数和虎皮指数有何影响？",
+    "type": "factual",
+    "answer_quote": "低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数",
+    "gold_entities": [
+      "低氧处理",
+      "黑心指数",
+      "虎皮指数"
+    ]
+  },
+  {
+    "question": "贮藏270 d及货架7 d时，鸭梨采后生理病害发病程度由高到低的顺序是什么？",
+    "type": "factual",
+    "answer_quote": "贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2",
+    "gold_entities": [
+      "贮藏270 d",
+      "货架7 d",
+      "CK",
+      "10.0% O2",
+      "5.0% O2",
+      "1.0% O2",
+      "3.0% O2",
+      "2.0% O2"
+    ]
+  },
+  {
+    "question": "低氧处理对鸭梨贮藏早期果实TA和AA下降有何影响？",
+    "type": "factual",
+    "answer_quote": "延缓了贮藏早期果实TA 和AA 下降",
+    "gold_entities": [
+      "贮藏早期",
+      "TA",
+      "AA"
+    ]
+  },
+  {
+    "question": "低氧处理对鸭梨果实果面转黄有何影响？",
+    "type": "factual",
+    "answer_quote": "推迟了果实果面转黄",
+    "gold_entities": [
+      "果实果面转黄"
+    ]
+  }
+]

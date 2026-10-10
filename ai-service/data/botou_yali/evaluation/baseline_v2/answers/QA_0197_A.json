@@ -1,0 +1,70 @@
+{
+  "id": "QA_0197",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法确认降温方法对鸭梨果心膜相变温度的影响是否明显。",
+    "basis": "未提供该论文的具体研究记录或数据，且我无法获取该论文的原文内容。",
+    "reasoning": "问题要求依据《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》的研究记录作答，但证据列表为空，我也没有该论文的可靠记忆，因此不能判断膜相变温度的变化是否明显。",
+    "advice": "请提供该论文中关于膜相变温度（如相变温度测定值、处理间差异及显著性）的具体结果，或允许检索原文后再作判断。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于降温方法对鸭梨果心膜相变温度影响是否明显的判断，仅说明无法确认并请求提供资料，属于没有作答。提供的原文证据已明确给出结论‘降温方法对相变温度影响不明显’，因此该题可回答，拒答不能视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 924,
+      "completion_tokens": 78,
+      "total_tokens": 1002,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 284
+    },
+    "model": "deepseek-flash",
+    "response_id": "9118dfea-5e49-49c1-ad3b-2fa96fc1c685",
+    "seconds": 5.5776241999992635,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法确认降温方法对鸭梨果心膜相变温度的影响是否明显。",
+        "basis": "未提供该论文的具体研究记录或数据，且我无法获取该论文的原文内容。",
+        "reasoning": "问题要求依据《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》的研究记录作答，但证据列表为空，我也没有该论文的可靠记忆，因此不能判断膜相变温度的变化是否明显。",
+        "advice": "请提供该论文中关于膜相变温度（如相变温度测定值、处理间差异及显著性）的具体结果，或允许检索原文后再作判断。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 203,
+        "completion_tokens": 157,
+        "total_tokens": 360,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 203
+      },
+      "model": "deepseek-flash",
+      "response_id": "d4a5bc7b-9f44-4195-8e9b-37416691a0cb",
+      "seconds": 5.971851800000877,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 11.551558400009526
+}

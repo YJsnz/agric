@@ -1,0 +1,77 @@
+{
+  "id": "QA_0034",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法确定该研究中呼吸速率和乙烯产生速率的具体单位。",
+      "basis": "未提供该论文的原文内容，且我的知识库中不包含该论文的具体计量单位信息。",
+      "reasoning": "问题要求依据特定论文回答单位，但证据为空，无法从已有知识中确认该论文使用的单位，因此不能给出确切答案。",
+      "advice": "请提供该论文的原文或相关段落，以便准确提取呼吸速率和乙烯产生速率的单位。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 164,
+      "completion_tokens": 112,
+      "total_tokens": 276,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 164
+    },
+    "model": "deepseek-flash",
+    "response_id": "933050d0-9d31-4cca-a8d2-a73d3b86c77b",
+    "seconds": 5.838439699999981,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出呼吸速率和乙烯产生速率的单位，而是以证据不足为由拒答；但提供的原文证据明确给出了单位，因此属于可回答题中的拒答，不能判为正确。",
+      "claims": [
+        {
+          "claim": "无法确定该研究中呼吸速率和乙烯产生速率的具体单位。",
+          "status": "contradicted",
+          "reason": "原文证据明确写明‘以mg CO2·kg-1·h-1 和μL C2H4·kg-1·h-1 计’，可确定单位。"
+        },
+        {
+          "claim": "未提供该论文的原文内容。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence包含该论文相关原文段落。"
+        },
+        {
+          "claim": "知识库中不包含该论文的具体计量单位信息。",
+          "status": "unverifiable",
+          "reason": "该断言涉及回答系统内部知识库状态，提供资料无法验证。"
+        },
+        {
+          "claim": "证据为空，无法从已有知识中确认该论文使用的单位。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence并非空，且直接包含单位信息。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 575,
+      "completion_tokens": 231,
+      "total_tokens": 806,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 447
+    },
+    "model": "deepseek-flash",
+    "response_id": "3001d4e0-3ac5-4a75-ac5c-312e4f12260f",
+    "seconds": 6.358200900000156,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

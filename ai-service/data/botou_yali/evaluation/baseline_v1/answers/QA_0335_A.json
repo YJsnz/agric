@@ -1,0 +1,56 @@
+{
+  "id": "QA_0335",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文引言回答我国鸭梨普通冷藏的环境温度范围。",
+      "basis": "未提供该论文的引言内容，且我无法确认或引用该论文的具体表述。",
+      "reasoning": "问题要求依据特定论文的引言作答，但证据为空，我也没有该论文的可靠记忆，因此不能给出具体温度范围，以免编造。",
+      "advice": "请提供该论文引言的原文或相关段落；若需一般性参考，可查阅鸭梨冷藏相关标准或文献，但需注意不同来源的温度设定可能不同。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 147,
+      "completion_tokens": 129,
+      "total_tokens": 276,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 147
+    },
+    "model": "deepseek-flash",
+    "response_id": "63a26af8-a042-4ce2-a661-0c279a1252fb",
+    "seconds": 5.913799800000106,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出温度范围，属于拒答；但题目提供了可回答的原文证据，因此拒答不构成正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1059,
+      "completion_tokens": 42,
+      "total_tokens": 1101,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 931
+    },
+    "model": "deepseek-flash",
+    "response_id": "2bf5478b-fd63-41cf-8409-c965d2296c22",
+    "seconds": 5.4766867000003,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

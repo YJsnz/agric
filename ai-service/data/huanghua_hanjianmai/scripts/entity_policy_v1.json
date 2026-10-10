@@ -1,0 +1,46 @@
+{
+  "crop_id": "huanghua_hanjianmai",
+  "version": "1.0.0",
+  "description": "旱碱麦问答实体抽取与证据融合策略（Step 9 + Step 10）",
+  "entity_slots": {
+    "crop": "作物：黄骅旱碱麦",
+    "region": "地区：黄骅/沧州/河北（含中捷/海兴/南皮等）",
+    "growth_stage": "生育阶段：播前准备/播种/越冬/返青/拔节/抽穗/灌浆/收获",
+    "soil_salinity": "土壤盐分（含单位‰或%），如2‰",
+    "soil_moisture": "土壤墒情：低/中/高，或探墒值",
+    "temperature": "温度（含℃/°C）",
+    "rainfall": "降水（含mm）",
+    "stress": "胁迫：盐胁迫/干旱胁迫/低温寡照/干热风/倒伏/晚播弱苗",
+    "practice": "农艺措施：宽幅沟播/探墒保播/晚播春促/镇压/化控等",
+    "variety": "品种：捷麦19/捷麦20/沧麦系列/小偃系列",
+    "quality_intent": "品质意图：原粮/小麦粉/蛋白质/容重/水分等测评意图"
+  },
+  "evidence_fusion_priority": {
+    "1_huanghua_local": "黄骅本地（含中捷/海兴核心示范区）",
+    "2_cangzhou": "沧州",
+    "3_hebei": "河北",
+    "4_local_peer_review": "本地/区域同行评议论文",
+    "5_general_authoritative": "通用权威资料（国家标准/权威综述）",
+    "6_transfer": "迁移/外区域资料"
+  },
+  "evidence_level_ranking": [
+    "local_authoritative",
+    "cangzhou_authoritative",
+    "hebei_authoritative",
+    "peer_reviewed_local",
+    "peer_reviewed_regional",
+    "government_local_support",
+    "government_science_support"
+  ],
+  "claim_differentiation": {
+    "candidate_研判": "证据一致但属区域外/推断，回答标注为研判、不当作本地定论",
+    "local_conclusion": "黄骅本地证据一致才输出为本地确定性结论"
+  },
+  "rules": [
+    "无证据的 CAUSES 禁止作为结论输出",
+    "本地证据不足时给出研判并保持候选状态，不要因缺证据而拒绝回答",
+    "回答必须带 citation（source_id + 原文句）",
+    "region 不跨级升级：黄骅证据不自动等于沧州/河北",
+    "生产期与采后质量链在融合时区分"
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "id": "QA_0098",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0021",
+    "chunk:PAPER_001_C0004",
+    "chunk:PAPER_001_C0001",
+    "chunk:PAPER_001_C0027",
+    "chunk:PAPER_001_C0017"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称作者初步推测货架期AA升高与果实进一步衰老后活性氧等衰老相关组分含量增加有关，[E4]原文明确记载“初步推测与货架期间果实进一步衰老后，活性氧等衰老相关组分含量增加有关”，且以推测措辞表述，未夸大为因果，得到引用证据支持。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中关于[E4]的转述（货架7 d或10 d后低氧处理和空气对照AA含量均显著升高，初步推测与衰老后活性氧等衰老相关组分含量增加有关，机制仍需研究）与[E4]原文一致；关于[E1]的转述（贮藏270 d货架7 d后AA显著升高）与[E1]原文“贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高”一致，且basis明确说明[E1]未给出原因推测，未补造因果。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning指出[E4]明确给出作者初步推测内容并声明机制尚待研究，[E1]仅描述AA货架期升高现象而未给出原因推测，均与两条引用证据原文相符；且明确不将AA升高与活性氧增加表述为已验证因果，仅作为作者初步推测，未超出证据。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice称该推测为作者初步推测、其生物学功能和作用机制仍需进一步研究，与[E4]原文“但其生物学功能和作用机制仍需进一步研究”一致；建议结合本地实际贮藏与货架条件另行验证属于基于证据局限性的合理提示，未给出证据未支持的剂量、百分比或干预收益。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0021",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.2  不同O2浓度处理对内在品质的影响",
+        "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0004",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+        "pages": [
+          1,
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "中国农业科学  2020,53(23):4918-4928 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2020.23.016收稿日期：2020-03-30；接受日期：2020-06-09基金项目：国家现代梨产业技术体系（CARS-28）、国家自然科学基金（32001761）联系方式：杜艳民，E-mail：duyanmin@caas.cn。通信作者王文辉，E-mail：wangwenhui@caas.cn开放科学（资源服务）标识码（OSID）：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响杜艳民，王文辉，贾晓辉，佟伟，王阳，张鑫楠（中国农业科学院果树研究所/辽宁省果品贮藏与加工重点实验室，辽宁兴城 125100）摘要：【目的】明确环境氧气（O2）浓度对鸭梨采后贮藏品质及生理代谢的影响，为鸭梨采后生理病害防控，延长贮藏期提供理论依据。【方法】将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱，设置1.0%、2.0%、3.0%、5.0%及10.0%等不同O2浓度梯度，CO2浓度为0.5%，以空气处理为对照，分别于贮藏150、210 和270 d 及货架7 或10 d，调查鸭梨虎皮指数和黑心指数，测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血酸（AA）及色泽变化情况，利用气相色谱分析测定果肉和果心组织乙醇含量变化情况，监测果实呼吸速率和乙烯产量；利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS 和PbACO 表达变化情况进行测定。【结果】低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数，贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2；同时，延缓了贮藏早期果实TA 和AA 下降，推迟了果实果面转黄。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0027",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "3.2  环境O2浓度与内在品质变化的关系",
+        "text": "超低氧气调贮藏（O2＜1.5%）是苹果商业生产中常用的一项技术[35]，但在梨商业生产中应用很少，主要原因是多数梨品种对过低O2 敏感，过低的O2 会造成果实发生无氧呼吸进而造成乙醇大量积累，诱发果心组织褐变，果实风味品质下降，例如‘Williams Bon Chretien’在1.0% O2 处理下仅能贮藏4 个月[36]。但同时也有研究表明，适量乙醇作为一种低抗氧化物可明显降低苹果和梨等采后贮藏过程中虎皮病的发生[37-40]。本研究中，5.0%及以下O2 处理果实乙醇含量贮藏前期显著高于10.0%和空气对照，适量乙醇的积累可能一定程度上增强了果实抗性，进而抑制了鸭梨后期虎皮病的发生，但乙醇抗氧化阈值及伤害极值仍需进一步研究确定。CHENG 等[3]研究发现，1-MCP 处理可以显著降低乙烯产量，较好地维持鸭梨果实冷藏期间TA 含量水平，较好地维持果实品质降低黑心指数。杜艳民等[23]研究发现鸭梨贮藏过程中TA 含量与黑心指数显著相关，可作为预测鸭梨黑心病的指标。本研究中，果实可滴定酸（TA）含量随着贮藏时间的延长不断下降，与空气对照相比，2.0%、3.0%、5.0%及10.0% O2处理较好地维持了贮藏后期（270 d）TA 含量，并显著高于空气对照和1.0% O2，且TA 含量越低，黑心指数越高，该结论与前人研究结果一致。抗坏血酸（AA）作为一种抗氧化物质，可与谷胱甘肽等其他抗氧化物质协同清除活性氧分子。前人研究发现，低氧气调处理果实AA 含量显著低于普通冷藏；同时，梨的研究发现，不同黑心病诱导处理下，AA 含量与果实黑心病敏感性显著相关，当AA 含量低于特定阈值时，果实黑心病敏感性增强[41]。本研究中，与空气对照相比，低氧处理更好地维持了贮藏前期果实AA 含量，但随着贮藏期的推迟，低氧处理和对照AA 含量均进一步降低，且处理与对照间差异变小且不显著；但货架7 d 或10 d 后，低氧处理和空气对照AA 含量均显著升高，初步推测与货架期间果实进一步衰老后，活性氧等衰老相关组分含量增加有关，但其生物学功能和作用机制仍需进一步研究。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0017",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "1.3  数据处理与分析",
+        "text": "应用Excel 和SPSS 13.0 进行作图和方差分析。",
+        "pages": [
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "作者对货架期间鸭梨果实抗坏血酸（AA）含量升高的初步推测是：与货架期间果实进一步衰老后，活性氧等衰老相关组分含量增加有关  [E4] 。",
+    "basis": "证据[E4]记载：货架7 d或10 d后，低氧处理和空气对照AA含量均显著升高，初步推测与货架期间果实进一步衰老后，活性氧等衰老相关组分含量增加有关，但其生物学功能和作用机制仍需进一步研究  [E4] 。[E1]亦记录贮藏270 d货架7 d后AA显著升高  [E1] 。",
+    "reasoning": "问题指向该研究作者对货架期AA升高的原因推测。[E4]明确给出作者的初步推测内容，即与果实进一步衰老、活性氧等衰老相关组分含量增加有关，并声明机制尚待研究  [E4] 。[E1]仅描述AA在货架期升高的现象，未给出原因推测  [E1] 。因此以[E4]作为直接依据，不将AA升高与活性氧增加表述为已验证因果，仅作为作者的初步推测。",
+    "advice": "该推测为作者初步推测，其生物学功能和作用机制仍需进一步研究  [E4] ；如需在生产中应用，应结合本地实际贮藏与货架条件另行验证。",
+    "citations": [
+      "E1",
+      "E4"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 0.75,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出作者对货架期AA升高的初步推测：与货架期间果实进一步衰老后活性氧等衰老相关组分含量增加有关，与参考答案一致；并正确限定为初步推测、机制尚待研究，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "作者对货架期间鸭梨果实抗坏血酸（AA）含量升高的初步推测是：与货架期间果实进一步衰老后，活性氧等衰老相关组分含量增加有关。",
+          "status": "supported",
+          "reason": "E4原文明确记载该初步推测。"
+        },
+        {
+          "claim": "货架7 d或10 d后，低氧处理和空气对照AA含量均显著升高。",
+          "status": "supported",
+          "reason": "E4原文明确记载该现象。"
+        },
+        {
+          "claim": "贮藏270 d货架7 d后AA显著升高。",
+          "status": "supported",
+          "reason": "E1原文记载贮藏270 d、货架7 d后AA显著升高。"
+        },
+        {
+          "claim": "该推测的生物学功能和作用机制仍需进一步研究。",
+          "status": "supported",
+          "reason": "E4原文明确说明仍需进一步研究。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3570,
+      "completion_tokens": 232,
+      "total_tokens": 3802,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 2802
+    },
+    "model": "deepseek-flash",
+    "response_id": "51768904-b39c-43eb-9bd6-07b7c026cd97",
+    "seconds": 6.313143799998215,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "作者对货架期间鸭梨果实抗坏血酸（AA）含量升高的初步推测是：与货架期间果实进一步衰老后，活性氧等衰老相关组分含量增加有关 [E4]。",
+        "basis": "证据E4记载：货架7 d或10 d后，低氧处理和空气对照AA含量均显著升高，初步推测与货架期间果实进一步衰老后，活性氧等衰老相关组分含量增加有关，但其生物学功能和作用机制仍需进一步研究 [E4]。E1亦记录贮藏270 d货架7 d后AA显著升高 [E1]。",
+        "reasoning": "问题指向该研究作者对货架期AA升高的原因推测。E4明确给出作者的初步推测内容，即与果实进一步衰老、活性氧等衰老相关组分含量增加有关，并声明机制尚待研究 [E4]。E1仅描述AA在货架期升高的现象，未给出原因推测 [E1]。因此以E4作为直接依据，不将AA升高与活性氧增加表述为已验证因果，仅作为作者的初步推测。",
+        "advice": "该推测为作者初步推测，其生物学功能和作用机制仍需进一步研究 [E4]；如需在生产中应用，应结合本地实际贮藏与货架条件另行验证。",
+        "citations": [
+          "E4",
+          "E1"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2735,
+        "completion_tokens": 288,
+        "total_tokens": 3023,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2607
+      },
+      "model": "deepseek-flash",
+      "response_id": "4dcef18a-e1aa-413c-a0ad-3b57cbb38aa5",
+      "seconds": 6.755432400008431,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 20.23274209999363
+}

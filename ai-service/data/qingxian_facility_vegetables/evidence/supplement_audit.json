@@ -1,0 +1,53 @@
+[
+  {
+    "id": "CAAS_CUCUMBER",
+    "title": "黄瓜细菌性角斑病与霜霉病辨别",
+    "type": "extension",
+    "authority": "中国农业科技信息网（中国农业科学院）",
+    "year": null,
+    "url": "https://cast.caas.cn/kj/syjs/zwbhjs/317422.html",
+    "scope": [
+      "黄瓜",
+      "症状鉴别"
+    ],
+    "fulltext_available": false,
+    "review_status": "web_content_requires_review",
+    "landing_path": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+    "local_path": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+    "sha256": "3349680d95ea6df1cd6f5e61f18563f35f04f97dd12efa2672d7ee7db5ac4044"
+  },
+  {
+    "id": "CAAS_TOMATO",
+    "title": "大棚番茄典型病害症状与防治",
+    "type": "extension",
+    "authority": "中国农业科技信息网（中国农业科学院）",
+    "year": null,
+    "url": "https://cast.caas.cn/kj/syjs/zwbhjs/229746.html",
+    "scope": [
+      "番茄",
+      "病害"
+    ],
+    "fulltext_available": false,
+    "review_status": "web_content_requires_review",
+    "landing_path": "evidence\\raw\\government\\CAAS_TOMATO.html",
+    "local_path": "evidence\\raw\\government\\CAAS_TOMATO.html",
+    "sha256": "d7e42fdc5c2baa0cb7190b354bc20dd7ac28f2926c74114c0f006970a2298186"
+  },
+  {
+    "id": "CAAS_ENV",
+    "title": "棚室蔬菜管理",
+    "type": "extension",
+    "authority": "中国农业科技信息网（中国农业科学院）",
+    "year": null,
+    "url": "https://cast.caas.cn/kj/syjs/zzyjs/257044.html",
+    "scope": [
+      "设施蔬菜",
+      "环境管理"
+    ],
+    "fulltext_available": false,
+    "review_status": "web_content_requires_review",
+    "landing_path": "evidence\\raw\\government\\CAAS_ENV.html",
+    "local_path": "evidence\\raw\\government\\CAAS_ENV.html",
+    "sha256": "2e2a021158d70bfc0675b22bc32c5685ec36931f759cb7b32fb5da599b5a4b60"
+  }
+]

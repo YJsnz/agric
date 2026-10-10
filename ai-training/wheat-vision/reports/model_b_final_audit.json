@@ -1,0 +1,153 @@
+{
+  "raw_total": 1676,
+  "season1": 596,
+  "season2": 1080,
+  "date_directory_count": 19,
+  "numbered_replicate_identities": 90,
+  "physical_identity_across_seasons": "unknown",
+  "sowing_date_das_discrepancies": [
+    {
+      "season": 1,
+      "das": 104,
+      "date": "2015-03-05",
+      "raw_count": 90,
+      "expected_count": 90,
+      "elapsed_from_readme_sowing": 105,
+      "normal_count": 0,
+      "water_stress_count": 0
+    },
+    {
+      "season": 1,
+      "das": 155,
+      "date": "2015-04-25",
+      "raw_count": 90,
+      "expected_count": 90,
+      "elapsed_from_readme_sowing": 156,
+      "normal_count": 0,
+      "water_stress_count": 0
+    },
+    {
+      "season": 1,
+      "das": 175,
+      "date": "2015-05-15",
+      "raw_count": 90,
+      "expected_count": 90,
+      "elapsed_from_readme_sowing": 176,
+      "normal_count": 0,
+      "water_stress_count": 0
+    },
+    {
+      "season": 1,
+      "das": 189,
+      "date": "2015-05-29",
+      "raw_count": 56,
+      "expected_count": 56,
+      "elapsed_from_readme_sowing": 190,
+      "normal_count": 0,
+      "water_stress_count": 0
+    },
+    {
+      "season": 1,
+      "das": 192,
+      "date": "2015-06-01",
+      "raw_count": 90,
+      "expected_count": 90,
+      "elapsed_from_readme_sowing": 193,
+      "normal_count": 0,
+      "water_stress_count": 0
+    },
+    {
+      "season": 1,
+      "das": 197,
+      "date": "2015-06-06",
+      "raw_count": 90,
+      "expected_count": 90,
+      "elapsed_from_readme_sowing": 198,
+      "normal_count": 0,
+      "water_stress_count": 0
+    },
+    {
+      "season": 1,
+      "das": 205,
+      "date": "2015-06-14",
+      "raw_count": 90,
+      "expected_count": 90,
+      "elapsed_from_readme_sowing": 206,
+      "normal_count": 0,
+      "water_stress_count": 0
+    }
+  ],
+  "grouping_policy": "same numbered replicate kept together across seasons conservatively",
+  "plot_id_parsed": 1676,
+  "missing_plot_id": 0,
+  "control_plots": 45,
+  "water_stress_plots": 45,
+  "control_raw": 842,
+  "water_stress_raw": 834,
+  "stress_start": {
+    "1": "unknown",
+    "2": "unknown"
+  },
+  "exclusion_counts": {
+    "missing_stress_start": 1451,
+    "pre_stress": 225
+  },
+  "dimensions": {
+    "3264x2448": 1676
+  },
+  "clean_total": 0,
+  "normal": 0,
+  "corrupt_total": 0,
+  "abnormal_dimensions_total": 0,
+  "water_stress": 0,
+  "duplicates": {
+    "exact_duplicate_groups": 0,
+    "exact_duplicate_redundant": 0,
+    "cross_label_exact_duplicate_groups": 0
+  },
+  "leakage": {
+    "cross_split_plot": 0,
+    "cross_split_exact_duplicate": 0,
+    "label_conflict_entered": 0,
+    "pre_stress_entered": 0,
+    "corrupt_entered": 0,
+    "missing_plot_id_entered": 0,
+    "duplicate_target_filename": 0,
+    "raw_modified_deleted_added": 0
+  },
+  "training_ready": false,
+  "blocked_reasons": [
+    "season1_stress_start_unknown",
+    "season2_stress_start_unknown",
+    "no_eligible_time_matched_images"
+  ],
+  "splits": {
+    "train": {
+      "total": 0,
+      "normal": 0,
+      "water_stress": 0,
+      "plots": 0,
+      "season1": 0,
+      "season2": 0,
+      "dates": []
+    },
+    "val": {
+      "total": 0,
+      "normal": 0,
+      "water_stress": 0,
+      "plots": 0,
+      "season1": 0,
+      "season2": 0,
+      "dates": []
+    },
+    "test": {
+      "total": 0,
+      "normal": 0,
+      "water_stress": 0,
+      "plots": 0,
+      "season1": 0,
+      "season2": 0,
+      "dates": []
+    }
+  }
+}

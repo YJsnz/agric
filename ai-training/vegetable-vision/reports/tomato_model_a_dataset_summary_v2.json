@@ -1,0 +1,106 @@
+{
+  "raw_images": 15254,
+  "exact": {
+    "duplicate_groups": 136,
+    "duplicate_images": 273,
+    "same_label_groups": 86,
+    "same_label_exact_duplicate": 86,
+    "cross_label_groups": 50,
+    "cross_label_exact_duplicate_conflict": 101
+  },
+  "excluded_reasons": {
+    "reviewed_cross_label_same_source_conflict": 1045,
+    "cross_label_exact_duplicate_conflict": 101,
+    "same_label_exact_duplicate": 86
+  },
+  "confirmed_group_counts": {
+    "same_leaf": 110,
+    "same_source_transform": 138,
+    "uncertain": 1
+  },
+  "confirmed_group_images": {
+    "same_leaf": 220,
+    "same_source_transform": 276,
+    "same_scene": 0
+  },
+  "identity_unverified_images": 13526,
+  "candidate_pairs_automatically_scored": 209738,
+  "candidate_pairs_visually_reviewed": 786,
+  "reviewer": "assistant_visual_review_not_human_expert",
+  "human_expert_reviews": 0,
+  "remaining_high_threshold_cross_split_candidates": 0,
+  "remaining_candidates_are_not_confirmed_independent": true,
+  "clean_total": 14022,
+  "class_split_statistics": [
+    {
+      "class_name": "bacterial_spot",
+      "clean": 2348,
+      "train": 1644,
+      "val": 352,
+      "test": 352
+    },
+    {
+      "class_name": "bacterial_spot_and_leaf_miner",
+      "clean": 2496,
+      "train": 1747,
+      "val": 375,
+      "test": 374
+    },
+    {
+      "class_name": "healthy",
+      "clean": 2510,
+      "train": 1757,
+      "val": 377,
+      "test": 376
+    },
+    {
+      "class_name": "leaf_miner",
+      "clean": 2170,
+      "train": 1519,
+      "val": 326,
+      "test": 325
+    },
+    {
+      "class_name": "powdery_mildew",
+      "clean": 1854,
+      "train": 1298,
+      "val": 278,
+      "test": 278
+    },
+    {
+      "class_name": "powdery_mildew_and_leaf_miner",
+      "clean": 2316,
+      "train": 1621,
+      "val": 348,
+      "test": 347
+    },
+    {
+      "class_name": "whitefly",
+      "clean": 328,
+      "train": 230,
+      "val": 49,
+      "test": 49
+    }
+  ],
+  "split_totals": {
+    "test": 2101,
+    "train": 9816,
+    "val": 2105
+  },
+  "cross_split": {
+    "sha256": 0,
+    "pixel_identical": 0,
+    "group": 0,
+    "same_leaf": 0,
+    "same_source_transform": 0,
+    "same_scene": 0
+  },
+  "training_ready_image_level": true,
+  "training_ready_leaf_independent": false,
+  "local_qingxian_validated": false,
+  "raw_modification": 0,
+  "candidate_v1_modification": 0,
+  "ptlid_used": false,
+  "seed": 42,
+  "remaining_risk": "Unreviewed near duplicates and incomplete leaf/plant/scene identity; no strict leaf-independent claim"
+}

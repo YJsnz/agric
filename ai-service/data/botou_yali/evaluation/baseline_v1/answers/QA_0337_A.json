@@ -1,0 +1,56 @@
+{
+  "id": "QA_0337",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文引言回答我国鸭梨气调贮藏的商业应用参数。",
+      "basis": "未提供该论文引言原文，且我无法确认该论文的具体内容。",
+      "reasoning": "问题要求依据特定论文的引言作答，但证据为空，我也没有该论文的可靠记忆，因此不能给出具体参数，以免编造。",
+      "advice": "请提供该论文引言的原文或相关段落；或查阅该论文原文、鸭梨气调贮藏相关综述/标准以获取商业应用参数。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 148,
+      "completion_tokens": 121,
+      "total_tokens": 269,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 148
+    },
+    "model": "deepseek-flash",
+    "response_id": "2184bdae-92be-4d4e-9391-a04138b44582",
+    "seconds": 6.225318799999968,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.3333333333333333,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何具体参数，仅表示无法作答，属于拒答；在可回答题中不视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1057,
+      "completion_tokens": 40,
+      "total_tokens": 1097,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 929
+    },
+    "model": "deepseek-flash",
+    "response_id": "05fde518-86b5-40c8-9df2-00a3911b0663",
+    "seconds": 5.641506299999946,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "QA_0145",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法回答该问题。",
+    "basis": "未提供该论文的原文或具体数据，且我的知识库中不包含该论文中早采缓慢降温和急速降温处理在采后180 d的果心褐变指数数值。",
+    "reasoning": "问题要求给出特定论文中两个处理在贮藏末期的果心褐变指数具体数值。由于没有检索到该论文内容，也没有任何证据片段，无法确认或引用这些数字，因此不能编造。",
+    "advice": "请提供该论文的原文、相关数据表格或摘要，或通过文献数据库获取全文后查阅结果部分。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.6,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何果心褐变指数数值，仅说明无法回答，属于没有作答。提供的原文证据明确包含早采缓慢降温和急速降温处理在采后180 d的果心褐变指数分别为0.21和0.37，因此该题可回答，拒答不能视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1067,
+      "completion_tokens": 80,
+      "total_tokens": 1147,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 299
+    },
+    "model": "deepseek-flash",
+    "response_id": "d0a40735-1085-4ac1-8444-d7d63385c0e1",
+    "seconds": 5.685289500004728,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法回答该问题。",
+        "basis": "未提供该论文的原文或具体数据，且我的知识库中不包含该论文中早采缓慢降温和急速降温处理在采后180 d的果心褐变指数数值。",
+        "reasoning": "问题要求给出特定论文中两个处理在贮藏末期的果心褐变指数具体数值。由于没有检索到该论文内容，也没有任何证据片段，无法确认或引用这些数字，因此不能编造。",
+        "advice": "请提供该论文的原文、相关数据表格或摘要，或通过文献数据库获取全文后查阅结果部分。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 195,
+        "completion_tokens": 141,
+        "total_tokens": 336,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 195
+      },
+      "model": "deepseek-flash",
+      "response_id": "3b3df03e-2b59-4185-a97a-b7b169b87502",
+      "seconds": 6.102716399997007,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 11.789475000012317
+}

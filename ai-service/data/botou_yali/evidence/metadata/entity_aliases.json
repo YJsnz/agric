@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "purpose": "用户查询用词对齐，不新增农学事实或改变证据适用范围",
+  "rules": [
+    {
+      "canonical_name": "梨黑星病",
+      "type": "Disease",
+      "aliases": [
+        "黑星病",
+        "梨树黑星病",
+        "鸭梨黑星",
+        "黑星"
+      ],
+      "basis": "用户指定的梨病害查询别名；标准名称取自现有图谱"
+    },
+    {
+      "canonical_name": "泊头市",
+      "type": "Region",
+      "aliases": [
+        "泊头"
+      ],
+      "basis": "行政区名称简称；仅在对应实体存在时生效"
+    },
+    {
+      "canonical_name": "储藏期",
+      "type": "Stage",
+      "aliases": [
+        "贮藏",
+        "储藏",
+        "贮藏期"
+      ],
+      "basis": "储藏阶段同义词，仅匹配已有阶段实体"
+    }
+  ]
+}

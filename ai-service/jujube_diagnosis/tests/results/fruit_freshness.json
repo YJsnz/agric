@@ -1,0 +1,32 @@
+{
+  "sample": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\data\\jujube_fruit_freshness_classifier_v1\\test\\fresh\\original_image__fresh__033d110d4ba1_cbe9a4d38d21__FreshJujube (89).jpg",
+  "response": {
+    "success": true,
+    "crop": "jujube",
+    "task": "fruit_freshness",
+    "model_name": "jujube_fruit_freshness_yolo11n_cls_v1",
+    "model_version": "v1",
+    "prediction": {
+      "class": "fresh",
+      "label_zh": "新鲜果实外观",
+      "confidence": 0.9985308647155762,
+      "topk": [
+        {
+          "class": "fresh",
+          "label_zh": "新鲜果实外观",
+          "confidence": 0.9985308647155762
+        },
+        {
+          "class": "rotten",
+          "label_zh": "腐败/变质类视觉表现",
+          "confidence": 0.0014690677635371685
+        }
+      ]
+    },
+    "risk_semantics": {
+      "type": "postharvest visual risk evidence",
+      "is_diagnosis": false
+    },
+    "disclaimer": "仅为视觉证据，不是食品安全、是否可食用、储藏寿命、疾病最终确诊或腐败原因诊断；分类得分不是确诊概率。黄化不能直接解释为缺氮、缺铁或盐害。"
+  }
+}

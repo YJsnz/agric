@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "global_mapping": {
+    "Healthy": "healthy",
+    "Healthy Leaf": "healthy",
+    "Healthy Wheat Leaf": "healthy",
+    "healthy": "healthy",
+    "Leaf Rust": "rust",
+    "Stripe Rust": "rust",
+    "Strip Rust": "rust",
+    "Yellow Rust": "rust",
+    "Brown Rust": "rust",
+    "Septoria": "leaf_spot_blight",
+    "Septoria Disease": "leaf_spot_blight",
+    "Leaf Blight": "leaf_spot_blight",
+    "Nitrogen Deficiency": "nitrogen_deficiency",
+    "Nitrogen deficient": "nitrogen_deficiency"
+  },
+  "exclude": [
+    "Black Point",
+    "Fusarium Foot Rot",
+    "Wheat Blast",
+    "Mildew"
+  ],
+  "dataset_specific": [
+    {
+      "source_dataset": "nitrogen_rust",
+      "archive": "Ndeficient.zip",
+      "member_root": "Ndeficient",
+      "subdataset": "nitrogen",
+      "mapping": {
+        "control": "healthy",
+        "healthy": "healthy",
+        "deficiency": "nitrogen_deficiency",
+        "Ndeficient": "nitrogen_deficiency",
+        "nitrogen deficient": "nitrogen_deficiency"
+      },
+      "source_url": "https://data.mendeley.com/datasets/th422bg4yd/1"
+    },
+    {
+      "source_dataset": "nitrogen_rust",
+      "archive": "WheatLeafRust.zip",
+      "member_root": "WheatLeafRust",
+      "subdataset": "rust",
+      "mapping": {
+        "control": "healthy",
+        "healthy": "healthy",
+        "diseased": "rust",
+        "rust": "rust"
+      },
+      "source_url": "https://data.mendeley.com/datasets/th422bg4yd/1"
+    }
+  ]
+}

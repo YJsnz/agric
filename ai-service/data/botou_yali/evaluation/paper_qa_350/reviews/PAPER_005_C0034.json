@@ -1,0 +1,35 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0342",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的试验中，贮藏初期，鸭梨果皮和果肉中PbAAT1的表达量有何差异？",
+      "answer_quote": "贮藏初期，果皮中PbAAT1 表达量高于果肉。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0343",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的试验中，随着贮藏时间延长，鸭梨果皮中PbAAT1表达量呈现什么变化趋势？",
+      "answer_quote": "随着贮藏时间延长，果皮中PbAAT1 表达量呈下降趋势。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0344",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的试验中，贮藏期间，窖藏和冷藏鸭梨果肉的PbAAT1表达量有何不同？",
+      "answer_quote": "同时，窖藏果肉的PbAAT1 表达迅速提高，明显高于冷藏果肉。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0345",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的试验中，与冷藏相比，窖藏鸭梨果实的PbADH2表达量下调速度如何？",
+      "answer_quote": "与冷藏相比，窖藏果实的PbADH2 表达量下调更为迅速。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0346",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的试验中，贮藏过程中，鸭梨PbLOX1表达量在哪种贮藏条件下、哪个部位上调表现明显？",
+      "answer_quote": "贮藏过程中，PbLOX1 表达量以窖藏果肉上调表现明显。",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

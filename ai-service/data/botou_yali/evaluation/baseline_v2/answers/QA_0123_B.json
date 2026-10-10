@@ -1,0 +1,251 @@
+{
+  "id": "QA_0123",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_003_C0021",
+    "chunk:PAPER_003_C0020",
+    "chunk:PAPER_003_C0019",
+    "chunk:PAPER_003_C0017",
+    "chunk:PAPER_003_C0018"
+  ],
+  "service_response": {
+    "status": "insufficient_evidence",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "no_factual_claims",
+          "reason": "该字段仅陈述证据未直接说明直接入0℃库的生理变化、无法给出结论，未提出任何事实主张，也未引用证据。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中关于证据仅涉及缓慢降温与早/晚采收对鸭梨果心脂肪酸组分、相变温度、LOX活性及褐变影响、未提供直接入0℃库数据的陈述，得到所引E2、E3支持：E2描述缓慢降温对早采鸭梨脂肪酸、相变温度、LOX活性及褐变的影响，E3摘要说明研究不同降温方法对膜脂肪酸组分、含量、相变温度、LOX活性及果心褐变的影响，均未给出直接入0℃库的生理变化数据。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning中缓慢降温提高不饱和脂肪酸与U/S值、降低相变温度、抑制LOX活性并减轻早采鸭梨果心褐变，以及晚采果实衰老快、LOX活性后期上升、膜脂过氧化严重而更易褐变，均直接来自所引E2；未将缓慢降温结论反向推定为直接入0℃库结果，符合证据边界。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "该字段为请用户补充直接入0℃库与缓慢降温对比试验数据或明确降温速率、采收期及测定指标的建议，未提出可核查的事实主张，也未引用证据。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_003_C0021",
+      "kind": "document_chunk",
+      "content": {
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+        "text": " Key words: fruits, storage, cooling, harvesting, fatty acid, phase transition, Yali pear, lipoxygenase (LOX)",
+        "pages": [
+          7
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "采收期",
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_003_C0020",
+      "kind": "document_chunk",
+      "content": {
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+        "text": " And the contents of linoleic acid, palmitic acid and oleic acid were more. Slow cooling increased linolenic acid and linoleic acid relative contents and unsaturated-saturated fatty acid ratio (U/S) value, reduced the phase transition temperature, significantly inhibited LOX activity and browning of the core of early harvested Yali pears. Late harvest increased the U/S value, reduced the phase transition temperature of the core. But because the harvest period was later, fruits senesced more quickly, LOX activity rose quickly in the late period, and membrane lipid peroxidation got serious. All these changes mentioned above finally made the late harvested fruits much easier to get browning. In a word, early harvesting and slow cooling could increase the contents of unsaturated fatty acid and U/S value, restrain the core browning of Yali pear after harvest.",
+        "pages": [
+          7
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "采收期",
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_003_C0019",
+      "kind": "document_chunk",
+      "content": {
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+        "text": " Food Science Department, Tianjin Agricultural University, Tianjin 300384, China; 2. Food College, Xinjiang Shihezi University, Shihezi 832003, China; 3. College of Food Science and Nutritional Engineering, China Agricultural University, Beijing 100083, China) Abstract: In order to investigate the mechanism that slow cooling inhibits the browning of Yali pears after harvest, the effect of different cooling methods on membrane fatty acid components, contents, phase transition temperature, lipoxygenase (LOX) activity and browning of core of Yali pears with different harvest period were studied. The results showed that fatty acid components of core contained lauric acid, tetradecanoic acid, palmitic acid, palmitoleic acid, perlatolic acid, stearic acid, oleic acid, linoleic acid, linolenic acid.",
+        "pages": [
+          6,
+          7
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "采收期",
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_003_C0017",
+      "kind": "document_chunk",
+      "content": {
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+        "text": " Energy metabolism and membrane lipid alterations in relation to brown heart development in ‘Conference’pears duringdelayed controlled atmosphere storage[J]. Postharvest Biology and Technology, 2003, 30(2): 123－132. [14] Yamaki S, Uritani L. Mechanism of chilling injury in sweet potatoes V. Biochemical mechanism of chilling injury with specialre ference to mitochondrial components[J]. Agr Biol Chem, 1972, 36(1): 47－55. [15] 沈同主编．生物化学[M]．北京：高等教育出版社，2001．[16] 高慧，饶景萍．冷害对贮藏油桃膜脂脂肪酸及相关酶活性的影响．西北植物学报，2007，27(4)：710－714．Gao Hui, Rao Jingping. Effect of chilling injury on membrane fatty acid and enzymatic activity of stored nectarines[J]. Acta Bot.Boreal.-Occident.Sin, 2007, 27(4): 710－714. (in Chinese with English abstract) [17] 罗自生．热激减轻柿果冷害及其与脂氧合酶的关系．果树学报，2006，23(3)：454－457．Luo Zisheng.",
+        "pages": [
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "采收期",
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_003_C0018",
+      "kind": "document_chunk",
+      "content": {
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+        "text": " Relationship between heat shock alleviating chilling injury and lipoxygenase of persimmon fruit[J]. Journal of Fruit Science, 2006, 23(3): 454－457. (in Chinese with English abstract) [18] Uemura M, Joseph R A, Stepondus P L. Cold acclimation of Arabidopsis thaliana: Effect on plasma membrane composition and freezing induced lesions[J]. Plant Physiol, 1995, 109(1): 15－30. [19] 张玮，谢锦忠，吴继林，等．低温驯化对部分丛生竹种叶片膜脂脂肪酸的影响[J]．林业科学研究，2009，22(1)：139－143．Zhang Wei, Xie Jinzhong, Wu Jilin, et al. Changes in membrane lipid fatty acids of some sympodial bamboos in response to low temperature exposure[J]. Forest Research, 2009, 22(1): 139－143. (in Chinese with English abstract) Effects of different cooling methods on core browning and membrane fatty acid components of postharvest Yali pears with different harvest periods Yan Shijie1, Liang Liya1, Chen Jiluan2, Li Xiaodan1, Hu Xiaosong3※(1.",
+        "pages": [
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "采收期",
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "现有证据未直接说明鸭梨直接进入0℃库会导致哪些生理变化，无法据此给出结论。",
+    "basis": "证据仅涉及缓慢降温与早/晚采收对鸭梨果心脂肪酸组分、相变温度、LOX活性及褐变的影响，未提供直接入0℃库（快速降温）的生理变化数据 [E2]  [E3] 。",
+    "reasoning": "检索到的证据描述了缓慢降温可提高不饱和脂肪酸与U/S值、降低相变温度、抑制LOX活性并减轻早采鸭梨果心褐变 [E2] ；晚采果实衰老快、LOX活性后期上升、膜脂过氧化严重而更易褐变 [E2] 。但没有任何证据直接比较或描述直接进入0℃库的生理变化，因此不能将缓慢降温的结论反向推定为直接入0℃库的结果。",
+    "advice": "请补充直接入0℃库（快速降温）与缓慢降温对比的试验数据，或明确降温速率、采收期及测定指标，以便进一步判断。",
+    "citations": [
+      "E2",
+      "E3"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 0.25,
+  "judge": {
+    "result": {
+      "correctness": "incorrect",
+      "reason": "参考答案明确给出直接进入0℃库会导致多酚氧化酶活性升高、细胞膜透性增加、底物与酶接触发生褐变反应，而回答以证据不足为由拒答，未给出这些关键生理变化，属于对可回答问题的错误处理。",
+      "claims": [
+        {
+          "claim": "现有证据未直接说明鸭梨直接进入0℃库会导致哪些生理变化，无法据此给出结论。",
+          "status": "contradicted",
+          "reason": "论文原文明确记载：鸭梨对低温比较敏感，直接进入到0℃库中，多酚氧化酶活性升高，细胞膜透性增加，使底物和酶接触发生褐变反应。"
+        },
+        {
+          "claim": "证据仅涉及缓慢降温与早/晚采收对鸭梨果心脂肪酸组分、相变温度、LOX活性及褐变的影响，未提供直接入0℃库（快速降温）的生理变化数据。",
+          "status": "contradicted",
+          "reason": "论文原文直接提供了直接进入0℃库的生理变化数据，包括多酚氧化酶活性升高、细胞膜透性增加和褐变反应。"
+        },
+        {
+          "claim": "缓慢降温可提高不饱和脂肪酸与U/S值、降低相变温度、抑制LOX活性并减轻早采鸭梨果心褐变。",
+          "status": "supported",
+          "reason": "检索证据E2明确支持缓慢降温提高亚麻酸和亚油酸相对含量及U/S值、降低相变温度、显著抑制LOX活性和早采鸭梨果心褐变。"
+        },
+        {
+          "claim": "晚采果实衰老快、LOX活性后期上升、膜脂过氧化严重而更易褐变。",
+          "status": "supported",
+          "reason": "检索证据E2明确支持晚采果实衰老更快、后期LOX活性快速上升、膜脂过氧化严重，最终更易褐变。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2670,
+      "completion_tokens": 386,
+      "total_tokens": 3056,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 2030
+    },
+    "model": "deepseek-flash",
+    "response_id": "c53fcb74-80c1-41e9-8129-4ef22d47207e",
+    "seconds": 7.867873099996359,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "现有证据未直接说明鸭梨直接进入0℃库会导致哪些生理变化，无法据此给出结论。",
+        "basis": "证据仅涉及缓慢降温与早/晚采收对鸭梨果心脂肪酸组分、相变温度、LOX活性及褐变的影响，未提供直接入0℃库（快速降温）的生理变化数据[E2][E3]。",
+        "reasoning": "检索到的证据描述了缓慢降温可提高不饱和脂肪酸与U/S值、降低相变温度、抑制LOX活性并减轻早采鸭梨果心褐变[E2]；晚采果实衰老快、LOX活性后期上升、膜脂过氧化严重而更易褐变[E2]。但没有任何证据直接比较或描述直接进入0℃库的生理变化，因此不能将缓慢降温的结论反向推定为直接入0℃库的结果。",
+        "advice": "请补充直接入0℃库（快速降温）与缓慢降温对比的试验数据，或明确降温速率、采收期及测定指标，以便进一步判断。",
+        "citations": [
+          "E2",
+          "E3"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2011,
+        "completion_tokens": 249,
+        "total_tokens": 2260,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1883
+      },
+      "model": "deepseek-flash",
+      "response_id": "af2d9535-9ed6-4e59-88be-25f53f977c89",
+      "seconds": 7.0689896999974735,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 21.59637620000285
+}

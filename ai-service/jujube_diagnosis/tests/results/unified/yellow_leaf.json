@@ -1,0 +1,1224 @@
+{
+  "case": "yellow_leaf",
+  "sample": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\data\\jujube_leaf_classifier_v3_final\\test\\yellow_leaf\\58py9f3nsy__yellow_leaf__06c7922ccf78f152__ceb40e597dc96a0e0b13.jpg",
+  "response": {
+    "success": true,
+    "crop": "jujube",
+    "task": "leaf",
+    "visual": {
+      "class": "yellow_leaf",
+      "label_zh": "黄化视觉表现",
+      "confidence": 0.544951856136322,
+      "topk": [
+        {
+          "class": "yellow_leaf",
+          "label_zh": "黄化视觉表现",
+          "confidence": 0.544951856136322
+        },
+        {
+          "class": "powdery_mildew",
+          "label_zh": "白粉病类视觉表现",
+          "confidence": 0.16307145357131958
+        },
+        {
+          "class": "anthracnose",
+          "label_zh": "炭疽病类视觉表现",
+          "confidence": 0.1392844021320343
+        },
+        {
+          "class": "healthy",
+          "label_zh": "健康叶片视觉状态",
+          "confidence": 0.10188911110162735
+        },
+        {
+          "class": "insect_damage",
+          "label_zh": "虫害损伤视觉表现",
+          "confidence": 0.05080318823456764
+        }
+      ],
+      "model_name": "jujube_leaf_yolo11n_cls_v1",
+      "model_version": "v1",
+      "task": "leaf",
+      "is_diagnosis": false,
+      "confidence_level": "low"
+    },
+    "visual_confidence_level": "low",
+    "mapped_entity": {
+      "id": "cangzhou_jinsixiaozao:a5e740fa9c590561",
+      "name": "黄化视觉表现",
+      "type": "VisualSymptom",
+      "is_diagnosis": false
+    },
+    "context": {
+      "temperature": null,
+      "humidity": null,
+      "storage_temperature": null,
+      "storage_humidity": null,
+      "storage_days": null,
+      "harvest_method": null,
+      "transport_condition": null,
+      "notes": null
+    },
+    "reasoning": {
+      "crop_id": "cangzhou_jinsixiaozao",
+      "question": "当前检测到黄化视觉表现，现有证据是否支持病因研判？",
+      "entities": {
+        "region": null,
+        "growth_stage": null,
+        "organ": "leaf",
+        "symptom": null,
+        "disease_or_pest": null,
+        "weather": null,
+        "rainfall": null,
+        "humidity": null,
+        "irrigation": null,
+        "crop": "cangzhou_jinsixiaozao",
+        "region_source": null,
+        "harvest_intent": false,
+        "storage_intent": false,
+        "scope": "production",
+        "intent": "information",
+        "damage_query": false,
+        "cross_stage_query": false,
+        "uncovered_symptom": true,
+        "visual_boundary": true,
+        "provided_context": {
+          "user_context": {},
+          "visual_entity": {
+            "id": "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "name": "黄化视觉表现",
+            "type": "VisualSymptom",
+            "is_diagnosis": false
+          },
+          "visual_class": "yellow_leaf",
+          "visual_evidence_only": true,
+          "visual_confidence_level": "low"
+        },
+        "visual_label": "yellow_leaf"
+      },
+      "generation_called": true,
+      "status": "insufficient_evidence",
+      "retrieval": {
+        "graph_status": "ok",
+        "graph_evidence_count": 4,
+        "vector_evidence_count": 4,
+        "fused_count": 4
+      },
+      "knowledge_graph": {
+        "edges": [
+          {
+            "id": "JVE_iron_yellow_leaf",
+            "source": "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "target": "cangzhou_jinsixiaozao:3b25aa6302ec22d1",
+            "subject": "黄化视觉表现",
+            "object": "果树缺铁性黄叶方向",
+            "relation": "PROMPTS_DIFFERENTIAL_CHECK",
+            "kind": "reviewed_differential_rule_not_diagnosis",
+            "source_id": "JV001",
+            "source_ids": [
+              "JV001"
+            ],
+            "title": "果树花叶病与黄叶病",
+            "region": "湖南",
+            "crop": [
+              "枣/果树排查方向"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": null,
+            "evidence_text": "果树黄叶病，是由于植物组织内铁的缺乏造成的一种生理病害。其特征是：黄叶从新梢的顶端嫩叶开始，越往枝节条的下端，老叶表现越轻。叶片受害后，叶肉变黄，叶脉两侧仍为绿色，故呈绿色网纹状。严重时，叶片失绿加重，变成白色，并在失绿部分出现锈褐色枯斑或叶缘焦枯，引起落叶。",
+            "page": null,
+            "section": "果树黄叶病，是由于",
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JVC_iron",
+            "locator": {
+              "file": "evidence/raw/JV001.txt",
+              "section": "果树黄叶病，是由于",
+              "page": null,
+              "char_start": 494,
+              "char_end": 624
+            },
+            "conditions": [
+              "新梢嫩叶先黄、叶脉仍绿时再核验；资料针对一般果树，不是金丝小枣确诊依据。"
+            ],
+            "evidence_ids": [
+              "JV001",
+              "JVC_iron"
+            ],
+            "evidence": [
+              {
+                "id": "JVC_iron",
+                "source_id": "JV001",
+                "quote": "果树黄叶病，是由于植物组织内铁的缺乏造成的一种生理病害。其特征是：黄叶从新梢的顶端嫩叶开始，越往枝节条的下端，老叶表现越轻。叶片受害后，叶肉变黄，叶脉两侧仍为绿色，故呈绿色网纹状。严重时，叶片失绿加重，变成白色，并在失绿部分出现锈褐色枯斑或叶缘焦枯，引起落叶。",
+                "locator": {
+                  "file": "evidence/raw/JV001.txt",
+                  "section": "果树黄叶病，是由于",
+                  "page": null,
+                  "char_start": 494,
+                  "char_end": 624
+                }
+              }
+            ],
+            "source_type": "government_extension",
+            "year": 2013,
+            "original_text": "果树黄叶病，是由于植物组织内铁的缺乏造成的一种生理病害。其特征是：黄叶从新梢的顶端嫩叶开始，越往枝节条的下端，老叶表现越轻。叶片受害后，叶肉变黄，叶脉两侧仍为绿色，故呈绿色网纹状。严重时，叶片失绿加重，变成白色，并在失绿部分出现锈褐色枯斑或叶缘焦枯，引起落叶。",
+            "normalized_claim": "黄化视觉表现 prompts checking 果树缺铁性黄叶方向"
+          },
+          {
+            "id": "JVE_mosaic_yellow_leaf",
+            "source": "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "target": "cangzhou_jinsixiaozao:097a1840e5d2b216",
+            "subject": "黄化视觉表现",
+            "object": "花叶/斑驳方向",
+            "relation": "PROMPTS_DIFFERENTIAL_CHECK",
+            "kind": "reviewed_differential_rule_not_diagnosis",
+            "source_id": "JV001",
+            "source_ids": [
+              "JV001"
+            ],
+            "title": "果树花叶病与黄叶病",
+            "region": "湖南",
+            "crop": [
+              "枣/果树排查方向"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": null,
+            "evidence_text": "（一）表现症状不同：果树花叶病是一种病毒病，树叶呈现各种类型的斑驳状。典型的病斑，沿叶脉扩展褪绿变黄，其余部分仍为绿色。发病轻时，叶片局部散生淡黄色或黄白色大小不等的零星花斑，不形成坏死斑；发病较重时，沿叶脉变色，出现白色或黄白色的坏死斑块，其中以沿叶脉变色为明显，叶片呈黄色网纹状；发病严重时，全叶成为黄绿相间的花斑，沿叶脉变色，斑块坏死，其中以大型斑块占多数，夏季发生，早期落叶。",
+            "page": null,
+            "section": "（一）表现症状不同：",
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JVC_mosaic",
+            "locator": {
+              "file": "evidence/raw/JV001.txt",
+              "section": "（一）表现症状不同：",
+              "page": null,
+              "char_start": 301,
+              "char_end": 493
+            },
+            "conditions": [
+              "原文描述黄绿相间斑驳；单纯黄化不能确定病毒病。"
+            ],
+            "evidence_ids": [
+              "JV001",
+              "JVC_mosaic"
+            ],
+            "evidence": [
+              {
+                "id": "JVC_mosaic",
+                "source_id": "JV001",
+                "quote": "（一）表现症状不同：果树花叶病是一种病毒病，树叶呈现各种类型的斑驳状。典型的病斑，沿叶脉扩展褪绿变黄，其余部分仍为绿色。发病轻时，叶片局部散生淡黄色或黄白色大小不等的零星花斑，不形成坏死斑；发病较重时，沿叶脉变色，出现白色或黄白色的坏死斑块，其中以沿叶脉变色为明显，叶片呈黄色网纹状；发病严重时，全叶成为黄绿相间的花斑，沿叶脉变色，斑块坏死，其中以大型斑块占多数，夏季发生，早期落叶。",
+                "locator": {
+                  "file": "evidence/raw/JV001.txt",
+                  "section": "（一）表现症状不同：",
+                  "page": null,
+                  "char_start": 301,
+                  "char_end": 493
+                }
+              }
+            ],
+            "source_type": "government_extension",
+            "year": 2013,
+            "original_text": "（一）表现症状不同：果树花叶病是一种病毒病，树叶呈现各种类型的斑驳状。典型的病斑，沿叶脉扩展褪绿变黄，其余部分仍为绿色。发病轻时，叶片局部散生淡黄色或黄白色大小不等的零星花斑，不形成坏死斑；发病较重时，沿叶脉变色，出现白色或黄白色的坏死斑块，其中以沿叶脉变色为明显，叶片呈黄色网纹状；发病严重时，全叶成为黄绿相间的花斑，沿叶脉变色，斑块坏死，其中以大型斑块占多数，夏季发生，早期落叶。",
+            "normalized_claim": "黄化视觉表现 prompts checking 花叶/斑驳方向"
+          },
+          {
+            "id": "JVE_broom_yellow_leaf",
+            "source": "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "target": "cangzhou_jinsixiaozao:df80f7af6bc81afa",
+            "subject": "黄化视觉表现",
+            "object": "枣疯病伴随症状排查",
+            "relation": "PROMPTS_DIFFERENTIAL_CHECK",
+            "kind": "reviewed_differential_rule_not_diagnosis",
+            "source_id": "JV002",
+            "source_ids": [
+              "JV002"
+            ],
+            "title": "情牵群众 技术为民 治疗枣疯病采用放疗化疗加换头 900余株枣树开治枣疯病",
+            "region": "北京",
+            "crop": [
+              "枣/果树排查方向"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": null,
+            "evidence_text": "其次是枝叶丛生。1年生发育枝的主芽和多年生发育枝上的隐芽非正常萌发，一年多次萌生出细小枝叶，病枝纤细，节间缩短，芽不正常发育和生长所引起的枝叶丛生，形成\"丛状枝\"；再次是叶片表现异常。病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状等，到了秋冬季节，树干上原是休眠期的隐芽经常大量萌发 ,抽生黄绿细小的枝丛，到冬季自然枯死而不脱落；",
+            "page": null,
+            "section": "其次是枝叶丛生。",
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JVC_broom",
+            "locator": {
+              "file": "evidence/raw/JV002.txt",
+              "section": "其次是枝叶丛生。",
+              "page": null,
+              "char_start": 1269,
+              "char_end": 1433
+            },
+            "conditions": [
+              "仅在黄化同时伴随丛枝、叶片卷曲等表现时值得现场排查，不从一张黄叶图推断枣疯病。"
+            ],
+            "evidence_ids": [
+              "JV002",
+              "JVC_broom"
+            ],
+            "evidence": [
+              {
+                "id": "JVC_broom",
+                "source_id": "JV002",
+                "quote": "其次是枝叶丛生。1年生发育枝的主芽和多年生发育枝上的隐芽非正常萌发，一年多次萌生出细小枝叶，病枝纤细，节间缩短，芽不正常发育和生长所引起的枝叶丛生，形成\"丛状枝\"；再次是叶片表现异常。病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状等，到了秋冬季节，树干上原是休眠期的隐芽经常大量萌发 ,抽生黄绿细小的枝丛，到冬季自然枯死而不脱落；",
+                "locator": {
+                  "file": "evidence/raw/JV002.txt",
+                  "section": "其次是枝叶丛生。",
+                  "page": null,
+                  "char_start": 1269,
+                  "char_end": 1433
+                }
+              }
+            ],
+            "source_type": "government_extension",
+            "year": 2022,
+            "original_text": "其次是枝叶丛生。1年生发育枝的主芽和多年生发育枝上的隐芽非正常萌发，一年多次萌生出细小枝叶，病枝纤细，节间缩短，芽不正常发育和生长所引起的枝叶丛生，形成\"丛状枝\"；再次是叶片表现异常。病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状等，到了秋冬季节，树干上原是休眠期的隐芽经常大量萌发 ,抽生黄绿细小的枝丛，到冬季自然枯死而不脱落；",
+            "normalized_claim": "黄化视觉表现 prompts checking 枣疯病伴随症状排查"
+          },
+          {
+            "id": "JVE_rust_yellow_leaf",
+            "source": "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "target": "cangzhou_jinsixiaozao:40d6bef9de80136a",
+            "subject": "黄化视觉表现",
+            "object": "枣锈病叶背表现排查",
+            "relation": "PROMPTS_DIFFERENTIAL_CHECK",
+            "kind": "reviewed_differential_rule_not_diagnosis",
+            "source_id": "JV003",
+            "source_ids": [
+              "JV003"
+            ],
+            "title": "枣病虫害防治",
+            "region": "北京",
+            "crop": [
+              "枣/果树排查方向"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": null,
+            "evidence_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+            "page": null,
+            "section": "（一）枣锈病：",
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JVC_rust",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（一）枣锈病：",
+              "page": null,
+              "char_start": 1308,
+              "char_end": 1353
+            },
+            "conditions": [
+              "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。"
+            ],
+            "evidence_ids": [
+              "JV003",
+              "JVC_rust"
+            ],
+            "evidence": [
+              {
+                "id": "JVC_rust",
+                "source_id": "JV003",
+                "quote": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+                "locator": {
+                  "file": "evidence/raw/JV003.txt",
+                  "section": "（一）枣锈病：",
+                  "page": null,
+                  "char_start": 1308,
+                  "char_end": 1353
+                }
+              }
+            ],
+            "source_type": "government_extension",
+            "year": 2015,
+            "original_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+            "normalized_claim": "黄化视觉表现 prompts checking 枣锈病叶背表现排查"
+          }
+        ]
+      },
+      "paths": [
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:3b25aa6302ec22d1"
+          ],
+          "edge_ids": [
+            "JVE_iron_yellow_leaf"
+          ],
+          "relations": [
+            "PROMPTS_DIFFERENTIAL_CHECK"
+          ],
+          "evidence_ids": [
+            "JVC_iron"
+          ],
+          "source_ids": [
+            "JV001"
+          ]
+        },
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:097a1840e5d2b216"
+          ],
+          "edge_ids": [
+            "JVE_mosaic_yellow_leaf"
+          ],
+          "relations": [
+            "PROMPTS_DIFFERENTIAL_CHECK"
+          ],
+          "evidence_ids": [
+            "JVC_mosaic"
+          ],
+          "source_ids": [
+            "JV001"
+          ]
+        },
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:df80f7af6bc81afa"
+          ],
+          "edge_ids": [
+            "JVE_broom_yellow_leaf"
+          ],
+          "relations": [
+            "PROMPTS_DIFFERENTIAL_CHECK"
+          ],
+          "evidence_ids": [
+            "JVC_broom"
+          ],
+          "source_ids": [
+            "JV002"
+          ]
+        },
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:40d6bef9de80136a"
+          ],
+          "edge_ids": [
+            "JVE_rust_yellow_leaf"
+          ],
+          "relations": [
+            "PROMPTS_DIFFERENTIAL_CHECK"
+          ],
+          "evidence_ids": [
+            "JVC_rust"
+          ],
+          "source_ids": [
+            "JV003"
+          ]
+        }
+      ],
+      "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+      "evidence": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "JV001",
+          "title": "果树花叶病与黄叶病",
+          "content": "果树黄叶病，是由于植物组织内铁的缺乏造成的一种生理病害。其特征是：黄叶从新梢的顶端嫩叶开始，越往枝节条的下端，老叶表现越轻。叶片受害后，叶肉变黄，叶脉两侧仍为绿色，故呈绿色网纹状。严重时，叶片失绿加重，变成白色，并在失绿部分出现锈褐色枯斑或叶缘焦枯，引起落叶。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "湖南",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "果树缺铁性黄叶方向",
+            "source_id": "JV001",
+            "locator": {
+              "file": "evidence/raw/JV001.txt",
+              "section": "果树黄叶病，是由于",
+              "page": null,
+              "char_start": 494,
+              "char_end": 624
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "f1d0578978f077b80fd77b8ecbb0049b1c906fd9ab0b0494d8c913addb3b1108",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "新梢嫩叶先黄、叶脉仍绿时再核验；资料针对一般果树，不是金丝小枣确诊依据。",
+            "source_crop": "一般果树",
+            "visual_labels": [
+              "yellow_leaf"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "湖南",
+          "original_text": "果树黄叶病，是由于植物组织内铁的缺乏造成的一种生理病害。其特征是：黄叶从新梢的顶端嫩叶开始，越往枝节条的下端，老叶表现越轻。叶片受害后，叶肉变黄，叶脉两侧仍为绿色，故呈绿色网纹状。严重时，叶片失绿加重，变成白色，并在失绿部分出现锈褐色枯斑或叶缘焦枯，引起落叶。",
+          "source_type": "government_extension",
+          "year": 2013,
+          "url": "https://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2590115.html",
+          "chunk_id": "JVC_iron",
+          "edge_ids": [
+            "JVE_iron_yellow_leaf"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:3b25aa6302ec22d1"
+          ]
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "JV001",
+          "title": "果树花叶病与黄叶病",
+          "content": "（一）表现症状不同：果树花叶病是一种病毒病，树叶呈现各种类型的斑驳状。典型的病斑，沿叶脉扩展褪绿变黄，其余部分仍为绿色。发病轻时，叶片局部散生淡黄色或黄白色大小不等的零星花斑，不形成坏死斑；发病较重时，沿叶脉变色，出现白色或黄白色的坏死斑块，其中以沿叶脉变色为明显，叶片呈黄色网纹状；发病严重时，全叶成为黄绿相间的花斑，沿叶脉变色，斑块坏死，其中以大型斑块占多数，夏季发生，早期落叶。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "湖南",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "花叶/斑驳方向",
+            "source_id": "JV001",
+            "locator": {
+              "file": "evidence/raw/JV001.txt",
+              "section": "（一）表现症状不同：",
+              "page": null,
+              "char_start": 301,
+              "char_end": 493
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "f1d0578978f077b80fd77b8ecbb0049b1c906fd9ab0b0494d8c913addb3b1108",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "原文描述黄绿相间斑驳；单纯黄化不能确定病毒病。",
+            "source_crop": "一般果树",
+            "visual_labels": [
+              "yellow_leaf"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "湖南",
+          "original_text": "（一）表现症状不同：果树花叶病是一种病毒病，树叶呈现各种类型的斑驳状。典型的病斑，沿叶脉扩展褪绿变黄，其余部分仍为绿色。发病轻时，叶片局部散生淡黄色或黄白色大小不等的零星花斑，不形成坏死斑；发病较重时，沿叶脉变色，出现白色或黄白色的坏死斑块，其中以沿叶脉变色为明显，叶片呈黄色网纹状；发病严重时，全叶成为黄绿相间的花斑，沿叶脉变色，斑块坏死，其中以大型斑块占多数，夏季发生，早期落叶。",
+          "source_type": "government_extension",
+          "year": 2013,
+          "url": "https://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2590115.html",
+          "chunk_id": "JVC_mosaic",
+          "edge_ids": [
+            "JVE_mosaic_yellow_leaf"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:097a1840e5d2b216"
+          ]
+        },
+        {
+          "evidence_id": "E3",
+          "kind": "document_chunk",
+          "source_id": "JV003",
+          "title": "枣病虫害防治",
+          "content": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "枣锈病叶背表现排查",
+            "source_id": "JV003",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（一）枣锈病：",
+              "page": null,
+              "char_start": 1308,
+              "char_end": 1353
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "589bf2c64aa654d50e6943f1e090c56b43c540fcb38e44751517ca718f32908a",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "yellow_leaf",
+              "anthracnose"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "source_type": "government_extension",
+          "year": 2015,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+          "chunk_id": "JVC_rust",
+          "edge_ids": [
+            "JVE_rust_yellow_leaf",
+            "JVE_rust_anthracnose"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:40d6bef9de80136a",
+            "cangzhou_jinsixiaozao:64ab661a761abd86"
+          ]
+        },
+        {
+          "evidence_id": "E4",
+          "kind": "document_chunk",
+          "source_id": "JV002",
+          "title": "情牵群众 技术为民 治疗枣疯病采用放疗化疗加换头 900余株枣树开治枣疯病",
+          "content": "其次是枝叶丛生。1年生发育枝的主芽和多年生发育枝上的隐芽非正常萌发，一年多次萌生出细小枝叶，病枝纤细，节间缩短，芽不正常发育和生长所引起的枝叶丛生，形成\"丛状枝\"；再次是叶片表现异常。病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状等，到了秋冬季节，树干上原是休眠期的隐芽经常大量萌发 ,抽生黄绿细小的枝丛，到冬季自然枯死而不脱落；",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "枣疯病伴随症状排查",
+            "source_id": "JV002",
+            "locator": {
+              "file": "evidence/raw/JV002.txt",
+              "section": "其次是枝叶丛生。",
+              "page": null,
+              "char_start": 1269,
+              "char_end": 1433
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "556288d0ba07e815b39c445f9c171b694716b586c672da125b4aa1e2a840c83d",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "仅在黄化同时伴随丛枝、叶片卷曲等表现时值得现场排查，不从一张黄叶图推断枣疯病。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "yellow_leaf"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "其次是枝叶丛生。1年生发育枝的主芽和多年生发育枝上的隐芽非正常萌发，一年多次萌生出细小枝叶，病枝纤细，节间缩短，芽不正常发育和生长所引起的枝叶丛生，形成\"丛状枝\"；再次是叶片表现异常。病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状等，到了秋冬季节，树干上原是休眠期的隐芽经常大量萌发 ,抽生黄绿细小的枝丛，到冬季自然枯死而不脱落；",
+          "source_type": "government_extension",
+          "year": 2022,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/lhysh/st/202206/t20220628_2754185.shtml",
+          "chunk_id": "JVC_broom",
+          "edge_ids": [
+            "JVE_broom_yellow_leaf"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:df80f7af6bc81afa"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "JV001",
+          "title": "果树花叶病与黄叶病",
+          "content": "果树黄叶病，是由于植物组织内铁的缺乏造成的一种生理病害。其特征是：黄叶从新梢的顶端嫩叶开始，越往枝节条的下端，老叶表现越轻。叶片受害后，叶肉变黄，叶脉两侧仍为绿色，故呈绿色网纹状。严重时，叶片失绿加重，变成白色，并在失绿部分出现锈褐色枯斑或叶缘焦枯，引起落叶。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "湖南",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "果树缺铁性黄叶方向",
+            "source_id": "JV001",
+            "locator": {
+              "file": "evidence/raw/JV001.txt",
+              "section": "果树黄叶病，是由于",
+              "page": null,
+              "char_start": 494,
+              "char_end": 624
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "f1d0578978f077b80fd77b8ecbb0049b1c906fd9ab0b0494d8c913addb3b1108",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "新梢嫩叶先黄、叶脉仍绿时再核验；资料针对一般果树，不是金丝小枣确诊依据。",
+            "source_crop": "一般果树",
+            "visual_labels": [
+              "yellow_leaf"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "湖南",
+          "original_text": "果树黄叶病，是由于植物组织内铁的缺乏造成的一种生理病害。其特征是：黄叶从新梢的顶端嫩叶开始，越往枝节条的下端，老叶表现越轻。叶片受害后，叶肉变黄，叶脉两侧仍为绿色，故呈绿色网纹状。严重时，叶片失绿加重，变成白色，并在失绿部分出现锈褐色枯斑或叶缘焦枯，引起落叶。",
+          "source_type": "government_extension",
+          "year": 2013,
+          "url": "https://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2590115.html",
+          "chunk_id": "JVC_iron",
+          "edge_ids": [
+            "JVE_iron_yellow_leaf"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:3b25aa6302ec22d1"
+          ]
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "JV001",
+          "title": "果树花叶病与黄叶病",
+          "content": "（一）表现症状不同：果树花叶病是一种病毒病，树叶呈现各种类型的斑驳状。典型的病斑，沿叶脉扩展褪绿变黄，其余部分仍为绿色。发病轻时，叶片局部散生淡黄色或黄白色大小不等的零星花斑，不形成坏死斑；发病较重时，沿叶脉变色，出现白色或黄白色的坏死斑块，其中以沿叶脉变色为明显，叶片呈黄色网纹状；发病严重时，全叶成为黄绿相间的花斑，沿叶脉变色，斑块坏死，其中以大型斑块占多数，夏季发生，早期落叶。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "湖南",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "花叶/斑驳方向",
+            "source_id": "JV001",
+            "locator": {
+              "file": "evidence/raw/JV001.txt",
+              "section": "（一）表现症状不同：",
+              "page": null,
+              "char_start": 301,
+              "char_end": 493
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "f1d0578978f077b80fd77b8ecbb0049b1c906fd9ab0b0494d8c913addb3b1108",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "原文描述黄绿相间斑驳；单纯黄化不能确定病毒病。",
+            "source_crop": "一般果树",
+            "visual_labels": [
+              "yellow_leaf"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "湖南",
+          "original_text": "（一）表现症状不同：果树花叶病是一种病毒病，树叶呈现各种类型的斑驳状。典型的病斑，沿叶脉扩展褪绿变黄，其余部分仍为绿色。发病轻时，叶片局部散生淡黄色或黄白色大小不等的零星花斑，不形成坏死斑；发病较重时，沿叶脉变色，出现白色或黄白色的坏死斑块，其中以沿叶脉变色为明显，叶片呈黄色网纹状；发病严重时，全叶成为黄绿相间的花斑，沿叶脉变色，斑块坏死，其中以大型斑块占多数，夏季发生，早期落叶。",
+          "source_type": "government_extension",
+          "year": 2013,
+          "url": "https://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2590115.html",
+          "chunk_id": "JVC_mosaic",
+          "edge_ids": [
+            "JVE_mosaic_yellow_leaf"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:097a1840e5d2b216"
+          ]
+        },
+        {
+          "evidence_id": "E3",
+          "kind": "document_chunk",
+          "source_id": "JV003",
+          "title": "枣病虫害防治",
+          "content": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "枣锈病叶背表现排查",
+            "source_id": "JV003",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（一）枣锈病：",
+              "page": null,
+              "char_start": 1308,
+              "char_end": 1353
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "589bf2c64aa654d50e6943f1e090c56b43c540fcb38e44751517ca718f32908a",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "yellow_leaf",
+              "anthracnose"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "source_type": "government_extension",
+          "year": 2015,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+          "chunk_id": "JVC_rust",
+          "edge_ids": [
+            "JVE_rust_yellow_leaf",
+            "JVE_rust_anthracnose"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:40d6bef9de80136a",
+            "cangzhou_jinsixiaozao:64ab661a761abd86"
+          ]
+        },
+        {
+          "evidence_id": "E4",
+          "kind": "document_chunk",
+          "source_id": "JV002",
+          "title": "情牵群众 技术为民 治疗枣疯病采用放疗化疗加换头 900余株枣树开治枣疯病",
+          "content": "其次是枝叶丛生。1年生发育枝的主芽和多年生发育枝上的隐芽非正常萌发，一年多次萌生出细小枝叶，病枝纤细，节间缩短，芽不正常发育和生长所引起的枝叶丛生，形成\"丛状枝\"；再次是叶片表现异常。病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状等，到了秋冬季节，树干上原是休眠期的隐芽经常大量萌发 ,抽生黄绿细小的枝丛，到冬季自然枯死而不脱落；",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "枣疯病伴随症状排查",
+            "source_id": "JV002",
+            "locator": {
+              "file": "evidence/raw/JV002.txt",
+              "section": "其次是枝叶丛生。",
+              "page": null,
+              "char_start": 1269,
+              "char_end": 1433
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "556288d0ba07e815b39c445f9c171b694716b586c672da125b4aa1e2a840c83d",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "仅在黄化同时伴随丛枝、叶片卷曲等表现时值得现场排查，不从一张黄叶图推断枣疯病。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "yellow_leaf"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "其次是枝叶丛生。1年生发育枝的主芽和多年生发育枝上的隐芽非正常萌发，一年多次萌生出细小枝叶，病枝纤细，节间缩短，芽不正常发育和生长所引起的枝叶丛生，形成\"丛状枝\"；再次是叶片表现异常。病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状等，到了秋冬季节，树干上原是休眠期的隐芽经常大量萌发 ,抽生黄绿细小的枝丛，到冬季自然枯死而不脱落；",
+          "source_type": "government_extension",
+          "year": 2022,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/lhysh/st/202206/t20220628_2754185.shtml",
+          "chunk_id": "JVC_broom",
+          "edge_ids": [
+            "JVE_broom_yellow_leaf"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:df80f7af6bc81afa"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "JV001",
+          "title": "果树花叶病与黄叶病",
+          "content": "果树黄叶病，是由于植物组织内铁的缺乏造成的一种生理病害。其特征是：黄叶从新梢的顶端嫩叶开始，越往枝节条的下端，老叶表现越轻。叶片受害后，叶肉变黄，叶脉两侧仍为绿色，故呈绿色网纹状。严重时，叶片失绿加重，变成白色，并在失绿部分出现锈褐色枯斑或叶缘焦枯，引起落叶。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "湖南",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "果树缺铁性黄叶方向",
+            "source_id": "JV001",
+            "locator": {
+              "file": "evidence/raw/JV001.txt",
+              "section": "果树黄叶病，是由于",
+              "page": null,
+              "char_start": 494,
+              "char_end": 624
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "f1d0578978f077b80fd77b8ecbb0049b1c906fd9ab0b0494d8c913addb3b1108",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "新梢嫩叶先黄、叶脉仍绿时再核验；资料针对一般果树，不是金丝小枣确诊依据。",
+            "source_crop": "一般果树",
+            "visual_labels": [
+              "yellow_leaf"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "湖南",
+          "original_text": "果树黄叶病，是由于植物组织内铁的缺乏造成的一种生理病害。其特征是：黄叶从新梢的顶端嫩叶开始，越往枝节条的下端，老叶表现越轻。叶片受害后，叶肉变黄，叶脉两侧仍为绿色，故呈绿色网纹状。严重时，叶片失绿加重，变成白色，并在失绿部分出现锈褐色枯斑或叶缘焦枯，引起落叶。",
+          "source_type": "government_extension",
+          "year": 2013,
+          "url": "https://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2590115.html",
+          "chunk_id": "JVC_iron",
+          "edge_ids": [
+            "JVE_iron_yellow_leaf"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:3b25aa6302ec22d1"
+          ]
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "JV001",
+          "title": "果树花叶病与黄叶病",
+          "content": "（一）表现症状不同：果树花叶病是一种病毒病，树叶呈现各种类型的斑驳状。典型的病斑，沿叶脉扩展褪绿变黄，其余部分仍为绿色。发病轻时，叶片局部散生淡黄色或黄白色大小不等的零星花斑，不形成坏死斑；发病较重时，沿叶脉变色，出现白色或黄白色的坏死斑块，其中以沿叶脉变色为明显，叶片呈黄色网纹状；发病严重时，全叶成为黄绿相间的花斑，沿叶脉变色，斑块坏死，其中以大型斑块占多数，夏季发生，早期落叶。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "湖南",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "花叶/斑驳方向",
+            "source_id": "JV001",
+            "locator": {
+              "file": "evidence/raw/JV001.txt",
+              "section": "（一）表现症状不同：",
+              "page": null,
+              "char_start": 301,
+              "char_end": 493
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "f1d0578978f077b80fd77b8ecbb0049b1c906fd9ab0b0494d8c913addb3b1108",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "原文描述黄绿相间斑驳；单纯黄化不能确定病毒病。",
+            "source_crop": "一般果树",
+            "visual_labels": [
+              "yellow_leaf"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "湖南",
+          "original_text": "（一）表现症状不同：果树花叶病是一种病毒病，树叶呈现各种类型的斑驳状。典型的病斑，沿叶脉扩展褪绿变黄，其余部分仍为绿色。发病轻时，叶片局部散生淡黄色或黄白色大小不等的零星花斑，不形成坏死斑；发病较重时，沿叶脉变色，出现白色或黄白色的坏死斑块，其中以沿叶脉变色为明显，叶片呈黄色网纹状；发病严重时，全叶成为黄绿相间的花斑，沿叶脉变色，斑块坏死，其中以大型斑块占多数，夏季发生，早期落叶。",
+          "source_type": "government_extension",
+          "year": 2013,
+          "url": "https://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2590115.html",
+          "chunk_id": "JVC_mosaic",
+          "edge_ids": [
+            "JVE_mosaic_yellow_leaf"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:097a1840e5d2b216"
+          ]
+        },
+        {
+          "evidence_id": "E3",
+          "kind": "document_chunk",
+          "source_id": "JV003",
+          "title": "枣病虫害防治",
+          "content": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "枣锈病叶背表现排查",
+            "source_id": "JV003",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（一）枣锈病：",
+              "page": null,
+              "char_start": 1308,
+              "char_end": 1353
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "589bf2c64aa654d50e6943f1e090c56b43c540fcb38e44751517ca718f32908a",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "yellow_leaf",
+              "anthracnose"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "source_type": "government_extension",
+          "year": 2015,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+          "chunk_id": "JVC_rust",
+          "edge_ids": [
+            "JVE_rust_yellow_leaf",
+            "JVE_rust_anthracnose"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:40d6bef9de80136a",
+            "cangzhou_jinsixiaozao:64ab661a761abd86"
+          ]
+        },
+        {
+          "evidence_id": "E4",
+          "kind": "document_chunk",
+          "source_id": "JV002",
+          "title": "情牵群众 技术为民 治疗枣疯病采用放疗化疗加换头 900余株枣树开治枣疯病",
+          "content": "其次是枝叶丛生。1年生发育枝的主芽和多年生发育枝上的隐芽非正常萌发，一年多次萌生出细小枝叶，病枝纤细，节间缩短，芽不正常发育和生长所引起的枝叶丛生，形成\"丛状枝\"；再次是叶片表现异常。病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状等，到了秋冬季节，树干上原是休眠期的隐芽经常大量萌发 ,抽生黄绿细小的枝丛，到冬季自然枯死而不脱落；",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "枣疯病伴随症状排查",
+            "source_id": "JV002",
+            "locator": {
+              "file": "evidence/raw/JV002.txt",
+              "section": "其次是枝叶丛生。",
+              "page": null,
+              "char_start": 1269,
+              "char_end": 1433
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "556288d0ba07e815b39c445f9c171b694716b586c672da125b4aa1e2a840c83d",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "仅在黄化同时伴随丛枝、叶片卷曲等表现时值得现场排查，不从一张黄叶图推断枣疯病。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "yellow_leaf"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "其次是枝叶丛生。1年生发育枝的主芽和多年生发育枝上的隐芽非正常萌发，一年多次萌生出细小枝叶，病枝纤细，节间缩短，芽不正常发育和生长所引起的枝叶丛生，形成\"丛状枝\"；再次是叶片表现异常。病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状等，到了秋冬季节，树干上原是休眠期的隐芽经常大量萌发 ,抽生黄绿细小的枝丛，到冬季自然枯死而不脱落；",
+          "source_type": "government_extension",
+          "year": 2022,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/lhysh/st/202206/t20220628_2754185.shtml",
+          "chunk_id": "JVC_broom",
+          "edge_ids": [
+            "JVE_broom_yellow_leaf"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:df80f7af6bc81afa"
+          ]
+        }
+      ],
+      "grounding": {
+        "passed": true,
+        "checks": [
+          {
+            "field": "conclusion",
+            "verdict": "supported",
+            "reason": "结论仅将E1-E4所述症状作为候选方向排查线索，并明确声明不是现场确诊、不能当作疾病概率或风险等级，与各证据的purpose=candidate_assessment_only、transfer_review=symptom_comparison_only及applicability一致，未超出引用证据范围。"
+          },
+          {
+            "field": "basis",
+            "verdict": "supported",
+            "reason": "basis对E1-E4的转述与原文一致：E1为一般果树缺铁性黄叶症状且注明非金丝小枣确诊依据，E2强调黄绿相间斑驳、单纯黄化不能确定病毒病，E3为枣锈病叶背鉴别线索，E4为枣疯病伴随症状且不能从一张黄叶图推断，均未补造缺失事实。"
+          },
+          {
+            "field": "reasoning",
+            "verdict": "supported",
+            "reason": "reasoning所述低置信度视觉线索、用户未提供现场信息、视觉分类分数不等于疾病概率、证据均为transfer_pending/symptom_comparison_only、不能用于本地确诊或用药指导，均与policy.answer_scope=candidate_assessment及证据metadata一致，未将候选方向写成确诊或概率。"
+          },
+          {
+            "field": "advice",
+            "verdict": "supported",
+            "reason": "advice仅给出按E1-E4症状特征进行观察核验的方向，并明确不能据此确诊或用药、需结合现场复核，未推荐药名、剂量、施药周期或生产操作，符合candidate_assessment模式限制。"
+          }
+        ],
+        "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+      },
+      "local_conclusion": {
+        "available": false,
+        "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+      },
+      "differential_assessment": {
+        "available": true,
+        "kind": "reviewed_evidence_lookup_not_image_diagnosis",
+        "directions": [
+          {
+            "id": "iron",
+            "chunk_id": "JVC_iron",
+            "candidate": "果树缺铁性黄叶方向",
+            "applicability": "新梢嫩叶先黄、叶脉仍绿时再核验；资料针对一般果树，不是金丝小枣确诊依据。",
+            "question": "黄叶是否先从新梢嫩叶出现，叶脉是否仍绿？",
+            "visual_labels": [
+              "yellow_leaf"
+            ],
+            "relation_kind": "differential_not_diagnostic",
+            "evidence_ids": [
+              "E1"
+            ],
+            "evidence_level": "L4",
+            "region": "湖南",
+            "evidence_text": "果树黄叶病，是由于植物组织内铁的缺乏造成的一种生理病害。其特征是：黄叶从新梢的顶端嫩叶开始，越往枝节条的下端，老叶表现越轻。叶片受害后，叶肉变黄，叶脉两侧仍为绿色，故呈绿色网纹状。严重时，叶片失绿加重，变成白色，并在失绿部分出现锈褐色枯斑或叶缘焦枯，引起落叶。",
+            "source_id": "JV001",
+            "is_diagnosis": false
+          },
+          {
+            "id": "mosaic",
+            "chunk_id": "JVC_mosaic",
+            "candidate": "花叶/斑驳方向",
+            "applicability": "原文描述黄绿相间斑驳；单纯黄化不能确定病毒病。",
+            "question": "叶片是均匀黄化，还是黄绿相间斑驳？",
+            "visual_labels": [
+              "yellow_leaf"
+            ],
+            "relation_kind": "differential_not_diagnostic",
+            "evidence_ids": [
+              "E2"
+            ],
+            "evidence_level": "L4",
+            "region": "湖南",
+            "evidence_text": "（一）表现症状不同：果树花叶病是一种病毒病，树叶呈现各种类型的斑驳状。典型的病斑，沿叶脉扩展褪绿变黄，其余部分仍为绿色。发病轻时，叶片局部散生淡黄色或黄白色大小不等的零星花斑，不形成坏死斑；发病较重时，沿叶脉变色，出现白色或黄白色的坏死斑块，其中以沿叶脉变色为明显，叶片呈黄色网纹状；发病严重时，全叶成为黄绿相间的花斑，沿叶脉变色，斑块坏死，其中以大型斑块占多数，夏季发生，早期落叶。",
+            "source_id": "JV001",
+            "is_diagnosis": false
+          },
+          {
+            "id": "broom",
+            "chunk_id": "JVC_broom",
+            "candidate": "枣疯病伴随症状排查",
+            "applicability": "仅在黄化同时伴随丛枝、叶片卷曲等表现时值得现场排查，不从一张黄叶图推断枣疯病。",
+            "question": "是否同时出现异常细小丛枝、叶片匙状卷曲？",
+            "visual_labels": [
+              "yellow_leaf"
+            ],
+            "relation_kind": "differential_not_diagnostic",
+            "evidence_ids": [
+              "E4"
+            ],
+            "evidence_level": "L4",
+            "region": "北京",
+            "evidence_text": "其次是枝叶丛生。1年生发育枝的主芽和多年生发育枝上的隐芽非正常萌发，一年多次萌生出细小枝叶，病枝纤细，节间缩短，芽不正常发育和生长所引起的枝叶丛生，形成\"丛状枝\"；再次是叶片表现异常。病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状等，到了秋冬季节，树干上原是休眠期的隐芽经常大量萌发 ,抽生黄绿细小的枝丛，到冬季自然枯死而不脱落；",
+            "source_id": "JV002",
+            "is_diagnosis": false
+          },
+          {
+            "id": "rust",
+            "chunk_id": "JVC_rust",
+            "candidate": "枣锈病叶背表现排查",
+            "applicability": "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。",
+            "question": "叶背是否有由淡绿色小点变成暗黄褐色的凸起？",
+            "visual_labels": [
+              "yellow_leaf",
+              "anthracnose"
+            ],
+            "relation_kind": "differential_not_diagnostic",
+            "evidence_ids": [
+              "E3"
+            ],
+            "evidence_level": "L4",
+            "region": "北京",
+            "evidence_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+            "source_id": "JV003",
+            "is_diagnosis": false
+          }
+        ],
+        "questions": [
+          "黄叶是否先从新梢嫩叶出现，叶脉是否仍绿？",
+          "叶片是均匀黄化，还是黄绿相间斑驳？",
+          "是否同时出现异常细小丛枝、叶片匙状卷曲？"
+        ],
+        "local_verified": false,
+        "notice": "按原文症状提供核验方向，不代表照片已具备这些特征；外地/一般果树资料不等于沧州本地验证。"
+      },
+      "preliminary_assessment": {
+        "available": true,
+        "summary": "现有证据只能支持对叶片黄化做候选方向排查，不能据此研判病因。资料中提到的黄化相关方向包括：缺铁性黄叶病，表现为新梢顶端嫩叶先黄、叶肉变黄而叶脉两侧仍绿呈绿色网纹状 [E1] ；花叶病，表现为沿叶脉褪绿变黄、黄绿相间斑驳，单纯黄化不能确定病毒病 [E2] ；枣锈病，叶背初生淡绿色小点后渐凸起呈暗黄褐色 [E3] ；枣疯病，病株叶片黄化、变脆、叶缘向正面卷曲呈匙状，并伴枝叶丛生 [E4] 。这些均为一般果树或枣树的鉴别线索，不是对当前金丝小枣叶片的现场确诊，也不能把视觉分类结果当作疾病概率或风险等级。",
+        "supporting_points": [
+          "[E1]为一般果树缺铁性黄叶病的症状描述，适用条件是新梢嫩叶先黄、叶脉仍绿时再核验，且明确不是金丝小枣确诊依据 [E1] 。[E2]为果树花叶病症状描述，原文强调黄绿相间斑驳，单纯黄化不能确定病毒病 [E2] 。[E3]为枣锈病叶背表现，属于鉴别线索，不是图像已检测到的特征 [E3] 。[E4]为枣疯病伴随症状，仅在黄化同时伴随丛枝、叶片卷曲等表现时值得现场排查，不能从一张黄叶图推断枣疯病 [E4] 。"
+        ],
+        "uncertainties": [
+          "当前仅有低置信度黄化视觉线索，用户未提供地区、生育期、天气、灌溉等现场信息，provided_context.user_context为空，不能补造 [E1]  [E2]  [E3]  [E4] 。视觉分类及其分数不是疾病概率或风险等级，低置信度只能作为较弱视觉线索 [E1]  [E2]  [E3]  [E4] 。上述资料均为transfer_pending、symptom_comparison_only，允许用于候选解释与观察提问，不能用于本地确诊或用药指导 [E1]  [E2]  [E3]  [E4] 。资料中的症状不是照片已检测到的症状，不能把候选方向写成确诊或概率 [E1]  [E2]  [E3]  [E4] 。"
+        ]
+      },
+      "answer": "视觉证据较弱，应结合环境、症状和知识证据进一步判断。\n现有证据只能支持对叶片黄化做候选方向排查，不能据此研判病因。资料中提到的黄化相关方向包括：缺铁性黄叶病，表现为新梢顶端嫩叶先黄、叶肉变黄而叶脉两侧仍绿呈绿色网纹状 [E1] ；花叶病，表现为沿叶脉褪绿变黄、黄绿相间斑驳，单纯黄化不能确定病毒病 [E2] ；枣锈病，叶背初生淡绿色小点后渐凸起呈暗黄褐色 [E3] ；枣疯病，病株叶片黄化、变脆、叶缘向正面卷曲呈匙状，并伴枝叶丛生 [E4] 。这些均为一般果树或枣树的鉴别线索，不是对当前金丝小枣叶片的现场确诊，也不能把视觉分类结果当作疾病概率或风险等级。\n\n建议先按候选方向分别核对：缺铁性黄叶方向，观察黄化是否从新梢顶端嫩叶开始、叶脉两侧是否仍绿呈绿色网纹状 [E1] ；花叶病方向，观察叶片是否呈黄绿相间斑驳、是否沿叶脉褪绿变黄 [E2] ；枣锈病方向，翻看叶背是否有淡绿色小点后渐凸起呈暗黄褐色 [E3] ；枣疯病方向，观察是否同时出现枝叶丛生、叶片变脆、叶缘向正面卷曲呈匙状等表现 [E4] 。以上仅为观察核验方向，不能据此确诊或用药，需结合现场复核 [E1]  [E2]  [E3]  [E4] 。",
+      "grounded_answer": {
+        "sufficient": false,
+        "conclusion": "现有证据只能支持对叶片黄化做候选方向排查，不能据此研判病因。资料中提到的黄化相关方向包括：缺铁性黄叶病，表现为新梢顶端嫩叶先黄、叶肉变黄而叶脉两侧仍绿呈绿色网纹状 [E1] ；花叶病，表现为沿叶脉褪绿变黄、黄绿相间斑驳，单纯黄化不能确定病毒病 [E2] ；枣锈病，叶背初生淡绿色小点后渐凸起呈暗黄褐色 [E3] ；枣疯病，病株叶片黄化、变脆、叶缘向正面卷曲呈匙状，并伴枝叶丛生 [E4] 。这些均为一般果树或枣树的鉴别线索，不是对当前金丝小枣叶片的现场确诊，也不能把视觉分类结果当作疾病概率或风险等级。",
+        "basis": "[E1]为一般果树缺铁性黄叶病的症状描述，适用条件是新梢嫩叶先黄、叶脉仍绿时再核验，且明确不是金丝小枣确诊依据 [E1] 。[E2]为果树花叶病症状描述，原文强调黄绿相间斑驳，单纯黄化不能确定病毒病 [E2] 。[E3]为枣锈病叶背表现，属于鉴别线索，不是图像已检测到的特征 [E3] 。[E4]为枣疯病伴随症状，仅在黄化同时伴随丛枝、叶片卷曲等表现时值得现场排查，不能从一张黄叶图推断枣疯病 [E4] 。",
+        "reasoning": "当前仅有低置信度黄化视觉线索，用户未提供地区、生育期、天气、灌溉等现场信息，provided_context.user_context为空，不能补造 [E1]  [E2]  [E3]  [E4] 。视觉分类及其分数不是疾病概率或风险等级，低置信度只能作为较弱视觉线索 [E1]  [E2]  [E3]  [E4] 。上述资料均为transfer_pending、symptom_comparison_only，允许用于候选解释与观察提问，不能用于本地确诊或用药指导 [E1]  [E2]  [E3]  [E4] 。资料中的症状不是照片已检测到的症状，不能把候选方向写成确诊或概率 [E1]  [E2]  [E3]  [E4] 。",
+        "advice": "建议先按候选方向分别核对：缺铁性黄叶方向，观察黄化是否从新梢顶端嫩叶开始、叶脉两侧是否仍绿呈绿色网纹状 [E1] ；花叶病方向，观察叶片是否呈黄绿相间斑驳、是否沿叶脉褪绿变黄 [E2] ；枣锈病方向，翻看叶背是否有淡绿色小点后渐凸起呈暗黄褐色 [E3] ；枣疯病方向，观察是否同时出现枝叶丛生、叶片变脆、叶缘向正面卷曲呈匙状等表现 [E4] 。以上仅为观察核验方向，不能据此确诊或用药，需结合现场复核 [E1]  [E2]  [E3]  [E4] 。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ],
+        "candidate_assessments": [
+          {
+            "candidate_name": "缺铁性黄叶病方向",
+            "assessment": "资料描述一般果树黄叶病由铁缺乏引起，黄叶从新梢顶端嫩叶开始，叶肉变黄而叶脉两侧仍绿呈绿色网纹状，严重时失绿加重、出现锈褐色枯斑或叶缘焦枯[E1]。该资料针对一般果树，不是金丝小枣确诊依据，且当前只有低置信度黄化视觉线索，不能据此研判为缺铁。",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "candidate_name": "花叶病方向",
+            "assessment": "资料描述果树花叶病为病毒病，叶片呈黄绿相间斑驳，沿叶脉扩展褪绿变黄，其余部分仍为绿色[E2]。原文明确单纯黄化不能确定病毒病，当前视觉线索不足以支持该方向。",
+            "evidence_ids": [
+              "E2"
+            ]
+          },
+          {
+            "candidate_name": "枣锈病方向",
+            "assessment": "资料描述枣锈病在叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落[E3]。这是叶背表现的鉴别线索，不是图像已检测到的特征，当前黄化视觉线索不能支持该方向。",
+            "evidence_ids": [
+              "E3"
+            ]
+          },
+          {
+            "candidate_name": "枣疯病方向",
+            "assessment": "资料描述枣疯病病株叶片黄化、变脆，叶片边缘向正面卷曲呈匙状，并伴枝叶丛生、节间缩短等表现[E4]。仅在黄化同时伴随丛枝、叶片卷曲等表现时值得现场排查，不能从一张黄叶图推断枣疯病。",
+            "evidence_ids": [
+              "E4"
+            ]
+          }
+        ]
+      }
+    },
+    "risk": {
+      "stage": "production",
+      "type": "leaf visual symptom evidence",
+      "level": null
+    },
+    "limitations": [
+      "仅为视觉证据，不是食品安全、是否可食用、储藏寿命、疾病最终确诊或腐败原因诊断；分类得分不是确诊概率。黄化不能直接解释为缺氮、缺铁或盐害。",
+      "视觉展示级别不是风险等级；risk.level 未评分。"
+    ],
+    "degraded": false,
+    "degraded_mode": null
+  }
+}

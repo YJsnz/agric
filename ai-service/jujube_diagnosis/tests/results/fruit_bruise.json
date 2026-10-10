@@ -1,0 +1,32 @@
+{
+  "sample": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\data\\jujube_fruit_bruise_classifier_v2\\test\\bruised\\bruise_105.jpg",
+  "response": {
+    "success": true,
+    "crop": "jujube",
+    "task": "fruit_bruise",
+    "model_name": "jujube_fruit_bruise_yolo11n_cls_v1",
+    "model_version": "v1",
+    "prediction": {
+      "class": "bruised",
+      "label_zh": "碰伤/机械损伤类视觉表现",
+      "confidence": 1.0,
+      "topk": [
+        {
+          "class": "bruised",
+          "label_zh": "碰伤/机械损伤类视觉表现",
+          "confidence": 1.0
+        },
+        {
+          "class": "healthy",
+          "label_zh": "正常果实外观",
+          "confidence": 9.284147339805315e-10
+        }
+      ]
+    },
+    "risk_semantics": {
+      "type": "postharvest visual risk evidence",
+      "is_diagnosis": false
+    },
+    "disclaimer": "仅为视觉证据，不是食品安全、是否可食用、储藏寿命、疾病最终确诊或腐败原因诊断；分类得分不是确诊概率。黄化不能直接解释为缺氮、缺铁或盐害。"
+  }
+}

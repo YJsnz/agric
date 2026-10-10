@@ -1,0 +1,701 @@
+[
+  {
+    "question": "持续高湿会不会影响泊头鸭梨后期储藏？",
+    "result": {
+      "results": [
+        {
+          "candidate_id": "chunk:GOV_002_C0002",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 13,
+            "score": 0.6085411906242371,
+            "chunk_id": "GOV_002_C0002",
+            "source_id": "GOV_002",
+            "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+            "section": "二、贮藏保鲜条件",
+            "section_id": "GOV_002_S002",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "采收期",
+              "储藏期"
+            ],
+            "evidence_level": "C",
+            "source_type": "government",
+            "year": 2004,
+            "source_file_sha256": "c58d87e3c5cff96112300e941b68df90ff5ec312c8b8363b4b36f0b9c87daef6",
+            "source_url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/browser.html",
+            "text": "1、温度。不同梨品种要求的贮藏温度有所差异，长期贮藏保鲜的温度大致在-1℃至2℃之间。鸭梨对温度比较敏感，采后需在10-12℃温度下预冷并缓慢降温至0-3℃贮藏，如果采后立即放在0℃条件下贮藏，则会发生生理伤害，导致果心、果肉褐变。2、湿度。影响梨在贮藏期间失水的环境因素主要是湿度，贮藏库的相对湿度应保持在90-95%；梨的失水也与自身因素有关，如果实气孔的多少和张度、蜡质层厚薄、果胶的多少等。3、气体成分。总的来说梨对二氧化碳比较敏感，高二氧化碳会引起梨的生理代谢失调而发生生理病害，使果肉褐变。鸭梨在5-7%的氧气和无二氧化碳的环境下，能有效抑制、降低黑心病的发病率。",
+            "char_count": 288,
+            "start_offset": 0,
+            "end_offset": 288,
+            "overlap_chars": 0,
+            "text_sha256": "33c573a5565c5074f4b18a10db2b5478135434232377f0aea7e1220c05c481d5",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 288
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          },
+          "reranker_score": 4.034376621246338,
+          "matched_window": {
+            "start": 0,
+            "end": 317,
+            "text": "鸭梨的贮藏保鲜技术（政府林业科普资料）\n二、贮藏保鲜条件\n1、温度。不同梨品种要求的贮藏温度有所差异，长期贮藏保鲜的温度大致在-1℃至2℃之间。鸭梨对温度比较敏感，采后需在10-12℃温度下预冷并缓慢降温至0-3℃贮藏，如果采后立即放在0℃条件下贮藏，则会发生生理伤害，导致果心、果肉褐变。2、湿度。影响梨在贮藏期间失水的环境因素主要是湿度，贮藏库的相对湿度应保持在90-95%；梨的失水也与自身因素有关，如果实气孔的多少和张度、蜡质层厚薄、果胶的多少等。3、气体成分。总的来说梨对二氧化碳比较敏感，高二氧化碳会引起梨的生理代谢失调而发生生理病害，使果肉褐变。鸭梨在5-7%的氧气和无二氧化碳的环境下，能有效抑制、降低黑心病的发病率。"
+          },
+          "rank": 1
+        },
+        {
+          "candidate_id": "chunk:GOV_002_C0004",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 3,
+            "score": 0.6405559778213501,
+            "chunk_id": "GOV_002_C0004",
+            "source_id": "GOV_002",
+            "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+            "section": "四、贮藏中的主要问题及防止措施",
+            "section_id": "GOV_002_S004",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "采收期",
+              "储藏期"
+            ],
+            "evidence_level": "C",
+            "source_type": "government",
+            "year": 2004,
+            "source_file_sha256": "c58d87e3c5cff96112300e941b68df90ff5ec312c8b8363b4b36f0b9c87daef6",
+            "source_url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/browser.html",
+            "text": "1、梨的干耗与库房湿度。梨果水分含量高，贮期失水是主要问题之一。为减少失水需增加贮藏库内湿度。可采用地面洒水或库壁四周及通风道等处挂湿草帘等方法。2、二氧化碳积累与通风换气。库房内二氧化碳高于2%时会出现果心、果肉褐变等病害。因此，加强库房通风换气，减少二氧化碳积累，以及减少乙烯等有害气体的积累，是梨果贮藏的技术关键。所以，要在贮藏的前期和后期每天通风换气1-2小时，中期2-3天换气一次，每次1-2小时；或置于风扇、冷气机下，通过库内气体和循环吸收二氧化碳。该法可减少通风换气带来的干耗。",
+            "char_count": 246,
+            "start_offset": 0,
+            "end_offset": 246,
+            "overlap_chars": 0,
+            "text_sha256": "98cd93252d27d9db6960de74fd4a37ff76a7df0cfd244ae9307d46966f40a55f",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 246
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          },
+          "reranker_score": 3.272496461868286,
+          "matched_window": {
+            "start": 0,
+            "end": 282,
+            "text": "鸭梨的贮藏保鲜技术（政府林业科普资料）\n四、贮藏中的主要问题及防止措施\n1、梨的干耗与库房湿度。梨果水分含量高，贮期失水是主要问题之一。为减少失水需增加贮藏库内湿度。可采用地面洒水或库壁四周及通风道等处挂湿草帘等方法。2、二氧化碳积累与通风换气。库房内二氧化碳高于2%时会出现果心、果肉褐变等病害。因此，加强库房通风换气，减少二氧化碳积累，以及减少乙烯等有害气体的积累，是梨果贮藏的技术关键。所以，要在贮藏的前期和后期每天通风换气1-2小时，中期2-3天换气一次，每次1-2小时；或置于风扇、冷气机下，通过库内气体和循环吸收二氧化碳。该法可减少通风换气带来的干耗。"
+          },
+          "rank": 2
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0002",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 17,
+            "score": 0.5972868204116821,
+            "chunk_id": "PAPER_001_C0002",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "正文（未识别章节）",
+            "section_id": "PAPER_001_S001",
+            "page": 1,
+            "page_end": 1,
+            "pages": [
+              1
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+            "char_count": 368,
+            "start_offset": 863,
+            "end_offset": 1231,
+            "overlap_chars": 0,
+            "text_sha256": "27d144ff00bf76edc72cbb385bc7f30c4f0aa9356adcb575d51fcb9e7b17172c",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 368
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": 0.7,
+            "region": 0.7,
+            "stage": null
+          },
+          "reranker_score": 1.8775362968444824,
+          "matched_window": {
+            "start": 300,
+            "end": 402,
+            "text": "O1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。"
+          },
+          "rank": 3
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0007",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 10,
+            "score": 0.6188414096832275,
+            "chunk_id": "PAPER_001_C0007",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "0  引言",
+            "section_id": "PAPER_001_S002",
+            "page": 2,
+            "page_end": 2,
+            "pages": [
+              2
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "【研究意义】鸭梨（Pyrus bretschneideri Rehd.）是我国传统特色主栽梨品种，季产年销，也是我国主要仓储和出口品种[1]。但其对低温和高浓度CO2 敏感，长期贮藏过程中极易发生虎皮病和黑心病等采后生理病害，严重影响果实商品价值，造成巨大经济损失[2-3]。目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6 个月（从9 月至翌年3 月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8 个月（从9 月至翌年4 月）。整体来看，与市场正常供应需求（至翌年6 月）仍有较大差距[4-5]。研究低O2 浓度对鸭梨采后生理代谢及贮藏品质的影响，对进一步延长鸭梨贮藏和货架供应期具有重要意义。【前人研究进展】气调贮藏是目前国内外商业应用最广泛的果品贮藏技术，与普通冷藏相比，气调贮藏可显著延长苹果和梨采后贮藏和货架供应期。其主要原理是在低温的基础上，通过进一步降低环境氧气含量，来进一步抑制果实采后呼吸和乙烯等生理代谢水平，降低营养损耗，延缓衰老，减轻生理病害发生，进而更好地保持果实贮藏品质[6-8]。近年来，随着气体成分精准监测和控制技术的不断发展，果实气调贮藏中的O2浓度不断降低，从传统的静态低氧气调（O2：2.0%—5.0%），发展到静态超低氧气调（O2＜1.5%）及前期超低氧胁迫气调（O2：0.5%，维持2 周），一直到目前的动态气调（O2：0.3%—0.5%），果实贮藏期不断被延长，果实品质得到了更好的维持[9]。但不同品种及不同栽培管理条件下，梨果实采后生物学特性及内在品质差异较大，对贮藏环境O2 敏感性及耐受度不同。研究发现，‘Beurré d’Anjou’经0.5% O2胁迫处理后，于1.0% O2+0.1% CO2 条件下可正常贮藏9.2 个月[10]；‘Abate Fetel’在0.8% O2+0.45% CO2 动态气调条件下可贮藏7 个月，且未发生果心褐变[11-13]；‘Rocha’在0.5% O2 条件下贮藏8.5 个月，7 d 货架（20℃）后仍较好地保持果实品质，未发生黑心病[14]。",
+            "char_count": 912,
+            "start_offset": 0,
+            "end_offset": 912,
+            "overlap_chars": 0,
+            "text_sha256": "1b527b6e49543e2c76025c62ae614a1458e3a558d83e42c075b6e775b0f9cebd",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 650
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": 0.7,
+            "region": 0.7,
+            "stage": null
+          },
+          "reranker_score": 1.7003908157348633,
+          "matched_window": {
+            "start": 0,
+            "end": 350,
+            "text": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响\n0  引言\n【研究意义】鸭梨（Pyrus bretschneideri Rehd.）是我国传统特色主栽梨品种，季产年销，也是我国主要仓储和出口品种[1]。但其对低温和高浓度CO2 敏感，长期贮藏过程中极易发生虎皮病和黑心病等采后生理病害，严重影响果实商品价值，造成巨大经济损失[2-3]。目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6 个月（从9 月至翌年3 月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8 个月（从9 月至翌年4 月）。整体来看，与市场正常供应需求（至翌年6 月）仍有较大差距[4-5]。研究低O2 浓度对鸭梨采后生理代谢及贮藏品质的影响，对进"
+          },
+          "rank": 4
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0018",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 1,
+            "score": 0.6817011833190918,
+            "chunk_id": "PAPER_005_C0018",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "2.1  果实品质变化",
+            "section_id": "PAPER_005_S011",
+            "page": 3,
+            "page_end": 3,
+            "pages": [
+              3
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "窖藏条件下，鸭梨贮藏1 个月时硬度有所增加，此后缓慢降低，至3 个月时最小。窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+            "char_count": 117,
+            "start_offset": 0,
+            "end_offset": 117,
+            "overlap_chars": 0,
+            "text_sha256": "f0aa7485a590138716cba873d482f9d52278f683269967b50d588432fa72cb3a",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 117
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          },
+          "reranker_score": 1.5142323970794678,
+          "matched_window": {
+            "start": 0,
+            "end": 155,
+            "text": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析\n2.1  果实品质变化\n窖藏条件下，鸭梨贮藏1 个月时硬度有所增加，此后缓慢降低，至3 个月时最小。窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。"
+          },
+          "rank": 5
+        }
+      ],
+      "model": "BAAI/bge-reranker-base",
+      "candidate_count": 20,
+      "window_count": 36,
+      "aggregation": "maximum window score",
+      "notice": "重排分为相关性分，不是事实正确率或风险概率；完整证据和范围仍须校验。",
+      "elapsed_seconds": 9.363704700001108
+    }
+  },
+  {
+    "question": "黑星病的影响和防控",
+    "result": {
+      "results": [
+        {
+          "candidate_id": "chunk:UNI_001_C0002",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 4,
+            "score": 0.41332435607910156,
+            "chunk_id": "UNI_001_C0002",
+            "source_id": "UNI_001",
+            "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+            "section": "网页正文",
+            "section_id": "UNI_001_S001",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "梨"
+            ],
+            "region": [],
+            "applicable_stages": [],
+            "evidence_level": "B",
+            "source_type": "university_material",
+            "year": 2023,
+            "source_file_sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39",
+            "source_url": "https://www.zwbch.com/changshi/view_14.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+            "text": "病果生长停滞，往往畸形早落。防治时要注意清除转主寄主如松、柏等；高温天气，要适时浇水，增加湿度，破坏发病条件；在萌芽至展叶的25天内进行喷药保护，药剂可选择三唑醇、苯醚甲环唑、嘧菌酯等。04黑斑病该病主要危害果实、叶和新梢。叶片受害，叶面和叶背生成黑色圆形小斑，随着病情加重病斑逐步扩大，中部灰白色。新梢受害，症状与叶片相似，但凹陷较明显，病斑欠规则，病斑集中处易断裂。果实受害，初生成黑色斑点，后期易裂果。防治时注意提升树势，提早套袋，保护果实。幼果期防控，药剂可选择代森铵、醚菌酯、苯甲嘧菌酯等。05炭疽病主要危害果实，多在生长中后期发病。病斑发黑凹陷，有轮纹，湿度大时有粉红色黏质物。药剂可选择甲硫·戊唑醇、咪鲜胺、溴菌腈等，要注意前期的清园及初侵染期的防治，否则进入雨季后，病害传播极快，难以控制。06褐斑病主要危害叶片，症状分同心轮纹型、针芒型、混合型等多种类型，一般为害树冠下部或内膛的叶片，新叶很少发病，病叶极易脱落。多雨高温会诱发该病的大发生，5月中旬开始防控。药剂可选择氟环唑、戊唑醇等，发病重的园子可配伍多抗锰锌。同时注意合理修剪，改善光照条件；秋、冬季清扫果园内落叶，树上残留的病枝、病叶要深埋或烧毁。07腐烂病有溃疡、枝枯和表面溃病3种类型。溃疡型在早春树干、枝树皮上出现红褐色、水渍状、微隆起、圆至长圆形病斑；用手压凹陷，流出黄褐色汁液, 有酒糟味，后病皮长出小黑点。枝枯型在春季2~5年生枝上出现病斑，边缘不清晰，不呈水渍状，后失水干枯，密生小黑点。表面溃疡型在夏秋落皮层上出现稍带红褐色、稍湿润的小溃疡斑。边缘不整齐, 腐烂, 后干缩呈饼状。三类中溃疡型发生多，此类应及时刮除病部，涂抹氟硅唑、戊唑醇等药剂保护，降低复发率。同时注意提升树势，科学用肥，增施有机肥、活土君复合菌剂、科学控产等。08褐腐病只危害梨树果实，一般近成熟期发病，初为暗褐色病斑，逐步扩大，病情发展迅速，几天全果腐烂，病斑上还着生黄褐色绒毛。",
+            "char_count": 822,
+            "start_offset": 729,
+            "end_offset": 1551,
+            "overlap_chars": 93,
+            "text_sha256": "1696ea3979aebf0fb9931a2f3b476c2355e88c8cafc0e9ef88624acaaa8e3d98",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 350
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          },
+          "reranker_score": 4.148136138916016,
+          "matched_window": {
+            "start": 0,
+            "end": 350,
+            "text": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）\n网页正文\n病果生长停滞，往往畸形早落。防治时要注意清除转主寄主如松、柏等；高温天气，要适时浇水，增加湿度，破坏发病条件；在萌芽至展叶的25天内进行喷药保护，药剂可选择三唑醇、苯醚甲环唑、嘧菌酯等。04黑斑病该病主要危害果实、叶和新梢。叶片受害，叶面和叶背生成黑色圆形小斑，随着病情加重病斑逐步扩大，中部灰白色。新梢受害，症状与叶片相似，但凹陷较明显，病斑欠规则，病斑集中处易断裂。果实受害，初生成黑色斑点，后期易裂果。防治时注意提升树势，提早套袋，保护果实。幼果期防控，药剂可选择代森铵、醚菌酯、苯甲嘧菌酯等。05炭疽病主要危害果实，多在生长中后期发病。病斑发黑凹陷，有轮纹，湿度大时有粉红色黏质物。药剂可选择甲硫·戊唑醇、咪鲜胺、溴菌腈等"
+          },
+          "rank": 1
+        },
+        {
+          "candidate_id": "chunk:UNI_001_C0001",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 2,
+            "score": 0.4738953411579132,
+            "chunk_id": "UNI_001_C0001",
+            "source_id": "UNI_001",
+            "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+            "section": "网页正文",
+            "section_id": "UNI_001_S001",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "梨"
+            ],
+            "region": [],
+            "applicable_stages": [],
+            "evidence_level": "B",
+            "source_type": "university_material",
+            "year": 2023,
+            "source_file_sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39",
+            "source_url": "https://www.zwbch.com/changshi/view_14.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+            "text": "01黑星病梨黑星病是一种检疫性病害，病原为子囊菌亚门黑星菌属的纳雪星菌，可危害梨树地上部大部分幼嫩组织，并以叶片、果实为主。叶片受害，先在叶背面的主脉两侧与支脉之间产生多角形或圆形的淡黄色病斑，没有明显的边缘，随后病斑会遍布整个叶片；在叶背面产生辐射状霉层，病情严重时造成大量落叶。幼果发病为畸形果，会形成不规则的淡黄色至褐色病斑，且病斑上会长出黑色的霉层；成长期果实发病不畸形，但病斑部会凹陷并产生星状龟裂。叶柄、果梗症状相似，出现黑色椭圆形的凹陷斑，病部覆盖黑霉、缢缩、失水干枯，致叶片或果实早落。防治时注意加强冬季清园，对病叶、病枝、病果等集中处理，并喷广谱性杀菌剂降低病原菌。早春梨芽膨大期起开始结合药剂防治，花前花后是关键期，可选用苯醚甲环唑、已唑醇、氟硅唑、异菌脲等药剂。02轮纹病梨树轮纹病菌是弱寄生菌，具有发病快、危害大等特点，主要侵害枝干、果实，在叶片上也偶有发生。枝干受害，逐步形成马鞍状病斑，树皮变得粗糙；果实受害，初产生水渍状、圆形、浅褐色小斑，后扩大成浅褐色至红褐色的同心轮纹斑；叶片受害，生成较大褐色近圆形病斑，常伴有轮纹。由于是弱寄生病害，在预防上提升树势，压低病原是关键。可增施有机肥、活土君复合菌剂，生长期淋施海精灵生物刺激剂，冬季清园时应刮除枝干老翘皮，剪除病枯枝，集中烧毁。药剂防治掌握在落花后至套袋前，特别是雨前雨后，药剂可选择代森锰锌、戊唑·多菌灵、代森联、吡唑·代森联等。03锈病梨锈病主要对植株叶片、新梢和幼果有较大危害。叶片受害，起初在叶面上出现淡黄色且带有光泽的小斑点，后扩展为近圆形病斑。幼果受害，初期病斑大体与叶片上的相似，病部稍凹陷，病斑上密生橙黄色的小粒点。后期在同一部位产生灰黄色毛状物，即锈子器。病果生长停滞，往往畸形早落。防治时要注意清除转主寄主如松、柏等；高温天气，要适时浇水，增加湿度，破坏发病条件；在萌芽至展叶的25天内进行喷药保护，药剂可选择三唑醇、苯醚甲环唑、嘧菌酯等。",
+            "char_count": 822,
+            "start_offset": 0,
+            "end_offset": 822,
+            "overlap_chars": 0,
+            "text_sha256": "329ce4393f558a8cb1f0a866b36458abc5a57aa84a7c547bc1b903d3a4a0dc50",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 350
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          },
+          "reranker_score": 3.1880664825439453,
+          "matched_window": {
+            "start": 0,
+            "end": 350,
+            "text": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）\n网页正文\n01黑星病梨黑星病是一种检疫性病害，病原为子囊菌亚门黑星菌属的纳雪星菌，可危害梨树地上部大部分幼嫩组织，并以叶片、果实为主。叶片受害，先在叶背面的主脉两侧与支脉之间产生多角形或圆形的淡黄色病斑，没有明显的边缘，随后病斑会遍布整个叶片；在叶背面产生辐射状霉层，病情严重时造成大量落叶。幼果发病为畸形果，会形成不规则的淡黄色至褐色病斑，且病斑上会长出黑色的霉层；成长期果实发病不畸形，但病斑部会凹陷并产生星状龟裂。叶柄、果梗症状相似，出现黑色椭圆形的凹陷斑，病部覆盖黑霉、缢缩、失水干枯，致叶片或果实早落。防治时注意加强冬季清园，对病叶、病枝、病果等集中处理，并喷广谱性杀菌剂降低病原菌。早春梨芽膨大期起开始结合药剂防治，花前花后是关"
+          },
+          "rank": 2
+        },
+        {
+          "candidate_id": "chunk:UNI_001_C0003",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 5,
+            "score": 0.3948717713356018,
+            "chunk_id": "UNI_001_C0003",
+            "source_id": "UNI_001",
+            "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+            "section": "网页正文",
+            "section_id": "UNI_001_S001",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "梨"
+            ],
+            "region": [],
+            "applicable_stages": [],
+            "evidence_level": "B",
+            "source_type": "university_material",
+            "year": 2023,
+            "source_file_sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39",
+            "source_url": "https://www.zwbch.com/changshi/view_14.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+            "text": "同时注意提升树势，科学用肥，增施有机肥、活土君复合菌剂、科学控产等。08褐腐病只危害梨树果实，一般近成熟期发病，初为暗褐色病斑，逐步扩大，病情发展迅速，几天全果腐烂，病斑上还着生黄褐色绒毛。落花后、成熟前注意用药预防保护，可选择噻菌灵、腈苯唑、嘧菌酯等药剂。09干腐病主要危害其果实、枝条。枝条感病时皮层出现长条形的黑褐色病斑，略凹陷，质地较硬，一般病斑不会扩展到木质部；当病斑扩展至枝干半圈以上时, 其上部枯死。果实染病，果面产生轮纹斑，随后果实腐烂。由于枝条徒长、土壤黏重、排水不良的园子该病发生较重，因此加强园区管理如科学修剪、合理挂果、加强肥水等是预防的关键。枝干感病的刮除后用溃腐灵涂抹，发芽前可喷施多菌灵、福美双等减少病原。",
+            "char_count": 318,
+            "start_offset": 1456,
+            "end_offset": 1774,
+            "overlap_chars": 95,
+            "text_sha256": "bbdc9850c855a273d5a0953b114b1f174d9364f0e9bbe8b6234520afabf0e113",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 318
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          },
+          "reranker_score": 3.1325769424438477,
+          "matched_window": {
+            "start": 0,
+            "end": 350,
+            "text": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）\n网页正文\n同时注意提升树势，科学用肥，增施有机肥、活土君复合菌剂、科学控产等。08褐腐病只危害梨树果实，一般近成熟期发病，初为暗褐色病斑，逐步扩大，病情发展迅速，几天全果腐烂，病斑上还着生黄褐色绒毛。落花后、成熟前注意用药预防保护，可选择噻菌灵、腈苯唑、嘧菌酯等药剂。09干腐病主要危害其果实、枝条。枝条感病时皮层出现长条形的黑褐色病斑，略凹陷，质地较硬，一般病斑不会扩展到木质部；当病斑扩展至枝干半圈以上时, 其上部枯死。果实染病，果面产生轮纹斑，随后果实腐烂。由于枝条徒长、土壤黏重、排水不良的园子该病发生较重，因此加强园区管理如科学修剪、合理挂果、加强肥水等是预防的关键。枝干感病的刮除后用溃腐灵涂抹，发芽前可喷施多菌灵、福美双等减少"
+          },
+          "rank": 3
+        },
+        {
+          "candidate_id": "path:v2:e0303/v2:e0304",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0303",
+              "conditions": [
+                "仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:341ded85dd07d276",
+              "relation": "CONTROLLED_BY",
+              "hop": 1
+            },
+            {
+              "kind": "normative",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "黑星病初侵染预防 — INTERVENTION_FOR → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0304",
+              "region": "US-CA",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:341ded85dd07d276",
+              "target": "v2:e690009b65b14799",
+              "relation": "INTERVENTION_FOR",
+              "hop": 2
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:341ded85dd07d276",
+            "v2:e690009b65b14799"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "黑星病初侵染预防",
+            "梨黑星病初侵染"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "reranker_score": 2.2184629440307617,
+          "matched_window": {
+            "start": 0,
+            "end": 204,
+            "text": "梨黑星病 —CONTROLLED_BY→ 黑星病初侵染预防。梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防。适用条件：仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论\n黑星病初侵染预防 —INTERVENTION_FOR→ 梨黑星病初侵染。黑星病初侵染预防 — INTERVENTION_FOR → 梨黑星病初侵染。适用条件：仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+          },
+          "rank": 4
+        },
+        {
+          "candidate_id": "path:v2:e0303/v2:e0304/v2:e0273",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0303",
+              "conditions": [
+                "仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:341ded85dd07d276",
+              "relation": "CONTROLLED_BY",
+              "hop": 1
+            },
+            {
+              "kind": "normative",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "黑星病初侵染预防 — INTERVENTION_FOR → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0304",
+              "region": "US-CA",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:341ded85dd07d276",
+              "target": "v2:e690009b65b14799",
+              "relation": "INTERVENTION_FOR",
+              "hop": 2
+            },
+            {
+              "kind": "mechanism",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病初侵染 — PROMOTES → 梨黑星病二次传播",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0273",
+              "region": "US-CA",
+              "conditions": [
+                "初侵染产生次生孢子，并再次遇到湿润条件；不是储藏腐烂结论"
+              ],
+              "locator": "Comments on the Disease",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:e690009b65b14799",
+              "target": "v2:d4c36f9a428de9eb",
+              "relation": "PROMOTES",
+              "hop": 2
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:341ded85dd07d276",
+            "v2:e690009b65b14799",
+            "v2:d4c36f9a428de9eb"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "黑星病初侵染预防",
+            "梨黑星病初侵染",
+            "梨黑星病二次传播"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 3,
+          "reranker_score": 2.135852813720703,
+          "matched_window": {
+            "start": 0,
+            "end": 296,
+            "text": "梨黑星病 —CONTROLLED_BY→ 黑星病初侵染预防。梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防。适用条件：仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论\n黑星病初侵染预防 —INTERVENTION_FOR→ 梨黑星病初侵染。黑星病初侵染预防 — INTERVENTION_FOR → 梨黑星病初侵染。适用条件：仅限原资料适用范围；需要结合品种、批次及实际条件复核\n梨黑星病初侵染 —PROMOTES→ 梨黑星病二次传播。梨黑星病初侵染 — PROMOTES → 梨黑星病二次传播。适用条件：初侵染产生次生孢子，并再次遇到湿润条件；不是储藏腐烂结论"
+          },
+          "rank": 5
+        }
+      ],
+      "model": "BAAI/bge-reranker-base",
+      "candidate_count": 31,
+      "window_count": 56,
+      "aggregation": "maximum window score",
+      "notice": "重排分为相关性分，不是事实正确率或风险概率；完整证据和范围仍须校验。",
+      "elapsed_seconds": 11.739333000001352
+    }
+  }
+]

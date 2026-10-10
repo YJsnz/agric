@@ -1,0 +1,84 @@
+{
+  "source_id": "PAPER_005",
+  "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+  "source_type": "paper",
+  "crop": [
+    "鸭梨"
+  ],
+  "region": [],
+  "region_note": "河北研究机构参与",
+  "year": 2021,
+  "evidence_level": "A",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [
+    "储藏期"
+  ],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+  "authors": [],
+  "doi": "10.3864/j.issn.0578-1752.2021.21.013",
+  "availability": "fulltext_pdf_available",
+  "review_status": "fulltext_acquired_content_review_pending",
+  "fulltext_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+  "text_path": "data/botou_yali/graphrag_corpus_v1/processed/PAPER_005/text.txt",
+  "pages_path": "data/botou_yali/graphrag_corpus_v1/processed/PAPER_005/pages.json",
+  "page_count": 15,
+  "ready_for_chunking": true,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "当前摘要足以建立主题关联，但具体方向、数值和时间点应在获取全文后细化。",
+  "kg_source_ids": [],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/landing.html",
+      "sha256": "82830d10d47da9d1f92936b8f569acdce767466afc79ac269e56dfd64e3af814",
+      "bytes": 250809,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+      "sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+      "bytes": 1533916,
+      "role": "fulltext"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/summary.md",
+      "sha256": "170dd63077a31857b0cb842a065b63280565c6eb7b10ea6db40eff81e10bb5db",
+      "bytes": 1102,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": {
+    "source_id": "PAPER_005",
+    "url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21870",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+    "attempted_at": "2026-09-15T06:22:21.911167+00:00",
+    "resolved_url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21870",
+    "status": "downloaded_pending_review",
+    "bytes": 1533916,
+    "sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923"
+  },
+  "acquisition_attempts": [
+    {
+      "source_id": "PAPER_005",
+      "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/landing.html",
+      "attempted_at": "2026-09-15T06:21:29.489966+00:00",
+      "resolved_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+      "status": "downloaded_pending_review",
+      "bytes": 250809,
+      "sha256": "82830d10d47da9d1f92936b8f569acdce767466afc79ac269e56dfd64e3af814"
+    },
+    {
+      "source_id": "PAPER_005",
+      "url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21870",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+      "attempted_at": "2026-09-15T06:22:21.911167+00:00",
+      "resolved_url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21870",
+      "status": "downloaded_pending_review",
+      "bytes": 1533916,
+      "sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923"
+    }
+  ],
+  "extraction_status": "text_available_review_pending"
+}

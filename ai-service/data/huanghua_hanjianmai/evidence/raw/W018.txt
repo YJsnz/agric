@@ -1,0 +1,158 @@
+农机化研究
+nav
+emailalert
+searchbtn
+searchbox
+tablepage
+yinyongbenwen
+piczone
+journalimg
+journalInfo
+journalinfonormal
+searchdiv
+searchzone
+qikanlogo
+popupnotification
+Your browser does not support the video tag.
+请选择需要下载的pdf数据
+中文数据
+英文数据
+正在翻译英文数据
+...
+paper
+paperNew
+农机化研究
+中文核心期刊
+首页
+期刊介绍
+投稿指南
+投稿须知
+期刊与作者许可协议
+编委会
+联系我们
+期刊征订
+|
+Email-Alert
+微垄覆膜侧沟播宽苗带旱碱麦正负压排种器设计与试验
+谢怡娇
+赵晓顺
+侯壮壮
+张秀丽
+于华丽
+赵建国
+边双印
+1.河北农业大学机电工程学院
+2.石家庄市农业机械化推广站
+3.河北峥嵘农机有限公司
+基金项目(Foundation):
+河北省高等学校科学研究项目(CXZX2025008);
+2025年度河北省农业科技成果转化资金项目(2025JNZ-J01);
+沧州市重点研发“揭榜挂帅”项目(23242201001D);
+河北省现代农业产业技术体系旱碱麦创新团队建设项目(HBCT2024030207)
+邮箱(Email):
+kldzxl888@126.com;
+DOI:
+发布时间：
+2026-06-16
+出版时间：
+2026-06-16
+网络发布时间：
+2026-06-16
+移动端阅读
+39
+0
+104
+下载次数
+被引频次
+阅读次数
+引用本文
+下载本文
+PDF
+引用导出
+GB/T 7714-2015
+MLA
+APA
+Refworks
+EndNote
+NoteExpress
+NoteFirst
+分享
+摘要
+全文
+参考文献
+出版信息
+相关文章
+摘要：
+旱碱麦是盐碱耕地的主要植作物之一,在旱碱地资源化利用中占据重要地位,但适配其播种作业的农艺技术与农机装备较为匮乏,导致播种质量不高。针对盐碱地旱碱麦在雨养旱作条件下产量低、缺少适宜种植模式和机具的问题,提出了一种微垄覆膜侧沟播宽苗带种植农艺技术,适用于干旱半干旱地区或降水不稳定区域的作物种植场景,并配套研制了相关的精量播种机械装备。同时,为了更好地适配旱碱麦种子的播种需求,结合气力式排种器作业速度快、通用性好、不易伤种等优点,创新性设计了一种正负压式宽苗带旱碱麦精量排种器。通过理论分析,设计了排种器的关键部件和重要参数。以沧麦6002为研究对象,借助JPS-12试验台,通过单因素试验研究了吸种负压、滚筒转速和落种高度3个因素对排种器性能的影响;通过响应面试验,得到试验因素最佳组合为吸种负压3.35 kPa、滚筒转速18.5 r/min、落种高度121 mm,在此参数组合下排种器的合格率、漏播率、重播率的模型预测值分别为81.20%、9.46%、9.36%;台架验证试验表明,测量值均在上述模型预测值的95%置信区间内,排种合格率、漏播率、重播率满足旱碱麦宽苗带条播农艺要求与田间实际生产作业指标,可适配微垄覆膜侧沟播宽苗带种植模式。
+关键词：
+精量排种器;
+旱碱麦;
+正负压;
+宽苗带;
+微型覆膜;
+侧沟播;
+单因素试验;
+响应面试验;
+Abstract：
+Dry-alkali wheat was one of the main planting crops in saline-alkali farmland, which played an important role in the resource utilization of dry-alkali land. However, the agronomic technology and supporting agricultural machinery and equipment suitable for its sowing operation were relatively scarce, resulting in low sowing quality. Aiming at the problems of low yield and lack of suitable planting patterns and machines for dry-alkali wheat in saline-alkali land under rain-fed and dry-farming conditions, an agronomic technique of micro-ridge filmmulching side furrow sowing and wide seedling belt planting was proposed, which was suitable for crop planting scenarios in arid and semi-arid areas or unstable precipitation areas, and related precision seeding machinery and equipment were developed. At the same time, in order to better adapt to the seeding needs of dry alkali wheat seeds, combined with the advantages of pneumatic metering device, such as high-speed operation, good versatility and not easy to hurt seeds, a positive-negative pressure wide seedling belt dry alkali wheat precision metering device was innovatively designed.Through theoretical analysis, the key components and important parameters of the seed metering device were designed. Taking Cangmai 6002 as the research object, with the help of JPS-12 test bench, the effects of suction negative pressure, drum rotation speed and seed falling height on the performance of seed metering device were studied by single factor test. Through the response surface test, the best combination of test factors was obtained as follows : suction negative pressure 3.35 kPa, drum rotation speed 18.5 r/min, and seed falling height 121 mm. Under this parameter combination, the model prediction values of the qualified rate, missed seeding rate, and replay rate of the seed metering device were 81.20%, 9.46%, and 9.36%, respectively.The bench verification test showed that the measured values were within the 95 % confidence interval of the predicted values of the above model. The seeding qualified rate, missed seeding rate and replay rate met the agronomic requirements of wide-seedling strip sowing of dry-alkali wheat and the actual production operation indicators in the field, and could be adapted to the wide-seedling strip planting mode of micro-ridge mulching and side-furrow sowing.
+KeyWords：
+precision seed metering device;
+dry-alkali wheat;
+positive-negative pressure;
+wide seeding belt;
+micro-ridge film mulching;
+side furrow sowing;
+single-factor experiment;
+response surface experiment;
+如需获取全文，请访问cnki.net
+如需获取全文，请访问cnki.net
+参考文献
+[1] 魏秀梅,秦俊灵,任妙春,等.1994—2023年度河北沧州滨海旱碱麦生长季气候资源变化特征[J].麦类作物学报,2026,46(5):686-695.
+[2] 孙永珍,曹洁洁,李思言,等.沧州市盐碱地综合利用创新实践与路径探索[J/OL].中国农业资源与区划,2025:1-11.(2025-12-02).https://kns.cnki.net/KCMS/detail/detail.aspx?filename=ZGNZ20251121008&dbname=CJFD&dbcode=CJFQ.
+[3] 张俊彦,刘玉洋,杨树昌,等.黄骅旱碱麦产业发展现状及建议[J].农业科技通讯,2026(2):17-19,100.
+[4] 刘希锋.浅析旱碱地旱碱麦种植技术与病虫害绿色防控技术[J].农业科技创新,2025(36):25-27.
+[5] 秦俊灵,魏瑞江,魏秀梅,等.不同水文年型下河北旱碱麦需水量和缺水量分析[J].麦类作物学报,2025,45(3):404-411.
+[6] 尹功超.旱碱麦高产栽培技术及病虫害防治策略[J].河北农业,2025(9):37-38.
+[7] 田增鹏.黄骅地区旱碱麦高产高效生产技术研究[J].河北农业,2024(9):41-42.
+[8] 韩丹丹,王清,颜君坤,等.气吸式绿豆密植精量排种器的优化与试验[J].中国农业大学学报,2023,28(9):147-157.
+[9] 刘大为,秦锋,王志鹏,等.人字纹斜槽式水稻育秧播种排种器优化设计与试验[J].沈阳农业大学学报,2025,56(2):99-109.
+[10] 刘礼阳,唐兴月,祝培栩,等.水稻气压滚筒式集中排种器设计与试验[J].中国农业大学学报,2020,25(12):122-133.
+[11] 耿端阳,李玉环,孟鹏祥,等.玉米伸缩指夹式排种器设计与试验[J].农业机械学报,2016,47(5):38-45.
+[12] 陈黎卿,解彬彬,李兆东,等.基于双闭环PID模糊算法的玉米精量排种控制系统设计[J].农业工程学报,2018,34(9):33-41.
+[13] 赵举文,高陆思,王金星,等.小区大豆数控排种器的设计与试验[J].自动化技术与应用,2025,44(5):10-13,37.
+[14] 刘善达,王凯伦,孙志超,等.气吸式花生单粒精密播种机设计与试验[J].农机化研究,2026,48(3):1-8.
+[15] 梁玉玥.稻麦旱作兼用气吹式精量排种器设计与试验[D].武汉:华中农业大学,2022.
+[16] 何瑞银,王建林,徐高明,等.限制充种姿态-正负压式小麦精密排种器设计与试验[J].农业机械学报,2022,53(9):39-49,167.
+[17] 赵鹏飞,邓敏,王孟盛,等.气力斜盘式小麦宽苗带匀播排种器设计与试验[J].农业机械学报,2025,56(7):38-47.
+[18] 赵晓顺,侯壮壮,于华丽,等.正负压式藜麦精量排种器设计与试验[J].农机化研究,2026,48(2):49-58.
+[19] 陈志.农业机械设计手册[M].北京:中国农业科学技术出版社,2007.
+[20] 李明,刘晓辉,廖宜涛,等.气力滚筒式油菜精量集排器[J].农业机械学报,2013,44(12):68-73.
+[21] 史瑞杰,戴飞,赵武云,等.自走式藜麦联合收割机设计及试验[J].吉林大学学报(工学版),2023,53(9):2686-2694.
+[22] 张开兴,李金凤,宋正河,等.变粒径双圆盘气吸式精量排种器优化设计与试验[J].农业机械学报,2019,50(6):52-63.
+基本信息:
+中图分类号:
+S223.2
+引用信息:
+[1]谢怡娇,赵晓顺,侯壮壮,等.微垄覆膜侧沟播宽苗带旱碱麦正负压排种器设计与试验[J].农机化研究().
+基金信息:
+河北省高等学校科学研究项目(CXZX2025008);
+2025年度河北省农业科技成果转化资金项目(2025JNZ-J01);
+沧州市重点研发“揭榜挂帅”项目(23242201001D);
+河北省现代农业产业技术体系旱碱麦创新团队建设项目(HBCT2024030207)
+发布时间：
+2026-06-16
+出版时间：
+2026-06-16
+网络发布时间：
+2026-06-16
+扫码分享到微信或朋友圈
+使用微信“扫一扫”功能。
+将此内容分享给您的微信好友或者朋友圈
+该系统由中国知网提供技术支持。技术支持使用说明：cb@cnki.net http://find.cb.cnki.net
+建议使用分辨率为1024*768的IE 10.0或更高版本浏览此页面
+检 索
+高级检索
+引用
+GB/T 7714-2015 格式引文
+MLA格式引文
+APA格式引文

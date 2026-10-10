@@ -1,0 +1,258 @@
+{
+  "id": "QA_0025",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0029",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0019",
+    "chunk:PAPER_001_C0018"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨",
+      "虎皮"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": null,
+      "environment": [],
+      "disease": [
+        "虎皮"
+      ],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": [],
+      "intent": "fact_query"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "disease",
+        "mention": "虎皮",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "partial_alignment",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [
+      {
+        "field": "disease",
+        "mention": "虎皮",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_001_C0029",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 2,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9760624679979519
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0002",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 2,
+            "vector_rank": 6,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9540566959921799
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0003",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 8,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9485294117647058
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0019",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 8,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9485294117647058
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0018",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 5,
+            "vector_rank": 4,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9457932692307692
+          }
+        }
+      ]
+    },
+    "status": "validation_failed",
+    "grounding_audit": {
+      "passed": false,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "unsupported",
+          "reason": "事实字段没有实际引用证据。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中数值均可在E5中找到：贮藏210 d时5.0%及以下O2平均虎皮指数3.26%、10% O2为12.5%、空气对照为38.56%；E1、E2为虎皮指数相关结论且未给公式，引用与陈述一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning逐条核查E1、E2、E5，指出其未涉及或未列出虎皮指数计算公式，与所引证据内容相符，未补造缺失公式。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice仅请求补充论文方法部分原文以提取公式，未提出可核查的事实、数值或因果结论。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "answer": "1. 结论\n本次回答未通过证据核查，未发布生成内容。\n2. 依据\n存在未由引用证据支持的内容\n3. 推理路径\n未发布未经核查的路径。\n4. 建议\n请缩小问题范围或补充原文资料。\n5. 来源\n暂无已通过核查的结论来源。"
+  },
+  "evidence": [],
+  "error": "validation_failed",
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据中未包含计算鸭梨虎皮指数的公式。",
+        "basis": "证据仅报告了不同O2浓度处理下鸭梨虎皮指数的数值结果（如贮藏210 d时5.0%及以下O2处理平均虎皮指数为3.26%，10% O2和空气对照分别为12.5%和38.56%等）[E5]，以及虎皮指数的相关结论[E1][E2]，但均未给出虎皮指数的计算公式。",
+        "reasoning": "问题要求的是虎皮指数的计算公式。逐条核查证据：E1、E2、E3为结论与摘要性内容，未涉及公式；E4、E5为虎皮指数结果描述，仅给出数值与统计显著性标记，未列出计算公式。因此证据不足以回答该问题。",
+        "advice": "请补充该论文中方法部分（如2.1.1虎皮指数测定方法）的原文内容，以便提取虎皮指数的计算公式。",
+        "citations": [
+          "E1",
+          "E2",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2329,
+        "completion_tokens": 243,
+        "total_tokens": 2572,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2201
+      },
+      "model": "deepseek-flash",
+      "response_id": "6db47d92-33be-47be-a3b8-9d0f44ac4ec4",
+      "seconds": 6.526552900002571,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据中未包含计算鸭梨虎皮指数的公式。",
+        "basis": "证据仅报告了不同O2浓度处理下鸭梨虎皮指数的数值结果（如贮藏210 d时5.0%及以下O2处理平均虎皮指数为3.26%，10% O2和空气对照分别为12.5%和38.56%等）[E5]，以及虎皮指数的相关结论[E1][E2]，但均未给出虎皮指数的计算公式。",
+        "reasoning": "问题要求的是虎皮指数的计算公式。逐条核查已引用的证据：E1、E2为结论与摘要性内容，未涉及公式；E5为虎皮指数结果描述，仅给出数值与统计显著性标记，未列出计算公式。因此证据不足以回答该问题。",
+        "advice": "请补充该论文中方法部分（如2.1.1虎皮指数测定方法）的原文内容，以便提取虎皮指数的计算公式。",
+        "citations": [
+          "E1",
+          "E2",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2874,
+        "completion_tokens": 225,
+        "total_tokens": 3099,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 570
+      },
+      "model": "deepseek-flash",
+      "response_id": "08536df4-4f0e-46ba-869c-d370024a4172",
+      "seconds": 6.004303100009565,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 25.52310259999649
+}

@@ -1,0 +1,715 @@
+{
+  "case": "low_leaf",
+  "sample": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\data\\jujube_leaf_classifier_v3_final\\test\\anthracnose\\58py9f3nsy__anthracnose__0027ded0791669b1__90568fb0a7ecc85ba380.jpg",
+  "response": {
+    "success": true,
+    "crop": "jujube",
+    "task": "leaf",
+    "visual": {
+      "class": "anthracnose",
+      "label_zh": "炭疽病类视觉表现",
+      "confidence": 0.43121328949928284,
+      "topk": [
+        {
+          "class": "anthracnose",
+          "label_zh": "炭疽病类视觉表现",
+          "confidence": 0.43121328949928284
+        },
+        {
+          "class": "healthy",
+          "label_zh": "健康叶片视觉状态",
+          "confidence": 0.29469648003578186
+        },
+        {
+          "class": "yellow_leaf",
+          "label_zh": "黄化视觉表现",
+          "confidence": 0.14065170288085938
+        },
+        {
+          "class": "powdery_mildew",
+          "label_zh": "白粉病类视觉表现",
+          "confidence": 0.11734943091869354
+        },
+        {
+          "class": "insect_damage",
+          "label_zh": "虫害损伤视觉表现",
+          "confidence": 0.016089031472802162
+        }
+      ],
+      "model_name": "jujube_leaf_yolo11n_cls_v1",
+      "model_version": "v1",
+      "task": "leaf",
+      "is_diagnosis": false,
+      "confidence_level": "low"
+    },
+    "visual_confidence_level": "low",
+    "mapped_entity": {
+      "id": "cangzhou_jinsixiaozao:64ab661a761abd86",
+      "name": "炭疽病类视觉表现",
+      "type": "VisualSymptom",
+      "is_diagnosis": false
+    },
+    "context": {
+      "temperature": null,
+      "humidity": null,
+      "storage_temperature": null,
+      "storage_humidity": null,
+      "storage_days": null,
+      "harvest_method": null,
+      "transport_condition": null,
+      "notes": null
+    },
+    "reasoning": {
+      "crop_id": "cangzhou_jinsixiaozao",
+      "question": "检测到炭疽病类叶片视觉表现，应区分哪些候选方向、核对哪些伴随症状？",
+      "entities": {
+        "region": null,
+        "growth_stage": null,
+        "organ": "leaf",
+        "symptom": null,
+        "disease_or_pest": null,
+        "weather": null,
+        "rainfall": null,
+        "humidity": null,
+        "irrigation": null,
+        "crop": "cangzhou_jinsixiaozao",
+        "region_source": null,
+        "harvest_intent": false,
+        "storage_intent": false,
+        "scope": "production",
+        "intent": "information",
+        "damage_query": false,
+        "cross_stage_query": false,
+        "uncovered_symptom": false,
+        "visual_boundary": true,
+        "provided_context": {
+          "user_context": {},
+          "visual_entity": {
+            "id": "cangzhou_jinsixiaozao:64ab661a761abd86",
+            "name": "炭疽病类视觉表现",
+            "type": "VisualSymptom",
+            "is_diagnosis": false
+          },
+          "visual_class": "anthracnose",
+          "visual_evidence_only": true,
+          "visual_confidence_level": "low"
+        },
+        "visual_label": "anthracnose"
+      },
+      "generation_called": true,
+      "status": "preliminary",
+      "retrieval": {
+        "graph_status": "ok",
+        "graph_evidence_count": 2,
+        "vector_evidence_count": 2,
+        "fused_count": 2
+      },
+      "knowledge_graph": {
+        "edges": [
+          {
+            "id": "JVE_rust_anthracnose",
+            "source": "cangzhou_jinsixiaozao:64ab661a761abd86",
+            "target": "cangzhou_jinsixiaozao:40d6bef9de80136a",
+            "subject": "炭疽病类视觉表现",
+            "object": "枣锈病叶背表现排查",
+            "relation": "PROMPTS_DIFFERENTIAL_CHECK",
+            "kind": "reviewed_differential_rule_not_diagnosis",
+            "source_id": "JV003",
+            "source_ids": [
+              "JV003"
+            ],
+            "title": "枣病虫害防治",
+            "region": "北京",
+            "crop": [
+              "枣/果树排查方向"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": null,
+            "evidence_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+            "page": null,
+            "section": "（一）枣锈病：",
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JVC_rust",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（一）枣锈病：",
+              "page": null,
+              "char_start": 1308,
+              "char_end": 1353
+            },
+            "conditions": [
+              "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。"
+            ],
+            "evidence_ids": [
+              "JV003",
+              "JVC_rust"
+            ],
+            "evidence": [
+              {
+                "id": "JVC_rust",
+                "source_id": "JV003",
+                "quote": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+                "locator": {
+                  "file": "evidence/raw/JV003.txt",
+                  "section": "（一）枣锈病：",
+                  "page": null,
+                  "char_start": 1308,
+                  "char_end": 1353
+                }
+              }
+            ],
+            "source_type": "government_extension",
+            "year": 2015,
+            "original_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+            "normalized_claim": "炭疽病类视觉表现 prompts checking 枣锈病叶背表现排查"
+          },
+          {
+            "id": "JVE_anthracnose_anthracnose",
+            "source": "cangzhou_jinsixiaozao:64ab661a761abd86",
+            "target": "cangzhou_jinsixiaozao:6b2dfb2dbd90627f",
+            "subject": "炭疽病类视觉表现",
+            "object": "炭疽病相关方向",
+            "relation": "PROMPTS_DIFFERENTIAL_CHECK",
+            "kind": "reviewed_differential_rule_not_diagnosis",
+            "source_id": "JV003",
+            "source_ids": [
+              "JV003"
+            ],
+            "title": "枣病虫害防治",
+            "region": "北京",
+            "crop": [
+              "枣/果树排查方向"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": null,
+            "evidence_text": "（三）枣炭疽病：为害果实亦能侵染枣吊、叶片、枣头和枣股。果实染病后，果肩变为淡黄色，进而出现水渍状斑点，并逐渐扩大为不规则黄褐色斑块，中间出现圆形凹陷病斑，严重时扩大成片造成果实早落，果核变黑，病果味苦。",
+            "page": null,
+            "section": "（三）枣炭疽病：",
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JVC_anthracnose",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（三）枣炭疽病：",
+              "page": null,
+              "char_start": 1775,
+              "char_end": 1877
+            },
+            "conditions": [
+              "资料确认可侵染叶片，但具体病斑描述属于果实；不能把果实症状转写成叶片鉴别特征。"
+            ],
+            "evidence_ids": [
+              "JV003",
+              "JVC_anthracnose"
+            ],
+            "evidence": [
+              {
+                "id": "JVC_anthracnose",
+                "source_id": "JV003",
+                "quote": "（三）枣炭疽病：为害果实亦能侵染枣吊、叶片、枣头和枣股。果实染病后，果肩变为淡黄色，进而出现水渍状斑点，并逐渐扩大为不规则黄褐色斑块，中间出现圆形凹陷病斑，严重时扩大成片造成果实早落，果核变黑，病果味苦。",
+                "locator": {
+                  "file": "evidence/raw/JV003.txt",
+                  "section": "（三）枣炭疽病：",
+                  "page": null,
+                  "char_start": 1775,
+                  "char_end": 1877
+                }
+              }
+            ],
+            "source_type": "government_extension",
+            "year": 2015,
+            "original_text": "（三）枣炭疽病：为害果实亦能侵染枣吊、叶片、枣头和枣股。果实染病后，果肩变为淡黄色，进而出现水渍状斑点，并逐渐扩大为不规则黄褐色斑块，中间出现圆形凹陷病斑，严重时扩大成片造成果实早落，果核变黑，病果味苦。",
+            "normalized_claim": "炭疽病类视觉表现 prompts checking 炭疽病相关方向"
+          }
+        ]
+      },
+      "paths": [
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:64ab661a761abd86",
+            "cangzhou_jinsixiaozao:40d6bef9de80136a"
+          ],
+          "edge_ids": [
+            "JVE_rust_anthracnose"
+          ],
+          "relations": [
+            "PROMPTS_DIFFERENTIAL_CHECK"
+          ],
+          "evidence_ids": [
+            "JVC_rust"
+          ],
+          "source_ids": [
+            "JV003"
+          ]
+        },
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:64ab661a761abd86",
+            "cangzhou_jinsixiaozao:6b2dfb2dbd90627f"
+          ],
+          "edge_ids": [
+            "JVE_anthracnose_anthracnose"
+          ],
+          "relations": [
+            "PROMPTS_DIFFERENTIAL_CHECK"
+          ],
+          "evidence_ids": [
+            "JVC_anthracnose"
+          ],
+          "source_ids": [
+            "JV003"
+          ]
+        }
+      ],
+      "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+      "evidence": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "JV003",
+          "title": "枣病虫害防治",
+          "content": "（三）枣炭疽病：为害果实亦能侵染枣吊、叶片、枣头和枣股。果实染病后，果肩变为淡黄色，进而出现水渍状斑点，并逐渐扩大为不规则黄褐色斑块，中间出现圆形凹陷病斑，严重时扩大成片造成果实早落，果核变黑，病果味苦。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "炭疽病相关方向",
+            "source_id": "JV003",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（三）枣炭疽病：",
+              "page": null,
+              "char_start": 1775,
+              "char_end": 1877
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "589bf2c64aa654d50e6943f1e090c56b43c540fcb38e44751517ca718f32908a",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "资料确认可侵染叶片，但具体病斑描述属于果实；不能把果实症状转写成叶片鉴别特征。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "anthracnose"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "（三）枣炭疽病：为害果实亦能侵染枣吊、叶片、枣头和枣股。果实染病后，果肩变为淡黄色，进而出现水渍状斑点，并逐渐扩大为不规则黄褐色斑块，中间出现圆形凹陷病斑，严重时扩大成片造成果实早落，果核变黑，病果味苦。",
+          "source_type": "government_extension",
+          "year": 2015,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+          "chunk_id": "JVC_anthracnose",
+          "edge_ids": [
+            "JVE_anthracnose_anthracnose"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:64ab661a761abd86",
+            "cangzhou_jinsixiaozao:6b2dfb2dbd90627f"
+          ]
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "JV003",
+          "title": "枣病虫害防治",
+          "content": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "枣锈病叶背表现排查",
+            "source_id": "JV003",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（一）枣锈病：",
+              "page": null,
+              "char_start": 1308,
+              "char_end": 1353
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "589bf2c64aa654d50e6943f1e090c56b43c540fcb38e44751517ca718f32908a",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "yellow_leaf",
+              "anthracnose"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "source_type": "government_extension",
+          "year": 2015,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+          "chunk_id": "JVC_rust",
+          "edge_ids": [
+            "JVE_rust_yellow_leaf",
+            "JVE_rust_anthracnose"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:40d6bef9de80136a",
+            "cangzhou_jinsixiaozao:64ab661a761abd86"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "JV003",
+          "title": "枣病虫害防治",
+          "content": "（三）枣炭疽病：为害果实亦能侵染枣吊、叶片、枣头和枣股。果实染病后，果肩变为淡黄色，进而出现水渍状斑点，并逐渐扩大为不规则黄褐色斑块，中间出现圆形凹陷病斑，严重时扩大成片造成果实早落，果核变黑，病果味苦。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "炭疽病相关方向",
+            "source_id": "JV003",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（三）枣炭疽病：",
+              "page": null,
+              "char_start": 1775,
+              "char_end": 1877
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "589bf2c64aa654d50e6943f1e090c56b43c540fcb38e44751517ca718f32908a",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "资料确认可侵染叶片，但具体病斑描述属于果实；不能把果实症状转写成叶片鉴别特征。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "anthracnose"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "（三）枣炭疽病：为害果实亦能侵染枣吊、叶片、枣头和枣股。果实染病后，果肩变为淡黄色，进而出现水渍状斑点，并逐渐扩大为不规则黄褐色斑块，中间出现圆形凹陷病斑，严重时扩大成片造成果实早落，果核变黑，病果味苦。",
+          "source_type": "government_extension",
+          "year": 2015,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+          "chunk_id": "JVC_anthracnose",
+          "edge_ids": [
+            "JVE_anthracnose_anthracnose"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:64ab661a761abd86",
+            "cangzhou_jinsixiaozao:6b2dfb2dbd90627f"
+          ]
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "JV003",
+          "title": "枣病虫害防治",
+          "content": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "枣锈病叶背表现排查",
+            "source_id": "JV003",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（一）枣锈病：",
+              "page": null,
+              "char_start": 1308,
+              "char_end": 1353
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "589bf2c64aa654d50e6943f1e090c56b43c540fcb38e44751517ca718f32908a",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "yellow_leaf",
+              "anthracnose"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "source_type": "government_extension",
+          "year": 2015,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+          "chunk_id": "JVC_rust",
+          "edge_ids": [
+            "JVE_rust_yellow_leaf",
+            "JVE_rust_anthracnose"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:40d6bef9de80136a",
+            "cangzhou_jinsixiaozao:64ab661a761abd86"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "JV003",
+          "title": "枣病虫害防治",
+          "content": "（三）枣炭疽病：为害果实亦能侵染枣吊、叶片、枣头和枣股。果实染病后，果肩变为淡黄色，进而出现水渍状斑点，并逐渐扩大为不规则黄褐色斑块，中间出现圆形凹陷病斑，严重时扩大成片造成果实早落，果核变黑，病果味苦。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "炭疽病相关方向",
+            "source_id": "JV003",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（三）枣炭疽病：",
+              "page": null,
+              "char_start": 1775,
+              "char_end": 1877
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "589bf2c64aa654d50e6943f1e090c56b43c540fcb38e44751517ca718f32908a",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "资料确认可侵染叶片，但具体病斑描述属于果实；不能把果实症状转写成叶片鉴别特征。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "anthracnose"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "（三）枣炭疽病：为害果实亦能侵染枣吊、叶片、枣头和枣股。果实染病后，果肩变为淡黄色，进而出现水渍状斑点，并逐渐扩大为不规则黄褐色斑块，中间出现圆形凹陷病斑，严重时扩大成片造成果实早落，果核变黑，病果味苦。",
+          "source_type": "government_extension",
+          "year": 2015,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+          "chunk_id": "JVC_anthracnose",
+          "edge_ids": [
+            "JVE_anthracnose_anthracnose"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:64ab661a761abd86",
+            "cangzhou_jinsixiaozao:6b2dfb2dbd90627f"
+          ]
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "JV003",
+          "title": "枣病虫害防治",
+          "content": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "北京",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "production",
+            "organ": "leaf",
+            "topic": "枣锈病叶背表现排查",
+            "source_id": "JV003",
+            "locator": {
+              "file": "evidence/raw/JV003.txt",
+              "section": "（一）枣锈病：",
+              "page": null,
+              "char_start": 1308,
+              "char_end": 1353
+            },
+            "evidence_level": "transfer_pending",
+            "evidence_level_compat": "L4",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "589bf2c64aa654d50e6943f1e090c56b43c540fcb38e44751517ca718f32908a",
+            "purpose": "candidate_assessment_only",
+            "transfer_review": "symptom_comparison_only",
+            "applicability": "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。",
+            "source_crop": "枣树",
+            "visual_labels": [
+              "yellow_leaf",
+              "anthracnose"
+            ]
+          },
+          "evidence_level": "L4",
+          "region": "北京",
+          "original_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+          "source_type": "government_extension",
+          "year": 2015,
+          "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+          "chunk_id": "JVC_rust",
+          "edge_ids": [
+            "JVE_rust_yellow_leaf",
+            "JVE_rust_anthracnose"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:a5e740fa9c590561",
+            "cangzhou_jinsixiaozao:40d6bef9de80136a",
+            "cangzhou_jinsixiaozao:64ab661a761abd86"
+          ]
+        }
+      ],
+      "grounding": {
+        "passed": true,
+        "checks": [
+          {
+            "field": "conclusion",
+            "verdict": "supported",
+            "reason": "结论仅将E1用于确认炭疽病可侵染叶片、明确其病斑描述属果实且不外推，并将E2作为枣锈病叶片候选方向；E1、E2原文分别支持这些表述，且未作本地确诊或用药建议。"
+          },
+          {
+            "field": "basis",
+            "verdict": "supported",
+            "reason": "basis对E1、E2的来源、内容、用途限制和地域局限的描述均与所引证据一致；E1确为政府推广资料且标注symptom_comparison_only、transfer_pending，E2确描述叶背淡绿色小点后凸起呈暗黄褐色，且两条均来自北京地区枣树资料。"
+          },
+          {
+            "field": "reasoning",
+            "verdict": "supported",
+            "reason": "reasoning中关于视觉分类置信度低、E1果实症状不得转写为叶片症状、E2叶背表现只是鉴别线索、现有证据未覆盖沧州金丝小枣叶片炭疽病具体表现和本地发生情况的判断，均与所引证据及policy的candidate_assessment限制一致。"
+          },
+          {
+            "field": "advice",
+            "verdict": "supported",
+            "reason": "advice仅提出候选方向排查、核对伴随症状、补充照片信息和请当地植保人员现场复核，未推荐药名、剂量、施药周期或生产操作；对E1、E2的引用限制与证据一致。"
+          }
+        ],
+        "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+      },
+      "local_conclusion": {
+        "available": false,
+        "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+      },
+      "differential_assessment": {
+        "available": true,
+        "kind": "reviewed_evidence_lookup_not_image_diagnosis",
+        "directions": [
+          {
+            "id": "rust",
+            "chunk_id": "JVC_rust",
+            "candidate": "枣锈病叶背表现排查",
+            "applicability": "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。",
+            "question": "叶背是否有由淡绿色小点变成暗黄褐色的凸起？",
+            "visual_labels": [
+              "yellow_leaf",
+              "anthracnose"
+            ],
+            "relation_kind": "differential_not_diagnostic",
+            "evidence_ids": [
+              "E2"
+            ],
+            "evidence_level": "L4",
+            "region": "北京",
+            "evidence_text": "（一）枣锈病：叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落。",
+            "source_id": "JV003",
+            "is_diagnosis": false
+          },
+          {
+            "id": "anthracnose",
+            "chunk_id": "JVC_anthracnose",
+            "candidate": "炭疽病相关方向",
+            "applicability": "资料确认可侵染叶片，但具体病斑描述属于果实；不能把果实症状转写成叶片鉴别特征。",
+            "question": "是否也有果实异常？叶片症状仍需单独现场核验。",
+            "visual_labels": [
+              "anthracnose"
+            ],
+            "relation_kind": "differential_not_diagnostic",
+            "evidence_ids": [
+              "E1"
+            ],
+            "evidence_level": "L4",
+            "region": "北京",
+            "evidence_text": "（三）枣炭疽病：为害果实亦能侵染枣吊、叶片、枣头和枣股。果实染病后，果肩变为淡黄色，进而出现水渍状斑点，并逐渐扩大为不规则黄褐色斑块，中间出现圆形凹陷病斑，严重时扩大成片造成果实早落，果核变黑，病果味苦。",
+            "source_id": "JV003",
+            "is_diagnosis": false
+          }
+        ],
+        "questions": [
+          "叶背是否有由淡绿色小点变成暗黄褐色的凸起？",
+          "是否也有果实异常？叶片症状仍需单独现场核验。"
+        ],
+        "local_verified": false,
+        "notice": "按原文症状提供核验方向，不代表照片已具备这些特征；外地/一般果树资料不等于沧州本地验证。"
+      },
+      "preliminary_assessment": {
+        "available": true,
+        "summary": "当前仅有低置信度的“炭疽病类”叶片视觉线索，不能据此确诊。已引原文只支持：枣炭疽病可为害果实，亦能侵染枣吊、叶片、枣头和枣股 [E1] ；但该原文对病斑形态的具体描述属于果实（果肩淡黄、水渍状斑点、不规则黄褐色斑块、圆形凹陷病斑、果实早落、果核变黑、病果味苦） [E1] ，不能把这些果实症状改写成叶片鉴别特征，也不能外推到当前叶片表现。另一个可纳入排查的方向是枣锈病，原文描述其发生在叶片上，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落 [E2] 。",
+        "supporting_points": [
+          "[E1]为政府推广资料，明确枣炭疽病可侵染叶片，但给出的具体病斑描述是果实症状，且标注为symptom_comparison_only、transfer_pending，只能用于候选解释与观察提问 [E1] 。[E2]同样为政府推广资料，描述枣锈病在叶片上发生、叶背先出现淡绿色小点后凸起呈暗黄褐色，可作为叶片症状的候选鉴别方向 [E2] 。两条证据均来自北京地区枣树资料，不是沧州金丝小枣的本地确诊依据，也未提供叶片炭疽病斑的形态细节。"
+        ],
+        "uncertainties": [
+          "视觉分类“anthracnose”置信度为low，只能作为较弱视觉线索，不是疾病概率或风险等级。[E1]的果实症状不得转写为叶片症状，因此不能仅凭“炭疽病类”视觉表现确认叶片炭疽病。[E2]描述的叶背小点、凸起、暗黄褐色是鉴别线索，不是照片已检测到的症状。现有证据未覆盖沧州金丝小枣叶片炭疽病的具体表现，也未提供本地发生情况，故不能给出确诊或疾病概率。"
+        ]
+      },
+      "answer": "视觉证据较弱，应结合环境、症状和知识证据进一步判断。\n当前仅有低置信度的“炭疽病类”叶片视觉线索，不能据此确诊。已引原文只支持：枣炭疽病可为害果实，亦能侵染枣吊、叶片、枣头和枣股 [E1] ；但该原文对病斑形态的具体描述属于果实（果肩淡黄、水渍状斑点、不规则黄褐色斑块、圆形凹陷病斑、果实早落、果核变黑、病果味苦） [E1] ，不能把这些果实症状改写成叶片鉴别特征，也不能外推到当前叶片表现。另一个可纳入排查的方向是枣锈病，原文描述其发生在叶片上，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落 [E2] 。\n\n建议按“先排查方向、再核对伴随症状、最后现场复核”的思路处理：方向一，核对叶片上是否出现与[E1]所述炭疽病侵染部位相符的表现，但注意[E1]只确认可侵染叶片，其病斑形态描述属于果实，不能把果实症状当作叶片鉴别标准 [E1] ；方向二，核对叶片尤其是叶背是否有[E2]所述的淡绿色小点、后渐凸起呈暗黄褐色、失去光泽等表现 [E2] 。目前不能确定是否为炭疽病，也不能确定是否为锈病，需补充叶片正反面清晰照片、病斑是否凹陷或凸起、是否水渍状、是否有黄褐色晕圈、发生部位与扩展方式等信息，并请当地植保人员现场复核。",
+      "grounded_answer": {
+        "sufficient": false,
+        "conclusion": "当前仅有低置信度的“炭疽病类”叶片视觉线索，不能据此确诊。已引原文只支持：枣炭疽病可为害果实，亦能侵染枣吊、叶片、枣头和枣股 [E1] ；但该原文对病斑形态的具体描述属于果实（果肩淡黄、水渍状斑点、不规则黄褐色斑块、圆形凹陷病斑、果实早落、果核变黑、病果味苦） [E1] ，不能把这些果实症状改写成叶片鉴别特征，也不能外推到当前叶片表现。另一个可纳入排查的方向是枣锈病，原文描述其发生在叶片上，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落 [E2] 。",
+        "basis": "[E1]为政府推广资料，明确枣炭疽病可侵染叶片，但给出的具体病斑描述是果实症状，且标注为symptom_comparison_only、transfer_pending，只能用于候选解释与观察提问 [E1] 。[E2]同样为政府推广资料，描述枣锈病在叶片上发生、叶背先出现淡绿色小点后凸起呈暗黄褐色，可作为叶片症状的候选鉴别方向 [E2] 。两条证据均来自北京地区枣树资料，不是沧州金丝小枣的本地确诊依据，也未提供叶片炭疽病斑的形态细节。",
+        "reasoning": "视觉分类“anthracnose”置信度为low，只能作为较弱视觉线索，不是疾病概率或风险等级。[E1]的果实症状不得转写为叶片症状，因此不能仅凭“炭疽病类”视觉表现确认叶片炭疽病。[E2]描述的叶背小点、凸起、暗黄褐色是鉴别线索，不是照片已检测到的症状。现有证据未覆盖沧州金丝小枣叶片炭疽病的具体表现，也未提供本地发生情况，故不能给出确诊或疾病概率。",
+        "advice": "建议按“先排查方向、再核对伴随症状、最后现场复核”的思路处理：方向一，核对叶片上是否出现与[E1]所述炭疽病侵染部位相符的表现，但注意[E1]只确认可侵染叶片，其病斑形态描述属于果实，不能把果实症状当作叶片鉴别标准 [E1] ；方向二，核对叶片尤其是叶背是否有[E2]所述的淡绿色小点、后渐凸起呈暗黄褐色、失去光泽等表现 [E2] 。目前不能确定是否为炭疽病，也不能确定是否为锈病，需补充叶片正反面清晰照片、病斑是否凹陷或凸起、是否水渍状、是否有黄褐色晕圈、发生部位与扩展方式等信息，并请当地植保人员现场复核。",
+        "citations": [
+          "E1",
+          "E2"
+        ],
+        "candidate_assessments": [
+          {
+            "candidate_name": "枣炭疽病（叶片侵染）",
+            "assessment": "E1确认枣炭疽病可为害果实，亦能侵染枣吊、叶片、枣头和枣股，因此叶片出现异常时可将炭疽病作为候选方向之一[E1]。但E1对病斑的具体描述是果实症状（果肩淡黄、水渍状斑点、不规则黄褐色斑块、圆形凹陷病斑、果实早落、果核变黑、病果味苦），不能转写为叶片鉴别特征，也不能据此确认当前叶片表现就是炭疽病[E1]。该证据标注为symptom_comparison_only，仅可用于候选解释与观察提问，不能用于本地确诊或用药指导[E1]。",
+            "evidence_ids": [
+              "E1"
+            ]
+          },
+          {
+            "candidate_name": "枣锈病（叶片表现）",
+            "assessment": "E2描述枣锈病在叶片上发生，初在叶背散生淡绿色小点，后渐凸起呈暗黄褐色，失去光泽，干枯脱落[E2]。这是叶片症状的候选鉴别方向，可用于核对叶背是否有小点、是否凸起、颜色是否转为暗黄褐色等[E2]。但E2同样标注为symptom_comparison_only，且为北京地区枣树资料，不能据此确认当前叶片表现就是锈病，也不能外推为沧州金丝小枣的本地结论[E2]。",
+            "evidence_ids": [
+              "E2"
+            ]
+          }
+        ]
+      }
+    },
+    "risk": {
+      "stage": "production",
+      "type": "leaf visual symptom evidence",
+      "level": null
+    },
+    "limitations": [
+      "仅为视觉证据，不是食品安全、是否可食用、储藏寿命、疾病最终确诊或腐败原因诊断；分类得分不是确诊概率。黄化不能直接解释为缺氮、缺铁或盐害。",
+      "视觉展示级别不是风险等级；risk.level 未评分。"
+    ],
+    "degraded": false,
+    "degraded_mode": null
+  }
+}

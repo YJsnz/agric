@@ -1,0 +1,44 @@
+{
+  "id": "QA_0007",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关于低氧处理对鸭梨黑心指数和虎皮指数影响的实质结论，仅表示证据不足并请求补充资料，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 919,
+      "completion_tokens": 50,
+      "total_tokens": 969,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 279
+    },
+    "model": "deepseek-flash",
+    "response_id": "0510a8cf-ba99-4b94-a8da-9fb2d132772a",
+    "seconds": 5.636527999999998,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

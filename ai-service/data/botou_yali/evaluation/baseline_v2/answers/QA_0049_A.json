@@ -1,0 +1,81 @@
+{
+  "id": "QA_0049",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法回答",
+    "basis": "未提供该论文的具体内容，且我的知识库中不包含该论文的试验数据。",
+    "reasoning": "问题要求给出特定论文中特定处理（10.0% O2）在贮藏270 d及货架7 d时的平均虎皮指数。由于没有检索到该论文的原文或数据，无法提供准确数值。",
+    "advice": "建议查阅《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》原文，或提供相关数据来源。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.8,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何数值，仅说明无法回答，属于拒答；但该题在提供的原文证据中可直接查到答案（10.0% O2平均虎皮指数54.95%），因此证据不足的拒答不视为正确。",
+      "claims": [
+        {
+          "claim": "未提供该论文的具体内容，且知识库中不包含该论文的试验数据。",
+          "status": "unverifiable",
+          "reason": "该断言涉及回答系统自身知识库与检索状态，提供的论文原文和检索上下文无法验证。"
+        },
+        {
+          "claim": "由于没有检索到该论文的原文或数据，无法提供准确数值。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence中明确包含该论文数据：贮藏270 d及货架7 d，10.0% O2平均虎皮指数54.95%。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 1003,
+      "completion_tokens": 182,
+      "total_tokens": 1185,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 235
+    },
+    "model": "deepseek-flash",
+    "response_id": "d6213481-ef2a-4060-92eb-c045acbd8b21",
+    "seconds": 5.952997000000323,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法回答",
+        "basis": "未提供该论文的具体内容，且我的知识库中不包含该论文的试验数据。",
+        "reasoning": "问题要求给出特定论文中特定处理（10.0% O2）在贮藏270 d及货架7 d时的平均虎皮指数。由于没有检索到该论文的原文或数据，无法提供准确数值。",
+        "advice": "建议查阅《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》原文，或提供相关数据来源。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 210,
+        "completion_tokens": 122,
+        "total_tokens": 332,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 210
+      },
+      "model": "deepseek-flash",
+      "response_id": "8bacd770-bc8f-48d2-80a6-68c6c5b89d3a",
+      "seconds": 6.120911600010004,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.07561960000021
+}

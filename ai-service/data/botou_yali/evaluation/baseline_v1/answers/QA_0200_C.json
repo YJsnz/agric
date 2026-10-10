@@ -1,0 +1,196 @@
+{
+  "id": "QA_0200",
+  "arm": "C",
+  "generation": {
+    "result": {
+      "sufficient": true,
+      "conclusion": "该研究中鸭梨采收后采用的两种贮藏方式为窖藏和冷藏。",
+      "basis": "证据E3的方法部分明确记载：鸭梨采收后以窖藏和冷藏两种方式贮藏 [E3]。证据E1、E2、E4、E5中亦以窖藏与冷藏作为两种对比贮藏条件进行描述 [E1][E2][E4][E5]。",
+      "reasoning": "问题询问该研究采用的两种贮藏方式。E3为论文摘要的方法部分，直接说明采收后以窖藏和冷藏两种方式贮藏，属于对该问题的直接陈述；其余证据均围绕这两种贮藏方式的比较展开，可相互印证。因此判定证据充分。",
+      "advice": "如需了解两种贮藏方式对鸭梨品质、挥发性物质及相关基因表达的具体差异，可进一步查阅该研究结果部分 [E1][E2]。",
+      "citations": [
+        "E3",
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2421,
+      "completion_tokens": 208,
+      "total_tokens": 2629,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 2293
+    },
+    "model": "deepseek-flash",
+    "response_id": "92d47afa-f8cc-43c7-8364-b445810a046c",
+    "seconds": 6.3544394999998985,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0026",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "GC-MS 分析表明，鸭梨中挥发性物质主要为醛类、酯类、醇类、烷烃类、萜类化合物等。将两种贮藏方式同期果皮、果肉中挥发性物质进行比较表明，果肉中挥发性成分种类及同类别物质含量均少于同期果皮。贮藏期鸭梨酯类含量增加，香气物质增多。果皮、果肉酯类物质含量依次为：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1）（表4、表5）。中  国  农  业  科  学54 卷3.5 3.0 2.5 2.0 1.5 1.0 0.5冷藏-3 Cold storage-3主成分1 Main axis (Variance: 97.75%)冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3冷藏-1、冷藏-2、冷藏-3 分别为冷藏1 个月、2 个月、3 个月；窖藏-1、窖藏-2、窖藏-3 分别为窖藏1 个月、2 个月、3 个月。0 为贮藏初期。下同Cold storage-1, cold storage-2 and cold storage-3 indicate 1, 2 and 3 months after cold storage, respectively; Cellar storage-1, cellar storage-2 and cellar storage-3 indicate 1, 2 and 3 months after cellar storage, respectively. 0 indicates initial storage.",
+        "pages": [
+          5,
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "中国农业科学  2021,54(21):4635-4649 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2021.21.013收稿日期：2021-01-11；接受日期：2021-04-30基金项目：财政部和农业农村部：国家现代农业产业技术体系（CARS-28-23）、河北省农林科学院创新工程（2019-2-1）联系方式：岳盈肖，E-mail：yyingxiao@163.com。何近刚，E-mail：hejingang2000@163.com。岳盈肖和何近刚为同等贡献作者。通信作者王永霞，E-mail：wyxhd2004@126.com。通信作者关军锋，E-mail：junfeng-guan@263.net开放科学（资源服务）标识码（OSID）：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析岳盈肖1,2，何近刚2，赵江丽2，闫子茹2，程玉豆2，武肖琦2，王永霞，关军锋1 河北工程大学生命科学与食品工程学院，河北邯郸 056038；2 河北省农林科学院生物技术与食品科学研究所/河北省植物转基因中心，石家庄 050051摘要：【目的】比较窖藏和冷藏过程中，鸭梨果实品质、呼吸速率、乙烯释放速率、电子鼻特征、挥发性物质及其相关基因表达的差异，进一步解析两种贮藏方式对鸭梨香气物质形成的影响及其机制。【方法】鸭梨采收后以窖藏和冷藏两种方式贮藏，测定贮藏期间果实硬度、可溶性固形物含量（SSC）、可滴定酸（TA）含量、呼吸速率和乙烯释放速率，使用电子鼻检测挥发性物质变化，利用气质联用色谱（GC-MS）测定挥发性物质成分及含量，利用荧光定量PCR（Real-time PCR）技术分析乙烯生成（PbACS1、PbACO2）及其信号转导（PbETR1、PbETR2、PbERS1a、PbERS1b、PbEIN3、PbERF）、挥发性物质合成（PbAAT1、PbADH2、PbADH3、PbADH5、PbHPL、PbLOX1、PbLOX8）相关基因的表达量变化情况。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0007",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": " The analysis on expression of genes related to ethylene and aroma compound synthesis showed that the expression of ACC oxidase (PbACO2), lipoxygenase (PbLOX1) and alcohol acyltransferase (PbAAT1) genes were significantly increased, and the expression of ethylene insensitive transcriptional regulator gene (PbEIN3) was down regulated in cellar storage in contrast to cold storage. 【Conclusion】Compared with cold storage, cellar storage condition promoted ethylene production and the expression of genes related to ethylene biosynthesis (PbACO2) and aroma compound synthesis (PbLOX1 and PbAAT1), thus, made more kinds and contents of aroma substances, and exhibited more rich aroma in Yali pear. Key words: Yali pear; quality; volatile compound; electronic nose; ethylene; gene expression",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    }
+  ],
+  "candidate_ids": [
+    "chunk:PAPER_005_C0002",
+    "chunk:PAPER_005_C0026",
+    "chunk:PAPER_005_C0001",
+    "chunk:PAPER_005_C0007",
+    "chunk:PAPER_005_C0003"
+  ],
+  "citation_gold_chunk_hit": 1,
+  "citation_gold_source_hit": 1,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出鸭梨采收后采用的两种贮藏方式为窖藏和冷藏，与参考答案及论文摘要方法部分一致，关键点完整、无矛盾。",
+      "claims": [
+        {
+          "claim": "该研究中鸭梨采收后采用的两种贮藏方式为窖藏和冷藏。",
+          "status": "supported",
+          "reason": "论文摘要方法部分明确记载“鸭梨采收后以窖藏和冷藏两种方式贮藏”，与回答一致。"
+        },
+        {
+          "claim": "证据E3的方法部分明确记载：鸭梨采收后以窖藏和冷藏两种方式贮藏。",
+          "status": "supported",
+          "reason": "E3文本包含“鸭梨采收后以窖藏和冷藏两种方式贮藏”，引用内容准确。"
+        },
+        {
+          "claim": "证据E1、E2、E4、E5中亦以窖藏与冷藏作为两种对比贮藏条件进行描述。",
+          "status": "supported",
+          "reason": "E1、E2、E4、E5均围绕窖藏与冷藏两种贮藏条件进行比较描述，可支持该说法。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3222,
+      "completion_tokens": 214,
+      "total_tokens": 3436,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 2582
+    },
+    "model": "deepseek-flash",
+    "response_id": "4d786772-1b0a-49f2-98c3-1ee20077a095",
+    "seconds": 5.967443000000003,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

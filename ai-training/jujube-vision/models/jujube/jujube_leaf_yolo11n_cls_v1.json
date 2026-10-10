@@ -1,0 +1,209 @@
+{
+  "model_name": "jujube_leaf_yolo11n_cls_v1",
+  "model_role": "jujube_leaf_visual_symptom_classifier",
+  "version": "v1",
+  "status": "frozen",
+  "freeze_date": "2026-10-08",
+  "framework": "Ultralytics",
+  "ultralytics_version": "8.3.40",
+  "architecture": "YOLO11n-cls",
+  "task": "classification",
+  "imgsz": 224,
+  "classes": [
+    "healthy",
+    "anthracnose",
+    "powdery_mildew",
+    "insect_damage",
+    "yellow_leaf"
+  ],
+  "class_semantics_zh": {
+    "healthy": "健康叶片视觉状态",
+    "anthracnose": "炭疽病类视觉表现",
+    "powdery_mildew": "白粉病类视觉表现",
+    "insect_damage": "虫害损伤视觉表现",
+    "yellow_leaf": "黄化视觉表现"
+  },
+  "class_index_policy": "Read integer-to-class mapping from checkpoint.names; classes is a semantic list, not a logit index mapping.",
+  "train_size": 2288,
+  "val_size": 456,
+  "test_size": 452,
+  "max_epochs": 80,
+  "actual_epochs": 49,
+  "best_epoch": 29,
+  "early_stopping": true,
+  "early_stopping_provenance": "inferred from results.csv and args.yaml; no server stop log inspected",
+  "patience": 20,
+  "best_val_top1": 0.82675,
+  "model_sha256": "57531b0b9e57b5714602cb79717148442ba662309df0e9bb1c3d2e092779c5a2",
+  "source_model_path": "runs\\jujube_leaf_yolo11n_cls_v13\\weights\\best.pt",
+  "model_path": "models\\jujube\\jujube_leaf_yolo11n_cls_v1.pt",
+  "dataset_version": "jujube_leaf_classifier_v3_final",
+  "parameter_count": 1532429,
+  "inference": {
+    "imgsz": 224,
+    "device": "cpu",
+    "half": false,
+    "augment": false,
+    "crop_fraction": 1.0,
+    "decision": "argmax",
+    "decoder": "cv2.imread matching Ultralytics ClassificationDataset"
+  },
+  "diagnostic_use": false,
+  "output_type": "visual observation / visual candidate",
+  "score_semantics": "model classification score, not disease diagnosis probability",
+  "prohibited_yellow_leaf_interpretations": [
+    "缺氮",
+    "缺铁",
+    "盐害",
+    "某具体病害"
+  ],
+  "required_risk_context": [
+    "环境",
+    "生育阶段",
+    "管理信息",
+    "KG",
+    "GraphRAG"
+  ],
+  "per_class_metrics": {
+    "healthy": {
+      "support": 173,
+      "precision": 0.8465608465608465,
+      "recall": 0.9248554913294798,
+      "f1": 0.8839779005524862
+    },
+    "anthracnose": {
+      "support": 106,
+      "precision": 0.7203389830508474,
+      "recall": 0.8018867924528302,
+      "f1": 0.7589285714285714
+    },
+    "powdery_mildew": {
+      "support": 28,
+      "precision": 0.5769230769230769,
+      "recall": 0.5357142857142857,
+      "f1": 0.5555555555555556
+    },
+    "insect_damage": {
+      "support": 59,
+      "precision": 1.0,
+      "recall": 0.7796610169491526,
+      "f1": 0.8761904761904762
+    },
+    "yellow_leaf": {
+      "support": 86,
+      "precision": 0.8356164383561644,
+      "recall": 0.7093023255813954,
+      "f1": 0.7672955974842768
+    }
+  },
+  "source_wise_metrics": {
+    "58py9f3nsy": {
+      "n": 301,
+      "accuracy": 0.7840531561461794,
+      "macro_precision": 0.7740137024679724,
+      "macro_recall": 0.7122675866339857,
+      "macro_f1": 0.7307461585352345,
+      "balanced_accuracy": 0.7122675866339856,
+      "weighted_f1": 0.782953244057035,
+      "present_classes": [
+        "healthy",
+        "anthracnose",
+        "powdery_mildew",
+        "insect_damage",
+        "yellow_leaf"
+      ],
+      "missing_classes": [],
+      "macro_definition": "unweighted mean over true classes present in this subset; zero division=0",
+      "per_class": {
+        "healthy": {
+          "support": 143,
+          "precision": 0.8227848101265823,
+          "recall": 0.9090909090909091,
+          "f1": 0.8637873754152824
+        },
+        "anthracnose": {
+          "support": 69,
+          "precision": 0.6901408450704225,
+          "recall": 0.7101449275362319,
+          "f1": 0.7
+        },
+        "powdery_mildew": {
+          "support": 17,
+          "precision": 0.5,
+          "recall": 0.6470588235294118,
+          "f1": 0.5641025641025641
+        },
+        "insect_damage": {
+          "support": 31,
+          "precision": 1.0,
+          "recall": 0.7096774193548387,
+          "f1": 0.8301886792452831
+        },
+        "yellow_leaf": {
+          "support": 41,
+          "precision": 0.8571428571428571,
+          "recall": 0.5853658536585366,
+          "f1": 0.6956521739130435
+        }
+      }
+    },
+    "yxmf3cd865": {
+      "n": 151,
+      "accuracy": 0.8675496688741722,
+      "macro_precision": 0.9111843209029207,
+      "macro_recall": 0.8031948831948832,
+      "macro_f1": 0.8238763786304769,
+      "balanced_accuracy": 0.8031948831948832,
+      "weighted_f1": 0.8604986950226338,
+      "present_classes": [
+        "healthy",
+        "anthracnose",
+        "powdery_mildew",
+        "insect_damage",
+        "yellow_leaf"
+      ],
+      "missing_classes": [],
+      "macro_definition": "unweighted mean over true classes present in this subset; zero division=0",
+      "per_class": {
+        "healthy": {
+          "support": 30,
+          "precision": 0.967741935483871,
+          "recall": 1.0,
+          "f1": 0.9836065573770492
+        },
+        "anthracnose": {
+          "support": 37,
+          "precision": 0.7659574468085106,
+          "recall": 0.972972972972973,
+          "f1": 0.8571428571428571
+        },
+        "powdery_mildew": {
+          "support": 11,
+          "precision": 1.0,
+          "recall": 0.36363636363636365,
+          "f1": 0.5333333333333333
+        },
+        "insect_damage": {
+          "support": 28,
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1": 0.9230769230769231
+        },
+        "yellow_leaf": {
+          "support": 45,
+          "precision": 0.8222222222222222,
+          "recall": 0.8222222222222222,
+          "f1": 0.8222222222222222
+        }
+      }
+    }
+  },
+  "evaluation_metrics_path": "reports\\model_a_test_metrics.json",
+  "evaluation_metrics_sha256": "62c9a64d922d45a8cb4c300190286f69044fefa4e9406b0102fb53bb7f7d285e",
+  "test_accuracy": 0.8119469026548672,
+  "test_macro_precision": 0.7958878689781871,
+  "test_macro_recall": 0.7502839824054287,
+  "test_macro_f1": 0.7683896202422732,
+  "test_balanced_accuracy": 0.7502839824054287,
+  "test_weighted_f1": 0.8110903106226772
+}

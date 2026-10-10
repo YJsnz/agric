@@ -1,0 +1,89 @@
+{
+  "model_name": "wheat_water_stress_yolo11n_cls_v1",
+  "version": "v1",
+  "frozen": true,
+  "frozen_at_utc": "2026-10-03T10:13:06.031575+00:00",
+  "architecture": "YOLO11n-cls",
+  "task": "weakly supervised wheat canopy deficit-irrigation visual classification",
+  "model_path": "models/wheat/wheat_water_stress_yolo11n_cls_v1.pt",
+  "path_base": "directory containing data/, models/, reports/, runs/, scripts/ (actual nested wheat-vision project root)",
+  "source_model_path": "runs/wheat_water_stress_yolo11n_cls_v12/weights/best.pt",
+  "model_sha256": "14f5e8592020f81adb94500e100b8b7e62c56dfb819e21499af6545eebf3422e",
+  "classes": [
+    "normal",
+    "water_stress"
+  ],
+  "class_index_mapping": {
+    "0": "normal",
+    "1": "water_stress"
+  },
+  "selected_threshold": 0.37,
+  "threshold_selection": "validation balanced accuracy",
+  "threshold_selection_split": "val",
+  "test_used_for_threshold_selection": false,
+  "threshold_lock_path": "reports/model_b_threshold_lock.json",
+  "threshold_lock_sha256": "67225b2ccea06c55e2ce27cdf0db0c76162b9c1b3daf30d021c35415d7212ef1",
+  "image_size": 224,
+  "ultralytics_version": "8.3.40",
+  "inference": {
+    "image_size": 224,
+    "workers": 0,
+    "half": false,
+    "augment": false,
+    "score_class": "water_stress",
+    "decision_rule": "water_stress if water_stress visual score >= selected_threshold else normal"
+  },
+  "test_accuracy": 0.6349206349206349,
+  "test_macro_f1": 0.617801354004865,
+  "test_balanced_accuracy": 0.6317204301075269,
+  "water_stress_precision": 0.7142857142857143,
+  "water_stress_recall": 0.43010752688172044,
+  "test_samples": 189,
+  "test_confusion_matrix": [
+    [
+      80,
+      16
+    ],
+    [
+      53,
+      40
+    ]
+  ],
+  "label_type": "treatment-derived weak label",
+  "diagnostic_use": false,
+  "model_role": "weak-supervision visual evidence model",
+  "water_stress_definition": "冠层视觉表现更接近花后亏缺灌溉实验处理组",
+  "visual_score_definition": "water-stress-treatment visual similarity score; water_stress class model score for both output classes, not probability of physical water deficit",
+  "labels_zh": {
+    "normal": "正常冠层视觉状态",
+    "water_stress": "疑似水分胁迫视觉表现"
+  },
+  "explanations_zh": {
+    "normal": "当前冠层视觉表现更接近正常灌溉处理组。",
+    "water_stress": "当前冠层视觉表现更接近花后亏缺灌溉处理组，建议结合土壤水分、天气、生育期及知识图谱证据进一步判断。"
+  },
+  "disclaimer_zh": "模型仅提供实验处理组弱监督视觉证据，不能确认实际缺水或土壤水分状态；normal也不保证没有其他胁迫。",
+  "prohibited_interpretations": [
+    "已发生缺水",
+    "土壤已经缺水",
+    "缺水概率XX%",
+    "soil water deficit probability",
+    "probability_of_water_deficit"
+  ],
+  "best_epoch": 6,
+  "best_val_top1": 0.60317,
+  "data_source": {
+    "title": "Diverse Canopy of Wheat Cultivar Mixtures",
+    "url": "https://zenodo.org/records/10694706",
+    "doi": "10.5281/zenodo.10694706",
+    "experiment_region": "Iran; not Huanghua field validation",
+    "clean_images": 1226,
+    "control_plots": 45,
+    "deficit_plots": 45,
+    "label_source": "treatment_assignment",
+    "exact_irrigation_start": "unknown"
+  },
+  "evaluation_report_path": "reports/MODEL_B_EVALUATION.md",
+  "threshold_calibration_report_path": "reports/MODEL_B_THRESHOLD_CALIBRATION.md",
+  "model_card_path": "reports/MODEL_B_MODEL_CARD.md"
+}

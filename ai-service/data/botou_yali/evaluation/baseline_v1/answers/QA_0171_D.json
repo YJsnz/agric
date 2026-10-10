@@ -1,0 +1,44 @@
+{
+  "id": "QA_0171",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何数值，仅表示证据不足，未作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 996,
+      "completion_tokens": 29,
+      "total_tokens": 1025,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 228
+    },
+    "model": "deepseek-flash",
+    "response_id": "79661691-d963-44e2-b965-cd6b12b98146",
+    "seconds": 5.3221653999999035,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "QA_0347",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文给出具体物质名称。",
+      "basis": "当前未提供该论文的原文、摘要或数据，且我的知识库中不包含该论文的具体内容。",
+      "reasoning": "问题要求依据特定论文回答低氧处理通过降低哪些物质积累来抑制鸭梨虎皮病。由于缺乏该论文的可靠信息，不能编造具体物质或因果关系。",
+      "advice": "请提供该论文的摘要、结果段落或相关数据；或查阅原文中关于低氧处理、虎皮病及代谢物质（如α-法尼烯、共轭三烯、酚类、丙二醛等）的测定结果，以确认具体物质。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 168,
+      "completion_tokens": 156,
+      "total_tokens": 324,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 168
+    },
+    "model": "deepseek-flash",
+    "response_id": "4860afbf-e35a-44cb-b6a3-c327d8ef8a19",
+    "seconds": 5.974050499999976,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何具体物质名称，仅说明缺乏论文信息并请求提供原文，属于未作答；而题目所依据的原文证据实际存在，因此不能视为正确。",
+      "claims": [
+        {
+          "claim": "当前未提供该论文的原文、摘要或数据。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence包含该论文关于低氧处理与虎皮病关系的原文段落，并非未提供原文或数据。"
+        },
+        {
+          "claim": "我的知识库中不包含该论文的具体内容。",
+          "status": "unverifiable",
+          "reason": "该断言涉及回答系统自身知识库状态，提供资料无法验证。"
+        },
+        {
+          "claim": "不能编造具体物质或因果关系。",
+          "status": "unverifiable",
+          "reason": "这是关于作答原则的声明，不属于可核查的农学/实验断言。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 896,
+      "completion_tokens": 177,
+      "total_tokens": 1073,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 768
+    },
+    "model": "deepseek-flash",
+    "response_id": "adb117f0-ce7e-4fdc-a15f-d574cbd51078",
+    "seconds": 6.758802199999991,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

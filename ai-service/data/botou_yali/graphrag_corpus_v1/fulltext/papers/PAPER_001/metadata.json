@@ -1,0 +1,88 @@
+{
+  "source_id": "PAPER_001",
+  "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+  "source_type": "paper",
+  "crop": [
+    "鸭梨"
+  ],
+  "region": [
+    "河北省",
+    "石家庄市"
+  ],
+  "region_note": "河北（试材来自石家庄地区）",
+  "year": 2020,
+  "evidence_level": "A",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [
+    "储藏期",
+    "货架期"
+  ],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+  "authors": [],
+  "doi": "10.3864/j.issn.0578-1752.2020.23.016",
+  "availability": "fulltext_pdf_available",
+  "review_status": "fulltext_acquired_content_review_pending",
+  "fulltext_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+  "text_path": "data/botou_yali/graphrag_corpus_v1/processed/PAPER_001/text.txt",
+  "pages_path": "data/botou_yali/graphrag_corpus_v1/processed/PAPER_001/pages.json",
+  "page_count": 11,
+  "ready_for_chunking": true,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "实验材料来自河北石家庄地区鸭梨，并非专门的泊头果园试验；应用到泊头时应标注地域外推。",
+  "kg_source_ids": [],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/landing.html",
+      "sha256": "bfdbae758528eb9b39e3bd8caf622d58b0b3346d8bd178051818a69eef4777ce",
+      "bytes": 119567,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+      "sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+      "bytes": 533731,
+      "role": "fulltext"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/summary.md",
+      "sha256": "58754610256a4b044a34fd0e9a9925bac819ce959413f24dba2933c86af34aa4",
+      "bytes": 1285,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": {
+    "source_id": "PAPER_001",
+    "url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21248",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+    "attempted_at": "2026-09-15T06:22:21.908654+00:00",
+    "resolved_url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21248",
+    "status": "downloaded_pending_review",
+    "bytes": 533731,
+    "sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7"
+  },
+  "acquisition_attempts": [
+    {
+      "source_id": "PAPER_001",
+      "url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/landing.html",
+      "attempted_at": "2026-09-15T06:21:28.424457+00:00",
+      "resolved_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+      "status": "downloaded_pending_review",
+      "bytes": 119567,
+      "sha256": "bfdbae758528eb9b39e3bd8caf622d58b0b3346d8bd178051818a69eef4777ce"
+    },
+    {
+      "source_id": "PAPER_001",
+      "url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21248",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+      "attempted_at": "2026-09-15T06:22:21.908654+00:00",
+      "resolved_url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21248",
+      "status": "downloaded_pending_review",
+      "bytes": 533731,
+      "sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7"
+    }
+  ],
+  "extraction_status": "text_available_review_pending"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "QA_0308",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法回答与PbAAT1表达量呈显著正相关的具体基因。",
+      "basis": "未提供该论文的研究记录或数据，且我无法确认该论文中关于PbAAT1相关基因的具体分析结果。",
+      "reasoning": "问题要求依据特定论文《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，但未提供任何证据（evidence为空），我自身知识中也没有该论文的详细数据，因此不能编造基因名称或相关性结论。",
+      "advice": "请提供该论文的相关段落、图表或数据，或直接查阅原文中关于PbAAT1与其它基因表达相关性的分析部分。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 168,
+      "completion_tokens": 154,
+      "total_tokens": 322,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 168
+    },
+    "model": "deepseek-flash",
+    "response_id": "8845a4d6-e055-442d-a8e7-ba24fb936a78",
+    "seconds": 6.554172699999981,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.25,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何基因名称，明确表示无法回答，属于拒答；在可回答题中拒答不算正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 717,
+      "completion_tokens": 42,
+      "total_tokens": 759,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 589
+    },
+    "model": "deepseek-flash",
+    "response_id": "2ae7ab62-0c28-4879-9687-fd7f885878ce",
+    "seconds": 7.240061799999694,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

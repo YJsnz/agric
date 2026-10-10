@@ -1,0 +1,10 @@
+"""Unified launch entry; retains the existing Neo4j-backed FastAPI application."""
+import os
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parent/'graph_web'))
+from api import app
+
+if __name__=='__main__':
+    import uvicorn
+    uvicorn.run(app,host='127.0.0.1',port=int(os.environ.get('GRAPH_WEB_PORT','8090')))

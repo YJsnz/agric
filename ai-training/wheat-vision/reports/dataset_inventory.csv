@@ -1,0 +1,13 @@
+﻿source_dataset,original_label,mapped_label,image_count,valid_count,corrupt_count,excluded_count
+nitrogen_rust,control,unmapped,791,791,0,791
+nitrogen_rust,deficiency,unmapped,300,300,0,300
+nitrogen_rust,diseased,unmapped,368,368,0,368
+wheat_disease_original,BlackPoint,exclude,2303,2303,0,2303
+wheat_disease_original,FusariumFootRot,exclude,2250,2250,0,2250
+wheat_disease_original,HealthyLeaf,healthy,2250,2250,0,30
+wheat_disease_original,LeafBlight,leaf_spot_blight,2400,2400,0,0
+wheat_disease_original,WheatBlast,exclude,2400,2400,0,2400
+wheat_leaf,Healthy,healthy,102,102,0,0
+wheat_leaf,septoria,leaf_spot_blight,97,97,0,0
+wheat_leaf,stripe_rust,rust,208,208,0,0
+winter_wheat_nitrogen,Wheat Dataset,unmapped,1081,1081,0,1081

@@ -1,0 +1,67 @@
+{
+  "id": "QA_0047",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法提供该具体数值",
+      "basis": "未检索到《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的原文或数据，且依据规则不编造论文、标准或数字。",
+      "reasoning": "问题要求引用特定论文中贮藏270 d及货架7 d时1.0%—3.0% O2处理果实的平均虎皮指数。该数值属于论文具体试验结果，我无法从已有知识中确认，因此不能给出。",
+      "advice": "请查阅该论文原文或提供相关数据表/图表，以获取准确的虎皮指数数值。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 185,
+      "completion_tokens": 143,
+      "total_tokens": 328,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 185
+    },
+    "model": "deepseek-flash",
+    "response_id": "367fcbf8-5b86-4c29-a003-8e19370ab24d",
+    "seconds": 5.889807900000051,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.8,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出问题所要求的数值，明确表示无法提供，属于没有作答；尽管原文证据中存在该数值18.86%，但回答未作回答。",
+      "claims": [
+        {
+          "claim": "未检索到《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的原文或数据",
+          "status": "contradicted",
+          "reason": "提供的original_evidence中包含该论文关于鸭梨虎皮指数的试验结果，因此该断言与提供证据相反。"
+        },
+        {
+          "claim": "无法从已有知识中确认贮藏270 d及货架7 d时1.0%—3.0% O2处理果实的平均虎皮指数",
+          "status": "unverifiable",
+          "reason": "这是关于回答者自身知识状态的陈述，提供资料不足以验证；但提供证据中实际包含该数值。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 999,
+      "completion_tokens": 176,
+      "total_tokens": 1175,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 871
+    },
+    "model": "deepseek-flash",
+    "response_id": "0909f5f2-87cb-4824-ad49-80f811400e34",
+    "seconds": 6.388740299999881,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -16,7 +16,7 @@ export default defineConfig({
   },
   server: {
     port: 5173,
-    proxy: { '/api': 'http://localhost:8081' },
+    proxy: { '/api/wheat': { target: process.env.WHEAT_API_TARGET || 'http://127.0.0.1:8090', timeout: 420000, proxyTimeout: 420000 }, '/api': 'http://localhost:8081' },
     fs: { allow: ['..'] }
   }
 })

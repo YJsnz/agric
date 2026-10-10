@@ -1,0 +1,63 @@
+[
+  {
+    "id": "DB13_T_1176_2018",
+    "catalog": {
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=91D99E4D94E62E24E05397BE0A0A3A10",
+      "status": "downloaded_not_reviewed",
+      "file": "standards\\pear\\DB13_T_1176_2018.catalog.html",
+      "sha256": "a40b75d4c18891e40b5ebb1d2f4a04bbcea9fbd5e37343bfda662d92e97cd1e5",
+      "bytes": 61976
+    }
+  },
+  {
+    "id": "DB13_T_6338_2026",
+    "catalog": {
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=598B66F9F87DC97DE06397BE0A0A7EC3",
+      "status": "downloaded_not_reviewed",
+      "file": "standards\\pear\\DB13_T_6338_2026.catalog.html",
+      "sha256": "24c0b8e102b552a8712df2275237689b52d58cfc28bda017913902fbbe5a3e71",
+      "bytes": 62214
+    },
+    "document": {
+      "url": "https://dbba.sacinfo.org.cn/portal/download/beae1def21790821c485705b165a4927a705e863fe4982941f226f80bd25466c",
+      "status": "downloaded_not_reviewed",
+      "file": "standards\\pear\\DB13_T_6338_2026.pdf",
+      "sha256": "a369ec07fcb5b82a9c8bd46ddffc72856c1218f06e10b5a655efa1169fae5335",
+      "bytes": 484786
+    }
+  },
+  {
+    "id": "DB13_T_6276_2026",
+    "catalog": {
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+      "status": "downloaded_not_reviewed",
+      "file": "standards\\pear\\DB13_T_6276_2026.catalog.html",
+      "sha256": "9f48cedc15d5d65f711fa213f6e624342b1b5115b6481a24601e9de46aa9f9aa",
+      "bytes": 62240
+    },
+    "document": {
+      "url": "https://dbba.sacinfo.org.cn/portal/download/d77d6bb92cee4a8040d85ba0c9eb4f0c52f5d10fa86fc8d5080ab7e63079bd84",
+      "status": "downloaded_not_reviewed",
+      "file": "standards\\pear\\DB13_T_6276_2026.pdf",
+      "sha256": "02b10a7ddcd05efd5af3ff3e6e408db01b347fa5d1f007da092521d9dd805bcd",
+      "bytes": 556333
+    }
+  },
+  {
+    "id": "DB13_T_5390_2021",
+    "catalog": {
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=C3B0BB05E84D4F89E05397BE0A0A81E3",
+      "status": "downloaded_not_reviewed",
+      "file": "standards\\pear\\DB13_T_5390_2021.catalog.html",
+      "sha256": "f95906767c4cbce3c4fd85365ec06b025f70efbe8dad1a1690fef45a63a02513",
+      "bytes": 62259
+    },
+    "document": {
+      "url": "https://dbba.sacinfo.org.cn/portal/download/db3700c9cd141a9f3ce0465a6d447b2e4bd872d6b02380657fc51abad44b99af",
+      "status": "downloaded_not_reviewed",
+      "file": "standards\\pear\\DB13_T_5390_2021.pdf",
+      "sha256": "64b3c0db0c947772251d5b0305ddfb03e2fa0efdf94f2cac32dff16dfbfe52d0",
+      "bytes": 256732
+    }
+  }
+]

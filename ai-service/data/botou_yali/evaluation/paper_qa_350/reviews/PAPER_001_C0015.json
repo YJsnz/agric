@@ -1,0 +1,29 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0380",
+      "question": "根据《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的研究记录，本研究提取鸭梨果皮组织总RNA时使用了哪个试剂盒？",
+      "answer_quote": "RNA 抽提纯化试剂盒SK8661（上海生工）说明书提取果皮组织总RNA",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0381",
+      "question": "根据《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的研究记录，本研究用什么方法检测提取的总RNA质量？",
+      "answer_quote": "紫外分光光度计和1.5%琼脂糖凝胶电泳检测质量合格的总RNA",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0382",
+      "question": "根据《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的研究记录，本研究将总RNA反转录为cDNA使用了哪个试剂盒？",
+      "answer_quote": "采用RevertAid Premium Reverse Transcriptase （Thermo Scientific™EP0733，USA）试剂盒反转录为cDNA",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0383",
+      "question": "根据《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的研究记录，本研究合成的cDNA用于分析哪些方面的关键基因表达？",
+      "answer_quote": "作为乙烯合成与信号转导途径关键基因的表达分析",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

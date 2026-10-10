@@ -12,6 +12,7 @@ type Detection = {
   y: number
   width: number
   height: number
+  symptom?: 'leaf_spot' | 'leaf_curl' | 'pest' | 'healthy'
 }
 type DetectionFile = {
   schemaVersion: number
@@ -31,6 +32,17 @@ const videoRef = ref<HTMLVideoElement>()
 const videoTime = ref(0)
 const detectionFile = ref<DetectionFile>()
 const detectionState = ref<'loading' | 'ready' | 'pending' | 'error'>('loading')
+const manualKnowledgeSymptom = ref('')
+const knowledgeOptions = [{ value:'leaf_spot', label:'叶子有斑' }, { value:'leaf_curl', label:'叶片卷曲' }, { value:'pest', label:'看见虫子' }, { value:'healthy', label:'看不出来' }]
+const recognizedKnowledgeSymptom = computed(() => detections.value.find(item => knowledgeOptions.some(option => option.value === item.symptom))?.symptom || '')
+const knowledgeLink = computed(() => {
+  const url = new URL('/', window.location.origin)
+  url.port = '8090'
+  const symptom = manualKnowledgeSymptom.value || recognizedKnowledgeSymptom.value
+  if (symptom) url.searchParams.set('problem', symptom)
+  url.searchParams.set('from', manualKnowledgeSymptom.value ? 'manual_observation' : 'vision')
+  return url.href
+})
 const cameras = ['入口全景', '种植区 A', '种植区 B']
 const VIDEO_URL = `${import.meta.env.BASE_URL}assets/media/greenhouse-monitor.mp4`
 const DETECTIONS_URL = `${import.meta.env.BASE_URL}assets/media/greenhouse-monitor.detections.json`
@@ -208,12 +220,22 @@ onBeforeUnmount(() => { cancelAnimationFrame(frameRequest); if (recorder?.state 
             </div>
             <div class="model-card" :class="{pending:!yoloReady}"><span>Y</span><div><b>目标检测服务</b><small>{{ yoloReady ? `${detectionFile?.model.file} · ${detectionFile?.model.tracker}` : '请先训练并导出检测结果' }}</small></div><i>{{ yoloReady ? '已接入' : '待部署' }}</i></div>
             <button class="playback" @click="openPlayback">查看录像回放 <span>→</span></button>
+            <div class="knowledge-bridge">
+              <b>看看为什么会这样</b>
+              <p>{{ recognizedKnowledgeSymptom ? '识别提示仅供参考，不等于确诊。' : '当前模型检测人员与作物。以下为手动选择观察到的症状，不是识别结果。' }}</p>
+              <select v-model="manualKnowledgeSymptom" aria-label="手动选择观察到的症状"><option value="">{{ recognizedKnowledgeSymptom ? '使用当前识别提示' : '先选一个看到的情况' }}</option><option v-for="option in knowledgeOptions" :key="option.value" :value="option.value">{{ option.label }}</option></select>
+              <a :href="knowledgeLink">去知识图谱了解原因 →</a>
+            </div>
           </aside>
         </div>
       </section>
     </div>
   </Transition>
 </template>
+
+<style scoped>
+.knowledge-bridge{padding:14px;border:1px solid #335548;border-radius:10px;margin-top:12px;color:#d5e9df;background:#163c2e}.knowledge-bridge p{font-size:11px;line-height:1.7;color:#a6c3b5;margin:8px 0}.knowledge-bridge select{width:100%;padding:8px;background:#f3faf6;color:#224837;border-radius:6px;border:0}.knowledge-bridge a{display:block;margin-top:10px;color:#a8edce;font-size:13px}
+</style>
 
 <style scoped lang="scss">
 .mask{position:fixed;z-index:80;inset:0;display:grid;place-items:center;padding:70px 24px;background:rgba(2,14,11,.62);backdrop-filter:blur(9px)}

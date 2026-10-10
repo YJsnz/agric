@@ -1,0 +1,59 @@
+{
+  "success": true,
+  "status": "ok",
+  "device": "cpu",
+  "models": {
+    "leaf": {
+      "loaded": true,
+      "model_name": "jujube_leaf_yolo11n_cls_v1",
+      "model_version": "v1",
+      "error": null
+    },
+    "fruit_bruise": {
+      "loaded": true,
+      "model_name": "jujube_fruit_bruise_yolo11n_cls_v1",
+      "model_version": "v1",
+      "error": null
+    },
+    "fruit_freshness": {
+      "loaded": true,
+      "model_name": "jujube_fruit_freshness_yolo11n_cls_v1",
+      "model_version": "v1",
+      "error": null
+    }
+  },
+  "vision_models": {
+    "leaf": {
+      "loaded": true,
+      "model_name": "jujube_leaf_yolo11n_cls_v1",
+      "model_version": "v1",
+      "error": null
+    },
+    "fruit_bruise": {
+      "loaded": true,
+      "model_name": "jujube_fruit_bruise_yolo11n_cls_v1",
+      "model_version": "v1",
+      "error": null
+    },
+    "fruit_freshness": {
+      "loaded": true,
+      "model_name": "jujube_fruit_freshness_yolo11n_cls_v1",
+      "model_version": "v1",
+      "error": null
+    }
+  },
+  "kg": {
+    "status": "available",
+    "backend": "local_review_graph",
+    "nodes": 122,
+    "edges": 86,
+    "neo4j": "reachable_not_authenticated"
+  },
+  "graphrag": {
+    "status": "available"
+  },
+  "llm": {
+    "configured": true,
+    "status": "available"
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "id": "QA_0329",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0038",
+    "chunk:PAPER_005_C0002",
+    "chunk:PAPER_005_C0037",
+    "chunk:PAPER_005_C0041"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称窖藏刺激α-法尼烯和MHO生成积累可能与窖藏时果皮衰老较快有关，E2和E4原文均明确表述‘窖藏条件刺激了α-法尼烯和MHO的生成与积累。这种现象可能与窖藏时果皮衰老较快有关’，且限定为‘可能’，与证据一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据中‘窖藏鸭梨果皮比冷藏时含有较高的α-法尼烯和MHO含量’、‘窖藏条件刺激了这两种物质的生成与积累’、‘推测可能与窖藏时果皮衰老较快有关’及‘尚未发现虎皮病现象’均可在E4和E2原文中找到对应表述。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理正确指出E2/E4为同一讨论段落，原文以‘可能与窖藏时果皮衰老较快有关’作推测性关联，并说明未提供机制验证、未建立虎皮病因果链，未将推测升级为已证因果。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "建议仅为请用户补充资料以进一步判断，未提出任何事实、数值、因果或操作建议，也无引用证据。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0038",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "3  讨论",
+        "text": "尽管这两种物质参与了苹果和梨果皮的虎皮病发生[28-30]，而本研究尚未发现虎皮病现象，但至少说明，窖藏条件刺激了α-法尼烯和MHO 的生成与积累。这种现象可能与窖藏时果皮衰老较快有关。",
+        "pages": [
+          12
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0037",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "3  讨论",
+        "text": "因此，PbAAT1、PbLOX1 可能是影响鸭梨果实香气形成的关键基因。进一步通过相关分析表明， PbLOX1 表达量与PbACO2、PbETR2 的表达量呈极显著正相关，而PbAAT1、PbLOX1 表达量与PbEIN3 呈显著负相关，说明香气物质的产生与乙烯生成和信号转导具有密切关系。同时，PbAAT1、PbLOX1、PbADH2、PbADH3、PbADH5 表达量之间呈显著或极显著关系，这说明乙烯和挥发性物质生成相关基因的表达之间具有相关性，并一起关系到果实挥发性物质的生成。这些结果进一步证明，温度和乙烯在调控果实香气生成中发挥重要作用，乙烯具有正调控功能[24-27]。此外，窖藏鸭梨果皮比冷藏时含有较高的α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）含量（表4）。尽管这两种物质参与了苹果和梨果皮的虎皮病发生[28-30]，而本研究尚未发现虎皮病现象，但至少说明，窖藏条件刺激了α-法尼烯和MHO 的生成与积累。这种现象可能与窖藏时果皮衰老较快有关。",
+        "pages": [
+          12
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0041",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "4  结论",
+        "text": "冷藏能更好地维持鸭梨果实硬度，保持较高的SSC，适合长期贮藏，以保持果实口感，但挥发性物质较少。相对冷藏而言，窖藏过程中，鸭梨容易软化，但生成更多酯类、醇类等香气物质，拥有较多的香气成分，香味浓郁。相关基因表达分析表明，鸭梨果实香气物质的生成与PbACO2、PbAAT1、PbLOX1 的表达呈正相关关系，而与PbEIN3 呈负相关关系。",
+        "pages": [
+          14
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "根据本研究讨论，窖藏条件刺激α-法尼烯和MHO生成与积累的现象，可能与窖藏时果皮衰老较快有关  [E2]  [E4] 。",
+    "basis": "研究讨论指出，窖藏鸭梨果皮比冷藏时含有较高的α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）含量，说明窖藏条件刺激了这两种物质的生成与积累，并推测这种现象可能与窖藏时果皮衰老较快有关  [E2]  [E4] 。同时，该研究尚未发现虎皮病现象  [E2]  [E4] 。",
+    "reasoning": "证据[E2]与[E4]为同一讨论段落，明确给出‘窖藏条件刺激了α-法尼烯和MHO的生成与积累’这一观察，并以‘可能与窖藏时果皮衰老较快有关’作为解释性推测。该表述为作者推测性关联，并非已验证因果；证据未提供果皮衰老与α-法尼烯/MHO积累之间的机制性验证，也未建立虎皮病发生的因果链，故仅按原文表述为‘可能有关’。",
+    "advice": "如需进一步判断该现象与果皮衰老的关系，请补充相关信息。",
+    "citations": [
+      "E2",
+      "E4"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出关键点：窖藏刺激α-法尼烯和MHO生成积累可能与窖藏时果皮衰老较快有关，与参考答案一致；并正确说明这是原文推测性关联，未发现虎皮病现象。无关键矛盾。",
+      "claims": [
+        {
+          "claim": "窖藏条件刺激α-法尼烯和MHO生成与积累的现象，可能与窖藏时果皮衰老较快有关。",
+          "status": "supported",
+          "reason": "E2/E4原文明确表述：窖藏条件刺激了α-法尼烯和MHO的生成与积累，这种现象可能与窖藏时果皮衰老较快有关。"
+        },
+        {
+          "claim": "窖藏鸭梨果皮比冷藏时含有较高的α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）含量。",
+          "status": "supported",
+          "reason": "E4原文明确表述：窖藏鸭梨果皮比冷藏时含有较高的α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）含量。"
+        },
+        {
+          "claim": "该研究尚未发现虎皮病现象。",
+          "status": "supported",
+          "reason": "E2/E4原文明确表述：本研究尚未发现虎皮病现象。"
+        },
+        {
+          "claim": "该表述为作者推测性关联，并非已验证因果。",
+          "status": "supported",
+          "reason": "原文使用“可能与……有关”的推测性表述，且未提供果皮衰老与α-法尼烯/MHO积累之间的机制性验证。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2242,
+      "completion_tokens": 315,
+      "total_tokens": 2557,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1602
+    },
+    "model": "deepseek-flash",
+    "response_id": "5bd89563-73bc-4e18-8831-5349d772ff69",
+    "seconds": 6.908868099999381,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "根据本研究讨论，窖藏条件刺激α-法尼烯和MHO生成与积累的现象，可能与窖藏时果皮衰老较快有关 [E2][E4]。",
+        "basis": "研究讨论指出，窖藏鸭梨果皮比冷藏时含有较高的α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）含量，说明窖藏条件刺激了这两种物质的生成与积累，并推测这种现象可能与窖藏时果皮衰老较快有关 [E2][E4]。同时，该研究尚未发现虎皮病现象 [E2][E4]。",
+        "reasoning": "证据E2与E4为同一讨论段落，明确给出‘窖藏条件刺激了α-法尼烯和MHO的生成与积累’这一观察，并以‘可能与窖藏时果皮衰老较快有关’作为解释性推测。该表述为作者推测性关联，并非已验证因果；证据未提供果皮衰老与α-法尼烯/MHO积累之间的机制性验证，也未建立虎皮病发生的因果链，故仅按原文表述为‘可能有关’。",
+        "advice": "如需进一步判断该现象与果皮衰老的关系，可补充窖藏与冷藏条件下果皮衰老相关指标（如膜透性、丙二醛等）及α-法尼烯、MHO含量的同步测定数据。",
+        "citations": [
+          "E2",
+          "E4"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 1908,
+        "completion_tokens": 307,
+        "total_tokens": 2215,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 1524
+      },
+      "model": "deepseek-flash",
+      "response_id": "c9f220a4-6c37-4138-9bcf-443fe4344b09",
+      "seconds": 6.988401199996588,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "根据本研究讨论，窖藏条件刺激α-法尼烯和MHO生成与积累的现象，可能与窖藏时果皮衰老较快有关 [E2][E4]。",
+        "basis": "研究讨论指出，窖藏鸭梨果皮比冷藏时含有较高的α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）含量，说明窖藏条件刺激了这两种物质的生成与积累，并推测这种现象可能与窖藏时果皮衰老较快有关 [E2][E4]。同时，该研究尚未发现虎皮病现象 [E2][E4]。",
+        "reasoning": "证据E2与E4为同一讨论段落，明确给出‘窖藏条件刺激了α-法尼烯和MHO的生成与积累’这一观察，并以‘可能与窖藏时果皮衰老较快有关’作为解释性推测。该表述为作者推测性关联，并非已验证因果；证据未提供果皮衰老与α-法尼烯/MHO积累之间的机制性验证，也未建立虎皮病发生的因果链，故仅按原文表述为‘可能有关’。",
+        "advice": "如需进一步判断该现象与果皮衰老的关系，请补充相关信息。",
+        "citations": [
+          "E2",
+          "E4"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2610,
+        "completion_tokens": 274,
+        "total_tokens": 2884,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176
+        },
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 434
+      },
+      "model": "deepseek-flash",
+      "response_id": "6a325d0a-eb87-46a0-b11d-542eefcf2d76",
+      "seconds": 7.43352400000731,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 34.127420499993605
+}

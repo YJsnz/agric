@@ -1,0 +1,12 @@
+{
+  "raw_images": 1464,
+  "usable_originals": 1464,
+  "candidate_pairs": 14352,
+  "review_pairs": 93,
+  "model": "ImageNet pretrained YOLO11n-cls global average pool 1280-D",
+  "weights_sha256": "c62d41bf9625777760018bf914d2e6cd472420ccd01706d97a61cb6c82502bd7",
+  "preprocessing": "EXIF corrected RGB, resize 224 square, /255, L2 pooled feature",
+  "thresholds": "pHash <=8 and CNN top6 are retrieval only; no automatic fruit identity threshold",
+  "source": "https://data.mendeley.com/datasets/3mtdhrwgfr/5",
+  "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12545820/"
+}

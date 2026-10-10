@@ -1,0 +1,1436 @@
+{
+  "domain": "qingxian_facility_vegetables",
+  "crop": "黄瓜",
+  "context": {
+    "region": null,
+    "scene": null,
+    "crop": "黄瓜",
+    "organ": "leaf",
+    "growth_stage": null,
+    "temperature": null,
+    "humidity": null,
+    "light": null,
+    "soil_moisture": null,
+    "ec": null,
+    "ph": null,
+    "season": null
+  },
+  "observations": {
+    "vision": null,
+    "environment": {
+      "region": null,
+      "scene": null,
+      "crop": "黄瓜",
+      "organ": "leaf",
+      "growth_stage": null,
+      "temperature": null,
+      "humidity": null,
+      "light": null,
+      "soil_moisture": null,
+      "ec": null,
+      "ph": null,
+      "season": null
+    }
+  },
+  "retrieval_query": "黄瓜叶背有灰黑色霉层，可能是什么问题？",
+  "recommendations": [],
+  "disclaimer": "视觉置信度和规则排序不是疾病概率；候选研判不是确诊。",
+  "status": "insufficient_evidence",
+  "generation_called": true,
+  "citations": [
+    {
+      "evidence_id": "E1",
+      "kind": "document_chunk",
+      "source_id": "CAAS_CUCUMBER",
+      "title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "content": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "metadata": {
+        "source_id": "CAAS_CUCUMBER",
+        "doc_id": "CAAS_CUCUMBER",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": null,
+        "organ": null,
+        "region": "适用地域未标定；河北科技报原文",
+        "scope": "production",
+        "topic": "症状特点：黄瓜霜霉病",
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "locator": {
+          "page": null,
+          "section": "症状特点：黄瓜霜霉病",
+          "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+          "normalized_start": 240,
+          "normalized_end": 429
+        },
+        "source_type": "extension",
+        "authority": "中国农业科技信息网（中国农业科学院）",
+        "evidence_level": "general_authoritative",
+        "evidence_grade": "C",
+        "review_status": "verbatim_verified",
+        "standard_status": "not_a_standard",
+        "source_sha256": "3349680d95ea6df1cd6f5e61f18563f35f04f97dd12efa2672d7ee7db5ac4044",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      },
+      "url": "https://cast.caas.cn/kj/syjs/zwbhjs/317422.html"
+    },
+    {
+      "evidence_id": "E2",
+      "kind": "document_chunk",
+      "source_id": "CAAS_CUCUMBER",
+      "title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "content": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "metadata": {
+        "source_id": "CAAS_CUCUMBER",
+        "doc_id": "CAAS_CUCUMBER",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": null,
+        "organ": null,
+        "region": "适用地域未标定；河北科技报原文",
+        "scope": "production",
+        "topic": "症状特点：黄瓜细菌性角斑病",
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "locator": {
+          "page": null,
+          "section": "症状特点：黄瓜细菌性角斑病",
+          "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+          "normalized_start": 429,
+          "normalized_end": 573
+        },
+        "source_type": "extension",
+        "authority": "中国农业科技信息网（中国农业科学院）",
+        "evidence_level": "general_authoritative",
+        "evidence_grade": "C",
+        "review_status": "verbatim_verified",
+        "standard_status": "not_a_standard",
+        "source_sha256": "3349680d95ea6df1cd6f5e61f18563f35f04f97dd12efa2672d7ee7db5ac4044",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      },
+      "url": "https://cast.caas.cn/kj/syjs/zwbhjs/317422.html"
+    }
+  ],
+  "sources": [
+    {
+      "evidence_id": "E1",
+      "kind": "document_chunk",
+      "source_id": "CAAS_CUCUMBER",
+      "title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "content": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "metadata": {
+        "source_id": "CAAS_CUCUMBER",
+        "doc_id": "CAAS_CUCUMBER",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": null,
+        "organ": null,
+        "region": "适用地域未标定；河北科技报原文",
+        "scope": "production",
+        "topic": "症状特点：黄瓜霜霉病",
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "locator": {
+          "page": null,
+          "section": "症状特点：黄瓜霜霉病",
+          "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+          "normalized_start": 240,
+          "normalized_end": 429
+        },
+        "source_type": "extension",
+        "authority": "中国农业科技信息网（中国农业科学院）",
+        "evidence_level": "general_authoritative",
+        "evidence_grade": "C",
+        "review_status": "verbatim_verified",
+        "standard_status": "not_a_standard",
+        "source_sha256": "3349680d95ea6df1cd6f5e61f18563f35f04f97dd12efa2672d7ee7db5ac4044",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      },
+      "url": "https://cast.caas.cn/kj/syjs/zwbhjs/317422.html"
+    },
+    {
+      "evidence_id": "E2",
+      "kind": "document_chunk",
+      "source_id": "CAAS_CUCUMBER",
+      "title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "content": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "metadata": {
+        "source_id": "CAAS_CUCUMBER",
+        "doc_id": "CAAS_CUCUMBER",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": null,
+        "organ": null,
+        "region": "适用地域未标定；河北科技报原文",
+        "scope": "production",
+        "topic": "症状特点：黄瓜细菌性角斑病",
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "locator": {
+          "page": null,
+          "section": "症状特点：黄瓜细菌性角斑病",
+          "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+          "normalized_start": 429,
+          "normalized_end": 573
+        },
+        "source_type": "extension",
+        "authority": "中国农业科技信息网（中国农业科学院）",
+        "evidence_level": "general_authoritative",
+        "evidence_grade": "C",
+        "review_status": "verbatim_verified",
+        "standard_status": "not_a_standard",
+        "source_sha256": "3349680d95ea6df1cd6f5e61f18563f35f04f97dd12efa2672d7ee7db5ac4044",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      },
+      "url": "https://cast.caas.cn/kj/syjs/zwbhjs/317422.html"
+    }
+  ],
+  "grounding": {
+    "passed": true,
+    "checks": [
+      {
+        "field": "conclusion",
+        "verdict": "supported",
+        "reason": "结论称黄瓜霜霉病为有依据的候选，并引用E1中“叶背面长出灰黑色霉层”的描述；同时明确仅凭该症状不能确诊、需结合叶正面病斑形态，与E1所述叶正面病斑特征一致，未超出证据范围。"
+      },
+      {
+        "field": "basis",
+        "verdict": "supported",
+        "reason": "basis中关于霜霉病叶背水浸状小点、多角形水浸状斑、灰黑色霉层的描述均来自E1；关于细菌性角斑病潮湿时叶背溢出白色菌脓而非灰黑色霉层的描述来自E2，引用与事实一致。"
+      },
+      {
+        "field": "reasoning",
+        "verdict": "supported",
+        "reason": "reasoning将用户所述“叶背有灰黑色霉层”与E1中霜霉病叶背灰黑色霉层描述对应，并指出资料未提供叶正面病斑颜色形状、菌脓等鉴别信息，E1和E2确实未给出用户田间的这些具体观察，因此不能确诊的推理有依据。"
+      },
+      {
+        "field": "advice",
+        "verdict": "supported",
+        "reason": "建议观察叶正面病斑是否多角形、颜色是否由褪绿转黄褐色，以及叶背潮湿时是否有白色菌脓而非霉层，分别对应E1和E2；结合棚内滴露处或窝风处先出现发病中心进行现场核验也来自E1，均为观察与现场复核建议，未推荐农药或生产操作。"
+      }
+    ],
+    "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+  },
+  "preliminary_assessment": {
+    "available": true,
+    "summary": "黄瓜叶背出现灰黑色霉层，有依据的候选是黄瓜霜霉病：原文描述其叶背面可长出灰黑色霉层 [E1] 。但仅凭这一症状尚不能确诊，需结合叶正面病斑形态等进一步观察。",
+    "candidate_risks": [],
+    "supporting_points": [
+      "原文记载黄瓜霜霉病发病初期叶背形成水浸状小点，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层 [E1] 。同一资料还记载黄瓜细菌性角斑病潮湿时叶背病斑溢出白色菌脓，而非灰黑色霉层 [E2] 。"
+    ],
+    "uncertainties": [
+      "用户所述“叶背有灰黑色霉层”与原文黄瓜霜霉病的叶背灰黑色霉层描述直接吻合 [E1] ，因此该候选有依据。但资料未提供叶正面病斑颜色与形状、是否有菌脓等鉴别信息，无法据此确诊 [E1]  [E2] 。"
+    ]
+  },
+  "local_conclusion": {
+    "available": false,
+    "reason": "未核实全部现场条件，候选研判不是确诊。"
+  },
+  "answer": "黄瓜叶背出现灰黑色霉层，有依据的候选是黄瓜霜霉病：原文描述其叶背面可长出灰黑色霉层 [E1] 。但仅凭这一症状尚不能确诊，需结合叶正面病斑形态等进一步观察。\n\n建议观察叶正面病斑是否呈多角形、颜色是否由褪绿转为黄褐色 [E1] ；同时查看叶背潮湿时是否有白色菌脓而非霉层 [E2] 。可结合棚内是否在滴露处或窝风处先出现发病中心进行现场核验 [E1] 。",
+  "grounded_answer": {
+    "sufficient": false,
+    "conclusion": "黄瓜叶背出现灰黑色霉层，有依据的候选是黄瓜霜霉病：原文描述其叶背面可长出灰黑色霉层 [E1] 。但仅凭这一症状尚不能确诊，需结合叶正面病斑形态等进一步观察。",
+    "basis": "原文记载黄瓜霜霉病发病初期叶背形成水浸状小点，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层 [E1] 。同一资料还记载黄瓜细菌性角斑病潮湿时叶背病斑溢出白色菌脓，而非灰黑色霉层 [E2] 。",
+    "reasoning": "用户所述“叶背有灰黑色霉层”与原文黄瓜霜霉病的叶背灰黑色霉层描述直接吻合 [E1] ，因此该候选有依据。但资料未提供叶正面病斑颜色与形状、是否有菌脓等鉴别信息，无法据此确诊 [E1]  [E2] 。",
+    "advice": "建议观察叶正面病斑是否呈多角形、颜色是否由褪绿转为黄褐色 [E1] ；同时查看叶背潮湿时是否有白色菌脓而非霉层 [E2] 。可结合棚内是否在滴露处或窝风处先出现发病中心进行现场核验 [E1] 。",
+    "citations": [
+      "E1",
+      "E2"
+    ],
+    "candidate_assessments": []
+  },
+  "diagnosis_context": {
+    "vision": null,
+    "context": {
+      "region": null,
+      "scene": null,
+      "crop": "黄瓜",
+      "organ": "leaf",
+      "growth_stage": null,
+      "temperature": null,
+      "humidity": null,
+      "light": null,
+      "soil_moisture": null,
+      "ec": null,
+      "ph": null,
+      "season": null
+    },
+    "matched_symptom_nodes": [
+      {
+        "id": "qingxian_facility_vegetables:7948b0b127fb7b8b",
+        "name": "叶背灰黑色霉层",
+        "type": "Symptom",
+        "crop": [
+          "黄瓜"
+        ],
+        "domain": "qingxian_facility_vegetables",
+        "aliases": []
+      }
+    ],
+    "ranked_candidates": [
+      {
+        "id": "QXE059",
+        "source": "qingxian_facility_vegetables:d06b416015e36f90",
+        "target": "qingxian_facility_vegetables:7948b0b127fb7b8b",
+        "subject": "黄瓜霜霉病",
+        "subject_type": "Disease",
+        "object": "叶背灰黑色霉层",
+        "object_type": "Symptom",
+        "relation": "HAS_SYMPTOM",
+        "kind": "fact",
+        "domain": "qingxian_facility_vegetables",
+        "crop": [
+          "黄瓜"
+        ],
+        "region": "适用地域未标定；河北科技报原文",
+        "growth_stage": null,
+        "stage_ids": [],
+        "organ": null,
+        "source_id": "CAAS_CUCUMBER",
+        "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+        "evidence_ids": [
+          "CAAS_CUCUMBER",
+          "QXC019"
+        ],
+        "chunk_id": "QXC019",
+        "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "locator": {
+          "page": null,
+          "section": "症状特点：黄瓜霜霉病",
+          "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+          "normalized_start": 240,
+          "normalized_end": 429
+        },
+        "evidence_level": "general_authoritative",
+        "evidence_grade": "C",
+        "evidence_strength": "direct",
+        "review_status": "verbatim_verified",
+        "conditions": [
+          "作物：黄瓜",
+          "茬口：原文未限定",
+          "地域：适用地域未标定；河北科技报原文"
+        ],
+        "condition": {
+          "crop": "黄瓜",
+          "stage": null,
+          "season": null,
+          "organ": null
+        },
+        "standard_status": "not_a_standard",
+        "candidate_id": "qingxian_facility_vegetables:d06b416015e36f90",
+        "candidate_name": "黄瓜霜霉病",
+        "candidate_type": "Disease",
+        "symptom_name": "叶背灰黑色霉层",
+        "matched_by": "symptom",
+        "ranking_score": 5,
+        "ranking_reasons": [
+          "原文症状节点匹配",
+          "器官与原文危害部位一致"
+        ],
+        "ranking_warnings": [
+          "规则分数不是疾病概率，候选不是确诊。"
+        ]
+      }
+    ]
+  },
+  "knowledge_graph": {
+    "matched_symptom_nodes": [
+      {
+        "id": "qingxian_facility_vegetables:7948b0b127fb7b8b",
+        "name": "叶背灰黑色霉层",
+        "type": "Symptom",
+        "crop": [
+          "黄瓜"
+        ],
+        "domain": "qingxian_facility_vegetables",
+        "aliases": []
+      }
+    ],
+    "candidate_risks": [
+      {
+        "id": "QXE059",
+        "source": "qingxian_facility_vegetables:d06b416015e36f90",
+        "target": "qingxian_facility_vegetables:7948b0b127fb7b8b",
+        "subject": "黄瓜霜霉病",
+        "subject_type": "Disease",
+        "object": "叶背灰黑色霉层",
+        "object_type": "Symptom",
+        "relation": "HAS_SYMPTOM",
+        "kind": "fact",
+        "domain": "qingxian_facility_vegetables",
+        "crop": [
+          "黄瓜"
+        ],
+        "region": "适用地域未标定；河北科技报原文",
+        "growth_stage": null,
+        "stage_ids": [],
+        "organ": null,
+        "source_id": "CAAS_CUCUMBER",
+        "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+        "evidence_ids": [
+          "CAAS_CUCUMBER",
+          "QXC019"
+        ],
+        "chunk_id": "QXC019",
+        "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "locator": {
+          "page": null,
+          "section": "症状特点：黄瓜霜霉病",
+          "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+          "normalized_start": 240,
+          "normalized_end": 429
+        },
+        "evidence_level": "general_authoritative",
+        "evidence_grade": "C",
+        "evidence_strength": "direct",
+        "review_status": "verbatim_verified",
+        "conditions": [
+          "作物：黄瓜",
+          "茬口：原文未限定",
+          "地域：适用地域未标定；河北科技报原文"
+        ],
+        "condition": {
+          "crop": "黄瓜",
+          "stage": null,
+          "season": null,
+          "organ": null
+        },
+        "standard_status": "not_a_standard",
+        "candidate_id": "qingxian_facility_vegetables:d06b416015e36f90",
+        "candidate_name": "黄瓜霜霉病",
+        "candidate_type": "Disease",
+        "symptom_name": "叶背灰黑色霉层",
+        "matched_by": "symptom"
+      }
+    ],
+    "diagnosis": null
+  },
+  "candidate_risks": [
+    {
+      "id": "QXE059",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:7948b0b127fb7b8b",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "叶背灰黑色霉层",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard",
+      "candidate_id": "qingxian_facility_vegetables:d06b416015e36f90",
+      "candidate_name": "黄瓜霜霉病",
+      "candidate_type": "Disease",
+      "symptom_name": "叶背灰黑色霉层",
+      "matched_by": "symptom",
+      "ranking_score": 5,
+      "ranking_reasons": [
+        "原文症状节点匹配",
+        "器官与原文危害部位一致"
+      ],
+      "ranking_warnings": [
+        "规则分数不是疾病概率，候选不是确诊。"
+      ]
+    }
+  ],
+  "candidate_ranking": [
+    {
+      "id": "QXE059",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:7948b0b127fb7b8b",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "叶背灰黑色霉层",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard",
+      "candidate_id": "qingxian_facility_vegetables:d06b416015e36f90",
+      "candidate_name": "黄瓜霜霉病",
+      "candidate_type": "Disease",
+      "symptom_name": "叶背灰黑色霉层",
+      "matched_by": "symptom",
+      "ranking_score": 5,
+      "ranking_reasons": [
+        "原文症状节点匹配",
+        "器官与原文危害部位一致"
+      ],
+      "ranking_warnings": [
+        "规则分数不是疾病概率，候选不是确诊。"
+      ]
+    }
+  ],
+  "graph_evidence": [
+    {
+      "id": "QXE009",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:f006c349c56b9ada",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "黄瓜",
+      "object_type": "Crop",
+      "relation": "AFFECTS_CROP",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "河北",
+      "growth_stage": "定植和生长期",
+      "stage_ids": [
+        "qingxian_facility_vegetables:41f194a201fc3bf4"
+      ],
+      "organ": null,
+      "source_id": "DB13_T5463_2021",
+      "source_title": "设施黄瓜主要病虫害生物防控技术规程",
+      "evidence_ids": [
+        "DB13_T5463_2021",
+        "QXC003"
+      ],
+      "chunk_id": "QXC003",
+      "evidence_text": "定植和生长期主要病害有细菌性角斑病、白粉病、灰霉病、霜霉病、炭疽病和病毒病等。",
+      "page": 6,
+      "section": "6.4 定植与生长期主要病害",
+      "locator": {
+        "page": 6,
+        "section": "6.4 定植与生长期主要病害",
+        "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+        "normalized_start": 556,
+        "normalized_end": 595
+      },
+      "evidence_level": "hebei_verified",
+      "evidence_grade": "A",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：河北"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": "定植和生长期",
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "current"
+    },
+    {
+      "id": "QXE057",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:bb847e1a27979129",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "叶背水浸状小点",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE058",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:f11dfadcef465111",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "多角形水浸状斑",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE059",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:7948b0b127fb7b8b",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "叶背灰黑色霉层",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE060",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:d71adb26a2beea34",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "黄褐色坏死斑",
+      "object_type": "Symptom",
+      "relation": "HAS_SYMPTOM",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE061",
+      "source": "qingxian_facility_vegetables:d06b416015e36f90",
+      "target": "qingxian_facility_vegetables:1c8693c843c24bb3",
+      "subject": "黄瓜霜霉病",
+      "subject_type": "Disease",
+      "object": "叶片",
+      "object_type": "PlantOrgan",
+      "relation": "AFFECTS_ORGAN",
+      "kind": "fact",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "适用地域未标定；河北科技报原文",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_CUCUMBER",
+      "source_title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "evidence_ids": [
+        "CAAS_CUCUMBER",
+        "QXC019"
+      ],
+      "chunk_id": "QXC019",
+      "evidence_text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "page": null,
+      "section": "症状特点：黄瓜霜霉病",
+      "locator": {
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+        "normalized_start": 240,
+        "normalized_end": 429
+      },
+      "evidence_level": "general_authoritative",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：黄瓜",
+        "茬口：原文未限定",
+        "地域：适用地域未标定；河北科技报原文"
+      ],
+      "condition": {
+        "crop": "黄瓜",
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    },
+    {
+      "id": "QXE086",
+      "source": "qingxian_facility_vegetables:af1a2bb50842fae5",
+      "target": "qingxian_facility_vegetables:d06b416015e36f90",
+      "subject": "低温寡照",
+      "subject_type": "EnvironmentFactor",
+      "object": "黄瓜霜霉病",
+      "object_type": "Disease",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "association",
+      "domain": "qingxian_facility_vegetables",
+      "crop": [
+        "黄瓜"
+      ],
+      "region": "吉林",
+      "growth_stage": null,
+      "stage_ids": [],
+      "organ": null,
+      "source_id": "CAAS_ENV",
+      "source_title": "做好夏菜定植和蔬菜管理工作",
+      "evidence_ids": [
+        "CAAS_ENV",
+        "QXC025"
+      ],
+      "chunk_id": "QXC025",
+      "evidence_text": "阴天多、低温寡照不利于棚室蔬菜的正常生长，有利于蔬菜病害的发生发展，如棚室黄瓜的角斑病、霜霉病、黑星病、灰霉病，番茄的叶霉病、灰霉病、晚疫病，豆角的灰霉病等。",
+      "page": null,
+      "section": "棚室低温寡照风险",
+      "locator": {
+        "page": null,
+        "section": "棚室低温寡照风险",
+        "file": "evidence\\raw\\government\\CAAS_ENV.html",
+        "normalized_start": 920,
+        "normalized_end": 999
+      },
+      "evidence_level": "transfer_pending",
+      "evidence_grade": "C",
+      "evidence_strength": "direct",
+      "review_status": "verbatim_verified",
+      "conditions": [
+        "作物：设施蔬菜背景",
+        "茬口：原文未限定",
+        "地域：吉林"
+      ],
+      "condition": {
+        "crop": null,
+        "stage": null,
+        "season": null,
+        "organ": null
+      },
+      "standard_status": "not_a_standard"
+    }
+  ],
+  "vector_evidence": [
+    {
+      "chunk_id": "QXC019",
+      "doc_id": "CAAS_CUCUMBER",
+      "title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "text": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "metadata": {
+        "source_id": "CAAS_CUCUMBER",
+        "doc_id": "CAAS_CUCUMBER",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": null,
+        "organ": null,
+        "region": "适用地域未标定；河北科技报原文",
+        "scope": "production",
+        "topic": "症状特点：黄瓜霜霉病",
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "locator": {
+          "page": null,
+          "section": "症状特点：黄瓜霜霉病",
+          "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+          "normalized_start": 240,
+          "normalized_end": 429
+        },
+        "source_type": "extension",
+        "authority": "中国农业科技信息网（中国农业科学院）",
+        "evidence_level": "general_authoritative",
+        "evidence_grade": "C",
+        "review_status": "verbatim_verified",
+        "standard_status": "not_a_standard",
+        "source_sha256": "3349680d95ea6df1cd6f5e61f18563f35f04f97dd12efa2672d7ee7db5ac4044",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      },
+      "url": "https://cast.caas.cn/kj/syjs/zwbhjs/317422.html",
+      "score": 0.6737593412399292
+    },
+    {
+      "chunk_id": "QXC020",
+      "doc_id": "CAAS_CUCUMBER",
+      "title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "text": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "metadata": {
+        "source_id": "CAAS_CUCUMBER",
+        "doc_id": "CAAS_CUCUMBER",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": null,
+        "organ": null,
+        "region": "适用地域未标定；河北科技报原文",
+        "scope": "production",
+        "topic": "症状特点：黄瓜细菌性角斑病",
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "locator": {
+          "page": null,
+          "section": "症状特点：黄瓜细菌性角斑病",
+          "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+          "normalized_start": 429,
+          "normalized_end": 573
+        },
+        "source_type": "extension",
+        "authority": "中国农业科技信息网（中国农业科学院）",
+        "evidence_level": "general_authoritative",
+        "evidence_grade": "C",
+        "review_status": "verbatim_verified",
+        "standard_status": "not_a_standard",
+        "source_sha256": "3349680d95ea6df1cd6f5e61f18563f35f04f97dd12efa2672d7ee7db5ac4044",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      },
+      "url": "https://cast.caas.cn/kj/syjs/zwbhjs/317422.html",
+      "score": 0.6073445081710815
+    },
+    {
+      "chunk_id": "QXC008",
+      "doc_id": "DB13_T5532_2022",
+      "title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+      "text": "7.5.3光照调节连阴天，在保证温度的情况下早揭晚盖。植株调整植株25cm～30cm高时，拉绳绕蔓；高度超过拉绳顶部时及时落蔓，并保留12～16片功能叶；及时打掉卷须、黄、老、病叶。",
+      "metadata": {
+        "source_id": "DB13_T5532_2022",
+        "doc_id": "DB13_T5532_2022",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": "早春茬",
+        "organ": null,
+        "region": "河北",
+        "scope": "production",
+        "topic": "7.5.3 光照与植株调整",
+        "page": 6,
+        "section": "7.5.3 光照与植株调整",
+        "locator": {
+          "page": 6,
+          "section": "7.5.3 光照与植株调整",
+          "file": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+          "normalized_start": 599,
+          "normalized_end": 690
+        },
+        "source_type": "local_standard",
+        "authority": "河北省市场监督管理局",
+        "evidence_level": "hebei_verified",
+        "evidence_grade": "A",
+        "review_status": "verbatim_verified",
+        "standard_status": "current",
+        "source_sha256": "0f1afcec35ca8982034955b34b3c3028c987e843658b5e01e57ac57c685bfc0d",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      },
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=DB94746D085AA27BE05397BE0A0AF49A",
+      "score": 0.5703514218330383
+    },
+    {
+      "chunk_id": "QXC003",
+      "doc_id": "DB13_T5463_2021",
+      "title": "设施黄瓜主要病虫害生物防控技术规程",
+      "text": "定植和生长期主要病害有细菌性角斑病、白粉病、灰霉病、霜霉病、炭疽病和病毒病等。",
+      "metadata": {
+        "source_id": "DB13_T5463_2021",
+        "doc_id": "DB13_T5463_2021",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": "定植和生长期",
+        "season": null,
+        "organ": null,
+        "region": "河北",
+        "scope": "production",
+        "topic": "6.4 定植与生长期主要病害",
+        "page": 6,
+        "section": "6.4 定植与生长期主要病害",
+        "locator": {
+          "page": 6,
+          "section": "6.4 定植与生长期主要病害",
+          "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+          "normalized_start": 556,
+          "normalized_end": 595
+        },
+        "source_type": "local_standard",
+        "authority": "河北省市场监督管理局",
+        "evidence_level": "hebei_verified",
+        "evidence_grade": "A",
+        "review_status": "verbatim_verified",
+        "standard_status": "current",
+        "source_sha256": "532a34be20ad7417a8f55386e158f9924f6e3b163847ccd87ad54484a051140d",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      },
+      "url": "https://dbba.sacinfo.org.cn/stdDetail/c0b155e42c74ef0d05dcd4f48e181010e33c546b6899f4efa573634dcf9cee71",
+      "score": 0.5673863887786865
+    },
+    {
+      "chunk_id": "QXC004",
+      "doc_id": "DB13_T5463_2021",
+      "title": "设施黄瓜主要病虫害生物防控技术规程",
+      "text": "定植和生长期主要虫害有蚜虫、粉虱、蓟马、斑潜蝇等。",
+      "metadata": {
+        "source_id": "DB13_T5463_2021",
+        "doc_id": "DB13_T5463_2021",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": "定植和生长期",
+        "season": null,
+        "organ": null,
+        "region": "河北",
+        "scope": "production",
+        "topic": "6.5 主要虫害",
+        "page": 7,
+        "section": "6.5 主要虫害",
+        "locator": {
+          "page": 7,
+          "section": "6.5 主要虫害",
+          "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+          "normalized_start": 189,
+          "normalized_end": 214
+        },
+        "source_type": "local_standard",
+        "authority": "河北省市场监督管理局",
+        "evidence_level": "hebei_verified",
+        "evidence_grade": "A",
+        "review_status": "verbatim_verified",
+        "standard_status": "current",
+        "source_sha256": "532a34be20ad7417a8f55386e158f9924f6e3b163847ccd87ad54484a051140d",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      },
+      "url": "https://dbba.sacinfo.org.cn/stdDetail/c0b155e42c74ef0d05dcd4f48e181010e33c546b6899f4efa573634dcf9cee71",
+      "score": 0.5499049425125122
+    },
+    {
+      "chunk_id": "QXC005",
+      "doc_id": "DB13_T5197_2020",
+      "title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "text": "10.1物理防治10.1.1设置防虫网在温室大棚通风口用40～60目尼龙网纱密封，防止外界蚜虫、斑潜蝇、蓟马和粉虱等害虫进入。10.1.2色板诱杀黄板诱杀蚜虫、斑潜蝇和粉虱等害虫。蓝板诱杀蓟马等害虫。每亩悬挂25cm×20cm诱虫板40片，垂直挂在两行中间植株中上部或上部。",
+      "metadata": {
+        "source_id": "DB13_T5197_2020",
+        "doc_id": "DB13_T5197_2020",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": "越冬长季节",
+        "organ": null,
+        "region": "河北",
+        "scope": "production",
+        "topic": "10.1 物理防治",
+        "page": 8,
+        "section": "10.1 物理防治",
+        "locator": {
+          "page": 8,
+          "section": "10.1 物理防治",
+          "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+          "normalized_start": 23,
+          "normalized_end": 160
+        },
+        "source_type": "local_standard",
+        "authority": "河北省市场监督管理局",
+        "evidence_level": "hebei_verified",
+        "evidence_grade": "A",
+        "review_status": "verbatim_verified",
+        "standard_status": "current",
+        "source_sha256": "ef67a9d9f2ee81bebe5101abfaed73b4b3e306d94157ffd76062ca09246c240f",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      },
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=B01C34C54C14ED69E05397BE0A0AF49A",
+      "score": 0.5286480188369751
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "kind": "document_chunk",
+      "source_id": "CAAS_CUCUMBER",
+      "title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "content": "1.黄瓜霜霉病的症状特点。黄瓜霜霉病在黄瓜各生育期都可发生，以生长中后期较为常见，主要危害叶片，往往先在棚室滴露处或窝风处发生，形成发病中心，之后迅速扩散。发病初期在叶背形成水浸状小点(清晨有露水时较明显，露水消失后隐退)，逐渐扩展成多角形水浸状斑，以后叶背面长出灰黑色霉层。叶正面病斑初期褪绿，逐渐变成黄褐色坏死斑，因受叶脉限制而呈多角形，最终多个病斑相互连接成片致叶片枯死。",
+      "metadata": {
+        "source_id": "CAAS_CUCUMBER",
+        "doc_id": "CAAS_CUCUMBER",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": null,
+        "organ": null,
+        "region": "适用地域未标定；河北科技报原文",
+        "scope": "production",
+        "topic": "症状特点：黄瓜霜霉病",
+        "page": null,
+        "section": "症状特点：黄瓜霜霉病",
+        "locator": {
+          "page": null,
+          "section": "症状特点：黄瓜霜霉病",
+          "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+          "normalized_start": 240,
+          "normalized_end": 429
+        },
+        "source_type": "extension",
+        "authority": "中国农业科技信息网（中国农业科学院）",
+        "evidence_level": "general_authoritative",
+        "evidence_grade": "C",
+        "review_status": "verbatim_verified",
+        "standard_status": "not_a_standard",
+        "source_sha256": "3349680d95ea6df1cd6f5e61f18563f35f04f97dd12efa2672d7ee7db5ac4044",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "kind": "document_chunk",
+      "source_id": "CAAS_CUCUMBER",
+      "title": "如何识别黄瓜霜霉病与细菌性角斑病",
+      "content": "2.黄瓜细菌性角斑病的症状特点。黄瓜幼苗期和成株期均可发病。叶片受害时，发病初期为水浸状褪绿色病斑，随着病情发展病斑呈多角形，浅褐色。潮湿时叶背病斑溢出白色菌脓，病斑后期干燥时常穿孔或破碎。叶柄、卷须、果实和茎蔓也可受害，病斑沿茎沟纵向扩展，形成条斑，严重时病茎纵向开裂，染病瓜条有臭味。",
+      "metadata": {
+        "source_id": "CAAS_CUCUMBER",
+        "doc_id": "CAAS_CUCUMBER",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": null,
+        "organ": null,
+        "region": "适用地域未标定；河北科技报原文",
+        "scope": "production",
+        "topic": "症状特点：黄瓜细菌性角斑病",
+        "page": null,
+        "section": "症状特点：黄瓜细菌性角斑病",
+        "locator": {
+          "page": null,
+          "section": "症状特点：黄瓜细菌性角斑病",
+          "file": "evidence\\raw\\government\\CAAS_CUCUMBER.html",
+          "normalized_start": 429,
+          "normalized_end": 573
+        },
+        "source_type": "extension",
+        "authority": "中国农业科技信息网（中国农业科学院）",
+        "evidence_level": "general_authoritative",
+        "evidence_grade": "C",
+        "review_status": "verbatim_verified",
+        "standard_status": "not_a_standard",
+        "source_sha256": "3349680d95ea6df1cd6f5e61f18563f35f04f97dd12efa2672d7ee7db5ac4044",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "kind": "document_chunk",
+      "source_id": "DB13_T5532_2022",
+      "title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+      "content": "7.5.3光照调节连阴天，在保证温度的情况下早揭晚盖。植株调整植株25cm～30cm高时，拉绳绕蔓；高度超过拉绳顶部时及时落蔓，并保留12～16片功能叶；及时打掉卷须、黄、老、病叶。",
+      "metadata": {
+        "source_id": "DB13_T5532_2022",
+        "doc_id": "DB13_T5532_2022",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": "早春茬",
+        "organ": null,
+        "region": "河北",
+        "scope": "production",
+        "topic": "7.5.3 光照与植株调整",
+        "page": 6,
+        "section": "7.5.3 光照与植株调整",
+        "locator": {
+          "page": 6,
+          "section": "7.5.3 光照与植株调整",
+          "file": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+          "normalized_start": 599,
+          "normalized_end": 690
+        },
+        "source_type": "local_standard",
+        "authority": "河北省市场监督管理局",
+        "evidence_level": "hebei_verified",
+        "evidence_grade": "A",
+        "review_status": "verbatim_verified",
+        "standard_status": "current",
+        "source_sha256": "0f1afcec35ca8982034955b34b3c3028c987e843658b5e01e57ac57c685bfc0d",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "kind": "document_chunk",
+      "source_id": "DB13_T5463_2021",
+      "title": "设施黄瓜主要病虫害生物防控技术规程",
+      "content": "定植和生长期主要病害有细菌性角斑病、白粉病、灰霉病、霜霉病、炭疽病和病毒病等。",
+      "metadata": {
+        "source_id": "DB13_T5463_2021",
+        "doc_id": "DB13_T5463_2021",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": "定植和生长期",
+        "season": null,
+        "organ": null,
+        "region": "河北",
+        "scope": "production",
+        "topic": "6.4 定植与生长期主要病害",
+        "page": 6,
+        "section": "6.4 定植与生长期主要病害",
+        "locator": {
+          "page": 6,
+          "section": "6.4 定植与生长期主要病害",
+          "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+          "normalized_start": 556,
+          "normalized_end": 595
+        },
+        "source_type": "local_standard",
+        "authority": "河北省市场监督管理局",
+        "evidence_level": "hebei_verified",
+        "evidence_grade": "A",
+        "review_status": "verbatim_verified",
+        "standard_status": "current",
+        "source_sha256": "532a34be20ad7417a8f55386e158f9924f6e3b163847ccd87ad54484a051140d",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "kind": "document_chunk",
+      "source_id": "DB13_T5463_2021",
+      "title": "设施黄瓜主要病虫害生物防控技术规程",
+      "content": "定植和生长期主要虫害有蚜虫、粉虱、蓟马、斑潜蝇等。",
+      "metadata": {
+        "source_id": "DB13_T5463_2021",
+        "doc_id": "DB13_T5463_2021",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": "定植和生长期",
+        "season": null,
+        "organ": null,
+        "region": "河北",
+        "scope": "production",
+        "topic": "6.5 主要虫害",
+        "page": 7,
+        "section": "6.5 主要虫害",
+        "locator": {
+          "page": 7,
+          "section": "6.5 主要虫害",
+          "file": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+          "normalized_start": 189,
+          "normalized_end": 214
+        },
+        "source_type": "local_standard",
+        "authority": "河北省市场监督管理局",
+        "evidence_level": "hebei_verified",
+        "evidence_grade": "A",
+        "review_status": "verbatim_verified",
+        "standard_status": "current",
+        "source_sha256": "532a34be20ad7417a8f55386e158f9924f6e3b163847ccd87ad54484a051140d",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      }
+    },
+    {
+      "evidence_id": "E6",
+      "kind": "document_chunk",
+      "source_id": "DB13_T5197_2020",
+      "title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+      "content": "10.1物理防治10.1.1设置防虫网在温室大棚通风口用40～60目尼龙网纱密封，防止外界蚜虫、斑潜蝇、蓟马和粉虱等害虫进入。10.1.2色板诱杀黄板诱杀蚜虫、斑潜蝇和粉虱等害虫。蓝板诱杀蓟马等害虫。每亩悬挂25cm×20cm诱虫板40片，垂直挂在两行中间植株中上部或上部。",
+      "metadata": {
+        "source_id": "DB13_T5197_2020",
+        "doc_id": "DB13_T5197_2020",
+        "domain": "qingxian_facility_vegetables",
+        "crop": "黄瓜",
+        "growth_stage": null,
+        "season": "越冬长季节",
+        "organ": null,
+        "region": "河北",
+        "scope": "production",
+        "topic": "10.1 物理防治",
+        "page": 8,
+        "section": "10.1 物理防治",
+        "locator": {
+          "page": 8,
+          "section": "10.1 物理防治",
+          "file": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+          "normalized_start": 23,
+          "normalized_end": 160
+        },
+        "source_type": "local_standard",
+        "authority": "河北省市场监督管理局",
+        "evidence_level": "hebei_verified",
+        "evidence_grade": "A",
+        "review_status": "verbatim_verified",
+        "standard_status": "current",
+        "source_sha256": "ef67a9d9f2ee81bebe5101abfaed73b4b3e306d94157ffd76062ca09246c240f",
+        "purpose": "candidate_assessment",
+        "transfer_notice": null,
+        "disease": []
+      }
+    },
+    {
+      "evidence_id": "E7",
+      "kind": "document_chunk",
+      "source_id": "CAAS_ENV",
+      "title": "做好夏菜定植和蔬菜管理工作",
+      "content": "阴天多、低温寡照不利于棚室蔬菜的正常生长，有利于蔬菜病害的发生发展，如棚室黄瓜的角斑病、霜霉病、黑星病、灰霉病，番茄的叶霉病、灰霉病、晚疫病，豆角的灰霉病等。",
+      "metadata": {
+        "source_id": "CAAS_ENV",
+        "doc_id": "CAAS_ENV",
+        "domain": "qingxian_facility_vegetables",
+        "crop": null,
+        "growth_stage": null,
+        "season": null,
+        "organ": null,
+        "region": "吉林",
+        "scope": "production",
+        "topic": "棚室低温寡照风险",
+        "page": null,
+        "section": "棚室低温寡照风险",
+        "locator": {
+          "page": null,
+          "section": "棚室低温寡照风险",
+          "file": "evidence\\raw\\government\\CAAS_ENV.html",
+          "normalized_start": 920,
+          "normalized_end": 999
+        },
+        "source_type": "extension",
+        "authority": "中国农业科技信息网（中国农业科学院）",
+        "evidence_level": "transfer_pending",
+        "evidence_grade": "C",
+        "review_status": "verbatim_verified",
+        "standard_status": "not_a_standard",
+        "source_sha256": "2e2a021158d70bfc0675b22bc32c5685ec36931f759cb7b32fb5da599b5a4b60",
+        "purpose": "candidate_assessment",
+        "transfer_notice": "reviewed_mechanism_comparison_only",
+        "disease": []
+      }
+    }
+  ],
+  "retrieval": {
+    "graph_status": "ok",
+    "graph_evidence_count": 7,
+    "vector_evidence_count": 6,
+    "fused_count": 7
+  }
+}

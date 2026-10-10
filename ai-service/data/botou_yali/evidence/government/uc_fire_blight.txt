@@ -1,0 +1,365 @@
+Fire Blight / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+Fire Blight
+Agriculture: Pear Pest Management Guidelines
+Fire Blight
+Erwinia amylovora
+On This Page
+Symptoms and Signs
+Comments on the Disease
+Management
+Symptoms and Signs
+The fire blight pathogen can invade all parts of the pear
+tree. Shoots, flowers, and fruits wilt, blacken, and die. Shoot
+tips exhibit the typical shephards crook. If infections are not removed, the
+entire tree may be killed as the disease spreads into the main scaffolds,
+trunk, and roots.
+Sticky, amber-colored droplets,
+containing millions of bacterial cells, exude from freshly blighted tissue.
+This can be used to distinguish fire blight from blossom blast infections.
+Comments on the Disease
+Erwinia amylovora
+bacteria overwinter in limb cankers and
+are spread by rain splash and insects. Infection occurs mostly through blossoms
+and less often through succulent shoots. Growth of the bacteria is favored by
+warm, humid weather in spring or fall.
+Management
+Fire blight development is influenced primarily by seasonal
+weather. Warm spring weather, accompanied by intermittent rain and hail, is
+ideal for disease development. Other influences on disease development are the
+varieties and rootstocks used in the orchard, location of the orchard,
+application of too much nitrogen fertilizer, heavy pruning, and over-irrigation.
+Management relies on maintaining trees in the proper range of vigor, applying protective
+blossom sprays (bactericides and biologicals), and most importantly, promptly
+finding, removing, and destroying blight strikes.
+Blossom applications of copper materials, the antibiotics
+streptomycin and terramycin, or rotations with both are necessary in
+pear-growing areas to reduce the spread of fire blight bacteria. The timing of
+the first application is critical. In California, average daily temperatures or
+degree-hours are used to schedule fire blight sprays. Resistance to
+streptomycin is well documented, and in the past years, there have been indications
+of decreasing sensitivity to terramycin in the upper Sacramento Valley. Resistance
+to terramycin was reported several years ago in one Sacramento Delta orchard
+and in the Marysville and Yuba City production areas. Applications should be
+made in the context of a total IPM program. For detailed information on these
+methods, see Integrated Pest Management for Apples and
+Pears 2nd ed., UC ANR Publication 3340.
+Biological Control
+Antagonistic microorganism formulations are commercially
+available to prevent colonization of the blossoms by Erwinia amylovora during bloom. Certain products also suppress
+frost formation and fruit russeting, thus having multiple uses. They are most
+effective when used in conjunction with antibiotic treatments such as
+streptomycin, but cannot be tank mixed with terramycin, and are incompatible
+with copper and certain fungicides, particularly mancozeb (Manzate).
+Cultural Control
+One active overwintering canker can cause infection of
+surrounding trees, and a few such cankers per acre can render a well-timed preventive
+spring and summer spray program ineffective. Remove and destroy cankers and
+diseased limbs by cutting at least 8 to 12 inches below the visible injury.
+This helps to stop disease movement in the tree and reduces the source for new
+infections. Be sure to sterilize pruning shears and saws with a 1:10 dilution
+of chlorine bleach or Lysol in water whenever they come into direct contact
+with diseased tissues and periodically throughout pruning.
+Organically Acceptable Methods
+Organically acceptable methods include cultural and
+biological controls along with sprays of terramycin, streptomycin, some copper
+products, and Bordeaux.
+Monitoring and Treatment Decisions
+Several mean temperature and degree-hour models are
+available to assist in predicting infection periods and the need for control.
+All are based on the minimum and maximum temperature thresholds above and below
+which bacterial growth and subsequent infection ceases. These models are
+utilized in most commercial California pear districts to time antibiotic and
+copper treatments.
+The UC model recommends the first spray at bloom when mean
+temperatures reach 62°F in March, 60°F in April, and 58°F in May. This model
+recommends treating every 3 to 5 days until the end of rattail bloom regardless
+of changes in weather that would inhibit bacterial growth and infection.
+The newer degree-hour models are based on assessing actual conditions
+for bacterial growth and infection and also indicate when treatment is
+unnecessary. One such model is the degree-hour model, which takes into account
+early bloom and periods of continuous cool weather, allowing adjustments in
+treatment timings. Use of the degree-hour method requires a recording system
+that provides a continuous temperature reading in or near your orchard. One
+degree-hour equals 1 degree above 65°F for 1 hour. For example, a temperature
+of 70°F for 2 hours equals 10 degree-hours (70°F is 5 degrees above 65°F and
+for 2 hours, 5 X 2=10).
+Accrue degree-hours each hour of the day unless 3
+consecutive days with maximum temperatures below 66°F occur. In this case, the number
+of degree-hours adding up over time is reset to zero until temperatures again
+exceed 65°F and degree-hours accrue again. The degree-hour total is not reduced
+by continuous cool temperatures if the total has surpassed 400 degree-hours and
+has coincided with precipitation or simultaneous warm, humid infection periods
+of at least 57°F and 90% relative humidity. If the orchard is being irrigated,
+the humidity threshold is reduced to 80% relative humidity as measured outside
+the orchard. If possible, start the season with a full soil water profile so irrigation
+during bloom can be avoided.
+In the Sacramento Valley, treat within 24 hours preceding
+rain if 1 to 150 degree-hours have accumulated. In the North Coast region,
+treat within 24 hours preceding rain when more than 150 degree-hours have
+accumulated. Treatments for both areas are recommended every 3 to 4 days when
+accumulation exceeds 150 degree-hours (Sacramento Valley) or 250 degree-hours
+(Lake County). Alternate-day treatments are recommended in the Sacramento
+Valley whenever more than 500 degree-hours occur in conjunction with major
+bloom periods.
+Two other models developed to predict fire blight infection periods are the Maryblyt model, used primarily in the mid-Atlantic states, and the Cougarblite model from the Pacific Northwest. These models have not yet been adequately validated under California conditions. For more information on these models, see the UC IPM Disease Model Database.
+Rain or hail may require immediate respray of the orchard if temperatures conducive to fire blight development exist. If conditions conducive to fire blight development have occurred and frost conditions develop that are severe enough to cause the pear skin to rupture, re-treat immediately. Varying degrees of bacterial resistance to streptomycin exist in California. As noted above, several cases of resistance to terramycin were reported, and less sensitive strains of E. amylovora have been associated with reduced performance under commercial conditions in the Sacramento Delta and upper Sacramento Valley.
+Common name
+Amount to use**
+REI‡
+PHI‡
+(Example trade name)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least likely to cause resistance are at the top of the table. When choosing a pesticide, consider information relating to the pesticide's properties and application timing, honey bees, and environmental impact. Always read the label of the product being used.
+(Note: For tank mixes, observe all directions for use on all labels,
+and employ the most restrictive limits and precautions. Never exceed the
+maximum a.i. on any label when tank mixing products that contain the same
+a.i.)
+A.
+STREPTOMYCIN#
+(Agri-Mycin 17, Firewall, Ag-Streptomycin)
+4.8–9.6 oz/acre
+12
+30
+COMMENTS: For dilute applications, do not use less than 4.8
+oz/100 gal spray. May cause bleaching and burning on Asian pear fruit and
+foliage, especially dilute applications and under cold, wet conditions.
+Restricted use material only for fire blight control in an organically
+certified crop. Streptomycin is fully compatible with antagonistic bacteria
+either as a tank mix or applied any time following an application of the
+bacteria. Resistance has developed to streptomycin throughout California but
+especially in the San Joaquin and upper Sacramento Valley. Alternate or
+preferably tank mix with terramycin to reduce or forestall resistance.
+B.
+OXYTETRACYCLINE#
+(Mycoshield 17%)
+8 oz/50 gal water/acre, or
+12
+60
+1 lb/100 gal water/acre
+COMMENTS: Not registered for dilute application. Restricted
+use material only for fire blight control in an organically certified crop.
+Do not use tank mix with antagonistic bacteria. Terramycin is less effective
+than streptomycin. CAUTION: several cases of resistance have been reported to
+terramycin, and less sensitive strains of E. amylovora have been
+associated with reduced performance under commercial conditions in the
+Sacramento Delta and upper Sacramento Valley.
+C.
+PSEUDOMONAS FLUORESCENS STRAIN A506#
+(BlightBan A506)
+Label rate
+4
+0
+MODE OF ACTION: A biological antagonist.
+COMMENTS: Blight Ban is intended to complement an antibiotic
+program, allowing fewer antibiotic treatments especially during the less
+critical infection periods such as before the main bloom, after petal fall,
+and in between flushes of rat-tail bloom—particularly when weather
+conditions are marginal (too cool) for disease. The bacteria must colonize
+blossom tissue before fire blight bacteria. Blight Ban also inhibits growth
+of bacteria that cause russeting and frost. This material should not be used
+with copper-based materials or tank mixed with terramycin or the scab
+fungicide mancozeb (Dithane). Compatibility with aluminum tris (Aliette) is
+still being researched, so use caution when using this material.
+D.
+AUREOBASIDIUM PULLULANS STRAIN DSM 14940 AND 14941
+(Blossom Protect)
+1.25 lb/acre
+4
+0
+MODE OF ACTION: A biological antagonist.
+COMMENTS: Blossom Protect is not to be used as a stand-alone
+bacteriacide. Apply several times through bloom for optimal performance.
+Late-bloom applications may cause fruit russeting under prolonged wet
+conditions. Do not apply to fruit, aerially, or through irrigation.
+E.
+COPPER DUST (6%)#
+15–25 lb/acre
+see label
+see label
+MODE OF ACTION GROUP NAME (NUMBER1): Multi-site contact (M1)
+COMMENTS: Copper materials can cause fruit
+scarring on some cultivars. To reduce the risk
+of russeting, make applications when fruit is dry and temperatures are not
+excessively cool or hot. Do not use in conjunction with antagonistic
+microorganisms. Do not use on Anjou or Comice varieties of pears. Check with
+your certifier to determine which products are organically acceptable.
+F.
+FIXED COPPER#
+Label rates
+see label
+see label
+MODE OF ACTION GROUP NAME (NUMBER1): Multi-site contact (M1)
+COMMENTS: Apply as a dilute spray only. Copper materials can
+cause fruit scarring on some cultivars. Labeled rates of 0.5 lb/acre of new
+formulations of fixed copper (e.g., Kocide 3000 and Badge X2) containing less
+than 30% metallic copper equivalent have been successfully used under low
+disease pressure to manage blight after the bloom period. To reduce the risk
+of russeting, make applications when fruit is dry and temperatures are not
+excessively cool or hot. Do not use in conjunction with antagonistic
+microorganisms. Do not use on Anjou or Comice varieties of pear. Check with
+your certifier to determine which products are organically acceptable.
+G.
+BORDEAUX MIXTURE#
+0.5:0.5:100
+1 lb
+see labels
+see labels
+MODE OF ACTION GROUP NAME (NUMBER1): Multi-site contact (M1)
+COMMENTS: Apply as a dilute spray only. Copper materials can
+cause fruit scarring on some cultivars. To reduce the risk of russeting, make
+applications when fruit is dry and temperatures are not excessively cool or
+hot. Do not use with antagonistic microorganisms. Do not use Bordeaux mixture
+containing lime sulfur on Comice because it is very phytotoxic. Check with
+your certifier to determine which copper products are organically acceptable
+if you are mixing your own formulation. For information on making a Bordeaux
+mixture see Bordeaux Mixture.
+H.
+FOSETYL-AL
+(Aliette WDG)
+2.5–5 lb
+12
+14
+MODE OF ACTION GROUP NAME (NUMBER1): Phosphonate (33)
+COMMENTS: Unlike antibiotics, fosetyl-al is a systemic
+material that increases the tree's resistance to infection. Not a stand-alone
+treatment; if used, apply one or two times at the beginning of bloom followed
+by a standard blight program of antibiotics, copper or biological
+antagonists.
+I.
+BACILLUS SUBTILLIS#
+(Serenade Max WDG)
+2–4 lb
+4
+0
+MODE OF ACTION: A biological fungicide.
+COMMENTS: Use in a rotational program with antibiotics and
+apply in sufficient water to provide full coverage.
+J.
+STREPTOMYCES LYDICUS WYEC 108#
+(Actinovate AG)
+3–12 oz/acre
+1 or until dry
+0
+MODE OF ACTION: A biological antagonist.
+COMMENTS: Use in a rotational program with antibiotics and
+apply in sufficient water to provide full coverage.
+**
+See label for dilution rate.
+‡
+Restricted entry interval (REI) is the number of hours
+(unless otherwise noted) from treatment until the treated area can be safely
+entered without protective clothing. Preharvest interval (PHI) is the
+number of days from treatment to harvest. In some cases the REI exceeds the
+PHI. The longer of two intervals is the minimum time that must elapse before
+harvest.
+#
+Acceptable for organically grown produce.
+1
+Group numbers are assigned by the Fungicide Resistance
+Action Committee (FRAC) according to different modes of actions. Fungicides with a different group number are
+suitable to alternate in a resistance management program. In California, make
+no more than one application of fungicides with mode of action Group numbers
+1, 4, 9, 11, or 17 before rotating to a fungicide with a different mode of
+action Group number; for fungicides with other Group numbers, make no more
+than two consecutive applications before rotating to fungicide with a
+different mode of action Group number.
+More information on pear bactericides
+Efficacy and timing of pear bactericides
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+W.D. Gubler, Plant Pathology, UC Davis
+J.E. Adaskaveg, Plant Pathology, UC Riverside
+Text Updated: 11/12
+Treatment Table Updated: 11/12
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

@@ -1,0 +1,200 @@
+{
+  "model_path": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\wheat-vision\\wheat-vision\\runs\\wheat_water_stress_yolo11n_cls_v12\\weights\\best.pt",
+  "dataset_path": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\wheat-vision\\wheat-vision\\data\\canopy_water_stress\\test",
+  "test_samples": 189,
+  "accuracy": 0.5873015873015873,
+  "macro_precision": 0.6666666666666667,
+  "macro_recall": 0.5816532258064516,
+  "macro_f1": 0.5238372093023256,
+  "balanced_accuracy": 0.5816532258064516,
+  "class_metrics": {
+    "normal": {
+      "precision": 0.5555555555555556,
+      "recall": 0.9375,
+      "f1_score": 0.6976744186046512,
+      "support": 96
+    },
+    "water_stress": {
+      "precision": 0.7777777777777778,
+      "recall": 0.22580645161290322,
+      "f1_score": 0.35,
+      "support": 93
+    }
+  },
+  "class_order": [
+    "normal",
+    "water_stress"
+  ],
+  "confusion_matrix": [
+    [
+      90,
+      6
+    ],
+    [
+      72,
+      21
+    ]
+  ],
+  "season_metrics_summary": [
+    {
+      "season": "1",
+      "sample_count": 63,
+      "accuracy": 0.6190476190476191,
+      "macro_precision": 0.653061224489796,
+      "macro_recall": 0.6060606060606061,
+      "macro_f1": 0.5809312638580931,
+      "balanced_accuracy": 0.6060606060606061,
+      "normal_precision": 0.5918367346938775,
+      "normal_recall": 0.8787878787878788,
+      "normal_f1_score": 0.7073170731707317,
+      "normal_support": 33,
+      "water_stress_precision": 0.7142857142857143,
+      "water_stress_recall": 0.3333333333333333,
+      "water_stress_f1_score": 0.45454545454545453,
+      "water_stress_support": 30
+    },
+    {
+      "season": "2",
+      "sample_count": 126,
+      "accuracy": 0.5714285714285714,
+      "macro_precision": 0.6929884275017018,
+      "macro_recall": 0.5714285714285714,
+      "macro_f1": 0.4913277511961723,
+      "balanced_accuracy": 0.5714285714285714,
+      "normal_precision": 0.5398230088495575,
+      "normal_recall": 0.9682539682539683,
+      "normal_f1_score": 0.6931818181818182,
+      "normal_support": 63,
+      "water_stress_precision": 0.8461538461538461,
+      "water_stress_recall": 0.1746031746031746,
+      "water_stress_f1_score": 0.2894736842105263,
+      "water_stress_support": 63
+    }
+  ],
+  "best_date": {
+    "season": "1",
+    "das": 192,
+    "date": "2015-06-01",
+    "sample_count": 14,
+    "normal_count": 7,
+    "water_stress_count": 7,
+    "accuracy": 0.8571428571428571,
+    "macro_f1": 0.8571428571428571,
+    "balanced_accuracy": 0.8571428571428571,
+    "statistical_note": "small per-date sample"
+  },
+  "worst_date": {
+    "season": "2",
+    "das": 194,
+    "date": "2016-05-17",
+    "sample_count": 14,
+    "normal_count": 7,
+    "water_stress_count": 7,
+    "accuracy": 0.42857142857142855,
+    "macro_f1": 0.3,
+    "balanced_accuracy": 0.42857142857142855,
+    "statistical_note": "small per-date sample"
+  },
+  "best_dates": [
+    {
+      "season": "1",
+      "das": 192,
+      "date": "2015-06-01",
+      "sample_count": 14,
+      "normal_count": 7,
+      "water_stress_count": 7,
+      "accuracy": 0.8571428571428571,
+      "macro_f1": 0.8571428571428571,
+      "balanced_accuracy": 0.8571428571428571,
+      "statistical_note": "small per-date sample"
+    },
+    {
+      "season": "2",
+      "das": 214,
+      "date": "2016-06-06",
+      "sample_count": 14,
+      "normal_count": 7,
+      "water_stress_count": 7,
+      "accuracy": 0.8571428571428571,
+      "macro_f1": 0.8541666666666667,
+      "balanced_accuracy": 0.8571428571428572,
+      "statistical_note": "small per-date sample"
+    }
+  ],
+  "worst_dates": [
+    {
+      "season": "2",
+      "das": 194,
+      "date": "2016-05-17",
+      "sample_count": 14,
+      "normal_count": 7,
+      "water_stress_count": 7,
+      "accuracy": 0.42857142857142855,
+      "macro_f1": 0.3,
+      "balanced_accuracy": 0.42857142857142855,
+      "statistical_note": "small per-date sample"
+    }
+  ],
+  "high_confidence_wrong_count": 11,
+  "wrong_count": 78,
+  "reference_comparison": {
+    "reference_accuracy": 0.587,
+    "absolute_difference": 0.00030158730158735825,
+    "within_one_percentage_point": true
+  },
+  "training": {
+    "best_epoch": 6,
+    "best_val_top1": 0.60317,
+    "last_recorded_epoch": 21,
+    "official_test_top1_user_provided": 0.587
+  },
+  "dataset_statistics": {
+    "train": {
+      "sample_count": 848,
+      "normal": 426,
+      "water_stress": 422,
+      "plots": 62
+    },
+    "val": {
+      "sample_count": 189,
+      "normal": 95,
+      "water_stress": 94,
+      "plots": 14
+    },
+    "test": {
+      "sample_count": 189,
+      "normal": 96,
+      "water_stress": 93,
+      "plots": 14
+    }
+  },
+  "leakage": {
+    "cross_split_plot": 0,
+    "cross_split_sha256": 0
+  },
+  "date_trend_analysis": [
+    "Season 1: first→last accuracy 0.5000→0.5714，macro-F1 0.3333→0.5333；中间日期有波动，无单调增强趋势；不能解释为胁迫强度变化。",
+    "Season 2: first→last accuracy 0.5000→0.5000，macro-F1 0.3333→0.3333；中间日期有波动，无单调增强趋势；不能解释为胁迫强度变化。"
+  ],
+  "ultralytics_version": "8.3.40",
+  "inference": {
+    "imgsz": 224,
+    "workers": 0,
+    "device": "cpu",
+    "half": false,
+    "augment": false
+  },
+  "integrity": {
+    "dataset_images_verified": 1226,
+    "dataset_unchanged": true,
+    "weights_unchanged": true,
+    "manifest_unchanged": true,
+    "raw_accessed_or_modified": false
+  },
+  "disclaimer": "Treatment-derived weak labels; confidence is not physical water-deficit probability.",
+  "predicted_class_counts": {
+    "normal": 162,
+    "water_stress": 27
+  },
+  "observed_issue": "normal prediction bias and date-dependent performance; weak-label noise/model capacity not identifiable from this evaluation"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "QA_0028",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法依据该论文的具体研究记录回答L*值的定义及其数值范围与果实变化的对应关系。",
+    "basis": "当前未提供该论文的原文或可核验的检索证据，且我无法确认该论文中L*值的具体测定方法和分级标准。",
+    "reasoning": "L*值通常属于CIELAB色空间中的明度指标，一般数值越大表示越亮、越偏白，数值越小表示越暗、越偏黑；但在鸭梨采后贮藏研究中，L*值具体对应果皮还是果肉、采用何种色差仪和光源、以及数值范围如何划分果实褐变或品质变化等级，必须依据该论文的方法部分和结果部分才能确定。由于缺少原文证据，不能编造具体数值范围或因果关系。",
+    "advice": "请提供该论文的方法与结果原文，或补充可核验的检索证据；在获得原文后，可重点查阅色差测定方法、L*值统计结果及与褐变指数或感官评价的对应关系。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.3333333333333333,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出L*值的定义及数值范围对应关系，而是以缺乏原文证据为由拒绝作答；但题目提供了可回答的原文证据，因此属于未作答。",
+      "claims": [
+        {
+          "claim": "无法依据该论文的具体研究记录回答L*值的定义及其数值范围与果实变化的对应关系。",
+          "status": "contradicted",
+          "reason": "提供的原文证据明确记载了L*值表示果实亮度，0—100分别表示果实由暗到亮变化，因此该断言与证据相反。"
+        },
+        {
+          "claim": "当前未提供该论文的原文或可核验的检索证据。",
+          "status": "contradicted",
+          "reason": "输入中提供了original_evidence原文证据，包含L*值的定义和数值范围。"
+        },
+        {
+          "claim": "L*值通常属于CIELAB色空间中的明度指标，一般数值越大表示越亮、越偏白，数值越小表示越暗、越偏黑。",
+          "status": "unverifiable",
+          "reason": "该断言属于一般性常识描述，提供的论文原文证据未涉及CIELAB色空间或偏白/偏黑表述，无法依据提供资料验证。"
+        },
+        {
+          "claim": "在鸭梨采后贮藏研究中，L*值具体对应果皮还是果肉、采用何种色差仪和光源、以及数值范围如何划分果实褐变或品质变化等级，必须依据该论文的方法部分和结果部分才能确定。",
+          "status": "unverifiable",
+          "reason": "提供资料未涉及果皮/果肉、色差仪型号、光源及褐变等级划分等具体信息，无法验证。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 637,
+      "completion_tokens": 334,
+      "total_tokens": 971,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 381
+    },
+    "model": "deepseek-flash",
+    "response_id": "e7682758-0471-4ae5-b783-13d6686de6b5",
+    "seconds": 6.798385299989604,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法依据该论文的具体研究记录回答L*值的定义及其数值范围与果实变化的对应关系。",
+        "basis": "当前未提供该论文的原文或可核验的检索证据，且我无法确认该论文中L*值的具体测定方法和分级标准。",
+        "reasoning": "L*值通常属于CIELAB色空间中的明度指标，一般数值越大表示越亮、越偏白，数值越小表示越暗、越偏黑；但在鸭梨采后贮藏研究中，L*值具体对应果皮还是果肉、采用何种色差仪和光源、以及数值范围如何划分果实褐变或品质变化等级，必须依据该论文的方法部分和结果部分才能确定。由于缺少原文证据，不能编造具体数值范围或因果关系。",
+        "advice": "请提供该论文的方法与结果原文，或补充可核验的检索证据；在获得原文后，可重点查阅色差测定方法、L*值统计结果及与褐变指数或感官评价的对应关系。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 201,
+        "completion_tokens": 237,
+        "total_tokens": 438,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 201
+      },
+      "model": "deepseek-flash",
+      "response_id": "0f2640ed-893e-4a5c-82f3-bbb8867d6864",
+      "seconds": 6.7152564999996684,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 13.515153000000282
+}

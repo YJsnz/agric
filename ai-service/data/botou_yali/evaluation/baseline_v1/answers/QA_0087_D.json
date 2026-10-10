@@ -1,0 +1,44 @@
+{
+  "id": "QA_0087",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关于图4基因表达情况的信息，仅声称证据不足，属于拒答；但该问题在提供的原文证据中有明确答案，因此不是正确作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 914,
+      "completion_tokens": 52,
+      "total_tokens": 966,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 274
+    },
+    "model": "deepseek-flash",
+    "response_id": "b7a063b6-90dc-4297-bf55-ff0011cc4035",
+    "seconds": 5.529851599999802,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

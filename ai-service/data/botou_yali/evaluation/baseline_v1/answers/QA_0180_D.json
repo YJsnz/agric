@@ -1,0 +1,44 @@
+{
+  "id": "QA_0180",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何实质内容，仅声明证据不足并请求补充资料，未回答晚采鸭梨果心褐变发生较早且严重的原因，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 958,
+      "completion_tokens": 51,
+      "total_tokens": 1009,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 190
+    },
+    "model": "deepseek-flash",
+    "response_id": "2f17c3ad-0989-4ce7-88eb-0ca1e205fd7e",
+    "seconds": 5.385651399999915,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

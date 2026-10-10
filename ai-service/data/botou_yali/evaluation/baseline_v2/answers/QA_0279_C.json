@@ -1,0 +1,259 @@
+{
+  "id": "QA_0279",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0007",
+    "chunk:PAPER_005_C0002",
+    "chunk:PAPER_005_C0026",
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0005"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中的顺序与数值区间均直接来自所引证据E3原文：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1），且证据明确为鸭梨果皮、果肉酯类物质含量顺序。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据中关于GC-MS分析、果肉挥发性成分种类及同类别物质含量少于同期果皮、贮藏期酯类含量增加，以及四组酯类含量数值区间与顺序，均可在所引证据E3原文中逐项找到对应表述。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理仅说明证据E3直接给出四组酯类物质含量数值区间并按从高到低排列，因此可直接确定顺序，未引入未引用的因果或跨阶段推断，符合证据内容。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议将顺序限定为研究记录中的测定结果，并提示不等同于本地生产指导、需结合本地条件验证，未把论文试验结果直接改造成本地普遍建议，也未添加证据未给出的剂量或收益。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0007",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": " The analysis on expression of genes related to ethylene and aroma compound synthesis showed that the expression of ACC oxidase (PbACO2), lipoxygenase (PbLOX1) and alcohol acyltransferase (PbAAT1) genes were significantly increased, and the expression of ethylene insensitive transcriptional regulator gene (PbEIN3) was down regulated in cellar storage in contrast to cold storage. 【Conclusion】Compared with cold storage, cellar storage condition promoted ethylene production and the expression of genes related to ethylene biosynthesis (PbACO2) and aroma compound synthesis (PbLOX1 and PbAAT1), thus, made more kinds and contents of aroma substances, and exhibited more rich aroma in Yali pear. Key words: Yali pear; quality; volatile compound; electronic nose; ethylene; gene expression",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0026",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "GC-MS 分析表明，鸭梨中挥发性物质主要为醛类、酯类、醇类、烷烃类、萜类化合物等。将两种贮藏方式同期果皮、果肉中挥发性物质进行比较表明，果肉中挥发性成分种类及同类别物质含量均少于同期果皮。贮藏期鸭梨酯类含量增加，香气物质增多。果皮、果肉酯类物质含量依次为：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1）（表4、表5）。中  国  农  业  科  学54 卷3.5 3.0 2.5 2.0 1.5 1.0 0.5冷藏-3 Cold storage-3主成分1 Main axis (Variance: 97.75%)冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3冷藏-1、冷藏-2、冷藏-3 分别为冷藏1 个月、2 个月、3 个月；窖藏-1、窖藏-2、窖藏-3 分别为窖藏1 个月、2 个月、3 个月。0 为贮藏初期。下同Cold storage-1, cold storage-2 and cold storage-3 indicate 1, 2 and 3 months after cold storage, respectively; Cellar storage-1, cellar storage-2 and cellar storage-3 indicate 1, 2 and 3 months after cellar storage, respectively. 0 indicates initial storage.",
+        "pages": [
+          5,
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0005",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": " The changes of volatile compounds during storage were measured by electronic nose, and the components and contents of volatile substances were determined by GC-MS. The expression of genes related to ethylene biosynthesis (PbACS1 and PbACO2), signal transduction (PbETR1, PbETR2, PbERS1a, PbERS1b, PbEIN3 and PbERF) and volatile compound synthesis (PbAAT1, PbADH2, PbADH3, PbADH5, PbHPL, PbLOX1 and PbLOX8) was analyzed by real-time PCR. 【Result】During cold storage of Yali pear fruit, the firmness had no obvious variation, and the SSC increased, while the TA content decreased. During cellar storage, there was a remarkable decrement in firmness and increment in TA content, but there was no obvious variation in SSC. Compared with cold storage, the respiration rate was higher and the peak of ethylene production rate appeared one month earlier under cellar storage.",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "鸭梨果皮、果肉酯类物质含量从高到低依次为：窖藏下果皮＞窖藏下果肉＞冷藏下果皮＞冷藏下果肉  [E3] 。",
+    "basis": "GC-MS分析表明，果肉中挥发性成分种类及同类别物质含量均少于同期果皮；贮藏期鸭梨酯类含量增加。果皮、果肉酯类物质含量依次为：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1） [E3] 。",
+    "reasoning": "证据[E3]直接给出四种贮藏方式与组织部位组合下酯类物质含量的数值区间，并按从高到低排列，因此可直接据此确定顺序，无需跨阶段或因果推断  [E3] 。",
+    "advice": "该顺序为研究记录中的测定结果，属于研究资料，不等同于本地生产指导；如需用于本地判断，应结合本地鸭梨品种、贮藏条件与检测数据另行验证  [E3] 。",
+    "citations": [
+      "E3"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答完整给出果皮、果肉酯类物质含量从高到低的顺序，并附有与原文一致的数值区间，条件、方向均正确，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "鸭梨果皮、果肉酯类物质含量从高到低依次为：窖藏下果皮＞窖藏下果肉＞冷藏下果皮＞冷藏下果肉。",
+          "status": "supported",
+          "reason": "E3原文明确给出该顺序。"
+        },
+        {
+          "claim": "果肉中挥发性成分种类及同类别物质含量均少于同期果皮。",
+          "status": "supported",
+          "reason": "E3原文有相同表述。"
+        },
+        {
+          "claim": "贮藏期鸭梨酯类含量增加。",
+          "status": "supported",
+          "reason": "E3原文有相同表述。"
+        },
+        {
+          "claim": "窖藏下果皮酯类物质含量为8.696—16.336 mg·kg-1。",
+          "status": "supported",
+          "reason": "E3原文给出该数值区间。"
+        },
+        {
+          "claim": "窖藏下果肉酯类物质含量为1.188—6.149 mg·kg-1。",
+          "status": "supported",
+          "reason": "E3原文给出该数值区间。"
+        },
+        {
+          "claim": "冷藏下果皮酯类物质含量为0.148—0.308 mg·kg-1。",
+          "status": "supported",
+          "reason": "E3原文给出该数值区间。"
+        },
+        {
+          "claim": "冷藏下果肉酯类物质含量为0.015—0.039 mg·kg-1。",
+          "status": "supported",
+          "reason": "E3原文给出该数值区间。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3031,
+      "completion_tokens": 331,
+      "total_tokens": 3362,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 2135
+    },
+    "model": "deepseek-flash",
+    "response_id": "526f6e31-1c71-4dc1-ab38-f65a5f3a35fc",
+    "seconds": 6.8587735000037355,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "鸭梨果皮、果肉酯类物质含量从高到低依次为：窖藏下果皮＞窖藏下果肉＞冷藏下果皮＞冷藏下果肉 [E3]。",
+        "basis": "GC-MS分析表明，果肉中挥发性成分种类及同类别物质含量均少于同期果皮；贮藏期鸭梨酯类含量增加。果皮、果肉酯类物质含量依次为：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1）[E3]。",
+        "reasoning": "证据E3直接给出四种贮藏方式与组织部位组合下酯类物质含量的数值区间，并按从高到低排列，因此可直接据此确定顺序，无需跨阶段或因果推断 [E3]。",
+        "advice": "该顺序为研究记录中的测定结果，属于研究资料，不等同于本地生产指导；如需用于本地判断，应结合本地鸭梨品种、贮藏条件与检测数据另行验证 [E3]。",
+        "citations": [
+          "E3"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2267,
+        "completion_tokens": 283,
+        "total_tokens": 2550,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 2011
+      },
+      "model": "deepseek-flash",
+      "response_id": "1ca85689-b8cc-4919-9470-35c274e2c3a4",
+      "seconds": 6.282510799996089,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 19.884404800002812
+}

@@ -1,0 +1,8 @@
+{
+  "duplicate_groups": 136,
+  "duplicate_images": 273,
+  "same_label_groups": 86,
+  "same_label_exact_duplicate": 86,
+  "cross_label_groups": 50,
+  "cross_label_exact_duplicate_conflict": 101
+}

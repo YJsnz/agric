@@ -1,0 +1,292 @@
+{
+  "id": "QA_0219",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0008",
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0019",
+    "chunk:PAPER_005_C0013",
+    "chunk:PAPER_005_C0018"
+  ],
+  "service_response": {
+    "status": "insufficient_evidence",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称证据未包含采后当天处理信息，所引E1-E5分别为引言、结论、品质结果和挥发性物质测定方法，均未记载采后当天处理，属于对证据缺口的准确陈述。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对E1-E5的内容概括与原文一致：E1为引言背景，E2为贮藏3个月内窖藏与冷藏对基因表达和香气影响的结论，E3/E5为果实品质变化结果，E4为挥发性物质含量测定方法；据此说明均未记载采后当天处理，未超出引用证据。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning逐条说明E1-E5的证据类型并指出均无采后当天处理描述，推理仅基于实际引用证据，未补造缺失信息。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice为请用户补充材料与方法部分原文或相关证据片段的请求，未提出事实性断言，也未引用证据。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0019",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0013",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "1.2.4  挥发性物质含量测定  准确称取果皮和果肉",
+        "text": "粉末冻样，加入适量饱和氯化钠，磁力搅拌，40℃水浴中预热30 min 后，经固相微萃取柱（PDMS/DVB，",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0018",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "窖藏条件下，鸭梨贮藏1 个月时硬度有所增加，此后缓慢降低，至3 个月时最小。窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "所提供的证据未包含鸭梨果实采后当天处理方式的信息 [E1]  [E2]  [E3]  [E4]  [E5] 。",
+    "basis": "证据[E1]为引言，介绍研究意义、前人进展与切入点，未涉及采后当天处理 [E1] ；[E2]为结论，涉及贮藏3个月内窖藏与冷藏对基因表达和香气的影响 [E2] ；[E3]、[E5]为果实品质变化结果 [E3]  [E5] ；[E4]为挥发性物质含量测定方法，描述取样后粉末冻样、加饱和氯化钠、磁力搅拌、40℃水浴预热30 min及固相微萃取 [E4] 。以上均未记载采后当天的处理。",
+    "reasoning": "逐条检索证据：[E1]属引言背景 [E1] ，[E2]属结论 [E2] ，[E3]/[E5]属品质结果 [E3]  [E5] ，[E4]属挥发性物质测定方法 [E4] ，均无采后当天处理描述，故无法回答该问题。",
+    "advice": "请补充该论文材料与方法部分中关于采收及采后当天处理的原文内容，或提供包含该信息的证据片段。",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 0.3333333333333333,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出采后当天处理的具体内容，仅说明所提供证据未包含该信息并请求补充材料，属于未作答；而参考答案明确为解袋、分拣、除去病虫害和残次果。",
+      "claims": [
+        {
+          "claim": "所提供的证据未包含鸭梨果实采后当天处理方式的信息",
+          "status": "contradicted",
+          "reason": "提供的original_evidence明确记载果实采后当天解袋、分拣、除去病虫害和残次果，因此该断言与提供证据相反。"
+        },
+        {
+          "claim": "证据[E1]为引言，介绍研究意义、前人进展与切入点，未涉及采后当天处理",
+          "status": "supported",
+          "reason": "E1内容确为引言，包含研究意义、前人研究进展和本研究切入点，未提及采后当天处理。"
+        },
+        {
+          "claim": "证据[E2]为结论，涉及贮藏3个月内窖藏与冷藏对基因表达和香气的影响",
+          "status": "supported",
+          "reason": "E2内容为结论，提到贮藏3个月内窖藏与冷藏对乙烯生成、香气合成相关基因表达及香气物质的影响。"
+        },
+        {
+          "claim": "证据[E3]、[E5]为果实品质变化结果",
+          "status": "supported",
+          "reason": "E3和E5均位于2.1果实品质变化部分，描述SSC、TA、硬度等品质变化。"
+        },
+        {
+          "claim": "证据[E4]为挥发性物质含量测定方法，描述取样后粉末冻样、加饱和氯化钠、磁力搅拌、40℃水浴预热30 min及固相微萃取",
+          "status": "supported",
+          "reason": "E4内容为挥发性物质含量测定方法，包含粉末冻样、饱和氯化钠、磁力搅拌、40℃水浴预热30 min和固相微萃取柱等描述。"
+        },
+        {
+          "claim": "以上均未记载采后当天的处理",
+          "status": "contradicted",
+          "reason": "提供的original_evidence明确记载了采后当天解袋、分拣、除去病虫害和残次果，因此该断言与提供证据相反。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2249,
+      "completion_tokens": 428,
+      "total_tokens": 2677,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 1225
+    },
+    "model": "deepseek-flash",
+    "response_id": "8e093ff2-2e09-4bc6-b024-c7ddcfd4f120",
+    "seconds": 6.75293290000991,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据未包含鸭梨果实采后当天处理方式的信息。",
+        "basis": "证据E1为引言，介绍研究意义、前人进展与切入点，未涉及采后当天处理[E1]；E2为结论，涉及贮藏3个月内窖藏与冷藏对基因表达和香气的影响[E2]；E3、E5为果实品质变化结果[E3][E5]；E4为挥发性物质含量测定方法，描述取样后粉末冻样、加饱和氯化钠、磁力搅拌、40℃水浴预热30 min及固相微萃取[E4]。以上均未记载采后当天的处理。",
+        "reasoning": "逐条检索证据：E1属引言背景，E2属结论，E3/E5属品质结果，E4属挥发性物质测定方法，均无采后当天处理描述，故无法回答该问题。",
+        "advice": "请补充该论文材料与方法部分中关于采收及采后当天处理的原文内容，或提供包含该信息的证据片段。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 1706,
+        "completion_tokens": 261,
+        "total_tokens": 1967,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1578
+      },
+      "model": "deepseek-flash",
+      "response_id": "05019bdc-c832-4628-8cc9-51e72a2250da",
+      "seconds": 6.416850900001009,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据未包含鸭梨果实采后当天处理方式的信息[E1][E2][E3][E4][E5]。",
+        "basis": "证据E1为引言，介绍研究意义、前人进展与切入点，未涉及采后当天处理[E1]；E2为结论，涉及贮藏3个月内窖藏与冷藏对基因表达和香气的影响[E2]；E3、E5为果实品质变化结果[E3][E5]；E4为挥发性物质含量测定方法，描述取样后粉末冻样、加饱和氯化钠、磁力搅拌、40℃水浴预热30 min及固相微萃取[E4]。以上均未记载采后当天的处理。",
+        "reasoning": "逐条检索证据：E1属引言背景[E1]，E2属结论[E2]，E3/E5属品质结果[E3][E5]，E4属挥发性物质测定方法[E4]，均无采后当天处理描述，故无法回答该问题。",
+        "advice": "请补充该论文材料与方法部分中关于采收及采后当天处理的原文内容，或提供包含该信息的证据片段。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2212,
+        "completion_tokens": 278,
+        "total_tokens": 2490,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 548
+      },
+      "model": "deepseek-flash",
+      "response_id": "0613e598-9c6b-4408-be4f-f6673adf4e51",
+      "seconds": 5.808232299998053,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 33.09530950000044
+}

@@ -1,0 +1,10 @@
+{
+  "thresholds": {
+    "cosine": 0.98,
+    "phash_max": 10
+  },
+  "high_threshold_cross_split_pairs": 165,
+  "unreviewed_high_threshold_pairs": 165,
+  "selected": 48,
+  "scope": "all clean cross-split images; no model test metrics"
+}

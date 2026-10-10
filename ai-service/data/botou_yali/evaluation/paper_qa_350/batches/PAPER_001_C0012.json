@@ -1,0 +1,41 @@
+[
+  {
+    "question": "本研究中，测定鸭梨果皮颜色时使用了什么仪器？",
+    "type": "factual",
+    "answer_quote": "利用CR-400 色差计（MINOLTA，日本）测定果实赤道部位对称两点色泽指数",
+    "gold_entities": [
+      "CR-400 色差计",
+      "MINOLTA",
+      "日本"
+    ]
+  },
+  {
+    "question": "本研究中，鸭梨果皮颜色的测定部位是哪里？",
+    "type": "factual",
+    "answer_quote": "测定果实赤道部位对称两点色泽指数",
+    "gold_entities": [
+      "果实赤道部位",
+      "对称两点"
+    ]
+  },
+  {
+    "question": "本研究中，L*值表示什么？其数值范围如何对应果实变化？",
+    "type": "factual",
+    "answer_quote": "L*值表示果实亮度，0—100 分别表示果实由暗到亮变化",
+    "gold_entities": [
+      "L*值",
+      "果实亮度",
+      "0—100"
+    ]
+  },
+  {
+    "question": "本研究中，b*值表示什么变化？",
+    "type": "factual",
+    "answer_quote": "b*值表示黄色和蓝色之间的变化",
+    "gold_entities": [
+      "b*值",
+      "黄色",
+      "蓝色"
+    ]
+  }
+]

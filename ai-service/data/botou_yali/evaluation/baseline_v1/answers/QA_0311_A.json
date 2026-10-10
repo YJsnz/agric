@@ -1,0 +1,56 @@
+{
+  "id": "QA_0311",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法确定窖藏与冷藏鸭梨果实SSC和TA含量的具体变化",
+      "basis": "未提供该论文的具体内容，且我的知识库中不包含该论文的详细数据",
+      "reasoning": "问题要求依据特定论文回答，但证据列表为空，我无法获取该论文中关于SSC和TA含量的实验数据，因此不能给出确切结论",
+      "advice": "建议查阅《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》原文，或提供相关数据段落以便分析",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 172,
+      "completion_tokens": 121,
+      "total_tokens": 293,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 172
+    },
+    "model": "deepseek-flash",
+    "response_id": "fb859eaf-ab4b-40ea-940a-c2471369b2eb",
+    "seconds": 5.692142599999897,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出SSC和TA含量变化的具体结论，仅说明无法确定并建议查阅原文，属于没有作答。提供的原文证据明确支持参考答案，但回答未利用该证据。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1071,
+      "completion_tokens": 54,
+      "total_tokens": 1125,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 943
+    },
+    "model": "deepseek-flash",
+    "response_id": "1bce9d5e-3a09-4f3c-b99d-ce6e3a249ae6",
+    "seconds": 5.903581900000063,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

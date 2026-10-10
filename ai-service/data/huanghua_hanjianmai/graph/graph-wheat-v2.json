@@ -1,0 +1,2908 @@
+{
+  "nodes": [
+    {
+      "id": "crop:wheat",
+      "name": "黄骅旱碱麦",
+      "type": "Crop",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "reg:binhai",
+      "name": "渤海湾滨海盐碱区",
+      "type": "Region",
+      "region": "binhai",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "env:salinity",
+      "name": "土壤盐分",
+      "type": "EnvironmentFactor",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "soil:saline_alkali",
+      "name": "中度盐碱地",
+      "type": "SoilType",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "reg:huanghua",
+      "name": "黄骅市",
+      "type": "Region",
+      "region": "huanghua",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "soil:coastal_saline",
+      "name": "滨海盐碱土",
+      "type": "SoilType",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "soil:low_organic",
+      "name": "有机质含量低土壤",
+      "type": "SoilType",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stress:drought",
+      "name": "干旱胁迫",
+      "type": "Stress",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "proc:germination",
+      "name": "种子萌发",
+      "type": "Process",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stress:salt",
+      "name": "盐胁迫",
+      "type": "Stress",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "proc:tillering",
+      "name": "分蘖成穗",
+      "type": "Process",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stress:ltll",
+      "name": "低温寡照胁迫",
+      "type": "Stress",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "proc:grain_filling",
+      "name": "籽粒灌浆",
+      "type": "Process",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stage:sowing",
+      "name": "播种期",
+      "type": "GrowthStage",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stage:regreening",
+      "name": "返青期",
+      "type": "GrowthStage",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stage:filling",
+      "name": "灌浆期",
+      "type": "GrowthStage",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "env:extreme_low_temp",
+      "name": "极端低温",
+      "type": "EnvironmentFactor",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "risk:weather",
+      "name": "气象风险",
+      "type": "WeatherRisk",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "env:rainfall",
+      "name": "降水",
+      "type": "EnvironmentFactor",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "env:sunshine",
+      "name": "日照",
+      "type": "EnvironmentFactor",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:weather_warning",
+      "name": "气象风险预警系统",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "env:valid_precip",
+      "name": "有效降水",
+      "type": "EnvironmentFactor",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "env:deficit",
+      "name": "水分亏缺",
+      "type": "EnvironmentFactor",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "env:pet",
+      "name": "潜在蒸散",
+      "type": "EnvironmentFactor",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stage:heading",
+      "name": "抽穗期",
+      "type": "GrowthStage",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "risk:spring_drought",
+      "name": "春季干旱",
+      "type": "WeatherRisk",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stage:jointing",
+      "name": "拔节期",
+      "type": "GrowthStage",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:rain_harvest",
+      "name": "雨水蓄积高效利用",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:brackish_rain_use",
+      "name": "微咸水与雨水分期互补利用",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "reg:nanpi",
+      "name": "南皮县",
+      "type": "Region",
+      "region": "nanpi",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "reg:hebei_lowplain",
+      "name": "河北低平原盐碱区",
+      "type": "Region",
+      "region": "hebei_lowplain",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:wide_furrow",
+      "name": "宽幅沟播",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stress:drought_wheat",
+      "name": "旱盐胁迫",
+      "type": "Stress",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "qual:yield",
+      "name": "产量(亩穗数/穗粒数)",
+      "type": "QualityIndicator",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:organic_fertilizer",
+      "name": "增施有机肥",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:deep_loosening",
+      "name": "深松整地",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "proc:seedling_establish",
+      "name": "出苗成苗",
+      "type": "Process",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:suppress_hoe",
+      "name": "镇压锄划",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "env:moisture",
+      "name": "土壤墒情",
+      "type": "EnvironmentFactor",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:green_control",
+      "name": "绿色防控",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:micro_furrow",
+      "name": "微沟播种",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:straw_return",
+      "name": "秸秆还田",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:alfalfa_rotation",
+      "name": "苜蓿轮作改土",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:seed_treatment",
+      "name": "抗逆促发增蘖种子处理",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:jointing_control",
+      "name": "拔节期壮秆抗逆化控",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stress:lodging",
+      "name": "倒伏",
+      "type": "Stress",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:filling_regulation",
+      "name": "灌浆期稳叶促粒调控",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:green_regulation",
+      "name": "全生育期绿色调控体系",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:bioregulator",
+      "name": "绿色生物源调节剂(ABA/硅/纳米氧化铈)",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "proc:root_na",
+      "name": "根系Na+排斥",
+      "type": "Process",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "proc:leaf_k",
+      "name": "叶片K+稳态",
+      "type": "Process",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "proc:ros_clear",
+      "name": "活性氧清除",
+      "type": "Process",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:fert_pest_opt",
+      "name": "肥药优调",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:open_furrow",
+      "name": "开沟接墒播种",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:probe_moisture",
+      "name": "探墒保播",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:late_spring_promote",
+      "name": "晚播春促减灾",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stress:late_sowing_weak",
+      "name": "晚播弱苗",
+      "type": "Stress",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prac:one_spray_three",
+      "name": "一喷三防",
+      "type": "AgriculturalPractice",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stress:hot_wind",
+      "name": "干热风",
+      "type": "Stress",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "var:jiemai19",
+      "name": "捷麦19",
+      "type": "Variety",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "var:jiemai20",
+      "name": "捷麦20",
+      "type": "Variety",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "reg:cangzhou",
+      "name": "沧州市",
+      "type": "Region",
+      "region": "cangzhou",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "var:cangmai6003",
+      "name": "沧麦6003",
+      "type": "Variety",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "var:xiaoyan",
+      "name": "小偃系列",
+      "type": "Variety",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "var:cangmai6002",
+      "name": "沧麦6002",
+      "type": "Variety",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "var:cangmai6005",
+      "name": "沧麦6005",
+      "type": "Variety",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "stage:wintering",
+      "name": "越冬期",
+      "type": "GrowthStage",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prod:grain",
+      "name": "黄骅旱碱麦原粮",
+      "type": "Product",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "qual:protein",
+      "name": "蛋白质",
+      "type": "QualityIndicator",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "qual:moisture",
+      "name": "水分",
+      "type": "QualityIndicator",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "qual:volume_weight",
+      "name": "容重",
+      "type": "QualityIndicator",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "qual:hardness",
+      "name": "硬度",
+      "type": "QualityIndicator",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "qual:falling_number",
+      "name": "降落数值",
+      "type": "QualityIndicator",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prod:flour",
+      "name": "黄骅旱碱麦小麦粉",
+      "type": "Product",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "qual:wet_gluten",
+      "name": "湿面筋",
+      "type": "QualityIndicator",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "qual:ash",
+      "name": "灰分",
+      "type": "QualityIndicator",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "qual:dry_gluten",
+      "name": "干面筋",
+      "type": "QualityIndicator",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "qual:extraction_rate",
+      "name": "出粉率",
+      "type": "QualityIndicator",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "prod:mianhua",
+      "name": "黄骅面花",
+      "type": "Product",
+      "region": "",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "reg:zhongjie",
+      "name": "中捷产业园区",
+      "type": "Region",
+      "region": "zhongjie",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "reg:haixing",
+      "name": "海兴县",
+      "type": "Region",
+      "region": "haixing",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "reg:hebei",
+      "name": "河北省",
+      "type": "Region",
+      "region": "hebei",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "HH-0001",
+      "source": "crop:wheat",
+      "target": "reg:binhai",
+      "relation": "APPLIES_IN",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦适用于渤海湾滨海盐碱区。",
+      "locator": "",
+      "valid_from": "2023",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0002",
+      "source": "env:salinity",
+      "target": "soil:saline_alkali",
+      "relation": "HAS_ENVIRONMENT",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "土壤盐分受环境作用中度盐碱地。",
+      "locator": "",
+      "valid_from": "2023",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0003",
+      "source": "soil:saline_alkali",
+      "target": "reg:huanghua",
+      "relation": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "中度盐碱地分布于黄骅市。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0004",
+      "source": "soil:coastal_saline",
+      "target": "reg:huanghua",
+      "relation": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "滨海盐碱土分布于黄骅市。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0005",
+      "source": "soil:low_organic",
+      "target": "crop:wheat",
+      "relation": "HAS_ENVIRONMENT",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "有机质含量低土壤受环境作用黄骅旱碱麦。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0006",
+      "source": "stress:drought",
+      "target": "proc:germination",
+      "relation": "INHIBITS",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "干旱胁迫抑制种子萌发。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0007",
+      "source": "stress:salt",
+      "target": "proc:tillering",
+      "relation": "INHIBITS",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:regreening"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "盐胁迫抑制分蘖成穗。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0008",
+      "source": "stress:ltll",
+      "target": "proc:grain_filling",
+      "relation": "INHIBITS",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:filling"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "低温寡照胁迫抑制籽粒灌浆。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0009",
+      "source": "stress:drought",
+      "target": "stage:sowing",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "干旱胁迫发生于播种期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0010",
+      "source": "stress:salt",
+      "target": "stage:regreening",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "盐胁迫发生于返青期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0011",
+      "source": "stress:ltll",
+      "target": "stage:filling",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "低温寡照胁迫发生于灌浆期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0012",
+      "source": "env:extreme_low_temp",
+      "target": "risk:weather",
+      "relation": "INCREASES_RISK",
+      "evidence_ids": [
+        "src:W009"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州海兴",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "极端低温增大风险气象风险。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0013",
+      "source": "env:rainfall",
+      "target": "crop:wheat",
+      "relation": "AFFECTS",
+      "evidence_ids": [
+        "src:W009"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州海兴",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "降水影响黄骅旱碱麦。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0014",
+      "source": "env:sunshine",
+      "target": "crop:wheat",
+      "relation": "AFFECTS",
+      "evidence_ids": [
+        "src:W009"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州海兴",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "日照影响黄骅旱碱麦。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0015",
+      "source": "prac:weather_warning",
+      "target": "risk:weather",
+      "relation": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W009"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州海兴",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "气象风险预警系统降低风险气象风险。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0016",
+      "source": "env:valid_precip",
+      "target": "env:deficit",
+      "relation": "INCREASES_RISK",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [
+        "stage:heading"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "有效降水增大风险水分亏缺。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0017",
+      "source": "env:pet",
+      "target": "stress:drought",
+      "relation": "INCREASES_RISK",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "潜在蒸散增大风险干旱胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0018",
+      "source": "env:deficit",
+      "target": "stage:heading",
+      "relation": "AFFECTS",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [
+        "stage:heading"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "水分亏缺影响抽穗期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0019",
+      "source": "risk:spring_drought",
+      "target": "stage:regreening",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [
+        "stage:regreening"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "春季干旱发生于返青期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0020",
+      "source": "risk:spring_drought",
+      "target": "stage:jointing",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [
+        "stage:jointing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "春季干旱发生于拔节期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0021",
+      "source": "prac:rain_harvest",
+      "target": "env:deficit",
+      "relation": "MITIGATES",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "雨水蓄积高效利用缓解水分亏缺。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0022",
+      "source": "prac:brackish_rain_use",
+      "target": "env:deficit",
+      "relation": "MITIGATES",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北低平原/南皮",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "微咸水与雨水分期互补利用缓解水分亏缺。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0023",
+      "source": "reg:nanpi",
+      "target": "reg:hebei_lowplain",
+      "relation": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北低平原",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "南皮县分布于河北低平原盐碱区。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0024",
+      "source": "reg:huanghua",
+      "target": "reg:hebei_lowplain",
+      "relation": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅市分布于河北低平原盐碱区。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0025",
+      "source": "prac:wide_furrow",
+      "target": "stress:drought_wheat",
+      "relation": "MITIGATES",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州/黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "宽幅沟播缓解旱盐胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0026",
+      "source": "prac:wide_furrow",
+      "target": "qual:yield",
+      "relation": "PROMOTES",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州/黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "宽幅沟播促进产量(亩穗数/穗粒数)。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0027",
+      "source": "prac:wide_furrow",
+      "target": "stage:sowing",
+      "relation": "HAS_PARAMETER",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "宽幅沟播参数为播种期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0028",
+      "source": "prac:organic_fertilizer",
+      "target": "soil:low_organic",
+      "relation": "PROMOTES",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "增施有机肥促进有机质含量低土壤。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0029",
+      "source": "prac:deep_loosening",
+      "target": "proc:seedling_establish",
+      "relation": "PROMOTES",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州/黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "深松整地促进出苗成苗。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0030",
+      "source": "prac:suppress_hoe",
+      "target": "env:moisture",
+      "relation": "PROMOTES",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "镇压锄划促进土壤墒情。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0031",
+      "source": "prac:green_control",
+      "target": "proc:tillering",
+      "relation": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "绿色防控降低风险分蘖成穗。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0032",
+      "source": "prac:micro_furrow",
+      "target": "stress:drought_wheat",
+      "relation": "MITIGATES",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "微沟播种缓解旱盐胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0033",
+      "source": "prac:micro_furrow",
+      "target": "stage:sowing",
+      "relation": "HAS_PARAMETER",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "微沟播种参数为播种期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0034",
+      "source": "prac:straw_return",
+      "target": "soil:low_organic",
+      "relation": "PROMOTES",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "秸秆还田促进有机质含量低土壤。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0035",
+      "source": "prac:alfalfa_rotation",
+      "target": "stress:salt",
+      "relation": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "苜蓿轮作改土降低风险盐胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0036",
+      "source": "prac:seed_treatment",
+      "target": "proc:germination",
+      "relation": "PROMOTES",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "抗逆促发增蘖种子处理促进种子萌发。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0037",
+      "source": "prac:jointing_control",
+      "target": "stress:lodging",
+      "relation": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:jointing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "拔节期壮秆抗逆化控降低风险倒伏。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0038",
+      "source": "prac:filling_regulation",
+      "target": "proc:grain_filling",
+      "relation": "PROMOTES",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:filling"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "灌浆期稳叶促粒调控促进籽粒灌浆。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0039",
+      "source": "prac:green_regulation",
+      "target": "crop:wheat",
+      "relation": "RECOMMENDS",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "normative",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "全生育期绿色调控体系建议黄骅旱碱麦。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0040",
+      "source": "prac:bioregulator",
+      "target": "stress:salt",
+      "relation": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "绿色生物源调节剂(ABA/硅/纳米氧化铈)降低风险盐胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0041",
+      "source": "proc:root_na",
+      "target": "proc:seedling_establish",
+      "relation": "PROMOTES",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "根系Na+排斥促进出苗成苗。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0042",
+      "source": "proc:leaf_k",
+      "target": "stress:salt",
+      "relation": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "叶片K+稳态降低风险盐胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0043",
+      "source": "proc:ros_clear",
+      "target": "stress:drought",
+      "relation": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "活性氧清除降低风险干旱胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0044",
+      "source": "prac:fert_pest_opt",
+      "target": "crop:wheat",
+      "relation": "RECOMMENDS",
+      "evidence_ids": [
+        "src:W002"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "normative",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "肥药优调建议黄骅旱碱麦。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0045",
+      "source": "prac:open_furrow",
+      "target": "stress:drought",
+      "relation": "MITIGATES",
+      "evidence_ids": [
+        "src:W003"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "开沟接墒播种缓解干旱胁迫。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0046",
+      "source": "prac:probe_moisture",
+      "target": "env:moisture",
+      "relation": "REQUIRES",
+      "evidence_ids": [
+        "src:W004"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "normative",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "探墒保播要求土壤墒情。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0047",
+      "source": "prac:late_spring_promote",
+      "target": "stress:late_sowing_weak",
+      "relation": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W005"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:regreening"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "晚播春促减灾降低风险晚播弱苗。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0048",
+      "source": "prac:one_spray_three",
+      "target": "stress:hot_wind",
+      "relation": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W007"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:filling"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "一喷三防降低风险干热风。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0049",
+      "source": "crop:wheat",
+      "target": "var:jiemai19",
+      "relation": "HAS_VARIETY",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦包含品种捷麦19。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0050",
+      "source": "crop:wheat",
+      "target": "var:jiemai20",
+      "relation": "HAS_VARIETY",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦包含品种捷麦20。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0051",
+      "source": "var:jiemai19",
+      "target": "stress:drought",
+      "relation": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "捷麦19具有特征干旱胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0052",
+      "source": "var:jiemai19",
+      "target": "stress:salt",
+      "relation": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "捷麦19具有特征盐胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0053",
+      "source": "var:jiemai20",
+      "target": "stress:salt",
+      "relation": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "捷麦20具有特征盐胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0054",
+      "source": "var:jiemai20",
+      "target": "stage:heading",
+      "relation": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "捷麦20具有特征抽穗期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0055",
+      "source": "var:jiemai19",
+      "target": "reg:cangzhou",
+      "relation": "RECOMMENDS",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "normative",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "捷麦19建议沧州市。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0056",
+      "source": "crop:wheat",
+      "target": "var:cangmai6003",
+      "relation": "HAS_VARIETY",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦包含品种沧麦6003。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0057",
+      "source": "crop:wheat",
+      "target": "var:xiaoyan",
+      "relation": "HAS_VARIETY",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦包含品种小偃系列。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0058",
+      "source": "var:xiaoyan",
+      "target": "stress:salt",
+      "relation": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "小偃系列具有特征盐胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0059",
+      "source": "var:cangmai6003",
+      "target": "stress:salt",
+      "relation": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "沧麦6003具有特征盐胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0060",
+      "source": "var:cangmai6002",
+      "target": "stress:drought",
+      "relation": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "沧麦6002具有特征干旱胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0061",
+      "source": "var:cangmai6005",
+      "target": "stress:salt",
+      "relation": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "沧麦6005具有特征盐胁迫。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0062",
+      "source": "var:cangmai6002",
+      "target": "qual:yield",
+      "relation": "AFFECTS",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "沧麦6002影响产量(亩穗数/穗粒数)。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0063",
+      "source": "qual:yield",
+      "target": "crop:wheat",
+      "relation": "AFFECTS",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "mechanism",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "产量(亩穗数/穗粒数)影响黄骅旱碱麦。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0064",
+      "source": "crop:wheat",
+      "target": "stage:sowing",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦发生于播种期。",
+      "locator": "",
+      "valid_from": "2023",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0065",
+      "source": "crop:wheat",
+      "target": "stage:wintering",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦发生于越冬期。",
+      "locator": "",
+      "valid_from": "2023",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0066",
+      "source": "crop:wheat",
+      "target": "stage:regreening",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦发生于返青期。",
+      "locator": "",
+      "valid_from": "2023",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0067",
+      "source": "crop:wheat",
+      "target": "stage:jointing",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦发生于拔节期。",
+      "locator": "",
+      "valid_from": "2023",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0068",
+      "source": "crop:wheat",
+      "target": "stage:heading",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦发生于抽穗期。",
+      "locator": "",
+      "valid_from": "2023",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0069",
+      "source": "crop:wheat",
+      "target": "stage:filling",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦发生于灌浆期。",
+      "locator": "",
+      "valid_from": "2023",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0070",
+      "source": "stage:sowing",
+      "target": "stage:sowing",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "播种期发生于播种期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0071",
+      "source": "stage:regreening",
+      "target": "stage:regreening",
+      "relation": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [
+        "stage:regreening"
+      ],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "返青期发生于返青期。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0072",
+      "source": "prod:grain",
+      "target": "qual:protein",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W015"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦原粮品质指标蛋白质。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0073",
+      "source": "prod:grain",
+      "target": "qual:moisture",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W015"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦原粮品质指标水分。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0074",
+      "source": "prod:grain",
+      "target": "qual:volume_weight",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W015"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦原粮品质指标容重。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0075",
+      "source": "prod:grain",
+      "target": "qual:hardness",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W015"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦原粮品质指标硬度。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0076",
+      "source": "prod:grain",
+      "target": "qual:falling_number",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W015"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦原粮品质指标降落数值。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0077",
+      "source": "prod:flour",
+      "target": "qual:protein",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W016"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦小麦粉品质指标蛋白质。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0078",
+      "source": "prod:flour",
+      "target": "qual:wet_gluten",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W016"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦小麦粉品质指标湿面筋。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0079",
+      "source": "prod:flour",
+      "target": "qual:moisture",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W016"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦小麦粉品质指标水分。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0080",
+      "source": "prod:flour",
+      "target": "qual:ash",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W016"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦小麦粉品质指标灰分。",
+      "locator": "",
+      "valid_from": "2025",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0081",
+      "source": "prod:flour",
+      "target": "qual:dry_gluten",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦小麦粉品质指标干面筋。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0082",
+      "source": "prod:flour",
+      "target": "qual:extraction_rate",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦小麦粉品质指标出粉率。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0083",
+      "source": "crop:wheat",
+      "target": "prod:grain",
+      "relation": "HAS_PRODUCT",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦产出黄骅旱碱麦原粮。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0084",
+      "source": "prod:grain",
+      "target": "prod:flour",
+      "relation": "HAS_PRODUCT",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦原粮产出黄骅旱碱麦小麦粉。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0085",
+      "source": "prod:flour",
+      "target": "prod:mianhua",
+      "relation": "HAS_PRODUCT",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦小麦粉产出黄骅面花。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0086",
+      "source": "reg:zhongjie",
+      "target": "reg:huanghua",
+      "relation": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "中捷产业园区分布于黄骅市。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0087",
+      "source": "reg:huanghua",
+      "target": "reg:cangzhou",
+      "relation": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅市分布于沧州市。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0088",
+      "source": "reg:haixing",
+      "target": "reg:cangzhou",
+      "relation": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W009"
+      ],
+      "crop": "crop:wheat",
+      "region": "沧州海兴",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "海兴县分布于沧州市。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0089",
+      "source": "reg:cangzhou",
+      "target": "reg:hebei",
+      "relation": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "沧州市分布于河北省。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0090",
+      "source": "crop:wheat",
+      "target": "reg:hebei",
+      "relation": "APPLIES_IN",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "crop:wheat",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "黄骅旱碱麦适用于河北省。",
+      "locator": "",
+      "valid_from": "2023",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    },
+    {
+      "id": "HH-0091",
+      "source": "reg:cangzhou",
+      "target": "reg:hebei",
+      "relation": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "crop:wheat",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "effect_size": null,
+      "kind": "fact",
+      "scope": "local",
+      "review_status": "source_checked",
+      "claim": "沧州市分布于河北省。",
+      "locator": "",
+      "valid_from": "",
+      "dataset": "hanjianmai_evidence_v1",
+      "value": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "src:W001",
+      "source_id": "W001",
+      "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+      "type": "Source",
+      "region": "河北滨海盐碱区/黄骅",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7",
+      "publication_group": "河北省市场监督管理局",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W002",
+      "source_id": "W002",
+      "title": "DB13/T 6106-2025 旱碱麦肥药优调技术规程",
+      "type": "Source",
+      "region": "河北",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39A5186C58B95ACAE06397BE0A0ADABE",
+      "publication_group": "河北省市场监督管理局",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W003",
+      "source_id": "W003",
+      "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+      "type": "Source",
+      "region": "河北",
+      "url": "https://dbba.sacinfo.org.cn/rnDetail/0d310eea2e6bb62171fec978faedf7ef47409f9eaa2296c6c908616c299cf68c",
+      "publication_group": "河北省市场监督管理局",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W004",
+      "source_id": "W004",
+      "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+      "type": "Source",
+      "region": "沧州",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A",
+      "publication_group": "沧州市市场监督管理局",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W005",
+      "source_id": "W005",
+      "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+      "type": "Source",
+      "region": "沧州",
+      "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c",
+      "publication_group": "沧州市市场监督管理局",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W006",
+      "source_id": "W006",
+      "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+      "type": "Source",
+      "region": "沧州",
+      "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c",
+      "publication_group": "沧州市市场监督管理局",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W007",
+      "source_id": "W007",
+      "title": "DB1309/T 150-2014 旱碱地小麦抗逆减灾丰产栽培技术规程",
+      "type": "Source",
+      "region": "沧州",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=108A4A5041587A0CE06397BE0A0A9183",
+      "publication_group": "沧州市市场监督管理局",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W008",
+      "source_id": "W008",
+      "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+      "type": "Source",
+      "region": "沧州",
+      "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml",
+      "publication_group": "中国农学通报",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W009",
+      "source_id": "W009",
+      "title": "基于近十年气象数据的旱碱麦生育期优化策略",
+      "type": "Source",
+      "region": "沧州海兴",
+      "url": "https://jcnj.cbpt.cnki.net/portal/journal/portal/client/paper/e277469f354b0eb5d2edaec045997e38",
+      "publication_group": "基层农技推广",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W010",
+      "source_id": "W010",
+      "title": "沧州盐碱区旱碱麦宽幅沟播配套栽培技术",
+      "type": "Source",
+      "region": "沧州/黄骅",
+      "url": "https://xdnckj.cbpt.cnki.net/portal/journal/portal/client/paper/1b7651fc5f528d3c5d39128a5d597ea6",
+      "publication_group": "现代农村科技",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W011",
+      "source_id": "W011",
+      "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+      "type": "Source",
+      "region": "河北低平原/黄骅",
+      "url": "https://doi.org/10.12357/cjea.20250732",
+      "publication_group": "学术期刊平台",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W012",
+      "source_id": "W012",
+      "title": "河北黄骅市培育“以种适地”品种 助力盐碱地持续增产",
+      "type": "Source",
+      "region": "黄骅",
+      "url": "https://www.agri.cn/zx/xxlb/202403/t20240306_8613636.htm",
+      "publication_group": "河北省农业农村厅",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W013",
+      "source_id": "W013",
+      "title": "盐碱地里造出新粮仓",
+      "type": "Source",
+      "region": "黄骅",
+      "url": "https://www.cas.cn/cm/202305/t20230524_4889471.shtml",
+      "publication_group": "中国科学院/人民日报",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W014",
+      "source_id": "W014",
+      "title": "科技引领助力旱碱麦产业走“花路”",
+      "type": "Source",
+      "region": "黄骅/沧州",
+      "url": "https://ifst.caas.cn/pub/iappst/xwzx/mtbd/37812bb40dc6445c88da99ccb6289841.htm",
+      "publication_group": "中国农业科学院农产品加工所",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W015",
+      "source_id": "W015",
+      "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+      "type": "Source",
+      "region": "黄骅/沧州",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A",
+      "publication_group": "沧州市市场监督管理局",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W016",
+      "source_id": "W016",
+      "title": "DB1309/T 332-2025 黄骅旱碱麦小麦粉",
+      "type": "Source",
+      "region": "黄骅/沧州",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A1FF625E06397BE0A0A538A",
+      "publication_group": "沧州市市场监督管理局",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W017",
+      "source_id": "W017",
+      "title": "盐碱地改良和旱碱麦种植技术及其配套装备研究现状",
+      "type": "Source",
+      "region": "河北",
+      "url": "https://njyj.cbpt.cnki.net/portal/journal/portal/client/paper/c3487720ec2ed1f0e14e056858fdc388",
+      "publication_group": "农机化研究",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    },
+    {
+      "id": "src:W018",
+      "source_id": "W018",
+      "title": "微垄覆膜侧沟播宽苗带旱碱麦正负压排种器设计与试验",
+      "type": "Source",
+      "region": "河北",
+      "url": "https://njyj.cbpt.cnki.net/portal/journal/portal/client/paper/41be5e98ceab236878a2f4a884dac792",
+      "publication_group": "农机化研究",
+      "crop": "crop:wheat",
+      "dataset": "hanjianmai_evidence_v1"
+    }
+  ]
+}

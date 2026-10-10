@@ -1,0 +1,13 @@
+{
+  "candidate_pairs": 6702,
+  "review_pairs": 95,
+  "top_k": 5,
+  "embedding": "Reuse fixed ImageNet-pretrained YOLO11n-cls 1280D features from B1 audit; not Model A trained weights",
+  "embedding_weights_sha256": "c62d41bf9625777760018bf914d2e6cd472420ccd01706d97a61cb6c82502bd7",
+  "local_features": "ORB 1200 features, saturation>55 largest component mask to suppress background; mutual Lowe ratio<0.75, affine RANSAC 3px; retrieval/support only",
+  "mask_limitations": "Color heuristic may miss scars/fruit boundary. Shape similarity is not identity proof.",
+  "exif": "No EXIF in 1464 original images",
+  "confirmation": "Requires visual scar/texture correspondence and all-pairs group consistency, no automated score threshold",
+  "closure_pairs_added": 4,
+  "reviewer": "assistant_visual_review_not_human_or_expert_signoff"
+}

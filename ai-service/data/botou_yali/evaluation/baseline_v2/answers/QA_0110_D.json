@@ -1,0 +1,676 @@
+{
+  "id": "QA_0110",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_003_C0001",
+    "chunk:PAPER_003_C0010",
+    "chunk:PAPER_003_C0009",
+    "chunk:PAPER_003_C0013",
+    "chunk:PAPER_003_C0008"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨",
+      "采收期",
+      "果心褐变",
+      "缓慢降温"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": "采收期",
+      "environment": [],
+      "disease": [],
+      "pest": [],
+      "symptom": [
+        "果心褐变"
+      ],
+      "quality": [],
+      "intervention": [
+        "缓慢降温"
+      ],
+      "risk": [],
+      "intent": "fact_query"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "stage",
+        "mention": "采收期",
+        "status": "matched",
+        "entity_id": "v2:588027983c17920f",
+        "canonical_name": "采收期",
+        "candidates": [
+          {
+            "id": "v2:588027983c17920f",
+            "name": "采收期",
+            "type": "Stage",
+            "crop": [
+              "梨"
+            ],
+            "region": [
+              "AU-VIC",
+              "US-CA",
+              "全国",
+              "河北省"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "symptom",
+        "mention": "果心褐变",
+        "status": "matched",
+        "entity_id": "v2:50ce42ea984044c1",
+        "canonical_name": "果心褐变",
+        "candidates": [
+          {
+            "id": "v2:50ce42ea984044c1",
+            "name": "果心褐变",
+            "type": "Symptom",
+            "crop": [
+              "梨",
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "研究试验范围"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "intervention",
+        "mention": "缓慢降温",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "partial_alignment",
+        "count": 6,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [
+      {
+        "candidate_id": "path:v2:e0176",
+        "reasons": [
+          "title:mismatch"
+        ]
+      },
+      {
+        "candidate_id": "path:v2:e0178",
+        "reasons": [
+          "title:mismatch"
+        ]
+      },
+      {
+        "candidate_id": "path:v2:e0175/v2:e0178",
+        "reasons": [
+          "title:mismatch",
+          "title:mismatch"
+        ]
+      },
+      {
+        "candidate_id": "path:v2:e0167/v2:e0176",
+        "reasons": [
+          "title:mismatch",
+          "title:mismatch"
+        ]
+      },
+      {
+        "candidate_id": "path:v2:e0168/v2:e0178",
+        "reasons": [
+          "title:mismatch",
+          "title:mismatch"
+        ]
+      },
+      {
+        "candidate_id": "path:v2:e0174/v2:e0176",
+        "reasons": [
+          "title:mismatch",
+          "title:mismatch"
+        ]
+      }
+    ],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [
+      {
+        "source_id": "PAPER_003",
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "PAPER_003_C0001",
+            "section": "正文（未识别章节）",
+            "pages": [
+              1
+            ]
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "PAPER_003_C0010",
+            "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+            "pages": [
+              4
+            ]
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "PAPER_003_C0009",
+            "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+            "pages": [
+              3,
+              4
+            ]
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "PAPER_003_C0013",
+            "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+            "pages": [
+              5
+            ]
+          }
+        ]
+      }
+    ],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [
+      {
+        "field": "intervention",
+        "mention": "缓慢降温",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_003_C0001",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 6,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9621212121212122
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_003_C0010",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 6,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9621212121212122
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_003_C0009",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 5,
+            "vector_rank": 2,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.961166253101737
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_003_C0013",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 2,
+            "vector_rank": 5,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.961166253101737
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_003_C0008",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 4,
+            "vector_rank": 3,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9606894841269842
+          }
+        }
+      ]
+    },
+    "status": "answered",
+    "answer": "1. 结论\n在本研究（《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》）中，缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量  [E1]  [E4] 。具体而言：亚麻酸方面，缓慢降温显著提高了早采鸭梨果心亚麻酸的相对含量，如9月28日时缓慢降温早采果亚麻酸相对含量从采收初期的8.33%提高到10.51%，而急速降温果只有5.77%  [E2] ；亚油酸方面，经过30 d缓慢降温的早采果果心亚油酸相对含量显著升高，达51.91%，而10月20日呼吸高峰时急速降温处理的早采果果心亚油酸相对含量快速下降为44.89%  [E3] 。\n2. 依据\n[E1]摘要指出：缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量及不饱和脂肪酸与饱和脂肪酸比值（U/S） [E1] 。[E4]结论1）同样指出：缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸含量及U/S值  [E4] 。[E2]给出亚麻酸具体数据：9月28日时缓慢降温早采果亚麻酸相对含量从采收初期的8.33%提高到10.51%，急速降温果只有5.77%，且整个采后阶段缓慢降温处理果亚麻酸含量高于急降温处理果（P＜0.05） [E2] 。[E3]给出亚油酸具体数据：10月20日呼吸高峰时急速降温处理的早采果果心亚油酸相对含量快速下降为44.89%，而经过30 d缓慢降温的果心亚油酸含量显著升高，相对含量达51.91%  [E3] 。\n3. 推理路径\n证据[E1]（摘要）与[E4]（结论）均直接陈述缓慢降温提高早采鸭梨果心亚麻酸和亚油酸相对含量，二者为同一研究的总体结论  [E1]  [E4] 。[E2]提供亚麻酸的分时点相对含量数据（8.33%→10.51% vs 5.77%） [E2] ，[E3]提供亚油酸的分时点相对含量数据（44.89% vs 51.91%） [E3] ，与总体结论一致。上述均为该论文特定试验结果，属于研究资料，不构成当地生产指导。\n4. 建议\n本结论仅适用于该论文所述试验条件（早采鸭梨、缓慢降温处理），不转化为当地生产建议。如需了解具体降温速率、处理时长及采收期界定等试验参数，请查阅原文方法部分。\n5. 来源\n[E1] [E2] [E3] [E4] PAPER_003：降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响 https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "candidate_id": "chunk:PAPER_003_C0001",
+        "kind": "document_chunk",
+        "content": {
+          "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+          "section": "正文（未识别章节）",
+          "text": "第26 卷第8 期农业工程学报Vol.26 No.8 2010 年8 月Transactions of the CSAE Aug. 2010降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响闫师杰1，梁丽雅1，陈计峦2，李晓丹1，胡小松3※（1．天津农学院食品科学系，天津300384；2．新疆石河子大学食品学院，石河子832003；3．中国农业大学食品科学与营养工程学院，北京100083）摘要：为了探讨缓慢降温抑制采后鸭梨果实褐变的机理，研究了不同降温方法对不同采收期鸭梨果心膜脂脂肪酸组分、含量、膜相变温度、脂氧合酶（LOX）活性以及果心褐变的影响。结果表明：鸭梨果心含有月桂酸、豆蔻酸、棕榈酸、棕榈油酸、珠光酸、硬脂酸、油酸、亚油酸、亚麻酸，其中含量较多的是亚油酸、棕榈酸和油酸。缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量及不饱和脂肪酸与饱和脂肪酸比值（U/S），降低了果心的膜相变温度，明显抑制了果心LOX 活性和褐变。推迟采收提高了鸭梨果心的U/S 值，降低了膜相变温度，但由于采收期晚，果实衰老较快，后期果心LOX 活性快速升高，膜脂过氧化严重，导致晚采果更容易褐变。总之，适当早采结合缓慢降温可以提高鸭梨果心膜脂不饱和脂肪酸含量和U/S 值，抑制果心褐变。关键词：水果，贮藏，降温，采收，脂肪酸，相变，鸭梨，脂氧合酶doi：10.3969/j.issn.1002-6819.2010.08.060中图分类号：S661.2，Q945.6+6文献标识码：A文章编号：1002-6819(2010)-08-0356-07闫师杰，梁丽雅，陈计峦，等. 降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响[J]. 农业工程学报，2010，26(8)：356－362. Yan Shijie, Liang Liya, Chen Jiluan, et al.",
+          "pages": [
+            1
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "采收期",
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E2",
+        "candidate_id": "chunk:PAPER_003_C0010",
+        "kind": "document_chunk",
+        "content": {
+          "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+          "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+          "text": "缓降温处理总体提高了晚采鸭梨果心亚油酸含量，经过缓慢降温后10 月20 日时，缓慢降温晚采果亚油酸相对含量为58.81%，而急速降温果的相对含量只有54.73%，但缓慢降温果果心亚油酸含量下降较快。鸭梨果心膜脂中亚麻酸的相对含量总体呈下降趋势，缓慢降温处理显著提高了早采和晚采鸭梨果心亚麻酸的相对含量，如在9 月28 日时，缓慢降温早采果亚麻酸的相对含量从采收初期的8.33%提高到10.51%，而急速降温果的含量只有5.77%；在10 月20 日时，缓慢降温晚采果亚麻酸的相对含量从采收初期的6.01%提高到9.45%，而急速降温果的相对含量只有5.03%。在整个采后阶段，缓慢降温处理果亚麻酸含量要高于急降温处理果（P＜0.05）。总体看，缓慢降温提高了鸭梨果心的亚麻酸含量，这和缓慢降温降低了果心的相变温度（图2）也是相对应的。缓慢降温处理总体提高了早采和晚采鸭梨果心的亚麻酸含量，随着呼吸高峰的出现，亚油酸和亚麻酸含量总体趋势下降，膜脂过氧化严重，产生了更多的自由基，虽然缓慢降温也提高了晚采果亚油酸、亚麻酸的含量，但是由于LOX 活性高，使得自由基产生多，从而造成了晚采果褐变严重。另外，急速降温果果心在呼吸高峰时（10 月20 日）油酸相对含量显著升高，早采果相对含量由初期的10.27%升高为22.29%，晚采果相对含量由初期的12.37%升高为15.03%，早采果明显高于同期晚采果，后期逐渐降低。硬脂酸含量在贮藏中逐渐减少，且急降温果的下降要快于缓降温果，晚采果下降速度快于早采果，这与急降温果油酸和亚油酸含量的上升是对应的。棕榈酸相对含量在贮藏中总体呈先降后升趋势，缓慢降温果棕榈油相对含量变化较缓。如图4 所示，推迟采收提高了果心的U/S 值，早采果果心采收初期U/S 值分别为1.81，而晚采果采收初期为2.67，这和果实成熟度高降低了果心的相变温度是对应的，说明了晚采收提高了果实的抗冷性。",
+          "pages": [
+            4
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "采收期",
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E3",
+        "candidate_id": "chunk:PAPER_003_C0009",
+        "kind": "document_chunk",
+        "content": {
+          "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+          "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+          "text": "图1降温方法对不同采收成熟度鸭梨果心褐变及脂氧合酶活性的影响Fig.1 Effect of different cooling methods on browning and lipoxyenase (LOX) activity of different maturity Yali pear core图2早采急速降温及缓慢降温鸭梨果心相变的差示量热扫描（DSC）曲线Fig.2 Differential scanning calorimetry (DSC) curve of phase transition of core of early harvested Yali pear treated with rapid or slowly cooling注：图括号中是表示脂肪酸的“C”碳原子数目及不饱和键的数目。如月桂酸是有12 个“C”原子数，是饱和脂肪酸，不饱和键数为“0”；亚油酸是有18 个“C”原子数，不饱和键数目为“2”；其它以此类推图3脂肪酸标样及鸭梨果心膜脂脂肪酸图谱Fig.3 Chromatogram of fatty acids of standard and Yali pear core 2.4降温方法对鸭梨果心膜脂脂肪酸组分、含量及不饱和脂肪酸与饱和脂肪酸比值（U/S）的影响试验得知，亚油酸作为鸭梨果心含量最多的不饱和脂肪酸，采后初期缓慢升高，在10 月20 日呼吸高峰时急速降温处理的早采果果心的亚油酸相对含量快速下降为44.89%，而经过了30 d 的缓慢降温的果心亚油酸含量显著升高，相对含量达51.91%，这和缓慢降温降低了果心的相变温度（图2）是相对应的，后期呈现缓慢下降趋势变化。缓降温处理总体提高了晚采鸭梨果心亚油酸含量，经过缓慢降温后10 月20 日时，缓慢降温晚采果亚油酸相对含量为58.81%，而急速降温果的相对含量只有54.73%，但缓慢降温果果心亚油酸含量下降较快。",
+          "pages": [
+            3,
+            4
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "采收期",
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E4",
+        "candidate_id": "chunk:PAPER_003_C0013",
+        "kind": "document_chunk",
+        "content": {
+          "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+          "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+          "text": "陈昆松等[7]研究发现，在猕猴桃果实后熟软化过程中的LOX 活性与膜脂脂肪酸组分的变化一致，随着LOX活性的增高，底物亚油酸和亚麻酸被消耗，并启动膜脂过氧化作用。本试验结果表明鸭梨果实贮藏前期，LOX活性与呼吸、乙烯高峰同步，与褐变规律相似，说明了LOX 与鸭梨的成熟衰老及褐变有一定关系。结论1）缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸含量及U/S 值，降低了果心的膜相变温度，抑制了LOX活性的升高，明显抑制了鸭梨果心不饱和脂肪酸的降解和膜脂过氧化，从而抑制了果心褐变。2）推迟采收提高了鸭梨果心的U/S 值，降低了膜相变温度，但降温方法对相变温度影响不明显。缓慢降温也提高了晚采鸭梨果心的亚麻酸和亚油酸含量，但由于采收成熟度较高，采后衰老较快，贮藏后期LOX 活性快速升高，氧化了更多的不饱和脂肪酸，从而使得膜脂过氧化加剧，导致了晚采果更容易褐变。[参考文献] [1]中国科学院北京植物研究所．鸭梨黑心病的研究Ⅰ：温度对黑心病的影响[J]．植物学报，1974，16(2)：140－143．Peking Institute of Botany of Academia Sinica. Studies on the brown core of the pear fruitⅠ: The effect of temperature on the brown core[J]. Acta Botanica Scinca, 1974, 16(2): 140－143. (in Chinese with English abstract) [2]梁丽雅，闫师杰，陈计峦，等．鸭梨采后果实褐变的主要因素研究[J]．食品与机械，2008，24(3)：48－51．Liang Liya, Yan Shijie, Chen Jiluan, et al.",
+          "pages": [
+            5
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "采收期",
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E5",
+        "candidate_id": "chunk:PAPER_003_C0008",
+        "kind": "document_chunk",
+        "content": {
+          "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+          "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+          "text": "高峰过后，LOX 活性呈现逐步升高趋势，且晚采果要高于同期早采果。缓慢降温显著抑制了早采果果心LOX 活性（P＜0.05），而对晚采果果心酶活性影响不明显。说明晚采果果心LOX 活性较高，膜脂过氧化严重。缓慢降温可以抑制果心LOX 活性，特别对于早采果影响更明显。2.2降温方法对不同采收期鸭梨果心相变温度的影响从图2 看到，用DSC 方法测定的早采急速降温和缓慢降温鸭梨果心的相变温度分别是-1.56℃和-1.75℃，说明缓慢降温明显降低了早采鸭梨果心的相变温度，从而减轻了早采鸭梨果心的冷害和褐变的发生。同时我们也对晚采果进行了测定，晚采急速降温和缓慢降温鸭梨果心的相变温度分别是-1.73℃和-1.76℃，说明提高采收成熟度降低了鸭梨果心的相变温度，但降温方法对晚采鸭梨果心相变温度的影响没有早采果那样明显。2.3鸭梨果心的膜脂脂肪酸组分及含量对鸭梨果心脂肪酸组分及含量进行了测定（图3），发现果心中含有月桂酸（12:0）、豆蔻酸（14:0）、棕榈酸（16:0）、棕榈油酸（16:1）、珠光酸（17: 0）、硬脂酸（18:0）、油酸（18:1）、亚油酸（18:2）、亚麻酸（18:3）而几乎没有花生酸（20:0）、花生烯酸（20:1）、花生四烯酸（20:4）、廿二碳五烯酸（22:5）。其中相对含量最多的是亚油酸，大约占到总脂肪酸的45%～60%，其次为棕榈酸，相对含量20%～30%，油酸相对含量为5%～25%，亚麻酸相对含量约2%～12%，硬脂酸约1%～5%，珠光酸约0.5%～2%，月桂酸、豆蔻酸、棕榈油酸的含量很少，只有0.1%～0.5%。在此基础上，考察了相对含量较多的棕榈酸（16:0）、硬脂酸（18:0）、油酸（18:1）、亚油酸（18:2）、亚麻酸（18:3）在鸭梨贮藏中的变化，以探讨不同降温方法对不同采收成熟度鸭梨果心膜脂脂肪酸含量的影响。",
+          "pages": [
+            2,
+            3
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "采收期",
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      }
+    ],
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称缓慢降温提高早采鸭梨果心亚麻酸和亚油酸相对含量，E1摘要明确'缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量'，E4结论1）同样明确'缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸含量'；亚麻酸数据8.33%→10.51% vs 5.77%见E2，亚油酸数据44.89% vs 51.91%见E3，均与引用证据一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中E1、E4的总体结论及E2亚麻酸数据（9月28日8.33%→10.51%，急速降温5.77%，P＜0.05）、E3亚油酸数据（10月20日急速降温44.89%，30 d缓慢降温51.91%）均能在对应引用证据中逐字找到，无未引用补证。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning仅复述E1/E4总体结论与E2/E3分时点数据，并声明属该论文特定试验结果、不构成生产指导，未添加证据外因果或建议，与引用证据一致。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice未提出具体事实主张，仅声明结论限于论文试验条件、不转化为生产建议，并建议查阅原文方法部分，无引用证据但也不含需核查的事实数值或因果措辞。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_003_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "section": "正文（未识别章节）",
+        "text": "第26 卷第8 期农业工程学报Vol.26 No.8 2010 年8 月Transactions of the CSAE Aug. 2010降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响闫师杰1，梁丽雅1，陈计峦2，李晓丹1，胡小松3※（1．天津农学院食品科学系，天津300384；2．新疆石河子大学食品学院，石河子832003；3．中国农业大学食品科学与营养工程学院，北京100083）摘要：为了探讨缓慢降温抑制采后鸭梨果实褐变的机理，研究了不同降温方法对不同采收期鸭梨果心膜脂脂肪酸组分、含量、膜相变温度、脂氧合酶（LOX）活性以及果心褐变的影响。结果表明：鸭梨果心含有月桂酸、豆蔻酸、棕榈酸、棕榈油酸、珠光酸、硬脂酸、油酸、亚油酸、亚麻酸，其中含量较多的是亚油酸、棕榈酸和油酸。缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量及不饱和脂肪酸与饱和脂肪酸比值（U/S），降低了果心的膜相变温度，明显抑制了果心LOX 活性和褐变。推迟采收提高了鸭梨果心的U/S 值，降低了膜相变温度，但由于采收期晚，果实衰老较快，后期果心LOX 活性快速升高，膜脂过氧化严重，导致晚采果更容易褐变。总之，适当早采结合缓慢降温可以提高鸭梨果心膜脂不饱和脂肪酸含量和U/S 值，抑制果心褐变。关键词：水果，贮藏，降温，采收，脂肪酸，相变，鸭梨，脂氧合酶doi：10.3969/j.issn.1002-6819.2010.08.060中图分类号：S661.2，Q945.6+6文献标识码：A文章编号：1002-6819(2010)-08-0356-07闫师杰，梁丽雅，陈计峦，等. 降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响[J]. 农业工程学报，2010，26(8)：356－362. Yan Shijie, Liang Liya, Chen Jiluan, et al.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "采收期",
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_003_C0010",
+      "kind": "document_chunk",
+      "content": {
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+        "text": "缓降温处理总体提高了晚采鸭梨果心亚油酸含量，经过缓慢降温后10 月20 日时，缓慢降温晚采果亚油酸相对含量为58.81%，而急速降温果的相对含量只有54.73%，但缓慢降温果果心亚油酸含量下降较快。鸭梨果心膜脂中亚麻酸的相对含量总体呈下降趋势，缓慢降温处理显著提高了早采和晚采鸭梨果心亚麻酸的相对含量，如在9 月28 日时，缓慢降温早采果亚麻酸的相对含量从采收初期的8.33%提高到10.51%，而急速降温果的含量只有5.77%；在10 月20 日时，缓慢降温晚采果亚麻酸的相对含量从采收初期的6.01%提高到9.45%，而急速降温果的相对含量只有5.03%。在整个采后阶段，缓慢降温处理果亚麻酸含量要高于急降温处理果（P＜0.05）。总体看，缓慢降温提高了鸭梨果心的亚麻酸含量，这和缓慢降温降低了果心的相变温度（图2）也是相对应的。缓慢降温处理总体提高了早采和晚采鸭梨果心的亚麻酸含量，随着呼吸高峰的出现，亚油酸和亚麻酸含量总体趋势下降，膜脂过氧化严重，产生了更多的自由基，虽然缓慢降温也提高了晚采果亚油酸、亚麻酸的含量，但是由于LOX 活性高，使得自由基产生多，从而造成了晚采果褐变严重。另外，急速降温果果心在呼吸高峰时（10 月20 日）油酸相对含量显著升高，早采果相对含量由初期的10.27%升高为22.29%，晚采果相对含量由初期的12.37%升高为15.03%，早采果明显高于同期晚采果，后期逐渐降低。硬脂酸含量在贮藏中逐渐减少，且急降温果的下降要快于缓降温果，晚采果下降速度快于早采果，这与急降温果油酸和亚油酸含量的上升是对应的。棕榈酸相对含量在贮藏中总体呈先降后升趋势，缓慢降温果棕榈油相对含量变化较缓。如图4 所示，推迟采收提高了果心的U/S 值，早采果果心采收初期U/S 值分别为1.81，而晚采果采收初期为2.67，这和果实成熟度高降低了果心的相变温度是对应的，说明了晚采收提高了果实的抗冷性。",
+        "pages": [
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "采收期",
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_003_C0009",
+      "kind": "document_chunk",
+      "content": {
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+        "text": "图1降温方法对不同采收成熟度鸭梨果心褐变及脂氧合酶活性的影响Fig.1 Effect of different cooling methods on browning and lipoxyenase (LOX) activity of different maturity Yali pear core图2早采急速降温及缓慢降温鸭梨果心相变的差示量热扫描（DSC）曲线Fig.2 Differential scanning calorimetry (DSC) curve of phase transition of core of early harvested Yali pear treated with rapid or slowly cooling注：图括号中是表示脂肪酸的“C”碳原子数目及不饱和键的数目。如月桂酸是有12 个“C”原子数，是饱和脂肪酸，不饱和键数为“0”；亚油酸是有18 个“C”原子数，不饱和键数目为“2”；其它以此类推图3脂肪酸标样及鸭梨果心膜脂脂肪酸图谱Fig.3 Chromatogram of fatty acids of standard and Yali pear core 2.4降温方法对鸭梨果心膜脂脂肪酸组分、含量及不饱和脂肪酸与饱和脂肪酸比值（U/S）的影响试验得知，亚油酸作为鸭梨果心含量最多的不饱和脂肪酸，采后初期缓慢升高，在10 月20 日呼吸高峰时急速降温处理的早采果果心的亚油酸相对含量快速下降为44.89%，而经过了30 d 的缓慢降温的果心亚油酸含量显著升高，相对含量达51.91%，这和缓慢降温降低了果心的相变温度（图2）是相对应的，后期呈现缓慢下降趋势变化。缓降温处理总体提高了晚采鸭梨果心亚油酸含量，经过缓慢降温后10 月20 日时，缓慢降温晚采果亚油酸相对含量为58.81%，而急速降温果的相对含量只有54.73%，但缓慢降温果果心亚油酸含量下降较快。",
+        "pages": [
+          3,
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "采收期",
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_003_C0013",
+      "kind": "document_chunk",
+      "content": {
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+        "text": "陈昆松等[7]研究发现，在猕猴桃果实后熟软化过程中的LOX 活性与膜脂脂肪酸组分的变化一致，随着LOX活性的增高，底物亚油酸和亚麻酸被消耗，并启动膜脂过氧化作用。本试验结果表明鸭梨果实贮藏前期，LOX活性与呼吸、乙烯高峰同步，与褐变规律相似，说明了LOX 与鸭梨的成熟衰老及褐变有一定关系。结论1）缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸含量及U/S 值，降低了果心的膜相变温度，抑制了LOX活性的升高，明显抑制了鸭梨果心不饱和脂肪酸的降解和膜脂过氧化，从而抑制了果心褐变。2）推迟采收提高了鸭梨果心的U/S 值，降低了膜相变温度，但降温方法对相变温度影响不明显。缓慢降温也提高了晚采鸭梨果心的亚麻酸和亚油酸含量，但由于采收成熟度较高，采后衰老较快，贮藏后期LOX 活性快速升高，氧化了更多的不饱和脂肪酸，从而使得膜脂过氧化加剧，导致了晚采果更容易褐变。[参考文献] [1]中国科学院北京植物研究所．鸭梨黑心病的研究Ⅰ：温度对黑心病的影响[J]．植物学报，1974，16(2)：140－143．Peking Institute of Botany of Academia Sinica. Studies on the brown core of the pear fruitⅠ: The effect of temperature on the brown core[J]. Acta Botanica Scinca, 1974, 16(2): 140－143. (in Chinese with English abstract) [2]梁丽雅，闫师杰，陈计峦，等．鸭梨采后果实褐变的主要因素研究[J]．食品与机械，2008，24(3)：48－51．Liang Liya, Yan Shijie, Chen Jiluan, et al.",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "采收期",
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_003_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+        "text": "高峰过后，LOX 活性呈现逐步升高趋势，且晚采果要高于同期早采果。缓慢降温显著抑制了早采果果心LOX 活性（P＜0.05），而对晚采果果心酶活性影响不明显。说明晚采果果心LOX 活性较高，膜脂过氧化严重。缓慢降温可以抑制果心LOX 活性，特别对于早采果影响更明显。2.2降温方法对不同采收期鸭梨果心相变温度的影响从图2 看到，用DSC 方法测定的早采急速降温和缓慢降温鸭梨果心的相变温度分别是-1.56℃和-1.75℃，说明缓慢降温明显降低了早采鸭梨果心的相变温度，从而减轻了早采鸭梨果心的冷害和褐变的发生。同时我们也对晚采果进行了测定，晚采急速降温和缓慢降温鸭梨果心的相变温度分别是-1.73℃和-1.76℃，说明提高采收成熟度降低了鸭梨果心的相变温度，但降温方法对晚采鸭梨果心相变温度的影响没有早采果那样明显。2.3鸭梨果心的膜脂脂肪酸组分及含量对鸭梨果心脂肪酸组分及含量进行了测定（图3），发现果心中含有月桂酸（12:0）、豆蔻酸（14:0）、棕榈酸（16:0）、棕榈油酸（16:1）、珠光酸（17: 0）、硬脂酸（18:0）、油酸（18:1）、亚油酸（18:2）、亚麻酸（18:3）而几乎没有花生酸（20:0）、花生烯酸（20:1）、花生四烯酸（20:4）、廿二碳五烯酸（22:5）。其中相对含量最多的是亚油酸，大约占到总脂肪酸的45%～60%，其次为棕榈酸，相对含量20%～30%，油酸相对含量为5%～25%，亚麻酸相对含量约2%～12%，硬脂酸约1%～5%，珠光酸约0.5%～2%，月桂酸、豆蔻酸、棕榈油酸的含量很少，只有0.1%～0.5%。在此基础上，考察了相对含量较多的棕榈酸（16:0）、硬脂酸（18:0）、油酸（18:1）、亚油酸（18:2）、亚麻酸（18:3）在鸭梨贮藏中的变化，以探讨不同降温方法对不同采收成熟度鸭梨果心膜脂脂肪酸含量的影响。",
+        "pages": [
+          2,
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "采收期",
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "在本研究（《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》）中，缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量  [E1]  [E4] 。具体而言：亚麻酸方面，缓慢降温显著提高了早采鸭梨果心亚麻酸的相对含量，如9月28日时缓慢降温早采果亚麻酸相对含量从采收初期的8.33%提高到10.51%，而急速降温果只有5.77%  [E2] ；亚油酸方面，经过30 d缓慢降温的早采果果心亚油酸相对含量显著升高，达51.91%，而10月20日呼吸高峰时急速降温处理的早采果果心亚油酸相对含量快速下降为44.89%  [E3] 。",
+    "basis": "[E1]摘要指出：缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量及不饱和脂肪酸与饱和脂肪酸比值（U/S） [E1] 。[E4]结论1）同样指出：缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸含量及U/S值  [E4] 。[E2]给出亚麻酸具体数据：9月28日时缓慢降温早采果亚麻酸相对含量从采收初期的8.33%提高到10.51%，急速降温果只有5.77%，且整个采后阶段缓慢降温处理果亚麻酸含量高于急降温处理果（P＜0.05） [E2] 。[E3]给出亚油酸具体数据：10月20日呼吸高峰时急速降温处理的早采果果心亚油酸相对含量快速下降为44.89%，而经过30 d缓慢降温的果心亚油酸含量显著升高，相对含量达51.91%  [E3] 。",
+    "reasoning": "证据[E1]（摘要）与[E4]（结论）均直接陈述缓慢降温提高早采鸭梨果心亚麻酸和亚油酸相对含量，二者为同一研究的总体结论  [E1]  [E4] 。[E2]提供亚麻酸的分时点相对含量数据（8.33%→10.51% vs 5.77%） [E2] ，[E3]提供亚油酸的分时点相对含量数据（44.89% vs 51.91%） [E3] ，与总体结论一致。上述均为该论文特定试验结果，属于研究资料，不构成当地生产指导。",
+    "advice": "本结论仅适用于该论文所述试验条件（早采鸭梨、缓慢降温处理），不转化为当地生产建议。如需了解具体降温速率、处理时长及采收期界定等试验参数，请查阅原文方法部分。",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接回应问题，正确指出缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量，并补充了U/S值提高的总体结论；所引具体数值与论文证据一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量",
+          "status": "supported",
+          "reason": "摘要和结论均明确陈述该结论，E1、E4支持。"
+        },
+        {
+          "claim": "缓慢降温提高了早采鸭梨果心的不饱和脂肪酸与饱和脂肪酸比值（U/S）",
+          "status": "supported",
+          "reason": "摘要和结论1均指出缓慢降温提高了早采鸭梨果心的U/S值，E1、E4支持。"
+        },
+        {
+          "claim": "9月28日时缓慢降温早采果亚麻酸相对含量从采收初期的8.33%提高到10.51%，而急速降温果只有5.77%",
+          "status": "supported",
+          "reason": "E2原文直接给出该组数值。"
+        },
+        {
+          "claim": "整个采后阶段缓慢降温处理果亚麻酸含量高于急降温处理果（P＜0.05）",
+          "status": "supported",
+          "reason": "E2原文明确陈述该统计结果。"
+        },
+        {
+          "claim": "经过30 d缓慢降温的早采果果心亚油酸相对含量显著升高，达51.91%",
+          "status": "supported",
+          "reason": "E3原文指出经过30 d缓慢降温的果心亚油酸含量显著升高，相对含量达51.91%。"
+        },
+        {
+          "claim": "10月20日呼吸高峰时急速降温处理的早采果果心亚油酸相对含量快速下降为44.89%",
+          "status": "supported",
+          "reason": "E3原文直接给出该数值。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 4722,
+      "completion_tokens": 368,
+      "total_tokens": 5090,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 3314
+    },
+    "model": "deepseek-flash",
+    "response_id": "08edef48-499e-490a-94fa-0e98a8ab9593",
+    "seconds": 7.8805876999977045,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在本研究（《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》）中，缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量 [E1][E4]。具体而言：亚麻酸方面，缓慢降温显著提高了早采鸭梨果心亚麻酸的相对含量，如9月28日时缓慢降温早采果亚麻酸相对含量从采收初期的8.33%提高到10.51%，而急速降温果只有5.77% [E2]；亚油酸方面，经过30 d缓慢降温的早采果果心亚油酸相对含量显著升高，达51.91%，而10月20日呼吸高峰时急速降温处理的早采果果心亚油酸相对含量快速下降为44.89% [E3]。",
+        "basis": "E1摘要指出：缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸相对含量及不饱和脂肪酸与饱和脂肪酸比值（U/S）[E1]。E4结论1）同样指出：缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸含量及U/S值 [E4]。E2给出亚麻酸具体数据：9月28日时缓慢降温早采果亚麻酸相对含量从采收初期的8.33%提高到10.51%，急速降温果只有5.77%，且整个采后阶段缓慢降温处理果亚麻酸含量高于急降温处理果（P＜0.05）[E2]。E3给出亚油酸具体数据：10月20日呼吸高峰时急速降温处理的早采果果心亚油酸相对含量快速下降为44.89%，而经过30 d缓慢降温的果心亚油酸含量显著升高，相对含量达51.91% [E3]。",
+        "reasoning": "证据E1（摘要）与E4（结论）均直接陈述缓慢降温提高早采鸭梨果心亚麻酸和亚油酸相对含量，二者为同一研究的总体结论 [E1][E4]。E2提供亚麻酸的分时点相对含量数据（8.33%→10.51% vs 5.77%）[E2]，E3提供亚油酸的分时点相对含量数据（44.89% vs 51.91%）[E3]，与总体结论一致。上述均为该论文特定试验结果，属于研究资料，不构成当地生产指导。",
+        "advice": "本结论仅适用于该论文所述试验条件（早采鸭梨、缓慢降温处理），不转化为当地生产建议。如需了解具体降温速率、处理时长及采收期界定等试验参数，请查阅原文方法部分。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 3602,
+        "completion_tokens": 600,
+        "total_tokens": 4202,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 3474
+      },
+      "model": "deepseek-flash",
+      "response_id": "6854b253-b62c-4e71-b8f5-e693b3de6877",
+      "seconds": 8.841689599998062,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 23.360276599996723
+}

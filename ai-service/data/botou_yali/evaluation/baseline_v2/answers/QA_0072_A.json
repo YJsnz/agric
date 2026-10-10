@@ -1,0 +1,70 @@
+{
+  "id": "QA_0072",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法确定该论文中鸭梨贮藏150和210 d时不同O2浓度处理间呼吸速率差异是否显著。",
+    "basis": "未提供该论文的具体内容或检索证据，我无法获知其实验数据、统计方法和显著性检验结果。",
+    "reasoning": "问题要求依据特定论文回答，但证据列表为空，且我不掌握该论文的原文数据，因此不能判断差异显著性，也不能编造数字或结论。",
+    "advice": "请提供该论文的原文、摘要或相关数据表格；或说明具体O2浓度处理、呼吸速率数值及统计检验结果，以便进一步判断。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于差异显著性的判断，仅说明证据不足而拒答；在可回答题中拒答不算正确，故为abstain。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 920,
+      "completion_tokens": 49,
+      "total_tokens": 969,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 280
+    },
+    "model": "deepseek-flash",
+    "response_id": "69916124-2905-416c-b7c7-6ef397ddb0be",
+    "seconds": 5.926572500000475,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法确定该论文中鸭梨贮藏150和210 d时不同O2浓度处理间呼吸速率差异是否显著。",
+        "basis": "未提供该论文的具体内容或检索证据，我无法获知其实验数据、统计方法和显著性检验结果。",
+        "reasoning": "问题要求依据特定论文回答，但证据列表为空，且我不掌握该论文的原文数据，因此不能判断差异显著性，也不能编造数字或结论。",
+        "advice": "请提供该论文的原文、摘要或相关数据表格；或说明具体O2浓度处理、呼吸速率数值及统计检验结果，以便进一步判断。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 185,
+        "completion_tokens": 142,
+        "total_tokens": 327,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 185
+      },
+      "model": "deepseek-flash",
+      "response_id": "04be67a3-090f-451d-8dc9-c6af43f819d2",
+      "seconds": 5.771813100000145,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 11.700780700004543
+}

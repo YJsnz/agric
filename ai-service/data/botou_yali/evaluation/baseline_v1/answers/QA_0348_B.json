@@ -1,0 +1,220 @@
+{
+  "id": "QA_0348",
+  "arm": "B",
+  "generation": {
+    "result": {
+      "sufficient": true,
+      "conclusion": "黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变 [E1]。",
+      "basis": "证据E1在3.1节中明确表述：黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变[31-32]。该证据同时指出低氧胁迫处理可通过调控氧化代谢平衡进而降低衰老相关生理病害的发生。",
+      "reasoning": "问题询问黑心病发生的直接原因，E1直接给出了机制性描述：细胞膜过氧化→膜完整性破坏→PPO催化酚类底物形成醌→褐变。该表述为文献引用的机制结论，属于直接原因层面的说明，而非仅相关性描述。其他证据（E2、E3、E4、E5）涉及O2浓度与黑心病发生风险的关系及贮藏建议，未提供黑心病直接原因的机制描述，故不作为直接原因依据。",
+      "advice": "该机制说明来自研究文献，可作为理解黑心病发生机理的参考，但不构成本地生产指导。实际贮藏中应结合本地条件验证，并注意E1、E2、E3均提示1.0% O2处理在一定程度上增加鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0% [E2][E3]。",
+      "citations": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2341,
+      "completion_tokens": 343,
+      "total_tokens": 2684,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2341
+    },
+    "model": "deepseek-flash",
+    "response_id": "b2ec1566-de55-4f1a-b89e-857aed261dfe",
+    "seconds": 6.915123899999799,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0026",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "3.1  环境O2浓度与虎皮病和黑心病发生的关系",
+        "text": "虎皮病是梨采后贮藏过程中一种主要的生理病害[26]。低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累，降低乙烯释放量，有效降低α-法尼烯及其氧化产物共轭三烯醇的积累，进而抑制虎皮病的发生[27-28]。近年来，超低氧气调贮藏技术（O2＜1.0%）和动态气调贮藏技术（O2＜0.6%）快速发展，与传统气调贮藏相比，更低的贮藏环境O2 浓度能更好地控制苹果和梨采后虎皮病的发生[29-30]。本研究中，5.0%及以下O2处理显著降低了鸭梨长期贮藏过程中虎皮病的发生，货架期显著延长，其中1.0%—3.0% O2 处理防控虎皮病效果最佳。可见，进一步降低贮藏环境氧气浓度可更好地维持鸭梨果实外观品质，延长货架期，这与前人研究结论一致。黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变[31-32]。低氧胁迫处理可通过调控氧化代谢平衡进而降低衰老相关生理病害的发生[33-34]。本研究中，采用阶段降温结合延迟气调贮藏均显著降低了贮藏和货架期间果实黑心病的发生，相对更低的O2浓度更好地控制了贮藏后期（270 d）果心褐变指数，但过低的氧气浓度处理（1.0% O2）一定程度上增加了鸭梨果实贮藏末期黑心病风险。",
+        "pages": [
+          8,
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "0  引言",
+        "text": "相比而言，‘Conference’一般在O2＞2.0%条件下贮藏，过低的氧气浓度会加重贮藏初期黑心病的发生[15-17]。关于鸭梨气调贮藏的研究最早可追溯到20世纪90 年代，研究发现采用7.0%—10.0% O2 可显著延长鸭梨贮藏期，贮藏213 d 及10 d 货架后（15℃），与空气对照相比，早期和晚期黑心病发生率降低，较好地保持了梨果绿色和硬度；同时发现O2 浓度一定，黑心褐变程度随CO2 浓度升高而显著加重，生产上建议CO2＜1.0%；CO2 浓度一定，O2 下降至5.0%时，也使果心褐变程度加重[18-20]。西洋梨采后气调贮藏研究发现，与果实预冷后直接开始气调相比，推迟气调贮藏建立时间可显著降低长期贮藏过程中梨果心褐变的发生[21-22]。【本研究切入点】低氧及超低氧气调处理作为防控果实采后生理病害发生，延长果实贮藏及货架供应期的关键技术在西方梨品种上广泛应用，而关于低氧处理对我国主要白梨品种采后生理代谢及品质维持的影响鲜有研究报道。【拟解决的关键问题】明确不同O2 浓度处理下鸭梨采后生理代谢和品质变化规律，探讨其对生理病害发生的影响，初步阐明低氧防控鸭梨采后生理病害发生的作用机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0004",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+        "pages": [
+          1,
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    }
+  ],
+  "candidate_ids": [
+    "chunk:PAPER_001_C0026",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0008",
+    "chunk:PAPER_001_C0004"
+  ],
+  "citation_gold_chunk_hit": 1,
+  "citation_gold_source_hit": 1,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出黑心病发生的直接原因：细胞膜过氧化、膜完整性破坏、PPO催化酚类底物形成醌并诱发褐变，与参考答案及原文E1完全一致；后续关于O2浓度与黑心病风险的补充不影响核心答案正确性。",
+      "claims": [
+        {
+          "claim": "黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变。",
+          "status": "supported",
+          "reason": "E1原文明确表述该机制，与参考答案一致。"
+        },
+        {
+          "claim": "低氧胁迫处理可通过调控氧化代谢平衡进而降低衰老相关生理病害的发生。",
+          "status": "supported",
+          "reason": "E1原文有该表述。"
+        },
+        {
+          "claim": "1.0% O2处理在一定程度上增加鸭梨贮藏末期黑心病风险。",
+          "status": "supported",
+          "reason": "E1、E2、E3均提及该结论。"
+        },
+        {
+          "claim": "建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+          "status": "supported",
+          "reason": "E2、E3原文明确给出该建议。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3151,
+      "completion_tokens": 246,
+      "total_tokens": 3397,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2639
+    },
+    "model": "deepseek-flash",
+    "response_id": "a91ea443-2aca-401f-b9cc-b250c90a280b",
+    "seconds": 6.334100200000194,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,2699 @@
+{
+  "crop_id": "huanghua_hanjianmai",
+  "version": "1.0.0",
+  "nodes": [
+    {
+      "id": "crop:wheat",
+      "name": "黄骅旱碱麦",
+      "type": "Crop",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W001",
+        "src:W013",
+        "src:W009",
+        "src:W009",
+        "src:W008",
+        "src:W002",
+        "src:W012",
+        "src:W012",
+        "src:W013",
+        "src:W013",
+        "src:W013",
+        "src:W001",
+        "src:W001",
+        "src:W001",
+        "src:W001",
+        "src:W001",
+        "src:W001",
+        "src:W013",
+        "src:W001"
+      ]
+    },
+    {
+      "id": "reg:binhai",
+      "name": "渤海湾滨海盐碱区",
+      "type": "Region",
+      "crop": "huanghua_hanjianmai",
+      "region": "binhai",
+      "description": "",
+      "source_ids": [
+        "src:W001"
+      ]
+    },
+    {
+      "id": "env:salinity",
+      "name": "土壤盐分",
+      "type": "EnvironmentFactor",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W001"
+      ]
+    },
+    {
+      "id": "soil:saline_alkali",
+      "name": "中度盐碱地",
+      "type": "SoilType",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W001",
+        "src:W013"
+      ]
+    },
+    {
+      "id": "reg:huanghua",
+      "name": "黄骅市",
+      "type": "Region",
+      "crop": "huanghua_hanjianmai",
+      "region": "huanghua",
+      "description": "",
+      "source_ids": [
+        "src:W013",
+        "src:W013",
+        "src:W011",
+        "src:W012",
+        "src:W012"
+      ]
+    },
+    {
+      "id": "soil:coastal_saline",
+      "name": "滨海盐碱土",
+      "type": "SoilType",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W013"
+      ]
+    },
+    {
+      "id": "soil:low_organic",
+      "name": "有机质含量低土壤",
+      "type": "SoilType",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W013",
+        "src:W010",
+        "src:W013"
+      ]
+    },
+    {
+      "id": "stress:drought",
+      "name": "干旱胁迫",
+      "type": "Stress",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008",
+        "src:W008",
+        "src:W011",
+        "src:W008",
+        "src:W003",
+        "src:W012",
+        "src:W014"
+      ]
+    },
+    {
+      "id": "proc:germination",
+      "name": "种子萌发",
+      "type": "Process",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008",
+        "src:W008"
+      ]
+    },
+    {
+      "id": "stress:salt",
+      "name": "盐胁迫",
+      "type": "Stress",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008",
+        "src:W008",
+        "src:W013",
+        "src:W008",
+        "src:W008",
+        "src:W012",
+        "src:W012",
+        "src:W013",
+        "src:W013",
+        "src:W014"
+      ]
+    },
+    {
+      "id": "proc:tillering",
+      "name": "分蘖成穗",
+      "type": "Process",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008",
+        "src:W010"
+      ]
+    },
+    {
+      "id": "stress:ltll",
+      "name": "低温寡照胁迫",
+      "type": "Stress",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008",
+        "src:W008"
+      ]
+    },
+    {
+      "id": "proc:grain_filling",
+      "name": "籽粒灌浆",
+      "type": "Process",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008",
+        "src:W008"
+      ]
+    },
+    {
+      "id": "stage:sowing",
+      "name": "播种期",
+      "type": "GrowthStage",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008",
+        "src:W010",
+        "src:W013",
+        "src:W001",
+        "src:W013",
+        "src:W013"
+      ]
+    },
+    {
+      "id": "stage:regreening",
+      "name": "返青期",
+      "type": "GrowthStage",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008",
+        "src:W011",
+        "src:W001",
+        "src:W011",
+        "src:W011"
+      ]
+    },
+    {
+      "id": "stage:filling",
+      "name": "灌浆期",
+      "type": "GrowthStage",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008",
+        "src:W001"
+      ]
+    },
+    {
+      "id": "env:extreme_low_temp",
+      "name": "极端低温",
+      "type": "EnvironmentFactor",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W009"
+      ]
+    },
+    {
+      "id": "risk:weather",
+      "name": "气象风险",
+      "type": "WeatherRisk",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W009",
+        "src:W009"
+      ]
+    },
+    {
+      "id": "env:rainfall",
+      "name": "降水",
+      "type": "EnvironmentFactor",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W009"
+      ]
+    },
+    {
+      "id": "env:sunshine",
+      "name": "日照",
+      "type": "EnvironmentFactor",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W009"
+      ]
+    },
+    {
+      "id": "prac:weather_warning",
+      "name": "气象风险预警系统",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W009"
+      ]
+    },
+    {
+      "id": "env:valid_precip",
+      "name": "有效降水",
+      "type": "EnvironmentFactor",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W011"
+      ]
+    },
+    {
+      "id": "env:deficit",
+      "name": "水分亏缺",
+      "type": "EnvironmentFactor",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W011",
+        "src:W011",
+        "src:W011",
+        "src:W011"
+      ]
+    },
+    {
+      "id": "env:pet",
+      "name": "潜在蒸散",
+      "type": "EnvironmentFactor",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W011"
+      ]
+    },
+    {
+      "id": "stage:heading",
+      "name": "抽穗期",
+      "type": "GrowthStage",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W011",
+        "src:W012",
+        "src:W001"
+      ]
+    },
+    {
+      "id": "risk:spring_drought",
+      "name": "春季干旱",
+      "type": "WeatherRisk",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W011",
+        "src:W011"
+      ]
+    },
+    {
+      "id": "stage:jointing",
+      "name": "拔节期",
+      "type": "GrowthStage",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W011",
+        "src:W001"
+      ]
+    },
+    {
+      "id": "prac:rain_harvest",
+      "name": "雨水蓄积高效利用",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W011"
+      ]
+    },
+    {
+      "id": "prac:brackish_rain_use",
+      "name": "微咸水与雨水分期互补利用",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W011"
+      ]
+    },
+    {
+      "id": "reg:nanpi",
+      "name": "南皮县",
+      "type": "Region",
+      "crop": "huanghua_hanjianmai",
+      "region": "nanpi",
+      "description": "",
+      "source_ids": [
+        "src:W011"
+      ]
+    },
+    {
+      "id": "reg:hebei_lowplain",
+      "name": "河北低平原盐碱区",
+      "type": "Region",
+      "crop": "huanghua_hanjianmai",
+      "region": "hebei_lowplain",
+      "description": "",
+      "source_ids": [
+        "src:W011",
+        "src:W011"
+      ]
+    },
+    {
+      "id": "prac:wide_furrow",
+      "name": "宽幅沟播",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W010",
+        "src:W010",
+        "src:W010"
+      ]
+    },
+    {
+      "id": "stress:drought_wheat",
+      "name": "旱盐胁迫",
+      "type": "Stress",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W010",
+        "src:W013"
+      ]
+    },
+    {
+      "id": "qual:yield",
+      "name": "产量(亩穗数/穗粒数)",
+      "type": "QualityIndicator",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W010",
+        "src:W014",
+        "src:W013"
+      ]
+    },
+    {
+      "id": "prac:organic_fertilizer",
+      "name": "增施有机肥",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W010"
+      ]
+    },
+    {
+      "id": "prac:deep_loosening",
+      "name": "深松整地",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W010"
+      ]
+    },
+    {
+      "id": "proc:seedling_establish",
+      "name": "出苗成苗",
+      "type": "Process",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W010",
+        "src:W008"
+      ]
+    },
+    {
+      "id": "prac:suppress_hoe",
+      "name": "镇压锄划",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W010"
+      ]
+    },
+    {
+      "id": "env:moisture",
+      "name": "土壤墒情",
+      "type": "EnvironmentFactor",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W010",
+        "src:W004"
+      ]
+    },
+    {
+      "id": "prac:green_control",
+      "name": "绿色防控",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W010"
+      ]
+    },
+    {
+      "id": "prac:micro_furrow",
+      "name": "微沟播种",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W013",
+        "src:W013"
+      ]
+    },
+    {
+      "id": "prac:straw_return",
+      "name": "秸秆还田",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W013"
+      ]
+    },
+    {
+      "id": "prac:alfalfa_rotation",
+      "name": "苜蓿轮作改土",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W013"
+      ]
+    },
+    {
+      "id": "prac:seed_treatment",
+      "name": "抗逆促发增蘖种子处理",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008"
+      ]
+    },
+    {
+      "id": "prac:jointing_control",
+      "name": "拔节期壮秆抗逆化控",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008"
+      ]
+    },
+    {
+      "id": "stress:lodging",
+      "name": "倒伏",
+      "type": "Stress",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008"
+      ]
+    },
+    {
+      "id": "prac:filling_regulation",
+      "name": "灌浆期稳叶促粒调控",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008"
+      ]
+    },
+    {
+      "id": "prac:green_regulation",
+      "name": "全生育期绿色调控体系",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008"
+      ]
+    },
+    {
+      "id": "prac:bioregulator",
+      "name": "绿色生物源调节剂(ABA/硅/纳米氧化铈)",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008"
+      ]
+    },
+    {
+      "id": "proc:root_na",
+      "name": "根系Na+排斥",
+      "type": "Process",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008"
+      ]
+    },
+    {
+      "id": "proc:leaf_k",
+      "name": "叶片K+稳态",
+      "type": "Process",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008"
+      ]
+    },
+    {
+      "id": "proc:ros_clear",
+      "name": "活性氧清除",
+      "type": "Process",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W008"
+      ]
+    },
+    {
+      "id": "prac:fert_pest_opt",
+      "name": "肥药优调",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W002"
+      ]
+    },
+    {
+      "id": "prac:open_furrow",
+      "name": "开沟接墒播种",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W003"
+      ]
+    },
+    {
+      "id": "prac:probe_moisture",
+      "name": "探墒保播",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W004"
+      ]
+    },
+    {
+      "id": "prac:late_spring_promote",
+      "name": "晚播春促减灾",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W005"
+      ]
+    },
+    {
+      "id": "stress:late_sowing_weak",
+      "name": "晚播弱苗",
+      "type": "Stress",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W005"
+      ]
+    },
+    {
+      "id": "prac:one_spray_three",
+      "name": "一喷三防",
+      "type": "AgriculturalPractice",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W007"
+      ]
+    },
+    {
+      "id": "stress:hot_wind",
+      "name": "干热风",
+      "type": "Stress",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W007"
+      ]
+    },
+    {
+      "id": "var:jiemai19",
+      "name": "捷麦19",
+      "type": "Variety",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W012",
+        "src:W012",
+        "src:W012",
+        "src:W012"
+      ]
+    },
+    {
+      "id": "var:jiemai20",
+      "name": "捷麦20",
+      "type": "Variety",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W012",
+        "src:W012",
+        "src:W012"
+      ]
+    },
+    {
+      "id": "reg:cangzhou",
+      "name": "沧州市",
+      "type": "Region",
+      "crop": "huanghua_hanjianmai",
+      "region": "cangzhou",
+      "description": "",
+      "source_ids": [
+        "src:W012",
+        "src:W012",
+        "src:W009",
+        "src:W014",
+        "src:W013"
+      ]
+    },
+    {
+      "id": "var:cangmai6003",
+      "name": "沧麦6003",
+      "type": "Variety",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W013",
+        "src:W013"
+      ]
+    },
+    {
+      "id": "var:xiaoyan",
+      "name": "小偃系列",
+      "type": "Variety",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W013",
+        "src:W013"
+      ]
+    },
+    {
+      "id": "var:cangmai6002",
+      "name": "沧麦6002",
+      "type": "Variety",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W014",
+        "src:W014"
+      ]
+    },
+    {
+      "id": "var:cangmai6005",
+      "name": "沧麦6005",
+      "type": "Variety",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W014"
+      ]
+    },
+    {
+      "id": "stage:wintering",
+      "name": "越冬期",
+      "type": "GrowthStage",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W001"
+      ]
+    },
+    {
+      "id": "prod:grain",
+      "name": "黄骅旱碱麦原粮",
+      "type": "Product",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W015",
+        "src:W015",
+        "src:W015",
+        "src:W015",
+        "src:W015",
+        "src:W013",
+        "src:W013"
+      ]
+    },
+    {
+      "id": "qual:protein",
+      "name": "蛋白质",
+      "type": "QualityIndicator",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W015",
+        "src:W016"
+      ]
+    },
+    {
+      "id": "qual:moisture",
+      "name": "水分",
+      "type": "QualityIndicator",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W015",
+        "src:W016"
+      ]
+    },
+    {
+      "id": "qual:volume_weight",
+      "name": "容重",
+      "type": "QualityIndicator",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W015"
+      ]
+    },
+    {
+      "id": "qual:hardness",
+      "name": "硬度",
+      "type": "QualityIndicator",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W015"
+      ]
+    },
+    {
+      "id": "qual:falling_number",
+      "name": "降落数值",
+      "type": "QualityIndicator",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W015"
+      ]
+    },
+    {
+      "id": "prod:flour",
+      "name": "黄骅旱碱麦小麦粉",
+      "type": "Product",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W016",
+        "src:W016",
+        "src:W016",
+        "src:W016",
+        "src:W014",
+        "src:W014",
+        "src:W013",
+        "src:W014"
+      ]
+    },
+    {
+      "id": "qual:wet_gluten",
+      "name": "湿面筋",
+      "type": "QualityIndicator",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W016"
+      ]
+    },
+    {
+      "id": "qual:ash",
+      "name": "灰分",
+      "type": "QualityIndicator",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W016"
+      ]
+    },
+    {
+      "id": "qual:dry_gluten",
+      "name": "干面筋",
+      "type": "QualityIndicator",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W014"
+      ]
+    },
+    {
+      "id": "qual:extraction_rate",
+      "name": "出粉率",
+      "type": "QualityIndicator",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W014"
+      ]
+    },
+    {
+      "id": "prod:mianhua",
+      "name": "黄骅面花",
+      "type": "Product",
+      "crop": "huanghua_hanjianmai",
+      "region": "",
+      "description": "",
+      "source_ids": [
+        "src:W014"
+      ]
+    },
+    {
+      "id": "reg:zhongjie",
+      "name": "中捷产业园区",
+      "type": "Region",
+      "crop": "huanghua_hanjianmai",
+      "region": "zhongjie",
+      "description": "",
+      "source_ids": [
+        "src:W012"
+      ]
+    },
+    {
+      "id": "reg:haixing",
+      "name": "海兴县",
+      "type": "Region",
+      "crop": "huanghua_hanjianmai",
+      "region": "haixing",
+      "description": "",
+      "source_ids": [
+        "src:W009"
+      ]
+    },
+    {
+      "id": "reg:hebei",
+      "name": "河北省",
+      "type": "Region",
+      "crop": "huanghua_hanjianmai",
+      "region": "hebei",
+      "description": "",
+      "source_ids": [
+        "src:W014",
+        "src:W001",
+        "src:W013"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "HH-0001",
+      "source": "crop:wheat",
+      "target": "reg:binhai",
+      "relation": "APPLIES_IN",
+      "kind": "APPLIES_IN",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0002",
+      "source": "env:salinity",
+      "target": "soil:saline_alkali",
+      "relation": "HAS_ENVIRONMENT",
+      "kind": "HAS_ENVIRONMENT",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0003",
+      "source": "soil:saline_alkali",
+      "target": "reg:huanghua",
+      "relation": "LOCATED_IN",
+      "kind": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0004",
+      "source": "soil:coastal_saline",
+      "target": "reg:huanghua",
+      "relation": "LOCATED_IN",
+      "kind": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0005",
+      "source": "soil:low_organic",
+      "target": "crop:wheat",
+      "relation": "HAS_ENVIRONMENT",
+      "kind": "HAS_ENVIRONMENT",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0006",
+      "source": "stress:drought",
+      "target": "proc:germination",
+      "relation": "INHIBITS",
+      "kind": "INHIBITS",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0007",
+      "source": "stress:salt",
+      "target": "proc:tillering",
+      "relation": "INHIBITS",
+      "kind": "INHIBITS",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:regreening"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0008",
+      "source": "stress:ltll",
+      "target": "proc:grain_filling",
+      "relation": "INHIBITS",
+      "kind": "INHIBITS",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:filling"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0009",
+      "source": "stress:drought",
+      "target": "stage:sowing",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0010",
+      "source": "stress:salt",
+      "target": "stage:regreening",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0011",
+      "source": "stress:ltll",
+      "target": "stage:filling",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0012",
+      "source": "env:extreme_low_temp",
+      "target": "risk:weather",
+      "relation": "INCREASES_RISK",
+      "kind": "INCREASES_RISK",
+      "evidence_ids": [
+        "src:W009"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州海兴",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0013",
+      "source": "env:rainfall",
+      "target": "crop:wheat",
+      "relation": "AFFECTS",
+      "kind": "AFFECTS",
+      "evidence_ids": [
+        "src:W009"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州海兴",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0014",
+      "source": "env:sunshine",
+      "target": "crop:wheat",
+      "relation": "AFFECTS",
+      "kind": "AFFECTS",
+      "evidence_ids": [
+        "src:W009"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州海兴",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0015",
+      "source": "prac:weather_warning",
+      "target": "risk:weather",
+      "relation": "REDUCES_RISK",
+      "kind": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W009"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州海兴",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0016",
+      "source": "env:valid_precip",
+      "target": "env:deficit",
+      "relation": "INCREASES_RISK",
+      "kind": "INCREASES_RISK",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [
+        "stage:heading"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0017",
+      "source": "env:pet",
+      "target": "stress:drought",
+      "relation": "INCREASES_RISK",
+      "kind": "INCREASES_RISK",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0018",
+      "source": "env:deficit",
+      "target": "stage:heading",
+      "relation": "AFFECTS",
+      "kind": "AFFECTS",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [
+        "stage:heading"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0019",
+      "source": "risk:spring_drought",
+      "target": "stage:regreening",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [
+        "stage:regreening"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0020",
+      "source": "risk:spring_drought",
+      "target": "stage:jointing",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [
+        "stage:jointing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0021",
+      "source": "prac:rain_harvest",
+      "target": "env:deficit",
+      "relation": "MITIGATES",
+      "kind": "MITIGATES",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0022",
+      "source": "prac:brackish_rain_use",
+      "target": "env:deficit",
+      "relation": "MITIGATES",
+      "kind": "MITIGATES",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北低平原/南皮",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0023",
+      "source": "reg:nanpi",
+      "target": "reg:hebei_lowplain",
+      "relation": "LOCATED_IN",
+      "kind": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北低平原",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0024",
+      "source": "reg:huanghua",
+      "target": "reg:hebei_lowplain",
+      "relation": "LOCATED_IN",
+      "kind": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0025",
+      "source": "prac:wide_furrow",
+      "target": "stress:drought_wheat",
+      "relation": "MITIGATES",
+      "kind": "MITIGATES",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州/黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0026",
+      "source": "prac:wide_furrow",
+      "target": "qual:yield",
+      "relation": "PROMOTES",
+      "kind": "PROMOTES",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州/黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0027",
+      "source": "prac:wide_furrow",
+      "target": "stage:sowing",
+      "relation": "HAS_PARAMETER",
+      "kind": "HAS_PARAMETER",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0028",
+      "source": "prac:organic_fertilizer",
+      "target": "soil:low_organic",
+      "relation": "PROMOTES",
+      "kind": "PROMOTES",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0029",
+      "source": "prac:deep_loosening",
+      "target": "proc:seedling_establish",
+      "relation": "PROMOTES",
+      "kind": "PROMOTES",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州/黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0030",
+      "source": "prac:suppress_hoe",
+      "target": "env:moisture",
+      "relation": "PROMOTES",
+      "kind": "PROMOTES",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0031",
+      "source": "prac:green_control",
+      "target": "proc:tillering",
+      "relation": "REDUCES_RISK",
+      "kind": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W010"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0032",
+      "source": "prac:micro_furrow",
+      "target": "stress:drought_wheat",
+      "relation": "MITIGATES",
+      "kind": "MITIGATES",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0033",
+      "source": "prac:micro_furrow",
+      "target": "stage:sowing",
+      "relation": "HAS_PARAMETER",
+      "kind": "HAS_PARAMETER",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0034",
+      "source": "prac:straw_return",
+      "target": "soil:low_organic",
+      "relation": "PROMOTES",
+      "kind": "PROMOTES",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0035",
+      "source": "prac:alfalfa_rotation",
+      "target": "stress:salt",
+      "relation": "REDUCES_RISK",
+      "kind": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0036",
+      "source": "prac:seed_treatment",
+      "target": "proc:germination",
+      "relation": "PROMOTES",
+      "kind": "PROMOTES",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0037",
+      "source": "prac:jointing_control",
+      "target": "stress:lodging",
+      "relation": "REDUCES_RISK",
+      "kind": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:jointing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0038",
+      "source": "prac:filling_regulation",
+      "target": "proc:grain_filling",
+      "relation": "PROMOTES",
+      "kind": "PROMOTES",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:filling"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0039",
+      "source": "prac:green_regulation",
+      "target": "crop:wheat",
+      "relation": "RECOMMENDS",
+      "kind": "RECOMMENDS",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0040",
+      "source": "prac:bioregulator",
+      "target": "stress:salt",
+      "relation": "REDUCES_RISK",
+      "kind": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0041",
+      "source": "proc:root_na",
+      "target": "proc:seedling_establish",
+      "relation": "PROMOTES",
+      "kind": "PROMOTES",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0042",
+      "source": "proc:leaf_k",
+      "target": "stress:salt",
+      "relation": "REDUCES_RISK",
+      "kind": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0043",
+      "source": "proc:ros_clear",
+      "target": "stress:drought",
+      "relation": "REDUCES_RISK",
+      "kind": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W008"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0044",
+      "source": "prac:fert_pest_opt",
+      "target": "crop:wheat",
+      "relation": "RECOMMENDS",
+      "kind": "RECOMMENDS",
+      "evidence_ids": [
+        "src:W002"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0045",
+      "source": "prac:open_furrow",
+      "target": "stress:drought",
+      "relation": "MITIGATES",
+      "kind": "MITIGATES",
+      "evidence_ids": [
+        "src:W003"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0046",
+      "source": "prac:probe_moisture",
+      "target": "env:moisture",
+      "relation": "REQUIRES",
+      "kind": "REQUIRES",
+      "evidence_ids": [
+        "src:W004"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0047",
+      "source": "prac:late_spring_promote",
+      "target": "stress:late_sowing_weak",
+      "relation": "REDUCES_RISK",
+      "kind": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W005"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:regreening"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0048",
+      "source": "prac:one_spray_three",
+      "target": "stress:hot_wind",
+      "relation": "REDUCES_RISK",
+      "kind": "REDUCES_RISK",
+      "evidence_ids": [
+        "src:W007"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "stage:filling"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0049",
+      "source": "crop:wheat",
+      "target": "var:jiemai19",
+      "relation": "HAS_VARIETY",
+      "kind": "HAS_VARIETY",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0050",
+      "source": "crop:wheat",
+      "target": "var:jiemai20",
+      "relation": "HAS_VARIETY",
+      "kind": "HAS_VARIETY",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0051",
+      "source": "var:jiemai19",
+      "target": "stress:drought",
+      "relation": "HAS_TRAIT",
+      "kind": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0052",
+      "source": "var:jiemai19",
+      "target": "stress:salt",
+      "relation": "HAS_TRAIT",
+      "kind": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0053",
+      "source": "var:jiemai20",
+      "target": "stress:salt",
+      "relation": "HAS_TRAIT",
+      "kind": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0054",
+      "source": "var:jiemai20",
+      "target": "stage:heading",
+      "relation": "HAS_TRAIT",
+      "kind": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0055",
+      "source": "var:jiemai19",
+      "target": "reg:cangzhou",
+      "relation": "RECOMMENDS",
+      "kind": "RECOMMENDS",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0056",
+      "source": "crop:wheat",
+      "target": "var:cangmai6003",
+      "relation": "HAS_VARIETY",
+      "kind": "HAS_VARIETY",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0057",
+      "source": "crop:wheat",
+      "target": "var:xiaoyan",
+      "relation": "HAS_VARIETY",
+      "kind": "HAS_VARIETY",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0058",
+      "source": "var:xiaoyan",
+      "target": "stress:salt",
+      "relation": "HAS_TRAIT",
+      "kind": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0059",
+      "source": "var:cangmai6003",
+      "target": "stress:salt",
+      "relation": "HAS_TRAIT",
+      "kind": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0060",
+      "source": "var:cangmai6002",
+      "target": "stress:drought",
+      "relation": "HAS_TRAIT",
+      "kind": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0061",
+      "source": "var:cangmai6005",
+      "target": "stress:salt",
+      "relation": "HAS_TRAIT",
+      "kind": "HAS_TRAIT",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0062",
+      "source": "var:cangmai6002",
+      "target": "qual:yield",
+      "relation": "AFFECTS",
+      "kind": "AFFECTS",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0063",
+      "source": "qual:yield",
+      "target": "crop:wheat",
+      "relation": "AFFECTS",
+      "kind": "AFFECTS",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0064",
+      "source": "crop:wheat",
+      "target": "stage:sowing",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0065",
+      "source": "crop:wheat",
+      "target": "stage:wintering",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0066",
+      "source": "crop:wheat",
+      "target": "stage:regreening",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0067",
+      "source": "crop:wheat",
+      "target": "stage:jointing",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0068",
+      "source": "crop:wheat",
+      "target": "stage:heading",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0069",
+      "source": "crop:wheat",
+      "target": "stage:filling",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0070",
+      "source": "stage:sowing",
+      "target": "stage:sowing",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "stage:sowing"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0071",
+      "source": "stage:regreening",
+      "target": "stage:regreening",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "OCCURS_AT_STAGE",
+      "evidence_ids": [
+        "src:W011"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北低平原/黄骅",
+      "stage_ids": [
+        "stage:regreening"
+      ],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0072",
+      "source": "prod:grain",
+      "target": "qual:protein",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W015"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0073",
+      "source": "prod:grain",
+      "target": "qual:moisture",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W015"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0074",
+      "source": "prod:grain",
+      "target": "qual:volume_weight",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W015"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0075",
+      "source": "prod:grain",
+      "target": "qual:hardness",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W015"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0076",
+      "source": "prod:grain",
+      "target": "qual:falling_number",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W015"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0077",
+      "source": "prod:flour",
+      "target": "qual:protein",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W016"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0078",
+      "source": "prod:flour",
+      "target": "qual:wet_gluten",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W016"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0079",
+      "source": "prod:flour",
+      "target": "qual:moisture",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W016"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0080",
+      "source": "prod:flour",
+      "target": "qual:ash",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W016"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0081",
+      "source": "prod:flour",
+      "target": "qual:dry_gluten",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0082",
+      "source": "prod:flour",
+      "target": "qual:extraction_rate",
+      "relation": "HAS_QUALITY_INDICATOR",
+      "kind": "HAS_QUALITY_INDICATOR",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0083",
+      "source": "crop:wheat",
+      "target": "prod:grain",
+      "relation": "HAS_PRODUCT",
+      "kind": "HAS_PRODUCT",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0084",
+      "source": "prod:grain",
+      "target": "prod:flour",
+      "relation": "HAS_PRODUCT",
+      "kind": "HAS_PRODUCT",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0085",
+      "source": "prod:flour",
+      "target": "prod:mianhua",
+      "relation": "HAS_PRODUCT",
+      "kind": "HAS_PRODUCT",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0086",
+      "source": "reg:zhongjie",
+      "target": "reg:huanghua",
+      "relation": "LOCATED_IN",
+      "kind": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0087",
+      "source": "reg:huanghua",
+      "target": "reg:cangzhou",
+      "relation": "LOCATED_IN",
+      "kind": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W012"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0088",
+      "source": "reg:haixing",
+      "target": "reg:cangzhou",
+      "relation": "LOCATED_IN",
+      "kind": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W009"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "沧州海兴",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0089",
+      "source": "reg:cangzhou",
+      "target": "reg:hebei",
+      "relation": "LOCATED_IN",
+      "kind": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W014"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅/沧州",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0090",
+      "source": "crop:wheat",
+      "target": "reg:hebei",
+      "relation": "APPLIES_IN",
+      "kind": "APPLIES_IN",
+      "evidence_ids": [
+        "src:W001"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "河北滨海盐碱区/黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    },
+    {
+      "id": "HH-0091",
+      "source": "reg:cangzhou",
+      "target": "reg:hebei",
+      "relation": "LOCATED_IN",
+      "kind": "LOCATED_IN",
+      "evidence_ids": [
+        "src:W013"
+      ],
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [],
+      "conditions": [],
+      "review_status": "candidate_requires_review",
+      "effect_size": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "src:W001",
+      "source_id": "W001",
+      "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+      "type": "地方标准",
+      "region": "河北滨海盐碱区/黄骅",
+      "evidence_level": "local_authoritative",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7",
+      "publication_group": "河北省市场监督管理局"
+    },
+    {
+      "id": "src:W002",
+      "source_id": "W002",
+      "title": "DB13/T 6106-2025 旱碱麦肥药优调技术规程",
+      "type": "地方标准",
+      "region": "河北",
+      "evidence_level": "hebei_authoritative",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39A5186C58B95ACAE06397BE0A0ADABE",
+      "publication_group": "河北省市场监督管理局"
+    },
+    {
+      "id": "src:W003",
+      "source_id": "W003",
+      "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+      "type": "地方标准",
+      "region": "河北",
+      "evidence_level": "hebei_authoritative",
+      "url": "https://dbba.sacinfo.org.cn/rnDetail/0d310eea2e6bb62171fec978faedf7ef47409f9eaa2296c6c908616c299cf68c",
+      "publication_group": "河北省市场监督管理局"
+    },
+    {
+      "id": "src:W004",
+      "source_id": "W004",
+      "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+      "type": "沧州市地方标准",
+      "region": "沧州",
+      "evidence_level": "cangzhou_authoritative",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A",
+      "publication_group": "沧州市市场监督管理局"
+    },
+    {
+      "id": "src:W005",
+      "source_id": "W005",
+      "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+      "type": "沧州市地方标准",
+      "region": "沧州",
+      "evidence_level": "cangzhou_authoritative",
+      "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c",
+      "publication_group": "沧州市市场监督管理局"
+    },
+    {
+      "id": "src:W006",
+      "source_id": "W006",
+      "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+      "type": "沧州市地方标准",
+      "region": "沧州",
+      "evidence_level": "cangzhou_authoritative",
+      "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c",
+      "publication_group": "沧州市市场监督管理局"
+    },
+    {
+      "id": "src:W007",
+      "source_id": "W007",
+      "title": "DB1309/T 150-2014 旱碱地小麦抗逆减灾丰产栽培技术规程",
+      "type": "沧州市地方标准",
+      "region": "沧州",
+      "evidence_level": "cangzhou_authoritative",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=108A4A5041587A0CE06397BE0A0A9183",
+      "publication_group": "沧州市市场监督管理局"
+    },
+    {
+      "id": "src:W008",
+      "source_id": "W008",
+      "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+      "type": "学术期刊",
+      "region": "沧州",
+      "evidence_level": "peer_reviewed_local",
+      "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml",
+      "publication_group": "中国农学通报"
+    },
+    {
+      "id": "src:W009",
+      "source_id": "W009",
+      "title": "基于近十年气象数据的旱碱麦生育期优化策略",
+      "type": "学术期刊",
+      "region": "沧州海兴",
+      "evidence_level": "peer_reviewed_local",
+      "url": "https://jcnj.cbpt.cnki.net/portal/journal/portal/client/paper/e277469f354b0eb5d2edaec045997e38",
+      "publication_group": "基层农技推广"
+    },
+    {
+      "id": "src:W010",
+      "source_id": "W010",
+      "title": "沧州盐碱区旱碱麦宽幅沟播配套栽培技术",
+      "type": "学术期刊",
+      "region": "沧州/黄骅",
+      "evidence_level": "peer_reviewed_local",
+      "url": "https://xdnckj.cbpt.cnki.net/portal/journal/portal/client/paper/1b7651fc5f528d3c5d39128a5d597ea6",
+      "publication_group": "现代农村科技"
+    },
+    {
+      "id": "src:W011",
+      "source_id": "W011",
+      "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+      "type": "学术论文",
+      "region": "河北低平原/黄骅",
+      "evidence_level": "peer_reviewed_regional",
+      "url": "https://doi.org/10.12357/cjea.20250732",
+      "publication_group": "学术期刊平台"
+    },
+    {
+      "id": "src:W012",
+      "source_id": "W012",
+      "title": "河北黄骅市培育“以种适地”品种 助力盐碱地持续增产",
+      "type": "农业农村部门网站",
+      "region": "黄骅",
+      "evidence_level": "government_local_support",
+      "url": "https://www.agri.cn/zx/xxlb/202403/t20240306_8613636.htm",
+      "publication_group": "河北省农业农村厅"
+    },
+    {
+      "id": "src:W013",
+      "source_id": "W013",
+      "title": "盐碱地里造出新粮仓",
+      "type": "科研机构/媒体",
+      "region": "黄骅",
+      "evidence_level": "government_science_support",
+      "url": "https://www.cas.cn/cm/202305/t20230524_4889471.shtml",
+      "publication_group": "中国科学院/人民日报"
+    },
+    {
+      "id": "src:W014",
+      "source_id": "W014",
+      "title": "科技引领助力旱碱麦产业走“花路”",
+      "type": "中国农科院/农民日报",
+      "region": "黄骅/沧州",
+      "evidence_level": "government_science_support",
+      "url": "https://ifst.caas.cn/pub/iappst/xwzx/mtbd/37812bb40dc6445c88da99ccb6289841.htm",
+      "publication_group": "中国农业科学院农产品加工所"
+    },
+    {
+      "id": "src:W015",
+      "source_id": "W015",
+      "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+      "type": "沧州市地方标准",
+      "region": "黄骅/沧州",
+      "evidence_level": "cangzhou_authoritative",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A",
+      "publication_group": "沧州市市场监督管理局"
+    },
+    {
+      "id": "src:W016",
+      "source_id": "W016",
+      "title": "DB1309/T 332-2025 黄骅旱碱麦小麦粉",
+      "type": "沧州市地方标准",
+      "region": "黄骅/沧州",
+      "evidence_level": "cangzhou_authoritative",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A1FF625E06397BE0A0A538A",
+      "publication_group": "沧州市市场监督管理局"
+    },
+    {
+      "id": "src:W017",
+      "source_id": "W017",
+      "title": "盐碱地改良和旱碱麦种植技术及其配套装备研究现状",
+      "type": "学术综述",
+      "region": "河北",
+      "evidence_level": "peer_reviewed_regional",
+      "url": "https://njyj.cbpt.cnki.net/portal/journal/portal/client/paper/c3487720ec2ed1f0e14e056858fdc388",
+      "publication_group": "农机化研究"
+    },
+    {
+      "id": "src:W018",
+      "source_id": "W018",
+      "title": "微垄覆膜侧沟播宽苗带旱碱麦正负压排种器设计与试验",
+      "type": "学术期刊/农机",
+      "region": "河北",
+      "evidence_level": "peer_reviewed_regional",
+      "url": "https://njyj.cbpt.cnki.net/portal/journal/portal/client/paper/41be5e98ceab236878a2f4a884dac792",
+      "publication_group": "农机化研究"
+    }
+  ],
+  "counts": {
+    "domain_entities": 82,
+    "semantic_edges": 91,
+    "statement_nodes": 91,
+    "provenance_edges": 0,
+    "source_count": 18
+  }
+}

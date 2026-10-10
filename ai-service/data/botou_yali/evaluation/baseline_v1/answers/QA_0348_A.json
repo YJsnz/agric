@@ -1,0 +1,77 @@
+{
+  "id": "QA_0348",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文回答黑心病发生的直接原因。",
+      "basis": "当前未提供该论文的具体内容，且我的知识库中不包含该论文的原文或确切结论。",
+      "reasoning": "问题要求依据特定论文作答，但证据为空，无法确认该论文对鸭梨黑心病直接原因的表述；为避免编造论文内容、数字或因果关系，不能给出具体原因。",
+      "advice": "请提供该论文的相关段落或结论原文，或允许我基于一般园艺学知识说明鸭梨黑心病的可能成因（如低氧/高二氧化碳伤害、组织褐变等），但需明确这并非该论文的结论。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 160,
+      "completion_tokens": 149,
+      "total_tokens": 309,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 160
+    },
+    "model": "deepseek-flash",
+    "response_id": "385ff27a-0d31-4a3f-9e71-77248b475b9b",
+    "seconds": 6.221699300000182,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.4,
+  "judge": {
+    "result": {
+      "correctness": "incorrect",
+      "reason": "参考答案明确指出黑心病发生的直接原因是细胞膜发生过氧化反应、细胞膜完整性被打破，PPO催化酚类底物形成醌进而诱发褐变；论文原文也包含完全一致的表述。回答却称无法依据该论文回答，属于有可回答证据时拒答，未给出关键点，因此不正确。",
+      "claims": [
+        {
+          "claim": "无法依据该论文回答黑心病发生的直接原因。",
+          "status": "contradicted",
+          "reason": "提供的论文原文明确写有“黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变”，因此并非无法依据该论文回答。"
+        },
+        {
+          "claim": "当前未提供该论文的具体内容。",
+          "status": "contradicted",
+          "reason": "输入中提供了original_evidence，包含该论文关于黑心病直接原因的相关原文段落。"
+        },
+        {
+          "claim": "知识库中不包含该论文的原文或确切结论。",
+          "status": "unverifiable",
+          "reason": "该断言涉及回答系统自身知识库状态，提供资料无法验证；但即使如此，也不影响依据已提供的论文原文作答。"
+        },
+        {
+          "claim": "证据为空，无法确认该论文对鸭梨黑心病直接原因的表述。",
+          "status": "contradicted",
+          "reason": "original_evidence并非空，且直接包含该论文对黑心病直接原因的表述。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 872,
+      "completion_tokens": 297,
+      "total_tokens": 1169,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 744
+    },
+    "model": "deepseek-flash",
+    "response_id": "95958abb-6d94-4476-846a-409cc5fff505",
+    "seconds": 6.301130400000147,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

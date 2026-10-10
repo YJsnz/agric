@@ -1,0 +1,9 @@
+{"subject": "region_qingxian", "predicate": "HAS_INDUSTRY", "object": "crop_qx_facility_veg", "source_id": "QX_LOCAL_2023", "evidence_level": "direct_summary"}
+{"subject": "crop_qx_facility_veg", "predicate": "INCLUDES_CROP", "object": "crop_cucumber", "source_id": "QX_LOCAL_2023", "evidence_level": "direct_summary"}
+{"subject": "crop_qx_facility_veg", "predicate": "INCLUDES_CROP", "object": "crop_tomato", "source_id": "QX_LOCAL_2023", "evidence_level": "direct_summary"}
+{"subject": "crop_qx_facility_veg", "predicate": "INCLUDES_CROP", "object": "crop_melon", "source_id": "QX_LOCAL_2023", "evidence_level": "direct_summary"}
+{"subject": "crop_tomato", "predicate": "HAS_MANAGEMENT_DOMAIN", "object": "management_fert", "source_id": "DB13_T2603_2017", "evidence_level": "standard_scope"}
+{"subject": "crop_tomato", "predicate": "HAS_MANAGEMENT_DOMAIN", "object": "management_irrig", "source_id": "DB13_T2993_2019", "evidence_level": "standard_scope"}
+{"subject": "crop_tomato", "predicate": "HAS_MANAGEMENT_DOMAIN", "object": "management_pesticide", "source_id": "DB13_T2980_2019", "evidence_level": "standard_scope"}
+{"subject": "crop_cucumber", "predicate": "HAS_MANAGEMENT_DOMAIN", "object": "management_pesticide", "source_id": "DB13_T5197_2020", "evidence_level": "standard_scope"}
+{"subject": "crop_cucumber", "predicate": "HAS_INTERVENTION_DOMAIN", "object": "management_biocontrol", "source_id": "DB13_T5463_2021", "evidence_level": "standard_scope"}

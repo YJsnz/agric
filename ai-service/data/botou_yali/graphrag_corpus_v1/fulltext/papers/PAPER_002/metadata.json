@@ -1,0 +1,85 @@
+{
+  "source_id": "PAPER_002",
+  "title": "自发气调对鸭梨果实生理生化品质的影响",
+  "source_type": "paper",
+  "crop": [
+    "鸭梨"
+  ],
+  "region": [],
+  "region_note": "未在当前公开摘要中确认",
+  "year": 2013,
+  "evidence_level": "A",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [
+    "储藏期"
+  ],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://www.spgykj.com/article/doi/10.13386/j.issn1002-0306.2013.15.074",
+  "authors": [],
+  "doi": "10.13386/j.issn1002-0306.2013.15.074",
+  "availability": "fulltext_pdf_available",
+  "review_status": "fulltext_acquired_content_review_pending",
+  "fulltext_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/original.pdf",
+  "text_path": "data/botou_yali/graphrag_corpus_v1/processed/PAPER_002/text.txt",
+  "pages_path": "data/botou_yali/graphrag_corpus_v1/processed/PAPER_002/pages.json",
+  "page_count": 4,
+  "ready_for_chunking": false,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "不能把该实验结果泛化为所有气调方式；必须保留“自发气调/具体实验条件”上下文。",
+  "kg_source_ids": [],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/landing.html",
+      "sha256": "938d3a3537e4e7a46198f878ff78260e39f86e5843ef1eaca9e98dd13511e6bc",
+      "bytes": 242010,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/original.pdf",
+      "sha256": "c610983dbd1e494e73a4dbd9ef6a70d67be926e70d2e4e5ae23d3c03fbaee801",
+      "bytes": 906370,
+      "role": "fulltext"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/summary.md",
+      "sha256": "cb4dc1cd9de461aa3829dde0ac8cf0a64851b1d44eeb09a0e3fa217dacf998ec",
+      "bytes": 1229,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": {
+    "source_id": "PAPER_002",
+    "url": "https://www.spgykj.com/cn/article/pdf/preview/10.13386/j.issn1002-0306.2013.15.074.pdf",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/original.pdf",
+    "attempted_at": "2026-09-15T06:22:21.909159+00:00",
+    "resolved_url": "https://www.spgykj.com/cn/article/pdf/preview/10.13386/j.issn1002-0306.2013.15.074.pdf",
+    "status": "downloaded_pending_review",
+    "bytes": 906370,
+    "sha256": "c610983dbd1e494e73a4dbd9ef6a70d67be926e70d2e4e5ae23d3c03fbaee801"
+  },
+  "acquisition_attempts": [
+    {
+      "source_id": "PAPER_002",
+      "url": "https://www.spgykj.com/article/doi/10.13386/j.issn1002-0306.2013.15.074",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/landing.html",
+      "attempted_at": "2026-09-15T06:21:28.462954+00:00",
+      "resolved_url": "https://www.spgykj.com/article/doi/10.13386/j.issn1002-0306.2013.15.074",
+      "status": "downloaded_pending_review",
+      "bytes": 242010,
+      "sha256": "938d3a3537e4e7a46198f878ff78260e39f86e5843ef1eaca9e98dd13511e6bc"
+    },
+    {
+      "source_id": "PAPER_002",
+      "url": "https://www.spgykj.com/cn/article/pdf/preview/10.13386/j.issn1002-0306.2013.15.074.pdf",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/original.pdf",
+      "attempted_at": "2026-09-15T06:22:21.909159+00:00",
+      "resolved_url": "https://www.spgykj.com/cn/article/pdf/preview/10.13386/j.issn1002-0306.2013.15.074.pdf",
+      "status": "downloaded_pending_review",
+      "bytes": 906370,
+      "sha256": "c610983dbd1e494e73a4dbd9ef6a70d67be926e70d2e4e5ae23d3c03fbaee801"
+    }
+  ],
+  "extraction_status": "needs_ocr",
+  "metadata_note": "已目视核对 PDF 首页标题与 2013 年出版信息；全文 4 页，但内嵌字体无正确文字映射，需 OCR 后才能用于检索。"
+}

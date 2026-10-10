@@ -1,0 +1,1204 @@
+{
+  "passed": true,
+  "live": true,
+  "results": [
+    {
+      "crop": "pear",
+      "http_status": 200,
+      "result": {
+        "entities": [
+          "泊头鸭梨",
+          "泊头",
+          "高湿",
+          "梨黑星病"
+        ],
+        "extracted_entities": {
+          "crop": "泊头鸭梨",
+          "region": "泊头",
+          "stage": null,
+          "environment": [
+            "高湿"
+          ],
+          "disease": [
+            "梨黑星病"
+          ],
+          "pest": [],
+          "symptom": [],
+          "quality": [],
+          "intervention": [],
+          "risk": [],
+          "intent": "fact_query"
+        },
+        "alignments": [
+          {
+            "field": "crop",
+            "mention": "泊头鸭梨",
+            "status": "matched",
+            "entity_id": "v2:7b265c03320d54ee",
+            "canonical_name": "泊头鸭梨",
+            "candidates": [
+              {
+                "id": "v2:7b265c03320d54ee",
+                "name": "泊头鸭梨",
+                "type": "Crop",
+                "crop": [
+                  "梨"
+                ],
+                "region": [
+                  "泊头市"
+                ]
+              }
+            ]
+          },
+          {
+            "field": "region",
+            "mention": "泊头",
+            "status": "matched",
+            "entity_id": "v2:9a8a610336e9e72c",
+            "canonical_name": "泊头市",
+            "candidates": [
+              {
+                "id": "v2:9a8a610336e9e72c",
+                "name": "泊头市",
+                "type": "Region",
+                "crop": [
+                  "梨"
+                ],
+                "region": [
+                  "泊头市"
+                ]
+              }
+            ],
+            "raw_region": "泊头",
+            "aligned_region": "泊头市"
+          },
+          {
+            "field": "environment",
+            "mention": "高湿",
+            "status": "unmatched",
+            "entity_id": null,
+            "canonical_name": null,
+            "candidates": []
+          },
+          {
+            "field": "disease",
+            "mention": "梨黑星病",
+            "status": "matched",
+            "entity_id": "v2:435c70a2381d781d",
+            "canonical_name": "梨黑星病",
+            "candidates": [
+              {
+                "id": "v2:435c70a2381d781d",
+                "name": "梨黑星病",
+                "type": "Disease",
+                "crop": [
+                  "梨"
+                ],
+                "region": [
+                  "AU-VIC",
+                  "US-CA"
+                ]
+              }
+            ]
+          }
+        ],
+        "channels": {
+          "neo4j": {
+            "status": "partial_alignment",
+            "count": 0,
+            "truncated": false
+          },
+          "faiss": {
+            "status": "ok",
+            "count": 9
+          }
+        },
+        "evidence_rejections": [],
+        "corpus_sha256": "7e0493281ac83f3e80d581dbf416de7f80e608ca12e8e2d570636b63d09bdab9",
+        "reasoning_paths": [],
+        "sources": [
+          {
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "citations": [
+              {
+                "evidence_id": "E1",
+                "chunk_id": "PAPER_001_C0020",
+                "section": "2.1.2  黑心指数发生情况  气调处理可显著降低鸭",
+                "pages": [
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E2",
+                "chunk_id": "PAPER_001_C0026",
+                "section": "3.1  环境O2浓度与虎皮病和黑心病发生的关系",
+                "pages": [
+                  8,
+                  9
+                ]
+              },
+              {
+                "evidence_id": "E3",
+                "chunk_id": "PAPER_001_C0002",
+                "section": "正文（未识别章节）",
+                "pages": [
+                  1
+                ]
+              },
+              {
+                "evidence_id": "E4",
+                "chunk_id": "PAPER_001_C0011",
+                "section": "1.2.1  虎皮指数和黑心指数  参照杜艳民等[23]方法",
+                "pages": [
+                  3
+                ]
+              },
+              {
+                "evidence_id": "E5",
+                "chunk_id": "PAPER_001_C0003",
+                "section": "正文（未识别章节）",
+                "pages": [
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        "generation_called": true,
+        "policy": {
+          "purpose": "local_advice",
+          "mode": "strict",
+          "titles": [],
+          "notice": "当地建议要求适用性明确；未知资料只作研究参考。"
+        },
+        "extraction_notice": null,
+        "pipeline_version": "agricultural-v2",
+        "unresolved_entities": [
+          {
+            "field": "environment",
+            "mention": "高湿",
+            "status": "unmatched",
+            "entity_id": null,
+            "canonical_name": null,
+            "candidates": []
+          }
+        ],
+        "preliminary_assessment": {
+          "available": false,
+          "summary": "",
+          "candidate_risks": [],
+          "supporting_points": [],
+          "uncertainties": []
+        },
+        "local_conclusion": {
+          "available": false,
+          "reason": "尚无经过本地结论核验的输出。"
+        },
+        "recommended_observations": [],
+        "citations": [],
+        "grounding": null,
+        "reference_materials": [
+          {
+            "source_id": "GOV_001",
+            "title": "鸭梨黑星病夏季如何防治（农业农村局公开科普）",
+            "url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+            "chunk_id": "GOV_001_C0001",
+            "reasons": [
+              "region:unknown"
+            ],
+            "usable_for_answer": false
+          },
+          {
+            "source_id": "UNI_001",
+            "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+            "url": "https://www.zwbch.com/changshi/view_14.html",
+            "chunk_id": "UNI_001_C0001",
+            "reasons": [
+              "region:unknown"
+            ],
+            "usable_for_answer": false
+          },
+          {
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "chunk_id": "PAPER_005_C0009",
+            "reasons": [
+              "region:unknown"
+            ],
+            "usable_for_answer": false
+          },
+          {
+            "source_id": "GOV_002",
+            "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+            "url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+            "chunk_id": "GOV_002_C0002",
+            "reasons": [
+              "region:unknown"
+            ],
+            "usable_for_answer": false
+          },
+          {
+            "source_id": "PAPER_003",
+            "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+            "url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+            "chunk_id": "PAPER_003_C0013",
+            "reasons": [
+              "region:unknown"
+            ],
+            "usable_for_answer": false
+          }
+        ],
+        "discovery_paths": [],
+        "evidence_roles": {
+          "candidate_explanation": "候选与通用机理，不是本地确诊",
+          "production_background": "区域生产背景，不替代本地病害证据",
+          "local_advice": "仍须通过原有地区、作物、阶段及审核约束"
+        },
+        "ranking": {
+          "fusion_config": {
+            "rrf_k": 60,
+            "metadata_strength": 0.1,
+            "calibrated": false
+          },
+          "candidate_count": 9,
+          "selected": [
+            {
+              "candidate_id": "chunk:PAPER_001_C0020",
+              "kind": "document_chunk",
+              "features": {
+                "neural_rank": 2,
+                "vector_rank": 4,
+                "scope_match": 0.7,
+                "evidence_quality": 1,
+                "relevance_rrf": 0.9684979838709677
+              }
+            },
+            {
+              "candidate_id": "chunk:PAPER_001_C0026",
+              "kind": "document_chunk",
+              "features": {
+                "neural_rank": 7,
+                "vector_rank": 2,
+                "scope_match": 0.7,
+                "evidence_quality": 1,
+                "relevance_rrf": 0.9471593644679827
+              }
+            },
+            {
+              "candidate_id": "chunk:PAPER_001_C0002",
+              "kind": "document_chunk",
+              "features": {
+                "neural_rank": 1,
+                "vector_rank": 10,
+                "scope_match": 0.7,
+                "evidence_quality": 1,
+                "relevance_rrf": 0.9357142857142857
+              }
+            },
+            {
+              "candidate_id": "chunk:PAPER_001_C0011",
+              "kind": "document_chunk",
+              "features": {
+                "neural_rank": 6,
+                "vector_rank": 7,
+                "scope_match": 0.7,
+                "evidence_quality": 1,
+                "relevance_rrf": 0.917345092718227
+              }
+            },
+            {
+              "candidate_id": "chunk:PAPER_001_C0003",
+              "kind": "document_chunk",
+              "features": {
+                "neural_rank": 5,
+                "vector_rank": 11,
+                "scope_match": 0.7,
+                "evidence_quality": 1,
+                "relevance_rrf": 0.8988082340195016
+              }
+            }
+          ]
+        },
+        "status": "insufficient_evidence",
+        "answer": "1. 结论\n现有证据不足以回答梨黑星病与高湿的关系 [E1]  [E2]  [E3]  [E4]  [E5] 。\n2. 依据\n证据[E1]、[E2]、[E3]、[E4]、[E5]均为采后贮藏研究，主题为不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响，涉及虎皮病和黑心病，未提及梨黑星病或高湿条件 [E1]  [E2]  [E3]  [E4]  [E5] 。\n3. 推理路径\n用户询问梨黑星病与高湿的关系，属于病害发生条件问题。检索到的全部证据均为采后贮藏阶段O2浓度对生理病害（虎皮病、黑心病）的影响，证据范围限定为postharvest_only，不能解释梨黑星病，也不能解释湿度与病害的关系 [E1]  [E2]  [E3]  [E4]  [E5] 。因此无足够证据支持回答。\n4. 建议\n请补充梨黑星病相关的病害发生条件资料，或提供包含湿度因素与梨黑星病关系的证据。\n5. 来源\n[E1] [E2] [E3] [E4] [E5] PAPER_001：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响 https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "candidate_id": "chunk:PAPER_001_C0020",
+            "kind": "document_chunk",
+            "content": {
+              "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+              "section": "2.1.2  黑心指数发生情况  气调处理可显著降低鸭",
+              "text": "梨贮藏150 d 和210 d 后果实黑心指数（P＜0.05）；贮藏270 d 及货架7 d，各处理果实黑心指数快速上升，从高到低依次为：CK（40%）＞10.0% O2（30.63%）＞5.0% O2（30.51%）＞1.0% O2（26.87%）＞3.0% O2（20.17%）＞2.0% O2（19.34%），其中，1.0% O2 处理果实黑心指数显著高于2.0% O2 和3.0% O2。3 年的中试库黑心病跟踪调查表明，缓慢降温结合延迟气调（降温后30—35 d），采用3.0%—5.0% O2+0.5%—0.8% CO2 处理，贮藏至翌年6 月中下旬，黑心病平均发生率＜3.0%，且货架期≥7 d。",
+              "pages": [
+                5
+              ],
+              "crop": [
+                "鸭梨"
+              ],
+              "region": [
+                "河北省",
+                "石家庄市"
+              ],
+              "applicable_stages": [
+                "储藏期",
+                "货架期"
+              ],
+              "evidence_level": "A",
+              "review_status": "layout_tables_and_agronomic_context_review_pending"
+            },
+            "evidence_scope": {
+              "status": "general_authoritative",
+              "restrictions": [
+                "postharvest_only"
+              ],
+              "allowed_uses": [],
+              "reasons": [
+                "采后或储藏资料，仅适用于对应主题，不能解释叶片症状",
+                "本块尚未完成用途审核，或原文指纹已改变"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "河北省",
+                "石家庄市"
+              ],
+              "original_review_status": "layout_tables_and_agronomic_context_review_pending"
+            },
+            "scope_warnings": []
+          },
+          {
+            "evidence_id": "E2",
+            "candidate_id": "chunk:PAPER_001_C0026",
+            "kind": "document_chunk",
+            "content": {
+              "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+              "section": "3.1  环境O2浓度与虎皮病和黑心病发生的关系",
+              "text": "虎皮病是梨采后贮藏过程中一种主要的生理病害[26]。低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累，降低乙烯释放量，有效降低α-法尼烯及其氧化产物共轭三烯醇的积累，进而抑制虎皮病的发生[27-28]。近年来，超低氧气调贮藏技术（O2＜1.0%）和动态气调贮藏技术（O2＜0.6%）快速发展，与传统气调贮藏相比，更低的贮藏环境O2 浓度能更好地控制苹果和梨采后虎皮病的发生[29-30]。本研究中，5.0%及以下O2处理显著降低了鸭梨长期贮藏过程中虎皮病的发生，货架期显著延长，其中1.0%—3.0% O2 处理防控虎皮病效果最佳。可见，进一步降低贮藏环境氧气浓度可更好地维持鸭梨果实外观品质，延长货架期，这与前人研究结论一致。黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变[31-32]。低氧胁迫处理可通过调控氧化代谢平衡进而降低衰老相关生理病害的发生[33-34]。本研究中，采用阶段降温结合延迟气调贮藏均显著降低了贮藏和货架期间果实黑心病的发生，相对更低的O2浓度更好地控制了贮藏后期（270 d）果心褐变指数，但过低的氧气浓度处理（1.0% O2）一定程度上增加了鸭梨果实贮藏末期黑心病风险。",
+              "pages": [
+                8,
+                9
+              ],
+              "crop": [
+                "鸭梨"
+              ],
+              "region": [
+                "河北省",
+                "石家庄市"
+              ],
+              "applicable_stages": [
+                "储藏期",
+                "货架期"
+              ],
+              "evidence_level": "A",
+              "review_status": "layout_tables_and_agronomic_context_review_pending"
+            },
+            "evidence_scope": {
+              "status": "general_authoritative",
+              "restrictions": [
+                "postharvest_only"
+              ],
+              "allowed_uses": [],
+              "reasons": [
+                "采后或储藏资料，仅适用于对应主题，不能解释叶片症状",
+                "本块尚未完成用途审核，或原文指纹已改变"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "河北省",
+                "石家庄市"
+              ],
+              "original_review_status": "layout_tables_and_agronomic_context_review_pending"
+            },
+            "scope_warnings": []
+          },
+          {
+            "evidence_id": "E3",
+            "candidate_id": "chunk:PAPER_001_C0002",
+            "kind": "document_chunk",
+            "content": {
+              "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+              "section": "正文（未识别章节）",
+              "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+              "pages": [
+                1
+              ],
+              "crop": [
+                "鸭梨"
+              ],
+              "region": [
+                "河北省",
+                "石家庄市"
+              ],
+              "applicable_stages": [
+                "储藏期",
+                "货架期"
+              ],
+              "evidence_level": "A",
+              "review_status": "layout_tables_and_agronomic_context_review_pending"
+            },
+            "evidence_scope": {
+              "status": "general_authoritative",
+              "restrictions": [
+                "postharvest_only"
+              ],
+              "allowed_uses": [],
+              "reasons": [
+                "采后或储藏资料，仅适用于对应主题，不能解释叶片症状",
+                "本块尚未完成用途审核，或原文指纹已改变"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "河北省",
+                "石家庄市"
+              ],
+              "original_review_status": "layout_tables_and_agronomic_context_review_pending"
+            },
+            "scope_warnings": []
+          },
+          {
+            "evidence_id": "E4",
+            "candidate_id": "chunk:PAPER_001_C0011",
+            "kind": "document_chunk",
+            "content": {
+              "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+              "section": "1.2.1  虎皮指数和黑心指数  参照杜艳民等[23]方法",
+              "text": "计算鸭梨虎皮病和黑心病发生指数，具体方法如下。虎皮指数：按褐变面积占果皮面积的百分比，共分为5 级：果皮无褐变为0 级；褐变面积≤25%为1级；25%＜褐变面积≤50%为2 级；50%＜褐变面积≤75%为3 级；褐变面积＞75%为4 级。虎皮指数 = [∑（虎皮级数×该级果数）/（调查总果数×4）]×100%。黑心指数：沿果实赤道线作横切，按褐变面积占果心面积的百分比，共分为5 级：果心无褐变为0 级；褐变面积≤25%为1 级；25%＜褐变面积≤50%为2级；50%＜褐变面积≤75%为3 级；褐变面积＞75%为4 级。黑心指数=[∑（黑心级数×该级果数）/（调查总果数×4）]×100%。",
+              "pages": [
+                3
+              ],
+              "crop": [
+                "鸭梨"
+              ],
+              "region": [
+                "河北省",
+                "石家庄市"
+              ],
+              "applicable_stages": [
+                "储藏期",
+                "货架期"
+              ],
+              "evidence_level": "A",
+              "review_status": "layout_tables_and_agronomic_context_review_pending"
+            },
+            "evidence_scope": {
+              "status": "general_authoritative",
+              "restrictions": [
+                "postharvest_only"
+              ],
+              "allowed_uses": [],
+              "reasons": [
+                "采后或储藏资料，仅适用于对应主题，不能解释叶片症状",
+                "本块尚未完成用途审核，或原文指纹已改变"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "河北省",
+                "石家庄市"
+              ],
+              "original_review_status": "layout_tables_and_agronomic_context_review_pending"
+            },
+            "scope_warnings": []
+          },
+          {
+            "evidence_id": "E5",
+            "candidate_id": "chunk:PAPER_001_C0003",
+            "kind": "document_chunk",
+            "content": {
+              "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+              "section": "正文（未识别章节）",
+              "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+              "pages": [
+                1
+              ],
+              "crop": [
+                "鸭梨"
+              ],
+              "region": [
+                "河北省",
+                "石家庄市"
+              ],
+              "applicable_stages": [
+                "储藏期",
+                "货架期"
+              ],
+              "evidence_level": "A",
+              "review_status": "layout_tables_and_agronomic_context_review_pending"
+            },
+            "evidence_scope": {
+              "status": "general_authoritative",
+              "restrictions": [
+                "postharvest_only"
+              ],
+              "allowed_uses": [],
+              "reasons": [
+                "采后或储藏资料，仅适用于对应主题，不能解释叶片症状",
+                "本块尚未完成用途审核，或原文指纹已改变"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "河北省",
+                "石家庄市"
+              ],
+              "original_review_status": "layout_tables_and_agronomic_context_review_pending"
+            },
+            "scope_warnings": []
+          }
+        ],
+        "grounding_audit": {
+          "passed": true,
+          "checks": [
+            {
+              "field": "conclusion",
+              "verdict": "supported",
+              "reason": "结论称现有证据不足以回答梨黑星病与高湿的关系，所引E1-E5均为采后贮藏O2浓度与虎皮病/黑心病研究，证据范围限制为postharvest_only，未涉及梨黑星病或高湿，因此该拒答结论与引用证据一致。"
+            },
+            {
+              "field": "basis",
+              "verdict": "supported",
+              "reason": "basis对E1-E5的描述准确：均为采后贮藏研究，主题为不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响，涉及虎皮病和黑心病，未提及梨黑星病或高湿条件，与所引证据内容相符。"
+            },
+            {
+              "field": "reasoning",
+              "verdict": "supported",
+              "reason": "reasoning指出用户问题属病害发生条件问题，而全部证据为采后贮藏阶段O2浓度对生理病害的影响，证据范围限定为postharvest_only，不能解释梨黑星病或湿度关系，该推断与证据范围及内容一致。"
+            },
+            {
+              "field": "advice",
+              "verdict": "no_factual_claims",
+              "reason": "advice仅建议补充梨黑星病相关病害发生条件资料或包含湿度因素与梨黑星病关系的证据，未陈述任何事实、数值或因果结论，也未引用证据。"
+            }
+          ],
+          "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+        },
+        "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明"
+      }
+    },
+    {
+      "crop": "wheat",
+      "http_status": 200,
+      "result": {
+        "crop_id": "huanghua_hanjianmai",
+        "question": "作物：黄骅旱碱麦。用户提供所在地：河北省沧州市黄骅市。黄骅旱碱麦收获后，原粮质量主要应该关注哪些指标？",
+        "entities": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "soil_salinity": null,
+          "soil_moisture": null,
+          "temperature": null,
+          "rainfall": null,
+          "variety": null,
+          "quality_intent": "grain",
+          "stress": [],
+          "practice": [],
+          "intent": "quality_query"
+        },
+        "generation_called": true,
+        "retrieval": {
+          "graph_status": "ok",
+          "graph_evidence_count": 11,
+          "vector_evidence_count": 2,
+          "fused_count": 2
+        },
+        "knowledge_graph": {
+          "edges": [
+            {
+              "id": "HH-E047",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:bb356e351e9dbeb8",
+              "relation": "HAS_INDICATOR",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C029",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            },
+            {
+              "id": "HH-E048",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:cf3cc391ad6b4aef",
+              "relation": "HAS_INDICATOR",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C029",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            },
+            {
+              "id": "HH-E049",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:b51000f7cddcb848",
+              "relation": "HAS_INDICATOR",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C029",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            },
+            {
+              "id": "HH-E050",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:90d144a881d04d0a",
+              "relation": "HAS_INDICATOR",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C029",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            },
+            {
+              "id": "HH-E051",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:833d9bda20dab5fa",
+              "relation": "HAS_INDICATOR",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C029",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            },
+            {
+              "id": "HH-E052",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:8984668a6bbedef0",
+              "relation": "HAS_INDICATOR",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C029",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            },
+            {
+              "id": "HH-E053",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:9fa4b613b8d6042e",
+              "relation": "HAS_INDICATOR",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C029",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            },
+            {
+              "id": "HH-E054",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:961cb317b8d81303",
+              "relation": "HAS_INDICATOR",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C029",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            },
+            {
+              "id": "HH-E055",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:e5b987282181db37",
+              "relation": "REFERENCES_STANDARD",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C030",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 109,
+                "end": 174
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            },
+            {
+              "id": "HH-E056",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:786931143842ba8b",
+              "relation": "REFERENCES_STANDARD",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C030",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 109,
+                "end": 174
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            },
+            {
+              "id": "HH-E057",
+              "source": "huanghua_hanjianmai:58500962a98317fa",
+              "target": "huanghua_hanjianmai:a34ba27cf0334d46",
+              "relation": "REFERENCES_STANDARD",
+              "kind": "fact",
+              "source_id": "W015",
+              "evidence_ids": [
+                "W015"
+              ],
+              "chunk_id": "HH-C030",
+              "crop_id": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "stage_ids": [
+                "huanghua_hanjianmai:7493a9ebae4977e4"
+              ],
+              "growth_stage": "采后",
+              "scope": "grain",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 109,
+                "end": 174
+              },
+              "conditions": [
+                "原文地区：黄骅",
+                "生育阶段：采后"
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "evidence_id": "E1",
+            "kind": "document_chunk",
+            "content": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+            "source_id": "W015",
+            "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+            "metadata": {
+              "crop": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "growth_stage": "采后",
+              "scope": "grain",
+              "topic": "原粮指标",
+              "stress": [],
+              "practice": [
+                "原粮指标"
+              ],
+              "source_id": "W015",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "page": 4,
+              "section": "4 表1 质量要求",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+              "limitations": []
+            }
+          },
+          {
+            "evidence_id": "E2",
+            "kind": "document_chunk",
+            "content": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+            "source_id": "W015",
+            "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+            "metadata": {
+              "crop": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "growth_stage": "采后",
+              "scope": "grain",
+              "topic": "原粮卫生",
+              "stress": [],
+              "practice": [
+                "原粮卫生"
+              ],
+              "source_id": "W015",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "page": 4,
+              "section": "5 卫生要求",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 109,
+                "end": 174
+              },
+              "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+              "limitations": []
+            }
+          }
+        ],
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "kind": "document_chunk",
+            "content": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+            "source_id": "W015",
+            "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+            "metadata": {
+              "crop": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "growth_stage": "采后",
+              "scope": "grain",
+              "topic": "原粮指标",
+              "stress": [],
+              "practice": [
+                "原粮指标"
+              ],
+              "source_id": "W015",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "page": 4,
+              "section": "4 表1 质量要求",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+              "limitations": []
+            },
+            "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+          },
+          {
+            "evidence_id": "E2",
+            "kind": "document_chunk",
+            "content": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+            "source_id": "W015",
+            "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+            "metadata": {
+              "crop": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "growth_stage": "采后",
+              "scope": "grain",
+              "topic": "原粮卫生",
+              "stress": [],
+              "practice": [
+                "原粮卫生"
+              ],
+              "source_id": "W015",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "page": 4,
+              "section": "5 卫生要求",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 109,
+                "end": 174
+              },
+              "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+              "limitations": []
+            },
+            "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+          }
+        ],
+        "grounding": {
+          "passed": true,
+          "checks": [
+            {
+              "field": "conclusion",
+              "verdict": "supported",
+              "reason": "结论中列出的色泽、容重、杂质、不完善粒、水分、硬度指数、降落数值、蛋白质含量等指标及数值均直接来自E1表1；卫生要求按GB 2761、GB 2762、GB 2763执行来自E2；且结论明确限定为地方标准要求、不构成对具体地块产品的判定，与证据范围一致。"
+            },
+            {
+              "field": "basis",
+              "verdict": "supported",
+              "reason": "basis逐项复述E1表1的质量要求项目及指标，并复述E2卫生要求引用的GB 2761、GB 2762、GB 2763，均有实际引用证据支持，未添加未引用数值或结论。"
+            },
+            {
+              "field": "reasoning",
+              "verdict": "supported",
+              "reason": "reasoning说明证据仅来自DB1309/T 333-2025标准文本、用户未提供具体地块检测数据、无法判断是否满足指标、GB 2761/2762/2763具体限量值未在证据中提供，均与E1、E2及问题信息一致，未补造缺失路径或数值。"
+            },
+            {
+              "field": "advice",
+              "verdict": "supported",
+              "reason": "advice建议按DB1309/T 333-2025表1项目取样检测、按E2卫生要求检测并对照GB 2761/2762/2763、必要时获取正式文本明确限量值，均基于已引用证据，未推荐农药名称、剂量、施药周期或生产操作，也未将标准要求改称本地已验证结论。"
+            }
+          ],
+          "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+        },
+        "local_conclusion": {
+          "available": false,
+          "reason": "未核实地块具体适用条件；此回答为文献依据及候选建议，不是现场确定性结论。"
+        },
+        "status": "insufficient_evidence",
+        "sources": [
+          {
+            "evidence_id": "E1",
+            "kind": "document_chunk",
+            "content": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+            "source_id": "W015",
+            "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+            "metadata": {
+              "crop": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "growth_stage": "采后",
+              "scope": "grain",
+              "topic": "原粮指标",
+              "stress": [],
+              "practice": [
+                "原粮指标"
+              ],
+              "source_id": "W015",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "page": 4,
+              "section": "4 表1 质量要求",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 17,
+                "end": 109
+              },
+              "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+              "limitations": []
+            },
+            "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+          },
+          {
+            "evidence_id": "E2",
+            "kind": "document_chunk",
+            "content": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+            "source_id": "W015",
+            "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+            "metadata": {
+              "crop": "huanghua_hanjianmai",
+              "region": "黄骅",
+              "growth_stage": "采后",
+              "scope": "grain",
+              "topic": "原粮卫生",
+              "stress": [],
+              "practice": [
+                "原粮卫生"
+              ],
+              "source_id": "W015",
+              "evidence_level": "official_standard",
+              "review_status": "verbatim_verified",
+              "page": 4,
+              "section": "5 卫生要求",
+              "locator": {
+                "file": "evidence\\raw\\W015_fulltext.pages.json",
+                "page": 4,
+                "start": 109,
+                "end": 174
+              },
+              "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+              "limitations": []
+            },
+            "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+          }
+        ],
+        "preliminary_assessment": {
+          "available": true,
+          "summary": "针对黄骅旱碱麦收获后的原粮质量，依据现行地方标准 DB1309/T 333-2025《黄骅旱碱麦原粮》，主要应关注以下指标：色泽（种皮微黄）、容重（≥750 g/L）、杂质含量（≤1.0%）、不完善粒含量（≤8.0%）、水分（≤12.5%）、硬度指数（≥60%）、降落数值（≥450 s）、蛋白质含量（干基，≥13.5%） [E1] ；同时卫生要求方面需关注真菌毒素限量（按 GB 2761 执行）、污染物限量（按 GB 2762 执行）和农药最大残留限量（按 GB 2763 执行） [E2] 。以上为地方标准规定的原粮质量要求，不构成对用户具体地块产品的判定。",
+          "supporting_points": [
+            "证据 [E1] 列出了 DB1309/T 333-2025 表1 的质量要求项目及指标：色泽种皮微黄、容重≥750 g/L、杂质≤1.0%、不完善粒≤8.0%、水分≤12.5%、硬度指数≥60%、降落数值≥450 s、蛋白质含量（干基）≥13.5% [E1] 。证据 [E2] 规定卫生要求：真菌毒素限量按 GB 2761 执行，污染物限量按 GB 2762 执行，农药最大残留限量按 GB 2763 执行 [E2] 。"
+          ],
+          "uncertainties": [
+            "当前证据仅来自 DB1309/T 333-2025 标准文本，适用于黄骅旱碱麦原粮的质量评价 [E1]  [E2] 。用户未提供具体地块的检测数据、品种、栽培管理及收获后处理等信息，因此无法判断其原粮是否满足上述指标，也无法给出针对该地块的个性化质量结论。标准中引用的 GB 2761、GB 2762、GB 2763 具体限量值未在证据中提供，故不能给出具体数值。"
+          ]
+        },
+        "answer": "针对黄骅旱碱麦收获后的原粮质量，依据现行地方标准 DB1309/T 333-2025《黄骅旱碱麦原粮》，主要应关注以下指标：色泽（种皮微黄）、容重（≥750 g/L）、杂质含量（≤1.0%）、不完善粒含量（≤8.0%）、水分（≤12.5%）、硬度指数（≥60%）、降落数值（≥450 s）、蛋白质含量（干基，≥13.5%） [E1] ；同时卫生要求方面需关注真菌毒素限量（按 GB 2761 执行）、污染物限量（按 GB 2762 执行）和农药最大残留限量（按 GB 2763 执行） [E2] 。以上为地方标准规定的原粮质量要求，不构成对用户具体地块产品的判定。\n\n证据 [E1] 列出了 DB1309/T 333-2025 表1 的质量要求项目及指标：色泽种皮微黄、容重≥750 g/L、杂质≤1.0%、不完善粒≤8.0%、水分≤12.5%、硬度指数≥60%、降落数值≥450 s、蛋白质含量（干基）≥13.5% [E1] 。证据 [E2] 规定卫生要求：真菌毒素限量按 GB 2761 执行，污染物限量按 GB 2762 执行，农药最大残留限量按 GB 2763 执行 [E2] 。\n\n当前证据仅来自 DB1309/T 333-2025 标准文本，适用于黄骅旱碱麦原粮的质量评价 [E1]  [E2] 。用户未提供具体地块的检测数据、品种、栽培管理及收获后处理等信息，因此无法判断其原粮是否满足上述指标，也无法给出针对该地块的个性化质量结论。标准中引用的 GB 2761、GB 2762、GB 2763 具体限量值未在证据中提供，故不能给出具体数值。\n\n建议下一步：1）按照 DB1309/T 333-2025 表1 所列项目对收获后的原粮进行取样检测，重点关注容重、杂质、不完善粒、水分、硬度指数、降落数值和蛋白质含量 [E1] ；2）根据标准卫生要求，检测真菌毒素、污染物和农药残留，并对照 GB 2761、GB 2762、GB 2763 的具体限量判定 [E2] ；3）如需要，可进一步获取 GB 2761、GB 2762、GB 2763 的正式文本以明确具体限量值。"
+      }
+    }
+  ],
+  "errors": []
+}

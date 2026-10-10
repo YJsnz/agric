@@ -1,0 +1,56 @@
+{
+  "id": "QA_0104",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文的具体研究记录给出确切结论。",
+      "basis": "当前未提供该论文的原文内容或数据，且我无法确认该论文中关于贮藏后期及货架后低氧气调贮藏与空气对照乙烯释放速率的具体比较结果。",
+      "reasoning": "问题要求引用特定论文的研究记录，但证据为空，不能编造论文中的数字或因果关系，因此无法判断低氧气调贮藏的乙烯释放速率是高于、低于还是无显著差异。",
+      "advice": "请提供该论文的相关原文段落、图表数据或完整文献信息，以便准确回答；也可查阅该论文中‘乙烯释放速率’在贮藏后期和货架期的结果部分。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 176,
+      "completion_tokens": 165,
+      "total_tokens": 341,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 176
+    },
+    "model": "deepseek-flash",
+    "response_id": "ce0f8b71-aeae-43d0-99fb-ccd5f96adf45",
+    "seconds": 6.174559900000077,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.6666666666666666,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何结论，仅说明证据不足而拒答；但该题在提供的原文证据中可直接回答，因此属于可回答题中的拒答，不计为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 766,
+      "completion_tokens": 53,
+      "total_tokens": 819,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 638
+    },
+    "model": "deepseek-flash",
+    "response_id": "30aa16cd-7c77-4e16-b066-e6a1d5faf079",
+    "seconds": 5.589465500000188,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

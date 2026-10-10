@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "live": false,
+  "results": [
+    {
+      "crop": "pear",
+      "http_status": 200,
+      "result": {
+        "status": "needs_clarification",
+        "answer": "请补充所在地。",
+        "clarification_questions": [
+          "请补充种植所在地。"
+        ]
+      }
+    },
+    {
+      "crop": "wheat",
+      "http_status": 200,
+      "result": {
+        "status": "insufficient_evidence",
+        "user_answer": "先观察叶片正反面，并补充清晰照片。",
+        "answer": "测试证据回答 [E1]",
+        "sources": [
+          {
+            "title": "测试来源",
+            "url": "https://example.com/source",
+            "evidence_id": "E1"
+          }
+        ],
+        "grounding": {
+          "passed": true
+        }
+      }
+    }
+  ],
+  "errors": []
+}

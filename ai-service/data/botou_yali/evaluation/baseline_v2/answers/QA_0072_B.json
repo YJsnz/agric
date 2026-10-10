@@ -1,0 +1,267 @@
+{
+  "id": "QA_0072",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0021",
+    "chunk:PAPER_001_C0024",
+    "chunk:PAPER_001_C0004",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0017"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称贮藏150 d和210 d时低氧气调果实呼吸速率均显著低于空气对照，但不同O2浓度处理间差异不显著；E2原文直接记载“贮藏150 和210 d，低氧气调贮藏果实呼吸速率均显著低于空气对照，但不同O2 浓度处理间差异不显著”，与结论一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis逐字复述E2中关于150 d和210 d呼吸速率的比较结果，且引用E2，事实与引用证据一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning说明问题询问150 d和210 d不同O2浓度处理间呼吸速率差异是否显著，并依据E2直接给出比较结果；对E1、E3、E4、E5的排除性描述与各证据内容相符，未补造缺失路径。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice称结论来自特定气调贮藏试验（1.0%—10.0% O2加0.5% CO2，0±0.5℃），E3明确给出O2浓度、0.5% CO2及(0±0.5)℃贮藏条件；其“属于研究资料，不等同于本地生产指导，应结合本地条件验证”为基于证据范围的谨慎表述，未将论文结果直接改为本地普遍建议。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0021",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.2  不同O2浓度处理对内在品质的影响",
+        "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0024",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.4  不同O2浓度处理对呼吸速率和乙烯的影响",
+        "text": "5.0%及以下O2 处理果实贮藏150、210 及270 d后，其乙烯产量均显著低于10.0% O2 和空气对照，其中1.0% O2 乙烯释放量最低，贮藏150、210 及270 d，温度平衡后（回升到20℃），其乙烯释放速率分别为46.83、88.04 和76.65 μL·kg-1·h -1；2.0%—3.0% O2 释放量次之；货架10 d 或7 d 后，低氧处理乙烯释放量快速上升。贮藏150 和210 d，低氧气调贮藏果实呼吸速率均显著低于空气对照，但不同O2 浓度处理间差异不显著；贮藏270 d 及货架7 d，低氧气调处理与对照果实呼吸速率差异不显著（图3）。贮藏时间 Storage time (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d)贮藏时间 Storage time (d) a a b c c d a b c d e e a b b c d e a a b b abc c a b b b bc c a b b b c c a b b c c c a a b b b c a a a a a b a b b b b b a a a a a a a a a a a a 1.0% O2+0.5% CO2 2.0% O2+0.5% CO2 3.0% O2+0.5% CO2 5.0% O2+0.5% CO2 10.0% O2+0.5% CO2对照 CK图3  不同O2浓度贮藏及货架期间鸭梨呼吸和乙烯变化情况Fig. 3  Effects of different oxygen concentrations on respiration rate and ethylene production during storage and shelf-life period of Yali pear",
+        "pages": [
+          7
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0004",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+        "pages": [
+          1,
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0017",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "1.3  数据处理与分析",
+        "text": "应用Excel 和SPSS 13.0 进行作图和方差分析。",
+        "pages": [
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "在鸭梨贮藏150 d和210 d时，低氧气调贮藏果实的呼吸速率均显著低于空气对照，但不同O2浓度处理间差异不显著  [E2] 。",
+    "basis": "证据[E2]明确记载：贮藏150和210 d，低氧气调贮藏果实呼吸速率均显著低于空气对照，但不同O2浓度处理间差异不显著  [E2] 。",
+    "reasoning": "问题询问贮藏150 d和210 d时不同O2浓度处理间呼吸速率差异是否显著。[E2]直接给出该时间点的比较结果：低氧处理与空气对照之间差异显著，而不同O2浓度处理之间差异不显著  [E2] 。[E1]涉及品质指标，未涉及呼吸速率  [E1] ；[E3]、[E4]、[E5]未提供该时间点呼吸速率处理间比较数据  [E3]  [E4]  [E5] 。因此依据[E2]即可回答。",
+    "advice": "该结论来自特定气调贮藏试验（1.0%—10.0% O2加0.5% CO2，0±0.5℃） [E2]  [E3] ，属于研究资料，不等同于本地生产指导；如需在生产中应用，应结合本地品种、贮藏设施与预试验验证。",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接回应问题，正确指出贮藏150和210 d时低氧气调果实呼吸速率显著低于空气对照，但不同O2浓度处理间差异不显著，与参考答案及原文证据一致。",
+      "claims": [
+        {
+          "claim": "在鸭梨贮藏150 d和210 d时，低氧气调贮藏果实的呼吸速率均显著低于空气对照。",
+          "status": "supported",
+          "reason": "原文E2明确记载：贮藏150和210 d，低氧气调贮藏果实呼吸速率均显著低于空气对照。"
+        },
+        {
+          "claim": "在鸭梨贮藏150 d和210 d时，不同O2浓度处理间呼吸速率差异不显著。",
+          "status": "supported",
+          "reason": "原文E2明确记载：贮藏150和210 d，低氧气调贮藏果实呼吸速率均显著低于空气对照，但不同O2浓度处理间差异不显著。"
+        },
+        {
+          "claim": "该结论来自特定气调贮藏试验（1.0%—10.0% O2加0.5% CO2，0±0.5℃）。",
+          "status": "supported",
+          "reason": "E3记载O2浓度为1.0%、2.0%、3.0%、5.0%、10.0%加0.5% CO2，贮藏温度(0±0.5)℃；E2也涉及1.0%—10.0% O2加0.5% CO2处理。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3085,
+      "completion_tokens": 298,
+      "total_tokens": 3383,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 2445
+    },
+    "model": "deepseek-flash",
+    "response_id": "fc2b1a8e-13c3-4da3-88f8-507f421c118a",
+    "seconds": 6.395325100005721,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在鸭梨贮藏150 d和210 d时，低氧气调贮藏果实的呼吸速率均显著低于空气对照，但不同O2浓度处理间差异不显著 [E2]。",
+        "basis": "证据E2明确记载：贮藏150和210 d，低氧气调贮藏果实呼吸速率均显著低于空气对照，但不同O2浓度处理间差异不显著 [E2]。",
+        "reasoning": "问题询问贮藏150 d和210 d时不同O2浓度处理间呼吸速率差异是否显著。E2直接给出该时间点的比较结果：低氧处理与空气对照之间差异显著，而不同O2浓度处理之间差异不显著 [E2]。E1涉及品质指标，未涉及呼吸速率 [E1]；E3、E4、E5未提供该时间点呼吸速率处理间比较数据 [E3][E4][E5]。因此依据E2即可回答。",
+        "advice": "该结论来自特定气调贮藏试验（1.0%—10.0% O2加0.5% CO2，0±0.5℃）[E2][E3]，属于研究资料，不等同于本地生产指导；如需在生产中应用，应结合本地品种、贮藏设施与预试验验证。",
+        "citations": [
+          "E2",
+          "E1",
+          "E3",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2353,
+        "completion_tokens": 295,
+        "total_tokens": 2648,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2225
+      },
+      "model": "deepseek-flash",
+      "response_id": "ea0c43fa-ceae-41fa-b012-51ea3f36a0ba",
+      "seconds": 6.377266499999678,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 19.31832900000154
+}

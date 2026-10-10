@@ -1,0 +1,454 @@
+Pear Psylla / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+Pear Psylla
+Agriculture: Pear Pest Management Guidelines
+Pear Psylla
+Cacopsylla (=Psylla) pyricola
+On This Page
+Description of the Pest
+Damage
+Management
+Description of the Pest
+Pear psylla is one of the most serious insect pest of pears
+because of its ability to develop resistance to
+insecticides and to vector the pathogen that causes pear decline.
+Overwintering pear psylla adults are somewhat darker and
+larger (0.125 inch or 3 mm) than summer adults (0.08 inch or 2 mm). Adults hold
+their transparent wings rooflike over their dark to reddish brown bodies when
+at rest; they resemble tiny cicadas. A dark spot on the top middle edge of both
+wings helps to distinguish pear psylla from other psylla. Tiny, elongated
+yellowish eggs,
+which are barely visible without a hand lens, are laid on or near fruit spurs
+starting in late January or early February. As buds open, females lay eggs
+along midribs and petioles of developing leaves or on stems and leaves of
+blossoms. Pear psylla nymphs pass through five instars, four of which are
+almost completely encased in honeydew. When first hatched, the tiny nymphs are
+yellow with red eyes and black antennae. The third stage is yellowish green and
+the fourth greenish brown. The fifth instar is called the hardshell stage and
+it is dark with prominent wing pads.
+Damage
+Pear psylla is a greater problem on European varieties than
+on Asian varieties. Pear psylla damages pears in several ways. Loss of crop and
+tree vigor, and sometimes loss of trees, can occur from pear decline disease,
+caused by a phytoplasma organism that psylla injects into pear trees. Pear
+decline has varying effects on the trees depending on variety, rootstock,
+quality of the growing site, and pear psylla numbers.
+Honeydew, produced by psylla nymphs as they feed, drops onto
+fruit. A black sooty mold grows
+on the honeydew and the fruit skin russets, which downgrades fruit for fresh-market
+use. Psylla feeding and injection of a toxin into the tree causes portions of
+the leaf blade to blacken, and leaves to yellow and sometimes fall. Growth and
+productivity of the tree can be severely reduced for one or more seasons.
+Management
+Pear psylla management in California is aimed at holding
+psylla populations at low levels throughout the year. Populations that are
+allowed to reach high levels become difficult to control, especially if they
+migrate in fall. Use one or two dormant sprays to reduce populations to no more
+than 1 psylla per 100 beat-tray samples by the time trees break dormancy.
+If the overwintering adult population is adequately reduced
+before egg laying starts in late January or early February, the population can
+usually be kept low throughout the foliage season by petroleum oil, applied
+alone or added to sprays for other pests, and by natural enemies.
+If overwintering psylla adults lay eggs before the dormant
+spray is applied, however, a higher base population is present all season. This
+makes control difficult because when generations overlap, all life stages are
+present, and not all stages are susceptible to chemical treatments. It is
+essential to keep populations low through summer and after harvest to prevent
+migration of adults in fall. If substantial numbers of adults overwinter
+outside the orchard and migrate in after application of dormant sprays, success
+of the management program will be limited.
+Biological Control
+There are many naturally occurring predators and parasites
+of pear psylla including green lacewings, brown lacewings, and minute pirate bugs. Nonselective codling moth insecticides
+destroy many of these beneficials, resulting in outbreaks of this pest.
+Orchards in a codling moth mating-disruption program generally have greatly
+reduced levels of pear psylla. In addition, some codling moth and psylla insecticides
+destroy mite predators and chronic mite problems will develop.
+Although predators
+and parasites may not provide complete control in commercial orchards, they may maintain
+psylla populations below economically damaging levels when supplemented with a year-round
+program of oil treatments. Predation is probably occurring when top shoot
+samples show only one to several psylla nymphs per infested shoot; in the
+absence of effective predation, there are apt to be 10 or more psylla nymphs on
+a shoot because each female psylla lays 10 to 20 eggs at a time.
+Cultural Control
+To reduce the effects of pear decline, use Winter Nelis, Old
+Home x Farmingdale, or Pyrus betulaefolia
+seedlings for rootstock and maintain pear psylla populations at low levels.
+Organically Acceptable Methods
+Organically acceptable methods include biological and
+cultural control and sprays of approved oil, insecticidal soaps, azadirachtin,
+and kaolin clay.
+Monitoring and Treatment Decisions
+Psylla control is best accomplished in the dormant season, but
+if psylla have dispersed out of the orchard and into areas where they won't be
+treated, dormant control becomes more difficult. Monitor psylla populations
+year round to predict and prevent outbreaks and movement of adults from the
+orchard.
+In
+December, monitor overwintering adults with 100 beating tray samples (each beat
+sample consists of three taps).
+Beginning
+in February, monitor eggs by sampling 100 fruit spurs. For additional
+information, see DORMANT TO DELAYED-DORMANT
+SAMPLING.
+At
+bloom, monitor nymphs and eggs by clipping one flower cluster from the top and
+one from eye level of 50 trees (100 total) and counting nymphs and eggs on the
+cluster. For additional information, see SAMPLING
+AT BLOOM.
+During
+fruit development, take weekly shoot samples: one from the top and one from eye
+level of 20 trees per block. Examine 5 leaves per shoot for pear psylla nymphs,
+eggs, and honeydew. As the season progresses, sample the top shoots because psylla
+will become concentrated on the new growth at the tops of trees where good
+spray coverage is hardest to achieve. For more information regarding sampling
+for other pests at this time, see SAMPLING
+DURING FRUIT DEVELOPMENT.
+At
+harvest, examine 200 fruit per bin from 5 bins per orchard (or 20-acre block in
+large orchards) for a total of 1,000 fruit for honeydew and sooty mold. For
+additional information on this sample, see HARVEST
+FRUIT SAMPLE.
+After
+harvest, collect one top shoot and one eye-level shoot from 20 trees and
+examine 5 leaves on each shoot for psylla eggs and nymphs. Count the number of
+shoots infested. For additional information, see SAMPLING
+AT BLOOM.
+Dormant season
+Each winter make one or two dormant oil sprays to reduce
+overwintering populations to no more than one adult psylla per 100 beating tray
+samples. If there are an average of two or more adults per 20 beat samples,
+apply at least one dormant treatment. If there are more than 50 adults per 50
+beat samples, two treatments will be needed.
+Growing season
+Use the following control action thresholds to determine if
+treatments are necessary during the growing season.
+CONTROL
+ACTION THRESHOLDS
+Bloom:
+2+
+flower clusters with eggs per 100 clusters
+Fruit
+development:
+1+
+top shoots with psylla per 20 top shoots
+Postharvest:
+5+
+top shoots with psylla per 20 top shoots or over 250 psylla in 20 top shoots
+Common name
+Amount to use**
+REI‡
+PHI‡
+(Example trade name)
+(conc.)
+(dilute)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least harmful to natural enemies, honey bees, and the environment are at the top of the table. When choosing a pesticide, consider information relating to air and water quality, resistance management, and the pesticide's properties and application timing. Always read the label of the product being used.
+DORMANCY
+All orchards should be treated.
+A.
+NARROW RANGE OIL#
+8 gal
+1.5–2 gal
+12
+—
+. . . or . . .
+DORMANT PLUS
+6–8 gal
+3–4 gal
+4
+—
+MODE OF ACTION: UNM
+COMMENTS: Apply during warm, sunny weather from leaf fall to start of egg laying for best results. Do not apply oil in the dormant season until root zone is wet from rain or irrigation. Apply oil in late morning when dew or rain has dried from the bark. Do not apply oil after a period of drying wind or extreme cold. Oil kills adult psylla but does not control eggs. It does discourage egg laying for about 1 month, however. For narrow range oil, check with your certifier to determine which products are organically acceptable.
+JUST BEFORE EGG LAYING THROUGH TIGHT CLUSTER BUD
+Make this treatment only after an earlier oil spray has been applied and post treatment monitoring counts show more than 5 psylla per 100 beats or pretreatment counts were about 70 to 100 adults per 100 beats. If an application of abamectin and oil is planned for petal fall, this treatment is not necessary.
+A.
+ESFENVALERATE
+(Asana XL)
+9.6–19.2 fl oz
+7.3–12.8 fl oz
+12
+28
+MODE-OF-ACTION GROUP NUMBER1: 3A
+COMMENTS: These rates may be applied only in the dormant to prebloom period. Esfenvalerate at low rates may no longer be effective where psylla have developed tolerance to this material as a result of frequent use at higher rates. Check control results by monitoring. For dilute spray, apply 150–250 gal/acre but don't apply more than 19.2 fl oz/acre per treatment. Provide 100-ft buffer zone from any sensitive aquatic site. Make application when the wind speed is between 3 and 10 miles per hour. Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+. . . PLUS . . .
+NARROW RANGE OIL
+(Supreme)
+4 gal
+0.75–1 gal
+12
+—
+MODE OF ACTION: UNM
+B.
+KAOLIN CLAY
+(Surround WP)#
+Label rates
+4
+0
+MODE OF ACTION: UNM
+COMMENTS: Apply prebloom; may cause mite outbreaks when used later in season.
+PETAL FALL
+A.
+NARROW RANGE OIL
+(Supreme, Superior)
+4 gal
+1 gal
+12
+—
+MODE OF ACTION: UNM
+COMMENTS: Use if control is not obtained during the dormant season. The supreme type of superior oil has given better control than other superior oils. Add one of the insecticides at the rates listed below when more than 3 out of 100 clusters in the green tip to tight cluster sample are infested. Repeated applications of oil at this time may cause tree injury.
+. . . PLUS . . .
+ABAMECTIN
+(Agri-Mek SC)
+2.14–4.25 fl oz
+0.53–1.06 fl oz
+12
+28
+MODE-OF-ACTION GROUP NUMBER1: 6
+COMMENTS: Most effective timing for this spray is at petal fall; can be combined with a fire blight spray. Adults that survived the dormant spray have laid most of their eggs by this time. This spray targets young nymphs as they hatch or as they feed. Generally, this spray follows a dormant application of oil. Maximum of 2 applications per season but to avoid the development of resistance to this material, apply abamectin only once per year. Apply with ground equipment only. Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+. . . or . . .
+BUPROFEZIN
+(Centaur WDG)
+34.5–46.0 oz
+—
+12
+14
+MODE-OF-ACTION GROUP NUMBER1: 16
+COMMENTS: Insect growth regulator. Target egg hatch.
+. . . or . . .
+PYRIPROXYFEN
+(Seize 35WP)
+4–5 oz
+1–1.25 oz
+12
+45
+(Esteem 0.86EC)
+16 fl oz
+4 fl oz
+12
+45
+MODE-OF-ACTION GROUP NUMBER1: 7C
+COMMENTS: Insect growth regulator. Target egg hatch. Can be supplemented with an application in the delayed-dormant period as an ovipositional deterrent. If only one application is to be made, petal fall is the more effective timing. Do not exceed two applications per growing season. Do not skip rows during application.
+B.
+THIAMETHOXAM
+(Actara)
+4.5–5.5 oz
+1.125–1.375 oz
+12
+See comments
+MODE-OF-ACTION GROUP NUMBER1: 4A
+COMMENTS: Preharvest interval is 14 days when 2.75 oz/acre or less is used and 35 days when more than 2.75 oz/acre is used. Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+Review and follow the California neonicotinoid regulations effective January 1, 2024. Permissible application rates of this insecticide may be lower than label rates if applying more than one neonicotinoid active ingredients or using more than one application method in the same season.
+C.
+CLOTHIANIDIN
+(Belay)
+6 fl oz
+—
+12
+7
+MODE-OF-ACTION GROUP NUMBER1: 4A
+COMMENTS: Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+Review and follow the California neonicotinoid regulations effective January 1, 2024. Permissible application rates of this insecticide may be lower than label rates if applying more than one neonicotinoid active ingredients or using more than one application method in the same season.
+D.
+ACETAMIPRID
+(Assail 70WP)
+1.7–3.4 oz
+—
+12
+7
+MODE-OF-ACTION GROUP NUMBER1: 4A
+COMMENTS: Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+E.
+PYRIDABEN
+(Nexter)
+6.60–10.67 oz
+—
+12
+7
+MODE-OF-ACTION GROUP NUMBER1: 21A
+COMMENTS: Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+F.
+IMIDACLOPRID
+Admire Pro
+5.2 fl oz
+—
+12
+7
+MODE-OF-ACTION GROUP NUMBER1: 4A
+COMMENTS: Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+Review and follow the California neonicotinoid regulations effective January 1, 2024. Permissible application rates of this insecticide may be lower than label rates if applying more than one neonicotinoid active ingredients or using more than one application method in the same season.
+MID-MAY–MID-JUNE to PREHARVEST
+High temperatures suppress psylla populations.
+A.
+NARROW RANGE OIL#
+(Supreme)
+4 gal
+1 gal
+12
+—
+MODE OF ACTION: UNM
+COMMENTS: Follow Monitoring and When to Treat guidelines. If oil is applied within 4 weeks of harvest, reduce the rate by 1 gal (concentrated) or 0.25 gal (dilute) for each week closer to harvest (e.g., 2 weeks before harvest, use a concentrated application rate of 2 gal/80–100 gal water, or dilute application rate of 0.5 gal oil/100 gal water). Check with your certifier to determine which products are organically acceptable.
+POSTHARVEST
+Sulfur and oil sprays can be very phytotoxic to pear trees, especially when the weather is hot.
+A.
+NARROW RANGE OIL#
+(Supreme, Superior)
+4–6 gal
+1–1.5 gal
+12
+—
+MODE OF ACTION: UNM
+COMMENTS: Apply as soon as possible after harvest for best results. The addition of surfactants, especially plant washes, improves results but may decrease bloom the following year. Irrigate trees before spraying. Check with your certifier to determine which products are organically acceptable.
+B.
+MICRONIZED SULFUR#
+6–10 lb
+—
+24
+—
+MODE OF ACTION: UN
+. . . or . . .
+LIME SULFUR#
+5 gal
+1.25 gal
+48
+—
+MODE OF ACTION: UN
+. . . PLUS . . .
+NARROW RANGE OIL#
+(Supreme, Superior)
+6 gal
+2 gal
+12
+—
+MODE OF ACTION: UNM
+COMMENTS: Do not apply lime sulfur and oil spray any sooner than November 1 and only on trees not suffering from moisture stress. Phytotoxicity may occur any time the weather is hot so watch weather conditions closely. Check with your certifier to determine which products are organically acceptable.
+C.
+AZADIRACHTIN
+(Neemix 4.5)#
+Label rate
+4
+0
+MODE-OF-ACTION GROUP NUMBER1: UN
+COMMENTS: Can be effective against low populations. Check with your pest control advisor for the most effective label rates.
+**
+Dilute rate is the rate per 100 gal water; use 400 gal solution/acre. Apply concentrate in 80–100 gal water/acre, or less if the label allows.
+‡
+Restricted entry interval (REI) is the number of hours (unless otherwise noted) from treatment until the treated area can be safely entered without protective clothing. Preharvest interval (PHI) is the number of days from treatment to harvest. In some cases the REI exceeds the PHI. The longer of two intervals is the minimum time that must elapse before harvest.
+#
+Acceptable for organically grown produce.
+1
+Rotate chemicals with a different mode-of-action group number, and do not use products with the same mode-of-action group number more than twice per season to help prevent the development of resistance. For example, the organophosphates have a Group number of 1B; chemicals with a 1B Group number should be alternated with chemicals that have a Group number other than 1B. Mode-of-action group numbers are assigned by IRAC (Insecticide Resistance Action Committee). For additional information, see their Web site at www.irac-online.org.
+—
+Not recommended or not on label.
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+L.G. Varela (emeritus), UC IPM and UC Cooperative Extension Sonoma County
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+R.A. Van Steenwyk (emeritus), Environmental Science, Policy, and Management, UC Berkeley
+C.A. Ingels, UC Cooperative Extension Sacramento County
+Acknowledgement for Contributions to Invertebrates
+P.W. Weddle, Weddle, Hansen & Associates
+P. Chevalier, United Ag Products, Ukiah
+R. Hansen, Weddle, Hansen & Associates
+M. Hooper, Ag Unlimited, Lakeport
+B. Knispel, Pest Control Adviser, Upper Lake
+T. Lidyoff, Purity Products, Healdsburg
+G. McCosker, Harvey Lyman Ag Services, Walnut Grove
+B. Oldham, Ag Unlimited, Ukiah
+C. Pickel (emeritus), UC IPM and UC Cooperative Extension Sutter and Yuba counties
+J. Sisevich, AgroTech, Kelseyville
+M.J. Smith, UC Cooperative Extension San Luis Obispo County
+B. Zoller, The Pear Doctor, Inc., Kelseyville
+Text Updated: 11/12
+Treatment Table Updated: 02/25
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

@@ -1,0 +1,42 @@
+{
+  "node_types": [
+    "AgriculturalPractice",
+    "Crop",
+    "DifferentialCandidate",
+    "Disease",
+    "EnvironmentFactor",
+    "FruitCondition",
+    "GrowthStage",
+    "HarvestProcess",
+    "Pathogen",
+    "Pest",
+    "PlantOrgan",
+    "PostharvestCheck",
+    "PostharvestRisk",
+    "StorageCondition",
+    "Symptom",
+    "VisualSymptom",
+    "WeatherRisk"
+  ],
+  "relations": [
+    "APPLIES_AT",
+    "ASSOCIATED_WITH",
+    "AVOIDS",
+    "CONDITIONED_BY",
+    "DAMAGES",
+    "HAS_PATHOGEN",
+    "HAS_SYMPTOM",
+    "INCREASES_RISK_OF",
+    "MANAGED_AT",
+    "OVERWINTERS_IN",
+    "PROMOTES",
+    "PROMPTS_DIFFERENTIAL_CHECK",
+    "PROMPTS_POSTHARVEST_CHECK",
+    "REDUCES",
+    "REQUIRES",
+    "SPREADS_VIA",
+    "SUPPORTS",
+    "USES"
+  ],
+  "note": "Associations are not upgraded to CAUSES; unknown stages remain null."
+}

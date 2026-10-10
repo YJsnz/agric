@@ -1,0 +1,8 @@
+﻿original_class_name,normalized_class_name,image_count,format,width_min,width_max,height_min,height_max
+0-Healthy,healthy,2688,"{""JPEG"": 2688}",214,256,256,256
+1-Miner,leaf_miner,2255,"{""JPEG"": 2255}",190,256,256,256
+2-BacterialSpot,bacterial_spot,2395,"{""JPEG"": 2394, ""PNG"": 1}",187,259,202,259
+3-PowderyMildew,powdery_mildew,2181,"{""JPEG"": 2181}",209,313,256,296
+4-PowderyMildew_Miner,powdery_mildew_and_leaf_miner,2361,"{""JPEG"": 2361}",198,256,256,256
+5-BacterialSpot_Miner,bacterial_spot_and_leaf_miner,2502,"{""JPEG"": 2501, ""PNG"": 1}",216,876,256,1133
+6-WhiteFly,whitefly,872,"{""JPEG"": 872}",256,456,256,534

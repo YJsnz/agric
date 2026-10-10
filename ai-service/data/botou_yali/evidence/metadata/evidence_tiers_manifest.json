@@ -1,0 +1,9 @@
+{
+  "records": 498,
+  "input_sha256": {
+    "knowledge_graph\\data\\graph-v2.json": "8caeb40a3f95c6de89d58621a7c2e5bcb7e45f0d9645f2f1a207a9eda81830f3",
+    "data\\botou_yali\\graphrag_corpus_v1\\fulltext\\metadata\\sources.jsonl": "2c03f4c2f81144ab5fa4a7004ba0eb3fdf681eb8cd4365b469b2104a86bc4366",
+    "data\\botou_yali\\graphrag_corpus_v1\\processed\\chunks\\chunks.jsonl": "7e0493281ac83f3e80d581dbf416de7f80e608ca12e8e2d570636b63d09bdab9",
+    "data\\botou_yali\\evidence\\metadata\\evidence_scope_review.json": "bb1d519f3c09146aca0a4783e45f9f075716682a74264f811a1ac4e1cfd8c6f2"
+  }
+}

@@ -1,0 +1,5114 @@
+[
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "沧州金丝小枣成熟期遇到连续降雨，为什么容易出现浆烂和裂果？",
+    "entities": {
+      "region": "沧州",
+      "growth_stage": "成熟期",
+      "organ": "fruit",
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": "连续降雨（用户问题情境）",
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": null,
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": "user_provided",
+      "harvest_intent": false,
+      "storage_intent": false,
+      "scope": "production"
+    },
+    "generation_called": true,
+    "status": "insufficient_evidence",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 12,
+      "vector_evidence_count": 6,
+      "fused_count": 7
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "JJE022",
+          "source": "cangzhou_jinsixiaozao:6743d8cbe7125fc8",
+          "target": "cangzhou_jinsixiaozao:d744b10351a412a4",
+          "relation": "MANAGED_AT",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "裂果",
+          "object": "7月上旬",
+          "evidence_text": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+          "page": 5,
+          "section": "5 病虫草害防治",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC004",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC004"
+          ],
+          "evidence": [
+            {
+              "id": "JJC004",
+              "source_id": "J001",
+              "quote": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+              "locator": {
+                "page": 5,
+                "section": "5 病虫草害防治",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 5,
+            "section": "5 病虫草害防治",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE046",
+          "source": "cangzhou_jinsixiaozao:4180b5371606eb38",
+          "target": "cangzhou_jinsixiaozao:6743d8cbe7125fc8",
+          "relation": "ASSOCIATED_WITH",
+          "kind": "semantic",
+          "source_id": "J007",
+          "source_ids": [
+            "J007"
+          ],
+          "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+          "region": "河北沧州",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "成熟期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:54554292d14c02d2"
+          ],
+          "subject": "成熟期连续阴雨",
+          "object": "裂果",
+          "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+          "page": 1,
+          "section": "第196页引言",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC009",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：成熟期"
+          ],
+          "evidence_ids": [
+            "J007",
+            "JJC009"
+          ],
+          "evidence": [
+            {
+              "id": "JJC009",
+              "source_id": "J007",
+              "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+              "locator": {
+                "page": 1,
+                "section": "第196页引言",
+                "file": "evidence/raw/J007_fulltext.pdf",
+                "transcription": "manually_verified_page_image"
+              }
+            }
+          ],
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE047",
+          "source": "cangzhou_jinsixiaozao:4180b5371606eb38",
+          "target": "cangzhou_jinsixiaozao:40ba3250134bdbd9",
+          "relation": "ASSOCIATED_WITH",
+          "kind": "semantic",
+          "source_id": "J007",
+          "source_ids": [
+            "J007"
+          ],
+          "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+          "region": "河北沧州",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "成熟期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:54554292d14c02d2"
+          ],
+          "subject": "成熟期连续阴雨",
+          "object": "浆烂",
+          "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+          "page": 1,
+          "section": "第196页引言",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC009",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：成熟期"
+          ],
+          "evidence_ids": [
+            "J007",
+            "JJC009"
+          ],
+          "evidence": [
+            {
+              "id": "JJC009",
+              "source_id": "J007",
+              "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+              "locator": {
+                "page": 1,
+                "section": "第196页引言",
+                "file": "evidence/raw/J007_fulltext.pdf",
+                "transcription": "manually_verified_page_image"
+              }
+            }
+          ],
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE048",
+          "source": "cangzhou_jinsixiaozao:f440435c12b7ec6a",
+          "target": "cangzhou_jinsixiaozao:6743d8cbe7125fc8",
+          "relation": "PROMOTES",
+          "kind": "semantic",
+          "source_id": "J007",
+          "source_ids": [
+            "J007"
+          ],
+          "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+          "region": "河北沧州",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "成熟期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:54554292d14c02d2"
+          ],
+          "subject": "遇雨果肉吸水膨胀",
+          "object": "裂果",
+          "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+          "page": 1,
+          "section": "第196页引言",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC009",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：成熟期"
+          ],
+          "evidence_ids": [
+            "J007",
+            "JJC009"
+          ],
+          "evidence": [
+            {
+              "id": "JJC009",
+              "source_id": "J007",
+              "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+              "locator": {
+                "page": 1,
+                "section": "第196页引言",
+                "file": "evidence/raw/J007_fulltext.pdf",
+                "transcription": "manually_verified_page_image"
+              }
+            }
+          ],
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE049",
+          "source": "cangzhou_jinsixiaozao:b12c99806c87a570",
+          "target": "cangzhou_jinsixiaozao:b19a06f6337da7a5",
+          "relation": "ASSOCIATED_WITH",
+          "kind": "semantic",
+          "source_id": "J007",
+          "source_ids": [
+            "J007"
+          ],
+          "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+          "region": "河北沧州",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "成熟期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:54554292d14c02d2"
+          ],
+          "subject": "长时间阴雨",
+          "object": "果面阴湿霉露",
+          "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+          "page": 1,
+          "section": "第196页引言",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC009",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：成熟期"
+          ],
+          "evidence_ids": [
+            "J007",
+            "JJC009"
+          ],
+          "evidence": [
+            {
+              "id": "JJC009",
+              "source_id": "J007",
+              "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+              "locator": {
+                "page": 1,
+                "section": "第196页引言",
+                "file": "evidence/raw/J007_fulltext.pdf",
+                "transcription": "manually_verified_page_image"
+              }
+            }
+          ],
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE050",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:f621a0d9308b3591",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "黄褐色水浸状小点",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE051",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:6bfd249e95ea0dd9",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "浅红色病斑",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE052",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:4250f0ee480009bc",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "轮纹",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE053",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:580ecdbe8e002a98",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "软腐",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE054",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:c0a8967bce655d1a",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "酒糟味",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE055",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:6e00bf91770c2201",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "皱缩腐果",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE064",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:6b4dea35ea6efb1b",
+          "relation": "HAS_PATHOGEN",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "仁果囊孢壳菌",
+          "evidence_text": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+          "page": null,
+          "section": "3 讨论",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC013",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC013"
+          ],
+          "evidence": [
+            {
+              "id": "JJC013",
+              "source_id": "J008",
+              "quote": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+              "locator": {
+                "page": null,
+                "section": "3 讨论",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "3 讨论",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "修剪 \n沧州金丝小枣为喜光树种，培养通风、透光，枝量适宜的良好树形。传统枣园采取小冠疏层形、\n开心形或圆头形等树形，株距2.0 m以下的密植园采取枣头形等树形。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "修剪通风透光",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 修剪",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        }
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "苗木定植 \n采用沧州金丝小枣优良品种苗木，苗木应符合附录B中的相关规定。秋季落叶后或春季芽体萌动\n时栽植，南北行向。栽植密度、株行距因枣园类型而定，如表1所示。 \n表1  株行距                                单位为米 \n枣园类型 \n株距 \n行距 \n传统枣园 \n2.0 ~ 3.0 \n4.0 ~ 5.0 \n密植枣园 \n1.0 ~ 1.5 \n3.5 ~ 4.5 \n计划密植枣园 \n0.5 ~ 1.0 \n1.0 ~ 2.0 \n设施枣园 \n1.0 ~ 2.0 \n2.0 ~ 3.0",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "定植期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "苗木定植",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 苗木定植",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        }
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "病虫害防控时间",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 病虫草害防治",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        }
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J007",
+        "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+        "content": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州",
+          "growth_stage": "成熟期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "成熟期降雨浆烂裂果",
+          "source_id": "J007",
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "e0ba797bd5088be25e9a1c296e1ee720556a8691c96c99e3b44a8100de64b2b5",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "果实病害病原候选",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "3 讨论",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "浆烂病症状",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      },
+      {
+        "evidence_id": "E7",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "调查结果表明(\n表 3\n)：枣树涂抹粘虫胶后粘上许多绿盲蝽蟓，显著减轻了绿盲蝽蟓对枣树叶片、花蕾、幼果的危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽试验观察",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3 试验结果",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "修剪 \n沧州金丝小枣为喜光树种，培养通风、透光，枝量适宜的良好树形。传统枣园采取小冠疏层形、\n开心形或圆头形等树形，株距2.0 m以下的密植园采取枣头形等树形。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "修剪通风透光",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 修剪",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "苗木定植 \n采用沧州金丝小枣优良品种苗木，苗木应符合附录B中的相关规定。秋季落叶后或春季芽体萌动\n时栽植，南北行向。栽植密度、株行距因枣园类型而定，如表1所示。 \n表1  株行距                                单位为米 \n枣园类型 \n株距 \n行距 \n传统枣园 \n2.0 ~ 3.0 \n4.0 ~ 5.0 \n密植枣园 \n1.0 ~ 1.5 \n3.5 ~ 4.5 \n计划密植枣园 \n0.5 ~ 1.0 \n1.0 ~ 2.0 \n设施枣园 \n1.0 ~ 2.0 \n2.0 ~ 3.0",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "定植期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "苗木定植",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 苗木定植",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "病虫害防控时间",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 病虫草害防治",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J007",
+        "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+        "content": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州",
+          "growth_stage": "成熟期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "成熟期降雨浆烂裂果",
+          "source_id": "J007",
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "e0ba797bd5088be25e9a1c296e1ee720556a8691c96c99e3b44a8100de64b2b5",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://zgnyqx.ieda.org.cn/CN/abstract/abstract2883.shtml"
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "果实病害病原候选",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "3 讨论",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "浆烂病症状",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      },
+      {
+        "evidence_id": "E7",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "调查结果表明(\n表 3\n)：枣树涂抹粘虫胶后粘上许多绿盲蝽蟓，显著减轻了绿盲蝽蟓对枣树叶片、花蕾、幼果的危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽试验观察",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3 试验结果",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20070907.htm"
+      }
+    ],
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "修剪 \n沧州金丝小枣为喜光树种，培养通风、透光，枝量适宜的良好树形。传统枣园采取小冠疏层形、\n开心形或圆头形等树形，株距2.0 m以下的密植园采取枣头形等树形。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "修剪通风透光",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 修剪",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "苗木定植 \n采用沧州金丝小枣优良品种苗木，苗木应符合附录B中的相关规定。秋季落叶后或春季芽体萌动\n时栽植，南北行向。栽植密度、株行距因枣园类型而定，如表1所示。 \n表1  株行距                                单位为米 \n枣园类型 \n株距 \n行距 \n传统枣园 \n2.0 ~ 3.0 \n4.0 ~ 5.0 \n密植枣园 \n1.0 ~ 1.5 \n3.5 ~ 4.5 \n计划密植枣园 \n0.5 ~ 1.0 \n1.0 ~ 2.0 \n设施枣园 \n1.0 ~ 2.0 \n2.0 ~ 3.0",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "定植期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "苗木定植",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 苗木定植",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "病虫害防控时间",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 病虫草害防治",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J007",
+        "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+        "content": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州",
+          "growth_stage": "成熟期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "成熟期降雨浆烂裂果",
+          "source_id": "J007",
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "e0ba797bd5088be25e9a1c296e1ee720556a8691c96c99e3b44a8100de64b2b5",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://zgnyqx.ieda.org.cn/CN/abstract/abstract2883.shtml"
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "果实病害病原候选",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "3 讨论",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "浆烂病症状",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      },
+      {
+        "evidence_id": "E7",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "调查结果表明(\n表 3\n)：枣树涂抹粘虫胶后粘上许多绿盲蝽蟓，显著减轻了绿盲蝽蟓对枣树叶片、花蕾、幼果的危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽试验观察",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3 试验结果",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20070907.htm"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中关于果皮细胞间隙大、遇雨果肉吸水膨胀造成裂果、长时间阴雨引起严重裂果并导致浆烂和产量品质损失的内容，与E4原文一致；浆烂型主要致病菌为仁果囊孢壳菌及症状描述分别与E5、E6一致；结论也明确当前证据不足以判定本次浆烂由何种病原主导，未超出证据范围。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对E4、E5、E6的概括与原文一致，且正确说明E1、E2、E3、E7与成熟期降雨导致浆烂裂果的机理无直接支持关系；E1、E2、E3、E7确为修剪、定植、病虫防治时间和绿盲蝽试验内容。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning对E4、E5、E6、E3的证据范围判断与元数据一致：E4为河北沧州区域风险评估文献，E5/E6为混合地区研究，E3为保护区标准且适用性未确认；未将文献结论等同于用户果园实际发病原因，也未输出确诊或概率。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅建议田间观察核验、与E6症状对照、必要时病原学核验，并说明E3标准需先确认果园是否位于保护区内再适用；未推荐药名、剂量、施药周期或生产操作，符合candidate_assessment范围。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "沧州金丝小枣成熟期遇连续降雨易出现浆烂和裂果，主要与果实后期果皮结构和吸水特性有关：小枣生长后期果皮细胞间隙较大，特别容易透进水分，遇雨后果肉吸水膨胀即造成裂果；若长时间阴雨、雨后果面阴湿霉露，会引起严重裂果，导致成熟小枣开裂、浆烂，使产量和品质遭受直接甚至致命损失 [E4] 。此外，浆烂在金丝小枣果实病害中被描述为一种症状类型，其主要致病菌为仁果囊孢壳菌[Physalospora obtuse (Schw.)Cooke] [E5] ，其症状表现为病斑初为黄褐色水浸状小点、迅速扩大形成侵染点不明显的浅红色病斑，病组织土黄色至浅褐色软腐、脓状、有酒糟味，后期病果皱缩成深红色至黑色腐果 [E6] 。因此，连续降雨既可通过物理吸水导致裂果，也可能与浆烂型病害的发生相关，但当前证据不足以判定本次浆烂由何种病原主导。",
+      "supporting_points": [
+        "[E4]直接说明成熟期连续阴雨导致裂果和浆烂的机理与后果；[E5]说明浆烂型症状的主要致病菌为仁果囊孢壳菌；[E6]描述浆烂型病果的典型症状，可用于田间观察对照。[E1]、[E2]、[E3]、[E7]分别涉及修剪、定植、病虫防治时间和绿盲蝽试验，与成熟期降雨导致浆烂裂果的机理无直接支持关系。"
+      ],
+      "uncertainties": [
+        "现有证据中，[E4]为河北沧州区域风险评估文献，可支持成熟期连续降雨与裂果浆烂关系的研判，但属于文献结论，不等于当前用户果园的实际发病原因。[E5]、[E6]来自河北沧州、山东乐陵、天津静海等混合地区研究，不能直接作为沧州当前果园已确诊浆烂病的依据。[E3]提到7月上旬开始预防防治枣锈病、烂果病、缩果病、裂果等，但该标准仅在其保护区内适用，且用户果园是否位于DB13/T 5680-2023保护区内尚未确认，不能据此直接发出生产操作指令。当前缺少用户果园实际症状、病原检测和天气过程细节，不能输出确诊或疾病概率。"
+      ]
+    },
+    "answer": "沧州金丝小枣成熟期遇连续降雨易出现浆烂和裂果，主要与果实后期果皮结构和吸水特性有关：小枣生长后期果皮细胞间隙较大，特别容易透进水分，遇雨后果肉吸水膨胀即造成裂果；若长时间阴雨、雨后果面阴湿霉露，会引起严重裂果，导致成熟小枣开裂、浆烂，使产量和品质遭受直接甚至致命损失 [E4] 。此外，浆烂在金丝小枣果实病害中被描述为一种症状类型，其主要致病菌为仁果囊孢壳菌[Physalospora obtuse (Schw.)Cooke] [E5] ，其症状表现为病斑初为黄褐色水浸状小点、迅速扩大形成侵染点不明显的浅红色病斑，病组织土黄色至浅褐色软腐、脓状、有酒糟味，后期病果皱缩成深红色至黑色腐果 [E6] 。因此，连续降雨既可通过物理吸水导致裂果，也可能与浆烂型病害的发生相关，但当前证据不足以判定本次浆烂由何种病原主导。\n\n可先围绕用户关心的成熟期连续降雨导致浆烂裂果进行田间核验：观察果实是否出现开裂、水浸状扩展、浅红色病斑、软腐脓状及酒糟味等表现，并与[E6]描述的浆烂型症状对照记录。若需区分是单纯吸水裂果还是浆烂型病害，应结合症状类型和必要的病原学核验，不能仅凭降雨和外观直接确诊。标准在其保护区内要求7月上旬开始预防防治枣锈病、烂果病、缩果病、裂果等 [E3] ，但需核实果园是否位于DB13/T 5680-2023保护区内，确认适用后再按现行标准执行；未确认前不宜直接作为生产操作指令。",
+    "grounded_answer": {
+      "sufficient": false,
+      "conclusion": "沧州金丝小枣成熟期遇连续降雨易出现浆烂和裂果，主要与果实后期果皮结构和吸水特性有关：小枣生长后期果皮细胞间隙较大，特别容易透进水分，遇雨后果肉吸水膨胀即造成裂果；若长时间阴雨、雨后果面阴湿霉露，会引起严重裂果，导致成熟小枣开裂、浆烂，使产量和品质遭受直接甚至致命损失 [E4] 。此外，浆烂在金丝小枣果实病害中被描述为一种症状类型，其主要致病菌为仁果囊孢壳菌[Physalospora obtuse (Schw.)Cooke] [E5] ，其症状表现为病斑初为黄褐色水浸状小点、迅速扩大形成侵染点不明显的浅红色病斑，病组织土黄色至浅褐色软腐、脓状、有酒糟味，后期病果皱缩成深红色至黑色腐果 [E6] 。因此，连续降雨既可通过物理吸水导致裂果，也可能与浆烂型病害的发生相关，但当前证据不足以判定本次浆烂由何种病原主导。",
+      "basis": "[E4]直接说明成熟期连续阴雨导致裂果和浆烂的机理与后果；[E5]说明浆烂型症状的主要致病菌为仁果囊孢壳菌；[E6]描述浆烂型病果的典型症状，可用于田间观察对照。[E1]、[E2]、[E3]、[E7]分别涉及修剪、定植、病虫防治时间和绿盲蝽试验，与成熟期降雨导致浆烂裂果的机理无直接支持关系。",
+      "reasoning": "现有证据中，[E4]为河北沧州区域风险评估文献，可支持成熟期连续降雨与裂果浆烂关系的研判，但属于文献结论，不等于当前用户果园的实际发病原因。[E5]、[E6]来自河北沧州、山东乐陵、天津静海等混合地区研究，不能直接作为沧州当前果园已确诊浆烂病的依据。[E3]提到7月上旬开始预防防治枣锈病、烂果病、缩果病、裂果等，但该标准仅在其保护区内适用，且用户果园是否位于DB13/T 5680-2023保护区内尚未确认，不能据此直接发出生产操作指令。当前缺少用户果园实际症状、病原检测和天气过程细节，不能输出确诊或疾病概率。",
+      "advice": "可先围绕用户关心的成熟期连续降雨导致浆烂裂果进行田间核验：观察果实是否出现开裂、水浸状扩展、浅红色病斑、软腐脓状及酒糟味等表现，并与[E6]描述的浆烂型症状对照记录。若需区分是单纯吸水裂果还是浆烂型病害，应结合症状类型和必要的病原学核验，不能仅凭降雨和外观直接确诊。标准在其保护区内要求7月上旬开始预防防治枣锈病、烂果病、缩果病、裂果等 [E3] ，但需核实果园是否位于DB13/T 5680-2023保护区内，确认适用后再按现行标准执行；未确认前不宜直接作为生产操作指令。",
+      "citations": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7"
+      ],
+      "candidate_assessments": [
+        {
+          "candidate_name": "成熟期连续降雨导致果皮吸水膨胀裂果",
+          "assessment": "E4支持：小枣生长后期果皮细胞间隙较大，特别容易透进水分，遇雨后果肉吸水膨胀造成裂果；长时间阴雨且雨后果面阴湿霉露会引起严重裂果，导致成熟小枣开裂、浆烂。该证据为河北沧州区域风险评估文献，可作候选研判，不等于当前果园确诊。",
+          "evidence_ids": [
+            "E4"
+          ]
+        },
+        {
+          "candidate_name": "浆烂型果实病害（仁果囊孢壳菌）",
+          "assessment": "E5显示浆烂型的主要致病菌为仁果囊孢壳菌[Physalospora obtuse (Schw.)Cooke]，E6描述其症状为黄褐色水浸状小点迅速扩大、浅红色病斑、软腐脓状、有酒糟味等。该研究涉及河北沧州、山东乐陵、天津静海等混合地区，不能直接判定当前沧州果园浆烂由该菌主导，需现场症状与病原学核验。",
+          "evidence_ids": [
+            "E5",
+            "E6"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "果实出现浆烂、腐烂时，KG有哪些病害和病原候选？",
+    "entities": {
+      "region": "沧州",
+      "growth_stage": null,
+      "organ": "fruit",
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": null,
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": null,
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": "user_provided",
+      "harvest_intent": false,
+      "storage_intent": false,
+      "scope": "production"
+    },
+    "generation_called": true,
+    "status": "insufficient_evidence",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 11,
+      "vector_evidence_count": 6,
+      "fused_count": 6
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "JJE046",
+          "source": "cangzhou_jinsixiaozao:4180b5371606eb38",
+          "target": "cangzhou_jinsixiaozao:6743d8cbe7125fc8",
+          "relation": "ASSOCIATED_WITH",
+          "kind": "semantic",
+          "source_id": "J007",
+          "source_ids": [
+            "J007"
+          ],
+          "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+          "region": "河北沧州",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "成熟期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:54554292d14c02d2"
+          ],
+          "subject": "成熟期连续阴雨",
+          "object": "裂果",
+          "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+          "page": 1,
+          "section": "第196页引言",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC009",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：成熟期"
+          ],
+          "evidence_ids": [
+            "J007",
+            "JJC009"
+          ],
+          "evidence": [
+            {
+              "id": "JJC009",
+              "source_id": "J007",
+              "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+              "locator": {
+                "page": 1,
+                "section": "第196页引言",
+                "file": "evidence/raw/J007_fulltext.pdf",
+                "transcription": "manually_verified_page_image"
+              }
+            }
+          ],
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE047",
+          "source": "cangzhou_jinsixiaozao:4180b5371606eb38",
+          "target": "cangzhou_jinsixiaozao:40ba3250134bdbd9",
+          "relation": "ASSOCIATED_WITH",
+          "kind": "semantic",
+          "source_id": "J007",
+          "source_ids": [
+            "J007"
+          ],
+          "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+          "region": "河北沧州",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "成熟期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:54554292d14c02d2"
+          ],
+          "subject": "成熟期连续阴雨",
+          "object": "浆烂",
+          "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+          "page": 1,
+          "section": "第196页引言",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC009",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：成熟期"
+          ],
+          "evidence_ids": [
+            "J007",
+            "JJC009"
+          ],
+          "evidence": [
+            {
+              "id": "JJC009",
+              "source_id": "J007",
+              "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+              "locator": {
+                "page": 1,
+                "section": "第196页引言",
+                "file": "evidence/raw/J007_fulltext.pdf",
+                "transcription": "manually_verified_page_image"
+              }
+            }
+          ],
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE048",
+          "source": "cangzhou_jinsixiaozao:f440435c12b7ec6a",
+          "target": "cangzhou_jinsixiaozao:6743d8cbe7125fc8",
+          "relation": "PROMOTES",
+          "kind": "semantic",
+          "source_id": "J007",
+          "source_ids": [
+            "J007"
+          ],
+          "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+          "region": "河北沧州",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "成熟期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:54554292d14c02d2"
+          ],
+          "subject": "遇雨果肉吸水膨胀",
+          "object": "裂果",
+          "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+          "page": 1,
+          "section": "第196页引言",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC009",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：成熟期"
+          ],
+          "evidence_ids": [
+            "J007",
+            "JJC009"
+          ],
+          "evidence": [
+            {
+              "id": "JJC009",
+              "source_id": "J007",
+              "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+              "locator": {
+                "page": 1,
+                "section": "第196页引言",
+                "file": "evidence/raw/J007_fulltext.pdf",
+                "transcription": "manually_verified_page_image"
+              }
+            }
+          ],
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE049",
+          "source": "cangzhou_jinsixiaozao:b12c99806c87a570",
+          "target": "cangzhou_jinsixiaozao:b19a06f6337da7a5",
+          "relation": "ASSOCIATED_WITH",
+          "kind": "semantic",
+          "source_id": "J007",
+          "source_ids": [
+            "J007"
+          ],
+          "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+          "region": "河北沧州",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "成熟期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:54554292d14c02d2"
+          ],
+          "subject": "长时间阴雨",
+          "object": "果面阴湿霉露",
+          "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+          "page": 1,
+          "section": "第196页引言",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC009",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：成熟期"
+          ],
+          "evidence_ids": [
+            "J007",
+            "JJC009"
+          ],
+          "evidence": [
+            {
+              "id": "JJC009",
+              "source_id": "J007",
+              "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+              "locator": {
+                "page": 1,
+                "section": "第196页引言",
+                "file": "evidence/raw/J007_fulltext.pdf",
+                "transcription": "manually_verified_page_image"
+              }
+            }
+          ],
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE050",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:f621a0d9308b3591",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "黄褐色水浸状小点",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE051",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:6bfd249e95ea0dd9",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "浅红色病斑",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE052",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:4250f0ee480009bc",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "轮纹",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE053",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:580ecdbe8e002a98",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "软腐",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE054",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:c0a8967bce655d1a",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "酒糟味",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE055",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:6e00bf91770c2201",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "皱缩腐果",
+          "evidence_text": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+          "page": null,
+          "section": "2.1 病果症状",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC010",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC010"
+          ],
+          "evidence": [
+            {
+              "id": "JJC010",
+              "source_id": "J008",
+              "quote": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+              "locator": {
+                "page": null,
+                "section": "2.1 病果症状",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE064",
+          "source": "cangzhou_jinsixiaozao:bb9ac70ded16ef17",
+          "target": "cangzhou_jinsixiaozao:6b4dea35ea6efb1b",
+          "relation": "HAS_PATHOGEN",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "浆烂病",
+          "object": "仁果囊孢壳菌",
+          "evidence_text": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+          "page": null,
+          "section": "3 讨论",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC013",
+          "conditions": [
+            "用途：production",
+            "器官：fruit",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC013"
+          ],
+          "evidence": [
+            {
+              "id": "JJC013",
+              "source_id": "J008",
+              "quote": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+              "locator": {
+                "page": null,
+                "section": "3 讨论",
+                "file": "evidence/raw/J008.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "3 讨论",
+            "file": "evidence/raw/J008.html"
+          },
+          "standard_status": "not_a_standard"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "浆烂病症状",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "果实病害病原候选",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "3 讨论",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J007",
+        "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+        "content": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州",
+          "growth_stage": "成熟期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "成熟期降雨浆烂裂果",
+          "source_id": "J007",
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "e0ba797bd5088be25e9a1c296e1ee720556a8691c96c99e3b44a8100de64b2b5",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "褐皮型：病组织初期枣果梗洼周围形成黄色至淡褐色晕斑，边缘多不清晰。病斑向果肩迅速扩展，边缘逐渐清晰，颜色由浅变深，形成红褐色至深红色凹陷病斑，失去光泽。果肉病组织海绵状坏死，黄褐色，味苦。发病果易脱落。后期病斑处干缩，深红色至黑色，表面可产生灰褐色至黑色小点和大枣铁皮病症状相似。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "褐皮病症状",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "调查结果表明(\n表 3\n)：枣树涂抹粘虫胶后粘上许多绿盲蝽蟓，显著减轻了绿盲蝽蟓对枣树叶片、花蕾、幼果的危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽试验观察",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3 试验结果",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽危害及越冬",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "浆烂病症状",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "果实病害病原候选",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "3 讨论",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J007",
+        "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+        "content": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州",
+          "growth_stage": "成熟期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "成熟期降雨浆烂裂果",
+          "source_id": "J007",
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "e0ba797bd5088be25e9a1c296e1ee720556a8691c96c99e3b44a8100de64b2b5",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://zgnyqx.ieda.org.cn/CN/abstract/abstract2883.shtml"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "褐皮型：病组织初期枣果梗洼周围形成黄色至淡褐色晕斑，边缘多不清晰。病斑向果肩迅速扩展，边缘逐渐清晰，颜色由浅变深，形成红褐色至深红色凹陷病斑，失去光泽。果肉病组织海绵状坏死，黄褐色，味苦。发病果易脱落。后期病斑处干缩，深红色至黑色，表面可产生灰褐色至黑色小点和大枣铁皮病症状相似。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "褐皮病症状",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "调查结果表明(\n表 3\n)：枣树涂抹粘虫胶后粘上许多绿盲蝽蟓，显著减轻了绿盲蝽蟓对枣树叶片、花蕾、幼果的危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽试验观察",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3 试验结果",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20070907.htm"
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽危害及越冬",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20070907.htm"
+      }
+    ],
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "浆烂型：病斑初为黄褐色水浸状小点，迅速扩大形成侵染点不明显的浅红色病斑。有的表面有明显轮纹，少数病斑表皮下散生黑色小点。病组织土黄色至浅褐色软腐，脓状，有酒糟味。后期病果皱缩成深红色至黑色腐果，表面密生黑色瘤状小点。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "浆烂病症状",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "果实病害病原候选",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "3 讨论",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J007",
+        "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+        "content": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州",
+          "growth_stage": "成熟期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "成熟期降雨浆烂裂果",
+          "source_id": "J007",
+          "locator": {
+            "page": 1,
+            "section": "第196页引言",
+            "file": "evidence/raw/J007_fulltext.pdf",
+            "transcription": "manually_verified_page_image"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "e0ba797bd5088be25e9a1c296e1ee720556a8691c96c99e3b44a8100de64b2b5",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://zgnyqx.ieda.org.cn/CN/abstract/abstract2883.shtml"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "褐皮型：病组织初期枣果梗洼周围形成黄色至淡褐色晕斑，边缘多不清晰。病斑向果肩迅速扩展，边缘逐渐清晰，颜色由浅变深，形成红褐色至深红色凹陷病斑，失去光泽。果肉病组织海绵状坏死，黄褐色，味苦。发病果易脱落。后期病斑处干缩，深红色至黑色，表面可产生灰褐色至黑色小点和大枣铁皮病症状相似。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": "fruit",
+          "topic": "褐皮病症状",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.1 病果症状",
+            "file": "evidence/raw/J008.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "调查结果表明(\n表 3\n)：枣树涂抹粘虫胶后粘上许多绿盲蝽蟓，显著减轻了绿盲蝽蟓对枣树叶片、花蕾、幼果的危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽试验观察",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3 试验结果",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20070907.htm"
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽危害及越冬",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20070907.htm"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中浆烂型对应仁果囊孢壳菌、黑疔型对应细链格孢菌、褐皮型对应毁灭茎点霉菌和细链格孢菌，均直接引自E2；成熟期连续阴雨导致裂果浆烂属环境诱因，引自E3；并明确未提供其他病原候选和现场确诊，符合candidate_assessment范围。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中浆烂型症状描述引自E1，三种症状类型及对应病原引自E2，成熟期阴雨导致浆烂引自E3，褐皮型症状引自E4，绿盲蝽与病原候选无直接关联引自E5、E6；各事实均有实际引用证据支持。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning说明病原候选来自区域研究、不能等同于当前果园现场确诊，用户未提供具体症状细节，文献结果不等于实际发病效果，阴雨为环境诱因不能替代病原学确诊，现有证据未覆盖所有病原且无分子检测或分离培养结果；均与E1、E2、E3一致，未补造缺失路径。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice建议观察记录症状并与浆烂型、褐皮型比对，症状描述分别引自E1、E4；病原候选引自E2；阴雨环境诱因引自E3；明确文献候选不能作为现场确诊、需专业机构分离培养或分子检测，且未提供已审核药剂、剂量或历史配方，符合candidate_assessment禁止推荐药名剂量和生产操作的要求。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "在沧州金丝小枣果实出现浆烂、腐烂症状时，现有证据支持的病原候选主要来自对果实病害症状类型的划分：浆烂型症状对应的主要致病菌为仁果囊孢壳菌 [E2] ；黑疔型症状对应的主要致病菌为细链格孢菌 [E2] ；褐皮型症状对应的主要致病菌为毁灭茎点霉菌和细链格孢菌两种 [E2] 。此外，成熟期连续阴雨可导致裂果并造成浆烂，属于环境诱因而非病原候选 [E3] 。现有证据未提供其他病原候选，也未提供针对当前果园的现场确诊结论。",
+      "supporting_points": [
+        "证据[E1]描述了浆烂型病果的典型症状：病斑初为黄褐色水浸状小点，迅速扩大形成浅红色病斑，病组织土黄色至浅褐色软腐、脓状、有酒糟味，后期皱缩成深红色至黑色腐果并密生黑色瘤状小点 [E1] 。证据[E2]明确金丝小枣果实病害分浆烂、黑疔、褐皮3种症状类型，且不同症状类型致病菌不同：浆烂型主要致病菌为仁果囊孢壳菌[Physalospora obtuse (Schw.)Cooke] [E2] ；黑疔型主要致病菌为细链格孢菌[A. alternata (Fr.)Keissle] [E2] ；褐皮型主要致病菌为毁灭茎点霉菌(P. destructiva Plowr)和细链格孢菌[A. alternata (Fr.)Keissler]2种 [E2] 。证据[E3]指出小枣成熟期遇连续阴雨天气会导致开裂、造成浆烂 [E3] 。证据[E4]描述了褐皮型症状，与浆烂型不同 [E4] 。证据[E5]、[E6]涉及绿盲蝽，与果实浆烂腐烂的病原候选无直接关联 [E5]  [E6] 。"
+      ],
+      "uncertainties": [
+        "上述病原候选来自对河北沧州、山东乐陵、天津静海等地金丝小枣果实病害病原菌的研究 [E2] ，属于区域研究结论，不能直接等同于当前用户果园的现场确诊。用户仅描述“果实出现浆烂、腐烂”，未提供病斑颜色、轮纹、黑色小点、气味、发病部位等具体症状细节，也未提供天气、栽培管理等背景，因此无法将症状精确对应到某一病原候选。浆烂型症状与仁果囊孢壳菌的对应关系来自文献研究 [E1]  [E2] ，但文献试验或调查结果不等于当前用户果园的实际发病效果。成熟期连续阴雨可导致裂果和浆烂 [E3] ，但这是环境诱因，不能替代病原学确诊。现有证据未覆盖所有可能引起果实腐烂的病原，也未提供分子检测或分离培养结果。"
+      ]
+    },
+    "answer": "在沧州金丝小枣果实出现浆烂、腐烂症状时，现有证据支持的病原候选主要来自对果实病害症状类型的划分：浆烂型症状对应的主要致病菌为仁果囊孢壳菌 [E2] ；黑疔型症状对应的主要致病菌为细链格孢菌 [E2] ；褐皮型症状对应的主要致病菌为毁灭茎点霉菌和细链格孢菌两种 [E2] 。此外，成熟期连续阴雨可导致裂果并造成浆烂，属于环境诱因而非病原候选 [E3] 。现有证据未提供其他病原候选，也未提供针对当前果园的现场确诊结论。\n\n建议先观察并记录病果的具体表现，以便与已知症状类型比对：浆烂型表现为初为黄褐色水浸状小点、迅速扩大形成浅红色病斑、病组织土黄色至浅褐色软腐、脓状、有酒糟味，后期皱缩成深红色至黑色腐果并密生黑色瘤状小点 [E1] ；褐皮型表现为梗洼周围黄色至淡褐色晕斑、向果肩扩展形成红褐色至深红色凹陷病斑、果肉海绵状坏死、味苦、易脱落 [E4] 。若症状符合浆烂型，文献中该类型的主要致病菌候选为仁果囊孢壳菌 [E2] ；若符合黑疔型，候选为细链格孢菌 [E2] ；若符合褐皮型，候选为毁灭茎点霉菌和细链格孢菌 [E2] 。以上均为文献候选，不能作为现场确诊。进一步确诊需依靠专业机构进行病原分离培养或分子检测。同时注意成熟期连续阴雨可能导致裂果和浆烂 [E3] ，可结合当地天气记录判断环境诱因。现有证据未提供针对这些病原候选的已审核药剂、剂量或历史配方，因此不能给出具体用药方案。",
+    "grounded_answer": {
+      "sufficient": false,
+      "conclusion": "在沧州金丝小枣果实出现浆烂、腐烂症状时，现有证据支持的病原候选主要来自对果实病害症状类型的划分：浆烂型症状对应的主要致病菌为仁果囊孢壳菌 [E2] ；黑疔型症状对应的主要致病菌为细链格孢菌 [E2] ；褐皮型症状对应的主要致病菌为毁灭茎点霉菌和细链格孢菌两种 [E2] 。此外，成熟期连续阴雨可导致裂果并造成浆烂，属于环境诱因而非病原候选 [E3] 。现有证据未提供其他病原候选，也未提供针对当前果园的现场确诊结论。",
+      "basis": "证据[E1]描述了浆烂型病果的典型症状：病斑初为黄褐色水浸状小点，迅速扩大形成浅红色病斑，病组织土黄色至浅褐色软腐、脓状、有酒糟味，后期皱缩成深红色至黑色腐果并密生黑色瘤状小点 [E1] 。证据[E2]明确金丝小枣果实病害分浆烂、黑疔、褐皮3种症状类型，且不同症状类型致病菌不同：浆烂型主要致病菌为仁果囊孢壳菌[Physalospora obtuse (Schw.)Cooke] [E2] ；黑疔型主要致病菌为细链格孢菌[A. alternata (Fr.)Keissle] [E2] ；褐皮型主要致病菌为毁灭茎点霉菌(P. destructiva Plowr)和细链格孢菌[A. alternata (Fr.)Keissler]2种 [E2] 。证据[E3]指出小枣成熟期遇连续阴雨天气会导致开裂、造成浆烂 [E3] 。证据[E4]描述了褐皮型症状，与浆烂型不同 [E4] 。证据[E5]、[E6]涉及绿盲蝽，与果实浆烂腐烂的病原候选无直接关联 [E5]  [E6] 。",
+      "reasoning": "上述病原候选来自对河北沧州、山东乐陵、天津静海等地金丝小枣果实病害病原菌的研究 [E2] ，属于区域研究结论，不能直接等同于当前用户果园的现场确诊。用户仅描述“果实出现浆烂、腐烂”，未提供病斑颜色、轮纹、黑色小点、气味、发病部位等具体症状细节，也未提供天气、栽培管理等背景，因此无法将症状精确对应到某一病原候选。浆烂型症状与仁果囊孢壳菌的对应关系来自文献研究 [E1]  [E2] ，但文献试验或调查结果不等于当前用户果园的实际发病效果。成熟期连续阴雨可导致裂果和浆烂 [E3] ，但这是环境诱因，不能替代病原学确诊。现有证据未覆盖所有可能引起果实腐烂的病原，也未提供分子检测或分离培养结果。",
+      "advice": "建议先观察并记录病果的具体表现，以便与已知症状类型比对：浆烂型表现为初为黄褐色水浸状小点、迅速扩大形成浅红色病斑、病组织土黄色至浅褐色软腐、脓状、有酒糟味，后期皱缩成深红色至黑色腐果并密生黑色瘤状小点 [E1] ；褐皮型表现为梗洼周围黄色至淡褐色晕斑、向果肩扩展形成红褐色至深红色凹陷病斑、果肉海绵状坏死、味苦、易脱落 [E4] 。若症状符合浆烂型，文献中该类型的主要致病菌候选为仁果囊孢壳菌 [E2] ；若符合黑疔型，候选为细链格孢菌 [E2] ；若符合褐皮型，候选为毁灭茎点霉菌和细链格孢菌 [E2] 。以上均为文献候选，不能作为现场确诊。进一步确诊需依靠专业机构进行病原分离培养或分子检测。同时注意成熟期连续阴雨可能导致裂果和浆烂 [E3] ，可结合当地天气记录判断环境诱因。现有证据未提供针对这些病原候选的已审核药剂、剂量或历史配方，因此不能给出具体用药方案。",
+      "citations": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "candidate_assessments": [
+        {
+          "candidate_name": "仁果囊孢壳菌[Physalospora obtuse (Schw.)Cooke]",
+          "assessment": "文献中浆烂型症状的主要致病菌候选[E2]。浆烂型病果症状为病斑初黄褐色水浸状小点，迅速扩大形成浅红色病斑，病组织土黄色至浅褐色软腐、脓状、有酒糟味，后期皱缩成深红色至黑色腐果并密生黑色瘤状小点[E1]。该候选来自区域研究，不能作为当前果园的现场确诊。",
+          "evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "candidate_name": "细链格孢菌[A. alternata (Fr.)Keissle]",
+          "assessment": "文献中黑疔型症状的主要致病菌候选，同时也是褐皮型的致病菌候选之一[E2]。黑疔型与浆烂型、褐皮型症状不同[E2]。该候选来自区域研究，不能作为当前果园的现场确诊。",
+          "evidence_ids": [
+            "E2"
+          ]
+        },
+        {
+          "candidate_name": "毁灭茎点霉菌(P. destructiva Plowr)",
+          "assessment": "文献中褐皮型症状的主要致病菌候选之一[E2]。褐皮型症状为梗洼周围黄色至淡褐色晕斑，向果肩扩展形成红褐色至深红色凹陷病斑，果肉海绵状坏死、味苦、易脱落[E4]。该候选来自区域研究，不能作为当前果园的现场确诊。",
+          "evidence_ids": [
+            "E2",
+            "E4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "春季萌芽和花果期常见哪些虫害？主要危害哪些部位？",
+    "entities": {
+      "region": "沧州",
+      "growth_stage": "萌芽至幼果期",
+      "organ": null,
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": null,
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": null,
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": "user_provided",
+      "harvest_intent": false,
+      "storage_intent": false,
+      "scope": "production",
+      "intent": "pest_identification"
+    },
+    "generation_called": true,
+    "status": "insufficient_evidence",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 9,
+      "vector_evidence_count": 2,
+      "fused_count": 2
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "JJE016",
+          "source": "cangzhou_jinsixiaozao:625165c4d27260a3",
+          "target": "cangzhou_jinsixiaozao:9bc3a5bf5f6c2dbc",
+          "relation": "MANAGED_AT",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "绿盲蝽",
+          "object": "春季枣芽萌动时",
+          "evidence_text": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+          "page": 5,
+          "section": "5 病虫草害防治",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC004",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC004"
+          ],
+          "evidence": [
+            {
+              "id": "JJC004",
+              "source_id": "J001",
+              "quote": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+              "locator": {
+                "page": 5,
+                "section": "5 病虫草害防治",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 5,
+            "section": "5 病虫草害防治",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE068",
+          "source": "cangzhou_jinsixiaozao:625165c4d27260a3",
+          "target": "cangzhou_jinsixiaozao:68233c1e944dc1a8",
+          "relation": "OVERWINTERS_IN",
+          "kind": "semantic",
+          "source_id": "J017",
+          "source_ids": [
+            "J017"
+          ],
+          "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+          "region": "河北沧州及论文所列试验地区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "萌芽至幼果期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:80bb2a42bdfcd07f"
+          ],
+          "subject": "绿盲蝽",
+          "object": "小枝剪口皮缝",
+          "evidence_text": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+          "page": null,
+          "section": "3.3",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC014",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：萌芽至幼果期"
+          ],
+          "evidence_ids": [
+            "J017",
+            "JJC014"
+          ],
+          "evidence": [
+            {
+              "id": "JJC014",
+              "source_id": "J017",
+              "quote": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+              "locator": {
+                "page": null,
+                "section": "3.3",
+                "file": "evidence/raw/J017.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE069",
+          "source": "cangzhou_jinsixiaozao:625165c4d27260a3",
+          "target": "cangzhou_jinsixiaozao:c99fb231ad427d06",
+          "relation": "HAS_SYMPTOM",
+          "kind": "semantic",
+          "source_id": "J017",
+          "source_ids": [
+            "J017"
+          ],
+          "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+          "region": "河北沧州及论文所列试验地区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "萌芽至幼果期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:80bb2a42bdfcd07f"
+          ],
+          "subject": "绿盲蝽",
+          "object": "破叶疯",
+          "evidence_text": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+          "page": null,
+          "section": "3.3",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC014",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：萌芽至幼果期"
+          ],
+          "evidence_ids": [
+            "J017",
+            "JJC014"
+          ],
+          "evidence": [
+            {
+              "id": "JJC014",
+              "source_id": "J017",
+              "quote": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+              "locator": {
+                "page": null,
+                "section": "3.3",
+                "file": "evidence/raw/J017.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE070",
+          "source": "cangzhou_jinsixiaozao:625165c4d27260a3",
+          "target": "cangzhou_jinsixiaozao:fa8de076ea8dd4de",
+          "relation": "DAMAGES",
+          "kind": "semantic",
+          "source_id": "J017",
+          "source_ids": [
+            "J017"
+          ],
+          "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+          "region": "河北沧州及论文所列试验地区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "萌芽至幼果期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:80bb2a42bdfcd07f"
+          ],
+          "subject": "绿盲蝽",
+          "object": "枣芽",
+          "evidence_text": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+          "page": null,
+          "section": "3.3",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC014",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：萌芽至幼果期"
+          ],
+          "evidence_ids": [
+            "J017",
+            "JJC014"
+          ],
+          "evidence": [
+            {
+              "id": "JJC014",
+              "source_id": "J017",
+              "quote": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+              "locator": {
+                "page": null,
+                "section": "3.3",
+                "file": "evidence/raw/J017.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE071",
+          "source": "cangzhou_jinsixiaozao:625165c4d27260a3",
+          "target": "cangzhou_jinsixiaozao:9f720ad5744c3645",
+          "relation": "DAMAGES",
+          "kind": "semantic",
+          "source_id": "J017",
+          "source_ids": [
+            "J017"
+          ],
+          "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+          "region": "河北沧州及论文所列试验地区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "萌芽至幼果期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:80bb2a42bdfcd07f"
+          ],
+          "subject": "绿盲蝽",
+          "object": "幼嫩枣吊",
+          "evidence_text": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+          "page": null,
+          "section": "3.3",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC014",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：萌芽至幼果期"
+          ],
+          "evidence_ids": [
+            "J017",
+            "JJC014"
+          ],
+          "evidence": [
+            {
+              "id": "JJC014",
+              "source_id": "J017",
+              "quote": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+              "locator": {
+                "page": null,
+                "section": "3.3",
+                "file": "evidence/raw/J017.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE072",
+          "source": "cangzhou_jinsixiaozao:625165c4d27260a3",
+          "target": "cangzhou_jinsixiaozao:b3f74b0eb02eabfa",
+          "relation": "DAMAGES",
+          "kind": "semantic",
+          "source_id": "J017",
+          "source_ids": [
+            "J017"
+          ],
+          "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+          "region": "河北沧州及论文所列试验地区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "萌芽至幼果期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:80bb2a42bdfcd07f"
+          ],
+          "subject": "绿盲蝽",
+          "object": "花蕾",
+          "evidence_text": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+          "page": null,
+          "section": "3.3",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC014",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：萌芽至幼果期"
+          ],
+          "evidence_ids": [
+            "J017",
+            "JJC014"
+          ],
+          "evidence": [
+            {
+              "id": "JJC014",
+              "source_id": "J017",
+              "quote": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+              "locator": {
+                "page": null,
+                "section": "3.3",
+                "file": "evidence/raw/J017.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE073",
+          "source": "cangzhou_jinsixiaozao:625165c4d27260a3",
+          "target": "cangzhou_jinsixiaozao:cb45a239db0f665d",
+          "relation": "DAMAGES",
+          "kind": "semantic",
+          "source_id": "J017",
+          "source_ids": [
+            "J017"
+          ],
+          "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+          "region": "河北沧州及论文所列试验地区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "萌芽至幼果期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:80bb2a42bdfcd07f"
+          ],
+          "subject": "绿盲蝽",
+          "object": "花柄",
+          "evidence_text": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+          "page": null,
+          "section": "3.3",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC014",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：萌芽至幼果期"
+          ],
+          "evidence_ids": [
+            "J017",
+            "JJC014"
+          ],
+          "evidence": [
+            {
+              "id": "JJC014",
+              "source_id": "J017",
+              "quote": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+              "locator": {
+                "page": null,
+                "section": "3.3",
+                "file": "evidence/raw/J017.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE074",
+          "source": "cangzhou_jinsixiaozao:625165c4d27260a3",
+          "target": "cangzhou_jinsixiaozao:cee6d4dba23bdfa9",
+          "relation": "DAMAGES",
+          "kind": "semantic",
+          "source_id": "J017",
+          "source_ids": [
+            "J017"
+          ],
+          "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+          "region": "河北沧州及论文所列试验地区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "萌芽至幼果期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:80bb2a42bdfcd07f"
+          ],
+          "subject": "绿盲蝽",
+          "object": "幼果",
+          "evidence_text": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+          "page": null,
+          "section": "3.3",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC014",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：萌芽至幼果期"
+          ],
+          "evidence_ids": [
+            "J017",
+            "JJC014"
+          ],
+          "evidence": [
+            {
+              "id": "JJC014",
+              "source_id": "J017",
+              "quote": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+              "locator": {
+                "page": null,
+                "section": "3.3",
+                "file": "evidence/raw/J017.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "standard_status": "not_a_standard"
+        },
+        {
+          "id": "JJE075",
+          "source": "cangzhou_jinsixiaozao:d8081b80b34f0ba0",
+          "target": "cangzhou_jinsixiaozao:7f516345880ee041",
+          "relation": "SPREADS_VIA",
+          "kind": "semantic",
+          "source_id": "J017",
+          "source_ids": [
+            "J017"
+          ],
+          "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+          "region": "河北沧州及论文所列试验地区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "萌芽至幼果期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:80bb2a42bdfcd07f"
+          ],
+          "subject": "绿盲蝽若虫",
+          "object": "沿树干爬行转移",
+          "evidence_text": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+          "page": null,
+          "section": "3.3",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC014",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：萌芽至幼果期"
+          ],
+          "evidence_ids": [
+            "J017",
+            "JJC014"
+          ],
+          "evidence": [
+            {
+              "id": "JJC014",
+              "source_id": "J017",
+              "quote": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+              "locator": {
+                "page": null,
+                "section": "3.3",
+                "file": "evidence/raw/J017.html"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "standard_status": "not_a_standard"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "病虫害防控时间",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 病虫草害防治",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        }
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽危害及越冬",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "病虫害防控时间",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 病虫草害防治",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽危害及越冬",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20070907.htm"
+      }
+    ],
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "病虫害防控时间",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 病虫草害防治",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J017",
+        "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+        "content": "该虫在枣园中主要以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，如果春季持续干旱，则越冬卵不能顺利孵化，待适宜条件(主要是湿度)出现后，再行孵化。绿盲蝽蟓可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。由于绿盲蝽蟓食性杂，喜在间作的豆类、棉花以及杂草等植物幼嫩组织上刺吸危害。其若虫不能飞行，主要依靠爬行转移，经常可见地面间作物和杂草上的绿盲蝽蟓若虫沿树干爬行转移上树危害。即使成虫遇到振动，可飞行转移，但仍然常见成虫爬行上树危害。该虫抗药性很强，一般喷药效果较差，需喷洒多次农药才能控制其危害。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州及论文所列试验地区",
+          "growth_stage": "萌芽至幼果期",
+          "stage_unknown": false,
+          "scope": "production",
+          "organ": null,
+          "topic": "绿盲蝽危害及越冬",
+          "source_id": "J017",
+          "locator": {
+            "page": null,
+            "section": "3.3",
+            "file": "evidence/raw/J017.html"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+          "risk": [],
+          "purpose": "candidate_assessment"
+        },
+        "url": "https://html.rhhz.net/linyekexue/html/20070907.htm"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "E1明确春季枣芽萌动时主要防治食芽象甲、枣瘿蚊、绿盲蝽等害虫；E2明确绿盲蝽可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。结论同时说明食芽象甲、枣瘿蚊危害部位未明确，与证据一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "E1支持春季枣芽萌动时防治食芽象甲、枣瘿蚊、绿盲蝽；E2支持绿盲蝽越冬、春季孵化危害枣芽形成“破叶疯”及危害枣芽、幼嫩枣吊、花蕾、花柄和幼果。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "E1未说明食芽象甲和枣瘿蚊危害部位，E2为特定研究资料，推理中关于不能推断具体危害部位、标准适用性需核实、文献描述不等于当前果园实际发生的表述均与证据边界一致。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议观察枣芽、幼嫩枣吊、花蕾、花柄和幼果及小枝剪口皮缝越冬卵孵化迹象，可由E2支持；对食芽象甲、枣瘿蚊危害部位建议补充田间观察或咨询植保部门，属于证据缺口下的核验建议，未推荐农药或生产操作。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "春季萌芽至花果期，沧州金丝小枣上常见且被证据提及的虫害包括食芽象甲、枣瘿蚊、绿盲蝽等，其中绿盲蝽可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果 [E1]  [E2] 。食芽象甲、枣瘿蚊的具体危害部位在现有证据中未明确说明，需结合田间观察进一步核验。",
+      "supporting_points": [
+        "标准DB13/T 5680-2023记载，春季枣芽萌动时主要防治食芽象甲、枣瘿蚊、绿盲蝽等害虫 [E1] 。研究资料记载，绿盲蝽在枣园中以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”；绿盲蝽可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果 [E2] 。"
+      ],
+      "uncertainties": [
+        "现有证据仅明确绿盲蝽的危害部位，食芽象甲和枣瘿蚊的危害部位未在证据中说明，因此不能推断其具体危害部位 [E1] 。标准中提到的防治时间属于标准保护区内要求，需核实果园是否适用；文献中绿盲蝽的危害描述来自特定研究，不等于当前果园实际发生情况 [E2] 。"
+      ]
+    },
+    "answer": "春季萌芽至花果期，沧州金丝小枣上常见且被证据提及的虫害包括食芽象甲、枣瘿蚊、绿盲蝽等，其中绿盲蝽可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果 [E1]  [E2] 。食芽象甲、枣瘿蚊的具体危害部位在现有证据中未明确说明，需结合田间观察进一步核验。\n\n建议在春季萌芽至花果期重点观察枣芽、幼嫩枣吊、花蕾、花柄和幼果是否有刺吸危害状或“破叶疯”表现，并留意小枝剪口皮缝处是否有越冬卵孵化迹象 [E2] 。若需确认食芽象甲、枣瘿蚊的危害部位，应补充田间实地观察或咨询当地植保部门。",
+    "grounded_answer": {
+      "sufficient": false,
+      "conclusion": "春季萌芽至花果期，沧州金丝小枣上常见且被证据提及的虫害包括食芽象甲、枣瘿蚊、绿盲蝽等，其中绿盲蝽可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果 [E1]  [E2] 。食芽象甲、枣瘿蚊的具体危害部位在现有证据中未明确说明，需结合田间观察进一步核验。",
+      "basis": "标准DB13/T 5680-2023记载，春季枣芽萌动时主要防治食芽象甲、枣瘿蚊、绿盲蝽等害虫 [E1] 。研究资料记载，绿盲蝽在枣园中以卵在树上小枝剪口皮缝中越冬，第二年春季枣树发芽时孵化，危害枣芽，形成“破叶疯”；绿盲蝽可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果 [E2] 。",
+      "reasoning": "现有证据仅明确绿盲蝽的危害部位，食芽象甲和枣瘿蚊的危害部位未在证据中说明，因此不能推断其具体危害部位 [E1] 。标准中提到的防治时间属于标准保护区内要求，需核实果园是否适用；文献中绿盲蝽的危害描述来自特定研究，不等于当前果园实际发生情况 [E2] 。",
+      "advice": "建议在春季萌芽至花果期重点观察枣芽、幼嫩枣吊、花蕾、花柄和幼果是否有刺吸危害状或“破叶疯”表现，并留意小枝剪口皮缝处是否有越冬卵孵化迹象 [E2] 。若需确认食芽象甲、枣瘿蚊的危害部位，应补充田间实地观察或咨询当地植保部门。",
+      "citations": [
+        "E1",
+        "E2"
+      ],
+      "candidate_assessments": [
+        {
+          "candidate_name": "绿盲蝽",
+          "assessment": "证据表明绿盲蝽在春季枣树发芽时孵化，危害枣芽，形成“破叶疯”，并可危害枣芽、幼嫩枣吊、花蕾、花柄和幼果[E2]。标准将其列为春季枣芽萌动时主要防治害虫之一[E1]。",
+          "evidence_ids": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "candidate_name": "食芽象甲",
+          "assessment": "标准将其列为春季枣芽萌动时主要防治害虫之一[E1]，但现有证据未说明其具体危害部位，需田间观察核验。",
+          "evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "candidate_name": "枣瘿蚊",
+          "assessment": "标准将其列为春季枣芽萌动时主要防治害虫之一[E1]，但现有证据未说明其具体危害部位，需田间观察核验。",
+          "evidence_ids": [
+            "E1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "河北低平原地区使用微咸水灌溉时，要注意什么风险？",
+    "entities": {
+      "region": "沧州",
+      "growth_stage": null,
+      "organ": null,
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": null,
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": "微咸水",
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": "user_provided",
+      "harvest_intent": false,
+      "storage_intent": false,
+      "scope": "production"
+    },
+    "generation_called": true,
+    "status": "insufficient_evidence",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 6,
+      "vector_evidence_count": 1,
+      "fused_count": 1
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "JJE008",
+          "source": "cangzhou_jinsixiaozao:bc42bc53815dca74",
+          "target": "cangzhou_jinsixiaozao:6d3c477fe8acc682",
+          "relation": "USES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "结果期施肥",
+          "object": "腐熟有机肥",
+          "evidence_text": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+          "page": 5,
+          "section": "5 土肥水管理",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC003",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC003"
+          ],
+          "evidence": [
+            {
+              "id": "JJC003",
+              "source_id": "J001",
+              "quote": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+              "locator": {
+                "page": 5,
+                "section": "5 土肥水管理",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 5,
+            "section": "5 土肥水管理",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE009",
+          "source": "cangzhou_jinsixiaozao:6438308856aee3f1",
+          "target": "cangzhou_jinsixiaozao:6849c933140a875a",
+          "relation": "APPLIES_AT",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "水分供给",
+          "object": "萌芽期",
+          "evidence_text": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+          "page": 5,
+          "section": "5 土肥水管理",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC003",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC003"
+          ],
+          "evidence": [
+            {
+              "id": "JJC003",
+              "source_id": "J001",
+              "quote": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+              "locator": {
+                "page": 5,
+                "section": "5 土肥水管理",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 5,
+            "section": "5 土肥水管理",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE010",
+          "source": "cangzhou_jinsixiaozao:6438308856aee3f1",
+          "target": "cangzhou_jinsixiaozao:337f5b92a8d2fee3",
+          "relation": "APPLIES_AT",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "水分供给",
+          "object": "初花期",
+          "evidence_text": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+          "page": 5,
+          "section": "5 土肥水管理",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC003",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC003"
+          ],
+          "evidence": [
+            {
+              "id": "JJC003",
+              "source_id": "J001",
+              "quote": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+              "locator": {
+                "page": 5,
+                "section": "5 土肥水管理",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 5,
+            "section": "5 土肥水管理",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE011",
+          "source": "cangzhou_jinsixiaozao:6438308856aee3f1",
+          "target": "cangzhou_jinsixiaozao:bf83212f14a7608b",
+          "relation": "APPLIES_AT",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "水分供给",
+          "object": "幼果期",
+          "evidence_text": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+          "page": 5,
+          "section": "5 土肥水管理",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC003",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC003"
+          ],
+          "evidence": [
+            {
+              "id": "JJC003",
+              "source_id": "J001",
+              "quote": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+              "locator": {
+                "page": 5,
+                "section": "5 土肥水管理",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 5,
+            "section": "5 土肥水管理",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE012",
+          "source": "cangzhou_jinsixiaozao:6438308856aee3f1",
+          "target": "cangzhou_jinsixiaozao:39a81b2bff2dffd5",
+          "relation": "APPLIES_AT",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "水分供给",
+          "object": "封冻期",
+          "evidence_text": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+          "page": 5,
+          "section": "5 土肥水管理",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC003",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC003"
+          ],
+          "evidence": [
+            {
+              "id": "JJC003",
+              "source_id": "J001",
+              "quote": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+              "locator": {
+                "page": 5,
+                "section": "5 土肥水管理",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 5,
+            "section": "5 土肥水管理",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE013",
+          "source": "cangzhou_jinsixiaozao:6438308856aee3f1",
+          "target": "cangzhou_jinsixiaozao:f8ae220bbffaddd7",
+          "relation": "CONDITIONED_BY",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "水分供给",
+          "object": "土壤墒情",
+          "evidence_text": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+          "page": 5,
+          "section": "5 土肥水管理",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC003",
+          "conditions": [
+            "用途：production",
+            "器官：原文未统一标定",
+            "阶段：原文未标定"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC003"
+          ],
+          "evidence": [
+            {
+              "id": "JJC003",
+              "source_id": "J001",
+              "quote": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+              "locator": {
+                "page": 5,
+                "section": "5 土肥水管理",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 5,
+            "section": "5 土肥水管理",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "土肥水管理",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 土肥水管理",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "土肥水管理",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 土肥水管理",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      }
+    ],
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "土肥水管理 \n幼树施以氮、磷为主的肥料。结果期树以腐熟的有机肥为主，并辅以适量的氮、磷、钾复合肥\n料及生物肥，有机肥按“斤果斤肥”施入。绿色有机枣果生产按相应的施肥标准执行。根据土壤墒\n情，做好 萌芽期、初花期、幼果期、封冻期的水分供给。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "production",
+          "organ": null,
+          "topic": "土肥水管理",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 土肥水管理",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称现有证据仅涉及沧州金丝小枣地理标志保护区内土肥水管理一般要求，且未提供微咸水灌溉风险信息，因此无法回答。该表述与E1内容一致：E1为DB13/T 5680-2023土肥水管理条款，仅涉及施肥和按土壤墒情供水，未提及微咸水、矿化度或盐分风险；结论未超出引用证据。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据准确复述E1为DB13/T 5680-2023《地理标志产品 沧州金丝小枣》中土肥水管理条款，并指出其要求根据土壤墒情做好萌芽期、初花期、幼果期、封冻期水分供给；同时指出E1未提及微咸水、矿化度、盐分风险或低平原地区微咸水灌溉，均与E1实际内容相符。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理基于E1：用户问微咸水灌溉风险，而E1只规定保护区内水分供给时期，未涉及微咸水灌溉，也未给出矿化度阈值或风险指标；因此不能从现有证据推断具体风险或阈值。未补造未引用证据或常识。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议称当前证据不足以回答微咸水灌溉风险，并建议核验果园是否位于DB13/T 5680-2023地理标志保护区内、查阅该标准或其他现行有效标准是否有微咸水灌溉条款，在获得明确依据前不依据本证据作判断。该建议限于证据缺口和核验方向，未推荐农药、剂量、施药周期或生产操作，符合证据范围。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "现有证据仅涉及沧州金丝小枣地理标志保护区内土肥水管理的一般要求 [E1] ，未提供微咸水灌溉的风险信息，因此无法就“河北低平原地区使用微咸水灌溉时要注意什么风险”给出有依据的回答。",
+      "supporting_points": [
+        "证据[E1]为DB13/T 5680-2023《地理标志产品 沧州金丝小枣》中“土肥水管理”条款，要求根据土壤墒情做好萌芽期、初花期、幼果期、封冻期的水分供给 [E1] 。该证据未提及微咸水、矿化度、盐分风险或低平原地区微咸水灌溉的任何内容。"
+      ],
+      "uncertainties": [
+        "用户询问的是微咸水灌溉风险，但唯一可用证据[E1]仅规定保护区内的水分供给时期，未涉及微咸水灌溉 [E1] 。标准在其保护区内要求根据土壤墒情做好上述时期的水分供给 [E1] ；需核实果园是否位于该地理标志保护区内，且该标准也未给出微咸水矿化度阈值或风险指标。因此不能从现有证据推断微咸水灌溉的具体风险，也不能给出矿化度阈值。"
+      ]
+    },
+    "answer": "现有证据仅涉及沧州金丝小枣地理标志保护区内土肥水管理的一般要求 [E1] ，未提供微咸水灌溉的风险信息，因此无法就“河北低平原地区使用微咸水灌溉时要注意什么风险”给出有依据的回答。\n\n当前证据不足以回答微咸水灌溉风险。可核验方向：确认果园是否位于DB13/T 5680-2023地理标志保护区内 [E1] ，并查阅该标准或其他现行有效标准中是否有微咸水灌溉条款；在获得明确依据前，不依据本证据对微咸水灌溉风险作判断。",
+    "grounded_answer": {
+      "sufficient": false,
+      "conclusion": "现有证据仅涉及沧州金丝小枣地理标志保护区内土肥水管理的一般要求 [E1] ，未提供微咸水灌溉的风险信息，因此无法就“河北低平原地区使用微咸水灌溉时要注意什么风险”给出有依据的回答。",
+      "basis": "证据[E1]为DB13/T 5680-2023《地理标志产品 沧州金丝小枣》中“土肥水管理”条款，要求根据土壤墒情做好萌芽期、初花期、幼果期、封冻期的水分供给 [E1] 。该证据未提及微咸水、矿化度、盐分风险或低平原地区微咸水灌溉的任何内容。",
+      "reasoning": "用户询问的是微咸水灌溉风险，但唯一可用证据[E1]仅规定保护区内的水分供给时期，未涉及微咸水灌溉 [E1] 。标准在其保护区内要求根据土壤墒情做好上述时期的水分供给 [E1] ；需核实果园是否位于该地理标志保护区内，且该标准也未给出微咸水矿化度阈值或风险指标。因此不能从现有证据推断微咸水灌溉的具体风险，也不能给出矿化度阈值。",
+      "advice": "当前证据不足以回答微咸水灌溉风险。可核验方向：确认果园是否位于DB13/T 5680-2023地理标志保护区内 [E1] ，并查阅该标准或其他现行有效标准中是否有微咸水灌溉条款；在获得明确依据前，不依据本证据对微咸水灌溉风险作判断。",
+      "citations": [
+        "E1"
+      ],
+      "candidate_assessments": []
+    }
+  },
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "采收后进入晾晒、烘干、贮藏时，主要有哪些采后风险？",
+    "entities": {
+      "region": "沧州",
+      "growth_stage": "采收期",
+      "organ": null,
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": null,
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": null,
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": "user_provided",
+      "harvest_intent": true,
+      "storage_intent": true,
+      "scope": "postharvest"
+    },
+    "generation_called": true,
+    "status": "insufficient_evidence",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 13,
+      "vector_evidence_count": 4,
+      "fused_count": 4
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "JJE030",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:583f0c2b36ff6f64",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "批次分明",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE031",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:f4228b965a477170",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "堆码整齐",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE032",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:e99154e42df2c2b2",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "环境整洁",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE033",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:4185485fbefc2466",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "通风良好",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE034",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:0e735df0b8fb7a45",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "防潮",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE035",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:374c255bf1a2e816",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "防虫",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE036",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:2ea5369f4e1d600b",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "防鼠",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE037",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:77c996eed384313b",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "温湿度适宜",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE038",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:def5130a3d02386c",
+          "relation": "AVOIDS",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "烈日暴晒",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE039",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:b2e151c714014fc4",
+          "relation": "AVOIDS",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "雨淋",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE040",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:447f51651f071882",
+          "relation": "AVOIDS",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "冻害",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE041",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:d6330f37006ad6f6",
+          "relation": "AVOIDS",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "热害",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        },
+        {
+          "id": "JJE042",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:c557149a3018b9ed",
+          "relation": "AVOIDS",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "异味有毒有害物品混放",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣待运贮存",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        }
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "运输期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "运输条件",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.4",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        }
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "采收期",
+          "stage_unknown": false,
+          "scope": "harvest",
+          "organ": "fruit",
+          "topic": "采收成熟度",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 果实采收",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        }
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣露天存放",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.2",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣待运贮存",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "运输期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "运输条件",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.4",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "采收期",
+          "stage_unknown": false,
+          "scope": "harvest",
+          "organ": "fruit",
+          "topic": "采收成熟度",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 果实采收",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣露天存放",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.2",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      }
+    ],
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣待运贮存",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "运输期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "运输条件",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.4",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "采收期",
+          "stage_unknown": false,
+          "scope": "harvest",
+          "organ": "fruit",
+          "topic": "采收成熟度",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 果实采收",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣露天存放",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.2",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance"
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论明确限定证据仅覆盖贮存、露天存放和运输，未涉及晾晒、烘干；所列风险（烈日暴晒、雨淋、冻害、热害、潮湿、虫害、鼠害、异味/有毒有害物品混存）均直接对应E1原文；露天存放风险对应E4；运输风险对应E2；采收成熟度影响后续干制与贮藏品质的表述对应E3的完熟期采收要求，且结论以‘可能’措辞未过度断言。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis逐条复述E1、E4、E2、E3原文内容，未添加证据外数值、剂量或本地化断言；E1的贮存要求、E4的露天存放要求、E2的运输要求、E3的采收成熟度均与引用证据一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning正确指出证据来自地理标志产品标准、仅在该标准保护区内适用，并明确用户未确认果园是否在保护区内，需核实适用性；同时指出证据未提供晾晒和烘干具体风险或工艺参数、未给出温湿度具体数值，均与E1-E4证据范围一致，未补造缺失路径或量化阈值。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice先要求核验果园是否位于地理标志保护区内以判断标准适用性，随后所列检查项（批次分明、堆码整齐、环境整洁、通风良好、避免暴晒雨淋、防冻防热、缩短待运、不混存、防潮防虫防鼠、温湿度适宜、露天存放覆盖、运输工具清洁干燥防晒防雨、不混运、采收成熟度）均逐项对应E1-E4原文；并明确晾晒和烘干环节证据未覆盖、需另行核实，未推荐药名、剂量或施药周期。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "现有证据仅覆盖沧州金丝小枣采后干枣的贮存、露天存放和运输环节，未涉及晾晒、烘干的具体风险描述。可确认的采后风险方向包括：贮存中受烈日暴晒、雨淋、冻害、热害、潮湿、虫害、鼠害及异味/有毒有害物品混存的影响 [E1] ；露天存放时因地点或覆盖不当带来的风险 [E4] ；运输中因工具不洁、不干燥、无防晒防雨设施或与异味/有毒有害物品混运带来的风险 [E2] 。采收成熟度不当（干制枣未在完熟期采收）也可能影响后续干制与贮藏品质 [E3] 。",
+      "supporting_points": [
+        "DB13/T 5680-2023 对干枣待运和贮存要求批次分明、堆码整齐、环境整洁、通风良好，严禁烈日暴晒和雨淋，注意防冻防热，尽量缩短待运时间，不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿度要控制适宜 [E1] 。干枣露天存放应选择阴凉通风地点，根据气候条件用适宜覆盖物覆盖 [E4] 。运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输 [E2] 。用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收 [E3] 。"
+      ],
+      "uncertainties": [
+        "证据来自地理标志产品标准，其要求仅在该标准保护区内适用；用户未确认果园是否位于保护区内，因此上述内容只能作为标准在其保护范围内的要求，需核实果园是否适用 [E1]  [E2]  [E3]  [E4] 。证据未提供晾晒和烘干环节的具体风险或工艺参数，不能补造烘干温度、时长或晾晒操作细节。证据也未给出温湿度控制的具体数值，不能给出量化阈值 [E1] 。"
+      ]
+    },
+    "answer": "现有证据仅覆盖沧州金丝小枣采后干枣的贮存、露天存放和运输环节，未涉及晾晒、烘干的具体风险描述。可确认的采后风险方向包括：贮存中受烈日暴晒、雨淋、冻害、热害、潮湿、虫害、鼠害及异味/有毒有害物品混存的影响 [E1] ；露天存放时因地点或覆盖不当带来的风险 [E4] ；运输中因工具不洁、不干燥、无防晒防雨设施或与异味/有毒有害物品混运带来的风险 [E2] 。采收成熟度不当（干制枣未在完熟期采收）也可能影响后续干制与贮藏品质 [E3] 。\n\n核验果园是否位于沧州金丝小枣地理标志保护区内，以判断DB13/T 5680-2023的适用性。若适用，可按标准要求检查贮存环节：批次分明、堆码整齐、环境整洁、通风良好，避免烈日暴晒和雨淋，注意防冻防热，缩短待运时间，不与有异味、有毒、有害物品混存，防潮、防虫、防鼠，温湿度控制适宜 [E1] ；露天存放选择阴凉通风地点并按气候条件覆盖 [E4] ；运输工具保持清洁、干燥，具备防晒防雨设施，不与有异味、有毒、有害物品混运 [E2] 。同时核对采收成熟度是否符合用途：干制红枣在完熟期采收，鲜食枣在脆熟期采收 [E3] 。晾晒和烘干环节的具体风险与操作，现有证据未覆盖，需另行核实。",
+    "grounded_answer": {
+      "sufficient": false,
+      "conclusion": "现有证据仅覆盖沧州金丝小枣采后干枣的贮存、露天存放和运输环节，未涉及晾晒、烘干的具体风险描述。可确认的采后风险方向包括：贮存中受烈日暴晒、雨淋、冻害、热害、潮湿、虫害、鼠害及异味/有毒有害物品混存的影响 [E1] ；露天存放时因地点或覆盖不当带来的风险 [E4] ；运输中因工具不洁、不干燥、无防晒防雨设施或与异味/有毒有害物品混运带来的风险 [E2] 。采收成熟度不当（干制枣未在完熟期采收）也可能影响后续干制与贮藏品质 [E3] 。",
+      "basis": "DB13/T 5680-2023 对干枣待运和贮存要求批次分明、堆码整齐、环境整洁、通风良好，严禁烈日暴晒和雨淋，注意防冻防热，尽量缩短待运时间，不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿度要控制适宜 [E1] 。干枣露天存放应选择阴凉通风地点，根据气候条件用适宜覆盖物覆盖 [E4] 。运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输 [E2] 。用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收 [E3] 。",
+      "reasoning": "证据来自地理标志产品标准，其要求仅在该标准保护区内适用；用户未确认果园是否位于保护区内，因此上述内容只能作为标准在其保护范围内的要求，需核实果园是否适用 [E1]  [E2]  [E3]  [E4] 。证据未提供晾晒和烘干环节的具体风险或工艺参数，不能补造烘干温度、时长或晾晒操作细节。证据也未给出温湿度控制的具体数值，不能给出量化阈值 [E1] 。",
+      "advice": "核验果园是否位于沧州金丝小枣地理标志保护区内，以判断DB13/T 5680-2023的适用性。若适用，可按标准要求检查贮存环节：批次分明、堆码整齐、环境整洁、通风良好，避免烈日暴晒和雨淋，注意防冻防热，缩短待运时间，不与有异味、有毒、有害物品混存，防潮、防虫、防鼠，温湿度控制适宜 [E1] ；露天存放选择阴凉通风地点并按气候条件覆盖 [E4] ；运输工具保持清洁、干燥，具备防晒防雨设施，不与有异味、有毒、有害物品混运 [E2] 。同时核对采收成熟度是否符合用途：干制红枣在完熟期采收，鲜食枣在脆熟期采收 [E3] 。晾晒和烘干环节的具体风险与操作，现有证据未覆盖，需另行核实。",
+      "citations": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "candidate_assessments": [
+        {
+          "candidate_name": "贮存期环境与混存风险",
+          "assessment": "标准在其保护区内要求干枣贮存批次分明、堆码整齐、环境整洁、通风良好，严禁烈日暴晒和雨淋，注意防冻防热，尽量缩短待运时间，不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿度要控制适宜。需核实果园是否适用。",
+          "evidence_ids": [
+            "E1"
+          ]
+        },
+        {
+          "candidate_name": "露天存放风险",
+          "assessment": "标准在其保护区内要求干枣露天存放应选择阴凉通风地点，根据气候条件用适宜覆盖物覆盖。需核实果园是否适用。",
+          "evidence_ids": [
+            "E4"
+          ]
+        },
+        {
+          "candidate_name": "运输环节风险",
+          "assessment": "标准在其保护区内要求运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。需核实果园是否适用。",
+          "evidence_ids": [
+            "E2"
+          ]
+        },
+        {
+          "candidate_name": "采收成熟度不当风险",
+          "assessment": "标准在其保护区内要求用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收；成熟度不符合用途可能影响后续干制与贮藏。需核实果园是否适用。",
+          "evidence_ids": [
+            "E3"
+          ]
+        }
+      ]
+    }
+  }
+]

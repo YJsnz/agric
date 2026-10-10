@@ -1,0 +1,56 @@
+{
+  "id": "QA_0105",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文的具体研究记录回答低氧气调处理对乙烯的抑制是否可逆及其恢复因素。",
+      "basis": "当前未提供该论文的原文、摘要或数据，且我无法确认该论文的具体实验设计与结论。",
+      "reasoning": "问题要求依据《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的研究记录作答，但证据为空，我也没有该论文的可靠记忆，因此不能编造其结论。",
+      "advice": "请提供该论文的摘要、结果或相关段落；或查阅原文中关于低氧处理后恢复供氧、乙烯生成速率、ACC氧化酶/合成酶活性等指标的变化。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 173,
+      "completion_tokens": 154,
+      "total_tokens": 327,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 173
+    },
+    "model": "deepseek-flash",
+    "response_id": "4a6535d8-3c69-4fff-973f-f664e5ccb70d",
+    "seconds": 5.963449600000331,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出问题所问的结论，仅说明证据不足并请求提供原文，属于拒答；在可回答题中不能视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 766,
+      "completion_tokens": 46,
+      "total_tokens": 812,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 638
+    },
+    "model": "deepseek-flash",
+    "response_id": "4db7a214-5f54-475a-a9f3-51fc3730f407",
+    "seconds": 5.5725217000003795,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

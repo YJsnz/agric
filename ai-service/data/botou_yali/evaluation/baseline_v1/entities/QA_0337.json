@@ -1,0 +1,10 @@
+{
+  "entities": {
+    "crop": "鸭梨",
+    "region": null,
+    "stage": null,
+    "environment": [],
+    "disease": [],
+    "intent": "storage"
+  }
+}

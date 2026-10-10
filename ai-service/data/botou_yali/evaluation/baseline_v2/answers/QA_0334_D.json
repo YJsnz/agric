@@ -1,0 +1,276 @@
+{
+  "id": "QA_0334",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0008",
+    "chunk:PAPER_001_C0029",
+    "chunk:PAPER_001_C0005"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨",
+      "贮藏"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": "贮藏",
+      "environment": [],
+      "disease": [],
+      "intent": "unknown",
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": []
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "stage",
+        "mention": "贮藏",
+        "status": "matched",
+        "entity_id": "v2:1df599bacfb4d6d5",
+        "canonical_name": "储藏期",
+        "candidates": [
+          {
+            "id": "v2:1df599bacfb4d6d5",
+            "name": "储藏期",
+            "type": "Stage",
+            "crop": [
+              "丰水",
+              "京白",
+              "南果",
+              "巴梨",
+              "库尔勒香梨",
+              "新高",
+              "早酥",
+              "梨",
+              "玉露香",
+              "砀山酥梨",
+              "红香酥",
+              "花盖梨",
+              "苹果梨",
+              "蜜梨",
+              "雪花",
+              "雪青",
+              "香水梨",
+              "鸭梨",
+              "黄冠",
+              "黄金"
+            ],
+            "region": [
+              "AU-VIC",
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "empty",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": "模型抽取失败；仅使用问题中逐字出现的图谱实体，未推测缺失条件。",
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_001_C0003",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 3,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9841269841269842
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0002",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 4,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9606894841269842
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0008",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 7,
+            "vector_rank": 2,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9471593644679827
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0029",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 4,
+            "vector_rank": 5,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9457932692307692
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0005",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 9,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9420289855072463
+          }
+        }
+      ]
+    },
+    "status": "validation_failed",
+    "grounding_audit": {
+      "passed": false,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "unsupported",
+          "reason": "事实字段没有实际引用证据。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中关于E3的转述均有E3支持：O2浓度一定时黑心褐变随CO2升高加重、生产建议CO2＜1.0%、O2降至5.0%加重果心褐变、西洋梨推迟气调可降低长期贮藏梨果心褐变，均见于E3原文。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning基于E3指出引言未表述鸭梨对低温敏感，也未表述长期贮藏“极易发生”黑心病或果心褐变，符合E3实际内容，未补造缺失路径。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice仅为请求补充原文或允许引用其他部分证据，未提出可核查的事实主张。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "answer": "1. 结论\n本次回答未通过证据核查，未发布生成内容。\n2. 依据\n存在未由引用证据支持的内容\n3. 推理路径\n未发布未经核查的路径。\n4. 建议\n请缩小问题范围或补充原文资料。\n5. 来源\n暂无已通过核查的结论来源。"
+  },
+  "evidence": [],
+  "error": "validation_failed",
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "根据该论文引言，鸭梨对低温和高浓度CO2敏感，长期贮藏过程中极易发生的采后生理病害为黑心病（果心褐变）[E3]。",
+        "basis": "论文引言指出：鸭梨气调贮藏研究发现，O2浓度一定时，黑心褐变程度随CO2浓度升高而显著加重，生产上建议CO2＜1.0%；CO2浓度一定，O2下降至5.0%时，也使果心褐变程度加重[E3]。引言同时提及西洋梨推迟气调贮藏建立时间可降低长期贮藏过程中梨果心褐变的发生[E3]。",
+        "reasoning": "问题限定为“根据论文引言”，故仅采用标注为“0 引言”的证据E3。E3明确将鸭梨长期贮藏中的采后生理病害指向黑心病/果心褐变，并说明其与高CO2及低O2条件相关[E3]。E1、E2、E4、E5虽也涉及黑心病与虎皮病，但属于正文或结论部分，不作为本题引言依据。",
+        "advice": "如需进一步了解该论文中不同O2浓度对黑心病、虎皮病等生理病害的具体影响数据，可查阅该论文正文与结论部分[E1][E2][E4]。",
+        "citations": [
+          "E3"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2244,
+        "completion_tokens": 305,
+        "total_tokens": 2549,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2116
+      },
+      "model": "deepseek-flash",
+      "response_id": "59e1c936-b272-4fda-94d7-6ad497ba4c5b",
+      "seconds": 7.909964300008141,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "证据不足，无法回答。所引论文引言未表述“鸭梨对低温和高浓度CO2敏感，长期贮藏过程中极易发生哪些采后生理病害”这一结论。",
+        "basis": "论文引言仅提到：鸭梨气调贮藏研究中，O2浓度一定时黑心褐变程度随CO2浓度升高而显著加重，生产上建议CO2＜1.0%；CO2浓度一定、O2下降至5.0%时也使果心褐变程度加重[E3]。引言还提到西洋梨推迟气调贮藏建立时间可降低长期贮藏过程中梨果心褐变的发生[E3]。",
+        "reasoning": "问题要求依据论文引言回答鸭梨对低温和高浓度CO2敏感及长期贮藏极易发生的采后生理病害。引言证据E3只涉及黑心褐变与CO2、O2浓度的关系，未表述鸭梨对低温敏感，也未表述鸭梨长期贮藏“极易发生”黑心病或果心褐变[E3]。因此不足以支持该结论。",
+        "advice": "请补充论文引言中关于鸭梨对低温、高浓度CO2敏感性及长期贮藏采后生理病害的具体原文，或允许引用正文与结论部分证据。",
+        "citations": [
+          "E3"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 3103,
+        "completion_tokens": 274,
+        "total_tokens": 3377,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176
+        },
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 927
+      },
+      "model": "deepseek-flash",
+      "response_id": "097dbf3d-0548-4588-9879-185dcd0b70d0",
+      "seconds": 6.863857399992412,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 29.093810300008045
+}

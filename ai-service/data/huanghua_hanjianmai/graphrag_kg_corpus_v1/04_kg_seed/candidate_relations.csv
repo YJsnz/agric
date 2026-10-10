@@ -1,0 +1,16 @@
+﻿source_id,subject,predicate,object,status
+W001,黄骅旱碱麦,APPLIES_IN,河北滨海盐碱区,candidate_requires_review
+W001,土壤含盐量1‰~3‰,HAS_ENVIRONMENT,旱碱麦生产,candidate_requires_review
+W008,干旱,INHIBITS,种子萌发,candidate_requires_review
+W008,高盐碱,INHIBITS,分蘖成穗,candidate_requires_review
+W008,低温寡照,INHIBITS,籽粒灌浆,candidate_requires_review
+W009,极端低温,INCREASES_RISK,旱碱麦生育受阻,candidate_requires_review
+W009,降水异常,AFFECTS,旱碱麦生长,candidate_requires_review
+W010,宽幅沟播,MITIGATES,旱盐胁迫,candidate_requires_review
+W010,增施有机肥,PROMOTES,土壤肥力,candidate_requires_review
+W011,有效降水下降,INCREASES_RISK,水分亏缺,candidate_requires_review
+W011,潜在蒸散上升,INCREASES_RISK,干旱胁迫,candidate_requires_review
+W012,捷麦19,HAS_TRAIT,耐盐碱,candidate_requires_review
+W012,捷麦20,HAS_TRAIT,耐盐碱,candidate_requires_review
+W015,黄骅旱碱麦原粮,HAS_QUALITY_INDICATOR,蛋白质/水分/容重/硬度/降落数值,candidate_requires_review
+W016,黄骅旱碱麦小麦粉,HAS_QUALITY_INDICATOR,蛋白质/湿面筋/水分/灰分,candidate_requires_review

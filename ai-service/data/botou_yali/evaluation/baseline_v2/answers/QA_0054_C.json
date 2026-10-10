@@ -1,0 +1,267 @@
+{
+  "id": "QA_0054",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0005",
+    "chunk:PAPER_001_C0004",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0029"
+  ],
+  "service_response": {
+    "status": "insufficient_evidence",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "no_factual_claims",
+          "reason": "该字段仅陈述现有证据无法回答具体延迟时间，未提出任何事实主张，也未引用证据，属于无事实的拒答。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中关于证据仅涉及O2浓度处理（1.0%、2.0%、3.0%、5.0%、10.0%加0.5% CO2，空气为对照）及降温程序（8℃预冷48 h，之后每2天降1℃，最终(0±0.5)℃、RH>95%贮藏）的描述与E3内容一致；关于不同O2浓度对黑心病、虎皮病、乙烯、乙醇等影响的描述与E1、E2、E4、E5内容一致；关于未提及“3年中试库黑心病跟踪调查”或“缓慢降温结合延迟气调”延迟时间的判断，经核查所引证据确实未包含该信息。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning指出问题要求的是特定试验中缓慢降温结合延迟气调方案里降温后延迟气调的时间，并说明检索到的证据E1-E5均未包含该试验设计或延迟气调时间的信息，因此无法从现有证据中得出答案；该推理与所引证据内容一致，未补造缺失路径。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "该字段仅建议补充论文中关于3年中试库黑心病跟踪调查、缓慢降温结合延迟气调试验设计的具体章节或数据，未提出任何事实主张，也未引用证据，属于无事实的补充资料请求。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0005",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " Besides that, the lower O2 treatments maintained TA and AA contents at a higher level in the early storage period, and delayed the yellow-turning of peel; ethanol was accumulated much more under the lower O2 concentration, which ranged from 150.89 mg·L-1 to 806.12 mg·L-1 after storage for 150 d; while with the increasing senescence browning of fruit in air, the ethanol content peaking at 1 500 mg·L-1 after storage for 270 d. 5.0% and lower O2 inhibited the ethylene biosynthesis and delayed the peaking time, and 1.0%-3.0% O2 could prohibit the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue significantly.【Conclusion】1.0%—3.0% O2 prohibited the superficial scald occurrence significantly, and delayed the decrease of TA and AA, inhibited the biosynthesis of ethylene and delayed the peaking time, down-regulated the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue, prolonged the storage period of Yali pear significantly.",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0004",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+        "pages": [
+          1,
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0029",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "4  结论",
+        "text": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，能更好地维持果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。因此，建议生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "现有证据无法回答缓慢降温结合延迟气调时降温后延迟气调的具体时间。",
+    "basis": "证据仅涉及气调贮藏的O2浓度处理（1.0%、2.0%、3.0%、5.0%、10.0%加0.5% CO2，空气为对照）及降温程序（8℃预冷48 h，之后每2天降1℃，最终(0±0.5)℃、RH>95%贮藏） [E3] ，以及不同O2浓度对黑心病、虎皮病、乙烯、乙醇等的影响 [E1]  [E2]  [E4]  [E5] ，未提及“3年中试库黑心病跟踪调查”或“缓慢降温结合延迟气调”的延迟时间。",
+    "reasoning": "问题要求的是特定试验（3年中试库黑心病跟踪调查）中缓慢降温结合延迟气调方案里降温后延迟气调的时间。检索到的证据 [E1] - [E5] 均未包含该试验设计或延迟气调时间的信息，因此无法从现有证据中得出答案。",
+    "advice": "请补充该论文中关于3年中试库黑心病跟踪调查、缓慢降温结合延迟气调试验设计的具体章节或数据，以便进一步核查。",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 0.6666666666666666,
+  "judge": {
+    "result": {
+      "correctness": "incorrect",
+      "reason": "参考答案明确给出“降温后30—35 d”，且论文原文证据中直接包含该信息。回答却称现有证据无法回答，属于对可回答问题错误拒答，未给出关键时间数值。",
+      "claims": [
+        {
+          "claim": "现有证据无法回答缓慢降温结合延迟气调时降温后延迟气调的具体时间。",
+          "status": "contradicted",
+          "reason": "论文原文明确写明“缓慢降温结合延迟气调（降温后30—35 d）”，因此该断言与提供证据相反。"
+        },
+        {
+          "claim": "证据仅涉及气调贮藏的O2浓度处理（1.0%、2.0%、3.0%、5.0%、10.0%加0.5% CO2，空气为对照）及降温程序（8℃预冷48 h，之后每2天降1℃，最终(0±0.5)℃、RH>95%贮藏）。",
+          "status": "supported",
+          "reason": "E3中描述了预冷、降温及不同O2浓度加0.5% CO2气调处理，空气为对照。"
+        },
+        {
+          "claim": "检索到的证据均未包含“3年中试库黑心病跟踪调查”或“缓慢降温结合延迟气调”的延迟时间。",
+          "status": "contradicted",
+          "reason": "original_evidence中明确包含“3 年的中试库黑心病跟踪调查表明，缓慢降温结合延迟气调（降温后30—35 d）”，因此并非未包含。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2704,
+      "completion_tokens": 312,
+      "total_tokens": 3016,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 1936
+    },
+    "model": "deepseek-flash",
+    "response_id": "142dd59d-8ce8-4638-a3a8-c770f06d0f16",
+    "seconds": 6.84636500000488,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "现有证据无法回答缓慢降温结合延迟气调时降温后延迟气调的具体时间。",
+        "basis": "证据仅涉及气调贮藏的O2浓度处理（1.0%、2.0%、3.0%、5.0%、10.0%加0.5% CO2，空气为对照）及降温程序（8℃预冷48 h，之后每2天降1℃，最终(0±0.5)℃、RH>95%贮藏）[E3]，以及不同O2浓度对黑心病、虎皮病、乙烯、乙醇等的影响[E1][E2][E4][E5]，未提及“3年中试库黑心病跟踪调查”或“缓慢降温结合延迟气调”的延迟时间。",
+        "reasoning": "问题要求的是特定试验（3年中试库黑心病跟踪调查）中缓慢降温结合延迟气调方案里降温后延迟气调的时间。检索到的证据[E1]-[E5]均未包含该试验设计或延迟气调时间的信息，因此无法从现有证据中得出答案。",
+        "advice": "请补充该论文中关于3年中试库黑心病跟踪调查、缓慢降温结合延迟气调试验设计的具体章节或数据，以便进一步核查。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2189,
+        "completion_tokens": 307,
+        "total_tokens": 2496,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1933
+      },
+      "model": "deepseek-flash",
+      "response_id": "0c3b4246-d3fc-4cad-afd8-ccce2dbe6cf8",
+      "seconds": 6.5444132999982685,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 20.68804480000108
+}

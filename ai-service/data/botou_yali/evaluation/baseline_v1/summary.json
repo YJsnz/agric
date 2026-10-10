@@ -1,0 +1,405 @@
+{
+  "generated_at": "2026-09-21T18:11:17.265526",
+  "manifest": {
+    "version": "pilot-64-v1",
+    "qa_sha256": "00f491b63fa1c15666f7ebfb9e4de25571a8cf25a91ec6bfb422164af436fcc4",
+    "index_sha256": "028377282e32fb093be97aab96ca486fa39e5333b06e0248ff50500fb1c6eee8",
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "model": "deepseek-chat",
+    "selected_ids": [
+      "QA_0007",
+      "QA_0014",
+      "QA_0025",
+      "QA_0028",
+      "QA_0034",
+      "QA_0047",
+      "QA_0049",
+      "QA_0054",
+      "QA_0055",
+      "QA_0072",
+      "QA_0079",
+      "QA_0087",
+      "QA_0095",
+      "QA_0096",
+      "QA_0098",
+      "QA_0099",
+      "QA_0104",
+      "QA_0105",
+      "QA_0110",
+      "QA_0111",
+      "QA_0113",
+      "QA_0121",
+      "QA_0123",
+      "QA_0143",
+      "QA_0145",
+      "QA_0147",
+      "QA_0148",
+      "QA_0153",
+      "QA_0161",
+      "QA_0169",
+      "QA_0171",
+      "QA_0173",
+      "QA_0178",
+      "QA_0180",
+      "QA_0181",
+      "QA_0190",
+      "QA_0197",
+      "QA_0199",
+      "QA_0200",
+      "QA_0205",
+      "QA_0207",
+      "QA_0219",
+      "QA_0220",
+      "QA_0233",
+      "QA_0235",
+      "QA_0246",
+      "QA_0253",
+      "QA_0279",
+      "QA_0292",
+      "QA_0299",
+      "QA_0308",
+      "QA_0311",
+      "QA_0319",
+      "QA_0322",
+      "QA_0329",
+      "QA_0331",
+      "QA_0334",
+      "QA_0335",
+      "QA_0336",
+      "QA_0337",
+      "QA_0338",
+      "QA_0341",
+      "QA_0347",
+      "QA_0348"
+    ],
+    "seed": "20260921",
+    "top_k": 5,
+    "vector_candidates": 20,
+    "graph_path_budget": 20,
+    "temperature": 0,
+    "selection": "all 27 minority-type questions + 37 hash-ordered factual questions, paper round-robin",
+    "type_counts": {
+      "factual": 37,
+      "multi_hop": 5,
+      "cultivation_management": 3,
+      "postharvest_storage": 5,
+      "causal": 13,
+      "disease": 1
+    },
+    "graph_sha256": "3c9ebb0838fb89f67b1ac733fd5b8b52426d0b6abe99e454311f0c507d49d9ac",
+    "started_at": "2026-09-21T09:47:04.285881+00:00"
+  },
+  "arms": {
+    "A": {
+      "n": 64,
+      "judged_n": 64,
+      "failures": 0,
+      "correct_n": 1,
+      "accuracy": 0.015625,
+      "correctness_labels": {
+        "abstain": 60,
+        "incorrect": 3,
+        "correct": 1
+      },
+      "answer_entity_surface_recall": 0.5763888888888888,
+      "evidence_chunk_citation_hit": null,
+      "evidence_source_citation_hit": null,
+      "causal_n": 12,
+      "causal_correct_n": 0,
+      "causal_accuracy": 0,
+      "unsupported_answer_rate_proxy": 0.34375,
+      "contradiction_answer_rate": 0.3125,
+      "claim_counts": {
+        "unverifiable": 19,
+        "contradicted": 42,
+        "supported": 4
+      },
+      "unsupported_claim_rate_proxy": 0.9384615384615385,
+      "abstention_rate": 0.9375,
+      "graph_top5_questions": 0,
+      "by_type": {
+        "causal": {
+          "n": 13,
+          "accuracy": 0
+        },
+        "cultivation_management": {
+          "n": 3,
+          "accuracy": 0.3333333333333333
+        },
+        "disease": {
+          "n": 1,
+          "accuracy": 0
+        },
+        "factual": {
+          "n": 37,
+          "accuracy": 0
+        },
+        "multi_hop": {
+          "n": 5,
+          "accuracy": 0
+        },
+        "postharvest_storage": {
+          "n": 5,
+          "accuracy": 0
+        }
+      },
+      "recall@5": null,
+      "mrr@5": null,
+      "recall@10": null,
+      "mrr@10": null,
+      "recall@20": null,
+      "mrr@20": null
+    },
+    "B": {
+      "n": 64,
+      "judged_n": 43,
+      "failures": 21,
+      "correct_n": 37,
+      "accuracy": 0.578125,
+      "correctness_labels": {
+        "correct": 37,
+        "missing": 21,
+        "abstain": 3,
+        "incorrect": 1,
+        "partial": 2
+      },
+      "answer_entity_surface_recall": 0.5963541666666666,
+      "evidence_chunk_citation_hit": 0.53125,
+      "evidence_source_citation_hit": 0.640625,
+      "causal_n": 12,
+      "causal_correct_n": 8,
+      "causal_accuracy": 0.6666666666666666,
+      "unsupported_answer_rate_proxy": 0.18604651162790697,
+      "contradiction_answer_rate": 0.11627906976744186,
+      "claim_counts": {
+        "supported": 194,
+        "contradicted": 8,
+        "unverifiable": 4
+      },
+      "unsupported_claim_rate_proxy": 0.05825242718446602,
+      "abstention_rate": 0.06976744186046512,
+      "graph_top5_questions": 0,
+      "by_type": {
+        "causal": {
+          "n": 13,
+          "accuracy": 0.6923076923076923
+        },
+        "cultivation_management": {
+          "n": 3,
+          "accuracy": 0.3333333333333333
+        },
+        "disease": {
+          "n": 1,
+          "accuracy": 0
+        },
+        "factual": {
+          "n": 37,
+          "accuracy": 0.5405405405405406
+        },
+        "multi_hop": {
+          "n": 5,
+          "accuracy": 0.6
+        },
+        "postharvest_storage": {
+          "n": 5,
+          "accuracy": 0.8
+        }
+      },
+      "recall@5": 0.75,
+      "mrr@5": 0.4200520833333333,
+      "recall@10": 0.921875,
+      "mrr@10": 0.4424231150793651,
+      "recall@20": 0.984375,
+      "mrr@20": 0.4472156315906316
+    },
+    "C": {
+      "n": 64,
+      "judged_n": 42,
+      "failures": 22,
+      "correct_n": 30,
+      "accuracy": 0.46875,
+      "correctness_labels": {
+        "partial": 6,
+        "correct": 30,
+        "missing": 22,
+        "abstain": 3,
+        "incorrect": 3
+      },
+      "answer_entity_surface_recall": 0.5251736111111112,
+      "evidence_chunk_citation_hit": 0.375,
+      "evidence_source_citation_hit": 0.625,
+      "causal_n": 12,
+      "causal_correct_n": 6,
+      "causal_accuracy": 0.5,
+      "unsupported_answer_rate_proxy": 0.19047619047619047,
+      "contradiction_answer_rate": 0.14285714285714285,
+      "claim_counts": {
+        "supported": 217,
+        "contradicted": 10,
+        "unverifiable": 2
+      },
+      "unsupported_claim_rate_proxy": 0.05240174672489083,
+      "abstention_rate": 0.07142857142857142,
+      "graph_top5_questions": 0,
+      "by_type": {
+        "causal": {
+          "n": 13,
+          "accuracy": 0.46153846153846156
+        },
+        "cultivation_management": {
+          "n": 3,
+          "accuracy": 0.6666666666666666
+        },
+        "disease": {
+          "n": 1,
+          "accuracy": 0
+        },
+        "factual": {
+          "n": 37,
+          "accuracy": 0.4594594594594595
+        },
+        "multi_hop": {
+          "n": 5,
+          "accuracy": 0.4
+        },
+        "postharvest_storage": {
+          "n": 5,
+          "accuracy": 0.6
+        }
+      },
+      "recall@5": 0.609375,
+      "mrr@5": 0.36692708333333335,
+      "recall@10": 0.875,
+      "mrr@10": 0.40226314484126985,
+      "recall@20": 0.953125,
+      "mrr@20": 0.4088031543109668
+    },
+    "D": {
+      "n": 64,
+      "judged_n": 50,
+      "failures": 14,
+      "correct_n": 14,
+      "accuracy": 0.21875,
+      "correctness_labels": {
+        "abstain": 31,
+        "missing": 14,
+        "correct": 14,
+        "partial": 2,
+        "incorrect": 3
+      },
+      "answer_entity_surface_recall": 0.2361111111111111,
+      "evidence_chunk_citation_hit": 0.203125,
+      "evidence_source_citation_hit": 0.296875,
+      "causal_n": 12,
+      "causal_correct_n": 1,
+      "causal_accuracy": 0.08333333333333333,
+      "unsupported_answer_rate_proxy": 0.1,
+      "contradiction_answer_rate": 0.1,
+      "claim_counts": {
+        "supported": 93,
+        "contradicted": 10,
+        "unverifiable": 1
+      },
+      "unsupported_claim_rate_proxy": 0.10576923076923077,
+      "abstention_rate": 0.62,
+      "graph_top5_questions": 0,
+      "by_type": {
+        "causal": {
+          "n": 13,
+          "accuracy": 0.07692307692307693
+        },
+        "cultivation_management": {
+          "n": 3,
+          "accuracy": 0.6666666666666666
+        },
+        "disease": {
+          "n": 1,
+          "accuracy": 0
+        },
+        "factual": {
+          "n": 37,
+          "accuracy": 0.1891891891891892
+        },
+        "multi_hop": {
+          "n": 5,
+          "accuracy": 0.2
+        },
+        "postharvest_storage": {
+          "n": 5,
+          "accuracy": 0.6
+        }
+      },
+      "recall@5": 0.34375,
+      "mrr@5": 0.20572916666666666,
+      "recall@10": 0.4375,
+      "mrr@10": 0.21789434523809523,
+      "recall@20": 0.484375,
+      "mrr@20": 0.22203733766233766
+    }
+  },
+  "vector_all_350": {
+    "5": {
+      "recall": 0.6228571428571429,
+      "mrr": 0.3933809523809524
+    },
+    "10": {
+      "recall": 0.8314285714285714,
+      "mrr": 0.4209297052154195
+    },
+    "20": {
+      "recall": 0.9714285714285714,
+      "mrr": 0.4310240227117715
+    }
+  },
+  "paired_comparisons": {
+    "D_vs_A": {
+      "wins": 13,
+      "ties": 51,
+      "losses": 0,
+      "accuracy_difference": 0.203125
+    },
+    "D_vs_B": {
+      "wins": 5,
+      "ties": 31,
+      "losses": 28,
+      "accuracy_difference": -0.359375
+    },
+    "D_vs_C": {
+      "wins": 1,
+      "ties": 46,
+      "losses": 17,
+      "accuracy_difference": -0.25
+    }
+  },
+  "recorded_api_usage": {
+    "prompt_tokens": 718185,
+    "completion_tokens": 98287,
+    "total_tokens": 816472
+  },
+  "usage_note": "仅成功生成/评审请求返回的用量；不含实体抽取、失败重试，不能当账单总量",
+  "complete": true,
+  "all_answers_judged": false,
+  "indexed_corpus": {
+    "model": "BAAI/bge-small-zh-v1.5",
+    "dimension": 512,
+    "chunk_count": 129,
+    "vector_count": 225,
+    "model_sha256": "1294ea4b6331115a353d81f96b85e8c8d7fdcc284453d5b2fab5b016230aad38",
+    "tokenizer_sha256": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26"
+  },
+  "selected_evidence_clusters": 34,
+  "models_observed": {
+    "deepseek-flash": 169,
+    "null": 83
+  },
+  "retrieval_diagnostics": {
+    "completed_questions": 64,
+    "failed_questions": 2,
+    "C_graph_candidate_questions": 0,
+    "D_graph_candidate_questions": 0,
+    "D_empty_questions": 30,
+    "document_exclusion_occurrences": {
+      "stage:mismatch": 600
+    }
+  }
+}

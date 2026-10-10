@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "crop": "jujube",
+  "task": "fruit_bruise",
+  "visual": {
+    "class": "bruised",
+    "label_zh": "碰伤/机械损伤类视觉表现",
+    "confidence": 1.0,
+    "topk": [
+      {
+        "class": "bruised",
+        "label_zh": "碰伤/机械损伤类视觉表现",
+        "confidence": 1.0
+      },
+      {
+        "class": "healthy",
+        "label_zh": "正常果实外观",
+        "confidence": 9.284182866942103e-10
+      }
+    ],
+    "model_name": "jujube_fruit_bruise_yolo11n_cls_v1",
+    "model_version": "v1",
+    "task": "fruit_bruise",
+    "is_diagnosis": false,
+    "confidence_level": "high"
+  },
+  "visual_confidence_level": "high",
+  "mapped_entity": {
+    "id": "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+    "name": "碰伤/机械损伤类视觉表现",
+    "type": "FruitCondition",
+    "is_diagnosis": false
+  },
+  "context": {
+    "temperature": null,
+    "humidity": null,
+    "storage_temperature": null,
+    "storage_humidity": null,
+    "storage_days": null,
+    "harvest_method": null,
+    "transport_condition": null,
+    "notes": null
+  },
+  "reasoning": {
+    "status": "insufficient_evidence",
+    "answer": "当前仅能提供视觉线索；综合研判服务暂不可用，尚不能据此确定原因。\n现有损伤相关证据主要为室内离体刺伤接种试验，不能证明自然碰伤在实际仓储中必然导致腐败。",
+    "entities": [],
+    "paths": [],
+    "evidence": [],
+    "citations": [],
+    "generation_called": false,
+    "grounding": {
+      "passed": null,
+      "method": "verbatim_retrieval_fallback_no_generated_claims",
+      "upstream": null
+    }
+  },
+  "risk": {
+    "stage": "postharvest",
+    "type": "postharvest visual risk evidence",
+    "level": null
+  },
+  "limitations": [
+    "仅为视觉证据，不是食品安全、是否可食用、储藏寿命、疾病最终确诊或腐败原因诊断；分类得分不是确诊概率。黄化不能直接解释为缺氮、缺铁或盐害。",
+    "视觉展示级别不是风险等级；risk.level 未评分。",
+    "现有损伤相关证据主要为室内离体刺伤接种试验，不能证明自然碰伤在实际仓储中必然导致腐败。"
+  ],
+  "degraded": true,
+  "degraded_mode": "graphrag_unavailable"
+}

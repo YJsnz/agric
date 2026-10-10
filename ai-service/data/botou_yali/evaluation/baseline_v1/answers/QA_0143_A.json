@@ -1,0 +1,56 @@
+{
+  "id": "QA_0143",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法确定具体开始出现果心褐变的时间。",
+      "basis": "未提供该论文的具体内容，我无法获取其试验数据。",
+      "reasoning": "问题要求依据特定论文《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》回答早采缓慢降温和急速降温处理下鸭梨果心褐变的起始时间。由于没有该论文的原文或数据，不能编造具体时间点。",
+      "advice": "建议查阅该论文原文，在结果部分查找果心褐变指数或褐变发生率随时间变化的图表，以确定具体开始出现褐变的天数。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 158,
+      "completion_tokens": 143,
+      "total_tokens": 301,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 158
+    },
+    "model": "deepseek-flash",
+    "response_id": "1bbe967a-c68f-4dea-9087-801763528a5f",
+    "seconds": 5.938660300000265,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.75,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何具体时间点，仅表示无法确定并建议查阅原文，属于没有作答。提供的原文证据明确支持早采缓慢降温和急速降温处理果实从12月20日（采后100 d）后开始出现果心褐变，因此该题可回答，拒答不能视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1068,
+      "completion_tokens": 81,
+      "total_tokens": 1149,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 940
+    },
+    "model": "deepseek-flash",
+    "response_id": "5dae137e-b371-46d9-90c8-c7c2973451eb",
+    "seconds": 5.518199900000127,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,31 @@
+import { createRequire } from 'node:module';
+import { writeFile } from 'node:fs/promises';
+const require=createRequire(new URL('../../vision-frontend/package.json',import.meta.url));
+const {chromium}=require('@playwright/test');
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const page=await browser.newPage({viewport:{width:1536,height:1000}});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+try{
+ await page.goto('http://127.0.0.1:8090/');
+ await page.locator('#crop-graph').waitFor();
+ const pear=await page.locator('.cw-status').innerText();
+ await page.locator('.cw-crop[data-crop-key="wheat"]').click();
+ await page.locator('#crop-graph .cw-node[data-id^="huanghua_hanjianmai:"]').first().waitFor();
+ const wheat=await page.locator('.cw-status').innerText();
+ await page.locator('#crop-graph .cw-node[data-id^="huanghua_hanjianmai:"]').first().press('Enter');
+ await page.locator('.cw-info .cw-evidence').first().click();
+ const details=await page.locator('.cw-info').innerText();
+ if(!details.includes('PDF第'))throw Error('Missing page-level evidence in reused detail panel');
+ const risks=await page.locator('.cw-qa').innerText();
+ if(!risks.includes('AI 问答'))throw Error('Wheat RAG question panel missing');
+ await page.screenshot({path:'data/huanghua_hanjianmai/evaluation/dashboard-wheat.png',fullPage:true});
+ const pearResponse=page.waitForResponse(r=>r.url().endsWith('/api/graph?crop=pear'));
+ await page.locator('.cw-crop[data-crop-key="pear"]').click();
+ await pearResponse;
+ await page.waitForFunction(()=>document.querySelector('#crop-graph .cw-node[data-id="nav:root"]')?.textContent.includes('泊头鸭梨'));
+ if(await page.locator('#crop-graph .cw-node[data-id^="huanghua_hanjianmai:"]').count())throw Error('Cross-crop leakage');
+ if(errors.length)throw Error(errors.join('\n'));
+ const report={passed:true,pear,wheat,details,risks,errors};
+ await writeFile('data/huanghua_hanjianmai/evaluation/dashboard-test.json',JSON.stringify(report,null,2));
+ console.log(JSON.stringify(report));
+}finally{await browser.close();}

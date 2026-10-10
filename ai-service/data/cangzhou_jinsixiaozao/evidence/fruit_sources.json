@@ -1,0 +1,53 @@
+[
+  {
+    "id": "JF001",
+    "title": "鲜枣贮藏保鲜操作规程",
+    "publisher": "农业农村部农产品冷链物流标准化技术委员会",
+    "region": "全国鲜枣通用（非沧州专项验证）",
+    "year": 2023,
+    "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+    "local_path": "evidence/raw/JF001.txt",
+    "sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+    "original_html_sha256": "5b4a65505f521590d6c7fae257a8524d9ebabf119c14d131356d20dc61c3356b",
+    "source_type": "official_guidance",
+    "evidence_level": "general_authoritative",
+    "evidence_levels_compat": [
+      "L3"
+    ],
+    "usage": "conditional_fresh_fruit_guidance"
+  },
+  {
+    "id": "JF002",
+    "title": "鲜枣家族各有特长",
+    "publisher": "中国农业大学新闻网（转载科普）",
+    "region": "全国鲜枣科普（非沧州专项验证）",
+    "year": 2019,
+    "url": "https://news.cau.edu.cn/art/2019/10/12/art_8779_641338.html",
+    "local_path": "evidence/raw/JF002.txt",
+    "sha256": "358d6accf81a2c86d3f9fc9c57427fa4b67c6b0da5f0adaf0bab4c6520371919",
+    "original_html_sha256": "50fe5578deca7bcc819ca02c521c56d20a9d0c95c6a3d89e4bc6d70e5780db67",
+    "source_type": "university_republished_science",
+    "evidence_level": "general_authoritative",
+    "evidence_levels_compat": [
+      "L3"
+    ],
+    "usage": "conditional_fresh_fruit_guidance"
+  },
+  {
+    "id": "JF003",
+    "title": "圆通给你送“小糖豆”了",
+    "publisher": "国家邮政局",
+    "region": "沧州冬枣物流案例",
+    "year": 2025,
+    "url": "https://www.spb.gov.cn/gjyzj/c100196/202510/3fc167f538174e3094920dcbdd388e13.shtml",
+    "local_path": "evidence/raw/JF003.txt",
+    "sha256": "0f4aa4d7d4c6aeaafc49d80d88c7dcb4bd4fb495c3ae28532b9cb0eda77396ce",
+    "original_html_sha256": "3223c92f681030f0fb8f4860574e50aecd9af66264107b7e1596e7dcc62d4f68",
+    "source_type": "official_logistics_news",
+    "evidence_level": "general_authoritative",
+    "evidence_levels_compat": [
+      "L3"
+    ],
+    "usage": "local_logistics_context_only_not_causal_evidence"
+  }
+]

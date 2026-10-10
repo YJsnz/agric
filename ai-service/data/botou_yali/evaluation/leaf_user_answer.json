@@ -1,0 +1,270 @@
+{
+  "entities": [
+    "泊头鸭梨",
+    "泊头",
+    "叶片出现黑色斑点"
+  ],
+  "extracted_entities": {
+    "crop": "泊头鸭梨",
+    "region": "泊头",
+    "stage": null,
+    "environment": [],
+    "disease": [],
+    "pest": [],
+    "symptom": [
+      "叶片出现黑色斑点"
+    ],
+    "quality": [],
+    "intervention": [],
+    "risk": [],
+    "intent": "disease_identification"
+  },
+  "alignments": [
+    {
+      "field": "crop",
+      "mention": "泊头鸭梨",
+      "status": "matched",
+      "entity_id": "v2:7b265c03320d54ee",
+      "canonical_name": "泊头鸭梨",
+      "candidates": [
+        {
+          "id": "v2:7b265c03320d54ee",
+          "name": "泊头鸭梨",
+          "type": "Crop",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "泊头市"
+          ]
+        }
+      ]
+    },
+    {
+      "field": "region",
+      "mention": "泊头",
+      "status": "matched",
+      "entity_id": "v2:9a8a610336e9e72c",
+      "canonical_name": "泊头市",
+      "candidates": [
+        {
+          "id": "v2:9a8a610336e9e72c",
+          "name": "泊头市",
+          "type": "Region",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "泊头市"
+          ]
+        }
+      ],
+      "raw_region": "泊头",
+      "aligned_region": "泊头市"
+    },
+    {
+      "field": "symptom",
+      "mention": "叶片出现黑色斑点",
+      "status": "matched",
+      "entity_id": "v2:6917a6e0e8f5c269",
+      "canonical_name": "叶片黑色斑点",
+      "candidates": [
+        {
+          "id": "v2:6917a6e0e8f5c269",
+          "name": "叶片黑色斑点",
+          "type": "Symptom",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "US-CA"
+          ]
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "neo4j": {
+      "status": "empty",
+      "count": 0,
+      "truncated": false
+    },
+    "faiss": {
+      "status": "ok",
+      "count": 1
+    }
+  },
+  "evidence_rejections": [],
+  "corpus_sha256": "7e0493281ac83f3e80d581dbf416de7f80e608ca12e8e2d570636b63d09bdab9",
+  "reasoning_paths": [],
+  "sources": [
+    {
+      "source_id": "GOV_001",
+      "title": "鸭梨黑星病夏季如何防治（农业农村局公开科普）",
+      "url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+      "citations": [
+        {
+          "evidence_id": "E1",
+          "chunk_id": "GOV_001_C0001",
+          "section": "网页正文",
+          "pages": []
+        }
+      ]
+    }
+  ],
+  "generation_called": true,
+  "policy": {
+    "purpose": "local_advice",
+    "mode": "strict",
+    "titles": [],
+    "notice": "当地建议要求适用性明确；未知资料只作研究参考。"
+  },
+  "extraction_notice": null,
+  "pipeline_version": "agricultural-v2",
+  "unresolved_entities": [],
+  "preliminary_assessment": {
+    "available": false,
+    "summary": "",
+    "candidate_risks": [],
+    "supporting_points": [],
+    "uncertainties": []
+  },
+  "local_conclusion": {
+    "available": false,
+    "reason": "尚无经过本地结论核验的输出。"
+  },
+  "recommended_observations": [],
+  "citations": [],
+  "grounding": null,
+  "reference_materials": [
+    {
+      "source_id": "UNI_001",
+      "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+      "url": "https://www.zwbch.com/changshi/view_14.html",
+      "chunk_id": "UNI_001_C0002",
+      "reasons": [
+        "scope:not_reviewed_for_diagnostic_explanation"
+      ],
+      "usable_for_answer": false
+    },
+    {
+      "source_id": "UNI_001",
+      "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+      "url": "https://www.zwbch.com/changshi/view_14.html",
+      "chunk_id": "UNI_001_C0001",
+      "reasons": [
+        "scope:not_reviewed_for_diagnostic_explanation"
+      ],
+      "usable_for_answer": false
+    }
+  ],
+  "discovery_paths": [],
+  "evidence_roles": {
+    "candidate_explanation": "候选与通用机理，不是本地确诊",
+    "production_background": "区域生产背景，不替代本地病害证据",
+    "local_advice": "仍须通过原有地区、作物、阶段及审核约束"
+  },
+  "ranking": {
+    "fusion_config": {
+      "rrf_k": 60,
+      "metadata_strength": 0.1,
+      "calibrated": false
+    },
+    "candidate_count": 1,
+    "selected": [
+      {
+        "candidate_id": "chunk:GOV_001_C0001",
+        "kind": "document_chunk",
+        "features": {
+          "neural_rank": 1,
+          "vector_rank": 1,
+          "scope_match": 0.7,
+          "evidence_quality": 0.7,
+          "relevance_rrf": 1.0
+        }
+      }
+    ]
+  },
+  "status": "insufficient_evidence",
+  "answer": "1. 结论\n现有证据仅支持将鸭梨叶片黑色斑点作为梨黑星病（梨疮痂病）的候选解释方向，不能据此在泊头本地确诊，也不构成泊头本地生产指导  [E1] 。\n2. 依据\n证据[E1]为农业农村局公开科普，描述梨黑星病主要危害叶片和果实，叶片染病后叶背面产生圆形、椭圆形或不规则形病斑，病斑沿叶脉扩展并产生辐射状黑色霉状物，严重时整个叶背面布满黑霉  [E1] 。该资料属于通用权威资料，其证据范围限定为候选解释和通用机理，未提供河北或泊头当地验证，不能称为泊头本地病害证据  [E1] 。\n3. 推理路径\n用户描述为泊头鸭梨叶片出现黑色斑点，[E1]提供了梨黑星病叶片症状的通用描述，可作为候选方向之一  [E1] 。但[E1]未提供泊头本地的病害验证，也未提供当地发生情况、品种抗性、栽培管理或气候条件的本地证据，因此不能将通用资料与本地情况拼接为本地确诊  [E1] 。此外，[E1]中提到的防治方法和药剂属于原文通用内容，其药剂与剂量未作当前登记核验，不用于本地用药建议  [E1] 。\n4. 建议\n建议先进行田间观察以补充判断依据：观察黑色斑点主要出现在叶片正面还是背面，是否沿叶脉扩展并伴有黑色霉状物，是否同时危害果实，以及近期是否有高温高湿和降雨过程  [E1] 。可摘取典型病叶送当地植保或农技部门进一步鉴定，以明确是否为梨黑星病或其他原因。在未获得本地审核的防治方案前，不依据通用资料直接用药  [E1] 。\n5. 来源\n[E1] GOV_001：鸭梨黑星病夏季如何防治（农业农村局公开科普） https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:GOV_001_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "鸭梨黑星病夏季如何防治（农业农村局公开科普）",
+        "section": "网页正文",
+        "text": "梨黑星病又叫梨疮痂病，是梨树的主要病害。当前正值夏季，高温高湿有利于梨黑星病的发生。梨黑星病病原菌借雨水在梨园中扩散侵染，主要危害叶片、果实。叶片染病后，在叶背面产生圆形、椭圆形或不规则形病斑，病斑沿叶脉扩展，产生辐射状黑色霉状物，严重时整个叶背面布满黑霉，引起早期落叶。果实感病后，在果实表面产生一些大小不等的圆形病斑，病斑硬化后，表面粗糙，凹陷龟裂，呈疮痂状，病部伤口遇雨水极易被霉菌感染而腐烂。防治方法 1.农业防治。发现病叶、病果及时摘除，集中烧毁或深埋，防止病菌的扩散和蔓延。雨后及时排除积水，铲除果园内杂草，降低果园内潮湿度。结合夏剪，及时把直立枝、徒长枝、交叉枝从基部剪除，增加果园内通风透光性，改善果园小气候。2.药剂防治。雨前及时喷药预防，雨后及时喷药防治，喷药后遇雨及时补喷。用药可选用40%杜邦福星10000倍，10%苯醚甲环唑3000倍，80%汉邦多菌灵2000倍，可杀得叁仟2000倍，以上农药7-10天喷1次，连喷3-4次。各种杀菌剂要交替使用，以免产生抗药性。喷药时要注意喷布均匀，树冠上下，树膛内外，都要沾药，特别注意叶片的背面要喷上药。",
+        "pages": [],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [],
+        "evidence_level": "B",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "evidence_scope": {
+        "status": "general_authoritative",
+        "restrictions": [],
+        "allowed_uses": [
+          "candidate_explanation"
+        ],
+        "reasons": [
+          "已核验怀化市农业农村局政府网页，2017-01-17，农业科技报供稿",
+          "发布机构在湖南不等于原文通用机理仅适用于湖南；原文未提供河北或泊头当地验证",
+          "旧文药剂与剂量未作当前登记核验，不用于本地用药建议"
+        ],
+        "local_disease_validation": false,
+        "original_region": [],
+        "original_review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": [
+        "general_only:not_local_disease_validation_or_local_advice"
+      ]
+    }
+  ],
+  "grounding_audit": {
+    "passed": true,
+    "checks": [
+      {
+        "field": "conclusion",
+        "verdict": "supported",
+        "reason": "结论仅将梨黑星病作为候选解释方向，明确不能据此在泊头本地确诊、不构成本地生产指导，与E1的evidence_scope（general_authoritative，allowed_uses仅candidate_explanation，local_disease_validation=false）一致，未超出引用证据范围。"
+      },
+      {
+        "field": "basis",
+        "verdict": "supported",
+        "reason": "basis所述症状描述（主要危害叶片和果实、叶背面圆形/椭圆形/不规则形病斑、沿叶脉扩展、辐射状黑色霉状物、严重时布满黑霉）均直接来自E1原文；对E1属通用权威资料、未提供河北或泊头当地验证的限定也与E1的evidence_scope一致。"
+      },
+      {
+        "field": "reasoning",
+        "verdict": "supported",
+        "reason": "reasoning正确指出E1仅提供通用症状描述可作候选方向，且E1未提供泊头本地验证、当地发生情况、品种抗性、栽培管理或气候条件，因此不能拼接为本地确诊；对药剂与剂量未作当前登记核验、不用于本地用药建议的表述与E1的scope_warnings及reasons一致。"
+      },
+      {
+        "field": "advice",
+        "verdict": "supported",
+        "reason": "建议内容限于田间观察（斑点位置、是否沿叶脉扩展伴黑色霉状物、是否危害果实、近期高温高湿和降雨）、送当地植保或农技部门鉴定、未获本地审核方案前不依据通用资料直接用药，均属候选解释模式允许的观察/补充信息/现场复核建议，未推荐药名、剂量、施药周期或生产操作。"
+      }
+    ],
+    "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+  },
+  "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明",
+  "user_answer": "现有证据仅支持将鸭梨叶片黑色斑点作为梨黑星病（梨疮痂病）的候选解释方向，不能据此在泊头本地确诊，也不构成泊头本地生产指导   。\n\n接下来可以做\n建议先进行田间观察以补充判断依据：观察黑色斑点主要出现在叶片正面还是背面，是否沿叶脉扩展并伴有黑色霉状物，是否同时危害果实，以及近期是否有高温高湿和降雨过程   。可摘取典型病叶送当地植保或农技部门进一步鉴定，以明确是否为梨黑星病或其他原因。在未获得本地审核的防治方案前，不依据通用资料直接用药   。\n\n先这样排查\n可以先从叶部病害、虫害损伤和近期喷药或肥害三个方向排查。黑色斑点只是症状，尚不能确定是哪一种病，也不能确定一定由病害引起。\n\n现在先做\n• 拍一张整株照片，以及同一片叶子的正面、背面近照。\n• 观察斑点是否扩大，有没有霉层、轮纹、虫体或叶缘缺口。\n• 记录开始出现的时间、受影响植株数量，以及近期降雨、浇水、喷药和施肥情况。\n• 暂不只凭这次结果选药；若持续扩展或多株出现，请带照片或样本请当地农技人员复核。\n\n通用初步排查，不是确诊，也不是已获本地证据支持的结论。",
+  "general_guidance": {
+    "available": true,
+    "basis": "general_triage_not_retrieved_evidence",
+    "notice": "通用初步排查，不是确诊，也不是已获本地证据支持的结论。",
+    "summary": "可以先从叶部病害、虫害损伤和近期喷药或肥害三个方向排查。黑色斑点只是症状，尚不能确定是哪一种病，也不能确定一定由病害引起。",
+    "next_steps": [
+      "拍一张整株照片，以及同一片叶子的正面、背面近照。",
+      "观察斑点是否扩大，有没有霉层、轮纹、虫体或叶缘缺口。",
+      "记录开始出现的时间、受影响植株数量，以及近期降雨、浇水、喷药和施肥情况。",
+      "暂不只凭这次结果选药；若持续扩展或多株出现，请带照片或样本请当地农技人员复核。"
+    ],
+    "citations": [],
+    "grounded": false
+  }
+}

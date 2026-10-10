@@ -1,0 +1,70 @@
+{
+  "id": "QA_0253",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法依据现有证据回答该问题。",
+    "basis": "未提供任何检索证据，且我无法确认《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的具体试验数据。",
+    "reasoning": "问题要求依据该论文中窖藏试验的SSC变化趋势作答，但证据列表为空，我也没有该论文的可靠记忆，因此不能给出具体趋势或数字。",
+    "advice": "请提供该论文的相关原文片段或数据表，或允许检索该论文后再作答。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何SSC变化趋势，明确表示无法依据现有证据作答，属于拒答；在可回答题中不算正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 555,
+      "completion_tokens": 44,
+      "total_tokens": 599,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 299
+    },
+    "model": "deepseek-flash",
+    "response_id": "aa97f122-6a3c-47d1-b4ef-4fc246d9df90",
+    "seconds": 5.540929899987532,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法依据现有证据回答该问题。",
+        "basis": "未提供任何检索证据，且我无法确认《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的具体试验数据。",
+        "reasoning": "问题要求依据该论文中窖藏试验的SSC变化趋势作答，但证据列表为空，我也没有该论文的可靠记忆，因此不能给出具体趋势或数字。",
+        "advice": "请提供该论文的相关原文片段或数据表，或允许检索该论文后再作答。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 196,
+        "completion_tokens": 121,
+        "total_tokens": 317,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 196
+      },
+      "model": "deepseek-flash",
+      "response_id": "a551af42-65c5-4d03-9971-7b2dc9b5bd56",
+      "seconds": 6.474046099989209,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.016773499999545
+}

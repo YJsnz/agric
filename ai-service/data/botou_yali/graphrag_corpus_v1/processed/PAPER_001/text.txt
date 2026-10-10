@@ -1,0 +1,704 @@
+中国农业科学  2020,53(23):4918-4928
+Scientia Agricultura Sinica                                                                 doi: 10.3864/j.issn.0578-1752.2020.23.016
+
+
+                                  开放科学（资源服务）标识码（OSID）：
+
+
+  不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响
+
+            杜艳民，王文辉，贾晓辉，佟伟，王阳，张鑫楠
+
+
+              （中国农业科学院果树研究所/辽宁省果品贮藏与加工重点实验室，辽宁兴城 125100）
+
+
+     摘要：【目的】明确环境氧气（O2）浓度对鸭梨采后贮藏品质及生理代谢的影响，为鸭梨采后生理病害防控，
+
+  延长贮藏期提供理论依据。【方法】将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱，设置1.0%、2.0%、
+
+   3.0%、5.0%及10.0%等不同O2浓度梯度，CO2浓度为0.5%，以空气处理为对照，分别于贮藏150、210 和270 d 及
+
+  货架7 或10 d，调查鸭梨虎皮指数和黑心指数，测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血
+
+  酸（AA）及色泽变化情况，利用气相色谱分析测定果肉和果心组织乙醇含量变化情况，监测果实呼吸速率和乙烯
+
+  产量；利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS和PbACO表达变化情况进行测定。【结果】低氧处理
+
+  显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数，贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到
+
+   低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2；同时，延缓了贮藏早期果实TA 和AA 下降，推
+
+  迟了果实果面转黄。气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围
+
+    为150.89—806.12 mg·L-1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；
+
+   同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织
+
+    中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了
+
+  乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3及PbACS1表达，更好地维持
+
+  了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生
+
+   产中鸭梨最佳O2浓度参数为3.0%—5.0%。
+
+     关键词：鸭梨；O2；生理病害；品质；乙烯
+
+  The Effects of Different Oxygen Concentration on Postharvest
+           Physiology and Storage Quality of Yali Pear
+
+       DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan
+
+   (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning
+
+                                            Province, Xingcheng 125100, Liaoning)
+
+
+
+     Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest
+physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali
+fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform
+size and ripeness without insect pests or mechanical injury were selected as research materials. The selected fruits were put into
+controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at
+(0±0.5) ℃ (RH＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%,
+5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA),
+
+
+
+收稿日期：2020-03-30；接受日期：2020-06-09
+基金项目：国家现代梨产业技术体系（CARS-28）、国家自然科学基金（32001761）
+联系方式：杜艳民，E-mail：duyanmin@caas.cn。通信作者王文辉，E-mail：wangwenhui@caas.cn
+
+23 期           杜艳民等：不同O2 浓度对鸭梨采后生理代谢及贮藏品质的影响                       4919
+
+ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS
+and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence
+and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically,
+after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0%
+O2＞1.0% O2＞3.0% O2＞2.0% O2. Besides that, the lower O2 treatments maintained TA and AA contents at a higher level in the
+early storage period, and delayed the yellow-turning of peel; ethanol was accumulated much more under the lower O2 concentration,
+which ranged from 150.89 mg·L-1 to 806.12 mg·L-1 after storage for 150 d; while with the increasing senescence browning of fruit in
+air, the ethanol content peaking at 1 500 mg·L-1 after storage for 270 d. 5.0% and lower O2 inhibited the ethylene biosynthesis and
+delayed the peaking time, and 1.0%-3.0% O2 could prohibit the relative expression of PbACO1, PbACO3 and PbACS1 genes in
+pericarp tissue significantly.【Conclusion】1.0%—3.0% O2 prohibited the superficial scald occurrence significantly, and delayed the
+decrease of TA and AA, inhibited the biosynthesis of ethylene and delayed the peaking time, down-regulated the relative expression
+of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue, prolonged the storage period of Yali pear significantly. However, 1.0%
+oxygen treatment increased the risk of heart browning to some extent. Therefore, the optimum oxygen concentration was proposed at
+3.0%-5.0% in commercial practice.
+    Key words: Yali pear; oxygen; disorders; quality; ethylene
+
+
+                         但不同品种及不同栽培管理条件下，梨果实采后生物
+0 引言
+                           学特性及内在品质差异较大，对贮藏环境O2 敏感性及
+  【研究意义】鸭梨（Pyrus bretschneideri Rehd.）   耐受度不同。研究发现，‘Beurré d’Anjou’经0.5% O2
+是我国传统特色主栽梨品种，季产年销，也是我国主   胁迫处理后，于1.0% O2+0.1% CO2 条件下可正常贮藏
+要仓储和出口品种[1]。但其对低温和高浓度CO2 敏感，    9.2 个月[10]；‘Abate Fetel’在0.8% O2+0.45% CO2 动
+长期贮藏过程中极易发生虎皮病和黑心病等采后生理  态气调条件下可贮藏7 个月，且未发生果心褐变[11-13]；
+病害，严重影响果实商品价值，造成巨大经济损失[2-3]。  ‘Rocha’在0.5% O2 条件下贮藏8.5 个月，7 d 货架
+目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两   （20℃）后仍较好地保持果实品质，未发生黑心病[14]。
+种方式，其中普通冷藏（环境温度：-1℃—0℃）一般   相比而言，‘Conference’一般在O2＞2.0%条件下
+可贮藏5—6 个月（从9 月至翌年3 月），气调贮藏（商  贮藏，过低的氧气浓度会加重贮藏初期黑心病的发
+业应用参数：10% O2+1% CO2）一般可贮藏6—8 个月   生[15-17]。关于鸭梨气调贮藏的研究最早可追溯到20
+（从9 月至翌年4 月）。整体来看，与市场正常供应   世纪90 年代，研究发现采用7.0%—10.0% O2 可显著
+需求（至翌年6 月）仍有较大差距[4-5]。研究低O2 浓  延长鸭梨贮藏期，贮藏213 d 及10 d 货架后（15℃），
+度对鸭梨采后生理代谢及贮藏品质的影响，对进一步  与空气对照相比，早期和晚期黑心病发生率降低，较
+延长鸭梨贮藏和货架供应期具有重要意义。【前人研  好地保持了梨果绿色和硬度；同时发现O2 浓度一定，
+究进展】气调贮藏是目前国内外商业应用最广泛的果  黑心褐变程度随CO2 浓度升高而显著加重，生产上建
+品贮藏技术，与普通冷藏相比，气调贮藏可显著延长   议CO2＜1.0%；CO2 浓度一定，O2 下降至5.0%时，
+苹果和梨采后贮藏和货架供应期。其主要原理是在低   也使果心褐变程度加重[18-20]。西洋梨采后气调贮藏研
+
+温的基础上，通过进一步降低环境氧气含量，来进一  究发现，与果实预冷后直接开始气调相比，推迟气调
+
+步抑制果实采后呼吸和乙烯等生理代谢水平，降低营  贮藏建立时间可显著降低长期贮藏过程中梨果心褐
+养损耗，延缓衰老，减轻生理病害发生，进而更好地   变的发生[21-22]。【本研究切入点】低氧及超低氧气调
+保持果实贮藏品质[6-8]。近年来，随着气体成分精准  处理作为防控果实采后生理病害发生，延长果实贮藏
+监测和控制技术的不断发展，果实气调贮藏中的O2  及货架供应期的关键技术在西方梨品种上广泛应用，
+浓度不断降低，从传统的静态低氧气调（O2：  而关于低氧处理对我国主要白梨品种采后生理代谢
+2.0%—5.0%），发展到静态超低氧气调（O2＜1.5%）  及品质维持的影响鲜有研究报道。【拟解决的关键问
+及前期超低氧胁迫气调（O2：0.5%，维持2 周），  题】明确不同O2 浓度处理下鸭梨采后生理代谢和品
+一直到目前的动态气调（O2：0.3%—0.5%），果实  质变化规律，探讨其对生理病害发生的影响，初步阐
+贮藏期不断被延长，果实品质得到了更好的维持[9]。  明低氧防控鸭梨采后生理病害发生的作用机制。
+
+4920                   中 国 农 业 科 学                                      53 卷
+
+                                                  1.2.2 果皮颜色 利用CR-400 色差计（MINOLTA，
+1 材料与方法
+                          日本）测定果实赤道部位对称两点色泽指数，其中L*
+1.1 材料与处理                    值表示果实亮度，0—100 分别表示果实由暗到亮变
+   本研究分别于2013—2014 和2014—2015 年两个  化；b*值表示黄色和蓝色之间的变化。
+贮季重复进行，并于2016—2019 年在河北石家庄地区    1.2.3 内在品质指标测定 利用果实质构仪（GS-15，
+气调贮藏企业开展中试。所用鸭梨试材均于9 月中旬  FTA2，南非）测定果实赤道部位对称两点去皮果肉硬度
+采自河北省石家庄市商品果园，试验果于采收次日经  （探头直径11 mm）；将果实纵切后，取出果心和种子，
+10 h 运回中国农业科学院果树研究所实验室。选取大  将果肉组织匀浆过滤，分别利用数显折光仪（PR-101，
+小均匀、果面整洁、无病虫害、无机械伤的果实进行  ATAGO，日本）测定果实可溶性固形物含量；可滴定
+试验处理。中试果于采收当天运回中试气调库，定期  酸和抗坏血酸含量使用自动智能电位滴定仪（808
+跟踪调研果实生理病害发生情况及货架表现。        Titrando，瑞典），分别用0.1 N NaOH 标准液和2,6-
+  将挑选后的果实置于气调试验箱，每个处理均设  二氯靛酚吲哚酚钠盐滴定；参考纪淑娟等[24]的方法，
+置3 个重复，每个重复处理果实约180 个；8℃预冷   采用日本岛津GC-2010 气相色谱仪和Tubro Matrix×40
+48 h 后开始阶段缓慢降温，每1 d 降0.5℃，直至环境   自动顶空进样器测定乙醇含量，单位为mg·L-1。
+温度降至（0±0.5）℃。稳定2 d 后，封口，开始进行    1.2.4 呼吸速率和乙烯产生速率 果实呼吸速率和
+气调贮藏（气调参数为O2：1.0%、2.0%、3.0%、5.0%  乙烯产生速率测定均采用SP—9890 气相色谱仪（山
+和10.0%；CO2：0.5%），以空气为对照，气调箱内  东，鲁南瑞虹仪器公司）测定，以mg CO2·kg-1·h-1 和μL
+相对湿度＞95.0%。贮藏150、210 及270 d 后取样，     C2H4·kg-1·h-1 计，色谱参数为进样器80℃，柱炉100℃，
+分别于取样次日及货架7 d 或10 d 进行果实组织褐变  检测器160℃，转化炉360℃。每个处理3 次重复，每
+指数调查与生理品质测定，每个处理每个重复每次取  个重复用果9 个。
+果实50 个，其中15 个果实用于生理病害调查和生理    1.2.5 总RNA 提取与cDNA 合成 根据柱式植物总
+品质测定，9 个果实用于测定呼吸速率和乙烯释放速   RNA 抽提纯化试剂盒SK8661（上海生工）说明书提
+率；另取5 个果实，用水果刀于果实赤道部位取果皮  取果皮组织总RNA，紫外分光光度计和1.5%琼脂糖
+组织（厚约2—3 mm）并立即用液氮速冻，-80℃超低  凝胶电泳检测质量合格的总RNA 采用RevertAid
+温冰箱保存备用；剩余果实置于20 ℃恒温箱    Premium Reverse Transcriptase （Thermo Scientific™
+（SANYO，日本）模拟货架，7 d 或10 d 后进行生理   EP0733，USA）试剂盒反转录为cDNA，作为乙烯合
+病害调查、生理品质测定及果皮冻样。中试果9—12℃  成与信号转导途径关键基因的表达分析。
+入库，35—40 d 降至（0±0.5）℃，气调贮藏参数为    1.2.6 乙烯合成基因表达分析 通过检索梨基因组
+3.0%—5.0% O2+0.5%—0.8% CO2。                  （Pear Genome Project，http://peargenome.niau.edu.cn），
+1.2 测定指标与方法                获得梨乙烯合成途径关键基因6 个，特异定量引物序
+1.2.1 虎皮指数和黑心指数 参照杜艳民等[23]方法  列参考慕茜[25]方法（表1），委托上海生工公司合成
+计算鸭梨虎皮病和黑心病发生指数，具体方法如下。  引物序列。参照SG Fast qPCR Master Mix（2X）（BBI）
+  虎皮指数：按褐变面积占果皮面积的百分比，共    （Roche 罗氏）（B639271）说明书配置总体积为20 µL
+分为5 级：果皮无褐变为0 级；褐变面积≤25%为1  的实时荧光定量PCR 反应液，包含10 µL 2×
+级；25%＜褐变面积≤50%为2 级；50%＜褐变面积    SybrGreen qPCR Master Mix、上下游引物各0.4 µL、
+≤75%为3 级；褐变面积＞75%为4 级。虎皮指数 = [∑     7.2 µL ddH2O、2 µL 模板。在LightCycler480 Software
+（虎皮级数×该级果数）/（调查总果数×4）]×100%。   Setup（Roche 罗氏）荧光定量PCR 仪上进行扩增，
+  黑心指数：沿果实赤道线作横切，按褐变面积占  扩增程序为：95℃预变性3 min；95℃变性7 s，57℃
+果心面积的百分比，共分为5 级：果心无褐变为0 级；  退火10 s，72℃延伸15 s，45 个循环。PCR 循环结束
+褐变面积≤25%为1 级；25%＜褐变面积≤50%为2   立即进行熔解程序。在Eppendorf 的Mastercycler® ep
+级；50%＜褐变面积≤75%为3 级；褐变面积＞75%     realplex 软件中自动生成标准曲线、熔解曲线和样品
+为4 级。黑心指数=[∑（黑心级数×该级果数）/（调    Ct 值。每个样品重复3 次。采用2-∆∆Ct 法计算基因在
+查总果数×4）]×100%。              各样品中的相对表达量。
+
+23 期           杜艳民等：不同O2 浓度对鸭梨采后生理代谢及贮藏品质的影响                       4921
+
+表1 引物序列
+Table 1  Primer sequences
+
+基因名称 Gene name  基因ID  Gene ID    正向引物 Forward primer sequence (5′-3′)     反向引物 Reverse primer sequence (5′-3′)
+
+PbACO1                   Pbr000093.1          GACGCTGGTGGTATCATCCT             TTCCGTCCGACTGAGCTATC
+
+PbACO2                   Pbr005179.1         GCAGTGATGCGGTGATCTAC            CCCAAACCAAAACTGGCCTT
+
+PbACO3                   Pbr031954.1         CAAGGATGGTGAATGGGTGGA           TCATCGCCTGGGTTGTAGAAC
+
+PbACS1                   Pbr015575.1         CCTGGGGTTCAAAGGGATCA            CCGCCGTTAAGACTACCCTA
+
+PbACS2                   Pbr019796.1         GTTGTGTCCGCAGCTACAAA            TGAGCCCACAAACAAGCATC
+
+PbACS3                   Pbr029891.1         GAAGTTTGGCAGCGAGTTCA            CAGATAGCATGGCGGAGAGA
+
+
+1.3 数据处理与分析                              O2 处理果实的虎皮症状快速发展，虎皮指数达
+   应用Excel 和SPSS 13.0 进行作图和方差分析。   30.56%，与空气对照水平接近；贮藏210 d，5.0%及以
+                                下O2 处理平均虎皮指数为3.26%，10% O2 和空气对
+2 结果
+                                 照虎皮指数分别为12.5%和38.56%；货架7 d，1.0%—
+2.1 不同O2浓度处理对生理病害发生的影响           3.0% O2 处理平均虎皮指数为5.99%，5.0% O2 处理虎
+2.1.1 虎皮指数 气调处理可显著降低贮藏和货架   皮指数快速升高，达27.78%；贮藏270 d 及货架7 d，
+期间鸭梨虎皮病的发生，但不同O2 浓度处理对虎皮病    1.0%—3.0% O2 平均虎皮指数18.86%，5.0% O2 平均虎
+的防控效果差异显著。具体来看，贮藏150 d，对照果   皮指数35.0%，10.0% O2 平均虎皮指数54.95%，空气
+实即发生虎皮病，气调果实均未发病；货架7 d，10%  对照平均虎皮指数64.29%（图1）。另外，通过3 年
+
+
+
+               1.0% O2+0.5% CO2   2.0% O2+0.5% CO2   3.0% O2+0.5% CO2   5.0% O2+0.5% CO2   10.0% O2+0.5% CO2  对照 CK
+         80                                                                   80
+                                                                       a                                                                            a
+         70                                                 b                70
+         60                                                                   60                                                 b
+         50                                                                   50                                                     c
+                                                  a                                                        a                    a                             a         40                                                                              40                                                                                                                             a                                                                                                        a
+                                                                                                            b                                                                                                                            d                                                         c       c
+         30                                                                   30                                        d
+                                                       d         20                                          b          d                        20                                               e
+         10                                    c  c  c  c                                     10   b    b  b           c  c  c
+          0                                                                    0
+                   150               210               270                           150+10            210+7             270+7
+
+              贮藏时间 Storage time (d)                       贮藏货架 Shelf-life period (d)
+
+         50                                                                   50
+         45                                                          a              45                                                           a
+         40                                                                   40                                             a       a  a                                                                                                                            b
+         35                                                                   35
+         30                                               b b                30                                               c
+         25                                             c                          25
+         20                                                              c                     20                              a                             c                                                                                                           a
+         15                                      a                                15                                      a
+                        b                                                          b                      a         10                        c          b    b                                       10            c  c       b    b    b
+          5   d d d                 c       c                                   5      d  d                      c
+          0                                                                   0
+                   150               210               270                           150+10            210+7             270+7
+
+              贮藏时间 Storage time (d)                       贮藏货架 Shelf-life period (d)
+
+
+     不同小写字母表示0.05 水平差异显著。下同 Different lowercase letters indicate significant difference at 5% level. The same as below
+
+
+           图1 不同O2浓度处理对鸭梨果实贮藏及货架期间黑心指数和虎皮指数的影响
+
+Fig. 1  Effects of different oxygen concentrations on browning heart incidence and superficial scald incidence during storage and
+
+          shelf-life period of Yali pear
+
+4922                   中 国 农 业 科 学                                      53 卷
+
+的中试库跟踪调查，采用3.0%—5.0% O2+0.5%—   AA 含量均显著高于低氧处理；贮藏270 d，各处理
+0.8% CO2参数，鸭梨贮藏期可延长至翌年6 月中下旬，  AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏
+虎皮病平均发生率＜5.0%，且货架期≥7 d。            270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量
+2.1.2 黑心指数发生情况 气调处理可显著降低鸭  均显著高于空气对照和1.0% O2。同时，5.0%及以下
+梨贮藏150 d 和210 d 后果实黑心指数（P＜0.05）；    O2 处理更好地保持了果实亮度及白度，贮藏270 d 及
+贮藏270 d 及货架7 d，各处理果实黑心指数快速上升，  货架7 d，L*值和b*值均显著高于10.0% O2 及空气对
+从高到低依次为：CK（40%）＞10.0% O2（30.63%）  照（表2）。
+＞5.0% O2（30.51%）＞1.0% O2（26.87%）＞3.0% O2     另外，贮藏150 d 时，各处理及对照果实硬度均
+（20.17%）＞2.0% O2（19.34%），其中，1.0% O2 处  快速下降，可溶性固形物含量上升；贮藏210 d 和270
+理果实黑心指数显著高于2.0% O2 和3.0% O2。3 年的  d，所有处理及对照果实硬度和可溶性固形物含量相对
+中试库黑心病跟踪调查表明，缓慢降温结合延迟气调  稳定，且不同处理及对照间无显著差异。
+（降温后30—35 d），采用3.0%—5.0% O2+0.5%—    2.3 不同O2浓度处理对乙醇含量的影响
+0.8% CO2 处理，贮藏至翌年6 月中下旬，黑心病平均     贮藏150 d，不同处理及对照间果肉和果心组织中
+发生率＜3.0%，且货架期≥7 d。            乙醇含量差异显著，其中5.0%及以下O2 处理果实乙
+2.2 不同O2浓度处理对内在品质的影响         醇含量均显著高于10.0% O2和空气对照，其中1.0% O2
+  与采收时相比，各处理贮藏期间可滴定酸（TA）  处理果实果肉和果心组织中乙醇含量最高，分别为
+和抗坏血酸（AA）含量均显著下降。贮藏150 d，     806.12 和750.20 mg·L-1；其次为2.0% O2处理；10.0% O2
+1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空  和空气对照乙醇含量均＜200 mg·L-1；贮藏150 d 后货
+气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对   架10 d，5.0%及以下O2处理果实乙醇含量呈下降趋势，
+照基本持平或略低，差异不显著；贮藏210 d，AA 含   10.0%和空气对照处理则呈上升趋势。贮藏210 d 及货
+量进一步降低，但货架7 d 后，10.0% O2 和空气对照  架7 d、贮藏270 d 及货架7 d，1.0% O2处理果实乙醇含
+
+
+               1.0% O2+0.5% CO2   2.0% O2+0.5% CO2   3.0% O2+0.5% CO2   5.0% O2+0.5% CO2   10.0% O2+0.5% CO2  对照 CK
+                果肉 Fruit flesh                            果肉 Fruit flesh       2000                                                                 2000
+       1800                                                                 1800
+                                                                      a                                                                            a       1600                                                                 1600
+       1400                                                                 1400        (mg·L-1) 1200                                                                                                                                                                                                (mg·L-1)  1200
+
+                                                                                                                                 b                                                  b                                    a                                                                                                                 a                                                                                                                                      c         Ethanol 1000800    a                                                             1000                                                                                                                                                                                                                                Ethanol   800                                     b                b                                                                                             a                                                                                                                                           c  c                                                                                                       b                                  b                                                  c        600                                                                            600                                                           c                                                                                                                         d                                            c                                                                                                                       c                     c                                                                                              b                                                                                     b                                          d            d d   乙醇   400                                                                       乙醇   400                                                                                                                         e  d  e                     d                                                                                                        c                                                                   e                                                                                       d  e                          e de        200                                                                            200
+         0                                                                    0
+                   150                210               270                           150+10            210+7             270+7
+
+              贮藏时间 Storage period (d)                       贮藏货架 Shelf-life period (d)
+
+                果心 Fruit heart                            果心 Fruit heart       2000                                                                 2000                                                                      a
+       1800                                                                 1800
+       1600                                                                 1600                                                           a
+       1400                                                                 1400        (mg·L-1) 1200                                                                                                                                                                                                 (mg·L-1)  1200
+
+                a                                                                                                                 a                                                  b                                    ab                                                                            800       800                                     b                                                                                                                                                                                                                                Ethanol         Ethanol 1000                        a                                          1000                                                                                                       b                                                                                                                                 b                                                           c                                                                                                                                      c  b c                b                                                  c       600                                                                            600                                                                                                                       c                                                                                             a                                           cd                                                                                                                              d                                                                                               b                                                                       乙醇   乙醇                                                       d d                     c                                                                                     b                                                                            400       400                                       d                                                                                                                          e  e  d                                                                    e                                                                                       d    c                     d  e d       200                                                                  200
+         0                                                                    0
+                   150                210               270                           150+10            210+7             270+7
+
+              贮藏期 Storage period (d)                       贮藏货架 Shelf-life period (d)
+
+
+                  图2 不同O2浓度贮藏及货架期间鸭梨乙醇变化情况
+
+        Fig. 2  Effects of different oxygen concentrations on ethanol content during storage and shelf-life period of Yali pear
+
+23 期           杜艳民等：不同O2 浓度对鸭梨采后生理代谢及贮藏品质的影响                       4923
+
+表2 不同O2浓度处理贮藏货架期间鸭梨主要生理品质指标变化情况
+Table 2  Changes in the main quality attributes in Yali pear during storage and shelf-life periods in different oxygen concentrations
+
+贮藏环境      贮藏与                    品质指标 Quality parameters
+Storage scenario   货架时间                  硬度    可溶性固形物   可滴定酸    抗坏血酸           L*              b*
+                     Time                                      Firmness        Soluble solids     Titratable acidity    Ascorbic acid
+                             (d)           (kg·cm-2)         contents (%)          (%)           (mg/100 g)
+基础值 At harvest                   6.02±0.536       10.32±0.02         0.16±0.001        6.56±0.152       88.91±1.58        30.78±2.35
+
+1.0% O2+0.5% CO2    150          5.48±0.335c      10.61±0.68cd       0.086±0.003a      4.62±0.178a      85.93±1.01a       23.86±1.15c
+
+                    150+10       5.10±0.424ab     11.00±0.483ab      0.042±0.001d      5.98±0.082b      86.93±0.72ab      32.59±2.05ab
+
+                     210          5.68±0.783a      10.54±0.505bc      0.081±0.001d      1.87±0.065a      88.15±1.24a       34.70±1.53bc
+
+                    210+7        5.65±0.752a      10.91±0.604a       0.13±0.001c       3.11±0.056c      87.30±1.0a        37.50±2.89a
+
+                     270          5.66±0.345a      11.07±0.892ab      0.085±0.002e      2.85±0.052a      86.32±1.55a       36.17±1.8ab
+
+                    270+7        5.62±0.404ab     10.39±0.713b       0.11±0.006c       3.78±0.209e      85.77±1.36a       37.82±2.37a
+
+2.0% O2+0.5% CO2    150          5.59±0.355bc     10.87±0. 525bc     0.082±0.001b      3.51±0.137b      85.27±1.0abc      24.27±1.15bc
+
+                    150+10       5.24±0. 340ab    11.11±0.648a       0.043±0.001cd     5.04±0.004c      86.23±0.76bc      34.31±1.86a
+
+                     210          5.49±0.397a      10.96±0.463a       0.096±0.005b      1.33±0.057e      87.77±1.09a       35.96±2.53a
+
+                    210+7        5.26±0.295a      10.81±0.407a       0.15±0.001a       2.85±0.037e      87.11±0.70a       36.69±1.74a
+
+                     270          5.36±0.395b      11.19±0.543ab      0.088±0.003de     2.41±0.049d      86.41±1.48a       35.97±1.8b
+
+                    270+7        5.54±0.335c      10.86±0.661a       0.12±0.001a       2.90±0.053d      86.34±1.25a       37.26±2.33a
+
+3.0% O2+0.5% CO2    150          5.70±0.529ab     11.38±0.466a       0.083±0.001b      2.74±0.911c      85.42±0.99c       25.32±1.18a
+
+                    150+10       5.38±0.489a      10.74±0.64b        0.045±0.003bc     5.00±0.043c      85.88±1.03c       34.32±1.81a
+
+                     210          5.48±0.482a      10.74±0.581ab      0.099±0.001b      1.49±0.033c      87.68±0.95a       35.76±1.23ab
+
+                    210+7        5.46±0.496a      10.87±0.701a       0.13±0.002b       3.02±0.034a      87.03±0.90a       36.11±1.43a
+
+                     270          5.82±0.565a      11.34±0.698a       0.10±0.001b       2.55±0.129bc     86.43±1.27a       37.21±1.71b
+
+                    270+7        5.50±0.486bc     10.38±0.929b       0.098±0.002d      3.55±0.014c      85.83±1.16a       37.45±2.4a
+
+5.0%O2+0.5%CO2     150          5.84±0.468a      11.04±0. 542b      0.073±0.001d      2.50±0.438d      85.02±1.08bc      24.92±1.59ab
+
+                    150+10       5.32±0.64ab      10.88±0.527ab      0.047±0.001b      5.03±0.055c      87.14±1.16a       31.37±2.27b
+
+                     210          5.55±0.410a      10.62±0.58bc       0.097±0.002b      1.65±0.039b      88.08±1.11a       34.92±1.52abc
+
+                    210+7        5.68±0.725a      10.57±0.514ab      0.12±0.002d       2.87±0.044e      86.60±1.02b       37.79±2.31a
+
+                     270          5.32±0.538b      10.72±0.931cd      0.12±0.002a       2.47±0.018cd     87.02±1.56a       35.50±1.89b
+
+                    270+7        5.82±0.624a      10.48±0.939ab      0.11±0.002b       3.87±0.087bc     85.29±1.06a       37.82±2.59a
+
+10.0% O2+0.5% CO2   150          5.46±0.343c      10.49±0.595d       0.077±0.003c      2.06±0.49e       85.60±1.36ab      24.03±1.19bc
+
+                    150+10       5.04±0.343bc     10.93±0.481ab      0.054±0.001a      4.67±0.049d      85.94±0.946c      33.33±0.83a
+
+                     210          5.49±0.403a      10.93±0.44a        0.11±0.001a       1.37±0.046d      87.79±1.22a       34.54±1.25c
+
+                    210+7        5.22±0.482a      10.87±0.337a       0.13±0.001b       3.53±0.043b      85.79±1.91c       36.65±2.31a
+
+                     270          5.26±0.422b      10.94±0.62bc       0.095±0.001c      1.64±0.025b      84.03±4.51b       35.82±1.55b
+
+                    270+7        5.23±0.387d      10.35±0.685b       0.12±0.001a       4.07±0.161b      84.04±1.63ab      36.97±2.68a
+
+空气                150          5.51±0.280bc     10.48±0.625d       0.069±0.001e      2.58±0.263cd     84.49±1.8c        24.22±1.03bc
+Air control           150+10       4.81±0.263c      10.84±0.475ab      0.045±0.001b      6.14±0.115a      87.16±0.95a       31.38±1.77b
+
+                     210          5.14±0.293b      10.49±0.451c       0.077±0.001c      1.43±0.031cd     87.28±1.97a       35.07±1.32abc
+
+                    210+7        5.32±0.258b      10.43±0.611b       0.11±0.002e       3.85±0.005a      85.25±4.35d       36.65±2.47a
+
+                     270          5.28±0.263b      10.38±0.692d       0.090±0.002d      1.88±0.032a      83.59±2.32b       35.26±1.34b
+
+                    270+7        5.38±0.577cd     10.10±0.702b       0.10±0.002d       4.67±0.117a      81.83±1.77b       27.42±2.13a
+
+同列数据后不同小写字母表示各处理同一时期在0.05 水平差异显著
+Different small letters in same column indicated significant differences at 0.05 level among different oxygen treatments at the same period
+
+4924                   中 国 农 业 科 学                                      53 卷
+
+量保持相对稳定，乙醇平均含量约为700 mg·L-1；   中1.0% O2 乙烯释放量最低，贮藏150、210 及270 d，
+2.0%、3.0%、5.0%及10.0% O2 处理乙醇略有上升，  温度平衡后（回升到20℃），其乙烯释放速率分别为
+但基本稳定在500 mg·L-1 左右；贮藏270 d 及货架7 d，   46.83、88.04 和76.65 μL·kg-1·h -1；2.0%—3.0% O2 释放
+空气处理果实果肉和果心组织褐变加重，组织塌陷，  量次之；货架10 d 或7 d 后，低氧处理乙烯释放量快
+平均乙醇含量超过1 500 mg·L-1（图2）。        速上升。贮藏150 和210 d，低氧气调贮藏果实呼吸速
+2.4 不同O2浓度处理对呼吸速率和乙烯的影响     率均显著低于空气对照，但不同O2 浓度处理间差异不
+   5.0%及以下O2 处理果实贮藏150、210 及270 d   显著；贮藏270 d 及货架7 d，低氧气调处理与对照果
+后，其乙烯产量均显著低于10.0% O2 和空气对照，其  实呼吸速率差异不显著（图3）。
+
+
+
+               1.0% O2+0.5% CO2   2.0% O2+0.5% CO2   3.0% O2+0.5% CO2   5.0% O2+0.5% CO2   10.0% O2+0.5% CO2  对照 CK
+        300                                                                  900
+                                                a                   a                                                  a
+                                                               b             800                                                                                                            b                                             b                           a  a                                                                                                     b        250                                                                                             a                                                                                                       b                                                                             700                                                                                     b  a   abc                                                          b                                             c                                                                                                                     bc c         a                                                                                                                                   b                                                            c                                                                                          b    c                       b                                                                                                                              b                                                                             600        200                                                                                                                                                 c
+                      b               d                                                       d                                                                                                                                            c
+                                                                             500
+        150                         e
+                                                                             400
+                   c  c                 e                e
+        100                                                                  300
+              d                                                              200
+         50
+                                                                             100
+          0                                                                    0
+                    150               210               270                           150+10            210+7             270+7
+
+              贮藏时间 Storage time (d)                       贮藏货架 Shelf-life period (d)
+
+         60                                                                  70    a
+                                                         a    a       a                                                            a                                                                    a                60                                                                                               b         50                                                          b                                                                                     b b                                                                                                                               a                                                                                                                          a                                                  a                                                                                                                             a                                                                                          b                                                                                                                  a  a  a                                                                                            b                                    a                                                                             50                                                                                                                                      a  a  a  a     a         40                                        b b                                                                                                 a                                     b
+                              a        c                                          40
+         30      b      b
+                c     c  c                                                       30
+         20
+                                                                             20
+         10                                                                  10
+
+          0                                                                    0
+                   150                210               270                           150+10            210+7             270+7
+
+              贮藏时间 Storage time (d)                       贮藏货架 Shelf-life period (d)
+
+
+
+                图3 不同O2浓度贮藏及货架期间鸭梨呼吸和乙烯变化情况
+
+Fig. 3  Effects of different oxygen concentrations on respiration rate and ethylene production during storage and shelf-life period of
+
+        Yali pear
+
+
+2.5 不同O2 浓度处理对乙烯生物合成关键基因相对  和PbACO3相对表达量均显著低于空气对照；贮藏150
+  表达量的影响                                 d 后货架10 d，1.0%— 3.0% O2 处理PbACS1 相对表达
+  整体来看，与对照相比，采用低氧气调处理可显  量较出库时增长近45 倍，各处理PbACO1 和PbACO3
+著抑制鸭梨货架初期果皮组织中PbACS1、PbACO1  相对表达量快速上升，且5.0%及以下O2 处理基因表
+及PbACO3 表达，推迟货架期间果皮组织中乙烯合成  达量均显著高于10.0%及空气对照；随着贮藏期的延
+相关基因表达高峰，但不同O2 处理下PbACS2、  长，乙烯合成相关基因表达水平上升，贮藏210 d 及
+PbACS3 及PbACO2 表达无明显规律（数据未列出）。  货架7 d，空气处理PbACS1 相对表达量达到峰值，10%
+具体来看，贮藏150 d，1.0%—3.0% O2 处理PbACS1    O2 处理PbACO1 和PbACO3 达到峰值；贮藏270 d 后
+相对表达量极低，但5.0%和10.0% O2 处理及空气对  货架7 d，1.0—3.0% O2 处理PbACS1 和PbACO1 仍保
+照PbACS1 相对表达量较高；气调贮藏果实PbACO1  持相对较高水平（图4）。
+
+23 期           杜艳民等：不同O2 浓度对鸭梨采后生理代谢及贮藏品质的影响                       4925
+
+             PbACO1                                                                                                                                                                                     PbACO1
+    of                                                            of
+                      expression                                                                                                                                                                                                                                                                                                             expression            PbACO1相对表达量                                                                                                                                                                                                                                                                                                                                           PbACO1相对表达量
+                  Relative                                                                                                                                                                                                                                                 Relative
+
+
+             PbACO3                                                                                                                                                                                   PbACO3
+    of                                                            of
+                     expression                                                                                                                                                                                                                                                                                                          expression           PbACO3相对表达量                                                                                                                                                                                                                                                                                                                                        PbACO3相对表达量
+                 Relative                                                                                                                                                                                                                                               Relative
+
+
+             PbACS1                                                                                                                                                                                    PbACS1
+    of                                                            of
+                     expression                                                                                                                                                                                                                                                                                                           expression           PbACS1相对表达量                                                                                                                                                                                                                                                                                                                                         PbACS1相对表达量
+                 Relative                                                                                                                                                                                                                                               Relative
+
+
+
+
+
+             图4 不同O2浓度贮藏及货架期间PbACO1、PbACO3及PbACS1表达情况
+
+Fig. 4  The relative expression of PbACO1, PbACO3 and PbACS1 under different oxygen concentrations during storage and
+
+          shelf-life period of Yali pear
+
+
+                         处理显著降低了鸭梨长期贮藏过程中虎皮病的发生，
+3 讨论
+                               货架期显著延长，其中1.0%—3.0% O2 处理防控虎皮
+3.1 环境O2浓度与虎皮病和黑心病发生的关系     病效果最佳。可见，进一步降低贮藏环境氧气浓度可
+  虎皮病是梨采后贮藏过程中一种主要的生理病害[26]。  更好地维持鸭梨果实外观品质，延长货架期，这与前
+低氧处理可有效降低果实贮藏期间活性氧（ROS）的  人研究结论一致。
+积累，降低乙烯释放量，有效降低α-法尼烯及其氧化    黑心病发生的直接原因是细胞膜发生过氧化反
+产物共轭三烯醇的积累，进而抑制虎皮病的发生[27-28]。  应，细胞膜完整性被打破，多酚氧化酶（PPO）催化
+近年来，超低氧气调贮藏技术（O2＜1.0%）和动态气   酚类底物形成醌，进而诱发褐变[31-32]。低氧胁迫处理
+调贮藏技术（O2＜0.6%）快速发展，与传统气调贮藏  可通过调控氧化代谢平衡进而降低衰老相关生理病害
+相比，更低的贮藏环境O2 浓度能更好地控制苹果和梨   的发生[33-34]。本研究中，采用阶段降温结合延迟气调
+采后虎皮病的发生[29-30]。本研究中，5.0%及以下O2  贮藏均显著降低了贮藏和货架期间果实黑心病的发
+
+4926                   中 国 农 业 科 学                                      53 卷
+
+生，相对更低的O2浓度更好地控制了贮藏后期（270 d）  生物合成途径中的关键限速酶，且在番茄和梨中均由
+果心褐变指数，但过低的氧气浓度处理（1.0% O2）一   多家族基因控制[42-43]。本研究结合前人研究基础及检
+定程度上增加了鸭梨果实贮藏末期黑心病风险。     索梨基因组，初步获得PbACO1、PbACO2、PbACO3、
+3.2 环境O2浓度与内在品质变化的关系            PbACS1、 PbACS2 及PbACS3 等6 个乙烯合成关键基
+  超低氧气调贮藏（O2＜1.5%）是苹果商业生产中   因；其中PbACO1、PbACO3 及PbACS1 在低氧处理
+常用的一项技术[35]，但在梨商业生产中应用很少，主  下相对表达量显著降低，基因表达高峰与10.0% O2
+要原因是多数梨品种对过低O2 敏感，过低的O2 会造  及对照相比明显推迟。但随着货架期的延长，乙烯合
+成果实发生无氧呼吸进而造成乙醇大量积累，诱发果  成相关基因表达量快速升高，而且贮藏后期及货架后，
+心组织褐变，果实风味品质下降，例如‘Williams Bon  低氧气调贮藏乙烯释放速率显著高于空气对照处理，
+Chretien’在1.0% O2 处理下仅能贮藏4 个月[36]。但同  因此，低氧气调处理对乙烯的抑制是可逆的，乙烯合
+时也有研究表明，适量乙醇作为一种低抗氧化物可明显  成代谢会随着环境温度和氧气浓度回升而恢复，该发
+降低苹果和梨等采后贮藏过程中虎皮病的发生[37-40]。本   现与前人研究结果一致[18]，但更低的O2 浓度会进一
+研究中，5.0%及以下O2 处理果实乙醇含量贮藏前期  步推迟货架期间乙烯的合成，延缓衰老。
+显著高于10.0%和空气对照，适量乙醇的积累可能一
+                                    4 结论
+定程度上增强了果实抗性，进而抑制了鸭梨后期虎皮
+病的发生，但乙醇抗氧化阈值及伤害极值仍需进一步       1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮
+研究确定。                    病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和
+   CHENG 等[3]研究发现，1-MCP 处理可以显著降  抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、
+低乙烯产量，较好地维持鸭梨果实冷藏期间TA 含量    PbACO3 及PbACS1 表达，能更好地维持果皮亮度及
+水平，较好地维持果实品质降低黑心指数。杜艳民  白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定
+等[23]研究发现鸭梨贮藏过程中TA 含量与黑心指数显  程度上增加了鸭梨贮藏末期黑心病风险。因此，建议
+著相关，可作为预测鸭梨黑心病的指标。本研究中，  生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。
+果实可滴定酸（TA）含量随着贮藏时间的延长不断下
+降，与空气对照相比，2.0%、3.0%、5.0%及10.0% O2     References
+处理较好地维持了贮藏后期（270 d）TA 含量，并显       [1] 王文辉, 贾晓辉, 杜艳民, 王志华. 我国梨果生产与贮藏现状存在
+著高于空气对照和1.0% O2，且TA 含量越低，黑心指      的问题与发展趋势. 保鲜与加工, 2013, 13(5): 1-8.
+数越高，该结论与前人研究结果一致。                  WANG W H, JIA X H, DU Y M, WANG Z H. Current situation,
+  抗坏血酸（AA）作为一种抗氧化物质，可与谷胱           problems and development trend of production and storage of pear in
+甘肽等其他抗氧化物质协同清除活性氧分子。前人研            China. Storage and Process, 2013, 13(5): 1-8. (in Chinese)
+究发现，低氧气调处理果实AA 含量显著低于普通冷       [2]  CAO J K, JIANG W B. Induction of resistance in Yali pear (Pyrus
+藏；同时，梨的研究发现，不同黑心病诱导处理下，             bretschneideri  Rehd.)   fruit   against   postharvest   diseases  by
+AA 含量与果实黑心病敏感性显著相关，当AA 含量            acibenzolar-S-methyl sprays on trees during  fruit growth. Scientia
+低于特定阈值时，果实黑心病敏感性增强[41]。本研究             Horticulturae, 2006, 110:181-186.
+
+中，与空气对照相比，低氧处理更好地维持了贮藏前       [3]  CHENG Y D, LIU L Q, FENG Y X, DONG Y, GUAN J F. Effects of
+期果实AA 含量，但随着贮藏期的推迟，低氧处理和         1-MCP on fruit quality and core browning in ‘Yali’ pear during cold
+对照AA 含量均进一步降低，且处理与对照间差异变             storage. Scientia Horticulturae, 2019, 243: 350-356.
+小且不显著；但货架7 d 或10 d 后，低氧处理和空气       [4]  YAN S J, LI L, HE L H, LIANG L Y, LI X D. Maturity and cooling
+对照AA 含量均显著升高，初步推测与货架期间果实              rate  affects  browning,  polyphenol  oxidase  activity  and  gene
+进一步衰老后，活性氧等衰老相关组分含量增加有关，           expression of ‘Yali’ pears during storage. Postharvest Biology and
+
+但其生物学功能和作用机制仍需进一步研究。                     Technology, 2013, 85: 39-44.
+
+3.3 环境O2浓度与乙烯生物合成的关系                          [5] 杜艳民, 王文辉, 贾晓辉, 乐文全, 魏建梅, 关军锋. 河北省梨果
+
+  鸭梨是一种典型的采后呼吸跃变型果实，贮藏过      贮藏产业发展现状及建议. 保鲜与加工, 2017, 17(2): 1-6.
+程及货架期间释放大量的乙烯；ACS 和ACO 是乙烯       DU Y M, WANG W H, JIA X H, LE W Q, WEI J M, GUAN J F.
+
+23 期           杜艳民等：不同O2 浓度对鸭梨采后生理代谢及贮藏品质的影响                       4927
+
+
+     Development status and proposal of pear storage industry of Hebei             storage of ‘YA-LI’ pears. Acta Horticulture  Sinica, 1991, 18(2):
+
+      province. Storage and Process, 2017, 17(2): 1-6. (in Chinese)                    131-137. (in Chinese)
+
+[6]  DRAKE S R, MIELKE E A, ELFVING D C. Maturity and storage       [19] 陈昆松, 于梁, 周山涛. 鸭梨果实气调贮藏过程CO2 伤害机理初探.
+
+      quality of ‘Concorde’ pears. Hort Technology, 2004, 14(2): 250-256.       中国农业科学, 1991, 24(5): 83-88.
+
+[7]  THOMPSON K.  Controlled  Atmosphere  Storage  of  Fruits and        CHEN K S, YU L, ZHOU S T. A preliminary study on possible
+
+      Vegetables. 2nd ed. UK: Oxford shire, 2010: 272.                           mechanism of CO2 injury of ‘YA-LI’ pear (Pyrus bretschneideri Rehd.)
+
+[8]  ALMEIDA D P  F, CARVALHO  R, DUPILLE  E.  Efficacy  of            during CA storage. Scientia Agicultura Sinica, 1991, 24(5):83-88. (in
+
+     1-methylcyclopropene on  the  mitigation  of  storage  disorders  of            Chinese)
+
+     ‘Rocha’ pear under normal refrigerated and controlled atmospheres.       [20] 陈昆松, 于梁, 周山涛. 雪花梨和鸭梨贮藏特性比较. 植物生理学
+
+     Food Science and Technology Interview, 2016, 22: 399-409.             通讯, 1992, 28(6): 428-430.
+
+[9]  SAQUET A A. Storage of pears. Scientia Horticulturae, 2019, 246:        CHEN K S, YU L, ZHOU S T. Comparison of storage character of
+
+     1009-1016.                                                        Xuehua pear and Ya pear. Plant Physiology Communication, 1992,
+
+[10] CALVO G, SALVADOR M E, SANCHEZ E. Control of superficial             28(6): 428-430. (in Chinese)
+
+      scald  in  Beurré  d’Anjou  pears  with low  oxygen  levels.  Acta       [21] HOHN E, DATWYLER D, GASSER F, DE JAGER A, JOHNSON D,
+
+      Horticulture, 2002, 596: 879-882.                            HOHN E. Maturity indices to predict optimum harvest date for the
+
+[11] RIZZOLO  A, GRASSI M, VANOLI M.  1-Methylcyclopropene             storage  of ‘Conference’ pears  in Switzerland//Determination and
+
+      application, storage temperature and atmosphere modulate sensory            Prediction of Optimum Harvest Date of Apples and Pears. Brussels,
+
+      quality changes in shelf-life of ‘AbbéFétel’ pears. Postharvest Biology           1996: 148-156. ECSC-EC-EAEC.
+
+     and Technology, 2014, 92: 87-97.                                          [22] VERLINDENBE, DE JAGER A, LAMMERTYN J, SHOTSMANS W,
+
+[12] RIZZOLO A, GRASSI M, VANOLI M. Influence of storage (time,         NICOLAI B. Effect of harvest and delaying controlled atmosphere
+
+      temperature, atmosphere) on ripening, ethylene production and texture             storage conditions on core breakdown incidence in ‘Conference’ pears.
+
+      of 1-MCP  treated  ‘AbbéFétel’  pears.  Postharvest  Biology  and            Biosystems Engineering, 2002, 83:339-347.
+
+     Technology, 2015, 109: 20-29.                                             [23] 杜艳民, 王文辉, 贾晓辉, 佟伟, 王志华. 不同可溶性固形物含量
+
+[13] VANOLI M, GRASSI M, RIZZOLO A. Ripening behavior and      鸭梨耐贮性差异比较. 果树学报, 2018, 35(10): 1262-1270.
+
+      physiological disorders of ‘Abate Fetel’ pears treated at harvest with       DU Y M, WANG W H, JIA X H, TONG W, WANG Z H. The
+
+    1-MCP  and  stored  at  different  temperatures  and  atmospheres.           comparison of storage ability of‘Yali’pear in different soluble solids
+
+      Postharvest Biology and Technology, 2016, 111: 274-285.                         contents grades. Journal of Fruit Science, 2018, 35(10): 1262-1270.
+
+[14] SAQUET A A, STREIF J, ALMEIDA D P F. Responses of ‘Rocha’              (in Chinese)
+
+      pear to delayed controlled atmosphere storage depend on oxygen       [24] 纪淑娟, 尹竞男, 李家政, 黄艳凤．静态顶空气相色谱法测定蜜柚
+
+       partial pressure. Scientia Horticulturae, 2017, 222: 17-21.           中乙醇和乙醛含量. 保鲜与加工, 2010, 10(4): 17-20.
+
+[15] NGUYEN T A, VERBOVEN  P, SCHENK A, NICOLAI B M.              JI S J, YIN J N, LI J Z, HUANG Y F. Determination of alcohol and
+
+      Prediction of water loss from pears (Pyrus communis cv. Conference)            acetaldehyde in pomelo by static head space gas chromatography.
+
+     during controlled atmosphere storage as affected by relative humidity.            Storage and Process, 2010, 10(4):17-20. (in Chinese)
+
+     Journal of Food Engineering, 2007, 83: 149-155.                           [25] 慕茜. 五种水果作物果实成熟过程中乙烯合成及应答途径相关基
+
+[16] PEDRESCHI R, HERTOG M, ROBBEN J, NOBEN J P, NICOLAI B       因的功能分析[D]. 南京: 南京农业大学, 2015.
+
+    M. Physiological implications of controlled atmosphere storage of      MU Q. Functional analysis of the ethylene biosynthesis and signaling
+
+     ‘Conference’ pears (Pyrus communis  L.): A proteomic approach.           pathway related genes during the ripening of five species of fruit crops
+
+      Postharvest Biology and Technology, 2008, 50: 110-116.                           [D]. Nanjing: Nanjing Agricultural University, 2015. (in Chinese)
+
+[17] SAQUET A A.  Storability  of  Conference  pear  under  various       [26] LURIE S, WATKINS C B. Superficial scald, its etiology and control.
+
+      controlled atmospheres. Erwerbs-Obstbau , 2018, 60: 1-6.                        Postharvest Biology and Technology, 2012, 65: 44-60.
+
+[18] 陈昆松, 于梁, 周山涛. 鸭梨果实气调贮藏研究. 园艺学报,       [27] SABBAN-AMIN R, FEYGENBERG O, BELAUSOV E, PESIS E.
+
+      1991,18(2): 131-137.                                         Low  oxygen  and 1-MCP  pretreatments  delay  superficial  scald
+
+    CHEN K S, YU L, ZHOU S T. A study on controlled atmosphere           development by reducing reactive oxygen species (ROS) accumulation
+
+4928                   中 国 农 业 科 学                                      53 卷
+
+
+      in stored ‘Granny Smith’ apples. Postharvest Biology and Technology,           toward lower oxygen levels during apple (Malus domestica Borkh)
+
+     2011, 62: 295-304.                                                                  storage. Journal of Horticulture Science and Biotechnology, 2015,
+
+[28] BORDONABA J G, MATTHIEU-HURTIGER V, WESTERCAMP P,             90(1): 1-13.
+
+    COUREAU C, DUPILLE E, LARRIGAUDIERE C. Dynamic changes       [36] KUPFERMAN E. Controlled Atmosphere Storage  of Apples and
+
+      in conjugated trienols during storage may be employed to predict            Pears. Postharvest Information Network, Washington State University,
+
+      superficial scald in ‘Granny Smith’ apples. LWT-Food Science and           2001: 1-8.
+
+     Technology, 2013, 54: 535-541.                                            [37] WANG Z  Y, DILLEY D R.  Initial low oxygen  stress  controls
+
+[29] DELELEL M A, BESSEMANS N, GRUYTERS W, ROGGE S,              superficial scald of apples. Postharvest Biology and Technology, 2000,
+
+    JANSSEN S, VERLINDEN B E, SMEETS B. Spatial distribution of            18: 201-213.
+
+     gas  concentrations and RQ  in  a  controlled  atmosphere  storage       [38] PESIS E, BEN-ARIE R, FEYGENBERG O, LICHTER A, GADIYEVA
+
+      container with pear fruit in very low oxygen conditions. Postharvest           O, ANTILOFYEV I, URYUPINA T. A simple pretreatment with low
+
+     Biology and Technology, 2019, 156: 110903.                              O2 to alleviate superficial scald in Granny Smith apples. Journal of the
+
+[30] BRENTON C  P, JAMES P M, DAVID R R. Extending ‘Granny            Science of Food and Agriculture, 2007, 87: 1836-1844.
+
+     Smith’ apple superficial scald control following long term ultra-low       [39] LARRIGAUDIERE C, CANDAN A  P, GINE-BORDONABA  J,
+
+     oxygen  controlled  atmosphere  storage.  Postharvest  Biology and         CIVELLO M, CALVO G. Unravelling the physiological basis of
+
+     Technology, 2020, 161: 111062.                                                      superficial  scald  in pears based on  cultivar  differences.  Scientia
+
+[31] 鞠志国, 朱广廉, 曹宗巽. 莱阳茌梨果实褐变与多酚氧化酶及酚类             Horticulturae, 2016, 213: 340-345.
+
+   物质区域化分布的关系. 植物生理学报, 1988, 14(4): 356-361.            [40] LARRIGAUDIERE C, LINDO-GARCIA V, UBACH D, GINE-
+
+    JU Z G, ZHU G L, CAO Z X. The compartmentation of polyphenol       BORDONABA J. 1-Methylcyclopropene and extreme ULO inhibit
+
+     oxidase and its substrates in relation with fruit browning of Laiyang              superficial scald in a different way highlighting the physiological
+
+     Chi Li (Pyrus bretschneideri Rehd). Acta Phytophysiologica Sicica,             basis of  this disorder in pear. Scientia Horticulturae, 2019, 250:
+
+     1988, 14(4): 356-361. (in Chinese)                                            148-153.
+
+[32] CHENG Y D, LIU L Q, ZHAO G Q, SHENG G G, YAN H B, GUAN       [41] VELTMAN R H, KHO R M, VAN SCHAIK A C R, SANDERS M G,
+
+      J F, YANG K. The effects of modified atmosphere packaging on core        OOSTERHAVEN  J. Ascorbic acid and  tissue browning  in pears
+
+     browning and the expression patterns of PPO and PAL genes in ‘Yali’            (Pyrus communis L. cvs Rocha and Conference) under controlled
+
+      pears during cold storage. LWT-Food Science and Technology, 2015,           atmosphere conditions. Postharvest Biology and Technology, 2000, 19:
+
+      60: 1243-1248.                                                             129-137.
+
+[33] LUM G B, DEELL J R, BOZZO G G. Oxidative metabolism  is       [42] BARRY C S, GIOVANNONI J J. Ethylene and fruit ripening. Journal
+
+      associated with physiological disorders in fruits stored under multiple             of Plant Growth Regulation, 2007, 26: 143-159.
+
+     environmental stresses. Plant Science, 2016, 245: 143-152.                  [43] CHIRIBOGA M, SALADIE M, BORDONABA J, RECASENS  I,
+
+[34] LUM G B, DEELL J R, HOOVER G J, SUBEDI S, DEELL J R,        GARCIA-MAS J, LARRIGAUDIERE C. Effect of cold storage and
+
+    BOZZO G  G.1-Methylcylopropene  and  controlled  atmosphere         1-MCP treatment on ethylene perception, signaling and synthesis:
+
+     modulate oxidative stress metabolism and reduce senescence-related             Influence on the development of the evergreen behavior in ‘Conference’
+
+      disorders in stored pear fruit. Postharvest Biology and Technology,             pears. Postharvest Biology and Technology, 2013, 86: 212-220.
+
+     2017, 129: 52-63.
+
+[35] WRIGHT A H, DELONG J M, ARUL J, PRANGE R K. The trend               （责任编辑 赵伶俐）

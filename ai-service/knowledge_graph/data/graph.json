@@ -1,0 +1,1071 @@
+{
+  "version": "1.0.0",
+  "nodes": [
+    {
+      "id": "crop:botou_pear",
+      "type": "Crop",
+      "name": "泊头鸭梨",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "crop:pear",
+      "type": "Crop",
+      "name": "梨（通用研究对象）",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "region:botou",
+      "type": "Region",
+      "name": "河北省沧州市泊头市",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "stage:0",
+      "type": "Stage",
+      "name": "萌芽期",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "stage:1",
+      "type": "Stage",
+      "name": "开花期",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "stage:2",
+      "type": "Stage",
+      "name": "幼果期",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "stage:3",
+      "type": "Stage",
+      "name": "膨大期",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "stage:4",
+      "type": "Stage",
+      "name": "成熟期",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "stage:5",
+      "type": "Stage",
+      "name": "采收",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "stage:6",
+      "type": "Stage",
+      "name": "分选",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "stage:7",
+      "type": "Stage",
+      "name": "储藏",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "disease:scab",
+      "type": "Disease",
+      "name": "梨黑星病",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "organ:leaf",
+      "type": "Organ",
+      "name": "叶片",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "organ:fruit",
+      "type": "Organ",
+      "name": "果实",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "symptom:spots",
+      "type": "Symptom",
+      "name": "橄榄绿至黑色病斑",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "state:early_infection",
+      "type": "State",
+      "name": "早期果实感染",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "state:late_infection",
+      "type": "State",
+      "name": "采前果实感染",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "state:deform",
+      "type": "State",
+      "name": "果实畸形",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "state:storage_spots",
+      "type": "State",
+      "name": "储藏期显现黑星病斑",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "condition:wet",
+      "type": "Condition",
+      "name": "组织表面持续湿润",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "state:infection",
+      "type": "State",
+      "name": "黑星病感染发生",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "state:injury",
+      "type": "State",
+      "name": "采收机械伤",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "risk:decay",
+      "type": "Risk",
+      "name": "采后腐烂风险",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "risk:loss",
+      "type": "Risk",
+      "name": "采后损耗风险",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "action:inspect",
+      "type": "Intervention",
+      "name": "采收检查并记录病斑",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "action:sort",
+      "type": "Intervention",
+      "name": "病损果分选与批次隔离（待审方案）",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "action:gentle",
+      "type": "Intervention",
+      "name": "轻拿轻放（待审方案）",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "metric:temperature",
+      "type": "Metric",
+      "name": "库温",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "metric:humidity",
+      "type": "Metric",
+      "name": "库内相对湿度",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "metric:duration",
+      "type": "Metric",
+      "name": "储藏时长",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "batch:demo",
+      "type": "Batch",
+      "name": "示例梨批次（非真实生产数据）",
+      "aliases": [],
+      "status": "concept"
+    },
+    {
+      "id": "observation:demo",
+      "type": "Observation",
+      "name": "示例视觉输入（未诊断）",
+      "aliases": [],
+      "status": "concept"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:001",
+      "source": "crop:botou_pear",
+      "relation": "PRODUCED_IN",
+      "target": "region:botou",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:moa"
+      ],
+      "claim": "泊头有鸭梨特色产业",
+      "locator": "正文：泊头是鸭梨之乡",
+      "scope": "local",
+      "crop": "crop:botou_pear",
+      "region": "region:botou",
+      "stage_ids": [],
+      "review_status": "source_checked",
+      "evidence_level": "local_background",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:002",
+      "source": "crop:botou_pear",
+      "relation": "IS_A",
+      "target": "crop:pear",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:003",
+      "source": "crop:botou_pear",
+      "relation": "HAS_STAGE",
+      "target": "stage:0",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:004",
+      "source": "stage:0",
+      "relation": "NEXT_STAGE",
+      "target": "stage:1",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:005",
+      "source": "crop:botou_pear",
+      "relation": "HAS_STAGE",
+      "target": "stage:1",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:006",
+      "source": "stage:1",
+      "relation": "NEXT_STAGE",
+      "target": "stage:2",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:007",
+      "source": "crop:botou_pear",
+      "relation": "HAS_STAGE",
+      "target": "stage:2",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:008",
+      "source": "stage:2",
+      "relation": "NEXT_STAGE",
+      "target": "stage:3",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:009",
+      "source": "crop:botou_pear",
+      "relation": "HAS_STAGE",
+      "target": "stage:3",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:010",
+      "source": "stage:3",
+      "relation": "NEXT_STAGE",
+      "target": "stage:4",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:011",
+      "source": "crop:botou_pear",
+      "relation": "HAS_STAGE",
+      "target": "stage:4",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:012",
+      "source": "stage:4",
+      "relation": "NEXT_STAGE",
+      "target": "stage:5",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:013",
+      "source": "crop:botou_pear",
+      "relation": "HAS_STAGE",
+      "target": "stage:5",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:014",
+      "source": "stage:5",
+      "relation": "NEXT_STAGE",
+      "target": "stage:6",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:015",
+      "source": "crop:botou_pear",
+      "relation": "HAS_STAGE",
+      "target": "stage:6",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:016",
+      "source": "stage:6",
+      "relation": "NEXT_STAGE",
+      "target": "stage:7",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:017",
+      "source": "crop:botou_pear",
+      "relation": "HAS_STAGE",
+      "target": "stage:7",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:018",
+      "source": "crop:pear",
+      "relation": "HAS_DISEASE",
+      "target": "disease:scab",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:vic"
+      ],
+      "claim": "梨可发生黑星病",
+      "locator": "导言",
+      "scope": "general_pear",
+      "crop": "crop:pear",
+      "region": "AU-VIC",
+      "stage_ids": [],
+      "review_status": "transfer_pending",
+      "evidence_level": "extension_guidance",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:019",
+      "source": "disease:scab",
+      "relation": "AFFECTS",
+      "target": "organ:leaf",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:vic"
+      ],
+      "claim": "病害可侵染叶片和果实",
+      "locator": "导言",
+      "scope": "general_pear",
+      "crop": "crop:pear",
+      "region": "AU-VIC",
+      "stage_ids": [],
+      "review_status": "transfer_pending",
+      "evidence_level": "extension_guidance",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:020",
+      "source": "disease:scab",
+      "relation": "AFFECTS",
+      "target": "organ:fruit",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:vic"
+      ],
+      "claim": "病害可侵染叶片和果实",
+      "locator": "导言",
+      "scope": "general_pear",
+      "crop": "crop:pear",
+      "region": "AU-VIC",
+      "stage_ids": [],
+      "review_status": "transfer_pending",
+      "evidence_level": "extension_guidance",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:021",
+      "source": "disease:scab",
+      "relation": "HAS_SYMPTOM",
+      "target": "symptom:spots",
+      "kind": "fact",
+      "evidence_ids": [
+        "src:vic"
+      ],
+      "claim": "果实感染可出现橄榄绿至黑色斑点",
+      "locator": "Symptoms of pear scab",
+      "scope": "general_pear",
+      "crop": "crop:pear",
+      "region": "AU-VIC",
+      "stage_ids": [],
+      "review_status": "transfer_pending",
+      "evidence_level": "extension_guidance",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:022",
+      "source": "condition:wet",
+      "relation": "PROMOTES",
+      "target": "state:infection",
+      "kind": "mechanism",
+      "evidence_ids": [
+        "src:vic"
+      ],
+      "claim": "侵染与组织湿润持续时间有关；不能用库内相对湿度替代",
+      "locator": "Disease cycle",
+      "scope": "general_pear",
+      "crop": "crop:pear",
+      "region": "AU-VIC",
+      "stage_ids": [],
+      "review_status": "transfer_pending",
+      "evidence_level": "extension_guidance",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": [
+        "病原存在",
+        "感病组织",
+        "温度和湿润持续时间待补充"
+      ]
+    },
+    {
+      "id": "edge:023",
+      "source": "state:early_infection",
+      "relation": "PROMOTES",
+      "target": "state:deform",
+      "kind": "mechanism",
+      "evidence_ids": [
+        "src:vic"
+      ],
+      "claim": "早期果实感染可能引起畸形",
+      "locator": "Symptoms of pear scab",
+      "scope": "general_pear",
+      "crop": "crop:pear",
+      "region": "AU-VIC",
+      "stage_ids": [],
+      "review_status": "transfer_pending",
+      "evidence_level": "extension_guidance",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": [
+        "早期果实感染"
+      ]
+    },
+    {
+      "id": "edge:024",
+      "source": "state:late_infection",
+      "relation": "PROMOTES",
+      "target": "state:storage_spots",
+      "kind": "mechanism",
+      "evidence_ids": [
+        "src:vic"
+      ],
+      "claim": "采前感染的病斑可能在储藏期间显现",
+      "locator": "Symptoms of pear scab",
+      "scope": "general_pear",
+      "crop": "crop:pear",
+      "region": "AU-VIC",
+      "stage_ids": [],
+      "review_status": "transfer_pending",
+      "evidence_level": "extension_guidance",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": [
+        "采前已发生感染"
+      ]
+    },
+    {
+      "id": "edge:025",
+      "source": "state:infection",
+      "relation": "MAY_LEAD_TO",
+      "target": "state:late_infection",
+      "kind": "hypothesis",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:026",
+      "source": "state:storage_spots",
+      "relation": "MAY_LEAD_TO",
+      "target": "risk:loss",
+      "kind": "hypothesis",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:027",
+      "source": "state:injury",
+      "relation": "MAY_LEAD_TO",
+      "target": "risk:decay",
+      "kind": "hypothesis",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:028",
+      "source": "risk:decay",
+      "relation": "MAY_LEAD_TO",
+      "target": "risk:loss",
+      "kind": "hypothesis",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:029",
+      "source": "action:sort",
+      "relation": "MAY_REDUCE",
+      "target": "risk:loss",
+      "kind": "hypothesis",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:030",
+      "source": "action:gentle",
+      "relation": "MAY_REDUCE",
+      "target": "state:injury",
+      "kind": "hypothesis",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:031",
+      "source": "action:inspect",
+      "relation": "APPLIES_AT",
+      "target": "stage:5",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:032",
+      "source": "action:sort",
+      "relation": "APPLIES_AT",
+      "target": "stage:6",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:033",
+      "source": "stage:7",
+      "relation": "MONITORED_BY",
+      "target": "metric:temperature",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:034",
+      "source": "stage:7",
+      "relation": "MONITORED_BY",
+      "target": "metric:humidity",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:035",
+      "source": "stage:7",
+      "relation": "MONITORED_BY",
+      "target": "metric:duration",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:036",
+      "source": "batch:demo",
+      "relation": "INSTANCE_OF",
+      "target": "crop:botou_pear",
+      "kind": "workflow",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:037",
+      "source": "observation:demo",
+      "relation": "OBSERVED_ON",
+      "target": "batch:demo",
+      "kind": "observation",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    },
+    {
+      "id": "edge:038",
+      "source": "observation:demo",
+      "relation": "CANDIDATE_DISEASE",
+      "target": "disease:scab",
+      "kind": "observation",
+      "evidence_ids": [
+        "src:design"
+      ],
+      "claim": "本体结构定义",
+      "locator": "用户需求",
+      "scope": "design",
+      "crop": "crop:botou_pear",
+      "region": "unspecified",
+      "stage_ids": [],
+      "review_status": "draft",
+      "evidence_level": "design_only",
+      "confidence": null,
+      "effect_size": null,
+      "conditions": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "src:design",
+      "title": "用户需求与本体设计 V1",
+      "url": "",
+      "scope": "设计，不是农业证据",
+      "status": "design",
+      "accessed_at": "2026-09-12"
+    },
+    {
+      "id": "src:moa",
+      "title": "河北泊头市2021年中国农民丰收节举行",
+      "url": "https://nmfsj.moa.gov.cn/dfzt/heibei/zxzx_25728/202109/t20210923_6377404.htm",
+      "scope": "泊头产业背景",
+      "status": "read",
+      "accessed_at": "2026-09-12"
+    },
+    {
+      "id": "src:vic",
+      "title": "Agriculture Victoria: Pear scab",
+      "url": "https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/pear-scab",
+      "scope": "澳大利亚维多利亚州梨类；泊头适用性未确认",
+      "status": "read",
+      "accessed_at": "2026-09-12"
+    },
+    {
+      "id": "src:standard",
+      "title": "DB13/T 1176-2010 地理标志产品 泊头鸭梨（已废止）",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=91D99E4D4A902E24E05397BE0A0A3A10",
+      "scope": "仅核对目录元数据；全文未获取；需查更新版",
+      "status": "metadata_only",
+      "accessed_at": "2026-09-12"
+    }
+  ]
+}

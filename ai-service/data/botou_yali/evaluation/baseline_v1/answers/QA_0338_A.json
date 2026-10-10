@@ -1,0 +1,56 @@
+{
+  "id": "QA_0338",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法根据该论文引言回答我国鸭梨气调贮藏一般可贮藏多长时间。",
+      "basis": "未提供该论文引言原文，且我无法确认该论文的具体内容。",
+      "reasoning": "问题要求依据特定论文《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的引言作答，但当前证据为空，我也没有该论文的可靠记忆，因此不能给出具体贮藏时间，以免编造论文内容或数字。",
+      "advice": "请提供该论文引言的原文或相关段落，我再据此提取并回答；也可查阅该论文原文或权威综述中关于鸭梨气调贮藏期的表述。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 148,
+      "completion_tokens": 148,
+      "total_tokens": 296,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 148
+    },
+    "model": "deepseek-flash",
+    "response_id": "9b8dfc8a-5511-4018-b2d3-58a534fb6ab2",
+    "seconds": 5.891668000000209,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何贮藏时间，明确表示无法作答，属于拒答；在可回答题中拒答不算正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1103,
+      "completion_tokens": 42,
+      "total_tokens": 1145,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 975
+    },
+    "model": "deepseek-flash",
+    "response_id": "74573144-f9b5-4eaf-b1bc-b9da78282326",
+    "seconds": 6.927782300000217,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

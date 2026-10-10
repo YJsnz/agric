@@ -1,0 +1,29 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0338",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的贮藏试验中，鸭梨果皮和果肉PbACS1、PbACO2、PbETR2表达量变化有何特点？",
+      "answer_quote": "贮藏时，鸭梨果皮和果肉PbACS1、PbACO2、PbETR2 表达量明显上调，其中果肉的上调幅度显著大于果皮，并以窖藏果肉表现更为明显。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0339",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的贮藏试验后期，窖藏果皮与冷藏果皮中PbACS1、PbACO2、PbETR2表达量有何差异？",
+      "answer_quote": "在贮藏后期，窖藏果皮PbACS1、PbACO2、PbETR2 表达量低于冷藏果皮。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0340",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的贮藏试验中，PbETR1和PbERS1b表达量变化趋势如何？冷藏果肉中哪个基因表达量较高？",
+      "answer_quote": "PbETR1、PbERS1b 表达量上调后下降，相对来说，冷藏果肉具有较高的PbERS1b 表达量；",
+      "type": "multi_hop"
+    },
+    {
+      "original_id": "PQA_0341",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的贮藏试验中，PbEIN3在窖藏果皮、窖藏果肉与冷藏果实中的表达量有何差异？",
+      "answer_quote": "PbEIN3 表达量相对较小，窖藏果皮与果肉的PbEIN3表达量低于冷藏果实。",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

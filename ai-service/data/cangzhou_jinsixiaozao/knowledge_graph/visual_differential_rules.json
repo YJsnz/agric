@@ -1,0 +1,91 @@
+[
+  {
+    "id": "powder",
+    "chunk_id": "JVC_powder",
+    "candidate": "白粉状物核验方向",
+    "applicability": "美国大学观赏植物资料，仅迁移白粉状外观的观察线索；不是金丝小枣白粉病或病原鉴定依据。",
+    "question": "叶片表面和嫩梢是否确有白色粉状覆盖？",
+    "visual_labels": [
+      "powdery_mildew"
+    ],
+    "relation_kind": "differential_not_diagnostic"
+  },
+  {
+    "id": "iron",
+    "chunk_id": "JVC_iron",
+    "candidate": "果树缺铁性黄叶方向",
+    "applicability": "新梢嫩叶先黄、叶脉仍绿时再核验；资料针对一般果树，不是金丝小枣确诊依据。",
+    "question": "黄叶是否先从新梢嫩叶出现，叶脉是否仍绿？",
+    "visual_labels": [
+      "yellow_leaf"
+    ],
+    "relation_kind": "differential_not_diagnostic"
+  },
+  {
+    "id": "mosaic",
+    "chunk_id": "JVC_mosaic",
+    "candidate": "花叶/斑驳方向",
+    "applicability": "原文描述黄绿相间斑驳；单纯黄化不能确定病毒病。",
+    "question": "叶片是均匀黄化，还是黄绿相间斑驳？",
+    "visual_labels": [
+      "yellow_leaf"
+    ],
+    "relation_kind": "differential_not_diagnostic"
+  },
+  {
+    "id": "broom",
+    "chunk_id": "JVC_broom",
+    "candidate": "枣疯病伴随症状排查",
+    "applicability": "仅在黄化同时伴随丛枝、叶片卷曲等表现时值得现场排查，不从一张黄叶图推断枣疯病。",
+    "question": "是否同时出现异常细小丛枝、叶片匙状卷曲？",
+    "visual_labels": [
+      "yellow_leaf"
+    ],
+    "relation_kind": "differential_not_diagnostic"
+  },
+  {
+    "id": "rust",
+    "chunk_id": "JVC_rust",
+    "candidate": "枣锈病叶背表现排查",
+    "applicability": "原文描述叶背小点随后凸起；这是鉴别线索，不是图像已检测到的特征。",
+    "question": "叶背是否有由淡绿色小点变成暗黄褐色的凸起？",
+    "visual_labels": [
+      "yellow_leaf",
+      "anthracnose"
+    ],
+    "relation_kind": "differential_not_diagnostic"
+  },
+  {
+    "id": "anthracnose",
+    "chunk_id": "JVC_anthracnose",
+    "candidate": "炭疽病相关方向",
+    "applicability": "资料确认可侵染叶片，但具体病斑描述属于果实；不能把果实症状转写成叶片鉴别特征。",
+    "question": "是否也有果实异常？叶片症状仍需单独现场核验。",
+    "visual_labels": [
+      "anthracnose"
+    ],
+    "relation_kind": "differential_not_diagnostic"
+  },
+  {
+    "id": "looper",
+    "chunk_id": "JVC_looper",
+    "candidate": "枣尺蠖等食叶虫方向",
+    "applicability": "外地枣树资料的食叶害虫方向；不能由损伤分类确定虫种。",
+    "question": "嫩芽、叶片或花蕾上是否能找到幼虫？",
+    "visual_labels": [
+      "insect_damage"
+    ],
+    "relation_kind": "differential_not_diagnostic"
+  },
+  {
+    "id": "roller",
+    "chunk_id": "JVC_roller",
+    "candidate": "枣粘虫卷叶方向",
+    "applicability": "原文描述幼虫缀叶卷苞，需看到伴随表现才能进一步排查。",
+    "question": "是否存在缀叶卷苞，或果柄附近蛀入痕迹？",
+    "visual_labels": [
+      "insect_damage"
+    ],
+    "relation_kind": "differential_not_diagnostic"
+  }
+]

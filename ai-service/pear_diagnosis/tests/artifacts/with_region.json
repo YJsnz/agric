@@ -1,0 +1,4079 @@
+{
+  "image_path": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\pear-vision\\data\\prepared\\classification\\test\\spot\\006958c6c311f550e8b94288d38de2489a6d650d01edcd87f64c06e983c45ee7.jpg",
+  "request_context": {
+    "region": "河北省沧州市泊头市"
+  },
+  "region_source": "user_provided_for_test",
+  "http_status": 200,
+  "completed_calls": {
+    "graph_web.server.load_graph": 1,
+    "graphrag.graph_retriever.retrieve_subgraph": 2,
+    "app.vector_rag.search": 1,
+    "graphrag.answer_service.generate": 2,
+    "graphrag.answer_service.validate_citations": 2,
+    "graphrag.grounding.audit_answer": 2
+  },
+  "response": {
+    "status": "validation_failed",
+    "clarification_questions": [],
+    "vision": {
+      "crop": "泊头鸭梨",
+      "symptom": "spot",
+      "symptom_cn": "叶斑症状",
+      "confidence": 0.999997615814209,
+      "confidence_percent": 100.0,
+      "model": "pear_symptom_yolo11n_cls_v1"
+    },
+    "context": {
+      "crop": "泊头鸭梨",
+      "organ": "leaf",
+      "region": "河北省沧州市泊头市",
+      "scene": null,
+      "growth_stage": null,
+      "temperature": null,
+      "humidity": null,
+      "rainfall": null
+    },
+    "knowledge_graph": {
+      "visual_mapping": {
+        "visual_class": "spot",
+        "visual_label": "叶斑症状",
+        "entity_type": "Symptom",
+        "search_terms": [
+          "叶斑",
+          "斑点",
+          "病斑",
+          "褐斑",
+          "黑斑"
+        ],
+        "can_diagnose_disease": false
+      },
+      "matched_symptom_nodes": [
+        {
+          "id": "v2:b1c159f2cd457052",
+          "name": "果面橄榄黑色绒状病斑",
+          "type": "Symptom",
+          "aliases": [],
+          "dataset": "pear_evidence_v2",
+          "classification_basis": "原始知识条目语义分类；不改变证据适用范围",
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "source_count": 1,
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "US-CA"
+          ],
+          "description": "果面橄榄黑色绒状病斑；类型 Symptom。关联 1 条有出处知识；作物、地区及阶段须按具体关系核对。"
+        },
+        {
+          "id": "v2:1c3120df3c1800d1",
+          "name": "晚期针尖状黑斑",
+          "type": "Symptom",
+          "aliases": [],
+          "dataset": "pear_evidence_v2",
+          "classification_basis": "原始知识条目语义分类；不改变证据适用范围",
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "source_count": 1,
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "US-CA"
+          ],
+          "description": "晚期针尖状黑斑；类型 Symptom。关联 1 条有出处知识；作物、地区及阶段须按具体关系核对。"
+        },
+        {
+          "id": "v2:6917a6e0e8f5c269",
+          "name": "叶片黑色斑点",
+          "type": "Symptom",
+          "aliases": [],
+          "dataset": "pear_evidence_v2",
+          "classification_basis": "原始知识条目语义分类；不改变证据适用范围",
+          "source_ids": [
+            "uc_blossom_blast"
+          ],
+          "source_count": 1,
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "US-CA"
+          ],
+          "description": "叶片黑色斑点；类型 Symptom。关联 1 条有出处知识；作物、地区及阶段须按具体关系核对。"
+        },
+        {
+          "id": "v2:927612bac262d5b2",
+          "name": "储藏中显现黑星病斑",
+          "type": "Symptom",
+          "aliases": [],
+          "dataset": "pear_evidence_v2",
+          "classification_basis": "原始知识条目语义分类；不改变证据适用范围",
+          "source_ids": [
+            "vic"
+          ],
+          "source_count": 1,
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "AU-VIC"
+          ],
+          "description": "储藏中显现黑星病斑；类型 Symptom。关联 1 条有出处知识；作物、地区及阶段须按具体关系核对。"
+        }
+      ],
+      "candidate_risks": [
+        {
+          "candidate_id": "v2:435c70a2381d781d",
+          "candidate_name": "梨黑星病",
+          "candidate_type": "Disease",
+          "symptom_id": "v2:b1c159f2cd457052",
+          "symptom_name": "果面橄榄黑色绒状病斑",
+          "edge_id": "v2:e0192",
+          "relation": "HAS_SYMPTOM",
+          "kind": "fact",
+          "region": "US-CA",
+          "review_status": "transfer_pending",
+          "evidence_ids": [
+            "uc_pear_scab"
+          ],
+          "crop": "v2:10c1ff756bbf8954",
+          "stage_ids": [
+            "v2:a8677216bc774e82"
+          ],
+          "conditions": [
+            "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+          ],
+          "locator": "Symptoms and Signs / Damage"
+        },
+        {
+          "candidate_id": "v2:435c70a2381d781d",
+          "candidate_name": "梨黑星病",
+          "candidate_type": "Disease",
+          "symptom_id": "v2:1c3120df3c1800d1",
+          "symptom_name": "晚期针尖状黑斑",
+          "edge_id": "v2:e0195",
+          "relation": "HAS_SYMPTOM",
+          "kind": "fact",
+          "region": "US-CA",
+          "review_status": "transfer_pending",
+          "evidence_ids": [
+            "uc_pear_scab"
+          ],
+          "crop": "v2:10c1ff756bbf8954",
+          "stage_ids": [
+            "v2:a8677216bc774e82"
+          ],
+          "conditions": [
+            "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+          ],
+          "locator": "Symptoms and Signs / Damage"
+        },
+        {
+          "candidate_id": "v2:47cbcba1df5003f3",
+          "candidate_name": "梨细菌性花枯病",
+          "candidate_type": "Disease",
+          "symptom_id": "v2:6917a6e0e8f5c269",
+          "symptom_name": "叶片黑色斑点",
+          "edge_id": "v2:e0245",
+          "relation": "HAS_SYMPTOM",
+          "kind": "fact",
+          "region": "US-CA",
+          "review_status": "transfer_pending",
+          "evidence_ids": [
+            "uc_blossom_blast"
+          ],
+          "crop": "v2:10c1ff756bbf8954",
+          "stage_ids": [
+            "v2:a8677216bc774e82"
+          ],
+          "conditions": [
+            "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+          ],
+          "locator": "Symptoms and Signs / Damage"
+        }
+      ],
+      "diagnosis": null,
+      "warning": "候选风险来自知识图谱中已有的 HAS_SYMPTOM 关系，仅用于候选检索，不能视为病害确诊。词面匹配不代表部位一致；须核对地区、阶段和证据适用条件。"
+    },
+    "candidate_ranking": [
+      {
+        "candidate_id": "v2:47cbcba1df5003f3",
+        "candidate_name": "梨细菌性花枯病",
+        "candidate_type": "Disease",
+        "symptom_id": "v2:6917a6e0e8f5c269",
+        "symptom_name": "叶片黑色斑点",
+        "edge_id": "v2:e0245",
+        "relation": "HAS_SYMPTOM",
+        "kind": "fact",
+        "region": "US-CA",
+        "review_status": "transfer_pending",
+        "evidence_ids": [
+          "uc_blossom_blast"
+        ],
+        "crop": "v2:10c1ff756bbf8954",
+        "stage_ids": [
+          "v2:a8677216bc774e82"
+        ],
+        "conditions": [
+          "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+        ],
+        "locator": "Symptoms and Signs / Damage",
+        "ranking_score": 5,
+        "ranking_reasons": [
+          "+40：症状名称明确涉及叶片，与 organ=leaf 一致",
+          "-15：US-CA 为异地证据，不作为泊头/沧州/河北本地证据",
+          "-20：transfer_pending，迁移适用性尚待审核"
+        ],
+        "ranking_warnings": [
+          "异地证据 US-CA 的本地适用性需要审核",
+          "transfer_pending：不得视为已审核的本地证据",
+          "第一版未对作物、场景、生育期和气象数值评分；缺失信息保持 None",
+          "ranking_score 仅为规则排序分，不是疾病概率或确诊概率"
+        ]
+      },
+      {
+        "candidate_id": "v2:435c70a2381d781d",
+        "candidate_name": "梨黑星病",
+        "candidate_type": "Disease",
+        "symptom_id": "v2:1c3120df3c1800d1",
+        "symptom_name": "晚期针尖状黑斑",
+        "edge_id": "v2:e0195",
+        "relation": "HAS_SYMPTOM",
+        "kind": "fact",
+        "region": "US-CA",
+        "review_status": "transfer_pending",
+        "evidence_ids": [
+          "uc_pear_scab"
+        ],
+        "crop": "v2:10c1ff756bbf8954",
+        "stage_ids": [
+          "v2:a8677216bc774e82"
+        ],
+        "conditions": [
+          "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+        ],
+        "locator": "Symptoms and Signs / Damage",
+        "ranking_score": -35,
+        "ranking_reasons": [
+          "-15：US-CA 为异地证据，不作为泊头/沧州/河北本地证据",
+          "-20：transfer_pending，迁移适用性尚待审核"
+        ],
+        "ranking_warnings": [
+          "症状名称未明确部位，不能推断为叶片症状",
+          "异地证据 US-CA 的本地适用性需要审核",
+          "transfer_pending：不得视为已审核的本地证据",
+          "第一版未对作物、场景、生育期和气象数值评分；缺失信息保持 None",
+          "ranking_score 仅为规则排序分，不是疾病概率或确诊概率"
+        ]
+      },
+      {
+        "candidate_id": "v2:435c70a2381d781d",
+        "candidate_name": "梨黑星病",
+        "candidate_type": "Disease",
+        "symptom_id": "v2:b1c159f2cd457052",
+        "symptom_name": "果面橄榄黑色绒状病斑",
+        "edge_id": "v2:e0192",
+        "relation": "HAS_SYMPTOM",
+        "kind": "fact",
+        "region": "US-CA",
+        "review_status": "transfer_pending",
+        "evidence_ids": [
+          "uc_pear_scab"
+        ],
+        "crop": "v2:10c1ff756bbf8954",
+        "stage_ids": [
+          "v2:a8677216bc774e82"
+        ],
+        "conditions": [
+          "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+        ],
+        "locator": "Symptoms and Signs / Damage",
+        "ranking_score": -75,
+        "ranking_reasons": [
+          "-40：症状名称明确涉及果实部位，与叶片输入不符",
+          "-15：US-CA 为异地证据，不作为泊头/沧州/河北本地证据",
+          "-20：transfer_pending，迁移适用性尚待审核"
+        ],
+        "ranking_warnings": [
+          "果实症状不能直接解释当前叶片观测，保留候选供追溯",
+          "异地证据 US-CA 的本地适用性需要审核",
+          "transfer_pending：不得视为已审核的本地证据",
+          "第一版未对作物、场景、生育期和气象数值评分；缺失信息保持 None",
+          "ranking_score 仅为规则排序分，不是疾病概率或确诊概率"
+        ]
+      }
+    ],
+    "graphrag": {
+      "entities": [
+        "泊头鸭梨",
+        "河北省沧州市泊头市",
+        "梨细菌性花枯病",
+        "梨黑星病",
+        "果面橄榄黑色绒状病斑",
+        "晚期针尖状黑斑",
+        "叶片黑色斑点",
+        "储藏中显现黑星病斑"
+      ],
+      "extracted_entities": {
+        "crop": "泊头鸭梨",
+        "region": "河北省沧州市泊头市",
+        "stage": null,
+        "environment": [],
+        "disease": [
+          "梨细菌性花枯病",
+          "梨黑星病"
+        ],
+        "pest": [],
+        "symptom": [
+          "果面橄榄黑色绒状病斑",
+          "晚期针尖状黑斑",
+          "叶片黑色斑点",
+          "储藏中显现黑星病斑"
+        ],
+        "quality": [],
+        "intervention": [],
+        "risk": [],
+        "intent": "risk_analysis"
+      },
+      "alignments": [
+        {
+          "field": "crop",
+          "mention": "泊头鸭梨",
+          "status": "matched",
+          "entity_id": "v2:7b265c03320d54ee",
+          "canonical_name": "泊头鸭梨",
+          "candidates": [
+            {
+              "id": "v2:7b265c03320d54ee",
+              "name": "泊头鸭梨",
+              "type": "Crop",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "泊头市"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "region",
+          "mention": "河北省沧州市泊头市",
+          "status": "matched",
+          "entity_id": "v2:9a8a610336e9e72c",
+          "canonical_name": "泊头市",
+          "candidates": [
+            {
+              "id": "v2:9a8a610336e9e72c",
+              "name": "泊头市",
+              "type": "Region",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "泊头市"
+              ]
+            }
+          ],
+          "raw_region": "河北省沧州市泊头市",
+          "aligned_region": "泊头市"
+        },
+        {
+          "field": "disease",
+          "mention": "梨细菌性花枯病",
+          "status": "matched",
+          "entity_id": "v2:47cbcba1df5003f3",
+          "canonical_name": "梨细菌性花枯病",
+          "candidates": [
+            {
+              "id": "v2:47cbcba1df5003f3",
+              "name": "梨细菌性花枯病",
+              "type": "Disease",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "US-CA"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "disease",
+          "mention": "梨黑星病",
+          "status": "matched",
+          "entity_id": "v2:435c70a2381d781d",
+          "canonical_name": "梨黑星病",
+          "candidates": [
+            {
+              "id": "v2:435c70a2381d781d",
+              "name": "梨黑星病",
+              "type": "Disease",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "AU-VIC",
+                "US-CA"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "symptom",
+          "mention": "果面橄榄黑色绒状病斑",
+          "status": "matched",
+          "entity_id": "v2:b1c159f2cd457052",
+          "canonical_name": "果面橄榄黑色绒状病斑",
+          "candidates": [
+            {
+              "id": "v2:b1c159f2cd457052",
+              "name": "果面橄榄黑色绒状病斑",
+              "type": "Symptom",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "US-CA"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "symptom",
+          "mention": "晚期针尖状黑斑",
+          "status": "matched",
+          "entity_id": "v2:1c3120df3c1800d1",
+          "canonical_name": "晚期针尖状黑斑",
+          "candidates": [
+            {
+              "id": "v2:1c3120df3c1800d1",
+              "name": "晚期针尖状黑斑",
+              "type": "Symptom",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "US-CA"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "symptom",
+          "mention": "叶片黑色斑点",
+          "status": "matched",
+          "entity_id": "v2:6917a6e0e8f5c269",
+          "canonical_name": "叶片黑色斑点",
+          "candidates": [
+            {
+              "id": "v2:6917a6e0e8f5c269",
+              "name": "叶片黑色斑点",
+              "type": "Symptom",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "US-CA"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "symptom",
+          "mention": "储藏中显现黑星病斑",
+          "status": "matched",
+          "entity_id": "v2:927612bac262d5b2",
+          "canonical_name": "储藏中显现黑星病斑",
+          "candidates": [
+            {
+              "id": "v2:927612bac262d5b2",
+              "name": "储藏中显现黑星病斑",
+              "type": "Symptom",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "AU-VIC"
+              ]
+            }
+          ]
+        }
+      ],
+      "channels": {
+        "neo4j": {
+          "status": "empty",
+          "count": 0,
+          "truncated": false
+        },
+        "faiss": {
+          "status": "ok",
+          "count": 1
+        }
+      },
+      "evidence_rejections": [],
+      "corpus_sha256": "7e0493281ac83f3e80d581dbf416de7f80e608ca12e8e2d570636b63d09bdab9",
+      "reasoning_paths": [],
+      "sources": [],
+      "generation_called": true,
+      "policy": {
+        "purpose": "local_advice",
+        "mode": "strict",
+        "titles": [],
+        "notice": "当地建议要求适用性明确；未知资料只作研究参考。"
+      },
+      "extraction_notice": null,
+      "pipeline_version": "agricultural-v2",
+      "unresolved_entities": [],
+      "preliminary_assessment": {
+        "available": false,
+        "summary": "",
+        "candidate_risks": [],
+        "supporting_points": [],
+        "uncertainties": []
+      },
+      "local_conclusion": {
+        "available": false,
+        "reason": "尚无经过本地结论核验的输出。"
+      },
+      "recommended_observations": [],
+      "citations": [],
+      "grounding": {
+        "passed": false,
+        "checks": [
+          {
+            "field": "conclusion",
+            "verdict": "unsupported",
+            "reason": "结论中关于梨黑星病可危害叶片、叶背面产生圆形/椭圆形/不规则形病斑并出现黑色霉状物的描述有E1支持，但结论还称‘梨细菌性花枯病候选仅有异地且迁移待审核的关联’，该事实未在引用证据E1中给出，属于未引用证据补证；同时‘不构成本地疾病结论’与E1的general_authoritative及local_disease_validation=false一致，但整体因引入未引用候选信息而不完全支持。"
+          },
+          {
+            "field": "basis",
+            "verdict": "unsupported",
+            "reason": "basis中梨黑星病通用症状描述有E1支持，但‘候选关联为异地且迁移待审核’未在E1中体现，属于未引用证据补证；E1仅支持通用机理和候选解释，不能支持该异地迁移状态的事实陈述。"
+          },
+          {
+            "field": "reasoning",
+            "verdict": "unsupported",
+            "reason": "reasoning中‘梨细菌性花枯病候选仅有异地且迁移待审核的关联，无本次证据正文支持’以及‘梨黑星病候选与通用资料中叶片病斑描述存在症状层面的关联可能’中的候选迁移状态、KG候选排序等事实未在引用证据E1中给出；E1只支持梨黑星病通用症状，不支持对候选迁移状态的判断。"
+          },
+          {
+            "field": "advice",
+            "verdict": "unsupported",
+            "reason": "事实字段没有实际引用证据。"
+          }
+        ],
+        "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+      },
+      "evidence_groups": {
+        "local_conclusion_evidence": [],
+        "candidate_assessment_evidence": [
+          "chunk:GOV_001_C0001"
+        ],
+        "rejected_evidence": [
+          {
+            "chunk_id": "UNI_001_C0001",
+            "reasons": [
+              "scope:not_reviewed_for_diagnostic_explanation"
+            ]
+          },
+          {
+            "chunk_id": "UNI_001_C0002",
+            "reasons": [
+              "scope:not_reviewed_for_diagnostic_explanation"
+            ]
+          },
+          {
+            "chunk_id": "UNI_001_C0003",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_001_C0011",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_003_C0002",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_001_C0026",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_001_C0001",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_001_C0020",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_003_C0013",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "GOV_002_C0001",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_003_C0011",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_003_C0005",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_005_C0013",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_003_C0004",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_003_C0007",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_003_C0012",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "GOV_002_C0002",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_005_C0023",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          },
+          {
+            "chunk_id": "PAPER_001_C0010",
+            "reasons": [
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+              "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+            ]
+          }
+        ]
+      },
+      "raw_region": "河北省沧州市泊头市",
+      "aligned_region": "泊头市",
+      "reference_materials": [
+        {
+          "source_id": "UNI_001",
+          "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+          "url": "https://www.zwbch.com/changshi/view_14.html",
+          "chunk_id": "UNI_001_C0001",
+          "reasons": [
+            "scope:not_reviewed_for_diagnostic_explanation"
+          ],
+          "usable_for_answer": false
+        },
+        {
+          "source_id": "UNI_001",
+          "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+          "url": "https://www.zwbch.com/changshi/view_14.html",
+          "chunk_id": "UNI_001_C0002",
+          "reasons": [
+            "scope:not_reviewed_for_diagnostic_explanation"
+          ],
+          "usable_for_answer": false
+        }
+      ],
+      "discovery_paths": [
+        {
+          "candidate_id": "path:v2:e0246",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨细菌性花枯病",
+              "evidence_ids": [
+                "uc_blossom_blast"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0246",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:47cbcba1df5003f3",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:47cbcba1df5003f3"
+          ],
+          "node_names": [
+            "梨",
+            "梨细菌性花枯病"
+          ],
+          "source_ids": [
+            "uc_blossom_blast"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0301",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0301",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Comments on the Disease",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:e690009b65b14799",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:e690009b65b14799"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "梨黑星病初侵染"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0302",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 梨黑星病二次传播",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0302",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Comments on the Disease",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:d4c36f9a428de9eb",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:d4c36f9a428de9eb"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "梨黑星病二次传播"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0306",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:588027983c17920f",
+                "v2:1df599bacfb4d6d5"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 采前晚期黑星病感染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "vic"
+              ],
+              "id": "v2:e0306",
+              "region": "AU-VIC",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "locator": "Symptoms",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:5f530239fadc2164",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:5f530239fadc2164"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "采前晚期黑星病感染"
+          ],
+          "source_ids": [
+            "vic"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "AU-VIC"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0192",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 果面橄榄黑色绒状病斑",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0192",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:b1c159f2cd457052",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:b1c159f2cd457052"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "果面橄榄黑色绒状病斑"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0193",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 叶片皱缩扭曲",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0193",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:371918a8ef1d8ec5",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:371918a8ef1d8ec5"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "叶片皱缩扭曲"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0194",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 早期侵染后果实畸形",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0194",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:ac1b0c11cd15b965",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:ac1b0c11cd15b965"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "早期侵染后果实畸形"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0195",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 晚期针尖状黑斑",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0195",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:1c3120df3c1800d1",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:1c3120df3c1800d1"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "晚期针尖状黑斑"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0303",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0303",
+              "conditions": [
+                "仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:341ded85dd07d276",
+              "relation": "CONTROLLED_BY",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:341ded85dd07d276"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "黑星病初侵染预防"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0305",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "normative",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — RECOMMENDS → 温湿条件监测",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0305",
+              "region": "US-CA",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "evidence_level": "B",
+              "locator": "Monitoring",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:656d439c36837d58",
+              "relation": "RECOMMENDS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:656d439c36837d58"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "温湿条件监测"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0243",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨细菌性花枯病 — HAS_SYMPTOM → 花芽干枯",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_blossom_blast"
+              ],
+              "id": "v2:e0243",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:47cbcba1df5003f3",
+              "target": "v2:418c7399960d89c7",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:47cbcba1df5003f3",
+            "v2:418c7399960d89c7"
+          ],
+          "node_names": [
+            "梨细菌性花枯病",
+            "花芽干枯"
+          ],
+          "source_ids": [
+            "uc_blossom_blast"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0244",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨细菌性花枯病 — HAS_SYMPTOM → 果面黑色凹斑",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_blossom_blast"
+              ],
+              "id": "v2:e0244",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:47cbcba1df5003f3",
+              "target": "v2:a4f4436582d3eacf",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:47cbcba1df5003f3",
+            "v2:a4f4436582d3eacf"
+          ],
+          "node_names": [
+            "梨细菌性花枯病",
+            "果面黑色凹斑"
+          ],
+          "source_ids": [
+            "uc_blossom_blast"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0245",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨细菌性花枯病 — HAS_SYMPTOM → 叶片黑色斑点",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_blossom_blast"
+              ],
+              "id": "v2:e0245",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:47cbcba1df5003f3",
+              "target": "v2:6917a6e0e8f5c269",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:47cbcba1df5003f3",
+            "v2:6917a6e0e8f5c269"
+          ],
+          "node_names": [
+            "梨细菌性花枯病",
+            "叶片黑色斑点"
+          ],
+          "source_ids": [
+            "uc_blossom_blast"
+          ],
+          "hop_count": 1,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0246/v2:e0243",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨细菌性花枯病",
+              "evidence_ids": [
+                "uc_blossom_blast"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0246",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:47cbcba1df5003f3",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨细菌性花枯病 — HAS_SYMPTOM → 花芽干枯",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_blossom_blast"
+              ],
+              "id": "v2:e0243",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:47cbcba1df5003f3",
+              "target": "v2:418c7399960d89c7",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:47cbcba1df5003f3",
+            "v2:418c7399960d89c7"
+          ],
+          "node_names": [
+            "梨",
+            "梨细菌性花枯病",
+            "花芽干枯"
+          ],
+          "source_ids": [
+            "uc_blossom_blast"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0246/v2:e0244",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨细菌性花枯病",
+              "evidence_ids": [
+                "uc_blossom_blast"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0246",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:47cbcba1df5003f3",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨细菌性花枯病 — HAS_SYMPTOM → 果面黑色凹斑",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_blossom_blast"
+              ],
+              "id": "v2:e0244",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:47cbcba1df5003f3",
+              "target": "v2:a4f4436582d3eacf",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:47cbcba1df5003f3",
+            "v2:a4f4436582d3eacf"
+          ],
+          "node_names": [
+            "梨",
+            "梨细菌性花枯病",
+            "果面黑色凹斑"
+          ],
+          "source_ids": [
+            "uc_blossom_blast"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0246/v2:e0245",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨细菌性花枯病",
+              "evidence_ids": [
+                "uc_blossom_blast"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0246",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:47cbcba1df5003f3",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨细菌性花枯病 — HAS_SYMPTOM → 叶片黑色斑点",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_blossom_blast"
+              ],
+              "id": "v2:e0245",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:47cbcba1df5003f3",
+              "target": "v2:6917a6e0e8f5c269",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:47cbcba1df5003f3",
+            "v2:6917a6e0e8f5c269"
+          ],
+          "node_names": [
+            "梨",
+            "梨细菌性花枯病",
+            "叶片黑色斑点"
+          ],
+          "source_ids": [
+            "uc_blossom_blast"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0301",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0301",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Comments on the Disease",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:e690009b65b14799",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:e690009b65b14799"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "梨黑星病初侵染"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0302",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 梨黑星病二次传播",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0302",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Comments on the Disease",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:d4c36f9a428de9eb",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:d4c36f9a428de9eb"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "梨黑星病二次传播"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0306",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:588027983c17920f",
+                "v2:1df599bacfb4d6d5"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 采前晚期黑星病感染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "vic"
+              ],
+              "id": "v2:e0306",
+              "region": "AU-VIC",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "locator": "Symptoms",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:5f530239fadc2164",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:5f530239fadc2164"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "采前晚期黑星病感染"
+          ],
+          "source_ids": [
+            "uc_pear_scab",
+            "vic"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "AU-VIC"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0192",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 果面橄榄黑色绒状病斑",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0192",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:b1c159f2cd457052",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:b1c159f2cd457052"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "果面橄榄黑色绒状病斑"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0193",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 叶片皱缩扭曲",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0193",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:371918a8ef1d8ec5",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:371918a8ef1d8ec5"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "叶片皱缩扭曲"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0194",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 早期侵染后果实畸形",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0194",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:ac1b0c11cd15b965",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:ac1b0c11cd15b965"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "早期侵染后果实畸形"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0195",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 晚期针尖状黑斑",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0195",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:1c3120df3c1800d1",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:1c3120df3c1800d1"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "晚期针尖状黑斑"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0303",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0303",
+              "conditions": [
+                "仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:341ded85dd07d276",
+              "relation": "CONTROLLED_BY",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:341ded85dd07d276"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "黑星病初侵染预防"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0305",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "normative",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — RECOMMENDS → 温湿条件监测",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0305",
+              "region": "US-CA",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "evidence_level": "B",
+              "locator": "Monitoring",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:656d439c36837d58",
+              "relation": "RECOMMENDS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:656d439c36837d58"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "温湿条件监测"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0301/v2:e0273",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0301",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Comments on the Disease",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:e690009b65b14799",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            },
+            {
+              "kind": "mechanism",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病初侵染 — PROMOTES → 梨黑星病二次传播",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0273",
+              "region": "US-CA",
+              "conditions": [
+                "初侵染产生次生孢子，并再次遇到湿润条件；不是储藏腐烂结论"
+              ],
+              "locator": "Comments on the Disease",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:e690009b65b14799",
+              "target": "v2:d4c36f9a428de9eb",
+              "relation": "PROMOTES",
+              "hop": 2
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:e690009b65b14799",
+            "v2:d4c36f9a428de9eb"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "梨黑星病初侵染",
+            "梨黑星病二次传播"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0303/v2:e0304",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0303",
+              "conditions": [
+                "仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:341ded85dd07d276",
+              "relation": "CONTROLLED_BY",
+              "hop": 1
+            },
+            {
+              "kind": "normative",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "黑星病初侵染预防 — INTERVENTION_FOR → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0304",
+              "region": "US-CA",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:341ded85dd07d276",
+              "target": "v2:e690009b65b14799",
+              "relation": "INTERVENTION_FOR",
+              "hop": 2
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:341ded85dd07d276",
+            "v2:e690009b65b14799"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "黑星病初侵染预防",
+            "梨黑星病初侵染"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0301/v2:e0273",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0301",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Comments on the Disease",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:e690009b65b14799",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            },
+            {
+              "kind": "mechanism",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病初侵染 — PROMOTES → 梨黑星病二次传播",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0273",
+              "region": "US-CA",
+              "conditions": [
+                "初侵染产生次生孢子，并再次遇到湿润条件；不是储藏腐烂结论"
+              ],
+              "locator": "Comments on the Disease",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:e690009b65b14799",
+              "target": "v2:d4c36f9a428de9eb",
+              "relation": "PROMOTES",
+              "hop": 2
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:e690009b65b14799",
+            "v2:d4c36f9a428de9eb"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "梨黑星病初侵染",
+            "梨黑星病二次传播"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 3,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0196/v2:e0303/v2:e0304",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨 — HAS_DISEASE → 梨黑星病",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "review_status": "transfer_pending",
+              "id": "v2:e0196",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Pear pest management guidelines",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:10c1ff756bbf8954",
+              "target": "v2:435c70a2381d781d",
+              "relation": "HAS_DISEASE",
+              "hop": 1
+            },
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0303",
+              "conditions": [
+                "仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:341ded85dd07d276",
+              "relation": "CONTROLLED_BY",
+              "hop": 1
+            },
+            {
+              "kind": "normative",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "黑星病初侵染预防 — INTERVENTION_FOR → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0304",
+              "region": "US-CA",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:341ded85dd07d276",
+              "target": "v2:e690009b65b14799",
+              "relation": "INTERVENTION_FOR",
+              "hop": 2
+            }
+          ],
+          "node_ids": [
+            "v2:10c1ff756bbf8954",
+            "v2:435c70a2381d781d",
+            "v2:341ded85dd07d276",
+            "v2:e690009b65b14799"
+          ],
+          "node_names": [
+            "梨",
+            "梨黑星病",
+            "黑星病初侵染预防",
+            "梨黑星病初侵染"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 3,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        },
+        {
+          "candidate_id": "path:v2:e0303/v2:e0304/v2:e0273",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0303",
+              "conditions": [
+                "仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:341ded85dd07d276",
+              "relation": "CONTROLLED_BY",
+              "hop": 1
+            },
+            {
+              "kind": "normative",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "黑星病初侵染预防 — INTERVENTION_FOR → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0304",
+              "region": "US-CA",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:341ded85dd07d276",
+              "target": "v2:e690009b65b14799",
+              "relation": "INTERVENTION_FOR",
+              "hop": 2
+            },
+            {
+              "kind": "mechanism",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病初侵染 — PROMOTES → 梨黑星病二次传播",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0273",
+              "region": "US-CA",
+              "conditions": [
+                "初侵染产生次生孢子，并再次遇到湿润条件；不是储藏腐烂结论"
+              ],
+              "locator": "Comments on the Disease",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:e690009b65b14799",
+              "target": "v2:d4c36f9a428de9eb",
+              "relation": "PROMOTES",
+              "hop": 2
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:341ded85dd07d276",
+            "v2:e690009b65b14799",
+            "v2:d4c36f9a428de9eb"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "黑星病初侵染预防",
+            "梨黑星病初侵染",
+            "梨黑星病二次传播"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 3,
+          "usable_for_local_conclusion": false,
+          "evidence_scope": [
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            },
+            {
+              "status": "transfer_pending",
+              "restrictions": [],
+              "allowed_uses": [
+                "candidate_discovery"
+              ],
+              "reasons": [
+                "继承已有关系审核和明确地区；分级不新增或验证因果关系"
+              ],
+              "local_disease_validation": false,
+              "original_region": [
+                "US-CA"
+              ],
+              "original_review_status": "transfer_pending"
+            }
+          ]
+        }
+      ],
+      "evidence_roles": {
+        "candidate_explanation": "候选与通用机理，不是本地确诊",
+        "production_background": "区域生产背景，不替代本地病害证据",
+        "local_advice": "仍须通过原有地区、作物、阶段及审核约束"
+      },
+      "ranking": {
+        "fusion_config": {
+          "rrf_k": 60,
+          "metadata_strength": 0.1,
+          "calibrated": false
+        },
+        "candidate_count": 1,
+        "selected": [
+          {
+            "candidate_id": "chunk:GOV_001_C0001",
+            "kind": "document_chunk",
+            "features": {
+              "neural_rank": 1,
+              "vector_rank": 6,
+              "scope_match": 0.7,
+              "evidence_quality": 0.7,
+              "relevance_rrf": 0.9621212121212122
+            }
+          }
+        ]
+      },
+      "status": "validation_failed",
+      "grounding_audit": {
+        "passed": false,
+        "checks": [
+          {
+            "field": "conclusion",
+            "verdict": "unsupported",
+            "reason": "结论中关于梨黑星病可危害叶片、叶背面产生圆形/椭圆形/不规则形病斑并出现黑色霉状物的描述有E1支持，但结论还称‘梨细菌性花枯病候选仅有异地且迁移待审核的关联’，该事实未在引用证据E1中给出，属于未引用证据补证；同时‘不构成本地疾病结论’与E1的general_authoritative及local_disease_validation=false一致，但整体因引入未引用候选信息而不完全支持。"
+          },
+          {
+            "field": "basis",
+            "verdict": "unsupported",
+            "reason": "basis中梨黑星病通用症状描述有E1支持，但‘候选关联为异地且迁移待审核’未在E1中体现，属于未引用证据补证；E1仅支持通用机理和候选解释，不能支持该异地迁移状态的事实陈述。"
+          },
+          {
+            "field": "reasoning",
+            "verdict": "unsupported",
+            "reason": "reasoning中‘梨细菌性花枯病候选仅有异地且迁移待审核的关联，无本次证据正文支持’以及‘梨黑星病候选与通用资料中叶片病斑描述存在症状层面的关联可能’中的候选迁移状态、KG候选排序等事实未在引用证据E1中给出；E1只支持梨黑星病通用症状，不支持对候选迁移状态的判断。"
+          },
+          {
+            "field": "advice",
+            "verdict": "unsupported",
+            "reason": "事实字段没有实际引用证据。"
+          }
+        ],
+        "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+      },
+      "answer": "先这样排查\n可以先从叶部病害、虫害损伤和近期喷药或肥害三个方向排查。黑色斑点只是症状，尚不能确定是哪一种病，也不能确定一定由病害引起。\n\n现在先做\n• 拍一张整株照片，以及同一片叶子的正面、背面近照。\n• 观察斑点是否扩大，有没有霉层、轮纹、虫体或叶缘缺口。\n• 记录开始出现的时间、受影响植株数量，以及近期降雨、浇水、喷药和施肥情况。\n• 暂不只凭这次结果选药；若持续扩展或多株出现，请带照片或样本请当地农技人员复核。\n\n通用初步排查，不是确诊，也不是已获本地证据支持的结论。",
+      "user_answer": "先这样排查\n可以先从叶部病害、虫害损伤和近期喷药或肥害三个方向排查。黑色斑点只是症状，尚不能确定是哪一种病，也不能确定一定由病害引起。\n\n现在先做\n• 拍一张整株照片，以及同一片叶子的正面、背面近照。\n• 观察斑点是否扩大，有没有霉层、轮纹、虫体或叶缘缺口。\n• 记录开始出现的时间、受影响植株数量，以及近期降雨、浇水、喷药和施肥情况。\n• 暂不只凭这次结果选药；若持续扩展或多株出现，请带照片或样本请当地农技人员复核。\n\n通用初步排查，不是确诊，也不是已获本地证据支持的结论。",
+      "general_guidance": {
+        "available": true,
+        "basis": "general_triage_not_retrieved_evidence",
+        "notice": "通用初步排查，不是确诊，也不是已获本地证据支持的结论。",
+        "summary": "可以先从叶部病害、虫害损伤和近期喷药或肥害三个方向排查。黑色斑点只是症状，尚不能确定是哪一种病，也不能确定一定由病害引起。",
+        "next_steps": [
+          "拍一张整株照片，以及同一片叶子的正面、背面近照。",
+          "观察斑点是否扩大，有没有霉层、轮纹、虫体或叶缘缺口。",
+          "记录开始出现的时间、受影响植株数量，以及近期降雨、浇水、喷药和施肥情况。",
+          "暂不只凭这次结果选药；若持续扩展或多株出现，请带照片或样本请当地农技人员复核。"
+        ],
+        "citations": [],
+        "grounded": false
+      },
+      "grounded_answer": "1. 结论\n本次回答未通过证据核查，未发布生成内容。\n2. 依据\n存在未由引用证据支持的内容\n3. 推理路径\n未发布未经核查的路径。\n4. 建议\n请缩小问题范围或补充原文资料。\n5. 来源\n暂无已通过核查的结论来源。"
+    },
+    "sources": [],
+    "user_answer": "先这样排查\n可以先从叶部病害、虫害损伤和近期喷药或肥害三个方向排查。黑色斑点只是症状，尚不能确定是哪一种病，也不能确定一定由病害引起。\n\n现在先做\n• 拍一张整株照片，以及同一片叶子的正面、背面近照。\n• 观察斑点是否扩大，有没有霉层、轮纹、虫体或叶缘缺口。\n• 记录开始出现的时间、受影响植株数量，以及近期降雨、浇水、喷药和施肥情况。\n• 暂不只凭这次结果选药；若持续扩展或多株出现，请带照片或样本请当地农技人员复核。\n\n通用初步排查，不是确诊，也不是已获本地证据支持的结论。",
+    "general_guidance": {
+      "available": true,
+      "basis": "general_triage_not_retrieved_evidence",
+      "notice": "通用初步排查，不是确诊，也不是已获本地证据支持的结论。",
+      "summary": "可以先从叶部病害、虫害损伤和近期喷药或肥害三个方向排查。黑色斑点只是症状，尚不能确定是哪一种病，也不能确定一定由病害引起。",
+      "next_steps": [
+        "拍一张整株照片，以及同一片叶子的正面、背面近照。",
+        "观察斑点是否扩大，有没有霉层、轮纹、虫体或叶缘缺口。",
+        "记录开始出现的时间、受影响植株数量，以及近期降雨、浇水、喷药和施肥情况。",
+        "暂不只凭这次结果选药；若持续扩展或多株出现，请带照片或样本请当地农技人员复核。"
+      ],
+      "citations": [],
+      "grounded": false
+    },
+    "preliminary_assessment": {
+      "available": false,
+      "summary": "",
+      "candidate_risks": [],
+      "supporting_points": [],
+      "uncertainties": []
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "尚无经过本地结论核验的输出。"
+    },
+    "recommended_observations": [],
+    "evidence_groups": {
+      "local_conclusion_evidence": [],
+      "candidate_assessment_evidence": [
+        "chunk:GOV_001_C0001"
+      ],
+      "rejected_evidence": [
+        {
+          "chunk_id": "UNI_001_C0001",
+          "reasons": [
+            "scope:not_reviewed_for_diagnostic_explanation"
+          ]
+        },
+        {
+          "chunk_id": "UNI_001_C0002",
+          "reasons": [
+            "scope:not_reviewed_for_diagnostic_explanation"
+          ]
+        },
+        {
+          "chunk_id": "UNI_001_C0003",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_001_C0011",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_003_C0002",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_001_C0026",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_001_C0001",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_001_C0020",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_003_C0013",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "GOV_002_C0001",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_003_C0011",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_003_C0005",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_005_C0013",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_003_C0004",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_003_C0007",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_003_C0012",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "GOV_002_C0002",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_005_C0023",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        },
+        {
+          "chunk_id": "PAPER_001_C0010",
+          "reasons": [
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only",
+            "organ:mismatch:leaf_query_vs_fruit_or_postharvest_only"
+          ]
+        }
+      ]
+    },
+    "reasoning_paths": [],
+    "grounding": {
+      "passed": false,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "unsupported",
+          "reason": "结论中关于梨黑星病可危害叶片、叶背面产生圆形/椭圆形/不规则形病斑并出现黑色霉状物的描述有E1支持，但结论还称‘梨细菌性花枯病候选仅有异地且迁移待审核的关联’，该事实未在引用证据E1中给出，属于未引用证据补证；同时‘不构成本地疾病结论’与E1的general_authoritative及local_disease_validation=false一致，但整体因引入未引用候选信息而不完全支持。"
+        },
+        {
+          "field": "basis",
+          "verdict": "unsupported",
+          "reason": "basis中梨黑星病通用症状描述有E1支持，但‘候选关联为异地且迁移待审核’未在E1中体现，属于未引用证据补证；E1仅支持通用机理和候选解释，不能支持该异地迁移状态的事实陈述。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "unsupported",
+          "reason": "reasoning中‘梨细菌性花枯病候选仅有异地且迁移待审核的关联，无本次证据正文支持’以及‘梨黑星病候选与通用资料中叶片病斑描述存在症状层面的关联可能’中的候选迁移状态、KG候选排序等事实未在引用证据E1中给出；E1只支持梨黑星病通用症状，不支持对候选迁移状态的判断。"
+        },
+        {
+          "field": "advice",
+          "verdict": "unsupported",
+          "reason": "事实字段没有实际引用证据。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "citations": [],
+    "retrieval_query": "作物：泊头鸭梨\n器官：leaf\n地区：河北省沧州市泊头市\n阶段：未知\n视觉症状：叶斑症状\n请检索相关风险、证据及不确定性；视觉症状不是确诊，候选排序不是疾病概率。\nKG候选症状：叶片黑色斑点\n候选风险：梨细菌性花枯病\nKG候选症状：晚期针尖状黑斑\n候选风险：梨黑星病\nKG候选症状：果面橄榄黑色绒状病斑",
+    "diagnosis_context": {
+      "vision": {
+        "crop": "泊头鸭梨",
+        "symptom": "spot",
+        "symptom_cn": "叶斑症状",
+        "confidence": 0.999997615814209,
+        "confidence_percent": 100.0,
+        "model": "pear_symptom_yolo11n_cls_v1"
+      },
+      "context": {
+        "crop": "泊头鸭梨",
+        "organ": "leaf",
+        "region": "河北省沧州市泊头市",
+        "scene": null,
+        "growth_stage": null,
+        "temperature": null,
+        "humidity": null,
+        "rainfall": null
+      },
+      "candidate_ranking": [
+        {
+          "candidate_id": "v2:47cbcba1df5003f3",
+          "candidate_name": "梨细菌性花枯病",
+          "candidate_type": "Disease",
+          "symptom_id": "v2:6917a6e0e8f5c269",
+          "symptom_name": "叶片黑色斑点",
+          "edge_id": "v2:e0245",
+          "relation": "HAS_SYMPTOM",
+          "kind": "fact",
+          "region": "US-CA",
+          "review_status": "transfer_pending",
+          "evidence_ids": [
+            "uc_blossom_blast"
+          ],
+          "crop": "v2:10c1ff756bbf8954",
+          "stage_ids": [
+            "v2:a8677216bc774e82"
+          ],
+          "conditions": [
+            "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+          ],
+          "locator": "Symptoms and Signs / Damage",
+          "ranking_score": 5,
+          "ranking_reasons": [
+            "+40：症状名称明确涉及叶片，与 organ=leaf 一致",
+            "-15：US-CA 为异地证据，不作为泊头/沧州/河北本地证据",
+            "-20：transfer_pending，迁移适用性尚待审核"
+          ],
+          "ranking_warnings": [
+            "异地证据 US-CA 的本地适用性需要审核",
+            "transfer_pending：不得视为已审核的本地证据",
+            "第一版未对作物、场景、生育期和气象数值评分；缺失信息保持 None",
+            "ranking_score 仅为规则排序分，不是疾病概率或确诊概率"
+          ]
+        },
+        {
+          "candidate_id": "v2:435c70a2381d781d",
+          "candidate_name": "梨黑星病",
+          "candidate_type": "Disease",
+          "symptom_id": "v2:1c3120df3c1800d1",
+          "symptom_name": "晚期针尖状黑斑",
+          "edge_id": "v2:e0195",
+          "relation": "HAS_SYMPTOM",
+          "kind": "fact",
+          "region": "US-CA",
+          "review_status": "transfer_pending",
+          "evidence_ids": [
+            "uc_pear_scab"
+          ],
+          "crop": "v2:10c1ff756bbf8954",
+          "stage_ids": [
+            "v2:a8677216bc774e82"
+          ],
+          "conditions": [
+            "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+          ],
+          "locator": "Symptoms and Signs / Damage",
+          "ranking_score": -35,
+          "ranking_reasons": [
+            "-15：US-CA 为异地证据，不作为泊头/沧州/河北本地证据",
+            "-20：transfer_pending，迁移适用性尚待审核"
+          ],
+          "ranking_warnings": [
+            "症状名称未明确部位，不能推断为叶片症状",
+            "异地证据 US-CA 的本地适用性需要审核",
+            "transfer_pending：不得视为已审核的本地证据",
+            "第一版未对作物、场景、生育期和气象数值评分；缺失信息保持 None",
+            "ranking_score 仅为规则排序分，不是疾病概率或确诊概率"
+          ]
+        },
+        {
+          "candidate_id": "v2:435c70a2381d781d",
+          "candidate_name": "梨黑星病",
+          "candidate_type": "Disease",
+          "symptom_id": "v2:b1c159f2cd457052",
+          "symptom_name": "果面橄榄黑色绒状病斑",
+          "edge_id": "v2:e0192",
+          "relation": "HAS_SYMPTOM",
+          "kind": "fact",
+          "region": "US-CA",
+          "review_status": "transfer_pending",
+          "evidence_ids": [
+            "uc_pear_scab"
+          ],
+          "crop": "v2:10c1ff756bbf8954",
+          "stage_ids": [
+            "v2:a8677216bc774e82"
+          ],
+          "conditions": [
+            "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+          ],
+          "locator": "Symptoms and Signs / Damage",
+          "ranking_score": -75,
+          "ranking_reasons": [
+            "-40：症状名称明确涉及果实部位，与叶片输入不符",
+            "-15：US-CA 为异地证据，不作为泊头/沧州/河北本地证据",
+            "-20：transfer_pending，迁移适用性尚待审核"
+          ],
+          "ranking_warnings": [
+            "果实症状不能直接解释当前叶片观测，保留候选供追溯",
+            "异地证据 US-CA 的本地适用性需要审核",
+            "transfer_pending：不得视为已审核的本地证据",
+            "第一版未对作物、场景、生育期和气象数值评分；缺失信息保持 None",
+            "ranking_score 仅为规则排序分，不是疾病概率或确诊概率"
+          ]
+        }
+      ],
+      "matched_symptom_nodes": [
+        {
+          "id": "v2:b1c159f2cd457052",
+          "name": "果面橄榄黑色绒状病斑",
+          "type": "Symptom",
+          "aliases": [],
+          "dataset": "pear_evidence_v2",
+          "classification_basis": "原始知识条目语义分类；不改变证据适用范围",
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "source_count": 1,
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "US-CA"
+          ],
+          "description": "果面橄榄黑色绒状病斑；类型 Symptom。关联 1 条有出处知识；作物、地区及阶段须按具体关系核对。"
+        },
+        {
+          "id": "v2:1c3120df3c1800d1",
+          "name": "晚期针尖状黑斑",
+          "type": "Symptom",
+          "aliases": [],
+          "dataset": "pear_evidence_v2",
+          "classification_basis": "原始知识条目语义分类；不改变证据适用范围",
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "source_count": 1,
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "US-CA"
+          ],
+          "description": "晚期针尖状黑斑；类型 Symptom。关联 1 条有出处知识；作物、地区及阶段须按具体关系核对。"
+        },
+        {
+          "id": "v2:6917a6e0e8f5c269",
+          "name": "叶片黑色斑点",
+          "type": "Symptom",
+          "aliases": [],
+          "dataset": "pear_evidence_v2",
+          "classification_basis": "原始知识条目语义分类；不改变证据适用范围",
+          "source_ids": [
+            "uc_blossom_blast"
+          ],
+          "source_count": 1,
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "US-CA"
+          ],
+          "description": "叶片黑色斑点；类型 Symptom。关联 1 条有出处知识；作物、地区及阶段须按具体关系核对。"
+        },
+        {
+          "id": "v2:927612bac262d5b2",
+          "name": "储藏中显现黑星病斑",
+          "type": "Symptom",
+          "aliases": [],
+          "dataset": "pear_evidence_v2",
+          "classification_basis": "原始知识条目语义分类；不改变证据适用范围",
+          "source_ids": [
+            "vic"
+          ],
+          "source_count": 1,
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "AU-VIC"
+          ],
+          "description": "储藏中显现黑星病斑；类型 Symptom。关联 1 条有出处知识；作物、地区及阶段须按具体关系核对。"
+        }
+      ]
+    },
+    "disclaimer": "视觉 confidence 仅表示视觉症状分类置信度，不是疾病概率；ranking_score 仅为规则排序分，不是疾病概率；候选风险不是确诊。应结合证据适用范围与实际调查，不以本结果替代病原鉴定。"
+  }
+}

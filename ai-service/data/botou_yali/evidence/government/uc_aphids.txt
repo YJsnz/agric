@@ -1,0 +1,256 @@
+Aphids / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+Aphids
+Agriculture: Pear Pest Management Guidelines
+Aphids
+Bean aphid: Aphis fabae
+Cotton Aphid: Aphis gossypii
+Green peach aphid: Myzus persicae
+On This Page
+Description of the Pest
+Damage
+Management
+Description of the Pest
+Several aphid
+species occasionally attack pears; the most common are green
+peach aphid, cotton
+aphid (also known as melon aphid), and bean
+aphid (also known as dock aphid).
+These aphids overwinter as adults on various weeds and field crops in or
+outside the orchards. Usually after pear bloom, when trees are growing rapidly,
+these aphids appear on foliage and shoots, establishing colonies, and several
+generations may occur in cool spring weather.
+Green peach aphid is
+light green in color. On adults a dark blotch in the middle of the abdomen
+serves to distinguish this species from others. Cotton aphid is generally dark
+green, but immature forms may be
+yellowish. Bean aphid is dark-colored and seems to prefer sucker shoots in the
+center of the tree. Both green peach aphid and cotton aphid attack shoots all
+over the tree.
+Damage
+Aphid feeding causes
+pear
+foliage to curl and
+the growth of shoots to be stunted. This type of injury is of minor importance.
+Most of the damage is caused from aphids feeding directly on fruit and producing
+honeydew, which falls on the fruit. Honeydew causes fruit lenticels to darken,
+giving the pear a russeted appearance. The presence of honeydew also makes the
+fruit sticky, and a black fungus grows in this honeydew, giving the fruit a
+sooty appearance. This contamination and russetting will cause fruit to be
+culled from fresh shipping.
+Management
+Aphids are infrequently
+encountered in pear orchards and seldom require special treatment unless the
+weather remains cool throughout spring and early summer. Aphids generally serve
+as a valuable early-season food source for insect predators. With the onset of
+warm weather, aphids leave pear trees for other hosts and do not reappear until
+the following spring.
+Biological Control
+Predators and
+parasites often reduce aphid populations, making chemical treatment
+unnecessary. Predators of aphids include lady beetles (Hippodamia convergens, Coccinella spp.), green
+lacewing larvae (Chrysoperla carnea), and brown
+lacewing larvae (Hemerobius spp.). Parasites
+of green peach aphid include Aphelinus semiflavus, Aphidius
+matricariae, Diaeretiella rapae, and Lysiphlebus
+testaceipes. A common cotton aphid parasite is Lysiphlebus testaceipes; parasites in the Lysiphlebus and Diaeretiella genera attack bean aphid. Delay chemical control as
+long as possible to allow biological control and hot weather to reduce aphid
+populations.
+Organically Acceptable Methods
+Use biological
+control and sprays of approved narrow range oils or neem oil to control aphids.
+Monitoring and Treatment Decisions
+When aphids are
+present in the spring and early summer, inspect fruit and foliage for fine
+droplets of honeydew to assess potential from honeydew damage. This can be done
+when sampling for other pests (see SAMPLING DURING FRUIT DEVELOPMENT). No specific criteria have
+been developed to project the severity of injury according to the honeydew
+found, so use your best judgment. Damaged fruit is not culled from No. 1
+cannery shipment, so the decision for determining if a population requires
+treatment is not as critical as it is with pests that can cause the need for
+culling from both fresh and cannery markets. A spray is economically justified
+for fresh-market pears if a difficult and costly sorting will be required.
+Common name
+Amount to use**
+REI‡
+PHI‡
+(Example trade name)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least harmful to natural enemies, honey bees, and the environment are at the top of the table. When choosing a pesticide, consider information relating to air and water quality, resistance management, and the pesticide's properties and application timing. Always read the label of the product being used.
+A.
+THIAMETHOXAM
+(Actara)
+4.5–5.5 oz
+12
+See comments
+MODE-OF-ACTION GROUP NUMBER1: 4A
+COMMENTS: Do not apply to blooming plants, including fruit trees and broadleaf weeds. Preharvest interval is 14 days when 2.75 oz/acre or less is used and 35 days when more than 2.75 oz/acre is used.
+Review and follow the California neonicotinoid regulations effective January 1, 2024. Permissible application rates of this insecticide may be lower than label rates if applying more than one neonicotinoid active ingredients or using more than one application method in the same season.
+B.
+IMIDACLOPRID
+Admire Pro
+1.75 fl oz
+12
+7
+MODE-OF-ACTION GROUP NUMBER1: 4A
+COMMENTS: Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+Review and follow the California neonicotinoid regulations effective January 1, 2024. Permissible application rates of this insecticide may be lower than label rates if applying more than one neonicotinoid active ingredients or using more than one application method in the same season.
+C.
+SPIROTETRAMAT
+(Movento)
+6–9 fl oz
+24
+7
+MODE-OF-ACTION GROUP NUMBER1: 23
+COMMENTS: Allow 1 to 2 weeks for systemic movement through the plant. Must be applied with an adjuvant to improve penetration. Do not apply until after petal fall. Do not apply to blooming plants, including fruit trees and broadleaf weeds. For resistance management, do not apply more than once a year.
+D.
+CLOTHIANIDIN
+(Belay)
+4–6 fl oz
+12
+7
+MODE-OF-ACTION GROUP NUMBER1: 4A
+COMMENTS: Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+Review and follow the California neonicotinoid regulations effective January 1, 2024. Permissible application rates of this insecticide may be lower than label rates if applying more than one neonicotinoid active ingredients or using more than one application method in the same season.
+E.
+DIAZINON
+(Diazinon AG600 WBC)
+12.75 fl oz
+96 (4 days)
+21
+MODE-OF-ACTION GROUP NUMBER1: 1B
+COMMENTS: Avoid drift and tailwater runoff into surface waters. Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+F.
+NARROW RANGE OIL#
+Label rates
+12
+—
+MODE OF ACTION: UNM
+COMMENTS: Check with your certifier to determine which products are organically acceptable.
+G.
+NEEM OIL
+(Trilogy)#
+1%
+4
+0
+MODE OF ACTION: UNE
+COMMENTS: Although research has not been conducted in pears, neem oil has been shown to be effective in apples and other crops for controlling aphids. Apply in at least 100 gal water/acre for adequate coverage.
+**
+Dilute rate is the rate per 100 gal water; use 400 gal solution/acre. Apply concentrate in 80–100 gal water/acre, or less if the label allows.
+‡
+Restricted entry interval (REI) is the number of hours (unless otherwise noted) from treatment until the treated area can be safely entered without protective clothing. Preharvest interval (PHI) is the number of days from treatment to harvest. In some cases the REI exceeds the PHI. The longer of two intervals is the minimum time that must elapse before harvest.
+1
+Rotate chemicals with a different mode-of-action group number, and do not use products with the same mode-of-action group number more than twice per season to help prevent the development of resistance. For example, the organophosphates have a Group number of 1B; chemicals with a 1B Group number should be alternated with chemicals that have a Group number other than 1B. Mode-of-action group numbers are assigned by IRAC (Insecticide Resistance Action Committee). For additional information, see their Web site at www.irac-online.org.
+#
+Acceptable for organically grown produce.
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+L.G. Varela (emeritus), UC IPM and UC Cooperative Extension Sonoma County
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+R.A. Van Steenwyk (emeritus), Environmental Science, Policy, and Management, UC Berkeley
+C.A. Ingels, UC Cooperative Extension Sacramento County
+Acknowledgement for Contributions to Invertebrates
+P.W. Weddle, Weddle, Hansen & Associates
+P. Chevalier, United Ag Products, Ukiah
+R. Hansen, Weddle, Hansen & Associates
+M. Hooper, Ag Unlimited, Lakeport
+B. Knispel, Pest Control Adviser, Upper Lake
+T. Lidyoff, Purity Products, Healdsburg
+G. McCosker, Harvey Lyman Ag Services, Walnut Grove
+B. Oldham, Ag Unlimited, Ukiah
+C. Pickel (emeritus), UC IPM and UC Cooperative Extension Sutter and Yuba counties
+J. Sisevich, AgroTech, Kelseyville
+M.J. Smith, UC Cooperative Extension San Luis Obispo County
+B. Zoller, The Pear Doctor, Inc., Kelseyville
+Text Updated: 11/12
+Treatment Table Updated: 02/25
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

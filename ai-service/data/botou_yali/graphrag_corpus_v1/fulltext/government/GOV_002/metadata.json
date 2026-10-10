@@ -1,0 +1,73 @@
+{
+  "source_id": "GOV_002",
+  "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+  "source_type": "government",
+  "crop": [
+    "鸭梨"
+  ],
+  "region": [],
+  "region_note": "非河北地方标准",
+  "year": 2004,
+  "evidence_level": "C",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [
+    "采收期",
+    "储藏期"
+  ],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+  "authors": [],
+  "doi": null,
+  "availability": "fulltext_html_available",
+  "review_status": "fulltext_acquired_content_review_pending",
+  "fulltext_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/browser.html",
+  "text_path": "data/botou_yali/graphrag_corpus_v1/processed/GOV_002/text.txt",
+  "pages_path": "data/botou_yali/graphrag_corpus_v1/processed/GOV_002/pages.json",
+  "page_count": null,
+  "ready_for_chunking": true,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "资料较旧且非泊头地方标准；具体采收天数、硬度等参数不应直接作为泊头当前生产规则，应由最新地方标准或本地试验复核。",
+  "kg_source_ids": [],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/browser.html",
+      "sha256": "c58d87e3c5cff96112300e941b68df90ff5ec312c8b8363b4b36f0b9c87daef6",
+      "bytes": 77890,
+      "role": "fulltext"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/browser.txt",
+      "sha256": "71d9642fd2da9e72d3eb2ad5ddaa2c19f54c551212bffdab585037d6bb1a91a9",
+      "bytes": 4631,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/summary.md",
+      "sha256": "d6679d608057cd9afa8a501e6ecd5f8ac059119a78e4306e95dd0ee1eabd515e",
+      "bytes": 1094,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": null,
+  "acquisition_attempts": [
+    {
+      "source_id": "GOV_002",
+      "status": "downloaded_pending_review",
+      "url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+      "title": "鸭梨的贮藏保鲜技术 - 湖南省林业局",
+      "error": null,
+      "characters": 1711
+    },
+    {
+      "source_id": "GOV_002",
+      "url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/landing.html",
+      "attempted_at": "2026-09-15T06:21:40.203842+00:00",
+      "status": "failed",
+      "error": "<urlopen error [SSL: BAD_ECPOINT] bad ecpoint (_ssl.c:1000)>"
+    }
+  ],
+  "metadata_note": "年份据网页显示时间 2004-09-07；URL 路径中的 2015 不作为出版年份。",
+  "extraction_status": "text_available_review_pending"
+}

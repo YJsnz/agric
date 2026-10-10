@@ -1,0 +1,44 @@
+{
+  "id": "QA_0153",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关于降温方法对晚采鸭梨果心相变温度影响与早采果比较的实质内容，仅声称证据不足并请求补充资料，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 962,
+      "completion_tokens": 55,
+      "total_tokens": 1017,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 194
+    },
+    "model": "deepseek-flash",
+    "response_id": "605bda2e-6235-49ac-91f7-5e988e0df628",
+    "seconds": 5.6322596999998495,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

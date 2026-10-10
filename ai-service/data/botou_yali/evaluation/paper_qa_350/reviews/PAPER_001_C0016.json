@@ -1,0 +1,71 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0047",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，通过检索梨基因组获得了几个乙烯合成途径关键基因？",
+      "answer_quote": "获得梨乙烯合成途径关键基因6 个",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0048",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，实时荧光定量PCR反应液的总体积是多少？",
+      "answer_quote": "配置总体积为20 µL的实时荧光定量PCR 反应液",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0049",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，实时荧光定量PCR反应液包含的2×SybrGreen qPCR Master Mix体积是多少？",
+      "answer_quote": "包含10 µL 2×SybrGreen qPCR Master Mix",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0050",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，实时荧光定量PCR的扩增程序包括哪些步骤？",
+      "answer_quote": "扩增程序为：95℃预变性3 min；95℃变性7 s，57℃退火10 s，72℃延伸15 s，45 个循环。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0051",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，采用什么方法计算基因在各样品中的相对表达量？",
+      "answer_quote": "采用2-∆∆Ct 法计算基因在各样品中的相对表达量。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0052",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，PbACO1基因的正向引物序列是什么？",
+      "answer_quote": "PbACO1 Pbr000093.1 GACGCTGGTGGTATCATCCT TTCCGTCCGACTGAGCTATC",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0053",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，PbACO2基因的反向引物序列是什么？",
+      "answer_quote": "PbACO2 Pbr005179.1 GCAGTGATGCGGTGATCTAC CCCAAACCAAAACTGGCCTT",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0054",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，PbACO3基因的正向引物序列是什么？",
+      "answer_quote": "PbACO3 Pbr031954.1 CAAGGATGGTGAATGGGTGGA TCATCGCCTGGGTTGTAGAAC",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0055",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，PbACS1基因的反向引物序列是什么？",
+      "answer_quote": "PbACS1 Pbr015575.1 CCTGGGGTTCAAAGGGATCA CCGCCGTTAAGACTACCCTA",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0056",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，PbACS2基因的正向引物序列是什么？",
+      "answer_quote": "PbACS2 Pbr019796.1 GTTGTGTCCGCAGCTACAAA TGAGCCCACAAACAAGCATC",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0057",
+      "question": "在《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》研究中，PbACS3基因的反向引物序列是什么？",
+      "answer_quote": "PbACS3 Pbr029891.1 GAAGTTTGGCAGCGAGTTCA CAGATAGCATGGCGGAGAGA",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

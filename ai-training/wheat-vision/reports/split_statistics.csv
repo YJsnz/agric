@@ -1,0 +1,13 @@
+﻿split,mapped_label,count,percentage
+train,healthy,554,43.49
+train,rust,330,25.90
+train,leaf_spot_blight,323,25.35
+train,nitrogen_deficiency,67,5.26
+val,healthy,119,43.43
+val,rust,71,25.91
+val,leaf_spot_blight,69,25.18
+val,nitrogen_deficiency,15,5.47
+test,healthy,118,43.38
+test,rust,71,26.10
+test,leaf_spot_blight,69,25.37
+test,nitrogen_deficiency,14,5.15

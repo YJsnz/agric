@@ -1,0 +1,70 @@
+{
+  "id": "QA_0055",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法回答",
+    "basis": "未提供该论文的具体内容，且我无法确认《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》中3年中试库黑心病跟踪调查的具体数据。",
+    "reasoning": "问题要求给出特定论文中特定处理条件下贮藏至翌年6月中下旬的黑心病平均发生率和货架期。由于没有检索到该论文的原文或相关证据，我不能编造论文、标准、数字或因果关系，因此无法给出准确数值。",
+    "advice": "建议查阅该论文原文或提供相关数据来源，以获取准确的试验结果。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出黑心病平均发生率和货架期，仅表示无法回答，属于没有作答。提供的原文证据已明确给出答案：黑心病平均发生率＜3.0%，货架期≥7 d。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 795,
+      "completion_tokens": 61,
+      "total_tokens": 856,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 283
+    },
+    "model": "deepseek-flash",
+    "response_id": "09564595-eb1f-4cf4-84b6-a73a8691f2cb",
+    "seconds": 6.222528599988436,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法回答",
+        "basis": "未提供该论文的具体内容，且我无法确认《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》中3年中试库黑心病跟踪调查的具体数据。",
+        "reasoning": "问题要求给出特定论文中特定处理条件下贮藏至翌年6月中下旬的黑心病平均发生率和货架期。由于没有检索到该论文的原文或相关证据，我不能编造论文、标准、数字或因果关系，因此无法给出准确数值。",
+        "advice": "建议查阅该论文原文或提供相关数据来源，以获取准确的试验结果。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 237,
+        "completion_tokens": 139,
+        "total_tokens": 376,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 237
+      },
+      "model": "deepseek-flash",
+      "response_id": "45314159-78bf-438d-8380-307e468d5528",
+      "seconds": 6.311376699988614,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.535602799995104
+}

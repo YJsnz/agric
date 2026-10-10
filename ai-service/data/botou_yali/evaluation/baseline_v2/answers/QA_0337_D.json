@@ -1,0 +1,619 @@
+{
+  "id": "QA_0337",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0021",
+    "chunk:PAPER_001_C0007",
+    "chunk:PAPER_001_C0010",
+    "chunk:PAPER_001_C0001"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨",
+      "贮藏"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": "贮藏",
+      "environment": [],
+      "disease": [],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": [],
+      "intent": "fact_query"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "stage",
+        "mention": "贮藏",
+        "status": "matched",
+        "entity_id": "v2:1df599bacfb4d6d5",
+        "canonical_name": "储藏期",
+        "candidates": [
+          {
+            "id": "v2:1df599bacfb4d6d5",
+            "name": "储藏期",
+            "type": "Stage",
+            "crop": [
+              "丰水",
+              "京白",
+              "南果",
+              "巴梨",
+              "库尔勒香梨",
+              "新高",
+              "早酥",
+              "梨",
+              "玉露香",
+              "砀山酥梨",
+              "红香酥",
+              "花盖梨",
+              "苹果梨",
+              "蜜梨",
+              "雪花",
+              "雪青",
+              "香水梨",
+              "鸭梨",
+              "黄冠",
+              "黄金"
+            ],
+            "region": [
+              "AU-VIC",
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "empty",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [
+      {
+        "source_id": "PAPER_001",
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "PAPER_001_C0003",
+            "section": "正文（未识别章节）",
+            "pages": [
+              1
+            ]
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "PAPER_001_C0007",
+            "section": "0  引言",
+            "pages": [
+              2
+            ]
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "PAPER_001_C0010",
+            "section": "48 h 后开始阶段缓慢降温，每1 d 降0.5℃，直至环境",
+            "pages": [
+              3
+            ]
+          }
+        ]
+      }
+    ],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_001_C0003",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 4,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9765625
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0021",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 6,
+            "vector_rank": 2,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9540566959921799
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0007",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 8,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9485294117647058
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0010",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 6,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9462481962481962
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0001",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 4,
+            "vector_rank": 7,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9317863805970149
+          }
+        }
+      ]
+    },
+    "status": "answered",
+    "answer": "1. 结论\n根据该论文引言，我国鸭梨气调贮藏的商业应用参数为10% O2+1% CO2，一般可贮藏6—8个月（从9月至翌年4月） [E3] 。\n2. 依据\n论文引言明确记载：目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6个月（从9月至翌年3月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8个月（从9月至翌年4月） [E3] 。\n3. 推理路径\n问题限定为“根据论文引言”询问我国鸭梨气调贮藏的商业应用参数。证据[E3]的章节标注为“0 引言”，其中直接给出气调贮藏的商业应用参数为10% O2+1% CO2及对应贮藏期，故可直接引用该表述作答。需注意，该参数为引言所述我国鸭梨商业应用现状，与本文试验设置的气调参数（O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%） [E4] 及作者建议的最佳O2浓度参数3.0%—5.0% [E1] 不同，不应混同。\n4. 建议\n如需了解本研究试验采用的气调参数，可参考试验设置（O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%，以空气为对照） [E4] ；如需了解作者基于本研究提出的O2浓度建议，可参考其建议的最佳O2浓度参数3.0%—5.0% [E1] 。上述均为论文特定试验内容，不构成当地生产指导。\n5. 来源\n[E1] [E3] [E4] PAPER_001：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响 https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "candidate_id": "chunk:PAPER_001_C0003",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "正文（未识别章节）",
+          "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+          "pages": [
+            1
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E2",
+        "candidate_id": "chunk:PAPER_001_C0021",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "2.2  不同O2浓度处理对内在品质的影响",
+          "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+          "pages": [
+            5
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E3",
+        "candidate_id": "chunk:PAPER_001_C0007",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "0  引言",
+          "text": "【研究意义】鸭梨（Pyrus bretschneideri Rehd.）是我国传统特色主栽梨品种，季产年销，也是我国主要仓储和出口品种[1]。但其对低温和高浓度CO2 敏感，长期贮藏过程中极易发生虎皮病和黑心病等采后生理病害，严重影响果实商品价值，造成巨大经济损失[2-3]。目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6 个月（从9 月至翌年3 月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8 个月（从9 月至翌年4 月）。整体来看，与市场正常供应需求（至翌年6 月）仍有较大差距[4-5]。研究低O2 浓度对鸭梨采后生理代谢及贮藏品质的影响，对进一步延长鸭梨贮藏和货架供应期具有重要意义。【前人研究进展】气调贮藏是目前国内外商业应用最广泛的果品贮藏技术，与普通冷藏相比，气调贮藏可显著延长苹果和梨采后贮藏和货架供应期。其主要原理是在低温的基础上，通过进一步降低环境氧气含量，来进一步抑制果实采后呼吸和乙烯等生理代谢水平，降低营养损耗，延缓衰老，减轻生理病害发生，进而更好地保持果实贮藏品质[6-8]。近年来，随着气体成分精准监测和控制技术的不断发展，果实气调贮藏中的O2浓度不断降低，从传统的静态低氧气调（O2：2.0%—5.0%），发展到静态超低氧气调（O2＜1.5%）及前期超低氧胁迫气调（O2：0.5%，维持2 周），一直到目前的动态气调（O2：0.3%—0.5%），果实贮藏期不断被延长，果实品质得到了更好的维持[9]。但不同品种及不同栽培管理条件下，梨果实采后生物学特性及内在品质差异较大，对贮藏环境O2 敏感性及耐受度不同。研究发现，‘Beurré d’Anjou’经0.5% O2胁迫处理后，于1.0% O2+0.1% CO2 条件下可正常贮藏9.2 个月[10]；‘Abate Fetel’在0.8% O2+0.45% CO2 动态气调条件下可贮藏7 个月，且未发生果心褐变[11-13]；‘Rocha’在0.5% O2 条件下贮藏8.5 个月，7 d 货架（20℃）后仍较好地保持果实品质，未发生黑心病[14]。",
+          "pages": [
+            2
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E4",
+        "candidate_id": "chunk:PAPER_001_C0010",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "48 h 后开始阶段缓慢降温，每1 d 降0.5℃，直至环境",
+          "text": "温度降至（0±0.5）℃。稳定2 d 后，封口，开始进行气调贮藏（气调参数为O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%），以空气为对照，气调箱内相对湿度＞95.0%。贮藏150、210 及270 d 后取样，分别于取样次日及货架7 d 或10 d 进行果实组织褐变指数调查与生理品质测定，每个处理每个重复每次取果实50 个，其中15 个果实用于生理病害调查和生理品质测定，9 个果实用于测定呼吸速率和乙烯释放速率；另取5 个果实，用水果刀于果实赤道部位取果皮组织（厚约2—3 mm）并立即用液氮速冻，-80℃超低温冰箱保存备用；剩余果实置于20 ℃恒温箱（SANYO，日本）模拟货架，7 d 或10 d 后进行生理病害调查、生理品质测定及果皮冻样。中试果9—12℃入库，35—40 d 降至（0±0.5）℃，气调贮藏参数为3.0%—5.0% O2+0.5%—0.8% CO2。",
+          "pages": [
+            3
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E5",
+        "candidate_id": "chunk:PAPER_001_C0001",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "正文（未识别章节）",
+          "text": "中国农业科学  2020,53(23):4918-4928 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2020.23.016收稿日期：2020-03-30；接受日期：2020-06-09基金项目：国家现代梨产业技术体系（CARS-28）、国家自然科学基金（32001761）联系方式：杜艳民，E-mail：duyanmin@caas.cn。通信作者王文辉，E-mail：wangwenhui@caas.cn开放科学（资源服务）标识码（OSID）：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响杜艳民，王文辉，贾晓辉，佟伟，王阳，张鑫楠（中国农业科学院果树研究所/辽宁省果品贮藏与加工重点实验室，辽宁兴城 125100）摘要：【目的】明确环境氧气（O2）浓度对鸭梨采后贮藏品质及生理代谢的影响，为鸭梨采后生理病害防控，延长贮藏期提供理论依据。【方法】将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱，设置1.0%、2.0%、3.0%、5.0%及10.0%等不同O2浓度梯度，CO2浓度为0.5%，以空气处理为对照，分别于贮藏150、210 和270 d 及货架7 或10 d，调查鸭梨虎皮指数和黑心指数，测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血酸（AA）及色泽变化情况，利用气相色谱分析测定果肉和果心组织乙醇含量变化情况，监测果实呼吸速率和乙烯产量；利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS 和PbACO 表达变化情况进行测定。【结果】低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数，贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2；同时，延缓了贮藏早期果实TA 和AA 下降，推迟了果实果面转黄。",
+          "pages": [
+            1
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      }
+    ],
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论所述10% O2+1% CO2及6—8个月（9月至翌年4月）均直接见于所引E3引言原文，且问题限定为论文引言中的商业应用参数，引用证据匹配。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis逐字复述E3引言中关于普通冷藏与气调贮藏商业应用参数的记载，数值、时期和引用均与E3一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning正确指出E3章节为引言并直接给出商业应用参数，同时用E4和E1区分试验设置与作者建议，未将试验结果混同于引言商业参数。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅引导参考试验设置E4和作者建议E1，并明确不构成当地生产指导，所引数值与E4、E1一致，未超出证据范围。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0021",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.2  不同O2浓度处理对内在品质的影响",
+        "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0007",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "0  引言",
+        "text": "【研究意义】鸭梨（Pyrus bretschneideri Rehd.）是我国传统特色主栽梨品种，季产年销，也是我国主要仓储和出口品种[1]。但其对低温和高浓度CO2 敏感，长期贮藏过程中极易发生虎皮病和黑心病等采后生理病害，严重影响果实商品价值，造成巨大经济损失[2-3]。目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6 个月（从9 月至翌年3 月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8 个月（从9 月至翌年4 月）。整体来看，与市场正常供应需求（至翌年6 月）仍有较大差距[4-5]。研究低O2 浓度对鸭梨采后生理代谢及贮藏品质的影响，对进一步延长鸭梨贮藏和货架供应期具有重要意义。【前人研究进展】气调贮藏是目前国内外商业应用最广泛的果品贮藏技术，与普通冷藏相比，气调贮藏可显著延长苹果和梨采后贮藏和货架供应期。其主要原理是在低温的基础上，通过进一步降低环境氧气含量，来进一步抑制果实采后呼吸和乙烯等生理代谢水平，降低营养损耗，延缓衰老，减轻生理病害发生，进而更好地保持果实贮藏品质[6-8]。近年来，随着气体成分精准监测和控制技术的不断发展，果实气调贮藏中的O2浓度不断降低，从传统的静态低氧气调（O2：2.0%—5.0%），发展到静态超低氧气调（O2＜1.5%）及前期超低氧胁迫气调（O2：0.5%，维持2 周），一直到目前的动态气调（O2：0.3%—0.5%），果实贮藏期不断被延长，果实品质得到了更好的维持[9]。但不同品种及不同栽培管理条件下，梨果实采后生物学特性及内在品质差异较大，对贮藏环境O2 敏感性及耐受度不同。研究发现，‘Beurré d’Anjou’经0.5% O2胁迫处理后，于1.0% O2+0.1% CO2 条件下可正常贮藏9.2 个月[10]；‘Abate Fetel’在0.8% O2+0.45% CO2 动态气调条件下可贮藏7 个月，且未发生果心褐变[11-13]；‘Rocha’在0.5% O2 条件下贮藏8.5 个月，7 d 货架（20℃）后仍较好地保持果实品质，未发生黑心病[14]。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0010",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "48 h 后开始阶段缓慢降温，每1 d 降0.5℃，直至环境",
+        "text": "温度降至（0±0.5）℃。稳定2 d 后，封口，开始进行气调贮藏（气调参数为O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%），以空气为对照，气调箱内相对湿度＞95.0%。贮藏150、210 及270 d 后取样，分别于取样次日及货架7 d 或10 d 进行果实组织褐变指数调查与生理品质测定，每个处理每个重复每次取果实50 个，其中15 个果实用于生理病害调查和生理品质测定，9 个果实用于测定呼吸速率和乙烯释放速率；另取5 个果实，用水果刀于果实赤道部位取果皮组织（厚约2—3 mm）并立即用液氮速冻，-80℃超低温冰箱保存备用；剩余果实置于20 ℃恒温箱（SANYO，日本）模拟货架，7 d 或10 d 后进行生理病害调查、生理品质测定及果皮冻样。中试果9—12℃入库，35—40 d 降至（0±0.5）℃，气调贮藏参数为3.0%—5.0% O2+0.5%—0.8% CO2。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "中国农业科学  2020,53(23):4918-4928 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2020.23.016收稿日期：2020-03-30；接受日期：2020-06-09基金项目：国家现代梨产业技术体系（CARS-28）、国家自然科学基金（32001761）联系方式：杜艳民，E-mail：duyanmin@caas.cn。通信作者王文辉，E-mail：wangwenhui@caas.cn开放科学（资源服务）标识码（OSID）：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响杜艳民，王文辉，贾晓辉，佟伟，王阳，张鑫楠（中国农业科学院果树研究所/辽宁省果品贮藏与加工重点实验室，辽宁兴城 125100）摘要：【目的】明确环境氧气（O2）浓度对鸭梨采后贮藏品质及生理代谢的影响，为鸭梨采后生理病害防控，延长贮藏期提供理论依据。【方法】将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱，设置1.0%、2.0%、3.0%、5.0%及10.0%等不同O2浓度梯度，CO2浓度为0.5%，以空气处理为对照，分别于贮藏150、210 和270 d 及货架7 或10 d，调查鸭梨虎皮指数和黑心指数，测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血酸（AA）及色泽变化情况，利用气相色谱分析测定果肉和果心组织乙醇含量变化情况，监测果实呼吸速率和乙烯产量；利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS 和PbACO 表达变化情况进行测定。【结果】低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数，贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2；同时，延缓了贮藏早期果实TA 和AA 下降，推迟了果实果面转黄。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "根据该论文引言，我国鸭梨气调贮藏的商业应用参数为10% O2+1% CO2，一般可贮藏6—8个月（从9月至翌年4月） [E3] 。",
+    "basis": "论文引言明确记载：目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6个月（从9月至翌年3月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8个月（从9月至翌年4月） [E3] 。",
+    "reasoning": "问题限定为“根据论文引言”询问我国鸭梨气调贮藏的商业应用参数。证据[E3]的章节标注为“0 引言”，其中直接给出气调贮藏的商业应用参数为10% O2+1% CO2及对应贮藏期，故可直接引用该表述作答。需注意，该参数为引言所述我国鸭梨商业应用现状，与本文试验设置的气调参数（O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%） [E4] 及作者建议的最佳O2浓度参数3.0%—5.0% [E1] 不同，不应混同。",
+    "advice": "如需了解本研究试验采用的气调参数，可参考试验设置（O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%，以空气为对照） [E4] ；如需了解作者基于本研究提出的O2浓度建议，可参考其建议的最佳O2浓度参数3.0%—5.0% [E1] 。上述均为论文特定试验内容，不构成当地生产指导。",
+    "citations": [
+      "E1",
+      "E3",
+      "E4"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出引言中我国鸭梨气调贮藏的商业应用参数10% O2+1% CO2，并补充对应贮藏期6—8个月（9月至翌年4月），与论文引言原文一致；同时正确区分了该商业参数与本文试验参数及作者建议参数，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "根据该论文引言，我国鸭梨气调贮藏的商业应用参数为10% O2+1% CO2。",
+          "status": "supported",
+          "reason": "论文引言原文明确记载“气调贮藏（商业应用参数：10% O2+1% CO2）”。"
+        },
+        {
+          "claim": "该商业应用参数下一般可贮藏6—8个月（从9月至翌年4月）。",
+          "status": "supported",
+          "reason": "论文引言原文明确记载“气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8个月（从9月至翌年4月）”。"
+        },
+        {
+          "claim": "论文引言记载普通冷藏环境温度为-1℃—0℃，一般可贮藏5—6个月（从9月至翌年3月）。",
+          "status": "supported",
+          "reason": "论文引言原文明确记载“普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6个月（从9月至翌年3月）”。"
+        },
+        {
+          "claim": "本文试验设置的气调参数为O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%，以空气为对照。",
+          "status": "supported",
+          "reason": "论文试验方法部分明确记载气调参数为O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%，以空气为对照。"
+        },
+        {
+          "claim": "作者建议的最佳O2浓度参数为3.0%—5.0%。",
+          "status": "supported",
+          "reason": "论文正文明确记载“建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%”。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 4008,
+      "completion_tokens": 442,
+      "total_tokens": 4450,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 2856
+    },
+    "model": "deepseek-flash",
+    "response_id": "f527eab3-31fb-420c-bf7e-e041e0e73002",
+    "seconds": 7.460358100011945,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "根据该论文引言，我国鸭梨气调贮藏的商业应用参数为10% O2+1% CO2，一般可贮藏6—8个月（从9月至翌年4月）[E3]。",
+        "basis": "论文引言明确记载：目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6个月（从9月至翌年3月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8个月（从9月至翌年4月）[E3]。",
+        "reasoning": "问题限定为“根据论文引言”询问我国鸭梨气调贮藏的商业应用参数。证据E3的章节标注为“0 引言”，其中直接给出气调贮藏的商业应用参数为10% O2+1% CO2及对应贮藏期，故可直接引用该表述作答。需注意，该参数为引言所述我国鸭梨商业应用现状，与本文试验设置的气调参数（O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%）[E4]及作者建议的最佳O2浓度参数3.0%—5.0%[E1]不同，不应混同。",
+        "advice": "如需了解本研究试验采用的气调参数，可参考试验设置（O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%，以空气为对照）[E4]；如需了解作者基于本研究提出的O2浓度建议，可参考其建议的最佳O2浓度参数3.0%—5.0%[E1]。上述均为论文特定试验内容，不构成当地生产指导。",
+        "citations": [
+          "E3",
+          "E4",
+          "E1"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 3027,
+        "completion_tokens": 418,
+        "total_tokens": 3445,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2899
+      },
+      "model": "deepseek-flash",
+      "response_id": "077af9ff-60fe-4089-8a1a-75544361730d",
+      "seconds": 7.2348855000018375,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 22.219212000010884
+}

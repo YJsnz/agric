@@ -1,0 +1,70 @@
+{
+  "id": "QA_0292",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法确定窖藏鸭梨果肉检出的挥发性物质具体种类数及主要类别。",
+    "basis": "未提供该论文的原文或检索证据，我无法获取其具体试验数据。",
+    "reasoning": "问题要求引用特定论文中的检出物质数量和类别，这属于论文内部实验数据。在无原文或可靠证据的情况下，不能凭已有知识编造数字或类别。",
+    "advice": "请提供该论文的原文、摘要或相关数据表格，以便准确提取窖藏鸭梨果肉挥发性物质的种类数和主要类别。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.4,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何具体种类数或类别，仅表示无法确定并要求提供原文，属于没有作答；而该题在提供的原文证据中可直接回答（33种，主要为酯类和萜类）。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 659,
+      "completion_tokens": 58,
+      "total_tokens": 717,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 275
+    },
+    "model": "deepseek-flash",
+    "response_id": "eb63879f-cd54-47ca-b78a-5be259fa4565",
+    "seconds": 5.913435399997979,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法确定窖藏鸭梨果肉检出的挥发性物质具体种类数及主要类别。",
+        "basis": "未提供该论文的原文或检索证据，我无法获取其具体试验数据。",
+        "reasoning": "问题要求引用特定论文中的检出物质数量和类别，这属于论文内部实验数据。在无原文或可靠证据的情况下，不能凭已有知识编造数字或类别。",
+        "advice": "请提供该论文的原文、摘要或相关数据表格，以便准确提取窖藏鸭梨果肉挥发性物质的种类数和主要类别。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 203,
+        "completion_tokens": 139,
+        "total_tokens": 342,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 203
+      },
+      "model": "deepseek-flash",
+      "response_id": "dba5322b-d352-46a6-8080-a14545a1de96",
+      "seconds": 5.932334199998877,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 11.84719889999542
+}

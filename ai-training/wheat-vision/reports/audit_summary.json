@@ -1,0 +1,78 @@
+{
+  "images": 14550,
+  "datasets": {
+    "nitrogen_rust": 1459,
+    "wheat_disease_original": 11603,
+    "wheat_leaf": 407,
+    "winter_wheat_nitrogen": 1081
+  },
+  "classes": [
+    {
+      "mapped_label": "healthy",
+      "total_count": 2352,
+      "unique_count": 1351,
+      "source_dataset_count": 2,
+      "conflict_free_exact_unique_count": 1336,
+      "non_augmented_candidate_unique_count": 351
+    },
+    {
+      "mapped_label": "rust",
+      "total_count": 208,
+      "unique_count": 208,
+      "source_dataset_count": 1,
+      "conflict_free_exact_unique_count": 208,
+      "non_augmented_candidate_unique_count": 208
+    },
+    {
+      "mapped_label": "leaf_spot_blight",
+      "total_count": 2497,
+      "unique_count": 1433,
+      "source_dataset_count": 2,
+      "conflict_free_exact_unique_count": 1433,
+      "non_augmented_candidate_unique_count": 461
+    },
+    {
+      "mapped_label": "nitrogen_deficiency",
+      "total_count": 0,
+      "unique_count": 0,
+      "source_dataset_count": 0,
+      "conflict_free_exact_unique_count": 0,
+      "non_augmented_candidate_unique_count": 0
+    }
+  ],
+  "exact_duplicate_excess": 5366,
+  "exact_groups": 4978,
+  "corrupt": 0,
+  "conflict_image_count": 84,
+  "counts": {
+    "exact_pairs": 5996,
+    "exact_cross_split_pairs": 92,
+    "near_pairs": 43826,
+    "near_cross_split_pairs": 7077,
+    "near_conflict_pairs": 136
+  },
+  "archives": [
+    {
+      "path": "nitrogen_rust/Ndeficient.zip",
+      "images": 600,
+      "status": "scanned"
+    },
+    {
+      "path": "nitrogen_rust/WheatLeafRust.zip",
+      "images": 859,
+      "status": "scanned"
+    },
+    {
+      "path": "wheat_disease_original/Disease Dataset of Wheat Original, Augmented, and Balanced for Deep Learning/Wheat Disease.zip",
+      "images": 11603,
+      "status": "scanned"
+    },
+    {
+      "path": "wheat_leaf/wheat_leaf.rar",
+      "images": 407,
+      "status": "scanned"
+    }
+  ],
+  "phash_threshold": 6,
+  "cross_dataset_sources": []
+}

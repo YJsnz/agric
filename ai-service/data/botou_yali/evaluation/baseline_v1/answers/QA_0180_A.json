@@ -1,0 +1,56 @@
+{
+  "id": "QA_0180",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法根据已有知识确定该试验中晚采鸭梨果心褐变发生较早且严重的原因。",
+      "basis": "未检索到《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》的具体论文内容，也没有该试验的数据或结论。",
+      "reasoning": "问题要求依据特定论文的试验结果解释因果机制，但缺乏该论文的原文、摘要或数据，无法进行可靠推理。",
+      "advice": "请提供该论文的摘要、结果或相关数据；或查阅原文中关于采收期、降温处理、果心褐变指数和膜脂组分（如磷脂、脂肪酸、丙二醛等）的分析，以获取确切原因。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 174,
+      "completion_tokens": 168,
+      "total_tokens": 342,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 174
+    },
+    "model": "deepseek-flash",
+    "response_id": "d608e972-b9f6-4508-9999-da2e398e3f9d",
+    "seconds": 5.864366900000277,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关于晚采鸭梨果心褐变原因的信息，仅表示无法确定，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1073,
+      "completion_tokens": 40,
+      "total_tokens": 1113,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 945
+    },
+    "model": "deepseek-flash",
+    "response_id": "d9fc294b-a1a1-4080-a793-e98ed9364425",
+    "seconds": 5.367603700000018,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

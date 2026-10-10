@@ -1,0 +1,573 @@
+{
+  "case": "fresh",
+  "sample": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\data\\jujube_fruit_freshness_classifier_v1\\test\\fresh\\original_image__fresh__033d110d4ba1_cbe9a4d38d21__FreshJujube (89).jpg",
+  "response": {
+    "success": true,
+    "crop": "jujube",
+    "task": "fruit_freshness",
+    "visual": {
+      "class": "fresh",
+      "label_zh": "新鲜果实外观",
+      "confidence": 0.9985308647155762,
+      "topk": [
+        {
+          "class": "fresh",
+          "label_zh": "新鲜果实外观",
+          "confidence": 0.9985308647155762
+        },
+        {
+          "class": "rotten",
+          "label_zh": "腐败/变质类视觉表现",
+          "confidence": 0.0014690663665533066
+        }
+      ],
+      "model_name": "jujube_fruit_freshness_yolo11n_cls_v1",
+      "model_version": "v1",
+      "task": "fruit_freshness",
+      "is_diagnosis": false,
+      "confidence_level": "high"
+    },
+    "visual_confidence_level": "high",
+    "mapped_entity": {
+      "id": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+      "name": "新鲜果实外观",
+      "type": "FruitCondition",
+      "is_diagnosis": false
+    },
+    "context": {
+      "temperature": null,
+      "humidity": null,
+      "storage_temperature": null,
+      "storage_humidity": null,
+      "storage_days": null,
+      "harvest_method": null,
+      "transport_condition": null,
+      "notes": null
+    },
+    "reasoning": {
+      "crop_id": "cangzhou_jinsixiaozao",
+      "question": "当前检测到新鲜果实外观，现有证据支持哪些采后风险？外观不能代替品质结论。",
+      "entities": {
+        "region": null,
+        "growth_stage": null,
+        "organ": "fruit",
+        "symptom": null,
+        "disease_or_pest": null,
+        "weather": null,
+        "rainfall": null,
+        "humidity": null,
+        "irrigation": null,
+        "crop": "cangzhou_jinsixiaozao",
+        "region_source": null,
+        "harvest_intent": false,
+        "storage_intent": true,
+        "scope": "postharvest",
+        "intent": "information",
+        "damage_query": false,
+        "cross_stage_query": false,
+        "uncovered_symptom": false,
+        "visual_boundary": false,
+        "provided_context": {
+          "user_context": {},
+          "visual_entity": {
+            "id": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "name": "新鲜果实外观",
+            "type": "FruitCondition",
+            "is_diagnosis": false
+          },
+          "visual_class": "fresh",
+          "visual_evidence_only": true,
+          "visual_confidence_level": "high"
+        },
+        "visual_label": "fresh"
+      },
+      "generation_called": true,
+      "status": "insufficient_evidence",
+      "retrieval": {
+        "graph_status": "ok",
+        "graph_evidence_count": 0,
+        "vector_evidence_count": 4,
+        "fused_count": 4
+      },
+      "knowledge_graph": {
+        "edges": []
+      },
+      "paths": [],
+      "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+      "evidence": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "J001",
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "content": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "沧州金丝小枣地理标志保护区",
+            "growth_stage": "采收期",
+            "stage_unknown": false,
+            "scope": "harvest",
+            "organ": "fruit",
+            "topic": "采收成熟度",
+            "source_id": "J001",
+            "locator": {
+              "page": 5,
+              "section": "5 果实采收",
+              "file": "evidence/raw/J001_fulltext.pdf"
+            },
+            "evidence_level": "local_verified",
+            "standard_status": "current",
+            "review_status": "verbatim_verified",
+            "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+            "risk": [],
+            "purpose": "conditional_standard_guidance",
+            "evidence_level_compat": "L1"
+          },
+          "evidence_level": "L1",
+          "region": "沧州金丝小枣地理标志保护区",
+          "original_text": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+          "source_type": "地方标准",
+          "year": 2023,
+          "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356",
+          "chunk_id": "JJC005",
+          "edge_ids": [
+            "JJE026",
+            "JJE027"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:0d30194c402d63a5",
+            "cangzhou_jinsixiaozao:fb7639d9c1294312",
+            "cangzhou_jinsixiaozao:efe18b9df4dc824d",
+            "cangzhou_jinsixiaozao:c81f6763ed1764b3"
+          ]
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "J001",
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "content": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "沧州金丝小枣地理标志保护区",
+            "growth_stage": "贮藏期",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "干枣待运贮存",
+            "source_id": "J001",
+            "locator": {
+              "page": 8,
+              "section": "9.3.3",
+              "file": "evidence/raw/J001_fulltext.pdf"
+            },
+            "evidence_level": "local_verified",
+            "standard_status": "current",
+            "review_status": "verbatim_verified",
+            "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+            "risk": [],
+            "purpose": "conditional_standard_guidance",
+            "evidence_level_compat": "L1"
+          },
+          "evidence_level": "L1",
+          "region": "沧州金丝小枣地理标志保护区",
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "source_type": "地方标准",
+          "year": 2023,
+          "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356",
+          "chunk_id": "JJC007",
+          "edge_ids": [
+            "JJE030",
+            "JJE031",
+            "JJE032",
+            "JJE033",
+            "JJE034",
+            "JJE035",
+            "JJE036",
+            "JJE037",
+            "JJE038",
+            "JJE039",
+            "JJE040",
+            "JJE041",
+            "JJE042"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:e533bf358a15a118",
+            "cangzhou_jinsixiaozao:583f0c2b36ff6f64",
+            "cangzhou_jinsixiaozao:f4228b965a477170",
+            "cangzhou_jinsixiaozao:e99154e42df2c2b2",
+            "cangzhou_jinsixiaozao:4185485fbefc2466",
+            "cangzhou_jinsixiaozao:0e735df0b8fb7a45",
+            "cangzhou_jinsixiaozao:374c255bf1a2e816",
+            "cangzhou_jinsixiaozao:2ea5369f4e1d600b",
+            "cangzhou_jinsixiaozao:77c996eed384313b",
+            "cangzhou_jinsixiaozao:def5130a3d02386c",
+            "cangzhou_jinsixiaozao:b2e151c714014fc4",
+            "cangzhou_jinsixiaozao:447f51651f071882",
+            "cangzhou_jinsixiaozao:d6330f37006ad6f6",
+            "cangzhou_jinsixiaozao:c557149a3018b9ed"
+          ]
+        },
+        {
+          "evidence_id": "E3",
+          "kind": "document_chunk",
+          "source_id": "J001",
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "content": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "沧州金丝小枣地理标志保护区",
+            "growth_stage": "贮藏期",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "干枣露天存放",
+            "source_id": "J001",
+            "locator": {
+              "page": 8,
+              "section": "9.3.2",
+              "file": "evidence/raw/J001_fulltext.pdf"
+            },
+            "evidence_level": "local_verified",
+            "standard_status": "current",
+            "review_status": "verbatim_verified",
+            "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+            "risk": [],
+            "purpose": "conditional_standard_guidance",
+            "evidence_level_compat": "L1"
+          },
+          "evidence_level": "L1",
+          "region": "沧州金丝小枣地理标志保护区",
+          "original_text": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+          "source_type": "地方标准",
+          "year": 2023,
+          "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356",
+          "chunk_id": "JJC006",
+          "edge_ids": [
+            "JJE028",
+            "JJE029"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:1aeea52814da0277",
+            "cangzhou_jinsixiaozao:93ca5b0a4c2e6f8d",
+            "cangzhou_jinsixiaozao:a48bfec5e01e53de"
+          ]
+        },
+        {
+          "evidence_id": "E4",
+          "kind": "document_chunk",
+          "source_id": "J001",
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "content": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "沧州金丝小枣地理标志保护区",
+            "growth_stage": "运输期",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "运输条件",
+            "source_id": "J001",
+            "locator": {
+              "page": 8,
+              "section": "9.3.4",
+              "file": "evidence/raw/J001_fulltext.pdf"
+            },
+            "evidence_level": "local_verified",
+            "standard_status": "current",
+            "review_status": "verbatim_verified",
+            "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+            "risk": [],
+            "purpose": "conditional_standard_guidance",
+            "evidence_level_compat": "L1"
+          },
+          "evidence_level": "L1",
+          "region": "沧州金丝小枣地理标志保护区",
+          "original_text": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+          "source_type": "地方标准",
+          "year": 2023,
+          "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356",
+          "chunk_id": "JJC008",
+          "edge_ids": [
+            "JJE043",
+            "JJE044",
+            "JJE045"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:10632a43ef7c4b9d",
+            "cangzhou_jinsixiaozao:8fbac3743b37bc0d",
+            "cangzhou_jinsixiaozao:a4fd430bb71201dd",
+            "cangzhou_jinsixiaozao:e971db6e48fb41a1"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "J001",
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "content": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "沧州金丝小枣地理标志保护区",
+            "growth_stage": "采收期",
+            "stage_unknown": false,
+            "scope": "harvest",
+            "organ": "fruit",
+            "topic": "采收成熟度",
+            "source_id": "J001",
+            "locator": {
+              "page": 5,
+              "section": "5 果实采收",
+              "file": "evidence/raw/J001_fulltext.pdf"
+            },
+            "evidence_level": "local_verified",
+            "standard_status": "current",
+            "review_status": "verbatim_verified",
+            "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+            "risk": [],
+            "purpose": "conditional_standard_guidance",
+            "evidence_level_compat": "L1"
+          },
+          "evidence_level": "L1",
+          "region": "沧州金丝小枣地理标志保护区",
+          "original_text": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+          "source_type": "地方标准",
+          "year": 2023,
+          "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356",
+          "chunk_id": "JJC005",
+          "edge_ids": [
+            "JJE026",
+            "JJE027"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:0d30194c402d63a5",
+            "cangzhou_jinsixiaozao:fb7639d9c1294312",
+            "cangzhou_jinsixiaozao:efe18b9df4dc824d",
+            "cangzhou_jinsixiaozao:c81f6763ed1764b3"
+          ],
+          "citation_role": "retrieved_excerpt_not_validated_generated_claim"
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "J001",
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "content": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "沧州金丝小枣地理标志保护区",
+            "growth_stage": "贮藏期",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "干枣待运贮存",
+            "source_id": "J001",
+            "locator": {
+              "page": 8,
+              "section": "9.3.3",
+              "file": "evidence/raw/J001_fulltext.pdf"
+            },
+            "evidence_level": "local_verified",
+            "standard_status": "current",
+            "review_status": "verbatim_verified",
+            "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+            "risk": [],
+            "purpose": "conditional_standard_guidance",
+            "evidence_level_compat": "L1"
+          },
+          "evidence_level": "L1",
+          "region": "沧州金丝小枣地理标志保护区",
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "source_type": "地方标准",
+          "year": 2023,
+          "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356",
+          "chunk_id": "JJC007",
+          "edge_ids": [
+            "JJE030",
+            "JJE031",
+            "JJE032",
+            "JJE033",
+            "JJE034",
+            "JJE035",
+            "JJE036",
+            "JJE037",
+            "JJE038",
+            "JJE039",
+            "JJE040",
+            "JJE041",
+            "JJE042"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:e533bf358a15a118",
+            "cangzhou_jinsixiaozao:583f0c2b36ff6f64",
+            "cangzhou_jinsixiaozao:f4228b965a477170",
+            "cangzhou_jinsixiaozao:e99154e42df2c2b2",
+            "cangzhou_jinsixiaozao:4185485fbefc2466",
+            "cangzhou_jinsixiaozao:0e735df0b8fb7a45",
+            "cangzhou_jinsixiaozao:374c255bf1a2e816",
+            "cangzhou_jinsixiaozao:2ea5369f4e1d600b",
+            "cangzhou_jinsixiaozao:77c996eed384313b",
+            "cangzhou_jinsixiaozao:def5130a3d02386c",
+            "cangzhou_jinsixiaozao:b2e151c714014fc4",
+            "cangzhou_jinsixiaozao:447f51651f071882",
+            "cangzhou_jinsixiaozao:d6330f37006ad6f6",
+            "cangzhou_jinsixiaozao:c557149a3018b9ed"
+          ],
+          "citation_role": "retrieved_excerpt_not_validated_generated_claim"
+        },
+        {
+          "evidence_id": "E3",
+          "kind": "document_chunk",
+          "source_id": "J001",
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "content": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "沧州金丝小枣地理标志保护区",
+            "growth_stage": "贮藏期",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "干枣露天存放",
+            "source_id": "J001",
+            "locator": {
+              "page": 8,
+              "section": "9.3.2",
+              "file": "evidence/raw/J001_fulltext.pdf"
+            },
+            "evidence_level": "local_verified",
+            "standard_status": "current",
+            "review_status": "verbatim_verified",
+            "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+            "risk": [],
+            "purpose": "conditional_standard_guidance",
+            "evidence_level_compat": "L1"
+          },
+          "evidence_level": "L1",
+          "region": "沧州金丝小枣地理标志保护区",
+          "original_text": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+          "source_type": "地方标准",
+          "year": 2023,
+          "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356",
+          "chunk_id": "JJC006",
+          "edge_ids": [
+            "JJE028",
+            "JJE029"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:1aeea52814da0277",
+            "cangzhou_jinsixiaozao:93ca5b0a4c2e6f8d",
+            "cangzhou_jinsixiaozao:a48bfec5e01e53de"
+          ],
+          "citation_role": "retrieved_excerpt_not_validated_generated_claim"
+        },
+        {
+          "evidence_id": "E4",
+          "kind": "document_chunk",
+          "source_id": "J001",
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "content": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "沧州金丝小枣地理标志保护区",
+            "growth_stage": "运输期",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "运输条件",
+            "source_id": "J001",
+            "locator": {
+              "page": 8,
+              "section": "9.3.4",
+              "file": "evidence/raw/J001_fulltext.pdf"
+            },
+            "evidence_level": "local_verified",
+            "standard_status": "current",
+            "review_status": "verbatim_verified",
+            "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+            "risk": [],
+            "purpose": "conditional_standard_guidance",
+            "evidence_level_compat": "L1"
+          },
+          "evidence_level": "L1",
+          "region": "沧州金丝小枣地理标志保护区",
+          "original_text": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+          "source_type": "地方标准",
+          "year": 2023,
+          "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356",
+          "chunk_id": "JJC008",
+          "edge_ids": [
+            "JJE043",
+            "JJE044",
+            "JJE045"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:10632a43ef7c4b9d",
+            "cangzhou_jinsixiaozao:8fbac3743b37bc0d",
+            "cangzhou_jinsixiaozao:a4fd430bb71201dd",
+            "cangzhou_jinsixiaozao:e971db6e48fb41a1"
+          ],
+          "citation_role": "retrieved_excerpt_not_validated_generated_claim"
+        }
+      ],
+      "sources": [],
+      "grounding": {
+        "passed": null,
+        "method": "verbatim_retrieval_fallback_no_generated_claims",
+        "upstream": {
+          "passed": false,
+          "checks": [
+            {
+              "field": "conclusion",
+              "verdict": "supported",
+              "reason": "结论称现有证据仅来自DB13/T 5680-2023对采后环节的标准要求，未提供新鲜果实外观检测结果或品质判定依据，不能由外观推断采后风险或品质结论；E1为采收成熟度，E2为干枣待运和贮存要求，E3为干枣露天存放要求，E4为运输要求，均未涉及新鲜果实外观与采后风险或品质的关联，且结论明确这些是标准适用范围内的生产管理要求，不能外推为当前新鲜果实已存在风险或品质问题，与引用证据一致。"
+            },
+            {
+              "field": "basis",
+              "verdict": "supported",
+              "reason": "basis逐条准确转述E1至E4内容：E1仅说明采收成熟度，E2为干枣待运和贮存要求，E3为干枣露天存放要求，E4为运输要求，并指出以上证据均未提供新鲜果实外观与采后风险之间的因果或预测关系，未超出引用证据范围。"
+            },
+            {
+              "field": "reasoning",
+              "verdict": "unsupported",
+              "reason": "事实字段没有实际引用证据。"
+            },
+            {
+              "field": "advice",
+              "verdict": "supported",
+              "reason": "advice仅建议在标准适用范围内核对干枣贮存、露天存放和运输要求，并先核实果园是否位于沧州金丝小枣地理标志保护区内；对新鲜果实外观本身明确现有证据不能给出采后风险判断或品质结论，建议结合现场复核和补充信息进一步确认。未推荐农药、剂量、施药周期或生产操作，未将标准要求外推为本地已验证结论，符合证据范围。"
+            }
+          ],
+          "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+        }
+      },
+      "local_conclusion": {
+        "available": false,
+        "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+      },
+      "differential_assessment": {
+        "available": false,
+        "kind": "reviewed_evidence_lookup_not_image_diagnosis",
+        "directions": [],
+        "questions": [],
+        "local_verified": false,
+        "notice": "按原文症状提供核验方向，不代表照片已具备这些特征；外地/一般果树资料不等于沧州本地验证。"
+      },
+      "answer": "综合研判暂不可用。以下仅展示已检索原文，不作现场结论：\n果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。 [E1]\n本结果仅为果实外观视觉证据，不能据此判断食品安全、是否可食用、病原或腐败原因。",
+      "validation_error": "grounding未通过"
+    },
+    "risk": {
+      "stage": "postharvest",
+      "type": "postharvest visual risk evidence",
+      "level": null
+    },
+    "limitations": [
+      "仅为视觉证据，不是食品安全、是否可食用、储藏寿命、疾病最终确诊或腐败原因诊断；分类得分不是确诊概率。黄化不能直接解释为缺氮、缺铁或盐害。",
+      "视觉展示级别不是风险等级；risk.level 未评分。"
+    ],
+    "degraded": true,
+    "degraded_mode": "grounding_unavailable_or_failed"
+  }
+}

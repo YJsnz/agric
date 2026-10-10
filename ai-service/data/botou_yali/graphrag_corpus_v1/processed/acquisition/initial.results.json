@@ -1,0 +1,126 @@
+[
+  {
+    "source_id": "STD_001",
+    "url": "https://std.sacinfo.org.cn/gnocDb/queryInfo?id=C86E930B07E8117A6E3AA19B417B7A52",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_001/landing.html",
+    "attempted_at": "2026-09-15T06:21:23.099840+00:00",
+    "resolved_url": "https://std.sacinfo.org.cn/gnocDb/queryInfo?id=C86E930B07E8117A6E3AA19B417B7A52",
+    "status": "downloaded_pending_review",
+    "bytes": 279658,
+    "sha256": "13a65740ad0a1dff52963c128d81888e717afd5ed53821dd1b3fbbb05227f500"
+  },
+  {
+    "source_id": "STD_002",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/landing.html",
+    "attempted_at": "2026-09-15T06:21:23.101362+00:00",
+    "resolved_url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+    "status": "downloaded_pending_review",
+    "bytes": 63897,
+    "sha256": "34aff146b797b652b1b709106e95a5d11d03b3f65fbcc8a42ccc6abce6608848"
+  },
+  {
+    "source_id": "STD_003",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=598B66F9F87DC97DE06397BE0A0A7EC3",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_003/landing.html",
+    "attempted_at": "2026-09-15T06:21:23.099840+00:00",
+    "resolved_url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=598B66F9F87DC97DE06397BE0A0A7EC3",
+    "status": "downloaded_pending_review",
+    "bytes": 63871,
+    "sha256": "98c2c9bda62c48bf4a54f04992401fb9b993deed4683e05d718d0f509ec5210d"
+  },
+  {
+    "source_id": "STD_004",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=C3B0BB05E84D4F89E05397BE0A0A81E3",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_004/landing.html",
+    "attempted_at": "2026-09-15T06:21:23.099840+00:00",
+    "resolved_url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=C3B0BB05E84D4F89E05397BE0A0A81E3",
+    "status": "downloaded_pending_review",
+    "bytes": 23843,
+    "sha256": "7b43c0100d701da707d88b8bef1502d00713759f0c19e7a5381e30e2bfca22c4"
+  },
+  {
+    "source_id": "PAPER_001",
+    "url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/landing.html",
+    "attempted_at": "2026-09-15T06:21:28.424457+00:00",
+    "resolved_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+    "status": "downloaded_pending_review",
+    "bytes": 119567,
+    "sha256": "bfdbae758528eb9b39e3bd8caf622d58b0b3346d8bd178051818a69eef4777ce"
+  },
+  {
+    "source_id": "PAPER_002",
+    "url": "https://www.spgykj.com/article/doi/10.13386/j.issn1002-0306.2013.15.074",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/landing.html",
+    "attempted_at": "2026-09-15T06:21:28.462954+00:00",
+    "resolved_url": "https://www.spgykj.com/article/doi/10.13386/j.issn1002-0306.2013.15.074",
+    "status": "downloaded_pending_review",
+    "bytes": 242010,
+    "sha256": "938d3a3537e4e7a46198f878ff78260e39f86e5843ef1eaca9e98dd13511e6bc"
+  },
+  {
+    "source_id": "PAPER_003",
+    "url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/landing.html",
+    "attempted_at": "2026-09-15T06:21:28.463961+00:00",
+    "resolved_url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+    "status": "downloaded_pending_review",
+    "bytes": 175,
+    "sha256": "eccc20b65f641454fde63a4540d12f89214fc89a0a8674ae41f1933bab878604"
+  },
+  {
+    "source_id": "PAPER_004",
+    "url": "https://www.spkx.net.cn/CN/10.7506/spkx1002-6630-201010064",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/landing.html",
+    "attempted_at": "2026-09-15T06:21:28.550605+00:00",
+    "resolved_url": "https://www.spkx.net.cn/CN/10.7506/spkx1002-6630-201010064",
+    "status": "downloaded_pending_review",
+    "bytes": 63892,
+    "sha256": "63fbccb47d441e1b6c529b1e3861ccf5de40329ddbfdfa93bde243118fdc273a"
+  },
+  {
+    "source_id": "PAPER_005",
+    "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/landing.html",
+    "attempted_at": "2026-09-15T06:21:29.489966+00:00",
+    "resolved_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+    "status": "downloaded_pending_review",
+    "bytes": 250809,
+    "sha256": "82830d10d47da9d1f92936b8f569acdce767466afc79ac269e56dfd64e3af814"
+  },
+  {
+    "source_id": "GOV_001",
+    "url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_001/landing.html",
+    "attempted_at": "2026-09-15T06:21:33.751472+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "source_id": "UNI_001",
+    "url": "https://www.zwbch.com/changshi/view_14.html",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/landing.html",
+    "attempted_at": "2026-09-15T06:21:34.724174+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>"
+  },
+  {
+    "source_id": "GOV_002",
+    "url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/landing.html",
+    "attempted_at": "2026-09-15T06:21:40.203842+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: BAD_ECPOINT] bad ecpoint (_ssl.c:1000)>"
+  },
+  {
+    "source_id": "PAPER_003",
+    "url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/20100860.pdf",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/original.pdf",
+    "attempted_at": "2026-09-15T06:21:40.316537+00:00",
+    "resolved_url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/20100860.pdf",
+    "status": "downloaded_pending_review",
+    "bytes": 503470,
+    "sha256": "5821f452a5924deb1670e66cc7d03f1e7287e9c91f999b388dbd1c675460a55c"
+  }
+]

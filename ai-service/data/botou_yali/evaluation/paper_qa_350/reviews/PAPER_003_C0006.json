@@ -1,0 +1,28 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0163",
+      "question": "在该论文描述的鸭梨采后膜脂提取方法中，总类脂提取时加入的NaCl溶液浓度是多少？",
+      "answer_quote": "加20 mL 0.76%NaCl 溶液",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0164",
+      "question": "在该论文描述的鸭梨采后膜脂提取方法中，用于溶解总类脂的石油醚沸点范围是多少？",
+      "answer_quote": "总类脂溶于6 mL 饱和甲醇的石油醚（沸点90～120℃）",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0165",
+      "question": "在该论文描述的鸭梨采后膜脂脂肪酸测定方法中，参考了哪些方法并加以改进？",
+      "answer_quote": "膜脂脂肪酸的测定参考Bligh 等[11] 和Saquet 等[13]方法，加以改进。",
+      "type": "factual"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "PQA_0166",
+      "reason": "原文片段中色谱柱规格不完整（膜厚数值缺失），无法完整回答色谱柱规格，且引用片段包含不完整数值，不采用。"
+    }
+  ]
+}

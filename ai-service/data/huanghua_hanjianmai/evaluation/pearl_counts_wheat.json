@@ -1,0 +1,9 @@
+{
+  "crop_id": "huanghua_hanjianmai",
+  "dataset": "hanjianmai_evidence_v1",
+  "nodes": 82,
+  "sources": 18,
+  "semantic_edges": 91,
+  "statement_nodes": 91,
+  "provenance_edges": 386
+}

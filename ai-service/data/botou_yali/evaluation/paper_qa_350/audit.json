@@ -1,0 +1,367 @@
+{
+  "count": 393,
+  "target": 350,
+  "human_approved": false,
+  "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+  "sources": [
+    "PAPER_001",
+    "PAPER_003",
+    "PAPER_005"
+  ],
+  "rejected": [
+    {
+      "chunk_id": "PAPER_001_C0001",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0001",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0001",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0001",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0008",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0010",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0011",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0012",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0013",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0018",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0024",
+      "reason": "duplicate_question_or_answer"
+    },
+    {
+      "chunk_id": "PAPER_001_C0024",
+      "reason": "duplicate_question_or_answer"
+    },
+    {
+      "chunk_id": "PAPER_001_C0027",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0027",
+      "reason": "duplicate_question_or_answer"
+    },
+    {
+      "chunk_id": "PAPER_001_C0027",
+      "reason": "duplicate_question_or_answer"
+    },
+    {
+      "chunk_id": "PAPER_001_C0027",
+      "reason": "duplicate_question_or_answer"
+    },
+    {
+      "chunk_id": "PAPER_001_C0029",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_001_C0029",
+      "reason": "duplicate_question_or_answer"
+    },
+    {
+      "chunk_id": "PAPER_003_C0001",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0001",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0001",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0002",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0002",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0002",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0003",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0003",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0003",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0003",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0003",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0003",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0004",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0006",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0007",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0007",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0007",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0009",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0009",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0010",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0011",
+      "reason": "duplicate_question_or_answer"
+    },
+    {
+      "chunk_id": "PAPER_003_C0011",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0011",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0013",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_003_C0013",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0001",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0003",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0003",
+      "reason": "duplicate_question_or_answer"
+    },
+    {
+      "chunk_id": "PAPER_005_C0011",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0012",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0012",
+      "reason": "duplicate_question_or_answer"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0014",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0016",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0017",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0019",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0019",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0023",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0025",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0026",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0027",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0027",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0027",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0027",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0036",
+      "reason": "invalid_or_not_verbatim"
+    },
+    {
+      "chunk_id": "PAPER_005_C0038",
+      "reason": "duplicate_question_or_answer"
+    },
+    {
+      "chunk_id": "PAPER_005_C0038",
+      "reason": "invalid_or_not_verbatim"
+    }
+  ],
+  "types": {
+    "factual": 359,
+    "disease": 1,
+    "cultivation_management": 6,
+    "environmental_risk": 0,
+    "postharvest_storage": 8,
+    "multi_hop": 6,
+    "causal": 13,
+    "intervention": 0
+  }
+}

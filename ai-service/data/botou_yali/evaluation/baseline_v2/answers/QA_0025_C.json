@@ -1,0 +1,294 @@
+{
+  "id": "QA_0025",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0029",
+    "chunk:PAPER_001_C0001",
+    "chunk:PAPER_001_C0018"
+  ],
+  "service_response": {
+    "status": "insufficient_evidence",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称证据中未包含虎皮指数计算公式，所引E5仅报告虎皮指数数值结果，未出现公式或计算方法，结论与引用证据一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据E5列举的虎皮指数数值（30.56%、3.26%、12.5%、38.56%、5.99%、27.78%、18.86%、35.0%、54.95%、64.29%）均出现在E5中，且E5未给出计算公式，表述有引用证据支持。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理基于E5只描述调查结果数值、未出现公式或计算方法，因此无法回答公式，未超出引用证据。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "建议补充论文中虎皮指数计算方法的原文内容，属于资料补充建议，未陈述事实性主张，且未引用证据。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0029",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "4  结论",
+        "text": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，能更好地维持果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。因此，建议生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "中国农业科学  2020,53(23):4918-4928 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2020.23.016收稿日期：2020-03-30；接受日期：2020-06-09基金项目：国家现代梨产业技术体系（CARS-28）、国家自然科学基金（32001761）联系方式：杜艳民，E-mail：duyanmin@caas.cn。通信作者王文辉，E-mail：wangwenhui@caas.cn开放科学（资源服务）标识码（OSID）：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响杜艳民，王文辉，贾晓辉，佟伟，王阳，张鑫楠（中国农业科学院果树研究所/辽宁省果品贮藏与加工重点实验室，辽宁兴城 125100）摘要：【目的】明确环境氧气（O2）浓度对鸭梨采后贮藏品质及生理代谢的影响，为鸭梨采后生理病害防控，延长贮藏期提供理论依据。【方法】将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱，设置1.0%、2.0%、3.0%、5.0%及10.0%等不同O2浓度梯度，CO2浓度为0.5%，以空气处理为对照，分别于贮藏150、210 和270 d 及货架7 或10 d，调查鸭梨虎皮指数和黑心指数，测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血酸（AA）及色泽变化情况，利用气相色谱分析测定果肉和果心组织乙醇含量变化情况，监测果实呼吸速率和乙烯产量；利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS 和PbACO 表达变化情况进行测定。【结果】低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数，贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2；同时，延缓了贮藏早期果实TA 和AA 下降，推迟了果实果面转黄。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0018",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.1.1  虎皮指数  气调处理可显著降低贮藏和货架",
+        "text": "期间鸭梨虎皮病的发生，但不同O2 浓度处理对虎皮病的防控效果差异显著。具体来看，贮藏150 d，对照果实即发生虎皮病，气调果实均未发病；货架7 d，10% O2 处理果实的虎皮症状快速发展，虎皮指数达30.56%，与空气对照水平接近；贮藏210 d，5.0%及以下O2 处理平均虎皮指数为3.26%，10% O2 和空气对照虎皮指数分别为12.5%和38.56%；货架7 d，1.0%—3.0% O2 处理平均虎皮指数为5.99%，5.0% O2 处理虎皮指数快速升高，达27.78%；贮藏270 d 及货架7 d，1.0%—3.0% O2 平均虎皮指数18.86%，5.0% O2 平均虎皮指数35.0%，10.0% O2 平均虎皮指数54.95%，空气对照平均虎皮指数64.29%（图1）。另外，通过3 年贮藏时间 Storage time (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d)贮藏时间 Storage time (d)贮藏货架 Shelf-life period (d) 150+10 210+7 270+7 a a b c c c c a b c c d d a b c d d d a b b c c a b b c c c a b c c d d a a b b b c a a a a b c a a a b b b a a b c c c b c d d e 1.0% O2+0.5% CO2 2.0% O2+0.5% CO2 3.0% O2+0.5% CO2 5.0% O2+0.5% CO2 10.0% O2+0.5% CO2对照 CK不同小写字母表示0.05 水平差异显著。下同 Different lowercase letters indicate significant difference at 5% level.",
+        "pages": [
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "所提供的证据中未包含计算鸭梨虎皮指数的公式  [E5] 。",
+    "basis": "证据仅报告了不同O2浓度处理下鸭梨虎皮指数的数值结果（如30.56%、3.26%、12.5%、38.56%、5.99%、27.78%、18.86%、35.0%、54.95%、64.29%等），但未给出虎皮指数的计算公式  [E5] 。",
+    "reasoning": "证据 [E5] 描述了虎皮指数的调查结果数值，但未出现虎皮指数的计算公式或计算方法  [E5] 。因此无法依据现有证据回答该公式。",
+    "advice": "建议补充该论文中虎皮指数计算方法的原文内容。",
+    "citations": [
+      "E5"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出虎皮指数计算公式，仅说明检索证据中未包含公式并建议补充原文，属于对可回答问题未作答。参考答案明确给出公式：虎皮指数 = [∑（虎皮级数×该级果数）/（调查总果数×4）]×100%。",
+      "claims": [
+        {
+          "claim": "所提供的证据中未包含计算鸭梨虎皮指数的公式。",
+          "status": "unverifiable",
+          "reason": "检索证据E1-E5中确实未出现虎皮指数计算公式；但原始证据文本中已给出公式，因此该断言仅就‘所提供的检索证据’而言无法由检索上下文验证，不能据此判定论文原文无公式。"
+        },
+        {
+          "claim": "证据仅报告了不同O2浓度处理下鸭梨虎皮指数的数值结果（如30.56%、3.26%、12.5%、38.56%、5.99%、27.78%、18.86%、35.0%、54.95%、64.29%等），但未给出虎皮指数的计算公式。",
+          "status": "supported",
+          "reason": "E5中列出了这些虎皮指数数值，且E1-E5检索证据中未出现虎皮指数计算公式。"
+        },
+        {
+          "claim": "证据[E5]描述了虎皮指数的调查结果数值，但未出现虎皮指数的计算公式或计算方法。",
+          "status": "supported",
+          "reason": "E5内容为虎皮病发生结果和数值描述，未包含计算公式或计算方法。"
+        },
+        {
+          "claim": "因此无法依据现有证据回答该公式。",
+          "status": "contradicted",
+          "reason": "原始证据文本中明确给出虎皮指数公式：虎皮指数 = [∑（虎皮级数×该级果数）/（调查总果数×4）]×100%，因此并非无法回答。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3073,
+      "completion_tokens": 374,
+      "total_tokens": 3447,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2689
+    },
+    "model": "deepseek-flash",
+    "response_id": "63a3420f-5a77-4aea-8e67-33bbdf42290a",
+    "seconds": 6.8135144999978365,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据中未包含计算鸭梨虎皮指数的公式。",
+        "basis": "证据仅报告了不同O2浓度处理下鸭梨虎皮指数的数值结果（如30.56%、3.26%、12.5%、38.56%、5.99%、27.78%、18.86%、35.0%、54.95%、64.29%等），但未给出虎皮指数的计算公式 [E5]。",
+        "reasoning": "检索到的证据涉及研究目的、方法、结果与结论，其中E5描述了虎皮指数的调查结果数值，但全文片段中均未出现虎皮指数的计算公式或计算方法 [E1][E2][E3][E4][E5]。因此无法依据现有证据回答该公式。",
+        "advice": "建议查阅该论文的完整方法部分（材料与方法章节）以获取虎皮指数的具体计算公式。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2659,
+        "completion_tokens": 222,
+        "total_tokens": 2881,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 2403
+      },
+      "model": "deepseek-flash",
+      "response_id": "901c83de-1675-4dda-8355-91934225e770",
+      "seconds": 6.5391772000002675,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据中未包含计算鸭梨虎皮指数的公式 [E5]。",
+        "basis": "证据仅报告了不同O2浓度处理下鸭梨虎皮指数的数值结果（如30.56%、3.26%、12.5%、38.56%、5.99%、27.78%、18.86%、35.0%、54.95%、64.29%等），但未给出虎皮指数的计算公式 [E5]。",
+        "reasoning": "证据[E5]描述了虎皮指数的调查结果数值，但未出现虎皮指数的计算公式或计算方法 [E5]。因此无法依据现有证据回答该公式。",
+        "advice": "建议补充该论文中虎皮指数计算方法的原文内容。",
+        "citations": [
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 3221,
+        "completion_tokens": 165,
+        "total_tokens": 3386,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 661
+      },
+      "model": "deepseek-flash",
+      "response_id": "bc49e7b1-73df-4384-85c4-2e67e08e6782",
+      "seconds": 6.154533699998865,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 32.4100929999986
+}

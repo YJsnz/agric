@@ -1,0 +1,349 @@
+Webspinning Spider Mites / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+Webspinning Spider Mites
+Agriculture: Pear Pest Management Guidelines
+Webspinning Spider Mites
+McDaniel spider mite: Tetranychus mcdanieli
+Pacific spider mite: Tetranychus pacificus
+Twospotted spider mite: Tetranychus urticae
+On This Page
+Description of the Pest
+Damage
+Management
+Description of the Pest
+Adult female mites are yellow in color. Feeding mites have dark spots on either side of the body. The tiny, spherical, colorless to light-straw-colored eggs are distributed over the infested area. Overwintering females are orange, and hibernate under bark scales on the tree and in trash on the ground. They move up the tree in late March and April, feeding on leaves. Rapid reproduction occurs in hot, dry weather and the infestation peaks in July and August.
+Damage
+Webspinning mites produce a characteristic blackening of
+pear leaves when they feed. Pear trees can tolerate fewer webspinning mites
+than European red mites. Usually two to three mites feeding near the midrib of
+a leaf produce black areas from the midrib to the margin. This blackening may
+appear even after mites have been controlled, especially if a period of hot
+weather follows the spray application. High mite populations may cause
+defoliation. Severe defoliation can stunt fruit and may cause the trees to
+bloom in fall, thus reducing next year's crop. However, if defoliation is
+limited to water sprouts in the top or interior of the tree, it will not
+adversely affect the crop or tree.
+Management
+Webspinning spider mites are typically most abundant during
+the hot summer months, especially in dusty and water-stressed areas of the
+orchard. Orchards with high predator-to-pest-mite ratios and good dust and water-stress
+management may not need treatment, especially orchards using codling moth
+mating disruption. Monitor regularly. When treatment is needed, choose products
+least disruptive to biological control.
+Biological Control
+The western
+predatory mite,
+Galendromus (=Metaseiulus) occidentalis,
+is an excellent predator of webspinning mites. A ratio of one predator to 10
+twospotted mites is necessary for the predators to keep control of the
+leaf-feeding mites. Use lower rates of miticides to minimize destruction of
+predators and allow some spider mites to survive. Biological control by
+predatory mites can also be encouraged by suppressing spider mites with oil
+added to one or more codling moth sprays to improve predator-prey ratios.
+Western predatory mite is most effective in sprayed orchards and may not
+compete as well in organic orchards where there are many other natural enemies
+of mites.
+Cultural Control
+Orchards with cover crops and sprinkler irrigation have been
+most suitable for an IPM mite program because these practices minimize dust. Do
+not allow the cover crop to become dry as this will cause webspinning mites to
+disperse to trees. Do not allow cover crops to grow into trees forming bridges
+for the mites to move from the cover crop to the trees. Low-growing grasses
+host fewer webspinning spider mites than broadleaf weeds such as morningglory, tall
+grasses such as johnsongrass, and
+broadleaf cover crops such as clover. Mow or apply herbicides at a time during
+the year that will not trigger migration of webspinning mites into the trees.
+Organically Acceptable Methods
+Biological and cultural controls and sprays of certain oil
+products are organically acceptable.
+Monitoring and Treatment Decisions
+Begin sampling for webspinning spider mites when pears turn
+down. Collect 5 spur leaves at eye height from one scaffold branch from each of
+20 marked trees that have been established as representative trees in a block.
+Examine 5 leaves from each shoot with a hand lens (10 to 14X) and
+count both European red mites (eggs, nymphs, and adults) and webspinning mites
+(nymphs and adults only). As a general guideline, if no mites are found in the
+sample, you can wait 3 weeks to resample. If there is less than one mite per leaf,
+resample in 2 weeks, and if there is one mite per leaf, take your next sample in
+1 week.
+Once a week during the summer months, also check 5 leaves on
+20 top shoots for presence of webspinning mites. For more information regarding
+sampling, see SAMPLING DURING FRUIT
+DEVELOPMENT.
+Postharvest Monitoring
+Following harvest, check 5 leaves on 20 top shoots for
+webspinning spider mites. For more information about monitoring at this time,
+see POSTHARVEST SURVEY.
+The following mite thresholds are for Bartlett pears and
+include all stages of European red mite and webspinning mite nymphs and adults.
+Bosc pears are more susceptible to spider mites and should be treated at lower
+thresholds. Asian pear and other varieties usually tolerate more mites than
+French pear varieties, making biological and cultural controls easier to
+implement.
+CONTROL ACTION THRESHOLDS
+Plant stage
+Mites/100
+leaves
+Action
+Turn down pear to harvest
+1–50 mites
+50+ mites
+Treat with oil.
+Add miticide to the oil spray.
+Postharvest, early districts only
+51–100 mites
+Treat with oil. If predaceous mites
+are present at 1:10 ratio, spraying may not be needed.
+Common name
+Amount to use**
+REI‡
+PHI‡
+(Example trade name)
+(conc.)
+(dilute)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least harmful to natural enemies, honey bees, and the environment are at the top of the table. When choosing a pesticide, consider information relating to air and water quality, resistance management, and the pesticide's properties and application timing. Always read the label of the product being used.
+PETAL FALL TO HARVEST
+A.
+NARROW RANGE OIL
+4 gal
+1 gal
+4
+0
+MODE OF ACTION: Contact, including smothering and barrier
+effects.
+. . . PLUS . . .
+ABAMECTIN*
+(Agri-Mek 0.15EC)
+10–20 oz
+2.5–5 fl
+oz
+12
+28
+MODE OF ACTION GROUP NUMBER1: 6
+COMMENTS: Apply early when leaf tissue is tender and good
+coverage is easier. Do not apply to blooming plants, including fruit trees
+and broadleaf weeds.
+B.
+BIFENAZATE
+(Acramite 50WS)
+1 lb
+0.25 lb
+12
+7
+MODE OF ACTION GROUP NUMBER1: 25
+COMMENTS: Only one application per crop per year. New material
+and there is little experience in California regarding efficacy and effect on
+beneficials. Most effective with use of a silicone spreader.
+C.
+ACEQUINOCYL
+(Kanemite 15SC)
+21–31 fl oz
+5.25–7.75
+fl oz
+12
+14
+MODE OF ACTION GROUP NUMBER1:
+20B
+COMMENTS: There is little experience in California regarding
+efficacy. Most effective with use of a silicone spreader.
+D.
+ETOXAZOLE
+(Zeal)
+2–3 oz
+0.5–0.75
+oz
+12
+14
+MODE OF ACTION GROUP NUMBER1: 10B
+COMMENTS: Preliminary research indicates etoxazole has an
+effect on the reproductive capacity of predatory mites. Most effective with
+use of a silicone spreader.
+E.
+SPIRODICLOFEN
+(Envidor 2SC)
+16–18 fl oz
+—
+12
+7
+MODE OF ACTION GROUP NUMBER1: 23
+COMMENTS: Do not apply to blooming plants, including fruit
+trees and broadleaf weeds.
+F.
+FENPYROXIMATE
+(FujiMite 5EC)
+2 pt
+0.5 pt
+12
+14
+MODE OF ACTION GROUP NUMBER1: 21
+COMMENTS: Most effective with use of a silicone spreader.
+Toxic to predatory mites.
+G.
+CLOFENTEZINE
+(Apollo)
+4 oz
+1 oz
+12
+21
+MODE OF ACTION GROUP NUMBER1: 10A
+COMMENTS: Kills eggs. Need to apply early, before monitoring
+indicates a need; use in orchards where European red mite is a chronic pest.
+Good coverage is a must; use a minimum of 50 gal water/acre for concentrate
+sprays and a maximum of 400 gal water/acre for dilute. To delay development
+of resistance, use only once per season.
+H.
+HEXYTHIAZOX
+(Savey 50WP)
+Low- to
+mid-label rate
+12
+28
+MODE OF ACTION GROUP NUMBER1: 10B
+COMMENTS: Kills eggs. Need to apply early, before monitoring
+indicates a need. Apply only once per growing season.
+POSTHARVEST
+A.
+NARROW RANGE OIL#
+4 gal
+1 gal
+4
+0
+MODE OF ACTION: Contact, including smothering and barrier
+effects.
+COMMENTS: Apply this spray according to monitoring guidelines.
+Check with your certifier to determine which products are organically
+acceptable.
+**
+Dilute rate is the rate per 100
+gal water; use 400 gal solution/acre. Apply concentrate in 80–100 gal
+water/acre, or less if the label allows.
+‡
+Restricted entry interval
+(REI) is the number of hours (unless otherwise noted) from treatment until
+the treated area can be safely entered without protective clothing.
+Preharvest interval (PHI) is the number of days from treatment to harvest.
+In some cases the REI exceeds the PHI. The longer of two intervals is the
+minimum time that must elapse before harvest.
+*
+Permit required from county
+agricultural commissioner for purchase or use.
+1
+Rotate chemicals with a
+different mode of action Group number, and do not use products with the same mode
+of action Group number more than twice per season to help prevent the
+development of resistance. For example, the organophosphates have a Group
+number of 1B; chemicals with a 1B Group number should be alternated with
+chemicals that have a Group number other than 1B. Mode of action Group
+numbers are assigned by IRAC (Insecticide Resistance Action Committee).
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+L.G. Varela (emeritus), UC IPM and UC Cooperative Extension Sonoma County
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+R.A. Van Steenwyk (emeritus), Environmental Science, Policy, and Management, UC Berkeley
+C.A. Ingels, UC Cooperative Extension Sacramento County
+Acknowledgement for Contributions to Invertebrates
+P.W. Weddle, Weddle, Hansen & Associates
+P. Chevalier, United Ag Products, Ukiah
+R. Hansen, Weddle, Hansen & Associates
+M. Hooper, Ag Unlimited, Lakeport
+B. Knispel, Pest Control Adviser, Upper Lake
+T. Lidyoff, Purity Products, Healdsburg
+G. McCosker, Harvey Lyman Ag Services, Walnut Grove
+B. Oldham, Ag Unlimited, Ukiah
+C. Pickel (emeritus), UC IPM and UC Cooperative Extension Sutter and Yuba counties
+J. Sisevich, AgroTech, Kelseyville
+M.J. Smith, UC Cooperative Extension San Luis Obispo County
+B. Zoller, The Pear Doctor, Inc., Kelseyville
+Text Updated: 11/12
+Treatment Table Updated: 11/12
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

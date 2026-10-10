@@ -1,0 +1,73 @@
+{
+  "source_id": "STD_002",
+  "title": "DB13/T 6276-2026 梨产业链质量控制技术规程",
+  "source_type": "standard",
+  "crop": [
+    "梨"
+  ],
+  "region": [
+    "河北省"
+  ],
+  "region_note": "河北省",
+  "year": 2026,
+  "evidence_level": "A",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+  "authors": [],
+  "doi": null,
+  "availability": "fulltext_pdf_available",
+  "review_status": "fulltext_acquired_content_review_pending",
+  "fulltext_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/original.pdf",
+  "text_path": "data/botou_yali/graphrag_corpus_v1/processed/STD_002/text.txt",
+  "pages_path": "data/botou_yali/graphrag_corpus_v1/processed/STD_002/pages.json",
+  "page_count": 7,
+  "ready_for_chunking": true,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "公开页面主要提供标准元数据，不能据此臆造具体技术参数；需要标准正文后再提取细粒度规则。",
+  "kg_source_ids": [
+    "6276"
+  ],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/landing.html",
+      "sha256": "34aff146b797b652b1b709106e95a5d11d03b3f65fbcc8a42ccc6abce6608848",
+      "bytes": 63897,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/original.pdf",
+      "sha256": "02b10a7ddcd05efd5af3ff3e6e408db01b347fa5d1f007da092521d9dd805bcd",
+      "bytes": 556333,
+      "role": "fulltext"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/summary.md",
+      "sha256": "864707c271abf2bd3f8026d906aacd6dcea3cf89fa6bb51a5df274d1af70c4ce",
+      "bytes": 1145,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": {
+    "url": "https://dbba.sacinfo.org.cn/portal/download/d77d6bb92cee4a8040d85ba0c9eb4f0c52f5d10fa86fc8d5080ab7e63079bd84",
+    "status": "downloaded_not_reviewed",
+    "file": "standards\\pear\\DB13_T_6276_2026.pdf",
+    "sha256": "02b10a7ddcd05efd5af3ff3e6e408db01b347fa5d1f007da092521d9dd805bcd",
+    "bytes": 556333
+  },
+  "acquisition_attempts": [
+    {
+      "source_id": "STD_002",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/landing.html",
+      "attempted_at": "2026-09-15T06:21:23.101362+00:00",
+      "resolved_url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+      "status": "downloaded_pending_review",
+      "bytes": 63897,
+      "sha256": "34aff146b797b652b1b709106e95a5d11d03b3f65fbcc8a42ccc6abce6608848"
+    }
+  ],
+  "extraction_status": "text_available_review_pending"
+}

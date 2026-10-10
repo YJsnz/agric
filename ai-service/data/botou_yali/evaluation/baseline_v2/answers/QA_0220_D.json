@@ -1,0 +1,524 @@
+{
+  "id": "QA_0220",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0028",
+    "chunk:PAPER_005_C0008",
+    "chunk:PAPER_005_C0027",
+    "chunk:PAPER_005_C0009",
+    "chunk:PAPER_005_C0003"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": null,
+      "environment": [],
+      "disease": [],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": [],
+      "intent": "fact_query"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "empty",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [
+      {
+        "source_id": "PAPER_005",
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+        "citations": [
+          {
+            "evidence_id": "E4",
+            "chunk_id": "PAPER_005_C0009",
+            "section": "1.1  试验材料",
+            "pages": [
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_005_C0028",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 2,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9760624679979519
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0008",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 7,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9552238805970149
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0027",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 6,
+            "vector_rank": 3,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9462481962481962
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0009",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 9,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9420289855072463
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0003",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 5,
+            "vector_rank": 8,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9177601809954752
+          }
+        }
+      ]
+    },
+    "status": "answered",
+    "answer": "1. 结论\n该试验中鸭梨果实装入纸箱时每箱装40个果实。 [E4] \n2. 依据\n试验材料部分记载：选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40个果实。 [E4] \n3. 推理路径\n问题询问的是论文特定试验的装箱数量，属于试验方法描述。证据[E4]为试验材料章节，直接给出每箱40个果实的装箱规格，可据此回答。 [E4] \n4. 建议\n该信息仅为论文特定试验的装箱规格，不构成生产指导；如需了解其他试验条件（如贮藏温度、湿度、取样时间点），可进一步查阅该论文方法部分。 [E4] \n5. 来源\n[E4] PAPER_005：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析 https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "candidate_id": "chunk:PAPER_005_C0028",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "2.4  挥发性物质组分变化",
+          "text": "冷藏鸭梨果皮中检出28 种挥发性物质成分，含量较高的物质为醛类、烷烃、萜类等，其中醛类主要为己醛、反-2-己烯醛；酯类物质（主要是丁酯类）相对较少，而此时出现较多的烷烃类物质，且主要是癸烷，而窖藏却未检出烷烃类物质（表4）。",
+          "pages": [
+            6
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E2",
+        "candidate_id": "chunk:PAPER_005_C0008",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "0  引言",
+          "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+          "pages": [
+            2
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E3",
+        "candidate_id": "chunk:PAPER_005_C0027",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "2.4  挥发性物质组分变化",
+          "text": " The same as below图2  基于电子鼻的窖藏及冷藏鸭梨挥发性成分PCA 结果Fig. 2  PCA result of volatile components based on electronic nose in Yali pear during cellar and cold storage主成分1 Main axis (Variance: 65.40%)冷藏-3 Cold storage-3冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3 -460 -450 -440 -430 -420 -410 -400 -390 -1.130 -1.135 -1.140 -1.145 -1.150 -1.155 -1.160 -1.165 -1.170图3  基于电子鼻窖藏及冷藏鸭梨挥发性成分LDA 分析Fig. 3  LDA analysis of volatile components based on electronic nose in Yali pear during cellar and cold storage condition就鸭梨果皮而言，贮藏期内，鸭梨果皮中挥发性物质总量呈现先升高后降低的规律，且窖藏果皮明显高于同期冷藏果皮，其中差别比较明显的香气物质为酯类、醇类化合物，其含量高峰出现在贮藏2 个月，分别高于冷藏果实53.11、56.22 倍。具体成分表现为，窖藏鸭梨果皮中检出36 种成分，含量较高的物质为酯类、醛类、醇类、萜类，其中酯类为主要香气物质。酯类主要是乙酯和甲酯类，其中己酸乙酯、辛酸乙酯、丁酸乙酯、乙酸己酯、乙酸辛酯为主要成分，并且2-己烯酸乙酯、庚酸乙酯和(E, Z)-2,4-癸二烯酸乙酯等为窖藏过程中特有的酯类物质；醛类主要为E-2-己烯醛，以及新生成的(E, Z)-2,4-癸二烯醛；醇类主要为Z-4-癸烯醇、正辛醇和正癸醇；萜类主要是α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）。",
+          "pages": [
+            6
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E4",
+        "candidate_id": "chunk:PAPER_005_C0009",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "1.1  试验材料",
+          "text": "供试套袋（外灰内黑单层纸袋）鸭梨于2019 年9月27 日采于赵县基地果园，果实采后当天解袋，进行分拣，除去病虫害和残次果。选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40 个果实。次日存放于当地冷库（库容量：175 t；（0±0.5）℃，21 期岳盈肖等：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析空气湿度（79.47±4.16）%）和地下通风窖（库容量：150 t；温度从入库初期的20℃逐渐下降至12 月的7℃，空气湿度（78.70±8.35）%）。在贮藏初期（入库当天）、1 个月、2 个月、3 个月时，将贮藏的果实（每次每处理3 箱）运回实验室，经室温（25±1℃℃）过夜后进行品质和生理指标检测，并对果皮和果肉分别进行取样，经液氮速冻后，于-80℃冻藏备用。",
+          "pages": [
+            2,
+            3
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E5",
+        "candidate_id": "chunk:PAPER_005_C0003",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "正文（未识别章节）",
+          "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+          "pages": [
+            1
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      }
+    ],
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称每箱装40个果实，直接引用证据E4原文“装入纸箱内，每箱40 个果实”，数值与问题所问试验装箱数量一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据引用E4原文，包含“选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40 个果实”，与依据陈述一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理说明问题属试验方法描述，E4为试验材料章节并直接给出每箱40个果实，未超出引用证据范围。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议仅说明该信息为论文特定试验装箱规格、不构成生产指导，并提示可查阅论文方法部分；未将试验结果转为普遍生产建议，符合引用证据和policy要求。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0028",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "冷藏鸭梨果皮中检出28 种挥发性物质成分，含量较高的物质为醛类、烷烃、萜类等，其中醛类主要为己醛、反-2-己烯醛；酯类物质（主要是丁酯类）相对较少，而此时出现较多的烷烃类物质，且主要是癸烷，而窖藏却未检出烷烃类物质（表4）。",
+        "pages": [
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0027",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": " The same as below图2  基于电子鼻的窖藏及冷藏鸭梨挥发性成分PCA 结果Fig. 2  PCA result of volatile components based on electronic nose in Yali pear during cellar and cold storage主成分1 Main axis (Variance: 65.40%)冷藏-3 Cold storage-3冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3 -460 -450 -440 -430 -420 -410 -400 -390 -1.130 -1.135 -1.140 -1.145 -1.150 -1.155 -1.160 -1.165 -1.170图3  基于电子鼻窖藏及冷藏鸭梨挥发性成分LDA 分析Fig. 3  LDA analysis of volatile components based on electronic nose in Yali pear during cellar and cold storage condition就鸭梨果皮而言，贮藏期内，鸭梨果皮中挥发性物质总量呈现先升高后降低的规律，且窖藏果皮明显高于同期冷藏果皮，其中差别比较明显的香气物质为酯类、醇类化合物，其含量高峰出现在贮藏2 个月，分别高于冷藏果实53.11、56.22 倍。具体成分表现为，窖藏鸭梨果皮中检出36 种成分，含量较高的物质为酯类、醛类、醇类、萜类，其中酯类为主要香气物质。酯类主要是乙酯和甲酯类，其中己酸乙酯、辛酸乙酯、丁酸乙酯、乙酸己酯、乙酸辛酯为主要成分，并且2-己烯酸乙酯、庚酸乙酯和(E, Z)-2,4-癸二烯酸乙酯等为窖藏过程中特有的酯类物质；醛类主要为E-2-己烯醛，以及新生成的(E, Z)-2,4-癸二烯醛；醇类主要为Z-4-癸烯醇、正辛醇和正癸醇；萜类主要是α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）。",
+        "pages": [
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0009",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "1.1  试验材料",
+        "text": "供试套袋（外灰内黑单层纸袋）鸭梨于2019 年9月27 日采于赵县基地果园，果实采后当天解袋，进行分拣，除去病虫害和残次果。选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40 个果实。次日存放于当地冷库（库容量：175 t；（0±0.5）℃，21 期岳盈肖等：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析空气湿度（79.47±4.16）%）和地下通风窖（库容量：150 t；温度从入库初期的20℃逐渐下降至12 月的7℃，空气湿度（78.70±8.35）%）。在贮藏初期（入库当天）、1 个月、2 个月、3 个月时，将贮藏的果实（每次每处理3 箱）运回实验室，经室温（25±1℃℃）过夜后进行品质和生理指标检测，并对果皮和果肉分别进行取样，经液氮速冻后，于-80℃冻藏备用。",
+        "pages": [
+          2,
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "该试验中鸭梨果实装入纸箱时每箱装40个果实。 [E4] ",
+    "basis": "试验材料部分记载：选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40个果实。 [E4] ",
+    "reasoning": "问题询问的是论文特定试验的装箱数量，属于试验方法描述。证据[E4]为试验材料章节，直接给出每箱40个果实的装箱规格，可据此回答。 [E4] ",
+    "advice": "该信息仅为论文特定试验的装箱规格，不构成生产指导；如需了解其他试验条件（如贮藏温度、湿度、取样时间点），可进一步查阅该论文方法部分。 [E4] ",
+    "citations": [
+      "E4"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出每箱40个果实，与参考答案及原文证据一致，关键数值正确，无矛盾。",
+      "claims": [
+        {
+          "claim": "该试验中鸭梨果实装入纸箱时每箱装40个果实。",
+          "status": "supported",
+          "reason": "原文试验材料部分明确记载“装入纸箱内，每箱40 个果实”，证据E4支持。"
+        },
+        {
+          "claim": "试验材料部分记载：选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40个果实。",
+          "status": "supported",
+          "reason": "原文及证据E4均包含该表述，平均单果重238 g和每箱40个果实均一致。"
+        },
+        {
+          "claim": "问题询问的是论文特定试验的装箱数量，属于试验方法描述。",
+          "status": "supported",
+          "reason": "该问题指向试验材料与方法中的装箱规格，原文在试验材料部分给出，属于方法描述。"
+        },
+        {
+          "claim": "证据[E4]为试验材料章节，直接给出每箱40个果实的装箱规格，可据此回答。",
+          "status": "supported",
+          "reason": "E4标题为“1.1 试验材料”，内容包含每箱40个果实，支持该说法。"
+        },
+        {
+          "claim": "该信息仅为论文特定试验的装箱规格，不构成生产指导。",
+          "status": "unverifiable",
+          "reason": "这是对信息用途的限定性声明，提供资料未涉及是否构成生产指导，无法据文本验证。"
+        },
+        {
+          "claim": "如需了解其他试验条件（如贮藏温度、湿度、取样时间点），可进一步查阅该论文方法部分。",
+          "status": "unverifiable",
+          "reason": "属于建议性表述，非可核查的农学/实验断言，提供资料不足以验证。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2739,
+      "completion_tokens": 361,
+      "total_tokens": 3100,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2355
+    },
+    "model": "deepseek-flash",
+    "response_id": "e45f53ba-14f2-44f3-974c-5665818c9b83",
+    "seconds": 6.588743800006341,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "该试验中鸭梨果实装入纸箱时每箱装40个果实。[E4]",
+        "basis": "试验材料部分记载：选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40个果实。[E4]",
+        "reasoning": "问题询问的是论文特定试验的装箱数量，属于试验方法描述。证据E4为试验材料章节，直接给出每箱40个果实的装箱规格，可据此回答。[E4]",
+        "advice": "该信息仅为论文特定试验的装箱规格，不构成生产指导；如需了解其他试验条件（如贮藏温度、湿度、取样时间点），可进一步查阅该论文方法部分。[E4]",
+        "citations": [
+          "E4"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2359,
+        "completion_tokens": 163,
+        "total_tokens": 2522,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2231
+      },
+      "model": "deepseek-flash",
+      "response_id": "1e9769b7-be5a-452e-954d-8605dc7262af",
+      "seconds": 6.60732779999671,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 19.33426769998914
+}

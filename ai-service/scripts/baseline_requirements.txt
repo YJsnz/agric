@@ -1,0 +1,2 @@
+# Install after the existing vector_requirements.txt and graph_web requirements.
+python-docx==1.2.0

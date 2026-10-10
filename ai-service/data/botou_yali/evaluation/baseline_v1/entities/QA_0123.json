@@ -1,0 +1,14 @@
+{
+  "entities": {
+    "crop": "鸭梨",
+    "region": null,
+    "stage": "采后",
+    "environment": [
+      "0℃"
+    ],
+    "disease": [
+      "果心褐变"
+    ],
+    "intent": "risk_analysis"
+  }
+}

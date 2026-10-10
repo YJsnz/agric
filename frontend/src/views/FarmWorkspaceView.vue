@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import FarmTopBar from '@/components/workspace/FarmTopBar.vue'
 import WeatherCard from '@/components/workspace/WeatherCard.vue'
@@ -34,6 +34,13 @@ const toast = ref('')
 const toastVisible = ref(false)
 const notificationsOpen = ref(false)
 const monitorOpen = ref(false)
+watch(() => route.query.module, value => {
+  if (value === 'vision') {
+    store.selectedEntityId = 'camera-03'
+    store.drawerOpen = false
+    monitorOpen.value = true
+  }
+}, { immediate: true })
 const firstPersonActive = ref(false)
 const assistantOpen = ref(false)
 const measuring = ref(false)

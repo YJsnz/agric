@@ -1,0 +1,62 @@
+{
+  "reviewed_at": "2026-09-20",
+  "target": "泊头鸭梨果实膨大期持续高湿与采后风险",
+  "local_chain_status": "unsupported_by_reviewed_sources",
+  "decision": "保留缺口，不创建本地因果边，不添加高湿与持续湿润同义映射",
+  "sources": [
+    {
+      "source_id": "REVIEW_LI_2003",
+      "title": "Effects of temperature, relative humidity and duration of wetness period on germination and infection by conidia of the pear scab pathogen (Venturia nashicola)",
+      "authors": "B. Li; H. Zhao; B. Li; X.-M. Xu",
+      "year": 2003,
+      "source_type": "experimental_paper",
+      "journal": "Plant Pathology 52:546–552",
+      "doi": "10.1046/j.1365-3059.2003.00887.x",
+      "url": "https://bsppjournals.onlinelibrary.wiley.com/doi/full/10.1046/j.1365-3059.2003.00887.x",
+      "reading_scope": "出版商网页可见的摘要、材料方法、结果和讨论文字；非本地保存全文",
+      "evidence_level": "A",
+      "crop": ["鸭梨（离体叶片侵染试验）", "莱阳茌梨（接种物来源）"],
+      "region": ["山东莱阳研究材料"],
+      "applicable_stages": [],
+      "summary": "研究区分高相对湿度与自由水；孢子萌发和叶片侵染受到温度与湿润条件影响。侵染试验使用鸭梨离体幼叶。",
+      "locator": "Materials and methods: Effect of temperature on infection; Results; Discussion",
+      "limitations": ["非泊头田间验证", "未验证果实膨大期整株风险", "未测定采后腐烂或损耗", "不能将湿度描述直接等同于叶面水膜"],
+      "production_retrieval_approved": false
+    },
+    {
+      "source_id": "REVIEW_LI_2005",
+      "title": "Effects of temperature and continuous and interrupted wetness on the infection of pear leaves by conidia of Venturia nashicola",
+      "year": 2005,
+      "source_type": "experimental_paper",
+      "doi": "10.1111/j.1365-3059.2005.01207.x",
+      "url": "https://bsppjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-3059.2005.01207.x",
+      "reading_scope": "搜索工具返回的出版商摘要及部分方法；直接打开全文返回403",
+      "evidence_level": "A",
+      "crop": ["秋子梨实生苗（Pyrus ussuriensis）"],
+      "region": [],
+      "applicable_stages": [],
+      "summary": "研究温度及连续、间断湿润对叶片侵染的影响；试验植株是秋子梨实生苗，不能直接作为泊头鸭梨果实阶段证据。",
+      "production_retrieval_approved": false
+    },
+    {
+      "source_id": "REVIEW_HUNAN_2005",
+      "title": "梨园黑星病发生规律及其防治",
+      "year": 2005,
+      "source_type": "government_extension",
+      "url": "https://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2615208.html",
+      "reading_scope": "政府网页正文",
+      "evidence_level": "C",
+      "crop": ["梨"],
+      "region": ["洋县（正文描述）"],
+      "applicable_stages": [],
+      "summary": "正文讨论洋县梨园，描述湿润多雨与病害传播，以及病果商品性受损；发布机构不等于试验或适用地区。",
+      "production_retrieval_approved": false
+    }
+  ],
+  "rejected_claims": [
+    "持续高湿与持续湿润为同义词",
+    "上述研究已验证泊头果实膨大期的黑星病发生率",
+    "田间黑星病必然导致采后腐烂",
+    "可直接输出本地采后损耗概率"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "raw_total": 15254,
+  "classes": 7,
+  "class_counts": {
+    "healthy": 2688,
+    "leaf_miner": 2255,
+    "bacterial_spot": 2395,
+    "powdery_mildew": 2181,
+    "powdery_mildew_and_leaf_miner": 2361,
+    "bacterial_spot_and_leaf_miner": 2502,
+    "whitefly": 872
+  },
+  "candidate_total": 15254,
+  "candidate_counts": {
+    "healthy": 2688,
+    "leaf_miner": 2255,
+    "bacterial_spot": 2395,
+    "powdery_mildew": 2181,
+    "powdery_mildew_and_leaf_miner": 2361,
+    "bacterial_spot_and_leaf_miner": 2502,
+    "whitefly": 872
+  },
+  "integrity": {
+    "corrupt": 0,
+    "truncated_jpeg": 0,
+    "zero_byte": 0,
+    "invalid_extension": 0,
+    "decode_failed": 0,
+    "jpeg_eoi_missing": 0,
+    "dimension_invalid": 0,
+    "extension_format_mismatch": 2,
+    "nonstandard_size": 19,
+    "patch_size_suspected": 0
+  },
+  "duplicates": {
+    "exact": {
+      "pairs": 138,
+      "same_label_pairs": 87,
+      "cross_label_pairs": 51,
+      "groups": 136
+    },
+    "pixel_identical": {
+      "pairs": 138,
+      "same_label_pairs": 87,
+      "cross_label_pairs": 51,
+      "groups": 136
+    }
+  },
+  "cross_label_conflict_pairs": 51,
+  "conflict_images": 101,
+  "near_duplicate_candidates": 74269,
+  "near_cross_label_candidates": 57745,
+  "size_counts": {
+    "256x256": 15235,
+    "214x256": 1,
+    "239x256": 2,
+    "190x256": 1,
+    "226x256": 1,
+    "259x259": 2,
+    "187x202": 1,
+    "313x296": 1,
+    "221x256": 1,
+    "209x256": 1,
+    "215x256": 1,
+    "198x256": 1,
+    "200x256": 1,
+    "216x256": 1,
+    "266x256": 1,
+    "245x256": 1,
+    "876x1133": 1,
+    "456x534": 1
+  },
+  "ptlid_found": false,
+  "ptlid_excluded": true,
+  "raw_modification": 0,
+  "raw_before_after_sha256_verified": true,
+  "filename_collision": 0,
+  "official_total": 15260,
+  "local_count_difference": -6,
+  "split_created": false,
+  "training_started": false
+}

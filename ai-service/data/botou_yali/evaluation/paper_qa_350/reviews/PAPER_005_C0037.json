@@ -1,0 +1,41 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0363",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究，在讨论中，哪些基因可能是影响鸭梨果实香气形成的关键基因？",
+      "answer_quote": "PbAAT1、PbLOX1 可能是影响鸭梨果实香气形成的关键基因。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0364",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究，在本研究中，PbLOX1表达量与哪些基因的表达量呈极显著正相关？",
+      "answer_quote": "PbLOX1 表达量与PbACO2、PbETR2 的表达量呈极显著正相关",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0365",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究，在本研究中，PbAAT1和PbLOX1表达量与哪个基因呈显著负相关？",
+      "answer_quote": "PbAAT1、PbLOX1 表达量与PbEIN3 呈显著负相关",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0366",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究，在本研究中，哪些基因的表达量之间呈显著或极显著关系，说明乙烯和挥发性物质生成相关基因的表达具有相关性？",
+      "answer_quote": "PbAAT1、PbLOX1、PbADH2、PbADH3、PbADH5 表达量之间呈显著或极显著关系",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0367",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究，在本研究中，窖藏鸭梨果皮比冷藏时含有较高的哪些物质？",
+      "answer_quote": "窖藏鸭梨果皮比冷藏时含有较高的α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）含量",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0368",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究，在本研究中，窖藏条件刺激了哪些物质的生成与积累？",
+      "answer_quote": "窖藏条件刺激了α-法尼烯和MHO 的生成与积累。",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

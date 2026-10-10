@@ -1,0 +1,56 @@
+{
+  "id": "QA_0111",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据已有知识回答该论文的具体研究结果。",
+      "basis": "该问题涉及特定论文《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》中的实验数据与结论，而当前未提供该论文的原文或具体数据，我无法确认缓慢降温对早采鸭梨果心LOX活性和褐变的具体影响。",
+      "reasoning": "问题要求引用特定论文的研究结果，但证据列表为空，且我无法获取或回忆该论文的详细内容。为避免编造论文、数字或因果关系，不能给出具体结论。",
+      "advice": "请提供该论文的原文、摘要或相关数据，或允许我基于一般采后生理知识进行推测（需明确标注为推测）。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 182,
+      "completion_tokens": 178,
+      "total_tokens": 360,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 182
+    },
+    "model": "deepseek-flash",
+    "response_id": "f70d69f6-e01c-4d83-9bc4-c427b42e5895",
+    "seconds": 6.132974799999829,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于缓慢降温对早采鸭梨果心LOX活性和褐变影响的具体结论，仅说明无法依据已有知识回答，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1093,
+      "completion_tokens": 51,
+      "total_tokens": 1144,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 965
+    },
+    "model": "deepseek-flash",
+    "response_id": "8d6abcd6-7f95-4a9a-88e5-e2d633a9fac3",
+    "seconds": 5.498539100000016,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

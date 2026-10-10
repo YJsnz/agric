@@ -1,0 +1,150 @@
+[
+  {
+    "question": "与冷藏相比，窖藏鸭梨果实的SSC和TA含量有何变化？",
+    "type": "factual",
+    "answer_quote": "与冷藏相比，窖藏鸭梨果实的SSC变化较小，TA 含量有所增加",
+    "gold_entities": [
+      "鸭梨",
+      "SSC",
+      "TA",
+      "窖藏",
+      "冷藏"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果实贮藏3个月时硬度有何变化？",
+    "type": "factual",
+    "answer_quote": "贮藏3 个月时硬度明显下降",
+    "gold_entities": [
+      "鸭梨",
+      "硬度",
+      "贮藏3个月"
+    ]
+  },
+  {
+    "question": "根据本研究，窖藏鸭梨的后熟衰老进程与冷藏相比如何？",
+    "type": "factual",
+    "answer_quote": "反映出窖藏鸭梨后熟衰老进程快于冷藏",
+    "gold_entities": [
+      "鸭梨",
+      "后熟衰老",
+      "窖藏",
+      "冷藏"
+    ]
+  },
+  {
+    "question": "电子鼻分析中，窖藏鸭梨果实挥发性物质在贮藏几个月时较多？",
+    "type": "factual",
+    "answer_quote": "窖藏2 个月时果实挥发性物质较多",
+    "gold_entities": [
+      "窖藏",
+      "鸭梨",
+      "挥发性物质",
+      "2个月"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果实挥发性物质含量高峰出现在贮藏几个月时？",
+    "type": "factual",
+    "answer_quote": "其含量高峰出现在贮藏2 个月时",
+    "gold_entities": [
+      "窖藏",
+      "鸭梨",
+      "挥发性物质",
+      "含量高峰",
+      "2个月"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果实中主要的酯类物质有哪些？",
+    "type": "factual",
+    "answer_quote": "其中主要酯类物质有己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯",
+    "gold_entities": [
+      "鸭梨",
+      "酯类物质",
+      "己酸乙酯",
+      "辛酸乙酯",
+      "丁酸乙酯",
+      "（E,Z）2,4-癸二烯酸乙酯"
+    ]
+  },
+  {
+    "question": "冷藏鸭梨果实的酯类香气物质与窖藏相比如何？",
+    "type": "factual",
+    "answer_quote": "相对来说，冷藏鸭梨酯类香气物质较少",
+    "gold_entities": [
+      "冷藏",
+      "鸭梨",
+      "酯类香气物质"
+    ]
+  },
+  {
+    "question": "本研究中，窖藏鸭梨乙烯释放高峰与冷藏果实相比有何特点？",
+    "type": "factual",
+    "answer_quote": "窖藏鸭梨乙烯释放高峰早于冷藏果实，且峰值高于冷藏果实",
+    "gold_entities": [
+      "窖藏",
+      "鸭梨",
+      "乙烯释放高峰",
+      "冷藏"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨乙烯释放高峰时期，哪个基因表达量上调？",
+    "type": "factual",
+    "answer_quote": "与PbACO2 表达量上调（图5）有关",
+    "gold_entities": [
+      "窖藏",
+      "鸭梨",
+      "PbACO2",
+      "表达量上调"
+    ]
+  },
+  {
+    "question": "窖藏对鸭梨乙烯受体PbETR2表达有何影响？",
+    "type": "factual",
+    "answer_quote": "窖藏还刺激乙烯受体PbETR2 表达上调",
+    "gold_entities": [
+      "窖藏",
+      "鸭梨",
+      "PbETR2",
+      "表达上调"
+    ]
+  },
+  {
+    "question": "窖藏对鸭梨PbEIN3和PbERF表达有何影响？",
+    "type": "factual",
+    "answer_quote": "下调PbEIN3、PbERF 的表达",
+    "gold_entities": [
+      "窖藏",
+      "鸭梨",
+      "PbEIN3",
+      "PbERF",
+      "表达"
+    ]
+  },
+  {
+    "question": "鸭梨挥发性物质变化模式与哪些基因的表达规律类似？",
+    "type": "factual",
+    "answer_quote": "鸭梨挥发性物质变化模式与PbAAT1、PbLOX1 的基因表达规律类似",
+    "gold_entities": [
+      "鸭梨",
+      "挥发性物质",
+      "PbAAT1",
+      "PbLOX1",
+      "基因表达"
+    ]
+  },
+  {
+    "question": "基于鸭梨酯类总量与醇类物质总量的关系，推测鸭梨果实香气生成与什么代谢途径密切相关？",
+    "type": "causal",
+    "answer_quote": "基于鸭梨的酯类总量与醇类物质总量呈显著正相关关系，由此推测，鸭梨果实的香气生成与脂肪酸代谢途径密切相关",
+    "gold_entities": [
+      "鸭梨",
+      "酯类总量",
+      "醇类物质总量",
+      "香气生成",
+      "脂肪酸代谢途径"
+    ]
+  }
+]

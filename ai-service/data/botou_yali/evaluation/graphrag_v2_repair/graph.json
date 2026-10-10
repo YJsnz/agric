@@ -1,0 +1,344 @@
+{
+  "question": "黑星病有哪些症状？",
+  "time": "2026-09-22T20:18:05.867413",
+  "seconds": 37.80366679999861,
+  "http": 200,
+  "checks": {
+    "http_200": true,
+    "v2": true,
+    "answered": true,
+    "graph_evidence": true,
+    "grounded": true
+  },
+  "passed": true,
+  "response": {
+    "entities": [
+      "黑星病"
+    ],
+    "extracted_entities": {
+      "crop": null,
+      "region": null,
+      "stage": null,
+      "environment": [],
+      "disease": [
+        "黑星病"
+      ],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": [],
+      "intent": "symptom_query"
+    },
+    "alignments": [
+      {
+        "field": "disease",
+        "mention": "黑星病",
+        "status": "matched",
+        "entity_id": "v2:435c70a2381d781d",
+        "canonical_name": "梨黑星病",
+        "candidates": [
+          {
+            "id": "v2:435c70a2381d781d",
+            "name": "梨黑星病",
+            "type": "Disease",
+            "crop": [
+              "梨"
+            ],
+            "region": [
+              "AU-VIC",
+              "US-CA"
+            ]
+          }
+        ]
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "ok",
+        "count": 24,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [
+      [
+        "梨黑星病",
+        "HAS_SYMPTOM",
+        "叶片皱缩扭曲"
+      ]
+    ],
+    "sources": [
+      {
+        "source_id": "UNI_001",
+        "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+        "url": "https://www.zwbch.com/changshi/view_14.html",
+        "citations": [
+          {
+            "evidence_id": "E2",
+            "chunk_id": "UNI_001_C0001",
+            "section": "网页正文",
+            "pages": []
+          }
+        ]
+      },
+      {
+        "source_id": "GOV_001",
+        "title": "鸭梨黑星病夏季如何防治（农业农村局公开科普）",
+        "url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+        "citations": [
+          {
+            "evidence_id": "E3",
+            "chunk_id": "GOV_001_C0001",
+            "section": "网页正文",
+            "pages": []
+          }
+        ]
+      },
+      {
+        "source_id": "uc_pear_scab",
+        "title": "UC IPM 梨：梨黑星病",
+        "url": "https://ipm.ucanr.edu/agriculture/pear/pear-scab/",
+        "citations": [
+          {
+            "evidence_id": "E5",
+            "edge_ids": [
+              "v2:e0193"
+            ]
+          }
+        ]
+      }
+    ],
+    "generation_called": true,
+    "policy": {
+      "purpose": "general",
+      "mode": "research",
+      "titles": [],
+      "notice": "一般知识解释；未知适用范围必须标明，不作为当地操作指导。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 44,
+      "selected": [
+        {
+          "candidate_id": "chunk:UNI_001_C0002",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 3,
+            "scope_match": 1.0,
+            "evidence_quality": 0.7,
+            "relevance_rrf": 0.9841269841269842
+          }
+        },
+        {
+          "candidate_id": "chunk:UNI_001_C0001",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 2,
+            "vector_rank": 2,
+            "scope_match": 1.0,
+            "evidence_quality": 0.7,
+            "relevance_rrf": 0.9838709677419355
+          }
+        },
+        {
+          "candidate_id": "chunk:GOV_001_C0001",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 5,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 0.7,
+            "relevance_rrf": 0.9692307692307692
+          }
+        },
+        {
+          "candidate_id": "chunk:UNI_001_C0003",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 4,
+            "scope_match": 1.0,
+            "evidence_quality": 0.7,
+            "relevance_rrf": 0.9606894841269842
+          }
+        },
+        {
+          "candidate_id": "path:v2:e0193",
+          "kind": "graph_path",
+          "features": {
+            "neural_rank": 4,
+            "vector_rank": null,
+            "scope_match": 1.0,
+            "evidence_quality": 0.7,
+            "relevance_rrf": 0.953125
+          }
+        }
+      ]
+    },
+    "status": "answered",
+    "answer": "1. 结论\n梨黑星病（又称梨疮痂病）主要危害梨树地上部大部分幼嫩组织，以叶片、果实为主  [E2]  [E3] 。叶片受害：先在叶背面的主脉两侧与支脉之间产生多角形或圆形的淡黄色病斑，没有明显边缘，随后病斑遍布整个叶片，叶背面产生辐射状霉层，严重时造成大量落叶  [E2] ；另有描述为叶背面产生圆形、椭圆形或不规则形病斑，沿叶脉扩展，产生辐射状黑色霉状物，严重时整个叶背面布满黑霉，引起早期落叶  [E3] 。幼果发病为畸形果，形成不规则的淡黄色至褐色病斑，病斑上长出黑色霉层  [E2] ；成长期果实发病不畸形，但病斑部凹陷并产生星状龟裂  [E2] ；果实表面产生大小不等的圆形病斑，病斑硬化后表面粗糙、凹陷龟裂，呈疮痂状，病部伤口遇雨水极易被霉菌感染而腐烂  [E3] 。叶柄、果梗症状相似，出现黑色椭圆形凹陷斑，病部覆盖黑霉、缢缩、失水干枯，致叶片或果实早落  [E2] 。此外，有资料记载梨黑星病与叶片皱缩扭曲存在症状关联  [E5] 。\n2. 依据\n证据[E2]（梨树黑星病条目）描述叶片、幼果、成长期果实及叶柄果梗症状；证据[E3]（鸭梨黑星病夏季防治科普）描述叶片与果实症状；证据[E5]为图谱路径，记载梨黑星病与叶片皱缩扭曲的症状关联。\n3. 推理路径\n[E2]与[E3]均为黑星病症状描述性资料，二者对叶片症状（叶背病斑、辐射状霉层、落叶）和果实症状（畸形、凹陷龟裂、疮痂状）的描述相互印证  [E2]  [E3] 。[E5]以HAS_SYMPTOM关系记录叶片皱缩扭曲，属症状关联事实，非因果推断  [E5] 。各证据未标注具体适用阶段，故不串联不同阶段症状。\n4. 建议\n以上为一般知识性症状描述，来源为教学站点与公开科普资料，未针对特定地区或品种验证，不作为当地诊断或防治操作指导  [E2]  [E3] 。实际识别时应结合当地植保部门指导与田间实地观察。\n5. 来源\n[E2] UNI_001：梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点） https://www.zwbch.com/changshi/view_14.html\n[E3] GOV_001：鸭梨黑星病夏季如何防治（农业农村局公开科普） https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml\n[E5] uc_pear_scab：UC IPM 梨：梨黑星病 https://ipm.ucanr.edu/agriculture/pear/pear-scab/",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "candidate_id": "chunk:UNI_001_C0002",
+        "kind": "document_chunk",
+        "content": {
+          "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+          "section": "网页正文",
+          "text": "病果生长停滞，往往畸形早落。防治时要注意清除转主寄主如松、柏等；高温天气，要适时浇水，增加湿度，破坏发病条件；在萌芽至展叶的25天内进行喷药保护，药剂可选择三唑醇、苯醚甲环唑、嘧菌酯等。04黑斑病该病主要危害果实、叶和新梢。叶片受害，叶面和叶背生成黑色圆形小斑，随着病情加重病斑逐步扩大，中部灰白色。新梢受害，症状与叶片相似，但凹陷较明显，病斑欠规则，病斑集中处易断裂。果实受害，初生成黑色斑点，后期易裂果。防治时注意提升树势，提早套袋，保护果实。幼果期防控，药剂可选择代森铵、醚菌酯、苯甲嘧菌酯等。05炭疽病主要危害果实，多在生长中后期发病。病斑发黑凹陷，有轮纹，湿度大时有粉红色黏质物。药剂可选择甲硫·戊唑醇、咪鲜胺、溴菌腈等，要注意前期的清园及初侵染期的防治，否则进入雨季后，病害传播极快，难以控制。06褐斑病主要危害叶片，症状分同心轮纹型、针芒型、混合型等多种类型，一般为害树冠下部或内膛的叶片，新叶很少发病，病叶极易脱落。多雨高温会诱发该病的大发生，5月中旬开始防控。药剂可选择氟环唑、戊唑醇等，发病重的园子可配伍多抗锰锌。同时注意合理修剪，改善光照条件；秋、冬季清扫果园内落叶，树上残留的病枝、病叶要深埋或烧毁。07腐烂病有溃疡、枝枯和表面溃病3种类型。溃疡型在早春树干、枝树皮上出现红褐色、水渍状、微隆起、圆至长圆形病斑；用手压凹陷，流出黄褐色汁液, 有酒糟味，后病皮长出小黑点。枝枯型在春季2~5年生枝上出现病斑，边缘不清晰，不呈水渍状，后失水干枯，密生小黑点。表面溃疡型在夏秋落皮层上出现稍带红褐色、稍湿润的小溃疡斑。边缘不整齐, 腐烂, 后干缩呈饼状。三类中溃疡型发生多，此类应及时刮除病部，涂抹氟硅唑、戊唑醇等药剂保护，降低复发率。同时注意提升树势，科学用肥，增施有机肥、活土君复合菌剂、科学控产等。08褐腐病只危害梨树果实，一般近成熟期发病，初为暗褐色病斑，逐步扩大，病情发展迅速，几天全果腐烂，病斑上还着生黄褐色绒毛。",
+          "pages": [],
+          "crop": [
+            "梨"
+          ],
+          "region": [],
+          "applicable_stages": [],
+          "evidence_level": "B",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E2",
+        "candidate_id": "chunk:UNI_001_C0001",
+        "kind": "document_chunk",
+        "content": {
+          "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+          "section": "网页正文",
+          "text": "01黑星病梨黑星病是一种检疫性病害，病原为子囊菌亚门黑星菌属的纳雪星菌，可危害梨树地上部大部分幼嫩组织，并以叶片、果实为主。叶片受害，先在叶背面的主脉两侧与支脉之间产生多角形或圆形的淡黄色病斑，没有明显的边缘，随后病斑会遍布整个叶片；在叶背面产生辐射状霉层，病情严重时造成大量落叶。幼果发病为畸形果，会形成不规则的淡黄色至褐色病斑，且病斑上会长出黑色的霉层；成长期果实发病不畸形，但病斑部会凹陷并产生星状龟裂。叶柄、果梗症状相似，出现黑色椭圆形的凹陷斑，病部覆盖黑霉、缢缩、失水干枯，致叶片或果实早落。防治时注意加强冬季清园，对病叶、病枝、病果等集中处理，并喷广谱性杀菌剂降低病原菌。早春梨芽膨大期起开始结合药剂防治，花前花后是关键期，可选用苯醚甲环唑、已唑醇、氟硅唑、异菌脲等药剂。02轮纹病梨树轮纹病菌是弱寄生菌，具有发病快、危害大等特点，主要侵害枝干、果实，在叶片上也偶有发生。枝干受害，逐步形成马鞍状病斑，树皮变得粗糙；果实受害，初产生水渍状、圆形、浅褐色小斑，后扩大成浅褐色至红褐色的同心轮纹斑；叶片受害，生成较大褐色近圆形病斑，常伴有轮纹。由于是弱寄生病害，在预防上提升树势，压低病原是关键。可增施有机肥、活土君复合菌剂，生长期淋施海精灵生物刺激剂，冬季清园时应刮除枝干老翘皮，剪除病枯枝，集中烧毁。药剂防治掌握在落花后至套袋前，特别是雨前雨后，药剂可选择代森锰锌、戊唑·多菌灵、代森联、吡唑·代森联等。03锈病梨锈病主要对植株叶片、新梢和幼果有较大危害。叶片受害，起初在叶面上出现淡黄色且带有光泽的小斑点，后扩展为近圆形病斑。幼果受害，初期病斑大体与叶片上的相似，病部稍凹陷，病斑上密生橙黄色的小粒点。后期在同一部位产生灰黄色毛状物，即锈子器。病果生长停滞，往往畸形早落。防治时要注意清除转主寄主如松、柏等；高温天气，要适时浇水，增加湿度，破坏发病条件；在萌芽至展叶的25天内进行喷药保护，药剂可选择三唑醇、苯醚甲环唑、嘧菌酯等。",
+          "pages": [],
+          "crop": [
+            "梨"
+          ],
+          "region": [],
+          "applicable_stages": [],
+          "evidence_level": "B",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E3",
+        "candidate_id": "chunk:GOV_001_C0001",
+        "kind": "document_chunk",
+        "content": {
+          "title": "鸭梨黑星病夏季如何防治（农业农村局公开科普）",
+          "section": "网页正文",
+          "text": "梨黑星病又叫梨疮痂病，是梨树的主要病害。当前正值夏季，高温高湿有利于梨黑星病的发生。梨黑星病病原菌借雨水在梨园中扩散侵染，主要危害叶片、果实。叶片染病后，在叶背面产生圆形、椭圆形或不规则形病斑，病斑沿叶脉扩展，产生辐射状黑色霉状物，严重时整个叶背面布满黑霉，引起早期落叶。果实感病后，在果实表面产生一些大小不等的圆形病斑，病斑硬化后，表面粗糙，凹陷龟裂，呈疮痂状，病部伤口遇雨水极易被霉菌感染而腐烂。防治方法 1.农业防治。发现病叶、病果及时摘除，集中烧毁或深埋，防止病菌的扩散和蔓延。雨后及时排除积水，铲除果园内杂草，降低果园内潮湿度。结合夏剪，及时把直立枝、徒长枝、交叉枝从基部剪除，增加果园内通风透光性，改善果园小气候。2.药剂防治。雨前及时喷药预防，雨后及时喷药防治，喷药后遇雨及时补喷。用药可选用40%杜邦福星10000倍，10%苯醚甲环唑3000倍，80%汉邦多菌灵2000倍，可杀得叁仟2000倍，以上农药7-10天喷1次，连喷3-4次。各种杀菌剂要交替使用，以免产生抗药性。喷药时要注意喷布均匀，树冠上下，树膛内外，都要沾药，特别注意叶片的背面要喷上药。",
+          "pages": [],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [],
+          "evidence_level": "B",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E4",
+        "candidate_id": "chunk:UNI_001_C0003",
+        "kind": "document_chunk",
+        "content": {
+          "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+          "section": "网页正文",
+          "text": "同时注意提升树势，科学用肥，增施有机肥、活土君复合菌剂、科学控产等。08褐腐病只危害梨树果实，一般近成熟期发病，初为暗褐色病斑，逐步扩大，病情发展迅速，几天全果腐烂，病斑上还着生黄褐色绒毛。落花后、成熟前注意用药预防保护，可选择噻菌灵、腈苯唑、嘧菌酯等药剂。09干腐病主要危害其果实、枝条。枝条感病时皮层出现长条形的黑褐色病斑，略凹陷，质地较硬，一般病斑不会扩展到木质部；当病斑扩展至枝干半圈以上时, 其上部枯死。果实染病，果面产生轮纹斑，随后果实腐烂。由于枝条徒长、土壤黏重、排水不良的园子该病发生较重，因此加强园区管理如科学修剪、合理挂果、加强肥水等是预防的关键。枝干感病的刮除后用溃腐灵涂抹，发芽前可喷施多菌灵、福美双等减少病原。",
+          "pages": [],
+          "crop": [
+            "梨"
+          ],
+          "region": [],
+          "applicable_stages": [],
+          "evidence_level": "B",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E5",
+        "candidate_id": "path:v2:e0193",
+        "kind": "graph_path",
+        "content": {
+          "nodes": [
+            "梨黑星病",
+            "叶片皱缩扭曲"
+          ],
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 叶片皱缩扭曲",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0193",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:371918a8ef1d8ec5",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ]
+        },
+        "scope_warnings": [
+          "research_only:local_transfer_unvalidated"
+        ]
+      }
+    ],
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中梨黑星病危害梨树地上部幼嫩组织、以叶片果实为主、叶片叶背病斑与辐射状霉层及落叶、幼果畸形与成长期果实凹陷星状龟裂、叶柄果梗黑色椭圆形凹陷斑与缢缩干枯早落等均直接来自E2；叶片圆形/椭圆形/不规则病斑沿叶脉扩展、辐射状黑色霉状物、早期落叶、果实圆形病斑硬化粗糙凹陷龟裂呈疮痂状、遇雨水易腐烂等均直接来自E3；与叶片皱缩扭曲的症状关联来自E5的HAS_SYMPTOM事实导航，且结论已标明为症状关联而非因果。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对E2、E3、E5的内容概括与三条引用证据一致：E2描述叶片、幼果、成长期果实及叶柄果梗症状，E3描述叶片与果实症状，E5为梨黑星病与叶片皱缩扭曲的HAS_SYMPTOM图谱路径。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning所述E2与E3在叶片症状和果实症状上相互印证，符合两条证据文本；E5以HAS_SYMPTOM记录叶片皱缩扭曲并被称为症状关联事实而非因果推断，符合图谱路径性质；各证据未标注具体适用阶段，故不串联不同阶段症状，也与证据中applicable_stages为空一致。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅声明上述为一般知识性症状描述、来源为教学站点与公开科普资料、未针对特定地区或品种验证、不作为当地诊断或防治操作指导，并建议结合当地植保部门指导与田间观察；这些限定与E2、E3的来源性质及policy中“一般知识解释；未知适用范围必须标明，不作为当地操作指导”的要求一致，未新增未引用事实。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明"
+  }
+}

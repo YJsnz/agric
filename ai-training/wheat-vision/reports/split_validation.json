@@ -1,0 +1,53 @@
+{
+  "clean_pool": 1820,
+  "class_clean": {
+    "healthy": 791,
+    "rust": 472,
+    "leaf_spot_blight": 461,
+    "nitrogen_deficiency": 96
+  },
+  "review_decisions": {
+    "keep": 93,
+    "needs_expert_review": 5
+  },
+  "mis_group_fixed": "WG_f1b3d33d81b28e8b",
+  "remaining_mixed_label_groups": 0,
+  "split_totals": {
+    "train": 1274,
+    "val": 274,
+    "test": 272
+  },
+  "split_by_class": {
+    "train": {
+      "healthy": 554,
+      "rust": 330,
+      "leaf_spot_blight": 323,
+      "nitrogen_deficiency": 67
+    },
+    "val": {
+      "healthy": 119,
+      "rust": 71,
+      "leaf_spot_blight": 69,
+      "nitrogen_deficiency": 15
+    },
+    "test": {
+      "healthy": 118,
+      "rust": 71,
+      "leaf_spot_blight": 69,
+      "nitrogen_deficiency": 14
+    }
+  },
+  "checks": {
+    "exact_sha_cross_split": 0,
+    "real_group_cross_split": 0,
+    "label_conflict_in_pool": 0,
+    "needs_expert_review_in_pool": 0,
+    "augmented_copy_in_pool": 0,
+    "split_copy_in_pool": 0,
+    "corrupt_in_pool": 0,
+    "duplicate_target_filename": 0,
+    "raw_changed": 0
+  },
+  "seed": 42,
+  "ratios": "0.70/0.15/0.15"
+}

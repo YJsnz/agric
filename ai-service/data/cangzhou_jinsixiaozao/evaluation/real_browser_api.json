@@ -1,0 +1,709 @@
+{
+  "crop_id": "cangzhou_jinsixiaozao",
+  "question": "作物：沧州金丝小枣。成熟期连续降雨，为什么容易裂果？",
+  "entities": {
+    "region": null,
+    "growth_stage": "成熟期",
+    "organ": "fruit",
+    "symptom": null,
+    "disease_or_pest": null,
+    "weather": "连续降雨（用户问题情境）",
+    "rainfall": null,
+    "humidity": null,
+    "irrigation": null,
+    "crop": "cangzhou_jinsixiaozao",
+    "region_source": null,
+    "harvest_intent": false,
+    "storage_intent": false,
+    "scope": "production",
+    "intent": "information"
+  },
+  "generation_called": true,
+  "status": "insufficient_evidence",
+  "retrieval": {
+    "graph_status": "ok",
+    "graph_evidence_count": 5,
+    "vector_evidence_count": 6,
+    "fused_count": 7
+  },
+  "knowledge_graph": {
+    "edges": [
+      {
+        "id": "JJE022",
+        "source": "cangzhou_jinsixiaozao:6743d8cbe7125fc8",
+        "target": "cangzhou_jinsixiaozao:d744b10351a412a4",
+        "relation": "MANAGED_AT",
+        "kind": "semantic",
+        "source_id": "J001",
+        "source_ids": [
+          "J001"
+        ],
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "region": "沧州金丝小枣地理标志保护区",
+        "crop": [
+          "沧州金丝小枣"
+        ],
+        "crop_id": "cangzhou_jinsixiaozao",
+        "growth_stage": null,
+        "stage_ids": [],
+        "subject": "裂果",
+        "object": "7月上旬",
+        "evidence_text": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+        "page": 5,
+        "section": "5 病虫草害防治",
+        "evidence_level": "local_verified",
+        "review_status": "verbatim_verified",
+        "chunk_id": "JJC004",
+        "conditions": [
+          "用途：production",
+          "器官：原文未统一标定",
+          "阶段：原文未标定"
+        ],
+        "evidence_ids": [
+          "J001",
+          "JJC004"
+        ],
+        "evidence": [
+          {
+            "id": "JJC004",
+            "source_id": "J001",
+            "quote": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+            "locator": {
+              "page": 5,
+              "section": "5 病虫草害防治",
+              "file": "evidence/raw/J001_fulltext.pdf"
+            }
+          }
+        ],
+        "locator": {
+          "page": 5,
+          "section": "5 病虫草害防治",
+          "file": "evidence/raw/J001_fulltext.pdf"
+        },
+        "standard_status": "current"
+      },
+      {
+        "id": "JJE046",
+        "source": "cangzhou_jinsixiaozao:4180b5371606eb38",
+        "target": "cangzhou_jinsixiaozao:6743d8cbe7125fc8",
+        "relation": "ASSOCIATED_WITH",
+        "kind": "semantic",
+        "source_id": "J007",
+        "source_ids": [
+          "J007"
+        ],
+        "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+        "region": "河北沧州",
+        "crop": [
+          "沧州金丝小枣"
+        ],
+        "crop_id": "cangzhou_jinsixiaozao",
+        "growth_stage": "成熟期",
+        "stage_ids": [
+          "cangzhou_jinsixiaozao:54554292d14c02d2"
+        ],
+        "subject": "成熟期连续阴雨",
+        "object": "裂果",
+        "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+        "page": 1,
+        "section": "第196页引言",
+        "evidence_level": "peer_reviewed_regional",
+        "review_status": "verbatim_verified",
+        "chunk_id": "JJC009",
+        "conditions": [
+          "用途：production",
+          "器官：fruit",
+          "阶段：成熟期"
+        ],
+        "evidence_ids": [
+          "J007",
+          "JJC009"
+        ],
+        "evidence": [
+          {
+            "id": "JJC009",
+            "source_id": "J007",
+            "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+            "locator": {
+              "page": 1,
+              "section": "第196页引言",
+              "file": "evidence/raw/J007_fulltext.pdf",
+              "transcription": "manually_verified_page_image"
+            }
+          }
+        ],
+        "locator": {
+          "page": 1,
+          "section": "第196页引言",
+          "file": "evidence/raw/J007_fulltext.pdf",
+          "transcription": "manually_verified_page_image"
+        },
+        "standard_status": "not_a_standard"
+      },
+      {
+        "id": "JJE047",
+        "source": "cangzhou_jinsixiaozao:4180b5371606eb38",
+        "target": "cangzhou_jinsixiaozao:40ba3250134bdbd9",
+        "relation": "ASSOCIATED_WITH",
+        "kind": "semantic",
+        "source_id": "J007",
+        "source_ids": [
+          "J007"
+        ],
+        "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+        "region": "河北沧州",
+        "crop": [
+          "沧州金丝小枣"
+        ],
+        "crop_id": "cangzhou_jinsixiaozao",
+        "growth_stage": "成熟期",
+        "stage_ids": [
+          "cangzhou_jinsixiaozao:54554292d14c02d2"
+        ],
+        "subject": "成熟期连续阴雨",
+        "object": "浆烂",
+        "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+        "page": 1,
+        "section": "第196页引言",
+        "evidence_level": "peer_reviewed_regional",
+        "review_status": "verbatim_verified",
+        "chunk_id": "JJC009",
+        "conditions": [
+          "用途：production",
+          "器官：fruit",
+          "阶段：成熟期"
+        ],
+        "evidence_ids": [
+          "J007",
+          "JJC009"
+        ],
+        "evidence": [
+          {
+            "id": "JJC009",
+            "source_id": "J007",
+            "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+            "locator": {
+              "page": 1,
+              "section": "第196页引言",
+              "file": "evidence/raw/J007_fulltext.pdf",
+              "transcription": "manually_verified_page_image"
+            }
+          }
+        ],
+        "locator": {
+          "page": 1,
+          "section": "第196页引言",
+          "file": "evidence/raw/J007_fulltext.pdf",
+          "transcription": "manually_verified_page_image"
+        },
+        "standard_status": "not_a_standard"
+      },
+      {
+        "id": "JJE048",
+        "source": "cangzhou_jinsixiaozao:f440435c12b7ec6a",
+        "target": "cangzhou_jinsixiaozao:6743d8cbe7125fc8",
+        "relation": "PROMOTES",
+        "kind": "semantic",
+        "source_id": "J007",
+        "source_ids": [
+          "J007"
+        ],
+        "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+        "region": "河北沧州",
+        "crop": [
+          "沧州金丝小枣"
+        ],
+        "crop_id": "cangzhou_jinsixiaozao",
+        "growth_stage": "成熟期",
+        "stage_ids": [
+          "cangzhou_jinsixiaozao:54554292d14c02d2"
+        ],
+        "subject": "遇雨果肉吸水膨胀",
+        "object": "裂果",
+        "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+        "page": 1,
+        "section": "第196页引言",
+        "evidence_level": "peer_reviewed_regional",
+        "review_status": "verbatim_verified",
+        "chunk_id": "JJC009",
+        "conditions": [
+          "用途：production",
+          "器官：fruit",
+          "阶段：成熟期"
+        ],
+        "evidence_ids": [
+          "J007",
+          "JJC009"
+        ],
+        "evidence": [
+          {
+            "id": "JJC009",
+            "source_id": "J007",
+            "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+            "locator": {
+              "page": 1,
+              "section": "第196页引言",
+              "file": "evidence/raw/J007_fulltext.pdf",
+              "transcription": "manually_verified_page_image"
+            }
+          }
+        ],
+        "locator": {
+          "page": 1,
+          "section": "第196页引言",
+          "file": "evidence/raw/J007_fulltext.pdf",
+          "transcription": "manually_verified_page_image"
+        },
+        "standard_status": "not_a_standard"
+      },
+      {
+        "id": "JJE049",
+        "source": "cangzhou_jinsixiaozao:b12c99806c87a570",
+        "target": "cangzhou_jinsixiaozao:b19a06f6337da7a5",
+        "relation": "ASSOCIATED_WITH",
+        "kind": "semantic",
+        "source_id": "J007",
+        "source_ids": [
+          "J007"
+        ],
+        "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+        "region": "河北沧州",
+        "crop": [
+          "沧州金丝小枣"
+        ],
+        "crop_id": "cangzhou_jinsixiaozao",
+        "growth_stage": "成熟期",
+        "stage_ids": [
+          "cangzhou_jinsixiaozao:54554292d14c02d2"
+        ],
+        "subject": "长时间阴雨",
+        "object": "果面阴湿霉露",
+        "evidence_text": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+        "page": 1,
+        "section": "第196页引言",
+        "evidence_level": "peer_reviewed_regional",
+        "review_status": "verbatim_verified",
+        "chunk_id": "JJC009",
+        "conditions": [
+          "用途：production",
+          "器官：fruit",
+          "阶段：成熟期"
+        ],
+        "evidence_ids": [
+          "J007",
+          "JJC009"
+        ],
+        "evidence": [
+          {
+            "id": "JJC009",
+            "source_id": "J007",
+            "quote": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+            "locator": {
+              "page": 1,
+              "section": "第196页引言",
+              "file": "evidence/raw/J007_fulltext.pdf",
+              "transcription": "manually_verified_page_image"
+            }
+          }
+        ],
+        "locator": {
+          "page": 1,
+          "section": "第196页引言",
+          "file": "evidence/raw/J007_fulltext.pdf",
+          "transcription": "manually_verified_page_image"
+        },
+        "standard_status": "not_a_standard"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "kind": "document_chunk",
+      "source_id": "J001",
+      "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+      "content": "修剪 \n沧州金丝小枣为喜光树种，培养通风、透光，枝量适宜的良好树形。传统枣园采取小冠疏层形、\n开心形或圆头形等树形，株距2.0 m以下的密植园采取枣头形等树形。",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "沧州金丝小枣地理标志保护区",
+        "growth_stage": null,
+        "stage_unknown": true,
+        "scope": "production",
+        "organ": null,
+        "topic": "修剪通风透光",
+        "source_id": "J001",
+        "locator": {
+          "page": 5,
+          "section": "5 修剪",
+          "file": "evidence/raw/J001_fulltext.pdf"
+        },
+        "evidence_level": "local_verified",
+        "standard_status": "current",
+        "review_status": "verbatim_verified",
+        "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+        "risk": [],
+        "purpose": "conditional_standard_guidance"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "kind": "document_chunk",
+      "source_id": "J001",
+      "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+      "content": "苗木定植 \n采用沧州金丝小枣优良品种苗木，苗木应符合附录B中的相关规定。秋季落叶后或春季芽体萌动\n时栽植，南北行向。栽植密度、株行距因枣园类型而定，如表1所示。 \n表1  株行距                                单位为米 \n枣园类型 \n株距 \n行距 \n传统枣园 \n2.0 ~ 3.0 \n4.0 ~ 5.0 \n密植枣园 \n1.0 ~ 1.5 \n3.5 ~ 4.5 \n计划密植枣园 \n0.5 ~ 1.0 \n1.0 ~ 2.0 \n设施枣园 \n1.0 ~ 2.0 \n2.0 ~ 3.0",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "沧州金丝小枣地理标志保护区",
+        "growth_stage": "定植期",
+        "stage_unknown": false,
+        "scope": "production",
+        "organ": null,
+        "topic": "苗木定植",
+        "source_id": "J001",
+        "locator": {
+          "page": 5,
+          "section": "5 苗木定植",
+          "file": "evidence/raw/J001_fulltext.pdf"
+        },
+        "evidence_level": "local_verified",
+        "standard_status": "current",
+        "review_status": "verbatim_verified",
+        "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+        "risk": [],
+        "purpose": "conditional_standard_guidance"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "kind": "document_chunk",
+      "source_id": "J001",
+      "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+      "content": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "沧州金丝小枣地理标志保护区",
+        "growth_stage": null,
+        "stage_unknown": true,
+        "scope": "production",
+        "organ": null,
+        "topic": "病虫害防控时间",
+        "source_id": "J001",
+        "locator": {
+          "page": 5,
+          "section": "5 病虫草害防治",
+          "file": "evidence/raw/J001_fulltext.pdf"
+        },
+        "evidence_level": "local_verified",
+        "standard_status": "current",
+        "review_status": "verbatim_verified",
+        "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+        "risk": [],
+        "purpose": "conditional_standard_guidance"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "kind": "document_chunk",
+      "source_id": "J007",
+      "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+      "content": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "河北沧州",
+        "growth_stage": "成熟期",
+        "stage_unknown": false,
+        "scope": "production",
+        "organ": "fruit",
+        "topic": "成熟期降雨浆烂裂果",
+        "source_id": "J007",
+        "locator": {
+          "page": 1,
+          "section": "第196页引言",
+          "file": "evidence/raw/J007_fulltext.pdf",
+          "transcription": "manually_verified_page_image"
+        },
+        "evidence_level": "peer_reviewed_regional",
+        "standard_status": "not_a_standard",
+        "review_status": "verbatim_verified",
+        "source_sha256": "e0ba797bd5088be25e9a1c296e1ee720556a8691c96c99e3b44a8100de64b2b5",
+        "risk": [],
+        "purpose": "candidate_assessment"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "kind": "document_chunk",
+      "source_id": "J008",
+      "title": "金丝小枣果实病害病原菌研究",
+      "content": "本研究发现金丝小枣果实病害分浆烂、黑疔、褐皮3种完全不同的症状类型，且不同的症状类型致病菌不同，浆烂型的主要致病菌为仁果囊孢壳菌[\nPhysalospora obtuse\n(Schw.)Cooke]；黑疔型的主要致病菌为细链格孢菌[\nA. alternata\n(Fr.)Keissle]；褐皮型的主要致病菌为毁灭茎点霉菌(\nP. destructiva\nPlowr)和细链格孢菌[\nA. alternata\n(Fr.)Keissler]2种。可见，金丝小枣果实病害的以上3种类型应定名为3种病害，分别称为浆烂病、黑疔病、褐皮病更为准确。",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "河北沧州、山东乐陵、天津静海",
+        "growth_stage": null,
+        "stage_unknown": true,
+        "scope": "production",
+        "organ": "fruit",
+        "topic": "果实病害病原候选",
+        "source_id": "J008",
+        "locator": {
+          "page": null,
+          "section": "3 讨论",
+          "file": "evidence/raw/J008.html"
+        },
+        "evidence_level": "peer_reviewed_regional",
+        "standard_status": "not_a_standard",
+        "review_status": "verbatim_verified",
+        "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+        "risk": [],
+        "purpose": "candidate_assessment"
+      }
+    },
+    {
+      "evidence_id": "E6",
+      "kind": "document_chunk",
+      "source_id": "J008",
+      "title": "金丝小枣果实病害病原菌研究",
+      "content": "褐皮型：病组织初期枣果梗洼周围形成黄色至淡褐色晕斑，边缘多不清晰。病斑向果肩迅速扩展，边缘逐渐清晰，颜色由浅变深，形成红褐色至深红色凹陷病斑，失去光泽。果肉病组织海绵状坏死，黄褐色，味苦。发病果易脱落。后期病斑处干缩，深红色至黑色，表面可产生灰褐色至黑色小点和大枣铁皮病症状相似。",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "河北沧州、山东乐陵、天津静海",
+        "growth_stage": null,
+        "stage_unknown": true,
+        "scope": "production",
+        "organ": "fruit",
+        "topic": "褐皮病症状",
+        "source_id": "J008",
+        "locator": {
+          "page": null,
+          "section": "2.1 病果症状",
+          "file": "evidence/raw/J008.html"
+        },
+        "evidence_level": "peer_reviewed_regional",
+        "standard_status": "not_a_standard",
+        "review_status": "verbatim_verified",
+        "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+        "risk": [],
+        "purpose": "candidate_assessment"
+      }
+    },
+    {
+      "evidence_id": "E7",
+      "kind": "document_chunk",
+      "source_id": "J017",
+      "title": "粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）",
+      "content": "调查结果表明(\n表 3\n)：枣树涂抹粘虫胶后粘上许多绿盲蝽蟓，显著减轻了绿盲蝽蟓对枣树叶片、花蕾、幼果的危害。",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "河北沧州及论文所列试验地区",
+        "growth_stage": "萌芽至幼果期",
+        "stage_unknown": false,
+        "scope": "production",
+        "organ": null,
+        "topic": "绿盲蝽试验观察",
+        "source_id": "J017",
+        "locator": {
+          "page": null,
+          "section": "3.3 试验结果",
+          "file": "evidence/raw/J017.html"
+        },
+        "evidence_level": "peer_reviewed_regional",
+        "standard_status": "not_a_standard",
+        "review_status": "verbatim_verified",
+        "source_sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+        "risk": [],
+        "purpose": "candidate_assessment"
+      }
+    }
+  ],
+  "citations": [
+    {
+      "evidence_id": "E3",
+      "kind": "document_chunk",
+      "source_id": "J001",
+      "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+      "content": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "沧州金丝小枣地理标志保护区",
+        "growth_stage": null,
+        "stage_unknown": true,
+        "scope": "production",
+        "organ": null,
+        "topic": "病虫害防控时间",
+        "source_id": "J001",
+        "locator": {
+          "page": 5,
+          "section": "5 病虫草害防治",
+          "file": "evidence/raw/J001_fulltext.pdf"
+        },
+        "evidence_level": "local_verified",
+        "standard_status": "current",
+        "review_status": "verbatim_verified",
+        "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+        "risk": [],
+        "purpose": "conditional_standard_guidance"
+      },
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+    },
+    {
+      "evidence_id": "E4",
+      "kind": "document_chunk",
+      "source_id": "J007",
+      "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+      "content": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "河北沧州",
+        "growth_stage": "成熟期",
+        "stage_unknown": false,
+        "scope": "production",
+        "organ": "fruit",
+        "topic": "成熟期降雨浆烂裂果",
+        "source_id": "J007",
+        "locator": {
+          "page": 1,
+          "section": "第196页引言",
+          "file": "evidence/raw/J007_fulltext.pdf",
+          "transcription": "manually_verified_page_image"
+        },
+        "evidence_level": "peer_reviewed_regional",
+        "standard_status": "not_a_standard",
+        "review_status": "verbatim_verified",
+        "source_sha256": "e0ba797bd5088be25e9a1c296e1ee720556a8691c96c99e3b44a8100de64b2b5",
+        "risk": [],
+        "purpose": "candidate_assessment"
+      },
+      "url": "https://zgnyqx.ieda.org.cn/CN/abstract/abstract2883.shtml"
+    }
+  ],
+  "sources": [
+    {
+      "evidence_id": "E3",
+      "kind": "document_chunk",
+      "source_id": "J001",
+      "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+      "content": "病虫草害防治 \n病虫防治采取预防为主，综合防治的原则。春季枣芽萌动时，主要防治食芽象甲、枣瘿蚊、绿\n盲蝽等害虫；5月底至7月中旬防治红蜘蛛；7月初至8月底防治桃小食心虫，7月上旬开始预防防治枣\n锈病、烂果病、缩果病、裂果等病害，适时防治草害。在病虫草害防治中综合使用物理、农业和生物\n方法。采摘前20天禁止使用农药。用药种类应符合NY/T 393的要求。",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "沧州金丝小枣地理标志保护区",
+        "growth_stage": null,
+        "stage_unknown": true,
+        "scope": "production",
+        "organ": null,
+        "topic": "病虫害防控时间",
+        "source_id": "J001",
+        "locator": {
+          "page": 5,
+          "section": "5 病虫草害防治",
+          "file": "evidence/raw/J001_fulltext.pdf"
+        },
+        "evidence_level": "local_verified",
+        "standard_status": "current",
+        "review_status": "verbatim_verified",
+        "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+        "risk": [],
+        "purpose": "conditional_standard_guidance"
+      },
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+    },
+    {
+      "evidence_id": "E4",
+      "kind": "document_chunk",
+      "source_id": "J007",
+      "title": "河北沧州金丝小枣成熟期浆烂裂果灾害风险评估",
+      "content": "小枣在生长后期果皮细胞间隙较大，特别容易透进水分，如果遇雨，果肉吸水膨胀，就会造成裂果，若遇长时间阴雨，且雨后果面阴湿霉露，就会引起严重裂果。因此，小枣成熟期遇到连续阴雨天气，会导致成熟的小枣开裂，造成浆烂，使当年产量和品质遭受到最直接甚至最致命的损失。",
+      "metadata": {
+        "crop": "cangzhou_jinsixiaozao",
+        "region": "河北沧州",
+        "growth_stage": "成熟期",
+        "stage_unknown": false,
+        "scope": "production",
+        "organ": "fruit",
+        "topic": "成熟期降雨浆烂裂果",
+        "source_id": "J007",
+        "locator": {
+          "page": 1,
+          "section": "第196页引言",
+          "file": "evidence/raw/J007_fulltext.pdf",
+          "transcription": "manually_verified_page_image"
+        },
+        "evidence_level": "peer_reviewed_regional",
+        "standard_status": "not_a_standard",
+        "review_status": "verbatim_verified",
+        "source_sha256": "e0ba797bd5088be25e9a1c296e1ee720556a8691c96c99e3b44a8100de64b2b5",
+        "risk": [],
+        "purpose": "candidate_assessment"
+      },
+      "url": "https://zgnyqx.ieda.org.cn/CN/abstract/abstract2883.shtml"
+    }
+  ],
+  "grounding": {
+    "passed": true,
+    "checks": [
+      {
+        "field": "conclusion",
+        "verdict": "supported",
+        "reason": "结论中果皮细胞间隙大、水分易透入、果肉吸水膨胀而果皮不能相应延展、长时间阴雨及雨后果面阴湿霉露加重裂果并造成浆烂和产量品质损失，均直接来自所引E4原文；E4为河北沧州金丝小枣成熟期浆烂裂果区域研究证据，与问题作物和时期一致。"
+      },
+      {
+        "field": "basis",
+        "verdict": "supported",
+        "reason": "basis对E4的转述与原文一致；对E3的转述也符合原文，即标准将裂果与枣锈病、烂果病、缩果病等并列，并要求7月上旬开始预防防治。未发现超出所引证据的事实补造。"
+      },
+      {
+        "field": "reasoning",
+        "verdict": "supported",
+        "reason": "reasoning指出证据未提供降雨量、持续时间、品种抗性、土壤水分、栽培管理等定量关系，符合所引证据范围；并正确限定E4为区域研究证据、E3为地理标志保护区标准且未给出裂果成因或具体药剂剂量，未将证据外推为普遍已验证结论。"
+      },
+      {
+        "field": "advice",
+        "verdict": "supported",
+        "reason": "建议仅要求观察记录裂口位置、浆烂、果面阴湿霉露、降雨及转晴情况，并核实果园是否位于地理标志保护区，最终确诊需现场调查和必要检测；这些均属于观察、补充信息和现场复核建议，未推荐药名、剂量、施药周期或生产操作，符合candidate_assessment范围。"
+      }
+    ],
+    "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+  },
+  "local_conclusion": {
+    "available": false,
+    "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+  },
+  "preliminary_assessment": {
+    "available": true,
+    "summary": "成熟期连续降雨容易导致沧州金丝小枣裂果，主要与果实后期果皮结构及吸水特性有关：小枣生长后期果皮细胞间隙较大，水分容易透入；遇雨后，果肉吸水膨胀，而果皮不能相应延展，从而造成裂果；若遇长时间阴雨、雨后果面阴湿霉露，裂果会加重，并进一步造成浆烂，使产量和品质遭受直接甚至致命损失 [E4] 。",
+    "supporting_points": [
+      "证据[E4]直接说明：小枣生长后期果皮细胞间隙较大，特别容易透进水分；遇雨后果肉吸水膨胀，就会造成裂果；长时间阴雨且雨后果面阴湿霉露会引起严重裂果；成熟期连续阴雨会导致成熟小枣开裂、浆烂，造成产量和品质损失。证据[E3]显示，沧州金丝小枣标准在病虫草害防治中，将裂果与枣锈病、烂果病、缩果病等并列，要求7月上旬开始预防防治。"
+    ],
+    "uncertainties": [
+      "现有证据可解释成熟期连续降雨导致裂果的生理和水分机制，但未提供降雨量、降雨持续时间、品种抗性、土壤水分、栽培管理等因素与裂果程度的定量关系。[E4]为河北沧州区域研究证据，不能等同于所有沧州金丝小枣果园的已验证结论。[E3]为现行标准，但其保护范围限于沧州金丝小枣地理标志保护区，需核实用户果园是否在该保护区内；标准中仅将裂果列为防治对象，未给出裂果成因或具体防治药剂、剂量。"
+    ]
+  },
+  "answer": "成熟期连续降雨容易导致沧州金丝小枣裂果，主要与果实后期果皮结构及吸水特性有关：小枣生长后期果皮细胞间隙较大，水分容易透入；遇雨后，果肉吸水膨胀，而果皮不能相应延展，从而造成裂果；若遇长时间阴雨、雨后果面阴湿霉露，裂果会加重，并进一步造成浆烂，使产量和品质遭受直接甚至致命损失 [E4] 。\n\n建议先观察并记录裂果发生情况：裂口位置、是否伴随浆烂、果面是否阴湿霉露，以及降雨持续时间、降雨后天气转晴或持续阴湿等情况，以便与[E4]描述的“果肉吸水膨胀—裂果—浆烂”过程进行对照。同时核实果园是否位于沧州金丝小枣地理标志保护区内，以判断[E3]标准要求是否适用。最终确诊需现场调查和必要检测。",
+  "grounded_answer": {
+    "sufficient": false,
+    "conclusion": "成熟期连续降雨容易导致沧州金丝小枣裂果，主要与果实后期果皮结构及吸水特性有关：小枣生长后期果皮细胞间隙较大，水分容易透入；遇雨后，果肉吸水膨胀，而果皮不能相应延展，从而造成裂果；若遇长时间阴雨、雨后果面阴湿霉露，裂果会加重，并进一步造成浆烂，使产量和品质遭受直接甚至致命损失 [E4] 。",
+    "basis": "证据[E4]直接说明：小枣生长后期果皮细胞间隙较大，特别容易透进水分；遇雨后果肉吸水膨胀，就会造成裂果；长时间阴雨且雨后果面阴湿霉露会引起严重裂果；成熟期连续阴雨会导致成熟小枣开裂、浆烂，造成产量和品质损失。证据[E3]显示，沧州金丝小枣标准在病虫草害防治中，将裂果与枣锈病、烂果病、缩果病等并列，要求7月上旬开始预防防治。",
+    "reasoning": "现有证据可解释成熟期连续降雨导致裂果的生理和水分机制，但未提供降雨量、降雨持续时间、品种抗性、土壤水分、栽培管理等因素与裂果程度的定量关系。[E4]为河北沧州区域研究证据，不能等同于所有沧州金丝小枣果园的已验证结论。[E3]为现行标准，但其保护范围限于沧州金丝小枣地理标志保护区，需核实用户果园是否在该保护区内；标准中仅将裂果列为防治对象，未给出裂果成因或具体防治药剂、剂量。",
+    "advice": "建议先观察并记录裂果发生情况：裂口位置、是否伴随浆烂、果面是否阴湿霉露，以及降雨持续时间、降雨后天气转晴或持续阴湿等情况，以便与[E4]描述的“果肉吸水膨胀—裂果—浆烂”过程进行对照。同时核实果园是否位于沧州金丝小枣地理标志保护区内，以判断[E3]标准要求是否适用。最终确诊需现场调查和必要检测。",
+    "citations": [
+      "E3",
+      "E4"
+    ],
+    "candidate_assessments": [
+      {
+        "candidate_name": "成熟期连续降雨导致果肉吸水膨胀裂果",
+        "assessment": "E4直接支持：小枣生长后期果皮细胞间隙较大，容易透进水分；遇雨后果肉吸水膨胀，造成裂果；长时间阴雨且雨后果面阴湿霉露会引起严重裂果。该证据来自河北沧州区域研究，可解释用户所述成熟期连续降雨情境下的裂果原因，但不等同于对用户当前果园的现场确诊。",
+        "evidence_ids": [
+          "E4"
+        ]
+      },
+      {
+        "candidate_name": "裂果后浆烂及果实病害",
+        "assessment": "E4指出成熟期连续阴雨会导致成熟小枣开裂、浆烂，使产量和品质遭受损失。E5显示金丝小枣果实病害中浆烂型的主要致病菌为仁果囊孢壳菌[Physalospora obtuse (Schw.)Cooke]，但E5未直接说明该病原菌与降雨裂果之间的因果关系，不能据此将用户所述裂果直接确诊为浆烂病。",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ]
+      }
+    ]
+  }
+}

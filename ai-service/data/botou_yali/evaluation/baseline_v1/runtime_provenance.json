@@ -1,0 +1,54 @@
+{
+  "python": "3.12.0",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "packages": {
+    "python-docx": "1.2.0",
+    "fastembed": "0.8.0",
+    "onnxruntime": "1.30.0",
+    "faiss-cpu": "1.15.1",
+    "numpy": "2.5.3"
+  },
+  "source_hashes_at_report": {
+    "baseline_experiment.py": "1a820dff08cfc88f0f361cf646037afd9009a8922c34bce8f17132d0fb7ba5f0",
+    "baseline_report.py": "f21321bb6a8443ed5923d594dc5520acc75968a32acc8942668454c3aca7a972",
+    "test_baseline_experiment.py": "96de0f8cd477b7cc3ca846fb9355245034f61a35466ee100add1f4c6d846b053"
+  },
+  "reranker_manifest": [
+    {
+      "file": "config.json",
+      "url": "https://modelscope.cn/models/BAAI/bge-reranker-base/resolve/master/config.json",
+      "bytes": 799,
+      "sha256": "289adf7ada1eb6b4afa7589a48a032d45a076cf2e46dcdb3b4cabc33be14f708"
+    },
+    {
+      "file": "tokenizer.json",
+      "url": "https://modelscope.cn/models/BAAI/bge-reranker-base/resolve/master/tokenizer.json",
+      "bytes": 17098107,
+      "sha256": "9eb652ac4e40cc093272bbbe0f55d521cf67570060227109b5cdc20945a4489e"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "url": "https://modelscope.cn/models/BAAI/bge-reranker-base/resolve/master/tokenizer_config.json",
+      "bytes": 443,
+      "sha256": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b"
+    },
+    {
+      "file": "special_tokens_map.json",
+      "url": "https://modelscope.cn/models/BAAI/bge-reranker-base/resolve/master/special_tokens_map.json",
+      "bytes": 279,
+      "sha256": "d5469a60db23249c7f8945013d78df30b44b6bf686c6bb4740f4223f77b1b535"
+    },
+    {
+      "file": "sentencepiece.bpe.model",
+      "url": "https://modelscope.cn/models/BAAI/bge-reranker-base/resolve/master/sentencepiece.bpe.model",
+      "bytes": 5069051,
+      "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+    },
+    {
+      "file": "onnx/model.onnx",
+      "url": "https://modelscope.cn/models/BAAI/bge-reranker-base/resolve/master/onnx/model.onnx",
+      "bytes": 1112459588,
+      "sha256": "15b9a8c3da82eddf263df571281166e00e9308fe19d077084b642ebfcaf06d2b"
+    }
+  ]
+}

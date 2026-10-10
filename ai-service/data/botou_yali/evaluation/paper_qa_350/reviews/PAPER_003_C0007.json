@@ -1,0 +1,59 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0167",
+      "question": "在本研究的气相色谱程序升温中，从215℃升到230℃的速率是多少？",
+      "answer_quote": "再以40℃/min 升到230℃，保持40 min。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0168",
+      "question": "本研究中氢火焰检测器（FID）的温度是多少？",
+      "answer_quote": "氢火焰检测器（Flame Ionization Detector，FID）温度270℃。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0169",
+      "question": "本研究中差异显著性分析的P值判定标准是什么？",
+      "answer_quote": "P＜0.05 表示差异显著，P＜0.01 表示差异极显著。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0170",
+      "question": "本研究中，早采缓慢降温和急速降温处理的鸭梨果实从何时开始出现果心褐变？",
+      "answer_quote": "早采缓慢降温和急速降温处理的果实分别从12 月20 日（采后100 d）后开始出现果心褐变",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0171",
+      "question": "本研究中，晚采缓慢降温和急速降温处理的鸭梨果实从何时开始出现果心褐变？",
+      "answer_quote": "晚采缓慢降温和急速降温处理果在10 月20日（采后20 d）开始出现果心褐变",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0172",
+      "question": "本研究中，到贮藏末期（采后180 d），早采缓慢降温和急速降温处理的鸭梨果心褐变指数分别是多少？",
+      "answer_quote": "到贮藏末期（采后180 d）果心褐变指数分别为0.21 和0.37。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0173",
+      "question": "本研究中，到贮藏末期，晚采缓慢降温和急速降温处理的鸭梨果心褐变指数分别是多少？",
+      "answer_quote": "到贮藏末期果心褐变指数高达0.70 和0.63。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0174",
+      "question": "本研究中，缓慢降温对早采和晚采鸭梨果心褐变分别有何影响？",
+      "answer_quote": "缓慢降温很好抑制了早采鸭梨的果心褐变，但对晚采果却起着促进作用。",
+      "type": "causal"
+    },
+    {
+      "original_id": "PQA_0175",
+      "question": "本研究中，缓慢降温对早采和晚采鸭梨果心LOX活性的影响有何不同？",
+      "answer_quote": "缓慢降温显著抑制了早采果果心LOX 活性（P＜0.05），而对晚采果果心酶活性影响不明显。",
+      "type": "causal"
+    }
+  ],
+  "rejected": []
+}

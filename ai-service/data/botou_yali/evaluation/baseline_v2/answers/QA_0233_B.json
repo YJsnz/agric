@@ -1,0 +1,236 @@
+{
+  "id": "QA_0233",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0015",
+    "chunk:PAPER_005_C0020",
+    "chunk:PAPER_005_C0028",
+    "chunk:PAPER_005_C0014",
+    "chunk:PAPER_005_C0008"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称GC-MS使用SH-Rxi-5Sil MS毛细管柱，规格30 m×0.25 mm，0.25 μm，并引用[E4]；[E4]原文明确记载“GC 条件：SH-Rxi-5Sil MS 毛细管柱（30 m×0.25 mm，0.25 μm）”，型号与三项规格均直接对应。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据字段复述[E4]中“GC条件为SH-Rxi-5Sil MS毛细管柱（30 m×0.25 mm，0.25 μm）”，与所引证据原文一致，无额外补造。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理说明问题询问该论文GC-MS毛细管柱型号与规格，[E4]为方法学段落并直接给出色谱柱名称及规格参数；同时说明[E2][E3][E5]涉及品质、挥发性组分或研究背景，与色谱柱信息无关，不参与结论。该判断与各证据内容相符，未把未引用证据用于补证。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议称复现测定还应核对升温程序、进样口温度、载气与柱流量、MS条件等完整参数，并引用[E4]；[E4]确实同时记载升温程序、进样口温度250℃、载气高纯氦、柱流量1 mL·min-1及MS条件等，且建议声明仅反映文献方法学描述、不构成本地检测条件指导，未超出证据范围。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0015",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+        "text": "重复3 次。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0020",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0028",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "冷藏鸭梨果皮中检出28 种挥发性物质成分，含量较高的物质为醛类、烷烃、萜类等，其中醛类主要为己醛、反-2-己烯醛；酯类物质（主要是丁酯类）相对较少，而此时出现较多的烷烃类物质，且主要是癸烷，而窖藏却未检出烷烃类物质（表4）。",
+        "pages": [
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0014",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+        "text": "联用（GC-MS）（日本岛津公司）测定挥发性物质成分[20]。GC 条件：SH-Rxi-5Sil MS 毛细管柱（30 m×0.25 mm，0.25 μm）；升温程序：40℃下保持1 min；2℃·min-1 升温至100℃，保持2 min；5℃·min-1 升温至250℃，保持5 min。进样口温度250℃，载气：高纯氦，柱流量1 mL·min-1。MS 条件：电离方式为电子电离源，电子能量70 eV，接口温度250℃，离子源温度200℃，溶剂延迟时间3 min，m/z 35—500 下进行质量扫描，测定时加入200 ng 2-辛酮作为内标物，通过匹配质谱数据库NIST17 及保留指数对挥发性物质进行定性分析，计算各成分的含量，并进行差异显著性表1  PEN3 型电子鼻传感器阵列Table 1  PEN3 type electronic nose sensor array序列号Order number传感器名称Sensor name敏感化合物Sensitive compound W1C芳香成分 Aromatic components W5S灵敏度大，氮氧化合物 Broad range, oxynitride W3C氨类、芳香成分 Ammonia, aromatic components W6S氢化物 Hydrogen W5C短链烷烃、芳香成分Short chain alkanes, aromatic components W1S甲烷 Methane W1W硫化物、萜烯类 Sulphur-organic compound, terpenes W2S醇类、醛酮Alcohol, aldehyde ketone W2W有机硫化物、芳香成分 Organic sulfur compounds, aromatic components W3S长链烷烃 Long chain alkanes分析。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "该研究GC-MS测定使用的毛细管柱为SH-Rxi-5Sil MS毛细管柱，规格为30 m×0.25 mm，0.25 μm  [E4] 。",
+    "basis": "证据[E4]明确记载：GC条件为SH-Rxi-5Sil MS毛细管柱（30 m×0.25 mm，0.25 μm） [E4] 。",
+    "reasoning": "问题询问该论文GC-MS测定所用毛细管柱型号与规格。[E4]为方法学段落，直接给出色谱柱名称及三项规格参数，可据此直接回答；其余证据涉及品质、挥发性组分或研究背景，与色谱柱信息无关，不参与结论  [E2]  [E3]  [E5] 。",
+    "advice": "如需复现该测定，除色谱柱外还应同时核对升温程序、进样口温度、载气与柱流量、MS条件等完整参数  [E4] ；本回答仅反映该文献方法学描述，不构成对本地检测条件的指导。",
+    "citations": [
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出毛细管柱型号SH-Rxi-5Sil MS及规格30 m×0.25 mm，0.25 μm，与参考答案和原文证据完全一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "该研究GC-MS测定使用的毛细管柱为SH-Rxi-5Sil MS毛细管柱。",
+          "status": "supported",
+          "reason": "原文E4明确记载GC条件为SH-Rxi-5Sil MS毛细管柱。"
+        },
+        {
+          "claim": "该毛细管柱规格为30 m×0.25 mm，0.25 μm。",
+          "status": "supported",
+          "reason": "原文E4明确记载规格为30 m×0.25 mm，0.25 μm。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2569,
+      "completion_tokens": 153,
+      "total_tokens": 2722,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1929
+    },
+    "model": "deepseek-flash",
+    "response_id": "92af462c-5133-44fc-835c-009af9326f10",
+    "seconds": 6.307669200003147,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "该研究GC-MS测定使用的毛细管柱为SH-Rxi-5Sil MS毛细管柱，规格为30 m×0.25 mm，0.25 μm [E4]。",
+        "basis": "证据E4明确记载：GC条件为SH-Rxi-5Sil MS毛细管柱（30 m×0.25 mm，0.25 μm）[E4]。",
+        "reasoning": "问题询问该论文GC-MS测定所用毛细管柱型号与规格。E4为方法学段落，直接给出色谱柱名称及三项规格参数，可据此直接回答；其余证据涉及品质、挥发性组分或研究背景，与色谱柱信息无关，不参与结论 [E2][E3][E5]。",
+        "advice": "如需复现该测定，除色谱柱外还应同时核对升温程序、进样口温度、载气与柱流量、MS条件等完整参数 [E4]；本回答仅反映该文献方法学描述，不构成对本地检测条件的指导。",
+        "citations": [
+          "E4"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 1966,
+        "completion_tokens": 228,
+        "total_tokens": 2194,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1838
+      },
+      "model": "deepseek-flash",
+      "response_id": "391ee4a1-9073-476b-92a7-aac9e9e048b8",
+      "seconds": 6.256045999994967,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 19.35990349999338
+}

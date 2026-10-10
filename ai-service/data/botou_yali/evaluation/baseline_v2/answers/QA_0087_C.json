@@ -1,0 +1,265 @@
+{
+  "id": "QA_0087",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0005",
+    "chunk:PAPER_001_C0029",
+    "chunk:PAPER_001_C0025",
+    "chunk:PAPER_001_C0002"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称图4展示不同O2浓度贮藏及货架期间鸭梨果皮组织中PbACO1、PbACO3及PbACS1三个乙烯生物合成关键基因的相对表达情况，引用证据[E4]的图题明确为“图4 不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况”，且正文说明这些基因在果皮组织中的表达，支持该结论。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中关于[E4]图4为PbACO1、PbACO3及PbACS1表达情况的陈述有[E4]图题直接支持；关于[E2]、[E3]、[E5]一致指出1.0%—3.0% O2处理显著抑制果皮组织中PbACO1、PbACO3及PbACS1表达的陈述，分别有[E2]、[E3]、[E5]原文支持。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning仅说明问题是对文献图表内容的直接检索，并依据[E4]列出图4涉及的三个基因及其贮藏及货架期间不同O2浓度下的相对表达情况，未超出引用证据推断其他基因或因果关系。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice未提出具体事实主张，仅建议进一步查阅原始数据，并声明不提供超出证据的表达量数值或因果解释，无引用证据也可视为无事实性断言。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0005",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " Besides that, the lower O2 treatments maintained TA and AA contents at a higher level in the early storage period, and delayed the yellow-turning of peel; ethanol was accumulated much more under the lower O2 concentration, which ranged from 150.89 mg·L-1 to 806.12 mg·L-1 after storage for 150 d; while with the increasing senescence browning of fruit in air, the ethanol content peaking at 1 500 mg·L-1 after storage for 270 d. 5.0% and lower O2 inhibited the ethylene biosynthesis and delayed the peaking time, and 1.0%-3.0% O2 could prohibit the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue significantly.【Conclusion】1.0%—3.0% O2 prohibited the superficial scald occurrence significantly, and delayed the decrease of TA and AA, inhibited the biosynthesis of ethylene and delayed the peaking time, down-regulated the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue, prolonged the storage period of Yali pear significantly.",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0029",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "4  结论",
+        "text": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，能更好地维持果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。因此，建议生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0025",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.5  不同O2 浓度处理对乙烯生物合成关键基因相对",
+        "text": "表达量的影响整体来看，与对照相比，采用低氧气调处理可显著抑制鸭梨货架初期果皮组织中PbACS1、PbACO1及PbACO3 表达，推迟货架期间果皮组织中乙烯合成相关基因表达高峰，但不同O2 处理下PbACS2、PbACS3 及PbACO2 表达无明显规律（数据未列出）。具体来看，贮藏150 d，1.0%—3.0% O2 处理PbACS1相对表达量极低，但5.0%和10.0% O2 处理及空气对照PbACS1 相对表达量较高；气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照；贮藏150 d 后货架10 d，1.0%— 3.0% O2 处理PbACS1 相对表达量较出库时增长近45 倍，各处理PbACO1 和PbACO3相对表达量快速上升，且5.0%及以下O2 处理基因表达量均显著高于10.0%及空气对照；随着贮藏期的延长，乙烯合成相关基因表达水平上升，贮藏210 d 及货架7 d，空气处理PbACS1 相对表达量达到峰值，10% O2 处理PbACO1 和PbACO3 达到峰值；贮藏270 d 后货架7 d，1.0—3.0% O2 处理PbACS1 和PbACO1 仍保持相对较高水平（图4）。PbACO1相对表达量Relative expression of PbACO1 PbACO1相对表达量Relative expression of PbACO1 PbACS1相对表达量Relative expression of PbACS1 PbACO3相对表达量Relative expression of PbACO3 PbACO3相对表达量Relative expression of PbACO3 PbACS1相对表达量Relative expression of PbACS1图4  不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况Fig. 4  The relative expression of PbACO1, PbACO3 and PbACS1 under different oxygen concentrations during storage and shelf-life period of Yali pear",
+        "pages": [
+          7,
+          8
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "图4展示的是不同O2浓度贮藏及货架期间鸭梨果皮组织中PbACO1、PbACO3及PbACS1三个乙烯生物合成关键基因的相对表达情况 [E4] 。",
+    "basis": "证据[E4]明确说明图4为“不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况”，并给出图题“Fig. 4 The relative expression of PbACO1, PbACO3 and PbACS1 under different oxygen concentrations during storage and shelf-life period of Yali pear” [E4] 。[E2]、[E3]、[E5]亦一致指出1.0%—3.0% O2处理显著抑制果皮组织中PbACO1、PbACO3及PbACS1的表达 [E2]  [E3]  [E5] 。",
+    "reasoning": "问题询问图4所展示的基因，属于对文献图表内容的直接检索。[E4]为图4所在章节，直接列出图4涉及的三个基因PbACO1、PbACO3、PbACS1，并说明其为贮藏及货架期间不同O2浓度下的相对表达情况 [E4] 。其余证据仅作为同一结论的旁证，不用于推断图4之外的基因或因果关系。",
+    "advice": "如需了解图4中各基因在不同O2浓度、不同贮藏及货架时间点的具体表达变化趋势，可进一步查阅该文献图4的原始数据；本系统仅依据现有证据说明图4所涉及的基因名称，不提供超出证据的表达量数值或因果解释。",
+    "citations": [
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接指出图4展示的是不同O2浓度贮藏及货架期间PbACO1、PbACO3及PbACS1三个基因的表达情况，与参考答案和原文图题一致，关键点完整、无矛盾。",
+      "claims": [
+        {
+          "claim": "图4展示的是不同O2浓度贮藏及货架期间鸭梨果皮组织中PbACO1、PbACO3及PbACS1三个乙烯生物合成关键基因的相对表达情况。",
+          "status": "supported",
+          "reason": "原文图题明确为“不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况”，且正文说明这些是乙烯合成相关基因。"
+        },
+        {
+          "claim": "证据[E4]明确说明图4为“不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况”。",
+          "status": "supported",
+          "reason": "E4原文包含该图题表述。"
+        },
+        {
+          "claim": "[E2]、[E3]、[E5]亦一致指出1.0%—3.0% O2处理显著抑制果皮组织中PbACO1、PbACO3及PbACS1的表达。",
+          "status": "supported",
+          "reason": "E2、E3、E5均包含1.0%—3.0% O2处理显著抑制果皮组织中PbACO1、PbACO3及PbACS1表达的表述。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3281,
+      "completion_tokens": 313,
+      "total_tokens": 3594,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 2257
+    },
+    "model": "deepseek-flash",
+    "response_id": "7b372cfd-4b32-4d2e-9d9c-67bb5b50bb55",
+    "seconds": 7.099940200001583,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "图4展示的是不同O2浓度贮藏及货架期间鸭梨果皮组织中PbACO1、PbACO3及PbACS1三个乙烯生物合成关键基因的相对表达情况[E4]。",
+        "basis": "证据E4明确说明图4为“不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况”，并给出图题“Fig. 4 The relative expression of PbACO1, PbACO3 and PbACS1 under different oxygen concentrations during storage and shelf-life period of Yali pear”[E4]。E2、E3、E5亦一致指出1.0%—3.0% O2处理显著抑制果皮组织中PbACO1、PbACO3及PbACS1的表达[E2][E3][E5]。",
+        "reasoning": "问题询问图4所展示的基因，属于对文献图表内容的直接检索。E4为图4所在章节，直接列出图4涉及的三个基因PbACO1、PbACO3、PbACS1，并说明其为贮藏及货架期间不同O2浓度下的相对表达情况[E4]。其余证据仅作为同一结论的旁证，不用于推断图4之外的基因或因果关系。",
+        "advice": "如需了解图4中各基因在不同O2浓度、不同贮藏及货架时间点的具体表达变化趋势，可进一步查阅该文献图4的原始数据；本系统仅依据现有证据说明图4所涉及的基因名称，不提供超出证据的表达量数值或因果解释。",
+        "citations": [
+          "E4",
+          "E2",
+          "E3",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2424,
+        "completion_tokens": 359,
+        "total_tokens": 2783,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 2168
+      },
+      "model": "deepseek-flash",
+      "response_id": "c772e6ce-0f93-404c-a477-3a6df4b9bab1",
+      "seconds": 7.1598551999923075,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 21.10183600000164
+}

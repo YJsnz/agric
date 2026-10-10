@@ -1,0 +1,171 @@
+{
+  "entities": [
+    "泊头鸭梨",
+    "泊头",
+    "果实膨大期",
+    "持续高湿"
+  ],
+  "extracted_entities": {
+    "crop": "泊头鸭梨",
+    "region": "泊头",
+    "stage": "果实膨大期",
+    "environment": [
+      "持续高湿"
+    ],
+    "disease": [],
+    "intent": "risk_analysis"
+  },
+  "alignments": [
+    {
+      "field": "crop",
+      "mention": "泊头鸭梨",
+      "status": "matched",
+      "entity_id": "v2:7b265c03320d54ee",
+      "canonical_name": "泊头鸭梨",
+      "candidates": [
+        {
+          "id": "v2:7b265c03320d54ee",
+          "name": "泊头鸭梨",
+          "type": "Crop",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "泊头市"
+          ]
+        }
+      ]
+    },
+    {
+      "field": "region",
+      "mention": "泊头",
+      "status": "matched",
+      "entity_id": "v2:9a8a610336e9e72c",
+      "canonical_name": "泊头市",
+      "candidates": [
+        {
+          "id": "v2:9a8a610336e9e72c",
+          "name": "泊头市",
+          "type": "Region",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "泊头市"
+          ]
+        }
+      ]
+    },
+    {
+      "field": "stage",
+      "mention": "果实膨大期",
+      "status": "matched",
+      "entity_id": "v2:7088cc4ac47fcec8",
+      "canonical_name": "果实膨大期",
+      "candidates": [
+        {
+          "id": "v2:7088cc4ac47fcec8",
+          "name": "果实膨大期",
+          "type": "GrowthStage",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "US-CA"
+          ]
+        }
+      ]
+    },
+    {
+      "field": "environment",
+      "mention": "持续高湿",
+      "status": "unmatched",
+      "entity_id": null,
+      "canonical_name": null,
+      "candidates": []
+    }
+  ],
+  "channels": {
+    "neo4j": {
+      "status": "partial_alignment",
+      "count": 0,
+      "truncated": false
+    },
+    "faiss": {
+      "status": "empty",
+      "count": 0
+    }
+  },
+  "evidence_rejections": [],
+  "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+  "reasoning_paths": [],
+  "sources": [],
+  "generation_called": false,
+  "unresolved_entities": [
+    {
+      "field": "environment",
+      "mention": "持续高湿",
+      "status": "unmatched",
+      "entity_id": null,
+      "canonical_name": null,
+      "candidates": []
+    }
+  ],
+  "reference_materials": [
+    {
+      "source_id": "PAPER_005",
+      "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+      "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+      "chunk_id": "PAPER_005_C0018",
+      "reasons": [
+        "region:unknown"
+      ],
+      "usable_for_answer": false
+    },
+    {
+      "source_id": "PAPER_005",
+      "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+      "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+      "chunk_id": "PAPER_005_C0019",
+      "reasons": [
+        "region:unknown"
+      ],
+      "usable_for_answer": false
+    },
+    {
+      "source_id": "PAPER_005",
+      "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+      "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+      "chunk_id": "PAPER_005_C0039",
+      "reasons": [
+        "region:unknown"
+      ],
+      "usable_for_answer": false
+    },
+    {
+      "source_id": "PAPER_005",
+      "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+      "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+      "chunk_id": "PAPER_005_C0020",
+      "reasons": [
+        "region:unknown"
+      ],
+      "usable_for_answer": false
+    },
+    {
+      "source_id": "PAPER_005",
+      "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+      "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+      "chunk_id": "PAPER_005_C0022",
+      "reasons": [
+        "region:unknown"
+      ],
+      "usable_for_answer": false
+    }
+  ],
+  "status": "insufficient_evidence",
+  "clarification_questions": [
+    "请补充空气相对湿度、持续时间，以及叶片或果面是否持续有水膜；空气高湿不能直接等同于表面湿润。"
+  ],
+  "answer": "1. 结论\n证据不足，当前不能可靠回答该问题。\n2. 依据\n尚未对齐：持续高湿。未检索到同时满足地区、作物和阶段的证据。\n3. 推理路径\n已对齐实体继续参与受约束检索，不能据此补造缺失的因果关系。\n4. 建议\n请补充空气相对湿度、持续时间，以及叶片或果面是否持续有水膜；空气高湿不能直接等同于表面湿润。\n5. 来源\n本次无符合条件的结论来源。\n待核查资料（非结论依据）：\n窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析：https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml（排除原因：region:unknown；仅供资料核查，不用于本次结论）\n窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析：https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml（排除原因：region:unknown；仅供资料核查，不用于本次结论）\n窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析：https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml（排除原因：region:unknown；仅供资料核查，不用于本次结论）\n窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析：https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml（排除原因：region:unknown；仅供资料核查，不用于本次结论）\n窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析：https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml（排除原因：region:unknown；仅供资料核查，不用于本次结论）"
+}

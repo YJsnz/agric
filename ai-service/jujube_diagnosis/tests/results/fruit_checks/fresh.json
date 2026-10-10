@@ -1,0 +1,2183 @@
+{
+  "sample": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\data\\jujube_fruit_freshness_classifier_v1\\test\\fresh\\original_image__fresh__033d110d4ba1_cbe9a4d38d21__FreshJujube (89).jpg",
+  "response": {
+    "success": true,
+    "crop": "jujube",
+    "task": "fruit_freshness",
+    "visual": {
+      "class": "fresh",
+      "label_zh": "新鲜果实外观",
+      "confidence": 0.9985308647155762,
+      "topk": [
+        {
+          "class": "fresh",
+          "label_zh": "新鲜果实外观",
+          "confidence": 0.9985308647155762
+        },
+        {
+          "class": "rotten",
+          "label_zh": "腐败/变质类视觉表现",
+          "confidence": 0.0014690663665533066
+        }
+      ],
+      "model_name": "jujube_fruit_freshness_yolo11n_cls_v1",
+      "model_version": "v1",
+      "task": "fruit_freshness",
+      "is_diagnosis": false,
+      "confidence_level": "high"
+    },
+    "visual_confidence_level": "high",
+    "mapped_entity": {
+      "id": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+      "name": "新鲜果实外观",
+      "type": "FruitCondition",
+      "is_diagnosis": false
+    },
+    "context": {
+      "temperature": null,
+      "humidity": null,
+      "storage_temperature": null,
+      "storage_humidity": null,
+      "storage_days": null,
+      "harvest_method": null,
+      "transport_condition": null,
+      "notes": null
+    },
+    "reasoning": {
+      "crop_id": "cangzhou_jinsixiaozao",
+      "question": "当前检测到新鲜果实外观，现有证据支持哪些采后风险？外观不能代替品质结论。",
+      "entities": {
+        "region": null,
+        "growth_stage": null,
+        "organ": "fruit",
+        "symptom": null,
+        "disease_or_pest": null,
+        "weather": null,
+        "rainfall": null,
+        "humidity": null,
+        "irrigation": null,
+        "crop": "cangzhou_jinsixiaozao",
+        "region_source": null,
+        "harvest_intent": false,
+        "storage_intent": true,
+        "scope": "postharvest",
+        "intent": "information",
+        "damage_query": false,
+        "cross_stage_query": false,
+        "uncovered_symptom": false,
+        "visual_boundary": false,
+        "provided_context": {
+          "user_context": {},
+          "visual_entity": {
+            "id": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "name": "新鲜果实外观",
+            "type": "FruitCondition",
+            "is_diagnosis": false
+          },
+          "visual_class": "fresh",
+          "visual_task": "fruit_freshness",
+          "visual_evidence_only": true,
+          "visual_confidence_level": "high"
+        },
+        "visual_label": "fresh",
+        "visual_key": "fruit_freshness:fresh"
+      },
+      "generation_called": true,
+      "status": "preliminary",
+      "retrieval": {
+        "graph_status": "ok",
+        "graph_evidence_count": 7,
+        "vector_evidence_count": 6,
+        "fused_count": 7
+      },
+      "knowledge_graph": {
+        "edges": [
+          {
+            "id": "JFE_surface_fruit_freshness_fresh",
+            "source": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "target": "cangzhou_jinsixiaozao:a3603bf0a8867006",
+            "subject": "新鲜果实外观",
+            "object": "先检查果皮和果柄",
+            "relation": "PROMPTS_POSTHARVEST_CHECK",
+            "kind": "reviewed_handling_check_not_causal_diagnosis",
+            "source_id": "JF002",
+            "source_ids": [
+              "JF002"
+            ],
+            "title": "鲜枣家族各有特长",
+            "region": "全国鲜枣科普（非沧州专项验证）",
+            "crop": [
+              "鲜枣"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": "采后",
+            "evidence_text": "专家提醒，应该选择果皮完整，无碰伤、黑斑和虫眼，果柄处没有损伤和软烂的鲜枣，还可以捏一下感受果实是否坚挺饱满。",
+            "original_text": "专家提醒，应该选择果皮完整，无碰伤、黑斑和虫眼，果柄处没有损伤和软烂的鲜枣，还可以捏一下感受果实是否坚挺饱满。",
+            "page": null,
+            "section": "专家提醒，应该选择",
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JFC_surface",
+            "locator": {
+              "file": "evidence/raw/JF002.txt",
+              "page": null,
+              "section": "专家提醒，应该选择",
+              "char_start": 1136,
+              "char_end": 1191
+            },
+            "conditions": [
+              "鲜枣外观核验：查看果皮完整性、碰伤、黑斑、虫眼及果柄处是否软烂；不是食品安全检测。"
+            ],
+            "evidence_ids": [
+              "JF002",
+              "JFC_surface"
+            ],
+            "evidence": [
+              {
+                "id": "JFC_surface",
+                "source_id": "JF002",
+                "quote": "专家提醒，应该选择果皮完整，无碰伤、黑斑和虫眼，果柄处没有损伤和软烂的鲜枣，还可以捏一下感受果实是否坚挺饱满。",
+                "locator": {
+                  "file": "evidence/raw/JF002.txt",
+                  "page": null,
+                  "section": "专家提醒，应该选择",
+                  "char_start": 1136,
+                  "char_end": 1191
+                }
+              }
+            ],
+            "source_type": "university_republished_science",
+            "year": 2019,
+            "normalized_claim": "新鲜果实外观 prompts checking 先检查果皮和果柄"
+          },
+          {
+            "id": "JFE_sort_fruit_freshness_fresh",
+            "source": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "target": "cangzhou_jinsixiaozao:ede62df66a5cc2eb",
+            "subject": "新鲜果实外观",
+            "object": "确认伤果后再分选",
+            "relation": "PROMPTS_POSTHARVEST_CHECK",
+            "kind": "reviewed_handling_check_not_causal_diagnosis",
+            "source_id": "JF001",
+            "source_ids": [
+              "JF001"
+            ],
+            "title": "鲜枣贮藏保鲜操作规程",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "crop": [
+              "鲜枣"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": "采后",
+            "evidence_text": "鲜枣\n贮藏过程中的\n主要侵染性\n病害\n是由链格孢菌引起的褐斑病。生理性病害是低氧和高二氧化碳伤害。\n良好的果园管理、\n适时采收、\n剔除\n病虫机械伤果实\n、减少机械\n损\n伤、入库前贮藏场所消毒、\n微孔袋包装、\n控制适宜贮藏\n环境\n，是防控病害\n的\n重要措施。",
+            "original_text": "鲜枣\n贮藏过程中的\n主要侵染性\n病害\n是由链格孢菌引起的褐斑病。生理性病害是低氧和高二氧化碳伤害。\n良好的果园管理、\n适时采收、\n剔除\n病虫机械伤果实\n、减少机械\n损\n伤、入库前贮藏场所消毒、\n微孔袋包装、\n控制适宜贮藏\n环境\n，是防控病害\n的\n重要措施。",
+            "page": null,
+            "section": "鲜枣贮藏过程中的主要侵染性病害",
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JFC_sort",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "鲜枣贮藏过程中的主要侵染性病害",
+              "char_start": 540,
+              "char_end": 668
+            },
+            "conditions": [
+              "拟入库贮藏的鲜枣，人工确认有机械伤或病虫损伤时，按原文从入贮果中剔除；不能仅凭模型分数判废或判定能否食用。"
+            ],
+            "evidence_ids": [
+              "JF001",
+              "JFC_sort"
+            ],
+            "evidence": [
+              {
+                "id": "JFC_sort",
+                "source_id": "JF001",
+                "quote": "鲜枣\n贮藏过程中的\n主要侵染性\n病害\n是由链格孢菌引起的褐斑病。生理性病害是低氧和高二氧化碳伤害。\n良好的果园管理、\n适时采收、\n剔除\n病虫机械伤果实\n、减少机械\n损\n伤、入库前贮藏场所消毒、\n微孔袋包装、\n控制适宜贮藏\n环境\n，是防控病害\n的\n重要措施。",
+                "locator": {
+                  "file": "evidence/raw/JF001.txt",
+                  "page": null,
+                  "section": "鲜枣贮藏过程中的主要侵染性病害",
+                  "char_start": 540,
+                  "char_end": 668
+                }
+              }
+            ],
+            "source_type": "official_guidance",
+            "year": 2023,
+            "normalized_claim": "新鲜果实外观 prompts checking 确认伤果后再分选"
+          },
+          {
+            "id": "JFE_handling_fruit_freshness_fresh",
+            "source": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "target": "cangzhou_jinsixiaozao:1714da3bb9e72c83",
+            "subject": "新鲜果实外观",
+            "object": "减少再次碰压",
+            "relation": "PROMPTS_POSTHARVEST_CHECK",
+            "kind": "reviewed_handling_check_not_causal_diagnosis",
+            "source_id": "JF001",
+            "source_ids": [
+              "JF001"
+            ],
+            "title": "鲜枣贮藏保鲜操作规程",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "crop": [
+              "鲜枣"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": "采后",
+            "evidence_text": "根据果实大小对鲜枣进行分级，分级标准可参照《鲜枣质量等级（\nGBT22345\n）》或采购商的具体要求，\n分级时要轻拿轻放，减少机械损伤\n。",
+            "original_text": "根据果实大小对鲜枣进行分级，分级标准可参照《鲜枣质量等级（\nGBT22345\n）》或采购商的具体要求，\n分级时要轻拿轻放，减少机械损伤\n。",
+            "page": null,
+            "section": "根据果实大小对鲜枣进行分级",
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JFC_handling",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "根据果实大小对鲜枣进行分级",
+              "char_start": 1158,
+              "char_end": 1227
+            },
+            "conditions": [
+              "用于鲜枣分级搬运；已有碰伤不代表腐败已经发生。"
+            ],
+            "evidence_ids": [
+              "JF001",
+              "JFC_handling"
+            ],
+            "evidence": [
+              {
+                "id": "JFC_handling",
+                "source_id": "JF001",
+                "quote": "根据果实大小对鲜枣进行分级，分级标准可参照《鲜枣质量等级（\nGBT22345\n）》或采购商的具体要求，\n分级时要轻拿轻放，减少机械损伤\n。",
+                "locator": {
+                  "file": "evidence/raw/JF001.txt",
+                  "page": null,
+                  "section": "根据果实大小对鲜枣进行分级",
+                  "char_start": 1158,
+                  "char_end": 1227
+                }
+              }
+            ],
+            "source_type": "official_guidance",
+            "year": 2023,
+            "normalized_claim": "新鲜果实外观 prompts checking 减少再次碰压"
+          },
+          {
+            "id": "JFE_stack_fruit_freshness_fresh",
+            "source": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "target": "cangzhou_jinsixiaozao:6971c98247252b69",
+            "subject": "新鲜果实外观",
+            "object": "检查箱体承重和堆码",
+            "relation": "PROMPTS_POSTHARVEST_CHECK",
+            "kind": "reviewed_handling_check_not_causal_diagnosis",
+            "source_id": "JF001",
+            "source_ids": [
+              "JF001"
+            ],
+            "title": "鲜枣贮藏保鲜操作规程",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "crop": [
+              "鲜枣"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": "采后",
+            "evidence_text": "码垛时应考虑纸箱承重，防止下层箱内果实被压伤或塌垛。",
+            "original_text": "码垛时应考虑纸箱承重，防止下层箱内果实被压伤或塌垛。",
+            "page": null,
+            "section": "码垛时应考虑纸箱承重",
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JFC_stack",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "码垛时应考虑纸箱承重",
+              "char_start": 1472,
+              "char_end": 1498
+            },
+            "conditions": [
+              "用于箱装鲜枣堆码；照片无法提供箱体承重和受压情况。"
+            ],
+            "evidence_ids": [
+              "JF001",
+              "JFC_stack"
+            ],
+            "evidence": [
+              {
+                "id": "JFC_stack",
+                "source_id": "JF001",
+                "quote": "码垛时应考虑纸箱承重，防止下层箱内果实被压伤或塌垛。",
+                "locator": {
+                  "file": "evidence/raw/JF001.txt",
+                  "page": null,
+                  "section": "码垛时应考虑纸箱承重",
+                  "char_start": 1472,
+                  "char_end": 1498
+                }
+              }
+            ],
+            "source_type": "official_guidance",
+            "year": 2023,
+            "normalized_claim": "新鲜果实外观 prompts checking 检查箱体承重和堆码"
+          },
+          {
+            "id": "JFE_softening_fruit_freshness_fresh",
+            "source": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "target": "cangzhou_jinsixiaozao:81f52d578dd0d3a2",
+            "subject": "新鲜果实外观",
+            "object": "区分软化褐变与损伤",
+            "relation": "PROMPTS_POSTHARVEST_CHECK",
+            "kind": "reviewed_handling_check_not_causal_diagnosis",
+            "source_id": "JF001",
+            "source_ids": [
+              "JF001"
+            ],
+            "title": "鲜枣贮藏保鲜操作规程",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "crop": [
+              "鲜枣"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": "采后",
+            "evidence_text": "枣果实贮藏过程中极易发酵软化，引起果肉褐变甚至腐烂，应注意控制环境温度和气体条件；易发生微生物侵染，进而腐烂变质，采收后应及时剔除裂果，并注意轻拿轻放减少机械损伤。",
+            "original_text": "枣果实贮藏过程中极易发酵软化，引起果肉褐变甚至腐烂，应注意控制环境温度和气体条件；易发生微生物侵染，进而腐烂变质，采收后应及时剔除裂果，并注意轻拿轻放减少机械损伤。",
+            "page": null,
+            "section": "枣果实贮藏过程中极易发酵软化",
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JFC_softening",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "枣果实贮藏过程中极易发酵软化",
+              "char_start": 444,
+              "char_end": 526
+            },
+            "conditions": [
+              "资料列出发酵软化、褐变及微生物侵染等采后问题；不能由 rotten 标签识别具体病原或判定食用安全。"
+            ],
+            "evidence_ids": [
+              "JF001",
+              "JFC_softening"
+            ],
+            "evidence": [
+              {
+                "id": "JFC_softening",
+                "source_id": "JF001",
+                "quote": "枣果实贮藏过程中极易发酵软化，引起果肉褐变甚至腐烂，应注意控制环境温度和气体条件；易发生微生物侵染，进而腐烂变质，采收后应及时剔除裂果，并注意轻拿轻放减少机械损伤。",
+                "locator": {
+                  "file": "evidence/raw/JF001.txt",
+                  "page": null,
+                  "section": "枣果实贮藏过程中极易发酵软化",
+                  "char_start": 444,
+                  "char_end": 526
+                }
+              }
+            ],
+            "source_type": "official_guidance",
+            "year": 2023,
+            "normalized_claim": "新鲜果实外观 prompts checking 区分软化褐变与损伤"
+          },
+          {
+            "id": "JFE_maturity_fruit_freshness_fresh",
+            "source": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "target": "cangzhou_jinsixiaozao:e6b5f416a0d10887",
+            "subject": "新鲜果实外观",
+            "object": "核对成熟变化",
+            "relation": "PROMPTS_POSTHARVEST_CHECK",
+            "kind": "reviewed_handling_check_not_causal_diagnosis",
+            "source_id": "JF002",
+            "source_ids": [
+              "JF002"
+            ],
+            "title": "鲜枣家族各有特长",
+            "region": "全国鲜枣科普（非沧州专项验证）",
+            "crop": [
+              "鲜枣"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": "采后",
+            "evidence_text": "鲜枣在成熟的过程中果皮逐渐变红，果肉甜度和软度上升，但维生素C含量却在下降，",
+            "original_text": "鲜枣在成熟的过程中果皮逐渐变红，果肉甜度和软度上升，但维生素C含量却在下降，",
+            "page": null,
+            "section": "鲜枣在成熟的过程中",
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JFC_maturity",
+            "locator": {
+              "file": "evidence/raw/JF002.txt",
+              "page": null,
+              "section": "鲜枣在成熟的过程中",
+              "char_start": 1240,
+              "char_end": 1278
+            },
+            "conditions": [
+              "鲜枣成熟时颜色和软度也会变化；不能将变红或单一颜色变化直接等同腐败。"
+            ],
+            "evidence_ids": [
+              "JF002",
+              "JFC_maturity"
+            ],
+            "evidence": [
+              {
+                "id": "JFC_maturity",
+                "source_id": "JF002",
+                "quote": "鲜枣在成熟的过程中果皮逐渐变红，果肉甜度和软度上升，但维生素C含量却在下降，",
+                "locator": {
+                  "file": "evidence/raw/JF002.txt",
+                  "page": null,
+                  "section": "鲜枣在成熟的过程中",
+                  "char_start": 1240,
+                  "char_end": 1278
+                }
+              }
+            ],
+            "source_type": "university_republished_science",
+            "year": 2019,
+            "normalized_claim": "新鲜果实外观 prompts checking 核对成熟变化"
+          },
+          {
+            "id": "JFE_precool_fruit_freshness_fresh",
+            "source": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "target": "cangzhou_jinsixiaozao:7f07cc73c0c06283",
+            "subject": "新鲜果实外观",
+            "object": "核对采后时间与冷链",
+            "relation": "PROMPTS_POSTHARVEST_CHECK",
+            "kind": "reviewed_handling_check_not_causal_diagnosis",
+            "source_id": "JF001",
+            "source_ids": [
+              "JF001"
+            ],
+            "title": "鲜枣贮藏保鲜操作规程",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "crop": [
+              "鲜枣"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": "采后",
+            "evidence_text": "当天采收的鲜枣要当天预冷或入库。",
+            "original_text": "当天采收的鲜枣要当天预冷或入库。",
+            "page": null,
+            "section": "当天采收的鲜枣",
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JFC_precool",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "当天采收的鲜枣",
+              "char_start": 1299,
+              "char_end": 1315
+            },
+            "conditions": [
+              "适用于计划贮藏的鲜枣，不适用于任意干枣或家庭环境；本轮不输出温度阈值与储藏期限。"
+            ],
+            "evidence_ids": [
+              "JF001",
+              "JFC_precool"
+            ],
+            "evidence": [
+              {
+                "id": "JFC_precool",
+                "source_id": "JF001",
+                "quote": "当天采收的鲜枣要当天预冷或入库。",
+                "locator": {
+                  "file": "evidence/raw/JF001.txt",
+                  "page": null,
+                  "section": "当天采收的鲜枣",
+                  "char_start": 1299,
+                  "char_end": 1315
+                }
+              }
+            ],
+            "source_type": "official_guidance",
+            "year": 2023,
+            "normalized_claim": "新鲜果实外观 prompts checking 核对采后时间与冷链"
+          }
+        ]
+      },
+      "paths": [
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:a3603bf0a8867006"
+          ],
+          "edge_ids": [
+            "JFE_surface_fruit_freshness_fresh"
+          ],
+          "relations": [
+            "PROMPTS_POSTHARVEST_CHECK"
+          ],
+          "evidence_ids": [
+            "JFC_surface"
+          ],
+          "source_ids": [
+            "JF002"
+          ]
+        },
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:ede62df66a5cc2eb"
+          ],
+          "edge_ids": [
+            "JFE_sort_fruit_freshness_fresh"
+          ],
+          "relations": [
+            "PROMPTS_POSTHARVEST_CHECK"
+          ],
+          "evidence_ids": [
+            "JFC_sort"
+          ],
+          "source_ids": [
+            "JF001"
+          ]
+        },
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:1714da3bb9e72c83"
+          ],
+          "edge_ids": [
+            "JFE_handling_fruit_freshness_fresh"
+          ],
+          "relations": [
+            "PROMPTS_POSTHARVEST_CHECK"
+          ],
+          "evidence_ids": [
+            "JFC_handling"
+          ],
+          "source_ids": [
+            "JF001"
+          ]
+        },
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:6971c98247252b69"
+          ],
+          "edge_ids": [
+            "JFE_stack_fruit_freshness_fresh"
+          ],
+          "relations": [
+            "PROMPTS_POSTHARVEST_CHECK"
+          ],
+          "evidence_ids": [
+            "JFC_stack"
+          ],
+          "source_ids": [
+            "JF001"
+          ]
+        },
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:81f52d578dd0d3a2"
+          ],
+          "edge_ids": [
+            "JFE_softening_fruit_freshness_fresh"
+          ],
+          "relations": [
+            "PROMPTS_POSTHARVEST_CHECK"
+          ],
+          "evidence_ids": [
+            "JFC_softening"
+          ],
+          "source_ids": [
+            "JF001"
+          ]
+        },
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:e6b5f416a0d10887"
+          ],
+          "edge_ids": [
+            "JFE_maturity_fruit_freshness_fresh"
+          ],
+          "relations": [
+            "PROMPTS_POSTHARVEST_CHECK"
+          ],
+          "evidence_ids": [
+            "JFC_maturity"
+          ],
+          "source_ids": [
+            "JF002"
+          ]
+        },
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:7f07cc73c0c06283"
+          ],
+          "edge_ids": [
+            "JFE_precool_fruit_freshness_fresh"
+          ],
+          "relations": [
+            "PROMPTS_POSTHARVEST_CHECK"
+          ],
+          "evidence_ids": [
+            "JFC_precool"
+          ],
+          "source_ids": [
+            "JF001"
+          ]
+        }
+      ],
+      "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+      "evidence": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "根据果实大小对鲜枣进行分级，分级标准可参照《鲜枣质量等级（\nGBT22345\n）》或采购商的具体要求，\n分级时要轻拿轻放，减少机械损伤\n。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "减少再次碰压",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "根据果实大小对鲜枣进行分级",
+              "char_start": 1158,
+              "char_end": 1227
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "用于鲜枣分级搬运；已有碰伤不代表腐败已经发生。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "根据果实大小对鲜枣进行分级，分级标准可参照《鲜枣质量等级（\nGBT22345\n）》或采购商的具体要求，\n分级时要轻拿轻放，减少机械损伤\n。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_handling",
+          "edge_ids": [
+            "JFE_handling_fruit_bruise_bruised",
+            "JFE_handling_fruit_bruise_healthy",
+            "JFE_handling_fruit_freshness_fresh",
+            "JFE_handling_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:1714da3bb9e72c83",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "鲜枣\n贮藏过程中的\n主要侵染性\n病害\n是由链格孢菌引起的褐斑病。生理性病害是低氧和高二氧化碳伤害。\n良好的果园管理、\n适时采收、\n剔除\n病虫机械伤果实\n、减少机械\n损\n伤、入库前贮藏场所消毒、\n微孔袋包装、\n控制适宜贮藏\n环境\n，是防控病害\n的\n重要措施。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "确认伤果后再分选",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "鲜枣贮藏过程中的主要侵染性病害",
+              "char_start": 540,
+              "char_end": 668
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "拟入库贮藏的鲜枣，人工确认有机械伤或病虫损伤时，按原文从入贮果中剔除；不能仅凭模型分数判废或判定能否食用。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "鲜枣\n贮藏过程中的\n主要侵染性\n病害\n是由链格孢菌引起的褐斑病。生理性病害是低氧和高二氧化碳伤害。\n良好的果园管理、\n适时采收、\n剔除\n病虫机械伤果实\n、减少机械\n损\n伤、入库前贮藏场所消毒、\n微孔袋包装、\n控制适宜贮藏\n环境\n，是防控病害\n的\n重要措施。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_sort",
+          "edge_ids": [
+            "JFE_sort_fruit_bruise_bruised",
+            "JFE_sort_fruit_bruise_healthy",
+            "JFE_sort_fruit_freshness_fresh",
+            "JFE_sort_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:ede62df66a5cc2eb",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E3",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "枣果实贮藏过程中极易发酵软化，引起果肉褐变甚至腐烂，应注意控制环境温度和气体条件；易发生微生物侵染，进而腐烂变质，采收后应及时剔除裂果，并注意轻拿轻放减少机械损伤。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "区分软化褐变与损伤",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "枣果实贮藏过程中极易发酵软化",
+              "char_start": 444,
+              "char_end": 526
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "资料列出发酵软化、褐变及微生物侵染等采后问题；不能由 rotten 标签识别具体病原或判定食用安全。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "枣果实贮藏过程中极易发酵软化，引起果肉褐变甚至腐烂，应注意控制环境温度和气体条件；易发生微生物侵染，进而腐烂变质，采收后应及时剔除裂果，并注意轻拿轻放减少机械损伤。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_softening",
+          "edge_ids": [
+            "JFE_softening_fruit_bruise_bruised",
+            "JFE_softening_fruit_bruise_healthy",
+            "JFE_softening_fruit_freshness_fresh",
+            "JFE_softening_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:81f52d578dd0d3a2",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E4",
+          "kind": "document_chunk",
+          "source_id": "JF002",
+          "title": "鲜枣家族各有特长",
+          "content": "专家提醒，应该选择果皮完整，无碰伤、黑斑和虫眼，果柄处没有损伤和软烂的鲜枣，还可以捏一下感受果实是否坚挺饱满。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣科普（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "先检查果皮和果柄",
+            "source_id": "JF002",
+            "locator": {
+              "file": "evidence/raw/JF002.txt",
+              "page": null,
+              "section": "专家提醒，应该选择",
+              "char_start": 1136,
+              "char_end": 1191
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "358d6accf81a2c86d3f9fc9c57427fa4b67c6b0da5f0adaf0bab4c6520371919",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "鲜枣外观核验：查看果皮完整性、碰伤、黑斑、虫眼及果柄处是否软烂；不是食品安全检测。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣科普（非沧州专项验证）",
+          "original_text": "专家提醒，应该选择果皮完整，无碰伤、黑斑和虫眼，果柄处没有损伤和软烂的鲜枣，还可以捏一下感受果实是否坚挺饱满。",
+          "source_type": "university_republished_science",
+          "year": 2019,
+          "url": "https://news.cau.edu.cn/art/2019/10/12/art_8779_641338.html",
+          "chunk_id": "JFC_surface",
+          "edge_ids": [
+            "JFE_surface_fruit_bruise_bruised",
+            "JFE_surface_fruit_bruise_healthy",
+            "JFE_surface_fruit_freshness_fresh",
+            "JFE_surface_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:a3603bf0a8867006",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E5",
+          "kind": "document_chunk",
+          "source_id": "JF002",
+          "title": "鲜枣家族各有特长",
+          "content": "鲜枣在成熟的过程中果皮逐渐变红，果肉甜度和软度上升，但维生素C含量却在下降，",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣科普（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "核对成熟变化",
+            "source_id": "JF002",
+            "locator": {
+              "file": "evidence/raw/JF002.txt",
+              "page": null,
+              "section": "鲜枣在成熟的过程中",
+              "char_start": 1240,
+              "char_end": 1278
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "358d6accf81a2c86d3f9fc9c57427fa4b67c6b0da5f0adaf0bab4c6520371919",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "鲜枣成熟时颜色和软度也会变化；不能将变红或单一颜色变化直接等同腐败。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣科普（非沧州专项验证）",
+          "original_text": "鲜枣在成熟的过程中果皮逐渐变红，果肉甜度和软度上升，但维生素C含量却在下降，",
+          "source_type": "university_republished_science",
+          "year": 2019,
+          "url": "https://news.cau.edu.cn/art/2019/10/12/art_8779_641338.html",
+          "chunk_id": "JFC_maturity",
+          "edge_ids": [
+            "JFE_maturity_fruit_bruise_bruised",
+            "JFE_maturity_fruit_bruise_healthy",
+            "JFE_maturity_fruit_freshness_fresh",
+            "JFE_maturity_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:e6b5f416a0d10887",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E6",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "当天采收的鲜枣要当天预冷或入库。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "核对采后时间与冷链",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "当天采收的鲜枣",
+              "char_start": 1299,
+              "char_end": 1315
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "适用于计划贮藏的鲜枣，不适用于任意干枣或家庭环境；本轮不输出温度阈值与储藏期限。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "当天采收的鲜枣要当天预冷或入库。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_precool",
+          "edge_ids": [
+            "JFE_precool_fruit_bruise_bruised",
+            "JFE_precool_fruit_bruise_healthy",
+            "JFE_precool_fruit_freshness_fresh",
+            "JFE_precool_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:7f07cc73c0c06283",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E7",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "码垛时应考虑纸箱承重，防止下层箱内果实被压伤或塌垛。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "检查箱体承重和堆码",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "码垛时应考虑纸箱承重",
+              "char_start": 1472,
+              "char_end": 1498
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "用于箱装鲜枣堆码；照片无法提供箱体承重和受压情况。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "码垛时应考虑纸箱承重，防止下层箱内果实被压伤或塌垛。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_stack",
+          "edge_ids": [
+            "JFE_stack_fruit_bruise_bruised",
+            "JFE_stack_fruit_bruise_healthy",
+            "JFE_stack_fruit_freshness_fresh",
+            "JFE_stack_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:6971c98247252b69",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "根据果实大小对鲜枣进行分级，分级标准可参照《鲜枣质量等级（\nGBT22345\n）》或采购商的具体要求，\n分级时要轻拿轻放，减少机械损伤\n。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "减少再次碰压",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "根据果实大小对鲜枣进行分级",
+              "char_start": 1158,
+              "char_end": 1227
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "用于鲜枣分级搬运；已有碰伤不代表腐败已经发生。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "根据果实大小对鲜枣进行分级，分级标准可参照《鲜枣质量等级（\nGBT22345\n）》或采购商的具体要求，\n分级时要轻拿轻放，减少机械损伤\n。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_handling",
+          "edge_ids": [
+            "JFE_handling_fruit_bruise_bruised",
+            "JFE_handling_fruit_bruise_healthy",
+            "JFE_handling_fruit_freshness_fresh",
+            "JFE_handling_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:1714da3bb9e72c83",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "鲜枣\n贮藏过程中的\n主要侵染性\n病害\n是由链格孢菌引起的褐斑病。生理性病害是低氧和高二氧化碳伤害。\n良好的果园管理、\n适时采收、\n剔除\n病虫机械伤果实\n、减少机械\n损\n伤、入库前贮藏场所消毒、\n微孔袋包装、\n控制适宜贮藏\n环境\n，是防控病害\n的\n重要措施。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "确认伤果后再分选",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "鲜枣贮藏过程中的主要侵染性病害",
+              "char_start": 540,
+              "char_end": 668
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "拟入库贮藏的鲜枣，人工确认有机械伤或病虫损伤时，按原文从入贮果中剔除；不能仅凭模型分数判废或判定能否食用。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "鲜枣\n贮藏过程中的\n主要侵染性\n病害\n是由链格孢菌引起的褐斑病。生理性病害是低氧和高二氧化碳伤害。\n良好的果园管理、\n适时采收、\n剔除\n病虫机械伤果实\n、减少机械\n损\n伤、入库前贮藏场所消毒、\n微孔袋包装、\n控制适宜贮藏\n环境\n，是防控病害\n的\n重要措施。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_sort",
+          "edge_ids": [
+            "JFE_sort_fruit_bruise_bruised",
+            "JFE_sort_fruit_bruise_healthy",
+            "JFE_sort_fruit_freshness_fresh",
+            "JFE_sort_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:ede62df66a5cc2eb",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E3",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "枣果实贮藏过程中极易发酵软化，引起果肉褐变甚至腐烂，应注意控制环境温度和气体条件；易发生微生物侵染，进而腐烂变质，采收后应及时剔除裂果，并注意轻拿轻放减少机械损伤。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "区分软化褐变与损伤",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "枣果实贮藏过程中极易发酵软化",
+              "char_start": 444,
+              "char_end": 526
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "资料列出发酵软化、褐变及微生物侵染等采后问题；不能由 rotten 标签识别具体病原或判定食用安全。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "枣果实贮藏过程中极易发酵软化，引起果肉褐变甚至腐烂，应注意控制环境温度和气体条件；易发生微生物侵染，进而腐烂变质，采收后应及时剔除裂果，并注意轻拿轻放减少机械损伤。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_softening",
+          "edge_ids": [
+            "JFE_softening_fruit_bruise_bruised",
+            "JFE_softening_fruit_bruise_healthy",
+            "JFE_softening_fruit_freshness_fresh",
+            "JFE_softening_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:81f52d578dd0d3a2",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E4",
+          "kind": "document_chunk",
+          "source_id": "JF002",
+          "title": "鲜枣家族各有特长",
+          "content": "专家提醒，应该选择果皮完整，无碰伤、黑斑和虫眼，果柄处没有损伤和软烂的鲜枣，还可以捏一下感受果实是否坚挺饱满。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣科普（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "先检查果皮和果柄",
+            "source_id": "JF002",
+            "locator": {
+              "file": "evidence/raw/JF002.txt",
+              "page": null,
+              "section": "专家提醒，应该选择",
+              "char_start": 1136,
+              "char_end": 1191
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "358d6accf81a2c86d3f9fc9c57427fa4b67c6b0da5f0adaf0bab4c6520371919",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "鲜枣外观核验：查看果皮完整性、碰伤、黑斑、虫眼及果柄处是否软烂；不是食品安全检测。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣科普（非沧州专项验证）",
+          "original_text": "专家提醒，应该选择果皮完整，无碰伤、黑斑和虫眼，果柄处没有损伤和软烂的鲜枣，还可以捏一下感受果实是否坚挺饱满。",
+          "source_type": "university_republished_science",
+          "year": 2019,
+          "url": "https://news.cau.edu.cn/art/2019/10/12/art_8779_641338.html",
+          "chunk_id": "JFC_surface",
+          "edge_ids": [
+            "JFE_surface_fruit_bruise_bruised",
+            "JFE_surface_fruit_bruise_healthy",
+            "JFE_surface_fruit_freshness_fresh",
+            "JFE_surface_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:a3603bf0a8867006",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E5",
+          "kind": "document_chunk",
+          "source_id": "JF002",
+          "title": "鲜枣家族各有特长",
+          "content": "鲜枣在成熟的过程中果皮逐渐变红，果肉甜度和软度上升，但维生素C含量却在下降，",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣科普（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "核对成熟变化",
+            "source_id": "JF002",
+            "locator": {
+              "file": "evidence/raw/JF002.txt",
+              "page": null,
+              "section": "鲜枣在成熟的过程中",
+              "char_start": 1240,
+              "char_end": 1278
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "358d6accf81a2c86d3f9fc9c57427fa4b67c6b0da5f0adaf0bab4c6520371919",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "鲜枣成熟时颜色和软度也会变化；不能将变红或单一颜色变化直接等同腐败。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣科普（非沧州专项验证）",
+          "original_text": "鲜枣在成熟的过程中果皮逐渐变红，果肉甜度和软度上升，但维生素C含量却在下降，",
+          "source_type": "university_republished_science",
+          "year": 2019,
+          "url": "https://news.cau.edu.cn/art/2019/10/12/art_8779_641338.html",
+          "chunk_id": "JFC_maturity",
+          "edge_ids": [
+            "JFE_maturity_fruit_bruise_bruised",
+            "JFE_maturity_fruit_bruise_healthy",
+            "JFE_maturity_fruit_freshness_fresh",
+            "JFE_maturity_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:e6b5f416a0d10887",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E6",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "当天采收的鲜枣要当天预冷或入库。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "核对采后时间与冷链",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "当天采收的鲜枣",
+              "char_start": 1299,
+              "char_end": 1315
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "适用于计划贮藏的鲜枣，不适用于任意干枣或家庭环境；本轮不输出温度阈值与储藏期限。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "当天采收的鲜枣要当天预冷或入库。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_precool",
+          "edge_ids": [
+            "JFE_precool_fruit_bruise_bruised",
+            "JFE_precool_fruit_bruise_healthy",
+            "JFE_precool_fruit_freshness_fresh",
+            "JFE_precool_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:7f07cc73c0c06283",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E7",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "码垛时应考虑纸箱承重，防止下层箱内果实被压伤或塌垛。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "检查箱体承重和堆码",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "码垛时应考虑纸箱承重",
+              "char_start": 1472,
+              "char_end": 1498
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "用于箱装鲜枣堆码；照片无法提供箱体承重和受压情况。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "码垛时应考虑纸箱承重，防止下层箱内果实被压伤或塌垛。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_stack",
+          "edge_ids": [
+            "JFE_stack_fruit_bruise_bruised",
+            "JFE_stack_fruit_bruise_healthy",
+            "JFE_stack_fruit_freshness_fresh",
+            "JFE_stack_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:6971c98247252b69",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "根据果实大小对鲜枣进行分级，分级标准可参照《鲜枣质量等级（\nGBT22345\n）》或采购商的具体要求，\n分级时要轻拿轻放，减少机械损伤\n。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "减少再次碰压",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "根据果实大小对鲜枣进行分级",
+              "char_start": 1158,
+              "char_end": 1227
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "用于鲜枣分级搬运；已有碰伤不代表腐败已经发生。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "根据果实大小对鲜枣进行分级，分级标准可参照《鲜枣质量等级（\nGBT22345\n）》或采购商的具体要求，\n分级时要轻拿轻放，减少机械损伤\n。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_handling",
+          "edge_ids": [
+            "JFE_handling_fruit_bruise_bruised",
+            "JFE_handling_fruit_bruise_healthy",
+            "JFE_handling_fruit_freshness_fresh",
+            "JFE_handling_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:1714da3bb9e72c83",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "鲜枣\n贮藏过程中的\n主要侵染性\n病害\n是由链格孢菌引起的褐斑病。生理性病害是低氧和高二氧化碳伤害。\n良好的果园管理、\n适时采收、\n剔除\n病虫机械伤果实\n、减少机械\n损\n伤、入库前贮藏场所消毒、\n微孔袋包装、\n控制适宜贮藏\n环境\n，是防控病害\n的\n重要措施。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "确认伤果后再分选",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "鲜枣贮藏过程中的主要侵染性病害",
+              "char_start": 540,
+              "char_end": 668
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "拟入库贮藏的鲜枣，人工确认有机械伤或病虫损伤时，按原文从入贮果中剔除；不能仅凭模型分数判废或判定能否食用。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "鲜枣\n贮藏过程中的\n主要侵染性\n病害\n是由链格孢菌引起的褐斑病。生理性病害是低氧和高二氧化碳伤害。\n良好的果园管理、\n适时采收、\n剔除\n病虫机械伤果实\n、减少机械\n损\n伤、入库前贮藏场所消毒、\n微孔袋包装、\n控制适宜贮藏\n环境\n，是防控病害\n的\n重要措施。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_sort",
+          "edge_ids": [
+            "JFE_sort_fruit_bruise_bruised",
+            "JFE_sort_fruit_bruise_healthy",
+            "JFE_sort_fruit_freshness_fresh",
+            "JFE_sort_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:ede62df66a5cc2eb",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E3",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "枣果实贮藏过程中极易发酵软化，引起果肉褐变甚至腐烂，应注意控制环境温度和气体条件；易发生微生物侵染，进而腐烂变质，采收后应及时剔除裂果，并注意轻拿轻放减少机械损伤。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "区分软化褐变与损伤",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "枣果实贮藏过程中极易发酵软化",
+              "char_start": 444,
+              "char_end": 526
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "资料列出发酵软化、褐变及微生物侵染等采后问题；不能由 rotten 标签识别具体病原或判定食用安全。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "枣果实贮藏过程中极易发酵软化，引起果肉褐变甚至腐烂，应注意控制环境温度和气体条件；易发生微生物侵染，进而腐烂变质，采收后应及时剔除裂果，并注意轻拿轻放减少机械损伤。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_softening",
+          "edge_ids": [
+            "JFE_softening_fruit_bruise_bruised",
+            "JFE_softening_fruit_bruise_healthy",
+            "JFE_softening_fruit_freshness_fresh",
+            "JFE_softening_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:81f52d578dd0d3a2",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E4",
+          "kind": "document_chunk",
+          "source_id": "JF002",
+          "title": "鲜枣家族各有特长",
+          "content": "专家提醒，应该选择果皮完整，无碰伤、黑斑和虫眼，果柄处没有损伤和软烂的鲜枣，还可以捏一下感受果实是否坚挺饱满。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣科普（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "先检查果皮和果柄",
+            "source_id": "JF002",
+            "locator": {
+              "file": "evidence/raw/JF002.txt",
+              "page": null,
+              "section": "专家提醒，应该选择",
+              "char_start": 1136,
+              "char_end": 1191
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "358d6accf81a2c86d3f9fc9c57427fa4b67c6b0da5f0adaf0bab4c6520371919",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "鲜枣外观核验：查看果皮完整性、碰伤、黑斑、虫眼及果柄处是否软烂；不是食品安全检测。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣科普（非沧州专项验证）",
+          "original_text": "专家提醒，应该选择果皮完整，无碰伤、黑斑和虫眼，果柄处没有损伤和软烂的鲜枣，还可以捏一下感受果实是否坚挺饱满。",
+          "source_type": "university_republished_science",
+          "year": 2019,
+          "url": "https://news.cau.edu.cn/art/2019/10/12/art_8779_641338.html",
+          "chunk_id": "JFC_surface",
+          "edge_ids": [
+            "JFE_surface_fruit_bruise_bruised",
+            "JFE_surface_fruit_bruise_healthy",
+            "JFE_surface_fruit_freshness_fresh",
+            "JFE_surface_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:a3603bf0a8867006",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E5",
+          "kind": "document_chunk",
+          "source_id": "JF002",
+          "title": "鲜枣家族各有特长",
+          "content": "鲜枣在成熟的过程中果皮逐渐变红，果肉甜度和软度上升，但维生素C含量却在下降，",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣科普（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "核对成熟变化",
+            "source_id": "JF002",
+            "locator": {
+              "file": "evidence/raw/JF002.txt",
+              "page": null,
+              "section": "鲜枣在成熟的过程中",
+              "char_start": 1240,
+              "char_end": 1278
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "358d6accf81a2c86d3f9fc9c57427fa4b67c6b0da5f0adaf0bab4c6520371919",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "鲜枣成熟时颜色和软度也会变化；不能将变红或单一颜色变化直接等同腐败。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣科普（非沧州专项验证）",
+          "original_text": "鲜枣在成熟的过程中果皮逐渐变红，果肉甜度和软度上升，但维生素C含量却在下降，",
+          "source_type": "university_republished_science",
+          "year": 2019,
+          "url": "https://news.cau.edu.cn/art/2019/10/12/art_8779_641338.html",
+          "chunk_id": "JFC_maturity",
+          "edge_ids": [
+            "JFE_maturity_fruit_bruise_bruised",
+            "JFE_maturity_fruit_bruise_healthy",
+            "JFE_maturity_fruit_freshness_fresh",
+            "JFE_maturity_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:e6b5f416a0d10887",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E6",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "当天采收的鲜枣要当天预冷或入库。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "核对采后时间与冷链",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "当天采收的鲜枣",
+              "char_start": 1299,
+              "char_end": 1315
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "适用于计划贮藏的鲜枣，不适用于任意干枣或家庭环境；本轮不输出温度阈值与储藏期限。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "当天采收的鲜枣要当天预冷或入库。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_precool",
+          "edge_ids": [
+            "JFE_precool_fruit_bruise_bruised",
+            "JFE_precool_fruit_bruise_healthy",
+            "JFE_precool_fruit_freshness_fresh",
+            "JFE_precool_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:7f07cc73c0c06283",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        },
+        {
+          "evidence_id": "E7",
+          "kind": "document_chunk",
+          "source_id": "JF001",
+          "title": "鲜枣贮藏保鲜操作规程",
+          "content": "码垛时应考虑纸箱承重，防止下层箱内果实被压伤或塌垛。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "growth_stage": "采后",
+            "stage_unknown": false,
+            "scope": "postharvest",
+            "organ": "fruit",
+            "topic": "检查箱体承重和堆码",
+            "source_id": "JF001",
+            "locator": {
+              "file": "evidence/raw/JF001.txt",
+              "page": null,
+              "section": "码垛时应考虑纸箱承重",
+              "char_start": 1472,
+              "char_end": 1498
+            },
+            "evidence_level": "general_authoritative",
+            "evidence_level_compat": "L3",
+            "standard_status": "technical_guidance_not_mandatory_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "5895e998da4ae6fc331d96a136f062a12180eee0d3c90eccce2e1b18700b068f",
+            "purpose": "conditional_postharvest_checks",
+            "postharvest_review": "fresh_fruit_handling_only",
+            "applicability": "用于箱装鲜枣堆码；照片无法提供箱体承重和受压情况。",
+            "source_crop": "鲜枣",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ]
+          },
+          "evidence_level": "L3",
+          "region": "全国鲜枣通用（非沧州专项验证）",
+          "original_text": "码垛时应考虑纸箱承重，防止下层箱内果实被压伤或塌垛。",
+          "source_type": "official_guidance",
+          "year": 2023,
+          "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419772.htm",
+          "chunk_id": "JFC_stack",
+          "edge_ids": [
+            "JFE_stack_fruit_bruise_bruised",
+            "JFE_stack_fruit_bruise_healthy",
+            "JFE_stack_fruit_freshness_fresh",
+            "JFE_stack_fruit_freshness_rotten"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "cangzhou_jinsixiaozao:6971c98247252b69",
+            "cangzhou_jinsixiaozao:bfb948f23de021c1",
+            "cangzhou_jinsixiaozao:c274370a0f75adc1",
+            "cangzhou_jinsixiaozao:404970fc962670ff"
+          ]
+        }
+      ],
+      "grounding": {
+        "passed": true,
+        "checks": [
+          {
+            "field": "conclusion",
+            "verdict": "supported",
+            "reason": "结论所述一般采后风险（发酵软化、褐变、腐烂、微生物侵染、链格孢褐斑病、低氧高二氧化碳伤害）均见于所引E2、E3；外观不能替代内部品质与病原结论的限定与E3、E4的适用性说明一致，未超出证据范围。"
+          },
+          {
+            "field": "basis",
+            "verdict": "supported",
+            "reason": "basis各句均对应所引证据：E2支持链格孢褐斑病、低氧高二氧化碳伤害及剔除病虫机械伤果实；E3支持发酵软化、褐变腐烂、微生物侵染；E4支持外观核验项目；E5支持成熟变红、软度上升，且未将变红等同腐败。"
+          },
+          {
+            "field": "reasoning",
+            "verdict": "supported",
+            "reason": "关于视觉标签非疾病概率、资料为全国通用非沧州现场验证、缺少品种/设施/损伤/病原/温湿度信息故不能确诊或给出具体温度期限药剂及可食用性判断，均与E2、E3、E4、E6的适用性说明一致，未补造本地结论。"
+          },
+          {
+            "field": "advice",
+            "verdict": "supported",
+            "reason": "advice中的外观核验、区分成熟变红软化与异常软化、当天预冷或入库、分级轻拿轻放、剔除病虫机械伤果、码垛考虑纸箱承重，分别由E4、E5、E6、E1、E2、E7支持，且明确为通用规程需核实适用性，未推荐药名剂量或施药周期。"
+          }
+        ],
+        "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+      },
+      "local_conclusion": {
+        "available": false,
+        "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+      },
+      "differential_assessment": {
+        "available": true,
+        "kind": "postharvest_checks",
+        "directions": [
+          {
+            "id": "fruit_surface",
+            "chunk_id": "JFC_surface",
+            "candidate": "先检查果皮和果柄",
+            "applicability": "鲜枣外观核验：查看果皮完整性、碰伤、黑斑、虫眼及果柄处是否软烂；不是食品安全检测。",
+            "question": "这是鲜枣还是干枣？果皮或果柄处是否破损、黑斑或软烂？",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ],
+            "action": null,
+            "relation_kind": "conditional_handling_not_diagnosis",
+            "evidence_ids": [
+              "E4"
+            ],
+            "evidence_level": "L3",
+            "region": "全国鲜枣科普（非沧州专项验证）",
+            "source_id": "JF002",
+            "is_diagnosis": false
+          },
+          {
+            "id": "fruit_sort",
+            "chunk_id": "JFC_sort",
+            "candidate": "确认伤果后再分选",
+            "applicability": "拟入库贮藏的鲜枣，人工确认有机械伤或病虫损伤时，按原文从入贮果中剔除；不能仅凭模型分数判废或判定能否食用。",
+            "question": "是否准备入库贮藏？异常是单果还是同一批多果？",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ],
+            "action": "若人工确认是拟入库鲜枣中的机械伤果或病虫果，将其从入贮果中分选出来；不要仅按图片分数决定可食用性。",
+            "relation_kind": "conditional_handling_not_diagnosis",
+            "evidence_ids": [
+              "E2"
+            ],
+            "evidence_level": "L3",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "source_id": "JF001",
+            "is_diagnosis": false
+          },
+          {
+            "id": "fruit_handling",
+            "chunk_id": "JFC_handling",
+            "candidate": "减少再次碰压",
+            "applicability": "用于鲜枣分级搬运；已有碰伤不代表腐败已经发生。",
+            "question": "采收、分级或运输时是否发生跌落、碰撞或挤压？",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ],
+            "action": "分级搬运鲜枣时轻拿轻放，减少新增机械损伤。",
+            "relation_kind": "conditional_handling_not_diagnosis",
+            "evidence_ids": [
+              "E1"
+            ],
+            "evidence_level": "L3",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "source_id": "JF001",
+            "is_diagnosis": false
+          },
+          {
+            "id": "fruit_stack",
+            "chunk_id": "JFC_stack",
+            "candidate": "检查箱体承重和堆码",
+            "applicability": "用于箱装鲜枣堆码；照片无法提供箱体承重和受压情况。",
+            "question": "是否箱装堆码？下层箱体有无变形或受压？",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ],
+            "action": "箱装鲜枣堆码时核对纸箱承重，防止下层果实被压伤或塌垛。",
+            "relation_kind": "conditional_handling_not_diagnosis",
+            "evidence_ids": [
+              "E7"
+            ],
+            "evidence_level": "L3",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "source_id": "JF001",
+            "is_diagnosis": false
+          },
+          {
+            "id": "fruit_softening",
+            "chunk_id": "JFC_softening",
+            "candidate": "区分软化褐变与损伤",
+            "applicability": "资料列出发酵软化、褐变及微生物侵染等采后问题；不能由 rotten 标签识别具体病原或判定食用安全。",
+            "question": "是否发生软化、果肉褐变？采后经过多久，储藏温度和包装方式是什么？",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ],
+            "action": null,
+            "relation_kind": "conditional_handling_not_diagnosis",
+            "evidence_ids": [
+              "E3"
+            ],
+            "evidence_level": "L3",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "source_id": "JF001",
+            "is_diagnosis": false
+          },
+          {
+            "id": "fruit_maturity",
+            "chunk_id": "JFC_maturity",
+            "candidate": "核对成熟变化",
+            "applicability": "鲜枣成熟时颜色和软度也会变化；不能将变红或单一颜色变化直接等同腐败。",
+            "question": "颜色变化是逐渐均匀变红，还是局部异常斑块并伴随软化？",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ],
+            "action": null,
+            "relation_kind": "conditional_handling_not_diagnosis",
+            "evidence_ids": [
+              "E5"
+            ],
+            "evidence_level": "L3",
+            "region": "全国鲜枣科普（非沧州专项验证）",
+            "source_id": "JF002",
+            "is_diagnosis": false
+          },
+          {
+            "id": "fruit_precool",
+            "chunk_id": "JFC_precool",
+            "candidate": "核对采后时间与冷链",
+            "applicability": "适用于计划贮藏的鲜枣，不适用于任意干枣或家庭环境；本轮不输出温度阈值与储藏期限。",
+            "question": "当天采收后是否已预冷或入库？",
+            "visual_keys": [
+              "fruit_bruise:bruised",
+              "fruit_bruise:healthy",
+              "fruit_freshness:fresh",
+              "fruit_freshness:rotten"
+            ],
+            "action": "若为计划贮藏的当天采收鲜枣，按鲜枣保鲜规程安排当天预冷或入库，并核实品种与设施条件。",
+            "relation_kind": "conditional_handling_not_diagnosis",
+            "evidence_ids": [
+              "E6"
+            ],
+            "evidence_level": "L3",
+            "region": "全国鲜枣通用（非沧州专项验证）",
+            "source_id": "JF001",
+            "is_diagnosis": false
+          }
+        ],
+        "questions": [
+          "这是鲜枣还是干枣？果皮或果柄处是否破损、黑斑或软烂？",
+          "是否发生软化、果肉褐变？采后经过多久，储藏温度和包装方式是什么？",
+          "颜色变化是逐渐均匀变红，还是局部异常斑块并伴随软化？"
+        ],
+        "actions": [
+          {
+            "text": "若人工确认是拟入库鲜枣中的机械伤果或病虫果，将其从入贮果中分选出来；不要仅按图片分数决定可食用性。",
+            "evidence_ids": [
+              "E2"
+            ],
+            "condition": "拟入库贮藏的鲜枣，人工确认有机械伤或病虫损伤时，按原文从入贮果中剔除；不能仅凭模型分数判废或判定能否食用。"
+          },
+          {
+            "text": "分级搬运鲜枣时轻拿轻放，减少新增机械损伤。",
+            "evidence_ids": [
+              "E1"
+            ],
+            "condition": "用于鲜枣分级搬运；已有碰伤不代表腐败已经发生。"
+          },
+          {
+            "text": "箱装鲜枣堆码时核对纸箱承重，防止下层果实被压伤或塌垛。",
+            "evidence_ids": [
+              "E7"
+            ],
+            "condition": "用于箱装鲜枣堆码；照片无法提供箱体承重和受压情况。"
+          },
+          {
+            "text": "若为计划贮藏的当天采收鲜枣，按鲜枣保鲜规程安排当天预冷或入库，并核实品种与设施条件。",
+            "evidence_ids": [
+              "E6"
+            ],
+            "condition": "适用于计划贮藏的鲜枣，不适用于任意干枣或家庭环境；本轮不输出温度阈值与储藏期限。"
+          }
+        ],
+        "local_verified": false,
+        "notice": "鲜枣通用资料；不是沧州本地病因验证。先确认果实形态与现场条件。"
+      },
+      "preliminary_assessment": {
+        "available": true,
+        "summary": "现有资料只支持一般鲜枣采后风险方向：贮藏中易发酵软化、褐变甚至腐烂，也易发生微生物侵染，并列出链格孢菌引起的褐斑病及低氧、高二氧化碳伤害 [E2]  [E3] 。照片\"fresh\"仅表示外观，不能证明内部无问题，也不能据此判定当前果实已发生某病或能否食用 [E3]  [E4] 。",
+        "supporting_points": [
+          "资料指出鲜枣贮藏中主要侵染性病害为链格孢菌引起的褐斑病，生理性病害为低氧和高二氧化碳伤害，防控需剔除病虫机械伤果实、减少机械损伤等 [E2] ；枣果实贮藏中极易发酵软化、果肉褐变甚至腐烂，并易发生微生物侵染 [E3] 。外观核验可看果皮完整性、碰伤、黑斑、虫眼及果柄处是否软烂，并可捏感果实是否坚挺饱满 [E4] 。成熟过程中果皮变红、软度上升属正常变化，不能把变红直接等同腐败 [E5] 。"
+        ],
+        "uncertainties": [
+          "视觉分类\"fresh\"为高置信度外观标签，但不是疾病概率或风险等级，不能替代内部品质与病原结论 [E3]  [E4] 。上述资料为全国鲜枣通用或科普内容，非沧州金丝小枣现场验证；用户未提供品种、储藏设施、损伤、病原及温湿度信息，故不能确诊或给出具体温度、期限、药剂与可食用性判断 [E2]  [E6] 。"
+        ]
+      },
+      "answer": "现有资料只支持一般鲜枣采后风险方向：贮藏中易发酵软化、褐变甚至腐烂，也易发生微生物侵染，并列出链格孢菌引起的褐斑病及低氧、高二氧化碳伤害 [E2]  [E3] 。照片\"fresh\"仅表示外观，不能证明内部无问题，也不能据此判定当前果实已发生某病或能否食用 [E3]  [E4] 。\n\n先核实是鲜枣还是干枣、是否计划入库，再按外观核验：看果皮是否完整、有无碰伤黑斑虫眼、果柄处是否损伤软烂，并捏感是否坚挺饱满 [E4] ；同时区分成熟变红软化与异常软化褐变 [E5] 。若确为拟入库鲜枣，资料要求当天预冷或入库、分级轻拿轻放、剔除病虫机械伤果、码垛考虑纸箱承重 [E1]  [E2]  [E6]  [E7] ；这些为通用规程，需核实果园与设施是否适用。\n本结果仅为果实外观视觉证据，不能据此判断食品安全、是否可食用、病原或腐败原因。",
+      "grounded_answer": {
+        "sufficient": false,
+        "conclusion": "现有资料只支持一般鲜枣采后风险方向：贮藏中易发酵软化、褐变甚至腐烂，也易发生微生物侵染，并列出链格孢菌引起的褐斑病及低氧、高二氧化碳伤害 [E2]  [E3] 。照片\"fresh\"仅表示外观，不能证明内部无问题，也不能据此判定当前果实已发生某病或能否食用 [E3]  [E4] 。",
+        "basis": "资料指出鲜枣贮藏中主要侵染性病害为链格孢菌引起的褐斑病，生理性病害为低氧和高二氧化碳伤害，防控需剔除病虫机械伤果实、减少机械损伤等 [E2] ；枣果实贮藏中极易发酵软化、果肉褐变甚至腐烂，并易发生微生物侵染 [E3] 。外观核验可看果皮完整性、碰伤、黑斑、虫眼及果柄处是否软烂，并可捏感果实是否坚挺饱满 [E4] 。成熟过程中果皮变红、软度上升属正常变化，不能把变红直接等同腐败 [E5] 。",
+        "reasoning": "视觉分类\"fresh\"为高置信度外观标签，但不是疾病概率或风险等级，不能替代内部品质与病原结论 [E3]  [E4] 。上述资料为全国鲜枣通用或科普内容，非沧州金丝小枣现场验证；用户未提供品种、储藏设施、损伤、病原及温湿度信息，故不能确诊或给出具体温度、期限、药剂与可食用性判断 [E2]  [E6] 。",
+        "advice": "先核实是鲜枣还是干枣、是否计划入库，再按外观核验：看果皮是否完整、有无碰伤黑斑虫眼、果柄处是否损伤软烂，并捏感是否坚挺饱满 [E4] ；同时区分成熟变红软化与异常软化褐变 [E5] 。若确为拟入库鲜枣，资料要求当天预冷或入库、分级轻拿轻放、剔除病虫机械伤果、码垛考虑纸箱承重 [E1]  [E2]  [E6]  [E7] ；这些为通用规程，需核实果园与设施是否适用。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5",
+          "E6",
+          "E7"
+        ],
+        "candidate_assessments": [
+          {
+            "candidate_name": "链格孢菌引起的褐斑病",
+            "assessment": "资料列为鲜枣贮藏过程中的主要侵染性病害，但照片外观标签不能证明当前果实已发生该病，需现场核验[E2]。",
+            "evidence_ids": [
+              "E2"
+            ]
+          },
+          {
+            "candidate_name": "发酵软化、褐变与微生物侵染",
+            "assessment": "资料提示贮藏中易发酵软化、果肉褐变甚至腐烂，并易发生微生物侵染；属采后风险方向，不能由外观标签确诊[E3]。",
+            "evidence_ids": [
+              "E3"
+            ]
+          },
+          {
+            "candidate_name": "低氧和高二氧化碳伤害",
+            "assessment": "资料列为生理性病害，与贮藏气体条件相关；当前无气体条件信息，不能判断是否发生[E2]。",
+            "evidence_ids": [
+              "E2"
+            ]
+          },
+          {
+            "candidate_name": "机械损伤与压伤",
+            "assessment": "资料要求分级轻拿轻放、剔除机械伤果、码垛考虑纸箱承重；照片无法反映箱体承重和受压情况[E1][E2][E7]。",
+            "evidence_ids": [
+              "E1",
+              "E2",
+              "E7"
+            ]
+          }
+        ]
+      }
+    },
+    "risk": {
+      "stage": "postharvest",
+      "type": "postharvest visual risk evidence",
+      "level": null
+    },
+    "limitations": [
+      "仅为视觉证据，不是食品安全、是否可食用、储藏寿命、疾病最终确诊或腐败原因诊断；分类得分不是确诊概率。黄化不能直接解释为缺氮、缺铁或盐害。",
+      "视觉展示级别不是风险等级；risk.level 未评分。"
+    ],
+    "degraded": false,
+    "degraded_mode": null
+  }
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "question": "本研究中，总类脂提取时加入的NaCl溶液浓度是多少？",
+    "type": "factual",
+    "answer_quote": "加20 mL 0.76%NaCl 溶液",
+    "gold_entities": [
+      "NaCl溶液",
+      "0.76%"
+    ]
+  },
+  {
+    "question": "本研究中，下层减压浓缩蒸干时的温度是多少？",
+    "type": "factual",
+    "answer_quote": "下层于42℃减压浓缩蒸干",
+    "gold_entities": [
+      "42℃",
+      "减压浓缩"
+    ]
+  },
+  {
+    "question": "本研究中，用于溶解总类脂的石油醚沸点范围是多少？",
+    "type": "factual",
+    "answer_quote": "总类脂溶于6 mL 饱和甲醇的石油醚（沸点90～120℃）",
+    "gold_entities": [
+      "石油醚",
+      "90～120℃"
+    ]
+  },
+  {
+    "question": "本研究中，膜脂脂肪酸测定参考了哪些方法并加以改进？",
+    "type": "factual",
+    "answer_quote": "膜脂脂肪酸的测定参考Bligh 等[11] 和Saquet 等[13]方法，加以改进。",
+    "gold_entities": [
+      "Bligh 等",
+      "Saquet 等"
+    ]
+  },
+  {
+    "question": "本研究中，气相色谱测定使用的色谱柱型号和规格是什么？",
+    "type": "factual",
+    "answer_quote": "色谱柱为DB-23（长60 m×内径0.25 mm×膜厚",
+    "gold_entities": [
+      "DB-23",
+      "60 m",
+      "0.25 mm"
+    ]
+  }
+]

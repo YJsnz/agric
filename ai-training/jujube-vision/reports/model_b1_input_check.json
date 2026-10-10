@@ -1,0 +1,6 @@
+{
+  "input_directory": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\raw\\model_b1_bruise\\jujube_bruisenet",
+  "verified_jujube_bruisenet_original_images": 1464,
+  "input_status": "correct_original_dataset_now_present",
+  "previous_wrong_dataset_finding": "superseded_after_user_replaced_directory"
+}

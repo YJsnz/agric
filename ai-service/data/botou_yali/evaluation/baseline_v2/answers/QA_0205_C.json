@@ -1,0 +1,262 @@
+{
+  "id": "QA_0205",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0007",
+    "chunk:PAPER_005_C0032",
+    "chunk:PAPER_005_C0002",
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0036"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称研究分析了PbEIN3、PbERF和PbETR2的表达量变化，并称窖藏下PbEIN3和PbERF下调、PbETR2上调。E1支持PbEIN3在窖藏相对冷藏下调；E2支持PbERF窖藏果肉表达量明显低于冷藏果肉；E5支持窖藏刺激PbETR2表达上调并下调PbEIN3、PbERF。三项基因均属乙烯信号转导相关基因，且均有实际引用证据支持。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis逐条复述了E1、E2、E5中关于PbEIN3、PbERF、PbETR2表达变化的内容，未添加未引用证据中的数值或因果结论，引用与文本一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning仅说明问题限定为乙烯信号转导相关基因，并依据E1、E5将PbACO2、PbLOX1、PbAAT1排除在信号转导基因之外；该分类与证据中‘乙烯合成’‘香气合成’表述一致，未补造缺失路径。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice为请用户补充图5及定量数据的建议，未提出可核查的事实、数值或因果结论，且未引用证据。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0007",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": " The analysis on expression of genes related to ethylene and aroma compound synthesis showed that the expression of ACC oxidase (PbACO2), lipoxygenase (PbLOX1) and alcohol acyltransferase (PbAAT1) genes were significantly increased, and the expression of ethylene insensitive transcriptional regulator gene (PbEIN3) was down regulated in cellar storage in contrast to cold storage. 【Conclusion】Compared with cold storage, cellar storage condition promoted ethylene production and the expression of genes related to ethylene biosynthesis (PbACO2) and aroma compound synthesis (PbLOX1 and PbAAT1), thus, made more kinds and contents of aroma substances, and exhibited more rich aroma in Yali pear. Key words: Yali pear; quality; volatile compound; electronic nose; ethylene; gene expression",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0032",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.5  乙烯合成及其信号转导相关基因的表达",
+        "text": "PbERF 在果皮中的表达量高于果肉，果皮和果肉的变化趋势不同，并且窖藏的果肉表达量明显低于冷藏果肉（图5）。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0036",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "3  讨论",
+        "text": "本研究表明，与冷藏相比，窖藏鸭梨果实的SSC变化较小，TA 含量有所增加，但贮藏3 个月时硬度明显下降，反映出窖藏鸭梨后熟衰老进程快于冷藏。因此，窖藏时间不宜太长。研究表明，低温抑制梨果实香气物质的生成与积累[4,8-10,13,17]。本研究证明，窖藏温度始终高于冷藏。电子鼻分析结果表明，窖藏2 个月时果实挥发性物质较多，其信号明显区别于其他时间，与GC-MS 测得的挥发性物质总量变化相一致。窖藏鸭梨果实的挥发性物质种类和含量较多，其含量高峰出现在贮藏2 个月时，尤其是代表性香气物质—酯类化合物的表现更为明显（表4、表5），其中主要酯类物质有己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯，这些是鸭梨果实的特征性香气成分，与前人的报道相近[18]。相对来说，冷藏鸭梨酯类香气物质较少，这是窖藏果实果香味浓郁的物质基础。果实香气物质的形成与乙烯生成及作用有密切关系[2-3,5-6,16]。如‘苹香’梨酯类物质合成途径中的PuLOX1、PuLOX8、PuADH2 及PuAAT 与乙烯合成途径中的PuACS1、PuACO1、PuACO6 表达密切相关[3]。冷藏抑制‘南果’梨乙烯生物合成和信号转导能力，降低LOX、HPL、AAT 活性及其基因表达，减少香气物质生成[10]。本研究发现，窖藏鸭梨乙烯释放高峰早于冷藏果实，且峰值高于冷藏果实（图1），此时期果实乙烯的大量生成，与PbACO2 表达量上调（图5）有关；同时，窖藏还刺激乙烯受体PbETR2 表达上调，但下调PbEIN3、PbERF 的表达。这说明，窖藏和冷藏影响果实乙烯生成与信号转导过程。果实挥发性物质生成与AAT、LOX、HPL 等基因的表达有关[2]。本研究结果表明，乙酯是鸭梨窖藏过程中生成较多的酯类，并且鸭梨挥发性物质变化模式与PbAAT1、PbLOX1 的基因表达规律类似（图5）。基于鸭梨的酯类总量与醇类物质总量呈显著正相关关系，由此推测，鸭梨果实的香气生成与脂肪酸代谢途径密切相关，经过脂肪酸酰基-CoA的作用，转化为短链酰基-CoAs，继而与醇在AAT催化作用下生成乙酯类等短链酯类[1,23]。",
+        "pages": [
+          12
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "该研究分析了乙烯信号转导相关基因PbEIN3、PbERF和PbETR2的表达量变化：窖藏条件下PbEIN3和PbERF表达下调，PbETR2表达上调  [E1]  [E2]  [E5] 。",
+    "basis": "[E1]指出窖藏相对冷藏下调乙烯不敏感转录调节基因PbEIN3的表达  [E1] ；[E2]指出PbERF在果皮中表达量高于果肉，果皮与果肉变化趋势不同，且窖藏果肉表达量明显低于冷藏果肉  [E2] ；[E5]指出窖藏刺激乙烯受体PbETR2表达上调，同时下调PbEIN3、PbERF的表达  [E5] 。",
+    "reasoning": "问题限定为‘乙烯信号转导相关基因的表达量变化’。[E1]、[E2]、[E5]均涉及信号转导相关基因（PbEIN3、PbERF、PbETR2）在窖藏与冷藏间的表达差异，故可据此回答；PbACO2、PbLOX1、PbAAT1属于乙烯合成或香气合成相关基因，不计入信号转导基因  [E1]  [E5] 。",
+    "advice": "如需进一步明确各基因在果皮与果肉、不同贮藏时间点的具体表达量数值及统计显著性，请补充该研究图5及相关定量数据。",
+    "citations": [
+      "E1",
+      "E2",
+      "E5"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "partial",
+      "reason": "回答仅列出PbEIN3、PbERF、PbETR2三个乙烯信号转导相关基因，遗漏了原文明确列出的PbETR1、PbERS1a、PbERS1b，未完整覆盖参考答案中的6个基因；但已列出的基因及其表达变化方向与证据一致。",
+      "claims": [
+        {
+          "claim": "该研究分析了乙烯信号转导相关基因PbEIN3的表达量变化",
+          "status": "supported",
+          "reason": "原文摘要及讨论均明确列出PbEIN3为乙烯信号转导相关基因，并分析其表达量变化。"
+        },
+        {
+          "claim": "该研究分析了乙烯信号转导相关基因PbERF的表达量变化",
+          "status": "supported",
+          "reason": "原文摘要及讨论均明确列出PbERF为乙烯信号转导相关基因，并分析其表达量变化。"
+        },
+        {
+          "claim": "该研究分析了乙烯信号转导相关基因PbETR2的表达量变化",
+          "status": "supported",
+          "reason": "原文摘要列出PbETR2为乙烯信号转导相关基因，讨论中明确其表达上调。"
+        },
+        {
+          "claim": "窖藏条件下PbEIN3表达下调",
+          "status": "supported",
+          "reason": "E1、E3、E5均指出窖藏相对冷藏下调PbEIN3表达。"
+        },
+        {
+          "claim": "窖藏条件下PbERF表达下调",
+          "status": "supported",
+          "reason": "E5指出窖藏下调PbERF表达；E2也显示窖藏果肉PbERF表达量明显低于冷藏果肉。"
+        },
+        {
+          "claim": "窖藏条件下PbETR2表达上调",
+          "status": "supported",
+          "reason": "E5明确指出窖藏刺激乙烯受体PbETR2表达上调。"
+        },
+        {
+          "claim": "PbACO2、PbLOX1、PbAAT1属于乙烯合成或香气合成相关基因，不计入信号转导基因",
+          "status": "supported",
+          "reason": "原文摘要将PbACO2归入乙烯生成相关基因，将PbLOX1、PbAAT1归入挥发性物质合成相关基因，与信号转导基因分列。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3118,
+      "completion_tokens": 432,
+      "total_tokens": 3550,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 2094
+    },
+    "model": "deepseek-flash",
+    "response_id": "a7774a64-00b8-490d-8e32-7fd823ef10a6",
+    "seconds": 6.75777479998942,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "该研究分析了乙烯信号转导相关基因PbEIN3、PbERF和PbETR2的表达量变化：窖藏条件下PbEIN3和PbERF表达下调，PbETR2表达上调 [E1][E2][E5]。",
+        "basis": "E1指出窖藏相对冷藏下调乙烯不敏感转录调节基因PbEIN3的表达 [E1]；E2指出PbERF在果皮中表达量高于果肉，果皮与果肉变化趋势不同，且窖藏果肉表达量明显低于冷藏果肉 [E2]；E5指出窖藏刺激乙烯受体PbETR2表达上调，同时下调PbEIN3、PbERF的表达 [E5]。",
+        "reasoning": "问题限定为‘乙烯信号转导相关基因的表达量变化’。E1、E2、E5均涉及信号转导相关基因（PbEIN3、PbERF、PbETR2）在窖藏与冷藏间的表达差异，故可据此回答；PbACO2、PbLOX1、PbAAT1属于乙烯合成或香气合成相关基因，不计入信号转导基因 [E1][E5]。",
+        "advice": "如需进一步明确各基因在果皮与果肉、不同贮藏时间点的具体表达量数值及统计显著性，请补充该研究图5及相关定量数据。",
+        "citations": [
+          "E1",
+          "E2",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2270,
+        "completion_tokens": 315,
+        "total_tokens": 2585,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2142
+      },
+      "model": "deepseek-flash",
+      "response_id": "7a3414e8-9b04-46bf-a61a-53151a73f51b",
+      "seconds": 9.05710530000215,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 22.721020500001032
+}

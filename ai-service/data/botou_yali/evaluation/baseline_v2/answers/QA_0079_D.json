@@ -1,0 +1,624 @@
+{
+  "id": "QA_0079",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0021",
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0025",
+    "chunk:PAPER_001_C0004",
+    "chunk:PAPER_001_C0001"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨",
+      "贮藏",
+      "气调贮藏"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": "贮藏",
+      "environment": [],
+      "disease": [],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [
+        "气调贮藏"
+      ],
+      "risk": [],
+      "intent": "fact_query"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "stage",
+        "mention": "贮藏",
+        "status": "matched",
+        "entity_id": "v2:1df599bacfb4d6d5",
+        "canonical_name": "储藏期",
+        "candidates": [
+          {
+            "id": "v2:1df599bacfb4d6d5",
+            "name": "储藏期",
+            "type": "Stage",
+            "crop": [
+              "丰水",
+              "京白",
+              "南果",
+              "巴梨",
+              "库尔勒香梨",
+              "新高",
+              "早酥",
+              "梨",
+              "玉露香",
+              "砀山酥梨",
+              "红香酥",
+              "花盖梨",
+              "苹果梨",
+              "蜜梨",
+              "雪花",
+              "雪青",
+              "香水梨",
+              "鸭梨",
+              "黄冠",
+              "黄金"
+            ],
+            "region": [
+              "AU-VIC",
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "intervention",
+        "mention": "气调贮藏",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "partial_alignment",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [
+      {
+        "source_id": "PAPER_001",
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+        "citations": [
+          {
+            "evidence_id": "E3",
+            "chunk_id": "PAPER_001_C0025",
+            "section": "2.5  不同O2 浓度处理对乙烯生物合成关键基因相对",
+            "pages": [
+              7,
+              8
+            ]
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "PAPER_001_C0001",
+            "section": "正文（未识别章节）",
+            "pages": [
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [
+      {
+        "field": "intervention",
+        "mention": "气调贮藏",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_001_C0021",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9841269841269842
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0003",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 2,
+            "vector_rank": 6,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9540566959921799
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0025",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 10,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9357142857142857
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0004",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 9,
+            "vector_rank": 4,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9185914855072463
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0001",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 12,
+            "vector_rank": 2,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9155465949820789
+          }
+        }
+      ]
+    },
+    "status": "answered",
+    "answer": "1. 结论\n在气调贮藏期间（贮藏150 d），鸭梨果实中PbACO1和PbACO3的相对表达量均显著低于空气对照 [E3] 。\n2. 依据\n证据[E3]记载：贮藏150 d，气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照 [E3] 。该研究设置1.0%、2.0%、3.0%、5.0%及10.0% O2浓度梯度，CO2浓度为0.5%，以空气处理为对照 [E5] 。\n3. 推理路径\n问题限定为气调贮藏的鸭梨果实中PbACO1和PbACO3相对表达量与空气对照的比较。[E3]明确给出贮藏150 d时气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照 [E3] 。[E3]同时指出，贮藏150 d后货架10 d，各处理PbACO1和PbACO3相对表达量快速上升，且5.0%及以下O2处理基因表达量均显著高于10.0%及空气对照 [E3] ，说明该比较关系随贮藏/货架阶段变化，故结论仅限定于贮藏150 d这一时点。\n4. 建议\n如需了解货架期或其他贮藏时点的表达量比较，请补充具体贮藏天数或货架天数。\n5. 来源\n[E3] [E5] PAPER_001：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响 https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "candidate_id": "chunk:PAPER_001_C0021",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "2.2  不同O2浓度处理对内在品质的影响",
+          "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+          "pages": [
+            5
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E2",
+        "candidate_id": "chunk:PAPER_001_C0003",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "正文（未识别章节）",
+          "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+          "pages": [
+            1
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E3",
+        "candidate_id": "chunk:PAPER_001_C0025",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "2.5  不同O2 浓度处理对乙烯生物合成关键基因相对",
+          "text": "表达量的影响整体来看，与对照相比，采用低氧气调处理可显著抑制鸭梨货架初期果皮组织中PbACS1、PbACO1及PbACO3 表达，推迟货架期间果皮组织中乙烯合成相关基因表达高峰，但不同O2 处理下PbACS2、PbACS3 及PbACO2 表达无明显规律（数据未列出）。具体来看，贮藏150 d，1.0%—3.0% O2 处理PbACS1相对表达量极低，但5.0%和10.0% O2 处理及空气对照PbACS1 相对表达量较高；气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照；贮藏150 d 后货架10 d，1.0%— 3.0% O2 处理PbACS1 相对表达量较出库时增长近45 倍，各处理PbACO1 和PbACO3相对表达量快速上升，且5.0%及以下O2 处理基因表达量均显著高于10.0%及空气对照；随着贮藏期的延长，乙烯合成相关基因表达水平上升，贮藏210 d 及货架7 d，空气处理PbACS1 相对表达量达到峰值，10% O2 处理PbACO1 和PbACO3 达到峰值；贮藏270 d 后货架7 d，1.0—3.0% O2 处理PbACS1 和PbACO1 仍保持相对较高水平（图4）。PbACO1相对表达量Relative expression of PbACO1 PbACO1相对表达量Relative expression of PbACO1 PbACS1相对表达量Relative expression of PbACS1 PbACO3相对表达量Relative expression of PbACO3 PbACO3相对表达量Relative expression of PbACO3 PbACS1相对表达量Relative expression of PbACS1图4  不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况Fig. 4  The relative expression of PbACO1, PbACO3 and PbACS1 under different oxygen concentrations during storage and shelf-life period of Yali pear",
+          "pages": [
+            7,
+            8
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E4",
+        "candidate_id": "chunk:PAPER_001_C0004",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "正文（未识别章节）",
+          "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+          "pages": [
+            1,
+            2
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E5",
+        "candidate_id": "chunk:PAPER_001_C0001",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "正文（未识别章节）",
+          "text": "中国农业科学  2020,53(23):4918-4928 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2020.23.016收稿日期：2020-03-30；接受日期：2020-06-09基金项目：国家现代梨产业技术体系（CARS-28）、国家自然科学基金（32001761）联系方式：杜艳民，E-mail：duyanmin@caas.cn。通信作者王文辉，E-mail：wangwenhui@caas.cn开放科学（资源服务）标识码（OSID）：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响杜艳民，王文辉，贾晓辉，佟伟，王阳，张鑫楠（中国农业科学院果树研究所/辽宁省果品贮藏与加工重点实验室，辽宁兴城 125100）摘要：【目的】明确环境氧气（O2）浓度对鸭梨采后贮藏品质及生理代谢的影响，为鸭梨采后生理病害防控，延长贮藏期提供理论依据。【方法】将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱，设置1.0%、2.0%、3.0%、5.0%及10.0%等不同O2浓度梯度，CO2浓度为0.5%，以空气处理为对照，分别于贮藏150、210 和270 d 及货架7 或10 d，调查鸭梨虎皮指数和黑心指数，测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血酸（AA）及色泽变化情况，利用气相色谱分析测定果肉和果心组织乙醇含量变化情况，监测果实呼吸速率和乙烯产量；利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS 和PbACO 表达变化情况进行测定。【结果】低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数，贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2；同时，延缓了贮藏早期果实TA 和AA 下降，推迟了果实果面转黄。",
+          "pages": [
+            1
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      }
+    ],
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称贮藏150 d时气调贮藏鸭梨果实PbACO1和PbACO3相对表达量均显著低于空气对照，所引E3原文明确记载“贮藏150 d……气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照”，时点、基因、比较对象和方向均与证据一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中关于贮藏150 d气调果实PbACO1和PbACO3显著低于空气对照的表述由E3直接支持；关于O2浓度梯度1.0%、2.0%、3.0%、5.0%、10.0%，CO2浓度0.5%，空气为对照的表述由E5摘要直接支持。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning对问题限定、E3中贮藏150 d比较结果、以及货架10 d后表达量快速上升且5.0%及以下O2处理显著高于10.0%及空气对照的说明，均来自E3原文；据此将结论限定于贮藏150 d这一时点，未超出证据范围。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice仅为请用户补充具体贮藏天数或货架天数的操作提示，未陈述任何事实、数值或因果结论，且未引用证据。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0021",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.2  不同O2浓度处理对内在品质的影响",
+        "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0025",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.5  不同O2 浓度处理对乙烯生物合成关键基因相对",
+        "text": "表达量的影响整体来看，与对照相比，采用低氧气调处理可显著抑制鸭梨货架初期果皮组织中PbACS1、PbACO1及PbACO3 表达，推迟货架期间果皮组织中乙烯合成相关基因表达高峰，但不同O2 处理下PbACS2、PbACS3 及PbACO2 表达无明显规律（数据未列出）。具体来看，贮藏150 d，1.0%—3.0% O2 处理PbACS1相对表达量极低，但5.0%和10.0% O2 处理及空气对照PbACS1 相对表达量较高；气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照；贮藏150 d 后货架10 d，1.0%— 3.0% O2 处理PbACS1 相对表达量较出库时增长近45 倍，各处理PbACO1 和PbACO3相对表达量快速上升，且5.0%及以下O2 处理基因表达量均显著高于10.0%及空气对照；随着贮藏期的延长，乙烯合成相关基因表达水平上升，贮藏210 d 及货架7 d，空气处理PbACS1 相对表达量达到峰值，10% O2 处理PbACO1 和PbACO3 达到峰值；贮藏270 d 后货架7 d，1.0—3.0% O2 处理PbACS1 和PbACO1 仍保持相对较高水平（图4）。PbACO1相对表达量Relative expression of PbACO1 PbACO1相对表达量Relative expression of PbACO1 PbACS1相对表达量Relative expression of PbACS1 PbACO3相对表达量Relative expression of PbACO3 PbACO3相对表达量Relative expression of PbACO3 PbACS1相对表达量Relative expression of PbACS1图4  不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况Fig. 4  The relative expression of PbACO1, PbACO3 and PbACS1 under different oxygen concentrations during storage and shelf-life period of Yali pear",
+        "pages": [
+          7,
+          8
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0004",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+        "pages": [
+          1,
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "中国农业科学  2020,53(23):4918-4928 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2020.23.016收稿日期：2020-03-30；接受日期：2020-06-09基金项目：国家现代梨产业技术体系（CARS-28）、国家自然科学基金（32001761）联系方式：杜艳民，E-mail：duyanmin@caas.cn。通信作者王文辉，E-mail：wangwenhui@caas.cn开放科学（资源服务）标识码（OSID）：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响杜艳民，王文辉，贾晓辉，佟伟，王阳，张鑫楠（中国农业科学院果树研究所/辽宁省果品贮藏与加工重点实验室，辽宁兴城 125100）摘要：【目的】明确环境氧气（O2）浓度对鸭梨采后贮藏品质及生理代谢的影响，为鸭梨采后生理病害防控，延长贮藏期提供理论依据。【方法】将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱，设置1.0%、2.0%、3.0%、5.0%及10.0%等不同O2浓度梯度，CO2浓度为0.5%，以空气处理为对照，分别于贮藏150、210 和270 d 及货架7 或10 d，调查鸭梨虎皮指数和黑心指数，测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血酸（AA）及色泽变化情况，利用气相色谱分析测定果肉和果心组织乙醇含量变化情况，监测果实呼吸速率和乙烯产量；利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS 和PbACO 表达变化情况进行测定。【结果】低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数，贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2；同时，延缓了贮藏早期果实TA 和AA 下降，推迟了果实果面转黄。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "在气调贮藏期间（贮藏150 d），鸭梨果实中PbACO1和PbACO3的相对表达量均显著低于空气对照 [E3] 。",
+    "basis": "证据[E3]记载：贮藏150 d，气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照 [E3] 。该研究设置1.0%、2.0%、3.0%、5.0%及10.0% O2浓度梯度，CO2浓度为0.5%，以空气处理为对照 [E5] 。",
+    "reasoning": "问题限定为气调贮藏的鸭梨果实中PbACO1和PbACO3相对表达量与空气对照的比较。[E3]明确给出贮藏150 d时气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照 [E3] 。[E3]同时指出，贮藏150 d后货架10 d，各处理PbACO1和PbACO3相对表达量快速上升，且5.0%及以下O2处理基因表达量均显著高于10.0%及空气对照 [E3] ，说明该比较关系随贮藏/货架阶段变化，故结论仅限定于贮藏150 d这一时点。",
+    "advice": "如需了解货架期或其他贮藏时点的表达量比较，请补充具体贮藏天数或货架天数。",
+    "citations": [
+      "E3",
+      "E5"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出关键结论：贮藏150 d时气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照，与参考答案一致；并正确限定该比较的时点，未将货架期变化误作同一结论。",
+      "claims": [
+        {
+          "claim": "在气调贮藏期间（贮藏150 d），鸭梨果实中PbACO1和PbACO3的相对表达量均显著低于空气对照。",
+          "status": "supported",
+          "reason": "原文明确记载“贮藏150 d……气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照”。"
+        },
+        {
+          "claim": "该研究设置1.0%、2.0%、3.0%、5.0%及10.0% O2浓度梯度，CO2浓度为0.5%，以空气处理为对照。",
+          "status": "supported",
+          "reason": "摘要及方法部分记载设置1.0%、2.0%、3.0%、5.0%及10.0% O2浓度梯度，CO2浓度为0.5%，以空气处理为对照。"
+        },
+        {
+          "claim": "贮藏150 d后货架10 d，各处理PbACO1和PbACO3相对表达量快速上升，且5.0%及以下O2处理基因表达量均显著高于10.0%及空气对照。",
+          "status": "supported",
+          "reason": "原文明确记载“贮藏150 d后货架10 d，各处理PbACO1和PbACO3相对表达量快速上升，且5.0%及以下O2处理基因表达量均显著高于10.0%及空气对照”。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3707,
+      "completion_tokens": 354,
+      "total_tokens": 4061,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 2555
+    },
+    "model": "deepseek-flash",
+    "response_id": "96799f2f-2ef3-4711-bf9c-abb6c7968738",
+    "seconds": 6.706288100001984,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在气调贮藏期间（贮藏150 d），鸭梨果实中PbACO1和PbACO3的相对表达量均显著低于空气对照[E3]。",
+        "basis": "证据E3记载：贮藏150 d，气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照[E3]。该研究设置1.0%、2.0%、3.0%、5.0%及10.0% O2浓度梯度，CO2浓度为0.5%，以空气处理为对照[E5]。",
+        "reasoning": "问题限定为气调贮藏的鸭梨果实中PbACO1和PbACO3相对表达量与空气对照的比较。E3明确给出贮藏150 d时气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照[E3]。E3同时指出，贮藏150 d后货架10 d，各处理PbACO1和PbACO3相对表达量快速上升，且5.0%及以下O2处理基因表达量均显著高于10.0%及空气对照[E3]，说明该比较关系随贮藏/货架阶段变化，故结论仅限定于贮藏150 d这一时点。",
+        "advice": "如需了解货架期或其他贮藏时点的表达量比较，请补充具体贮藏天数或货架天数。",
+        "citations": [
+          "E3",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2931,
+        "completion_tokens": 311,
+        "total_tokens": 3242,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2803
+      },
+      "model": "deepseek-flash",
+      "response_id": "0bd4b9d9-af75-4683-805f-d97d6953911c",
+      "seconds": 6.680174699999043,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 20.61243330000434
+}

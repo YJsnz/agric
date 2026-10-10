@@ -1,0 +1,4124 @@
+[
+  {
+    "crop_id": "huanghua_hanjianmai",
+    "question": "黄骅盐碱地土壤含盐量约2‰，播种期墒情不足，旱碱麦应该如何播种？",
+    "entities": {
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "growth_stage": "播种期",
+      "soil_salinity": {
+        "value": 2.0,
+        "unit": "‰",
+        "raw": "含盐量约2‰",
+        "normalized_percent": 0.2,
+        "conversion_notice": "质量分数：1‰=0.1%，1g/kg=0.1%。不是胁迫程度或产量损失推断。"
+      },
+      "soil_moisture": "low",
+      "temperature": null,
+      "rainfall": null,
+      "variety": null,
+      "quality_intent": null,
+      "stress": [
+        "盐胁迫",
+        "干旱胁迫"
+      ],
+      "practice": [],
+      "intent": "practice_query"
+    },
+    "generation_called": true,
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 8,
+      "vector_evidence_count": 8,
+      "fused_count": 8
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "HH-E005",
+          "source": "huanghua_hanjianmai:af94264dbe10343b",
+          "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+          "relation": "REQUIRES",
+          "kind": "fact",
+          "source_id": "W001",
+          "evidence_ids": [
+            "W001"
+          ],
+          "chunk_id": "HH-C004",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "stage_ids": [
+            "huanghua_hanjianmai:4795467f7fd7b728"
+          ],
+          "growth_stage": "播种期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "最佳播期为9月30日至10月7日。播量最佳播期内，亩播量12.5kg，每推迟1d，播量增加0.5kg，最大亩播量不超过22.5kg。播种要求适播期内耕层（0cm～20cm）土壤相对含水量65%～75%时即可播种。条播，行距15cm～20cm，播深3cm～5cm，深浅一致。",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 6,
+            "start": 73,
+            "end": 209
+          },
+          "conditions": [
+            "原文地区：河北省滨海平原盐碱干旱生态类型区",
+            "生育阶段：播种期"
+          ]
+        },
+        {
+          "id": "HH-E022",
+          "source": "huanghua_hanjianmai:b9b0e3af5fca04de",
+          "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+          "relation": "REQUIRES",
+          "kind": "fact",
+          "source_id": "W003",
+          "evidence_ids": [
+            "W003"
+          ],
+          "chunk_id": "HH-C011",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "河北",
+          "stage_ids": [
+            "huanghua_hanjianmai:4795467f7fd7b728"
+          ],
+          "growth_stage": "播种期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "为达到保播、避盐的目的，利用专用农机具进行起垄沟内宽幅匀播的播种方式。",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 5,
+            "start": 314,
+            "end": 349
+          },
+          "conditions": [
+            "原文地区：河北",
+            "生育阶段：播种期"
+          ]
+        },
+        {
+          "id": "HH-E023",
+          "source": "huanghua_hanjianmai:b9b0e3af5fca04de",
+          "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+          "relation": "REQUIRES",
+          "kind": "fact",
+          "source_id": "W003",
+          "evidence_ids": [
+            "W003"
+          ],
+          "chunk_id": "HH-C012",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "河北",
+          "stage_ids": [
+            "huanghua_hanjianmai:4795467f7fd7b728"
+          ],
+          "growth_stage": "播种期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "5.3.3.1土壤墒情较好的地块（土壤含水量为田间最大持水量的70%左右），整地后用沟播种肥一体播种机播种，开沟深度7cm～8cm，将种子均匀撒播于沟内，覆土3cm。",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 6,
+            "start": 97,
+            "end": 180
+          },
+          "conditions": [
+            "原文地区：河北",
+            "生育阶段：播种期"
+          ]
+        },
+        {
+          "id": "HH-E024",
+          "source": "huanghua_hanjianmai:b9b0e3af5fca04de",
+          "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+          "relation": "REQUIRES",
+          "kind": "fact",
+          "source_id": "W003",
+          "evidence_ids": [
+            "W003"
+          ],
+          "chunk_id": "HH-C013",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "河北",
+          "stage_ids": [
+            "huanghua_hanjianmai:4795467f7fd7b728"
+          ],
+          "growth_stage": "播种期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "5.3.3.2土壤墒情较差的地块（土壤含水量为田间最大持水量的65%左右），采用沟播种肥一体机播种，根据干土层厚度调整开沟深度，最深开沟深度12cm，将种子均匀撒播于沟内，覆土2cm～3cm。",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 6,
+            "start": 180,
+            "end": 276
+          },
+          "conditions": [
+            "原文地区：河北",
+            "生育阶段：播种期"
+          ]
+        },
+        {
+          "id": "HH-E026",
+          "source": "huanghua_hanjianmai:421013300f1a7871",
+          "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+          "relation": "REQUIRES",
+          "kind": "fact",
+          "source_id": "W004",
+          "evidence_ids": [
+            "W004"
+          ],
+          "chunk_id": "HH-C014",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [
+            "huanghua_hanjianmai:4795467f7fd7b728"
+          ],
+          "growth_stage": "播种期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm，见图1。4适用条件适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块。",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 3,
+            "start": 369,
+            "end": 440
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：播种期"
+          ]
+        },
+        {
+          "id": "HH-E028",
+          "source": "huanghua_hanjianmai:421013300f1a7871",
+          "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+          "relation": "REQUIRES",
+          "kind": "fact",
+          "source_id": "W004",
+          "evidence_ids": [
+            "W004"
+          ],
+          "chunk_id": "HH-C015",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [
+            "huanghua_hanjianmai:4795467f7fd7b728"
+          ],
+          "growth_stage": "播种期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "利用探墒播种机自带的旋耕机在小麦播种行进行半浅旋，旋耕深度5cm，根据干土层深度，利用拨土铲拨开干土层，形成地垄，种子播于湿土层下2cm～3cm，随播种亩施氮磷钾复合肥40kg于沟底部中央种子播面下5cm处，宽窄行播种，窄行12cm，宽行20cm，窄行播种2行，行距12cm，播后镇压。肥料的使用应符合NY/T496的规定。",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 4,
+            "start": 194,
+            "end": 356
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：播种期"
+          ]
+        },
+        {
+          "id": "HH-E036",
+          "source": "huanghua_hanjianmai:d9db17c9ce600f95",
+          "target": "huanghua_hanjianmai:4795467f7fd7b728",
+          "relation": "OCCURS_AT_STAGE",
+          "kind": "fact",
+          "source_id": "W006",
+          "evidence_ids": [
+            "W006"
+          ],
+          "chunk_id": "HH-C022",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [
+            "huanghua_hanjianmai:4795467f7fd7b728"
+          ],
+          "growth_stage": "播种期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "适宜播期10月1日～10月7日，亩播量10kg～12.5kg。适播期后，每推迟1天，亩播量增加0.5kg，最多不超过22.5kg。",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 99,
+            "end": 164
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：播种期"
+          ]
+        },
+        {
+          "id": "HH-E037",
+          "source": "huanghua_hanjianmai:d9db17c9ce600f95",
+          "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+          "relation": "REQUIRES",
+          "kind": "fact",
+          "source_id": "W006",
+          "evidence_ids": [
+            "W006"
+          ],
+          "chunk_id": "HH-C023",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [
+            "huanghua_hanjianmai:4795467f7fd7b728"
+          ],
+          "growth_stage": "播种期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm。5.3土壤墒情耕层土壤相对含水量70%～80%播种。",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 171,
+            "end": 280
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：播种期"
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm，见图1。4适用条件适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块。",
+        "source_id": "W004",
+        "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "探墒保播",
+          "stress": [],
+          "practice": [
+            "探墒保播"
+          ],
+          "source_id": "W004",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "3.1 定义及4 适用条件",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 3,
+            "start": 369,
+            "end": 440
+          },
+          "source_sha256": "ff0d0ff953abbe907786b1fa87934219f154f02feecdb60b6bd3325c891577c7",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "宽幅沟播适用范围",
+          "stress": [],
+          "practice": [
+            "宽幅沟播适用范围"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 3,
+            "start": 83,
+            "end": 111
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "content": "利用探墒播种机自带的旋耕机在小麦播种行进行半浅旋，旋耕深度5cm，根据干土层深度，利用拨土铲拨开干土层，形成地垄，种子播于湿土层下2cm～3cm，随播种亩施氮磷钾复合肥40kg于沟底部中央种子播面下5cm处，宽窄行播种，窄行12cm，宽行20cm，窄行播种2行，行距12cm，播后镇压。肥料的使用应符合NY/T496的规定。",
+        "source_id": "W004",
+        "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "探墒保播",
+          "stress": [],
+          "practice": [
+            "探墒保播"
+          ],
+          "source_id": "W004",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "6.3 探墒播种",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 4,
+            "start": 194,
+            "end": 356
+          },
+          "source_sha256": "ff0d0ff953abbe907786b1fa87934219f154f02feecdb60b6bd3325c891577c7",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "适宜播期10月1日～10月7日，亩播量10kg～12.5kg。适播期后，每推迟1天，亩播量增加0.5kg，最多不超过22.5kg。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "宽幅沟播播期",
+          "stress": [],
+          "practice": [
+            "宽幅沟播播期"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5.1 播期与播量",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 99,
+            "end": 164
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "content": "采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm。5.3土壤墒情耕层土壤相对含水量70%～80%播种。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "宽幅沟播",
+          "stress": [],
+          "practice": [
+            "宽幅沟播"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5.2 种植模式及5.3 墒情",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 171,
+            "end": 280
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "content": "本文件适用于土壤含盐量为1‰～3‰的河北省滨海平原盐碱干旱生态类型区的冬小麦生产。",
+        "source_id": "W001",
+        "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "适用范围",
+          "stress": [
+            "干旱",
+            "盐碱"
+          ],
+          "practice": [
+            "适用范围"
+          ],
+          "source_id": "W001",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 5,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 5,
+            "start": 90,
+            "end": 131
+          },
+          "source_sha256": "5595fbf385436b2403a646eb7c60dccea63e0f4ac5f0ec111209a83d7f46a4f1",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E7",
+        "kind": "document_chunk",
+        "content": "5.3.3.2土壤墒情较差的地块（土壤含水量为田间最大持水量的65%左右），采用沟播种肥一体机播种，根据干土层厚度调整开沟深度，最深开沟深度12cm，将种子均匀撒播于沟内，覆土2cm～3cm。",
+        "source_id": "W003",
+        "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "开沟接墒",
+          "stress": [],
+          "practice": [
+            "开沟接墒"
+          ],
+          "source_id": "W003",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 6,
+          "section": "5.3.3.2 墒情较差",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 6,
+            "start": 180,
+            "end": 276
+          },
+          "source_sha256": "3aa03dcbcdf8b5c096b91fd0407a10262ab8a9062a7aa57c3443a5db782ee8a9",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E8",
+        "kind": "document_chunk",
+        "content": "5.3.3.1土壤墒情较好的地块（土壤含水量为田间最大持水量的70%左右），整地后用沟播种肥一体播种机播种，开沟深度7cm～8cm，将种子均匀撒播于沟内，覆土3cm。",
+        "source_id": "W003",
+        "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "开沟接墒",
+          "stress": [],
+          "practice": [
+            "开沟接墒"
+          ],
+          "source_id": "W003",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 6,
+          "section": "5.3.3.1 墒情较好",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 6,
+            "start": 97,
+            "end": 180
+          },
+          "source_sha256": "3aa03dcbcdf8b5c096b91fd0407a10262ab8a9062a7aa57c3443a5db782ee8a9",
+          "limitations": []
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm，见图1。4适用条件适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块。",
+        "source_id": "W004",
+        "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "探墒保播",
+          "stress": [],
+          "practice": [
+            "探墒保播"
+          ],
+          "source_id": "W004",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "3.1 定义及4 适用条件",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 3,
+            "start": 369,
+            "end": 440
+          },
+          "source_sha256": "ff0d0ff953abbe907786b1fa87934219f154f02feecdb60b6bd3325c891577c7",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "宽幅沟播适用范围",
+          "stress": [],
+          "practice": [
+            "宽幅沟播适用范围"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 3,
+            "start": 83,
+            "end": 111
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "content": "利用探墒播种机自带的旋耕机在小麦播种行进行半浅旋，旋耕深度5cm，根据干土层深度，利用拨土铲拨开干土层，形成地垄，种子播于湿土层下2cm～3cm，随播种亩施氮磷钾复合肥40kg于沟底部中央种子播面下5cm处，宽窄行播种，窄行12cm，宽行20cm，窄行播种2行，行距12cm，播后镇压。肥料的使用应符合NY/T496的规定。",
+        "source_id": "W004",
+        "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "探墒保播",
+          "stress": [],
+          "practice": [
+            "探墒保播"
+          ],
+          "source_id": "W004",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "6.3 探墒播种",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 4,
+            "start": 194,
+            "end": 356
+          },
+          "source_sha256": "ff0d0ff953abbe907786b1fa87934219f154f02feecdb60b6bd3325c891577c7",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "适宜播期10月1日～10月7日，亩播量10kg～12.5kg。适播期后，每推迟1天，亩播量增加0.5kg，最多不超过22.5kg。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "宽幅沟播播期",
+          "stress": [],
+          "practice": [
+            "宽幅沟播播期"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5.1 播期与播量",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 99,
+            "end": 164
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "content": "采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm。5.3土壤墒情耕层土壤相对含水量70%～80%播种。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "宽幅沟播",
+          "stress": [],
+          "practice": [
+            "宽幅沟播"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5.2 种植模式及5.3 墒情",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 171,
+            "end": 280
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "content": "本文件适用于土壤含盐量为1‰～3‰的河北省滨海平原盐碱干旱生态类型区的冬小麦生产。",
+        "source_id": "W001",
+        "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "适用范围",
+          "stress": [
+            "干旱",
+            "盐碱"
+          ],
+          "practice": [
+            "适用范围"
+          ],
+          "source_id": "W001",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 5,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 5,
+            "start": 90,
+            "end": 131
+          },
+          "source_sha256": "5595fbf385436b2403a646eb7c60dccea63e0f4ac5f0ec111209a83d7f46a4f1",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7"
+      },
+      {
+        "evidence_id": "E7",
+        "kind": "document_chunk",
+        "content": "5.3.3.2土壤墒情较差的地块（土壤含水量为田间最大持水量的65%左右），采用沟播种肥一体机播种，根据干土层厚度调整开沟深度，最深开沟深度12cm，将种子均匀撒播于沟内，覆土2cm～3cm。",
+        "source_id": "W003",
+        "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "开沟接墒",
+          "stress": [],
+          "practice": [
+            "开沟接墒"
+          ],
+          "source_id": "W003",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 6,
+          "section": "5.3.3.2 墒情较差",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 6,
+            "start": 180,
+            "end": 276
+          },
+          "source_sha256": "3aa03dcbcdf8b5c096b91fd0407a10262ab8a9062a7aa57c3443a5db782ee8a9",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/0d310eea2e6bb62171fec978faedf7ef47409f9eaa2296c6c908616c299cf68c"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中探墒保播的适用条件（干土层相对含水量低于65%、厚度不超过10cm）及播于湿土层下2cm～3cm均与E1一致；开沟接墒的65%左右含水量、最深12cm、覆土2cm～3cm与E7一致；宽幅沟播70%～80%墒情要求与E5一致；含盐量2‰（0.2%）在1‰～3‰范围内与E2、E6一致；结论明确缺少实测数据、不得声称适用于用户地块，未超出证据范围。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis逐条引用的E1、E3、E7、E5、E4、E2、E6内容均与所引证据原文一致，包括探墒保播操作、开沟接墒参数、宽幅沟播参数、播期播量、适用范围等，未发现无引用补证或数值错误。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理中2‰换算为0.2%与numeric_context一致；盐分在E2、E6的1‰～3‰范围内；探墒保播条件、开沟接墒65%条件、宽幅沟播70%～80%要求、播期播量调整均分别有E1、E7、E5、E4支持；并正确指出缺少实测数据、不能合并为通用推荐，未将标准条件直接套用于用户地块。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议先实测干土层厚度和土壤相对含水量，再分别参考E1/E3探墒保播、E7开沟接墒、E4播期播量、E5宽幅沟播墒情要求，均与所引证据一致；未推荐具体农药、剂量或施药周期，也未声称适用于用户地块，符合证据范围。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实地块具体适用条件；此回答为文献依据及候选建议，不是现场确定性结论。"
+    },
+    "status": "insufficient_evidence",
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm，见图1。4适用条件适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块。",
+        "source_id": "W004",
+        "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "探墒保播",
+          "stress": [],
+          "practice": [
+            "探墒保播"
+          ],
+          "source_id": "W004",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "3.1 定义及4 适用条件",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 3,
+            "start": 369,
+            "end": 440
+          },
+          "source_sha256": "ff0d0ff953abbe907786b1fa87934219f154f02feecdb60b6bd3325c891577c7",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "宽幅沟播适用范围",
+          "stress": [],
+          "practice": [
+            "宽幅沟播适用范围"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 3,
+            "start": 83,
+            "end": 111
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "content": "利用探墒播种机自带的旋耕机在小麦播种行进行半浅旋，旋耕深度5cm，根据干土层深度，利用拨土铲拨开干土层，形成地垄，种子播于湿土层下2cm～3cm，随播种亩施氮磷钾复合肥40kg于沟底部中央种子播面下5cm处，宽窄行播种，窄行12cm，宽行20cm，窄行播种2行，行距12cm，播后镇压。肥料的使用应符合NY/T496的规定。",
+        "source_id": "W004",
+        "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "探墒保播",
+          "stress": [],
+          "practice": [
+            "探墒保播"
+          ],
+          "source_id": "W004",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "6.3 探墒播种",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 4,
+            "start": 194,
+            "end": 356
+          },
+          "source_sha256": "ff0d0ff953abbe907786b1fa87934219f154f02feecdb60b6bd3325c891577c7",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "适宜播期10月1日～10月7日，亩播量10kg～12.5kg。适播期后，每推迟1天，亩播量增加0.5kg，最多不超过22.5kg。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "宽幅沟播播期",
+          "stress": [],
+          "practice": [
+            "宽幅沟播播期"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5.1 播期与播量",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 99,
+            "end": 164
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "content": "采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm。5.3土壤墒情耕层土壤相对含水量70%～80%播种。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "宽幅沟播",
+          "stress": [],
+          "practice": [
+            "宽幅沟播"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5.2 种植模式及5.3 墒情",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 171,
+            "end": 280
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "content": "本文件适用于土壤含盐量为1‰～3‰的河北省滨海平原盐碱干旱生态类型区的冬小麦生产。",
+        "source_id": "W001",
+        "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "适用范围",
+          "stress": [
+            "干旱",
+            "盐碱"
+          ],
+          "practice": [
+            "适用范围"
+          ],
+          "source_id": "W001",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 5,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 5,
+            "start": 90,
+            "end": 131
+          },
+          "source_sha256": "5595fbf385436b2403a646eb7c60dccea63e0f4ac5f0ec111209a83d7f46a4f1",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7"
+      },
+      {
+        "evidence_id": "E7",
+        "kind": "document_chunk",
+        "content": "5.3.3.2土壤墒情较差的地块（土壤含水量为田间最大持水量的65%左右），采用沟播种肥一体机播种，根据干土层厚度调整开沟深度，最深开沟深度12cm，将种子均匀撒播于沟内，覆土2cm～3cm。",
+        "source_id": "W003",
+        "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "开沟接墒",
+          "stress": [],
+          "practice": [
+            "开沟接墒"
+          ],
+          "source_id": "W003",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 6,
+          "section": "5.3.3.2 墒情较差",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 6,
+            "start": 180,
+            "end": 276
+          },
+          "source_sha256": "3aa03dcbcdf8b5c096b91fd0407a10262ab8a9062a7aa57c3443a5db782ee8a9",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/0d310eea2e6bb62171fec978faedf7ef47409f9eaa2296c6c908616c299cf68c"
+      }
+    ],
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "针对黄骅盐碱地含盐量约2‰（0.2%）、播种期墒情不足的旱碱麦播种，现有证据支持两种有条件的技术路径：一是探墒保播，适用于适播期内干土层土壤相对含水量低于65%、厚度不超过10cm的地块，将种子播于湿土层下2cm～3cm [E1] ；二是开沟接墒播种，适用于土壤含水量为田间最大持水量的65%左右的地块，根据干土层厚度调整开沟深度，最深12cm，种子撒播于沟内，覆土2cm～3cm [E7] 。宽幅沟播标准要求耕层土壤相对含水量70%～80%播种 [E5] ，当前墒情不足条件下是否适用需谨慎评估。含盐量2‰（0.2%）在多个标准的适用范围内 [E2]  [E6] ，但盐分条件满足不代表墒情、温度等其他条件满足。由于缺少用户地块的干土层厚度、土壤相对含水量实测值、具体品种和播种日期，无法确定应选择哪种具体方案，也不得声称适用于用户地块。",
+      "supporting_points": [
+        "证据[E1]（DB1309/T 319-2025）规定：利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm；适用条件为适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块 [E1] 。证据[E3]（同标准）规定：利用探墒播种机自带的旋耕机在小麦播种行进行半浅旋，旋耕深度5cm，根据干土层深度，利用拨土铲拨开干土层，形成地垄，种子播于湿土层下2cm～3cm，随播种亩施氮磷钾复合肥40kg于沟底部中央种子播面下5cm处，宽窄行播种，窄行12cm，宽行20cm，窄行播种2行，行距12cm，播后镇压；肥料使用应符合NY/T496的规定 [E3] 。证据[E7]（DB13/T 6107-2025）规定：土壤墒情较差的地块（土壤含水量为田间最大持水量的65%左右），采用沟播种肥一体机播种，根据干土层厚度调整开沟深度，最深开沟深度12cm，将种子均匀撒播于沟内，覆土2cm～3cm [E7] 。证据[E5]（DB1309/T 330-2025）规定：采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm；耕层土壤相对含水量70%～80%播种 [E5] 。证据[E4]（同标准）规定：适宜播期10月1日～10月7日，亩播量10kg～12.5kg；适播期后，每推迟1天，亩播量增加0.5kg，最多不超过22.5kg [E4] 。证据[E2]（DB1309/T 330-2025）规定：适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产 [E2] 。证据[E6]（DB13/T 5659-2023）规定：适用于土壤含盐量为1‰～3‰的河北省滨海平原盐碱干旱生态类型区的冬小麦生产 [E6] 。"
+      ],
+      "uncertainties": [
+        "用户提供的信息中，土壤含盐量约2‰，按质量分数换算为0.2%[context.soil_salinity.normalized_percent]，该值在DB1309/T 330-2025的1‰～3‰适用范围 [E2] 和DB13/T 5659-2023的1‰～3‰适用范围 [E6] 内，但盐分条件满足不代表其他条件满足。墒情不足是当前关键限制因子，但用户未提供干土层厚度和土壤相对含水量实测值，无法判断是否满足探墒保播的适用条件（干土层厚度不超过10cm、土壤相对含水量低于65%） [E1] ，也无法判断是否属于开沟接墒播种中“墒情较差”的65%左右含水量条件 [E7] 。宽幅沟播标准要求耕层土壤相对含水量70%～80% [E5] ，与当前墒情不足描述存在差距，是否适用需实测确认。此外，用户未提供播种日期，无法依据播期调整播量 [E4] 。不同标准给出的播种方式、深度、施肥和墒情条件各不相同，不能合并为通用推荐，必须明确所属标准和适用条件。当前仅进行初步研判，sufficient=false，缺少用户地块实测数据，不得声称适用于用户地块。"
+      ]
+    },
+    "answer": "针对黄骅盐碱地含盐量约2‰（0.2%）、播种期墒情不足的旱碱麦播种，现有证据支持两种有条件的技术路径：一是探墒保播，适用于适播期内干土层土壤相对含水量低于65%、厚度不超过10cm的地块，将种子播于湿土层下2cm～3cm [E1] ；二是开沟接墒播种，适用于土壤含水量为田间最大持水量的65%左右的地块，根据干土层厚度调整开沟深度，最深12cm，种子撒播于沟内，覆土2cm～3cm [E7] 。宽幅沟播标准要求耕层土壤相对含水量70%～80%播种 [E5] ，当前墒情不足条件下是否适用需谨慎评估。含盐量2‰（0.2%）在多个标准的适用范围内 [E2]  [E6] ，但盐分条件满足不代表墒情、温度等其他条件满足。由于缺少用户地块的干土层厚度、土壤相对含水量实测值、具体品种和播种日期，无法确定应选择哪种具体方案，也不得声称适用于用户地块。\n\n证据[E1]（DB1309/T 319-2025）规定：利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm；适用条件为适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块 [E1] 。证据[E3]（同标准）规定：利用探墒播种机自带的旋耕机在小麦播种行进行半浅旋，旋耕深度5cm，根据干土层深度，利用拨土铲拨开干土层，形成地垄，种子播于湿土层下2cm～3cm，随播种亩施氮磷钾复合肥40kg于沟底部中央种子播面下5cm处，宽窄行播种，窄行12cm，宽行20cm，窄行播种2行，行距12cm，播后镇压；肥料使用应符合NY/T496的规定 [E3] 。证据[E7]（DB13/T 6107-2025）规定：土壤墒情较差的地块（土壤含水量为田间最大持水量的65%左右），采用沟播种肥一体机播种，根据干土层厚度调整开沟深度，最深开沟深度12cm，将种子均匀撒播于沟内，覆土2cm～3cm [E7] 。证据[E5]（DB1309/T 330-2025）规定：采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm；耕层土壤相对含水量70%～80%播种 [E5] 。证据[E4]（同标准）规定：适宜播期10月1日～10月7日，亩播量10kg～12.5kg；适播期后，每推迟1天，亩播量增加0.5kg，最多不超过22.5kg [E4] 。证据[E2]（DB1309/T 330-2025）规定：适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产 [E2] 。证据[E6]（DB13/T 5659-2023）规定：适用于土壤含盐量为1‰～3‰的河北省滨海平原盐碱干旱生态类型区的冬小麦生产 [E6] 。\n\n用户提供的信息中，土壤含盐量约2‰，按质量分数换算为0.2%[context.soil_salinity.normalized_percent]，该值在DB1309/T 330-2025的1‰～3‰适用范围 [E2] 和DB13/T 5659-2023的1‰～3‰适用范围 [E6] 内，但盐分条件满足不代表其他条件满足。墒情不足是当前关键限制因子，但用户未提供干土层厚度和土壤相对含水量实测值，无法判断是否满足探墒保播的适用条件（干土层厚度不超过10cm、土壤相对含水量低于65%） [E1] ，也无法判断是否属于开沟接墒播种中“墒情较差”的65%左右含水量条件 [E7] 。宽幅沟播标准要求耕层土壤相对含水量70%～80% [E5] ，与当前墒情不足描述存在差距，是否适用需实测确认。此外，用户未提供播种日期，无法依据播期调整播量 [E4] 。不同标准给出的播种方式、深度、施肥和墒情条件各不相同，不能合并为通用推荐，必须明确所属标准和适用条件。当前仅进行初步研判，sufficient=false，缺少用户地块实测数据，不得声称适用于用户地块。\n\n建议下一步实测用户地块的干土层厚度和土壤相对含水量，以判断适用哪一标准的技术路径：若干土层厚度不超过10cm且土壤相对含水量低于65%，可参考DB1309/T 319-2025探墒保播，将种子播于湿土层下2cm～3cm [E1] ，具体操作可参照该标准6.3探墒播种 [E3] ；若土壤含水量为田间最大持水量的65%左右，可参考DB13/T 6107-2025开沟接墒播种，根据干土层厚度调整开沟深度，最深12cm，覆土2cm～3cm [E7] 。同时需确认播种日期，若在10月1日～10月7日适播期内，可参考DB1309/T 330-2025亩播量10kg～12.5kg，适播期后每推迟1天亩播量增加0.5kg，最多不超过22.5kg [E4] 。宽幅沟播要求耕层土壤相对含水量70%～80% [E5] ，当前墒情不足条件下是否采用需实测后评估。所有方案均需结合用户地块实际条件，不能直接套用。"
+  },
+  {
+    "crop_id": "huanghua_hanjianmai",
+    "question": "旱碱麦播种偏晚后，春季应该采取哪些措施减灾促苗？",
+    "entities": {
+      "crop": "huanghua_hanjianmai",
+      "region": null,
+      "growth_stage": "春季",
+      "soil_salinity": null,
+      "soil_moisture": null,
+      "temperature": null,
+      "rainfall": null,
+      "variety": null,
+      "quality_intent": null,
+      "stress": [],
+      "practice": [
+        "晚播"
+      ],
+      "intent": "practice_query"
+    },
+    "generation_called": true,
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 4,
+      "vector_evidence_count": 8,
+      "fused_count": 8
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "HH-E006",
+          "source": "huanghua_hanjianmai:ee03e701ff2a539a",
+          "target": "huanghua_hanjianmai:254c3a2b7a79ee5c",
+          "relation": "OCCURS_AT_STAGE",
+          "kind": "fact",
+          "source_id": "W001",
+          "evidence_ids": [
+            "W001"
+          ],
+          "chunk_id": "HH-C005",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "stage_ids": [
+            "huanghua_hanjianmai:254c3a2b7a79ee5c"
+          ],
+          "growth_stage": "返青期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "返青前进行麦田锄划和镇压。追肥8.2.1趁墒追肥返青前顶凌追肥，每亩施20kg尿素。8.2.2肥料水溶追施春季干旱无法趁墒追肥时，每亩将20kg尿素和500g磷酸二氢钾溶解于1m3～2m3水中，利用追肥机追施。",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 6,
+            "start": 344,
+            "end": 449
+          },
+          "conditions": [
+            "原文地区：河北省滨海平原盐碱干旱生态类型区",
+            "生育阶段：返青期"
+          ]
+        },
+        {
+          "id": "HH-E029",
+          "source": "huanghua_hanjianmai:de3270afea18ae88",
+          "target": "huanghua_hanjianmai:f6ee785d760ad93a",
+          "relation": "APPLIES_IN",
+          "kind": "fact",
+          "source_id": "W005",
+          "evidence_ids": [
+            "W005"
+          ],
+          "chunk_id": "HH-C016",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [],
+          "growth_stage": null,
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "本文件适用于沧州市滨海平原盐碱干旱生态区（含盐量≤0.3%）的晚播旱碱麦生产。",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 3,
+            "start": 90,
+            "end": 129
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：未标定"
+          ]
+        },
+        {
+          "id": "HH-E031",
+          "source": "huanghua_hanjianmai:de3270afea18ae88",
+          "target": "huanghua_hanjianmai:f630478247bb9e5a",
+          "relation": "INCLUDES",
+          "kind": "fact",
+          "source_id": "W005",
+          "evidence_ids": [
+            "W005"
+          ],
+          "chunk_id": "HH-C018",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [
+            "huanghua_hanjianmai:2e2567566a4124c0"
+          ],
+          "growth_stage": "春季",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "在土壤返浆期，若土壤墒情充足，则利用土壤返浆，采用圆盘式追肥机追施氮肥，或在起身前将氮肥溶解于1m3～2m3水中，采用追施水溶肥机进行追施。7.1.2追肥量10月20日～10月31日播种的旱碱麦，亩施纯N6kg～8kg；11月1日之后播种的旱碱麦，亩施纯N10kg～12kg。",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 4,
+            "start": 361,
+            "end": 499
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：春季"
+          ]
+        },
+        {
+          "id": "HH-E032",
+          "source": "huanghua_hanjianmai:de3270afea18ae88",
+          "target": "huanghua_hanjianmai:f630478247bb9e5a",
+          "relation": "INCLUDES",
+          "kind": "fact",
+          "source_id": "W005",
+          "evidence_ids": [
+            "W005"
+          ],
+          "chunk_id": "HH-C019",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [
+            "huanghua_hanjianmai:2e2567566a4124c0"
+          ],
+          "growth_stage": "春季",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "冬前未出苗的麦田，出苗前及时浅锄轻划。",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 4,
+            "start": 504,
+            "end": 523
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：春季"
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "在土壤返浆期，若土壤墒情充足，则利用土壤返浆，采用圆盘式追肥机追施氮肥，或在起身前将氮肥溶解于1m3～2m3水中，采用追施水溶肥机进行追施。7.1.2追肥量10月20日～10月31日播种的旱碱麦，亩施纯N6kg～8kg；11月1日之后播种的旱碱麦，亩施纯N10kg～12kg。",
+        "source_id": "W005",
+        "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "春季",
+          "scope": "production",
+          "topic": "晚播春促",
+          "stress": [],
+          "practice": [
+            "晚播春促"
+          ],
+          "source_id": "W005",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "7.1 春季追肥",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 4,
+            "start": 361,
+            "end": 499
+          },
+          "source_sha256": "8cfbaada85c80926db98e13aea903010c13b0d51f3224a118c60b94d63196a37",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "冬前未出苗的麦田，出苗前及时浅锄轻划。",
+        "source_id": "W005",
+        "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "春季",
+          "scope": "production",
+          "topic": "晚播春促",
+          "stress": [],
+          "practice": [
+            "晚播春促"
+          ],
+          "source_id": "W005",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "7.2 锄划",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 4,
+            "start": 504,
+            "end": 523
+          },
+          "source_sha256": "8cfbaada85c80926db98e13aea903010c13b0d51f3224a118c60b94d63196a37",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州市滨海平原盐碱干旱生态区（含盐量≤0.3%）的晚播旱碱麦生产。",
+        "source_id": "W005",
+        "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "晚播适用范围",
+          "stress": [
+            "干旱",
+            "盐碱"
+          ],
+          "practice": [
+            "晚播适用范围"
+          ],
+          "source_id": "W005",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 3,
+            "start": 90,
+            "end": 129
+          },
+          "source_sha256": "8cfbaada85c80926db98e13aea903010c13b0d51f3224a118c60b94d63196a37",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "春季小麦返青前在苗带间进行顶凌追肥，亩追施尿素12.5kg～15kg。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "返青期",
+          "scope": "production",
+          "topic": "顶凌追肥",
+          "stress": [],
+          "practice": [
+            "顶凌追肥"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "6.1 顶凌追肥",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 290,
+            "end": 325
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "content": "返青前进行麦田锄划和镇压。追肥8.2.1趁墒追肥返青前顶凌追肥，每亩施20kg尿素。8.2.2肥料水溶追施春季干旱无法趁墒追肥时，每亩将20kg尿素和500g磷酸二氢钾溶解于1m3～2m3水中，利用追肥机追施。",
+        "source_id": "W001",
+        "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "growth_stage": "返青期",
+          "scope": "production",
+          "topic": "春季追肥",
+          "stress": [
+            "干旱"
+          ],
+          "practice": [
+            "春季追肥"
+          ],
+          "source_id": "W001",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 6,
+          "section": "8 春季管理",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 6,
+            "start": 344,
+            "end": 449
+          },
+          "source_sha256": "5595fbf385436b2403a646eb7c60dccea63e0f4ac5f0ec111209a83d7f46a4f1",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "content": "在旱碱麦返青—拔节期，针对群体密植易倒伏、抗倒春寒能力弱等问题，重点开展拔节期壮秆抗逆化控技术研发，明确防倒抗逆制剂对作物株型、冠层结构与光合能力、植株抗逆能力及对麦穗性状与产量的调控效应，构建田间应用关键技术，提高小麦茎秆强度、优化株型和冠层结构、提高叶片抗逆性。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "返青期至拔节期",
+          "scope": "production",
+          "topic": "壮秆抗逆研发",
+          "stress": [
+            "倒伏"
+          ],
+          "practice": [
+            "壮秆抗逆研发"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2.2 返青拔节研发",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 917,
+            "end": 1050
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": [
+            "仅为研究方向，非已验证田间措施"
+          ]
+        }
+      },
+      {
+        "evidence_id": "E7",
+        "kind": "document_chunk",
+        "content": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "旱盐风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "倒伏",
+            "早衰"
+          ],
+          "practice": [
+            "旱盐风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2 研究建议",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E8",
+        "kind": "document_chunk",
+        "content": "其一为3月上中旬(3月6—15日前后),此时冬小麦进入返青阶段,气温回升加速土壤蒸发与作物蒸腾,而降水稀少,易形成阶段性水分亏缺,影响分蘖成穗与早期生物量积累;",
+        "source_id": "W011",
+        "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅/南皮",
+          "growth_stage": "返青期",
+          "scope": "production",
+          "topic": "返青水分亏缺",
+          "stress": [],
+          "practice": [
+            "返青水分亏缺"
+          ],
+          "source_id": "W011",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 10,
+          "section": "4.2 返青缺水窗口",
+          "locator": {
+            "file": "evidence\\raw\\W011_fulltext.pages.json",
+            "page": 10,
+            "start": 1490,
+            "end": 1570
+          },
+          "source_sha256": "b3579923c2a1bd53fba3ebbb00c320932957735b47a09dbc693e48307fbca158",
+          "limitations": []
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "在土壤返浆期，若土壤墒情充足，则利用土壤返浆，采用圆盘式追肥机追施氮肥，或在起身前将氮肥溶解于1m3～2m3水中，采用追施水溶肥机进行追施。7.1.2追肥量10月20日～10月31日播种的旱碱麦，亩施纯N6kg～8kg；11月1日之后播种的旱碱麦，亩施纯N10kg～12kg。",
+        "source_id": "W005",
+        "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "春季",
+          "scope": "production",
+          "topic": "晚播春促",
+          "stress": [],
+          "practice": [
+            "晚播春促"
+          ],
+          "source_id": "W005",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "7.1 春季追肥",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 4,
+            "start": 361,
+            "end": 499
+          },
+          "source_sha256": "8cfbaada85c80926db98e13aea903010c13b0d51f3224a118c60b94d63196a37",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "冬前未出苗的麦田，出苗前及时浅锄轻划。",
+        "source_id": "W005",
+        "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "春季",
+          "scope": "production",
+          "topic": "晚播春促",
+          "stress": [],
+          "practice": [
+            "晚播春促"
+          ],
+          "source_id": "W005",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "7.2 锄划",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 4,
+            "start": 504,
+            "end": 523
+          },
+          "source_sha256": "8cfbaada85c80926db98e13aea903010c13b0d51f3224a118c60b94d63196a37",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州市滨海平原盐碱干旱生态区（含盐量≤0.3%）的晚播旱碱麦生产。",
+        "source_id": "W005",
+        "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "晚播适用范围",
+          "stress": [
+            "干旱",
+            "盐碱"
+          ],
+          "practice": [
+            "晚播适用范围"
+          ],
+          "source_id": "W005",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 3,
+            "start": 90,
+            "end": 129
+          },
+          "source_sha256": "8cfbaada85c80926db98e13aea903010c13b0d51f3224a118c60b94d63196a37",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "春季小麦返青前在苗带间进行顶凌追肥，亩追施尿素12.5kg～15kg。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "返青期",
+          "scope": "production",
+          "topic": "顶凌追肥",
+          "stress": [],
+          "practice": [
+            "顶凌追肥"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "6.1 顶凌追肥",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 290,
+            "end": 325
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "content": "返青前进行麦田锄划和镇压。追肥8.2.1趁墒追肥返青前顶凌追肥，每亩施20kg尿素。8.2.2肥料水溶追施春季干旱无法趁墒追肥时，每亩将20kg尿素和500g磷酸二氢钾溶解于1m3～2m3水中，利用追肥机追施。",
+        "source_id": "W001",
+        "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "growth_stage": "返青期",
+          "scope": "production",
+          "topic": "春季追肥",
+          "stress": [
+            "干旱"
+          ],
+          "practice": [
+            "春季追肥"
+          ],
+          "source_id": "W001",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 6,
+          "section": "8 春季管理",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 6,
+            "start": 344,
+            "end": 449
+          },
+          "source_sha256": "5595fbf385436b2403a646eb7c60dccea63e0f4ac5f0ec111209a83d7f46a4f1",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7"
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "content": "在旱碱麦返青—拔节期，针对群体密植易倒伏、抗倒春寒能力弱等问题，重点开展拔节期壮秆抗逆化控技术研发，明确防倒抗逆制剂对作物株型、冠层结构与光合能力、植株抗逆能力及对麦穗性状与产量的调控效应，构建田间应用关键技术，提高小麦茎秆强度、优化株型和冠层结构、提高叶片抗逆性。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "返青期至拔节期",
+          "scope": "production",
+          "topic": "壮秆抗逆研发",
+          "stress": [
+            "倒伏"
+          ],
+          "practice": [
+            "壮秆抗逆研发"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2.2 返青拔节研发",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 917,
+            "end": 1050
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": [
+            "仅为研究方向，非已验证田间措施"
+          ]
+        },
+        "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml"
+      },
+      {
+        "evidence_id": "E7",
+        "kind": "document_chunk",
+        "content": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "旱盐风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "倒伏",
+            "早衰"
+          ],
+          "practice": [
+            "旱盐风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2 研究建议",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        },
+        "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml"
+      },
+      {
+        "evidence_id": "E8",
+        "kind": "document_chunk",
+        "content": "其一为3月上中旬(3月6—15日前后),此时冬小麦进入返青阶段,气温回升加速土壤蒸发与作物蒸腾,而降水稀少,易形成阶段性水分亏缺,影响分蘖成穗与早期生物量积累;",
+        "source_id": "W011",
+        "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅/南皮",
+          "growth_stage": "返青期",
+          "scope": "production",
+          "topic": "返青水分亏缺",
+          "stress": [],
+          "practice": [
+            "返青水分亏缺"
+          ],
+          "source_id": "W011",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 10,
+          "section": "4.2 返青缺水窗口",
+          "locator": {
+            "file": "evidence\\raw\\W011_fulltext.pages.json",
+            "page": 10,
+            "start": 1490,
+            "end": 1570
+          },
+          "source_sha256": "b3579923c2a1bd53fba3ebbb00c320932957735b47a09dbc693e48307fbca158",
+          "limitations": []
+        },
+        "url": "https://doi.org/10.12357/cjea.20250732"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中所有事实均来自实际引用证据：返浆期追肥及按播种时间区分追肥量[E1]、冬前未出苗麦田浅锄轻划[E2]、返青前锄划镇压[E5]、DB1309/T 320-2025适用范围[E3]、其他标准追肥量[E4][E5]、壮秆抗逆化控仅为研发方向[E6]、返青期水分亏缺风险[E8]均与证据内容一致；且结论明确区分不同标准、未合并为通用推荐，并说明无法判断是否适用于用户地块，符合证据边界。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis逐条复述了E1、E2、E3、E4、E5、E6、E7、E8的原文内容，数值、适用范围、研发方向表述均与引用证据一致，未添加证据外事实。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning基于引用证据说明DB1309/T 320-2025直接针对晚播旱碱麦春季减灾促苗、其他标准不能合并、化控技术仅为研发方向、返青期水分亏缺风险，并指出用户未提供地区、盐分、墒情、播种日期等信息，未超出证据范围。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice建议补充地区、土壤含盐量、墒情、播种日期以判断适用性，并在适用条件下引用E1、E2、E5给出标准内措施，同时提示其他标准不可直接套用、化控技术仅为研发方向、关注水分亏缺风险，均有对应引用证据支持，未推荐证据外农药或剂量。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实地块具体适用条件；此回答为文献依据及候选建议，不是现场确定性结论。"
+    },
+    "status": "insufficient_evidence",
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "在土壤返浆期，若土壤墒情充足，则利用土壤返浆，采用圆盘式追肥机追施氮肥，或在起身前将氮肥溶解于1m3～2m3水中，采用追施水溶肥机进行追施。7.1.2追肥量10月20日～10月31日播种的旱碱麦，亩施纯N6kg～8kg；11月1日之后播种的旱碱麦，亩施纯N10kg～12kg。",
+        "source_id": "W005",
+        "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "春季",
+          "scope": "production",
+          "topic": "晚播春促",
+          "stress": [],
+          "practice": [
+            "晚播春促"
+          ],
+          "source_id": "W005",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "7.1 春季追肥",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 4,
+            "start": 361,
+            "end": 499
+          },
+          "source_sha256": "8cfbaada85c80926db98e13aea903010c13b0d51f3224a118c60b94d63196a37",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "冬前未出苗的麦田，出苗前及时浅锄轻划。",
+        "source_id": "W005",
+        "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "春季",
+          "scope": "production",
+          "topic": "晚播春促",
+          "stress": [],
+          "practice": [
+            "晚播春促"
+          ],
+          "source_id": "W005",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "7.2 锄划",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 4,
+            "start": 504,
+            "end": 523
+          },
+          "source_sha256": "8cfbaada85c80926db98e13aea903010c13b0d51f3224a118c60b94d63196a37",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州市滨海平原盐碱干旱生态区（含盐量≤0.3%）的晚播旱碱麦生产。",
+        "source_id": "W005",
+        "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "晚播适用范围",
+          "stress": [
+            "干旱",
+            "盐碱"
+          ],
+          "practice": [
+            "晚播适用范围"
+          ],
+          "source_id": "W005",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W005_fulltext.pages.json",
+            "page": 3,
+            "start": 90,
+            "end": 129
+          },
+          "source_sha256": "8cfbaada85c80926db98e13aea903010c13b0d51f3224a118c60b94d63196a37",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "春季小麦返青前在苗带间进行顶凌追肥，亩追施尿素12.5kg～15kg。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "返青期",
+          "scope": "production",
+          "topic": "顶凌追肥",
+          "stress": [],
+          "practice": [
+            "顶凌追肥"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "6.1 顶凌追肥",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 290,
+            "end": 325
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "content": "返青前进行麦田锄划和镇压。追肥8.2.1趁墒追肥返青前顶凌追肥，每亩施20kg尿素。8.2.2肥料水溶追施春季干旱无法趁墒追肥时，每亩将20kg尿素和500g磷酸二氢钾溶解于1m3～2m3水中，利用追肥机追施。",
+        "source_id": "W001",
+        "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "growth_stage": "返青期",
+          "scope": "production",
+          "topic": "春季追肥",
+          "stress": [
+            "干旱"
+          ],
+          "practice": [
+            "春季追肥"
+          ],
+          "source_id": "W001",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 6,
+          "section": "8 春季管理",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 6,
+            "start": 344,
+            "end": 449
+          },
+          "source_sha256": "5595fbf385436b2403a646eb7c60dccea63e0f4ac5f0ec111209a83d7f46a4f1",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7"
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "content": "在旱碱麦返青—拔节期，针对群体密植易倒伏、抗倒春寒能力弱等问题，重点开展拔节期壮秆抗逆化控技术研发，明确防倒抗逆制剂对作物株型、冠层结构与光合能力、植株抗逆能力及对麦穗性状与产量的调控效应，构建田间应用关键技术，提高小麦茎秆强度、优化株型和冠层结构、提高叶片抗逆性。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "返青期至拔节期",
+          "scope": "production",
+          "topic": "壮秆抗逆研发",
+          "stress": [
+            "倒伏"
+          ],
+          "practice": [
+            "壮秆抗逆研发"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2.2 返青拔节研发",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 917,
+            "end": 1050
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": [
+            "仅为研究方向，非已验证田间措施"
+          ]
+        },
+        "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml"
+      },
+      {
+        "evidence_id": "E7",
+        "kind": "document_chunk",
+        "content": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "旱盐风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "倒伏",
+            "早衰"
+          ],
+          "practice": [
+            "旱盐风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2 研究建议",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        },
+        "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml"
+      },
+      {
+        "evidence_id": "E8",
+        "kind": "document_chunk",
+        "content": "其一为3月上中旬(3月6—15日前后),此时冬小麦进入返青阶段,气温回升加速土壤蒸发与作物蒸腾,而降水稀少,易形成阶段性水分亏缺,影响分蘖成穗与早期生物量积累;",
+        "source_id": "W011",
+        "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅/南皮",
+          "growth_stage": "返青期",
+          "scope": "production",
+          "topic": "返青水分亏缺",
+          "stress": [],
+          "practice": [
+            "返青水分亏缺"
+          ],
+          "source_id": "W011",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 10,
+          "section": "4.2 返青缺水窗口",
+          "locator": {
+            "file": "evidence\\raw\\W011_fulltext.pages.json",
+            "page": 10,
+            "start": 1490,
+            "end": 1570
+          },
+          "source_sha256": "b3579923c2a1bd53fba3ebbb00c320932957735b47a09dbc693e48307fbca158",
+          "limitations": []
+        },
+        "url": "https://doi.org/10.12357/cjea.20250732"
+      }
+    ],
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "针对旱碱麦晚播后春季减灾促苗，现有证据支持的措施包括：在土壤返浆期且墒情充足时，利用返浆追施氮肥，追肥量按播种时间区分——10月20日至10月31日播种的亩施纯N 6kg～8kg，11月1日之后播种的亩施纯N 10kg～12kg [E1] ；冬前未出苗的麦田，出苗前及时浅锄轻划 [E2] ；返青前进行麦田锄划和镇压 [E5] 。上述措施来自DB1309/T 320-2025，适用于沧州市滨海平原盐碱干旱生态区（含盐量≤0.3%）的晚播旱碱麦生产 [E3] 。其他标准中的春季追肥措施（如DB1309/T 330-2025的顶凌追肥亩追施尿素12.5kg～15kg [E4] ，DB13/T 5659-2023的返青前顶凌追肥每亩施20kg尿素或干旱时水溶追施20kg尿素加500g磷酸二氢钾 [E5] ）属于不同标准，不能与DB1309/T 320-2025的追肥量合并为通用推荐。论文提出的壮秆抗逆化控技术仅为研发方向，尚未验证为有效田间措施 [E6] 。返青期存在阶段性水分亏缺风险，可能影响分蘖成穗与早期生物量积累 [E8] 。由于用户未提供地区、土壤盐分、墒情等具体条件，无法判断上述措施是否适用于用户地块。",
+      "supporting_points": [
+        "DB1309/T 320-2025规定：在土壤返浆期，若土壤墒情充足，则利用土壤返浆，采用圆盘式追肥机追施氮肥，或在起身前将氮肥溶解于1m3～2m3水中，采用追施水溶肥机进行追施；追肥量10月20日～10月31日播种的旱碱麦，亩施纯N6kg～8kg；11月1日之后播种的旱碱麦，亩施纯N10kg～12kg [E1] 。冬前未出苗的麦田，出苗前及时浅锄轻划 [E2] 。该文件适用于沧州市滨海平原盐碱干旱生态区（含盐量≤0.3%）的晚播旱碱麦生产 [E3] 。DB1309/T 330-2025规定：春季小麦返青前在苗带间进行顶凌追肥，亩追施尿素12.5kg～15kg [E4] 。DB13/T 5659-2023规定：返青前进行麦田锄划和镇压；返青前顶凌追肥，每亩施20kg尿素；春季干旱无法趁墒追肥时，每亩将20kg尿素和500g磷酸二氢钾溶解于1m3～2m3水中，利用追肥机追施 [E5] 。论文指出：在旱碱麦返青—拔节期，针对群体密植易倒伏、抗倒春寒能力弱等问题，重点开展拔节期壮秆抗逆化控技术研发，明确防倒抗逆制剂对作物株型、冠层结构与光合能力、植株抗逆能力及对麦穗性状与产量的调控效应，构建田间应用关键技术 [E6] 。论文还指出：沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究 [E7] 。气象数据研究指出：3月上中旬冬小麦进入返青阶段，气温回升加速土壤蒸发与作物蒸腾，而降水稀少，易形成阶段性水分亏缺，影响分蘖成穗与早期生物量积累 [E8] 。"
+      ],
+      "uncertainties": [
+        "现有证据中，DB1309/T 320-2025直接针对晚播旱碱麦春季减灾促苗，给出了追肥、锄划等具体措施，并明确了适用区域和盐分条件（含盐量≤0.3%） [E1]  [E2]  [E3] 。但用户未提供地区、土壤盐分、墒情、播种具体日期等信息，无法确认其地块是否满足该标准的适用条件。DB1309/T 330-2025和DB13/T 5659-2023也包含春季追肥措施，但属于不同标准，其追肥量、肥料种类和适用条件与DB1309/T 320-2025不同，不能合并为通用推荐 [E4]  [E5] 。论文提出的壮秆抗逆化控技术仅为研发方向，未提供已验证的制剂名称、用量和效果，不能作为当前可执行措施 [E6] 。返青期水分亏缺风险有研究支持，但未给出具体灌溉建议 [E8] 。因此，当前仅能基于标准条款提供有条件的技术选项，不能声称适用于用户地块。"
+      ]
+    },
+    "answer": "针对旱碱麦晚播后春季减灾促苗，现有证据支持的措施包括：在土壤返浆期且墒情充足时，利用返浆追施氮肥，追肥量按播种时间区分——10月20日至10月31日播种的亩施纯N 6kg～8kg，11月1日之后播种的亩施纯N 10kg～12kg [E1] ；冬前未出苗的麦田，出苗前及时浅锄轻划 [E2] ；返青前进行麦田锄划和镇压 [E5] 。上述措施来自DB1309/T 320-2025，适用于沧州市滨海平原盐碱干旱生态区（含盐量≤0.3%）的晚播旱碱麦生产 [E3] 。其他标准中的春季追肥措施（如DB1309/T 330-2025的顶凌追肥亩追施尿素12.5kg～15kg [E4] ，DB13/T 5659-2023的返青前顶凌追肥每亩施20kg尿素或干旱时水溶追施20kg尿素加500g磷酸二氢钾 [E5] ）属于不同标准，不能与DB1309/T 320-2025的追肥量合并为通用推荐。论文提出的壮秆抗逆化控技术仅为研发方向，尚未验证为有效田间措施 [E6] 。返青期存在阶段性水分亏缺风险，可能影响分蘖成穗与早期生物量积累 [E8] 。由于用户未提供地区、土壤盐分、墒情等具体条件，无法判断上述措施是否适用于用户地块。\n\nDB1309/T 320-2025规定：在土壤返浆期，若土壤墒情充足，则利用土壤返浆，采用圆盘式追肥机追施氮肥，或在起身前将氮肥溶解于1m3～2m3水中，采用追施水溶肥机进行追施；追肥量10月20日～10月31日播种的旱碱麦，亩施纯N6kg～8kg；11月1日之后播种的旱碱麦，亩施纯N10kg～12kg [E1] 。冬前未出苗的麦田，出苗前及时浅锄轻划 [E2] 。该文件适用于沧州市滨海平原盐碱干旱生态区（含盐量≤0.3%）的晚播旱碱麦生产 [E3] 。DB1309/T 330-2025规定：春季小麦返青前在苗带间进行顶凌追肥，亩追施尿素12.5kg～15kg [E4] 。DB13/T 5659-2023规定：返青前进行麦田锄划和镇压；返青前顶凌追肥，每亩施20kg尿素；春季干旱无法趁墒追肥时，每亩将20kg尿素和500g磷酸二氢钾溶解于1m3～2m3水中，利用追肥机追施 [E5] 。论文指出：在旱碱麦返青—拔节期，针对群体密植易倒伏、抗倒春寒能力弱等问题，重点开展拔节期壮秆抗逆化控技术研发，明确防倒抗逆制剂对作物株型、冠层结构与光合能力、植株抗逆能力及对麦穗性状与产量的调控效应，构建田间应用关键技术 [E6] 。论文还指出：沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究 [E7] 。气象数据研究指出：3月上中旬冬小麦进入返青阶段，气温回升加速土壤蒸发与作物蒸腾，而降水稀少，易形成阶段性水分亏缺，影响分蘖成穗与早期生物量积累 [E8] 。\n\n现有证据中，DB1309/T 320-2025直接针对晚播旱碱麦春季减灾促苗，给出了追肥、锄划等具体措施，并明确了适用区域和盐分条件（含盐量≤0.3%） [E1]  [E2]  [E3] 。但用户未提供地区、土壤盐分、墒情、播种具体日期等信息，无法确认其地块是否满足该标准的适用条件。DB1309/T 330-2025和DB13/T 5659-2023也包含春季追肥措施，但属于不同标准，其追肥量、肥料种类和适用条件与DB1309/T 320-2025不同，不能合并为通用推荐 [E4]  [E5] 。论文提出的壮秆抗逆化控技术仅为研发方向，未提供已验证的制剂名称、用量和效果，不能作为当前可执行措施 [E6] 。返青期水分亏缺风险有研究支持，但未给出具体灌溉建议 [E8] 。因此，当前仅能基于标准条款提供有条件的技术选项，不能声称适用于用户地块。\n\n建议用户补充所在地区、土壤含盐量、土壤墒情、播种日期等信息，以便判断DB1309/T 320-2025的适用性 [E3] 。若地块位于沧州市滨海平原盐碱干旱生态区且含盐量≤0.3%，可参考该标准：在土壤返浆期且墒情充足时，利用返浆追施氮肥，10月20日至10月31日播种的亩施纯N 6kg～8kg，11月1日之后播种的亩施纯N 10kg～12kg [E1] ；冬前未出苗的麦田出苗前浅锄轻划 [E2] ；返青前进行锄划和镇压 [E5] 。若考虑其他标准的追肥措施，需注意其适用条件不同，不可直接套用 [E4]  [E5] 。对于论文提及的壮秆抗逆化控技术，目前仅为研发方向，不建议作为已验证措施使用 [E6] 。返青期需关注水分亏缺风险 [E8] 。"
+  },
+  {
+    "crop_id": "huanghua_hanjianmai",
+    "question": "灌浆期遇到持续高温干旱，旱碱麦主要面临什么风险？",
+    "entities": {
+      "crop": "huanghua_hanjianmai",
+      "region": null,
+      "growth_stage": "灌浆期",
+      "soil_salinity": null,
+      "soil_moisture": "low",
+      "temperature": null,
+      "rainfall": null,
+      "variety": null,
+      "quality_intent": null,
+      "stress": [
+        "干旱胁迫"
+      ],
+      "practice": [],
+      "intent": "risk_query"
+    },
+    "generation_called": true,
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 6,
+      "vector_evidence_count": 4,
+      "fused_count": 4
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "HH-E001",
+          "source": "huanghua_hanjianmai:311557a546a5ecdf",
+          "target": "huanghua_hanjianmai:aa2657754e830689",
+          "relation": "APPLIES_IN",
+          "kind": "fact",
+          "source_id": "W001",
+          "evidence_ids": [
+            "W001"
+          ],
+          "chunk_id": "HH-C001",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "stage_ids": [],
+          "growth_stage": null,
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "本文件适用于土壤含盐量为1‰～3‰的河北省滨海平原盐碱干旱生态类型区的冬小麦生产。",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 5,
+            "start": 90,
+            "end": 131
+          },
+          "conditions": [
+            "原文地区：河北省滨海平原盐碱干旱生态类型区",
+            "生育阶段：未标定"
+          ]
+        },
+        {
+          "id": "HH-E039",
+          "source": "huanghua_hanjianmai:e71d276619e12b82",
+          "target": "huanghua_hanjianmai:f3194914c0ff0572",
+          "relation": "ASSOCIATED_WITH",
+          "kind": "mechanism",
+          "source_id": "W008",
+          "evidence_ids": [
+            "W008"
+          ],
+          "chunk_id": "HH-C025",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [],
+          "growth_stage": null,
+          "scope": "production",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "evidence_text": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：未标定"
+          ]
+        },
+        {
+          "id": "HH-E040",
+          "source": "huanghua_hanjianmai:e71d276619e12b82",
+          "target": "huanghua_hanjianmai:c9259dd0ae96335b",
+          "relation": "ASSOCIATED_WITH",
+          "kind": "mechanism",
+          "source_id": "W008",
+          "evidence_ids": [
+            "W008"
+          ],
+          "chunk_id": "HH-C025",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [],
+          "growth_stage": null,
+          "scope": "production",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "evidence_text": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：未标定"
+          ]
+        },
+        {
+          "id": "HH-E041",
+          "source": "huanghua_hanjianmai:e71d276619e12b82",
+          "target": "huanghua_hanjianmai:749055fb50da045c",
+          "relation": "ASSOCIATED_WITH",
+          "kind": "mechanism",
+          "source_id": "W008",
+          "evidence_ids": [
+            "W008"
+          ],
+          "chunk_id": "HH-C025",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [],
+          "growth_stage": null,
+          "scope": "production",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "evidence_text": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：未标定"
+          ]
+        },
+        {
+          "id": "HH-E044",
+          "source": "huanghua_hanjianmai:7f92040dbde51b35",
+          "target": "huanghua_hanjianmai:61a8d4c075abfb40",
+          "relation": "HAS_RISK",
+          "kind": "fact",
+          "source_id": "W008",
+          "evidence_ids": [
+            "W008"
+          ],
+          "chunk_id": "HH-C028",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [
+            "huanghua_hanjianmai:7f92040dbde51b35"
+          ],
+          "growth_stage": "灌浆期",
+          "scope": "production",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "evidence_text": "在旱碱麦灌浆期，针对盐碱地干旱条件下，小麦应对干热风能力不足、易早衰、灌浆强度低、持续期短等问题，重点开展稳叶促粒调控技术研究，结合“一喷三防”等技术，促进小麦籽粒建成，提高籽粒灌浆速率，维持叶片及非叶器官的光合能力，促进小麦产量提升和品质改善。",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 1050,
+            "end": 1173
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：灌浆期"
+          ]
+        },
+        {
+          "id": "HH-E045",
+          "source": "huanghua_hanjianmai:7f92040dbde51b35",
+          "target": "huanghua_hanjianmai:ee93822bca7251b8",
+          "relation": "HAS_RISK",
+          "kind": "fact",
+          "source_id": "W008",
+          "evidence_ids": [
+            "W008"
+          ],
+          "chunk_id": "HH-C028",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [
+            "huanghua_hanjianmai:7f92040dbde51b35"
+          ],
+          "growth_stage": "灌浆期",
+          "scope": "production",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "evidence_text": "在旱碱麦灌浆期，针对盐碱地干旱条件下，小麦应对干热风能力不足、易早衰、灌浆强度低、持续期短等问题，重点开展稳叶促粒调控技术研究，结合“一喷三防”等技术，促进小麦籽粒建成，提高籽粒灌浆速率，维持叶片及非叶器官的光合能力，促进小麦产量提升和品质改善。",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 1050,
+            "end": 1173
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：灌浆期"
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "宽幅沟播适用范围",
+          "stress": [],
+          "practice": [
+            "宽幅沟播适用范围"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 3,
+            "start": 83,
+            "end": 111
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "本文件适用于土壤含盐量为1‰～3‰的河北省滨海平原盐碱干旱生态类型区的冬小麦生产。",
+        "source_id": "W001",
+        "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "适用范围",
+          "stress": [
+            "干旱",
+            "盐碱"
+          ],
+          "practice": [
+            "适用范围"
+          ],
+          "source_id": "W001",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 5,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 5,
+            "start": 90,
+            "end": 131
+          },
+          "source_sha256": "5595fbf385436b2403a646eb7c60dccea63e0f4ac5f0ec111209a83d7f46a4f1",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "content": "在旱碱麦灌浆期，针对盐碱地干旱条件下，小麦应对干热风能力不足、易早衰、灌浆强度低、持续期短等问题，重点开展稳叶促粒调控技术研究，结合“一喷三防”等技术，促进小麦籽粒建成，提高籽粒灌浆速率，维持叶片及非叶器官的光合能力，促进小麦产量提升和品质改善。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "灌浆期",
+          "scope": "production",
+          "topic": "干热风风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "早衰"
+          ],
+          "practice": [
+            "干热风风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2.2 灌浆研发",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 1050,
+            "end": 1173
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "旱盐风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "倒伏",
+            "早衰"
+          ],
+          "practice": [
+            "旱盐风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2 研究建议",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "宽幅沟播适用范围",
+          "stress": [],
+          "practice": [
+            "宽幅沟播适用范围"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 3,
+            "start": 83,
+            "end": 111
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "本文件适用于土壤含盐量为1‰～3‰的河北省滨海平原盐碱干旱生态类型区的冬小麦生产。",
+        "source_id": "W001",
+        "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "适用范围",
+          "stress": [
+            "干旱",
+            "盐碱"
+          ],
+          "practice": [
+            "适用范围"
+          ],
+          "source_id": "W001",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 5,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 5,
+            "start": 90,
+            "end": 131
+          },
+          "source_sha256": "5595fbf385436b2403a646eb7c60dccea63e0f4ac5f0ec111209a83d7f46a4f1",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "content": "在旱碱麦灌浆期，针对盐碱地干旱条件下，小麦应对干热风能力不足、易早衰、灌浆强度低、持续期短等问题，重点开展稳叶促粒调控技术研究，结合“一喷三防”等技术，促进小麦籽粒建成，提高籽粒灌浆速率，维持叶片及非叶器官的光合能力，促进小麦产量提升和品质改善。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "灌浆期",
+          "scope": "production",
+          "topic": "干热风风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "早衰"
+          ],
+          "practice": [
+            "干热风风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2.2 灌浆研发",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 1050,
+            "end": 1173
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        },
+        "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "旱盐风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "倒伏",
+            "早衰"
+          ],
+          "practice": [
+            "旱盐风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2 研究建议",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        },
+        "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中关于灌浆期盐碱地干旱条件下旱碱麦面临干热风应对能力不足、易早衰、灌浆强度低、持续期短，并可能影响籽粒建成、灌浆速率、光合能力及产量品质的表述，均有E3直接支持；关于沧州盐碱地干旱常态化背景下后期抗干热风能力差、易早衰限制绿色增产的表述，有E4直接支持；关于现有证据未提供用户地块具体盐分、温度、降水、品种等信息，无法判断风险发生程度或是否适用的表述，与E1、E2仅提供适用范围、未涉及用户地块具体条件一致，属于对证据缺口的合理说明。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对E3、E4内容的转述与原文一致，且明确标注了引用；对E1、E2仅说明适用范围、未涉及灌浆期高温干旱风险具体条款的概括，也与E1、E2原文一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning对E3、E4来源性质的判断（区域研究文献、研究建议或研究进展，非标准条款、非用户地块观测结论）与证据元数据一致；对E3未提供高温阈值、持续时间或风险等级，E4未限定灌浆期且未给出用户地块条件的判断，均符合证据内容；对E1、E2不能推断用户地块盐分条件、不能合并为通用推荐的判断，也符合证据范围。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice建议补充地块位置、土壤含盐量、灌浆期温度与降水、品种及田间长势等信息，并对照E1或E2适用范围判断标准是否适用，符合E1、E2的证据范围；建议参考E3的稳叶促粒调控研究方向但不应直接作为已验证田间措施，符合E3作为研究文献的性质；建议关注E4的抗逆增产调控制剂研发与调控技术研究进展，并明确其仅为研究建议、不代表制剂已验证有效、不提供未审核药剂和用量，符合E4内容及证据边界。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实地块具体适用条件；此回答为文献依据及候选建议，不是现场确定性结论。"
+    },
+    "status": "insufficient_evidence",
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "宽幅沟播适用范围",
+          "stress": [],
+          "practice": [
+            "宽幅沟播适用范围"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 3,
+            "start": 83,
+            "end": 111
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "本文件适用于土壤含盐量为1‰～3‰的河北省滨海平原盐碱干旱生态类型区的冬小麦生产。",
+        "source_id": "W001",
+        "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北省滨海平原盐碱干旱生态类型区",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "适用范围",
+          "stress": [
+            "干旱",
+            "盐碱"
+          ],
+          "practice": [
+            "适用范围"
+          ],
+          "source_id": "W001",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 5,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W001_fulltext.pages.json",
+            "page": 5,
+            "start": 90,
+            "end": 131
+          },
+          "source_sha256": "5595fbf385436b2403a646eb7c60dccea63e0f4ac5f0ec111209a83d7f46a4f1",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "content": "在旱碱麦灌浆期，针对盐碱地干旱条件下，小麦应对干热风能力不足、易早衰、灌浆强度低、持续期短等问题，重点开展稳叶促粒调控技术研究，结合“一喷三防”等技术，促进小麦籽粒建成，提高籽粒灌浆速率，维持叶片及非叶器官的光合能力，促进小麦产量提升和品质改善。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "灌浆期",
+          "scope": "production",
+          "topic": "干热风风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "早衰"
+          ],
+          "practice": [
+            "干热风风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2.2 灌浆研发",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 1050,
+            "end": 1173
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        },
+        "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "旱盐风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "倒伏",
+            "早衰"
+          ],
+          "practice": [
+            "旱盐风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2 研究建议",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        },
+        "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml"
+      }
+    ],
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "在灌浆期持续高温干旱条件下，旱碱麦主要面临干热风应对能力不足、易早衰、灌浆强度低、灌浆持续期短等风险，进而可能影响籽粒建成、灌浆速率、光合能力及产量和品质 [E3] 。此外，沧州盐碱地干旱常态化背景下，旱碱麦还存在后期抗干热风能力差、易早衰等限制绿色增产的问题 [E4] 。现有证据未提供用户地块的具体盐分、温度、降水、品种等信息，无法判断这些风险在用户地块的发生程度或是否适用 [E1]  [E2] 。",
+      "supporting_points": [
+        "[E3]指出，在旱碱麦灌浆期，针对盐碱地干旱条件，小麦应对干热风能力不足、易早衰、灌浆强度低、持续期短等问题，需重点开展稳叶促粒调控技术研究，结合“一喷三防”等技术，促进籽粒建成、提高灌浆速率、维持叶片及非叶器官光合能力，促进产量提升和品质改善 [E3] 。[E4]指出，沧州市盐碱地干旱常态化情况下，存在后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展抗逆增产调控制剂研发与调控技术研究 [E4] 。[E1]和[E2]分别给出了沧州地区含盐量1‰～3‰旱碱地冬小麦生产、河北省滨海平原盐碱干旱生态类型区土壤含盐量1‰～3‰冬小麦生产的适用范围，但未涉及灌浆期高温干旱风险的具体条款 [E1]  [E2] 。"
+      ],
+      "uncertainties": [
+        "证据[E3]和[E4]均来自沧州区域研究文献，属于论文研究建议或区域研究进展，不是标准条款，也不是针对用户地块的观测结论 [E3]  [E4] 。[E3]明确针对灌浆期盐碱地干旱条件，与用户问题中的生长阶段和干旱胁迫部分吻合，但未提供高温的具体阈值、持续时间或风险等级 [E3] 。[E4]提及干旱常态化下的后期抗干热风能力差、易早衰，但未限定灌浆期，也未给出用户地块的盐分、温度、降水、品种等条件 [E4] 。[E1]和[E2]仅说明标准适用范围，不能据此推断用户地块的盐分条件满足标准要求，也不能将不同标准的适用范围合并为通用推荐 [E1]  [E2] 。当前缺少用户地区、土壤盐分、温度、降水、品种等关键信息，无法评估风险发生概率或严重程度，因此sufficient=false。"
+      ]
+    },
+    "answer": "在灌浆期持续高温干旱条件下，旱碱麦主要面临干热风应对能力不足、易早衰、灌浆强度低、灌浆持续期短等风险，进而可能影响籽粒建成、灌浆速率、光合能力及产量和品质 [E3] 。此外，沧州盐碱地干旱常态化背景下，旱碱麦还存在后期抗干热风能力差、易早衰等限制绿色增产的问题 [E4] 。现有证据未提供用户地块的具体盐分、温度、降水、品种等信息，无法判断这些风险在用户地块的发生程度或是否适用 [E1]  [E2] 。\n\n[E3]指出，在旱碱麦灌浆期，针对盐碱地干旱条件，小麦应对干热风能力不足、易早衰、灌浆强度低、持续期短等问题，需重点开展稳叶促粒调控技术研究，结合“一喷三防”等技术，促进籽粒建成、提高灌浆速率、维持叶片及非叶器官光合能力，促进产量提升和品质改善 [E3] 。[E4]指出，沧州市盐碱地干旱常态化情况下，存在后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展抗逆增产调控制剂研发与调控技术研究 [E4] 。[E1]和[E2]分别给出了沧州地区含盐量1‰～3‰旱碱地冬小麦生产、河北省滨海平原盐碱干旱生态类型区土壤含盐量1‰～3‰冬小麦生产的适用范围，但未涉及灌浆期高温干旱风险的具体条款 [E1]  [E2] 。\n\n证据[E3]和[E4]均来自沧州区域研究文献，属于论文研究建议或区域研究进展，不是标准条款，也不是针对用户地块的观测结论 [E3]  [E4] 。[E3]明确针对灌浆期盐碱地干旱条件，与用户问题中的生长阶段和干旱胁迫部分吻合，但未提供高温的具体阈值、持续时间或风险等级 [E3] 。[E4]提及干旱常态化下的后期抗干热风能力差、易早衰，但未限定灌浆期，也未给出用户地块的盐分、温度、降水、品种等条件 [E4] 。[E1]和[E2]仅说明标准适用范围，不能据此推断用户地块的盐分条件满足标准要求，也不能将不同标准的适用范围合并为通用推荐 [E1]  [E2] 。当前缺少用户地区、土壤盐分、温度、降水、品种等关键信息，无法评估风险发生概率或严重程度，因此sufficient=false。\n\n建议下一步补充用户地块的具体位置、土壤含盐量、灌浆期温度与降水、品种及田间长势等信息，以便对照[E1]或[E2]的适用范围判断相关标准是否适用 [E1]  [E2] 。在信息不足时，可参考[E3]提出的灌浆期稳叶促粒调控研究方向，关注干热风应对能力不足、早衰、灌浆强度低和持续期短等风险，但不应将论文研究建议直接作为已验证的田间措施使用 [E3] 。同时可关注[E4]提出的抗逆增产调控制剂研发与调控技术研究进展，但该证据仅为研究建议，不代表制剂已验证有效，不提供未审核药剂和用量 [E4] 。"
+  },
+  {
+    "crop_id": "huanghua_hanjianmai",
+    "question": "为什么宽幅沟播有助于旱碱麦抗旱躲盐？",
+    "entities": {
+      "crop": "huanghua_hanjianmai",
+      "region": null,
+      "growth_stage": "播种期",
+      "soil_salinity": null,
+      "soil_moisture": null,
+      "temperature": null,
+      "rainfall": null,
+      "variety": null,
+      "quality_intent": null,
+      "stress": [
+        "盐胁迫"
+      ],
+      "practice": [
+        "宽幅沟播"
+      ],
+      "intent": "practice_query"
+    },
+    "generation_called": true,
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 3,
+      "vector_evidence_count": 8,
+      "fused_count": 8
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "HH-E033",
+          "source": "huanghua_hanjianmai:d9db17c9ce600f95",
+          "target": "huanghua_hanjianmai:f6ee785d760ad93a",
+          "relation": "APPLIES_IN",
+          "kind": "fact",
+          "source_id": "W006",
+          "evidence_ids": [
+            "W006"
+          ],
+          "chunk_id": "HH-C020",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [],
+          "growth_stage": null,
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 3,
+            "start": 83,
+            "end": 111
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：未标定"
+          ]
+        },
+        {
+          "id": "HH-E036",
+          "source": "huanghua_hanjianmai:d9db17c9ce600f95",
+          "target": "huanghua_hanjianmai:4795467f7fd7b728",
+          "relation": "OCCURS_AT_STAGE",
+          "kind": "fact",
+          "source_id": "W006",
+          "evidence_ids": [
+            "W006"
+          ],
+          "chunk_id": "HH-C022",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [
+            "huanghua_hanjianmai:4795467f7fd7b728"
+          ],
+          "growth_stage": "播种期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "适宜播期10月1日～10月7日，亩播量10kg～12.5kg。适播期后，每推迟1天，亩播量增加0.5kg，最多不超过22.5kg。",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 99,
+            "end": 164
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：播种期"
+          ]
+        },
+        {
+          "id": "HH-E037",
+          "source": "huanghua_hanjianmai:d9db17c9ce600f95",
+          "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+          "relation": "REQUIRES",
+          "kind": "fact",
+          "source_id": "W006",
+          "evidence_ids": [
+            "W006"
+          ],
+          "chunk_id": "HH-C023",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "沧州",
+          "stage_ids": [
+            "huanghua_hanjianmai:4795467f7fd7b728"
+          ],
+          "growth_stage": "播种期",
+          "scope": "production",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm。5.3土壤墒情耕层土壤相对含水量70%～80%播种。",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 171,
+            "end": 280
+          },
+          "conditions": [
+            "原文地区：沧州",
+            "生育阶段：播种期"
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "宽幅沟播适用范围",
+          "stress": [],
+          "practice": [
+            "宽幅沟播适用范围"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 3,
+            "start": 83,
+            "end": 111
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm。5.3土壤墒情耕层土壤相对含水量70%～80%播种。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "宽幅沟播",
+          "stress": [],
+          "practice": [
+            "宽幅沟播"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5.2 种植模式及5.3 墒情",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 171,
+            "end": 280
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "content": "适宜播期10月1日～10月7日，亩播量10kg～12.5kg。适播期后，每推迟1天，亩播量增加0.5kg，最多不超过22.5kg。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "宽幅沟播播期",
+          "stress": [],
+          "practice": [
+            "宽幅沟播播期"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5.1 播期与播量",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 99,
+            "end": 164
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm，见图1。4适用条件适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块。",
+        "source_id": "W004",
+        "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "探墒保播",
+          "stress": [],
+          "practice": [
+            "探墒保播"
+          ],
+          "source_id": "W004",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "3.1 定义及4 适用条件",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 3,
+            "start": 369,
+            "end": 440
+          },
+          "source_sha256": "ff0d0ff953abbe907786b1fa87934219f154f02feecdb60b6bd3325c891577c7",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "content": "为达到保播、避盐的目的，利用专用农机具进行起垄沟内宽幅匀播的播种方式。",
+        "source_id": "W003",
+        "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "开沟接墒",
+          "stress": [],
+          "practice": [
+            "开沟接墒"
+          ],
+          "source_id": "W003",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 5,
+          "section": "3 定义",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 5,
+            "start": 314,
+            "end": 349
+          },
+          "source_sha256": "3aa03dcbcdf8b5c096b91fd0407a10262ab8a9062a7aa57c3443a5db782ee8a9",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E6",
+        "kind": "document_chunk",
+        "content": "5.3.3.2土壤墒情较差的地块（土壤含水量为田间最大持水量的65%左右），采用沟播种肥一体机播种，根据干土层厚度调整开沟深度，最深开沟深度12cm，将种子均匀撒播于沟内，覆土2cm～3cm。",
+        "source_id": "W003",
+        "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "开沟接墒",
+          "stress": [],
+          "practice": [
+            "开沟接墒"
+          ],
+          "source_id": "W003",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 6,
+          "section": "5.3.3.2 墒情较差",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 6,
+            "start": 180,
+            "end": 276
+          },
+          "source_sha256": "3aa03dcbcdf8b5c096b91fd0407a10262ab8a9062a7aa57c3443a5db782ee8a9",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E7",
+        "kind": "document_chunk",
+        "content": "5.3.3.1土壤墒情较好的地块（土壤含水量为田间最大持水量的70%左右），整地后用沟播种肥一体播种机播种，开沟深度7cm～8cm，将种子均匀撒播于沟内，覆土3cm。",
+        "source_id": "W003",
+        "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "开沟接墒",
+          "stress": [],
+          "practice": [
+            "开沟接墒"
+          ],
+          "source_id": "W003",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 6,
+          "section": "5.3.3.1 墒情较好",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 6,
+            "start": 97,
+            "end": 180
+          },
+          "source_sha256": "3aa03dcbcdf8b5c096b91fd0407a10262ab8a9062a7aa57c3443a5db782ee8a9",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E8",
+        "kind": "document_chunk",
+        "content": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "旱盐风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "倒伏",
+            "早衰"
+          ],
+          "practice": [
+            "旱盐风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2 研究建议",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "宽幅沟播适用范围",
+          "stress": [],
+          "practice": [
+            "宽幅沟播适用范围"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 3,
+            "start": 83,
+            "end": 111
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm。5.3土壤墒情耕层土壤相对含水量70%～80%播种。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "宽幅沟播",
+          "stress": [],
+          "practice": [
+            "宽幅沟播"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5.2 种植模式及5.3 墒情",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 171,
+            "end": 280
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm，见图1。4适用条件适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块。",
+        "source_id": "W004",
+        "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "探墒保播",
+          "stress": [],
+          "practice": [
+            "探墒保播"
+          ],
+          "source_id": "W004",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "3.1 定义及4 适用条件",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 3,
+            "start": 369,
+            "end": 440
+          },
+          "source_sha256": "ff0d0ff953abbe907786b1fa87934219f154f02feecdb60b6bd3325c891577c7",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A"
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "content": "为达到保播、避盐的目的，利用专用农机具进行起垄沟内宽幅匀播的播种方式。",
+        "source_id": "W003",
+        "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "开沟接墒",
+          "stress": [],
+          "practice": [
+            "开沟接墒"
+          ],
+          "source_id": "W003",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 5,
+          "section": "3 定义",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 5,
+            "start": 314,
+            "end": 349
+          },
+          "source_sha256": "3aa03dcbcdf8b5c096b91fd0407a10262ab8a9062a7aa57c3443a5db782ee8a9",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/0d310eea2e6bb62171fec978faedf7ef47409f9eaa2296c6c908616c299cf68c"
+      },
+      {
+        "evidence_id": "E8",
+        "kind": "document_chunk",
+        "content": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "旱盐风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "倒伏",
+            "早衰"
+          ],
+          "practice": [
+            "旱盐风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2 研究建议",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        },
+        "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中关于DB1309/T 330-2025适用范围（沧州地区含盐量1‰～3‰旱碱地冬小麦）[E1]及宽幅沟播参数（沟深6cm～8cm、播深2cm～4cm、带幅宽14cm～16cm、幅间距20cm～26cm）[E2]均与引用证据一致；结论明确指出现有证据未提供抗旱躲盐机制或效果量数据，因此不能确认宽幅沟播有助于抗旱躲盐，也未判断适用于用户地块，未超出证据范围。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中E1、E2、E4、E5、E8的引用内容均与各自证据原文一致：E1适用范围、E2宽幅沟播参数、E5开沟接墒播种定义（保播、避盐）、E4探墒保播适用条件、E8沧州盐碱地干旱常态化问题及研究建议，均未添加未引用证据或常识补证。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning基于E2仅描述播种参数未说明抗旱躲盐机制、E5中“保播、避盐”出自开沟接墒播种定义不能等同于宽幅沟播作用、E1与E4适用条件不同不能合并为通用推荐，以及用户未提供地块关键信息，得出宽幅沟播抗旱躲盐属待验证假设、现有证据不足的结论，逻辑与引用证据一致，未补造缺失路径或效果量。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice中建议确认地区及含盐量对照E1适用范围、测定含水量和干土层厚度对照E2墒情要求或E4探墒保播条件、不宜合并不同标准参数、宽幅沟播效果需进一步获取直接证据，均与引用证据一致，未推荐具体农药、剂量、施药周期或生产操作，符合research模式要求。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实地块具体适用条件；此回答为文献依据及候选建议，不是现场确定性结论。"
+    },
+    "status": "insufficient_evidence",
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "宽幅沟播适用范围",
+          "stress": [],
+          "practice": [
+            "宽幅沟播适用范围"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "1 范围",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 3,
+            "start": 83,
+            "end": 111
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm。5.3土壤墒情耕层土壤相对含水量70%～80%播种。",
+        "source_id": "W006",
+        "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "宽幅沟播",
+          "stress": [],
+          "practice": [
+            "宽幅沟播"
+          ],
+          "source_id": "W006",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5.2 种植模式及5.3 墒情",
+          "locator": {
+            "file": "evidence\\raw\\W006_fulltext.pages.json",
+            "page": 4,
+            "start": 171,
+            "end": 280
+          },
+          "source_sha256": "205b97ef35a58eca352f0d90372b0dd6336735ace3441de51cb4947cfe5f0c42",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "content": "利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm，见图1。4适用条件适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块。",
+        "source_id": "W004",
+        "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "探墒保播",
+          "stress": [],
+          "practice": [
+            "探墒保播"
+          ],
+          "source_id": "W004",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 3,
+          "section": "3.1 定义及4 适用条件",
+          "locator": {
+            "file": "evidence\\raw\\W004_fulltext.pages.json",
+            "page": 3,
+            "start": 369,
+            "end": 440
+          },
+          "source_sha256": "ff0d0ff953abbe907786b1fa87934219f154f02feecdb60b6bd3325c891577c7",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A"
+      },
+      {
+        "evidence_id": "E5",
+        "kind": "document_chunk",
+        "content": "为达到保播、避盐的目的，利用专用农机具进行起垄沟内宽幅匀播的播种方式。",
+        "source_id": "W003",
+        "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "河北",
+          "growth_stage": "播种期",
+          "scope": "production",
+          "topic": "开沟接墒",
+          "stress": [],
+          "practice": [
+            "开沟接墒"
+          ],
+          "source_id": "W003",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 5,
+          "section": "3 定义",
+          "locator": {
+            "file": "evidence\\raw\\W003_fulltext.pages.json",
+            "page": 5,
+            "start": 314,
+            "end": 349
+          },
+          "source_sha256": "3aa03dcbcdf8b5c096b91fd0407a10262ab8a9062a7aa57c3443a5db782ee8a9",
+          "limitations": []
+        },
+        "url": "https://dbba.sacinfo.org.cn/rnDetail/0d310eea2e6bb62171fec978faedf7ef47409f9eaa2296c6c908616c299cf68c"
+      },
+      {
+        "evidence_id": "E8",
+        "kind": "document_chunk",
+        "content": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+        "source_id": "W008",
+        "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "沧州",
+          "growth_stage": null,
+          "scope": "production",
+          "topic": "旱盐风险",
+          "stress": [
+            "干旱",
+            "盐碱",
+            "干热风",
+            "倒伏",
+            "早衰"
+          ],
+          "practice": [
+            "旱盐风险"
+          ],
+          "source_id": "W008",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "2 研究建议",
+          "locator": {
+            "file": "evidence\\raw\\W008_fulltext.pages.json",
+            "page": 4,
+            "start": 354,
+            "end": 459
+          },
+          "source_sha256": "84e4870a21ea185fd1811b34519a0ca197f8a786d92c714f17fa7bc4699bbacb",
+          "limitations": []
+        },
+        "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml"
+      }
+    ],
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "现有证据仅能说明：DB1309/T 330-2025适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产 [E1] ，该标准规定宽幅沟播采用宽幅沟播机，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm [E2] 。证据未提供宽幅沟播抗旱躲盐的机制说明或效果量数据，因此不能确认宽幅沟播有助于旱碱麦抗旱躲盐，也不能判断该措施是否适用于用户地块。",
+      "supporting_points": [
+        "DB1309/T 330-2025适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产 [E1] 。该标准规定宽幅沟播采用宽幅沟播机，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm [E2] 。DB13/T 6107-2025将开沟接墒播种定义为“为达到保播、避盐的目的，利用专用农机具进行起垄沟内宽幅匀播的播种方式” [E5] ，该定义针对的是开沟接墒播种，并非宽幅沟播。DB1309/T 319-2025规定探墒保播适用条件为适播期内干土层土壤相对含水量低于65%、厚度不超过10cm的地块 [E4] 。论文指出沧州盐碱地干旱常态化下存在种子萌发差、植株抗逆能力差等问题，亟需开展抗逆增产调控制剂研发与调控技术研究 [E8] 。"
+      ],
+      "uncertainties": [
+        "现有证据中，宽幅沟播的抗旱躲盐作用没有直接的效果量或机制数据支持。[E2]仅描述宽幅沟播的播种参数，未说明其抗旱躲盐机制；[E5]中“保播、避盐”的表述出自DB13/T 6107-2025对“开沟接墒播种”的定义，不能直接等同于宽幅沟播的作用。不同标准的适用条件不同：DB1309/T 330-2025适用于沧州地区含盐量1‰～3‰的旱碱地 [E1] ，DB1309/T 319-2025的探墒保播适用于干土层土壤相对含水量低于65%、厚度不超过10cm的地块 [E4] ，这些标准不能合并为通用推荐。用户未提供地区、土壤盐分、土壤含水量、干土层厚度等关键信息，因此无法判断用户地块是否满足任一标准的适用条件。问题中的“宽幅沟播有助于抗旱躲盐”属于待验证假设，现有证据不足以支持。"
+      ]
+    },
+    "answer": "现有证据仅能说明：DB1309/T 330-2025适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产 [E1] ，该标准规定宽幅沟播采用宽幅沟播机，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm [E2] 。证据未提供宽幅沟播抗旱躲盐的机制说明或效果量数据，因此不能确认宽幅沟播有助于旱碱麦抗旱躲盐，也不能判断该措施是否适用于用户地块。\n\nDB1309/T 330-2025适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产 [E1] 。该标准规定宽幅沟播采用宽幅沟播机，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm [E2] 。DB13/T 6107-2025将开沟接墒播种定义为“为达到保播、避盐的目的，利用专用农机具进行起垄沟内宽幅匀播的播种方式” [E5] ，该定义针对的是开沟接墒播种，并非宽幅沟播。DB1309/T 319-2025规定探墒保播适用条件为适播期内干土层土壤相对含水量低于65%、厚度不超过10cm的地块 [E4] 。论文指出沧州盐碱地干旱常态化下存在种子萌发差、植株抗逆能力差等问题，亟需开展抗逆增产调控制剂研发与调控技术研究 [E8] 。\n\n现有证据中，宽幅沟播的抗旱躲盐作用没有直接的效果量或机制数据支持。[E2]仅描述宽幅沟播的播种参数，未说明其抗旱躲盐机制；[E5]中“保播、避盐”的表述出自DB13/T 6107-2025对“开沟接墒播种”的定义，不能直接等同于宽幅沟播的作用。不同标准的适用条件不同：DB1309/T 330-2025适用于沧州地区含盐量1‰～3‰的旱碱地 [E1] ，DB1309/T 319-2025的探墒保播适用于干土层土壤相对含水量低于65%、厚度不超过10cm的地块 [E4] ，这些标准不能合并为通用推荐。用户未提供地区、土壤盐分、土壤含水量、干土层厚度等关键信息，因此无法判断用户地块是否满足任一标准的适用条件。问题中的“宽幅沟播有助于抗旱躲盐”属于待验证假设，现有证据不足以支持。\n\n建议下一步：1）确认用户地块所在地区及土壤含盐量，判断是否在DB1309/T 330-2025适用的沧州地区含盐量1‰～3‰范围内 [E1] ；2）测定播种期耕层土壤相对含水量和干土层厚度，对照DB1309/T 330-2025的墒情要求（70%～80%） [E2] 或DB1309/T 319-2025的探墒保播适用条件（干土层相对含水量低于65%、厚度不超过10cm） [E4] ；3）不宜在未验证的情况下将不同标准的播期、施肥、含水量等参数合并使用；4）宽幅沟播抗旱躲盐的效果需进一步获取直接证据后再作判断。"
+  },
+  {
+    "crop_id": "huanghua_hanjianmai",
+    "question": "黄骅旱碱麦收获后，原粮质量主要应该关注哪些指标？",
+    "entities": {
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "growth_stage": "采后",
+      "soil_salinity": null,
+      "soil_moisture": null,
+      "temperature": null,
+      "rainfall": null,
+      "variety": null,
+      "quality_intent": "grain",
+      "stress": [],
+      "practice": [],
+      "intent": "quality_query"
+    },
+    "generation_called": true,
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 11,
+      "vector_evidence_count": 2,
+      "fused_count": 2
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "HH-E047",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:bb356e351e9dbeb8",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E048",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:cf3cc391ad6b4aef",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E049",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:b51000f7cddcb848",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E050",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:90d144a881d04d0a",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E051",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:833d9bda20dab5fa",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E052",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:8984668a6bbedef0",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E053",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:9fa4b613b8d6042e",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E054",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:961cb317b8d81303",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E055",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:e5b987282181db37",
+          "relation": "REFERENCES_STANDARD",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C030",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E056",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:786931143842ba8b",
+          "relation": "REFERENCES_STANDARD",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C030",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E057",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:a34ba27cf0334d46",
+          "relation": "REFERENCES_STANDARD",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C030",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮指标",
+          "stress": [],
+          "practice": [
+            "原粮指标"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "4 表1 质量要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮卫生",
+          "stress": [],
+          "practice": [
+            "原粮卫生"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5 卫生要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮指标",
+          "stress": [],
+          "practice": [
+            "原粮指标"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "4 表1 质量要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮卫生",
+          "stress": [],
+          "practice": [
+            "原粮卫生"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5 卫生要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中两类指标（质量要求：色泽、容重、杂质、不完善粒、水分、硬度指数、降落数值、蛋白质含量；卫生要求：真菌毒素、污染物、农药残留分别按GB 2761、GB 2762、GB 2763执行）均直接来自所引E1、E2；未提供实测值、不能判断达标及不能声称适用于具体地块的限定也与证据范围一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis逐项复述E1表1的指标与数值（容重≥750 g/L、杂质≤1.0%、不完善粒≤8.0%、水分≤12.5%、硬度指数≥60%、降落数值≥450 s、蛋白质≥13.5%）及E2第5章卫生要求，均与引用证据原文一致，无额外补造。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning说明指标来自黄骅旱碱麦原粮标准、证据未提供用户地块信息与实测数据、未展开GB 2761/2762/2763具体限量，均与E1、E2的实际内容及证据缺口相符，未把标准条款改称本地已验证或补造缺失路径。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice建议按E1表1项目检测、按E2第5章检测卫生指标并查阅GB 2761/2762/2763现行版本，属于基于所引标准条款的检测与查阅建议；未推荐药名、剂量、施药周期或生产操作，也未在无实测值情况下作达标判定。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实地块具体适用条件；此回答为文献依据及候选建议，不是现场确定性结论。"
+    },
+    "status": "insufficient_evidence",
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮指标",
+          "stress": [],
+          "practice": [
+            "原粮指标"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "4 表1 质量要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮卫生",
+          "stress": [],
+          "practice": [
+            "原粮卫生"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5 卫生要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+      }
+    ],
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "根据黄骅旱碱麦原粮标准，收获后原粮质量主要应关注两类指标：一是质量要求，包括色泽、容重、杂质含量、不完善粒含量、水分、硬度指数、降落数值和蛋白质含量（干基） [E1] ；二是卫生要求，包括真菌毒素限量、污染物限量和农药最大残留限量，分别按GB 2761、GB 2762、GB 2763执行 [E2] 。当前证据未提供用户地块的实测值，无法判断其原粮是否达标，也不能声称这些指标适用于用户具体地块。",
+      "supporting_points": [
+        "DB1309/T 333-2025《黄骅旱碱麦原粮》表1质量要求列出：色泽种皮微黄、容重≥750 g/L、杂质含量≤1.0%、不完善粒含量≤8.0%、水分≤12.5%、硬度指数≥60%、降落数值≥450 s、蛋白质含量（干基）≥13.5% [E1] 。该标准第5章卫生要求规定：真菌毒素限量按GB 2761执行，污染物限量按GB 2762执行，农药最大残留限量按GB 2763执行 [E2] 。"
+      ],
+      "uncertainties": [
+        "上述指标来自黄骅旱碱麦原粮标准，适用于该标准界定的原粮质量评价场景 [E1]  [E2] 。但证据仅给出标准条款，未提供用户地块的品种、土壤盐分、水分、天气、栽培措施及实测原粮数据，因此无法进行达标判定或地块适用性推断。此外，证据未提供GB 2761、GB 2762、GB 2763的具体限量数值，不能编造或展开这些被引用标准的内容 [E2] 。"
+      ]
+    },
+    "answer": "根据黄骅旱碱麦原粮标准，收获后原粮质量主要应关注两类指标：一是质量要求，包括色泽、容重、杂质含量、不完善粒含量、水分、硬度指数、降落数值和蛋白质含量（干基） [E1] ；二是卫生要求，包括真菌毒素限量、污染物限量和农药最大残留限量，分别按GB 2761、GB 2762、GB 2763执行 [E2] 。当前证据未提供用户地块的实测值，无法判断其原粮是否达标，也不能声称这些指标适用于用户具体地块。\n\nDB1309/T 333-2025《黄骅旱碱麦原粮》表1质量要求列出：色泽种皮微黄、容重≥750 g/L、杂质含量≤1.0%、不完善粒含量≤8.0%、水分≤12.5%、硬度指数≥60%、降落数值≥450 s、蛋白质含量（干基）≥13.5% [E1] 。该标准第5章卫生要求规定：真菌毒素限量按GB 2761执行，污染物限量按GB 2762执行，农药最大残留限量按GB 2763执行 [E2] 。\n\n上述指标来自黄骅旱碱麦原粮标准，适用于该标准界定的原粮质量评价场景 [E1]  [E2] 。但证据仅给出标准条款，未提供用户地块的品种、土壤盐分、水分、天气、栽培措施及实测原粮数据，因此无法进行达标判定或地块适用性推断。此外，证据未提供GB 2761、GB 2762、GB 2763的具体限量数值，不能编造或展开这些被引用标准的内容 [E2] 。\n\n下一步应采集用户地块收获后的原粮样品，按DB1309/T 333-2025表1项目检测容重、杂质、不完善粒、水分、硬度指数、降落数值和蛋白质含量（干基） [E1] ，并按该标准第5章要求检测真菌毒素、污染物和农药残留，具体限量需查阅GB 2761、GB 2762、GB 2763现行有效版本 [E2] 。在获得实测值和用户地块信息前，不能判断原粮是否达标或给出针对性调控建议。"
+  }
+]

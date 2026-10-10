@@ -1,0 +1,6 @@
+﻿image_path,true_label,predicted_label,confidence
+data/leaf_classifier/test/healthy/nitrogen_rust__84de4e9a0e1d__128.jpg,healthy,nitrogen_deficiency,0.723683
+data/leaf_classifier/test/healthy/nitrogen_rust__e68ed6a04635__59.jpg,healthy,nitrogen_deficiency,0.678946
+data/leaf_classifier/test/nitrogen_deficiency/nitrogen_rust__019675d4127a__12.jpg,nitrogen_deficiency,healthy,0.885128
+data/leaf_classifier/test/nitrogen_deficiency/nitrogen_rust__154f7418f767__24.jpg,nitrogen_deficiency,rust,0.705366
+data/leaf_classifier/test/nitrogen_deficiency/nitrogen_rust__898f1ef54a3f__209.jpg,nitrogen_deficiency,healthy,0.746889

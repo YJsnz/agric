@@ -1,0 +1,40 @@
+[
+  {
+    "question": "本研究提取总RNA采用了什么方法？",
+    "type": "factual",
+    "answer_quote": "采用改良CTAB 法[21]提取总RNA。",
+    "gold_entities": [
+      "改良CTAB法",
+      "总RNA"
+    ]
+  },
+  {
+    "question": "总RNA经DNase清除DNA后，使用哪个反转录试剂盒进行反转录？",
+    "type": "factual",
+    "answer_quote": "总RNA 经DNase 清除DNA 后，用反转录试剂盒Primescript TM RT Reagent Kit（宝生物工程（大连）有限公司）进行反转录",
+    "gold_entities": [
+      "DNase",
+      "Primescript TM RT Reagent Kit",
+      "宝生物工程（大连）有限公司"
+    ]
+  },
+  {
+    "question": "本研究的定量PCR分析使用了哪个试剂盒和哪种仪器？",
+    "type": "factual",
+    "answer_quote": "按照定量PCR 反应试剂盒TB GreenTM Premix Ex Taq II（宝生物工程（大连）有限公司）说明书进行定量分析。定量PCR仪为美国Applied BiosystemsTM ABI 7500 型。",
+    "gold_entities": [
+      "TB GreenTM Premix Ex Taq II",
+      "宝生物工程（大连）有限公司",
+      "Applied BiosystemsTM ABI 7500"
+    ]
+  },
+  {
+    "question": "本研究以哪个基因作为内参基因，并采用什么方法计算待测基因相对表达量？",
+    "type": "factual",
+    "answer_quote": "以PbActin2 为内参基因[22]，通过2-∆∆CT 法计算待测基因相对表达量。",
+    "gold_entities": [
+      "PbActin2",
+      "2-∆∆CT法"
+    ]
+  }
+]

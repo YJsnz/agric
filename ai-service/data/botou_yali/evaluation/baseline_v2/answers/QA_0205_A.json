@@ -1,0 +1,70 @@
+{
+  "id": "QA_0205",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法确定该研究具体分析了哪些乙烯信号转导相关基因的表达量变化。",
+    "basis": "当前未提供该论文的原文或检索证据，我无法确认其具体基因列表。",
+    "reasoning": "问题要求依据特定论文回答，但证据为空；我虽了解鸭梨采后乙烯信号转导的一般基因类别（如乙烯受体、CTR、EIN2、EIN3/EIL、ERF等），但不能据此断定该论文实际分析了哪些基因，否则会编造论文内容。",
+    "advice": "请提供该论文的原文、摘要或相关段落，或允许检索该论文，以便准确列出其分析的乙烯信号转导相关基因。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何具体基因名称，仅说明证据不足无法确定，属于拒答；但该题在提供的原文摘要中已有明确答案，因此不是正确作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1037,
+      "completion_tokens": 51,
+      "total_tokens": 1088,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 269
+    },
+    "model": "deepseek-flash",
+    "response_id": "badbe7c0-f3e3-4541-aa1c-ddbd8cb23e52",
+    "seconds": 6.043951100000413,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法确定该研究具体分析了哪些乙烯信号转导相关基因的表达量变化。",
+        "basis": "当前未提供该论文的原文或检索证据，我无法确认其具体基因列表。",
+        "reasoning": "问题要求依据特定论文回答，但证据为空；我虽了解鸭梨采后乙烯信号转导的一般基因类别（如乙烯受体、CTR、EIN2、EIN3/EIL、ERF等），但不能据此断定该论文实际分析了哪些基因，否则会编造论文内容。",
+        "advice": "请提供该论文的原文、摘要或相关段落，或允许检索该论文，以便准确列出其分析的乙烯信号转导相关基因。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 195,
+        "completion_tokens": 165,
+        "total_tokens": 360,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 195
+      },
+      "model": "deepseek-flash",
+      "response_id": "84b011a3-23d7-4fc1-bad9-63e69a0c37c3",
+      "seconds": 7.256434499999159,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 13.302072999998927
+}

@@ -1,0 +1,44 @@
+{
+  "id": "QA_0049",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何数值，仅表示证据不足并请求补充资料，属于没有作答；而题目所问的10.0% O2处理在贮藏270 d及货架7 d的平均虎皮指数在提供的原文证据中明确为54.95%，因此该题可回答，拒答不能视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 926,
+      "completion_tokens": 82,
+      "total_tokens": 1008,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 158
+    },
+    "model": "deepseek-flash",
+    "response_id": "41b062ae-fdc9-4af6-9109-71bec119be7c",
+    "seconds": 5.741003799999817,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

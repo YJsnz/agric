@@ -1,0 +1,77 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0176",
+      "question": "在鸭梨果心LOX活性高峰过后，其活性呈现什么变化趋势？",
+      "answer_quote": "高峰过后，LOX 活性呈现逐步升高趋势，且晚采果要高于同期早采果。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0177",
+      "question": "缓慢降温对早采鸭梨果心LOX活性有何影响？",
+      "answer_quote": "缓慢降温显著抑制了早采果果心LOX 活性（P＜0.05），而对晚采果果心酶活性影响不明显。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0178",
+      "question": "缓慢降温对晚采鸭梨果心LOX活性的影响是否明显？",
+      "answer_quote": "缓慢降温显著抑制了早采果果心LOX 活性（P＜0.05），而对晚采果果心酶活性影响不明显。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0179",
+      "question": "用DSC方法测定的早采急速降温和缓慢降温鸭梨果心的相变温度分别是多少？",
+      "answer_quote": "用DSC 方法测定的早采急速降温和缓慢降温鸭梨果心的相变温度分别是-1.56℃和-1.75℃",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0180",
+      "question": "晚采急速降温和缓慢降温鸭梨果心的相变温度分别是多少？",
+      "answer_quote": "晚采急速降温和缓慢降温鸭梨果心的相变温度分别是-1.73℃和-1.76℃",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0181",
+      "question": "提高采收成熟度对鸭梨果心相变温度有何影响？",
+      "answer_quote": "说明提高采收成熟度降低了鸭梨果心的相变温度",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0182",
+      "question": "降温方法对晚采鸭梨果心相变温度的影响与早采果相比如何？",
+      "answer_quote": "但降温方法对晚采鸭梨果心相变温度的影响没有早采果那样明显。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0183",
+      "question": "鸭梨果心中检测到哪些脂肪酸组分？",
+      "answer_quote": "果心中含有月桂酸（12:0）、豆蔻酸（14:0）、棕榈酸（16:0）、棕榈油酸（16:1）、珠光酸（17: 0）、硬脂酸（18:0）、油酸（18:1）、亚油酸（18:2）、亚麻酸（18:3）",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0184",
+      "question": "鸭梨果心中几乎没有哪些脂肪酸？",
+      "answer_quote": "而几乎没有花生酸（20:0）、花生烯酸（20:1）、花生四烯酸（20:4）、廿二碳五烯酸（22:5）。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0185",
+      "question": "鸭梨果心中相对含量最多的脂肪酸是什么？其占总脂肪酸的比例大约是多少？",
+      "answer_quote": "其中相对含量最多的是亚油酸，大约占到总脂肪酸的45%～60%",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0186",
+      "question": "鸭梨果心中棕榈酸的相对含量范围是多少？",
+      "answer_quote": "其次为棕榈酸，相对含量20%～30%",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0187",
+      "question": "鸭梨果心中油酸和亚麻酸的相对含量范围分别是多少？",
+      "answer_quote": "油酸相对含量为5%～25%，亚麻酸相对含量约2%～12%",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

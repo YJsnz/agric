@@ -1,0 +1,78 @@
+{
+  "source_id": "STD_001",
+  "title": "DB13/T 1176-2018 地理标志产品 泊头鸭梨",
+  "source_type": "standard",
+  "crop": [
+    "泊头鸭梨"
+  ],
+  "region": [
+    "河北省",
+    "沧州市",
+    "泊头市"
+  ],
+  "region_note": "河北省/沧州市/泊头市",
+  "year": 2018,
+  "evidence_level": "A",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=91D99E4D94E62E24E05397BE0A0A3A10",
+  "authors": [],
+  "doi": null,
+  "availability": "summary_only",
+  "review_status": "original_fulltext_missing",
+  "fulltext_path": null,
+  "text_path": null,
+  "pages_path": null,
+  "page_count": null,
+  "ready_for_chunking": false,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "当前语料文件仅依据可公开核验的标准信息与摘要整理；做细粒度条款问答前，应取得标准正文并按条款重新切块。",
+  "kg_source_ids": [],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_001/detail.json",
+      "sha256": "8327a2207b262053828f10b1d9e3ae6b43fd8ddbc9e1cd22f954e6d785c09dda",
+      "bytes": 784,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_001/landing.html",
+      "sha256": "13a65740ad0a1dff52963c128d81888e717afd5ed53821dd1b3fbbb05227f500",
+      "bytes": 279658,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_001/summary.md",
+      "sha256": "3704b51880fccdff0a686f0366a78323e1a5c823118bc7421be6b1a4c35a87d3",
+      "bytes": 1358,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": null,
+  "acquisition_attempts": [
+    {
+      "source_id": "STD_001",
+      "url": "https://std.sacinfo.org.cn/gnocDb/queryInfo?id=C86E930B07E8117A6E3AA19B417B7A52",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_001/landing.html",
+      "attempted_at": "2026-09-15T06:21:23.099840+00:00",
+      "resolved_url": "https://std.sacinfo.org.cn/gnocDb/queryInfo?id=C86E930B07E8117A6E3AA19B417B7A52",
+      "status": "downloaded_pending_review",
+      "bytes": 279658,
+      "sha256": "13a65740ad0a1dff52963c128d81888e717afd5ed53821dd1b3fbbb05227f500"
+    },
+    {
+      "source_id": "STD_001",
+      "url": "https://std.sacinfo.org.cn/gstdDb/queryInfo?stdId=42312",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_001/detail.json",
+      "attempted_at": "2026-09-15T06:28:06.280168+00:00",
+      "resolved_url": "https://std.sacinfo.org.cn/gstdDb/queryInfo?stdId=42312",
+      "status": "downloaded_pending_review",
+      "bytes": 784,
+      "sha256": "8327a2207b262053828f10b1d9e3ae6b43fd8ddbc9e1cd22f954e6d785c09dda"
+    }
+  ],
+  "metadata_note": "用户原链接指向备案公告，并非全文。",
+  "extraction_status": "no_fulltext"
+}

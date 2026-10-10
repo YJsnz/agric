@@ -1,0 +1,74 @@
+[
+  {
+    "id": "JV001",
+    "title": "果树花叶病与黄叶病",
+    "publisher": "湖南省林业局",
+    "region": "湖南",
+    "date": "2013-06-04",
+    "year": 2013,
+    "url": "https://lyj.hunan.gov.cn/lyj/tslm_71206/lykp/syjs/201512/t20151227_2590115.html",
+    "source_type": "government_extension",
+    "local_path": "evidence/raw/JV001.txt",
+    "sha256": "f1d0578978f077b80fd77b8ecbb0049b1c906fd9ab0b0494d8c913addb3b1108",
+    "original_html_sha256": "34b12500ae7dc289e514b5a92760f43f1affbfd6c723c3b029c5923895235ae8",
+    "evidence_level": "transfer_pending",
+    "evidence_levels_compat": [
+      "L4"
+    ],
+    "review_scope": "candidate explanation only; not local advice"
+  },
+  {
+    "id": "JV002",
+    "title": "情牵群众 技术为民 治疗枣疯病采用放疗化疗加换头 900余株枣树开治枣疯病",
+    "publisher": "北京市园林绿化局",
+    "region": "北京",
+    "date": "2022-06-30",
+    "year": 2022,
+    "url": "https://yllhj.beijing.gov.cn/ztxx/lhysh/st/202206/t20220628_2754185.shtml",
+    "source_type": "government_extension",
+    "local_path": "evidence/raw/JV002.txt",
+    "sha256": "556288d0ba07e815b39c445f9c171b694716b586c672da125b4aa1e2a840c83d",
+    "original_html_sha256": "c9840f3f9df3650d042ae417e3796488b1ad3ed07786fc73fed8fdda1c3b9fd0",
+    "evidence_level": "transfer_pending",
+    "evidence_levels_compat": [
+      "L4"
+    ],
+    "review_scope": "candidate explanation only; not local advice"
+  },
+  {
+    "id": "JV003",
+    "title": "枣病虫害防治",
+    "publisher": "北京市园林绿化局",
+    "region": "北京",
+    "date": "2015-10-13",
+    "year": 2015,
+    "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+    "source_type": "government_extension",
+    "local_path": "evidence/raw/JV003.txt",
+    "sha256": "589bf2c64aa654d50e6943f1e090c56b43c540fcb38e44751517ca718f32908a",
+    "original_html_sha256": "4a09fbf70fde9276ea707a43e254171e0c3426978aacd362c429212790ed03c9",
+    "evidence_level": "transfer_pending",
+    "evidence_levels_compat": [
+      "L4"
+    ],
+    "review_scope": "candidate explanation only; not local advice"
+  },
+  {
+    "id": "JV004",
+    "title": "Powdery Mildew on Ornamentals",
+    "publisher": "University of California IPM",
+    "region": "美国加利福尼亚",
+    "date": null,
+    "year": null,
+    "url": "https://ipm.ucanr.edu/home-and-landscape/powdery-mildew-on-ornamentals/",
+    "source_type": "university_extension",
+    "local_path": "evidence/raw/JV004.txt",
+    "sha256": "be7743af4a9706c2389903e8bf4e4def87ee3abf0fb3dadc8beac270acde1022",
+    "original_html_sha256": "957f47a3a66f82490a424cb33a61a791c583804f20be3e4438011d46da8e60e1",
+    "evidence_level": "transfer_pending",
+    "evidence_levels_compat": [
+      "L4"
+    ],
+    "review_scope": "candidate explanation only; not local advice"
+  }
+]

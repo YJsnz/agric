@@ -1,0 +1,72 @@
+{
+  "id": "QA_0028",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法根据所给信息确定该研究中L*值的具体定义及数值对应关系。",
+      "basis": "未提供《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的原文内容或数据。",
+      "reasoning": "L*值在色差体系中通常表示亮度，但该研究是否采用此定义、如何分级、与鸭梨果实褐变或色泽变化的具体数值对应关系，均需依据原文方法部分确认，现有证据为空，不能推断。",
+      "advice": "请提供该论文中色差测定方法、L*值定义及结果描述部分，或直接查阅原文的‘测定指标与方法’和‘结果与分析’章节。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 171,
+      "completion_tokens": 165,
+      "total_tokens": 336,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 171
+    },
+    "model": "deepseek-flash",
+    "response_id": "8a078c80-bac5-4b2a-a374-4d963db2d9e5",
+    "seconds": 6.3387714000000415,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.3333333333333333,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出L*值的定义及数值对应关系，仅说明无法确定，属于拒答；在可回答题中拒答不算正确。",
+      "claims": [
+        {
+          "claim": "无法根据所给信息确定该研究中L*值的具体定义及数值对应关系。",
+          "status": "contradicted",
+          "reason": "提供的原文证据明确给出L*值表示果实亮度，0—100分别表示果实由暗到亮变化。"
+        },
+        {
+          "claim": "未提供《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的原文内容或数据。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence包含该论文中关于L*值定义和数值范围的原文内容。"
+        },
+        {
+          "claim": "L*值在色差体系中通常表示亮度，但该研究是否采用此定义、如何分级、与鸭梨果实褐变或色泽变化的具体数值对应关系，均需依据原文方法部分确认，现有证据为空，不能推断。",
+          "status": "contradicted",
+          "reason": "原文证据已明确该研究采用L*值表示果实亮度，且0—100对应由暗到亮变化，并非证据为空。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 565,
+      "completion_tokens": 248,
+      "total_tokens": 813,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 437
+    },
+    "model": "deepseek-flash",
+    "response_id": "d717f2ef-f1b8-4e4f-911d-9e4eb3b747df",
+    "seconds": 6.222832899999958,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

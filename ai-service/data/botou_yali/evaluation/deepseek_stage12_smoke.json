@@ -1,0 +1,385 @@
+[
+  {
+    "question": "鸭梨贮藏时如何保持品质？",
+    "response": {
+      "entities": [
+        "鸭梨",
+        "贮藏"
+      ],
+      "extracted_entities": {
+        "crop": "鸭梨",
+        "region": null,
+        "stage": "贮藏",
+        "environment": [],
+        "disease": [],
+        "intent": "storage"
+      },
+      "alignments": [
+        {
+          "field": "crop",
+          "mention": "鸭梨",
+          "status": "matched",
+          "entity_id": "v2:ea3447edac86e42f",
+          "canonical_name": "鸭梨",
+          "candidates": [
+            {
+              "id": "v2:ea3447edac86e42f",
+              "name": "鸭梨",
+              "type": "Variety",
+              "crop": [
+                "鸭梨"
+              ],
+              "region": [
+                "全国",
+                "河北省",
+                "研究试验范围"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "stage",
+          "mention": "贮藏",
+          "status": "matched",
+          "entity_id": "v2:1df599bacfb4d6d5",
+          "canonical_name": "储藏期",
+          "candidates": [
+            {
+              "id": "v2:1df599bacfb4d6d5",
+              "name": "储藏期",
+              "type": "Stage",
+              "crop": [
+                "丰水",
+                "京白",
+                "南果",
+                "巴梨",
+                "库尔勒香梨",
+                "新高",
+                "早酥",
+                "梨",
+                "玉露香",
+                "砀山酥梨",
+                "红香酥",
+                "花盖梨",
+                "苹果梨",
+                "蜜梨",
+                "雪花",
+                "雪青",
+                "香水梨",
+                "鸭梨",
+                "黄冠",
+                "黄金"
+              ],
+              "region": [
+                "AU-VIC",
+                "全国",
+                "河北省",
+                "研究试验范围"
+              ]
+            }
+          ]
+        }
+      ],
+      "channels": {
+        "neo4j": {
+          "status": "empty",
+          "count": 0,
+          "truncated": false
+        },
+        "faiss": {
+          "status": "ok",
+          "count": 20
+        }
+      },
+      "evidence_rejections": [],
+      "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+      "reasoning_paths": [],
+      "sources": [
+        {
+          "source_id": "GOV_002",
+          "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+          "url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "chunk_id": "GOV_002_C0003",
+              "section": "三、贮藏方法",
+              "pages": []
+            },
+            {
+              "evidence_id": "E5",
+              "chunk_id": "GOV_002_C0004",
+              "section": "四、贮藏中的主要问题及防止措施",
+              "pages": []
+            }
+          ]
+        },
+        {
+          "source_id": "PAPER_005",
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+          "citations": [
+            {
+              "evidence_id": "E2",
+              "chunk_id": "PAPER_005_C0001",
+              "section": "正文（未识别章节）",
+              "pages": [
+                1
+              ]
+            },
+            {
+              "evidence_id": "E4",
+              "chunk_id": "PAPER_005_C0002",
+              "section": "正文（未识别章节）",
+              "pages": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "PAPER_001",
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+          "citations": [
+            {
+              "evidence_id": "E3",
+              "chunk_id": "PAPER_001_C0007",
+              "section": "0  引言",
+              "pages": [
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "generation_called": true,
+      "status": "answered",
+      "answer": "1. 结论\n鸭梨贮藏保持品质的核心是控制降温速度、维持适宜低温、控制气体成分（低O2、低CO2）并减少失水。冷藏需缓慢降温至0℃并保持不低于-1℃，可贮藏约8个月、好果率达80%以上[E1]；气调贮藏可进一步延长贮藏期，商业参数约为10% O2+1% CO2，可贮藏6—8个月[E3]；同时需注意库内CO2不得高于2%，否则易出现果心、果肉褐变[E5]。\n2. 依据\nE1为鸭梨贮藏保鲜技术资料，给出冷藏缓慢降温、纸箱码垛、塑料袋小包装及气调贮藏的具体做法；E3为鸭梨采后生理研究，说明鸭梨对低温和高浓度CO2敏感，普通冷藏与气调贮藏的期限及商业气调参数；E5为贮藏问题防治资料，说明失水与CO2积累的危害及通风换气措施；E2、E4为窖藏与冷藏对比研究，说明两种方式对硬度、SSC、TA、呼吸、乙烯及香气物质的影响。\n3. 推理路径\n证据覆盖了温度管理、气体管理、湿度管理和包装方式等保持品质的关键环节。E1明确冷藏降温过快会引起黑心病，需缓慢降温并在35—40天内降至0℃、保持0℃且不低于-1℃[E1]；E3指出鸭梨对低温和高浓度CO2敏感，长期贮藏易发生虎皮病和黑心病，并给出普通冷藏与气调贮藏的期限及商业气调参数[E3]；E5指出CO2高于2%会出现果心、果肉褐变，需通风换气并减少乙烯积累[E5]。E2、E4表明窖藏与冷藏对品质和香气影响不同，但属于研究性比较，不构成对本地生产的具体操作指导[E2][E4]。\n4. 建议\n1. 冷藏时采用缓慢降温：开始库温保持10—12℃，一周后每5—7天降1℃，以后每3天降1℃，在35—40天内将库温降到0℃，并保持0℃，不要低于-1℃[E1]。2. 气调贮藏可参考商业参数10% O2+1% CO2，并注意鸭梨对低O2和高CO2敏感，需根据本地条件验证[E3]。3. 控制库内CO2不高于2%，加强通风换气：贮藏前期和后期每天通风换气1—2小时，中期2—3天换气一次，每次1—2小时；或置于风扇、冷气机下循环吸收CO2[E5]。4. 减少失水：可采用地面洒水或库壁四周及通风道等处挂湿草帘等方法增加库内湿度[E5]。5. 小量贮藏可采用纸箱码垛或0.04—0.06毫米厚聚乙烯薄膜袋小包装，每袋装15千克，装后不扎口，留一定空隙直立排放[E1]。6. 以上为资料性建议，具体贮藏参数应结合本地品种、采收成熟度和库房条件进行试验验证，研究资料不等于本地生产指导[E2][E3][E4]。\n5. 来源\n[E1] [E5] GOV_002：鸭梨的贮藏保鲜技术（政府林业科普资料） https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html\n[E2] [E4] PAPER_005：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析 https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml\n[E3] PAPER_001：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响 https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+      "evidence": [
+        {
+          "evidence_id": "E1",
+          "candidate_id": "chunk:GOV_002_C0003",
+          "kind": "document_chunk",
+          "content": {
+            "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+            "section": "三、贮藏方法",
+            "text": "1、冷藏。鸭梨冷藏时要注意采用缓慢降温措施，降温过快会引起黑心病，开始库温保持10-12℃，一周后每5-7天降1℃，以后改为每3天降1℃，在35-40天内将库温降到0℃，并保持0℃，不要低于-1℃，鸭梨可贮藏8个月，好果率达80%以上。2、纸箱码垛贮藏。将挑选分级后地果实垫板隔开分屋装入纸箱，每箱装果10千克；也可将每个果用有光纸包好装箱。如果是套袋梨，可直接入箱内。纸箱码垛时留出通风道和作业道，使垛内外温度和气体浓度接近。此法简单易行，效果较好，应用较多。3、塑料袋小包装贮藏。贮藏量较小时可采用0.04-0.06毫米厚的聚乙烯薄膜袋，将果实直接入袋，每袋装15千克，装后不扎口，只是互相交叠，留一定空隙，直立排放在一起即可。4、气调贮藏。用于气调贮藏的酥梨应适当早采，并贮于逐步降温的冷库内，气体成分氧气保持12-13%，二氧化碳应低于1%。",
+            "pages": [],
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "采收期",
+              "储藏期"
+            ],
+            "evidence_level": "C",
+            "review_status": "layout_tables_and_agronomic_context_review_pending"
+          }
+        },
+        {
+          "evidence_id": "E2",
+          "candidate_id": "chunk:PAPER_005_C0001",
+          "kind": "document_chunk",
+          "content": {
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "正文（未识别章节）",
+            "text": "中国农业科学  2021,54(21):4635-4649 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2021.21.013收稿日期：2021-01-11；接受日期：2021-04-30基金项目：财政部和农业农村部：国家现代农业产业技术体系（CARS-28-23）、河北省农林科学院创新工程（2019-2-1）联系方式：岳盈肖，E-mail：yyingxiao@163.com。何近刚，E-mail：hejingang2000@163.com。岳盈肖和何近刚为同等贡献作者。通信作者王永霞，E-mail：wyxhd2004@126.com。通信作者关军锋，E-mail：junfeng-guan@263.net开放科学（资源服务）标识码（OSID）：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析岳盈肖1,2，何近刚2，赵江丽2，闫子茹2，程玉豆2，武肖琦2，王永霞，关军锋1 河北工程大学生命科学与食品工程学院，河北邯郸 056038；2 河北省农林科学院生物技术与食品科学研究所/河北省植物转基因中心，石家庄 050051摘要：【目的】比较窖藏和冷藏过程中，鸭梨果实品质、呼吸速率、乙烯释放速率、电子鼻特征、挥发性物质及其相关基因表达的差异，进一步解析两种贮藏方式对鸭梨香气物质形成的影响及其机制。【方法】鸭梨采收后以窖藏和冷藏两种方式贮藏，测定贮藏期间果实硬度、可溶性固形物含量（SSC）、可滴定酸（TA）含量、呼吸速率和乙烯释放速率，使用电子鼻检测挥发性物质变化，利用气质联用色谱（GC-MS）测定挥发性物质成分及含量，利用荧光定量PCR（Real-time PCR）技术分析乙烯生成（PbACS1、PbACO2）及其信号转导（PbETR1、PbETR2、PbERS1a、PbERS1b、PbEIN3、PbERF）、挥发性物质合成（PbAAT1、PbADH2、PbADH3、PbADH5、PbHPL、PbLOX1、PbLOX8）相关基因的表达量变化情况。",
+            "pages": [
+              1
+            ],
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "review_status": "layout_tables_and_agronomic_context_review_pending"
+          }
+        },
+        {
+          "evidence_id": "E3",
+          "candidate_id": "chunk:PAPER_001_C0007",
+          "kind": "document_chunk",
+          "content": {
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "0  引言",
+            "text": "【研究意义】鸭梨（Pyrus bretschneideri Rehd.）是我国传统特色主栽梨品种，季产年销，也是我国主要仓储和出口品种[1]。但其对低温和高浓度CO2 敏感，长期贮藏过程中极易发生虎皮病和黑心病等采后生理病害，严重影响果实商品价值，造成巨大经济损失[2-3]。目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6 个月（从9 月至翌年3 月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8 个月（从9 月至翌年4 月）。整体来看，与市场正常供应需求（至翌年6 月）仍有较大差距[4-5]。研究低O2 浓度对鸭梨采后生理代谢及贮藏品质的影响，对进一步延长鸭梨贮藏和货架供应期具有重要意义。【前人研究进展】气调贮藏是目前国内外商业应用最广泛的果品贮藏技术，与普通冷藏相比，气调贮藏可显著延长苹果和梨采后贮藏和货架供应期。其主要原理是在低温的基础上，通过进一步降低环境氧气含量，来进一步抑制果实采后呼吸和乙烯等生理代谢水平，降低营养损耗，延缓衰老，减轻生理病害发生，进而更好地保持果实贮藏品质[6-8]。近年来，随着气体成分精准监测和控制技术的不断发展，果实气调贮藏中的O2浓度不断降低，从传统的静态低氧气调（O2：2.0%—5.0%），发展到静态超低氧气调（O2＜1.5%）及前期超低氧胁迫气调（O2：0.5%，维持2 周），一直到目前的动态气调（O2：0.3%—0.5%），果实贮藏期不断被延长，果实品质得到了更好的维持[9]。但不同品种及不同栽培管理条件下，梨果实采后生物学特性及内在品质差异较大，对贮藏环境O2 敏感性及耐受度不同。研究发现，‘Beurré d’Anjou’经0.5% O2胁迫处理后，于1.0% O2+0.1% CO2 条件下可正常贮藏9.2 个月[10]；‘Abate Fetel’在0.8% O2+0.45% CO2 动态气调条件下可贮藏7 个月，且未发生果心褐变[11-13]；‘Rocha’在0.5% O2 条件下贮藏8.5 个月，7 d 货架（20℃）后仍较好地保持果实品质，未发生黑心病[14]。",
+            "pages": [
+              2
+            ],
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "review_status": "layout_tables_and_agronomic_context_review_pending"
+          }
+        },
+        {
+          "evidence_id": "E4",
+          "candidate_id": "chunk:PAPER_005_C0002",
+          "kind": "document_chunk",
+          "content": {
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "正文（未识别章节）",
+            "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+            "pages": [
+              1
+            ],
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "review_status": "layout_tables_and_agronomic_context_review_pending"
+          }
+        },
+        {
+          "evidence_id": "E5",
+          "candidate_id": "chunk:GOV_002_C0004",
+          "kind": "document_chunk",
+          "content": {
+            "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+            "section": "四、贮藏中的主要问题及防止措施",
+            "text": "1、梨的干耗与库房湿度。梨果水分含量高，贮期失水是主要问题之一。为减少失水需增加贮藏库内湿度。可采用地面洒水或库壁四周及通风道等处挂湿草帘等方法。2、二氧化碳积累与通风换气。库房内二氧化碳高于2%时会出现果心、果肉褐变等病害。因此，加强库房通风换气，减少二氧化碳积累，以及减少乙烯等有害气体的积累，是梨果贮藏的技术关键。所以，要在贮藏的前期和后期每天通风换气1-2小时，中期2-3天换气一次，每次1-2小时；或置于风扇、冷气机下，通过库内气体和循环吸收二氧化碳。该法可减少通风换气带来的干耗。",
+            "pages": [],
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "采收期",
+              "储藏期"
+            ],
+            "evidence_level": "C",
+            "review_status": "layout_tables_and_agronomic_context_review_pending"
+          }
+        }
+      ],
+      "validation": "结构与引用编号校验；未实现自动语义蕴含证明"
+    }
+  },
+  {
+    "question": "泊头鸭梨果实膨大期持续高湿有什么风险？",
+    "response": {
+      "entities": [
+        "泊头鸭梨",
+        "泊头",
+        "果实膨大期",
+        "持续高湿"
+      ],
+      "extracted_entities": {
+        "crop": "泊头鸭梨",
+        "region": "泊头",
+        "stage": "果实膨大期",
+        "environment": [
+          "持续高湿"
+        ],
+        "disease": [],
+        "intent": "risk_analysis"
+      },
+      "alignments": [
+        {
+          "field": "crop",
+          "mention": "泊头鸭梨",
+          "status": "matched",
+          "entity_id": "v2:7b265c03320d54ee",
+          "canonical_name": "泊头鸭梨",
+          "candidates": [
+            {
+              "id": "v2:7b265c03320d54ee",
+              "name": "泊头鸭梨",
+              "type": "Crop",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "泊头市"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "region",
+          "mention": "泊头",
+          "status": "matched",
+          "entity_id": "v2:9a8a610336e9e72c",
+          "canonical_name": "泊头市",
+          "candidates": [
+            {
+              "id": "v2:9a8a610336e9e72c",
+              "name": "泊头市",
+              "type": "Region",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "泊头市"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "stage",
+          "mention": "果实膨大期",
+          "status": "matched",
+          "entity_id": "v2:7088cc4ac47fcec8",
+          "canonical_name": "果实膨大期",
+          "candidates": [
+            {
+              "id": "v2:7088cc4ac47fcec8",
+              "name": "果实膨大期",
+              "type": "GrowthStage",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "US-CA"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "environment",
+          "mention": "持续高湿",
+          "status": "unmatched",
+          "entity_id": null,
+          "canonical_name": null,
+          "candidates": []
+        }
+      ],
+      "channels": {
+        "neo4j": {
+          "status": "blocked_alignment",
+          "count": 0,
+          "truncated": false
+        },
+        "faiss": {
+          "status": "empty",
+          "count": 0
+        }
+      },
+      "evidence_rejections": [],
+      "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+      "reasoning_paths": [],
+      "sources": [],
+      "generation_called": false,
+      "status": "insufficient_evidence",
+      "answer": "1. 结论\n证据不足，当前不能可靠回答该问题。\n2. 依据\n未检索到满足地区、作物、阶段及证据要求的资料。\n3. 推理路径\n无可用证据路径，不补造因果关系。\n4. 建议\n请补充可核验的当地资料或明确问题条件。\n5. 来源\n无符合条件的来源。"
+    }
+  }
+]

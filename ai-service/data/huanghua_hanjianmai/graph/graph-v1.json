@@ -1,0 +1,3055 @@
+{
+  "crop_id": "huanghua_hanjianmai",
+  "dataset": "wheat_reviewed_v1",
+  "nodes": [
+    {
+      "id": "huanghua_hanjianmai:311557a546a5ecdf",
+      "name": "黄骅旱碱麦",
+      "type": "Crop",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:aa2657754e830689",
+      "name": "河北省滨海平原盐碱干旱生态类型区",
+      "type": "Region",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:81da51e314abba56",
+      "name": "精细整地",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:7822df74fb338f59",
+      "name": "播前准备",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:0bb02c847d02569a",
+      "name": "品种选择",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001",
+        "W006"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:0932ef851d8da09a",
+      "name": "捷麦19",
+      "type": "Variety",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001",
+        "W006"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:b861d06677486358",
+      "name": "沧麦6005",
+      "type": "Variety",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001",
+        "W006"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:af94264dbe10343b",
+      "name": "适期播种",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001",
+        "W002"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:f8ae220bbffaddd7",
+      "name": "土壤墒情",
+      "type": "EnvironmentFactor",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001",
+        "W003",
+        "W004",
+        "W006"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:ee03e701ff2a539a",
+      "name": "春季追肥",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:254c3a2b7a79ee5c",
+      "name": "返青期",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001",
+        "W006"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:95402fe74542c564",
+      "name": "锈病",
+      "type": "Disease",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:e1f114323049a46b",
+      "name": "赤霉病",
+      "type": "Disease",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:85186c36f83872d4",
+      "name": "白粉病",
+      "type": "Disease",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:5eaf3ad797631082",
+      "name": "蚜虫",
+      "type": "Pest",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:ea17d1564e80751d",
+      "name": "红蜘蛛",
+      "type": "Pest",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:f9608f2c032ae6ba",
+      "name": "吸浆虫",
+      "type": "Pest",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:c13c8a77d286fc95",
+      "name": "麦叶蜂",
+      "type": "Pest",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:cf311fe879414c6e",
+      "name": "及时收获",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:a71903f34eb74c5f",
+      "name": "蜡熟末期至完熟期",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W001"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:903d2532c264af26",
+      "name": "肥药优调",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W002"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:7502f8ef64245943",
+      "name": "返青前顶凌追肥",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W002"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:dcae8b86f20f4776",
+      "name": "农业防治",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W002"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:828ee9ee203b26f1",
+      "name": "轮作换茬",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W002"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:7f6ec795c9cc01b2",
+      "name": "合理施肥",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W002"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:914cb74410b9b1ea",
+      "name": "培育壮苗",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W002"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:780859be16bb29e5",
+      "name": "中耕锄划",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W002"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:0733698790851895",
+      "name": "生产档案",
+      "type": "Requirement",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W002"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:b9b0e3af5fca04de",
+      "name": "开沟接墒播种",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W003"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:421013300f1a7871",
+      "name": "探墒保播",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W004"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:56fcf99d2e306604",
+      "name": "干土层厚度",
+      "type": "EnvironmentFactor",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W004"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:de3270afea18ae88",
+      "name": "晚播春促减灾",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W005"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:f6ee785d760ad93a",
+      "name": "沧州",
+      "type": "Region",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W005",
+        "W006"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:5e361a6fb3efeb82",
+      "name": "晚播",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W005"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:4795467f7fd7b728",
+      "name": "播种期",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W005",
+        "W006"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:f630478247bb9e5a",
+      "name": "春季管理",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W005"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:d9db17c9ce600f95",
+      "name": "宽幅沟播",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W006"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:c6c525d476f78efc",
+      "name": "顶凌追肥",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W006"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:e71d276619e12b82",
+      "name": "干旱",
+      "type": "Stress",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:f3194914c0ff0572",
+      "name": "种子萌发差",
+      "type": "Process",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:c9259dd0ae96335b",
+      "name": "分蘖力弱",
+      "type": "Process",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:749055fb50da045c",
+      "name": "生长受抑制",
+      "type": "Process",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:2b9ac0f758affd49",
+      "name": "抗逆促发增蘖种子处理",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:3b1dbd5ffe283a9c",
+      "name": "种子萌发",
+      "type": "Process",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:8951485dd64a39c5",
+      "name": "壮秆抗逆化控",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:abf2e46b99c5e62a",
+      "name": "倒伏",
+      "type": "Stress",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:7f92040dbde51b35",
+      "name": "灌浆期",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:61a8d4c075abfb40",
+      "name": "干热风",
+      "type": "WeatherRisk",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:ee93822bca7251b8",
+      "name": "早衰",
+      "type": "Stress",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:f6c6f1758b27ebf7",
+      "name": "稳叶促粒调控",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:316f477d18c2ef10",
+      "name": "籽粒灌浆",
+      "type": "Process",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:58500962a98317fa",
+      "name": "黄骅旱碱麦原粮",
+      "type": "Product",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015",
+        "W016"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:bb356e351e9dbeb8",
+      "name": "色泽",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:cf3cc391ad6b4aef",
+      "name": "容重",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:b51000f7cddcb848",
+      "name": "杂质含量",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:90d144a881d04d0a",
+      "name": "不完善粒含量",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:833d9bda20dab5fa",
+      "name": "水分",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:8984668a6bbedef0",
+      "name": "硬度指数",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:9fa4b613b8d6042e",
+      "name": "降落数值",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:961cb317b8d81303",
+      "name": "蛋白质含量",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015",
+        "W016"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:e5b987282181db37",
+      "name": "GB2761",
+      "type": "Requirement",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:786931143842ba8b",
+      "name": "GB2762",
+      "type": "Requirement",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:a34ba27cf0334d46",
+      "name": "GB2763",
+      "type": "Requirement",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W015"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:c6eb68608df6f32f",
+      "name": "黄骅旱碱麦小麦粉",
+      "type": "Product",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W016"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:c793cebd9c542563",
+      "name": "灰分含量",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W016"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:484259713591d383",
+      "name": "脂肪酸值",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W016"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:3a40f667324c97de",
+      "name": "水分含量",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W016"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:31ef6272540ecf8a",
+      "name": "湿面筋含量",
+      "type": "QualityIndicator",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W016"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:cde9ffdc8b283071",
+      "name": "盐胁迫",
+      "type": "Stress",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:a79d9dee6d186c26",
+      "name": "土壤盐分",
+      "type": "EnvironmentFactor",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:e177b0e4028c0b0d",
+      "name": "根系吸水",
+      "type": "Process",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:466d222815cfa054",
+      "name": "盲目增加播种量",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W008"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:85576da4cc868144",
+      "name": "水分亏缺",
+      "type": "EnvironmentFactor",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W011"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:2ca8acdd9d49aeaa",
+      "name": "分蘖成穗",
+      "type": "Process",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W011"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:57b52c86d889cf40",
+      "name": "早期生物量积累",
+      "type": "Process",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W011"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:7e9762fb0cff4728",
+      "name": "产量形成",
+      "type": "Process",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W011"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:1e640cc22a977ecd",
+      "name": "雨水蓄积",
+      "type": "AgriculturalPractice",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W011"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:8b3166254ceeadd0",
+      "name": "黄骅",
+      "type": "Region",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": [
+        "W011"
+      ]
+    },
+    {
+      "id": "huanghua_hanjianmai:2e2567566a4124c0",
+      "name": "春季",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": []
+    },
+    {
+      "id": "huanghua_hanjianmai:73466e8226099fbe",
+      "name": "收获期",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": []
+    },
+    {
+      "id": "huanghua_hanjianmai:466fbc7e7aaf88cc",
+      "name": "返青期至拔节期",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": []
+    },
+    {
+      "id": "huanghua_hanjianmai:7493a9ebae4977e4",
+      "name": "采后",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": []
+    },
+    {
+      "id": "huanghua_hanjianmai:b69756172098b84e",
+      "name": "加工期",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": []
+    },
+    {
+      "id": "huanghua_hanjianmai:2b72f256b591281e",
+      "name": "拔节期",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": []
+    },
+    {
+      "id": "huanghua_hanjianmai:be7a9c16ddc2fac3",
+      "name": "拔节期至抽穗期",
+      "type": "GrowthStage",
+      "crop_id": "huanghua_hanjianmai",
+      "source_ids": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "HH-E001",
+      "source": "huanghua_hanjianmai:311557a546a5ecdf",
+      "target": "huanghua_hanjianmai:aa2657754e830689",
+      "relation": "APPLIES_IN",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C001",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "本文件适用于土壤含盐量为1‰～3‰的河北省滨海平原盐碱干旱生态类型区的冬小麦生产。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 5,
+        "start": 90,
+        "end": 131
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E002",
+      "source": "huanghua_hanjianmai:81da51e314abba56",
+      "target": "huanghua_hanjianmai:7822df74fb338f59",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C002",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:7822df74fb338f59"
+      ],
+      "growth_stage": "播前准备",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "采用深翻+旋耕的整地方式，每3年深翻一次，深度不小于30cm。播前结合施底肥旋耕，耕深不小于15cm，作业质量应符合NY/T499中的规定。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 5,
+        "start": 567,
+        "end": 637
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：播前准备"
+      ]
+    },
+    {
+      "id": "HH-E003",
+      "source": "huanghua_hanjianmai:0bb02c847d02569a",
+      "target": "huanghua_hanjianmai:0932ef851d8da09a",
+      "relation": "SELECTS",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C003",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:7822df74fb338f59"
+      ],
+      "growth_stage": "播前准备",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "选择国家或河北省品种审定委员会审定的适宜本区域种植的具有沧州小红芒主要特征（分蘖力强，株高较高，穗纺锤形、抗旱性强）的一类中强筋小麦品种，如：捷麦19、沧麦6005等。种子质量应符合GB4404.1规定。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 5,
+        "start": 651,
+        "end": 753
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：播前准备"
+      ]
+    },
+    {
+      "id": "HH-E004",
+      "source": "huanghua_hanjianmai:0bb02c847d02569a",
+      "target": "huanghua_hanjianmai:b861d06677486358",
+      "relation": "SELECTS",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C003",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:7822df74fb338f59"
+      ],
+      "growth_stage": "播前准备",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "选择国家或河北省品种审定委员会审定的适宜本区域种植的具有沧州小红芒主要特征（分蘖力强，株高较高，穗纺锤形、抗旱性强）的一类中强筋小麦品种，如：捷麦19、沧麦6005等。种子质量应符合GB4404.1规定。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 5,
+        "start": 651,
+        "end": 753
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：播前准备"
+      ]
+    },
+    {
+      "id": "HH-E005",
+      "source": "huanghua_hanjianmai:af94264dbe10343b",
+      "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+      "relation": "REQUIRES",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C004",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "最佳播期为9月30日至10月7日。播量最佳播期内，亩播量12.5kg，每推迟1d，播量增加0.5kg，最大亩播量不超过22.5kg。播种要求适播期内耕层（0cm～20cm）土壤相对含水量65%～75%时即可播种。条播，行距15cm～20cm，播深3cm～5cm，深浅一致。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 6,
+        "start": 73,
+        "end": 209
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E006",
+      "source": "huanghua_hanjianmai:ee03e701ff2a539a",
+      "target": "huanghua_hanjianmai:254c3a2b7a79ee5c",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C005",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:254c3a2b7a79ee5c"
+      ],
+      "growth_stage": "返青期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "返青前进行麦田锄划和镇压。追肥8.2.1趁墒追肥返青前顶凌追肥，每亩施20kg尿素。8.2.2肥料水溶追施春季干旱无法趁墒追肥时，每亩将20kg尿素和500g磷酸二氢钾溶解于1m3～2m3水中，利用追肥机追施。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 6,
+        "start": 344,
+        "end": 449
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：返青期"
+      ]
+    },
+    {
+      "id": "HH-E007",
+      "source": "huanghua_hanjianmai:311557a546a5ecdf",
+      "target": "huanghua_hanjianmai:95402fe74542c564",
+      "relation": "HAS_RISK",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C006",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:2e2567566a4124c0"
+      ],
+      "growth_stage": "春季",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "应主要防治锈病、赤霉病、白粉病、蚜虫、吸浆虫、红蜘蛛和麦叶蜂等，重点防治红蜘蛛和蚜虫，防治方法按照NY/T2914-2016中5.3.1和5.3.7规定执行。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 6,
+        "start": 454,
+        "end": 533
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：春季"
+      ]
+    },
+    {
+      "id": "HH-E008",
+      "source": "huanghua_hanjianmai:311557a546a5ecdf",
+      "target": "huanghua_hanjianmai:e1f114323049a46b",
+      "relation": "HAS_RISK",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C006",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:2e2567566a4124c0"
+      ],
+      "growth_stage": "春季",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "应主要防治锈病、赤霉病、白粉病、蚜虫、吸浆虫、红蜘蛛和麦叶蜂等，重点防治红蜘蛛和蚜虫，防治方法按照NY/T2914-2016中5.3.1和5.3.7规定执行。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 6,
+        "start": 454,
+        "end": 533
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：春季"
+      ]
+    },
+    {
+      "id": "HH-E009",
+      "source": "huanghua_hanjianmai:311557a546a5ecdf",
+      "target": "huanghua_hanjianmai:85186c36f83872d4",
+      "relation": "HAS_RISK",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C006",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:2e2567566a4124c0"
+      ],
+      "growth_stage": "春季",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "应主要防治锈病、赤霉病、白粉病、蚜虫、吸浆虫、红蜘蛛和麦叶蜂等，重点防治红蜘蛛和蚜虫，防治方法按照NY/T2914-2016中5.3.1和5.3.7规定执行。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 6,
+        "start": 454,
+        "end": 533
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：春季"
+      ]
+    },
+    {
+      "id": "HH-E010",
+      "source": "huanghua_hanjianmai:311557a546a5ecdf",
+      "target": "huanghua_hanjianmai:5eaf3ad797631082",
+      "relation": "HAS_RISK",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C006",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:2e2567566a4124c0"
+      ],
+      "growth_stage": "春季",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "应主要防治锈病、赤霉病、白粉病、蚜虫、吸浆虫、红蜘蛛和麦叶蜂等，重点防治红蜘蛛和蚜虫，防治方法按照NY/T2914-2016中5.3.1和5.3.7规定执行。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 6,
+        "start": 454,
+        "end": 533
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：春季"
+      ]
+    },
+    {
+      "id": "HH-E011",
+      "source": "huanghua_hanjianmai:311557a546a5ecdf",
+      "target": "huanghua_hanjianmai:ea17d1564e80751d",
+      "relation": "HAS_RISK",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C006",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:2e2567566a4124c0"
+      ],
+      "growth_stage": "春季",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "应主要防治锈病、赤霉病、白粉病、蚜虫、吸浆虫、红蜘蛛和麦叶蜂等，重点防治红蜘蛛和蚜虫，防治方法按照NY/T2914-2016中5.3.1和5.3.7规定执行。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 6,
+        "start": 454,
+        "end": 533
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：春季"
+      ]
+    },
+    {
+      "id": "HH-E012",
+      "source": "huanghua_hanjianmai:311557a546a5ecdf",
+      "target": "huanghua_hanjianmai:f9608f2c032ae6ba",
+      "relation": "HAS_RISK",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C006",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:2e2567566a4124c0"
+      ],
+      "growth_stage": "春季",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "应主要防治锈病、赤霉病、白粉病、蚜虫、吸浆虫、红蜘蛛和麦叶蜂等，重点防治红蜘蛛和蚜虫，防治方法按照NY/T2914-2016中5.3.1和5.3.7规定执行。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 6,
+        "start": 454,
+        "end": 533
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：春季"
+      ]
+    },
+    {
+      "id": "HH-E013",
+      "source": "huanghua_hanjianmai:311557a546a5ecdf",
+      "target": "huanghua_hanjianmai:c13c8a77d286fc95",
+      "relation": "HAS_RISK",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C006",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:2e2567566a4124c0"
+      ],
+      "growth_stage": "春季",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "应主要防治锈病、赤霉病、白粉病、蚜虫、吸浆虫、红蜘蛛和麦叶蜂等，重点防治红蜘蛛和蚜虫，防治方法按照NY/T2914-2016中5.3.1和5.3.7规定执行。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 6,
+        "start": 454,
+        "end": 533
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：春季"
+      ]
+    },
+    {
+      "id": "HH-E014",
+      "source": "huanghua_hanjianmai:cf311fe879414c6e",
+      "target": "huanghua_hanjianmai:a71903f34eb74c5f",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "fact",
+      "source_id": "W001",
+      "evidence_ids": [
+        "W001"
+      ],
+      "chunk_id": "HH-C007",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北省滨海平原盐碱干旱生态类型区",
+      "stage_ids": [
+        "huanghua_hanjianmai:73466e8226099fbe"
+      ],
+      "growth_stage": "收获期",
+      "scope": "harvest",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "于蜡熟末期至完熟期及时收获。",
+      "locator": {
+        "file": "evidence\\raw\\W001_fulltext.pages.json",
+        "page": 7,
+        "start": 98,
+        "end": 112
+      },
+      "conditions": [
+        "原文地区：河北省滨海平原盐碱干旱生态类型区",
+        "生育阶段：收获期"
+      ]
+    },
+    {
+      "id": "HH-E015",
+      "source": "huanghua_hanjianmai:903d2532c264af26",
+      "target": "huanghua_hanjianmai:7502f8ef64245943",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "source_id": "W002",
+      "evidence_ids": [
+        "W002"
+      ],
+      "chunk_id": "HH-C008",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [
+        "huanghua_hanjianmai:254c3a2b7a79ee5c"
+      ],
+      "growth_stage": "返青期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "返青前顶凌追肥，亩施尿素10kg，磷酸二氢钾100g～200g。春季干旱未趁墒追肥的，可肥料水溶追施。肥料的使用应符合NY/T496的规定。",
+      "locator": {
+        "file": "evidence\\raw\\W002_fulltext.pages.json",
+        "page": 5,
+        "start": 485,
+        "end": 555
+      },
+      "conditions": [
+        "原文地区：河北",
+        "生育阶段：返青期"
+      ]
+    },
+    {
+      "id": "HH-E016",
+      "source": "huanghua_hanjianmai:dcae8b86f20f4776",
+      "target": "huanghua_hanjianmai:828ee9ee203b26f1",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "source_id": "W002",
+      "evidence_ids": [
+        "W002"
+      ],
+      "chunk_id": "HH-C009",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "通过选用抗旱耐盐抗病性好的小麦品种、轮作换茬、适期播种、合理施肥、培育壮苗、中耕锄划等措施，实现减少初侵染源，增强小麦的抗病虫能力，控制病虫草害。",
+      "locator": {
+        "file": "evidence\\raw\\W002_fulltext.pages.json",
+        "page": 6,
+        "start": 25,
+        "end": 98
+      },
+      "conditions": [
+        "原文地区：河北",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E017",
+      "source": "huanghua_hanjianmai:dcae8b86f20f4776",
+      "target": "huanghua_hanjianmai:af94264dbe10343b",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "source_id": "W002",
+      "evidence_ids": [
+        "W002"
+      ],
+      "chunk_id": "HH-C009",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "通过选用抗旱耐盐抗病性好的小麦品种、轮作换茬、适期播种、合理施肥、培育壮苗、中耕锄划等措施，实现减少初侵染源，增强小麦的抗病虫能力，控制病虫草害。",
+      "locator": {
+        "file": "evidence\\raw\\W002_fulltext.pages.json",
+        "page": 6,
+        "start": 25,
+        "end": 98
+      },
+      "conditions": [
+        "原文地区：河北",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E018",
+      "source": "huanghua_hanjianmai:dcae8b86f20f4776",
+      "target": "huanghua_hanjianmai:7f6ec795c9cc01b2",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "source_id": "W002",
+      "evidence_ids": [
+        "W002"
+      ],
+      "chunk_id": "HH-C009",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "通过选用抗旱耐盐抗病性好的小麦品种、轮作换茬、适期播种、合理施肥、培育壮苗、中耕锄划等措施，实现减少初侵染源，增强小麦的抗病虫能力，控制病虫草害。",
+      "locator": {
+        "file": "evidence\\raw\\W002_fulltext.pages.json",
+        "page": 6,
+        "start": 25,
+        "end": 98
+      },
+      "conditions": [
+        "原文地区：河北",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E019",
+      "source": "huanghua_hanjianmai:dcae8b86f20f4776",
+      "target": "huanghua_hanjianmai:914cb74410b9b1ea",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "source_id": "W002",
+      "evidence_ids": [
+        "W002"
+      ],
+      "chunk_id": "HH-C009",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "通过选用抗旱耐盐抗病性好的小麦品种、轮作换茬、适期播种、合理施肥、培育壮苗、中耕锄划等措施，实现减少初侵染源，增强小麦的抗病虫能力，控制病虫草害。",
+      "locator": {
+        "file": "evidence\\raw\\W002_fulltext.pages.json",
+        "page": 6,
+        "start": 25,
+        "end": 98
+      },
+      "conditions": [
+        "原文地区：河北",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E020",
+      "source": "huanghua_hanjianmai:dcae8b86f20f4776",
+      "target": "huanghua_hanjianmai:780859be16bb29e5",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "source_id": "W002",
+      "evidence_ids": [
+        "W002"
+      ],
+      "chunk_id": "HH-C009",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "通过选用抗旱耐盐抗病性好的小麦品种、轮作换茬、适期播种、合理施肥、培育壮苗、中耕锄划等措施，实现减少初侵染源，增强小麦的抗病虫能力，控制病虫草害。",
+      "locator": {
+        "file": "evidence\\raw\\W002_fulltext.pages.json",
+        "page": 6,
+        "start": 25,
+        "end": 98
+      },
+      "conditions": [
+        "原文地区：河北",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E021",
+      "source": "huanghua_hanjianmai:903d2532c264af26",
+      "target": "huanghua_hanjianmai:0733698790851895",
+      "relation": "REQUIRES",
+      "kind": "fact",
+      "source_id": "W002",
+      "evidence_ids": [
+        "W002"
+      ],
+      "chunk_id": "HH-C010",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "应详细记录肥料农药的使用情况及病虫草害防治的具体措施，建立技术档案，并保存2年以上。",
+      "locator": {
+        "file": "evidence\\raw\\W002_fulltext.pages.json",
+        "page": 6,
+        "start": 376,
+        "end": 418
+      },
+      "conditions": [
+        "原文地区：河北",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E022",
+      "source": "huanghua_hanjianmai:b9b0e3af5fca04de",
+      "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+      "relation": "REQUIRES",
+      "kind": "fact",
+      "source_id": "W003",
+      "evidence_ids": [
+        "W003"
+      ],
+      "chunk_id": "HH-C011",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "为达到保播、避盐的目的，利用专用农机具进行起垄沟内宽幅匀播的播种方式。",
+      "locator": {
+        "file": "evidence\\raw\\W003_fulltext.pages.json",
+        "page": 5,
+        "start": 314,
+        "end": 349
+      },
+      "conditions": [
+        "原文地区：河北",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E023",
+      "source": "huanghua_hanjianmai:b9b0e3af5fca04de",
+      "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+      "relation": "REQUIRES",
+      "kind": "fact",
+      "source_id": "W003",
+      "evidence_ids": [
+        "W003"
+      ],
+      "chunk_id": "HH-C012",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "5.3.3.1土壤墒情较好的地块（土壤含水量为田间最大持水量的70%左右），整地后用沟播种肥一体播种机播种，开沟深度7cm～8cm，将种子均匀撒播于沟内，覆土3cm。",
+      "locator": {
+        "file": "evidence\\raw\\W003_fulltext.pages.json",
+        "page": 6,
+        "start": 97,
+        "end": 180
+      },
+      "conditions": [
+        "原文地区：河北",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E024",
+      "source": "huanghua_hanjianmai:b9b0e3af5fca04de",
+      "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+      "relation": "REQUIRES",
+      "kind": "fact",
+      "source_id": "W003",
+      "evidence_ids": [
+        "W003"
+      ],
+      "chunk_id": "HH-C013",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "河北",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "5.3.3.2土壤墒情较差的地块（土壤含水量为田间最大持水量的65%左右），采用沟播种肥一体机播种，根据干土层厚度调整开沟深度，最深开沟深度12cm，将种子均匀撒播于沟内，覆土2cm～3cm。",
+      "locator": {
+        "file": "evidence\\raw\\W003_fulltext.pages.json",
+        "page": 6,
+        "start": 180,
+        "end": 276
+      },
+      "conditions": [
+        "原文地区：河北",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E025",
+      "source": "huanghua_hanjianmai:421013300f1a7871",
+      "target": "huanghua_hanjianmai:56fcf99d2e306604",
+      "relation": "REQUIRES",
+      "kind": "fact",
+      "source_id": "W004",
+      "evidence_ids": [
+        "W004"
+      ],
+      "chunk_id": "HH-C014",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm，见图1。4适用条件适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块。",
+      "locator": {
+        "file": "evidence\\raw\\W004_fulltext.pages.json",
+        "page": 3,
+        "start": 369,
+        "end": 440
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E026",
+      "source": "huanghua_hanjianmai:421013300f1a7871",
+      "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+      "relation": "REQUIRES",
+      "kind": "fact",
+      "source_id": "W004",
+      "evidence_ids": [
+        "W004"
+      ],
+      "chunk_id": "HH-C014",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "利用拨土铲拨开干土层，将种子播于湿土层下2cm～3cm，见图1。4适用条件适播期内，干土层土壤相对含水量低于65%、厚度不超过10cm的地块。",
+      "locator": {
+        "file": "evidence\\raw\\W004_fulltext.pages.json",
+        "page": 3,
+        "start": 369,
+        "end": 440
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E027",
+      "source": "huanghua_hanjianmai:421013300f1a7871",
+      "target": "huanghua_hanjianmai:56fcf99d2e306604",
+      "relation": "REQUIRES",
+      "kind": "fact",
+      "source_id": "W004",
+      "evidence_ids": [
+        "W004"
+      ],
+      "chunk_id": "HH-C015",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "利用探墒播种机自带的旋耕机在小麦播种行进行半浅旋，旋耕深度5cm，根据干土层深度，利用拨土铲拨开干土层，形成地垄，种子播于湿土层下2cm～3cm，随播种亩施氮磷钾复合肥40kg于沟底部中央种子播面下5cm处，宽窄行播种，窄行12cm，宽行20cm，窄行播种2行，行距12cm，播后镇压。肥料的使用应符合NY/T496的规定。",
+      "locator": {
+        "file": "evidence\\raw\\W004_fulltext.pages.json",
+        "page": 4,
+        "start": 194,
+        "end": 356
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E028",
+      "source": "huanghua_hanjianmai:421013300f1a7871",
+      "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+      "relation": "REQUIRES",
+      "kind": "fact",
+      "source_id": "W004",
+      "evidence_ids": [
+        "W004"
+      ],
+      "chunk_id": "HH-C015",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "利用探墒播种机自带的旋耕机在小麦播种行进行半浅旋，旋耕深度5cm，根据干土层深度，利用拨土铲拨开干土层，形成地垄，种子播于湿土层下2cm～3cm，随播种亩施氮磷钾复合肥40kg于沟底部中央种子播面下5cm处，宽窄行播种，窄行12cm，宽行20cm，窄行播种2行，行距12cm，播后镇压。肥料的使用应符合NY/T496的规定。",
+      "locator": {
+        "file": "evidence\\raw\\W004_fulltext.pages.json",
+        "page": 4,
+        "start": 194,
+        "end": 356
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E029",
+      "source": "huanghua_hanjianmai:de3270afea18ae88",
+      "target": "huanghua_hanjianmai:f6ee785d760ad93a",
+      "relation": "APPLIES_IN",
+      "kind": "fact",
+      "source_id": "W005",
+      "evidence_ids": [
+        "W005"
+      ],
+      "chunk_id": "HH-C016",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "本文件适用于沧州市滨海平原盐碱干旱生态区（含盐量≤0.3%）的晚播旱碱麦生产。",
+      "locator": {
+        "file": "evidence\\raw\\W005_fulltext.pages.json",
+        "page": 3,
+        "start": 90,
+        "end": 129
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E030",
+      "source": "huanghua_hanjianmai:5e361a6fb3efeb82",
+      "target": "huanghua_hanjianmai:4795467f7fd7b728",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "fact",
+      "source_id": "W005",
+      "evidence_ids": [
+        "W005"
+      ],
+      "chunk_id": "HH-C017",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "10月20日之后播种为晚播。",
+      "locator": {
+        "file": "evidence\\raw\\W005_fulltext.pages.json",
+        "page": 3,
+        "start": 424,
+        "end": 438
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E031",
+      "source": "huanghua_hanjianmai:de3270afea18ae88",
+      "target": "huanghua_hanjianmai:f630478247bb9e5a",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "source_id": "W005",
+      "evidence_ids": [
+        "W005"
+      ],
+      "chunk_id": "HH-C018",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:2e2567566a4124c0"
+      ],
+      "growth_stage": "春季",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "在土壤返浆期，若土壤墒情充足，则利用土壤返浆，采用圆盘式追肥机追施氮肥，或在起身前将氮肥溶解于1m3～2m3水中，采用追施水溶肥机进行追施。7.1.2追肥量10月20日～10月31日播种的旱碱麦，亩施纯N6kg～8kg；11月1日之后播种的旱碱麦，亩施纯N10kg～12kg。",
+      "locator": {
+        "file": "evidence\\raw\\W005_fulltext.pages.json",
+        "page": 4,
+        "start": 361,
+        "end": 499
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：春季"
+      ]
+    },
+    {
+      "id": "HH-E032",
+      "source": "huanghua_hanjianmai:de3270afea18ae88",
+      "target": "huanghua_hanjianmai:f630478247bb9e5a",
+      "relation": "INCLUDES",
+      "kind": "fact",
+      "source_id": "W005",
+      "evidence_ids": [
+        "W005"
+      ],
+      "chunk_id": "HH-C019",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:2e2567566a4124c0"
+      ],
+      "growth_stage": "春季",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "冬前未出苗的麦田，出苗前及时浅锄轻划。",
+      "locator": {
+        "file": "evidence\\raw\\W005_fulltext.pages.json",
+        "page": 4,
+        "start": 504,
+        "end": 523
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：春季"
+      ]
+    },
+    {
+      "id": "HH-E033",
+      "source": "huanghua_hanjianmai:d9db17c9ce600f95",
+      "target": "huanghua_hanjianmai:f6ee785d760ad93a",
+      "relation": "APPLIES_IN",
+      "kind": "fact",
+      "source_id": "W006",
+      "evidence_ids": [
+        "W006"
+      ],
+      "chunk_id": "HH-C020",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "本文件适用于沧州地区含盐量1‰～3‰的旱碱地冬小麦生产。",
+      "locator": {
+        "file": "evidence\\raw\\W006_fulltext.pages.json",
+        "page": 3,
+        "start": 83,
+        "end": 111
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E034",
+      "source": "huanghua_hanjianmai:0bb02c847d02569a",
+      "target": "huanghua_hanjianmai:0932ef851d8da09a",
+      "relation": "SELECTS",
+      "kind": "fact",
+      "source_id": "W006",
+      "evidence_ids": [
+        "W006"
+      ],
+      "chunk_id": "HH-C021",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:7822df74fb338f59"
+      ],
+      "growth_stage": "播前准备",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "选用国家或省品种审定委员会审定的适宜本区域种植的抗旱耐盐碱、抗寒性强、丰产性好的旱碱麦品种。如捷麦19、沧麦6002、渭麦9、沧麦6005、晋麦100等。种子质量符合GB4404.1规定。",
+      "locator": {
+        "file": "evidence\\raw\\W006_fulltext.pages.json",
+        "page": 3,
+        "start": 358,
+        "end": 452
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：播前准备"
+      ]
+    },
+    {
+      "id": "HH-E035",
+      "source": "huanghua_hanjianmai:0bb02c847d02569a",
+      "target": "huanghua_hanjianmai:b861d06677486358",
+      "relation": "SELECTS",
+      "kind": "fact",
+      "source_id": "W006",
+      "evidence_ids": [
+        "W006"
+      ],
+      "chunk_id": "HH-C021",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:7822df74fb338f59"
+      ],
+      "growth_stage": "播前准备",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "选用国家或省品种审定委员会审定的适宜本区域种植的抗旱耐盐碱、抗寒性强、丰产性好的旱碱麦品种。如捷麦19、沧麦6002、渭麦9、沧麦6005、晋麦100等。种子质量符合GB4404.1规定。",
+      "locator": {
+        "file": "evidence\\raw\\W006_fulltext.pages.json",
+        "page": 3,
+        "start": 358,
+        "end": 452
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：播前准备"
+      ]
+    },
+    {
+      "id": "HH-E036",
+      "source": "huanghua_hanjianmai:d9db17c9ce600f95",
+      "target": "huanghua_hanjianmai:4795467f7fd7b728",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "fact",
+      "source_id": "W006",
+      "evidence_ids": [
+        "W006"
+      ],
+      "chunk_id": "HH-C022",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "适宜播期10月1日～10月7日，亩播量10kg～12.5kg。适播期后，每推迟1天，亩播量增加0.5kg，最多不超过22.5kg。",
+      "locator": {
+        "file": "evidence\\raw\\W006_fulltext.pages.json",
+        "page": 4,
+        "start": 99,
+        "end": 164
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E037",
+      "source": "huanghua_hanjianmai:d9db17c9ce600f95",
+      "target": "huanghua_hanjianmai:f8ae220bbffaddd7",
+      "relation": "REQUIRES",
+      "kind": "fact",
+      "source_id": "W006",
+      "evidence_ids": [
+        "W006"
+      ],
+      "chunk_id": "HH-C023",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:4795467f7fd7b728"
+      ],
+      "growth_stage": "播种期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "采用宽幅沟播机播种，开沟、播种、覆土、镇压一次完成，沟深6cm～8cm，小麦种子播于沟内，播深2cm～4cm，播种带幅宽14cm～16cm，幅间距20cm～26cm。5.3土壤墒情耕层土壤相对含水量70%～80%播种。",
+      "locator": {
+        "file": "evidence\\raw\\W006_fulltext.pages.json",
+        "page": 4,
+        "start": 171,
+        "end": 280
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：播种期"
+      ]
+    },
+    {
+      "id": "HH-E038",
+      "source": "huanghua_hanjianmai:c6c525d476f78efc",
+      "target": "huanghua_hanjianmai:254c3a2b7a79ee5c",
+      "relation": "OCCURS_AT_STAGE",
+      "kind": "fact",
+      "source_id": "W006",
+      "evidence_ids": [
+        "W006"
+      ],
+      "chunk_id": "HH-C024",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:254c3a2b7a79ee5c"
+      ],
+      "growth_stage": "返青期",
+      "scope": "production",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "春季小麦返青前在苗带间进行顶凌追肥，亩追施尿素12.5kg～15kg。",
+      "locator": {
+        "file": "evidence\\raw\\W006_fulltext.pages.json",
+        "page": 4,
+        "start": 290,
+        "end": 325
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：返青期"
+      ]
+    },
+    {
+      "id": "HH-E039",
+      "source": "huanghua_hanjianmai:e71d276619e12b82",
+      "target": "huanghua_hanjianmai:f3194914c0ff0572",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "mechanism",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C025",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 4,
+        "start": 354,
+        "end": 459
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E040",
+      "source": "huanghua_hanjianmai:e71d276619e12b82",
+      "target": "huanghua_hanjianmai:c9259dd0ae96335b",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "mechanism",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C025",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 4,
+        "start": 354,
+        "end": 459
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E041",
+      "source": "huanghua_hanjianmai:e71d276619e12b82",
+      "target": "huanghua_hanjianmai:749055fb50da045c",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "mechanism",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C025",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "沧州市盐碱地干旱常态化情况下，存在种子萌发差、植株抗逆能力差、分蘖力弱、生长受抑制、群体不足，密植易倒伏、后期抗干热风能力差、易早衰等限制旱碱麦绿色增产的问题，亟需开展旱碱麦抗逆增产调控制剂研发与调控技术研究。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 4,
+        "start": 354,
+        "end": 459
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E042",
+      "source": "huanghua_hanjianmai:2b9ac0f758affd49",
+      "target": "huanghua_hanjianmai:3b1dbd5ffe283a9c",
+      "relation": "RESEARCH_TARGET",
+      "kind": "fact",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C026",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:7822df74fb338f59"
+      ],
+      "growth_stage": "播前准备",
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "在旱碱麦生育前期，针对种子抗逆萌发能力弱、分蘖能力不足、前期根系生长弱等问题，重点开展促发增蘖种子处理技术研发，构建优选制剂的拌种、浸种和种子引发技术，促进盐碱地干旱条件下种子萌发，促进旱碱麦根系发育和活力，促进冬前分蘖，提高苗期抗旱耐寒性。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 4,
+        "start": 796,
+        "end": 917
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：播前准备",
+        "仅为研究方向，非已验证田间措施"
+      ]
+    },
+    {
+      "id": "HH-E043",
+      "source": "huanghua_hanjianmai:8951485dd64a39c5",
+      "target": "huanghua_hanjianmai:abf2e46b99c5e62a",
+      "relation": "RESEARCH_TARGET",
+      "kind": "fact",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C027",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:466fbc7e7aaf88cc"
+      ],
+      "growth_stage": "返青期至拔节期",
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "在旱碱麦返青—拔节期，针对群体密植易倒伏、抗倒春寒能力弱等问题，重点开展拔节期壮秆抗逆化控技术研发，明确防倒抗逆制剂对作物株型、冠层结构与光合能力、植株抗逆能力及对麦穗性状与产量的调控效应，构建田间应用关键技术，提高小麦茎秆强度、优化株型和冠层结构、提高叶片抗逆性。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 4,
+        "start": 917,
+        "end": 1050
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：返青期至拔节期",
+        "仅为研究方向，非已验证田间措施"
+      ]
+    },
+    {
+      "id": "HH-E044",
+      "source": "huanghua_hanjianmai:7f92040dbde51b35",
+      "target": "huanghua_hanjianmai:61a8d4c075abfb40",
+      "relation": "HAS_RISK",
+      "kind": "fact",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C028",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:7f92040dbde51b35"
+      ],
+      "growth_stage": "灌浆期",
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "在旱碱麦灌浆期，针对盐碱地干旱条件下，小麦应对干热风能力不足、易早衰、灌浆强度低、持续期短等问题，重点开展稳叶促粒调控技术研究，结合“一喷三防”等技术，促进小麦籽粒建成，提高籽粒灌浆速率，维持叶片及非叶器官的光合能力，促进小麦产量提升和品质改善。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 4,
+        "start": 1050,
+        "end": 1173
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：灌浆期"
+      ]
+    },
+    {
+      "id": "HH-E045",
+      "source": "huanghua_hanjianmai:7f92040dbde51b35",
+      "target": "huanghua_hanjianmai:ee93822bca7251b8",
+      "relation": "HAS_RISK",
+      "kind": "fact",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C028",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:7f92040dbde51b35"
+      ],
+      "growth_stage": "灌浆期",
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "在旱碱麦灌浆期，针对盐碱地干旱条件下，小麦应对干热风能力不足、易早衰、灌浆强度低、持续期短等问题，重点开展稳叶促粒调控技术研究，结合“一喷三防”等技术，促进小麦籽粒建成，提高籽粒灌浆速率，维持叶片及非叶器官的光合能力，促进小麦产量提升和品质改善。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 4,
+        "start": 1050,
+        "end": 1173
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：灌浆期"
+      ]
+    },
+    {
+      "id": "HH-E046",
+      "source": "huanghua_hanjianmai:f6c6f1758b27ebf7",
+      "target": "huanghua_hanjianmai:316f477d18c2ef10",
+      "relation": "RESEARCH_TARGET",
+      "kind": "fact",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C028",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [
+        "huanghua_hanjianmai:7f92040dbde51b35"
+      ],
+      "growth_stage": "灌浆期",
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "在旱碱麦灌浆期，针对盐碱地干旱条件下，小麦应对干热风能力不足、易早衰、灌浆强度低、持续期短等问题，重点开展稳叶促粒调控技术研究，结合“一喷三防”等技术，促进小麦籽粒建成，提高籽粒灌浆速率，维持叶片及非叶器官的光合能力，促进小麦产量提升和品质改善。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 4,
+        "start": 1050,
+        "end": 1173
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：灌浆期"
+      ]
+    },
+    {
+      "id": "HH-E047",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:bb356e351e9dbeb8",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C029",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 109
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E048",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:cf3cc391ad6b4aef",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C029",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 109
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E049",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:b51000f7cddcb848",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C029",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 109
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E050",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:90d144a881d04d0a",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C029",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 109
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E051",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:833d9bda20dab5fa",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C029",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 109
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E052",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:8984668a6bbedef0",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C029",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 109
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E053",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:9fa4b613b8d6042e",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C029",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 109
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E054",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:961cb317b8d81303",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C029",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 109
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E055",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:e5b987282181db37",
+      "relation": "REFERENCES_STANDARD",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C030",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 109,
+        "end": 174
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E056",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:786931143842ba8b",
+      "relation": "REFERENCES_STANDARD",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C030",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 109,
+        "end": 174
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E057",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:a34ba27cf0334d46",
+      "relation": "REFERENCES_STANDARD",
+      "kind": "fact",
+      "source_id": "W015",
+      "evidence_ids": [
+        "W015"
+      ],
+      "chunk_id": "HH-C030",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:7493a9ebae4977e4"
+      ],
+      "growth_stage": "采后",
+      "scope": "grain",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+      "locator": {
+        "file": "evidence\\raw\\W015_fulltext.pages.json",
+        "page": 4,
+        "start": 109,
+        "end": 174
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：采后"
+      ]
+    },
+    {
+      "id": "HH-E058",
+      "source": "huanghua_hanjianmai:58500962a98317fa",
+      "target": "huanghua_hanjianmai:c6eb68608df6f32f",
+      "relation": "PROCESSED_INTO",
+      "kind": "fact",
+      "source_id": "W016",
+      "evidence_ids": [
+        "W016"
+      ],
+      "chunk_id": "HH-C031",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:b69756172098b84e"
+      ],
+      "growth_stage": "加工期",
+      "scope": "flour",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "以黄骅旱碱麦为原粮，经磨制具有制作面花等优质面制产品特性的小麦粉。",
+      "locator": {
+        "file": "evidence\\raw\\W016_fulltext.pages.json",
+        "page": 3,
+        "start": 600,
+        "end": 633
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：加工期"
+      ]
+    },
+    {
+      "id": "HH-E059",
+      "source": "huanghua_hanjianmai:c6eb68608df6f32f",
+      "target": "huanghua_hanjianmai:c793cebd9c542563",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W016",
+      "evidence_ids": [
+        "W016"
+      ],
+      "chunk_id": "HH-C032",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:b69756172098b84e"
+      ],
+      "growth_stage": "加工期",
+      "scope": "flour",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目要求外观形态颗粒状气味麦香味浓灰分含量（干基），%≤0.7脂肪酸值（以湿基，KOH计）,mg/100g≤80水分含量，%≤14.5含砂量，%≤0.2碱性金属物，g/kg≤0.003蛋白质含量（干基），%≥11.0湿面筋含量（14%水分基），%≥32.0揉面黏手程度不黏手室温20-25℃醒发时间，min≤40馒头及面花口感、气味咬劲强、爽口不黏牙、麦香味浓馒头及面花品质评分，分≥85",
+      "locator": {
+        "file": "evidence\\raw\\W016_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 217
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：加工期"
+      ]
+    },
+    {
+      "id": "HH-E060",
+      "source": "huanghua_hanjianmai:c6eb68608df6f32f",
+      "target": "huanghua_hanjianmai:484259713591d383",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W016",
+      "evidence_ids": [
+        "W016"
+      ],
+      "chunk_id": "HH-C032",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:b69756172098b84e"
+      ],
+      "growth_stage": "加工期",
+      "scope": "flour",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目要求外观形态颗粒状气味麦香味浓灰分含量（干基），%≤0.7脂肪酸值（以湿基，KOH计）,mg/100g≤80水分含量，%≤14.5含砂量，%≤0.2碱性金属物，g/kg≤0.003蛋白质含量（干基），%≥11.0湿面筋含量（14%水分基），%≥32.0揉面黏手程度不黏手室温20-25℃醒发时间，min≤40馒头及面花口感、气味咬劲强、爽口不黏牙、麦香味浓馒头及面花品质评分，分≥85",
+      "locator": {
+        "file": "evidence\\raw\\W016_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 217
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：加工期"
+      ]
+    },
+    {
+      "id": "HH-E061",
+      "source": "huanghua_hanjianmai:c6eb68608df6f32f",
+      "target": "huanghua_hanjianmai:3a40f667324c97de",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W016",
+      "evidence_ids": [
+        "W016"
+      ],
+      "chunk_id": "HH-C032",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:b69756172098b84e"
+      ],
+      "growth_stage": "加工期",
+      "scope": "flour",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目要求外观形态颗粒状气味麦香味浓灰分含量（干基），%≤0.7脂肪酸值（以湿基，KOH计）,mg/100g≤80水分含量，%≤14.5含砂量，%≤0.2碱性金属物，g/kg≤0.003蛋白质含量（干基），%≥11.0湿面筋含量（14%水分基），%≥32.0揉面黏手程度不黏手室温20-25℃醒发时间，min≤40馒头及面花口感、气味咬劲强、爽口不黏牙、麦香味浓馒头及面花品质评分，分≥85",
+      "locator": {
+        "file": "evidence\\raw\\W016_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 217
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：加工期"
+      ]
+    },
+    {
+      "id": "HH-E062",
+      "source": "huanghua_hanjianmai:c6eb68608df6f32f",
+      "target": "huanghua_hanjianmai:961cb317b8d81303",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W016",
+      "evidence_ids": [
+        "W016"
+      ],
+      "chunk_id": "HH-C032",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:b69756172098b84e"
+      ],
+      "growth_stage": "加工期",
+      "scope": "flour",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目要求外观形态颗粒状气味麦香味浓灰分含量（干基），%≤0.7脂肪酸值（以湿基，KOH计）,mg/100g≤80水分含量，%≤14.5含砂量，%≤0.2碱性金属物，g/kg≤0.003蛋白质含量（干基），%≥11.0湿面筋含量（14%水分基），%≥32.0揉面黏手程度不黏手室温20-25℃醒发时间，min≤40馒头及面花口感、气味咬劲强、爽口不黏牙、麦香味浓馒头及面花品质评分，分≥85",
+      "locator": {
+        "file": "evidence\\raw\\W016_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 217
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：加工期"
+      ]
+    },
+    {
+      "id": "HH-E063",
+      "source": "huanghua_hanjianmai:c6eb68608df6f32f",
+      "target": "huanghua_hanjianmai:31ef6272540ecf8a",
+      "relation": "HAS_INDICATOR",
+      "kind": "fact",
+      "source_id": "W016",
+      "evidence_ids": [
+        "W016"
+      ],
+      "chunk_id": "HH-C032",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:b69756172098b84e"
+      ],
+      "growth_stage": "加工期",
+      "scope": "flour",
+      "evidence_level": "official_standard",
+      "review_status": "verbatim_verified",
+      "evidence_text": "表1质量要求项目要求外观形态颗粒状气味麦香味浓灰分含量（干基），%≤0.7脂肪酸值（以湿基，KOH计）,mg/100g≤80水分含量，%≤14.5含砂量，%≤0.2碱性金属物，g/kg≤0.003蛋白质含量（干基），%≥11.0湿面筋含量（14%水分基），%≥32.0揉面黏手程度不黏手室温20-25℃醒发时间，min≤40馒头及面花口感、气味咬劲强、爽口不黏牙、麦香味浓馒头及面花品质评分，分≥85",
+      "locator": {
+        "file": "evidence\\raw\\W016_fulltext.pages.json",
+        "page": 4,
+        "start": 17,
+        "end": 217
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：加工期"
+      ]
+    },
+    {
+      "id": "HH-E064",
+      "source": "huanghua_hanjianmai:cde9ffdc8b283071",
+      "target": "huanghua_hanjianmai:3b1dbd5ffe283a9c",
+      "relation": "INHIBITS",
+      "kind": "fact",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C033",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "研究表明，盐碱胁迫显著抑制小麦萌发[6]，当小麦根系周围的盐浓度达到一定阈值水平后，根系吸水能力受到抑制，导致地上部生长速率显著下降，种子无法正常吸水萌发[7]。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 3,
+        "start": 441,
+        "end": 522
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E065",
+      "source": "huanghua_hanjianmai:a79d9dee6d186c26",
+      "target": "huanghua_hanjianmai:e177b0e4028c0b0d",
+      "relation": "INHIBITS",
+      "kind": "fact",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C033",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "研究表明，盐碱胁迫显著抑制小麦萌发[6]，当小麦根系周围的盐浓度达到一定阈值水平后，根系吸水能力受到抑制，导致地上部生长速率显著下降，种子无法正常吸水萌发[7]。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 3,
+        "start": 441,
+        "end": 522
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E066",
+      "source": "huanghua_hanjianmai:466d222815cfa054",
+      "target": "huanghua_hanjianmai:abf2e46b99c5e62a",
+      "relation": "INCREASES_RISK",
+      "kind": "fact",
+      "source_id": "W008",
+      "evidence_ids": [
+        "W008"
+      ],
+      "chunk_id": "HH-C034",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "沧州",
+      "stage_ids": [],
+      "growth_stage": null,
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "盲目增加播种量虽可在一定程度上增加群体数量，但易使植株茎秆细弱，增加倒伏风险，进一步威胁旱碱麦产量的提升。",
+      "locator": {
+        "file": "evidence\\raw\\W008_fulltext.pages.json",
+        "page": 3,
+        "start": 350,
+        "end": 403
+      },
+      "conditions": [
+        "原文地区：沧州",
+        "生育阶段：未标定"
+      ]
+    },
+    {
+      "id": "HH-E067",
+      "source": "huanghua_hanjianmai:85576da4cc868144",
+      "target": "huanghua_hanjianmai:2ca8acdd9d49aeaa",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "mechanism",
+      "source_id": "W011",
+      "evidence_ids": [
+        "W011"
+      ],
+      "chunk_id": "HH-C035",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅/南皮",
+      "stage_ids": [
+        "huanghua_hanjianmai:254c3a2b7a79ee5c"
+      ],
+      "growth_stage": "返青期",
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "其一为3月上中旬(3月6—15日前后),此时冬小麦进入返青阶段,气温回升加速土壤蒸发与作物蒸腾,而降水稀少,易形成阶段性水分亏缺,影响分蘖成穗与早期生物量积累;",
+      "locator": {
+        "file": "evidence\\raw\\W011_fulltext.pages.json",
+        "page": 10,
+        "start": 1490,
+        "end": 1570
+      },
+      "conditions": [
+        "原文地区：黄骅/南皮",
+        "生育阶段：返青期"
+      ]
+    },
+    {
+      "id": "HH-E068",
+      "source": "huanghua_hanjianmai:85576da4cc868144",
+      "target": "huanghua_hanjianmai:57b52c86d889cf40",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "mechanism",
+      "source_id": "W011",
+      "evidence_ids": [
+        "W011"
+      ],
+      "chunk_id": "HH-C035",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅/南皮",
+      "stage_ids": [
+        "huanghua_hanjianmai:254c3a2b7a79ee5c"
+      ],
+      "growth_stage": "返青期",
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "其一为3月上中旬(3月6—15日前后),此时冬小麦进入返青阶段,气温回升加速土壤蒸发与作物蒸腾,而降水稀少,易形成阶段性水分亏缺,影响分蘖成穗与早期生物量积累;",
+      "locator": {
+        "file": "evidence\\raw\\W011_fulltext.pages.json",
+        "page": 10,
+        "start": 1490,
+        "end": 1570
+      },
+      "conditions": [
+        "原文地区：黄骅/南皮",
+        "生育阶段：返青期"
+      ]
+    },
+    {
+      "id": "HH-E069",
+      "source": "huanghua_hanjianmai:85576da4cc868144",
+      "target": "huanghua_hanjianmai:7e9762fb0cff4728",
+      "relation": "ASSOCIATED_WITH",
+      "kind": "mechanism",
+      "source_id": "W011",
+      "evidence_ids": [
+        "W011"
+      ],
+      "chunk_id": "HH-C036",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅/南皮",
+      "stage_ids": [
+        "huanghua_hanjianmai:2b72f256b591281e"
+      ],
+      "growth_stage": "拔节期",
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "其二为4月上中旬(4月2—6日及4月13—17日),此阶段的水分胁迫直接影响穗粒发育,是产量形成的敏感期[41]。",
+      "locator": {
+        "file": "evidence\\raw\\W011_fulltext.pages.json",
+        "page": 10,
+        "start": 1570,
+        "end": 1627
+      },
+      "conditions": [
+        "原文地区：黄骅/南皮",
+        "生育阶段：拔节期"
+      ]
+    },
+    {
+      "id": "HH-E070",
+      "source": "huanghua_hanjianmai:1e640cc22a977ecd",
+      "target": "huanghua_hanjianmai:8b3166254ceeadd0",
+      "relation": "APPLIES_IN",
+      "kind": "fact",
+      "source_id": "W011",
+      "evidence_ids": [
+        "W011"
+      ],
+      "chunk_id": "HH-C037",
+      "crop_id": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "stage_ids": [
+        "huanghua_hanjianmai:be7a9c16ddc2fac3"
+      ],
+      "growth_stage": "拔节期至抽穗期",
+      "scope": "production",
+      "evidence_level": "peer_reviewed_regional",
+      "review_status": "verbatim_verified",
+      "evidence_text": "对于黄骅市,地表水含盐量较高(>3g/L占比83%[22,45]),应采取雨水为主导的灌溉策略,关键在于确保在4月13—17日的风险窗口期内有足够的蓄积雨水可供调用。这要求对区域雨水蓄集能力进行现实评估与配套建设。",
+      "locator": {
+        "file": "evidence\\raw\\W011_fulltext.pages.json",
+        "page": 11,
+        "start": 239,
+        "end": 346
+      },
+      "conditions": [
+        "原文地区：黄骅",
+        "生育阶段：拔节期至抽穗期"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "W001",
+      "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7",
+      "region": "河北滨海盐碱区/黄骅",
+      "publication_group": "河北省市场监督管理局"
+    },
+    {
+      "id": "W002",
+      "title": "DB13/T 6106-2025 旱碱麦肥药优调技术规程",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39A5186C58B95ACAE06397BE0A0ADABE",
+      "region": "河北",
+      "publication_group": "河北省市场监督管理局"
+    },
+    {
+      "id": "W003",
+      "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+      "url": "https://dbba.sacinfo.org.cn/rnDetail/0d310eea2e6bb62171fec978faedf7ef47409f9eaa2296c6c908616c299cf68c",
+      "region": "河北",
+      "publication_group": "河北省市场监督管理局"
+    },
+    {
+      "id": "W004",
+      "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A",
+      "region": "沧州",
+      "publication_group": "沧州市市场监督管理局"
+    },
+    {
+      "id": "W005",
+      "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+      "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c",
+      "region": "沧州",
+      "publication_group": "沧州市市场监督管理局"
+    },
+    {
+      "id": "W006",
+      "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+      "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c",
+      "region": "沧州",
+      "publication_group": "沧州市市场监督管理局"
+    },
+    {
+      "id": "W008",
+      "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+      "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml",
+      "region": "沧州",
+      "publication_group": "中国农学通报；沧州市农业农村局等；中国农业大学"
+    },
+    {
+      "id": "W011",
+      "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+      "url": "https://doi.org/10.12357/cjea.20250732",
+      "region": "河北低平原/黄骅",
+      "publication_group": "学术期刊平台"
+    },
+    {
+      "id": "W015",
+      "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A",
+      "region": "黄骅/沧州",
+      "publication_group": "沧州市市场监督管理局"
+    },
+    {
+      "id": "W016",
+      "title": "DB1309/T 332-2025 黄骅旱碱麦小麦粉",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A1FF625E06397BE0A0A538A",
+      "region": "黄骅/沧州",
+      "publication_group": "沧州市市场监督管理局"
+    }
+  ]
+}

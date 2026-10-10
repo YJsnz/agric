@@ -1,0 +1,29 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0369",
+      "question": "在本研究的冷藏条件下，鸭梨果实的硬度和SSC有何表现？",
+      "answer_quote": "冷藏能更好地维持鸭梨果实硬度，保持较高的SSC，适合长期贮藏，以保持果实口感，但挥发性物质较少。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0370",
+      "question": "在本研究的窖藏过程中，鸭梨果实的质地和香气物质生成有何特点？",
+      "answer_quote": "相对冷藏而言，窖藏过程中，鸭梨容易软化，但生成更多酯类、醇类等香气物质，拥有较多的香气成分，香味浓郁。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0371",
+      "question": "根据本研究的相关基因表达分析，鸭梨果实香气物质的生成与哪些基因的表达呈正相关？",
+      "answer_quote": "相关基因表达分析表明，鸭梨果实香气物质的生成与PbACO2、PbAAT1、PbLOX1 的表达呈正相关关系",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0372",
+      "question": "根据本研究的相关基因表达分析，鸭梨果实香气物质的生成与哪个基因的表达呈负相关？",
+      "answer_quote": "而与PbEIN3 呈负相关关系。",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

@@ -1,0 +1,18 @@
+W001	DB13/T 5659-2023 黄骅旱碱麦生产技术规程	https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7
+W002	DB13/T 6106-2025 旱碱麦肥药优调技术规程	https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39A5186C58B95ACAE06397BE0A0ADABE
+W003	DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程	https://dbba.sacinfo.org.cn/rnDetail/0d310eea2e6bb62171fec978faedf7ef47409f9eaa2296c6c908616c299cf68c
+W004	DB1309/T 319-2025 旱碱麦探墒保播种植技术规程	https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A
+W005	DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程	https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c
+W006	DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程	https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c
+W007	DB1309/T 150-2014 旱碱地小麦抗逆减灾丰产栽培技术规程	https://std.samr.gov.cn/db/search/stdDBDetailed?id=108A4A5041587A0CE06397BE0A0A9183
+W008	沧州市旱碱麦增产绿色调控技术研究进展	https://www.casb.org.cn/CN/abstract/abstract31429.shtml
+W009	基于近十年气象数据的旱碱麦生育期优化策略	https://jcnj.cbpt.cnki.net/portal/journal/portal/client/paper/e277469f354b0eb5d2edaec045997e38
+W010	沧州盐碱区旱碱麦宽幅沟播配套栽培技术	https://xdnckj.cbpt.cnki.net/portal/journal/portal/client/paper/1b7651fc5f528d3c5d39128a5d597ea6
+W011	基于气象数据的河北低平原盐碱区作物水分供需评估	https://doi.org/10.12357/cjea.20250732
+W012	河北黄骅市培育“以种适地”品种 助力盐碱地持续增产	https://www.agri.cn/zx/xxlb/202403/t20240306_8613636.htm
+W013	盐碱地里造出新粮仓	https://www.cas.cn/cm/202305/t20230524_4889471.shtml
+W014	科技引领助力旱碱麦产业走“花路”	https://ifst.caas.cn/pub/iappst/xwzx/mtbd/37812bb40dc6445c88da99ccb6289841.htm
+W015	DB1309/T 333-2025 黄骅旱碱麦原粮	https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A
+W016	DB1309/T 332-2025 黄骅旱碱麦小麦粉	https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A1FF625E06397BE0A0A538A
+W017	盐碱地改良和旱碱麦种植技术及其配套装备研究现状	https://njyj.cbpt.cnki.net/portal/journal/portal/client/paper/c3487720ec2ed1f0e14e056858fdc388
+W018	微垄覆膜侧沟播宽苗带旱碱麦正负压排种器设计与试验	https://njyj.cbpt.cnki.net/portal/journal/portal/client/paper/41be5e98ceab236878a2f4a884dac792

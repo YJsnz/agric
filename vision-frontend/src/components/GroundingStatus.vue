@@ -1,0 +1,2 @@
+<script setup>defineProps({ grounding: Object })</script>
+<template><div class="grounding" :class="grounding?.passed === true ? 'passed' : grounding?.passed === false ? 'unpassed' : ''">证据一致性校验：{{ grounding?.passed === true ? '通过' : grounding?.passed === false ? '未通过' : '未执行' }}</div><ul v-if="grounding?.checks?.length" class="checks"><li v-for="item in grounding.checks" :key="item.field"><strong>{{ item.field }} · {{ item.verdict }}</strong><p>{{ item.reason }}</p></li></ul></template>

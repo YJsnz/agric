@@ -1,0 +1,56 @@
+{
+  "id": "QA_0334",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文引言给出具体病害名称。",
+      "basis": "当前未提供《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的引言原文或相关证据，我无法确认该论文引言中列出的具体采后生理病害。",
+      "reasoning": "问题要求依据特定论文引言作答，但证据为空，且我无法获取该论文全文，因此不能编造病害名称或引用该论文。",
+      "advice": "请提供该论文引言的原文或相关段落，或查阅原文中关于鸭梨低温与高浓度CO2敏感及采后生理病害的表述。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 159,
+      "completion_tokens": 142,
+      "total_tokens": 301,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 159
+    },
+    "model": "deepseek-flash",
+    "response_id": "d553ea5f-6386-4989-a71a-f56e834b51af",
+    "seconds": 6.415362499999901,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.3333333333333333,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何病害名称，明确表示无法依据提供的证据作答；而参考答案和论文原文均明确列出虎皮病和黑心病，因此属于拒答而非正确作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1112,
+      "completion_tokens": 53,
+      "total_tokens": 1165,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 984
+    },
+    "model": "deepseek-flash",
+    "response_id": "18860f5e-5af4-4b2c-b1a4-1c6b59b6880e",
+    "seconds": 5.261518299999807,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

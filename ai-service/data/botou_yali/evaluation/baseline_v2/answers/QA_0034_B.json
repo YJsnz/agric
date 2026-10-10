@@ -1,0 +1,272 @@
+{
+  "id": "QA_0034",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0024",
+    "chunk:PAPER_001_C0014",
+    "chunk:PAPER_001_C0028",
+    "chunk:PAPER_001_C0016",
+    "chunk:PAPER_001_C0004"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "E2明确记载呼吸速率和乙烯产生速率以mg CO2·kg-1·h-1和μL C2H4·kg-1·h-1计，结论中的单位与引用证据一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "E2直接给出两个单位；E1中乙烯释放速率数据以μL·kg-1·h-1表示，与E2的乙烯单位一致，basis所述均有引用证据支持。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理仅说明问题为文献计量单位事实，并依据E2给出呼吸与乙烯单位、E1印证乙烯单位，未超出引用证据。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议以原文方法章节E2为准并提示跨研究核对方法学描述，属于基于E2的合理操作提示，未添加无证据的剂量或收益。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0024",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.4  不同O2浓度处理对呼吸速率和乙烯的影响",
+        "text": "5.0%及以下O2 处理果实贮藏150、210 及270 d后，其乙烯产量均显著低于10.0% O2 和空气对照，其中1.0% O2 乙烯释放量最低，贮藏150、210 及270 d，温度平衡后（回升到20℃），其乙烯释放速率分别为46.83、88.04 和76.65 μL·kg-1·h -1；2.0%—3.0% O2 释放量次之；货架10 d 或7 d 后，低氧处理乙烯释放量快速上升。贮藏150 和210 d，低氧气调贮藏果实呼吸速率均显著低于空气对照，但不同O2 浓度处理间差异不显著；贮藏270 d 及货架7 d，低氧气调处理与对照果实呼吸速率差异不显著（图3）。贮藏时间 Storage time (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d)贮藏时间 Storage time (d) a a b c c d a b c d e e a b b c d e a a b b abc c a b b b bc c a b b b c c a b b c c c a a b b b c a a a a a b a b b b b b a a a a a a a a a a a a 1.0% O2+0.5% CO2 2.0% O2+0.5% CO2 3.0% O2+0.5% CO2 5.0% O2+0.5% CO2 10.0% O2+0.5% CO2对照 CK图3  不同O2浓度贮藏及货架期间鸭梨呼吸和乙烯变化情况Fig. 3  Effects of different oxygen concentrations on respiration rate and ethylene production during storage and shelf-life period of Yali pear",
+        "pages": [
+          7
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0014",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "1.2.4  呼吸速率和乙烯产生速率  果实呼吸速率和",
+        "text": "乙烯产生速率测定均采用SP—9890 气相色谱仪（山东，鲁南瑞虹仪器公司）测定，以mg CO2·kg-1·h-1 和μL C2H4·kg-1·h-1 计，色谱参数为进样器80℃，柱炉100℃，检测器160℃，转化炉360℃。每个处理3 次重复，每个重复用果9 个。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0028",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "3.3  环境O2浓度与乙烯生物合成的关系",
+        "text": "鸭梨是一种典型的采后呼吸跃变型果实，贮藏过程及货架期间释放大量的乙烯；ACS 和ACO 是乙烯生物合成途径中的关键限速酶，且在番茄和梨中均由多家族基因控制[42-43]。本研究结合前人研究基础及检索梨基因组，初步获得PbACO1、PbACO2、PbACO3、PbACS1、 PbACS2 及PbACS3 等6 个乙烯合成关键基因；其中PbACO1、PbACO3 及PbACS1 在低氧处理下相对表达量显著降低，基因表达高峰与10.0% O2及对照相比明显推迟。但随着货架期的延长，乙烯合成相关基因表达量快速升高，而且贮藏后期及货架后，低氧气调贮藏乙烯释放速率显著高于空气对照处理，因此，低氧气调处理对乙烯的抑制是可逆的，乙烯合成代谢会随着环境温度和氧气浓度回升而恢复，该发现与前人研究结果一致[18]，但更低的O2 浓度会进一步推迟货架期间乙烯的合成，延缓衰老。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0016",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "1.2.6  乙烯合成基因表达分析  通过检索梨基因组",
+        "text": "（Pear Genome Project，http://peargenome.niau.edu.cn），获得梨乙烯合成途径关键基因6 个，特异定量引物序列参考慕茜[25]方法（表1），委托上海生工公司合成引物序列。参照SG Fast qPCR Master Mix（2X）（BBI）（Roche 罗氏）（B639271）说明书配置总体积为20 µL的实时荧光定量PCR 反应液，包含10 µL 2×SybrGreen qPCR Master Mix、上下游引物各0.4 µL、7.2 µL ddH2O、2 µL 模板。在LightCycler480 Software Setup（Roche 罗氏）荧光定量PCR 仪上进行扩增，扩增程序为：95℃预变性3 min；95℃变性7 s，57℃退火10 s，72℃延伸15 s，45 个循环。PCR 循环结束立即进行熔解程序。在Eppendorf 的Mastercycler® ep realplex 软件中自动生成标准曲线、熔解曲线和样品Ct 值。每个样品重复3 次。采用2-∆∆Ct 法计算基因在各样品中的相对表达量。表1  引物序列Table 1  Primer sequences基因名称 Gene name基因ID  Gene ID正向引物 Forward primer sequence (5′-3′)反向引物 Reverse primer sequence (5′-3′) PbACO1 Pbr000093.1 GACGCTGGTGGTATCATCCT TTCCGTCCGACTGAGCTATC PbACO2 Pbr005179.1 GCAGTGATGCGGTGATCTAC CCCAAACCAAAACTGGCCTT PbACO3 Pbr031954.1 CAAGGATGGTGAATGGGTGGA TCATCGCCTGGGTTGTAGAAC PbACS1 Pbr015575.1 CCTGGGGTTCAAAGGGATCA CCGCCGTTAAGACTACCCTA PbACS2 Pbr019796.1 GTTGTGTCCGCAGCTACAAA TGAGCCCACAAACAAGCATC PbACS3 Pbr029891.1 GAAGTTTGGCAGCGAGTTCA CAGATAGCATGGCGGAGAGA",
+        "pages": [
+          3,
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0004",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+        "pages": [
+          1,
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "该研究中呼吸速率的单位为 mg CO2·kg-1·h-1，乙烯产生速率（乙烯释放速率）的单位为 μL C2H4·kg-1·h-1  [E2] 。",
+    "basis": "[E2] 明确记载：果实呼吸速率和乙烯产生速率测定均采用SP—9890气相色谱仪测定，以 mg CO2·kg-1·h-1 和 μL C2H4·kg-1·h-1 计  [E2] 。[E1] 中乙烯释放速率数据以 μL·kg-1·h-1 表示  [E1] ，与 [E2] 的乙烯单位一致。",
+    "reasoning": "问题询问该研究中两个指标的单位，属于文献计量单位的事实性信息。[E2] 为方法学章节，直接给出呼吸速率与乙烯产生速率的计量单位  [E2] ；[E1] 的结果数据中乙烯释放速率采用 μL·kg-1·h-1  [E1] ，可相互印证乙烯单位。呼吸速率单位仅在 [E2] 中明确给出  [E2] 。",
+    "advice": "如需引用该单位进行数据比较或换算，请以原文方法章节  [E2]  为准；不同文献单位可能不同，跨研究比较前应核对各自方法学描述。",
+    "citations": [
+      "E1",
+      "E2"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出呼吸速率单位为 mg CO2·kg-1·h-1、乙烯产生速率单位为 μL C2H4·kg-1·h-1，与参考答案及原文方法学证据E2完全一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "该研究中呼吸速率的单位为 mg CO2·kg-1·h-1",
+          "status": "supported",
+          "reason": "E2原文明确记载呼吸速率和乙烯产生速率以 mg CO2·kg-1·h-1 和 μL C2H4·kg-1·h-1 计。"
+        },
+        {
+          "claim": "该研究中乙烯产生速率（乙烯释放速率）的单位为 μL C2H4·kg-1·h-1",
+          "status": "supported",
+          "reason": "E2原文明确给出乙烯产生速率以 μL C2H4·kg-1·h-1 计；E1中乙烯释放速率数据以 μL·kg-1·h-1 表示，单位一致。"
+        },
+        {
+          "claim": "[E2] 明确记载果实呼吸速率和乙烯产生速率测定均采用SP—9890气相色谱仪测定，以 mg CO2·kg-1·h-1 和 μL C2H4·kg-1·h-1 计",
+          "status": "supported",
+          "reason": "E2原文逐字包含该表述。"
+        },
+        {
+          "claim": "[E1] 中乙烯释放速率数据以 μL·kg-1·h-1 表示",
+          "status": "supported",
+          "reason": "E1原文给出乙烯释放速率分别为46.83、88.04和76.65 μL·kg-1·h-1。"
+        },
+        {
+          "claim": "呼吸速率单位仅在 [E2] 中明确给出",
+          "status": "supported",
+          "reason": "检索证据中仅E2明确给出呼吸速率单位 mg CO2·kg-1·h-1，E1仅涉及乙烯释放速率单位。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3037,
+      "completion_tokens": 405,
+      "total_tokens": 3442,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 2141
+    },
+    "model": "deepseek-flash",
+    "response_id": "07a6155f-0793-45df-a235-e8fb1c77ba3b",
+    "seconds": 6.874544699996477,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "该研究中呼吸速率的单位为 mg CO2·kg-1·h-1，乙烯产生速率（乙烯释放速率）的单位为 μL C2H4·kg-1·h-1 [E2]。",
+        "basis": "E2 明确记载：果实呼吸速率和乙烯产生速率测定均采用SP—9890气相色谱仪测定，以 mg CO2·kg-1·h-1 和 μL C2H4·kg-1·h-1 计 [E2]。E1 中乙烯释放速率数据以 μL·kg-1·h-1 表示 [E1]，与 E2 的乙烯单位一致。",
+        "reasoning": "问题询问该研究中两个指标的单位，属于文献计量单位的事实性信息。E2 为方法学章节，直接给出呼吸速率与乙烯产生速率的计量单位 [E2]；E1 的结果数据中乙烯释放速率采用 μL·kg-1·h-1 [E1]，可相互印证乙烯单位。呼吸速率单位仅在 E2 中明确给出 [E2]。",
+        "advice": "如需引用该单位进行数据比较或换算，请以原文方法章节 [E2] 为准；不同文献单位可能不同，跨研究比较前应核对各自方法学描述。",
+        "citations": [
+          "E2",
+          "E1"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2629,
+        "completion_tokens": 290,
+        "total_tokens": 2919,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2501
+      },
+      "model": "deepseek-flash",
+      "response_id": "14212153-a099-4c20-b013-3df13d123125",
+      "seconds": 6.465235099996789,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 19.676386799998
+}

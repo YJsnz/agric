@@ -1,0 +1,178 @@
+{
+  "question": "根据《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》，试验所用鸭梨采自哪个地区？",
+  "time": "2026-09-22T19:45:28.477083",
+  "seconds": 52.94740640000964,
+  "http": 200,
+  "checks": {
+    "http_200": true,
+    "v2": true,
+    "paper_policy": true,
+    "answered": false,
+    "source": false,
+    "correct_location": false
+  },
+  "passed": false,
+  "response": {
+    "entities": [
+      "鸭梨"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": null,
+      "environment": [],
+      "disease": [],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": [],
+      "intent": "fact_query"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "empty",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_001_C0009",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 2,
+            "vector_rank": 4,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9684979838709677
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0003",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 4,
+            "vector_rank": 3,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9606894841269842
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0001",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 9,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9420289855072463
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0005",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 9,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9420289855072463
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0002",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 10,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9198412698412699
+          }
+        }
+      ]
+    },
+    "status": "validation_failed",
+    "grounding_audit": {
+      "passed": false,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "unsupported",
+          "reason": "结论文本为“试验所用鸭梨采自河北省石家庄市商品果园。E1E2E3”，但cited_evidence为空，未引用任何证据；虽然basis中引用的E1、E2、E3可支持该事实，但按规则事实必须得到其实际引用证据支持，不能由未引用证据补证。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "E1明确记载“所用鸭梨试材均于9月中旬采自河北省石家庄市商品果园”；E2摘要记载“Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province”；E3摘要记载“将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱”，均支持basis中的对应表述。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning仅说明问题询问试验材料采集地区，并称E1、E2、E3一致指向河北省石家庄市，且不推断因果或阶段转换；该描述与所引证据内容一致，未添加未引用事实。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice仅说明该信息为论文特定试验取材地点、用于文献解读、不代表当地生产指导建议，属于范围限定性表述，未提出需证据支持的具体事实、数值、因果或操作建议。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "answer": "1. 结论\n本次回答未通过证据核查，未发布生成内容。\n2. 依据\n存在未由引用证据支持的内容\n3. 推理路径\n未发布未经核查的路径。\n4. 建议\n请缩小问题范围或补充原文资料。\n5. 来源\n暂无已通过核查的结论来源。"
+  }
+}

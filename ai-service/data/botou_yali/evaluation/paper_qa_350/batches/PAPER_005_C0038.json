@@ -1,0 +1,39 @@
+[
+  {
+    "question": "本研究中，窖藏条件对鸭梨的α-法尼烯和MHO的生成与积累产生了什么影响？",
+    "type": "factual",
+    "answer_quote": "窖藏条件刺激了α-法尼烯和MHO 的生成与积累。",
+    "gold_entities": [
+      "窖藏条件",
+      "α-法尼烯",
+      "MHO"
+    ]
+  },
+  {
+    "question": "本研究是否观察到了鸭梨虎皮病现象？",
+    "type": "disease",
+    "answer_quote": "本研究尚未发现虎皮病现象",
+    "gold_entities": [
+      "虎皮病"
+    ]
+  },
+  {
+    "question": "根据本研究讨论，窖藏刺激α-法尼烯和MHO生成积累的现象可能与什么有关？",
+    "type": "causal",
+    "answer_quote": "这种现象可能与窖藏时果皮衰老较快有关。",
+    "gold_entities": [
+      "窖藏",
+      "果皮衰老"
+    ]
+  },
+  {
+    "question": "原文提到α-法尼烯和MHO参与了哪些果实的虎皮病发生？",
+    "type": "factual",
+    "answer_quote": "这两种物质参与了苹果和梨果皮的虎皮病发生",
+    "gold_entities": [
+      "苹果",
+      "梨",
+      "虎皮病"
+    ]
+  }
+]

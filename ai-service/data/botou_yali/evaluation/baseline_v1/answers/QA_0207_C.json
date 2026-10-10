@@ -1,0 +1,241 @@
+{
+  "id": "QA_0207",
+  "arm": "C",
+  "generation": {
+    "result": {
+      "sufficient": true,
+      "conclusion": "该研究旨在比较窖藏与冷藏过程中鸭梨在果实品质（硬度、SSC、TA、呼吸速率、乙烯释放）、挥发性物质（种类、含量及主要香味成分）以及乙烯与香气合成相关基因表达等方面的差异 [E1][E2][E4]。",
+      "basis": "证据显示：冷藏期间鸭梨果实硬度变化较小，SSC上升，TA含量下降；窖藏时果实硬度下降明显，对SSC影响较小，而TA含量增加；与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1个月出现且峰值较高 [E2]。电子鼻可有效区分两种贮藏方式下的挥发性物质，窖藏期间果实挥发性物质较多，果皮和果肉中分别检出36种和33种、28种和24种挥发性物质，窖藏鸭梨较冷藏时生成更多乙酯类化合物 [E2]。相关基因表达分析表明，与冷藏相比，窖藏明显上调PbACO2、PbLOX1和PbAAT1的表达，下调PbEIN3的表达 [E1][E2]。结论指出冷藏能更好地维持果实硬度、保持较高SSC，适合长期贮藏，但挥发性物质较少；窖藏过程中鸭梨容易软化，但生成更多酯类、醇类等香气物质 [E4]。",
+      "reasoning": "从证据中提取研究比较的维度：一是果实品质指标（硬度、SSC、TA、呼吸速率、乙烯释放）[E2][E5]；二是挥发性物质（电子鼻区分、种类数量、主要香味物质）[E2]；三是相关基因表达（PbACO2、PbLOX1、PbAAT1、PbEIN3）[E1][E2][E4]。这些维度共同构成该研究比较窖藏与冷藏差异的目的。",
+      "advice": "若需了解鸭梨贮藏方式选择，可参考该研究结论：冷藏利于长期保持硬度与SSC但香气物质较少，窖藏则香气物质更丰富但果实易软化 [E4]。具体贮藏决策应结合本地条件与目标市场要求综合评估。",
+      "citations": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 1630,
+      "completion_tokens": 477,
+      "total_tokens": 2107,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 222
+    },
+    "model": "deepseek-flash",
+    "response_id": "63cddd2b-6948-477c-8741-2a41b5c77227",
+    "seconds": 16.803822899999886,
+    "attempts": 2,
+    "prior_errors": [
+      "ExtractionError"
+    ]
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0007",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": " The analysis on expression of genes related to ethylene and aroma compound synthesis showed that the expression of ACC oxidase (PbACO2), lipoxygenase (PbLOX1) and alcohol acyltransferase (PbAAT1) genes were significantly increased, and the expression of ethylene insensitive transcriptional regulator gene (PbEIN3) was down regulated in cellar storage in contrast to cold storage. 【Conclusion】Compared with cold storage, cellar storage condition promoted ethylene production and the expression of genes related to ethylene biosynthesis (PbACO2) and aroma compound synthesis (PbLOX1 and PbAAT1), thus, made more kinds and contents of aroma substances, and exhibited more rich aroma in Yali pear. Key words: Yali pear; quality; volatile compound; electronic nose; ethylene; gene expression",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0041",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "4  结论",
+        "text": "冷藏能更好地维持鸭梨果实硬度，保持较高的SSC，适合长期贮藏，以保持果实口感，但挥发性物质较少。相对冷藏而言，窖藏过程中，鸭梨容易软化，但生成更多酯类、醇类等香气物质，拥有较多的香气成分，香味浓郁。相关基因表达分析表明，鸭梨果实香气物质的生成与PbACO2、PbAAT1、PbLOX1 的表达呈正相关关系，而与PbEIN3 呈负相关关系。",
+        "pages": [
+          14
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0020",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    }
+  ],
+  "candidate_ids": [
+    "chunk:PAPER_005_C0007",
+    "chunk:PAPER_005_C0002",
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0041",
+    "chunk:PAPER_005_C0020"
+  ],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 1,
+  "answer_entity_surface_recall": 0.7777777777777778,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答准确覆盖了研究目的中比较的全部关键方面：果实品质（硬度、SSC、TA、呼吸速率、乙烯释放）、挥发性物质（电子鼻特征、种类、含量及主要香味成分）以及相关基因表达（乙烯生成、信号转导及香气合成相关基因）。虽未逐一列出所有基因名称，但已概括为相关基因表达，且后续证据中提及了具体基因，整体无关键遗漏或矛盾。",
+      "claims": [
+        {
+          "claim": "该研究旨在比较窖藏与冷藏过程中鸭梨在果实品质（硬度、SSC、TA、呼吸速率、乙烯释放）方面的差异",
+          "status": "supported",
+          "reason": "原文摘要明确列出果实品质、呼吸速率、乙烯释放速率等比较维度，E2也提供了相应结果。"
+        },
+        {
+          "claim": "该研究旨在比较窖藏与冷藏过程中鸭梨在挥发性物质（种类、含量及主要香味成分）方面的差异",
+          "status": "supported",
+          "reason": "原文摘要及E2均提及电子鼻检测挥发性物质变化、GC-MS测定成分及含量，并列出主要香味物质。"
+        },
+        {
+          "claim": "该研究旨在比较窖藏与冷藏过程中鸭梨在乙烯与香气合成相关基因表达方面的差异",
+          "status": "supported",
+          "reason": "原文摘要明确列出分析乙烯生成、信号转导及挥发性物质合成相关基因的表达量变化，E1、E2、E4也提供了相关基因表达结果。"
+        },
+        {
+          "claim": "冷藏期间鸭梨果实硬度变化较小，SSC上升，TA含量下降",
+          "status": "supported",
+          "reason": "E2原文明确记载该结果。"
+        },
+        {
+          "claim": "窖藏时果实硬度下降明显，对SSC影响较小，而TA含量增加",
+          "status": "supported",
+          "reason": "E2原文明确记载该结果，E5也支持窖藏保持较高TA含量。"
+        },
+        {
+          "claim": "与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1个月出现且峰值较高",
+          "status": "supported",
+          "reason": "E2原文明确记载该结果。"
+        },
+        {
+          "claim": "电子鼻可有效区分两种贮藏方式下的挥发性物质，窖藏期间果实挥发性物质较多",
+          "status": "supported",
+          "reason": "E2原文明确记载该结果。"
+        },
+        {
+          "claim": "果皮和果肉中分别检出36种和33种、28种和24种挥发性物质",
+          "status": "supported",
+          "reason": "E2原文明确记载窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33种、28种和24种挥发性物质。"
+        },
+        {
+          "claim": "窖藏鸭梨较冷藏时生成更多乙酯类化合物",
+          "status": "supported",
+          "reason": "E2原文明确记载该结果。"
+        },
+        {
+          "claim": "与冷藏相比，窖藏明显上调PbACO2、PbLOX1和PbAAT1的表达，下调PbEIN3的表达",
+          "status": "supported",
+          "reason": "E1和E2原文均明确记载该结果。"
+        },
+        {
+          "claim": "冷藏能更好地维持果实硬度、保持较高SSC，适合长期贮藏，但挥发性物质较少",
+          "status": "supported",
+          "reason": "E4原文明确记载该结论。"
+        },
+        {
+          "claim": "窖藏过程中鸭梨容易软化，但生成更多酯类、醇类等香气物质",
+          "status": "supported",
+          "reason": "E4原文明确记载该结论。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2721,
+      "completion_tokens": 690,
+      "total_tokens": 3411,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 545
+    },
+    "model": "deepseek-flash",
+    "response_id": "31897514-651b-4743-8653-d24976110d45",
+    "seconds": 7.7030612999997174,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

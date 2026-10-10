@@ -1,0 +1,69 @@
+{
+  "source_id": "GOV_001",
+  "title": "鸭梨黑星病夏季如何防治（农业农村局公开科普）",
+  "source_type": "government",
+  "crop": [
+    "鸭梨"
+  ],
+  "region": [],
+  "region_note": "通用梨园经验，非泊头专属",
+  "year": 2017,
+  "evidence_level": "B",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+  "authors": [],
+  "doi": null,
+  "availability": "fulltext_html_available",
+  "review_status": "fulltext_acquired_content_review_pending",
+  "fulltext_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_001/browser.html",
+  "text_path": "data/botou_yali/graphrag_corpus_v1/processed/GOV_001/text.txt",
+  "pages_path": "data/botou_yali/graphrag_corpus_v1/processed/GOV_001/pages.json",
+  "page_count": null,
+  "ready_for_chunking": true,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "不是河北泊头本地技术规程；药剂信息具有时效性和地区合规差异，本语料不把具体药剂剂量作为系统自动处方依据。",
+  "kg_source_ids": [],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_001/browser.html",
+      "sha256": "939dfb9a817b8ac62d0dcd82534fd95a10b3da7daa8c532c45c44e327f00c9d7",
+      "bytes": 10619,
+      "role": "fulltext"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_001/browser.txt",
+      "sha256": "8d09669236173fa5ce79a517b9396081dca696bb02b9c933afd4e92c4a802f07",
+      "bytes": 2053,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_001/summary.md",
+      "sha256": "5e5de7f2eeba083d1024c0689ff6478f45a98919fda0556816ba177537e5a5cb",
+      "bytes": 1206,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": null,
+  "acquisition_attempts": [
+    {
+      "source_id": "GOV_001",
+      "status": "downloaded_pending_review",
+      "url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+      "title": "鸭梨黑星病夏季如何防治 - 市农业农村局",
+      "error": null,
+      "characters": 796
+    },
+    {
+      "source_id": "GOV_001",
+      "url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_001/landing.html",
+      "attempted_at": "2026-09-15T06:21:33.751472+00:00",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "extraction_status": "text_available_review_pending"
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "question": "本研究通过检索梨基因组获得了几个乙烯合成途径关键基因？",
+    "type": "factual",
+    "answer_quote": "获得梨乙烯合成途径关键基因6 个",
+    "gold_entities": [
+      "梨基因组",
+      "乙烯合成途径关键基因"
+    ]
+  },
+  {
+    "question": "本研究中实时荧光定量PCR反应液的总体积是多少？",
+    "type": "factual",
+    "answer_quote": "配置总体积为20 µL的实时荧光定量PCR 反应液",
+    "gold_entities": [
+      "实时荧光定量PCR",
+      "20 µL"
+    ]
+  },
+  {
+    "question": "本研究中实时荧光定量PCR反应液包含的2×SybrGreen qPCR Master Mix体积是多少？",
+    "type": "factual",
+    "answer_quote": "包含10 µL 2×SybrGreen qPCR Master Mix",
+    "gold_entities": [
+      "2×SybrGreen qPCR Master Mix",
+      "10 µL"
+    ]
+  },
+  {
+    "question": "本研究中实时荧光定量PCR反应液中上下游引物各加入多少体积？",
+    "type": "factual",
+    "answer_quote": "上下游引物各0.4 µL",
+    "gold_entities": [
+      "上下游引物",
+      "0.4 µL"
+    ]
+  },
+  {
+    "question": "本研究中实时荧光定量PCR反应液中ddH2O的体积是多少？",
+    "type": "factual",
+    "answer_quote": "7.2 µL ddH2O",
+    "gold_entities": [
+      "ddH2O",
+      "7.2 µL"
+    ]
+  },
+  {
+    "question": "本研究中实时荧光定量PCR反应液中模板的体积是多少？",
+    "type": "factual",
+    "answer_quote": "2 µL 模板",
+    "gold_entities": [
+      "模板",
+      "2 µL"
+    ]
+  },
+  {
+    "question": "本研究中实时荧光定量PCR的扩增程序包括哪些步骤？",
+    "type": "factual",
+    "answer_quote": "扩增程序为：95℃预变性3 min；95℃变性7 s，57℃退火10 s，72℃延伸15 s，45 个循环。",
+    "gold_entities": [
+      "95℃预变性3 min",
+      "95℃变性7 s",
+      "57℃退火10 s",
+      "72℃延伸15 s",
+      "45 个循环"
+    ]
+  },
+  {
+    "question": "本研究中实时荧光定量PCR每个样品重复几次？",
+    "type": "factual",
+    "answer_quote": "每个样品重复3 次。",
+    "gold_entities": [
+      "每个样品",
+      "重复3 次"
+    ]
+  },
+  {
+    "question": "本研究中采用什么方法计算基因在各样品中的相对表达量？",
+    "type": "factual",
+    "answer_quote": "采用2-∆∆Ct 法计算基因在各样品中的相对表达量。",
+    "gold_entities": [
+      "2-∆∆Ct 法",
+      "相对表达量"
+    ]
+  },
+  {
+    "question": "本研究中PbACO1基因的正向引物序列是什么？",
+    "type": "factual",
+    "answer_quote": "PbACO1 Pbr000093.1 GACGCTGGTGGTATCATCCT TTCCGTCCGACTGAGCTATC",
+    "gold_entities": [
+      "PbACO1",
+      "Pbr000093.1",
+      "GACGCTGGTGGTATCATCCT",
+      "TTCCGTCCGACTGAGCTATC"
+    ]
+  },
+  {
+    "question": "本研究中PbACO2基因的反向引物序列是什么？",
+    "type": "factual",
+    "answer_quote": "PbACO2 Pbr005179.1 GCAGTGATGCGGTGATCTAC CCCAAACCAAAACTGGCCTT",
+    "gold_entities": [
+      "PbACO2",
+      "Pbr005179.1",
+      "GCAGTGATGCGGTGATCTAC",
+      "CCCAAACCAAAACTGGCCTT"
+    ]
+  },
+  {
+    "question": "本研究中PbACO3基因的正向引物序列是什么？",
+    "type": "factual",
+    "answer_quote": "PbACO3 Pbr031954.1 CAAGGATGGTGAATGGGTGGA TCATCGCCTGGGTTGTAGAAC",
+    "gold_entities": [
+      "PbACO3",
+      "Pbr031954.1",
+      "CAAGGATGGTGAATGGGTGGA",
+      "TCATCGCCTGGGTTGTAGAAC"
+    ]
+  },
+  {
+    "question": "本研究中PbACS1基因的反向引物序列是什么？",
+    "type": "factual",
+    "answer_quote": "PbACS1 Pbr015575.1 CCTGGGGTTCAAAGGGATCA CCGCCGTTAAGACTACCCTA",
+    "gold_entities": [
+      "PbACS1",
+      "Pbr015575.1",
+      "CCTGGGGTTCAAAGGGATCA",
+      "CCGCCGTTAAGACTACCCTA"
+    ]
+  },
+  {
+    "question": "本研究中PbACS2基因的正向引物序列是什么？",
+    "type": "factual",
+    "answer_quote": "PbACS2 Pbr019796.1 GTTGTGTCCGCAGCTACAAA TGAGCCCACAAACAAGCATC",
+    "gold_entities": [
+      "PbACS2",
+      "Pbr019796.1",
+      "GTTGTGTCCGCAGCTACAAA",
+      "TGAGCCCACAAACAAGCATC"
+    ]
+  },
+  {
+    "question": "本研究中PbACS3基因的反向引物序列是什么？",
+    "type": "factual",
+    "answer_quote": "PbACS3 Pbr029891.1 GAAGTTTGGCAGCGAGTTCA CAGATAGCATGGCGGAGAGA",
+    "gold_entities": [
+      "PbACS3",
+      "Pbr029891.1",
+      "GAAGTTTGGCAGCGAGTTCA",
+      "CAGATAGCATGGCGGAGAGA"
+    ]
+  }
+]
