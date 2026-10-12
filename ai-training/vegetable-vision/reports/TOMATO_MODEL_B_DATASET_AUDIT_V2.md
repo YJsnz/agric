@@ -1,0 +1,96 @@
+# Tomato Model B dataset audit V2
+
+V2 copies V1 byte-for-byte except the single confirmed pair_017 training crop. Raw and V1 SHA256 inventories are unchanged. Val and Test membership and bytes are identical to V1. No training or random split was performed.
+
+The four uncertain pairs remain. Other unreviewed candidates are not assumed safe. Residual fruit-level leakage risk remains; no fruit-independent or Qingxian field validation claim is supported.
+
+Source official frame/block assignments are inherited unchanged; only the specified Train crop is excluded. No exclusion is based on model Test performance.
+
+## Audit results
+
+```json
+{
+  "v1_total": 14185,
+  "v2_total": 14184,
+  "excluded_count": 1,
+  "excluded_pair_ids": [
+    "pair_017"
+  ],
+  "exclusion": {
+    "pair_id": "pair_017",
+    "excluded_crop": "data/tomato_ripeness_classifier_v1/train/green/train__20260416_123459_000909__inst_7450__cls_0.png",
+    "excluded_split": "train",
+    "retained_crop": "data/tomato_ripeness_classifier_v2/test/green/test__20260416_123459_000899__inst_7436__cls_0.png",
+    "retained_split": "test",
+    "class_name": "green",
+    "session": "20260416_123459",
+    "frame_excluded": "000909",
+    "frame_retained": "000899",
+    "instance_id_excluded": "20260416_123459_000909_green_0002",
+    "instance_id_retained": "20260416_123459_000899_green_0001",
+    "reason": "confirmed_cross_split_same_fruit_leakage"
+  },
+  "train_count": 10047,
+  "val_count": 1936,
+  "test_count": 2201,
+  "class_distribution": {
+    "train": {
+      "green": 7949,
+      "breakers": 119,
+      "turning": 432,
+      "pink": 322,
+      "light_red": 1120,
+      "red": 105
+    },
+    "val": {
+      "green": 1466,
+      "breakers": 51,
+      "turning": 153,
+      "pink": 57,
+      "light_red": 188,
+      "red": 21
+    },
+    "test": {
+      "green": 1894,
+      "breakers": 26,
+      "turning": 77,
+      "pink": 56,
+      "light_red": 134,
+      "red": 14
+    }
+  },
+  "source_frame_overlap": {
+    "train_val": [],
+    "train_test": [],
+    "val_test": []
+  },
+  "block_overlap": {
+    "train_val": [],
+    "train_test": [],
+    "val_test": []
+  },
+  "exact_duplicate_cross_split": 0,
+  "pixel_duplicate_cross_split": 0,
+  "near_duplicate_cross_split": 26,
+  "near_duplicate_by_split": {
+    "train_val": 12,
+    "train_test": 10,
+    "val_test": 4
+  },
+  "near_duplicate_method": "Exhaustive 64-bit dHash Hamming <=4, recomputed from V2 pixels; candidate similarity is not identity proof",
+  "confirmed_leak_remaining": 0,
+  "uncertain_pair_count": 4,
+  "raw_modified": false,
+  "v1_modified": false,
+  "val_test_byte_identical_to_v1": true,
+  "training_ready_image_level": true,
+  "official_frame_block_assignments_preserved": true,
+  "session_independent": false,
+  "fruit_independent": false,
+  "local_qingxian_validated": false,
+  "residual_uncertain_near_duplicate_risk": true,
+  "scope": "Confirmed leak remaining refers to reviewed candidates, not a guarantee that all fruit identities are independent."
+}
+```
+
+Complete V2 crop, exclusion, cross-split duplicate, and near-duplicate manifests are in data/tomato_ripeness_classifier_v2/manifests/. The five original small-crop rejections are retained as historical source-generation records.

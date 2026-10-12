@@ -1,0 +1,186 @@
+{
+  "model_name": "tomato_ripeness_yolo11n_cls_v1",
+  "version": "v1",
+  "status": "frozen_baseline",
+  "architecture": "YOLO11n-cls",
+  "task": "设施番茄果实六阶段成熟度视觉分类",
+  "classes": [
+    "green",
+    "breakers",
+    "turning",
+    "pink",
+    "light_red",
+    "red"
+  ],
+  "model_class_mapping": {
+    "0": "breakers",
+    "1": "green",
+    "2": "light_red",
+    "3": "pink",
+    "4": "red",
+    "5": "turning"
+  },
+  "source_path": "runs/tomato_ripeness_yolo11n_cls_v1/weights/best.pt",
+  "frozen_path": "models/tomato/tomato_ripeness_yolo11n_cls_v1.pt",
+  "sha256": "09d0c0d8d75e9c1c25a8ba59e015594000cc1169dc234bf1098cbf02f78b8b75",
+  "file_size_bytes": 3196610,
+  "training_dataset": {
+    "name": "AerialYield-T2M",
+    "version": "tomato_ripeness_classifier_v2",
+    "path": "data/tomato_ripeness_classifier_v2",
+    "split_counts": {
+      "train": {
+        "green": 7949,
+        "breakers": 119,
+        "turning": 432,
+        "pink": 322,
+        "light_red": 1120,
+        "red": 105
+      },
+      "val": {
+        "green": 1466,
+        "breakers": 51,
+        "turning": 153,
+        "pink": 57,
+        "light_red": 188,
+        "red": 21
+      },
+      "test": {
+        "green": 1894,
+        "breakers": 26,
+        "turning": 77,
+        "pink": 56,
+        "light_red": 134,
+        "red": 14
+      }
+    }
+  },
+  "metrics": {
+    "accuracy": 0.9404815992730577,
+    "macro_precision": 0.632194961319187,
+    "macro_recall": 0.5099909186045296,
+    "macro_f1": 0.5363658231459278,
+    "balanced_accuracy": 0.5099909186045296,
+    "weighted_precision": 0.9341725029789456,
+    "weighted_recall": 0.9404815992730577,
+    "weighted_f1": 0.9321993922035312,
+    "macro_roc_auc_ovr": 0.9799802383253765,
+    "stage_mae": 0.09359382099045888,
+    "within_1_stage_accuracy": 0.9750113584734211,
+    "per_class_metrics": {
+      "green": {
+        "support": 1894,
+        "precision": 0.9740394600207685,
+        "recall": 0.9904963041182682,
+        "f1": 0.9821989528795811
+      },
+      "breakers": {
+        "support": 26,
+        "precision": 0.5454545454545454,
+        "recall": 0.23076923076923078,
+        "f1": 0.32432432432432434
+      },
+      "turning": {
+        "support": 77,
+        "precision": 0.7142857142857143,
+        "recall": 0.5844155844155844,
+        "f1": 0.6428571428571429
+      },
+      "pink": {
+        "support": 56,
+        "precision": 0.8571428571428571,
+        "recall": 0.32142857142857145,
+        "f1": 0.4675324675324675
+      },
+      "light_red": {
+        "support": 134,
+        "precision": 0.702247191011236,
+        "recall": 0.9328358208955224,
+        "f1": 0.8012820512820513
+      },
+      "red": {
+        "support": 14,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        1876,
+        2,
+        10,
+        0,
+        6,
+        0
+      ],
+      [
+        16,
+        6,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        29,
+        1,
+        45,
+        1,
+        1,
+        0
+      ],
+      [
+        4,
+        0,
+        2,
+        18,
+        32,
+        0
+      ],
+      [
+        1,
+        2,
+        2,
+        2,
+        125,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        14,
+        0
+      ]
+    ],
+    "high_confidence_error_count_08": 34,
+    "high_confidence_error_count_09": 13
+  },
+  "limitations": [
+    "仅代表AerialYield-T2M公开温室内部图像级测试，不是青县现场准确率或真实生产环境泛化准确率。",
+    "果实身份未完全核验，4对uncertain近重复风险仍存在，不能声称fruit-independent测试。",
+    "red测试14张，Recall/F1均为0；breakers Recall为23.08%，pink Recall为32.14%。",
+    "类别严重不平衡；94.05%的总体Accuracy不能代表六类均能可靠识别。",
+    "高置信错误confidence>=0.8有34张，>=0.9有13张。",
+    "输出仅为成熟阶段视觉分类，不是品质最终判定、食品安全判定或采收决策最终结论。",
+    "冻结为可复现V1 baseline，不表示已达到部署验收条件。"
+  ],
+  "image_level": true,
+  "fruit_independent": false,
+  "session_independent": false,
+  "local_qingxian_validated": false,
+  "residual_uncertain_near_duplicate_risk": true,
+  "evaluation_report": "reports/TOMATO_MODEL_B_V1_EVALUATION.md",
+  "evaluation_metrics": "reports/tomato_model_b_v1_metrics.json",
+  "test_images": 2201,
+  "training": {
+    "actual_epochs": 43,
+    "best_epoch": 23,
+    "best_val_top1": 0.89607,
+    "configured_epochs": 80,
+    "patience": 20
+  },
+  "freeze_date": "2026-10-12"
+}
