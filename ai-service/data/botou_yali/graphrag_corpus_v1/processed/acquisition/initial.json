@@ -1,0 +1,67 @@
+[
+  {
+    "source_id": "STD_001",
+    "url": "https://std.sacinfo.org.cn/gnocDb/queryInfo?id=C86E930B07E8117A6E3AA19B417B7A52",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_001/landing.html"
+  },
+  {
+    "source_id": "STD_002",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/landing.html"
+  },
+  {
+    "source_id": "STD_003",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=598B66F9F87DC97DE06397BE0A0A7EC3",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_003/landing.html"
+  },
+  {
+    "source_id": "STD_004",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=C3B0BB05E84D4F89E05397BE0A0A81E3",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_004/landing.html"
+  },
+  {
+    "source_id": "PAPER_001",
+    "url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/landing.html"
+  },
+  {
+    "source_id": "PAPER_002",
+    "url": "https://www.spgykj.com/article/doi/10.13386/j.issn1002-0306.2013.15.074",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/landing.html"
+  },
+  {
+    "source_id": "PAPER_003",
+    "url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/landing.html"
+  },
+  {
+    "source_id": "PAPER_004",
+    "url": "https://www.spkx.net.cn/CN/10.7506/spkx1002-6630-201010064",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/landing.html"
+  },
+  {
+    "source_id": "PAPER_005",
+    "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/landing.html"
+  },
+  {
+    "source_id": "GOV_001",
+    "url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_001/landing.html"
+  },
+  {
+    "source_id": "UNI_001",
+    "url": "https://www.zwbch.com/changshi/view_14.html",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/landing.html"
+  },
+  {
+    "source_id": "GOV_002",
+    "url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/landing.html"
+  },
+  {
+    "source_id": "PAPER_003",
+    "url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/20100860.pdf",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/original.pdf"
+  }
+]

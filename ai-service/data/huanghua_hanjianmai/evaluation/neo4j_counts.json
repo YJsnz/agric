@@ -1,0 +1,10 @@
+{
+  "crop_id": "huanghua_hanjianmai",
+  "dataset": "hanjianmai_evidence_v1",
+  "nodes_to_import": 82,
+  "sources_to_import": 18,
+  "statements_to_import": 91,
+  "provenance_edges": 295,
+  "cypher_lines": 676,
+  "note": "独立命名空间；与泊头鸭梨可并存。"
+}

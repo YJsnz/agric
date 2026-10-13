@@ -1,0 +1,44 @@
+{
+  "id": "QA_0148",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关于缓慢降温对早采和晚采鸭梨果心LOX活性影响的信息，仅声称证据不足，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 971,
+      "completion_tokens": 47,
+      "total_tokens": 1018,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 203
+    },
+    "model": "deepseek-flash",
+    "response_id": "9a0d4a21-7b9a-4771-9ae3-26a487e12df3",
+    "seconds": 5.514113199999883,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

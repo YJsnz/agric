@@ -1,0 +1,35 @@
+[
+  {
+    "source_id": "HEBEI_RESEARCH_001",
+    "title": "梨抗黑星病机理及新种质创制的研究与应用",
+    "url": "https://www.hebnky.com/Files/tongzhigonggao/2018/4%E6%A2%A8%E6%8A%97%E9%BB%91%E6%98%9F%E7%97%85%E6%9C%BA%E7%90%86%E5%8F%8A%E6%96%B0%E7%A7%8D%E8%B4%A8%E5%88%9B%E5%88%B6%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%BA%94%E7%94%A8.pdf",
+    "review_status": "acquired_pending_scope_review",
+    "production_retrieval_approved": false,
+    "resolved_url": "https://www.hebnky.com/Files/tongzhigonggao/2018/4%E6%A2%A8%E6%8A%97%E9%BB%91%E6%98%9F%E7%97%85%E6%9C%BA%E7%90%86%E5%8F%8A%E6%96%B0%E7%A7%8D%E8%B4%A8%E5%88%9B%E5%88%B6%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%BA%94%E7%94%A8.pdf",
+    "bytes": 527412,
+    "sha256": "fe7d8ba6357940b49099ffc9e5f2d626aabfe1d2c61815a2d5657a33b9f4eb67",
+    "file": "HEBEI_RESEARCH_001.pdf"
+  },
+  {
+    "source_id": "HEBEI_QUARANTINE_001",
+    "title": "中国鸭梨输往美国的植物检疫工作计划",
+    "url": "https://policy.mofcom.gov.cn/pact/pactContent.shtml?id=951",
+    "review_status": "acquired_pending_scope_review",
+    "production_retrieval_approved": false,
+    "resolved_url": "https://policy.mofcom.gov.cn/pact/pactContent.shtml?id=951",
+    "bytes": 24836,
+    "sha256": "c89d93e9daf887921413dd0fd421e75ef618df83adf2ab13da4d77850c9102d7",
+    "file": "HEBEI_QUARANTINE_001.html"
+  },
+  {
+    "source_id": "NATIONAL_STANDARD_001",
+    "title": "GB/T 28072-2011 梨黑斑病菌检疫鉴定方法",
+    "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7E378D3A7E05397BE0A0AB82A",
+    "review_status": "acquired_pending_scope_review",
+    "production_retrieval_approved": false,
+    "resolved_url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7E378D3A7E05397BE0A0AB82A",
+    "bytes": 69087,
+    "sha256": "f5f64e3d80533e2e3a85a883cd838d5b64832d37ae31f171b23106075107f2ac",
+    "file": "NATIONAL_STANDARD_001.html"
+  }
+]

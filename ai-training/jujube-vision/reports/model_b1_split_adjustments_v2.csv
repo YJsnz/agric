@@ -1,0 +1,10 @@
+﻿image_id,filename,old_split,new_split,group_id
+bf5a0142652eed453971,bruise_249.jpg,train,test,fruit_e634022ee7b65351
+8f07b244ec945f011399,bruise_484.jpg,train,val,fruit_3db6eafe35e15585
+85847005bcaf33309741,bruise_409.jpg,val,train,fruit_9e4861e33007b968
+26602015b014947c60d2,bruise_659.jpg,train,test,fruit_c565baaea191dbb1
+dad2f1f7e53475b53cf0,bruise_466.jpg,train,test,fruit_6acfb9de747b94c2
+727f7085a715b757e01e,healthy_197.jpg,val,train,fruit_9bd8f3839715bb36
+c950f387be52db7f6520,bruise_315.jpg,val,test,fruit_d3e149dff727edd3
+692dbe943a298ee62080,bruise_66.jpg,train,val,fruit_64c0134a82346239
+e319c7849834d5e04d64,bruise_371.jpg,test,train,fruit_6d0e9b20d6cfaec6

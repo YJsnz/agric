@@ -4,8 +4,9 @@ import { useRouter } from 'vue-router'
 import BrandLogo from '@/components/BrandLogo.vue'
 import UserMenu from './UserMenu.vue'
 
-defineProps<{ dark?: boolean; notificationCount?: number }>()
+defineProps<{ dark?: boolean; notificationCount?: number; farmName?: string; legacy?: boolean }>()
 const emit = defineEmits<{
+  (event:'farm',id:string):void
   (event: 'search', value: string): void
   (event: 'notify'): void
 }>()
@@ -28,7 +29,7 @@ onBeforeUnmount(()=>window.clearInterval(clockTimer))
   <header class="topbar" :class="{ dark }">
     <div class="left">
       <BrandLogo :inverse="dark" />
-      <button class="farm-select">智慧农场01 <svg viewBox="0 0 20 20"><path d="m6 8 4 4 4-4"/></svg></button>
+      <select class="farm-select" aria-label="选择示范基地" :value="legacy ? 'farm-01' : 'yantian-01'" @change="emit('farm', ($event.target as HTMLSelectElement).value)"><option value="yantian-01">沧州盐碱地示范基地</option><option value="farm-01">原温室演示园</option></select><button class="multi-entry" @click="router.push('/multicrop')">多作物研判</button>
     </div>
     <div class="right">
       <form class="search" @submit.prevent="onSearch">
@@ -51,4 +52,7 @@ onBeforeUnmount(()=>window.clearInterval(clockTimer))
 .farm-select,.time,.search{height:42px;border-color:rgba(42,70,47,.1);background:#f5f7f2}
 .dark{background:rgba(255,255,255,.9);color:#15251c}.dark .farm-select,.dark .time,.dark .search{background:#f5f7f2;border-color:rgba(42,70,47,.1)}
 @media(max-width:700px){.topbar{height:58px;inset:8px 10px auto;padding:7px 10px;border-radius:16px}}
+.farm-select{cursor:pointer;font-size:11px;max-width:190px}.farm-select small{font-size:10px;color:#8c7956;border:1px solid #e9dfc9;border-radius:5px;padding:2px 4px;font-weight:400}
 </style>
+
+<style scoped>.multi-entry{font:inherit;font-size:11px;border:1px solid #dce5de;border-radius:10px;padding:9px 12px;background:#f5f7f2;color:#40634f;cursor:pointer;white-space:nowrap}</style>

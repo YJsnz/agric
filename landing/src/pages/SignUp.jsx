@@ -104,7 +104,7 @@ export default function SignUp() {
     <SignInPage
       mode="sign-up"
       title="创建账号"
-      description="注册田言耕智，把数据带进你的农场。"
+      description="注册盐田丰语，把数据带进你的农场。"
       heroImageSrc="/assets/uc.png"
       testimonials={TESTIMONIALS}
       error={error}

@@ -1,0 +1,123 @@
+[
+  {
+    "question": "本试验中，鸭梨的早采果和晚采果分别于哪两天采摘？",
+    "type": "factual",
+    "answer_quote": "早采和晚采果分别于2004 年9 月8 日和9 月28 日采摘。",
+    "gold_entities": [
+      "鸭梨",
+      "早采",
+      "晚采",
+      "2004 年9 月8 日",
+      "9 月28 日"
+    ]
+  },
+  {
+    "question": "本试验的鸭梨采自哪个具体地点？",
+    "type": "factual",
+    "answer_quote": "试验所用鸭梨采自北京大兴安定镇后安定村",
+    "gold_entities": [
+      "鸭梨",
+      "北京大兴安定镇后安定村"
+    ]
+  },
+  {
+    "question": "本试验中，急降温处理的鸭梨被直接放入什么条件的冷库中贮藏？",
+    "type": "cultivation_management",
+    "answer_quote": "急降温处理果直接放入(0±1)℃冷库中贮藏；",
+    "gold_entities": [
+      "急降温处理",
+      "(0±1)℃冷库"
+    ]
+  },
+  {
+    "question": "本试验中，缓降温处理的鸭梨在12℃冷库中每5天降几度？",
+    "type": "cultivation_management",
+    "answer_quote": "缓降温处理果放12℃冷库中，每5 d 降2℃，",
+    "gold_entities": [
+      "缓降温处理",
+      "12℃冷库",
+      "每5 d 降2℃"
+    ]
+  },
+  {
+    "question": "本试验中，缓降温处理用多少天时间将温度降至(0±1)℃贮藏？",
+    "type": "cultivation_management",
+    "answer_quote": "用30 d 时间将温度降至(0±1)℃贮藏，",
+    "gold_entities": [
+      "缓降温处理",
+      "30 d",
+      "(0±1)℃"
+    ]
+  },
+  {
+    "question": "本试验中，鸭梨贮藏期间的相对湿度控制在什么范围？",
+    "type": "environmental_risk",
+    "answer_quote": "相对湿度80%～85%。",
+    "gold_entities": [
+      "相对湿度",
+      "80%～85%"
+    ]
+  },
+  {
+    "question": "本试验中，每个处理的鸭梨共装多少箱？",
+    "type": "factual",
+    "answer_quote": "每个处理共装12 箱。",
+    "gold_entities": [
+      "每个处理",
+      "12 箱"
+    ]
+  },
+  {
+    "question": "本试验中，每箱装多少个鸭梨？",
+    "type": "factual",
+    "answer_quote": "每箱装30 个果，",
+    "gold_entities": [
+      "每箱",
+      "30 个果"
+    ]
+  },
+  {
+    "question": "本试验中，测定果心相变温度时随机选取各处理鸭梨多少个？",
+    "type": "factual",
+    "answer_quote": "随机选取各处理鸭梨5 个，",
+    "gold_entities": [
+      "各处理鸭梨",
+      "5 个"
+    ]
+  },
+  {
+    "question": "本试验中，测定果心相变温度时准确称取多少毫克果心汁？",
+    "type": "factual",
+    "answer_quote": "准确称取3.0 mg，",
+    "gold_entities": [
+      "3.0 mg"
+    ]
+  },
+  {
+    "question": "本试验中，测定果心相变温度使用的是什么仪器？",
+    "type": "factual",
+    "answer_quote": "用美国Thrermal Analysisg 公司产Q100 调制式差示量热扫描仪（DSC）测定。",
+    "gold_entities": [
+      "Q100 调制式差示量热扫描仪",
+      "DSC"
+    ]
+  },
+  {
+    "question": "本试验中，鸭梨果实装入专用包装纸箱后，上部用什么覆盖？",
+    "type": "postharvest_storage",
+    "answer_quote": "上部用聚乙烯（PE）膜覆盖，",
+    "gold_entities": [
+      "聚乙烯（PE）膜"
+    ]
+  },
+  {
+    "question": "本试验中，鸭梨果实从固定树上采摘后如何运抵实验室？",
+    "type": "factual",
+    "answer_quote": "从固定的8 棵树上随机手工采摘后套网套装入纸箱中运抵实验室，",
+    "gold_entities": [
+      "固定的8 棵树",
+      "套网套",
+      "纸箱"
+    ]
+  }
+]

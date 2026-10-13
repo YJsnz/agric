@@ -31,7 +31,7 @@ export default function Docs() {
       <PageHero
         eyebrow="Documentation"
         title={<>文档说明<br />从使用到开发，一站查阅</>}
-        subtitle="选择适合你的手册，了解田言耕智的完整操作流程与技术实现。文档内容随项目版本同步更新。"
+        subtitle="选择适合你的手册，了解盐田丰语的完整操作流程与技术实现。文档内容随项目版本同步更新。"
       />
 
       <section className="px-6 pb-24 md:px-12 lg:px-16">

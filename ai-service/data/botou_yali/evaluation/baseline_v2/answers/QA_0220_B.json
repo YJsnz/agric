@@ -1,0 +1,287 @@
+{
+  "id": "QA_0220",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0008",
+    "chunk:PAPER_005_C0028",
+    "chunk:PAPER_005_C0027",
+    "chunk:PAPER_005_C0019",
+    "chunk:PAPER_005_C0018"
+  ],
+  "service_response": {
+    "status": "insufficient_evidence",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称证据未包含装箱果实数量信息，所引E1为引言、E2/E3为挥发性物质组分变化、E4/E5为果实品质变化，均无装箱数量描述，结论与所引证据一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "对E1-E5内容的概括准确：E1为引言，E2/E3为挥发性物质组分变化，E4/E5为果实品质变化，均未提及装箱果实数量。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理基于所引证据的覆盖范围，指出问题属材料与方法细节而证据仅覆盖引言、挥发性物质和品质变化，未补造缺失信息。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "建议为请求补充材料与方法原文，未陈述任何事实或数值，无引用证据要求。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0028",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "冷藏鸭梨果皮中检出28 种挥发性物质成分，含量较高的物质为醛类、烷烃、萜类等，其中醛类主要为己醛、反-2-己烯醛；酯类物质（主要是丁酯类）相对较少，而此时出现较多的烷烃类物质，且主要是癸烷，而窖藏却未检出烷烃类物质（表4）。",
+        "pages": [
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0027",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": " The same as below图2  基于电子鼻的窖藏及冷藏鸭梨挥发性成分PCA 结果Fig. 2  PCA result of volatile components based on electronic nose in Yali pear during cellar and cold storage主成分1 Main axis (Variance: 65.40%)冷藏-3 Cold storage-3冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3 -460 -450 -440 -430 -420 -410 -400 -390 -1.130 -1.135 -1.140 -1.145 -1.150 -1.155 -1.160 -1.165 -1.170图3  基于电子鼻窖藏及冷藏鸭梨挥发性成分LDA 分析Fig. 3  LDA analysis of volatile components based on electronic nose in Yali pear during cellar and cold storage condition就鸭梨果皮而言，贮藏期内，鸭梨果皮中挥发性物质总量呈现先升高后降低的规律，且窖藏果皮明显高于同期冷藏果皮，其中差别比较明显的香气物质为酯类、醇类化合物，其含量高峰出现在贮藏2 个月，分别高于冷藏果实53.11、56.22 倍。具体成分表现为，窖藏鸭梨果皮中检出36 种成分，含量较高的物质为酯类、醛类、醇类、萜类，其中酯类为主要香气物质。酯类主要是乙酯和甲酯类，其中己酸乙酯、辛酸乙酯、丁酸乙酯、乙酸己酯、乙酸辛酯为主要成分，并且2-己烯酸乙酯、庚酸乙酯和(E, Z)-2,4-癸二烯酸乙酯等为窖藏过程中特有的酯类物质；醛类主要为E-2-己烯醛，以及新生成的(E, Z)-2,4-癸二烯醛；醇类主要为Z-4-癸烯醇、正辛醇和正癸醇；萜类主要是α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）。",
+        "pages": [
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0019",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0018",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "窖藏条件下，鸭梨贮藏1 个月时硬度有所增加，此后缓慢降低，至3 个月时最小。窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "所提供的证据未包含鸭梨果实装入纸箱时每箱装多少个果实的信息  [E1]  [E2]  [E3]  [E4]  [E5] 。",
+    "basis": "证据[E1]为引言，介绍研究意义、前人进展与切入点，未涉及装箱数量  [E1] ；[E2]、[E3]为挥发性物质组分变化结果  [E2]  [E3] ；[E4]、[E5]为果实品质变化结果  [E4]  [E5] ，均未提及装箱果实数量。",
+    "reasoning": "问题询问试验方法中装箱果实数量，属于材料与方法细节。检索到的证据仅覆盖引言  [E1] 、挥发性物质组分变化  [E2]  [E3]  和果实品质变化  [E4]  [E5] ，均无装箱数量相关描述，故无法回答。",
+    "advice": "请补充该论文材料与方法部分（果实处理与贮藏）的原文内容，或提供包含装箱规格描述的段落。",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出每箱果实数量，仅说明所提供证据未包含该信息。参考答案明确为每箱40个果实，且原始证据中有对应描述，因此该回答属于证据不足下的拒答，在可回答题中不算正确。",
+      "claims": [
+        {
+          "claim": "所提供的证据未包含鸭梨果实装入纸箱时每箱装多少个果实的信息",
+          "status": "contradicted",
+          "reason": "原始证据明确写明“装入纸箱内，每箱40 个果实”，因此该断言与提供证据相反。"
+        },
+        {
+          "claim": "证据[E1]为引言，介绍研究意义、前人进展与切入点，未涉及装箱数量",
+          "status": "supported",
+          "reason": "检索证据E1确为引言内容，未提及装箱数量。"
+        },
+        {
+          "claim": "[E2]、[E3]为挥发性物质组分变化结果",
+          "status": "supported",
+          "reason": "检索证据E2、E3均标注为“2.4 挥发性物质组分变化”。"
+        },
+        {
+          "claim": "[E4]、[E5]为果实品质变化结果",
+          "status": "supported",
+          "reason": "检索证据E4、E5均标注为“2.1 果实品质变化”。"
+        },
+        {
+          "claim": "检索到的证据仅覆盖引言、挥发性物质组分变化和果实品质变化，均无装箱数量相关描述",
+          "status": "contradicted",
+          "reason": "原始证据包含材料与方法中“装入纸箱内，每箱40 个果实”的描述，因此并非无装箱数量相关描述。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2637,
+      "completion_tokens": 320,
+      "total_tokens": 2957,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 1613
+    },
+    "model": "deepseek-flash",
+    "response_id": "a60fe712-9f13-44f3-ae5b-cf9b0e653899",
+    "seconds": 6.602701600000728,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据未包含鸭梨果实装入纸箱时每箱装多少个果实的信息。",
+        "basis": "证据E1为引言，介绍研究意义、前人进展与切入点，未涉及装箱数量；E2、E3为挥发性物质组分变化结果；E4、E5为果实品质变化结果，均未提及装箱果实数量。",
+        "reasoning": "问题询问试验方法中装箱果实数量，属于材料与方法细节。检索到的证据仅覆盖引言、挥发性物质组分变化和果实品质变化，均无装箱数量相关描述，故无法回答。",
+        "advice": "请补充该论文材料与方法部分（果实处理与贮藏）的原文内容，或提供包含装箱规格描述的段落。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2153,
+        "completion_tokens": 190,
+        "total_tokens": 2343,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2025
+      },
+      "model": "deepseek-flash",
+      "response_id": "7bfd62a0-28d2-4498-ade7-060825c396b1",
+      "seconds": 6.462606899993261,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据未包含鸭梨果实装入纸箱时每箱装多少个果实的信息 [E1][E2][E3][E4][E5]。",
+        "basis": "证据E1为引言，介绍研究意义、前人进展与切入点，未涉及装箱数量 [E1]；E2、E3为挥发性物质组分变化结果 [E2][E3]；E4、E5为果实品质变化结果 [E4][E5]，均未提及装箱果实数量。",
+        "reasoning": "问题询问试验方法中装箱果实数量，属于材料与方法细节。检索到的证据仅覆盖引言 [E1]、挥发性物质组分变化 [E2][E3] 和果实品质变化 [E4][E5]，均无装箱数量相关描述，故无法回答。",
+        "advice": "请补充该论文材料与方法部分（果实处理与贮藏）的原文内容，或提供包含装箱规格描述的段落。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2529,
+        "completion_tokens": 226,
+        "total_tokens": 2755,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 481
+      },
+      "model": "deepseek-flash",
+      "response_id": "104b92c7-646a-4a0d-9e49-e6f6ab4300d7",
+      "seconds": 6.246839399987948,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 32.71640130000014
+}

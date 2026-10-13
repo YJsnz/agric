@@ -1,0 +1,4 @@
+﻿split,bruised,healthy,total
+train,512,512,1024
+val,110,110,220
+test,110,110,220

@@ -1,0 +1,767 @@
+[
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北滨海盐碱区/黄骅",
+    "growth_stage": "未标定",
+    "scope": "生产全过程",
+    "stress": [
+      "盐",
+      "旱"
+    ],
+    "practice": [
+      "灌"
+    ],
+    "source_id": "W001",
+    "evidence_level": "local_authoritative",
+    "source_ids": [
+      "W001"
+    ],
+    "evidence_ids": [
+      "E001",
+      "E064",
+      "E065",
+      "E066",
+      "E067",
+      "E068",
+      "E069",
+      "E090"
+    ],
+    "chunk_id": "HH-src-W001-01",
+    "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+    "text": "[河北滨海盐碱区/黄骅/未标定] 标准明确适用于土壤含盐量1‰～3‰的河北省滨海平原盐碱干旱生态类型区冬小麦生产。；标准适用于土壤含盐量1‰～3‰的河北省滨海平原盐碱干旱生态类型区冬小麦生产。；生产技术规程覆盖播前准备、播种、冬前、春季、中后期与收获全过程。；标准为河北省地方标准，适用于河北省滨海平原盐碱干旱生态类型区。",
+    "char_len": 144
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北滨海盐碱区/黄骅",
+    "growth_stage": "stage:sowing",
+    "scope": "生产全过程",
+    "stress": [
+      "盐",
+      "旱"
+    ],
+    "practice": [],
+    "source_id": "W001",
+    "evidence_level": "local_authoritative",
+    "source_ids": [
+      "W001"
+    ],
+    "evidence_ids": [
+      "E002"
+    ],
+    "chunk_id": "HH-src-W001-02",
+    "title": "DB13/T 5659-2023 黄骅旱碱麦生产技术规程",
+    "text": "[河北滨海盐碱区/黄骅/stage:sowing] 土壤含盐量1‰～3‰为旱碱麦生产的适用土壤盐分范围。",
+    "char_len": 26
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北",
+    "growth_stage": "未标定",
+    "scope": "肥药管理",
+    "stress": [
+      "旱"
+    ],
+    "practice": [
+      "调控",
+      "施肥"
+    ],
+    "source_id": "W002",
+    "evidence_level": "hebei_authoritative",
+    "source_ids": [
+      "W002"
+    ],
+    "evidence_ids": [
+      "E044"
+    ],
+    "chunk_id": "HH-src-W002-03",
+    "title": "DB13/T 6106-2025 旱碱麦肥药优调技术规程",
+    "text": "[河北/未标定] 官方平台确认标准现行，2025年发布实施。；按需优化施肥、规范用药并推进绿色调控。",
+    "char_len": 41
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北",
+    "growth_stage": "未标定",
+    "scope": "播种",
+    "stress": [],
+    "practice": [],
+    "source_id": "W003",
+    "evidence_level": "hebei_authoritative",
+    "source_ids": [
+      "W003"
+    ],
+    "evidence_ids": [],
+    "chunk_id": "HH-src-W003-04",
+    "title": "DB13/T 6107-2025 旱碱麦开沟接墒播种技术规程",
+    "text": "[河北/未标定] 官方备案目录确认标准于2025年发布实施。",
+    "char_len": 21
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州",
+    "growth_stage": "未标定",
+    "scope": "播前/播种",
+    "stress": [],
+    "practice": [],
+    "source_id": "W004",
+    "evidence_level": "cangzhou_authoritative",
+    "source_ids": [
+      "W004"
+    ],
+    "evidence_ids": [],
+    "chunk_id": "HH-src-W004-05",
+    "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+    "text": "[沧州/未标定] 官方标准平台确认标准现行，2025年发布实施。",
+    "char_len": 23
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州",
+    "growth_stage": "stage:sowing",
+    "scope": "播前/播种",
+    "stress": [
+      "旱"
+    ],
+    "practice": [
+      "探墒",
+      "保播"
+    ],
+    "source_id": "W004",
+    "evidence_level": "cangzhou_authoritative",
+    "source_ids": [
+      "W004"
+    ],
+    "evidence_ids": [
+      "E046"
+    ],
+    "chunk_id": "HH-src-W004-06",
+    "title": "DB1309/T 319-2025 旱碱麦探墒保播种植技术规程",
+    "text": "[沧州/stage:sowing] 探墒判墒、依墒保播，避免干旱条件下盲目抢播。",
+    "char_len": 22
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州",
+    "growth_stage": "未标定",
+    "scope": "晚播/春季管理",
+    "stress": [],
+    "practice": [],
+    "source_id": "W005",
+    "evidence_level": "cangzhou_authoritative",
+    "source_ids": [
+      "W005"
+    ],
+    "evidence_ids": [],
+    "chunk_id": "HH-src-W005-07",
+    "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+    "text": "[沧州/未标定] 官方备案目录确认该标准存在并于2025年实施。",
+    "char_len": 23
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州",
+    "growth_stage": "stage:regreening",
+    "scope": "晚播/春季管理",
+    "stress": [
+      "晚播弱苗"
+    ],
+    "practice": [],
+    "source_id": "W005",
+    "evidence_level": "cangzhou_authoritative",
+    "source_ids": [
+      "W005"
+    ],
+    "evidence_ids": [
+      "E047"
+    ],
+    "chunk_id": "HH-src-W005-08",
+    "title": "DB1309/T 320-2025 旱碱麦晚播春促减灾生产技术规程",
+    "text": "[沧州/stage:regreening] 播种偏晚后春季采取促进措施减灾促苗、稳穗增粒。",
+    "char_len": 23
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州",
+    "growth_stage": "未标定",
+    "scope": "播种/抗逆丰产",
+    "stress": [],
+    "practice": [
+      "沟播"
+    ],
+    "source_id": "W006",
+    "evidence_level": "cangzhou_authoritative",
+    "source_ids": [
+      "W006"
+    ],
+    "evidence_ids": [],
+    "chunk_id": "HH-src-W006-09",
+    "title": "DB1309/T 330-2025 旱碱麦宽幅沟播抗逆丰产技术规程",
+    "text": "[沧州/未标定] 官方备案目录确认标准现行；可与本地宽幅沟播论文互证。",
+    "char_len": 26
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州",
+    "growth_stage": "未标定",
+    "scope": "生产全过程",
+    "stress": [
+      "旱"
+    ],
+    "practice": [],
+    "source_id": "W007",
+    "evidence_level": "cangzhou_authoritative",
+    "source_ids": [
+      "W007"
+    ],
+    "evidence_ids": [],
+    "chunk_id": "HH-src-W007-10",
+    "title": "DB1309/T 150-2014 旱碱地小麦抗逆减灾丰产栽培技术规程",
+    "text": "[沧州/未标定] 官方平台确认现行；适用于沧州地区旱碱地冬小麦生产。",
+    "char_len": 25
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州",
+    "growth_stage": "stage:filling",
+    "scope": "生产全过程",
+    "stress": [
+      "倒伏",
+      "干热风"
+    ],
+    "practice": [
+      "一喷三防"
+    ],
+    "source_id": "W007",
+    "evidence_level": "cangzhou_authoritative",
+    "source_ids": [
+      "W007"
+    ],
+    "evidence_ids": [
+      "E048"
+    ],
+    "chunk_id": "HH-src-W007-11",
+    "title": "DB1309/T 150-2014 旱碱地小麦抗逆减灾丰产栽培技术规程",
+    "text": "[沧州/stage:filling] 一喷三防防控干热风、倒伏与病虫害（规程元数据主题）。",
+    "char_len": 26
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州",
+    "growth_stage": "未标定",
+    "scope": "全生育期抗逆",
+    "stress": [
+      "盐",
+      "旱",
+      "强",
+      "胁迫",
+      "低温",
+      "寡照"
+    ],
+    "practice": [
+      "化控",
+      "调控",
+      "灌",
+      "种子处理"
+    ],
+    "source_id": "W008",
+    "evidence_level": "peer_reviewed_local",
+    "source_ids": [
+      "W008"
+    ],
+    "evidence_ids": [
+      "E009",
+      "E010",
+      "E011",
+      "E039",
+      "E040",
+      "E041",
+      "E042",
+      "E043"
+    ],
+    "chunk_id": "HH-src-W008-12",
+    "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+    "text": "[沧州/未标定] 论文总结干旱、高盐碱、低温寡照对萌发、分蘖成穗和灌浆的抑制，并提出分阶段绿色调控体系。；干旱逆境出现在生育期并抑制种子萌发。；高盐碱逆境影响分蘖成穗阶段。；低温寡照影响籽粒灌浆阶段。；提出“种子处理+拔节化控+灌浆调控”全生育期靶向绿色调控技术体系。；外源ABA、硅制剂、纳米氧化铈提高根系Na+排斥、维持叶片K+稳态、清除活性氧。；根系Na+排泄增强为耐盐机制之一。；维持叶片K+稳态缓解盐胁迫。；清除活性氧缓解旱碱逆境。",
+    "char_len": 212
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州",
+    "growth_stage": "stage:filling",
+    "scope": "全生育期抗逆",
+    "stress": [
+      "胁迫",
+      "低温",
+      "寡照"
+    ],
+    "practice": [
+      "调控",
+      "灌"
+    ],
+    "source_id": "W008",
+    "evidence_level": "peer_reviewed_local",
+    "source_ids": [
+      "W008"
+    ],
+    "evidence_ids": [
+      "E008",
+      "E038"
+    ],
+    "chunk_id": "HH-src-W008-13",
+    "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+    "text": "[沧州/stage:filling] 低温寡照抑制籽粒灌浆。；灌浆期稳叶促粒调控。",
+    "char_len": 22
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州",
+    "growth_stage": "stage:sowing",
+    "scope": "全生育期抗逆",
+    "stress": [
+      "旱",
+      "胁迫"
+    ],
+    "practice": [
+      "种子处理"
+    ],
+    "source_id": "W008",
+    "evidence_level": "peer_reviewed_local",
+    "source_ids": [
+      "W008"
+    ],
+    "evidence_ids": [
+      "E006",
+      "E036"
+    ],
+    "chunk_id": "HH-src-W008-14",
+    "title": "沧州市旱碱麦增产绿色调控技术研究进展",
+    "text": "[沧州/stage:sowing] 生育期内干旱对种子萌发产生生理抑制。；播种前抗逆促发增蘖种子处理。",
+    "char_len": 33
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州海兴",
+    "growth_stage": "未标定",
+    "scope": "气象-生育期",
+    "stress": [
+      "旱",
+      "低温"
+    ],
+    "practice": [
+      "预警"
+    ],
+    "source_id": "W009",
+    "evidence_level": "peer_reviewed_local",
+    "source_ids": [
+      "W009"
+    ],
+    "evidence_ids": [
+      "E012",
+      "E013",
+      "E014",
+      "E015",
+      "E088"
+    ],
+    "chunk_id": "HH-src-W009-15",
+    "title": "基于近十年气象数据的旱碱麦生育期优化策略",
+    "text": "[沧州海兴/未标定] 基于海兴2013—2023年气象数据，研究指出极端低温、降水波动和日照变化影响旱碱麦生长。；基于海兴2013—2023年气象数据，极端低温影响旱碱麦生长。；年际间降水变化大对旱碱麦生长有影响。；日照时数的不对称变化对旱碱麦生长有影响。；提出构建气象风险预警系统以降低气象风险。；海兴县为沧州市辖县，具有旱碱麦气象研究记录。",
+    "char_len": 161
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州/黄骅",
+    "growth_stage": "未标定",
+    "scope": "播种与配套栽培",
+    "stress": [
+      "盐",
+      "旱"
+    ],
+    "practice": [
+      "沟播",
+      "镇压",
+      "有机肥",
+      "绿色防控"
+    ],
+    "source_id": "W010",
+    "evidence_level": "peer_reviewed_local",
+    "source_ids": [
+      "W010"
+    ],
+    "evidence_ids": [
+      "E027",
+      "E028",
+      "E030",
+      "E031"
+    ],
+    "chunk_id": "HH-src-W010-16",
+    "title": "沧州盐碱区旱碱麦宽幅沟播配套栽培技术",
+    "text": "[沧州/黄骅/未标定] 论文摘要给出4～6 cm深沟、14～16 cm苗带，并说明配套措施有助于抗旱躲盐和改善产量结构。；深沟4～6cm、苗带幅宽14～16cm。；针对土壤瘠薄、有机质低，增施有机肥。；镇压锄划配套保墒。；绿色防控降低病虫与逆发风险。",
+    "char_len": 113
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "沧州/黄骅",
+    "growth_stage": "stage:sowing",
+    "scope": "播种与配套栽培",
+    "stress": [
+      "盐",
+      "旱",
+      "胁迫"
+    ],
+    "practice": [
+      "沟播",
+      "深松"
+    ],
+    "source_id": "W010",
+    "evidence_level": "peer_reviewed_local",
+    "source_ids": [
+      "W010"
+    ],
+    "evidence_ids": [
+      "E025",
+      "E026",
+      "E029"
+    ],
+    "chunk_id": "HH-src-W010-17",
+    "title": "沧州盐碱区旱碱麦宽幅沟播配套栽培技术",
+    "text": "[沧州/黄骅/stage:sowing] 将播种于4～6cm深沟内、苗带14～16cm，配合措施实现抗旱躲盐。；宽幅沟播显著增加亩穗数与穗粒数，进而提高产量。；深松整地为宽幅沟播配套，改善耕层。",
+    "char_len": 76
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北低平原",
+    "growth_stage": "未标定",
+    "scope": "冬小麦水分供需",
+    "stress": [
+      "盐"
+    ],
+    "practice": [],
+    "source_id": "W011",
+    "evidence_level": "peer_reviewed_regional",
+    "source_ids": [
+      "W011"
+    ],
+    "evidence_ids": [
+      "E023"
+    ],
+    "chunk_id": "HH-src-W011-18",
+    "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+    "text": "[河北低平原/未标定] 以黄骅市(滨海盐碱)和南皮县(内陆盐碱)为典型县域。",
+    "char_len": 26
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北低平原/南皮",
+    "growth_stage": "未标定",
+    "scope": "冬小麦水分供需",
+    "stress": [],
+    "practice": [],
+    "source_id": "W011",
+    "evidence_level": "peer_reviewed_regional",
+    "source_ids": [
+      "W011"
+    ],
+    "evidence_ids": [
+      "E022"
+    ],
+    "chunk_id": "HH-src-W011-19",
+    "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+    "text": "[河北低平原/南皮/未标定] 南皮县探索微咸水与雨水的分期互补利用模式。",
+    "char_len": 21
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北低平原/黄骅",
+    "growth_stage": "未标定",
+    "scope": "冬小麦水分供需",
+    "stress": [
+      "盐",
+      "旱",
+      "胁迫"
+    ],
+    "practice": [
+      "灌"
+    ],
+    "source_id": "W011",
+    "evidence_level": "peer_reviewed_regional",
+    "source_ids": [
+      "W011"
+    ],
+    "evidence_ids": [
+      "E017",
+      "E021",
+      "E024"
+    ],
+    "chunk_id": "HH-src-W011-20",
+    "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+    "text": "[河北低平原/黄骅/未标定] 研究以黄骅为滨海盐碱类型区，显示冬小麦生育期有效降水下降、水分供需失衡加剧。；潜在蒸散以1.79~2.30 mm/a上升，加剧干旱胁迫。；黄骅市建议发展以雨水蓄积与高效利用为主导的灌溉方式。；黄骅为滨海盐碱类型区，属河北低平原盐碱区。",
+    "char_len": 117
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北低平原/黄骅",
+    "growth_stage": "stage:heading",
+    "scope": "冬小麦水分供需",
+    "stress": [],
+    "practice": [],
+    "source_id": "W011",
+    "evidence_level": "peer_reviewed_regional",
+    "source_ids": [
+      "W011"
+    ],
+    "evidence_ids": [
+      "E016",
+      "E018"
+    ],
+    "chunk_id": "HH-src-W011-21",
+    "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+    "text": "[河北低平原/黄骅/stage:heading] 黄骅冬小麦生育期有效降水以0.66 mm/a速率下降，水分供需失衡加剧。；抽穗期累积水分亏缺117.01~118.36 mm，日均亏缺5.87~5.92 mm/d。",
+    "char_len": 82
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北低平原/黄骅",
+    "growth_stage": "stage:regreening",
+    "scope": "冬小麦水分供需",
+    "stress": [
+      "旱"
+    ],
+    "practice": [],
+    "source_id": "W011",
+    "evidence_level": "peer_reviewed_regional",
+    "source_ids": [
+      "W011"
+    ],
+    "evidence_ids": [
+      "E019",
+      "E071"
+    ],
+    "chunk_id": "HH-src-W011-22",
+    "title": "基于气象数据的河北低平原盐碱区作物水分供需评估",
+    "text": "[河北低平原/黄骅/stage:regreening] 干旱高频时段为3月上中旬返青期。；返青期为干旱高频时段。",
+    "char_len": 28
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "黄骅",
+    "growth_stage": "未标定",
+    "scope": "品种与盐碱适应",
+    "stress": [
+      "盐",
+      "旱",
+      "胁迫"
+    ],
+    "practice": [],
+    "source_id": "W012",
+    "evidence_level": "government_local_support",
+    "source_ids": [
+      "W012"
+    ],
+    "evidence_ids": [
+      "E049",
+      "E050",
+      "E051",
+      "E052",
+      "E053",
+      "E054",
+      "E055",
+      "E086",
+      "E087"
+    ],
+    "chunk_id": "HH-src-W012-23",
+    "title": "河北黄骅市培育“以种适地”品种 助力盐碱地持续增产",
+    "text": "[黄骅/未标定] 官方农业信息网页介绍黄骅中捷长期育种并形成捷麦19、捷麦20等旱碱麦品种。；中捷园区从“以种适地”角度培育捷麦19等旱碱麦品种。；培育出捷麦20旱碱麦品种。；捷麦19耐旱、抗寒、节水，入选省主导品种。；捷麦19耐盐碱。；捷麦20耐盐碱。；捷麦20比捷麦19平均生育期缩短9天。；捷麦19年推广面积100万亩以上，为沧州运东推广面积最大的小麦品种。；中捷产业园区位于渤海新区黄骅市。；黄骅为沧州运东地区推广旱碱麦的核心县市。",
+    "char_len": 211
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "黄骅",
+    "growth_stage": "未标定",
+    "scope": "耐盐鉴定与示范",
+    "stress": [
+      "盐",
+      "旱",
+      "胁迫"
+    ],
+    "practice": [
+      "灌",
+      "秸秆",
+      "轮作"
+    ],
+    "source_id": "W013",
+    "evidence_level": "government_science_support",
+    "source_ids": [
+      "W013"
+    ],
+    "evidence_ids": [
+      "E003",
+      "E004",
+      "E005",
+      "E034",
+      "E035",
+      "E056",
+      "E057",
+      "E058",
+      "E059",
+      "E063",
+      "E083",
+      "E084",
+      "E091"
+    ],
+    "chunk_id": "HH-src-W013-24",
+    "title": "盐碱地里造出新粮仓",
+    "text": "[黄骅/未标定] 报道记载不同盐碱度条件下耐盐高产品种筛选及黄骅示范应用。；黄骅全域耕地以中度盐碱地为主。；黄骅地处渤海之滨，土壤盐渍化，地下水位低、矿化度高，不宜灌溉。；旱碱麦田土壤有机质含量低，同一地块返盐程度不一。；秸秆还田把玉米、小麦秸秆粉碎深翻入土，补充养分激发土壤活力。；对盐碱度较高难以播种的耕地先种苜蓿调节盐碱度、提高肥力后再种旱碱麦。；黄骅主要培育推广沧麦6003等高产量、耐盐碱、抗旱抗寒品种。；小偃系列已在河北省旱碱麦标准化种植示范区大面积种植。；通过1‰～5‰盐碱度耐盐鉴定池筛选耐盐碱高产品种。；沧麦6003耐盐碱、抗旱抗寒。；旱碱麦品种改良使黄骅亩产由小红芒的约50公斤提升至220多公斤。；黄骅旱碱麦总产约13.26万吨。；旱碱麦籽粒出粉率约76%、湿面筋超35%，形成面粉加工产业链。；沧州市位于河北，黄骅旱碱麦示范在沧州开展。",
+    "char_len": 371
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "黄骅",
+    "growth_stage": "stage:sowing",
+    "scope": "耐盐鉴定与示范",
+    "stress": [
+      "盐",
+      "旱",
+      "胁迫"
+    ],
+    "practice": [
+      "沟播"
+    ],
+    "source_id": "W013",
+    "evidence_level": "government_science_support",
+    "source_ids": [
+      "W013"
+    ],
+    "evidence_ids": [
+      "E032",
+      "E033",
+      "E070"
+    ],
+    "chunk_id": "HH-src-W013-25",
+    "title": "盐碱地里造出新粮仓",
+    "text": "[黄骅/stage:sowing] 微沟播种：沟深近6cm、宽10cm，沟底两侧播种；微沟处盐分较低躲盐避害、蓄积降水、覆土压实提墒保墒。；小沟深近6厘米、宽10厘米，种植密度平均增加一倍。；最佳播种期为秋季雨季刚结束、墒情最好的9月底，较普通小麦提前半月余。",
+    "char_len": 112
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "黄骅/沧州",
+    "growth_stage": "未标定",
+    "scope": "品种与产业",
+    "stress": [
+      "盐",
+      "旱",
+      "强",
+      "胁迫"
+    ],
+    "practice": [],
+    "source_id": "W014",
+    "evidence_level": "government_science_support",
+    "source_ids": [
+      "W014"
+    ],
+    "evidence_ids": [
+      "E060",
+      "E061",
+      "E062",
+      "E081",
+      "E082",
+      "E085",
+      "E089"
+    ],
+    "chunk_id": "HH-src-W014-26",
+    "title": "科技引领助力旱碱麦产业走“花路”",
+    "text": "[黄骅/沧州/未标定] 报道提及多个抗旱耐盐碱、抗病性较强的旱碱麦品种及示范测产背景。；沧麦6002抗旱耐盐碱、抗病性强。；沧麦6005抗旱耐盐碱。；沧麦6002示范田测产亩穗数39.6万穗、亩产量422.3公斤。；旱碱麦蛋白质、湿面筋、干面筋均高于普通麦，筋力更强。；旱碱麦产量与出粉率低于普通麦。；由旱碱麦面粉制作黄骅面花（省级非遗）。；沧州为河北省辖市。",
+    "char_len": 168
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "黄骅/沧州",
+    "growth_stage": "未标定",
+    "scope": "原粮质量",
+    "stress": [
+      "旱"
+    ],
+    "practice": [],
+    "source_id": "W015",
+    "evidence_level": "cangzhou_authoritative",
+    "source_ids": [
+      "W015"
+    ],
+    "evidence_ids": [
+      "E072",
+      "E073",
+      "E074",
+      "E075",
+      "E076"
+    ],
+    "chunk_id": "HH-src-W015-27",
+    "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+    "text": "[黄骅/沧州/未标定] 官方平台确认标准现行，可作为生产—采后质量知识链终点。；原粮标准关注蛋白质等指标。；原粮标准关注水分指标。；原粮标准关注容重指标。；原粮标准关注硬度指标。；原粮标准关注降落数值，并受真菌毒素、污染物与农残约束。",
+    "char_len": 105
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "黄骅/沧州",
+    "growth_stage": "未标定",
+    "scope": "加工品质",
+    "stress": [
+      "旱"
+    ],
+    "practice": [],
+    "source_id": "W016",
+    "evidence_level": "cangzhou_authoritative",
+    "source_ids": [
+      "W016"
+    ],
+    "evidence_ids": [
+      "E077",
+      "E078",
+      "E079",
+      "E080"
+    ],
+    "chunk_id": "HH-src-W016-28",
+    "title": "DB1309/T 332-2025 黄骅旱碱麦小麦粉",
+    "text": "[黄骅/沧州/未标定] 官方平台确认标准现行，用于黄骅旱碱麦小麦粉质量与卫生控制。；小麦粉标准关注蛋白质。；小麦粉标准关注湿面筋。；小麦粉标准关注水分。；小麦粉标准关注灰分。",
+    "char_len": 75
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北",
+    "growth_stage": "未标定",
+    "scope": "盐碱地改良/农机农艺",
+    "stress": [
+      "盐",
+      "旱"
+    ],
+    "practice": [],
+    "source_id": "W017",
+    "evidence_level": "peer_reviewed_regional",
+    "source_ids": [
+      "W017"
+    ],
+    "evidence_ids": [],
+    "chunk_id": "HH-src-W017-29",
+    "title": "盐碱地改良和旱碱麦种植技术及其配套装备研究现状",
+    "text": "[河北/未标定] 2026年核心期刊综述，面向盐碱地改良、旱碱麦种植及配套装备。",
+    "char_len": 31
+  },
+  {
+    "crop": "huanghua_hanjianmai",
+    "region": "河北",
+    "growth_stage": "未标定",
+    "scope": "播种装备",
+    "stress": [
+      "旱"
+    ],
+    "practice": [],
+    "source_id": "W018",
+    "evidence_level": "peer_reviewed_regional",
+    "source_ids": [
+      "W018"
+    ],
+    "evidence_ids": [],
+    "chunk_id": "HH-src-W018-30",
+    "title": "微垄覆膜侧沟播宽苗带旱碱麦正负压排种器设计与试验",
+    "text": "[河北/未标定] 研究直接针对旱碱麦播种作业与装备适配问题，具体性能数据需全文核验。",
+    "char_len": 33
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "id": "QA_0173",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关于缓慢降温处理对鸭梨果心亚麻酸含量和相变温度影响的信息，仅表示证据不足，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 952,
+      "completion_tokens": 48,
+      "total_tokens": 1000,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 184
+    },
+    "model": "deepseek-flash",
+    "response_id": "5746861f-4b91-4624-b18b-20bc00878cf8",
+    "seconds": 5.231058100000155,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "raw_total": 3220,
+  "clean_v1": 3201,
+  "pixel_identical_conflict_images_excluded": 4,
+  "exact_duplicate_images_excluded": 5,
+  "exact_duplicate_new_exclusions": 1,
+  "exact_duplicate_conflict_images_excluded": 8,
+  "confirmed_near_duplicate_groups": 6,
+  "clean_v3_total": 3196,
+  "classes": {
+    "anthracnose": 715,
+    "healthy": 1161,
+    "insect_damage": 393,
+    "powdery_mildew": 217,
+    "yellow_leaf": 710
+  },
+  "splits": {
+    "test": 452,
+    "train": 2288,
+    "val": 456
+  },
+  "all_splits_five_classes": true,
+  "all_splits_two_sources": true,
+  "residual_uncertain_pairs": 14614,
+  "checks": {
+    "cross_split_sha256": 0,
+    "cross_split_pixel_identical": 0,
+    "cross_split_confirmed_near_duplicate": 0,
+    "pixel_identical_conflict_entered": 0,
+    "exact_duplicate_conflict_entered": 0,
+    "corrupt_entered": 0,
+    "unknown_class_entered": 0,
+    "target_filename_duplicate": 0,
+    "raw_modification": 0
+  },
+  "training_ready": true
+}

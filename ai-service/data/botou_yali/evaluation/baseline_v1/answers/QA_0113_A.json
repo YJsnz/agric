@@ -1,0 +1,56 @@
+{
+  "id": "QA_0113",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文的具体内容回答晚采鸭梨果实更容易褐变的原因。",
+      "basis": "当前未提供该论文的原文、摘要或数据，且我无法确认该研究的具体实验设计与结论。",
+      "reasoning": "问题要求解释特定论文中的因果机制，但缺乏该论文的证据材料；依据已有知识只能说明鸭梨采后褐变通常与膜脂过氧化、酚类物质氧化、能量代谢等因素有关，但不能将其归因于该论文的结论。",
+      "advice": "请提供该论文的摘要、结果或讨论部分，或允许查阅原文后再作针对性解释。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 168,
+      "completion_tokens": 141,
+      "total_tokens": 309,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 168
+    },
+    "model": "deepseek-flash",
+    "response_id": "d89e8538-86ee-47aa-aac6-60c356bbb448",
+    "seconds": 6.116136800000277,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出论文中关于晚采鸭梨更易褐变的具体原因，仅表示无法依据论文内容回答，属于拒答；而该问题在提供的论文摘要中有明确答案，因此不能视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1051,
+      "completion_tokens": 60,
+      "total_tokens": 1111,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 923
+    },
+    "model": "deepseek-flash",
+    "response_id": "3928b3d1-3cd2-4b6e-bb1c-0d11aef73af5",
+    "seconds": 5.549705999999787,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "QA_0047",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法给出该具体数值。",
+    "basis": "未提供《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的原文或数据，且证据列表为空。",
+    "reasoning": "问题要求引用该论文中贮藏270 d及货架7 d时1.0%—3.0% O2处理果实的平均虎皮指数，属于具体实验数据。我无法从已有知识中确认该论文的精确数值，也不能编造数字或因果关系，因此不能作答。",
+    "advice": "请提供该论文原文、相关数据表或检索到的具体段落，以便提取并核对平均虎皮指数。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.8,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出问题所要求的具体数值，明确表示无法作答，属于拒答；在可回答题中不视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1005,
+      "completion_tokens": 42,
+      "total_tokens": 1047,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 365
+    },
+    "model": "deepseek-flash",
+    "response_id": "cc5313d2-4d9c-4758-b8ad-543d94ae15ae",
+    "seconds": 5.602949899999658,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法给出该具体数值。",
+        "basis": "未提供《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的原文或数据，且证据列表为空。",
+        "reasoning": "问题要求引用该论文中贮藏270 d及货架7 d时1.0%—3.0% O2处理果实的平均虎皮指数，属于具体实验数据。我无法从已有知识中确认该论文的精确数值，也不能编造数字或因果关系，因此不能作答。",
+        "advice": "请提供该论文原文、相关数据表或检索到的具体段落，以便提取并核对平均虎皮指数。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 215,
+        "completion_tokens": 148,
+        "total_tokens": 363,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 215
+      },
+      "model": "deepseek-flash",
+      "response_id": "cb70b0bb-04e9-4379-9a9d-9b03431cf7e3",
+      "seconds": 6.527006700009224,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.131531599996379
+}

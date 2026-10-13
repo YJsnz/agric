@@ -1,0 +1,533 @@
+{
+  "id": "QA_0235",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0008",
+    "chunk:PAPER_005_C0014",
+    "chunk:PAPER_005_C0015",
+    "chunk:PAPER_005_C0022"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": null,
+      "environment": [],
+      "disease": [],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": [],
+      "intent": "fact_query"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "empty",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [
+      {
+        "source_id": "PAPER_005",
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "PAPER_005_C0003",
+            "section": "正文（未识别章节）",
+            "pages": [
+              1
+            ]
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "PAPER_005_C0008",
+            "section": "0  引言",
+            "pages": [
+              2
+            ]
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "PAPER_005_C0014",
+            "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+            "pages": [
+              3
+            ]
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "PAPER_005_C0022",
+            "section": "2.2  呼吸速率和乙烯释放速率变化",
+            "pages": [
+              4
+            ]
+          }
+        ]
+      }
+    ],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_005_C0003",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 4,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9765625
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0008",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 2,
+            "vector_rank": 3,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9760624679979519
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0014",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 4,
+            "vector_rank": 6,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9386837121212122
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0015",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 15,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9066666666666667
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0022",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 8,
+            "vector_rank": 7,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9037532923617209
+          }
+        }
+      ]
+    },
+    "status": "answered",
+    "answer": "1. 结论\n在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的GC-MS升温程序中，从100℃升温至250℃的速率为5℃·min⁻¹  [E3] 。\n2. 依据\n证据[E3]记载GC条件升温程序：40℃下保持1 min；2℃·min⁻¹升温至100℃，保持2 min；5℃·min⁻¹升温至250℃，保持5 min  [E3] 。\n3. 推理路径\n问题询问100℃至250℃区间的升温速率。[E3]明确该区间采用5℃·min⁻¹升温至250℃并保持5 min，故可直接回答该速率  [E3] 。其余证据涉及贮藏条件、香气物质与基因表达等，与升温程序无关，不参与该结论  [E1]  [E2]  [E5] 。\n4. 建议\n该数值仅为论文特定GC-MS仪器方法参数，属于实验室分析条件，不构成生产指导；如需复现请核对原文方法部分  [E3] 。\n5. 来源\n[E1] [E2] [E3] [E5] PAPER_005：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析 https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "candidate_id": "chunk:PAPER_005_C0003",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "正文（未识别章节）",
+          "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+          "pages": [
+            1
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E2",
+        "candidate_id": "chunk:PAPER_005_C0008",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "0  引言",
+          "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+          "pages": [
+            2
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E3",
+        "candidate_id": "chunk:PAPER_005_C0014",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+          "text": "联用（GC-MS）（日本岛津公司）测定挥发性物质成分[20]。GC 条件：SH-Rxi-5Sil MS 毛细管柱（30 m×0.25 mm，0.25 μm）；升温程序：40℃下保持1 min；2℃·min-1 升温至100℃，保持2 min；5℃·min-1 升温至250℃，保持5 min。进样口温度250℃，载气：高纯氦，柱流量1 mL·min-1。MS 条件：电离方式为电子电离源，电子能量70 eV，接口温度250℃，离子源温度200℃，溶剂延迟时间3 min，m/z 35—500 下进行质量扫描，测定时加入200 ng 2-辛酮作为内标物，通过匹配质谱数据库NIST17 及保留指数对挥发性物质进行定性分析，计算各成分的含量，并进行差异显著性表1  PEN3 型电子鼻传感器阵列Table 1  PEN3 type electronic nose sensor array序列号Order number传感器名称Sensor name敏感化合物Sensitive compound W1C芳香成分 Aromatic components W5S灵敏度大，氮氧化合物 Broad range, oxynitride W3C氨类、芳香成分 Ammonia, aromatic components W6S氢化物 Hydrogen W5C短链烷烃、芳香成分Short chain alkanes, aromatic components W1S甲烷 Methane W1W硫化物、萜烯类 Sulphur-organic compound, terpenes W2S醇类、醛酮Alcohol, aldehyde ketone W2W有机硫化物、芳香成分 Organic sulfur compounds, aromatic components W3S长链烷烃 Long chain alkanes分析。",
+          "pages": [
+            3
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E4",
+        "candidate_id": "chunk:PAPER_005_C0015",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+          "text": "重复3 次。",
+          "pages": [
+            3
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E5",
+        "candidate_id": "chunk:PAPER_005_C0022",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "2.2  呼吸速率和乙烯释放速率变化",
+          "text": "两种贮藏方式下，鸭梨果实呼吸速率均表现为逐渐上升趋势，且同期窖藏果实显著高于冷藏果实；果实乙烯释放速率均呈现先上升后下降的趋势，其中果实窖藏1 个月时达到高峰，且峰值明显高于同期冷藏果实，果实冷藏2 个月时达到峰值；贮藏3 个月时，二者的乙烯释放速率差异不显著（图1）。",
+          "pages": [
+            4
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      }
+    ],
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "E3明确记载GC升温程序为5℃·min⁻¹升温至250℃，直接支持从100℃升温至250℃的速率为5℃·min⁻¹。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "E3原文完整记载升温程序：40℃保持1 min；2℃·min⁻¹升温至100℃，保持2 min；5℃·min⁻¹升温至250℃，保持5 min，与basis所述一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "问题询问100℃至250℃区间升温速率，E3明确该区间为5℃·min⁻¹升温至250℃并保持5 min；E1、E2、E5确与升温程序无关，不参与该结论。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅说明该数值为论文特定GC-MS仪器方法参数、属实验室分析条件、不构成生产指导，并建议复现时核对原文方法部分，均与E3所载方法参数性质一致，未超出证据范围。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0014",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+        "text": "联用（GC-MS）（日本岛津公司）测定挥发性物质成分[20]。GC 条件：SH-Rxi-5Sil MS 毛细管柱（30 m×0.25 mm，0.25 μm）；升温程序：40℃下保持1 min；2℃·min-1 升温至100℃，保持2 min；5℃·min-1 升温至250℃，保持5 min。进样口温度250℃，载气：高纯氦，柱流量1 mL·min-1。MS 条件：电离方式为电子电离源，电子能量70 eV，接口温度250℃，离子源温度200℃，溶剂延迟时间3 min，m/z 35—500 下进行质量扫描，测定时加入200 ng 2-辛酮作为内标物，通过匹配质谱数据库NIST17 及保留指数对挥发性物质进行定性分析，计算各成分的含量，并进行差异显著性表1  PEN3 型电子鼻传感器阵列Table 1  PEN3 type electronic nose sensor array序列号Order number传感器名称Sensor name敏感化合物Sensitive compound W1C芳香成分 Aromatic components W5S灵敏度大，氮氧化合物 Broad range, oxynitride W3C氨类、芳香成分 Ammonia, aromatic components W6S氢化物 Hydrogen W5C短链烷烃、芳香成分Short chain alkanes, aromatic components W1S甲烷 Methane W1W硫化物、萜烯类 Sulphur-organic compound, terpenes W2S醇类、醛酮Alcohol, aldehyde ketone W2W有机硫化物、芳香成分 Organic sulfur compounds, aromatic components W3S长链烷烃 Long chain alkanes分析。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0015",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+        "text": "重复3 次。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0022",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.2  呼吸速率和乙烯释放速率变化",
+        "text": "两种贮藏方式下，鸭梨果实呼吸速率均表现为逐渐上升趋势，且同期窖藏果实显著高于冷藏果实；果实乙烯释放速率均呈现先上升后下降的趋势，其中果实窖藏1 个月时达到高峰，且峰值明显高于同期冷藏果实，果实冷藏2 个月时达到峰值；贮藏3 个月时，二者的乙烯释放速率差异不显著（图1）。",
+        "pages": [
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的GC-MS升温程序中，从100℃升温至250℃的速率为5℃·min⁻¹  [E3] 。",
+    "basis": "证据[E3]记载GC条件升温程序：40℃下保持1 min；2℃·min⁻¹升温至100℃，保持2 min；5℃·min⁻¹升温至250℃，保持5 min  [E3] 。",
+    "reasoning": "问题询问100℃至250℃区间的升温速率。[E3]明确该区间采用5℃·min⁻¹升温至250℃并保持5 min，故可直接回答该速率  [E3] 。其余证据涉及贮藏条件、香气物质与基因表达等，与升温程序无关，不参与该结论  [E1]  [E2]  [E5] 。",
+    "advice": "该数值仅为论文特定GC-MS仪器方法参数，属于实验室分析条件，不构成生产指导；如需复现请核对原文方法部分  [E3] 。",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E5"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出100℃至250℃区间升温速率为5℃·min⁻¹，与原文及参考答案一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "GC-MS升温程序中，从100℃升温至250℃的速率为5℃·min⁻¹。",
+          "status": "supported",
+          "reason": "原文E3明确记载“5℃·min-1 升温至250℃，保持5 min”。"
+        },
+        {
+          "claim": "GC条件升温程序为：40℃下保持1 min；2℃·min⁻¹升温至100℃，保持2 min；5℃·min⁻¹升温至250℃，保持5 min。",
+          "status": "supported",
+          "reason": "原文E3完整记载该升温程序。"
+        },
+        {
+          "claim": "其余证据涉及贮藏条件、香气物质与基因表达等，与升温程序无关。",
+          "status": "supported",
+          "reason": "E1、E2、E5内容分别涉及贮藏结论、研究背景和呼吸/乙烯变化，确与GC-MS升温程序无关。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2619,
+      "completion_tokens": 214,
+      "total_tokens": 2833,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 1851
+    },
+    "model": "deepseek-flash",
+    "response_id": "ea895d9f-5515-4bb2-bb2a-b9afddb56ca6",
+    "seconds": 6.4883520000003045,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的GC-MS升温程序中，从100℃升温至250℃的速率为5℃·min⁻¹ [E3]。",
+        "basis": "证据E3记载GC条件升温程序：40℃下保持1 min；2℃·min⁻¹升温至100℃，保持2 min；5℃·min⁻¹升温至250℃，保持5 min [E3]。",
+        "reasoning": "问题询问100℃至250℃区间的升温速率。E3明确该区间采用5℃·min⁻¹升温至250℃并保持5 min，故可直接回答该速率 [E3]。其余证据涉及贮藏条件、香气物质与基因表达等，与升温程序无关，不参与该结论 [E1][E2][E5]。",
+        "advice": "该数值仅为论文特定GC-MS仪器方法参数，属于实验室分析条件，不构成生产指导；如需复现请核对原文方法部分 [E3]。",
+        "citations": [
+          "E3"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2034,
+        "completion_tokens": 227,
+        "total_tokens": 2261,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1906
+      },
+      "model": "deepseek-flash",
+      "response_id": "922c5b6b-c25d-4454-97d2-64c8a5cde97a",
+      "seconds": 6.286047899993719,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 19.086503300000913
+}

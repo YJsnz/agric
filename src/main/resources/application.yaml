@@ -20,7 +20,13 @@ spring:
       max-request-size: 10MB
 
 server:
+  address: ${SERVER_ADDRESS:0.0.0.0}
   port: ${SERVER_PORT:8081}
+
+agent:
+  base-url: ${AGENT_BASE_URL:http://127.0.0.1:11434/v1}
+  model: ${AGENT_MODEL:qwen2.5:7b}
+  api-key: ${AGENT_API_KEY:}
 
 app:
   jwt:
@@ -43,6 +49,6 @@ deepseek:
   model: ${DEEPSEEK_MODEL:deepseek-v4-flash}
 
 weather:
-  # 农场 WGS84 坐标；默认北京，部署时请改成真实农场位置。
-  latitude: ${WEATHER_LATITUDE:39.9042}
-  longitude: ${WEATHER_LONGITUDE:116.4074}
+  # 天气查询 WGS84 坐标；默认泊头城区（区域天气参考，不是演示地块坐标）。
+  latitude: ${WEATHER_LATITUDE:38.07366}
+  longitude: ${WEATHER_LONGITUDE:116.56667}

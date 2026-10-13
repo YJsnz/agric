@@ -1,0 +1,38 @@
+{
+  "candidate_pairs": 14749,
+  "statuses": {
+    "background_similarity": 119,
+    "confirmed_near_duplicate": 6,
+    "uncertain": 14614,
+    "label_conflict": 5,
+    "confirmed_duplicate": 5
+  },
+  "exact_pairs_including_label_conflict": 10,
+  "reviewed_pairs": 293,
+  "cross_class_candidates": 8634,
+  "cross_source_confirmed_near_duplicate": 6,
+  "cross_class_confirmed_near_duplicate": 0,
+  "all_raw_conflict_images": 12,
+  "newly_flagged_clean_conflict_images": [
+    "2707fae7530bb52a191a",
+    "b5a7dc0051124a3d6a54",
+    "bb8d3b015473c27bb8ff",
+    "bdb3d56d037c14ca907a"
+  ],
+  "cross_split_confirmed_duplicate": 0,
+  "cross_split_confirmed_near_duplicate": 0,
+  "split": {
+    "test": 454,
+    "train": 2289,
+    "val": 458
+  },
+  "resplit_required": false,
+  "ready_for_training": false,
+  "integrity": {
+    "reports\\model_a_raw_manifest.csv_unchanged": true,
+    "reports\\model_a_clean_manifest.csv_unchanged": true,
+    "reports\\model_a_split_statistics.csv_unchanged": true,
+    "training_tree_unchanged": true,
+    "raw_tree_unchanged": true
+  }
+}

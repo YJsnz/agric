@@ -1,0 +1,155 @@
+河北沧州金丝小枣成熟期浆烂裂果灾害风险评估
+Toggle navigation
+首页
+期刊介绍
+编委会
+投稿指南
+期刊订阅
+广告合作
+下载中心
+联系我们
+English
+中国农业气象
+››
+2011
+,
+Vol. 32
+››
+Issue (增刊)
+: 196-198.
+• 论文 •
+上一篇
+下一篇
+河北沧州金丝小枣成熟期浆烂裂果灾害风险评估
+王琼，何璇，常志坤
+河北省沧州市气象局，沧州 061001
+出版日期:
+2011-10-31
+发布日期:
+2011-11-24
+Risk Assessment of the Flesh Rotten and Fruit Cracked Damage in theMature Stage of Cangzhou Gold Silk Jujube  in Hebei Province
+WANG Qiong，HE Xuan，CHANG Zhikun 
+Cangzhou Meteorological Bureau of Hebei Province, Cangzhou 061001，China
+Online:
+2011-10-31
+Published:
+2011-11-24
+PDF (PC)
+920
+可视化
+0
+被引次数
+8
+摘要/Abstract
+摘要：
+以降水和日照这两个气象要素作为研究对象，基于模糊数学和信息扩散理论，通过沧州1990-2009年9月中旬-10月中旬的降水量和日照时数的变化范围，离散出降水量和日照时数的风险水平值，计算出由于降水和日照引起灾害的风险估计值，结合小枣成熟晾晒期浆烂裂果灾害的调查资料进行研究。结果表明，9月中旬-10月由于降水因素发生浆烂裂果灾害的风险概率为4～5年一遇；9月中旬-10月日照的偏差不会造成小枣成熟期浆烂裂果灾害风险。此外，以降水量≥80mm的概率估计值作为小枣发生浆烂裂果灾害的临界值，确定出枣农防御灾害的时段和及时采收的时间，利于进行防灾减灾。
+关键词:
+金丝小枣,
+浆烂裂果,
+信息扩散,
+风险评估
+Abstract:
+By using two meteorological factors of precipitation and sunshine as the study object, and to disperse the value of the risk level of precipitation and sunshine duration and calculate the disaster risk estimation caused by rainfall and sunlight, this research is conducted on the basis of fuzzy math and information diffusion theory and precipitation and sunshine hours in mid September to mid October from 1990 to 2009, combined with the survey of flesh rotten and fruit cracked damage of the jujube in the mature stage. The results showed that, in the period of mid September to mid October the risk probability of flesh rotten and fruit cracked damage of the jujube caused by precipitation was once in 4 to 5 years. Deviation of sunshine does not cause the disaster risk of flesh rotten and fruit cracked damage of the jujube. In addition, by using precipitation estimation of ≥80mm as the disaster threshold of flesh rotten and fruit cracked damage of the jujube, the results determine the period of disaster prevention and timely harvest for jujube farmers, conducive to disaster prevention and mitigation
+Key words:
+Gold silk jujube,
+Flesh rotten and fruit cracked,
+Information diffusion,
+Risk assessment
+引用本文
+王琼，何璇，常志坤. 河北沧州金丝小枣成熟期浆烂裂果灾害风险评估[J]. 中国农业气象, 2011, 32(增刊): 196-198.
+WANG Qiong，HE Xuan，CHANG Zhikun . Risk Assessment of the Flesh Rotten and Fruit Cracked Damage in theMature Stage of Cangzhou Gold Silk Jujube  in Hebei Province[J]. Chinese Journal of Agrometeorology, 2011, 32(增刊): 196-198.
+使用本文
+/
+/
+推荐
+导出引用管理器
+EndNote
+|
+Ris
+|
+BibTeX
+链接本文:
+https://zgnyqx.ieda.org.cn/CN/
+https://zgnyqx.ieda.org.cn/CN/Y2011/V32/I增刊/196
+参考文献
+相关文章
+15
+[1]
+邱星霖, 林泽全, 李璨, 俞海洋, 王瑛.
+不同气候变化情景下中国北方苹果花期霜冻风险研究
+[J]. 中国农业气象, 2024, 45(01): 33-44.
+[2]
+史继清, 甘臣龙, 郭艺楠, 杜军, 周刊社.
+基于干旱风险的西藏青稞保险费率厘定及预测
+[J]. 中国农业气象, 2023, 44(11): 1043-1056.
+[3]
+黄睿茜, 赵俊芳, 霍治国, 彭慧文, 谢鸿飞.
+深度学习技术在农业干旱监测预测及风险评估中的应用
+[J]. 中国农业气象, 2023, 44(10): 943-952.
+[4]
+任义方, 王培娟, 钱半吨, 马云波, 孙庆飞.
+江苏省不同风险区域春茶霜冻害特征分析
+[J]. 中国农业气象, 2023, 44(09): 820-833.
+[5]
+孙玉龙, 景华, 孙擎, 李婷, 魏铁鑫, 高珊珊, 余焰文.
+河北省苹果大风灾害风险评估
+[J]. 中国农业气象, 2023, 44(04): 305-316.
+[6]
+杨晓娟, 孙靖博, 孙彦坤, 刘园, 白薇, 陈迪, 韩锐, 刘布春.
+陕西县域苹果种植风险评估与保险费率厘定
+[J]. 中国农业气象, 2022, 43(10): 798-809.
+[7]
+王瑛, 邱星霖, 李雨欣, 陈笑娟, 陈小雷.
+基于物候期的霜冻灾害林果减产风险评估：以河北省为例
+[J]. 中国农业气象, 2022, 43(10): 821-831.
+[8]
+戴安然, 霍治国, 姜会飞.
+中国苹果旱涝灾害研究进展
+[J]. 中国农业气象, 2022, 43(05): 362-379.
+[9]
+刘瑞娜, 陈金华, 陈曦, 曹雯.
+安徽省茶树春霜冻害的风险评估
+[J]. 中国农业气象, 2021, 42(10): 870-879.
+[10]
+管玥, 刘佳鸿, 何奇瑾, 李若晨, 糜欣苑, 秦志珩.
+基于信息扩散理论分析华北平原夏玉米花期高温热害的风险概率
+[J]. 中国农业气象, 2021, 42(07): 606-615.
+[11]
+杨小利, 周嘉, 周安宁, 张炜, 吴颖娟.
+甘肃东部苹果多灾种气象灾害综合风险评估
+[J]. 中国农业气象, 2021, 42(06): 518-529.
+[12]
+蔡大鑫，刘少军，陈汇林，田光辉.
+基于植被长势的香蕉区域估产信息扩散模型
+[J]. 中国农业气象, 2020, 41(09): 587-596.
+[13]
+王学林，黄琴琴，柳军.
+基于信息扩散理论的南方双季早稻气象灾害风险评估
+[J]. 中国农业气象, 2019, 40(11): 712-722.
+[14]
+王芝兰，王静，王劲松.
+基于风险价值方法的甘肃省农业旱灾风险评估
+[J]. 中国农业气象, 2015, 36(03): 331-337.
+[15]
+邹海平，陈汇林，李伟光，陈小敏.
+海南岛冬种瓜菜暴雨洪涝灾害风险评估与区划
+[J]. 中国农业气象, 2015, 36(01): 100-107.
+编辑推荐
+Metrics
+阅读次数
+全文
+摘要
+本文评价
+摘要
+参考文献
+相关文章
+编辑推荐
+Metrics
+本文评价
+回顶部
+版权所有 ©  《中国农业气象》编辑部
+地址：北京中关村南大街12号中国农科院环发所　邮编：100081
+电话：010-82109772;82109774　  Email：lliuyuan@caas.cn; zgnyqx@caas.cn
+本系统由
+北京玛格泰克科技发展有限公司
+设计开发

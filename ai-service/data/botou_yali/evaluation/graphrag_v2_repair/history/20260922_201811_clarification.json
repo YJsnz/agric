@@ -1,0 +1,86 @@
+{
+  "question": "我家的鸭梨应该怎么处理？",
+  "time": "2026-09-22T19:46:27.774425",
+  "seconds": 5.340929199999664,
+  "http": 200,
+  "checks": {
+    "http_200": true,
+    "v2": true,
+    "clarify": true,
+    "no_generation": true
+  },
+  "passed": true,
+  "response": {
+    "entities": [
+      "鸭梨"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": null,
+      "environment": [],
+      "disease": [],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": [],
+      "intent": "unknown"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "empty",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [],
+    "generation_called": false,
+    "policy": {
+      "purpose": "local_advice",
+      "mode": "strict",
+      "titles": [],
+      "notice": "当地建议要求适用性明确；未知资料只作研究参考。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [],
+    "reference_materials": [],
+    "status": "needs_clarification",
+    "clarification_questions": [
+      "请补充种植或储藏所在地。"
+    ],
+    "answer": "当地生产建议还缺少适用条件。请补充种植或储藏所在地。补充后再核查相应证据。"
+  }
+}

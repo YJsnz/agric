@@ -1,0 +1,56 @@
+{
+  "id": "QA_0331",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文回答窖藏过程中鸭梨质地和香气物质生成的具体特点。",
+      "basis": "未提供该论文的原文或具体数据，且我的知识库中不包含该论文的详细内容。",
+      "reasoning": "问题要求基于特定论文《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》回答，但证据列表为空，我无法获取该论文的结论、数据或图表，因此不能编造或推测其研究结果。",
+      "advice": "请提供该论文的摘要、结果部分或相关数据，以便准确回答；或查阅该论文原文中关于窖藏条件下鸭梨质地（如硬度、细胞壁代谢）和香气物质（如酯类、醛类等）及其相关基因表达的分析内容。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 151,
+      "completion_tokens": 184,
+      "total_tokens": 335,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 151
+    },
+    "model": "deepseek-flash",
+    "response_id": "1d6d4600-b796-4228-9efc-dcbbe9664c4a",
+    "seconds": 6.188295699999799,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.6666666666666666,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关于窖藏过程中鸭梨质地和香气物质生成特点的实质内容，仅说明无法依据论文回答，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 642,
+      "completion_tokens": 46,
+      "total_tokens": 688,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 514
+    },
+    "model": "deepseek-flash",
+    "response_id": "370db871-1df2-40e4-bbb7-f71a20f34f22",
+    "seconds": 5.448700000000372,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -55,7 +55,7 @@ Error generating stack: `+l.message+`
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var ih=P.exports,oh=Symbol.for("react.element"),ah=Symbol.for("react.fragment"),sh=Object.prototype.hasOwnProperty,ch=ih.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,dh={key:!0,ref:!0,__self:!0,__source:!0};function Td(e,n,t){var r,u={},l=null,i=null;t!==void 0&&(l=""+t),n.key!==void 0&&(l=""+n.key),n.ref!==void 0&&(i=n.ref);for(r in n)sh.call(n,r)&&!dh.hasOwnProperty(r)&&(u[r]=n[r]);if(e&&e.defaultProps)for(r in n=e.defaultProps,n)u[r]===void 0&&(u[r]=n[r]);return{$$typeof:oh,type:e,key:l,ref:i,props:u,_owner:ch.current}}ll.Fragment=ah;ll.jsx=Td;ll.jsxs=Td;ul.exports=ll;const a=ul.exports.jsx,y=ul.exports.jsxs,q=ul.exports.Fragment;function Id({inverse:e=!1,compact:n=!1}){return y("span",{className:"inline-flex min-w-max items-center gap-3",children:[a("span",{className:`${n?"h-10 w-10":"h-11 w-11"} relative block shrink-0 overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-black/5`,children:a("img",{src:lh,alt:"","aria-hidden":"true",className:"absolute left-1/2 top-0 w-[138%] max-w-none -translate-x-1/2"})}),y("span",{className:"flex flex-col leading-none",children:[a("strong",{className:`${n?"text-base":"text-lg"} font-semibold tracking-tight ${e?"text-white":"text-ink"}`,children:"\u7530\u8A00\u8015\u667A"}),!n&&a("small",{className:`mt-1.5 text-[10px] font-light tracking-[0.12em] ${e?"text-white/65":"text-muted"}`,children:"\u667A\u6167\u519C\u4E1A AI \u5E73\u53F0"})]})]})}const Ml="ease-[cubic-bezier(0.76,0,0.24,1)]";function fh({open:e,onClose:n}){return P.exports.useEffect(()=>(document.body.style.overflow=e?"hidden":"",()=>{document.body.style.overflow=""}),[e]),y("div",{className:`fixed inset-0 z-50 transition-opacity duration-700 ${Ml} md:hidden ${e?"opacity-100":"pointer-events-none opacity-0"}`,children:[a("div",{className:"absolute inset-0 bg-white/95 backdrop-blur-xl"}),y("div",{className:"relative z-10 flex h-full flex-col px-6 py-5",children:[y("div",{className:"flex items-center justify-between",children:[a(Kt,{to:"/",onClick:n,"aria-label":"\u7530\u8A00\u8015\u667A\u9996\u9875",children:a(Id,{compact:!0})}),y("button",{type:"button","aria-label":"\u5173\u95ED\u83DC\u5355",onClick:n,className:"relative h-6 w-6 focus:outline-none",children:[a("span",{className:"absolute left-0 top-1/2 h-[2px] w-6 -translate-y-1/2 rounded-full bg-ink rotate-45"}),a("span",{className:"absolute left-0 top-1/2 h-[2px] w-6 -translate-y-1/2 rounded-full bg-ink -rotate-45"})]})]}),a("nav",{className:"flex flex-1 flex-col items-center justify-center",children:Mo.map((t,r)=>a(Kt,{to:t.to,onClick:n,className:({isActive:u})=>`w-full py-4 text-center border-b border-slate-100 text-4xl sm:text-5xl font-instrument-serif transition-all duration-700 ${Ml} hover:pl-4 ${u?"text-brand-dark":"text-ink"} ${e?"translate-y-0 opacity-100":"translate-y-8 opacity-0"}`,style:{transitionDelay:e?`${150+r*80}ms`:"0ms"},children:t.label},t.to))}),y("div",{className:`pb-10 transition-all duration-700 ${Ml} ${e?"translate-y-0 opacity-100":"translate-y-8 opacity-0"}`,style:{transitionDelay:e?"550ms":"0ms"},children:[y("div",{className:"mb-5 flex justify-center gap-8 text-sm font-light text-muted",children:[a(Kt,{to:"/sign-in",onClick:n,className:"transition-colors hover:text-ink",children:"\u767B\u5F55"}),a(Kt,{to:"/sign-up",onClick:n,className:"transition-colors hover:text-ink",children:"\u6CE8\u518C"})]}),a("a",{href:Ee,onClick:n,className:"block w-full rounded-full bg-emerald-600 py-4 text-center font-medium text-white",children:"\u8FDB\u5165\u5E73\u53F0"})]})]})]})}const $l="ease-[cubic-bezier(0.76,0,0.24,1)]";function ph(){const[e,n]=P.exports.useState(!1),{pathname:t}=Mn(),r=t==="/";return y(q,{children:[a("header",{className:`fixed inset-x-0 top-0 z-40 transition-colors duration-300 ${r?"bg-gradient-to-b from-black/60 to-transparent":"border-b border-slate-200/80 bg-white/90 backdrop-blur-xl"}`,children:y("nav",{className:"flex items-center justify-between px-6 py-5 md:px-12 md:py-6 lg:px-16",children:[y("div",{className:"flex items-center gap-10",children:[a(on,{to:"/",className:`font-semibold text-lg tracking-tight ${r?"text-white":"text-ink"}`,children:"\u7530\u8A00\u8015\u667A"}),a("div",{className:"hidden items-center gap-8 md:flex",children:Mo.map(u=>a(Kt,{to:u.to,className:({isActive:l})=>`text-sm font-light transition-colors duration-200 ${l?"font-medium text-brand-dark":r?"text-white/80 hover:text-white":"text-muted hover:text-ink"}`,children:u.label},u.to))})]}),y("div",{className:"flex items-center gap-6",children:[a(on,{to:"/sign-in",className:`hidden text-sm font-light transition-colors duration-200 md:inline-block ${r?"text-white/80 hover:text-white":"text-muted hover:text-ink"}`,children:"\u767B\u5F55"}),a("a",{href:Ee,className:`hidden rounded-full px-5 py-2 text-sm font-medium transition-all duration-200 md:inline-block ${r?"bg-white text-black hover:bg-white/90":"bg-emerald-600 text-white hover:bg-emerald-700"}`,children:"\u8FDB\u5165\u5E73\u53F0"}),y("button",{type:"button","aria-label":e?"\u5173\u95ED\u83DC\u5355":"\u6253\u5F00\u83DC\u5355","aria-expanded":e,onClick:()=>n(u=>!u),className:"relative h-6 w-6 focus:outline-none md:hidden",children:[a("span",{className:`absolute left-0 top-0 h-[2px] w-6 rounded-full transition-all duration-500 ${$l} ${r?"bg-white":"bg-ink"} ${e?"top-1/2 -translate-y-1/2 rotate-45":""}`}),a("span",{className:`absolute left-0 top-1/2 h-[2px] w-4 -translate-y-1/2 rounded-full transition-all duration-500 ${$l} ${r?"bg-white":"bg-ink"} ${e?"opacity-0":""}`}),a("span",{className:`absolute bottom-0 left-0 h-[2px] w-6 rounded-full transition-all duration-500 ${$l} ${r?"bg-white":"bg-ink"} ${e?"top-1/2 -translate-y-1/2 -rotate-45":""}`})]})]})]})}),a(fh,{open:e,onClose:()=>n(!1)})]})}const hh=[{label:"\u6570\u636E\u5DE5\u4F5C\u53F0",href:Ee},{label:"\u667A\u80FD\u95EE\u519C",href:rt},{label:"\u6570\u5B57\u5B6A\u751F",href:lr}];function mh(){return a("footer",{className:"site-footer",children:y("div",{className:"footer-shell",children:[y("div",{className:"footer-grid",children:[y("section",{className:"footer-brand",children:[a("div",{className:"footer-wordmark",children:a(Id,{})}),a("p",{children:"AI \u539F\u751F\u667A\u6167\u519C\u4E1A\u4E0E\u6570\u5B57\u5B6A\u751F\u5E73\u53F0\u3002\u4E0D\u7528\u5BFB\u627E\u6570\u636E\uFF0C\u76F4\u63A5\u8BE2\u95EE\u6570\u636E\uFF1B\u4E0D\u5FC5\u6D4F\u89C8\u62A5\u8868\uFF0C\u76F4\u63A5\u8FDB\u5165\u519C\u573A\u3002"}),y("a",{className:"footer-cta",href:Ee,children:["\u8FDB\u5165\u667A\u6167\u519C\u573A ",a("span",{children:"\u2197"})]})]}),y("nav",{className:"footer-column","aria-label":"\u5B98\u7F51\u5BFC\u822A",children:[a("h3",{children:"\u63A2\u7D22\u5B98\u7F51"}),a("ul",{children:Mo.map(e=>a("li",{children:a(on,{to:e.to,children:e.label})},e.to))})]}),y("nav",{className:"footer-column","aria-label":"\u5E73\u53F0\u5165\u53E3",children:[a("h3",{children:"\u4EA7\u54C1\u80FD\u529B"}),a("ul",{children:hh.map(e=>a("li",{children:a("a",{href:e.href,children:e.label})},e.href))})]}),y("nav",{className:"footer-column","aria-label":"\u8054\u7CFB\u4FE1\u606F",children:[a("h3",{children:"\u5173\u4E8E\u6211\u4EEC"}),y("ul",{children:[a("li",{children:a(on,{to:"/about",children:"\u5E73\u53F0\u613F\u666F"})}),a("li",{children:a(on,{to:"/solutions",children:"\u884C\u4E1A\u65B9\u6848"})}),a("li",{children:a(on,{to:"/contact",children:"\u8054\u7CFB\u6211\u4EEC"})})]})]})]}),y("div",{className:"footer-meta",children:[a("span",{children:"\xA9 2026 \u7530\u8A00\u8015\u667A"}),y("span",{className:"footer-status",children:[a("i",{}),"\u6240\u6709\u670D\u52A1\u8FD0\u884C\u6B63\u5E38"]}),a("span",{children:"\u667A\u6167\u519C\u4E1A \xB7 AI \u539F\u751F"})]})]})})}var gh={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};const yh=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),vh=(e,n)=>{const t=P.exports.forwardRef(({color:r="currentColor",size:u=24,strokeWidth:l=2,absoluteStrokeWidth:i,children:o,...s},c)=>P.exports.createElement("svg",{ref:c,...gh,width:u,height:u,stroke:r,strokeWidth:i?Number(l)*24/Number(u):l,className:`lucide lucide-${yh(e)}`,...s},[...n.map(([h,m])=>P.exports.createElement(h,m)),...(Array.isArray(o)?o:[o])||[]]));return t.displayName=`${e}`,t};var M=vh;const Eh=M("ArrowLeft",[["path",{d:"m12 19-7-7 7-7",key:"1l729n"}],["path",{d:"M19 12H5",key:"x3x0zl"}]]),nn=M("ArrowRight",[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]]),Ld=M("Bell",[["path",{d:"M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9",key:"1qo2s2"}],["path",{d:"M10.3 21a1.94 1.94 0 0 0 3.4 0",key:"qgo35s"}]]),Rd=M("BookOpen",[["path",{d:"M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z",key:"vv98re"}],["path",{d:"M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z",key:"1cyq3y"}]]),zd=M("Bot",[["rect",{width:"18",height:"10",x:"3",y:"11",rx:"2",key:"1ofdy3"}],["circle",{cx:"12",cy:"5",r:"2",key:"f1ur92"}],["path",{d:"M12 7v4",key:"xawao1"}],["line",{x1:"8",x2:"8",y1:"16",y2:"16",key:"h6x27f"}],["line",{x1:"16",x2:"16",y1:"16",y2:"16",key:"5lty7f"}]]),$o=M("Boxes",[["path",{d:"M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z",key:"lc1i9w"}],["path",{d:"m7 16.5-4.74-2.85",key:"1o9zyk"}],["path",{d:"m7 16.5 5-3",key:"va8pkn"}],["path",{d:"M7 16.5v5.17",key:"jnp8gn"}],["path",{d:"M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z",key:"8zsnat"}],["path",{d:"m17 16.5-5-3",key:"8arw3v"}],["path",{d:"m17 16.5 4.74-2.85",key:"8rfmw"}],["path",{d:"M17 16.5v5.17",key:"k6z78m"}],["path",{d:"M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z",key:"1xygjf"}],["path",{d:"M12 8 7.26 5.15",key:"1vbdud"}],["path",{d:"m12 8 4.74-2.85",key:"3rx089"}],["path",{d:"M12 13.5V8",key:"1io7kd"}]]),Oi=M("Camera",[["path",{d:"M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z",key:"1tc9qg"}],["circle",{cx:"12",cy:"13",r:"3",key:"1vg3eu"}]]),xh=M("CheckCircle2",[["path",{d:"M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z",key:"14v8dr"}],["path",{d:"m9 12 2 2 4-4",key:"dzmm74"}]]),Mu=M("Check",[["polyline",{points:"20 6 9 17 4 12",key:"10jjfj"}]]),Fh=M("Clock3",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 16.5 12",key:"1aq6pp"}]]),bd=M("Code2",[["path",{d:"m18 16 4-4-4-4",key:"1inbqp"}],["path",{d:"m6 8-4 4 4 4",key:"15zrgr"}],["path",{d:"m14.5 4-5 16",key:"e7oirm"}]]),Od=M("Cpu",[["rect",{x:"4",y:"4",width:"16",height:"16",rx:"2",key:"1vbyd7"}],["rect",{x:"9",y:"9",width:"6",height:"6",key:"o3kz5p"}],["path",{d:"M15 2v2",key:"13l42r"}],["path",{d:"M15 20v2",key:"15mkzm"}],["path",{d:"M2 15h2",key:"1gxd5l"}],["path",{d:"M2 9h2",key:"1bbxkp"}],["path",{d:"M20 15h2",key:"19e6y8"}],["path",{d:"M20 9h2",key:"19tzq7"}],["path",{d:"M9 2v2",key:"165o2o"}],["path",{d:"M9 20v2",key:"i2bqo8"}]]),Md=M("Droplets",[["path",{d:"M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z",key:"1ptgy4"}],["path",{d:"M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97",key:"1sl1rz"}]]),ls=M("EyeOff",[["path",{d:"M9.88 9.88a3 3 0 1 0 4.24 4.24",key:"1jxqfv"}],["path",{d:"M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68",key:"9wicm4"}],["path",{d:"M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61",key:"1jreej"}],["line",{x1:"2",x2:"22",y1:"2",y2:"22",key:"a6p6uj"}]]),Mi=M("Eye",[["path",{d:"M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z",key:"rwhkz3"}],["circle",{cx:"12",cy:"12",r:"3",key:"1v7zrd"}]]),wh=M("LayoutDashboard",[["rect",{width:"7",height:"9",x:"3",y:"3",rx:"1",key:"10lvy0"}],["rect",{width:"7",height:"5",x:"14",y:"3",rx:"1",key:"16une8"}],["rect",{width:"7",height:"9",x:"14",y:"12",rx:"1",key:"1hutg5"}],["rect",{width:"7",height:"5",x:"3",y:"16",rx:"1",key:"ldoo1y"}]]),kh=M("LayoutGrid",[["rect",{width:"7",height:"7",x:"3",y:"3",rx:"1",key:"1g98yp"}],["rect",{width:"7",height:"7",x:"14",y:"3",rx:"1",key:"6d4xhi"}],["rect",{width:"7",height:"7",x:"14",y:"14",rx:"1",key:"nxv5o0"}],["rect",{width:"7",height:"7",x:"3",y:"14",rx:"1",key:"1bb6yr"}]]),Ch=M("LineChart",[["path",{d:"M3 3v18h18",key:"1s2lah"}],["path",{d:"m19 9-5 5-4-4-3 3",key:"2osh9i"}]]),Ah=M("Loader2",[["path",{d:"M21 12a9 9 0 1 1-6.219-8.56",key:"13zald"}]]),Sh=M("Mail",[["rect",{width:"20",height:"16",x:"2",y:"4",rx:"2",key:"18n3k1"}],["path",{d:"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7",key:"1ocrg3"}]]),Bh=M("MapPin",[["path",{d:"M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z",key:"2oe9fu"}],["circle",{cx:"12",cy:"10",r:"3",key:"ilqhr7"}]]),Dh=M("Moon",[["path",{d:"M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z",key:"a7tn18"}]]),$d=M("Play",[["polygon",{points:"5 3 19 12 5 21 5 3",key:"191637"}]]),Nh=M("Quote",[["path",{d:"M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z",key:"4rm80e"}],["path",{d:"M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z",key:"10za9r"}]]),_h=M("Radar",[["path",{d:"M19.07 4.93A10 10 0 0 0 6.99 3.34",key:"z3du51"}],["path",{d:"M4 6h.01",key:"oypzma"}],["path",{d:"M2.29 9.62A10 10 0 1 0 21.31 8.35",key:"qzzz0"}],["path",{d:"M16.24 7.76A6 6 0 1 0 8.23 16.67",key:"1yjesh"}],["path",{d:"M12 18h.01",key:"mhygvu"}],["path",{d:"M17.99 11.66A6 6 0 0 1 15.77 16.67",key:"1u2y91"}],["circle",{cx:"12",cy:"12",r:"2",key:"1c9p78"}],["path",{d:"m13.41 10.59 5.66-5.66",key:"mhq4k0"}]]),Ph=M("RefreshCw",[["path",{d:"M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8",key:"v9h5vc"}],["path",{d:"M21 3v5h-5",key:"1q7to0"}],["path",{d:"M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16",key:"3uifl3"}],["path",{d:"M8 16H3v5",key:"1cv678"}]]),Th=M("Send",[["path",{d:"m22 2-7 20-4-9-9-4Z",key:"1q3vgg"}],["path",{d:"M22 2 11 13",key:"nzbqef"}]]),jd=M("Sprout",[["path",{d:"M7 20h10",key:"e6iznv"}],["path",{d:"M10 20c5.5-2.5.8-6.4 3-10",key:"161w41"}],["path",{d:"M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z",key:"9gtqwd"}],["path",{d:"M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z",key:"bkxnd2"}]]),Ih=M("Sun",[["circle",{cx:"12",cy:"12",r:"4",key:"4exip2"}],["path",{d:"M12 2v2",key:"tus03m"}],["path",{d:"M12 20v2",key:"1lh1kg"}],["path",{d:"m4.93 4.93 1.41 1.41",key:"149t6j"}],["path",{d:"m17.66 17.66 1.41 1.41",key:"ptbguv"}],["path",{d:"M2 12h2",key:"1t8f8n"}],["path",{d:"M20 12h2",key:"1q8mjw"}],["path",{d:"m6.34 17.66-1.41 1.41",key:"1m8zz5"}],["path",{d:"m19.07 4.93-1.41 1.41",key:"1shlcs"}]]),Ud=M("Thermometer",[["path",{d:"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z",key:"17jzev"}]]),Lh=M("Upload",[["path",{d:"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",key:"ih7n3h"}],["polyline",{points:"17 8 12 3 7 8",key:"t8dd8p"}],["line",{x1:"12",x2:"12",y1:"3",y2:"15",key:"widbto"}]]),Wd=M("Users",[["path",{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",key:"1yyitq"}],["circle",{cx:"9",cy:"7",r:"4",key:"nufk8"}],["path",{d:"M22 21v-2a4 4 0 0 0-3-3.87",key:"kshegd"}],["path",{d:"M16 3.13a4 4 0 0 1 0 7.75",key:"1da9ce"}]]),Rh=M("Video",[["path",{d:"m22 8-6 4 6 4V8Z",key:"50v9me"}],["rect",{width:"14",height:"12",x:"2",y:"6",rx:"2",ry:"2",key:"1rqjg6"}]]),zh=M("Workflow",[["rect",{width:"8",height:"8",x:"3",y:"3",rx:"2",key:"by2w9f"}],["path",{d:"M7 11v4a2 2 0 0 0 2 2h4",key:"xkn7yn"}],["rect",{width:"8",height:"8",x:"13",y:"13",rx:"2",key:"1cgmvn"}]]),bh=M("Wrench",[["path",{d:"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z",key:"cbrjhi"}]]),Oh=M("XCircle",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"m15 9-6 6",key:"1uzhvr"}],["path",{d:"m9 9 6 6",key:"z0biqf"}]]),Mh="/assets/home-hero.mp4";function is(){return y("section",{className:"relative h-screen w-full overflow-hidden",children:[y("div",{className:"absolute inset-0",children:[a("video",{autoPlay:!0,muted:!0,loop:!0,playsInline:!0,preload:"auto",poster:"/assets/farm-aerial.png",src:Mh,className:"h-full w-full object-cover"}),a("div",{className:"absolute inset-0 bg-gradient-to-b from-black/55 via-black/30 to-black/65"})]}),a("div",{className:"relative z-10 flex h-full flex-col",children:y("div",{className:"flex flex-1 flex-col items-center justify-center px-6 text-center -translate-y-10 sm:-translate-y-14",children:[y("h1",{className:"font-instrument-serif max-w-5xl text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1]",children:["AI \u539F\u751F ",a("span",{className:"italic",children:"\u4E0E"})," \u6570\u5B57\u5B6A\u751F",a("br",{}),"\u4E13\u4E3A ",a("span",{className:"italic",children:"\u73B0\u4EE3\u519C\u4E1A"})," \u6253\u9020",a("br",{}),"\u8BA9\u8015\u79CD\u66F4\u667A\u6167"]}),y("p",{className:"mt-4 max-w-md font-light text-sm text-white/70 leading-relaxed md:mt-5 md:text-base",children:["\u6211\u4EEC\u4EE5\u81EA\u7136\u8BED\u8A00\u4E3A\u5165\u53E3\uFF0C\u4EE5\u519C\u573A\u7A7A\u95F4\u4E3A\u4E3B\u754C\u9762",a("br",{className:"hidden sm:block"}),"\u7528\u6570\u636E\u3001\u89C6\u89C9\u8BC6\u522B\u4E0E AI\uFF0C\u8986\u76D6\u79CD\u690D\u5230\u519C\u4E8B\u6267\u884C"]}),y("div",{className:"mt-5 flex flex-col items-center gap-4 sm:flex-row md:mt-6",children:[y("a",{href:Ee,className:"group inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-medium text-black transition-colors duration-200 hover:bg-white/90",children:["\u8FDB\u5165\u5E73\u53F0",a(nn,{className:"h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"})]}),y("a",{href:rt,className:"inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-3 text-sm font-medium text-white transition-colors duration-200 hover:border-white/60 hover:bg-white/10",children:[a($d,{className:"h-4 w-4"}),"\u4F53\u9A8C\u667A\u80FD\u95EE\u519C"]})]})]})})]})}function Vd({children:e}){return y("span",{className:"inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.22em] text-emerald-700",children:[a("span",{className:"h-1.5 w-1.5 rounded-full bg-emerald-500"}),e]})}function Rt({eyebrow:e,title:n,subtitle:t,children:r}){return y("section",{className:"relative overflow-hidden px-6 pt-32 pb-14 md:px-12 md:pt-40 lg:px-16",children:[a("div",{className:"pointer-events-none absolute inset-x-0 top-0 h-[520px] bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.12),transparent_62%)]"}),a("div",{className:"pointer-events-none absolute -top-20 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-emerald-100/70 blur-[120px]"}),y("div",{className:"relative mx-auto max-w-4xl text-center",children:[a(Vd,{children:e}),a("h1",{className:"mt-6 font-instrument-serif text-ink text-4xl leading-[1.12] sm:text-5xl md:text-6xl",children:n}),t&&a("p",{className:"mx-auto mt-5 max-w-2xl font-light text-muted leading-relaxed md:text-lg",children:t}),r&&a("div",{className:"mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row",children:r})]})]})}const $h={emerald:"bg-emerald-100 text-emerald-700",amber:"bg-amber-100 text-amber-700",sky:"bg-sky-100 text-sky-700",violet:"bg-violet-100 text-violet-700",rose:"bg-rose-100 text-rose-700",teal:"bg-teal-100 text-teal-700"};function kr({icon:e,tone:n="emerald",className:t=""}){return a("div",{className:`flex h-11 w-11 items-center justify-center rounded-xl ${$h[n]} ${t}`,children:a(e,{className:"h-5 w-5",strokeWidth:1.8})})}function il({href:e,children:n,className:t=""}){return y("a",{href:e,className:`group inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-emerald-700 hover:shadow-xl hover:shadow-emerald-600/20 ${t}`,children:[n,a(nn,{className:"h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"})]})}function ol({href:e,children:n,className:t=""}){return a("a",{href:e,className:`inline-flex items-center gap-2 rounded-full border border-slate-300 px-8 py-3.5 text-sm font-medium text-ink transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 ${t}`,children:n})}function al({stats:e}){return a("section",{className:"bg-gradient-to-r from-emerald-50 via-sky-50 to-emerald-50 px-6 py-16 md:px-12 lg:px-16",children:a("div",{className:"mx-auto grid max-w-6xl grid-cols-2 gap-10 md:grid-cols-4",children:e.map(n=>y("div",{className:"text-center",children:[a("p",{className:"font-instrument-serif text-4xl text-emerald-600 md:text-5xl",children:n.value}),a("p",{className:"mt-2 text-[11px] font-medium uppercase tracking-widest text-muted",children:n.label})]},n.value))})})}function sl({title:e,subtitle:n,href:t,label:r}){return a("section",{className:"px-6 pb-24 md:px-12 lg:px-16",children:y("div",{className:"relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-gradient-to-br from-emerald-600 via-teal-600 to-emerald-700 px-8 py-16 text-center shadow-2xl shadow-emerald-600/20 md:py-20",children:[a("div",{className:"pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/10 blur-[90px]"}),a("div",{className:"pointer-events-none absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-white/10 blur-[90px]"}),a("h2",{className:"relative font-instrument-serif text-3xl text-white sm:text-4xl",children:e}),n&&a("p",{className:"relative mx-auto mt-4 max-w-xl font-light text-white/80 leading-relaxed",children:n}),a("div",{className:"relative mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row",children:y("a",{href:t,className:"group inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-emerald-700 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/10",children:[r,a(nn,{className:"h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"})]})})]})})}function en({eyebrow:e,title:n,subtitle:t}){return y("div",{className:"mx-auto max-w-2xl text-center",children:[a(Vd,{children:e}),a("h2",{className:"mt-4 font-instrument-serif text-3xl text-ink sm:text-4xl",children:n}),t&&a("p",{className:"mt-3 font-light text-muted leading-relaxed",children:t})]})}const jh=[{icon:wh,tone:"emerald",name:"\u6570\u636E\u5DE5\u4F5C\u53F0",desc:"\u4EE5\u5168\u5C4F\u519C\u573A\u822A\u62CD\u5B9E\u666F\u4E3A\u754C\u9762\uFF0C\u5730\u5757\u3001\u6E29\u5BA4\u3001\u6C14\u8C61\u7AD9\u3001\u84C4\u6C34\u6C60\u3001\u8BBE\u5907\u3001\u6444\u50CF\u5934\u4E0E\u673A\u5668\u4EBA\u5747\u53EF\u70B9\u9009\u4EA4\u4E92\u3002",points:["Hover \u9884\u89C8 \xB7 \u5355\u51FB\u8BE6\u60C5 \xB7 \u53CC\u51FB\u805A\u7126","2.5D \u5B9E\u666F\u4E0E 3D \u53CC\u89C6\u56FE\u5207\u6362","\u7A7A\u95F4\u5BF9\u8C61\u5B9E\u65F6\u72B6\u6001\u4E0E\u4E0A\u4E0B\u6587\u62BD\u5C49"],href:Ee,cta:"\u8FDB\u5165\u6570\u636E\u5DE5\u4F5C\u53F0"},{icon:zd,tone:"sky",name:"\u667A\u80FD\u95EE\u519C",desc:"\u4EE5\u81EA\u7136\u8BED\u8A00\u4E3A\u5165\u53E3\uFF0C\u4E00\u53E5\u8BDD\u83B7\u53D6\u6570\u636E\u3001\u56FE\u8868\u3001\u5206\u6790\u4E0E\u64CD\u4F5C\u5EFA\u8BAE\uFF0C\u4E0D\u518D\u9700\u8981\u5BFB\u627E\u83DC\u5355\u3002",points:["\u4E00\u53E5\u8BDD\u83B7\u53D6\u5B9E\u65F6\u6307\u6807","24 \u5C0F\u65F6\u8D8B\u52BF\u4E0E\u5F02\u5E38\u6807\u8BB0","AI \u5EFA\u8BAE\u4E0E\u884C\u52A8\u5165\u53E3"],href:rt,cta:"\u4F53\u9A8C\u667A\u80FD\u95EE\u519C"},{icon:$o,tone:"violet",name:"\u6570\u5B57\u5B6A\u751F",desc:"2.5D \u822A\u62CD\u5B9E\u666F\u4E0E Three.js WebGL \u6570\u5B57\u5B6A\u751F\u5171\u7528\u5BF9\u8C61 ID \u4E0E\u7A7A\u95F4\u5750\u6807\uFF0C\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u8EAB\u4E34\u5176\u5883\u3002",points:["\u5171\u7528\u7A7A\u95F4\u5750\u6807\u4E0E\u5BF9\u8C61 ID","\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u6A21\u5F0F","\u663C\u591C\u5149\u7167\u4E0E\u672C\u5730 3D \u516C\u6A21"],href:lr,cta:"\u8FDB\u5165\u6570\u5B57\u5B6A\u751F"}],Uh=[{icon:kh,tone:"sky",name:"\u603B\u89C8",desc:"\u56ED\u533A\u6574\u4F53\u72B6\u6001\u4E00\u5C4F\u5C3D\u89C8"},{icon:Rh,tone:"violet",name:"\u56ED\u533A\u76D1\u63A7",desc:"\u6E29\u5BA4\u4E0E\u79CD\u690D\u533A\u5B9E\u65F6\u753B\u9762"},{icon:Ud,tone:"amber",name:"\u73AF\u5883\u4E2D\u5FC3",desc:"\u4E94\u7C7B\u6307\u6807\u4E0E AI \u8C03\u63A7\u5EFA\u8BAE"},{icon:Od,tone:"teal",name:"\u8BBE\u5907\u7BA1\u7406",desc:"\u5730\u56FE\u9009\u673A\u3001\u5F00\u5173\u4E0E\u81EA\u68C0"},{icon:Md,tone:"emerald",name:"\u704C\u6E89\u63A7\u5236",desc:"\u5F00\u505C\u3001\u65F6\u957F\u4E0E\u8BA1\u5212\u4FDD\u5B58"},{icon:jd,tone:"emerald",name:"\u4F5C\u7269\u6863\u6848",desc:"\u957F\u52BF\u3001\u9636\u6BB5\u4E0E\u519C\u4E8B\u4EFB\u52A1"},{icon:Ld,tone:"rose",name:"\u544A\u8B66\u4E2D\u5FC3",desc:"\u5B9E\u65F6\u544A\u8B66\u4E0E\u5F02\u5E38\u5904\u7406"}],Wh=[{title:"\u7A7A\u95F4\u5BF9\u8C61\u4EA4\u4E92",desc:"\u5730\u5757\u3001\u6E29\u5BA4\u3001\u8BBE\u5907\u3001\u6444\u50CF\u5934\u4E0E\u673A\u5668\u4EBA\uFF0C\u70B9\u51FB\u5373\u83B7\u5F97\u4E0A\u4E0B\u6587\uFF0C\u65E0\u9700\u5728\u83DC\u5355\u91CC\u7FFB\u627E\u3002"},{title:"\u53CC\u89C6\u56FE\u8FDE\u7EED\u4F20\u9012",desc:"\u5B9E\u666F\u4E0E 3D \u5171\u7528\u5BF9\u8C61 ID \u4E0E\u5750\u6807\uFF0CHover\u3001\u70B9\u51FB\u3001\u805A\u7126\u72B6\u6001\u5728\u4E24\u79CD\u89C6\u89D2\u95F4\u65E0\u7F1D\u8854\u63A5\u3002"},{title:"\u6DB2\u6001\u73BB\u7483\u4E1A\u52A1 Dock",desc:"\u603B\u89C8\u3001\u76D1\u63A7\u3001\u73AF\u5883\u3001\u8BBE\u5907\u3001\u704C\u6E89\u3001\u4F5C\u7269\u3001\u544A\u8B66\u4E03\u4E2A\u5165\u53E3\uFF0C\u968F\u65F6\u5207\u6362\u5173\u6CE8\u7EF4\u5EA6\u3002"}],os="rounded-2xl border border-slate-200 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-card-hover";function Vh(){return y(q,{children:[y(Rt,{eyebrow:"Product",title:y(q,{children:["\u4EE5\u519C\u573A\u7A7A\u95F4\u4E3A\u4E3B\u754C\u9762",a("br",{}),"\u7684\u667A\u6167\u519C\u4E1A\u5DE5\u4F5C\u53F0"]}),subtitle:"\u4ECE\u6570\u636E\u5DE5\u4F5C\u53F0\u5230\u667A\u80FD\u95EE\u519C\uFF0C\u518D\u5230\u6570\u5B57\u5B6A\u751F\uFF0C\u4E09\u4E2A\u5165\u53E3\u8986\u76D6\u300C\u67E5\u770B \u2014 \u8BE2\u95EE \u2014 \u8EAB\u4E34\u5176\u5883\u300D\u7684\u5B8C\u6574\u4F53\u9A8C\u3002",children:[a(il,{href:Ee,children:"\u8FDB\u5165\u5E73\u53F0"}),y(ol,{href:rt,children:[a($d,{className:"h-4 w-4"})," \u4F53\u9A8C\u667A\u80FD\u95EE\u519C"]})]}),a("section",{className:"px-6 pb-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Core Products",title:"\u4E09\u5927\u6838\u5FC3\u4EA7\u54C1",subtitle:"\u8986\u76D6\u6570\u636E\u67E5\u770B\u3001\u81EA\u7136\u8BED\u8A00\u8BE2\u95EE\u4E0E\u4E09\u7EF4\u5DE1\u573A\u4E09\u79CD\u4F7F\u7528\u65B9\u5F0F\u3002"}),a("div",{className:"mt-12 grid gap-6 md:grid-cols-3",children:jh.map(e=>y("a",{href:e.href,className:`group ${os}`,children:[y("div",{className:"flex items-center justify-between",children:[a(kr,{icon:e.icon,tone:e.tone}),a(nn,{className:"h-5 w-5 text-slate-300 transition-all duration-300 group-hover:translate-x-1 group-hover:text-emerald-500"})]}),a("h3",{className:"mt-6 text-lg font-semibold text-ink",children:e.name}),a("p",{className:"mt-3 text-sm font-light text-muted leading-relaxed",children:e.desc}),a("ul",{className:"mt-5 space-y-2.5",children:e.points.map(n=>y("li",{className:"flex items-start gap-2 text-sm text-muted",children:[a(Mu,{className:"mt-0.5 h-4 w-4 shrink-0 text-emerald-600",strokeWidth:2.2}),n]},n))}),a("span",{className:"mt-7 inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600 transition-transform duration-200 group-hover:translate-x-1",children:e.cta})]},e.name))})]})}),a(al,{stats:[{value:"3",label:"\u6838\u5FC3\u4EA7\u54C1"},{value:"7",label:"\u4E1A\u52A1\u6A21\u5757"},{value:"10+",label:"\u7A7A\u95F4\u5BF9\u8C61"},{value:"2",label:"\u5B9E\u666F / 3D \u89C6\u89D2"}]}),a("section",{className:"bg-white px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2",children:[y("div",{children:[a(en,{eyebrow:"Why Workbench",title:"\u6570\u636E\u5DE5\u4F5C\u53F0\u4E3A\u4EC0\u4E48\u597D\u7528",subtitle:"\u4EE5\u7A7A\u95F4\u4E3A\u4E2D\u5FC3\u7684\u4EA4\u4E92\uFF0C\u53D6\u4EE3\u4F20\u7EDF\u300C\u5DE6\u4FA7\u83DC\u5355 + \u56FA\u5B9A\u56FE\u8868 + \u5927\u91CF\u5361\u7247\u300D\u7684\u540E\u53F0\u5F62\u6001\u3002"}),a("div",{className:"mt-10 space-y-6",children:Wh.map(e=>y("div",{className:"flex gap-4",children:[a("div",{className:"flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700",children:a(Mu,{className:"h-4 w-4",strokeWidth:2.2})}),y("div",{children:[a("h4",{className:"font-medium text-ink",children:e.title}),a("p",{className:"mt-1 text-sm font-light text-muted leading-relaxed",children:e.desc})]})]},e.title))}),y("a",{href:Ee,className:"mt-10 inline-flex items-center gap-2 rounded-full bg-ink px-7 py-3 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-900/20",children:["\u6253\u5F00\u6570\u636E\u5DE5\u4F5C\u53F0 ",a(nn,{className:"h-4 w-4"})]})]}),y("div",{className:"relative",children:[a("div",{className:"pointer-events-none absolute -inset-6 rounded-[2.5rem] bg-emerald-100/70 blur-2xl"}),y("div",{className:"relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card-hover",children:[y("div",{className:"flex items-center gap-2 border-b border-slate-100 bg-slate-50 px-4 py-3",children:[a("span",{className:"h-2.5 w-2.5 rounded-full bg-rose-400"}),a("span",{className:"h-2.5 w-2.5 rounded-full bg-amber-400"}),a("span",{className:"h-2.5 w-2.5 rounded-full bg-emerald-400"}),a("span",{className:"ml-3 h-5 max-w-xs flex-1 rounded-md bg-slate-200"})]}),y("div",{className:"grid grid-cols-[1.2fr_1fr] gap-3 bg-gradient-to-br from-emerald-50/80 to-slate-50 p-5",children:[y("div",{className:"space-y-2",children:[a("div",{className:"h-16 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 opacity-90"}),y("div",{className:"grid grid-cols-2 gap-2",children:[a("div",{className:"h-8 rounded-lg bg-emerald-200"}),a("div",{className:"h-8 rounded-lg bg-teal-200"})]}),a("div",{className:"h-8 rounded-lg bg-slate-200"}),y("div",{className:"grid grid-cols-3 gap-2",children:[a("div",{className:"h-14 rounded-lg border-2 border-emerald-300 bg-white"}),a("div",{className:"h-14 rounded-lg border-2 border-slate-200 bg-white"}),a("div",{className:"h-14 rounded-lg border-2 border-slate-200 bg-white"})]})]}),y("div",{className:"space-y-2",children:[a("div",{className:"h-5 w-2/3 rounded-md bg-emerald-300"}),a("div",{className:"h-3 w-full rounded-md bg-slate-200"}),a("div",{className:"h-3 w-5/6 rounded-md bg-slate-200"}),a("div",{className:"mt-3 h-10 rounded-lg bg-gradient-to-r from-emerald-500/80 to-teal-400/60"}),y("div",{className:"mt-2 flex gap-1.5",children:[a("div",{className:"h-10 w-10 rounded-full bg-emerald-200"}),a("div",{className:"h-10 w-10 rounded-full bg-teal-200"}),a("div",{className:"h-10 w-10 rounded-full bg-slate-300"})]})]})]})]})]})]})}),a("section",{className:"px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Seven Docks",title:"\u4E03\u5927\u4E1A\u52A1\u6A21\u5757",subtitle:"\u6DB2\u6001\u73BB\u7483 Dock \u7EDF\u4E00\u7EBF\u6027\u56FE\u6807\uFF0C\u4E00\u952E\u5207\u6362\u5173\u6CE8\u7EF4\u5EA6\u3002"}),a("div",{className:"mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",children:Uh.map(e=>a("div",{className:os,children:y("div",{className:"flex items-start gap-4",children:[a(kr,{icon:e.icon,tone:e.tone,className:"h-11 w-11 shrink-0 rounded-xl"}),y("div",{children:[a("h4",{className:"font-medium text-ink",children:e.name}),a("p",{className:"mt-1 text-xs font-light text-muted",children:e.desc})]})]})},e.name))})]})}),a(sl,{title:"\u73B0\u5728\u5C31\u8D70\u8FDB\u4F60\u7684\u519C\u573A",subtitle:"\u65E0\u9700\u5BFB\u627E\u6570\u636E\uFF0C\u76F4\u63A5\u8BE2\u95EE\u6570\u636E\uFF1B\u4E0D\u5FC5\u6D4F\u89C8\u62A5\u8868\uFF0C\u76F4\u63A5\u8FDB\u5165\u519C\u573A\u3002",href:Ee,label:"\u8FDB\u5165\u5E73\u53F0"})]})}const Hh=[{icon:Md,tone:"emerald",name:"\u667A\u80FD\u704C\u6E89\u63A7\u5236",desc:"\u53EF\u89C6\u5316\u6E20\u9053\u4E0E\u53EF\u63A7\u704C\u6E89\u5355\u5143\uFF0C\u652F\u6301\u4E00\u952E\u5F00\u505C\u3001\u704C\u6E89\u65F6\u957F\u8BBE\u5B9A\u4E0E\u8BA1\u5212\u4FDD\u5B58\uFF0C\u7CBE\u51C6\u7528\u6C34\u3001\u4E0D\u6D6A\u8D39\u4E00\u6EF4\u3002"},{icon:Ud,tone:"amber",name:"\u73AF\u5883\u4E2D\u5FC3",desc:"\u6E29\u5EA6\u3001\u7A7A\u6C14\u6E7F\u5EA6\u3001\u571F\u58E4\u6E7F\u5EA6\u3001\u5149\u7167\u4E0E CO\u2082 \u5B9E\u65F6\u76D1\u6D4B\uFF0C24 \u5C0F\u65F6\u8D8B\u52BF\u5206\u6790\uFF0C\u9644 AI \u8C03\u63A7\u5EFA\u8BAE\u3002"},{icon:Od,tone:"teal",name:"\u8BBE\u5907\u7BA1\u7406",desc:"\u5730\u56FE\u9009\u673A\u3001\u5728\u7EBF\u4E0E\u5F02\u5E38\u72B6\u6001\u8BC6\u522B\uFF0C\u652F\u6301\u8BBE\u5907\u5F00\u5173\u3001\u81EA\u68C0\u4E0E\u53C2\u6570\u914D\u7F6E\u5165\u53E3\u3002"},{icon:Oi,tone:"violet",name:"\u56ED\u533A\u76D1\u63A7",desc:"\u9009\u62E9\u4EFB\u610F\u6E29\u5BA4\u6216\u79CD\u690D\u533A\u6253\u5F00\u5B9E\u65F6\u753B\u9762\uFF0C\u6444\u50CF\u5934\u5207\u6362\u3001AI \u8BC6\u522B\uFF08\u4EBA\u5458\u4E0E\u4F5C\u7269\uFF09\u4E0E\u622A\u56FE\u5F55\u50CF\u3002"},{icon:jd,tone:"emerald",name:"\u4F5C\u7269\u6863\u6848",desc:"\u6309\u6E29\u5BA4\u6216\u5730\u5757\u5C55\u793A\u957F\u52BF\u3001\u751F\u80B2\u9636\u6BB5\u3001\u75C5\u866B\u5BB3\u98CE\u9669\u4E0E\u519C\u4E8B\u4EFB\u52A1\uFF0C\u79CD\u690D\u5168\u7A0B\u53EF\u8FFD\u6EAF\u3002"},{icon:Ld,tone:"rose",name:"\u544A\u8B66\u4E2D\u5FC3",desc:"\u5B9E\u65F6\u544A\u8B66\u4E8B\u4EF6\u4E0E\u5F02\u5E38\u5B9A\u4F4D\uFF0C\u7A7A\u95F4\u5BF9\u8C61\u6807\u6CE8\u98CE\u9669\u70B9\uFF0C\u5FEB\u901F\u54CD\u5E94\u4E0D\u9057\u6F0F\u3002"}],Qh=[{icon:_h,step:"01",title:"\u611F\u77E5\u76D1\u6D4B",desc:"\u73AF\u5883\u4F20\u611F\u5668\u3001\u8BBE\u5907\u72B6\u6001\u4E0E\u76D1\u63A7\u753B\u9762\u63A5\u5165\uFF0C\u5F62\u6210\u4E00\u5F20\u4F1A\u8BF4\u8BDD\u7684\u519C\u573A\u6570\u5B57\u5E95\u56FE\u3002",tone:"emerald"},{icon:Ch,step:"02",title:"AI \u8BCA\u65AD",desc:"24 \u5C0F\u65F6\u8D8B\u52BF\u5206\u6790\u3001\u5F02\u5E38\u6807\u8BB0\u4E0E AI \u8C03\u63A7\u5EFA\u8BAE\uFF0C\u628A\u6570\u636E\u53D8\u6210\u53EF\u6267\u884C\u7684\u7ED3\u8BBA\u3002",tone:"amber"},{icon:zh,step:"03",title:"\u519C\u4E8B\u6267\u884C",desc:"\u704C\u6E89\u5F00\u505C\u3001\u8BBE\u5907\u5F00\u5173\u4E0E\u519C\u4E8B\u4EFB\u52A1\u4E00\u952E\u4E0B\u53D1\uFF0C\u8BA9\u7ED3\u8BBA\u771F\u6B63\u843D\u5730\u5230\u7530\u95F4\u3002",tone:"sky"}],Gh=[{title:"\u7A7A\u95F4\u5373\u754C\u9762",desc:"\u5728\u519C\u573A\u5730\u56FE\u4E0A\u76F4\u63A5\u70B9\u9009\u4E0E\u64CD\u4F5C\uFF0C\u544A\u522B\u590D\u6742\u7684\u62A5\u8868\u8FF7\u5BAB\u3002"},{title:"\u53CC\u89C6\u56FE\u5B6A\u751F",desc:"2.5D \u5B9E\u666F\u4E0E 3D \u6570\u5B57\u5B6A\u751F\u5171\u4EAB\u4E00\u5957\u5750\u6807\u4E0E\u5BF9\u8C61\u3002"},{title:"AI \u539F\u751F\u5165\u53E3",desc:"\u81EA\u7136\u8BED\u8A00\u76F4\u8FBE\u6570\u636E\u3001\u5206\u6790\u4E0E\u884C\u52A8\uFF0C\u65E0\u9700\u5B66\u4E60\u6210\u672C\u3002"},{title:"\u56E2\u961F\u534F\u4F5C\u5F00\u53D1",desc:"\u6309\u6A21\u5757\u5206\u5DE5\uFF0C\u5B98\u7F51\u3001\u5DE5\u4F5C\u53F0\u3001\u667A\u80FD\u95EE\u519C\u5404\u81EA\u6F14\u8FDB\u3001\u968F\u65F6\u62FC\u88C5\u3002"}],jl="rounded-2xl border border-slate-200 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-card-hover";function Kh(){return y(q,{children:[y(Rt,{eyebrow:"Solutions",title:y(q,{children:["\u4ECE\u79CD\u690D\u5230\u519C\u4E8B\u6267\u884C\u7684",a("br",{}),"\u5168\u94FE\u8DEF\u6570\u5B57\u5316"]}),subtitle:"\u56F4\u7ED5\u6E29\u5BA4\u7684\u704C\u6E89\u3001\u73AF\u5883\u3001\u8BBE\u5907\u3001\u76D1\u63A7\u4E0E\u519C\u4E8B\uFF0C\u63D0\u4F9B\u4E00\u5957\u53EF\u843D\u5730\u7684\u667A\u6167\u519C\u4E1A\u89E3\u51B3\u65B9\u6848\u3002",children:[a(il,{href:Ee,children:"\u8FDB\u5165\u5E73\u53F0\u4F53\u9A8C"}),a(ol,{href:rt,children:"\u54A8\u8BE2\u667A\u80FD\u95EE\u519C"})]}),a("section",{className:"px-6 pb-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Six Solutions",title:"\u516D\u5927\u89E3\u51B3\u65B9\u6848",subtitle:"\u4ECE\u6C34\u3001\u5149\u3001\u6E29\u3001\u6C14\u5230\u8BBE\u5907\u4E0E\u519C\u4E8B\uFF0C\u8986\u76D6\u6E29\u5BA4\u79CD\u690D\u7684\u6BCF\u4E00\u4E2A\u73AF\u8282\u3002"}),a("div",{className:"mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3",children:Hh.map((e,n)=>y("div",{className:`group ${jl}`,children:[y("div",{className:"flex items-center justify-between",children:[a(kr,{icon:e.icon,tone:e.tone}),y("span",{className:"font-instrument-serif text-3xl text-slate-200 transition-colors duration-300 group-hover:text-emerald-300",children:["0",n+1]})]}),a("h3",{className:"mt-6 text-lg font-semibold text-ink",children:e.name}),a("p",{className:"mt-3 text-sm font-light text-muted leading-relaxed",children:e.desc}),y("span",{className:"mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100",children:["\u4E86\u89E3\u8BE6\u60C5 ",a(nn,{className:"h-4 w-4"})]})]},e.name))})]})}),a(al,{stats:[{value:"6",label:"\u89E3\u51B3\u65B9\u6848"},{value:"5",label:"\u7C7B\u73AF\u5883\u6307\u6807"},{value:"7\xD724",label:"\u5B9E\u65F6\u76D1\u6D4B"},{value:"25",label:"FPS \u667A\u80FD\u5206\u6790"}]}),a("section",{className:"bg-white px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"How It Works",title:"\u611F\u77E5 \u2014 \u8BCA\u65AD \u2014 \u6267\u884C",subtitle:"\u4E00\u5957\u4ECE\u6570\u636E\u5230\u884C\u52A8\u7684\u5B8C\u6574\u95ED\u73AF\uFF0C\u8BA9\u79CD\u690D\u51B3\u7B56\u6709\u636E\u53EF\u4F9D\u3002"}),a("div",{className:"mt-14 grid gap-8 md:grid-cols-3",children:Qh.map(e=>y("div",{className:`relative ${jl}`,children:[y("div",{className:"flex items-center justify-between",children:[a(kr,{icon:e.icon,tone:e.tone,className:"h-14 w-14 rounded-2xl"}),a("span",{className:"font-instrument-serif text-5xl text-slate-100",children:e.step})]}),a("h3",{className:"mt-6 text-lg font-semibold text-ink",children:e.title}),a("p",{className:"mt-3 text-sm font-light text-muted leading-relaxed",children:e.desc})]},e.step))})]})}),a("section",{className:"px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Why Us",title:"\u4E3A\u4EC0\u4E48\u9009\u62E9\u7530\u8A00\u8015\u667A",subtitle:"\u4E0D\u662F\u53C8\u4E00\u4E2A\u519C\u4E1A\u62A5\u8868\u7CFB\u7EDF\uFF0C\u800C\u662F\u4E00\u5957\u4EE5\u7A7A\u95F4\u548C\u81EA\u7136\u8BED\u8A00\u4E3A\u4E2D\u5FC3\u7684 AI \u5DE5\u4F5C\u7A7A\u95F4\u3002"}),a("div",{className:"mt-12 grid gap-6 sm:grid-cols-2",children:Gh.map(e=>a("div",{className:jl,children:y("div",{className:"flex gap-4",children:[a("div",{className:"flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700",children:a(Mu,{className:"h-4 w-4",strokeWidth:2.2})}),y("div",{children:[a("h4",{className:"font-medium text-ink",children:e.title}),a("p",{className:"mt-1 text-sm font-light text-muted leading-relaxed",children:e.desc})]})]})},e.title))})]})}),a(sl,{title:"\u5F00\u59CB\u6784\u5EFA\u4F60\u7684\u6570\u5B57\u5316\u519C\u573A",subtitle:"\u704C\u6E89\u3001\u73AF\u5883\u3001\u8BBE\u5907\u3001\u76D1\u63A7\u4E0E\u519C\u4E8B\uFF0C\u4ECE\u4ECA\u5929\u8D77\u90FD\u5728\u4E00\u4E2A\u5DE5\u4F5C\u53F0\u91CC\u5B8C\u6210\u3002",href:Ee,label:"\u8FDB\u5165\u5E73\u53F0"})]})}const Yh=[{icon:$o,tone:"emerald",title:"\u672C\u5730 GLB \u516C\u6A21",desc:"8 \u4E2A CC0 \u519C\u4E1A\u516C\u6A21\u7531\u672C\u5730\u52A0\u8F7D\uFF0C\u6A21\u578B\u6309\u5305\u56F4\u76D2\u81EA\u52A8\u5F52\u4E00\u5316\u5E76\u843D\u5230\u5730\u9762\uFF0C\u66FF\u6362\u6A21\u578B\u53EA\u9700\u6539\u8D44\u6E90\u5730\u5740\u4E0E\u5750\u6807\u3002"},{icon:Ih,tone:"amber",title:"\u663C\u591C\u5149\u7167\u540C\u6B65",desc:"3D \u5929\u7A7A\u6309\u672C\u5730\u771F\u5B9E\u65F6\u95F4\u540C\u6B65\u663C\u591C\u5149\u7167\u3001\u6668\u660F\u8272\u6E29\u3001\u661F\u7A7A\u4E0E\u7F13\u6162\u79FB\u52A8\u7684\u4E91\u5C42\uFF0C\u5149\u5F71\u771F\u5B9E\u53EF\u4FE1\u3002"},{icon:Mi,tone:"sky",title:"\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A",desc:"WASD \u79FB\u52A8\u3001\u9F20\u6807\u63A7\u5236\u89C6\u89D2\u3001Shift \u52A0\u901F\u3001\u51C6\u661F\u9009\u62E9\u8BBE\u65BD\u3001Esc \u9000\u51FA\uFF1B\u6E29\u5BA4\u4E0E\u8BBE\u5907\u5E26\u78B0\u649E\u7BB1\u5E76\u652F\u6301\u8D34\u8FB9\u6ED1\u52A8\u3002"},{icon:Bh,tone:"violet",title:"\u516D\u5EA7\u6E29\u5BA4",desc:"\u6309\u4E1A\u52A1\u6570\u636E\u5206\u522B\u79CD\u690D\u756A\u8304\u3001\u8349\u8393\u3001\u9EC4\u74DC\u3001\u80B2\u82D7\u3001\u53F6\u83DC\u4E0E\u751F\u6001\u756A\u8304\uFF0C\u914D\u6709\u72EC\u7ACB\u98CE\u673A\u3001\u63A7\u5236\u7BB1\u3001\u72B6\u6001\u5C4F\u4E0E\u6307\u793A\u706F\u3002"},{icon:Dh,tone:"teal",title:"\u53CC\u89C6\u56FE\u7EDF\u4E00\u5750\u6807",desc:"\u5B9E\u666F\u4E0E 3D \u5171\u7528\u5BF9\u8C61 ID \u4E0E\u7A7A\u95F4\u5750\u6807\uFF0CHover \u9884\u89C8\u3001\u5355\u51FB\u8BE6\u60C5\u3001\u53CC\u51FB\u805A\u7126\u72B6\u6001\u53EF\u8FDE\u7EED\u4F20\u9012\u3002"},{icon:bh,tone:"rose",title:"\u6027\u80FD\u4F18\u5316",desc:"\u91CD\u590D\u4F5C\u7269\u4EE5 InstancedMesh \u6279\u91CF\u6E32\u67D3\uFF0C\u72EC\u7ACB\u50CF\u7D20\u6BD4\u3001\u9759\u6001\u9634\u5F71\u6309\u9700\u5237\u65B0\uFF0C\u56ED\u533A\u9053\u8DEF\u8F7B\u91CF\u5316\u7EC6\u8282\u3002"}],Jh=["W","A","S","D","Shift","Esc"],Zh=["\u6570\u5B57\u952E 1\u20137 \u5FEB\u901F\u5207\u6362\u603B\u89C8\u3001\u76D1\u63A7\u3001\u73AF\u5883\u3001\u8BBE\u5907\u3001\u704C\u6E89\u3001\u4F5C\u7269\u4E0E\u544A\u8B66 Dock","\u6E29\u5BA4\u95E8\u53E3\u8BBE\u7F6E\u5BF9\u5E94\u4F5C\u7269\u7684\u5361\u901A\u5706\u5F62\u5FBD\u7AE0\uFF0C\u8FD1\u666F\u5373\u53EF\u8BC6\u522B\u68DA\u5185\u54C1\u79CD","\u573A\u666F\u542B\u53EF\u4EA4\u4E92\u7684\u6E20\u9053\u95F8\u95E8\u3001\u63A7\u5236\u5C4F\u3001\u589E\u538B\u6CF5\u7EC4\u4E0E\u8FD0\u884C\u706F","\u9E1F\u77B0\u89C6\u89D2\u652F\u6301\u62D6\u52A8\u65CB\u8F6C\u3001\u6EDA\u8F6E\u7F29\u653E\u4E0E\u5BF9\u8C61\u70B9\u51FB"],qh="rounded-2xl border border-slate-200 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-card-hover";function Xh(){return y(q,{children:[y(Rt,{eyebrow:"Digital Twin",title:y(q,{children:["\u4E00\u4E2A\u519C\u573A\uFF0C\u4E24\u79CD\u89C6\u89D2",a("br",{}),"\u5B9E\u666F\u4E0E\u6570\u5B57\u5B6A\u751F"]}),subtitle:"2.5D \u822A\u62CD\u5B9E\u666F\u4E0E Three.js WebGL \u6570\u5B57\u5B6A\u751F\u5171\u7528\u5BF9\u8C61 ID \u4E0E\u7A7A\u95F4\u5750\u6807\uFF0C\u4EA4\u4E92\u72B6\u6001\u5728\u4E24\u79CD\u89C6\u89D2\u95F4\u8FDE\u7EED\u4F20\u9012\u3002",children:[a(il,{href:lr,children:"\u8FDB\u5165\u6570\u5B57\u5B6A\u751F"}),a(ol,{href:Ee,children:"\u8FD4\u56DE\u5B9E\u666F\u5DE5\u4F5C\u53F0"})]}),a("section",{className:"px-6 pb-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Capabilities",title:"\u6570\u5B57\u5B6A\u751F\u80FD\u529B",subtitle:"\u4ECE\u5EFA\u6A21\u5230\u6E32\u67D3\uFF0C\u4ECE\u89C6\u89D2\u5230\u4EA4\u4E92\uFF0C\u6784\u5EFA\u53EF\u5B9E\u65F6\u4E92\u52A8\u7684\u865A\u62DF\u519C\u573A\u3002"}),a("div",{className:"mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3",children:Yh.map(e=>y("div",{className:qh,children:[a(kr,{icon:e.icon,tone:e.tone}),a("h3",{className:"mt-6 text-lg font-semibold text-ink",children:e.title}),a("p",{className:"mt-3 text-sm font-light text-muted leading-relaxed",children:e.desc})]},e.title))})]})}),a("section",{className:"bg-white px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2",children:[a("div",{children:y("div",{className:"relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-emerald-900 via-teal-900 to-emerald-950 shadow-card-hover",children:[y("div",{className:"flex items-center gap-2 border-b border-white/10 px-4 py-3",children:[a("span",{className:"h-2.5 w-2.5 rounded-full bg-rose-400"}),a("span",{className:"h-2.5 w-2.5 rounded-full bg-amber-400"}),a("span",{className:"h-2.5 w-2.5 rounded-full bg-emerald-400"}),a("span",{className:"ml-3 h-5 max-w-[140px] flex-1 rounded-md bg-white/10"})]}),y("div",{className:"relative h-72",children:[a("div",{className:"absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#2f9e63_0%,transparent_55%),linear-gradient(180deg,#0d3322,#071a11)]"}),a("div",{className:"absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#071a11] to-transparent"}),a("div",{className:"absolute left-8 top-8 grid grid-cols-3 gap-2 opacity-90",children:[0,1,2,3,4,5].map(e=>a("div",{className:"h-6 w-10 rounded-t-md bg-emerald-400/60"},e))}),a("div",{className:"absolute bottom-6 left-1/2 flex -translate-x-1/2 gap-1",children:[0,1,2].map(e=>a("div",{className:"h-2 w-12 rounded-full bg-emerald-400/40"},e))}),a("div",{className:"absolute right-8 top-6 h-2 w-14 rounded-full bg-emerald-400/60"}),y("div",{className:"absolute bottom-8 right-8 flex items-center gap-2 rounded-full bg-black/40 px-3 py-1.5 backdrop-blur",children:[a("span",{className:"h-2 w-2 animate-pulse rounded-full bg-emerald-400"}),a("span",{className:"text-[10px] text-white/80",children:"3D \u573A\u666F \xB7 \u5B9E\u65F6\u6E32\u67D3"})]})]})]})}),y("div",{children:[a(en,{eyebrow:"First Person Tour",title:"\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\uFF0C\u50CF\u8D70\u8FDB\u519C\u573A\u4E00\u6837",subtitle:"\u5728 3D \u573A\u666F\u91CC\u81EA\u7531\u7A7F\u884C\uFF0C\u7528\u51C6\u661F\u9009\u62E9\u6E29\u5BA4\u4E0E\u8BBE\u5907\uFF0C\u50CF\u5B9E\u5730\u5DE1\u68C0\u4E00\u6837\u67E5\u770B\u6BCF\u4E00\u5904\u8BBE\u65BD\u3002"}),a("div",{className:"mt-6 flex flex-wrap gap-2.5",children:Jh.map(e=>a("kbd",{className:"rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-emerald-700 shadow-sm",children:e},e))}),a("ul",{className:"mt-8 space-y-3.5",children:Zh.map(e=>y("li",{className:"flex items-start gap-3 text-sm text-muted",children:[a("span",{className:"mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700",children:a(Mu,{className:"h-3 w-3",strokeWidth:2.4})}),e]},e))}),y("a",{href:lr,className:"mt-8 inline-flex items-center gap-2 rounded-full bg-ink px-7 py-3 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-900/20",children:["\u5F00\u59CB\u5DE1\u573A ",a(nn,{className:"h-4 w-4"})]})]})]})}),a(al,{stats:[{value:"8",label:"\u672C\u5730 GLB \u516C\u6A21"},{value:"6",label:"\u5EA7\u6E29\u5BA4\u4F5C\u7269"},{value:"60",label:"FPS \u573A\u666F\u5237\u65B0"},{value:"1",label:"\u5957\u5171\u4EAB\u5750\u6807"}]}),a(sl,{title:"\u7528\u4E09\u7EF4\u89C6\u89D2\uFF0C\u91CD\u65B0\u8BA4\u8BC6\u4F60\u7684\u519C\u573A",subtitle:"\u70B9\u51FB\u5373\u53EF\u5728 2.5D \u5B9E\u666F\u4E0E 3D \u6570\u5B57\u5B6A\u751F\u4E4B\u95F4\u5207\u6362\uFF0C\u72B6\u6001\u4E0E\u5BF9\u8C61\u5168\u7A0B\u4E00\u81F4\u3002",href:lr,label:"\u8FDB\u5165\u6570\u5B57\u5B6A\u751F"})]})}const em=[{char:"\u7530",title:"\u4EE5\u519C\u573A\u3001\u5730\u5757\u548C\u5927\u68DA\u4E3A\u6838\u5FC3\u7A7A\u95F4",tone:"bg-emerald-100 text-emerald-700"},{char:"\u8A00",title:"\u4EE5\u81EA\u7136\u8BED\u8A00\u4F5C\u4E3A\u7CFB\u7EDF\u5165\u53E3",tone:"bg-sky-100 text-sky-700"},{char:"\u8015",title:"\u8986\u76D6\u79CD\u690D\u3001\u704C\u6E89\u3001\u5DE1\u68C0\u548C\u519C\u4E8B\u6267\u884C",tone:"bg-amber-100 text-amber-700"},{char:"\u667A",title:"\u901A\u8FC7\u6570\u636E\u3001\u89C6\u89C9\u8BC6\u522B\u548C AI \u8F85\u52A9\u51B3\u7B56",tone:"bg-violet-100 text-violet-700"}],nm=[{initials:"\u6570",module:"\u6570\u636E\u5DE5\u4F5C\u53F0",owner:"\u5F53\u524D\u5206\u652F",desc:"\u5168\u5C4F\u519C\u573A\u7A7A\u95F4\u4EA4\u4E92\u30012.5D/3D \u53CC\u89C6\u56FE\u4E0E\u4E03\u5927\u4E1A\u52A1\u6A21\u5757\u3002",tone:"bg-emerald-100 text-emerald-700"},{initials:"\u95EE",module:"\u667A\u80FD\u95EE\u519C",owner:"\u56E2\u961F\u5176\u4ED6\u6A21\u5757",desc:"\u4EE5\u81EA\u7136\u8BED\u8A00\u4E3A\u5165\u53E3\u7684 AI \u5BF9\u8BDD\u3001\u6570\u636E\u95EE\u7B54\u4E0E\u64CD\u4F5C\u5EFA\u8BAE\u3002",tone:"bg-sky-100 text-sky-700"},{initials:"\u68DA",module:"\u5927\u68DA\u5185\u90E8",owner:"\u56E2\u961F\u5176\u4ED6\u6A21\u5757",desc:"\u6E29\u5BA4\u5185\u90E8\u573A\u666F\u3001\u4F5C\u7269\u7EC6\u8282\u4E0E\u73AF\u5883\u7684\u6DF1\u5165\u6570\u5B57\u5B6A\u751F\u3002",tone:"bg-amber-100 text-amber-700"},{initials:"\u7F51",module:"\u5B98\u7F51\u8425\u9500",owner:"\u5F53\u524D\u5206\u652F",desc:"\u591A\u9875\u8425\u9500\u7AD9\u70B9\u4E0E\u300C\u5B98\u7F51 \u2192 \u5E73\u53F0\u300D\u7684\u7AD9\u5185\u8054\u52A8\u5165\u53E3\u3002",tone:"bg-violet-100 text-violet-700"}],as="rounded-2xl border border-slate-200 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-card-hover";function tm(){return y(q,{children:[y(Rt,{eyebrow:"About",title:y(q,{children:["\u7530\u8A00\u8015\u667A",a("br",{}),"\u4E3A\u73B0\u4EE3\u519C\u4E1A\u800C\u751F\u7684 AI \u5E73\u53F0"]}),subtitle:"\u6211\u4EEC\u76F8\u4FE1\u519C\u4E1A\u7684\u6570\u636E\u4E0D\u8BE5\u88AB\u85CF\u5728\u62A5\u8868\u91CC\u3002\u8BA9\u81EA\u7136\u8BED\u8A00\u6210\u4E3A\u5165\u53E3\uFF0C\u8BA9\u519C\u573A\u7A7A\u95F4\u6210\u4E3A\u754C\u9762\u3002",children:[a(il,{href:Ee,children:"\u8FDB\u5165\u5E73\u53F0"}),a(ol,{href:rt,children:"\u4E86\u89E3\u66F4\u591A"})]}),a("section",{className:"px-6 pb-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Brand",title:"\u300C\u7530\u8A00\u8015\u667A\u300D\u56DB\u4E2A\u5B57",subtitle:"\u6BCF\u4E00\u4E2A\u5B57\uFF0C\u90FD\u662F\u4E00\u5C42\u4EA7\u54C1\u54F2\u5B66\u3002"}),a("div",{className:"mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4",children:em.map(e=>y("div",{className:`text-center ${as}`,children:[a("div",{className:`mx-auto flex h-16 w-16 items-center justify-center rounded-2xl font-instrument-serif text-3xl ${e.tone}`,children:e.char}),a("p",{className:"mt-5 text-sm font-light text-muted leading-relaxed",children:e.title})]},e.char))})]})}),a("section",{className:"px-6 pb-20 md:px-12 lg:px-16",children:y("div",{className:"relative mx-auto max-w-5xl overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-emerald-600 via-teal-600 to-emerald-700 px-8 py-14 text-center shadow-2xl shadow-emerald-600/20 md:py-20",children:[a(Nh,{className:"mx-auto h-10 w-10 text-white/60",strokeWidth:1.5}),y("p",{className:"mx-auto mt-6 max-w-3xl font-instrument-serif text-2xl text-white leading-relaxed sm:text-3xl",children:["\u4E0D\u7528\u5BFB\u627E\u6570\u636E\uFF0C\u76F4\u63A5\u8BE2\u95EE\u6570\u636E\u3002",a("br",{}),"\u4E0D\u5FC5\u6D4F\u89C8\u62A5\u8868\uFF0C\u76F4\u63A5\u8FDB\u5165\u519C\u573A\u3002",a("br",{}),a("span",{className:"italic text-emerald-100",children:"AI \u4E0D\u53EA\u56DE\u7B54\u95EE\u9898\uFF0C\u8FD8\u80FD\u5B9A\u4F4D\u3001\u89E3\u91CA\u548C\u8F85\u52A9\u884C\u52A8\u3002"})]})]})}),a(al,{stats:[{value:"4",label:"\u5B57\u54C1\u724C\u91CA\u4E49"},{value:"3",label:"\u79CD\u5165\u53E3\u6A21\u5F0F"},{value:"6",label:"\u5EA7\u6E29\u5BA4\u5B6A\u751F"},{value:"1",label:"\u4E2A\u5171\u540C\u4F7F\u547D"}]}),a("section",{className:"bg-white px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Team & Modules",title:"\u56E2\u961F\u534F\u4F5C\uFF0C\u6A21\u5757\u5316\u6F14\u8FDB",subtitle:"\u4E0D\u540C\u4E13\u4E1A\u9875\u9762\u7531\u4E0D\u540C\u6A21\u5757\u5206\u5DE5\u5F00\u53D1\uFF0C\u65E2\u72EC\u7ACB\u6F14\u8FDB\uFF0C\u53C8\u5171\u4EAB\u6838\u5FC3\u72B6\u6001\u4E0E\u5750\u6807\u4F53\u7CFB\u3002"}),a("div",{className:"mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4",children:nm.map(e=>y("div",{className:`text-center ${as}`,children:[a("div",{className:`mx-auto flex h-16 w-16 items-center justify-center rounded-full font-instrument-serif text-2xl ${e.tone}`,children:e.initials}),a("h3",{className:"mt-5 text-lg font-semibold text-ink",children:e.module}),a("p",{className:"mt-1 text-xs font-medium uppercase tracking-wider text-emerald-700",children:e.owner}),a("p",{className:"mt-3 text-sm font-light text-muted leading-relaxed",children:e.desc})]},e.module))})]})}),a("section",{className:"px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto flex max-w-3xl flex-col items-center gap-5 rounded-3xl border border-emerald-100 bg-emerald-50/60 px-8 py-12 text-center",children:[a(Wd,{className:"h-8 w-8 text-emerald-600",strokeWidth:1.5}),a("p",{className:"max-w-xl text-sm font-light text-muted leading-relaxed",children:"\u5F53\u524D\u7248\u672C\u5DF2\u63A5\u5165 Spring Boot\u3001MySQL \u4E0E\u865A\u62DF\u4F20\u611F\u5668\u6570\u636E\uFF0C\u652F\u6301\u767B\u5F55\u6CE8\u518C\u3001\u6570\u636E\u5DE5\u4F5C\u53F0\u3001\u6570\u5B57\u5B6A\u751F\u3001\u8BBE\u5907\u53CA\u704C\u6E89\u63A7\u5236\u3001\u76D1\u63A7\u5206\u6790\u548C\u667A\u80FD\u95EE\u519C\u3002\u65E0\u5B9E\u4F53\u4F20\u611F\u5668\u65F6\u7531\u670D\u52A1\u7AEF\u6301\u7EED\u751F\u6210\u6F14\u793A\u6570\u636E\u3002"})]})}),a(sl,{title:"\u548C\u6211\u4EEC\u4E00\u8D77\uFF0C\u8BA9\u8015\u79CD\u66F4\u667A\u6167",subtitle:"\u4ECE\u4E00\u5757\u519C\u7530\u3001\u4E00\u5EA7\u6E29\u5BA4\u5F00\u59CB\uFF0C\u7528 AI \u539F\u751F\u4F53\u9A8C\u91CD\u5851\u519C\u4E1A\u751F\u4EA7\u3002",href:Ee,label:"\u8FDB\u5165\u5E73\u53F0"})]})}const rm=[{icon:Sh,label:"\u90AE\u4EF6\u8054\u7CFB",value:bi,href:`mailto:${bi}`},{icon:$o,label:"\u6570\u636E\u5DE5\u4F5C\u53F0",value:"\u8FDB\u5165\u5E73\u53F0\u4F53\u9A8C",href:Ee},{icon:zd,label:"\u667A\u80FD\u95EE\u519C",value:"\u81EA\u7136\u8BED\u8A00\u95EE\u519C",href:rt}],Jr="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-ink placeholder:text-slate-400 transition focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-100",Zr="mb-1.5 block text-sm font-medium text-ink";function um(){const[e,n]=P.exports.useState({name:"",email:"",subject:"",message:"",_honey:""}),[t,r]=P.exports.useState("idle");function u(i){return o=>n(s=>({...s,[i]:o.target.value}))}async function l(i){if(i.preventDefault(),!e._honey){r("sending");try{const o=await fetch(`https://formsubmit.co/ajax/${bi}`,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({_subject:`\u5B98\u7F51\u7559\u8A00\uFF1A${e.subject||"\uFF08\u672A\u586B\u5199\u4E3B\u9898\uFF09"}`,name:e.name,email:e.email,message:e.message,_honey:e._honey})}),s=await o.json();o.ok&&s.success==="true"?(r("success"),n({name:"",email:"",subject:"",message:"",_honey:""})):r("error")}catch{r("error")}}}return y(q,{children:[a(Rt,{eyebrow:"Contact",title:y(q,{children:["\u548C\u6211\u4EEC\u804A\u804A",a("br",{}),"\u4F60\u7684\u519C\u573A"]}),subtitle:"\u65E0\u8BBA\u662F\u4E86\u89E3\u5E73\u53F0\u3001\u54A8\u8BE2\u89E3\u51B3\u65B9\u6848\uFF0C\u8FD8\u662F\u60F3\u4E00\u8D77\u63A8\u8FDB\u667A\u6167\u519C\u4E1A\uFF0C\u90FD\u6B22\u8FCE\u7559\u8A00\u3002"}),a("section",{className:"px-6 pb-24 md:px-12 lg:px-16",children:y("div",{className:"mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_1.2fr]",children:[y("div",{className:"space-y-4",children:[rm.map(i=>y("a",{href:i.href,className:"group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-card-hover",children:[a("div",{className:"flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700",children:a(i.icon,{className:"h-5 w-5",strokeWidth:1.8})}),y("div",{className:"min-w-0",children:[a("p",{className:"text-xs font-medium uppercase tracking-wider text-muted",children:i.label}),a("p",{className:"truncate text-sm font-medium text-ink group-hover:text-emerald-700",children:i.value})]}),a(nn,{className:"ml-auto h-4 w-4 shrink-0 text-slate-300 transition-transform duration-200 group-hover:translate-x-1 group-hover:text-emerald-500"})]},i.label)),a("p",{className:"rounded-2xl border border-emerald-100 bg-emerald-50/70 p-5 text-xs font-light text-muted leading-relaxed",children:"\u8868\u5355\u901A\u8FC7 FormSubmit \u53D1\u9001\u5230\u6307\u5B9A\u90AE\u7BB1\uFF0C\u65E0\u9700\u6CE8\u518C\u540E\u7AEF\uFF1B\u63D0\u4EA4\u540E\u4F1A\u6536\u5230\u300C\u5B98\u7F51\u7559\u8A00\u300D\u4E3B\u9898\u7684\u90AE\u4EF6\u3002"})]}),y("form",{onSubmit:l,className:"rounded-3xl border border-slate-200 bg-white p-8 shadow-card-hover md:p-10",children:[a("h2",{className:"font-instrument-serif text-2xl text-ink",children:"\u7559\u4E0B\u4F60\u7684\u4FE1\u606F"}),a("p",{className:"mt-2 text-sm font-light text-muted",children:"\u6211\u4EEC\u4F1A\u5728\u6536\u5230\u7559\u8A00\u540E\u5C3D\u5FEB\u4E0E\u4F60\u8054\u7CFB\u3002"}),a("input",{type:"text",name:"_honey",value:e._honey,onChange:u("_honey"),className:"hidden",tabIndex:-1,autoComplete:"off"}),y("div",{className:"mt-8 grid gap-6 sm:grid-cols-2",children:[y("div",{children:[a("label",{htmlFor:"name",className:Zr,children:"\u79F0\u547C"}),a("input",{id:"name",type:"text",required:!0,value:e.name,onChange:u("name"),placeholder:"\u600E\u4E48\u79F0\u547C\u4F60",className:Jr})]}),y("div",{children:[a("label",{htmlFor:"email",className:Zr,children:"\u90AE\u7BB1"}),a("input",{id:"email",type:"email",required:!0,value:e.email,onChange:u("email"),placeholder:"you@example.com",className:Jr})]})]}),y("div",{className:"mt-6",children:[a("label",{htmlFor:"subject",className:Zr,children:"\u4E3B\u9898"}),a("input",{id:"subject",type:"text",value:e.subject,onChange:u("subject"),placeholder:"\u60F3\u804A\u70B9\u4EC0\u4E48\uFF08\u53EF\u9009\uFF09",className:Jr})]}),y("div",{className:"mt-6",children:[a("label",{htmlFor:"message",className:Zr,children:"\u7559\u8A00\u5185\u5BB9"}),a("textarea",{id:"message",required:!0,rows:6,value:e.message,onChange:u("message"),placeholder:"\u60F3\u4E86\u89E3\u5E73\u53F0\u3001\u89E3\u51B3\u65B9\u6848\uFF0C\u6216\u4EFB\u4F55\u5EFA\u8BAE\u2026",className:`${Jr} resize-none`})]}),t==="success"&&y("div",{className:"mt-6 flex items-center gap-3 rounded-xl border border-emerald-200 bg-emerald-50 px-5 py-4 text-sm text-emerald-700",children:[a(xh,{className:"h-5 w-5 shrink-0"}),"\u7559\u8A00\u5DF2\u53D1\u9001\uFF0C\u6211\u4EEC\u4F1A\u5C3D\u5FEB\u56DE\u590D\u4F60\uFF01"]}),t==="error"&&y("div",{className:"mt-6 flex items-center gap-3 rounded-xl border border-rose-200 bg-rose-50 px-5 py-4 text-sm text-rose-600",children:[a(Oh,{className:"h-5 w-5 shrink-0"}),"\u53D1\u9001\u5931\u8D25\uFF0C\u8BF7\u7A0D\u540E\u518D\u8BD5\u6216\u76F4\u63A5\u90AE\u4EF6\u8054\u7CFB\u3002"]}),a("button",{type:"submit",disabled:t==="sending",className:"group mt-8 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-emerald-700 hover:shadow-xl hover:shadow-emerald-600/20 disabled:cursor-not-allowed disabled:opacity-60",children:t==="sending"?y(q,{children:[a(Ah,{className:"h-4 w-4 animate-spin"})," \u53D1\u9001\u4E2D\u2026"]}):y(q,{children:["\u53D1\u9001\u7559\u8A00",a(Th,{className:"h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"})]})})]})]})})]})}function Hd({onCapture:e,busy:n=!1,label:t="\u8BC6\u522B",allowUpload:r=!0}){const u=P.exports.useRef(null),l=P.exports.useRef(null),[i,o]=P.exports.useState(""),[s,c]=P.exports.useState(null);P.exports.useEffect(()=>{let F=!1;async function I(){try{const f=await navigator.mediaDevices.getUserMedia({video:{facingMode:"user",width:{ideal:640},height:{ideal:480}},audio:!1});if(F){f.getTracks().forEach(d=>d.stop());return}l.current=f,u.current&&(u.current.srcObject=f,u.current.play().catch(()=>{}))}catch{F||o(r?"\u65E0\u6CD5\u6253\u5F00\u6444\u50CF\u5934\uFF0C\u8BF7\u5141\u8BB8\u8BBF\u95EE\u6743\u9650\uFF0C\u6216\u6539\u7528\u4E0B\u65B9\u56FE\u7247\u4E0A\u4F20":"\u65E0\u6CD5\u6253\u5F00\u6444\u50CF\u5934\uFF0C\u8BF7\u5141\u8BB8\u6D4F\u89C8\u5668\u8BBF\u95EE\u6444\u50CF\u5934\u540E\u91CD\u8BD5")}}return I(),()=>{var f;F=!0,(f=l.current)==null||f.getTracks().forEach(d=>d.stop()),l.current=null}},[]);function h(){const F=u.current;if(!F||!F.videoWidth)return;const I=document.createElement("canvas"),f=512/F.videoWidth;I.width=512,I.height=Math.round(F.videoHeight*f),I.getContext("2d").drawImage(F,0,0,I.width,I.height),c(I.toDataURL("image/jpeg",.9))}function m(){c(null),o("")}function p(F){const[I,f]=F.split(","),d=atob(f),g=new Uint8Array(d.length);for(let E=0;E<d.length;E++)g[E]=d.charCodeAt(E);return new Blob([g],{type:"image/jpeg"})}function v(){s&&e(p(s))}function w(F){var f;const I=(f=F.target.files)==null?void 0:f[0];I&&e(I)}return y("div",{className:"space-y-3",children:[a("div",{className:"relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-foreground/5",children:s?a("img",{src:s,alt:"captured face",className:"h-full w-full object-cover"}):y(q,{children:[a("video",{ref:u,playsInline:!0,muted:!0,className:"h-full w-full object-cover"}),i&&a("div",{className:"absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-muted-foreground",children:i})]})}),a("div",{className:"flex items-center justify-center gap-3",children:s?y(q,{children:[y("button",{type:"button",onClick:m,className:"flex items-center gap-2 rounded-2xl border border-border px-4 py-3 text-sm transition-colors hover:bg-secondary",children:[a(Ph,{className:"h-4 w-4"})," \u91CD\u62CD"]}),y("button",{type:"button",disabled:n,onClick:v,className:"flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-60",children:[a(Oi,{className:"h-4 w-4"})," ",n?"\u8BC6\u522B\u4E2D\u2026":t]})]}):y(q,{children:[y("button",{type:"button",onClick:h,className:"flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90",children:[a(Oi,{className:"h-4 w-4"})," \u62CD\u7167"]}),r&&y("label",{className:"flex cursor-pointer items-center gap-2 rounded-2xl border border-border px-4 py-3 text-sm transition-colors hover:bg-secondary",children:[a(Lh,{className:"h-4 w-4"})," \u4E0A\u4F20\u56FE\u7247",a("input",{type:"file",accept:"image/*",className:"hidden",onChange:w})]})]})})]})}const lm=()=>y("svg",{xmlns:"http://www.w3.org/2000/svg",className:"h-5 w-5",viewBox:"0 0 48 48",children:[a("path",{fill:"#FFC107",d:"M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s12-5.373 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-2.641-.21-5.236-.611-7.743z"}),a("path",{fill:"#FF3D00",d:"M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"}),a("path",{fill:"#4CAF50",d:"M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"}),a("path",{fill:"#1976D2",d:"M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C42.022 35.026 44 30.038 44 24c0-2.641-.21-5.236-.611-7.743z"})]}),qr=({children:e})=>a("div",{className:"rounded-2xl border border-border bg-foreground/5 backdrop-blur-sm transition-colors focus-within:border-violet-400/70 focus-within:bg-violet-500/10",children:e}),Ul=({testimonial:e,delay:n})=>y("div",{className:`animate-testimonial ${n} flex items-start gap-3 rounded-3xl bg-card/40 dark:bg-zinc-800/40 backdrop-blur-xl border border-white/10 p-5 w-64`,children:[a("img",{src:e.avatarSrc,className:"h-10 w-10 object-cover rounded-2xl",alt:"avatar"}),y("div",{className:"text-sm leading-snug",children:[a("p",{className:"flex items-center gap-1 font-medium text-foreground",children:e.name}),a("p",{className:"text-muted-foreground",children:e.handle}),a("p",{className:"mt-1 text-foreground/80",children:e.text})]})]}),Qd=({mode:e="sign-in",title:n=a("span",{className:"font-light text-foreground tracking-tighter",children:"Welcome"}),description:t="Access your account and continue your journey with us",heroImageSrc:r,testimonials:u=[],onSignIn:l,onSignUp:i,onFaceLogin:o,faceBusy:s=!1,submitBusy:c=!1,enableFace:h=!1,onGoogleSignIn:m,onResetPassword:p,onCreateAccount:v,onSignInLink:w,backHref:F,backLabel:I,error:f})=>{const[d,g]=P.exports.useState(!1),[E,C]=P.exports.useState(!1),[A,S]=P.exports.useState(!1),x=e==="sign-up",N={title:"animate-delay-100",desc:"animate-delay-200",name:x?"animate-delay-300":"",email:x?"animate-delay-400":"animate-delay-300",password:x?"animate-delay-500":"animate-delay-400",confirm:x?"animate-delay-600":"",extras:x?"":"animate-delay-500",submit:x?"animate-delay-700":"animate-delay-600",divider:x?"animate-delay-800":"animate-delay-700",social:x?"animate-delay-900":"animate-delay-800",footer:x?"animate-delay-1000":"animate-delay-900"},T="w-full bg-transparent text-sm p-4 rounded-2xl focus:outline-none",U=te=>`flex-1 rounded-full py-2 transition-colors ${te?"bg-primary text-primary-foreground":"text-muted-foreground hover:text-foreground"}`;return y("div",{className:"h-[100dvh] flex flex-col md:flex-row font-geist w-[100dvw]",children:[a("section",{className:"flex-1 flex items-center justify-center p-8",children:a("div",{className:"w-full max-w-md",children:y("div",{className:"flex flex-col gap-6",children:[F&&a("a",{href:F,className:"animate-element text-sm text-muted-foreground transition-colors hover:text-foreground",children:I||"\u2190 Back"}),h&&y("div",{className:"animate-element flex rounded-full border border-border p-1 text-sm",children:[a("button",{type:"button",onClick:()=>S(!1),className:U(!A),children:"\u5BC6\u7801\u767B\u5F55"}),a("button",{type:"button",onClick:()=>S(!0),className:U(A),children:"\u5237\u8138\u767B\u5F55"})]}),A?y(q,{children:[y("div",{className:"animate-element animate-delay-100",children:[a("h1",{className:"text-4xl md:text-5xl font-semibold leading-tight",children:"\u5237\u8138\u767B\u5F55"}),a("p",{className:"mt-2 text-muted-foreground",children:"\u4FDD\u6301\u9762\u90E8\u6B63\u5BF9\u6444\u50CF\u5934\uFF0C\u5149\u7EBF\u5145\u8DB3\u5373\u53EF\u8BC6\u522B"})]}),a("div",{className:"animate-element animate-delay-200",children:a(Hd,{onCapture:o,busy:s,label:"\u767B\u5F55",allowUpload:!1})})]}):y(q,{children:[a("h1",{className:`animate-element ${N.title} text-4xl md:text-5xl font-semibold leading-tight`,children:n}),a("p",{className:`animate-element ${N.desc} text-muted-foreground`,children:t}),y("form",{className:"space-y-5",onSubmit:x?i:l,children:[x&&y("div",{className:`animate-element ${N.name}`,children:[a("label",{className:"text-sm font-medium text-muted-foreground",children:"Full Name"}),a(qr,{children:a("input",{name:"name",type:"text",required:!0,placeholder:"How should we address you",className:T})})]}),y("div",{className:`animate-element ${N.email}`,children:[a("label",{className:"text-sm font-medium text-muted-foreground",children:"Email Address"}),a(qr,{children:a("input",{name:"email",type:"email",required:!0,placeholder:"Enter your email address",className:T})})]}),y("div",{className:`animate-element ${N.password}`,children:[a("label",{className:"text-sm font-medium text-muted-foreground",children:"Password"}),a(qr,{children:y("div",{className:"relative",children:[a("input",{name:"password",type:d?"text":"password",required:!0,minLength:x?6:void 0,placeholder:x?"At least 6 characters":"Enter your password",className:`${T} pr-12`}),a("button",{type:"button",onClick:()=>g(!d),"aria-label":d?"Hide password":"Show password",className:"absolute inset-y-0 right-3 flex items-center",children:d?a(ls,{className:"w-5 h-5 text-muted-foreground hover:text-foreground transition-colors"}):a(Mi,{className:"w-5 h-5 text-muted-foreground hover:text-foreground transition-colors"})})]})})]}),x&&y("div",{className:`animate-element ${N.confirm}`,children:[a("label",{className:"text-sm font-medium text-muted-foreground",children:"Confirm Password"}),a(qr,{children:y("div",{className:"relative",children:[a("input",{name:"confirm",type:E?"text":"password",required:!0,placeholder:"Re-enter your password",className:`${T} pr-12`}),a("button",{type:"button",onClick:()=>C(!E),"aria-label":E?"Hide password":"Show password",className:"absolute inset-y-0 right-3 flex items-center",children:E?a(ls,{className:"w-5 h-5 text-muted-foreground hover:text-foreground transition-colors"}):a(Mi,{className:"w-5 h-5 text-muted-foreground hover:text-foreground transition-colors"})})]})})]}),!x&&y("div",{className:`animate-element ${N.extras} flex items-center justify-between text-sm`,children:[y("label",{className:"flex items-center gap-3 cursor-pointer",children:[a("input",{type:"checkbox",name:"rememberMe",className:"custom-checkbox"}),a("span",{className:"text-foreground/90",children:"Keep me signed in"})]}),a("a",{href:"#",onClick:te=>{te.preventDefault(),p==null||p()},className:"hover:underline text-violet-400 transition-colors",children:"Reset password"})]}),a("button",{type:"submit",disabled:c,className:`animate-element ${N.submit} w-full rounded-2xl bg-primary py-4 font-medium text-primary-foreground hover:bg-primary/90 transition-colors disabled:cursor-not-allowed disabled:opacity-60`,children:c?"\u8BF7\u7A0D\u5019\u2026":x?"Create Account":"Sign In"})]})]}),f&&a("div",{className:"animate-element rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-600",role:"alert",children:f}),!A&&m&&y(q,{children:[y("div",{className:`animate-element ${N.divider} relative flex items-center justify-center`,children:[a("span",{className:"w-full border-t border-border"}),a("span",{className:"px-4 text-sm text-muted-foreground bg-background absolute",children:"Or continue with"})]}),y("button",{onClick:m,className:`animate-element ${N.social} w-full flex items-center justify-center gap-3 border border-border rounded-2xl py-4 hover:bg-secondary transition-colors`,children:[a(lm,{}),"Continue with Google"]})]}),a("button",{type:"button",onClick:x?w:v,className:`animate-element ${N.footer} w-full rounded-2xl border border-border bg-background/55 py-3.5 text-sm font-medium text-foreground transition-all hover:border-primary/35 hover:bg-primary/5 hover:text-primary`,children:x?"\u5DF2\u6709\u8D26\u53F7\uFF0C\u8FD4\u56DE\u767B\u5F55":"\u8FD8\u6CA1\u6709\u8D26\u53F7\uFF1F\u7ACB\u5373\u6CE8\u518C"})]})})}),r&&y("section",{className:"hidden md:block flex-1 relative p-4",children:[a("div",{className:"animate-slide-right animate-delay-300 absolute inset-4 rounded-3xl bg-cover bg-center",style:{backgroundImage:`url(${r})`}}),u.length>0&&y("div",{className:"absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-4 px-8 w-full justify-center",children:[a(Ul,{testimonial:u[0],delay:"animate-delay-1000"}),u[1]&&a("div",{className:"hidden xl:flex",children:a(Ul,{testimonial:u[1],delay:"animate-delay-1200"})}),u[2]&&a("div",{className:"hidden 2xl:flex",children:a(Ul,{testimonial:u[2],delay:"animate-delay-1400"})})]})]})]})},im="/api",jo="ty_token",Gd="ty_user";function om(e){var n;return(n=localStorage.getItem(e))!=null?n:sessionStorage.getItem(e)}async function cl(e,{headers:n={},body:t,...r}={}){const u=t instanceof FormData,l=await fetch(`${im}${e}`,{...r,body:t,headers:{...u?{}:{"Content-Type":"application/json"},...n}}),i=await l.json().catch(()=>({}));if(!l.ok)throw new Error(i.message||`\u8BF7\u6C42\u5931\u8D25\uFF08${l.status}\uFF09`);return i}function am({name:e,email:n,password:t}){return cl("/auth/register",{method:"POST",body:JSON.stringify({name:e,email:n,password:t})})}function sm({email:e,password:n}){return cl("/auth/login",{method:"POST",body:JSON.stringify({email:e,password:n})})}function cm(e){const n=new FormData;return n.append("photo",e,"face.jpg"),cl("/auth/face-register",{method:"POST",body:n,headers:{Authorization:`Bearer ${fm()}`}})}function dm(e){const n=new FormData;return n.append("photo",e,"face.jpg"),cl("/auth/face-login",{method:"POST",body:n})}function $i({token:e,user:n},t=!0){pm();const r=t?localStorage:sessionStorage;r.setItem(jo,e),r.setItem(Gd,JSON.stringify(n))}function fm(){return om(jo)}function pm(){for(const e of[localStorage,sessionStorage])e.removeItem(jo),e.removeItem(Gd)}const ss="/platform/",hm=[{avatarSrc:"https://randomuser.me/api/portraits/women/57.jpg",name:"\u674E\u54F2",handle:"\u6E29\u5BA4\u79CD\u690D\u4E3B\u7BA1",text:"\u628A\u516D\u5EA7\u6E29\u5BA4\u88C5\u8FDB\u4E00\u4E2A\u6570\u5B57\u5B6A\u751F\u91CC\uFF0C\u5DE1\u573A\u548C\u67E5\u6570\u636E\u90FD\u7701\u4E86\u592A\u591A\u65F6\u95F4\u3002"},{avatarSrc:"https://randomuser.me/api/portraits/men/64.jpg",name:"\u738B\u5C9A",handle:"\u519C\u573A\u8FD0\u8425\u7ECF\u7406",text:"\u4E00\u53E5\u8BDD\u5C31\u80FD\u95EE\u51FA\u571F\u58E4\u6E7F\u5EA6\u8D8B\u52BF\uFF0C\u8FD8\u80FD\u76F4\u63A5\u7ED9\u704C\u6E89\u5EFA\u8BAE\uFF0C\u771F\u4E0D\u7528\u7FFB\u62A5\u8868\u4E86\u3002"},{avatarSrc:"https://randomuser.me/api/portraits/men/32.jpg",name:"\u9648\u65B9",handle:"\u519C\u4E1A\u6570\u5B57\u5316\u987E\u95EE",text:"\u5B9E\u666F\u548C 3D \u5171\u7528\u4E00\u5957\u5750\u6807\uFF0C\u7ED9\u5BA2\u6237\u6F14\u793A\u6548\u679C\u975E\u5E38\u76F4\u89C2\u3002"}];function mm(){const e=rl(),[n,t]=P.exports.useState(""),[r,u]=P.exports.useState(!1),[l,i]=P.exports.useState(!1);return a(Qd,{mode:"sign-in",title:"\u6B22\u8FCE\u56DE\u6765",description:"\u767B\u5F55\u4F60\u7684\u7530\u8A00\u8015\u667A\u8D26\u53F7\uFF0C\u7EE7\u7EED\u67E5\u770B\u4F60\u7684\u519C\u573A\u3002",heroImageSrc:"/assets/uc.png",testimonials:hm,error:n,submitBusy:l,enableFace:!0,faceBusy:r,onFaceLogin:async c=>{t(""),u(!0);try{const h=await dm(c);$i(h),window.location.href=ss}catch(h){t(h.message||"\u4EBA\u8138\u767B\u5F55\u5931\u8D25\uFF0C\u8BF7\u91CD\u8BD5"),u(!1)}},onSignIn:async c=>{c.preventDefault(),t("");const h=Object.fromEntries(new FormData(c.currentTarget).entries());i(!0);try{const m=await sm({email:h.email,password:h.password});$i(m,h.rememberMe==="on"),window.location.href=ss}catch(m){t(m.message||"\u767B\u5F55\u5931\u8D25\uFF0C\u8BF7\u7A0D\u540E\u518D\u8BD5"),i(!1)}},onResetPassword:()=>{window.location.href="mailto:support@tianyan.agri?subject=\u7530\u8A00\u8015\u667A\u8D26\u53F7\u5BC6\u7801\u91CD\u7F6E"},onCreateAccount:()=>e("/sign-up"),backHref:"/#/",backLabel:"\u8FD4\u56DE\u5B98\u7F51"})}const cs="/platform/",gm=[{avatarSrc:"https://randomuser.me/api/portraits/women/57.jpg",name:"\u674E\u54F2",handle:"\u6E29\u5BA4\u79CD\u690D\u4E3B\u7BA1",text:"\u628A\u516D\u5EA7\u6E29\u5BA4\u88C5\u8FDB\u4E00\u4E2A\u6570\u5B57\u5B6A\u751F\u91CC\uFF0C\u5DE1\u573A\u548C\u67E5\u6570\u636E\u90FD\u7701\u4E86\u592A\u591A\u65F6\u95F4\u3002"},{avatarSrc:"https://randomuser.me/api/portraits/men/64.jpg",name:"\u738B\u5C9A",handle:"\u519C\u573A\u8FD0\u8425\u7ECF\u7406",text:"\u4E00\u53E5\u8BDD\u5C31\u80FD\u95EE\u51FA\u571F\u58E4\u6E7F\u5EA6\u8D8B\u52BF\uFF0C\u8FD8\u80FD\u76F4\u63A5\u7ED9\u704C\u6E89\u5EFA\u8BAE\uFF0C\u771F\u4E0D\u7528\u7FFB\u62A5\u8868\u4E86\u3002"},{avatarSrc:"https://randomuser.me/api/portraits/men/32.jpg",name:"\u9648\u65B9",handle:"\u519C\u4E1A\u6570\u5B57\u5316\u987E\u95EE",text:"\u5B9E\u666F\u548C 3D \u5171\u7528\u4E00\u5957\u5750\u6807\uFF0C\u7ED9\u5BA2\u6237\u6F14\u793A\u6548\u679C\u975E\u5E38\u76F4\u89C2\u3002"}];function ym(){const e=rl(),[n,t]=P.exports.useState(""),[r,u]=P.exports.useState("form"),[l,i]=P.exports.useState(!1),[o,s]=P.exports.useState(!1),c=async m=>{m.preventDefault(),t("");const p=Object.fromEntries(new FormData(m.currentTarget).entries());if(p.password!==p.confirm){t("\u4E24\u6B21\u8F93\u5165\u7684\u5BC6\u7801\u4E0D\u4E00\u81F4\uFF0C\u8BF7\u91CD\u65B0\u8F93\u5165\u3002");return}s(!0);try{const v=await am({name:p.name,email:p.email,password:p.password});$i(v),u("face"),s(!1)}catch(v){t(v.message||"\u6CE8\u518C\u5931\u8D25\uFF0C\u8BF7\u7A0D\u540E\u518D\u8BD5"),s(!1)}},h=async m=>{t(""),i(!0);try{await cm(m),window.location.href=cs}catch(p){t(p.message||"\u4EBA\u8138\u7ED1\u5B9A\u5931\u8D25\uFF0C\u8BF7\u91CD\u8BD5"),i(!1)}};return r==="face"?a("div",{className:"flex min-h-[100dvh] items-center justify-center bg-page p-8",children:y("div",{className:"flex w-full max-w-md flex-col gap-6 text-center",children:[y("span",{className:"animate-element inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.22em] text-emerald-700",children:[a("span",{className:"h-1.5 w-1.5 rounded-full bg-emerald-500"}),"Face Binding"]}),a("h1",{className:"animate-element animate-delay-100 font-instrument-serif text-4xl text-ink md:text-5xl",children:"\u7ED1\u5B9A\u4EBA\u8138"}),a("p",{className:"animate-element animate-delay-200 font-light text-muted",children:"\u6CE8\u518C\u6210\u529F\uFF01\u7ED1\u5B9A\u4EBA\u8138\u540E\uFF0C\u4E0B\u6B21\u5728\u5B98\u7F51\u5373\u53EF\u76F4\u63A5\u5237\u8138\u767B\u5F55\u3002"}),a("div",{className:"animate-element animate-delay-300",children:a(Hd,{onCapture:h,busy:l,label:"\u7ED1\u5B9A\u5E76\u8FDB\u5165"})}),n&&a("p",{className:"animate-element rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-600",role:"alert",children:n}),y("button",{onClick:()=>{window.location.href=cs},className:"animate-element animate-delay-400 inline-flex items-center justify-center gap-1.5 text-sm font-light text-muted transition-colors hover:text-ink",children:["\u8DF3\u8FC7\uFF0C\u7A0D\u540E\u5728\u5E73\u53F0\u8BBE\u7F6E\u4E2D\u7ED1\u5B9A ",a(nn,{className:"h-4 w-4"})]})]})}):a(Qd,{mode:"sign-up",title:"\u521B\u5EFA\u8D26\u53F7",description:"\u6CE8\u518C\u7530\u8A00\u8015\u667A\uFF0C\u628A\u6570\u636E\u5E26\u8FDB\u4F60\u7684\u519C\u573A\u3002",heroImageSrc:"/assets/uc.png",testimonials:gm,error:n,submitBusy:o,onSignUp:c,onSignInLink:()=>e("/sign-in"),backHref:"/#/",backLabel:"\u8FD4\u56DE\u5B98\u7F51"})}const vm=[{slug:"user-manual",icon:Rd,eyebrow:"USER GUIDE",title:"\u7528\u6237\u4F7F\u7528\u624B\u518C",description:"\u4ECE\u8D26\u53F7\u767B\u5F55\u5230\u667A\u80FD\u95EE\u519C\u3001\u6570\u5B57\u5B6A\u751F\u3001\u8BBE\u5907\u63A7\u5236\u4E0E\u544A\u8B66\u5904\u7406\uFF0C\u6309\u5B9E\u9645\u64CD\u4F5C\u6D41\u7A0B\u5FEB\u901F\u4E0A\u624B\u3002",audience:"\u5E73\u53F0\u4F7F\u7528\u8005\u4E0E\u519C\u573A\u7BA1\u7406\u4EBA\u5458",reading:"\u7EA6 25 \u5206\u949F",tone:"bg-emerald-100 text-emerald-700"},{slug:"technical-manual",icon:bd,eyebrow:"TECHNICAL GUIDE",title:"\u6280\u672F\u8BF4\u660E\u624B\u518C",description:"\u6DB5\u76D6\u7CFB\u7EDF\u67B6\u6784\u3001\u5F00\u53D1\u73AF\u5883\u3001\u6570\u636E\u5E93\u3001\u63A5\u53E3\u3001\u524D\u540E\u7AEF\u6784\u5EFA\u4E0E\u751F\u4EA7\u90E8\u7F72\uFF0C\u5E2E\u52A9\u7814\u53D1\u4EBA\u5458\u7EF4\u62A4\u5E73\u53F0\u3002",audience:"\u5F00\u53D1\u3001\u6D4B\u8BD5\u4E0E\u8FD0\u7EF4\u4EBA\u5458",reading:"\u7EA6 35 \u5206\u949F",tone:"bg-sky-100 text-sky-700"}];function Em(){return y(q,{children:[a(Rt,{eyebrow:"Documentation",title:y(q,{children:["\u6587\u6863\u8BF4\u660E",a("br",{}),"\u4ECE\u4F7F\u7528\u5230\u5F00\u53D1\uFF0C\u4E00\u7AD9\u67E5\u9605"]}),subtitle:"\u9009\u62E9\u9002\u5408\u4F60\u7684\u624B\u518C\uFF0C\u4E86\u89E3\u7530\u8A00\u8015\u667A\u7684\u5B8C\u6574\u64CD\u4F5C\u6D41\u7A0B\u4E0E\u6280\u672F\u5B9E\u73B0\u3002\u6587\u6863\u5185\u5BB9\u968F\u9879\u76EE\u7248\u672C\u540C\u6B65\u66F4\u65B0\u3002"}),a("section",{className:"px-6 pb-24 md:px-12 lg:px-16",children:a("div",{className:"mx-auto grid max-w-5xl gap-6 md:grid-cols-2",children:vm.map(e=>{const n=e.icon;return y(on,{to:`/docs/${e.slug}`,className:"group flex min-h-[330px] flex-col rounded-[2rem] border border-slate-200 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-card-hover md:p-10",children:[a("div",{className:`flex h-14 w-14 items-center justify-center rounded-2xl ${e.tone}`,children:a(n,{className:"h-6 w-6",strokeWidth:1.6})}),a("p",{className:"mt-8 text-[11px] font-semibold tracking-[0.2em] text-emerald-700",children:e.eyebrow}),a("h2",{className:"mt-3 font-instrument-serif text-3xl text-ink",children:e.title}),a("p",{className:"mt-4 flex-1 text-sm font-light leading-7 text-muted",children:e.description}),y("div",{className:"mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-slate-100 pt-5 text-xs text-muted",children:[y("span",{className:"inline-flex items-center gap-1.5",children:[a(Wd,{className:"h-3.5 w-3.5"}),e.audience]}),y("span",{className:"inline-flex items-center gap-1.5",children:[a(Fh,{className:"h-3.5 w-3.5"}),e.reading]})]}),y("span",{className:"mt-5 inline-flex items-center gap-2 text-sm font-medium text-emerald-700",children:["\u9605\u8BFB\u6587\u6863 ",a(nn,{className:"h-4 w-4 transition-transform group-hover:translate-x-1"})]})]},e.slug)})})})]})}function Kd(){return{async:!1,baseUrl:null,breaks:!1,extensions:null,gfm:!0,headerIds:!0,headerPrefix:"",highlight:null,hooks:null,langPrefix:"language-",mangle:!0,pedantic:!1,renderer:null,sanitize:!1,sanitizer:null,silent:!1,smartypants:!1,tokenizer:null,walkTokens:null,xhtml:!1}}let ut=Kd();function xm(e){ut=e}const Yd=/[&<>"']/,Fm=new RegExp(Yd.source,"g"),Jd=/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,wm=new RegExp(Jd.source,"g"),km={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"},ds=e=>km[e];function pe(e,n){if(n){if(Yd.test(e))return e.replace(Fm,ds)}else if(Jd.test(e))return e.replace(wm,ds);return e}const Cm=/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig;function Zd(e){return e.replace(Cm,(n,t)=>(t=t.toLowerCase(),t==="colon"?":":t.charAt(0)==="#"?t.charAt(1)==="x"?String.fromCharCode(parseInt(t.substring(2),16)):String.fromCharCode(+t.substring(1)):""))}const Am=/(^|[^\[])\^/g;function W(e,n){e=typeof e=="string"?e:e.source,n=n||"";const t={replace:(r,u)=>(u=u.source||u,u=u.replace(Am,"$1"),e=e.replace(r,u),t),getRegex:()=>new RegExp(e,n)};return t}const Sm=/[^\w:]/g,Bm=/^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;function fs(e,n,t){if(e){let r;try{r=decodeURIComponent(Zd(t)).replace(Sm,"").toLowerCase()}catch{return null}if(r.indexOf("javascript:")===0||r.indexOf("vbscript:")===0||r.indexOf("data:")===0)return null}n&&!Bm.test(t)&&(t=Pm(n,t));try{t=encodeURI(t).replace(/%25/g,"%")}catch{return null}return t}const Xr={},Dm=/^[^:]+:\/*[^/]*$/,Nm=/^([^:]+:)[\s\S]*$/,_m=/^([^:]+:\/*[^/]*)[\s\S]*$/;function Pm(e,n){Xr[" "+e]||(Dm.test(e)?Xr[" "+e]=e+"/":Xr[" "+e]=fu(e,"/",!0)),e=Xr[" "+e];const t=e.indexOf(":")===-1;return n.substring(0,2)==="//"?t?n:e.replace(Nm,"$1")+n:n.charAt(0)==="/"?t?n:e.replace(_m,"$1")+n:e+n}const $u={exec:function(){}};function ps(e,n){const t=e.replace(/\|/g,(l,i,o)=>{let s=!1,c=i;for(;--c>=0&&o[c]==="\\";)s=!s;return s?"|":" |"}),r=t.split(/ \|/);let u=0;if(r[0].trim()||r.shift(),r.length>0&&!r[r.length-1].trim()&&r.pop(),r.length>n)r.splice(n);else for(;r.length<n;)r.push("");for(;u<r.length;u++)r[u]=r[u].trim().replace(/\\\|/g,"|");return r}function fu(e,n,t){const r=e.length;if(r===0)return"";let u=0;for(;u<r;){const l=e.charAt(r-u-1);if(l===n&&!t)u++;else if(l!==n&&t)u++;else break}return e.slice(0,r-u)}function Tm(e,n){if(e.indexOf(n[1])===-1)return-1;const t=e.length;let r=0,u=0;for(;u<t;u++)if(e[u]==="\\")u++;else if(e[u]===n[0])r++;else if(e[u]===n[1]&&(r--,r<0))return u;return-1}function Im(e){e&&e.sanitize&&!e.silent&&console.warn("marked(): sanitize and sanitizer parameters are deprecated since version 0.7.0, should not be used and will be removed in the future. Read more here: https://marked.js.org/#/USING_ADVANCED.md#options")}function hs(e,n){if(n<1)return"";let t="";for(;n>1;)n&1&&(t+=e),n>>=1,e+=e;return t+e}function ms(e,n,t,r){const u=n.href,l=n.title?pe(n.title):null,i=e[1].replace(/\\([\[\]])/g,"$1");if(e[0].charAt(0)!=="!"){r.state.inLink=!0;const o={type:"link",raw:t,href:u,title:l,text:i,tokens:r.inlineTokens(i)};return r.state.inLink=!1,o}return{type:"image",raw:t,href:u,title:l,text:pe(i)}}function Lm(e,n){const t=e.match(/^(\s+)(?:```)/);if(t===null)return n;const r=t[1];return n.split(`
+ */var ih=P.exports,oh=Symbol.for("react.element"),ah=Symbol.for("react.fragment"),sh=Object.prototype.hasOwnProperty,ch=ih.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,dh={key:!0,ref:!0,__self:!0,__source:!0};function Td(e,n,t){var r,u={},l=null,i=null;t!==void 0&&(l=""+t),n.key!==void 0&&(l=""+n.key),n.ref!==void 0&&(i=n.ref);for(r in n)sh.call(n,r)&&!dh.hasOwnProperty(r)&&(u[r]=n[r]);if(e&&e.defaultProps)for(r in n=e.defaultProps,n)u[r]===void 0&&(u[r]=n[r]);return{$$typeof:oh,type:e,key:l,ref:i,props:u,_owner:ch.current}}ll.Fragment=ah;ll.jsx=Td;ll.jsxs=Td;ul.exports=ll;const a=ul.exports.jsx,y=ul.exports.jsxs,q=ul.exports.Fragment;function Id({inverse:e=!1,compact:n=!1}){return y("span",{className:"inline-flex min-w-max items-center gap-3",children:[a("span",{className:`${n?"h-10 w-10":"h-11 w-11"} relative block shrink-0 overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-black/5`,children:a("img",{src:lh,alt:"","aria-hidden":"true",className:"absolute left-1/2 top-0 w-[138%] max-w-none -translate-x-1/2"})}),y("span",{className:"flex flex-col leading-none",children:[a("strong",{className:`${n?"text-base":"text-lg"} font-semibold tracking-tight ${e?"text-white":"text-ink"}`,children:"\u76D0\u7530\u4E30\u8BED"}),!n&&a("small",{className:`mt-1.5 text-[10px] font-light tracking-[0.12em] ${e?"text-white/65":"text-muted"}`,children:"\u667A\u6167\u519C\u4E1A AI \u5E73\u53F0"})]})]})}const Ml="ease-[cubic-bezier(0.76,0,0.24,1)]";function fh({open:e,onClose:n}){return P.exports.useEffect(()=>(document.body.style.overflow=e?"hidden":"",()=>{document.body.style.overflow=""}),[e]),y("div",{className:`fixed inset-0 z-50 transition-opacity duration-700 ${Ml} md:hidden ${e?"opacity-100":"pointer-events-none opacity-0"}`,children:[a("div",{className:"absolute inset-0 bg-white/95 backdrop-blur-xl"}),y("div",{className:"relative z-10 flex h-full flex-col px-6 py-5",children:[y("div",{className:"flex items-center justify-between",children:[a(Kt,{to:"/",onClick:n,"aria-label":"\u76D0\u7530\u4E30\u8BED\u9996\u9875",children:a(Id,{compact:!0})}),y("button",{type:"button","aria-label":"\u5173\u95ED\u83DC\u5355",onClick:n,className:"relative h-6 w-6 focus:outline-none",children:[a("span",{className:"absolute left-0 top-1/2 h-[2px] w-6 -translate-y-1/2 rounded-full bg-ink rotate-45"}),a("span",{className:"absolute left-0 top-1/2 h-[2px] w-6 -translate-y-1/2 rounded-full bg-ink -rotate-45"})]})]}),a("nav",{className:"flex flex-1 flex-col items-center justify-center",children:Mo.map((t,r)=>a(Kt,{to:t.to,onClick:n,className:({isActive:u})=>`w-full py-4 text-center border-b border-slate-100 text-4xl sm:text-5xl font-instrument-serif transition-all duration-700 ${Ml} hover:pl-4 ${u?"text-brand-dark":"text-ink"} ${e?"translate-y-0 opacity-100":"translate-y-8 opacity-0"}`,style:{transitionDelay:e?`${150+r*80}ms`:"0ms"},children:t.label},t.to))}),y("div",{className:`pb-10 transition-all duration-700 ${Ml} ${e?"translate-y-0 opacity-100":"translate-y-8 opacity-0"}`,style:{transitionDelay:e?"550ms":"0ms"},children:[y("div",{className:"mb-5 flex justify-center gap-8 text-sm font-light text-muted",children:[a(Kt,{to:"/sign-in",onClick:n,className:"transition-colors hover:text-ink",children:"\u767B\u5F55"}),a(Kt,{to:"/sign-up",onClick:n,className:"transition-colors hover:text-ink",children:"\u6CE8\u518C"})]}),a("a",{href:Ee,onClick:n,className:"block w-full rounded-full bg-emerald-600 py-4 text-center font-medium text-white",children:"\u8FDB\u5165\u5E73\u53F0"})]})]})]})}const $l="ease-[cubic-bezier(0.76,0,0.24,1)]";function ph(){const[e,n]=P.exports.useState(!1),{pathname:t}=Mn(),r=t==="/";return y(q,{children:[a("header",{className:`fixed inset-x-0 top-0 z-40 transition-colors duration-300 ${r?"bg-gradient-to-b from-black/60 to-transparent":"border-b border-slate-200/80 bg-white/90 backdrop-blur-xl"}`,children:y("nav",{className:"flex items-center justify-between px-6 py-5 md:px-12 md:py-6 lg:px-16",children:[y("div",{className:"flex items-center gap-10",children:[a(on,{to:"/",className:`font-semibold text-lg tracking-tight ${r?"text-white":"text-ink"}`,children:"\u76D0\u7530\u4E30\u8BED"}),a("div",{className:"hidden items-center gap-8 md:flex",children:Mo.map(u=>a(Kt,{to:u.to,className:({isActive:l})=>`text-sm font-light transition-colors duration-200 ${l?"font-medium text-brand-dark":r?"text-white/80 hover:text-white":"text-muted hover:text-ink"}`,children:u.label},u.to))})]}),y("div",{className:"flex items-center gap-6",children:[a(on,{to:"/sign-in",className:`hidden text-sm font-light transition-colors duration-200 md:inline-block ${r?"text-white/80 hover:text-white":"text-muted hover:text-ink"}`,children:"\u767B\u5F55"}),a("a",{href:Ee,className:`hidden rounded-full px-5 py-2 text-sm font-medium transition-all duration-200 md:inline-block ${r?"bg-white text-black hover:bg-white/90":"bg-emerald-600 text-white hover:bg-emerald-700"}`,children:"\u8FDB\u5165\u5E73\u53F0"}),y("button",{type:"button","aria-label":e?"\u5173\u95ED\u83DC\u5355":"\u6253\u5F00\u83DC\u5355","aria-expanded":e,onClick:()=>n(u=>!u),className:"relative h-6 w-6 focus:outline-none md:hidden",children:[a("span",{className:`absolute left-0 top-0 h-[2px] w-6 rounded-full transition-all duration-500 ${$l} ${r?"bg-white":"bg-ink"} ${e?"top-1/2 -translate-y-1/2 rotate-45":""}`}),a("span",{className:`absolute left-0 top-1/2 h-[2px] w-4 -translate-y-1/2 rounded-full transition-all duration-500 ${$l} ${r?"bg-white":"bg-ink"} ${e?"opacity-0":""}`}),a("span",{className:`absolute bottom-0 left-0 h-[2px] w-6 rounded-full transition-all duration-500 ${$l} ${r?"bg-white":"bg-ink"} ${e?"top-1/2 -translate-y-1/2 -rotate-45":""}`})]})]})]})}),a(fh,{open:e,onClose:()=>n(!1)})]})}const hh=[{label:"\u6570\u636E\u5DE5\u4F5C\u53F0",href:Ee},{label:"\u667A\u80FD\u95EE\u519C",href:rt},{label:"\u6570\u5B57\u5B6A\u751F",href:lr}];function mh(){return a("footer",{className:"site-footer",children:y("div",{className:"footer-shell",children:[y("div",{className:"footer-grid",children:[y("section",{className:"footer-brand",children:[a("div",{className:"footer-wordmark",children:a(Id,{})}),a("p",{children:"AI \u539F\u751F\u667A\u6167\u519C\u4E1A\u4E0E\u6570\u5B57\u5B6A\u751F\u5E73\u53F0\u3002\u4E0D\u7528\u5BFB\u627E\u6570\u636E\uFF0C\u76F4\u63A5\u8BE2\u95EE\u6570\u636E\uFF1B\u4E0D\u5FC5\u6D4F\u89C8\u62A5\u8868\uFF0C\u76F4\u63A5\u8FDB\u5165\u519C\u573A\u3002"}),y("a",{className:"footer-cta",href:Ee,children:["\u8FDB\u5165\u667A\u6167\u519C\u573A ",a("span",{children:"\u2197"})]})]}),y("nav",{className:"footer-column","aria-label":"\u5B98\u7F51\u5BFC\u822A",children:[a("h3",{children:"\u63A2\u7D22\u5B98\u7F51"}),a("ul",{children:Mo.map(e=>a("li",{children:a(on,{to:e.to,children:e.label})},e.to))})]}),y("nav",{className:"footer-column","aria-label":"\u5E73\u53F0\u5165\u53E3",children:[a("h3",{children:"\u4EA7\u54C1\u80FD\u529B"}),a("ul",{children:hh.map(e=>a("li",{children:a("a",{href:e.href,children:e.label})},e.href))})]}),y("nav",{className:"footer-column","aria-label":"\u8054\u7CFB\u4FE1\u606F",children:[a("h3",{children:"\u5173\u4E8E\u6211\u4EEC"}),y("ul",{children:[a("li",{children:a(on,{to:"/about",children:"\u5E73\u53F0\u613F\u666F"})}),a("li",{children:a(on,{to:"/solutions",children:"\u884C\u4E1A\u65B9\u6848"})}),a("li",{children:a(on,{to:"/contact",children:"\u8054\u7CFB\u6211\u4EEC"})})]})]})]}),y("div",{className:"footer-meta",children:[a("span",{children:"\xA9 2026 \u76D0\u7530\u4E30\u8BED"}),y("span",{className:"footer-status",children:[a("i",{}),"\u6240\u6709\u670D\u52A1\u8FD0\u884C\u6B63\u5E38"]}),a("span",{children:"\u667A\u6167\u519C\u4E1A \xB7 AI \u539F\u751F"})]})]})})}var gh={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};const yh=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),vh=(e,n)=>{const t=P.exports.forwardRef(({color:r="currentColor",size:u=24,strokeWidth:l=2,absoluteStrokeWidth:i,children:o,...s},c)=>P.exports.createElement("svg",{ref:c,...gh,width:u,height:u,stroke:r,strokeWidth:i?Number(l)*24/Number(u):l,className:`lucide lucide-${yh(e)}`,...s},[...n.map(([h,m])=>P.exports.createElement(h,m)),...(Array.isArray(o)?o:[o])||[]]));return t.displayName=`${e}`,t};var M=vh;const Eh=M("ArrowLeft",[["path",{d:"m12 19-7-7 7-7",key:"1l729n"}],["path",{d:"M19 12H5",key:"x3x0zl"}]]),nn=M("ArrowRight",[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]]),Ld=M("Bell",[["path",{d:"M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9",key:"1qo2s2"}],["path",{d:"M10.3 21a1.94 1.94 0 0 0 3.4 0",key:"qgo35s"}]]),Rd=M("BookOpen",[["path",{d:"M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z",key:"vv98re"}],["path",{d:"M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z",key:"1cyq3y"}]]),zd=M("Bot",[["rect",{width:"18",height:"10",x:"3",y:"11",rx:"2",key:"1ofdy3"}],["circle",{cx:"12",cy:"5",r:"2",key:"f1ur92"}],["path",{d:"M12 7v4",key:"xawao1"}],["line",{x1:"8",x2:"8",y1:"16",y2:"16",key:"h6x27f"}],["line",{x1:"16",x2:"16",y1:"16",y2:"16",key:"5lty7f"}]]),$o=M("Boxes",[["path",{d:"M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z",key:"lc1i9w"}],["path",{d:"m7 16.5-4.74-2.85",key:"1o9zyk"}],["path",{d:"m7 16.5 5-3",key:"va8pkn"}],["path",{d:"M7 16.5v5.17",key:"jnp8gn"}],["path",{d:"M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z",key:"8zsnat"}],["path",{d:"m17 16.5-5-3",key:"8arw3v"}],["path",{d:"m17 16.5 4.74-2.85",key:"8rfmw"}],["path",{d:"M17 16.5v5.17",key:"k6z78m"}],["path",{d:"M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z",key:"1xygjf"}],["path",{d:"M12 8 7.26 5.15",key:"1vbdud"}],["path",{d:"m12 8 4.74-2.85",key:"3rx089"}],["path",{d:"M12 13.5V8",key:"1io7kd"}]]),Oi=M("Camera",[["path",{d:"M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z",key:"1tc9qg"}],["circle",{cx:"12",cy:"13",r:"3",key:"1vg3eu"}]]),xh=M("CheckCircle2",[["path",{d:"M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z",key:"14v8dr"}],["path",{d:"m9 12 2 2 4-4",key:"dzmm74"}]]),Mu=M("Check",[["polyline",{points:"20 6 9 17 4 12",key:"10jjfj"}]]),Fh=M("Clock3",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 16.5 12",key:"1aq6pp"}]]),bd=M("Code2",[["path",{d:"m18 16 4-4-4-4",key:"1inbqp"}],["path",{d:"m6 8-4 4 4 4",key:"15zrgr"}],["path",{d:"m14.5 4-5 16",key:"e7oirm"}]]),Od=M("Cpu",[["rect",{x:"4",y:"4",width:"16",height:"16",rx:"2",key:"1vbyd7"}],["rect",{x:"9",y:"9",width:"6",height:"6",key:"o3kz5p"}],["path",{d:"M15 2v2",key:"13l42r"}],["path",{d:"M15 20v2",key:"15mkzm"}],["path",{d:"M2 15h2",key:"1gxd5l"}],["path",{d:"M2 9h2",key:"1bbxkp"}],["path",{d:"M20 15h2",key:"19e6y8"}],["path",{d:"M20 9h2",key:"19tzq7"}],["path",{d:"M9 2v2",key:"165o2o"}],["path",{d:"M9 20v2",key:"i2bqo8"}]]),Md=M("Droplets",[["path",{d:"M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z",key:"1ptgy4"}],["path",{d:"M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97",key:"1sl1rz"}]]),ls=M("EyeOff",[["path",{d:"M9.88 9.88a3 3 0 1 0 4.24 4.24",key:"1jxqfv"}],["path",{d:"M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68",key:"9wicm4"}],["path",{d:"M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61",key:"1jreej"}],["line",{x1:"2",x2:"22",y1:"2",y2:"22",key:"a6p6uj"}]]),Mi=M("Eye",[["path",{d:"M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z",key:"rwhkz3"}],["circle",{cx:"12",cy:"12",r:"3",key:"1v7zrd"}]]),wh=M("LayoutDashboard",[["rect",{width:"7",height:"9",x:"3",y:"3",rx:"1",key:"10lvy0"}],["rect",{width:"7",height:"5",x:"14",y:"3",rx:"1",key:"16une8"}],["rect",{width:"7",height:"9",x:"14",y:"12",rx:"1",key:"1hutg5"}],["rect",{width:"7",height:"5",x:"3",y:"16",rx:"1",key:"ldoo1y"}]]),kh=M("LayoutGrid",[["rect",{width:"7",height:"7",x:"3",y:"3",rx:"1",key:"1g98yp"}],["rect",{width:"7",height:"7",x:"14",y:"3",rx:"1",key:"6d4xhi"}],["rect",{width:"7",height:"7",x:"14",y:"14",rx:"1",key:"nxv5o0"}],["rect",{width:"7",height:"7",x:"3",y:"14",rx:"1",key:"1bb6yr"}]]),Ch=M("LineChart",[["path",{d:"M3 3v18h18",key:"1s2lah"}],["path",{d:"m19 9-5 5-4-4-3 3",key:"2osh9i"}]]),Ah=M("Loader2",[["path",{d:"M21 12a9 9 0 1 1-6.219-8.56",key:"13zald"}]]),Sh=M("Mail",[["rect",{width:"20",height:"16",x:"2",y:"4",rx:"2",key:"18n3k1"}],["path",{d:"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7",key:"1ocrg3"}]]),Bh=M("MapPin",[["path",{d:"M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z",key:"2oe9fu"}],["circle",{cx:"12",cy:"10",r:"3",key:"ilqhr7"}]]),Dh=M("Moon",[["path",{d:"M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z",key:"a7tn18"}]]),$d=M("Play",[["polygon",{points:"5 3 19 12 5 21 5 3",key:"191637"}]]),Nh=M("Quote",[["path",{d:"M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z",key:"4rm80e"}],["path",{d:"M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z",key:"10za9r"}]]),_h=M("Radar",[["path",{d:"M19.07 4.93A10 10 0 0 0 6.99 3.34",key:"z3du51"}],["path",{d:"M4 6h.01",key:"oypzma"}],["path",{d:"M2.29 9.62A10 10 0 1 0 21.31 8.35",key:"qzzz0"}],["path",{d:"M16.24 7.76A6 6 0 1 0 8.23 16.67",key:"1yjesh"}],["path",{d:"M12 18h.01",key:"mhygvu"}],["path",{d:"M17.99 11.66A6 6 0 0 1 15.77 16.67",key:"1u2y91"}],["circle",{cx:"12",cy:"12",r:"2",key:"1c9p78"}],["path",{d:"m13.41 10.59 5.66-5.66",key:"mhq4k0"}]]),Ph=M("RefreshCw",[["path",{d:"M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8",key:"v9h5vc"}],["path",{d:"M21 3v5h-5",key:"1q7to0"}],["path",{d:"M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16",key:"3uifl3"}],["path",{d:"M8 16H3v5",key:"1cv678"}]]),Th=M("Send",[["path",{d:"m22 2-7 20-4-9-9-4Z",key:"1q3vgg"}],["path",{d:"M22 2 11 13",key:"nzbqef"}]]),jd=M("Sprout",[["path",{d:"M7 20h10",key:"e6iznv"}],["path",{d:"M10 20c5.5-2.5.8-6.4 3-10",key:"161w41"}],["path",{d:"M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z",key:"9gtqwd"}],["path",{d:"M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z",key:"bkxnd2"}]]),Ih=M("Sun",[["circle",{cx:"12",cy:"12",r:"4",key:"4exip2"}],["path",{d:"M12 2v2",key:"tus03m"}],["path",{d:"M12 20v2",key:"1lh1kg"}],["path",{d:"m4.93 4.93 1.41 1.41",key:"149t6j"}],["path",{d:"m17.66 17.66 1.41 1.41",key:"ptbguv"}],["path",{d:"M2 12h2",key:"1t8f8n"}],["path",{d:"M20 12h2",key:"1q8mjw"}],["path",{d:"m6.34 17.66-1.41 1.41",key:"1m8zz5"}],["path",{d:"m19.07 4.93-1.41 1.41",key:"1shlcs"}]]),Ud=M("Thermometer",[["path",{d:"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z",key:"17jzev"}]]),Lh=M("Upload",[["path",{d:"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",key:"ih7n3h"}],["polyline",{points:"17 8 12 3 7 8",key:"t8dd8p"}],["line",{x1:"12",x2:"12",y1:"3",y2:"15",key:"widbto"}]]),Wd=M("Users",[["path",{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",key:"1yyitq"}],["circle",{cx:"9",cy:"7",r:"4",key:"nufk8"}],["path",{d:"M22 21v-2a4 4 0 0 0-3-3.87",key:"kshegd"}],["path",{d:"M16 3.13a4 4 0 0 1 0 7.75",key:"1da9ce"}]]),Rh=M("Video",[["path",{d:"m22 8-6 4 6 4V8Z",key:"50v9me"}],["rect",{width:"14",height:"12",x:"2",y:"6",rx:"2",ry:"2",key:"1rqjg6"}]]),zh=M("Workflow",[["rect",{width:"8",height:"8",x:"3",y:"3",rx:"2",key:"by2w9f"}],["path",{d:"M7 11v4a2 2 0 0 0 2 2h4",key:"xkn7yn"}],["rect",{width:"8",height:"8",x:"13",y:"13",rx:"2",key:"1cgmvn"}]]),bh=M("Wrench",[["path",{d:"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z",key:"cbrjhi"}]]),Oh=M("XCircle",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"m15 9-6 6",key:"1uzhvr"}],["path",{d:"m9 9 6 6",key:"z0biqf"}]]),Mh="/assets/home-hero.mp4";function is(){return y("section",{className:"relative h-screen w-full overflow-hidden",children:[y("div",{className:"absolute inset-0",children:[a("video",{autoPlay:!0,muted:!0,loop:!0,playsInline:!0,preload:"auto",poster:"/assets/farm-aerial.png",src:Mh,className:"h-full w-full object-cover"}),a("div",{className:"absolute inset-0 bg-gradient-to-b from-black/55 via-black/30 to-black/65"})]}),a("div",{className:"relative z-10 flex h-full flex-col",children:y("div",{className:"flex flex-1 flex-col items-center justify-center px-6 text-center -translate-y-10 sm:-translate-y-14",children:[y("h1",{className:"font-instrument-serif max-w-5xl text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1]",children:["AI \u539F\u751F ",a("span",{className:"italic",children:"\u4E0E"})," \u6570\u5B57\u5B6A\u751F",a("br",{}),"\u4E13\u4E3A ",a("span",{className:"italic",children:"\u73B0\u4EE3\u519C\u4E1A"})," \u6253\u9020",a("br",{}),"\u8BA9\u8015\u79CD\u66F4\u667A\u6167"]}),y("p",{className:"mt-4 max-w-md font-light text-sm text-white/70 leading-relaxed md:mt-5 md:text-base",children:["\u6211\u4EEC\u4EE5\u81EA\u7136\u8BED\u8A00\u4E3A\u5165\u53E3\uFF0C\u4EE5\u519C\u573A\u7A7A\u95F4\u4E3A\u4E3B\u754C\u9762",a("br",{className:"hidden sm:block"}),"\u7528\u6570\u636E\u3001\u89C6\u89C9\u8BC6\u522B\u4E0E AI\uFF0C\u8986\u76D6\u79CD\u690D\u5230\u519C\u4E8B\u6267\u884C"]}),y("div",{className:"mt-5 flex flex-col items-center gap-4 sm:flex-row md:mt-6",children:[y("a",{href:Ee,className:"group inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-medium text-black transition-colors duration-200 hover:bg-white/90",children:["\u8FDB\u5165\u5E73\u53F0",a(nn,{className:"h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"})]}),y("a",{href:rt,className:"inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-3 text-sm font-medium text-white transition-colors duration-200 hover:border-white/60 hover:bg-white/10",children:[a($d,{className:"h-4 w-4"}),"\u4F53\u9A8C\u667A\u80FD\u95EE\u519C"]})]})]})})]})}function Vd({children:e}){return y("span",{className:"inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.22em] text-emerald-700",children:[a("span",{className:"h-1.5 w-1.5 rounded-full bg-emerald-500"}),e]})}function Rt({eyebrow:e,title:n,subtitle:t,children:r}){return y("section",{className:"relative overflow-hidden px-6 pt-32 pb-14 md:px-12 md:pt-40 lg:px-16",children:[a("div",{className:"pointer-events-none absolute inset-x-0 top-0 h-[520px] bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.12),transparent_62%)]"}),a("div",{className:"pointer-events-none absolute -top-20 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-emerald-100/70 blur-[120px]"}),y("div",{className:"relative mx-auto max-w-4xl text-center",children:[a(Vd,{children:e}),a("h1",{className:"mt-6 font-instrument-serif text-ink text-4xl leading-[1.12] sm:text-5xl md:text-6xl",children:n}),t&&a("p",{className:"mx-auto mt-5 max-w-2xl font-light text-muted leading-relaxed md:text-lg",children:t}),r&&a("div",{className:"mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row",children:r})]})]})}const $h={emerald:"bg-emerald-100 text-emerald-700",amber:"bg-amber-100 text-amber-700",sky:"bg-sky-100 text-sky-700",violet:"bg-violet-100 text-violet-700",rose:"bg-rose-100 text-rose-700",teal:"bg-teal-100 text-teal-700"};function kr({icon:e,tone:n="emerald",className:t=""}){return a("div",{className:`flex h-11 w-11 items-center justify-center rounded-xl ${$h[n]} ${t}`,children:a(e,{className:"h-5 w-5",strokeWidth:1.8})})}function il({href:e,children:n,className:t=""}){return y("a",{href:e,className:`group inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-emerald-700 hover:shadow-xl hover:shadow-emerald-600/20 ${t}`,children:[n,a(nn,{className:"h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"})]})}function ol({href:e,children:n,className:t=""}){return a("a",{href:e,className:`inline-flex items-center gap-2 rounded-full border border-slate-300 px-8 py-3.5 text-sm font-medium text-ink transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 ${t}`,children:n})}function al({stats:e}){return a("section",{className:"bg-gradient-to-r from-emerald-50 via-sky-50 to-emerald-50 px-6 py-16 md:px-12 lg:px-16",children:a("div",{className:"mx-auto grid max-w-6xl grid-cols-2 gap-10 md:grid-cols-4",children:e.map(n=>y("div",{className:"text-center",children:[a("p",{className:"font-instrument-serif text-4xl text-emerald-600 md:text-5xl",children:n.value}),a("p",{className:"mt-2 text-[11px] font-medium uppercase tracking-widest text-muted",children:n.label})]},n.value))})})}function sl({title:e,subtitle:n,href:t,label:r}){return a("section",{className:"px-6 pb-24 md:px-12 lg:px-16",children:y("div",{className:"relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-gradient-to-br from-emerald-600 via-teal-600 to-emerald-700 px-8 py-16 text-center shadow-2xl shadow-emerald-600/20 md:py-20",children:[a("div",{className:"pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/10 blur-[90px]"}),a("div",{className:"pointer-events-none absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-white/10 blur-[90px]"}),a("h2",{className:"relative font-instrument-serif text-3xl text-white sm:text-4xl",children:e}),n&&a("p",{className:"relative mx-auto mt-4 max-w-xl font-light text-white/80 leading-relaxed",children:n}),a("div",{className:"relative mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row",children:y("a",{href:t,className:"group inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-emerald-700 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/10",children:[r,a(nn,{className:"h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"})]})})]})})}function en({eyebrow:e,title:n,subtitle:t}){return y("div",{className:"mx-auto max-w-2xl text-center",children:[a(Vd,{children:e}),a("h2",{className:"mt-4 font-instrument-serif text-3xl text-ink sm:text-4xl",children:n}),t&&a("p",{className:"mt-3 font-light text-muted leading-relaxed",children:t})]})}const jh=[{icon:wh,tone:"emerald",name:"\u6570\u636E\u5DE5\u4F5C\u53F0",desc:"\u4EE5\u5168\u5C4F\u519C\u573A\u822A\u62CD\u5B9E\u666F\u4E3A\u754C\u9762\uFF0C\u5730\u5757\u3001\u6E29\u5BA4\u3001\u6C14\u8C61\u7AD9\u3001\u84C4\u6C34\u6C60\u3001\u8BBE\u5907\u3001\u6444\u50CF\u5934\u4E0E\u673A\u5668\u4EBA\u5747\u53EF\u70B9\u9009\u4EA4\u4E92\u3002",points:["Hover \u9884\u89C8 \xB7 \u5355\u51FB\u8BE6\u60C5 \xB7 \u53CC\u51FB\u805A\u7126","2.5D \u5B9E\u666F\u4E0E 3D \u53CC\u89C6\u56FE\u5207\u6362","\u7A7A\u95F4\u5BF9\u8C61\u5B9E\u65F6\u72B6\u6001\u4E0E\u4E0A\u4E0B\u6587\u62BD\u5C49"],href:Ee,cta:"\u8FDB\u5165\u6570\u636E\u5DE5\u4F5C\u53F0"},{icon:zd,tone:"sky",name:"\u667A\u80FD\u95EE\u519C",desc:"\u4EE5\u81EA\u7136\u8BED\u8A00\u4E3A\u5165\u53E3\uFF0C\u4E00\u53E5\u8BDD\u83B7\u53D6\u6570\u636E\u3001\u56FE\u8868\u3001\u5206\u6790\u4E0E\u64CD\u4F5C\u5EFA\u8BAE\uFF0C\u4E0D\u518D\u9700\u8981\u5BFB\u627E\u83DC\u5355\u3002",points:["\u4E00\u53E5\u8BDD\u83B7\u53D6\u5B9E\u65F6\u6307\u6807","24 \u5C0F\u65F6\u8D8B\u52BF\u4E0E\u5F02\u5E38\u6807\u8BB0","AI \u5EFA\u8BAE\u4E0E\u884C\u52A8\u5165\u53E3"],href:rt,cta:"\u4F53\u9A8C\u667A\u80FD\u95EE\u519C"},{icon:$o,tone:"violet",name:"\u6570\u5B57\u5B6A\u751F",desc:"2.5D \u822A\u62CD\u5B9E\u666F\u4E0E Three.js WebGL \u6570\u5B57\u5B6A\u751F\u5171\u7528\u5BF9\u8C61 ID \u4E0E\u7A7A\u95F4\u5750\u6807\uFF0C\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u8EAB\u4E34\u5176\u5883\u3002",points:["\u5171\u7528\u7A7A\u95F4\u5750\u6807\u4E0E\u5BF9\u8C61 ID","\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u6A21\u5F0F","\u663C\u591C\u5149\u7167\u4E0E\u672C\u5730 3D \u516C\u6A21"],href:lr,cta:"\u8FDB\u5165\u6570\u5B57\u5B6A\u751F"}],Uh=[{icon:kh,tone:"sky",name:"\u603B\u89C8",desc:"\u56ED\u533A\u6574\u4F53\u72B6\u6001\u4E00\u5C4F\u5C3D\u89C8"},{icon:Rh,tone:"violet",name:"\u56ED\u533A\u76D1\u63A7",desc:"\u6E29\u5BA4\u4E0E\u79CD\u690D\u533A\u5B9E\u65F6\u753B\u9762"},{icon:Ud,tone:"amber",name:"\u73AF\u5883\u4E2D\u5FC3",desc:"\u4E94\u7C7B\u6307\u6807\u4E0E AI \u8C03\u63A7\u5EFA\u8BAE"},{icon:Od,tone:"teal",name:"\u8BBE\u5907\u7BA1\u7406",desc:"\u5730\u56FE\u9009\u673A\u3001\u5F00\u5173\u4E0E\u81EA\u68C0"},{icon:Md,tone:"emerald",name:"\u704C\u6E89\u63A7\u5236",desc:"\u5F00\u505C\u3001\u65F6\u957F\u4E0E\u8BA1\u5212\u4FDD\u5B58"},{icon:jd,tone:"emerald",name:"\u4F5C\u7269\u6863\u6848",desc:"\u957F\u52BF\u3001\u9636\u6BB5\u4E0E\u519C\u4E8B\u4EFB\u52A1"},{icon:Ld,tone:"rose",name:"\u544A\u8B66\u4E2D\u5FC3",desc:"\u5B9E\u65F6\u544A\u8B66\u4E0E\u5F02\u5E38\u5904\u7406"}],Wh=[{title:"\u7A7A\u95F4\u5BF9\u8C61\u4EA4\u4E92",desc:"\u5730\u5757\u3001\u6E29\u5BA4\u3001\u8BBE\u5907\u3001\u6444\u50CF\u5934\u4E0E\u673A\u5668\u4EBA\uFF0C\u70B9\u51FB\u5373\u83B7\u5F97\u4E0A\u4E0B\u6587\uFF0C\u65E0\u9700\u5728\u83DC\u5355\u91CC\u7FFB\u627E\u3002"},{title:"\u53CC\u89C6\u56FE\u8FDE\u7EED\u4F20\u9012",desc:"\u5B9E\u666F\u4E0E 3D \u5171\u7528\u5BF9\u8C61 ID \u4E0E\u5750\u6807\uFF0CHover\u3001\u70B9\u51FB\u3001\u805A\u7126\u72B6\u6001\u5728\u4E24\u79CD\u89C6\u89D2\u95F4\u65E0\u7F1D\u8854\u63A5\u3002"},{title:"\u6DB2\u6001\u73BB\u7483\u4E1A\u52A1 Dock",desc:"\u603B\u89C8\u3001\u76D1\u63A7\u3001\u73AF\u5883\u3001\u8BBE\u5907\u3001\u704C\u6E89\u3001\u4F5C\u7269\u3001\u544A\u8B66\u4E03\u4E2A\u5165\u53E3\uFF0C\u968F\u65F6\u5207\u6362\u5173\u6CE8\u7EF4\u5EA6\u3002"}],os="rounded-2xl border border-slate-200 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-card-hover";function Vh(){return y(q,{children:[y(Rt,{eyebrow:"Product",title:y(q,{children:["\u4EE5\u519C\u573A\u7A7A\u95F4\u4E3A\u4E3B\u754C\u9762",a("br",{}),"\u7684\u667A\u6167\u519C\u4E1A\u5DE5\u4F5C\u53F0"]}),subtitle:"\u4ECE\u6570\u636E\u5DE5\u4F5C\u53F0\u5230\u667A\u80FD\u95EE\u519C\uFF0C\u518D\u5230\u6570\u5B57\u5B6A\u751F\uFF0C\u4E09\u4E2A\u5165\u53E3\u8986\u76D6\u300C\u67E5\u770B \u2014 \u8BE2\u95EE \u2014 \u8EAB\u4E34\u5176\u5883\u300D\u7684\u5B8C\u6574\u4F53\u9A8C\u3002",children:[a(il,{href:Ee,children:"\u8FDB\u5165\u5E73\u53F0"}),y(ol,{href:rt,children:[a($d,{className:"h-4 w-4"})," \u4F53\u9A8C\u667A\u80FD\u95EE\u519C"]})]}),a("section",{className:"px-6 pb-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Core Products",title:"\u4E09\u5927\u6838\u5FC3\u4EA7\u54C1",subtitle:"\u8986\u76D6\u6570\u636E\u67E5\u770B\u3001\u81EA\u7136\u8BED\u8A00\u8BE2\u95EE\u4E0E\u4E09\u7EF4\u5DE1\u573A\u4E09\u79CD\u4F7F\u7528\u65B9\u5F0F\u3002"}),a("div",{className:"mt-12 grid gap-6 md:grid-cols-3",children:jh.map(e=>y("a",{href:e.href,className:`group ${os}`,children:[y("div",{className:"flex items-center justify-between",children:[a(kr,{icon:e.icon,tone:e.tone}),a(nn,{className:"h-5 w-5 text-slate-300 transition-all duration-300 group-hover:translate-x-1 group-hover:text-emerald-500"})]}),a("h3",{className:"mt-6 text-lg font-semibold text-ink",children:e.name}),a("p",{className:"mt-3 text-sm font-light text-muted leading-relaxed",children:e.desc}),a("ul",{className:"mt-5 space-y-2.5",children:e.points.map(n=>y("li",{className:"flex items-start gap-2 text-sm text-muted",children:[a(Mu,{className:"mt-0.5 h-4 w-4 shrink-0 text-emerald-600",strokeWidth:2.2}),n]},n))}),a("span",{className:"mt-7 inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600 transition-transform duration-200 group-hover:translate-x-1",children:e.cta})]},e.name))})]})}),a(al,{stats:[{value:"3",label:"\u6838\u5FC3\u4EA7\u54C1"},{value:"7",label:"\u4E1A\u52A1\u6A21\u5757"},{value:"10+",label:"\u7A7A\u95F4\u5BF9\u8C61"},{value:"2",label:"\u5B9E\u666F / 3D \u89C6\u89D2"}]}),a("section",{className:"bg-white px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2",children:[y("div",{children:[a(en,{eyebrow:"Why Workbench",title:"\u6570\u636E\u5DE5\u4F5C\u53F0\u4E3A\u4EC0\u4E48\u597D\u7528",subtitle:"\u4EE5\u7A7A\u95F4\u4E3A\u4E2D\u5FC3\u7684\u4EA4\u4E92\uFF0C\u53D6\u4EE3\u4F20\u7EDF\u300C\u5DE6\u4FA7\u83DC\u5355 + \u56FA\u5B9A\u56FE\u8868 + \u5927\u91CF\u5361\u7247\u300D\u7684\u540E\u53F0\u5F62\u6001\u3002"}),a("div",{className:"mt-10 space-y-6",children:Wh.map(e=>y("div",{className:"flex gap-4",children:[a("div",{className:"flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700",children:a(Mu,{className:"h-4 w-4",strokeWidth:2.2})}),y("div",{children:[a("h4",{className:"font-medium text-ink",children:e.title}),a("p",{className:"mt-1 text-sm font-light text-muted leading-relaxed",children:e.desc})]})]},e.title))}),y("a",{href:Ee,className:"mt-10 inline-flex items-center gap-2 rounded-full bg-ink px-7 py-3 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-900/20",children:["\u6253\u5F00\u6570\u636E\u5DE5\u4F5C\u53F0 ",a(nn,{className:"h-4 w-4"})]})]}),y("div",{className:"relative",children:[a("div",{className:"pointer-events-none absolute -inset-6 rounded-[2.5rem] bg-emerald-100/70 blur-2xl"}),y("div",{className:"relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card-hover",children:[y("div",{className:"flex items-center gap-2 border-b border-slate-100 bg-slate-50 px-4 py-3",children:[a("span",{className:"h-2.5 w-2.5 rounded-full bg-rose-400"}),a("span",{className:"h-2.5 w-2.5 rounded-full bg-amber-400"}),a("span",{className:"h-2.5 w-2.5 rounded-full bg-emerald-400"}),a("span",{className:"ml-3 h-5 max-w-xs flex-1 rounded-md bg-slate-200"})]}),y("div",{className:"grid grid-cols-[1.2fr_1fr] gap-3 bg-gradient-to-br from-emerald-50/80 to-slate-50 p-5",children:[y("div",{className:"space-y-2",children:[a("div",{className:"h-16 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 opacity-90"}),y("div",{className:"grid grid-cols-2 gap-2",children:[a("div",{className:"h-8 rounded-lg bg-emerald-200"}),a("div",{className:"h-8 rounded-lg bg-teal-200"})]}),a("div",{className:"h-8 rounded-lg bg-slate-200"}),y("div",{className:"grid grid-cols-3 gap-2",children:[a("div",{className:"h-14 rounded-lg border-2 border-emerald-300 bg-white"}),a("div",{className:"h-14 rounded-lg border-2 border-slate-200 bg-white"}),a("div",{className:"h-14 rounded-lg border-2 border-slate-200 bg-white"})]})]}),y("div",{className:"space-y-2",children:[a("div",{className:"h-5 w-2/3 rounded-md bg-emerald-300"}),a("div",{className:"h-3 w-full rounded-md bg-slate-200"}),a("div",{className:"h-3 w-5/6 rounded-md bg-slate-200"}),a("div",{className:"mt-3 h-10 rounded-lg bg-gradient-to-r from-emerald-500/80 to-teal-400/60"}),y("div",{className:"mt-2 flex gap-1.5",children:[a("div",{className:"h-10 w-10 rounded-full bg-emerald-200"}),a("div",{className:"h-10 w-10 rounded-full bg-teal-200"}),a("div",{className:"h-10 w-10 rounded-full bg-slate-300"})]})]})]})]})]})]})}),a("section",{className:"px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Seven Docks",title:"\u4E03\u5927\u4E1A\u52A1\u6A21\u5757",subtitle:"\u6DB2\u6001\u73BB\u7483 Dock \u7EDF\u4E00\u7EBF\u6027\u56FE\u6807\uFF0C\u4E00\u952E\u5207\u6362\u5173\u6CE8\u7EF4\u5EA6\u3002"}),a("div",{className:"mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",children:Uh.map(e=>a("div",{className:os,children:y("div",{className:"flex items-start gap-4",children:[a(kr,{icon:e.icon,tone:e.tone,className:"h-11 w-11 shrink-0 rounded-xl"}),y("div",{children:[a("h4",{className:"font-medium text-ink",children:e.name}),a("p",{className:"mt-1 text-xs font-light text-muted",children:e.desc})]})]})},e.name))})]})}),a(sl,{title:"\u73B0\u5728\u5C31\u8D70\u8FDB\u4F60\u7684\u519C\u573A",subtitle:"\u65E0\u9700\u5BFB\u627E\u6570\u636E\uFF0C\u76F4\u63A5\u8BE2\u95EE\u6570\u636E\uFF1B\u4E0D\u5FC5\u6D4F\u89C8\u62A5\u8868\uFF0C\u76F4\u63A5\u8FDB\u5165\u519C\u573A\u3002",href:Ee,label:"\u8FDB\u5165\u5E73\u53F0"})]})}const Hh=[{icon:Md,tone:"emerald",name:"\u667A\u80FD\u704C\u6E89\u63A7\u5236",desc:"\u53EF\u89C6\u5316\u6E20\u9053\u4E0E\u53EF\u63A7\u704C\u6E89\u5355\u5143\uFF0C\u652F\u6301\u4E00\u952E\u5F00\u505C\u3001\u704C\u6E89\u65F6\u957F\u8BBE\u5B9A\u4E0E\u8BA1\u5212\u4FDD\u5B58\uFF0C\u7CBE\u51C6\u7528\u6C34\u3001\u4E0D\u6D6A\u8D39\u4E00\u6EF4\u3002"},{icon:Ud,tone:"amber",name:"\u73AF\u5883\u4E2D\u5FC3",desc:"\u6E29\u5EA6\u3001\u7A7A\u6C14\u6E7F\u5EA6\u3001\u571F\u58E4\u6E7F\u5EA6\u3001\u5149\u7167\u4E0E CO\u2082 \u5B9E\u65F6\u76D1\u6D4B\uFF0C24 \u5C0F\u65F6\u8D8B\u52BF\u5206\u6790\uFF0C\u9644 AI \u8C03\u63A7\u5EFA\u8BAE\u3002"},{icon:Od,tone:"teal",name:"\u8BBE\u5907\u7BA1\u7406",desc:"\u5730\u56FE\u9009\u673A\u3001\u5728\u7EBF\u4E0E\u5F02\u5E38\u72B6\u6001\u8BC6\u522B\uFF0C\u652F\u6301\u8BBE\u5907\u5F00\u5173\u3001\u81EA\u68C0\u4E0E\u53C2\u6570\u914D\u7F6E\u5165\u53E3\u3002"},{icon:Oi,tone:"violet",name:"\u56ED\u533A\u76D1\u63A7",desc:"\u9009\u62E9\u4EFB\u610F\u6E29\u5BA4\u6216\u79CD\u690D\u533A\u6253\u5F00\u5B9E\u65F6\u753B\u9762\uFF0C\u6444\u50CF\u5934\u5207\u6362\u3001AI \u8BC6\u522B\uFF08\u4EBA\u5458\u4E0E\u4F5C\u7269\uFF09\u4E0E\u622A\u56FE\u5F55\u50CF\u3002"},{icon:jd,tone:"emerald",name:"\u4F5C\u7269\u6863\u6848",desc:"\u6309\u6E29\u5BA4\u6216\u5730\u5757\u5C55\u793A\u957F\u52BF\u3001\u751F\u80B2\u9636\u6BB5\u3001\u75C5\u866B\u5BB3\u98CE\u9669\u4E0E\u519C\u4E8B\u4EFB\u52A1\uFF0C\u79CD\u690D\u5168\u7A0B\u53EF\u8FFD\u6EAF\u3002"},{icon:Ld,tone:"rose",name:"\u544A\u8B66\u4E2D\u5FC3",desc:"\u5B9E\u65F6\u544A\u8B66\u4E8B\u4EF6\u4E0E\u5F02\u5E38\u5B9A\u4F4D\uFF0C\u7A7A\u95F4\u5BF9\u8C61\u6807\u6CE8\u98CE\u9669\u70B9\uFF0C\u5FEB\u901F\u54CD\u5E94\u4E0D\u9057\u6F0F\u3002"}],Qh=[{icon:_h,step:"01",title:"\u611F\u77E5\u76D1\u6D4B",desc:"\u73AF\u5883\u4F20\u611F\u5668\u3001\u8BBE\u5907\u72B6\u6001\u4E0E\u76D1\u63A7\u753B\u9762\u63A5\u5165\uFF0C\u5F62\u6210\u4E00\u5F20\u4F1A\u8BF4\u8BDD\u7684\u519C\u573A\u6570\u5B57\u5E95\u56FE\u3002",tone:"emerald"},{icon:Ch,step:"02",title:"AI \u8BCA\u65AD",desc:"24 \u5C0F\u65F6\u8D8B\u52BF\u5206\u6790\u3001\u5F02\u5E38\u6807\u8BB0\u4E0E AI \u8C03\u63A7\u5EFA\u8BAE\uFF0C\u628A\u6570\u636E\u53D8\u6210\u53EF\u6267\u884C\u7684\u7ED3\u8BBA\u3002",tone:"amber"},{icon:zh,step:"03",title:"\u519C\u4E8B\u6267\u884C",desc:"\u704C\u6E89\u5F00\u505C\u3001\u8BBE\u5907\u5F00\u5173\u4E0E\u519C\u4E8B\u4EFB\u52A1\u4E00\u952E\u4E0B\u53D1\uFF0C\u8BA9\u7ED3\u8BBA\u771F\u6B63\u843D\u5730\u5230\u7530\u95F4\u3002",tone:"sky"}],Gh=[{title:"\u7A7A\u95F4\u5373\u754C\u9762",desc:"\u5728\u519C\u573A\u5730\u56FE\u4E0A\u76F4\u63A5\u70B9\u9009\u4E0E\u64CD\u4F5C\uFF0C\u544A\u522B\u590D\u6742\u7684\u62A5\u8868\u8FF7\u5BAB\u3002"},{title:"\u53CC\u89C6\u56FE\u5B6A\u751F",desc:"2.5D \u5B9E\u666F\u4E0E 3D \u6570\u5B57\u5B6A\u751F\u5171\u4EAB\u4E00\u5957\u5750\u6807\u4E0E\u5BF9\u8C61\u3002"},{title:"AI \u539F\u751F\u5165\u53E3",desc:"\u81EA\u7136\u8BED\u8A00\u76F4\u8FBE\u6570\u636E\u3001\u5206\u6790\u4E0E\u884C\u52A8\uFF0C\u65E0\u9700\u5B66\u4E60\u6210\u672C\u3002"},{title:"\u56E2\u961F\u534F\u4F5C\u5F00\u53D1",desc:"\u6309\u6A21\u5757\u5206\u5DE5\uFF0C\u5B98\u7F51\u3001\u5DE5\u4F5C\u53F0\u3001\u667A\u80FD\u95EE\u519C\u5404\u81EA\u6F14\u8FDB\u3001\u968F\u65F6\u62FC\u88C5\u3002"}],jl="rounded-2xl border border-slate-200 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-card-hover";function Kh(){return y(q,{children:[y(Rt,{eyebrow:"Solutions",title:y(q,{children:["\u4ECE\u79CD\u690D\u5230\u519C\u4E8B\u6267\u884C\u7684",a("br",{}),"\u5168\u94FE\u8DEF\u6570\u5B57\u5316"]}),subtitle:"\u56F4\u7ED5\u6E29\u5BA4\u7684\u704C\u6E89\u3001\u73AF\u5883\u3001\u8BBE\u5907\u3001\u76D1\u63A7\u4E0E\u519C\u4E8B\uFF0C\u63D0\u4F9B\u4E00\u5957\u53EF\u843D\u5730\u7684\u667A\u6167\u519C\u4E1A\u89E3\u51B3\u65B9\u6848\u3002",children:[a(il,{href:Ee,children:"\u8FDB\u5165\u5E73\u53F0\u4F53\u9A8C"}),a(ol,{href:rt,children:"\u54A8\u8BE2\u667A\u80FD\u95EE\u519C"})]}),a("section",{className:"px-6 pb-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Six Solutions",title:"\u516D\u5927\u89E3\u51B3\u65B9\u6848",subtitle:"\u4ECE\u6C34\u3001\u5149\u3001\u6E29\u3001\u6C14\u5230\u8BBE\u5907\u4E0E\u519C\u4E8B\uFF0C\u8986\u76D6\u6E29\u5BA4\u79CD\u690D\u7684\u6BCF\u4E00\u4E2A\u73AF\u8282\u3002"}),a("div",{className:"mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3",children:Hh.map((e,n)=>y("div",{className:`group ${jl}`,children:[y("div",{className:"flex items-center justify-between",children:[a(kr,{icon:e.icon,tone:e.tone}),y("span",{className:"font-instrument-serif text-3xl text-slate-200 transition-colors duration-300 group-hover:text-emerald-300",children:["0",n+1]})]}),a("h3",{className:"mt-6 text-lg font-semibold text-ink",children:e.name}),a("p",{className:"mt-3 text-sm font-light text-muted leading-relaxed",children:e.desc}),y("span",{className:"mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100",children:["\u4E86\u89E3\u8BE6\u60C5 ",a(nn,{className:"h-4 w-4"})]})]},e.name))})]})}),a(al,{stats:[{value:"6",label:"\u89E3\u51B3\u65B9\u6848"},{value:"5",label:"\u7C7B\u73AF\u5883\u6307\u6807"},{value:"7\xD724",label:"\u5B9E\u65F6\u76D1\u6D4B"},{value:"25",label:"FPS \u667A\u80FD\u5206\u6790"}]}),a("section",{className:"bg-white px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"How It Works",title:"\u611F\u77E5 \u2014 \u8BCA\u65AD \u2014 \u6267\u884C",subtitle:"\u4E00\u5957\u4ECE\u6570\u636E\u5230\u884C\u52A8\u7684\u5B8C\u6574\u95ED\u73AF\uFF0C\u8BA9\u79CD\u690D\u51B3\u7B56\u6709\u636E\u53EF\u4F9D\u3002"}),a("div",{className:"mt-14 grid gap-8 md:grid-cols-3",children:Qh.map(e=>y("div",{className:`relative ${jl}`,children:[y("div",{className:"flex items-center justify-between",children:[a(kr,{icon:e.icon,tone:e.tone,className:"h-14 w-14 rounded-2xl"}),a("span",{className:"font-instrument-serif text-5xl text-slate-100",children:e.step})]}),a("h3",{className:"mt-6 text-lg font-semibold text-ink",children:e.title}),a("p",{className:"mt-3 text-sm font-light text-muted leading-relaxed",children:e.desc})]},e.step))})]})}),a("section",{className:"px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Why Us",title:"\u4E3A\u4EC0\u4E48\u9009\u62E9\u76D0\u7530\u4E30\u8BED",subtitle:"\u4E0D\u662F\u53C8\u4E00\u4E2A\u519C\u4E1A\u62A5\u8868\u7CFB\u7EDF\uFF0C\u800C\u662F\u4E00\u5957\u4EE5\u7A7A\u95F4\u548C\u81EA\u7136\u8BED\u8A00\u4E3A\u4E2D\u5FC3\u7684 AI \u5DE5\u4F5C\u7A7A\u95F4\u3002"}),a("div",{className:"mt-12 grid gap-6 sm:grid-cols-2",children:Gh.map(e=>a("div",{className:jl,children:y("div",{className:"flex gap-4",children:[a("div",{className:"flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700",children:a(Mu,{className:"h-4 w-4",strokeWidth:2.2})}),y("div",{children:[a("h4",{className:"font-medium text-ink",children:e.title}),a("p",{className:"mt-1 text-sm font-light text-muted leading-relaxed",children:e.desc})]})]})},e.title))})]})}),a(sl,{title:"\u5F00\u59CB\u6784\u5EFA\u4F60\u7684\u6570\u5B57\u5316\u519C\u573A",subtitle:"\u704C\u6E89\u3001\u73AF\u5883\u3001\u8BBE\u5907\u3001\u76D1\u63A7\u4E0E\u519C\u4E8B\uFF0C\u4ECE\u4ECA\u5929\u8D77\u90FD\u5728\u4E00\u4E2A\u5DE5\u4F5C\u53F0\u91CC\u5B8C\u6210\u3002",href:Ee,label:"\u8FDB\u5165\u5E73\u53F0"})]})}const Yh=[{icon:$o,tone:"emerald",title:"\u672C\u5730 GLB \u516C\u6A21",desc:"8 \u4E2A CC0 \u519C\u4E1A\u516C\u6A21\u7531\u672C\u5730\u52A0\u8F7D\uFF0C\u6A21\u578B\u6309\u5305\u56F4\u76D2\u81EA\u52A8\u5F52\u4E00\u5316\u5E76\u843D\u5230\u5730\u9762\uFF0C\u66FF\u6362\u6A21\u578B\u53EA\u9700\u6539\u8D44\u6E90\u5730\u5740\u4E0E\u5750\u6807\u3002"},{icon:Ih,tone:"amber",title:"\u663C\u591C\u5149\u7167\u540C\u6B65",desc:"3D \u5929\u7A7A\u6309\u672C\u5730\u771F\u5B9E\u65F6\u95F4\u540C\u6B65\u663C\u591C\u5149\u7167\u3001\u6668\u660F\u8272\u6E29\u3001\u661F\u7A7A\u4E0E\u7F13\u6162\u79FB\u52A8\u7684\u4E91\u5C42\uFF0C\u5149\u5F71\u771F\u5B9E\u53EF\u4FE1\u3002"},{icon:Mi,tone:"sky",title:"\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A",desc:"WASD \u79FB\u52A8\u3001\u9F20\u6807\u63A7\u5236\u89C6\u89D2\u3001Shift \u52A0\u901F\u3001\u51C6\u661F\u9009\u62E9\u8BBE\u65BD\u3001Esc \u9000\u51FA\uFF1B\u6E29\u5BA4\u4E0E\u8BBE\u5907\u5E26\u78B0\u649E\u7BB1\u5E76\u652F\u6301\u8D34\u8FB9\u6ED1\u52A8\u3002"},{icon:Bh,tone:"violet",title:"\u516D\u5EA7\u6E29\u5BA4",desc:"\u6309\u4E1A\u52A1\u6570\u636E\u5206\u522B\u79CD\u690D\u756A\u8304\u3001\u8349\u8393\u3001\u9EC4\u74DC\u3001\u80B2\u82D7\u3001\u53F6\u83DC\u4E0E\u751F\u6001\u756A\u8304\uFF0C\u914D\u6709\u72EC\u7ACB\u98CE\u673A\u3001\u63A7\u5236\u7BB1\u3001\u72B6\u6001\u5C4F\u4E0E\u6307\u793A\u706F\u3002"},{icon:Dh,tone:"teal",title:"\u53CC\u89C6\u56FE\u7EDF\u4E00\u5750\u6807",desc:"\u5B9E\u666F\u4E0E 3D \u5171\u7528\u5BF9\u8C61 ID \u4E0E\u7A7A\u95F4\u5750\u6807\uFF0CHover \u9884\u89C8\u3001\u5355\u51FB\u8BE6\u60C5\u3001\u53CC\u51FB\u805A\u7126\u72B6\u6001\u53EF\u8FDE\u7EED\u4F20\u9012\u3002"},{icon:bh,tone:"rose",title:"\u6027\u80FD\u4F18\u5316",desc:"\u91CD\u590D\u4F5C\u7269\u4EE5 InstancedMesh \u6279\u91CF\u6E32\u67D3\uFF0C\u72EC\u7ACB\u50CF\u7D20\u6BD4\u3001\u9759\u6001\u9634\u5F71\u6309\u9700\u5237\u65B0\uFF0C\u56ED\u533A\u9053\u8DEF\u8F7B\u91CF\u5316\u7EC6\u8282\u3002"}],Jh=["W","A","S","D","Shift","Esc"],Zh=["\u6570\u5B57\u952E 1\u20137 \u5FEB\u901F\u5207\u6362\u603B\u89C8\u3001\u76D1\u63A7\u3001\u73AF\u5883\u3001\u8BBE\u5907\u3001\u704C\u6E89\u3001\u4F5C\u7269\u4E0E\u544A\u8B66 Dock","\u6E29\u5BA4\u95E8\u53E3\u8BBE\u7F6E\u5BF9\u5E94\u4F5C\u7269\u7684\u5361\u901A\u5706\u5F62\u5FBD\u7AE0\uFF0C\u8FD1\u666F\u5373\u53EF\u8BC6\u522B\u68DA\u5185\u54C1\u79CD","\u573A\u666F\u542B\u53EF\u4EA4\u4E92\u7684\u6E20\u9053\u95F8\u95E8\u3001\u63A7\u5236\u5C4F\u3001\u589E\u538B\u6CF5\u7EC4\u4E0E\u8FD0\u884C\u706F","\u9E1F\u77B0\u89C6\u89D2\u652F\u6301\u62D6\u52A8\u65CB\u8F6C\u3001\u6EDA\u8F6E\u7F29\u653E\u4E0E\u5BF9\u8C61\u70B9\u51FB"],qh="rounded-2xl border border-slate-200 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-card-hover";function Xh(){return y(q,{children:[y(Rt,{eyebrow:"Digital Twin",title:y(q,{children:["\u4E00\u4E2A\u519C\u573A\uFF0C\u4E24\u79CD\u89C6\u89D2",a("br",{}),"\u5B9E\u666F\u4E0E\u6570\u5B57\u5B6A\u751F"]}),subtitle:"2.5D \u822A\u62CD\u5B9E\u666F\u4E0E Three.js WebGL \u6570\u5B57\u5B6A\u751F\u5171\u7528\u5BF9\u8C61 ID \u4E0E\u7A7A\u95F4\u5750\u6807\uFF0C\u4EA4\u4E92\u72B6\u6001\u5728\u4E24\u79CD\u89C6\u89D2\u95F4\u8FDE\u7EED\u4F20\u9012\u3002",children:[a(il,{href:lr,children:"\u8FDB\u5165\u6570\u5B57\u5B6A\u751F"}),a(ol,{href:Ee,children:"\u8FD4\u56DE\u5B9E\u666F\u5DE5\u4F5C\u53F0"})]}),a("section",{className:"px-6 pb-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Capabilities",title:"\u6570\u5B57\u5B6A\u751F\u80FD\u529B",subtitle:"\u4ECE\u5EFA\u6A21\u5230\u6E32\u67D3\uFF0C\u4ECE\u89C6\u89D2\u5230\u4EA4\u4E92\uFF0C\u6784\u5EFA\u53EF\u5B9E\u65F6\u4E92\u52A8\u7684\u865A\u62DF\u519C\u573A\u3002"}),a("div",{className:"mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3",children:Yh.map(e=>y("div",{className:qh,children:[a(kr,{icon:e.icon,tone:e.tone}),a("h3",{className:"mt-6 text-lg font-semibold text-ink",children:e.title}),a("p",{className:"mt-3 text-sm font-light text-muted leading-relaxed",children:e.desc})]},e.title))})]})}),a("section",{className:"bg-white px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2",children:[a("div",{children:y("div",{className:"relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-emerald-900 via-teal-900 to-emerald-950 shadow-card-hover",children:[y("div",{className:"flex items-center gap-2 border-b border-white/10 px-4 py-3",children:[a("span",{className:"h-2.5 w-2.5 rounded-full bg-rose-400"}),a("span",{className:"h-2.5 w-2.5 rounded-full bg-amber-400"}),a("span",{className:"h-2.5 w-2.5 rounded-full bg-emerald-400"}),a("span",{className:"ml-3 h-5 max-w-[140px] flex-1 rounded-md bg-white/10"})]}),y("div",{className:"relative h-72",children:[a("div",{className:"absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#2f9e63_0%,transparent_55%),linear-gradient(180deg,#0d3322,#071a11)]"}),a("div",{className:"absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#071a11] to-transparent"}),a("div",{className:"absolute left-8 top-8 grid grid-cols-3 gap-2 opacity-90",children:[0,1,2,3,4,5].map(e=>a("div",{className:"h-6 w-10 rounded-t-md bg-emerald-400/60"},e))}),a("div",{className:"absolute bottom-6 left-1/2 flex -translate-x-1/2 gap-1",children:[0,1,2].map(e=>a("div",{className:"h-2 w-12 rounded-full bg-emerald-400/40"},e))}),a("div",{className:"absolute right-8 top-6 h-2 w-14 rounded-full bg-emerald-400/60"}),y("div",{className:"absolute bottom-8 right-8 flex items-center gap-2 rounded-full bg-black/40 px-3 py-1.5 backdrop-blur",children:[a("span",{className:"h-2 w-2 animate-pulse rounded-full bg-emerald-400"}),a("span",{className:"text-[10px] text-white/80",children:"3D \u573A\u666F \xB7 \u5B9E\u65F6\u6E32\u67D3"})]})]})]})}),y("div",{children:[a(en,{eyebrow:"First Person Tour",title:"\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\uFF0C\u50CF\u8D70\u8FDB\u519C\u573A\u4E00\u6837",subtitle:"\u5728 3D \u573A\u666F\u91CC\u81EA\u7531\u7A7F\u884C\uFF0C\u7528\u51C6\u661F\u9009\u62E9\u6E29\u5BA4\u4E0E\u8BBE\u5907\uFF0C\u50CF\u5B9E\u5730\u5DE1\u68C0\u4E00\u6837\u67E5\u770B\u6BCF\u4E00\u5904\u8BBE\u65BD\u3002"}),a("div",{className:"mt-6 flex flex-wrap gap-2.5",children:Jh.map(e=>a("kbd",{className:"rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-emerald-700 shadow-sm",children:e},e))}),a("ul",{className:"mt-8 space-y-3.5",children:Zh.map(e=>y("li",{className:"flex items-start gap-3 text-sm text-muted",children:[a("span",{className:"mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700",children:a(Mu,{className:"h-3 w-3",strokeWidth:2.4})}),e]},e))}),y("a",{href:lr,className:"mt-8 inline-flex items-center gap-2 rounded-full bg-ink px-7 py-3 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-900/20",children:["\u5F00\u59CB\u5DE1\u573A ",a(nn,{className:"h-4 w-4"})]})]})]})}),a(al,{stats:[{value:"8",label:"\u672C\u5730 GLB \u516C\u6A21"},{value:"6",label:"\u5EA7\u6E29\u5BA4\u4F5C\u7269"},{value:"60",label:"FPS \u573A\u666F\u5237\u65B0"},{value:"1",label:"\u5957\u5171\u4EAB\u5750\u6807"}]}),a(sl,{title:"\u7528\u4E09\u7EF4\u89C6\u89D2\uFF0C\u91CD\u65B0\u8BA4\u8BC6\u4F60\u7684\u519C\u573A",subtitle:"\u70B9\u51FB\u5373\u53EF\u5728 2.5D \u5B9E\u666F\u4E0E 3D \u6570\u5B57\u5B6A\u751F\u4E4B\u95F4\u5207\u6362\uFF0C\u72B6\u6001\u4E0E\u5BF9\u8C61\u5168\u7A0B\u4E00\u81F4\u3002",href:lr,label:"\u8FDB\u5165\u6570\u5B57\u5B6A\u751F"})]})}const em=[{char:"\u76D0",title:"\u5173\u6CE8\u76D0\u78B1\u5730\u73AF\u5883\u4E0E\u7279\u8272\u519C\u4E1A\u89C2\u6D4B",tone:"bg-emerald-100 text-emerald-700"},{char:"\u7530",title:"\u4EE5\u519C\u573A\u548C\u5730\u5757\u4F5C\u4E3A\u7BA1\u7406\u7A7A\u95F4",tone:"bg-sky-100 text-sky-700"},{char:"\u4E30",title:"\u56F4\u7ED5\u7279\u8272\u4F5C\u7269\u7EC4\u7EC7\u79CD\u690D\u7BA1\u7406\u4E0E\u6838\u9A8C",tone:"bg-amber-100 text-amber-700"},{char:"\u8BED",title:"\u4EE5\u81EA\u7136\u8BED\u8A00\u67E5\u8BE2\u6570\u636E\u3001\u89C6\u89C9\u7ED3\u679C\u4E0E\u519C\u6280\u8D44\u6599",tone:"bg-violet-100 text-violet-700"}],nm=[{initials:"\u6570",module:"\u6570\u636E\u5DE5\u4F5C\u53F0",owner:"\u5F53\u524D\u5206\u652F",desc:"\u5168\u5C4F\u519C\u573A\u7A7A\u95F4\u4EA4\u4E92\u30012.5D/3D \u53CC\u89C6\u56FE\u4E0E\u4E03\u5927\u4E1A\u52A1\u6A21\u5757\u3002",tone:"bg-emerald-100 text-emerald-700"},{initials:"\u95EE",module:"\u667A\u80FD\u95EE\u519C",owner:"\u56E2\u961F\u5176\u4ED6\u6A21\u5757",desc:"\u4EE5\u81EA\u7136\u8BED\u8A00\u4E3A\u5165\u53E3\u7684 AI \u5BF9\u8BDD\u3001\u6570\u636E\u95EE\u7B54\u4E0E\u64CD\u4F5C\u5EFA\u8BAE\u3002",tone:"bg-sky-100 text-sky-700"},{initials:"\u68DA",module:"\u5927\u68DA\u5185\u90E8",owner:"\u56E2\u961F\u5176\u4ED6\u6A21\u5757",desc:"\u6E29\u5BA4\u5185\u90E8\u573A\u666F\u3001\u4F5C\u7269\u7EC6\u8282\u4E0E\u73AF\u5883\u7684\u6DF1\u5165\u6570\u5B57\u5B6A\u751F\u3002",tone:"bg-amber-100 text-amber-700"},{initials:"\u7F51",module:"\u5B98\u7F51\u8425\u9500",owner:"\u5F53\u524D\u5206\u652F",desc:"\u591A\u9875\u8425\u9500\u7AD9\u70B9\u4E0E\u300C\u5B98\u7F51 \u2192 \u5E73\u53F0\u300D\u7684\u7AD9\u5185\u8054\u52A8\u5165\u53E3\u3002",tone:"bg-violet-100 text-violet-700"}],as="rounded-2xl border border-slate-200 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-card-hover";function tm(){return y(q,{children:[y(Rt,{eyebrow:"About",title:y(q,{children:["\u76D0\u7530\u4E30\u8BED",a("br",{}),"\u4E3A\u73B0\u4EE3\u519C\u4E1A\u800C\u751F\u7684 AI \u5E73\u53F0"]}),subtitle:"\u6211\u4EEC\u76F8\u4FE1\u519C\u4E1A\u7684\u6570\u636E\u4E0D\u8BE5\u88AB\u85CF\u5728\u62A5\u8868\u91CC\u3002\u8BA9\u81EA\u7136\u8BED\u8A00\u6210\u4E3A\u5165\u53E3\uFF0C\u8BA9\u519C\u573A\u7A7A\u95F4\u6210\u4E3A\u754C\u9762\u3002",children:[a(il,{href:Ee,children:"\u8FDB\u5165\u5E73\u53F0"}),a(ol,{href:rt,children:"\u4E86\u89E3\u66F4\u591A"})]}),a("section",{className:"px-6 pb-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Brand",title:"\u300C\u76D0\u7530\u4E30\u8BED\u300D\u56DB\u4E2A\u5B57",subtitle:"\u6BCF\u4E00\u4E2A\u5B57\uFF0C\u90FD\u662F\u4E00\u5C42\u4EA7\u54C1\u54F2\u5B66\u3002"}),a("div",{className:"mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4",children:em.map(e=>y("div",{className:`text-center ${as}`,children:[a("div",{className:`mx-auto flex h-16 w-16 items-center justify-center rounded-2xl font-instrument-serif text-3xl ${e.tone}`,children:e.char}),a("p",{className:"mt-5 text-sm font-light text-muted leading-relaxed",children:e.title})]},e.char))})]})}),a("section",{className:"px-6 pb-20 md:px-12 lg:px-16",children:y("div",{className:"relative mx-auto max-w-5xl overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-emerald-600 via-teal-600 to-emerald-700 px-8 py-14 text-center shadow-2xl shadow-emerald-600/20 md:py-20",children:[a(Nh,{className:"mx-auto h-10 w-10 text-white/60",strokeWidth:1.5}),y("p",{className:"mx-auto mt-6 max-w-3xl font-instrument-serif text-2xl text-white leading-relaxed sm:text-3xl",children:["\u4E0D\u7528\u5BFB\u627E\u6570\u636E\uFF0C\u76F4\u63A5\u8BE2\u95EE\u6570\u636E\u3002",a("br",{}),"\u4E0D\u5FC5\u6D4F\u89C8\u62A5\u8868\uFF0C\u76F4\u63A5\u8FDB\u5165\u519C\u573A\u3002",a("br",{}),a("span",{className:"italic text-emerald-100",children:"AI \u4E0D\u53EA\u56DE\u7B54\u95EE\u9898\uFF0C\u8FD8\u80FD\u5B9A\u4F4D\u3001\u89E3\u91CA\u548C\u8F85\u52A9\u884C\u52A8\u3002"})]})]})}),a(al,{stats:[{value:"4",label:"\u5B57\u54C1\u724C\u91CA\u4E49"},{value:"3",label:"\u79CD\u5165\u53E3\u6A21\u5F0F"},{value:"6",label:"\u5EA7\u6E29\u5BA4\u5B6A\u751F"},{value:"1",label:"\u4E2A\u5171\u540C\u4F7F\u547D"}]}),a("section",{className:"bg-white px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto max-w-6xl",children:[a(en,{eyebrow:"Team & Modules",title:"\u56E2\u961F\u534F\u4F5C\uFF0C\u6A21\u5757\u5316\u6F14\u8FDB",subtitle:"\u4E0D\u540C\u4E13\u4E1A\u9875\u9762\u7531\u4E0D\u540C\u6A21\u5757\u5206\u5DE5\u5F00\u53D1\uFF0C\u65E2\u72EC\u7ACB\u6F14\u8FDB\uFF0C\u53C8\u5171\u4EAB\u6838\u5FC3\u72B6\u6001\u4E0E\u5750\u6807\u4F53\u7CFB\u3002"}),a("div",{className:"mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4",children:nm.map(e=>y("div",{className:`text-center ${as}`,children:[a("div",{className:`mx-auto flex h-16 w-16 items-center justify-center rounded-full font-instrument-serif text-2xl ${e.tone}`,children:e.initials}),a("h3",{className:"mt-5 text-lg font-semibold text-ink",children:e.module}),a("p",{className:"mt-1 text-xs font-medium uppercase tracking-wider text-emerald-700",children:e.owner}),a("p",{className:"mt-3 text-sm font-light text-muted leading-relaxed",children:e.desc})]},e.module))})]})}),a("section",{className:"px-6 py-20 md:px-12 lg:px-16",children:y("div",{className:"mx-auto flex max-w-3xl flex-col items-center gap-5 rounded-3xl border border-emerald-100 bg-emerald-50/60 px-8 py-12 text-center",children:[a(Wd,{className:"h-8 w-8 text-emerald-600",strokeWidth:1.5}),a("p",{className:"max-w-xl text-sm font-light text-muted leading-relaxed",children:"\u5F53\u524D\u7248\u672C\u5DF2\u63A5\u5165 Spring Boot\u3001MySQL \u4E0E\u865A\u62DF\u4F20\u611F\u5668\u6570\u636E\uFF0C\u652F\u6301\u767B\u5F55\u6CE8\u518C\u3001\u6570\u636E\u5DE5\u4F5C\u53F0\u3001\u6570\u5B57\u5B6A\u751F\u3001\u8BBE\u5907\u53CA\u704C\u6E89\u63A7\u5236\u3001\u76D1\u63A7\u5206\u6790\u548C\u667A\u80FD\u95EE\u519C\u3002\u65E0\u5B9E\u4F53\u4F20\u611F\u5668\u65F6\u7531\u670D\u52A1\u7AEF\u6301\u7EED\u751F\u6210\u6F14\u793A\u6570\u636E\u3002"})]})}),a(sl,{title:"\u548C\u6211\u4EEC\u4E00\u8D77\uFF0C\u8BA9\u8015\u79CD\u66F4\u667A\u6167",subtitle:"\u4ECE\u4E00\u5757\u519C\u7530\u3001\u4E00\u5EA7\u6E29\u5BA4\u5F00\u59CB\uFF0C\u7528 AI \u539F\u751F\u4F53\u9A8C\u91CD\u5851\u519C\u4E1A\u751F\u4EA7\u3002",href:Ee,label:"\u8FDB\u5165\u5E73\u53F0"})]})}const rm=[{icon:Sh,label:"\u90AE\u4EF6\u8054\u7CFB",value:bi,href:`mailto:${bi}`},{icon:$o,label:"\u6570\u636E\u5DE5\u4F5C\u53F0",value:"\u8FDB\u5165\u5E73\u53F0\u4F53\u9A8C",href:Ee},{icon:zd,label:"\u667A\u80FD\u95EE\u519C",value:"\u81EA\u7136\u8BED\u8A00\u95EE\u519C",href:rt}],Jr="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-ink placeholder:text-slate-400 transition focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-100",Zr="mb-1.5 block text-sm font-medium text-ink";function um(){const[e,n]=P.exports.useState({name:"",email:"",subject:"",message:"",_honey:""}),[t,r]=P.exports.useState("idle");function u(i){return o=>n(s=>({...s,[i]:o.target.value}))}async function l(i){if(i.preventDefault(),!e._honey){r("sending");try{const o=await fetch(`https://formsubmit.co/ajax/${bi}`,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({_subject:`\u5B98\u7F51\u7559\u8A00\uFF1A${e.subject||"\uFF08\u672A\u586B\u5199\u4E3B\u9898\uFF09"}`,name:e.name,email:e.email,message:e.message,_honey:e._honey})}),s=await o.json();o.ok&&s.success==="true"?(r("success"),n({name:"",email:"",subject:"",message:"",_honey:""})):r("error")}catch{r("error")}}}return y(q,{children:[a(Rt,{eyebrow:"Contact",title:y(q,{children:["\u548C\u6211\u4EEC\u804A\u804A",a("br",{}),"\u4F60\u7684\u519C\u573A"]}),subtitle:"\u65E0\u8BBA\u662F\u4E86\u89E3\u5E73\u53F0\u3001\u54A8\u8BE2\u89E3\u51B3\u65B9\u6848\uFF0C\u8FD8\u662F\u60F3\u4E00\u8D77\u63A8\u8FDB\u667A\u6167\u519C\u4E1A\uFF0C\u90FD\u6B22\u8FCE\u7559\u8A00\u3002"}),a("section",{className:"px-6 pb-24 md:px-12 lg:px-16",children:y("div",{className:"mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_1.2fr]",children:[y("div",{className:"space-y-4",children:[rm.map(i=>y("a",{href:i.href,className:"group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-card-hover",children:[a("div",{className:"flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700",children:a(i.icon,{className:"h-5 w-5",strokeWidth:1.8})}),y("div",{className:"min-w-0",children:[a("p",{className:"text-xs font-medium uppercase tracking-wider text-muted",children:i.label}),a("p",{className:"truncate text-sm font-medium text-ink group-hover:text-emerald-700",children:i.value})]}),a(nn,{className:"ml-auto h-4 w-4 shrink-0 text-slate-300 transition-transform duration-200 group-hover:translate-x-1 group-hover:text-emerald-500"})]},i.label)),a("p",{className:"rounded-2xl border border-emerald-100 bg-emerald-50/70 p-5 text-xs font-light text-muted leading-relaxed",children:"\u8868\u5355\u901A\u8FC7 FormSubmit \u53D1\u9001\u5230\u6307\u5B9A\u90AE\u7BB1\uFF0C\u65E0\u9700\u6CE8\u518C\u540E\u7AEF\uFF1B\u63D0\u4EA4\u540E\u4F1A\u6536\u5230\u300C\u5B98\u7F51\u7559\u8A00\u300D\u4E3B\u9898\u7684\u90AE\u4EF6\u3002"})]}),y("form",{onSubmit:l,className:"rounded-3xl border border-slate-200 bg-white p-8 shadow-card-hover md:p-10",children:[a("h2",{className:"font-instrument-serif text-2xl text-ink",children:"\u7559\u4E0B\u4F60\u7684\u4FE1\u606F"}),a("p",{className:"mt-2 text-sm font-light text-muted",children:"\u6211\u4EEC\u4F1A\u5728\u6536\u5230\u7559\u8A00\u540E\u5C3D\u5FEB\u4E0E\u4F60\u8054\u7CFB\u3002"}),a("input",{type:"text",name:"_honey",value:e._honey,onChange:u("_honey"),className:"hidden",tabIndex:-1,autoComplete:"off"}),y("div",{className:"mt-8 grid gap-6 sm:grid-cols-2",children:[y("div",{children:[a("label",{htmlFor:"name",className:Zr,children:"\u79F0\u547C"}),a("input",{id:"name",type:"text",required:!0,value:e.name,onChange:u("name"),placeholder:"\u600E\u4E48\u79F0\u547C\u4F60",className:Jr})]}),y("div",{children:[a("label",{htmlFor:"email",className:Zr,children:"\u90AE\u7BB1"}),a("input",{id:"email",type:"email",required:!0,value:e.email,onChange:u("email"),placeholder:"you@example.com",className:Jr})]})]}),y("div",{className:"mt-6",children:[a("label",{htmlFor:"subject",className:Zr,children:"\u4E3B\u9898"}),a("input",{id:"subject",type:"text",value:e.subject,onChange:u("subject"),placeholder:"\u60F3\u804A\u70B9\u4EC0\u4E48\uFF08\u53EF\u9009\uFF09",className:Jr})]}),y("div",{className:"mt-6",children:[a("label",{htmlFor:"message",className:Zr,children:"\u7559\u8A00\u5185\u5BB9"}),a("textarea",{id:"message",required:!0,rows:6,value:e.message,onChange:u("message"),placeholder:"\u60F3\u4E86\u89E3\u5E73\u53F0\u3001\u89E3\u51B3\u65B9\u6848\uFF0C\u6216\u4EFB\u4F55\u5EFA\u8BAE\u2026",className:`${Jr} resize-none`})]}),t==="success"&&y("div",{className:"mt-6 flex items-center gap-3 rounded-xl border border-emerald-200 bg-emerald-50 px-5 py-4 text-sm text-emerald-700",children:[a(xh,{className:"h-5 w-5 shrink-0"}),"\u7559\u8A00\u5DF2\u53D1\u9001\uFF0C\u6211\u4EEC\u4F1A\u5C3D\u5FEB\u56DE\u590D\u4F60\uFF01"]}),t==="error"&&y("div",{className:"mt-6 flex items-center gap-3 rounded-xl border border-rose-200 bg-rose-50 px-5 py-4 text-sm text-rose-600",children:[a(Oh,{className:"h-5 w-5 shrink-0"}),"\u53D1\u9001\u5931\u8D25\uFF0C\u8BF7\u7A0D\u540E\u518D\u8BD5\u6216\u76F4\u63A5\u90AE\u4EF6\u8054\u7CFB\u3002"]}),a("button",{type:"submit",disabled:t==="sending",className:"group mt-8 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3.5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-emerald-700 hover:shadow-xl hover:shadow-emerald-600/20 disabled:cursor-not-allowed disabled:opacity-60",children:t==="sending"?y(q,{children:[a(Ah,{className:"h-4 w-4 animate-spin"})," \u53D1\u9001\u4E2D\u2026"]}):y(q,{children:["\u53D1\u9001\u7559\u8A00",a(Th,{className:"h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"})]})})]})]})})]})}function Hd({onCapture:e,busy:n=!1,label:t="\u8BC6\u522B",allowUpload:r=!0}){const u=P.exports.useRef(null),l=P.exports.useRef(null),[i,o]=P.exports.useState(""),[s,c]=P.exports.useState(null);P.exports.useEffect(()=>{let F=!1;async function I(){try{const f=await navigator.mediaDevices.getUserMedia({video:{facingMode:"user",width:{ideal:640},height:{ideal:480}},audio:!1});if(F){f.getTracks().forEach(d=>d.stop());return}l.current=f,u.current&&(u.current.srcObject=f,u.current.play().catch(()=>{}))}catch{F||o(r?"\u65E0\u6CD5\u6253\u5F00\u6444\u50CF\u5934\uFF0C\u8BF7\u5141\u8BB8\u8BBF\u95EE\u6743\u9650\uFF0C\u6216\u6539\u7528\u4E0B\u65B9\u56FE\u7247\u4E0A\u4F20":"\u65E0\u6CD5\u6253\u5F00\u6444\u50CF\u5934\uFF0C\u8BF7\u5141\u8BB8\u6D4F\u89C8\u5668\u8BBF\u95EE\u6444\u50CF\u5934\u540E\u91CD\u8BD5")}}return I(),()=>{var f;F=!0,(f=l.current)==null||f.getTracks().forEach(d=>d.stop()),l.current=null}},[]);function h(){const F=u.current;if(!F||!F.videoWidth)return;const I=document.createElement("canvas"),f=512/F.videoWidth;I.width=512,I.height=Math.round(F.videoHeight*f),I.getContext("2d").drawImage(F,0,0,I.width,I.height),c(I.toDataURL("image/jpeg",.9))}function m(){c(null),o("")}function p(F){const[I,f]=F.split(","),d=atob(f),g=new Uint8Array(d.length);for(let E=0;E<d.length;E++)g[E]=d.charCodeAt(E);return new Blob([g],{type:"image/jpeg"})}function v(){s&&e(p(s))}function w(F){var f;const I=(f=F.target.files)==null?void 0:f[0];I&&e(I)}return y("div",{className:"space-y-3",children:[a("div",{className:"relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-foreground/5",children:s?a("img",{src:s,alt:"captured face",className:"h-full w-full object-cover"}):y(q,{children:[a("video",{ref:u,playsInline:!0,muted:!0,className:"h-full w-full object-cover"}),i&&a("div",{className:"absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-muted-foreground",children:i})]})}),a("div",{className:"flex items-center justify-center gap-3",children:s?y(q,{children:[y("button",{type:"button",onClick:m,className:"flex items-center gap-2 rounded-2xl border border-border px-4 py-3 text-sm transition-colors hover:bg-secondary",children:[a(Ph,{className:"h-4 w-4"})," \u91CD\u62CD"]}),y("button",{type:"button",disabled:n,onClick:v,className:"flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-60",children:[a(Oi,{className:"h-4 w-4"})," ",n?"\u8BC6\u522B\u4E2D\u2026":t]})]}):y(q,{children:[y("button",{type:"button",onClick:h,className:"flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90",children:[a(Oi,{className:"h-4 w-4"})," \u62CD\u7167"]}),r&&y("label",{className:"flex cursor-pointer items-center gap-2 rounded-2xl border border-border px-4 py-3 text-sm transition-colors hover:bg-secondary",children:[a(Lh,{className:"h-4 w-4"})," \u4E0A\u4F20\u56FE\u7247",a("input",{type:"file",accept:"image/*",className:"hidden",onChange:w})]})]})})]})}const lm=()=>y("svg",{xmlns:"http://www.w3.org/2000/svg",className:"h-5 w-5",viewBox:"0 0 48 48",children:[a("path",{fill:"#FFC107",d:"M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s12-5.373 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-2.641-.21-5.236-.611-7.743z"}),a("path",{fill:"#FF3D00",d:"M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"}),a("path",{fill:"#4CAF50",d:"M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"}),a("path",{fill:"#1976D2",d:"M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C42.022 35.026 44 30.038 44 24c0-2.641-.21-5.236-.611-7.743z"})]}),qr=({children:e})=>a("div",{className:"rounded-2xl border border-border bg-foreground/5 backdrop-blur-sm transition-colors focus-within:border-violet-400/70 focus-within:bg-violet-500/10",children:e}),Ul=({testimonial:e,delay:n})=>y("div",{className:`animate-testimonial ${n} flex items-start gap-3 rounded-3xl bg-card/40 dark:bg-zinc-800/40 backdrop-blur-xl border border-white/10 p-5 w-64`,children:[a("img",{src:e.avatarSrc,className:"h-10 w-10 object-cover rounded-2xl",alt:"avatar"}),y("div",{className:"text-sm leading-snug",children:[a("p",{className:"flex items-center gap-1 font-medium text-foreground",children:e.name}),a("p",{className:"text-muted-foreground",children:e.handle}),a("p",{className:"mt-1 text-foreground/80",children:e.text})]})]}),Qd=({mode:e="sign-in",title:n=a("span",{className:"font-light text-foreground tracking-tighter",children:"Welcome"}),description:t="Access your account and continue your journey with us",heroImageSrc:r,testimonials:u=[],onSignIn:l,onSignUp:i,onFaceLogin:o,faceBusy:s=!1,submitBusy:c=!1,enableFace:h=!1,onGoogleSignIn:m,onResetPassword:p,onCreateAccount:v,onSignInLink:w,backHref:F,backLabel:I,error:f})=>{const[d,g]=P.exports.useState(!1),[E,C]=P.exports.useState(!1),[A,S]=P.exports.useState(!1),x=e==="sign-up",N={title:"animate-delay-100",desc:"animate-delay-200",name:x?"animate-delay-300":"",email:x?"animate-delay-400":"animate-delay-300",password:x?"animate-delay-500":"animate-delay-400",confirm:x?"animate-delay-600":"",extras:x?"":"animate-delay-500",submit:x?"animate-delay-700":"animate-delay-600",divider:x?"animate-delay-800":"animate-delay-700",social:x?"animate-delay-900":"animate-delay-800",footer:x?"animate-delay-1000":"animate-delay-900"},T="w-full bg-transparent text-sm p-4 rounded-2xl focus:outline-none",U=te=>`flex-1 rounded-full py-2 transition-colors ${te?"bg-primary text-primary-foreground":"text-muted-foreground hover:text-foreground"}`;return y("div",{className:"h-[100dvh] flex flex-col md:flex-row font-geist w-[100dvw]",children:[a("section",{className:"flex-1 flex items-center justify-center p-8",children:a("div",{className:"w-full max-w-md",children:y("div",{className:"flex flex-col gap-6",children:[F&&a("a",{href:F,className:"animate-element text-sm text-muted-foreground transition-colors hover:text-foreground",children:I||"\u2190 Back"}),h&&y("div",{className:"animate-element flex rounded-full border border-border p-1 text-sm",children:[a("button",{type:"button",onClick:()=>S(!1),className:U(!A),children:"\u5BC6\u7801\u767B\u5F55"}),a("button",{type:"button",onClick:()=>S(!0),className:U(A),children:"\u5237\u8138\u767B\u5F55"})]}),A?y(q,{children:[y("div",{className:"animate-element animate-delay-100",children:[a("h1",{className:"text-4xl md:text-5xl font-semibold leading-tight",children:"\u5237\u8138\u767B\u5F55"}),a("p",{className:"mt-2 text-muted-foreground",children:"\u4FDD\u6301\u9762\u90E8\u6B63\u5BF9\u6444\u50CF\u5934\uFF0C\u5149\u7EBF\u5145\u8DB3\u5373\u53EF\u8BC6\u522B"})]}),a("div",{className:"animate-element animate-delay-200",children:a(Hd,{onCapture:o,busy:s,label:"\u767B\u5F55",allowUpload:!1})})]}):y(q,{children:[a("h1",{className:`animate-element ${N.title} text-4xl md:text-5xl font-semibold leading-tight`,children:n}),a("p",{className:`animate-element ${N.desc} text-muted-foreground`,children:t}),y("form",{className:"space-y-5",onSubmit:x?i:l,children:[x&&y("div",{className:`animate-element ${N.name}`,children:[a("label",{className:"text-sm font-medium text-muted-foreground",children:"Full Name"}),a(qr,{children:a("input",{name:"name",type:"text",required:!0,placeholder:"How should we address you",className:T})})]}),y("div",{className:`animate-element ${N.email}`,children:[a("label",{className:"text-sm font-medium text-muted-foreground",children:"Email Address"}),a(qr,{children:a("input",{name:"email",type:"email",required:!0,placeholder:"Enter your email address",className:T})})]}),y("div",{className:`animate-element ${N.password}`,children:[a("label",{className:"text-sm font-medium text-muted-foreground",children:"Password"}),a(qr,{children:y("div",{className:"relative",children:[a("input",{name:"password",type:d?"text":"password",required:!0,minLength:x?6:void 0,placeholder:x?"At least 6 characters":"Enter your password",className:`${T} pr-12`}),a("button",{type:"button",onClick:()=>g(!d),"aria-label":d?"Hide password":"Show password",className:"absolute inset-y-0 right-3 flex items-center",children:d?a(ls,{className:"w-5 h-5 text-muted-foreground hover:text-foreground transition-colors"}):a(Mi,{className:"w-5 h-5 text-muted-foreground hover:text-foreground transition-colors"})})]})})]}),x&&y("div",{className:`animate-element ${N.confirm}`,children:[a("label",{className:"text-sm font-medium text-muted-foreground",children:"Confirm Password"}),a(qr,{children:y("div",{className:"relative",children:[a("input",{name:"confirm",type:E?"text":"password",required:!0,placeholder:"Re-enter your password",className:`${T} pr-12`}),a("button",{type:"button",onClick:()=>C(!E),"aria-label":E?"Hide password":"Show password",className:"absolute inset-y-0 right-3 flex items-center",children:E?a(ls,{className:"w-5 h-5 text-muted-foreground hover:text-foreground transition-colors"}):a(Mi,{className:"w-5 h-5 text-muted-foreground hover:text-foreground transition-colors"})})]})})]}),!x&&y("div",{className:`animate-element ${N.extras} flex items-center justify-between text-sm`,children:[y("label",{className:"flex items-center gap-3 cursor-pointer",children:[a("input",{type:"checkbox",name:"rememberMe",className:"custom-checkbox"}),a("span",{className:"text-foreground/90",children:"Keep me signed in"})]}),a("a",{href:"#",onClick:te=>{te.preventDefault(),p==null||p()},className:"hover:underline text-violet-400 transition-colors",children:"Reset password"})]}),a("button",{type:"submit",disabled:c,className:`animate-element ${N.submit} w-full rounded-2xl bg-primary py-4 font-medium text-primary-foreground hover:bg-primary/90 transition-colors disabled:cursor-not-allowed disabled:opacity-60`,children:c?"\u8BF7\u7A0D\u5019\u2026":x?"Create Account":"Sign In"})]})]}),f&&a("div",{className:"animate-element rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-600",role:"alert",children:f}),!A&&m&&y(q,{children:[y("div",{className:`animate-element ${N.divider} relative flex items-center justify-center`,children:[a("span",{className:"w-full border-t border-border"}),a("span",{className:"px-4 text-sm text-muted-foreground bg-background absolute",children:"Or continue with"})]}),y("button",{onClick:m,className:`animate-element ${N.social} w-full flex items-center justify-center gap-3 border border-border rounded-2xl py-4 hover:bg-secondary transition-colors`,children:[a(lm,{}),"Continue with Google"]})]}),a("button",{type:"button",onClick:x?w:v,className:`animate-element ${N.footer} w-full rounded-2xl border border-border bg-background/55 py-3.5 text-sm font-medium text-foreground transition-all hover:border-primary/35 hover:bg-primary/5 hover:text-primary`,children:x?"\u5DF2\u6709\u8D26\u53F7\uFF0C\u8FD4\u56DE\u767B\u5F55":"\u8FD8\u6CA1\u6709\u8D26\u53F7\uFF1F\u7ACB\u5373\u6CE8\u518C"})]})})}),r&&y("section",{className:"hidden md:block flex-1 relative p-4",children:[a("div",{className:"animate-slide-right animate-delay-300 absolute inset-4 rounded-3xl bg-cover bg-center",style:{backgroundImage:`url(${r})`}}),u.length>0&&y("div",{className:"absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-4 px-8 w-full justify-center",children:[a(Ul,{testimonial:u[0],delay:"animate-delay-1000"}),u[1]&&a("div",{className:"hidden xl:flex",children:a(Ul,{testimonial:u[1],delay:"animate-delay-1200"})}),u[2]&&a("div",{className:"hidden 2xl:flex",children:a(Ul,{testimonial:u[2],delay:"animate-delay-1400"})})]})]})]})},im="/api",jo="ty_token",Gd="ty_user";function om(e){var n;return(n=localStorage.getItem(e))!=null?n:sessionStorage.getItem(e)}async function cl(e,{headers:n={},body:t,...r}={}){const u=t instanceof FormData,l=await fetch(`${im}${e}`,{...r,body:t,headers:{...u?{}:{"Content-Type":"application/json"},...n}}),i=await l.json().catch(()=>({}));if(!l.ok)throw new Error(i.message||`\u8BF7\u6C42\u5931\u8D25\uFF08${l.status}\uFF09`);return i}function am({name:e,email:n,password:t}){return cl("/auth/register",{method:"POST",body:JSON.stringify({name:e,email:n,password:t})})}function sm({email:e,password:n}){return cl("/auth/login",{method:"POST",body:JSON.stringify({email:e,password:n})})}function cm(e){const n=new FormData;return n.append("photo",e,"face.jpg"),cl("/auth/face-register",{method:"POST",body:n,headers:{Authorization:`Bearer ${fm()}`}})}function dm(e){const n=new FormData;return n.append("photo",e,"face.jpg"),cl("/auth/face-login",{method:"POST",body:n})}function $i({token:e,user:n},t=!0){pm();const r=t?localStorage:sessionStorage;r.setItem(jo,e),r.setItem(Gd,JSON.stringify(n))}function fm(){return om(jo)}function pm(){for(const e of[localStorage,sessionStorage])e.removeItem(jo),e.removeItem(Gd)}const ss="/platform/",hm=[{avatarSrc:"https://randomuser.me/api/portraits/women/57.jpg",name:"\u674E\u54F2",handle:"\u6E29\u5BA4\u79CD\u690D\u4E3B\u7BA1",text:"\u628A\u516D\u5EA7\u6E29\u5BA4\u88C5\u8FDB\u4E00\u4E2A\u6570\u5B57\u5B6A\u751F\u91CC\uFF0C\u5DE1\u573A\u548C\u67E5\u6570\u636E\u90FD\u7701\u4E86\u592A\u591A\u65F6\u95F4\u3002"},{avatarSrc:"https://randomuser.me/api/portraits/men/64.jpg",name:"\u738B\u5C9A",handle:"\u519C\u573A\u8FD0\u8425\u7ECF\u7406",text:"\u4E00\u53E5\u8BDD\u5C31\u80FD\u95EE\u51FA\u571F\u58E4\u6E7F\u5EA6\u8D8B\u52BF\uFF0C\u8FD8\u80FD\u76F4\u63A5\u7ED9\u704C\u6E89\u5EFA\u8BAE\uFF0C\u771F\u4E0D\u7528\u7FFB\u62A5\u8868\u4E86\u3002"},{avatarSrc:"https://randomuser.me/api/portraits/men/32.jpg",name:"\u9648\u65B9",handle:"\u519C\u4E1A\u6570\u5B57\u5316\u987E\u95EE",text:"\u5B9E\u666F\u548C 3D \u5171\u7528\u4E00\u5957\u5750\u6807\uFF0C\u7ED9\u5BA2\u6237\u6F14\u793A\u6548\u679C\u975E\u5E38\u76F4\u89C2\u3002"}];function mm(){const e=rl(),[n,t]=P.exports.useState(""),[r,u]=P.exports.useState(!1),[l,i]=P.exports.useState(!1);return a(Qd,{mode:"sign-in",title:"\u6B22\u8FCE\u56DE\u6765",description:"\u767B\u5F55\u4F60\u7684\u76D0\u7530\u4E30\u8BED\u8D26\u53F7\uFF0C\u7EE7\u7EED\u67E5\u770B\u4F60\u7684\u519C\u573A\u3002",heroImageSrc:"/assets/uc.png",testimonials:hm,error:n,submitBusy:l,enableFace:!0,faceBusy:r,onFaceLogin:async c=>{t(""),u(!0);try{const h=await dm(c);$i(h),window.location.href=ss}catch(h){t(h.message||"\u4EBA\u8138\u767B\u5F55\u5931\u8D25\uFF0C\u8BF7\u91CD\u8BD5"),u(!1)}},onSignIn:async c=>{c.preventDefault(),t("");const h=Object.fromEntries(new FormData(c.currentTarget).entries());i(!0);try{const m=await sm({email:h.email,password:h.password});$i(m,h.rememberMe==="on"),window.location.href=ss}catch(m){t(m.message||"\u767B\u5F55\u5931\u8D25\uFF0C\u8BF7\u7A0D\u540E\u518D\u8BD5"),i(!1)}},onResetPassword:()=>{window.location.href="mailto:support@tianyan.agri?subject=\u76D0\u7530\u4E30\u8BED\u8D26\u53F7\u5BC6\u7801\u91CD\u7F6E"},onCreateAccount:()=>e("/sign-up"),backHref:"/#/",backLabel:"\u8FD4\u56DE\u5B98\u7F51"})}const cs="/platform/",gm=[{avatarSrc:"https://randomuser.me/api/portraits/women/57.jpg",name:"\u674E\u54F2",handle:"\u6E29\u5BA4\u79CD\u690D\u4E3B\u7BA1",text:"\u628A\u516D\u5EA7\u6E29\u5BA4\u88C5\u8FDB\u4E00\u4E2A\u6570\u5B57\u5B6A\u751F\u91CC\uFF0C\u5DE1\u573A\u548C\u67E5\u6570\u636E\u90FD\u7701\u4E86\u592A\u591A\u65F6\u95F4\u3002"},{avatarSrc:"https://randomuser.me/api/portraits/men/64.jpg",name:"\u738B\u5C9A",handle:"\u519C\u573A\u8FD0\u8425\u7ECF\u7406",text:"\u4E00\u53E5\u8BDD\u5C31\u80FD\u95EE\u51FA\u571F\u58E4\u6E7F\u5EA6\u8D8B\u52BF\uFF0C\u8FD8\u80FD\u76F4\u63A5\u7ED9\u704C\u6E89\u5EFA\u8BAE\uFF0C\u771F\u4E0D\u7528\u7FFB\u62A5\u8868\u4E86\u3002"},{avatarSrc:"https://randomuser.me/api/portraits/men/32.jpg",name:"\u9648\u65B9",handle:"\u519C\u4E1A\u6570\u5B57\u5316\u987E\u95EE",text:"\u5B9E\u666F\u548C 3D \u5171\u7528\u4E00\u5957\u5750\u6807\uFF0C\u7ED9\u5BA2\u6237\u6F14\u793A\u6548\u679C\u975E\u5E38\u76F4\u89C2\u3002"}];function ym(){const e=rl(),[n,t]=P.exports.useState(""),[r,u]=P.exports.useState("form"),[l,i]=P.exports.useState(!1),[o,s]=P.exports.useState(!1),c=async m=>{m.preventDefault(),t("");const p=Object.fromEntries(new FormData(m.currentTarget).entries());if(p.password!==p.confirm){t("\u4E24\u6B21\u8F93\u5165\u7684\u5BC6\u7801\u4E0D\u4E00\u81F4\uFF0C\u8BF7\u91CD\u65B0\u8F93\u5165\u3002");return}s(!0);try{const v=await am({name:p.name,email:p.email,password:p.password});$i(v),u("face"),s(!1)}catch(v){t(v.message||"\u6CE8\u518C\u5931\u8D25\uFF0C\u8BF7\u7A0D\u540E\u518D\u8BD5"),s(!1)}},h=async m=>{t(""),i(!0);try{await cm(m),window.location.href=cs}catch(p){t(p.message||"\u4EBA\u8138\u7ED1\u5B9A\u5931\u8D25\uFF0C\u8BF7\u91CD\u8BD5"),i(!1)}};return r==="face"?a("div",{className:"flex min-h-[100dvh] items-center justify-center bg-page p-8",children:y("div",{className:"flex w-full max-w-md flex-col gap-6 text-center",children:[y("span",{className:"animate-element inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.22em] text-emerald-700",children:[a("span",{className:"h-1.5 w-1.5 rounded-full bg-emerald-500"}),"Face Binding"]}),a("h1",{className:"animate-element animate-delay-100 font-instrument-serif text-4xl text-ink md:text-5xl",children:"\u7ED1\u5B9A\u4EBA\u8138"}),a("p",{className:"animate-element animate-delay-200 font-light text-muted",children:"\u6CE8\u518C\u6210\u529F\uFF01\u7ED1\u5B9A\u4EBA\u8138\u540E\uFF0C\u4E0B\u6B21\u5728\u5B98\u7F51\u5373\u53EF\u76F4\u63A5\u5237\u8138\u767B\u5F55\u3002"}),a("div",{className:"animate-element animate-delay-300",children:a(Hd,{onCapture:h,busy:l,label:"\u7ED1\u5B9A\u5E76\u8FDB\u5165"})}),n&&a("p",{className:"animate-element rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-600",role:"alert",children:n}),y("button",{onClick:()=>{window.location.href=cs},className:"animate-element animate-delay-400 inline-flex items-center justify-center gap-1.5 text-sm font-light text-muted transition-colors hover:text-ink",children:["\u8DF3\u8FC7\uFF0C\u7A0D\u540E\u5728\u5E73\u53F0\u8BBE\u7F6E\u4E2D\u7ED1\u5B9A ",a(nn,{className:"h-4 w-4"})]})]})}):a(Qd,{mode:"sign-up",title:"\u521B\u5EFA\u8D26\u53F7",description:"\u6CE8\u518C\u76D0\u7530\u4E30\u8BED\uFF0C\u628A\u6570\u636E\u5E26\u8FDB\u4F60\u7684\u519C\u573A\u3002",heroImageSrc:"/assets/uc.png",testimonials:gm,error:n,submitBusy:o,onSignUp:c,onSignInLink:()=>e("/sign-in"),backHref:"/#/",backLabel:"\u8FD4\u56DE\u5B98\u7F51"})}const vm=[{slug:"user-manual",icon:Rd,eyebrow:"USER GUIDE",title:"\u7528\u6237\u4F7F\u7528\u624B\u518C",description:"\u4ECE\u8D26\u53F7\u767B\u5F55\u5230\u667A\u80FD\u95EE\u519C\u3001\u6570\u5B57\u5B6A\u751F\u3001\u8BBE\u5907\u63A7\u5236\u4E0E\u544A\u8B66\u5904\u7406\uFF0C\u6309\u5B9E\u9645\u64CD\u4F5C\u6D41\u7A0B\u5FEB\u901F\u4E0A\u624B\u3002",audience:"\u5E73\u53F0\u4F7F\u7528\u8005\u4E0E\u519C\u573A\u7BA1\u7406\u4EBA\u5458",reading:"\u7EA6 25 \u5206\u949F",tone:"bg-emerald-100 text-emerald-700"},{slug:"technical-manual",icon:bd,eyebrow:"TECHNICAL GUIDE",title:"\u6280\u672F\u8BF4\u660E\u624B\u518C",description:"\u6DB5\u76D6\u7CFB\u7EDF\u67B6\u6784\u3001\u5F00\u53D1\u73AF\u5883\u3001\u6570\u636E\u5E93\u3001\u63A5\u53E3\u3001\u524D\u540E\u7AEF\u6784\u5EFA\u4E0E\u751F\u4EA7\u90E8\u7F72\uFF0C\u5E2E\u52A9\u7814\u53D1\u4EBA\u5458\u7EF4\u62A4\u5E73\u53F0\u3002",audience:"\u5F00\u53D1\u3001\u6D4B\u8BD5\u4E0E\u8FD0\u7EF4\u4EBA\u5458",reading:"\u7EA6 35 \u5206\u949F",tone:"bg-sky-100 text-sky-700"}];function Em(){return y(q,{children:[a(Rt,{eyebrow:"Documentation",title:y(q,{children:["\u6587\u6863\u8BF4\u660E",a("br",{}),"\u4ECE\u4F7F\u7528\u5230\u5F00\u53D1\uFF0C\u4E00\u7AD9\u67E5\u9605"]}),subtitle:"\u9009\u62E9\u9002\u5408\u4F60\u7684\u624B\u518C\uFF0C\u4E86\u89E3\u76D0\u7530\u4E30\u8BED\u7684\u5B8C\u6574\u64CD\u4F5C\u6D41\u7A0B\u4E0E\u6280\u672F\u5B9E\u73B0\u3002\u6587\u6863\u5185\u5BB9\u968F\u9879\u76EE\u7248\u672C\u540C\u6B65\u66F4\u65B0\u3002"}),a("section",{className:"px-6 pb-24 md:px-12 lg:px-16",children:a("div",{className:"mx-auto grid max-w-5xl gap-6 md:grid-cols-2",children:vm.map(e=>{const n=e.icon;return y(on,{to:`/docs/${e.slug}`,className:"group flex min-h-[330px] flex-col rounded-[2rem] border border-slate-200 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-card-hover md:p-10",children:[a("div",{className:`flex h-14 w-14 items-center justify-center rounded-2xl ${e.tone}`,children:a(n,{className:"h-6 w-6",strokeWidth:1.6})}),a("p",{className:"mt-8 text-[11px] font-semibold tracking-[0.2em] text-emerald-700",children:e.eyebrow}),a("h2",{className:"mt-3 font-instrument-serif text-3xl text-ink",children:e.title}),a("p",{className:"mt-4 flex-1 text-sm font-light leading-7 text-muted",children:e.description}),y("div",{className:"mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-slate-100 pt-5 text-xs text-muted",children:[y("span",{className:"inline-flex items-center gap-1.5",children:[a(Wd,{className:"h-3.5 w-3.5"}),e.audience]}),y("span",{className:"inline-flex items-center gap-1.5",children:[a(Fh,{className:"h-3.5 w-3.5"}),e.reading]})]}),y("span",{className:"mt-5 inline-flex items-center gap-2 text-sm font-medium text-emerald-700",children:["\u9605\u8BFB\u6587\u6863 ",a(nn,{className:"h-4 w-4 transition-transform group-hover:translate-x-1"})]})]},e.slug)})})})]})}function Kd(){return{async:!1,baseUrl:null,breaks:!1,extensions:null,gfm:!0,headerIds:!0,headerPrefix:"",highlight:null,hooks:null,langPrefix:"language-",mangle:!0,pedantic:!1,renderer:null,sanitize:!1,sanitizer:null,silent:!1,smartypants:!1,tokenizer:null,walkTokens:null,xhtml:!1}}let ut=Kd();function xm(e){ut=e}const Yd=/[&<>"']/,Fm=new RegExp(Yd.source,"g"),Jd=/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,wm=new RegExp(Jd.source,"g"),km={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"},ds=e=>km[e];function pe(e,n){if(n){if(Yd.test(e))return e.replace(Fm,ds)}else if(Jd.test(e))return e.replace(wm,ds);return e}const Cm=/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig;function Zd(e){return e.replace(Cm,(n,t)=>(t=t.toLowerCase(),t==="colon"?":":t.charAt(0)==="#"?t.charAt(1)==="x"?String.fromCharCode(parseInt(t.substring(2),16)):String.fromCharCode(+t.substring(1)):""))}const Am=/(^|[^\[])\^/g;function W(e,n){e=typeof e=="string"?e:e.source,n=n||"";const t={replace:(r,u)=>(u=u.source||u,u=u.replace(Am,"$1"),e=e.replace(r,u),t),getRegex:()=>new RegExp(e,n)};return t}const Sm=/[^\w:]/g,Bm=/^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;function fs(e,n,t){if(e){let r;try{r=decodeURIComponent(Zd(t)).replace(Sm,"").toLowerCase()}catch{return null}if(r.indexOf("javascript:")===0||r.indexOf("vbscript:")===0||r.indexOf("data:")===0)return null}n&&!Bm.test(t)&&(t=Pm(n,t));try{t=encodeURI(t).replace(/%25/g,"%")}catch{return null}return t}const Xr={},Dm=/^[^:]+:\/*[^/]*$/,Nm=/^([^:]+:)[\s\S]*$/,_m=/^([^:]+:\/*[^/]*)[\s\S]*$/;function Pm(e,n){Xr[" "+e]||(Dm.test(e)?Xr[" "+e]=e+"/":Xr[" "+e]=fu(e,"/",!0)),e=Xr[" "+e];const t=e.indexOf(":")===-1;return n.substring(0,2)==="//"?t?n:e.replace(Nm,"$1")+n:n.charAt(0)==="/"?t?n:e.replace(_m,"$1")+n:e+n}const $u={exec:function(){}};function ps(e,n){const t=e.replace(/\|/g,(l,i,o)=>{let s=!1,c=i;for(;--c>=0&&o[c]==="\\";)s=!s;return s?"|":" |"}),r=t.split(/ \|/);let u=0;if(r[0].trim()||r.shift(),r.length>0&&!r[r.length-1].trim()&&r.pop(),r.length>n)r.splice(n);else for(;r.length<n;)r.push("");for(;u<r.length;u++)r[u]=r[u].trim().replace(/\\\|/g,"|");return r}function fu(e,n,t){const r=e.length;if(r===0)return"";let u=0;for(;u<r;){const l=e.charAt(r-u-1);if(l===n&&!t)u++;else if(l!==n&&t)u++;else break}return e.slice(0,r-u)}function Tm(e,n){if(e.indexOf(n[1])===-1)return-1;const t=e.length;let r=0,u=0;for(;u<t;u++)if(e[u]==="\\")u++;else if(e[u]===n[0])r++;else if(e[u]===n[1]&&(r--,r<0))return u;return-1}function Im(e){e&&e.sanitize&&!e.silent&&console.warn("marked(): sanitize and sanitizer parameters are deprecated since version 0.7.0, should not be used and will be removed in the future. Read more here: https://marked.js.org/#/USING_ADVANCED.md#options")}function hs(e,n){if(n<1)return"";let t="";for(;n>1;)n&1&&(t+=e),n>>=1,e+=e;return t+e}function ms(e,n,t,r){const u=n.href,l=n.title?pe(n.title):null,i=e[1].replace(/\\([\[\]])/g,"$1");if(e[0].charAt(0)!=="!"){r.state.inLink=!0;const o={type:"link",raw:t,href:u,title:l,text:i,tokens:r.inlineTokens(i)};return r.state.inLink=!1,o}return{type:"image",raw:t,href:u,title:l,text:pe(i)}}function Lm(e,n){const t=e.match(/^(\s+)(?:```)/);if(t===null)return n;const r=t[1];return n.split(`
 `).map(u=>{const l=u.match(/^\s+/);if(l===null)return u;const[i]=l;return i.length>=r.length?u.slice(r.length):u}).join(`
 `)}class Uo{constructor(n){this.options=n||ut}space(n){const t=this.rules.block.newline.exec(n);if(t&&t[0].length>0)return{type:"space",raw:t[0]}}code(n){const t=this.rules.block.code.exec(n);if(t){const r=t[0].replace(/^ {1,4}/gm,"");return{type:"code",raw:t[0],codeBlockStyle:"indented",text:this.options.pedantic?r:fu(r,`
 `)}}}fences(n){const t=this.rules.block.fences.exec(n);if(t){const r=t[0],u=Lm(r,t[3]||"");return{type:"code",raw:r,lang:t[2]?t[2].trim().replace(this.rules.inline._escapes,"$1"):t[2],text:u}}}heading(n){const t=this.rules.block.heading.exec(n);if(t){let r=t[2].trim();if(/#$/.test(r)){const u=fu(r,"#");(this.options.pedantic||!u||/ $/.test(u))&&(r=u.trim())}return{type:"heading",raw:t[0],depth:t[1].length,text:r,tokens:this.lexer.inline(r)}}}hr(n){const t=this.rules.block.hr.exec(n);if(t)return{type:"hr",raw:t[0]}}blockquote(n){const t=this.rules.block.blockquote.exec(n);if(t){const r=t[0].replace(/^ *>[ \t]?/gm,""),u=this.lexer.state.top;this.lexer.state.top=!0;const l=this.lexer.blockTokens(r);return this.lexer.state.top=u,{type:"blockquote",raw:t[0],tokens:l,text:r}}}list(n){let t=this.rules.block.list.exec(n);if(t){let r,u,l,i,o,s,c,h,m,p,v,w,F=t[1].trim();const I=F.length>1,f={type:"list",raw:"",ordered:I,start:I?+F.slice(0,-1):"",loose:!1,items:[]};F=I?`\\d{1,9}\\${F.slice(-1)}`:`\\${F}`,this.options.pedantic&&(F=I?F:"[*+-]");const d=new RegExp(`^( {0,3}${F})((?:[	 ][^\\n]*)?(?:\\n|$))`);for(;n&&(w=!1,!(!(t=d.exec(n))||this.rules.block.hr.test(n)));){if(r=t[0],n=n.substring(r.length),h=t[2].split(`
@@ -100,1938 +100,1938 @@ ${n}</tr>
 `}tablecell(n,t){const r=t.header?"th":"td";return(t.align?`<${r} align="${t.align}">`:`<${r}>`)+n+`</${r}>
 `}strong(n){return`<strong>${n}</strong>`}em(n){return`<em>${n}</em>`}codespan(n){return`<code>${n}</code>`}br(){return this.options.xhtml?"<br/>":"<br>"}del(n){return`<del>${n}</del>`}link(n,t,r){if(n=fs(this.options.sanitize,this.options.baseUrl,n),n===null)return r;let u='<a href="'+n+'"';return t&&(u+=' title="'+t+'"'),u+=">"+r+"</a>",u}image(n,t,r){if(n=fs(this.options.sanitize,this.options.baseUrl,n),n===null)return r;let u=`<img src="${n}" alt="${r}"`;return t&&(u+=` title="${t}"`),u+=this.options.xhtml?"/>":">",u}text(n){return n}}class qd{strong(n){return n}em(n){return n}codespan(n){return n}del(n){return n}html(n){return n}text(n){return n}link(n,t,r){return""+r}image(n,t,r){return""+r}br(){return""}}class Xd{constructor(){this.seen={}}serialize(n){return n.toLowerCase().trim().replace(/<[!\/a-z].*?>/ig,"").replace(/[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g,"").replace(/\s/g,"-")}getNextSafeSlug(n,t){let r=n,u=0;if(this.seen.hasOwnProperty(r)){u=this.seen[n];do u++,r=n+"-"+u;while(this.seen.hasOwnProperty(r))}return t||(this.seen[n]=u,this.seen[r]=0),r}slug(n,t={}){const r=this.serialize(n);return this.getNextSafeSlug(r,t.dryrun)}}class Rn{constructor(n){this.options=n||ut,this.options.renderer=this.options.renderer||new Wo,this.renderer=this.options.renderer,this.renderer.options=this.options,this.textRenderer=new qd,this.slugger=new Xd}static parse(n,t){return new Rn(t).parse(n)}static parseInline(n,t){return new Rn(t).parseInline(n)}parse(n,t=!0){let r="",u,l,i,o,s,c,h,m,p,v,w,F,I,f,d,g,E,C,A;const S=n.length;for(u=0;u<S;u++){if(v=n[u],this.options.extensions&&this.options.extensions.renderers&&this.options.extensions.renderers[v.type]&&(A=this.options.extensions.renderers[v.type].call({parser:this},v),A!==!1||!["space","hr","heading","code","table","blockquote","list","html","paragraph","text"].includes(v.type))){r+=A||"";continue}switch(v.type){case"space":continue;case"hr":{r+=this.renderer.hr();continue}case"heading":{r+=this.renderer.heading(this.parseInline(v.tokens),v.depth,Zd(this.parseInline(v.tokens,this.textRenderer)),this.slugger);continue}case"code":{r+=this.renderer.code(v.text,v.lang,v.escaped);continue}case"table":{for(m="",h="",o=v.header.length,l=0;l<o;l++)h+=this.renderer.tablecell(this.parseInline(v.header[l].tokens),{header:!0,align:v.align[l]});for(m+=this.renderer.tablerow(h),p="",o=v.rows.length,l=0;l<o;l++){for(c=v.rows[l],h="",s=c.length,i=0;i<s;i++)h+=this.renderer.tablecell(this.parseInline(c[i].tokens),{header:!1,align:v.align[i]});p+=this.renderer.tablerow(h)}r+=this.renderer.table(m,p);continue}case"blockquote":{p=this.parse(v.tokens),r+=this.renderer.blockquote(p);continue}case"list":{for(w=v.ordered,F=v.start,I=v.loose,o=v.items.length,p="",l=0;l<o;l++)d=v.items[l],g=d.checked,E=d.task,f="",d.task&&(C=this.renderer.checkbox(g),I?d.tokens.length>0&&d.tokens[0].type==="paragraph"?(d.tokens[0].text=C+" "+d.tokens[0].text,d.tokens[0].tokens&&d.tokens[0].tokens.length>0&&d.tokens[0].tokens[0].type==="text"&&(d.tokens[0].tokens[0].text=C+" "+d.tokens[0].tokens[0].text)):d.tokens.unshift({type:"text",text:C}):f+=C),f+=this.parse(d.tokens,I),p+=this.renderer.listitem(f,E,g);r+=this.renderer.list(p,w,F);continue}case"html":{r+=this.renderer.html(v.text);continue}case"paragraph":{r+=this.renderer.paragraph(this.parseInline(v.tokens));continue}case"text":{for(p=v.tokens?this.parseInline(v.tokens):v.text;u+1<S&&n[u+1].type==="text";)v=n[++u],p+=`
 `+(v.tokens?this.parseInline(v.tokens):v.text);r+=t?this.renderer.paragraph(p):p;continue}default:{const x='Token with "'+v.type+'" type was not found.';if(this.options.silent){console.error(x);return}else throw new Error(x)}}}return r}parseInline(n,t){t=t||this.renderer;let r="",u,l,i;const o=n.length;for(u=0;u<o;u++){if(l=n[u],this.options.extensions&&this.options.extensions.renderers&&this.options.extensions.renderers[l.type]&&(i=this.options.extensions.renderers[l.type].call({parser:this},l),i!==!1||!["escape","html","link","image","strong","em","codespan","br","del","text"].includes(l.type))){r+=i||"";continue}switch(l.type){case"escape":{r+=t.text(l.text);break}case"html":{r+=t.html(l.text);break}case"link":{r+=t.link(l.href,l.title,this.parseInline(l.tokens,t));break}case"image":{r+=t.image(l.href,l.title,l.text);break}case"strong":{r+=t.strong(this.parseInline(l.tokens,t));break}case"em":{r+=t.em(this.parseInline(l.tokens,t));break}case"codespan":{r+=t.codespan(l.text);break}case"br":{r+=t.br();break}case"del":{r+=t.del(this.parseInline(l.tokens,t));break}case"text":{r+=t.text(l.text);break}default:{const s='Token with "'+l.type+'" type was not found.';if(this.options.silent){console.error(s);return}else throw new Error(s)}}}return r}}class ju{constructor(n){this.options=n||ut}preprocess(n){return n}postprocess(n){return n}}Vo(ju,"passThroughHooks",new Set(["preprocess","postprocess"]));function zm(e,n,t){return r=>{if(r.message+=`
-Please report this to https://github.com/markedjs/marked.`,e){const u="<p>An error occurred:</p><pre>"+pe(r.message+"",!0)+"</pre>";if(n)return Promise.resolve(u);if(t){t(null,u);return}return u}if(n)return Promise.reject(r);if(t){t(r);return}throw r}}function e0(e,n){return(t,r,u)=>{typeof r=="function"&&(u=r,r=null);const l={...r};r={...L.defaults,...l};const i=zm(r.silent,r.async,u);if(typeof t=="undefined"||t===null)return i(new Error("marked(): input parameter is undefined or null"));if(typeof t!="string")return i(new Error("marked(): input parameter is of type "+Object.prototype.toString.call(t)+", string expected"));if(Im(r),r.hooks&&(r.hooks.options=r),u){const o=r.highlight;let s;try{r.hooks&&(t=r.hooks.preprocess(t)),s=e(t,r)}catch(m){return i(m)}const c=function(m){let p;if(!m)try{r.walkTokens&&L.walkTokens(s,r.walkTokens),p=n(s,r),r.hooks&&(p=r.hooks.postprocess(p))}catch(v){m=v}return r.highlight=o,m?i(m):u(null,p)};if(!o||o.length<3||(delete r.highlight,!s.length))return c();let h=0;L.walkTokens(s,function(m){m.type==="code"&&(h++,setTimeout(()=>{o(m.text,m.lang,function(p,v){if(p)return c(p);v!=null&&v!==m.text&&(m.text=v,m.escaped=!0),h--,h===0&&c()})},0))}),h===0&&c();return}if(r.async)return Promise.resolve(r.hooks?r.hooks.preprocess(t):t).then(o=>e(o,r)).then(o=>r.walkTokens?Promise.all(L.walkTokens(o,r.walkTokens)).then(()=>o):o).then(o=>n(o,r)).then(o=>r.hooks?r.hooks.postprocess(o):o).catch(i);try{r.hooks&&(t=r.hooks.preprocess(t));const o=e(t,r);r.walkTokens&&L.walkTokens(o,r.walkTokens);let s=n(o,r);return r.hooks&&(s=r.hooks.postprocess(s)),s}catch(o){return i(o)}}}function L(e,n,t){return e0(Ln.lex,Rn.parse)(e,n,t)}L.options=L.setOptions=function(e){return L.defaults={...L.defaults,...e},xm(L.defaults),L};L.getDefaults=Kd;L.defaults=ut;L.use=function(...e){const n=L.defaults.extensions||{renderers:{},childTokens:{}};e.forEach(t=>{const r={...t};if(r.async=L.defaults.async||r.async||!1,t.extensions&&(t.extensions.forEach(u=>{if(!u.name)throw new Error("extension name required");if(u.renderer){const l=n.renderers[u.name];l?n.renderers[u.name]=function(...i){let o=u.renderer.apply(this,i);return o===!1&&(o=l.apply(this,i)),o}:n.renderers[u.name]=u.renderer}if(u.tokenizer){if(!u.level||u.level!=="block"&&u.level!=="inline")throw new Error("extension level must be 'block' or 'inline'");n[u.level]?n[u.level].unshift(u.tokenizer):n[u.level]=[u.tokenizer],u.start&&(u.level==="block"?n.startBlock?n.startBlock.push(u.start):n.startBlock=[u.start]:u.level==="inline"&&(n.startInline?n.startInline.push(u.start):n.startInline=[u.start]))}u.childTokens&&(n.childTokens[u.name]=u.childTokens)}),r.extensions=n),t.renderer){const u=L.defaults.renderer||new Wo;for(const l in t.renderer){const i=u[l];u[l]=(...o)=>{let s=t.renderer[l].apply(u,o);return s===!1&&(s=i.apply(u,o)),s}}r.renderer=u}if(t.tokenizer){const u=L.defaults.tokenizer||new Uo;for(const l in t.tokenizer){const i=u[l];u[l]=(...o)=>{let s=t.tokenizer[l].apply(u,o);return s===!1&&(s=i.apply(u,o)),s}}r.tokenizer=u}if(t.hooks){const u=L.defaults.hooks||new ju;for(const l in t.hooks){const i=u[l];ju.passThroughHooks.has(l)?u[l]=o=>{if(L.defaults.async)return Promise.resolve(t.hooks[l].call(u,o)).then(c=>i.call(u,c));const s=t.hooks[l].call(u,o);return i.call(u,s)}:u[l]=(...o)=>{let s=t.hooks[l].apply(u,o);return s===!1&&(s=i.apply(u,o)),s}}r.hooks=u}if(t.walkTokens){const u=L.defaults.walkTokens;r.walkTokens=function(l){let i=[];return i.push(t.walkTokens.call(this,l)),u&&(i=i.concat(u.call(this,l))),i}}L.setOptions(r)})};L.walkTokens=function(e,n){let t=[];for(const r of e)switch(t=t.concat(n.call(L,r)),r.type){case"table":{for(const u of r.header)t=t.concat(L.walkTokens(u.tokens,n));for(const u of r.rows)for(const l of u)t=t.concat(L.walkTokens(l.tokens,n));break}case"list":{t=t.concat(L.walkTokens(r.items,n));break}default:L.defaults.extensions&&L.defaults.extensions.childTokens&&L.defaults.extensions.childTokens[r.type]?L.defaults.extensions.childTokens[r.type].forEach(function(u){t=t.concat(L.walkTokens(r[u],n))}):r.tokens&&(t=t.concat(L.walkTokens(r.tokens,n)))}return t};L.parseInline=e0(Ln.lexInline,Rn.parseInline);L.Parser=Rn;L.parser=Rn.parse;L.Renderer=Wo;L.TextRenderer=qd;L.Lexer=Ln;L.lexer=Ln.lex;L.Tokenizer=Uo;L.Slugger=Xd;L.Hooks=ju;L.parse=L;L.options;L.setOptions;L.use;L.walkTokens;L.parseInline;Rn.parse;Ln.lex;var bm=`# \u7530\u8A00\u8015\u667A\u7528\u6237\u4F7F\u7528\u624B\u518C
-
-> \u6587\u6863\u7248\u672C\uFF1AV1.0  
-> \u9002\u7528\u9879\u76EE\uFF1A\u7530\u8A00\u8015\u667A \xB7 AI \u539F\u751F\u667A\u6167\u519C\u4E1A\u4E0E\u6570\u5B57\u5B6A\u751F\u5E73\u53F0  
-> \u9002\u7528\u89D2\u8272\uFF1A\u519C\u573A\u7BA1\u7406\u4EBA\u5458\u3001\u6E29\u5BA4\u79CD\u690D\u4EBA\u5458\u3001\u8BBE\u5907\u8FD0\u7EF4\u4EBA\u5458\u3001\u5C55\u793A\u8BB2\u89E3\u4EBA\u5458\u3001\u9879\u76EE\u9A8C\u6536\u4EBA\u5458  
-> \u9ED8\u8BA4\u6F14\u793A\u5730\u5740\uFF1A\`http://localhost:8081/\`
-
----
-
-## 1. \u624B\u518C\u76EE\u6807
-
-\u672C\u624B\u518C\u7528\u4E8E\u5E2E\u52A9\u7B2C\u4E00\u6B21\u63A5\u89E6\u7CFB\u7EDF\u7684\u7528\u6237\uFF0C\u4ECE\u6253\u5F00\u5B98\u7F51\u5F00\u59CB\uFF0C\u9010\u6B65\u5B8C\u6210\u4EE5\u4E0B\u5B8C\u6574\u4F53\u9A8C\uFF1A
-
-1. \u6D4F\u89C8\u5B98\u7F51\u5E76\u4E86\u89E3\u4EA7\u54C1\u80FD\u529B\uFF1B
-2. \u6CE8\u518C\u8D26\u53F7\u5E76\u767B\u5F55\u5E73\u53F0\uFF1B
-3. \u9009\u62E9\u662F\u5426\u7ED1\u5B9A\u4EBA\u8138\uFF1B
-4. \u4F7F\u7528\u5BC6\u7801\u6216\u5B9E\u65F6\u6444\u50CF\u5934\u5237\u8138\u767B\u5F55\uFF1B
-5. \u8FDB\u5165\u667A\u6167\u519C\u573A\u6570\u636E\u5DE5\u4F5C\u53F0\uFF1B
-6. \u6D4F\u89C8\u822A\u62CD\u5B9E\u666F\u548C 3D \u6570\u5B57\u5B6A\u751F\uFF1B
-7. \u67E5\u8BE2\u5730\u5757\u3001\u5927\u68DA\u3001\u8BBE\u5907\u3001\u704C\u6E89\u548C\u544A\u8B66\u4FE1\u606F\uFF1B
-8. \u63A7\u5236\u8BBE\u5907\u3001\u6267\u884C\u81EA\u68C0\u3001\u8BBE\u7F6E\u704C\u6E89\u65F6\u957F\u5E76\u5904\u7406\u544A\u8B66\uFF1B
-9. \u4F7F\u7528\u201C\u5C0F\u7530\u201D\u52A9\u624B\u548C\u72EC\u7ACB\u201C\u667A\u80FD\u95EE\u519C\u201D\u5DE5\u4F5C\u53F0\uFF1B
-10. \u8FDB\u5165\u6BCF\u4E00\u5EA7\u5927\u68DA\uFF0C\u5207\u6362\u68DA\u5185\u5B9E\u666F\u4E0E\u6570\u5B57\u5B6A\u751F\uFF1B
-11. \u67E5\u770B\u68DA\u5185\u73AF\u5883\u3001\u8BBE\u5907\u3001\u5206\u533A\u548C\u690D\u682A\u7EA7\u6570\u636E\uFF1B
-12. \u5B8C\u6210\u4E00\u6B21\u9002\u5408\u9879\u76EE\u6F14\u793A\u6216\u9A8C\u6536\u7684\u5168\u6D41\u7A0B\u64CD\u4F5C\u3002
-
-\u672C\u9879\u76EE\u5F53\u524D\u4F7F\u7528\u6F14\u793A\u6570\u636E\u3002\u73AF\u5883\u6307\u6807\u4F1A\u81EA\u52A8\u53D8\u5316\uFF0C\u8BBE\u5907\u5F00\u5173\u3001\u704C\u6E89\u548C\u544A\u8B66\u64CD\u4F5C\u4F1A\u4FDD\u5B58\u5230\u6570\u636E\u5E93\uFF0C\u56E0\u6B64\u5237\u65B0\u9875\u9762\u540E\u4ECD\u53EF\u770B\u5230\u64CD\u4F5C\u7ED3\u679C\u3002
-
----
-
-## 2. \u4F7F\u7528\u524D\u51C6\u5907
-
-### 2.1 \u63A8\u8350\u8BBE\u5907
-
-| \u9879\u76EE | \u63A8\u8350\u914D\u7F6E |
-|---|---|
-| \u6D4F\u89C8\u5668 | \u6700\u65B0\u7248 Chrome\u3001Edge \u6216 Firefox |
-| \u5C4F\u5E55 | 1920\xD71080\uFF1B\u6700\u4F4E\u5EFA\u8BAE 1366\xD7768 |
-| \u7F51\u7EDC | \u672C\u673A\u8BBF\u95EE\u4E0D\u9700\u8981\u4E92\u8054\u7F51\uFF1BAI \u95EE\u519C\u3001\u4EBA\u8138\u670D\u52A1\u9700\u8981\u8054\u7F51 |
-| \u6444\u50CF\u5934 | \u4F7F\u7528\u5237\u8138\u767B\u5F55\u65F6\u5FC5\u987B\u5177\u5907\u53EF\u7528\u6444\u50CF\u5934 |
-| \u663E\u5361 | \u822A\u62CD\u6A21\u5F0F\u65E0\u7279\u6B8A\u8981\u6C42\uFF1B3D \u6A21\u5F0F\u5EFA\u8BAE\u4F7F\u7528\u652F\u6301 WebGL 2 \u7684\u72EC\u7ACB\u663E\u5361 |
-
-### 2.2 \u6D4F\u89C8\u5668\u6743\u9650
-
-\u9996\u6B21\u4F7F\u7528\u65F6\uFF0C\u6D4F\u89C8\u5668\u53EF\u80FD\u8BE2\u95EE\u4EE5\u4E0B\u6743\u9650\uFF1A
-
-- **\u6444\u50CF\u5934\u6743\u9650**\uFF1A\u5237\u8138\u767B\u5F55\u9700\u8981\uFF1B\u62D2\u7EDD\u540E\u65E0\u6CD5\u5237\u8138\u767B\u5F55\uFF1B
-- **\u9EA6\u514B\u98CE\u6743\u9650**\uFF1A\u667A\u80FD\u95EE\u519C\u8BED\u97F3\u8F93\u5165\u9700\u8981\uFF1B
-- **\u5168\u5C4F\u6743\u9650**\uFF1A\u70B9\u51FB\u6570\u636E\u53F0\u5168\u5C4F\u6309\u94AE\u540E\u4F7F\u7528\uFF1B
-- **\u81EA\u52A8\u64AD\u653E\u6743\u9650**\uFF1A\u53EF\u80FD\u5F71\u54CD\u5927\u68DA\u5B9E\u666F\u89C6\u9891\u81EA\u52A8\u64AD\u653E\u3002
-
-### 2.3 \u786E\u8BA4\u7CFB\u7EDF\u5DF2\u7ECF\u542F\u52A8
-
-\u5728\u6D4F\u89C8\u5668\u8BBF\u95EE\uFF1A
-
-\`\`\`text
-http://localhost:8081/
-\`\`\`
-
-\u5982\u679C\u65E0\u6CD5\u6253\u5F00\uFF0C\u8BF7\u8BA9\u7CFB\u7EDF\u7BA1\u7406\u5458\u786E\u8BA4\uFF1A
-
-1. MySQL \u5BB9\u5668\u6B63\u5728\u8FD0\u884C\uFF1B
-2. Spring Boot \u5DF2\u76D1\u542C \`8081\`\uFF1B
-3. \u6CA1\u6709\u7B2C\u4E8C\u4E2A\u7A0B\u5E8F\u5360\u7528 \`8081\`\uFF1B
-4. \u5B98\u7F51\u548C\u5E73\u53F0\u524D\u7AEF\u5DF2\u7ECF\u6784\u5EFA\u3002
-
----
-
-## 3. \u5B98\u7F51\u6D4F\u89C8
-
-\u5B98\u7F51\u7528\u4E8E\u4EA7\u54C1\u4ECB\u7ECD\u548C\u5E73\u53F0\u5165\u53E3\uFF0C\u4E0D\u767B\u5F55\u4E5F\u53EF\u4EE5\u8BBF\u95EE\u3002
-
-![\u5B98\u7F51\u9996\u9875\u5168\u666F](./\u622A\u56FE/\u5B98\u7F51.png)
-
-> **\u56FE 3-1\u3000\u5B98\u7F51\u9996\u9875\u3002** \u9876\u90E8\u662F\u4EA7\u54C1\u5BFC\u822A\u548C\u767B\u5F55\u5165\u53E3\uFF1B\u9875\u9762\u4E2D\u592E\u7684\u201C\u8FDB\u5165\u5E73\u53F0\u201D\u7528\u4E8E\u5F00\u59CB\u5B8C\u6574\u4F53\u9A8C\uFF0C\u201C\u4F53\u9A8C\u667A\u80FD\u95EE\u519C\u201D\u7528\u4E8E\u76F4\u63A5\u4E86\u89E3 AI \u52A9\u624B\u80FD\u529B\u3002
-
-### 3.1 \u9876\u90E8\u5BFC\u822A
-
-\u5B98\u7F51\u9876\u90E8\u5305\u62EC\uFF1A
-
-- **\u7530\u8A00\u8015\u667A**\uFF1A\u8FD4\u56DE\u9996\u9875\uFF1B
-- **\u4EA7\u54C1**\uFF1A\u67E5\u770B\u5E73\u53F0\u6838\u5FC3\u80FD\u529B\uFF1B
-- **\u89E3\u51B3\u65B9\u6848**\uFF1A\u67E5\u770B\u4E0D\u540C\u519C\u4E1A\u573A\u666F\u65B9\u6848\uFF1B
-- **\u6570\u5B57\u5B6A\u751F**\uFF1A\u4E86\u89E3\u5B9E\u666F\u4E0E 3D \u519C\u573A\uFF1B
-- **\u5173\u4E8E\u6211\u4EEC**\uFF1A\u67E5\u770B\u54C1\u724C\u5B9A\u4F4D\uFF1B
-- **\u8054\u7CFB\u6211\u4EEC**\uFF1A\u63D0\u4EA4\u5408\u4F5C\u6216\u54A8\u8BE2\u7559\u8A00\uFF1B
-- **\u767B\u5F55**\uFF1A\u8FDB\u5165\u8D26\u53F7\u767B\u5F55\u9875\uFF1B
-- **\u8FDB\u5165\u5E73\u53F0**\uFF1A\u5DF2\u6709\u767B\u5F55\u72B6\u6001\u65F6\u76F4\u63A5\u8FDB\u5165\u6570\u636E\u5DE5\u4F5C\u53F0\uFF0C\u5426\u5219\u8F6C\u5230\u767B\u5F55\u9875\u3002
-
-### 3.2 \u8054\u7CFB\u6211\u4EEC
-
-1. \u70B9\u51FB\u9876\u90E8\u201C\u8054\u7CFB\u6211\u4EEC\u201D\uFF1B
-2. \u586B\u5199\u79F0\u547C\uFF1B
-3. \u586B\u5199\u81EA\u5DF1\u7684\u90AE\u7BB1\uFF1B
-4. \u586B\u5199\u4E3B\u9898\uFF1B
-5. \u586B\u5199\u7559\u8A00\u5185\u5BB9\uFF1B
-6. \u70B9\u51FB\u201C\u53D1\u9001\u7559\u8A00\u201D\uFF1B
-7. \u9875\u9762\u663E\u793A\u201C\u7559\u8A00\u5DF2\u53D1\u9001\u201D\u540E\u5B8C\u6210\u3002
-
-\u7559\u8A00\u5C06\u901A\u8FC7 FormSubmit \u53D1\u9001\u81F3\uFF1A
-
-\`\`\`text
-1478838114@qq.com
-\`\`\`
-
-> \u9996\u6B21\u542F\u7528\u8BE5\u90AE\u7BB1\u65F6\uFF0CFormSubmit \u53EF\u80FD\u5411\u6536\u4EF6\u7BB1\u53D1\u9001\u786E\u8BA4\u90AE\u4EF6\u3002\u90AE\u7BB1\u6240\u6709\u8005\u5FC5\u987B\u5148\u70B9\u51FB\u6FC0\u6D3B\u94FE\u63A5\uFF0C\u5426\u5219\u8868\u5355\u53EF\u80FD\u663E\u793A\u5931\u8D25\u6216\u65E0\u6CD5\u9001\u8FBE\u3002
-
----
-
-## 4. \u6CE8\u518C\u8D26\u53F7
-
-### 4.1 \u6253\u5F00\u6CE8\u518C\u9875
-
-\u6709\u4E24\u79CD\u8FDB\u5165\u65B9\u5F0F\uFF1A
-
-1. \u5728\u767B\u5F55\u9875\u70B9\u51FB\u201C\u8FD8\u6CA1\u6709\u8D26\u53F7\uFF1F\u7ACB\u5373\u6CE8\u518C\u201D\uFF1B
-2. \u76F4\u63A5\u8BBF\u95EE \`http://localhost:8081/#/sign-up\`\u3002
-
-### 4.2 \u586B\u5199\u8D26\u53F7\u4FE1\u606F
-
-\u4F9D\u6B21\u586B\u5199\uFF1A
-
-1. **Full Name**\uFF1A\u59D3\u540D\u6216\u5E73\u53F0\u663E\u793A\u540D\u79F0\uFF1B
-2. **Email Address**\uFF1A\u767B\u5F55\u90AE\u7BB1\uFF0C\u4E0D\u80FD\u548C\u5DF2\u6709\u8D26\u53F7\u91CD\u590D\uFF1B
-3. **Password**\uFF1A\u81F3\u5C11 6 \u4E2A\u5B57\u7B26\uFF1B
-4. **Confirm Password**\uFF1A\u518D\u6B21\u8F93\u5165\u5B8C\u5168\u76F8\u540C\u7684\u5BC6\u7801\uFF1B
-5. \u70B9\u51FB **Create Account**\u3002
-
-\u6CE8\u518C\u6210\u529F\u540E\uFF0C\u7CFB\u7EDF\u4F1A\u81EA\u52A8\u4FDD\u5B58\u767B\u5F55\u4EE4\u724C\uFF0C\u5E76\u8FDB\u5165\u4EBA\u8138\u7ED1\u5B9A\u6B65\u9AA4\u3002
-
-### 4.3 \u7ED1\u5B9A\u4EBA\u8138\uFF08\u53EF\u9009\uFF09
-
-1. \u6D4F\u89C8\u5668\u5F39\u51FA\u6444\u50CF\u5934\u6743\u9650\u65F6\u70B9\u51FB\u201C\u5141\u8BB8\u201D\uFF1B
-2. \u4FDD\u6301\u6B63\u8138\u4F4D\u4E8E\u53D6\u666F\u6846\u4E2D\u592E\uFF1B
-3. \u907F\u514D\u80CC\u5149\u3001\u906E\u6321\u548C\u591A\u4EBA\u540C\u65F6\u5165\u955C\uFF1B
-4. \u70B9\u51FB\u201C\u62CD\u7167\u201D\uFF1B
-5. \u68C0\u67E5\u7167\u7247\u662F\u5426\u6E05\u6670\uFF1B
-6. \u4E0D\u6EE1\u610F\u65F6\u70B9\u51FB\u201C\u91CD\u62CD\u201D\uFF1B
-7. \u6EE1\u610F\u540E\u70B9\u51FB\u201C\u7ED1\u5B9A\u5E76\u8FDB\u5165\u201D\u3002
-
-\u6CE8\u518C\u7ED1\u5B9A\u573A\u666F\u5141\u8BB8\u4E0A\u4F20\u4E00\u5F20\u6E05\u6670\u6B63\u8138\u7167\u3002\u5982\u679C\u6682\u65F6\u4E0D\u7ED1\u5B9A\uFF0C\u53EF\u4EE5\u70B9\u51FB\u201C\u8DF3\u8FC7\uFF0C\u7A0D\u540E\u5728\u5E73\u53F0\u8BBE\u7F6E\u4E2D\u7ED1\u5B9A\u201D\u3002
-
----
-
-## 5. \u767B\u5F55\u5E73\u53F0
-
-![\u767B\u5F55\u9875\u9762](./\u622A\u56FE/\u767B\u9646.png)
-
-> **\u56FE 5-1\u3000\u767B\u5F55\u9875\u9762\u3002** \u5DE6\u4FA7\u4E0A\u65B9\u53EF\u5207\u6362\u201C\u5BC6\u7801\u767B\u5F55/\u5237\u8138\u767B\u5F55\u201D\uFF1B\u8868\u5355\u4E0B\u65B9\u662F\u6CE8\u518C\u5165\u53E3\uFF1B\u201C\u8FD4\u56DE\u5B98\u7F51\u201D\u7528\u4E8E\u9000\u51FA\u767B\u5F55\u6D41\u7A0B\u3002
-
-### 5.1 \u5BC6\u7801\u767B\u5F55
-
-1. \u6253\u5F00 \`http://localhost:8081/#/sign-in\`\uFF1B
-2. \u4FDD\u6301\u9876\u90E8\u9009\u62E9\u201C\u5BC6\u7801\u767B\u5F55\u201D\uFF1B
-3. \u8F93\u5165\u6CE8\u518C\u90AE\u7BB1\uFF1B
-4. \u8F93\u5165\u5BC6\u7801\uFF1B
-5. \u5982\u9700\u5173\u95ED\u6D4F\u89C8\u5668\u540E\u7EE7\u7EED\u4FDD\u6301\u767B\u5F55\uFF0C\u52FE\u9009 **Keep me signed in**\uFF1B
-6. \u70B9\u51FB **Sign In**\uFF1B
-7. \u767B\u5F55\u6210\u529F\u540E\u81EA\u52A8\u8FDB\u5165\u667A\u6167\u519C\u573A\u6570\u636E\u5DE5\u4F5C\u53F0\u3002
-
-\u201CKeep me signed in\u201D\u7684\u533A\u522B\uFF1A
-
-- \u52FE\u9009\uFF1A\u767B\u5F55\u4FE1\u606F\u4FDD\u5B58\u5230\u6D4F\u89C8\u5668\u672C\u5730\u5B58\u50A8\uFF1B
-- \u4E0D\u52FE\u9009\uFF1A\u5173\u95ED\u6D4F\u89C8\u5668\u4F1A\u8BDD\u540E\u9700\u8981\u91CD\u65B0\u767B\u5F55\u3002
-
-### 5.2 \u5237\u8138\u767B\u5F55
-
-\u5237\u8138\u767B\u5F55\u53EA\u5141\u8BB8\u4F7F\u7528\u5B9E\u65F6\u6444\u50CF\u5934\uFF0C\u4E0D\u5141\u8BB8\u4E0A\u4F20\u5DF2\u6709\u56FE\u7247\u3002
-
-1. \u5728\u767B\u5F55\u9875\u9009\u62E9\u201C\u5237\u8138\u767B\u5F55\u201D\uFF1B
-2. \u6D4F\u89C8\u5668\u8BE2\u95EE\u6444\u50CF\u5934\u6743\u9650\u65F6\u70B9\u51FB\u201C\u5141\u8BB8\u201D\uFF1B
-3. \u5C06\u6B63\u8138\u653E\u5728\u753B\u9762\u4E2D\u592E\uFF1B
-4. \u4FDD\u6301\u5149\u7EBF\u5747\u5300\uFF0C\u6458\u4E0B\u53E3\u7F69\u3001\u58A8\u955C\u7B49\u906E\u6321\u7269\uFF1B
-5. \u70B9\u51FB\u201C\u62CD\u7167\u201D\uFF1B
-6. \u67E5\u770B\u9884\u89C8\uFF0C\u4E0D\u6E05\u6670\u65F6\u70B9\u51FB\u201C\u91CD\u62CD\u201D\uFF1B
-7. \u70B9\u51FB\u201C\u767B\u5F55\u201D\uFF1B
-8. \u5339\u914D\u901A\u8FC7\u540E\u8FDB\u5165\u6570\u636E\u5DE5\u4F5C\u53F0\u3002
-
-\u5982\u679C\u6444\u50CF\u5934\u65E0\u6CD5\u6253\u5F00\uFF1A
-
-1. \u70B9\u51FB\u5730\u5740\u680F\u5DE6\u4FA7\u7684\u7F51\u7AD9\u6743\u9650\u56FE\u6807\uFF1B
-2. \u5C06\u201C\u6444\u50CF\u5934\u201D\u6539\u4E3A\u201C\u5141\u8BB8\u201D\uFF1B
-3. \u5237\u65B0\u9875\u9762\uFF1B
-4. \u91CD\u65B0\u8FDB\u5165\u5237\u8138\u767B\u5F55\u3002
-
-### 5.3 \u767B\u5F55\u5931\u8D25\u5904\u7406
-
-| \u63D0\u793A | \u5904\u7406\u65B9\u6CD5 |
-|---|---|
-| \u90AE\u7BB1\u6216\u5BC6\u7801\u9519\u8BEF | \u68C0\u67E5\u90AE\u7BB1\u62FC\u5199\u3001\u5927\u5C0F\u5199\u548C\u5BC6\u7801 |
-| \u8BE5\u90AE\u7BB1\u5DF2\u88AB\u6CE8\u518C | \u8FD4\u56DE\u767B\u5F55\u9875\u76F4\u63A5\u767B\u5F55 |
-| \u65E0\u6CD5\u6253\u5F00\u6444\u50CF\u5934 | \u5F00\u542F\u6D4F\u89C8\u5668\u6743\u9650\uFF0C\u786E\u8BA4\u6444\u50CF\u5934\u672A\u88AB\u5176\u4ED6\u8F6F\u4EF6\u5360\u7528 |
-| \u4EBA\u8138\u672A\u5339\u914D | \u4F7F\u7528\u7ED1\u5B9A\u8FC7\u4EBA\u8138\u7684\u8D26\u53F7\uFF0C\u6539\u5584\u5149\u7167\u540E\u91CD\u62CD |
-| \u8BF7\u6C42\u5931\u8D25\uFF08401\uFF09 | \u767B\u5F55\u5DF2\u8FC7\u671F\uFF0C\u91CD\u65B0\u767B\u5F55 |
-
----
-
-## 6. \u6570\u636E\u5DE5\u4F5C\u53F0\u603B\u89C8
-
-![\u822A\u62CD\u5B9E\u666F\u6570\u636E\u5DE5\u4F5C\u53F0](./\u622A\u56FE/\u4E3B\u754C\u9762.png)
-
-> **\u56FE 6-1\u3000\u822A\u62CD\u5B9E\u666F\u6570\u636E\u5DE5\u4F5C\u53F0\u3002** \u9876\u90E8\u4E3A\u5168\u5C40\u64CD\u4F5C\u680F\uFF0C\u5DE6\u4E0A\u89D2\u5207\u6362\u5B9E\u666F\u548C 3D\uFF0C\u4E2D\u592E\u6807\u7B7E\u5BF9\u5E94\u519C\u573A\u5BF9\u8C61\uFF0C\u53F3\u4FA7\u4E3A\u5F53\u524D\u5BF9\u8C61\u8BE6\u60C5\uFF0C\u5E95\u90E8 Dock \u5BF9\u5E94\u4E03\u4E2A\u4E1A\u52A1\u4E2D\u5FC3\u3002
-
-\u8FDB\u5165\u5E73\u53F0\u540E\u9ED8\u8BA4\u5230\u8FBE\uFF1A
-
-\`\`\`text
-/platform/workspaces/farm-01
-\`\`\`
-
-\u8BF7\u6309\u4EE5\u4E0B\u7F16\u53F7\u8BA4\u8BC6\u754C\u9762\uFF1A
-
-1. **\u9876\u90E8\u5168\u5C40\u680F**\uFF1A\u54C1\u724C\u3001\u6A21\u5F0F\u5207\u6362\u3001\u519C\u573A\u3001\u641C\u7D22\u3001\u901A\u77E5\u3001\u7528\u6237\u83DC\u5355\u548C\u5168\u5C4F\uFF1B
-2. **\u5DE6\u4E0A\u5929\u6C14\u5361**\uFF1A\u5F53\u524D\u6E29\u5EA6\u3001\u6E7F\u5EA6\u3001\u98CE\u901F\u3001\u5149\u7167\uFF1B
-3. **\u4E2D\u592E\u519C\u573A\u573A\u666F**\uFF1A\u822A\u62CD\u5B9E\u666F\u6216 3D \u6570\u5B57\u5B6A\u751F\uFF1B
-4. **\u573A\u666F\u5BF9\u8C61**\uFF1A\u5927\u68DA\u3001\u5730\u5757\u3001\u6444\u50CF\u5934\u3001\u8BBE\u5907\u3001\u6C34\u6C60\u3001\u6C14\u8C61\u7AD9\u548C\u673A\u5668\u4EBA\uFF1B
-5. **\u89C6\u56FE\u5207\u6362**\uFF1A\u5B9E\u666F\u4E0E 3D\uFF1B
-6. **\u573A\u666F\u5DE5\u5177**\uFF1A\u7F29\u653E\u3001\u590D\u4F4D\u3001\u56FE\u5C42\u3001\u6D4B\u8DDD\uFF1B
-7. **\u5E95\u90E8\u4E1A\u52A1 Dock**\uFF1A\u603B\u89C8\u3001\u76D1\u63A7\u3001\u73AF\u5883\u3001\u8BBE\u5907\u3001\u704C\u6E89\u3001\u4F5C\u7269\u3001\u544A\u8B66\uFF1B
-8. **\u53F3\u4FA7\u4E0A\u4E0B\u6587\u62BD\u5C49**\uFF1A\u663E\u793A\u5F53\u524D\u5BF9\u8C61\u6570\u636E\u4E0E\u64CD\u4F5C\uFF1B
-9. **\u5C0F\u7530\u52A9\u624B**\uFF1A\u5728\u5F53\u524D\u519C\u573A\u4E0A\u4E0B\u6587\u4E2D\u63D0\u95EE\u3002
-
-### 6.1 \u641C\u7D22\u5BF9\u8C61
-
-1. \u70B9\u51FB\u9876\u90E8\u641C\u7D22\u6846\uFF1B
-2. \u8F93\u5165\u5BF9\u8C61\u540D\u79F0\uFF0C\u5982\u201C2\u53F7\u6E29\u5BA4\u201D\u201C\u6C34\u80A5\u4E00\u4F53\u673A\u201D\u201C\u84C4\u6C34\u6C60\u201D\uFF1B
-3. \u6309 Enter\uFF1B
-4. \u7CFB\u7EDF\u81EA\u52A8\u9009\u4E2D\u5E76\u805A\u7126\u5BF9\u8C61\uFF1B
-5. \u672A\u627E\u5230\u65F6\u4F1A\u663E\u793A\u63D0\u793A\u6D88\u606F\u3002
-
-### 6.2 \u901A\u77E5
-
-1. \u70B9\u51FB\u9876\u90E8\u901A\u77E5\u56FE\u6807\uFF1B
-2. \u67E5\u770B\u6700\u8FD1\u4E09\u6761\u544A\u8B66\uFF1B
-3. \u70B9\u51FB\u201C\u67E5\u770B\u5168\u90E8\u6D88\u606F\u201D\uFF1B
-4. \u7CFB\u7EDF\u5207\u6362\u5230\u544A\u8B66\u4E1A\u52A1\u4E2D\u5FC3\u3002
-
-### 6.3 \u7528\u6237\u83DC\u5355
-
-\u70B9\u51FB\u53F3\u4E0A\u89D2\u5934\u50CF\uFF0C\u53EF\u4EE5\uFF1A
-
-- \u67E5\u770B\u5F53\u524D\u7528\u6237\uFF1B
-- \u6253\u5F00\u4EBA\u8138\u7BA1\u7406\uFF1B
-- \u7ED1\u5B9A\u6216\u89E3\u7ED1\u4EBA\u8138\uFF1B
-- \u9000\u51FA\u767B\u5F55\u3002
-
----
-
-## 7. \u822A\u62CD\u5B9E\u666F\u6A21\u5F0F
-
-\u822A\u62CD\u5B9E\u666F\u7528\u4E8E\u5FEB\u901F\u7406\u89E3\u6574\u4E2A\u519C\u573A\u7684\u7A7A\u95F4\u5173\u7CFB\u3002
-
-### 7.1 \u67E5\u770B\u5BF9\u8C61
-
-- **\u9F20\u6807\u60AC\u505C**\uFF1A\u663E\u793A\u5BF9\u8C61\u8FB9\u754C\u548C\u6458\u8981\uFF1B
-- **\u5355\u51FB\u5BF9\u8C61**\uFF1A\u9009\u4E2D\u5BF9\u8C61\u5E76\u6253\u5F00\u53F3\u4FA7\u8BE6\u60C5\uFF1B
-- **\u53CC\u51FB\u5BF9\u8C61**\uFF1A\u805A\u7126\u8BE5\u5BF9\u8C61\uFF1B
-- **\u70B9\u51FB\u7A7A\u767D\u5904**\uFF1A\u53D6\u6D88\u9009\u62E9\uFF1B
-- **\u6EDA\u8F6E\u6216\u5DE5\u5177\u6309\u94AE**\uFF1A\u8C03\u6574\u7F29\u653E\uFF1B
-- **\u590D\u4F4D\u6309\u94AE**\uFF1A\u6062\u590D\u519C\u573A\u5168\u666F\u3002
-
-### 7.2 \u56FE\u5C42\u63A7\u5236
-
-\u70B9\u51FB\u573A\u666F\u5DE5\u5177\u680F\u4E2D\u7684\u201C\u56FE\u5C42\u201D\uFF0C\u53EF\u6253\u5F00\u6216\u5173\u95ED\uFF1A
-
-- \u5730\u5757\u8FB9\u754C\uFF1B
-- \u8BBE\u5907\uFF1B
-- \u6444\u50CF\u5934\uFF1B
-- \u704C\u6E89\u7F51\u7EDC\uFF1B
-- \u544A\u8B66\u3002
-
-### 7.3 \u6D4B\u8DDD
-
-1. \u70B9\u51FB\u201C\u6D4B\u8DDD\u201D\uFF1B
-2. \u70B9\u51FB\u7B2C\u4E00\u4E2A\u5730\u56FE\u5BF9\u8C61\u4F5C\u4E3A\u8D77\u70B9\uFF1B
-3. \u70B9\u51FB\u7B2C\u4E8C\u4E2A\u5BF9\u8C61\u4F5C\u4E3A\u7EC8\u70B9\uFF1B
-4. \u9875\u9762\u63D0\u793A\u4E24\u70B9\u4E4B\u95F4\u7684\u7A7A\u95F4\u8DDD\u79BB\u3002
-
----
-
-## 8. 3D \u6570\u5B57\u5B6A\u751F\u6A21\u5F0F
-
-![3D \u6570\u5B57\u5B6A\u751F\u9E1F\u77B0](./\u622A\u56FE/3D.png)
-
-> **\u56FE 8-1\u30003D \u6570\u5B57\u5B6A\u751F\u9E1F\u77B0\u3002** \u5DE6\u4E0A\u89D2\u201C\u5B9E\u666F/3D\u201D\u7528\u4E8E\u5207\u6362\u573A\u666F\uFF1B\u4E2D\u592E\u6E29\u5BA4\u3001\u8BBE\u5907\u3001\u9053\u8DEF\u548C\u79CD\u690D\u533A\u5747\u4E3A\u7A7A\u95F4\u5BF9\u8C61\uFF1B\u53F3\u4FA7\u8BE6\u60C5\u4E2D\u7684\u201C\u8FDB\u5165\u5927\u68DA\u201D\u53EF\u8FDB\u5165\u5BF9\u5E94\u68DA\u5185\u9875\u9762\u3002
-
-### 8.1 \u8FDB\u5165 3D
-
-1. \u70B9\u51FB\u573A\u666F\u53F3\u4E0A\u65B9\u201C3D\u201D\u6216\u201C\u6570\u5B57\u5B6A\u751F\u201D\uFF1B
-2. \u7B49\u5F85\u6A21\u578B\u52A0\u8F7D\u8FDB\u5EA6\u5B8C\u6210\uFF1B
-3. \u52A0\u8F7D\u540E\u53EF\u4EE5\u770B\u5230\u5927\u68DA\u3001\u9053\u8DEF\u3001\u8BBE\u5907\u3001\u673A\u5668\u4EBA\u3001\u6811\u6728\u548C\u79CD\u690D\u533A\u3002
-
-### 8.2 \u9E1F\u77B0\u64CD\u4F5C
-
-- \u6309\u4F4F\u9F20\u6807\u5DE6\u952E\u62D6\u52A8\uFF1A\u65CB\u8F6C\u89C6\u89D2\uFF1B
-- \u9F20\u6807\u6EDA\u8F6E\uFF1A\u7F29\u653E\uFF1B
-- \u5355\u51FB\u5BF9\u8C61\uFF1A\u6253\u5F00\u8BE6\u60C5\uFF1B
-- \u53CC\u51FB\u5927\u68DA\uFF1A\u76F4\u63A5\u8FDB\u5165\u5BF9\u5E94\u5927\u68DA\u5185\u90E8\uFF1B
-- \u70B9\u51FB\u7A7A\u767D\u533A\u57DF\uFF1A\u5173\u95ED\u9009\u62E9\u3002
-
-### 8.3 \u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A
-
-![\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A](./\u622A\u56FE/\u7B2C\u4E00\u4EBA\u79F0.png)
-
-> **\u56FE 8-2\u3000\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u3002** \u753B\u9762\u4E2D\u592E\u51C6\u661F\u7528\u4E8E\u9009\u62E9\u5BF9\u8C61\uFF0C\u5E95\u90E8\u63D0\u793A\u6761\u663E\u793A\u79FB\u52A8\u3001\u89C2\u5BDF\u3001\u52A0\u901F\u548C\u4E1A\u52A1\u5FEB\u6377\u952E\uFF0C\u5DE6\u4E0A\u89D2\u53EF\u6309 \`Esc\` \u9000\u51FA\u5DE1\u573A\u3002
-
-1. \u70B9\u51FB\u201C\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u201D\uFF1B
-2. \u70B9\u51FB\u573A\u666F\u4EE5\u9501\u5B9A\u9F20\u6807\uFF1B
-3. \u4F7F\u7528 \`W/A/S/D\` \u524D\u540E\u5DE6\u53F3\u79FB\u52A8\uFF1B
-4. \u79FB\u52A8\u9F20\u6807\u89C2\u5BDF\u56DB\u5468\uFF1B
-5. \u6309\u4F4F \`Shift\` \u52A0\u901F\uFF1B
-6. \u4F7F\u7528\u753B\u9762\u4E2D\u5FC3\u51C6\u661F\u5BF9\u51C6\u5BF9\u8C61\uFF1B
-7. \u70B9\u51FB\u5DE6\u952E\u9009\u62E9\u8BBE\u65BD\uFF1B
-8. \u6309 \`Esc\` \u91CA\u653E\u9F20\u6807\u6216\u9000\u51FA\u5DE1\u573A\u3002
-
-\u7B2C\u4E00\u4EBA\u79F0\u5FEB\u6377\u952E\uFF1A
-
-| \u6309\u952E | \u4E1A\u52A1\u6A21\u5757 |
-|---|---|
-| 1 | \u603B\u89C8 |
-| 2 | \u76D1\u63A7 |
-| 3 | \u73AF\u5883 |
-| 4 | \u8BBE\u5907 |
-| 5 | \u704C\u6E89 |
-| 6 | \u4F5C\u7269 |
-| 7 | \u544A\u8B66 |
-
-\u573A\u666F\u5177\u6709\u8BBE\u65BD\u78B0\u649E\u8303\u56F4\uFF0C\u65E0\u6CD5\u76F4\u63A5\u7A7F\u8FC7\u6E29\u5BA4\u3001\u5EFA\u7B51\u3001\u6C34\u6C60\u548C\u8BBE\u5907\u3002\u9760\u8FD1\u969C\u788D\u7269\u65F6\u53EF\u6CBF\u8FB9\u7F18\u6ED1\u52A8\u3002
-
----
-
-## 9. \u4E03\u4E2A\u4E1A\u52A1\u4E2D\u5FC3
-
-### 9.1 \u603B\u89C8
-
-\u7528\u4E8E\u67E5\u770B\uFF1A
-
-- \u519C\u573A\u5065\u5EB7\u5EA6\uFF1B
-- \u8BBE\u5907\u603B\u6570\u548C\u5728\u7EBF\u6570\uFF1B
-- \u5F53\u524D\u672A\u5904\u7406\u544A\u8B66\uFF1B
-- \u6C34\u4F4D\u548C\u4ECA\u65E5\u7528\u6C34\uFF1B
-- \u5173\u952E\u7A7A\u95F4\u5BF9\u8C61\u72B6\u6001\u3002
-
-### 9.2 \u76D1\u63A7
-
-1. \u70B9\u51FB Dock \u4E2D\u201C\u76D1\u63A7\u201D\uFF1B
-2. \u5730\u56FE\u4E0A\u53EF\u76D1\u63A7\u7684\u5927\u68DA\u548C\u5730\u5757\u8FDB\u5165\u53EF\u9009\u72B6\u6001\uFF1B
-3. \u70B9\u51FB\u4E00\u4E2A\u5927\u68DA\u6216\u5730\u5757\uFF1B
-4. \u6253\u5F00\u76D1\u63A7\u5F39\u7A97\uFF1B
-5. \u67E5\u770B\u89C6\u9891\u3001\u6444\u50CF\u5934\u4FE1\u606F\u548C AI \u68C0\u6D4B\u6846\uFF1B
-6. \u53EF\u5207\u6362\u6444\u50CF\u5934\u3001\u67E5\u770B AI \u5206\u6790\u6216\u6267\u884C\u5F55\u50CF\u64CD\u4F5C\u3002
-
-\u5F53\u524D\u6F14\u793A\u89C6\u9891\u91C7\u7528 YOLO \u79BB\u7EBF\u68C0\u6D4B\uFF0C\u5E76\u4F7F\u7528 ByteTrack \u7EF4\u6301\u4EBA\u5458/\u4F5C\u7269\u76EE\u6807 ID\u3002\u68C0\u6D4B\u7ED3\u679C\u4F1A\u6309\u89C6\u9891\u65F6\u95F4\u53E0\u52A0\u663E\u793A\u3002
-
-### 9.3 \u73AF\u5883
-
-\u70B9\u51FB\u201C\u73AF\u5883\u201D\u540E\u53EF\u67E5\u770B\uFF1A
-
-- \u7A7A\u6C14\u6E29\u5EA6\uFF1B
-- \u7A7A\u6C14\u6E7F\u5EA6\uFF1B
-- \u571F\u58E4\u6E7F\u5EA6\uFF1B
-- \u5149\u7167\uFF1B
-- CO\u2082\uFF1B
-- 24 \u5C0F\u65F6\u8D8B\u52BF\uFF1B
-- AI \u8C03\u63A7\u5EFA\u8BAE\u3002
-
-\u73AF\u5883\u6570\u636E\u6BCF 30 \u79D2\u5237\u65B0\u4E00\u6B21\u3002\u6A59\u8272\u6216\u8B66\u793A\u8272\u8868\u793A\u6307\u6807\u9700\u8981\u5173\u6CE8\u3002
-
-### 9.4 \u8BBE\u5907
-
-1. \u70B9\u51FB\u201C\u8BBE\u5907\u201D\uFF1B
-2. \u9ED8\u8BA4\u9009\u4E2D\u6C34\u80A5\u4E00\u4F53\u673A\uFF1B
-3. \u4ECE\u5730\u56FE\u6216\u8BBE\u5907\u5217\u8868\u9009\u62E9\u76EE\u6807\uFF1B
-4. \u67E5\u770B\u5728\u7EBF\u72B6\u6001\u3001\u4F4D\u7F6E\u3001\u5F53\u524D\u6570\u503C\u548C\u6700\u540E\u901A\u4FE1\u65F6\u95F4\uFF1B
-5. \u4F7F\u7528\u5F00\u5173\u63A7\u5236\u8BBE\u5907\uFF1B
-6. \u70B9\u51FB\u201C\u8BBE\u5907\u81EA\u68C0\u201D\u6267\u884C\u68C0\u67E5\uFF1B
-7. \u7B49\u5F85\u6210\u529F\u6216\u5931\u8D25\u63D0\u793A\u3002
-
-\u5B89\u5168\u9650\u5236\uFF1A\u79BB\u7EBF\u8BBE\u5907\u4E0D\u80FD\u88AB\u5F00\u542F\u3002\u7CFB\u7EDF\u4F1A\u8FD4\u56DE\u201C\u79BB\u7EBF\u8BBE\u5907\u65E0\u6CD5\u5F00\u542F\u201D\uFF0C\u9632\u6B62\u9519\u8BEF\u63A7\u5236\u3002
-
-### 9.5 \u704C\u6E89
-
-1. \u70B9\u51FB\u201C\u704C\u6E89\u201D\uFF1B
-2. \u67E5\u770B\u84C4\u6C34\u6C60\u3001\u6C34\u80A5\u673A\u3001\u9600\u95E8\u548C\u5404\u704C\u6E89\u5355\u5143\uFF1B
-3. \u9009\u62E9\u4E00\u4E2A\u704C\u6E89\u5355\u5143\uFF1B
-4. \u8BBE\u7F6E\u704C\u6E89\u65F6\u957F\uFF1B
-5. \u6253\u5F00\u6216\u5173\u95ED\u704C\u6E89\uFF1B
-6. \u4FDD\u5B58\u8BA1\u5212\uFF1B
-7. \u5237\u65B0\u9875\u9762\u786E\u8BA4\u72B6\u6001\u4ECD\u7136\u4FDD\u7559\u3002
-
-### 9.6 \u4F5C\u7269
-
-\u9009\u62E9\u201C\u4F5C\u7269\u201D\u540E\u53EF\u67E5\u770B\uFF1A
-
-- \u4F5C\u7269\u54C1\u79CD\uFF1B
-- \u751F\u957F\u9636\u6BB5\uFF1B
-- \u5065\u5EB7\u5EA6\uFF1B
-- \u73AF\u5883\u6458\u8981\uFF1B
-- \u75C5\u866B\u5BB3\u98CE\u9669\uFF1B
-- \u5F53\u524D\u519C\u4E8B\u4EFB\u52A1\u3002
-
-\u9009\u62E9\u5927\u68DA\u540E\uFF0C\u53EF\u901A\u8FC7\u8BE6\u60C5\u4E2D\u7684\u201C\u8FDB\u5165\u5927\u68DA\u201D\u7EE7\u7EED\u67E5\u770B\u68DA\u5185\u690D\u682A\u3002
-
-### 9.7 \u544A\u8B66
-
-1. \u70B9\u51FB\u201C\u544A\u8B66\u201D\uFF1B
-2. \u67E5\u770B\u544A\u8B66\u6807\u9898\u3001\u65F6\u95F4\u3001\u7B49\u7EA7\u548C\u72B6\u6001\uFF1B
-3. \u9009\u62E9\u672A\u5904\u7406\u544A\u8B66\uFF1B
-4. \u9605\u8BFB\u5173\u8054\u5BF9\u8C61\u4FE1\u606F\uFF1B
-5. \u70B9\u51FB\u201C\u5904\u7406\u544A\u8B66\u201D\uFF1B
-6. \u72B6\u6001\u53D8\u4E3A\u201C\u5DF2\u5904\u7406\u201D\uFF1B
-7. \u5237\u65B0\u540E\u5904\u7406\u7ED3\u679C\u4ECD\u7136\u4FDD\u7559\u3002
-
----
-
-## 10. \u53F3\u4FA7\u4E0A\u4E0B\u6587\u62BD\u5C49
-
-\u53F3\u4FA7\u62BD\u5C49\u6839\u636E\u9009\u62E9\u5BF9\u8C61\u81EA\u52A8\u53D8\u5316\u3002
-
-### 10.1 \u5927\u68DA\u6216\u5730\u5757
-
-\u663E\u793A\uFF1A\u4F5C\u7269\u3001\u9762\u79EF\u3001\u751F\u957F\u9636\u6BB5\u3001\u73AF\u5883\u3001\u5065\u5EB7\u5EA6\u548C\u4EFB\u52A1\u3002\u5927\u68DA\u8BE6\u60C5\u4E0B\u65B9\u63D0\u4F9B\u201C\u8FDB\u5165\u5927\u68DA\u201D\u3002
-
-### 10.2 \u8BBE\u5907
-
-\u663E\u793A\uFF1A\u5728\u7EBF\u72B6\u6001\u3001\u542F\u505C\u72B6\u6001\u3001\u6D4B\u91CF\u503C\u3001\u4F4D\u7F6E\u3001\u6700\u540E\u901A\u4FE1\u65F6\u95F4\u3001\u63A7\u5236\u5F00\u5173\u548C\u81EA\u68C0\u3002
-
-### 10.3 \u704C\u6E89\u5355\u5143
-
-\u663E\u793A\uFF1A\u76EE\u6807\u533A\u57DF\u3001\u8FD0\u884C\u72B6\u6001\u3001\u6D41\u91CF\u3001\u65F6\u957F\u8BBE\u7F6E\u548C\u8BA1\u5212\u4FDD\u5B58\u3002
-
-### 10.4 \u544A\u8B66
-
-\u663E\u793A\uFF1A\u4E8B\u4EF6\u7B49\u7EA7\u3001\u5173\u8054\u5BF9\u8C61\u3001\u53D1\u751F\u65F6\u95F4\u3001\u5F53\u524D\u72B6\u6001\u548C\u5904\u7406\u64CD\u4F5C\u3002
-
-\u5173\u95ED\u62BD\u5C49\u540E\uFF0C3D \u7B2C\u4E00\u4EBA\u79F0\u63A7\u5236\u4F1A\u81EA\u52A8\u6062\u590D\u3002
-
----
-
-## 11. \u667A\u80FD\u95EE\u519C
-
-![\u72EC\u7ACB\u667A\u80FD\u95EE\u519C\u9996\u9875](./\u622A\u56FE/\u95EE\u519C.png)
-
-> **\u56FE 11-1\u3000\u72EC\u7ACB\u667A\u80FD\u95EE\u519C\u9996\u9875\u3002** \u4E2D\u592E\u8F93\u5165\u6846\u7528\u4E8E\u81EA\u7136\u8BED\u8A00\u63D0\u95EE\uFF0C\u4E0B\u65B9\u63D0\u4F9B\u5E38\u7528\u95EE\u9898\u5FEB\u6377\u5165\u53E3\uFF1B\u5DE6\u4FA7\u4FDD\u5B58\u9879\u76EE\u548C\u6700\u8FD1\u5BF9\u8BDD\uFF0C\u5E95\u90E8 Dock \u53EF\u8FDB\u5165\u9762\u677F\u3001\u6F14\u793A\u53CA\u5176\u4ED6\u5E94\u7528\u3002
-
-\u7CFB\u7EDF\u63D0\u4F9B\u4E24\u79CD\u95EE\u519C\u5165\u53E3\uFF1A
-
-1. \u6570\u636E\u5DE5\u4F5C\u53F0\u5DE6\u4FA7\u201C\u5C0F\u7530\u201D\u52A9\u624B\uFF1B
-2. \u9876\u90E8\u201C\u667A\u80FD\u95EE\u519C\u201D\u72EC\u7ACB\u9875\u9762\u3002
-
-### 11.1 \u5728\u6570\u636E\u5DE5\u4F5C\u53F0\u4E2D\u63D0\u95EE
-
-1. \u70B9\u51FB\u201C\u5C0F\u7530\u201D\u89D2\u8272\uFF1B
-2. \u8F93\u5165\u95EE\u9898\uFF1B
-3. \u70B9\u51FB\u53D1\u9001\uFF1B
-4. \u7CFB\u7EDF\u4F1A\u81EA\u52A8\u643A\u5E26\u5F53\u524D\u89C6\u56FE\u3001\u4E1A\u52A1\u6A21\u5757\u548C\u5DF2\u9009\u5BF9\u8C61\uFF1B
-5. \u67E5\u770B\u56DE\u7B54\uFF1B
-6. \u7EE7\u7EED\u8FFD\u95EE\u5373\u53EF\u5F62\u6210\u591A\u8F6E\u5BF9\u8BDD\u3002
-
-\u793A\u4F8B\u95EE\u9898\uFF1A
-
-- \u201C\u5F53\u524D\u519C\u573A\u6709\u54EA\u4E9B\u5F02\u5E38\uFF1F\u201D
-- \u201C2\u53F7\u6E29\u5BA4\u4E3A\u4EC0\u4E48\u9700\u8981\u5173\u6CE8\uFF1F\u201D
-- \u201C\u5206\u67904\u53F7\u5730\u5757\u571F\u58E4\u6E7F\u5EA6\u3002\u201D
-- \u201C\u7ED9\u6211\u4E00\u4E2A\u4ECA\u5929\u7684\u704C\u6E89\u5EFA\u8BAE\u3002\u201D
-- \u201C\u5F53\u524D\u6709\u54EA\u4E9B\u79BB\u7EBF\u8BBE\u5907\uFF1F\u201D
-
-### 11.2 \u72EC\u7ACB\u667A\u80FD\u95EE\u519C\u9875\u9762
-
-1. \u70B9\u51FB\u9876\u90E8\u201C\u667A\u80FD\u95EE\u519C\u201D\uFF1B
-2. \u70B9\u51FB\u201C\u65B0\u5EFA\u5BF9\u8BDD\u201D\u6216\u9009\u62E9\u5386\u53F2\u5BF9\u8BDD\uFF1B
-3. \u8F93\u5165\u81EA\u7136\u8BED\u8A00\u95EE\u9898\uFF1B
-4. \u53EF\u4F7F\u7528\u5FEB\u6377\u95EE\u9898\uFF1B
-5. \u53EF\u70B9\u51FB\u9EA6\u514B\u98CE\u8FDB\u884C\u8BED\u97F3\u8F93\u5165\uFF1B
-6. \u53EF\u6DFB\u52A0\u6587\u672C\u9644\u4EF6\uFF1B
-7. \u53D1\u9001\u540E\u67E5\u770B\u6587\u5B57\u56DE\u7B54\u548C\u81EA\u52A8\u751F\u6210\u7684\u6570\u636E\u9762\u677F\uFF1B
-8. \u4F7F\u7528\u53F3\u4FA7\u5FEB\u6377 Dock \u6253\u5F00\u5E94\u7528\u3001\u6570\u636E\u6216\u76F8\u5173\u529F\u80FD\uFF1B
-9. \u5BF9\u8BDD\u548C\u5DE5\u4F5C\u53F0\u5E03\u5C40\u4F1A\u4FDD\u5B58\u5230\u5F53\u524D\u8D26\u53F7\u3002
-
-\u4E0D\u540C\u8D26\u53F7\u7684\u95EE\u519C\u8BB0\u5F55\u76F8\u4E92\u9694\u79BB\u3002
-
-![\u81EA\u5B9A\u4E49\u667A\u80FD\u5DE5\u4F5C\u53F0](./\u622A\u56FE/\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png)
-
-> **\u56FE 11-2\u3000\u81EA\u5B9A\u4E49\u667A\u80FD\u5DE5\u4F5C\u53F0\u3002** \u5DE5\u4F5C\u53F0\u53EF\u540C\u65F6\u627F\u8F7D\u544A\u8B66\u3001\u704C\u6E89\u8BA1\u5212\u3001\u5927\u68DA\u72B6\u6001\u3001\u519C\u573A\u603B\u89C8\u548C\u5173\u952E\u6307\u6807\u7EC4\u4EF6\uFF1B\u70B9\u51FB\u53F3\u4E0A\u89D2\u201C\u7F16\u8F91\u5DE5\u4F5C\u53F0\u201D\u53EF\u8C03\u6574\u7EC4\u4EF6\uFF0C\u5E95\u90E8\u201C\u5C0F\u7530\u52A9\u624B\u201D\u53EF\u7ED3\u5408\u5F53\u524D\u9762\u677F\u7EE7\u7EED\u63D0\u95EE\u3002
-
-### 11.3 AI \u4E0D\u53EF\u7528\u65F6
-
-\u5982\u679C\u63D0\u793A\u672A\u914D\u7F6E\u6216\u8C03\u7528\u5931\u8D25\uFF0C\u8BF7\u7BA1\u7406\u5458\u68C0\u67E5\uFF1A
-
-- \`DEEPSEEK_API_KEY\`\uFF1B
-- \`DEEPSEEK_BASE_URL\`\uFF1B
-- \`DEEPSEEK_MODEL\`\uFF1B
-- \u670D\u52A1\u5668\u662F\u5426\u80FD\u591F\u8BBF\u95EE\u6A21\u578B\u63A5\u53E3\u3002
-
----
-
-## 12. \u8FDB\u5165\u5927\u68DA\u5185\u90E8
-
-\u8FDB\u5165\u65B9\u5F0F\u6709\u4E24\u79CD\uFF1A
-
-### 12.1 \u4ECE\u8BE6\u60C5\u6309\u94AE\u8FDB\u5165
-
-1. \u5728\u822A\u62CD\u6216 3D \u573A\u666F\u5355\u51FB\u4E00\u5EA7\u5927\u68DA\uFF1B
-2. \u6253\u5F00\u53F3\u4FA7\u8BE6\u60C5\uFF1B
-3. \u70B9\u51FB\u201C\u8FDB\u5165\u5927\u68DA\u201D\uFF1B
-4. \u7CFB\u7EDF\u8FDB\u5165\u5BF9\u5E94\u5927\u68DA\u5185\u90E8\u9875\u9762\u3002
-
-### 12.2 \u5728 3D \u4E2D\u53CC\u51FB\u8FDB\u5165
-
-1. \u5207\u6362\u5230 3D\uFF1B
-2. \u627E\u5230\u76EE\u6807\u5927\u68DA\uFF1B
-3. \u53CC\u51FB\u5927\u68DA\u6A21\u578B\uFF1B
-4. \u7CFB\u7EDF\u8FDB\u5165\u5BF9\u5E94\u5927\u68DA\u5185\u90E8\u3002
-
-\u516D\u5EA7\u5927\u68DA\u5206\u522B\u4F7F\u7528\u72EC\u7ACB\u4F5C\u7269\u548C\u7ED3\u6784\uFF1A
-
-| \u5927\u68DA | \u4F5C\u7269/\u7528\u9014 | \u6A21\u578B\u7279\u70B9 |
-|---|---|---|
-| 1\u53F7 | \u756A\u8304 | \u85E4\u8513\u756A\u8304\u4E0E\u683D\u57F9\u67B6 |
-| 2\u53F7 | \u8349\u8393 | \u9AD8\u67B6\u57FA\u8D28\u683D\u57F9 |
-| 3\u53F7 | \u9EC4\u74DC | \u540A\u8513\u683D\u57F9 |
-| 4\u53F7 | \u80B2\u82D7 | \u7A74\u76D8\u4E0E\u6F6E\u6C50\u82D7\u5E8A |
-| 5\u53F7 | \u751F\u6001\u756A\u8304 | \u6709\u673A\u9AD8\u5784\u3001\u8986\u8349\u4FDD\u5892 |
-| 6\u53F7 | \u6C34\u57F9\u53F6\u83DC | NFT \u6C34\u57F9\u4E0E\u8425\u517B\u6DB2\u5FAA\u73AF |
-
----
-
-## 13. \u5927\u68DA\u5185\u90E8\u64CD\u4F5C
-
-![\u5927\u68DA\u5185\u90E8\u6570\u5B57\u5B6A\u751F](./\u622A\u56FE/\u5927\u68DA\u5185\u90E8.png)
-
-> **\u56FE 13-1\u3000\u5927\u68DA\u5185\u90E8\u6570\u5B57\u5B6A\u751F\u3002** \u9876\u90E8\u5207\u6362\u5B9E\u666F/\u6570\u5B57\u5B6A\u751F\uFF1B\u4E2D\u592E\u4E3A\u9AD8\u7CBE\u5EA6\u4F5C\u7269\u548C\u68DA\u5185\u8BBE\u5907\u6A21\u578B\uFF1B\u5E95\u90E8\u663E\u793A\u73AF\u5883\u6307\u6807\uFF1B\u53F3\u4FA7\u6807\u7B7E\u5206\u522B\u8FDB\u5165\u603B\u89C8\u3001\u8BBE\u5907\u548C\u690D\u682A\u6570\u636E\uFF0C\u53F3\u680F\u5185\u90E8\u53EF\u72EC\u7ACB\u5411\u4E0B\u6EDA\u52A8\u3002
-
-### 13.1 \u9875\u9762\u7ED3\u6784
-
-1. **\u9876\u90E8\u680F**\uFF1A\u8FD4\u56DE\u519C\u573A\u3001\u5927\u68DA\u540D\u79F0\u3001\u667A\u80FD\u95EE\u519C/\u6570\u636E\u5DE5\u4F5C\u53F0\u3001\u5B9E\u666F/\u6570\u5B57\u5B6A\u751F\uFF1B
-2. **\u4E2D\u592E\u4E3B\u753B\u9762**\uFF1A\u68DA\u5185\u5B9E\u666F\u89C6\u9891\u6216 3D \u6A21\u578B\uFF1B
-3. **\u5E95\u90E8\u73AF\u5883\u6761**\uFF1A\u6E29\u5EA6\u3001\u6E7F\u5EA6\u3001\u571F\u58E4/\u57FA\u8D28\u542B\u6C34\u3001\u5149\u7167\u3001CO\u2082\uFF1B
-4. **\u53F3\u4FA7\u6570\u636E\u680F**\uFF1A\u5927\u68DA\u6982\u51B5\u3001\u8BBE\u5907\u3001\u5206\u533A\u3001\u690D\u682A\u3001\u5EFA\u8BAE\u548C\u544A\u8B66\uFF1B
-5. **\u4FA7\u680F\u6536\u8D77\u6309\u94AE**\uFF1A\u6269\u5927\u4E3B\u753B\u9762\uFF1B
-6. **\u8FD4\u56DE\u519C\u573A**\uFF1A\u8FD4\u56DE\u56ED\u533A\u6570\u636E\u5DE5\u4F5C\u53F0\u3002
-
-### 13.2 \u5B9E\u666F\u6A21\u5F0F
-
-1. \u70B9\u51FB\u9876\u90E8\u201C\u5B9E\u666F\u201D\uFF1B
-2. \u7B49\u5F85\u6444\u50CF\u5934/\u6F14\u793A\u89C6\u9891\u8FDE\u63A5\uFF1B
-3. \u67E5\u770B\u68DA\u5185\u771F\u5B9E\u753B\u9762\uFF1B
-4. \u5982\u679C\u6D4F\u89C8\u5668\u963B\u6B62\u81EA\u52A8\u64AD\u653E\uFF0C\u70B9\u51FB\u201C\u64AD\u653E\u68DA\u5185\u5B9E\u666F\u201D\uFF1B
-5. \u89C2\u5BDF\u6444\u50CF\u5934\u8FDE\u63A5\u548C AI \u5728\u7EBF\u72B6\u6001\u3002
-
-\u5F53\u524D\u7248\u672C\u64AD\u653E\u9884\u7F6E\u68DA\u5185\u89C6\u9891\u3002\u540E\u7EED\u8BA1\u5212\u63A5\u5165 LingBot-Map\uFF0C\u5C06\u5355\u76EE\u6444\u50CF\u5934\u89C6\u9891\u8F6C\u6362\u4E3A\u68DA\u5185\u4E09\u7EF4\u91CD\u5EFA\u7ED3\u679C\uFF0C\u5E76\u670D\u52A1\u4E8E\u519C\u4E1A\u673A\u5668\u4EBA\u5B9A\u4F4D\u548C\u5BFC\u822A\u3002\u8BE5\u89C4\u5212\u4E0D\u4EE3\u8868\u5F53\u524D\u9875\u9762\u5DF2\u7ECF\u5B8C\u6210\u5B9E\u65F6\u5EFA\u56FE\u3002
-
-### 13.3 \u6570\u5B57\u5B6A\u751F\u6A21\u5F0F
-
-1. \u70B9\u51FB\u9876\u90E8\u201C\u6570\u5B57\u5B6A\u751F\u201D\uFF1B
-2. \u62D6\u52A8\u65CB\u8F6C\u6A21\u578B\uFF1B
-3. \u6EDA\u8F6E\u7F29\u653E\uFF1B
-4. \u70B9\u51FB\u690D\u682A\uFF0C\u5728\u53F3\u680F\u6253\u5F00\u690D\u682A\u6570\u636E\uFF1B
-5. \u67E5\u770B\u68DA\u67B6\u3001\u82D7\u5E8A\u3001\u6EF4\u704C\u3001\u4F20\u611F\u5668\u3001\u98CE\u673A\u3001\u76F8\u673A\u548C\u63A7\u5236\u8BBE\u5907\u3002
-
-### 13.4 \u53F3\u4FA7\u201C\u603B\u89C8\u201D
-
-\u5305\u62EC\uFF1A
-
-- \u5927\u68DA\u9762\u79EF\u3001\u68DA\u578B\u3001\u683D\u57F9\u6A21\u5F0F\u548C\u5065\u5EB7\u5EA6\uFF1B
-- \u751F\u4EA7\u753B\u50CF\uFF1B
-- \u5E73\u5747\u682A\u9AD8 7 \u65E5\u8D8B\u52BF\uFF1B
-- A/B/C \u5206\u533A\u4F5C\u4E1A\uFF1B
-- AI \u8C03\u63A7\u5EFA\u8BAE\uFF1B
-- \u6700\u8FD1\u544A\u8B66\u3002
-
-### 13.5 \u53F3\u4FA7\u201C\u8BBE\u5907\u201D
-
-1. \u70B9\u51FB\u201C\u8BBE\u5907\u201D\uFF1B
-2. \u67E5\u770B\u5728\u7EBF\u8BBE\u5907\u6570\u91CF\uFF1B
-3. \u9010\u9879\u67E5\u770B\u8BBE\u5907\u540D\u79F0\u3001\u4F4D\u7F6E\u3001\u8D23\u4EFB\u3001\u8FD0\u884C\u72B6\u6001\u548C\u5B9E\u65F6\u503C\uFF1B
-4. \u5BF9\u7167\u6570\u5B57\u5B6A\u751F\u4E2D\u7684\u7A7A\u95F4\u4F4D\u7F6E\u7406\u89E3\u8BBE\u5907\u5E03\u5C40\u3002
-
-### 13.6 \u53F3\u4FA7\u201C\u690D\u682A\u201D
-
-1. \u70B9\u51FB\u201C\u690D\u682A\u201D\uFF1B
-2. \u67E5\u770B\u6837\u672C\u603B\u6570\u548C\u9700\u5173\u6CE8\u6570\u91CF\uFF1B
-3. \u70B9\u51FB\u4E00\u4E2A\u690D\u682A\u7F16\u53F7\uFF0C\u5982 \`P-03\`\uFF1B
-4. 3D \u6A21\u578B\u5B9A\u4F4D\u5230\u5BF9\u5E94\u690D\u682A\uFF1B
-5. \u67E5\u770B\u5065\u5EB7\u5EA6\u3001\u682A\u9AD8\u3001\u57FA\u8D28\u542B\u6C34\u3001\u682A\u9F84\u3001\u53F6\u9762\u79EF\u6307\u6570\u548C\u5EFA\u6A21\u5750\u6807\uFF1B
-6. \u70B9\u51FB\u201C\u53D6\u6D88\u5B9A\u4F4D\u201D\u6062\u590D\u666E\u901A\u6D4F\u89C8\uFF1B
-7. \u4F7F\u7528\u9F20\u6807\u6EDA\u8F6E\u6216\u62D6\u52A8\u53F3\u680F\u6EDA\u52A8\u6761\u7EE7\u7EED\u67E5\u770B\u4E0B\u65B9\u690D\u682A\u3002
-
-### 13.7 \u6536\u8D77\u548C\u5C55\u5F00\u6570\u636E\u680F
-
-- \u70B9\u51FB\u53F3\u680F\u5DE6\u4FA7\u4E2D\u90E8\u7684\u7BAD\u5934\u53EF\u6536\u8D77\uFF1B
-- \u518D\u6B21\u70B9\u51FB\u53EF\u5C55\u5F00\uFF1B
-- \u53F3\u680F\u5185\u5BB9\u8FC7\u957F\u65F6\uFF0C\u628A\u9F20\u6807\u653E\u5728\u53F3\u680F\u5185\u90E8\u6EDA\u52A8\uFF1B
-- \u624B\u673A\u548C\u5E73\u677F\u4E0A\u53EF\u76F4\u63A5\u5728\u53F3\u680F\u4E0A\u4E0B\u6ED1\u52A8\u3002
-
----
-
-## 14. \u4EBA\u8138\u7BA1\u7406\u4E0E\u9000\u51FA
-
-### 14.1 \u7ED1\u5B9A\u4EBA\u8138
-
-1. \u70B9\u51FB\u53F3\u4E0A\u89D2\u7528\u6237\u5934\u50CF\uFF1B
-2. \u6253\u5F00\u4EBA\u8138\u7BA1\u7406\uFF1B
-3. \u70B9\u51FB\u62CD\u7167\u6216\u5728\u7ED1\u5B9A\u573A\u666F\u4E0A\u4F20\u6E05\u6670\u4EBA\u8138\u7167\uFF1B
-4. \u786E\u8BA4\u7ED1\u5B9A\uFF1B
-5. \u72B6\u6001\u53D8\u4E3A\u201C\u5DF2\u7ED1\u5B9A\u201D\u3002
-
-### 14.2 \u89E3\u7ED1\u4EBA\u8138
-
-1. \u6253\u5F00\u4EBA\u8138\u7BA1\u7406\uFF1B
-2. \u70B9\u51FB\u201C\u89E3\u7ED1\u4EBA\u8138\u201D\uFF1B
-3. \u786E\u8BA4\u64CD\u4F5C\uFF1B
-4. \u4E4B\u540E\u4E0D\u80FD\u518D\u4F7F\u7528\u5237\u8138\u767B\u5F55\uFF0C\u5BC6\u7801\u767B\u5F55\u4E0D\u53D7\u5F71\u54CD\u3002
-
-### 14.3 \u9000\u51FA\u767B\u5F55
-
-1. \u70B9\u51FB\u7528\u6237\u5934\u50CF\uFF1B
-2. \u70B9\u51FB\u201C\u9000\u51FA\u767B\u5F55\u201D\uFF1B
-3. \u672C\u5730\u767B\u5F55\u4EE4\u724C\u88AB\u6E05\u9664\uFF1B
-4. \u9875\u9762\u8FD4\u56DE\u5B98\u7F51\u767B\u5F55\u3002
-
----
-
-## 15. \u624B\u673A\u548C\u5E73\u677F\u4F7F\u7528
-
-- \u9876\u90E8\u529F\u80FD\u4F1A\u6839\u636E\u5C4F\u5E55\u5BBD\u5EA6\u81EA\u52A8\u6536\u7F29\uFF1B
-- \u53F3\u4FA7\u8BE6\u60C5\u6539\u4E3A\u8986\u76D6\u5F0F\u9762\u677F\uFF1B
-- \u4F7F\u7528\u624B\u6307\u4E0A\u4E0B\u6ED1\u52A8\u8BE6\u60C5\u5185\u5BB9\uFF1B
-- 3D \u6A21\u5F0F\u5BF9\u624B\u673A\u6027\u80FD\u8981\u6C42\u8F83\u9AD8\uFF0C\u5361\u987F\u65F6\u5207\u56DE\u5B9E\u666F\uFF1B
-- \u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u4E3B\u8981\u9762\u5411\u952E\u9F20\u684C\u9762\u7AEF\uFF1B
-- \u624B\u673A\u6D4F\u89C8\u5668\u5237\u8138\u767B\u5F55\u65F6\u8BF7\u9009\u62E9\u524D\u7F6E\u6444\u50CF\u5934\u5E76\u4FDD\u6301\u7AD6\u5C4F\u7A33\u5B9A\u3002
-
----
-
-## 16. \u63A8\u8350\u6F14\u793A\u6D41\u7A0B
-
-\u4EE5\u4E0B\u6D41\u7A0B\u9002\u5408\u7B54\u8FA9\u3001\u5BA2\u6237\u6F14\u793A\u548C\u9A8C\u6536\uFF0C\u7EA6 8\u201412 \u5206\u949F\uFF1A
-
-1. \u4ECE\u5B98\u7F51\u9996\u9875\u4ECB\u7ECD\u4EA7\u54C1\u5B9A\u4F4D\uFF1B
-2. \u6253\u5F00\u4EA7\u54C1\u3001\u89E3\u51B3\u65B9\u6848\u548C\u6570\u5B57\u5B6A\u751F\u9875\u9762\uFF1B
-3. \u6CE8\u518C\u4E00\u4E2A\u65B0\u8D26\u53F7\uFF1B
-4. \u7ED1\u5B9A\u4EBA\u8138\u5E76\u8FDB\u5165\u5E73\u53F0\uFF1B
-5. \u5C55\u793A\u822A\u62CD\u5B9E\u666F\u5BF9\u8C61\u60AC\u505C\u3001\u5355\u51FB\u548C\u53CC\u51FB\uFF1B
-6. \u5207\u6362 3D\uFF0C\u5C55\u793A\u516D\u5EA7\u4E0D\u540C\u4F5C\u7269\u6E29\u5BA4\uFF1B
-7. \u8FDB\u5165\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u5E76\u7528\u6570\u5B57\u952E\u5207\u6362\u4E1A\u52A1\uFF1B
-8. \u6253\u5F00\u8BBE\u5907\u4E2D\u5FC3\uFF0C\u63A7\u5236\u5728\u7EBF\u8BBE\u5907\u5E76\u6267\u884C\u81EA\u68C0\uFF1B
-9. \u6253\u5F00\u704C\u6E89\u4E2D\u5FC3\uFF0C\u8C03\u6574\u65F6\u957F\u5E76\u4FDD\u5B58\uFF1B
-10. \u6253\u5F00\u544A\u8B66\u4E2D\u5FC3\u5E76\u5904\u7406\u4E00\u6761\u544A\u8B66\uFF1B
-11. \u8BA9\u201C\u5C0F\u7530\u201D\u5206\u6790\u5F53\u524D\u5F02\u5E38\uFF1B
-12. \u53CC\u51FB 5 \u53F7\u5927\u68DA\u8FDB\u5165\u68DA\u5185\uFF1B
-13. \u5207\u6362\u68DA\u5185\u5B9E\u666F\u548C\u6570\u5B57\u5B6A\u751F\uFF1B
-14. \u5728\u690D\u682A\u9762\u677F\u9009\u62E9 \`P-03\`\uFF0C\u5C55\u793A\u690D\u682A\u7EA7\u5B9A\u4F4D\u548C\u6307\u6807\uFF1B
-15. \u8FD4\u56DE\u519C\u573A\u5E76\u6253\u5F00\u72EC\u7ACB\u667A\u80FD\u95EE\u519C\u5DE5\u4F5C\u53F0\uFF1B
-16. \u9000\u51FA\u767B\u5F55\uFF0C\u518D\u4F7F\u7528\u6444\u50CF\u5934\u5237\u8138\u767B\u5F55\u3002
-
----
-
-## 17. \u5E38\u89C1\u95EE\u9898
-
-### 17.1 \u9875\u9762\u6253\u4E0D\u5F00
-
-- \u786E\u8BA4\u5730\u5740\u4E3A \`http://localhost:8081/\`\uFF1B
-- \u786E\u8BA4\u540E\u7AEF\u5DF2\u7ECF\u542F\u52A8\uFF1B
-- \u5982\u679C\u65E5\u5FD7\u51FA\u73B0\u201C\u5730\u5740\u5DF2\u5728\u4F7F\u7528\u201D\uFF0C\u8BF4\u660E\u5DF2\u6709\u5B9E\u4F8B\u5360\u7528 8081\uFF0C\u4E0D\u8981\u91CD\u590D\u542F\u52A8\uFF1B
-- \u5F3A\u5236\u5237\u65B0\uFF1AWindows/Linux \u4F7F\u7528 \`Ctrl+F5\`\u3002
-
-### 17.2 \u9875\u9762\u53EA\u6709\u5B98\u7F51\uFF0C\u8FDB\u5165\u4E0D\u4E86\u5E73\u53F0
-
-- \u68C0\u67E5\u662F\u5426\u767B\u5F55\uFF1B
-- \u68C0\u67E5\u6D4F\u89C8\u5668\u662F\u5426\u7981\u7528\u4E86\u672C\u5730\u5B58\u50A8\uFF1B
-- \u91CD\u65B0\u8BBF\u95EE \`/#/sign-in\` \u767B\u5F55\u3002
-
-### 17.3 3D \u9ED1\u5C4F\u6216\u6A21\u578B\u4E0D\u5B8C\u6574
-
-- \u66F4\u65B0\u663E\u5361\u9A71\u52A8\uFF1B
-- \u786E\u8BA4\u6D4F\u89C8\u5668\u5F00\u542F\u786C\u4EF6\u52A0\u901F\uFF1B
-- \u68C0\u67E5\u6D4F\u89C8\u5668\u662F\u5426\u652F\u6301 WebGL 2\uFF1B
-- \u5173\u95ED\u5176\u4ED6\u5360\u7528\u663E\u5B58\u7684\u8F6F\u4EF6\uFF1B
-- \u5207\u56DE\u822A\u62CD\u5B9E\u666F\u7EE7\u7EED\u64CD\u4F5C\u3002
-
-### 17.4 \u5927\u68DA\u53F3\u680F\u4E0D\u80FD\u6EDA\u52A8
-
-- \u5C06\u9F20\u6807\u79FB\u5165\u53F3\u680F\u540E\u518D\u6EDA\u52A8\uFF1B
-- \u4E0D\u8981\u5728\u4E2D\u592E 3D \u753B\u9762\u4E0A\u6EDA\u52A8\uFF1B
-- \u624B\u673A\u4E0A\u76F4\u63A5\u5728\u53F3\u680F\u533A\u57DF\u4E0A\u4E0B\u6ED1\u52A8\uFF1B
-- \u5F3A\u5236\u5237\u65B0\u4EE5\u786E\u4FDD\u52A0\u8F7D\u6700\u65B0 CSS\u3002
-
-### 17.5 \u5B9E\u666F\u89C6\u9891\u4E0D\u64AD\u653E
-
-- \u70B9\u51FB\u753B\u9762\u4E2D\u592E\u64AD\u653E\u6309\u94AE\uFF1B
-- \u68C0\u67E5\u6D4F\u89C8\u5668\u81EA\u52A8\u64AD\u653E\u8BBE\u7F6E\uFF1B
-- \u786E\u8BA4 \`greenhouse-monitor.mp4\` \u9759\u6001\u8D44\u6E90\u5B58\u5728\u3002
-
-### 17.6 AI \u95EE\u519C\u5931\u8D25
-
-- \u666E\u901A\u6570\u636E\u53F0\u529F\u80FD\u4E0D\u53D7\u5F71\u54CD\uFF1B
-- \u8054\u7CFB\u7BA1\u7406\u5458\u914D\u7F6E DeepSeek Key\uFF1B
-- \u68C0\u67E5\u670D\u52A1\u5668\u8054\u7F51\u72B6\u6001\u3002
-
-### 17.7 \u8054\u7CFB\u8868\u5355\u53D1\u9001\u5931\u8D25
-
-- \u68C0\u67E5\u7F51\u7EDC\uFF1B
-- \u786E\u8BA4 FormSubmit \u5DF2\u5728\u6536\u4EF6\u90AE\u7BB1\u6FC0\u6D3B\uFF1B
-- \u76F4\u63A5\u53D1\u9001\u90AE\u4EF6\u5230 \`1478838114@qq.com\`\u3002
-
----
-
-## 18. \u6570\u636E\u548C\u5B89\u5168\u63D0\u793A
-
-- \u6F14\u793A\u73AF\u5883\u6570\u636E\u4E0D\u4EE3\u8868\u771F\u5B9E\u519C\u4E1A\u751F\u4EA7\u53C2\u6570\uFF1B
-- \u6267\u884C\u771F\u5B9E\u8BBE\u5907\u63A7\u5236\u524D\u5FC5\u987B\u589E\u52A0\u6743\u9650\u3001\u5BA1\u8BA1\u3001\u8054\u9501\u548C\u73B0\u573A\u6025\u505C\uFF1B
-- \u4E0D\u8981\u5C06\u7BA1\u7406\u5458\u5BC6\u7801\u3001JWT \u5BC6\u94A5\u3001DeepSeek Key \u6216\u767E\u5EA6\u4EBA\u8138 Key \u544A\u8BC9\u666E\u901A\u7528\u6237\uFF1B
-- \u5237\u8138\u529F\u80FD\u6D89\u53CA\u751F\u7269\u7279\u5F81\u6570\u636E\uFF0C\u6B63\u5F0F\u90E8\u7F72\u524D\u5E94\u53D6\u5F97\u7528\u6237\u6388\u6743\u5E76\u5236\u5B9A\u5220\u9664\u673A\u5236\uFF1B
-- \u751F\u4EA7\u51B3\u7B56\u5E94\u7531\u519C\u4E1A\u4E13\u4E1A\u4EBA\u5458\u7ED3\u5408\u73B0\u573A\u60C5\u51B5\u786E\u8BA4\uFF0CAI \u5EFA\u8BAE\u4E0D\u80FD\u66FF\u4EE3\u4EBA\u5DE5\u8D23\u4EFB\u3002
-
----
-
-## 19. \u622A\u56FE\u7D22\u5F15
-
-| \u622A\u56FE | \u7528\u9014 |
-|---|---|
-| [\u5B98\u7F51.png](./\u622A\u56FE/\u5B98\u7F51.png) | \u5B98\u7F51\u9996\u9875\u3001\u4EA7\u54C1\u5BFC\u822A\u548C\u5E73\u53F0\u5165\u53E3 |
-| [\u767B\u9646.png](./\u622A\u56FE/\u767B\u9646.png) | \u5BC6\u7801/\u5237\u8138\u767B\u5F55\u5207\u6362\u548C\u6CE8\u518C\u5165\u53E3 |
-| [\u4E3B\u754C\u9762.png](./\u622A\u56FE/\u4E3B\u754C\u9762.png) | \u822A\u62CD\u5B9E\u666F\u6570\u636E\u5DE5\u4F5C\u53F0\u4E0E\u5BF9\u8C61\u8BE6\u60C5 |
-| [3D.png](./\u622A\u56FE/3D.png) | 3D \u519C\u573A\u9E1F\u77B0\u548C\u5927\u68DA\u5165\u53E3 |
-| [\u7B2C\u4E00\u4EBA\u79F0.png](./\u622A\u56FE/\u7B2C\u4E00\u4EBA\u79F0.png) | \u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u548C\u5FEB\u6377\u952E\u63D0\u793A |
-| [\u95EE\u519C.png](./\u622A\u56FE/\u95EE\u519C.png) | \u72EC\u7ACB\u667A\u80FD\u95EE\u519C\u9996\u9875 |
-| [\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png](./\u622A\u56FE/\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png) | \u53EF\u7F16\u8F91\u7684 AI \u6570\u636E\u5DE5\u4F5C\u53F0 |
-| [\u5927\u68DA\u5185\u90E8.png](./\u622A\u56FE/\u5927\u68DA\u5185\u90E8.png) | \u68DA\u5185\u6570\u5B57\u5B6A\u751F\u3001\u73AF\u5883\u6761\u548C\u6570\u636E\u4FA7\u680F |
-`,Om=`# \u7530\u8A00\u8015\u667A\u667A\u6167\u519C\u4E1A\u5E73\u53F0\u6280\u672F\u8BF4\u660E\u624B\u518C
-
-> \u6587\u6863\u7248\u672C\uFF1A1.0  
-> \u7F16\u5236\u65E5\u671F\uFF1A2026-08-05  
-> \u9002\u7528\u9879\u76EE\uFF1A\u7530\u8A00\u8015\u667A\uFF08ty\uFF09  
-> \u8BFB\u8005\uFF1A\u5F00\u53D1\u3001\u6D4B\u8BD5\u3001\u90E8\u7F72\u3001\u8FD0\u7EF4\u3001\u7B97\u6CD5\u4E0E\u673A\u5668\u4EBA\u96C6\u6210\u4EBA\u5458
-
-## 1. \u6587\u6863\u76EE\u7684\u4E0E\u8FB9\u754C
-
-\u672C\u6587\u8BF4\u660E\u9879\u76EE\u7684\u7CFB\u7EDF\u67B6\u6784\u3001\u6E90\u7801\u7EC4\u7EC7\u3001\u90E8\u7F72\u914D\u7F6E\u3001\u6570\u636E\u6A21\u578B\u3001\u63A5\u53E3\u3001\u6D4B\u8BD5\u65B9\u6CD5\uFF0C\u4EE5\u53CA\u89C6\u89C9\u8BC6\u522B\u548C\u6E29\u5BA4\u5B9E\u666F\u5EFA\u56FE\u7684\u6F14\u8FDB\u65B9\u6848\u3002
-
-\u6587\u4E2D\u80FD\u529B\u5206\u4E3A\u4E24\u7C7B\uFF1A
-
-- **\u5F53\u524D\u5DF2\u5B9E\u73B0**\uFF1A\u4ED3\u5E93\u4E2D\u5DF2\u6709\u4EE3\u7801\u3001\u8D44\u6E90\u6216\u63A5\u53E3\uFF0C\u53EF\u6309\u672C\u6587\u6B65\u9AA4\u8FD0\u884C\u548C\u9A8C\u8BC1\u3002
-- **\u89C4\u5212\u63A5\u5165**\uFF1ALingBot-Map\u3001\u673A\u5668\u4EBA\u5BFC\u822A\u3001NVIDIA LocateAnything \u7B49\u540E\u7EED\u65B9\u6848\u3002\u5B83\u4EEC\u5C1A\u4E0D\u80FD\u88AB\u63CF\u8FF0\u4E3A\u5F53\u524D\u751F\u4EA7\u80FD\u529B\u3002
-
-\u7528\u6237\u64CD\u4F5C\u8BF7\u914D\u5408\u9605\u8BFB[\u300A\u7528\u6237\u4F7F\u7528\u624B\u518C\u300B](./\u7528\u6237\u4F7F\u7528\u624B\u518C.md)\u3002
-
-## 2. \u7CFB\u7EDF\u6982\u89C8
-
-\u7530\u8A00\u8015\u667A\u662F\u4E00\u4E2A\u5305\u542B\u5B98\u7F51\u3001\u8EAB\u4EFD\u8BA4\u8BC1\u3001\u519C\u573A\u6570\u5B57\u5B6A\u751F\u3001\u6E29\u5BA4\u5185\u90E8\u53EF\u89C6\u5316\u3001\u8BBE\u5907\u63A7\u5236\u3001\u704C\u6E89\u7BA1\u7406\u3001\u544A\u8B66\u7BA1\u7406\u548C AI \u95EE\u519C\u7684\u5168\u6808\u7CFB\u7EDF\u3002
-
-\`\`\`mermaid
-flowchart LR
-    U[\u6D4F\u89C8\u5668\u7528\u6237] --> L[React \u5B98\u7F51\u4E0E\u8BA4\u8BC1]
-    U --> V[Vue \u6570\u636E\u5DE5\u4F5C\u53F0]
-    L --> B[Spring Boot API]
-    V --> B
-    V --> T[Three.js \u6570\u5B57\u5B6A\u751F]
-    B --> M[(MySQL)]
-    B --> D[DeepSeek API]
-    B --> F[\u767E\u5EA6\u4EBA\u8138 API]
-    Y[YOLO + ByteTrack \u79BB\u7EBF\u5DE5\u5177] --> J[\u9010\u5E27\u68C0\u6D4B JSON]
-    J --> V
-\`\`\`
-
-### 2.1 \u6280\u672F\u6808
-
-| \u5C42\u6B21 | \u6280\u672F | \u4E3B\u8981\u7528\u9014 |
-|---|---|---|
-| \u5B98\u7F51 | React 18\u3001Vite | \u4EA7\u54C1\u4ECB\u7ECD\u3001\u8054\u7CFB\u3001\u6CE8\u518C\u548C\u767B\u5F55 |
-| \u6570\u636E\u5E73\u53F0 | Vue 3\u3001TypeScript\u3001Vite | \u519C\u573A\u5DE5\u4F5C\u53F0\u4E0E\u6E29\u5BA4\u5185\u90E8\u9875\u9762 |
-| 3D | Three.js 0.152.x | \u519C\u573A\u53CA\u6E29\u5BA4\u6570\u5B57\u5B6A\u751F\u573A\u666F |
-| \u540E\u7AEF | Java 17\u3001Spring Boot 4.1 | REST API\u3001\u4E1A\u52A1\u903B\u8F91\u4E0E\u5B89\u5168\u63A7\u5236 |
-| \u6570\u636E\u5E93 | MySQL 8.x\u3001Spring Data JPA | \u7528\u6237\u3001\u8BBE\u5907\u3001\u73AF\u5883\u3001\u544A\u8B66\u548C\u72B6\u6001\u6301\u4E45\u5316 |
-| \u9274\u6743 | JWT\u3001Spring Security | \u65E0\u72B6\u6001\u8EAB\u4EFD\u8BA4\u8BC1\u548C\u63A5\u53E3\u4FDD\u62A4 |
-| AI \u95EE\u519C | DeepSeek \u517C\u5BB9 API | \u519C\u4E1A\u95EE\u7B54\u548C\u4E0A\u4E0B\u6587\u54CD\u5E94 |
-| \u4EBA\u8138\u80FD\u529B | \u767E\u5EA6\u667A\u80FD\u4E91\u4EBA\u8138 API | \u4EBA\u8138\u6CE8\u518C\u3001\u68C0\u7D22\u548C\u767B\u5F55 |
-| \u76D1\u63A7\u8BC6\u522B | Ultralytics YOLO\u3001ByteTrack | \u79BB\u7EBF\u89C6\u9891\u68C0\u6D4B\u3001\u8DE8\u5E27\u76EE\u6807 ID |
-
-## 3. \u5F53\u524D\u80FD\u529B\u6E05\u5355
-
-### 3.1 \u5DF2\u5B9E\u73B0
-
-- \u5B98\u7F51\u3001\u4EA7\u54C1\u3001\u89E3\u51B3\u65B9\u6848\u3001\u6570\u5B57\u5B6A\u751F\u3001\u5173\u4E8E\u548C\u8054\u7CFB\u9875\u9762\uFF1B
-- \u90AE\u7BB1\u5BC6\u7801\u6CE8\u518C\u4E0E\u767B\u5F55\uFF1B
-- \u6CE8\u518C\u540E\u53EF\u9009\u4EBA\u8138\u7ED1\u5B9A\u3001\u6444\u50CF\u5934\u5237\u8138\u767B\u5F55\u3001\u4EBA\u8138\u89E3\u7ED1\uFF1B
-- JWT \u4F1A\u8BDD\u53CA\u5F53\u524D\u7528\u6237\u67E5\u8BE2\uFF1B
-- \u519C\u573A\u603B\u89C8\u3001\u73AF\u5883\u6570\u636E\u3001\u8BBE\u5907\u72B6\u6001\u3001\u704C\u6E89\u3001\u544A\u8B66\uFF1B
-- \u9E1F\u77B0\u30013D \u548C\u7B2C\u4E00\u4EBA\u79F0\u519C\u573A\u573A\u666F\uFF1B
-- \u8BBE\u5907\u3001\u704C\u6E89\u548C\u544A\u8B66\u7684\u4EA4\u4E92\u5F0F\u63A7\u5236\uFF1B
-- AI \u95EE\u519C\u548C\u7528\u6237\u52A9\u624B\u72B6\u6001\u4FDD\u5B58\uFF1B
-- \u5927\u68DA\u8BE6\u60C5\u5165\u53E3\u53CA\u53CC\u51FB 3D \u5927\u68DA\u8FDB\u5165\uFF1B
-- \u516D\u5EA7\u5927\u68DA\u7684\u5DEE\u5F02\u5316\u4F5C\u7269\u3001\u6A21\u578B\u3001\u8BBE\u5907\u548C\u533A\u57DF\u4FE1\u606F\uFF1B
-- \u6E29\u5BA4\u5185\u90E8\u6570\u5B57\u5B6A\u751F\u4E0E\u5B9E\u666F\u89C6\u9891\u5207\u6362\uFF1B
-- YOLO + ByteTrack \u79BB\u7EBF\u76D1\u63A7\u68C0\u6D4B\u7ED3\u679C\u53E0\u52A0\u3002
-
-### 3.2 \u89C4\u5212\u4E2D
-
-- LingBot-Map \u5355\u76EE\u89C6\u9891/\u56FE\u7247\u6D41\u4E09\u7EF4\u91CD\u5EFA\uFF1B
-- \u91CD\u5EFA\u7ED3\u679C\u5411\u673A\u5668\u4EBA\u5360\u636E\u5730\u56FE\u548C\u5BFC\u822A\u5750\u6807\u7CFB\u8F6C\u6362\uFF1B
-- \u5728\u7EBF\u76F8\u673A\u6D41\u3001\u8FB9\u7F18\u63A8\u7406\u670D\u52A1\u548C\u5B9E\u65F6\u68C0\u6D4B\u6D88\u606F\u901A\u9053\uFF1B
-- NVIDIA LocateAnything \u5F00\u653E\u8BCD\u6C47\u5B9A\u4F4D\uFF1B
-- \u591A\u79DF\u6237\u3001\u751F\u4EA7\u7EA7\u5BF9\u8C61\u5B58\u50A8\u3001\u53EF\u89C2\u6D4B\u6027\u548C\u9AD8\u53EF\u7528\u90E8\u7F72\u3002
-
-## 4. \u6E90\u7801\u4E0E\u6784\u5EFA\u4EA7\u7269
-
-\`\`\`text
-ty/
-\u251C\u2500\u2500 landing/                         React \u5B98\u7F51\u6E90\u7801
-\u251C\u2500\u2500 frontend/                        Vue \u6570\u636E\u5E73\u53F0\u6E90\u7801
-\u251C\u2500\u2500 src/main/java/com/example/ty/    Spring Boot \u540E\u7AEF
-\u2502   \u251C\u2500\u2500 auth/                        \u8BA4\u8BC1\u3001\u4EBA\u8138\u548C JWT
-\u2502   \u251C\u2500\u2500 dashboard/                   \u519C\u573A\u4E0E\u6E29\u5BA4\u4E1A\u52A1
-\u2502   \u2514\u2500\u2500 assistant/                   AI \u95EE\u519C\u53CA\u72B6\u6001
-\u251C\u2500\u2500 src/main/resources/
-\u2502   \u251C\u2500\u2500 application.yaml             \u670D\u52A1\u914D\u7F6E
-\u2502   \u2514\u2500\u2500 static/                      \u5DF2\u6784\u5EFA\u7684\u524D\u7AEF\u8D44\u6E90
-\u2502       \u2514\u2500\u2500 platform/                Vue \u5E73\u53F0\u6784\u5EFA\u4EA7\u7269
-\u251C\u2500\u2500 src/test/                         \u540E\u7AEF\u6D4B\u8BD5
-\u251C\u2500\u2500 tools/yolo/                       YOLO \u6570\u636E\u3001\u8BAD\u7EC3\u548C\u5BFC\u51FA\u5DE5\u5177
-\u251C\u2500\u2500 docs/                             \u56FE\u7247\u3001\u89C6\u9891\u548C\u9879\u76EE\u6587\u6863
-\u251C\u2500\u2500 pom.xml                           Maven \u914D\u7F6E
-\u251C\u2500\u2500 start.sh                          \u542F\u52A8\u8F85\u52A9\u811A\u672C
-\u2514\u2500\u2500 setup-mysql.sh                    MySQL \u521D\u59CB\u5316\u8F85\u52A9\u811A\u672C
-\`\`\`
-
-\u6CE8\u610F\uFF1A\`landing/\` \u548C \`frontend/\` \u662F\u6E90\u4EE3\u7801\uFF1B\`src/main/resources/static/\` \u662F\u6784\u5EFA\u4EA7\u7269\u3002\u4FEE\u6539\u6E90\u4EE3\u7801\u540E\u5FC5\u987B\u91CD\u65B0\u6784\u5EFA\uFF0C\u4E0D\u80FD\u53EA\u7F16\u8F91\u6784\u5EFA\u540E\u7684\u538B\u7F29\u6587\u4EF6\u3002
-
-## 5. \u73AF\u5883\u51C6\u5907
-
-### 5.1 \u6700\u4F4E\u8F6F\u4EF6\u8981\u6C42
-
-- JDK 17\uFF1B
-- MySQL 8.x\uFF1B
-- Node.js 18 \u6216\u66F4\u9AD8\u7248\u672C\u53CA npm\uFF1B
-- Git\uFF1B
-- \u652F\u6301 WebGL \u7684\u73B0\u4EE3\u6D4F\u89C8\u5668\u3002
-
-\u8FD0\u884C YOLO \u5DE5\u5177\u65F6\u8FD8\u9700\u8981 Python 3\u3001\u865A\u62DF\u73AF\u5883\u548C\u5BF9\u5E94\u7684 PyTorch/Ultralytics \u4F9D\u8D56\u3002\u4F7F\u7528 CUDA \u65F6\uFF0C\u5E94\u5148\u786E\u8BA4 NVIDIA \u9A71\u52A8\u548C \`nvidia-smi\` \u6B63\u5E38\u3002
-
-### 5.2 \u6570\u636E\u5E93
-
-\u9ED8\u8BA4\u914D\u7F6E\u8FDE\u63A5\uFF1A
-
-\`\`\`text
-jdbc:mysql://localhost:3306/tianyan
-\u7528\u6237\u540D\uFF1Aroot
-\u5BC6\u7801\uFF1ARoot_123456
-\`\`\`
-
-\u63A8\u8350\u901A\u8FC7\u73AF\u5883\u53D8\u91CF\u8986\u76D6\u9ED8\u8BA4\u503C\uFF1A
-
-\`\`\`bash
-export DB_URL='jdbc:mysql://127.0.0.1:3306/tianyan?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai'
-export DB_USERNAME='tianyan_app'
-export DB_PASSWORD='\u8BF7\u4F7F\u7528\u72EC\u7ACB\u5F3A\u5BC6\u7801'
-\`\`\`
-
-\u53EF\u6267\u884C\u9879\u76EE\u811A\u672C\u521D\u59CB\u5316\u6570\u636E\u5E93\uFF1A
-
-\`\`\`bash
-./setup-mysql.sh
-\`\`\`
-
-\u751F\u4EA7\u73AF\u5883\u5E94\u4E3A\u5E94\u7528\u5EFA\u7ACB\u6700\u5C0F\u6743\u9650\u6570\u636E\u5E93\u8D26\u53F7\uFF0C\u4E0D\u5E94\u7EE7\u7EED\u4F7F\u7528 \`root\`\u3002
-
-### 5.3 \u540E\u7AEF\u73AF\u5883\u53D8\u91CF
-
-| \u53D8\u91CF | \u5FC5\u9700\u6027 | \u8BF4\u660E |
-|---|---|---|
-| \`SERVER_PORT\` | \u53EF\u9009 | \u9ED8\u8BA4 8081 |
-| \`DB_URL\` | \u5EFA\u8BAE\u663E\u5F0F\u8BBE\u7F6E | JDBC \u5730\u5740 |
-| \`DB_USERNAME\` | \u5EFA\u8BAE\u663E\u5F0F\u8BBE\u7F6E | \u6570\u636E\u5E93\u7528\u6237 |
-| \`DB_PASSWORD\` | \u5EFA\u8BAE\u663E\u5F0F\u8BBE\u7F6E | \u6570\u636E\u5E93\u5BC6\u7801 |
-| \`JWT_SECRET\` | \u751F\u4EA7\u5FC5\u9700 | JWT \u7B7E\u540D\u5BC6\u94A5\uFF0C\u81F3\u5C11 32 \u5B57\u8282\u968F\u673A\u503C |
-| \`BAIDU_FACE_AK\` | \u4F7F\u7528\u4EBA\u8138\u65F6\u5FC5\u9700 | \u767E\u5EA6\u4EBA\u8138 Access Key |
-| \`BAIDU_FACE_SK\` | \u4F7F\u7528\u4EBA\u8138\u65F6\u5FC5\u9700 | \u767E\u5EA6\u4EBA\u8138 Secret Key |
-| \`DEEPSEEK_API_KEY\` | \u4F7F\u7528 AI \u65F6\u5FC5\u9700 | \u6A21\u578B API \u5BC6\u94A5 |
-| \`DEEPSEEK_BASE_URL\` | \u53EF\u9009 | DeepSeek \u517C\u5BB9\u63A5\u53E3\u5730\u5740 |
-| \`DEEPSEEK_MODEL\` | \u53EF\u9009 | \u6A21\u578B\u540D\u79F0 |
-
-\u4E0D\u8981\u628A\u771F\u5B9E\u5BC6\u94A5\u5199\u5165 Git\u3002\u5F00\u53D1\u73AF\u5883\u53EF\u4F7F\u7528 IDE \u73AF\u5883\u53D8\u91CF\u6216\u672A\u8DDF\u8E2A\u7684\u672C\u5730\u542F\u52A8\u914D\u7F6E\uFF1B\u751F\u4EA7\u73AF\u5883\u4F7F\u7528 Secret \u7BA1\u7406\u670D\u52A1\u3002
-
-## 6. \u6784\u5EFA\u4E0E\u542F\u52A8
-
-### 6.1 \u6784\u5EFA\u5B98\u7F51
-
-\`\`\`bash
-cd landing
-npm install
-npm run build
-\`\`\`
-
-\u6784\u5EFA\u8F93\u51FA\u5E94\u8FDB\u5165 Spring Boot \u9759\u6001\u8D44\u6E90\u76EE\u5F55\u3002\u5B8C\u6210\u540E\u8FD4\u56DE\u4ED3\u5E93\u6839\u76EE\u5F55\u3002
-
-### 6.2 \u6784\u5EFA Vue \u6570\u636E\u5E73\u53F0
-
-\`\`\`bash
-cd frontend
-npm install
-npm run build
-\`\`\`
-
-\u8F93\u51FA\u76EE\u6807\u4E3A \`src/main/resources/static/platform/\`\u3002\u6587\u4EF6\u540D\u5E26\u5185\u5BB9\u54C8\u5E0C\uFF0C\u91CD\u65B0\u6784\u5EFA\u540E\u65E7\u6587\u4EF6\u540D\u53D8\u5316\u662F\u6B63\u5E38\u73B0\u8C61\u3002
-
-### 6.3 \u6D4B\u8BD5\u548C\u542F\u52A8\u540E\u7AEF
-
-\`\`\`bash
-./mvnw test
-./mvnw spring-boot:run
-\`\`\`
-
-\u6D4F\u89C8\u5668\u8BBF\u95EE\uFF1A
-
-\`\`\`text
-http://localhost:8081/
-\`\`\`
-
-\u4E5F\u53EF\u4EE5\u4F7F\u7528\u9879\u76EE\u7684\u7EC4\u5408\u542F\u52A8\u811A\u672C\uFF1A
-
-\`\`\`bash
-./start.sh
-\`\`\`
-
-### 6.4 \u63A8\u8350\u6784\u5EFA\u987A\u5E8F
-
-1. \u68C0\u67E5 MySQL \u662F\u5426\u8FD0\u884C\uFF1B
-2. \u914D\u7F6E\u6570\u636E\u5E93\u3001JWT\u3001\u767E\u5EA6\u4EBA\u8138\u548C DeepSeek \u73AF\u5883\u53D8\u91CF\uFF1B
-3. \u6784\u5EFA React \u5B98\u7F51\uFF1B
-4. \u6784\u5EFA Vue \u6570\u636E\u5E73\u53F0\uFF1B
-5. \u6267\u884C Maven \u6D4B\u8BD5\uFF1B
-6. \u542F\u52A8 Spring Boot\uFF1B
-7. \u5B8C\u6210\u6CE8\u518C\u3001\u767B\u5F55\u3001\u5DE5\u4F5C\u53F0\u3001\u6E29\u5BA4\u548C API \u5192\u70DF\u6D4B\u8BD5\u3002
-
-## 7. \u524D\u7AEF\u8DEF\u7531\u4E0E\u9875\u9762\u534F\u4F5C
-
-### 7.1 \u5B98\u7F51\u8DEF\u7531
-
-\u5B98\u7F51\u4F7F\u7528 HashRouter\uFF0C\u4E3B\u8981\u5730\u5740\u4E3A\uFF1A
-
-| \u5730\u5740 | \u9875\u9762 |
-|---|---|
-| \`/#/\` | \u5B98\u7F51\u9996\u9875 |
-| \`/#/product\` | \u4EA7\u54C1 |
-| \`/#/solutions\` | \u89E3\u51B3\u65B9\u6848 |
-| \`/#/digital-twin\` | \u6570\u5B57\u5B6A\u751F\u4ECB\u7ECD |
-| \`/#/about\` | \u5173\u4E8E |
-| \`/#/contact\` | \u8054\u7CFB\u6211\u4EEC |
-| \`/#/sign-in\` | \u767B\u5F55 |
-| \`/#/sign-up\` | \u6CE8\u518C |
-
-### 7.2 \u6570\u636E\u5E73\u53F0\u8DEF\u7531
-
-| \u5730\u5740 | \u9875\u9762 |
-|---|---|
-| \`/platform/workspaces/farm-01\` | \u519C\u573A\u6570\u636E\u5DE5\u4F5C\u53F0 |
-| \`/platform/assistant\` | AI \u95EE\u519C |
-| \`/platform/workspaces/:id/greenhouses/:greenhouseId\` | \u6E29\u5BA4\u5185\u90E8 |
-| \`/platform/digital-twin\` | \u6570\u5B57\u5B6A\u751F\u5165\u53E3 |
-
-Spring Boot \u5FC5\u987B\u5BF9 Vue \u5386\u53F2\u8DEF\u7531\u6267\u884C\u524D\u7AEF\u56DE\u9000\uFF0C\u5426\u5219\u76F4\u63A5\u5237\u65B0\u6DF1\u5C42 URL \u4F1A\u51FA\u73B0 404\u3002
-
-### 7.3 \u72B6\u6001\u6D41
-
-1. \u5B98\u7F51\u767B\u5F55\u63A5\u53E3\u8FD4\u56DE JWT \u548C\u7528\u6237\u4FE1\u606F\uFF1B
-2. \u6D4F\u89C8\u5668\u4FDD\u5B58\u4F1A\u8BDD\uFF1B
-3. Vue \u5E73\u53F0\u8BF7\u6C42\u65F6\u9644\u52A0 \`Authorization: Bearer <token>\`\uFF1B
-4. Spring Security \u9A8C\u8BC1 JWT \u540E\u628A\u7528\u6237\u8EAB\u4EFD\u653E\u5165\u5B89\u5168\u4E0A\u4E0B\u6587\uFF1B
-5. Dashboard \u548C Assistant \u670D\u52A1\u6839\u636E\u8EAB\u4EFD\u53CA \`farmId\` \u8FD4\u56DE\u6570\u636E\uFF1B
-6. Three.js \u53EA\u8D1F\u8D23\u53EF\u89C6\u5316\uFF0C\u4E0D\u5E94\u6210\u4E3A\u4E1A\u52A1\u6570\u636E\u7684\u552F\u4E00\u6765\u6E90\u3002
-
-### 7.4 \u5F53\u524D\u754C\u9762\u5B9E\u73B0\u57FA\u7EBF
-
-\u4EE5\u4E0B\u622A\u56FE\u6765\u81EA\u5F53\u524D\u4ED3\u5E93\u5BF9\u5E94\u7248\u672C\uFF0C\u7528\u4E8E\u5F00\u53D1\u8054\u8C03\u3001\u89C6\u89C9\u56DE\u5F52\u548C\u9A8C\u6536\u3002\u540E\u7EED\u4FEE\u6539\u5E03\u5C40\u65F6\uFF0C\u5E94\u786E\u4FDD\u8DEF\u7531\u3001\u6838\u5FC3\u5165\u53E3\u548C\u6570\u636E\u5173\u7CFB\u4FDD\u6301\u4E00\u81F4\u3002
-
-![\u5B98\u7F51\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u5B98\u7F51.png)
-
-> **\u56FE 7-1\u3000React \u5B98\u7F51\u57FA\u7EBF\u3002** \u5B98\u7F51\u8D1F\u8D23\u4EA7\u54C1\u4FE1\u606F\u548C\u8EAB\u4EFD\u5165\u53E3\uFF0C\u4E0D\u627F\u8F7D\u767B\u5F55\u540E\u7684\u519C\u573A\u4E1A\u52A1\u72B6\u6001\u3002
-
-![\u822A\u62CD\u5DE5\u4F5C\u53F0\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u4E3B\u754C\u9762.png)
-
-> **\u56FE 7-2\u3000Vue \u822A\u62CD\u5DE5\u4F5C\u53F0\u57FA\u7EBF\u3002** \u7A7A\u95F4\u5BF9\u8C61\u3001\u53F3\u4FA7\u4E0A\u4E0B\u6587\u62BD\u5C49\u548C\u5E95\u90E8\u4E1A\u52A1 Dock \u5171\u4EAB\u5DE5\u4F5C\u533A\u72B6\u6001\uFF1B\u9009\u4E2D\u5BF9\u8C61\u540E\uFF0C\u5730\u56FE\u9AD8\u4EAE\u4E0E\u8BE6\u60C5\u6570\u636E\u5FC5\u987B\u6307\u5411\u76F8\u540C\u4E1A\u52A1 ID\u3002
-
-![\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png)
-
-> **\u56FE 7-3\u3000AI \u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0\u57FA\u7EBF\u3002** \u544A\u8B66\u3001\u704C\u6E89\u3001\u5927\u68DA\u548C\u6307\u6807\u7EC4\u4EF6\u8BFB\u53D6\u7EDF\u4E00 Dashboard \u6570\u636E\uFF1B\u7528\u6237\u5E03\u5C40\u4E0E\u52A9\u624B\u72B6\u6001\u901A\u8FC7\u5F53\u524D\u8D26\u53F7\u9694\u79BB\u4FDD\u5B58\u3002
-
-## 8. \u540E\u7AEF\u6A21\u5757
-
-### 8.1 \u8BA4\u8BC1\u6A21\u5757
-
-\u8BA4\u8BC1\u6A21\u5757\u8D1F\u8D23\u7528\u6237\u6CE8\u518C\u3001\u5BC6\u7801\u54C8\u5E0C\u3001\u767B\u5F55\u3001JWT \u7B7E\u53D1\u548C\u5F53\u524D\u7528\u6237\u67E5\u8BE2\u3002\u5BC6\u7801\u5FC5\u987B\u53EA\u5B58\u50A8\u54C8\u5E0C\uFF0CAPI \u54CD\u5E94\u4E0D\u5F97\u8FD4\u56DE\u5BC6\u7801\u5B57\u6BB5\u3002
-
-![\u8BA4\u8BC1\u9875\u9762\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u767B\u9646.png)
-
-> **\u56FE 8-1\u3000\u8BA4\u8BC1\u9875\u9762\u57FA\u7EBF\u3002** \u5BC6\u7801\u767B\u5F55\u548C\u5237\u8138\u767B\u5F55\u5171\u7528\u9875\u9762\u5BB9\u5668\u4F46\u4F7F\u7528\u72EC\u7ACB\u63D0\u4EA4\u94FE\u8DEF\uFF1B\u6CE8\u518C\u5165\u53E3\u5FC5\u987B\u59CB\u7EC8\u53EF\u89C1\uFF0C\u5237\u8138\u6A21\u5F0F\u4E0D\u5F97\u51FA\u73B0\u672C\u5730\u56FE\u7247\u4E0A\u4F20\u63A7\u4EF6\u3002
-
-\u4EBA\u8138\u6D41\u7A0B\uFF1A\u6D4F\u89C8\u5668\u6444\u50CF\u5934\u91C7\u96C6\u56FE\u50CF \u2192 \u540E\u7AEF\u6821\u9A8C \u2192 \u767E\u5EA6\u4EBA\u8138\u7EC4\u6CE8\u518C\u6216\u68C0\u7D22 \u2192 \u7ED1\u5B9A\u6216\u7B7E\u53D1\u767B\u5F55\u4EE4\u724C\u3002\u5F53\u524D\u4EA7\u54C1\u5DF2\u7981\u6B62\u4ECE\u672C\u5730\u4E0A\u4F20\u56FE\u7247\u8FDB\u884C\u5237\u8138\u767B\u5F55\uFF0C\u76EE\u7684\u662F\u964D\u4F4E\u7167\u7247\u66FF\u4EE3\u771F\u4EBA\u91C7\u96C6\u7684\u98CE\u9669\u3002\u4F46\u8FD9\u4E0D\u7B49\u540C\u4E8E\u5B8C\u6574\u6D3B\u4F53\u68C0\u6D4B\uFF1B\u751F\u4EA7\u73AF\u5883\u4ECD\u5E94\u589E\u52A0\u52A8\u4F5C\u6D3B\u4F53\u3001\u9759\u9ED8\u6D3B\u4F53\u3001\u91CD\u653E\u9632\u62A4\u3001\u9650\u6D41\u548C\u5BA1\u8BA1\u3002
-
-### 8.2 Dashboard \u6A21\u5757
-
-\u8BE5\u6A21\u5757\u805A\u5408\u519C\u573A\u8D44\u4EA7\u3001\u73AF\u5883\u6307\u6807\u3001\u8BBE\u5907\u3001\u704C\u6E89\u5355\u5143\u548C\u544A\u8B66\uFF0C\u5E76\u751F\u6210\u5DEE\u5F02\u5316\u6E29\u5BA4\u8BE6\u60C5\u3002\u5199\u64CD\u4F5C\u7531\u670D\u52A1\u5C42\u6821\u9A8C\u5B9E\u4F53\u662F\u5426\u5C5E\u4E8E\u8BF7\u6C42\u4E2D\u7684\u519C\u573A\uFF0C\u907F\u514D\u8DE8\u519C\u573A\u4FEE\u6539\u3002
-
-### 8.3 Assistant \u6A21\u5757
-
-AI \u95EE\u519C\u63A5\u6536\u5386\u53F2\u6D88\u606F\u4E0E\u53EF\u9009\u573A\u666F\u4E0A\u4E0B\u6587\uFF0C\u8C03\u7528\u517C\u5BB9\u7684\u6A21\u578B\u63A5\u53E3\u5E76\u8FD4\u56DE\u6587\u672C\u3002\u7528\u6237\u52A9\u624B\u72B6\u6001\u5355\u72EC\u6301\u4E45\u5316\uFF0C\u7528\u4E8E\u4FDD\u7559\u754C\u9762\u914D\u7F6E\u6216\u4F1A\u8BDD\u76F8\u5173\u72B6\u6001\u3002
-
-![\u667A\u80FD\u95EE\u519C\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u95EE\u519C.png)
-
-> **\u56FE 8-2\u3000\u667A\u80FD\u95EE\u519C\u57FA\u7EBF\u3002** \u5BF9\u8BDD\u5217\u8868\u3001\u8F93\u5165\u533A\u3001\u5FEB\u6377\u95EE\u9898\u548C\u5E94\u7528 Dock \u5C5E\u4E8E\u7528\u6237\u72B6\u6001\uFF1B\u6A21\u578B\u56DE\u7B54\u6765\u81EA\u540E\u7AEF\u63A5\u53E3\uFF0C\u524D\u7AEF\u4E0D\u5F97\u7528\u9759\u6001\u6210\u529F\u5185\u5BB9\u63A9\u76D6\u4E0A\u6E38\u8C03\u7528\u5931\u8D25\u3002
-
-\u751F\u4EA7\u73AF\u5883\u9700\u8981\uFF1A\u8F93\u5165\u957F\u5EA6\u9650\u5236\u3001\u8D85\u65F6\u3001\u91CD\u8BD5\u4E0A\u9650\u3001\u654F\u611F\u4FE1\u606F\u8FC7\u6EE4\u3001\u63D0\u793A\u6CE8\u5165\u9632\u62A4\u3001\u8C03\u7528\u5BA1\u8BA1\u548C\u8D39\u7528\u544A\u8B66\u3002
-
-## 9. REST API
-
-\u9664\u6CE8\u518C\u548C\u767B\u5F55\u7C7B\u63A5\u53E3\u5916\uFF0C\u4E1A\u52A1\u63A5\u53E3\u9ED8\u8BA4\u8981\u6C42 JWT\u3002
-
-### 9.1 \u6CE8\u518C
-
-\`\`\`http
-POST /api/auth/register
-Content-Type: application/json
-
-{
-  "name": "\u6F14\u793A\u7528\u6237",
-  "email": "user@example.com",
-  "password": "StrongPassword_2026!"
-}
-\`\`\`
-
-\u6210\u529F\u54CD\u5E94\u5305\u542B \`token\` \u548C \`user\`\u3002\u90AE\u7BB1\u91CD\u590D\u3001\u53C2\u6570\u4E0D\u5408\u6CD5\u6216\u5BC6\u7801\u4E0D\u6EE1\u8DB3\u7EA6\u675F\u65F6\u5E94\u8FD4\u56DE 4xx\u3002
-
-### 9.2 \u5BC6\u7801\u767B\u5F55
-
-\`\`\`http
-POST /api/auth/login
-Content-Type: application/json
-
-{
-  "email": "user@example.com",
-  "password": "StrongPassword_2026!"
-}
-\`\`\`
-
-### 9.3 \u5F53\u524D\u7528\u6237
-
-\`\`\`http
-GET /api/auth/me
-Authorization: Bearer <token>
-\`\`\`
-
-### 9.4 \u4EBA\u8138\u63A5\u53E3
-
-\`\`\`text
-POST /api/auth/face-register   \u7ED1\u5B9A\u5F53\u524D\u8D26\u6237\u7684\u4EBA\u8138
-POST /api/auth/face-delete     \u5220\u9664\u5F53\u524D\u8D26\u6237\u7684\u4EBA\u8138\u7ED1\u5B9A
-POST /api/auth/face-login      \u901A\u8FC7\u6444\u50CF\u5934\u91C7\u96C6\u7ED3\u679C\u767B\u5F55
-\`\`\`
-
-\u56FE\u7247\u8BF7\u6C42\u53D7 10 MB multipart \u9650\u5236\u3002\u524D\u7AEF\u53EA\u5141\u8BB8\u6444\u50CF\u5934\u91C7\u96C6\uFF0C\u4E0D\u63D0\u4F9B\u672C\u5730\u6587\u4EF6\u4E0A\u4F20\u5165\u53E3\u3002
-
-### 9.5 Dashboard \u63A5\u53E3
-
-\`\`\`text
-GET   /api/farms/{farmId}/dashboard
-GET   /api/farms/{farmId}/greenhouses/{greenhouseId}
-PATCH /api/farms/{farmId}/devices/{entityId}
-POST  /api/farms/{farmId}/devices/{entityId}/self-test
-PATCH /api/farms/{farmId}/irrigation/{unitId}
-PATCH /api/farms/{farmId}/alerts/{alertId}/handle
-\`\`\`
-
-\u704C\u6E89\u63A7\u5236\u793A\u4F8B\uFF1A
-
-\`\`\`http
-PATCH /api/farms/farm-01/irrigation/1
-Authorization: Bearer <token>
-Content-Type: application/json
-
-{
-  "enabled": true,
-  "durationMinutes": 20
-}
-\`\`\`
-
-\`durationMinutes\` \u7684\u6709\u6548\u8303\u56F4\u4E3A 5\u201360 \u5206\u949F\u3002\u524D\u7AEF\u63A7\u5236\u6210\u529F\u540E\u5E94\u4EE5\u670D\u52A1\u7AEF\u8FD4\u56DE\u503C\u5237\u65B0\u72B6\u6001\uFF0C\u4E0D\u80FD\u53EA\u5728\u672C\u5730\u5207\u6362\u6309\u94AE\u3002
-
-### 9.6 AI \u63A5\u53E3
-
-\`\`\`http
-POST /api/assistant/chat
-Authorization: Bearer <token>
-Content-Type: application/json
-
-{
-  "context": "farm-01 1\u53F7\u756A\u8304\u6E29\u5BA4",
-  "messages": [
-    {"role": "user", "content": "\u5F53\u524D\u6E7F\u5EA6\u504F\u9AD8\u5E94\u8BE5\u600E\u4E48\u5904\u7406\uFF1F"}
-  ]
-}
-\`\`\`
-
-\u8FD4\u56DE\u7ED3\u6784\uFF1A
-
-\`\`\`json
-{
-  "reply": "\u2026\u2026",
-  "model": "\u5B9E\u9645\u4F7F\u7528\u7684\u6A21\u578B\u540D\u79F0"
-}
-\`\`\`
-
-\u72B6\u6001\u63A5\u53E3\uFF1A
-
-\`\`\`text
-GET /api/assistant/state
-PUT /api/assistant/state
-\`\`\`
-
-## 10. \u6570\u636E\u6A21\u578B
-
-| \u8868 | \u7528\u9014 | \u5173\u952E\u7EA6\u675F |
-|---|---|---|
-| \`users\` | \u7528\u6237\u3001\u5BC6\u7801\u54C8\u5E0C\u548C\u4EBA\u8138\u7ED1\u5B9A\u4FE1\u606F | \u90AE\u7BB1\u552F\u4E00 |
-| \`farm_assets\` | \u5927\u68DA\u3001\u5730\u5757\u7B49\u519C\u573A\u8D44\u4EA7 | \u4EE5\u519C\u573A\u548C\u4E1A\u52A1 ID \u5173\u8054 |
-| \`farm_devices\` | \u8BBE\u5907\u3001\u8FD0\u884C\u72B6\u6001\u548C\u63A7\u5236\u6570\u636E | \u5F52\u5C5E\u4E8E\u519C\u573A/\u8D44\u4EA7 |
-| \`environment_metrics\` | \u6E29\u6E7F\u5EA6\u3001\u5149\u7167\u3001CO\u2082 \u7B49\u6307\u6807 | \`(farm_id, metric_key)\` \u552F\u4E00 |
-| \`irrigation_units\` | \u704C\u6E89\u5206\u533A\u548C\u6267\u884C\u72B6\u6001 | \u8BB0\u5F55\u5F00\u5173\u4E0E\u65F6\u957F |
-| \`farm_alerts\` | \u544A\u8B66\u53CA\u5904\u7406\u72B6\u6001 | \u4FDD\u7559\u7EA7\u522B\u3001\u65F6\u95F4\u548C\u5904\u7F6E\u7ED3\u679C |
-| \`user_assistant_states\` | \u7528\u6237 AI \u52A9\u624B\u72B6\u6001 | \`user_id\` \u552F\u4E00 |
-
-\u6B63\u5F0F\u53D8\u66F4\u8868\u7ED3\u6784\u65F6\u5EFA\u8BAE\u5F15\u5165 Flyway \u6216 Liquibase\uFF0C\u4E0D\u8981\u4F9D\u8D56\u751F\u4EA7\u73AF\u5883\u81EA\u52A8\u5EFA\u8868\u3002\u6570\u636E\u5E93\u5907\u4EFD\u81F3\u5C11\u5305\u542B\u6BCF\u65E5\u5168\u91CF\u3001binlog \u589E\u91CF\u548C\u5B9A\u671F\u6062\u590D\u6F14\u7EC3\u3002
-
-## 11. Three.js \u6570\u5B57\u5B6A\u751F
-
-### 11.1 \u519C\u573A\u573A\u666F
-
-\u573A\u666F\u652F\u6301\u9E1F\u77B0\u3001\u8F68\u9053\u5F0F 3D \u548C\u7B2C\u4E00\u4EBA\u79F0\u6A21\u5F0F\u3002\u5927\u68DA\u6A21\u578B\u5FC5\u987B\u643A\u5E26\u7A33\u5B9A\u4E1A\u52A1 ID\uFF1B\u53CC\u51FB\u62FE\u53D6 Three.js \u5BF9\u8C61\u540E\uFF0C\u6839\u636E ID \u8DF3\u8F6C\u5BF9\u5E94\u6E29\u5BA4\u8DEF\u7531\u3002
-
-![3D \u519C\u573A\u5B9E\u73B0\u573A\u666F](./\u622A\u56FE/3D.png)
-
-> **\u56FE 11-1\u30003D \u519C\u573A\u573A\u666F\u57FA\u7EBF\u3002** \u573A\u666F\u6E32\u67D3\u3001\u5BF9\u8C61\u62FE\u53D6\u3001\u8BE6\u60C5\u62BD\u5C49\u548C\u201C\u8FDB\u5165\u5927\u68DA\u201D\u8DEF\u7531\u6784\u6210\u4E00\u6761\u5B8C\u6574\u4EA4\u4E92\u94FE\u8DEF\u3002
-
-![\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u7B2C\u4E00\u4EBA\u79F0.png)
-
-> **\u56FE 11-2\u3000\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u57FA\u7EBF\u3002** Pointer Lock\u3001WASD \u79FB\u52A8\u3001\u78B0\u649E\u68C0\u6D4B\u3001\u51C6\u661F\u62FE\u53D6\u3001\`1\u20137\` \u4E1A\u52A1\u5207\u6362\u548C \`Esc\` \u9000\u51FA\u5E94\u4F5C\u4E3A\u540C\u4E00\u5957\u4EA4\u4E92\u72B6\u6001\u673A\u7EF4\u62A4\u3002
-
-\u6B63\u786E\u6620\u5C04\u94FE\u8DEF\u4E3A\uFF1A
-
-\`\`\`text
-3D Object.userData.greenhouseId
-    \u2192 Vue Router greenhouseId
-    \u2192 GET greenhouse detail API
-    \u2192 \u573A\u666F\u6A21\u578B\u3001\u53F3\u4FA7\u680F\u548C\u8BBE\u5907\u72B6\u6001
-\`\`\`
-
-\u7981\u6B62\u7528\u6570\u7EC4\u4E0B\u6807\u4F5C\u4E3A\u957F\u671F\u4E1A\u52A1\u6807\u8BC6\uFF0C\u5426\u5219\u6392\u5E8F\u53D8\u5316\u540E\u4F1A\u8FDB\u5165\u9519\u8BEF\u5927\u68DA\u3002
-
-### 11.2 \u6E29\u5BA4\u5185\u90E8
-
-\u516D\u5EA7\u6E29\u5BA4\u7531\u540E\u7AEF\u8BE6\u60C5\u6570\u636E\u9A71\u52A8\u4F5C\u7269\u54C1\u79CD\u3001\u683D\u57F9\u65B9\u5F0F\u3001\u682A\u6570\u3001\u533A\u57DF\u3001\u8BBE\u5907\u548C\u73AF\u5883\u6307\u6807\u3002\u524D\u7AEF\u6A21\u578B\u751F\u6210\u5668\u6839\u636E\u4F5C\u7269\u7C7B\u578B\u521B\u5EFA\u5DEE\u5F02\u5316\u690D\u682A\u51E0\u4F55\u4F53\uFF0C\u5E76\u4E3A\u6837\u672C\u690D\u682A\u63D0\u4F9B\u53EF\u70B9\u51FB\u5B9A\u4F4D\u3002
-
-![\u6E29\u5BA4\u5185\u90E8\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u5927\u68DA\u5185\u90E8.png)
-
-> **\u56FE 11-3\u3000\u6E29\u5BA4\u5185\u90E8\u57FA\u7EBF\u3002** Three.js \u4E3B\u573A\u666F\u3001\u5E95\u90E8\u73AF\u5883\u6307\u6807\u548C\u53F3\u4FA7\u4E1A\u52A1\u6570\u636E\u5FC5\u987B\u6765\u81EA\u540C\u4E00\u6E29\u5BA4\u8BE6\u60C5\u54CD\u5E94\uFF1B\u53F3\u680F\u91C7\u7528\u72EC\u7ACB\u6EDA\u52A8\u5BB9\u5668\uFF0C\u4E0D\u80FD\u7531\u9875\u9762\u6574\u4F53\u9AD8\u5EA6\u88C1\u5207\u5185\u5BB9\u3002
-
-\u6027\u80FD\u5EFA\u8BAE\uFF1A
-
-- \u91CD\u590D\u690D\u682A\u4F18\u5148\u4F7F\u7528 \`InstancedMesh\`\uFF1B
-- \u5408\u5E76\u9759\u6001\u51E0\u4F55\u4F53\u5E76\u5171\u4EAB\u6750\u8D28\uFF1B
-- \u7EB9\u7406\u4F7F\u7528\u538B\u7F29\u683C\u5F0F\u548C\u5408\u7406 mipmap\uFF1B
-- \u8FDC\u8DDD\u79BB\u6A21\u578B\u91C7\u7528 LOD\uFF1B
-- \u9500\u6BC1\u9875\u9762\u65F6\u91CA\u653E geometry\u3001material\u3001texture \u548C\u4E8B\u4EF6\u76D1\u542C\uFF1B
-- \u7528\u771F\u5B9E\u8BBE\u5907\u6D4B\u8BD5\u5E27\u7387\u3001\u663E\u5B58\u548C\u6D4F\u89C8\u5668\u5185\u5B58\uFF0C\u800C\u4E0D\u53EA\u770B\u5F00\u53D1\u673A\u3002
-
-## 12. \u5F53\u524D YOLO \u76D1\u63A7\u8BC6\u522B\u94FE\u8DEF
-
-\u5F53\u524D\u7F51\u7AD9\u4E0D\u4F1A\u5728\u6D4F\u89C8\u5668\u4E2D\u5B9E\u65F6\u8FD0\u884C Python\u3002\u5904\u7406\u6D41\u7A0B\u662F\uFF1A
-
-\`\`\`mermaid
-flowchart LR
-    A[docs/mo.mp4] --> B[\u62BD\u53D6\u8BAD\u7EC3\u5E27]
-    B --> C[YOLO \u683C\u5F0F\u6807\u6CE8]
-    C --> D[\u8BAD\u7EC3 YOLO11n]
-    D --> E[ByteTrack \u89C6\u9891\u63A8\u7406]
-    E --> F[greenhouse-monitor.detections.json]
-    F --> G[Vue \u6309\u89C6\u9891\u65F6\u95F4\u7ED8\u5236\u68C0\u6D4B\u6846]
-\`\`\`
-
-\u7C7B\u522B\u76EE\u524D\u4E3A\uFF1A
-
-- \`person\`\uFF1A\u53EF\u89C1\u4EBA\u5458\uFF1B
-- \`crop\`\uFF1A\u4F5C\u7269\u690D\u682A\u6216\u8FDE\u7EED\u51A0\u5C42\u3002
-
-### 12.1 \u5EFA\u7ACB\u7B97\u6CD5\u73AF\u5883
-
-\`\`\`bash
-python3 -m venv tools/yolo/.venv
-source tools/yolo/.venv/bin/activate
-python -m pip install -U pip
-python -m pip install -r tools/yolo/requirements.txt
-\`\`\`
-
-### 12.2 \u62BD\u5E27\u3001\u6807\u6CE8\u548C\u8BAD\u7EC3
-
-\`\`\`bash
-python tools/yolo/extract_frames.py
-python tools/yolo/labelme_to_yolo.py
-python tools/yolo/train.py --epochs 80 --batch 8 --imgsz 640
-\`\`\`
-
-\u6700\u4F73\u6743\u91CD\u4F4D\u4E8E\uFF1A
-
-\`\`\`text
-tools/yolo/runs/greenhouse-person-crop/weights/best.pt
-\`\`\`
-
-### 12.3 \u5BFC\u51FA\u68C0\u6D4B\u7ED3\u679C
-
-\`\`\`bash
-python tools/yolo/export_detections.py
-\`\`\`
-
-\u8F93\u51FA\uFF1A
-
-\`\`\`text
-frontend/public/assets/media/greenhouse-monitor.detections.json
-\`\`\`
-
-\u968F\u540E\u91CD\u65B0\u6784\u5EFA Vue \u5E73\u53F0\u3002\u5F53\u524D 38 \u5E27\u9AD8\u5EA6\u76F8\u4F3C\uFF0C\u53EA\u9002\u5408\u6F14\u793A\u89C6\u9891\uFF1B\u7528\u4E8E\u65B0\u6E29\u5BA4\u524D\u5FC5\u987B\u91C7\u96C6\u4E0D\u540C\u8DDD\u79BB\u3001\u65F6\u6BB5\u3001\u5149\u7167\u3001\u906E\u6321\u3001\u4EBA\u5458\u59FF\u6001\u548C\u4F5C\u7269\u751F\u80B2\u671F\u7684\u6570\u636E\uFF0C\u5E76\u91CD\u65B0\u5212\u5206\u8BAD\u7EC3\u3001\u9A8C\u8BC1\u548C\u72EC\u7ACB\u6D4B\u8BD5\u96C6\u3002
-
-### 12.4 \u5347\u7EA7\u4E3A\u5B9E\u65F6\u670D\u52A1
-
-\u63A8\u8350\u5C06\u63A8\u7406\u72EC\u7ACB\u4E3A Python/GPU \u670D\u52A1\uFF1A\u6444\u50CF\u5934 RTSP \u2192 \u89E3\u7801\u548C\u62BD\u5E27 \u2192 YOLO/TensorRT \u2192 \u8DDF\u8E2A \u2192 \u4E8B\u4EF6\u89C4\u5219 \u2192 WebSocket/SSE \u2192 \u524D\u7AEF\u53E0\u52A0\u3002Spring Boot \u4FDD\u5B58\u4E8B\u4EF6\u3001\u8BBE\u5907\u548C\u544A\u8B66\uFF0C\u4E0D\u8D1F\u8D23\u9010\u5E27 GPU \u63A8\u7406\u3002
-
-\u5FC5\u987B\u76D1\u63A7\u7AEF\u5230\u7AEF\u5EF6\u8FDF\u3001FPS\u3001\u961F\u5217\u79EF\u538B\u3001\u6F0F\u68C0\u7387\u3001\u8BEF\u62A5\u7387\u3001GPU \u5229\u7528\u7387\u548C\u6444\u50CF\u5934\u65AD\u6D41\u3002
-
-## 13. NVIDIA LocateAnything \u5347\u7EA7\u65B9\u6848
-
-NVIDIA LocateAnything \u662F\u5F00\u653E\u8BCD\u6C47\u89C6\u89C9\u5B9A\u4F4D\u6A21\u578B\uFF0C\u53EF\u4F7F\u7528\u81EA\u7136\u8BED\u8A00\u67E5\u8BE2\u5728\u56FE\u50CF\u4E2D\u5B9A\u4F4D\u5BF9\u8C61\uFF0C\u5E76\u8986\u76D6\u901A\u7528\u76EE\u6807\u68C0\u6D4B\u3001OCR \u548C\u754C\u9762\u5B9A\u4F4D\u7B49\u4EFB\u52A1\u3002\u5B83\u9002\u5408\u5904\u7406\u56FA\u5B9A YOLO \u7C7B\u522B\u4E4B\u5916\u7684\u4E34\u65F6\u67E5\u8BE2\uFF0C\u4F46**\u76EE\u524D\u5C1A\u672A\u63A5\u5165\u672C\u9879\u76EE**\u3002
-
-\u5B98\u65B9\u8D44\u6599\uFF1A
-
-- [NVIDIA LocateAnything \u9879\u76EE\u9875](https://research.nvidia.com/labs/lpr/locate-anything/)
-- [LocateAnything-3B \u6A21\u578B\u9875](https://huggingface.co/nvidia/LocateAnything-3B)
-
-### 13.1 \u63A8\u8350\u7684\u5206\u5C42\u67B6\u6784
-
-| \u5C42\u7EA7 | \u6A21\u578B | \u4EFB\u52A1 | \u539F\u56E0 |
-|---|---|---|---|
-| \u4E00\u7EA7 | YOLO/TensorRT | 7\xD724 \u5C0F\u65F6\u56FA\u5B9A\u7C7B\u522B\u68C0\u6D4B | \u5FEB\u3001\u6210\u672C\u4F4E\u3001\u6613\u8FB9\u7F18\u90E8\u7F72 |
-| \u4E8C\u7EA7 | LocateAnything | \u6309\u9700\u5F00\u653E\u8BCD\u6C47\u5B9A\u4F4D\u3001\u7591\u96BE\u5E27\u590D\u6838 | \u67E5\u8BE2\u7075\u6D3B\u4F46\u8BA1\u7B97\u9700\u6C42\u66F4\u9AD8 |
-| \u8BAD\u7EC3\u95ED\u73AF | LocateAnything + \u4EBA\u5DE5\u5BA1\u6838 | \u8F85\u52A9\u751F\u6210\u65B0\u7C7B\u522B\u6807\u6CE8\uFF0C\u518D\u8BAD\u7EC3 YOLO | \u5C06\u5F00\u653E\u80FD\u529B\u6C89\u6DC0\u4E3A\u5B9E\u65F6\u5C0F\u6A21\u578B |
-
-\u4E0D\u8981\u7B80\u5355\u5730\u7528 LocateAnything \u5168\u91CF\u66FF\u6362 YOLO\u3002\u5B98\u65B9\u6027\u80FD\u6570\u636E\u4F9D\u8D56\u9AD8\u7AEF GPU \u73AF\u5883\uFF1B\u90E8\u7F72\u524D\u5FC5\u987B\u5728\u76EE\u6807\u8BBE\u5907\u548C\u519C\u4E1A\u6570\u636E\u96C6\u4E0A\u5B9E\u6D4B\u3002
-
-### 13.2 \u519C\u4E1A\u67E5\u8BE2\u793A\u4F8B
-
-- \u201C\u5B9A\u4F4D\u53F6\u7247\u660E\u663E\u840E\u852B\u7684\u756A\u8304\u690D\u682A\u201D\uFF1B
-- \u201C\u5B9A\u4F4D\u901A\u9053\u4E2D\u7684\u79EF\u6C34\u533A\u57DF\u201D\uFF1B
-- \u201C\u5B9A\u4F4D\u672A\u4F69\u6234\u9632\u62A4\u88C5\u5907\u7684\u4EBA\u5458\u201D\uFF1B
-- \u201C\u5B9A\u4F4D\u7834\u635F\u7684\u6EF4\u704C\u7BA1\u201D\uFF1B
-- \u201C\u5B9A\u4F4D\u6E29\u5BA4\u5185\u7684\u4EEA\u8868\u8BFB\u6570\u533A\u57DF\u201D\u3002
-
-\u8FD9\u4E9B\u8BED\u53E5\u53EA\u4EE3\u8868\u5019\u9009\u5E94\u7528\uFF0C\u4E0D\u80FD\u5728\u672A\u7ECF\u6807\u6CE8\u6570\u636E\u9A8C\u8BC1\u65F6\u627F\u8BFA\u51C6\u786E\u7387\u3002\u5EFA\u8BAE\u5EFA\u7ACB\u542B\u5F3A\u5149\u3001\u9006\u5149\u3001\u591C\u95F4\u3001\u96FE\u6C14\u3001\u906E\u6321\u548C\u76F8\u4F3C\u80CC\u666F\u7684\u4E13\u9879\u6D4B\u8BD5\u96C6\u3002
-
-## 14. LingBot-Map \u5B9E\u666F\u5EFA\u56FE\u65B9\u6848
-
-LingBot-Map \u662F\u9762\u5411\u56FE\u50CF\u6216\u89C6\u9891\u6D41\u7684\u524D\u9988\u5F0F\u4E09\u7EF4\u91CD\u5EFA\u9879\u76EE\uFF0C\u652F\u6301\u6D41\u5F0F/\u7A97\u53E3\u5316\u5904\u7406\u5E76\u8F93\u51FA\u76F8\u673A\u548C\u70B9\u4E91\u7B49\u7ED3\u679C\u3002\u5B83\u4E0E\u201C\u5355\u6444\u50CF\u5934\u91C7\u96C6\u6E29\u5BA4\u5B9E\u666F\u3001\u964D\u4F4E\u5BF9\u6FC0\u5149\u96F7\u8FBE\u7684\u4F9D\u8D56\u201D\u7684\u76EE\u6807\u5339\u914D\uFF0C\u4F46**\u5F53\u524D\u5C1A\u672A\u96C6\u6210**\u3002
-
-\u5B98\u65B9\u4ED3\u5E93\uFF1A[robbyant/lingbot-map](https://github.com/robbyant/lingbot-map)
-
-### 14.1 \u5FC5\u987B\u6F84\u6E05\u7684\u5DE5\u7A0B\u8FB9\u754C
-
-LingBot-Map \u89E3\u51B3\u7684\u662F\u89C6\u89C9\u4E09\u7EF4\u91CD\u5EFA\uFF0C\u4E0D\u662F\u5B8C\u6574\u673A\u5668\u4EBA\u5BFC\u822A\u7CFB\u7EDF\u3002\u70B9\u4E91\u4E0D\u80FD\u76F4\u63A5\u7B49\u540C\u4E8E\u53EF\u5BFC\u822A\u5730\u56FE\u3002\u5355\u76EE\u65B9\u6848\u8FD8\u4F1A\u9762\u5BF9\u5C3A\u5EA6\u6F02\u79FB\u3001\u5F31\u7EB9\u7406\u3001\u91CD\u590D\u68DA\u67B6\u3001\u53CD\u5149\u8584\u819C\u3001\u52A8\u6001\u4EBA\u5458\u3001\u5149\u7167\u53D8\u5316\u548C\u8FD0\u52A8\u6A21\u7CCA\u3002
-
-\u5373\u4F7F\u4E0D\u4F7F\u7528\u6FC0\u5149\u96F7\u8FBE\uFF0C\u751F\u4EA7\u673A\u5668\u4EBA\u4ECD\u5EFA\u8BAE\u5177\u5907\u8F6E\u901F\u91CC\u7A0B\u8BA1\u3001IMU\u3001\u78B0\u649E\u6761/\u6025\u505C\u548C\u8FD1\u8DDD\u79BB\u5B89\u5168\u4F20\u611F\u5668\u3002\u4EBA\u5458\u548C\u4F5C\u7269\u5171\u5B58\u73AF\u5883\u4E2D\uFF0C\u5B89\u5168\u5C42\u4E0D\u80FD\u53EA\u4F9D\u8D56\u5355\u76EE\u91CD\u5EFA\u3002
-
-### 14.2 \u5EFA\u8BAE\u7684\u6570\u636E\u94FE\u8DEF
-
-\`\`\`mermaid
-flowchart LR
-    C[\u5355\u76EE\u6444\u50CF\u5934/\u5F55\u5236\u89C6\u9891] --> S[\u5E27\u91C7\u6837\u4E0E\u8D28\u91CF\u68C0\u67E5]
-    S --> L[LingBot-Map \u63A8\u7406]
-    L --> P[\u76F8\u673A\u4F4D\u59FF + \u70B9\u4E91]
-    P --> F[\u53BB\u566A\u3001\u5C3A\u5EA6\u6807\u5B9A\u3001\u5730\u9762\u5206\u5272]
-    F --> O[\u4F53\u7D20/\u5360\u636E\u6805\u683C/OctoMap]
-    O --> R[\u5B9A\u4F4D\u4E0E\u5BFC\u822A\u5750\u6807\u7CFB]
-    R --> G[\u5168\u5C40\u89C4\u5212]
-    G --> Q[\u5C40\u90E8\u907F\u969C\u4E0E\u5B89\u5168\u63A7\u5236]
-    Q --> M[\u519C\u4E1A\u673A\u5668\u4EBA]
-    P --> W[Web \u7AEF\u5B9E\u666F\u4E09\u7EF4\u5C55\u793A]
-\`\`\`
-
-### 14.3 \u670D\u52A1\u62C6\u5206
-
-\u5EFA\u8BAE\u5EFA\u7ACB\u72EC\u7ACB \`mapping-service\`\uFF0C\u907F\u514D\u5728 Spring JVM \u5185\u52A0\u8F7D\u5927\u578B PyTorch \u6A21\u578B\uFF1A
-
-- **\u91C7\u96C6\u7AEF**\uFF1A\u76F8\u673A\u6807\u5B9A\u3001\u89C6\u9891\u5207\u7247\u3001\u65F6\u95F4\u6233\u548C\u6E29\u5BA4 ID\uFF1B
-- **\u91CD\u5EFA\u7AEF**\uFF1AGPU \u63A8\u7406\u3001\u4EFB\u52A1\u961F\u5217\u3001\u8FDB\u5EA6\u548C\u5931\u8D25\u91CD\u8BD5\uFF1B
-- **\u5730\u56FE\u5904\u7406\u7AEF**\uFF1A\u5C3A\u5EA6\u5BF9\u9F50\u3001\u6EE4\u6CE2\u3001\u5360\u636E\u5730\u56FE\u751F\u6210\uFF1B
-- **\u5B58\u50A8\u7AEF**\uFF1A\u539F\u89C6\u9891\u3001PLY/GLB\u3001\u76F8\u673A\u8F68\u8FF9\u3001\u5730\u56FE\u7248\u672C\u548C\u7F29\u7565\u56FE\uFF1B
-- **\u4E1A\u52A1\u7AEF**\uFF1ASpring Boot \u7BA1\u7406\u4EFB\u52A1\u5143\u6570\u636E\u3001\u6743\u9650\u548C\u6E29\u5BA4\u5173\u8054\uFF1B
-- **\u5C55\u793A\u7AEF**\uFF1AVue/Three.js \u52A0\u8F7D\u8F7B\u91CF GLB \u6216\u5206\u5757\u70B9\u4E91\uFF1B
-- **\u673A\u5668\u4EBA\u7AEF**\uFF1AROS 2/\u5BFC\u822A\u6808\u6D88\u8D39\u7ECF\u8FC7\u9A8C\u8BC1\u7684\u5730\u56FE\uFF0C\u800C\u975E\u76F4\u63A5\u6D88\u8D39\u7F51\u9875\u6A21\u578B\u3002
-
-\u5EFA\u8BAE\u4E1A\u52A1\u63A5\u53E3\uFF1A
-
-\`\`\`text
-POST /api/farms/{farmId}/greenhouses/{id}/mapping-sessions
-POST /api/mapping-sessions/{sessionId}/frames
-POST /api/mapping-sessions/{sessionId}/complete
-GET  /api/mapping-sessions/{sessionId}
-GET  /api/mapping-sessions/{sessionId}/artifacts
-POST /api/mapping-sessions/{sessionId}/publish
-\`\`\`
-
-\u4EFB\u52A1\u72B6\u6001\u5EFA\u8BAE\u4E3A\uFF1A\`CREATED \u2192 UPLOADING \u2192 QUEUED \u2192 RECONSTRUCTING \u2192 POST_PROCESSING \u2192 REVIEW_REQUIRED \u2192 PUBLISHED\`\uFF0C\u5931\u8D25\u8FDB\u5165 \`FAILED\` \u5E76\u4FDD\u5B58\u53EF\u8BCA\u65AD\u539F\u56E0\u3002
-
-### 14.4 \u5750\u6807\u4E0E\u6807\u5B9A
-
-\u81F3\u5C11\u7EF4\u62A4\u4EE5\u4E0B\u5750\u6807\u7CFB\uFF1A
-
-- \`camera\`\uFF1A\u76F8\u673A\u5750\u6807\uFF1B
-- \`reconstruction\`\uFF1ALingBot-Map \u8F93\u51FA\u5750\u6807\uFF1B
-- \`greenhouse\`\uFF1A\u6E29\u5BA4\u4E1A\u52A1\u5750\u6807\uFF1B
-- \`map\`\uFF1A\u673A\u5668\u4EBA\u5BFC\u822A\u5730\u56FE\u5750\u6807\uFF1B
-- \`base_link\`\uFF1A\u673A\u5668\u4EBA\u672C\u4F53\u5750\u6807\u3002
-
-\u53D1\u5E03\u5730\u56FE\u524D\u9700\u8981\u7528\u5DF2\u77E5\u5C3A\u5BF8\u6807\u5FD7\u7269\u3001\u6E29\u5BA4\u7ED3\u6784\u5C3A\u5BF8\u6216\u878D\u5408\u91CC\u7A0B\u8BA1\u786E\u5B9A\u5C3A\u5EA6\uFF0C\u8BB0\u5F55\u53D8\u6362\u77E9\u9635\u548C\u6807\u5B9A\u7248\u672C\u3002\u6BCF\u6B21\u76F8\u673A\u5B89\u88C5\u4F4D\u7F6E\u3001\u7126\u8DDD\u6216\u88C1\u526A\u7B56\u7565\u53D8\u5316\u540E\u91CD\u65B0\u9A8C\u8BC1\u3002
-
-### 14.5 \u5206\u9636\u6BB5\u5B9E\u65BD
-
-1. **\u79BB\u7EBF\u9A8C\u8BC1**\uFF1A\u5BF9\u5355\u5EA7\u6E29\u5BA4\u5F55\u5236\u89C6\u9891\uFF0C\u5F97\u5230\u70B9\u4E91\u548C\u76F8\u673A\u8F68\u8FF9\uFF1B
-2. **Web \u5C55\u793A**\uFF1A\u538B\u7F29\u4E3A GLB/\u5206\u5757\u70B9\u4E91\uFF0C\u5728\u5B9E\u666F\u9875\u52A0\u8F7D\uFF1B
-3. **\u5C3A\u5EA6\u4E0E\u5730\u9762**\uFF1A\u5EFA\u7ACB\u771F\u5B9E\u7C73\u5236\u5C3A\u5EA6\uFF0C\u8BC6\u522B\u5730\u9762\u548C\u56FA\u5B9A\u969C\u788D\uFF1B
-4. **\u5730\u56FE\u8F6C\u6362**\uFF1A\u751F\u6210\u4E8C\u7EF4\u5360\u636E\u6805\u683C\u6216\u4E09\u7EF4\u4F53\u7D20\u5730\u56FE\uFF1B
-5. **\u56DE\u653E\u5BFC\u822A**\uFF1A\u4EFF\u771F\u6216\u5F55\u5305\u9A8C\u8BC1\u5B9A\u4F4D\u548C\u89C4\u5212\uFF1B
-6. **\u4F4E\u901F\u5C01\u95ED\u6D4B\u8BD5**\uFF1A\u7A7A\u68DA\u3001\u9650\u901F\u3001\u4EBA\u5DE5\u6025\u505C\uFF1B
-7. **\u6709\u4EBA\u73AF\u5883\u6D4B\u8BD5**\uFF1A\u52A0\u5165\u52A8\u6001\u969C\u788D\u548C\u72EC\u7ACB\u5B89\u5168\u5C42\uFF1B
-8. **\u7248\u672C\u7BA1\u7406**\uFF1A\u68DA\u5185\u5E03\u5C40\u53D8\u5316\u540E\u91CD\u65B0\u5EFA\u56FE\u5E76\u652F\u6301\u56DE\u6EDA\u3002
-
-### 14.6 \u9A8C\u6536\u6307\u6807
-
-- \u8F68\u8FF9\u5B8C\u6574\u7387\u548C\u91CD\u5EFA\u6210\u529F\u7387\uFF1B
-- \u7C73\u5236\u5C3A\u5EA6\u8BEF\u5DEE\u3001\u95ED\u73AF\u6F02\u79FB\u548C\u91CD\u590D\u5EFA\u56FE\u4E00\u81F4\u6027\uFF1B
-- \u5730\u9762/\u969C\u788D\u7269\u5206\u7C7B\u51C6\u786E\u7387\uFF1B
-- \u5360\u636E\u5730\u56FE\u7684\u6F0F\u969C\u788D\u7387\u548C\u865A\u5047\u969C\u788D\u7387\uFF1B
-- \u5B9A\u4F4D\u6210\u529F\u7387\u3001\u8DEF\u5F84\u6210\u529F\u7387\u548C\u6700\u5C0F\u5B89\u5168\u8DDD\u79BB\uFF1B
-- \u4E0D\u540C\u5149\u7167\u3001\u4F5C\u7269\u9AD8\u5EA6\u3001\u901A\u9053\u79EF\u6C34\u548C\u4EBA\u5458\u8D70\u52A8\u6761\u4EF6\u4E0B\u7684\u9C81\u68D2\u6027\uFF1B
-- \u5730\u56FE\u52A0\u8F7D\u65F6\u95F4\u3001\u524D\u7AEF\u5E27\u7387\u548C\u4EA7\u7269\u5927\u5C0F\u3002
-
-## 15. \u5B89\u5168\u8BBE\u8BA1
-
-### 15.1 Web \u4E0E API
-
-- \u5168\u7AD9 HTTPS\uFF1B
-- JWT \u5BC6\u94A5\u5B9A\u671F\u8F6E\u6362\uFF0C\u8BBE\u7F6E\u5408\u7406\u8FC7\u671F\u65F6\u95F4\uFF1B
-- CORS \u53EA\u5141\u8BB8\u53EF\u4FE1\u57DF\u540D\uFF1B
-- \u767B\u5F55\u3001\u4EBA\u8138\u548C AI \u63A5\u53E3\u9650\u6D41\uFF1B
-- \u8BBE\u5907\u63A7\u5236\u5199\u5165\u64CD\u4F5C\u8005\u3001\u65F6\u95F4\u3001\u65E7\u503C\u3001\u65B0\u503C\u548C\u7ED3\u679C\uFF1B
-- \u8F93\u51FA\u7F16\u7801\u5E76\u9650\u5236\u4E0A\u4F20\u7C7B\u578B\u3001\u5927\u5C0F\u548C\u5206\u8FA8\u7387\uFF1B
-- \u4F9D\u8D56\u6F0F\u6D1E\u626B\u63CF\u548C\u8F6F\u4EF6\u7269\u6599\u6E05\u5355\uFF1B
-- \u670D\u52A1\u9519\u8BEF\u4E0D\u5F97\u6CC4\u9732\u5806\u6808\u3001\u6570\u636E\u5E93\u53E3\u4EE4\u6216\u7B2C\u4E09\u65B9\u5BC6\u94A5\u3002
-
-### 15.2 \u4EBA\u8138\u6570\u636E
-
-\u4EBA\u8138\u5C5E\u4E8E\u654F\u611F\u4E2A\u4EBA\u4FE1\u606F\u3002\u4E0A\u7EBF\u524D\u5E94\u83B7\u5F97\u5355\u72EC\u540C\u610F\uFF0C\u8BF4\u660E\u76EE\u7684\u3001\u4FDD\u5B58\u671F\u9650\u3001\u5220\u9664\u65B9\u5F0F\u548C\u7B2C\u4E09\u65B9\u5904\u7406\u65B9\u3002\u63D0\u4F9B\u89E3\u7ED1\u548C\u5220\u9664\u80FD\u529B\uFF0C\u9650\u5236\u7BA1\u7406\u5458\u8BBF\u95EE\u5E76\u4FDD\u7559\u5BA1\u8BA1\u8BB0\u5F55\u3002\u6444\u50CF\u5934\u91C7\u96C6\u53EA\u662F\u8F93\u5165\u9650\u5236\uFF0C\u4E0D\u80FD\u66FF\u4EE3\u6D3B\u4F53\u68C0\u6D4B\u3002
-
-### 15.3 \u673A\u5668\u4EBA\u5B89\u5168
-
-\u5730\u56FE\u6216\u8BC6\u522B\u6A21\u578B\u8F93\u51FA\u4E0D\u5F97\u76F4\u63A5\u7ED5\u8FC7\u5B89\u5168\u63A7\u5236\u9A71\u52A8\u6267\u884C\u5668\u3002\u673A\u5668\u4EBA\u5E94\u6709\u72EC\u7ACB\u6025\u505C\u3001\u9650\u901F\u3001\u78B0\u649E\u4FDD\u62A4\u3001\u5931\u8054\u505C\u8F66\u548C\u4EBA\u5DE5\u63A5\u7BA1\uFF1B\u65B0\u5730\u56FE\u53D1\u5E03\u9700\u8981\u5BA1\u6838\u548C\u7B7E\u540D\uFF0C\u5BFC\u822A\u5931\u8D25\u65F6\u8FDB\u5165\u5B89\u5168\u72B6\u6001\u3002
-
-## 16. \u6D4B\u8BD5\u7B56\u7565
-
-### 16.1 \u81EA\u52A8\u6D4B\u8BD5
-
-\`\`\`bash
-./mvnw test
-cd landing && npm run build
-cd ../frontend && npm run build
-\`\`\`
-
-\u540E\u7AEF\u5E94\u8986\u76D6\uFF1A\u6CE8\u518C\u3001\u91CD\u590D\u90AE\u7BB1\u3001\u6B63\u786E/\u9519\u8BEF\u5BC6\u7801\u3001JWT\u3001Dashboard \u67E5\u8BE2\u3001\u6E29\u5BA4\u8BE6\u60C5\u3001\u8BBE\u5907\u66F4\u65B0\u3001\u704C\u6E89\u53C2\u6570\u8FB9\u754C\u3001\u544A\u8B66\u5904\u7F6E\u548C\u7528\u6237\u72B6\u6001\u9694\u79BB\u3002
-
-### 16.2 \u524D\u7AEF\u4EBA\u5DE5\u56DE\u5F52
-
-1. \u8BBF\u95EE\u5B98\u7F51\u6240\u6709\u5BFC\u822A\u9875\uFF1B
-2. \u63D0\u4EA4\u8054\u7CFB\u8868\u5355\u5E76\u6838\u5BF9\u76EE\u6807\u90AE\u7BB1\uFF1B
-3. \u6CE8\u518C\u65B0\u7528\u6237\uFF1B
-4. \u767B\u5F55\u3001\u9000\u51FA\u548C\u9519\u8BEF\u5BC6\u7801\u63D0\u793A\uFF1B
-5. \u5141\u8BB8/\u62D2\u7EDD\u6444\u50CF\u5934\u6743\u9650\uFF1B
-6. \u8FDB\u5165\u5DE5\u4F5C\u53F0\u5E76\u5207\u6362\u4E09\u79CD\u89C6\u89D2\uFF1B
-7. \u64CD\u4F5C\u4E03\u4E2A\u529F\u80FD\u6A21\u5757\uFF1B
-8. \u53CC\u51FB\u6BCF\u5EA7\u5927\u68DA\u5E76\u786E\u8BA4\u8DEF\u7531\u548C\u4F5C\u7269\u5DEE\u5F02\uFF1B
-9. \u5207\u6362\u5B9E\u666F/\u6570\u5B57\u5B6A\u751F\uFF1B
-10. \u68C0\u67E5\u53F3\u4FA7\u680F\u6EDA\u52A8\u3001\u8BBE\u5907\u3001\u690D\u682A\u5B9A\u4F4D\uFF1B
-11. \u64AD\u653E\u76D1\u63A7\u89C6\u9891\u5E76\u6838\u5BF9\u68C0\u6D4B\u6846\u65F6\u95F4\u540C\u6B65\uFF1B
-12. \u68C0\u67E5\u7A84\u5C4F\u3001\u7F29\u653E\u548C\u4F4E\u6027\u80FD\u8BBE\u5907\u8868\u73B0\u3002
-
-### 16.3 \u7B97\u6CD5\u6D4B\u8BD5
-
-\u7B97\u6CD5\u8BC4\u4F30\u5FC5\u987B\u6309\u6E29\u5BA4\u3001\u65F6\u6BB5\u6216\u89C6\u9891\u5206\u7EC4\uFF0C\u4E0D\u80FD\u628A\u76F8\u90BB\u5E27\u968F\u673A\u62C6\u5230\u8BAD\u7EC3\u96C6\u4E0E\u6D4B\u8BD5\u96C6\u9020\u6210\u6570\u636E\u6CC4\u6F0F\u3002YOLO \u81F3\u5C11\u8BB0\u5F55 precision\u3001recall\u3001mAP\u3001\u8DDF\u8E2A ID \u5207\u6362\u548C\u5B9E\u65F6\u5EF6\u8FDF\uFF1B\u5EFA\u56FE\u8BB0\u5F55\u5C3A\u5EA6\u3001\u8F68\u8FF9\u3001\u5730\u56FE\u548C\u5BFC\u822A\u6307\u6807\uFF1B\u5F00\u653E\u8BCD\u6C47\u6A21\u578B\u5EFA\u7ACB\u56FA\u5B9A\u67E5\u8BE2\u96C6\u5408\u53CA\u4EBA\u5DE5\u6807\u6CE8\u57FA\u51C6\u3002
-
-## 17. \u8FD0\u7EF4\u4E0E\u53EF\u89C2\u6D4B\u6027
-
-\u5EFA\u8BAE\u91C7\u96C6\uFF1A
-
-- HTTP \u8BF7\u6C42\u6570\u3001P95/P99 \u5EF6\u8FDF\u30014xx/5xx\uFF1B
-- \u6570\u636E\u5E93\u8FDE\u63A5\u6C60\u3001\u6162\u67E5\u8BE2\u548C\u78C1\u76D8\u5BB9\u91CF\uFF1B
-- \u767B\u5F55\u5931\u8D25\u3001\u4EBA\u8138\u670D\u52A1\u5931\u8D25\u3001AI \u8C03\u7528\u5931\u8D25\uFF1B
-- \u8BBE\u5907\u63A7\u5236\u6210\u529F\u7387\u548C\u544A\u8B66\u79EF\u538B\uFF1B
-- \u6444\u50CF\u5934\u5728\u7EBF\u7387\u3001\u89C6\u9891\u5E27\u7387\u548C\u63A8\u7406\u961F\u5217\uFF1B
-- GPU \u663E\u5B58\u3001\u5229\u7528\u7387\u3001\u6E29\u5EA6\u548C\u6A21\u578B\u8017\u65F6\uFF1B
-- \u5EFA\u56FE\u4EFB\u52A1\u8017\u65F6\u3001\u5931\u8D25\u9636\u6BB5\u548C\u4EA7\u7269\u5927\u5C0F\u3002
-
-\u65E5\u5FD7\u5E94\u5305\u542B\u8BF7\u6C42 ID\u3001\u7528\u6237 ID\u3001\u519C\u573A ID \u548C\u4EFB\u52A1 ID\uFF0C\u4F46\u4E0D\u5F97\u8BB0\u5F55\u5BC6\u7801\u3001JWT \u5168\u6587\u3001\u4EBA\u8138\u539F\u56FE\u6216\u7B2C\u4E09\u65B9\u5BC6\u94A5\u3002
-
-## 18. \u5E38\u89C1\u6545\u969C
-
-### 18.1 \u542F\u52A8\u65F6\u62A5\u6570\u636E\u5E93\u9519\u8BEF
-
-\u786E\u8BA4 MySQL \u8FD0\u884C\u3001\u6570\u636E\u5E93\u5B58\u5728\u3001\u8D26\u53F7\u6709\u6743\u9650\u3001URL \u65F6\u533A\u6B63\u786E\u3002\u4F7F\u7528\u547D\u4EE4\u884C\u5BA2\u6237\u7AEF\u9A8C\u8BC1\u540C\u4E00\u7EC4\u51ED\u636E\uFF0C\u4E0D\u8981\u53EA\u4FEE\u6539\u524D\u7AEF\u914D\u7F6E\u3002
-
-### 18.2 \u5237\u65B0\u5E73\u53F0\u6DF1\u5C42\u8DEF\u7531\u51FA\u73B0 404
-
-\u786E\u8BA4\u5DF2\u6784\u5EFA\u5230 \`static/platform\`\uFF0C\u670D\u52A1\u5668\u914D\u7F6E\u4E86 SPA \u56DE\u9000\uFF0C\u5E76\u68C0\u67E5 \`base\` \u8DEF\u5F84\u548C\u8D44\u6E90 URL \u662F\u5426\u4E3A \`/platform/\`\u3002
-
-### 18.3 \u767B\u5F55\u6210\u529F\u4F46 API \u8FD4\u56DE 401
-
-\u68C0\u67E5\u8BF7\u6C42\u662F\u5426\u643A\u5E26 Bearer Token\u3001Token \u662F\u5426\u8FC7\u671F\u3001JWT_SECRET \u662F\u5426\u5728\u91CD\u542F\u540E\u53D8\u5316\uFF0C\u4EE5\u53CA\u6D4F\u89C8\u5668\u662F\u5426\u4ECD\u4FDD\u5B58\u65E7\u4F1A\u8BDD\u3002
-
-### 18.4 \u6444\u50CF\u5934\u4E0D\u53EF\u7528
-
-\u9664 localhost \u5916\u6D4F\u89C8\u5668\u901A\u5E38\u8981\u6C42 HTTPS\uFF1B\u68C0\u67E5\u6743\u9650\u3001\u8BBE\u5907\u5360\u7528\u3001\u7CFB\u7EDF\u9690\u79C1\u8BBE\u7F6E\u3002\u9879\u76EE\u4E0D\u5141\u8BB8\u901A\u8FC7\u4E0A\u4F20\u56FE\u7247\u66FF\u4EE3\u5237\u8138\u91C7\u96C6\u3002
-
-### 18.5 3D \u573A\u666F\u7A7A\u767D\u6216\u5361\u987F
-
-\u68C0\u67E5 WebGL\u3001\u63A7\u5236\u53F0\u8D44\u6E90\u9519\u8BEF\u548C\u663E\u5361\u9A71\u52A8\uFF1B\u964D\u4F4E\u50CF\u7D20\u6BD4\u3001\u9634\u5F71\u3001\u690D\u682A\u5B9E\u4F8B\u6570\u6216\u6A21\u578B\u7EC6\u8282\u3002\u786E\u8BA4\u7EC4\u4EF6\u5378\u8F7D\u65F6\u91CA\u653E\u8D44\u6E90\u3002
-
-### 18.6 \u68C0\u6D4B\u6846\u4E0E\u89C6\u9891\u9519\u4F4D
-
-\u786E\u8BA4 JSON \u5BF9\u5E94\u540C\u4E00\u89C6\u9891\u7248\u672C\u3001\u5206\u8FA8\u7387\u548C\u65F6\u95F4\u57FA\u51C6\uFF1B\u91CD\u65B0\u8FD0\u884C\u5BFC\u51FA\u811A\u672C\uFF0C\u907F\u514D\u5BF9\u89C6\u9891\u8F6C\u7801\u540E\u7EE7\u7EED\u4F7F\u7528\u65E7\u7ED3\u679C\u3002
-
-### 18.7 AI \u95EE\u519C\u5931\u8D25
-
-\u68C0\u67E5 API Key\u3001Base URL\u3001\u6A21\u578B\u540D\u3001\u7F51\u7EDC\u3001\u4F59\u989D\u3001\u8D85\u65F6\u548C\u4E0A\u6E38\u9650\u6D41\u3002\u524D\u7AEF\u5E94\u663E\u793A\u53EF\u7406\u89E3\u7684\u5931\u8D25\u63D0\u793A\uFF0C\u4E0D\u80FD\u4F2A\u9020\u6A21\u578B\u56DE\u7B54\u3002
-
-## 19. \u53D1\u5E03\u68C0\u67E5\u6E05\u5355
-
-- [ ] \u4E24\u4E2A\u524D\u7AEF\u5747\u4ECE\u6E90\u7801\u6210\u529F\u6784\u5EFA\uFF1B
-- [ ] Maven \u6D4B\u8BD5\u5168\u90E8\u901A\u8FC7\uFF1B
-- [ ] \u6570\u636E\u5E93\u8FC1\u79FB\u3001\u5907\u4EFD\u548C\u6062\u590D\u65B9\u6848\u5DF2\u9A8C\u8BC1\uFF1B
-- [ ] \u751F\u4EA7 JWT\u3001\u6570\u636E\u5E93\u548C\u7B2C\u4E09\u65B9\u5BC6\u94A5\u5DF2\u66FF\u6362\uFF1B
-- [ ] HTTPS\u3001CORS\u3001\u9650\u6D41\u548C\u5B89\u5168\u54CD\u5E94\u5934\u5DF2\u914D\u7F6E\uFF1B
-- [ ] \u6CE8\u518C\u3001\u5BC6\u7801\u767B\u5F55\u3001\u6444\u50CF\u5934\u5237\u8138\u548C\u89E3\u7ED1\u5DF2\u56DE\u5F52\uFF1B
-- [ ] \u5DE5\u4F5C\u53F0\u3001\u4E03\u4E2A\u6A21\u5757\u548C\u5168\u90E8\u6E29\u5BA4\u5165\u53E3\u5DF2\u56DE\u5F52\uFF1B
-- [ ] \u5B9E\u666F/\u6570\u5B57\u5B6A\u751F\u3001\u53F3\u4FA7\u680F\u6EDA\u52A8\u548C\u68C0\u6D4B\u6846\u5DF2\u56DE\u5F52\uFF1B
-- [ ] \u8BBE\u5907\u63A7\u5236\u6709\u6388\u6743\u3001\u5BA1\u8BA1\u548C\u5931\u8D25\u56DE\u6EDA\uFF1B
-- [ ] \u76D1\u63A7\u3001\u544A\u8B66\u3001\u65E5\u5FD7\u8131\u654F\u548C\u5BB9\u91CF\u9608\u503C\u5DF2\u914D\u7F6E\uFF1B
-- [ ] LingBot-Map \u4E0E LocateAnything \u82E5\u672A\u5B8C\u6210\u9A8C\u6536\uFF0C\u754C\u9762\u660E\u786E\u6807\u6CE8\u4E3A\u89C4\u5212/\u5B9E\u9A8C\u80FD\u529B\uFF1B
-- [ ] \u673A\u5668\u4EBA\u5B9E\u673A\u6D4B\u8BD5\u5177\u5907\u6025\u505C\u3001\u9650\u901F\u3001\u9694\u79BB\u533A\u548C\u4EBA\u5DE5\u76D1\u62A4\u3002
-
-## 20. \u6280\u672F\u6F14\u8FDB\u4F18\u5148\u7EA7
-
-1. \u5F15\u5165\u6570\u636E\u5E93\u8FC1\u79FB\u3001\u751F\u4EA7\u914D\u7F6E\u6A21\u677F\u548C CI \u6784\u5EFA\uFF1B
-2. \u8865\u9F50\u524D\u7AEF\u7EC4\u4EF6\u6D4B\u8BD5\u4E0E\u7AEF\u5230\u7AEF\u56DE\u5F52\uFF1B
-3. \u5C06 YOLO \u79BB\u7EBF\u94FE\u8DEF\u5347\u7EA7\u4E3A\u72EC\u7ACB\u5B9E\u65F6\u63A8\u7406\u670D\u52A1\uFF1B
-4. \u5B8C\u6210 LingBot-Map \u5355\u68DA\u79BB\u7EBF\u91CD\u5EFA\u548C Web \u5C55\u793A PoC\uFF1B
-5. \u5B8C\u6210\u5C3A\u5EA6\u6807\u5B9A\u3001\u5360\u636E\u5730\u56FE\u8F6C\u6362\u548C\u4EFF\u771F\u5BFC\u822A\uFF1B
-6. \u5728\u76EE\u6807 GPU \u4E0A\u8BC4\u4F30 LocateAnything\uFF0C\u5F62\u6210 YOLO + \u5F00\u653E\u8BCD\u6C47\u5206\u5C42\u65B9\u6848\uFF1B
-7. \u5728\u4E25\u683C\u5B89\u5168\u6761\u4EF6\u4E0B\u5F00\u5C55\u673A\u5668\u4EBA\u5C01\u95ED\u573A\u5730\u6D4B\u8BD5\uFF1B
-8. \u5EFA\u7ACB\u6570\u636E\u3001\u6A21\u578B\u3001\u5730\u56FE\u548C\u90E8\u7F72\u7248\u672C\u7684\u7EDF\u4E00\u8FFD\u8E2A\u4F53\u7CFB\u3002
-
-## 21. \u4E94\u9879\u89C4\u5212\u7684\u5DE5\u7A0B\u5B9E\u65BD\u84DD\u56FE
-
-\u672C\u7AE0\u5C06 3.2 \u8282\u5217\u51FA\u7684\u89C4\u5212\u80FD\u529B\u5C55\u5F00\u4E3A\u53EF\u6267\u884C\u65B9\u6848\u3002\u5EFA\u8BAE\u9075\u5FAA\u201C\u5148\u79BB\u7EBF\u9A8C\u8BC1\u3001\u518D\u5728\u7EBF\u89C2\u6D4B\u3001\u6700\u540E\u95ED\u73AF\u63A7\u5236\u201D\u7684\u987A\u5E8F\u3002\u4EFB\u4F55\u5B9E\u9A8C\u6A21\u578B\u90FD\u4E0D\u80FD\u672A\u7ECF\u4EBA\u5DE5\u5BA1\u6838\u76F4\u63A5\u63A7\u5236\u704C\u6E89\u8BBE\u5907\u6216\u673A\u5668\u4EBA\u3002
-
-### 21.1 \u603B\u4F53\u76EE\u6807\u67B6\u6784
-
-\`\`\`mermaid
-flowchart TB
-    subgraph Edge[\u519C\u573A\u8FB9\u7F18\u8282\u70B9]
-        CAM[\u5355\u76EE\u6444\u50CF\u5934/RTSP]
-        ROBOT[\u519C\u4E1A\u673A\u5668\u4EBA ROS 2]
-        YOLO[YOLO \u5B9E\u65F6\u63A8\u7406]
-        BUFFER[\u65AD\u7F51\u7F13\u51B2]
-    end
-
-    subgraph AI[GPU \u7B97\u6CD5\u670D\u52A1]
-        MAP[LingBot-Map \u91CD\u5EFA\u670D\u52A1]
-        LOC[LocateAnything \u5F00\u653E\u8BCD\u6C47\u5B9A\u4F4D]
-        POST[\u70B9\u4E91\u4E0E\u5730\u56FE\u540E\u5904\u7406]
-    end
-
-    subgraph Platform[\u4E1A\u52A1\u5E73\u53F0]
-        API[Spring Boot API]
-        MQ[\u4E8B\u4EF6\u603B\u7EBF]
-        WS[WebSocket/SSE \u7F51\u5173]
-        DB[(MySQL \u5143\u6570\u636E)]
-        OBJ[(S3 \u517C\u5BB9\u5BF9\u8C61\u5B58\u50A8)]
-        OBS[\u65E5\u5FD7/\u6307\u6807/\u94FE\u8DEF\u8FFD\u8E2A]
-    end
-
-    CAM --> YOLO
-    CAM --> BUFFER
-    BUFFER --> MAP
-    YOLO --> MQ
-    YOLO --> LOC
-    MAP --> POST
-    POST --> OBJ
-    POST --> ROBOT
-    MQ --> API
-    API --> DB
-    API --> OBJ
-    MQ --> WS
-    WS --> WEB[Vue/Three.js]
-    Platform --> OBS
-    AI --> OBS
-    Edge --> OBS
-\`\`\`
-
-\u804C\u8D23\u8FB9\u754C\uFF1ASpring Boot \u7BA1\u7406\u7528\u6237\u3001\u6743\u9650\u3001\u4EFB\u52A1\u548C\u4E1A\u52A1\u72B6\u6001\uFF1BPython/GPU \u670D\u52A1\u8D1F\u8D23\u6A21\u578B\u63A8\u7406\uFF1B\u5BF9\u8C61\u5B58\u50A8\u4FDD\u5B58\u89C6\u9891\u3001\u70B9\u4E91\u548C\u5730\u56FE\u5927\u6587\u4EF6\uFF1BMySQL \u53EA\u4FDD\u5B58\u53EF\u67E5\u8BE2\u5143\u6570\u636E\uFF1BROS 2 \u8D1F\u8D23\u673A\u5668\u4EBA\u5B9A\u4F4D\u3001\u89C4\u5212\u548C\u63A7\u5236\u3002
-
-## 22. LingBot-Map \u5355\u76EE\u4E09\u7EF4\u91CD\u5EFA\u89C4\u5212
-
-\u5B98\u65B9\u4ED3\u5E93\uFF1A[robbyant/lingbot-map](https://github.com/robbyant/lingbot-map)\u3002\u9879\u76EE\u652F\u6301\u56FE\u7247\u76EE\u5F55\u6216\u89C6\u9891\u8F93\u5165\uFF0C\u5E76\u63D0\u4F9B \`streaming\` \u4E0E \`windowed\` \u6A21\u5F0F\u3002\u5B98\u65B9\u793A\u4F8B\u5BF9\u957F\u4E8E 500 \u5E27\u7684\u5E8F\u5217\u63A8\u8350\u7A97\u53E3\u6A21\u5F0F\uFF0C\u5173\u952E\u5E27\u3001\u7A97\u53E3\u5927\u5C0F\u3001\u91CD\u53E0\u957F\u5EA6\u3001\u91C7\u6837 FPS \u548C\u76F8\u673A\u4F18\u5316\u6B21\u6570\u5747\u53EF\u914D\u7F6E\u3002
-
-### 22.1 \u4E1A\u52A1\u76EE\u6807
-
-1. \u4F7F\u7528\u666E\u901A RGB \u5355\u76EE\u6444\u50CF\u5934\u91C7\u96C6\u68DA\u5185\u901A\u9053\u3001\u68DA\u67B6\u3001\u4F5C\u7269\u548C\u56FA\u5B9A\u8BBE\u65BD\uFF1B
-2. \u751F\u6210\u5E26\u989C\u8272\u70B9\u4E91\u3001\u76F8\u673A\u8F68\u8FF9\u548C\u53EF\u4F9B\u7F51\u9875\u5C55\u793A\u7684\u8F7B\u91CF\u4E09\u7EF4\u4EA7\u7269\uFF1B
-3. \u5728\u5B8C\u6210\u5C3A\u5EA6\u6807\u5B9A\u4E0E\u5730\u56FE\u540E\u5904\u7406\u540E\uFF0C\u4E3A\u673A\u5668\u4EBA\u63D0\u4F9B\u5019\u9009\u5BFC\u822A\u5E95\u56FE\uFF1B
-4. \u901A\u8FC7\u5730\u56FE\u7248\u672C\u5BF9\u6BD4\u8BC6\u522B\u68DA\u5185\u7ED3\u6784\u6216\u79CD\u690D\u5E03\u5C40\u53D8\u5316\u3002
-
-\u7B2C\u4E00\u9636\u6BB5\u4E0D\u627F\u8BFA\u5B9E\u65F6 SLAM\uFF0C\u4E5F\u4E0D\u627F\u8BFA\u5355\u6B21\u91CD\u5EFA\u7ED3\u679C\u53EF\u76F4\u63A5\u5BFC\u822A\u3002\u76EE\u6807\u5E94\u662F\u201C\u7A33\u5B9A\u79BB\u7EBF\u91CD\u5EFA\u5E76\u53EF\u4EBA\u5DE5\u5BA1\u6838\u201D\u3002
-
-### 22.2 \u91C7\u96C6\u89C4\u8303
-
-| \u9879\u76EE | \u5EFA\u8BAE\u89C4\u5219 | \u539F\u56E0 |
-|---|---|---|
-| \u76F8\u673A | \u56FA\u5B9A\u7126\u8DDD\u3001\u5173\u95ED\u6570\u5B57\u53D8\u7126\uFF0C\u8BB0\u5F55\u5185\u53C2 | \u4FDD\u6301\u6295\u5F71\u6A21\u578B\u4E00\u81F4 |
-| \u5206\u8FA8\u7387 | \u539F\u89C6\u9891\u4FDD\u7559\uFF0C\u63A8\u7406\u6309\u6A21\u578B\u8981\u6C42\u7F29\u653E | \u4FBF\u4E8E\u4EE5\u540E\u91CD\u7B97 |
-| \u5E27\u7387 | \u539F\u59CB 25/30 FPS\uFF0C\u63A8\u7406\u5148\u8BD5 5\u201310 FPS | \u964D\u4F4E\u76F8\u90BB\u5E27\u5197\u4F59 |
-| \u8FD0\u52A8 | \u4F4E\u901F\u3001\u5E73\u7A33\u3001\u907F\u514D\u6025\u8F6C\u548C\u5927\u5E45\u6296\u52A8 | \u51CF\u5C11\u8FD0\u52A8\u6A21\u7CCA |
-| \u8DEF\u7EBF | \u901A\u9053\u5F80\u8FD4\u5E76\u5305\u542B\u53EF\u8BC6\u522B\u7684\u4EA4\u53C9\u89C6\u89D2 | \u63D0\u5347\u8986\u76D6\u548C\u5BF9\u9F50\u80FD\u529B |
-| \u5149\u7167 | \u5206\u522B\u91C7\u96C6\u767D\u5929\u3001\u80CC\u5149\u548C\u8865\u5149\u6761\u4EF6 | \u68C0\u9A8C\u6E29\u5BA4\u5149\u7167\u9C81\u68D2\u6027 |
-| \u6807\u5C3A | \u8BBE\u7F6E\u5DF2\u77E5\u5C3A\u5BF8\u6807\u5FD7\u7269\u6216\u6D4B\u91CF\u63A7\u5236\u70B9 | \u6062\u590D\u7C73\u5236\u5C3A\u5EA6 |
-| \u52A8\u6001\u7269\u4F53 | \u9996\u6B21\u5EFA\u56FE\u5C3D\u91CF\u6E05\u573A | \u964D\u4F4E\u4EBA\u5458\u3001\u673A\u5668\u4EBA\u9020\u6210\u7684\u4F2A\u70B9 |
-
-\u6BCF\u6B21\u91C7\u96C6\u5FC5\u987B\u8BB0\u5F55\uFF1A\`tenantId\`\u3001\`farmId\`\u3001\`greenhouseId\`\u3001\u76F8\u673A ID\u3001\u5185\u53C2\u7248\u672C\u3001\u89C6\u9891\u5F00\u59CB/\u7ED3\u675F\u65F6\u95F4\u3001\u91C7\u96C6\u8DEF\u7EBF\u3001\u64CD\u4F5C\u8005\u548C\u6807\u5C3A\u6570\u636E\u3002
-
-### 22.3 \u91CD\u5EFA\u4EFB\u52A1\u914D\u7F6E
-
-\u5EFA\u8BAE\u4FDD\u5B58\u4EE5\u4E0B\u914D\u7F6E\uFF0C\u800C\u4E0D\u662F\u628A\u547D\u4EE4\u53C2\u6570\u6563\u843D\u5728\u811A\u672C\u4E2D\uFF1A
-
-\`\`\`yaml
-mappingJob:
-  mode: windowed
-  sampleFps: 8
-  imageSize: 518
-  windowSize: 64
-  overlapSize: 16
-  keyframeInterval: 2
-  cameraIterations: 4
-  offloadToCpu: true
-  modelVersion: lingbot-map@pinned-commit
-\`\`\`
-
-- \u77ED\u89C6\u9891\u5148\u4F7F\u7528 \`streaming\`\uFF0C\u9010\u5E27\u5904\u7406\u5E76\u5229\u7528 KV cache\uFF1B
-- \u957F\u5E8F\u5217\u4F7F\u7528 \`windowed\`\uFF0C\u901A\u8FC7\u91CD\u53E0\u5E27\u8FDB\u884C\u7A97\u53E3\u8854\u63A5\uFF1B
-- \`keyframeInterval\` \u8D8A\u5927\uFF0C\u663E\u5B58\u4E0E\u8017\u65F6\u8D8A\u4F4E\uFF0C\u4F46\u53EF\u80FD\u635F\u5931\u5FEB\u901F\u8F6C\u5F2F\u5904\u7684\u4FE1\u606F\uFF1B
-- \`cameraIterations=1\` \u53EF\u7528\u4E8E\u5FEB\u901F\u9884\u89C8\uFF0C\u6B63\u5F0F\u53D1\u5E03\u4F7F\u7528\u7ECF\u8FC7\u9A8C\u8BC1\u7684\u914D\u7F6E\uFF1B
-- \u6A21\u578B\u4ED3\u5E93\u5FC5\u987B\u56FA\u5B9A commit \u548C\u6743\u91CD\u6821\u9A8C\u548C\uFF0C\u907F\u514D\u540C\u4E00\u4EFB\u52A1\u65E0\u6CD5\u590D\u73B0\u3002
-
-### 22.4 \u4EFB\u52A1 API \u4E0E\u72B6\u6001\u673A
-
-\`\`\`http
-POST /api/v1/farms/{farmId}/greenhouses/{greenhouseId}/mapping-sessions
-Idempotency-Key: <uuid>
-Content-Type: application/json
-
-{
-  "cameraId": "cam-gh01-01",
-  "captureType": "VIDEO",
-  "calibrationVersion": "calib-2026-08-01",
-  "requestedMode": "WINDOWED"
-}
-\`\`\`
-
-\u670D\u52A1\u8FD4\u56DE \`sessionId\` \u548C\u9884\u7B7E\u540D\u4E0A\u4F20\u5730\u5740\u3002\u5927\u6587\u4EF6\u4E0D\u7ECF\u8FC7 Spring Boot \u8F6C\u53D1\uFF0C\u5E94\u7531\u5BA2\u6237\u7AEF\u76F4\u63A5\u5206\u7247\u4E0A\u4F20\u5BF9\u8C61\u5B58\u50A8\u3002
-
-\u72B6\u6001\u673A\uFF1A
-
-\`\`\`text
-CREATED \u2192 UPLOADING \u2192 VALIDATING \u2192 QUEUED \u2192 RECONSTRUCTING
-        \u2192 POST_PROCESSING \u2192 REVIEW_REQUIRED \u2192 PUBLISHED
-\`\`\`
-
-\u4EFB\u4F55\u9636\u6BB5\u53EF\u8FDB\u5165 \`FAILED\`\uFF1B\u5931\u8D25\u8BB0\u5F55 \`errorCode\`\u3001\u53EF\u91CD\u8BD5\u6027\u3001\u6A21\u578B\u65E5\u5FD7\u4F4D\u7F6E\u548C\u6700\u540E\u6210\u529F\u9636\u6BB5\u3002\`PUBLISHED\` \u5FC5\u987B\u7531\u6709\u6743\u9650\u4EBA\u5458\u5BA1\u6838\u89E6\u53D1\u3002
-
-### 22.5 \u91CD\u5EFA\u4EA7\u7269
-
-| \u4EA7\u7269 | \u683C\u5F0F\u5EFA\u8BAE | \u7528\u9014 |
-|---|---|---|
-| \u539F\u59CB\u89C6\u9891 | MP4 | \u5BA1\u8BA1\u548C\u91CD\u65B0\u8BA1\u7B97 |
-| \u62BD\u53D6\u5E27\u6E05\u5355 | JSON/Parquet | \u91CD\u5EFA\u53EF\u590D\u73B0\u6027 |
-| \u76F8\u673A\u8F68\u8FF9 | JSON/TUM \u683C\u5F0F | \u8F68\u8FF9\u8BC4\u4F30\u4E0E\u5750\u6807\u8F6C\u6362 |
-| \u539F\u59CB\u70B9\u4E91 | PLY/PCD | \u7B97\u6CD5\u540E\u5904\u7406 |
-| \u7F51\u9875\u6A21\u578B | GLB \u6216\u5206\u5757\u70B9\u4E91 | Three.js \u5C55\u793A |
-| \u5360\u636E\u5730\u56FE | PGM+YAML / OccupancyGrid | ROS 2 \u5BFC\u822A |
-| \u914D\u7F6E\u5FEB\u7167 | YAML | \u53C2\u6570\u3001\u7248\u672C\u548C\u6821\u9A8C\u548C |
-| \u8D28\u91CF\u62A5\u544A | JSON+HTML | \u4EBA\u5DE5\u5BA1\u6838\u548C\u9A8C\u6536 |
-
-### 22.6 \u8D28\u91CF\u95E8\u7981
-
-\u53D1\u5E03\u524D\u81EA\u52A8\u68C0\u67E5\uFF1A\u89C6\u9891\u53EF\u89E3\u7801\u7387\u3001\u6709\u6548\u5E27\u6BD4\u4F8B\u3001\u6A21\u7CCA\u7387\u3001\u8F68\u8FF9\u8DF3\u53D8\u3001\u70B9\u4E91\u79BB\u7FA4\u6BD4\u4F8B\u3001\u5730\u9762\u5E73\u6574\u5EA6\u3001\u5C3A\u5EA6\u8BEF\u5DEE\u3001\u8986\u76D6\u7387\u548C\u4EA7\u7269\u5B8C\u6574\u6027\u3002\u4EFB\u4E00\u5173\u952E\u9879\u8D85\u9608\u503C\u65F6\u8FDB\u5165 \`REVIEW_REQUIRED\`\uFF0C\u4E0D\u80FD\u81EA\u52A8\u6210\u4E3A\u673A\u5668\u4EBA\u5730\u56FE\u3002
-
-## 23. \u70B9\u4E91\u5230\u673A\u5668\u4EBA\u5360\u636E\u5730\u56FE\u4E0E\u5BFC\u822A\u5750\u6807\u7CFB
-
-Nav2 \u4F7F\u7528 \`map\`\u3001\`odom\`\u3001\`base_link\` \u7B49\u5750\u6807\u5E27\uFF1B\`map\` \u662F\u5168\u5C40\u4E00\u81F4\u5750\u6807\uFF0C\`odom\` \u63D0\u4F9B\u5C40\u90E8\u8FDE\u7EED\u8FD0\u52A8\uFF0C\`base_link\` \u8868\u793A\u673A\u5668\u4EBA\u672C\u4F53\u3002\u5B98\u65B9 Nav2 \u6587\u6863\u8BF4\u660E\u5176\u4E8C\u7EF4\u4EE3\u4EF7\u5730\u56FE\u7531\u9759\u6001\u5C42\u3001\u969C\u788D\u5C42\u3001\u4F53\u7D20\u5C42\u3001\u81A8\u80C0\u5C42\u7B49\u7EC4\u6210\uFF1A[Nav2 Mapping and Localization](https://docs.nav2.org/setup_guides/sensors/mapping_localization.html)\u3001[Nav2 Transformations](https://docs.nav2.org/setup_guides/transformation/setup_transforms.html)\u3002
-
-### 23.1 \u8F6C\u6362\u6D41\u6C34\u7EBF
-
-\`\`\`text
-LingBot \u70B9\u4E91\u4E0E\u76F8\u673A\u4F4D\u59FF
- \u2192 \u5750\u6807\u8F74\u7EDF\u4E00
- \u2192 \u7C73\u5236\u5C3A\u5EA6\u6062\u590D
- \u2192 \u7578\u53D8/\u79BB\u7FA4\u70B9\u8FC7\u6EE4
- \u2192 \u5730\u9762\u5E73\u9762\u4F30\u8BA1
- \u2192 \u56FA\u5B9A\u7ED3\u6784\u4E0E\u52A8\u6001\u7269\u4F53\u5206\u79BB
- \u2192 \u4F53\u7D20\u964D\u91C7\u6837
- \u2192 \u673A\u5668\u4EBA\u9AD8\u5EA6\u8303\u56F4\u5207\u7247
- \u2192 \u4E8C\u7EF4\u5360\u636E\u6982\u7387\u6805\u683C
- \u2192 \u4EBA\u5DE5\u7F16\u8F91\u7981\u884C\u533A/\u9650\u901F\u533A
- \u2192 Nav2 \u9759\u6001\u5730\u56FE\u4E0E\u4EE3\u4EF7\u5730\u56FE
-\`\`\`
-
-### 23.2 \u5750\u6807\u94FE
-
-\`\`\`text
-map \u2192 odom \u2192 base_link \u2192 camera_link \u2192 camera_optical_frame
-\`\`\`
-
-- \`map\u2192odom\`\uFF1A\u7531\u5B9A\u4F4D\u7CFB\u7EDF\u4FEE\u6B63\u5168\u5C40\u6F02\u79FB\uFF1B
-- \`odom\u2192base_link\`\uFF1A\u7531\u8F6E\u901F\u3001\u89C6\u89C9\u91CC\u7A0B\u8BA1\u6216\u878D\u5408\u5B9A\u4F4D\u8FDE\u7EED\u53D1\u5E03\uFF1B
-- \`base_link\u2192camera_link\`\uFF1A\u76F8\u673A\u76F8\u5BF9\u8F66\u4F53\u7684\u5916\u53C2\uFF0C\u901A\u5E38\u7531 URDF/robot_state_publisher \u53D1\u5E03\uFF1B
-- \`reconstruction\u2192map\`\uFF1A\u7531\u63A7\u5236\u70B9\u548C\u5C3A\u5EA6\u6807\u5B9A\u8BA1\u7B97\uFF0C\u5FC5\u987B\u968F\u5730\u56FE\u7248\u672C\u4FDD\u5B58\u3002
-
-\u53D8\u6362\u8BB0\u5F55\u81F3\u5C11\u5305\u542B\u5E73\u79FB\u3001\u56DB\u5143\u6570\u3001\u5C3A\u5EA6\u3001\u7B97\u6CD5\u7248\u672C\u3001\u63A7\u5236\u70B9\u6B8B\u5DEE\u548C\u6807\u5B9A\u65F6\u95F4\u3002\u4E0D\u8981\u5728\u524D\u7AEF\u4EE3\u7801\u4E2D\u786C\u7F16\u7801\u5750\u6807\u504F\u79FB\u3002
-
-### 23.3 OccupancyGrid \u751F\u6210
-
-ROS \`nav_msgs/OccupancyGrid\` \u4E2D\u901A\u5E38\u7528 \`-1\` \u8868\u793A\u672A\u77E5\u3001\`0\` \u8868\u793A\u7A7A\u95F2\u3001\`100\` \u8868\u793A\u5360\u7528\u3002\u9879\u76EE\u8F6C\u6362\u5668\u5E94\u914D\u7F6E\uFF1A
-
-- \u5206\u8FA8\u7387\uFF0C\u4F8B\u5982 0.03\u20130.10 m/cell\uFF0C\u901A\u8FC7\u673A\u5668\u4EBA\u5BBD\u5EA6\u548C\u901A\u9053\u5BBD\u5EA6\u5B9E\u6D4B\u9009\u62E9\uFF1B
-- \u5730\u9762\u4E0A\u65B9\u969C\u788D\u5207\u7247\u9AD8\u5EA6\uFF1B
-- \u6700\u5C0F\u70B9\u5BC6\u5EA6\u548C\u5360\u7528\u6982\u7387\u9608\u503C\uFF1B
-- \u5B54\u6D1E\u586B\u5145\u3001\u8150\u8680/\u81A8\u80C0\u534A\u5F84\uFF1B
-- \u673A\u5668\u4EBA footprint \u548C\u5B89\u5168\u81A8\u80C0\u8DDD\u79BB\uFF1B
-- \u6E29\u5BA4\u8FB9\u754C\u3001\u7981\u884C\u533A\u3001\u9650\u901F\u533A\u548C\u6389\u843D\u98CE\u9669\u533A\u3002
-
-Nav2 \u4E2D \`0\u2013254\` \u7684\u4EE3\u4EF7\u503C\u7528\u4E8E\u8868\u793A\u4ECE\u81EA\u7531\u901A\u884C\u5230\u81F4\u547D\u969C\u788D\u7684\u4EE3\u4EF7\u3002\u5EFA\u8BAE\u4FDD\u7559\uFF1A\u9759\u6001\u5730\u56FE\u5C42\u3001\u5B9E\u65F6\u89C6\u89C9\u969C\u788D\u5C42\u3001\u81A8\u80C0\u5C42\u3001\u7981\u884C\u533A\u8FC7\u6EE4\u5668\u548C\u9650\u901F\u533A\u8FC7\u6EE4\u5668\u3002\u9759\u6001 LingBot \u5730\u56FE\u4E0D\u80FD\u66FF\u4EE3\u5B9E\u65F6\u907F\u969C\u3002
-
-### 23.4 \u5BFC\u822A\u63A5\u5165\u6B65\u9AA4
-
-1. \u5BFC\u51FA PGM/YAML \u6216\u76F4\u63A5\u53D1\u5E03 \`/map\`\uFF1B
-2. \u5728 RViz \u68C0\u67E5\u65B9\u5411\u3001\u6BD4\u4F8B\u3001\u539F\u70B9\u548C\u901A\u9053\u5BBD\u5EA6\uFF1B
-3. \u914D\u7F6E URDF\u3001\u673A\u5668\u4EBA footprint \u548C TF\uFF1B
-4. \u878D\u5408\u8F6E\u901F\u4E0E IMU\uFF0C\u63D0\u4F9B\u8FDE\u7EED \`odom\u2192base_link\`\uFF1B
-5. \u9009\u62E9\u9002\u5408\u89C6\u89C9\u8F93\u5165\u7684\u5B9A\u4F4D\u65B9\u6848\u5E76\u53D1\u5E03 \`map\u2192odom\`\uFF1B
-6. \u914D\u7F6E\u5168\u5C40/\u5C40\u90E8 costmap\u3001\u89C4\u5212\u5668\u548C\u63A7\u5236\u5668\uFF1B
-7. \u4EFF\u771F\u6216 rosbag \u56DE\u653E\u9A8C\u8BC1\uFF1B
-8. \u7A7A\u68DA\u4F4E\u901F\u6D4B\u8BD5\uFF1B
-9. \u589E\u52A0\u4EBA\u5458\u3001\u8F66\u8F86\u548C\u79FB\u52A8\u5DE5\u5177\u7B49\u52A8\u6001\u969C\u788D\u6D4B\u8BD5\uFF1B
-10. \u901A\u8FC7\u6025\u505C\u3001\u5931\u8054\u505C\u8F66\u548C\u4EBA\u5DE5\u63A5\u7BA1\u9A8C\u6536\u540E\u518D\u8FDB\u5165\u751F\u4EA7\u8BD5\u8FD0\u884C\u3002
-
-### 23.5 \u5730\u56FE\u7248\u672C\u7BA1\u7406
-
-\u5730\u56FE\u8BB0\u5F55\u5EFA\u8BAE\u5305\u542B\uFF1A
-
-\`\`\`text
-map_id, tenant_id, farm_id, greenhouse_id, version,
-source_session_id, calibration_version, resolution,
-origin_x, origin_y, origin_yaw, scale,
-artifact_uri, checksum, quality_score,
-status, approved_by, approved_at, created_at
-\`\`\`
-
-\u540C\u4E00\u6E29\u5BA4\u53EA\u80FD\u6709\u4E00\u4E2A \`ACTIVE\` \u5BFC\u822A\u5730\u56FE\uFF0C\u4F46\u5FC5\u987B\u4FDD\u7559\u5386\u53F2\u7248\u672C\u548C\u5FEB\u901F\u56DE\u6EDA\u3002\u68DA\u67B6\u79FB\u52A8\u3001\u4F5C\u7269\u663E\u8457\u957F\u9AD8\u3001\u8BBE\u5907\u6362\u4F4D\u6216\u901A\u9053\u6539\u53D8\u65F6\u89E6\u53D1\u91CD\u65B0\u5EFA\u56FE\u8BC4\u4F30\u3002
-
-## 24. \u5728\u7EBF\u76F8\u673A\u6D41\u3001\u8FB9\u7F18\u63A8\u7406\u4E0E\u5B9E\u65F6\u6D88\u606F\u901A\u9053
-
-### 24.1 \u89C6\u9891\u63A5\u5165
-
-\u63A8\u8350\u94FE\u8DEF\uFF1A
-
-\`\`\`text
-RTSP \u6444\u50CF\u5934 \u2192 \u8FB9\u7F18\u7F51\u5173/GStreamer \u2192 \u89E3\u7801 \u2192 \u5E27\u91C7\u6837
-  \u251C\u2500 \u4F4E\u5EF6\u8FDF\u5E27 \u2192 YOLO/TensorRT
-  \u251C\u2500 \u5173\u952E\u4E8B\u4EF6\u7247\u6BB5 \u2192 \u5BF9\u8C61\u5B58\u50A8
-  \u2514\u2500 \u5EFA\u56FE\u7247\u6BB5 \u2192 LingBot-Map \u4EFB\u52A1
-\`\`\`
-
-\u6444\u50CF\u5934\u6CE8\u518C\u4FE1\u606F\u5305\u62EC\u79DF\u6237\u3001\u519C\u573A\u3001\u6E29\u5BA4\u3001RTSP \u5BC6\u6587\u5F15\u7528\u3001\u5B89\u88C5\u4F4D\u7F6E\u3001\u65B9\u5411\u3001\u5185\u53C2\u3001\u5728\u7EBF\u72B6\u6001\u548C\u4FDD\u7559\u7B56\u7565\u3002\u5E73\u53F0\u4E0D\u5F97\u628A RTSP \u5BC6\u7801\u8FD4\u56DE\u6D4F\u89C8\u5668\u3002
-
-\u6D4F\u89C8\u5668\u89C2\u770B\u4F18\u5148\u7531\u7F51\u5173\u8F6C\u6362\u4E3A WebRTC\uFF1BHLS \u53EF\u4F5C\u4E3A\u9AD8\u5EF6\u8FDF\u517C\u5BB9\u65B9\u6848\u3002\u4E0D\u8981\u8BA9\u6BCF\u4E2A\u6D4F\u89C8\u5668\u76F4\u63A5\u8FDE\u63A5\u76F8\u673A\uFF0C\u5426\u5219\u4F1A\u9020\u6210\u8FDE\u63A5\u6570\u5931\u63A7\u548C\u51ED\u636E\u6CC4\u9732\u3002
-
-### 24.2 \u8FB9\u7F18\u63A8\u7406\u670D\u52A1
-
-\u8FB9\u7F18\u8282\u70B9\u8D1F\u8D23\uFF1A
-
-- \u6444\u50CF\u5934\u65AD\u7EBF\u91CD\u8FDE\u548C\u5FC3\u8DF3\uFF1B
-- \u6309\u6A21\u578B\u9700\u8981\u7F29\u653E\u3001\u5F52\u4E00\u5316\u548C\u6279\u5904\u7406\uFF1B
-- YOLO \u63A8\u7406\u4E0E ByteTrack \u8DDF\u8E2A\uFF1B
-- \u76EE\u6807\u8D8A\u7EBF\u3001\u533A\u57DF\u5165\u4FB5\u3001\u6EDE\u7559\u7B49\u672C\u5730\u89C4\u5219\uFF1B
-- \u65AD\u7F51\u671F\u95F4\u4E8B\u4EF6\u7F13\u51B2\u548C\u6062\u590D\u540E\u8865\u4F20\uFF1B
-- \u4EC5\u4E0A\u4F20\u4E8B\u4EF6\u622A\u56FE/\u77ED\u7247\uFF0C\u964D\u4F4E\u5E26\u5BBD\u4E0E\u9690\u79C1\u98CE\u9669\u3002
-
-\u63A8\u8350\u5C06\u6A21\u578B\u6253\u5305\u6210\u7248\u672C\u5316\u5BB9\u5668\u3002\u6A21\u578B\u53D1\u5E03\u91C7\u7528 \`STAGING \u2192 CANARY \u2192 ACTIVE \u2192 RETIRED\`\uFF0C\u652F\u6301\u6309\u6444\u50CF\u5934\u7070\u5EA6\u5207\u6362\u548C\u4E00\u952E\u56DE\u9000\u3002
-
-### 24.3 \u4E8B\u4EF6\u6D88\u606F\u6A21\u578B
-
-\`\`\`json
-{
-  "schemaVersion": "1.0",
-  "eventId": "evt_01...",
-  "tenantId": "tenant_demo",
-  "farmId": "farm-01",
-  "greenhouseId": "gh-01",
-  "cameraId": "cam-gh01-01",
-  "capturedAt": "2026-08-05T15:30:02.123+08:00",
-  "model": {"name": "greenhouse-yolo", "version": "1.3.0"},
-  "type": "DETECTION",
-  "detections": [
-    {"trackId": 17, "label": "person", "confidence": 0.91,
-     "box": {"x": 0.12, "y": 0.20, "w": 0.18, "h": 0.52}}
-  ],
-  "snapshotUri": "s3://tenant-demo/events/2026/08/05/evt_01.jpg",
-  "traceId": "..."
-}
-\`\`\`
-
-\u6846\u5750\u6807\u7EDF\u4E00\u4F7F\u7528\u76F8\u5BF9\u503C \`0\u20131\`\uFF0C\u5E76\u4FDD\u7559\u6E90\u5E27\u5BBD\u9AD8\u3002\u6D88\u606F\u5FC5\u987B\u5305\u542B schema \u548C\u6A21\u578B\u7248\u672C\u3002\u6D88\u8D39\u8005\u6309 \`eventId\` \u5E42\u7B49\u5904\u7406\uFF0C\u907F\u514D\u6D88\u606F\u91CD\u6295\u9020\u6210\u91CD\u590D\u544A\u8B66\u3002
-
-### 24.4 \u6D88\u606F\u901A\u9053\u9009\u62E9
-
-| \u901A\u9053 | \u7528\u9014 |
-|---|---|
-| MQTT | \u8FB9\u7F18\u8BBE\u5907\u5FC3\u8DF3\u3001\u5C0F\u578B\u9065\u6D4B\u548C\u5F31\u7F51\u573A\u666F |
-| Kafka/\u517C\u5BB9\u4E8B\u4EF6\u6D41 | \u5927\u89C4\u6A21\u68C0\u6D4B\u4E8B\u4EF6\u3001\u53EF\u56DE\u653E\u6570\u636E\u7BA1\u9053 |
-| WebSocket | \u6D4F\u89C8\u5668\u5B9E\u65F6\u68C0\u6D4B\u6846\u548C\u72B6\u6001\u53CC\u5411\u4EA4\u4E92 |
-| SSE | \u5355\u5411\u4EFB\u52A1\u8FDB\u5EA6\u3001\u544A\u8B66\u548C\u5EFA\u56FE\u72B6\u6001 |
-| REST | \u67E5\u8BE2\u5386\u53F2\u3001\u4E0B\u53D1\u4F4E\u9891\u914D\u7F6E\u548C\u4EBA\u5DE5\u64CD\u4F5C |
-
-\u5C0F\u89C4\u6A21\u90E8\u7F72\u53EF\u5148\u4F7F\u7528 MQTT + WebSocket\uFF1B\u89C4\u6A21\u6269\u5927\u540E\u518D\u5F15\u5165\u6301\u4E45\u4E8B\u4EF6\u603B\u7EBF\u3002Spring Boot \u6D88\u8D39\u63A8\u7406\u4E8B\u4EF6\uFF0C\u751F\u6210\u4E1A\u52A1\u544A\u8B66\u5E76\u901A\u8FC7 WebSocket/SSE \u63A8\u9001\uFF0C\u4E0D\u8F6C\u53D1\u6BCF\u4E00\u5E27\u539F\u59CB\u56FE\u50CF\u3002
-
-### 24.5 \u964D\u7EA7\u7B56\u7565
-
-- GPU \u5FD9\uFF1A\u964D\u4F4E\u91C7\u6837 FPS\uFF0C\u4FDD\u7559\u544A\u8B66\u7C7B\u522B\u4F18\u5148\u7EA7\uFF1B
-- \u6D88\u606F\u603B\u7EBF\u4E0D\u53EF\u7528\uFF1A\u8FB9\u7F18\u78C1\u76D8\u6709\u754C\u7F13\u51B2\uFF0C\u8D85\u8FC7\u9608\u503C\u5148\u4E22\u666E\u901A\u5E27\u3001\u4FDD\u7559\u544A\u8B66\uFF1B
-- \u5BF9\u8C61\u5B58\u50A8\u4E0D\u53EF\u7528\uFF1A\u4E8B\u4EF6\u5148\u4FDD\u5B58\u672C\u5730\uFF0C\u754C\u9762\u663E\u793A\u201C\u5A92\u4F53\u5F85\u540C\u6B65\u201D\uFF1B
-- \u7F51\u7EDC\u4E2D\u65AD\uFF1A\u672C\u5730\u89C4\u5219\u7EE7\u7EED\u62A5\u8B66\uFF0C\u6062\u590D\u540E\u6309\u65F6\u95F4\u987A\u5E8F\u8865\u4F20\uFF1B
-- \u6A21\u578B\u5F02\u5E38\uFF1A\u5207\u6362\u4E0A\u4E00\u7A33\u5B9A\u7248\u672C\u5E76\u89E6\u53D1\u8FD0\u7EF4\u544A\u8B66\u3002
-
-## 25. NVIDIA LocateAnything \u5F00\u653E\u8BCD\u6C47\u5B9A\u4F4D\u89C4\u5212
-
-\u5B98\u65B9\u9879\u76EE\u9875\uFF1A[NVIDIA LocateAnything](https://research.nvidia.com/labs/lpr/locate-anything/)\u3002\u6A21\u578B\u4EE5\u56FE\u50CF\u548C\u81EA\u7136\u8BED\u8A00\u67E5\u8BE2\u4E3A\u8F93\u5165\uFF0C\u8F93\u51FA\u6846\u6216\u70B9\u3002\u5176 Parallel Box Decoding \u652F\u6301 Fast Mode\uFF0CSlow Mode \u5F3A\u8C03\u7A33\u5B9A\u6027\uFF0CHybrid Mode \u5728\u5E76\u884C\u8F93\u51FA\u4E0D\u53EF\u9760\u65F6\u56DE\u9000\u3002\u5B98\u65B9\u541E\u5410\u6570\u636E\u4F7F\u7528\u5355\u5F20 H100 \u6D4B\u5F97\uFF0C\u56E0\u6B64\u9879\u76EE\u5FC5\u987B\u5728\u5B9E\u9645 GPU \u4E0A\u91CD\u65B0\u6D4B\u8BD5\u3002
-
-### 25.1 \u5B9A\u4F4D\u89D2\u8272
-
-LocateAnything \u4E0D\u66FF\u4EE3 YOLO \u7684\u6301\u7EED\u5B9E\u65F6\u68C0\u6D4B\uFF0C\u800C\u4F5C\u4E3A\u4E8C\u7EA7\u6A21\u578B\uFF1A
-
-1. \u7528\u6237\u4E34\u65F6\u67E5\u8BE2\u672A\u8BAD\u7EC3\u7C7B\u522B\uFF1B
-2. \u5BF9 YOLO \u4F4E\u7F6E\u4FE1\u5EA6\u5E27\u505A\u5F02\u6B65\u590D\u6838\uFF1B
-3. \u6279\u91CF\u6316\u6398\u65B0\u7C7B\u522B\u8BAD\u7EC3\u6837\u672C\uFF1B
-4. \u4E3A\u56FE\u7247\u6807\u6CE8\u63D0\u4F9B\u5019\u9009\u6846\uFF0C\u7ECF\u4EBA\u5DE5\u786E\u8BA4\u540E\u8BAD\u7EC3\u8F7B\u91CF YOLO\uFF1B
-5. \u5BF9\u590D\u6742\u63CF\u8FF0\u6267\u884C\u6307\u4EE3\u8868\u8FBE\u5B9A\u4F4D\u3002
-
-### 25.2 \u63A8\u7406\u63A5\u53E3
-
-\`\`\`http
-POST /api/v1/vision/open-vocabulary-jobs
-Content-Type: application/json
-
-{
-  "farmId": "farm-01",
-  "greenhouseId": "gh-01",
-  "imageUri": "s3://.../frame.jpg",
-  "queries": ["\u53F6\u7247\u660E\u663E\u840E\u852B\u7684\u756A\u8304\u690D\u682A", "\u901A\u9053\u4E2D\u7684\u79EF\u6C34\u533A\u57DF"],
-  "mode": "HYBRID",
-  "maxBoxes": 50
-}
-\`\`\`
-
-\u8FD4\u56DE\u5F02\u6B65 \`jobId\`\u3002\u7ED3\u679C\u4FDD\u5B58\u539F\u59CB\u67E5\u8BE2\u3001\u5F52\u4E00\u5316\u6846\u3001\u5206\u6570\u3001\u6A21\u578B\u7248\u672C\u3001\u63A8\u7406\u6A21\u5F0F\u3001\u8017\u65F6\u548C\u4EBA\u5DE5\u5BA1\u6838\u72B6\u6001\u3002\u7528\u6237\u81EA\u7531\u8F93\u5165\u5E94\u505A\u957F\u5EA6\u9650\u5236\u3001\u654F\u611F\u8BCD\u68C0\u67E5\u548C\u67E5\u8BE2\u6A21\u677F\u5316\uFF0C\u9632\u6B62\u65E0\u9650\u7C7B\u522B\u5BFC\u81F4\u8D44\u6E90\u6EE5\u7528\u3002
-
-### 25.3 \u8C03\u5EA6\u7B56\u7565
-
-| \u4F18\u5148\u7EA7 | \u573A\u666F | \u6A21\u5F0F |
-|---|---|---|
-| P0 | \u5B89\u5168\u4E8B\u4EF6\u590D\u6838 | Fast/Hybrid\uFF0C\u72EC\u7ACB\u8D44\u6E90\u6C60 |
-| P1 | \u7528\u6237\u4EA4\u4E92\u67E5\u8BE2 | Hybrid\uFF0C\u8BBE\u8D85\u65F6 |
-| P2 | \u544A\u8B66\u6279\u91CF\u590D\u6838 | \u5F02\u6B65\u6279\u5904\u7406 |
-| P3 | \u6570\u636E\u96C6\u6316\u6398 | Slow\uFF0C\u79BB\u5CF0\u6267\u884C |
-
-\u8BBE\u7F6E\u6BCF\u79DF\u6237 GPU \u914D\u989D\u3001\u6700\u5927\u5E76\u53D1\u3001\u5355\u56FE\u67E5\u8BE2\u6570\u548C\u65E5\u8C03\u7528\u91CF\u3002\u8D85\u989D\u65F6\u6392\u961F\u6216\u8FD4\u56DE\u660E\u786E\u7684\u9650\u6D41\u54CD\u5E94\uFF0C\u800C\u4E0D\u662F\u62A2\u5360\u5B9E\u65F6 YOLO \u8D44\u6E90\u3002
-
-### 25.4 \u519C\u4E1A\u6570\u636E\u9A8C\u8BC1
-
-\u5EFA\u7ACB\u672C\u5730\u57FA\u51C6\u96C6\uFF0C\u8986\u76D6\u4F5C\u7269\u54C1\u79CD\u3001\u751F\u80B2\u671F\u3001\u68DA\u819C\u53CD\u5149\u3001\u53F6\u7247\u906E\u6321\u3001\u75C5\u6591\u3001\u5C0F\u76EE\u6807\u3001\u591C\u95F4\u8865\u5149\u3001\u96FE\u6C14\u548C\u5BC6\u96C6\u690D\u682A\u3002\u6BCF\u6761\u67E5\u8BE2\u7531\u519C\u4E1A\u4EBA\u5458\u5B9A\u4E49\u53EF\u5224\u5B9A\u6807\u51C6\uFF0C\u8BB0\u5F55 Precision\u3001Recall\u3001F1\u3001IoU\u3001\u6F0F\u68C0\u5B89\u5168\u98CE\u9669\u548C\u5355\u56FE\u5EF6\u8FDF\u3002
-
-\u4E0A\u7EBF\u95E8\u69DB\u4E0D\u80FD\u53EA\u770B\u901A\u7528\u516C\u5F00\u6570\u636E\u96C6\uFF1B\u5E94\u6309\u201C\u4F5C\u7269\u2014\u95EE\u9898\u2014\u5149\u7167\u2014\u6444\u50CF\u5934\u201D\u5206\u5C42\u62A5\u544A\u3002\u6A21\u578B\u7ED9\u51FA\u7684\u75C5\u5BB3\u5B9A\u4F4D\u4EC5\u662F\u89C6\u89C9\u7EBF\u7D22\uFF0C\u4E0D\u80FD\u76F4\u63A5\u4F5C\u4E3A\u519C\u836F\u6216\u704C\u6E89\u5904\u65B9\u3002
-
-## 26. \u591A\u79DF\u6237\u3001\u5BF9\u8C61\u5B58\u50A8\u3001\u53EF\u89C2\u6D4B\u6027\u548C\u9AD8\u53EF\u7528\u89C4\u5212
-
-### 26.1 \u591A\u79DF\u6237\u6A21\u578B
-
-\u79DF\u6237\u5C42\u7EA7\u5EFA\u8BAE\u4E3A\uFF1A
-
-\`\`\`text
-Tenant\uFF08\u7EC4\u7EC7\uFF09
- \u2514\u2500 Farm\uFF08\u519C\u573A\uFF09
-     \u2514\u2500 Greenhouse/Field\uFF08\u5927\u68DA/\u5730\u5757\uFF09
-         \u251C\u2500 Camera/Device
-         \u251C\u2500 MappingSession/MapVersion
-         \u2514\u2500 DetectionEvent/Alert
-\`\`\`
-
-\u6240\u6709\u4E1A\u52A1\u8868\u589E\u52A0\u4E0D\u53EF\u4E3A\u7A7A\u7684 \`tenant_id\`\uFF0C\u552F\u4E00\u7EA6\u675F\u5FC5\u987B\u5305\u542B\u79DF\u6237\u5217\u3002JWT \u4E2D\u4FDD\u5B58 \`tenantId\`\u3001\`userId\` \u548C\u89D2\u8272\uFF1B\u670D\u52A1\u7AEF\u4ECE\u8BA4\u8BC1\u4E0A\u4E0B\u6587\u53D6\u5F97\u79DF\u6237\uFF0C\u4E0D\u80FD\u76F8\u4FE1\u8BF7\u6C42\u4F53\u4F20\u5165\u7684\u79DF\u6237\u503C\u3002
-
-\u63A8\u8350\u89D2\u8272\uFF1A\`TENANT_ADMIN\`\u3001\`FARM_MANAGER\`\u3001\`AGRONOMIST\`\u3001\`OPERATOR\`\u3001\`VIEWER\`\u3001\`ROBOT_SERVICE\`\u3002\u8BBE\u5907\u63A7\u5236\u3001\u5730\u56FE\u53D1\u5E03\u3001\u4EBA\u8138\u7BA1\u7406\u548C\u6A21\u578B\u53D1\u5E03\u5206\u522B\u6388\u6743\u3002
-
-\u521D\u671F\u53EF\u91C7\u7528\u5171\u4EAB\u6570\u636E\u5E93\u3001\u5171\u4EAB\u8868\u5E76\u4EE5 \`tenant_id\` \u884C\u7EA7\u9694\u79BB\uFF1B\u9AD8\u5408\u89C4\u5BA2\u6237\u53EF\u6F14\u8FDB\u4E3A\u72EC\u7ACB schema \u6216\u72EC\u7ACB\u6570\u636E\u5E93\u3002\u5FC5\u987B\u7F16\u5199\u8DE8\u79DF\u6237\u8BBF\u95EE\u81EA\u52A8\u6D4B\u8BD5\uFF0C\u7F13\u5B58\u952E\u3001\u5BF9\u8C61\u8DEF\u5F84\u3001\u6D88\u606F\u4E3B\u9898\u548C\u65E5\u5FD7\u67E5\u8BE2\u4E5F\u8981\u5305\u542B\u79DF\u6237\u7EF4\u5EA6\u3002
-
-### 26.2 \u751F\u4EA7\u7EA7\u5BF9\u8C61\u5B58\u50A8
-
-\u5BF9\u8C61\u5B58\u50A8\u7528\u4E8E\u89C6\u9891\u3001\u622A\u56FE\u3001\u70B9\u4E91\u3001GLB\u3001\u5730\u56FE\u548C\u6A21\u578B\uFF0C\u4E0D\u628A\u5927\u6587\u4EF6\u5B58\u5165 MySQL\u3002\u5EFA\u8BAE\u4F7F\u7528 S3 \u517C\u5BB9\u63A5\u53E3\uFF0C\u5F00\u53D1\u53EF\u7528 MinIO\uFF0C\u751F\u4EA7\u53EF\u9009\u4E91\u5BF9\u8C61\u5B58\u50A8\u6216\u9AD8\u53EF\u7528 MinIO \u96C6\u7FA4\u3002
-
-\u5BF9\u8C61\u952E\u89C4\u8303\uFF1A
-
-\`\`\`text
-/{tenantId}/{farmId}/{resourceType}/{yyyy}/{mm}/{dd}/{resourceId}/{version}/{file}
-\`\`\`
-
-\u5B89\u5168\u8981\u6C42\uFF1A
-
-- Bucket \u9ED8\u8BA4\u79C1\u6709\uFF1B
-- \u6D4F\u89C8\u5668\u53EA\u83B7\u5F97\u77ED\u65F6\u9884\u7B7E\u540D URL\uFF1B
-- \u670D\u52A1\u8D26\u53F7\u6309\u524D\u7F00\u6700\u5C0F\u6743\u9650\u8BBF\u95EE\uFF1B
-- \u4E0A\u4F20\u5B8C\u6210\u540E\u6821\u9A8C\u5927\u5C0F\u3001MIME\u3001SHA-256 \u548C\u6076\u610F\u6587\u4EF6\uFF1B
-- \u670D\u52A1\u7AEF\u52A0\u5BC6\uFF0C\u654F\u611F\u89C6\u9891\u53EF\u4F7F\u7528\u72EC\u7ACB\u79DF\u6237\u5BC6\u94A5\uFF1B
-- \u5F00\u542F\u7248\u672C\u63A7\u5236\u3001\u751F\u547D\u5468\u671F\u3001\u4E0D\u53EF\u53D8\u4FDD\u7559\u548C\u8DE8\u533A\u57DF\u590D\u5236\uFF1B
-- \u6570\u636E\u5E93\u53EA\u4FDD\u5B58\u903B\u8F91 URI\u3001\u6821\u9A8C\u548C\u3001\u5927\u5C0F\u3001\u72B6\u6001\u548C\u4FDD\u7559\u622A\u6B62\u65F6\u95F4\u3002
-
-\u751F\u547D\u5468\u671F\u793A\u4F8B\uFF1A\u4E8B\u4EF6\u7F29\u7565\u56FE\u4FDD\u7559 90 \u5929\uFF0C\u666E\u901A\u89C6\u9891 30 \u5929\uFF0C\u5DF2\u53D1\u5E03\u5730\u56FE\u957F\u671F\u4FDD\u7559\uFF0C\u5931\u8D25\u4EFB\u52A1\u4E2D\u95F4\u6587\u4EF6 7 \u5929\u3002\u771F\u5B9E\u671F\u9650\u5E94\u7531\u4E1A\u52A1\u3001\u9690\u79C1\u548C\u6CD5\u89C4\u5171\u540C\u786E\u5B9A\u3002
-
-### 26.3 \u53EF\u89C2\u6D4B\u6027
-
-\u91C7\u7528 OpenTelemetry \u7EDF\u4E00 trace\u3001metric \u548C log\uFF0C\u5E76\u5C06 \`traceId\` \u8D2F\u7A7F\u6D4F\u89C8\u5668\u3001Spring Boot\u3001\u6D88\u606F\u603B\u7EBF\u3001\u63A8\u7406\u670D\u52A1\u548C\u5BF9\u8C61\u5B58\u50A8\u4EFB\u52A1\u3002
-
-\u6838\u5FC3\u6307\u6807\uFF1A
-
-| \u57DF | \u6307\u6807 |
-|---|---|
-| API | QPS\u3001P50/P95/P99\u3001\u9519\u8BEF\u7387\u3001\u9274\u6743\u5931\u8D25\u7387 |
-| \u6570\u636E\u5E93 | \u8FDE\u63A5\u6C60\u3001\u6162\u67E5\u8BE2\u3001\u9501\u7B49\u5F85\u3001\u590D\u5236\u5EF6\u8FDF |
-| \u89C6\u9891 | \u5728\u7EBF\u7387\u3001\u91CD\u8FDE\u6B21\u6570\u3001\u89E3\u7801 FPS\u3001\u4E22\u5E27\u7387 |
-| \u63A8\u7406 | \u961F\u5217\u957F\u5EA6\u3001GPU \u5229\u7528\u7387\u3001\u663E\u5B58\u3001\u5355\u5E27\u5EF6\u8FDF\u3001\u541E\u5410 |
-| \u5EFA\u56FE | \u5404\u9636\u6BB5\u8017\u65F6\u3001\u6210\u529F\u7387\u3001\u8D28\u91CF\u5206\u3001\u4EA7\u7269\u5927\u5C0F |
-| \u6D88\u606F | \u751F\u4EA7/\u6D88\u8D39\u901F\u7387\u3001\u79EF\u538B\u3001\u91CD\u8BD5\u548C\u6B7B\u4FE1\u6570 |
-| \u5B58\u50A8 | \u5BB9\u91CF\u3001\u4E0A\u4F20\u5931\u8D25\u3001\u8BFB\u53D6\u5EF6\u8FDF\u3001\u6821\u9A8C\u5931\u8D25 |
-| \u673A\u5668\u4EBA | \u5B9A\u4F4D\u6210\u529F\u7387\u3001\u89C4\u5212\u5931\u8D25\u3001\u6025\u505C\u3001\u6700\u5C0F\u969C\u788D\u8DDD\u79BB |
-
-\u670D\u52A1\u7B49\u7EA7\u76EE\u6807\u793A\u4F8B\uFF1A\u6838\u5FC3\u67E5\u8BE2\u6708\u53EF\u7528\u6027 99.9%\uFF0CP95 \u5C0F\u4E8E 500 ms\uFF1B\u5B9E\u65F6\u544A\u8B66\u4ECE\u8FB9\u7F18\u4E8B\u4EF6\u5230\u6D4F\u89C8\u5668 P95 \u5C0F\u4E8E 2 s\uFF1B\u5EFA\u56FE\u5C5E\u4E8E\u5F02\u6B65\u4EFB\u52A1\uFF0C\u4E0D\u4EE5 HTTP \u5EF6\u8FDF\u8861\u91CF\uFF0C\u800C\u4EE5\u5B8C\u6210\u65F6\u95F4\u548C\u6210\u529F\u7387\u8861\u91CF\u3002
-
-\u544A\u8B66\u9700\u5206\u7EA7\u5E76\u5E26\u8FD0\u884C\u624B\u518C\u94FE\u63A5\u3002\u907F\u514D\u53EA\u56E0 CPU \u77ED\u65F6\u5347\u9AD8\u62A5\u8B66\uFF0C\u5E94\u7EC4\u5408\u6301\u7EED\u65F6\u95F4\u3001\u9519\u8BEF\u7387\u548C\u4E1A\u52A1\u5F71\u54CD\u3002\u65E5\u5FD7\u7981\u6B62\u8BB0\u5F55 JWT\u3001\u5BC6\u7801\u3001\u4EBA\u8138\u539F\u56FE\u3001RTSP \u5BC6\u7801\u548C\u9884\u7B7E\u540D URL \u5168\u6587\u3002
-
-### 26.4 \u9AD8\u53EF\u7528\u90E8\u7F72
-
-\`\`\`mermaid
-flowchart LR
-    DNS[DNS/WAF] --> LB[\u8D1F\u8F7D\u5747\u8861]
-    LB --> A1[Spring Boot A]
-    LB --> A2[Spring Boot B]
-    A1 --> DBP[(MySQL Primary)]
-    A2 --> DBP
-    DBP --> DBR[(Replica/Backup)]
-    A1 --> MQC[\u6D88\u606F\u96C6\u7FA4]
-    A2 --> MQC
-    MQC --> GPU1[GPU Worker A]
-    MQC --> GPU2[GPU Worker B]
-    A1 --> S3[(\u5BF9\u8C61\u5B58\u50A8\u96C6\u7FA4)]
-    A2 --> S3
-\`\`\`
-
-- Spring Boot \u4FDD\u6301\u65E0\u72B6\u6001\uFF0C\u81F3\u5C11\u4E24\u4E2A\u5B9E\u4F8B\uFF0C\u5065\u5EB7\u68C0\u67E5\u533A\u5206\u5B58\u6D3B\u548C\u5C31\u7EEA\uFF1B
-- JWT \u4E0D\u4F9D\u8D56\u5355\u673A Session\uFF1BWebSocket \u4F7F\u7528\u5171\u4EAB\u6D88\u606F\u540E\u7AEF\u6216\u4E00\u81F4\u6027\u8DEF\u7531\uFF1B
-- MySQL \u4F7F\u7528\u4E3B\u4ECE/\u6258\u7BA1\u9AD8\u53EF\u7528\uFF0C\u5E76\u5B9E\u65BD PITR\uFF1B
-- \u6D88\u606F\u603B\u7EBF\u5F00\u542F\u6301\u4E45\u5316\u3001\u526F\u672C\u3001\u91CD\u8BD5\u4E3B\u9898\u548C\u6B7B\u4FE1\u961F\u5217\uFF1B
-- GPU Worker \u4ECE\u961F\u5217\u9886\u53D6\u4EFB\u52A1\uFF0C\u4F7F\u7528\u79DF\u7EA6\u548C\u5FC3\u8DF3\u907F\u514D\u4EFB\u52A1\u4E22\u5931\uFF1B
-- \u5BF9\u8C61\u5B58\u50A8\u542F\u7528\u591A\u526F\u672C\u548C\u5B9A\u671F\u6062\u590D\u6F14\u7EC3\uFF1B
-- \u8FB9\u7F18\u8282\u70B9\u65AD\u7F51\u53EF\u81EA\u6CBB\u5E76\u7F13\u5B58\uFF0C\u4E0D\u56E0\u4E91\u7AEF\u6545\u969C\u505C\u6B62\u5B89\u5168\u544A\u8B66\u3002
-
-### 26.5 \u707E\u96BE\u6062\u590D
-
-\u5B9A\u4E49\u5E76\u5B9E\u6D4B\uFF1A
-
-- RPO\uFF1A\u5141\u8BB8\u4E22\u5931\u7684\u6570\u636E\u65F6\u95F4\u7A97\u53E3\uFF1B
-- RTO\uFF1A\u5141\u8BB8\u670D\u52A1\u4E2D\u65AD\u65F6\u957F\uFF1B
-- MySQL \u5168\u91CF+\u589E\u91CF\u6062\u590D\uFF1B
-- \u5BF9\u8C61\u5B58\u50A8\u7248\u672C\u548C\u8DE8\u533A\u57DF\u526F\u672C\u6062\u590D\uFF1B
-- \u6D88\u606F\u79EF\u538B\u91CD\u653E\u548C\u5E42\u7B49\u9A8C\u8BC1\uFF1B
-- \u5730\u56FE\u3001\u6A21\u578B\u548C\u914D\u7F6E\u56DE\u6EDA\uFF1B
-- \u8FB9\u7F18\u8282\u70B9\u91CD\u65B0\u6CE8\u518C\u4E0E\u5BC6\u94A5\u8F6E\u6362\u3002
-
-\u6BCF\u5B63\u5EA6\u81F3\u5C11\u8FDB\u884C\u4E00\u6B21\u6062\u590D\u6F14\u7EC3\uFF0C\u5E76\u4FDD\u5B58\u5B9E\u9645\u6062\u590D\u65F6\u95F4\uFF0C\u800C\u4E0D\u662F\u53EA\u786E\u8BA4\u201C\u5B58\u5728\u5907\u4EFD\u201D\u3002
-
-## 27. \u5206\u9636\u6BB5\u91CC\u7A0B\u7891\u4E0E\u9A8C\u6536
-
-| \u9636\u6BB5 | \u4E3B\u8981\u4EA4\u4ED8 | \u8FDB\u5165\u4E0B\u4E00\u9636\u6BB5\u7684\u95E8\u69DB |
-|---|---|---|
-| P0 \u57FA\u7EBF | \u6444\u50CF\u5934\u6807\u5B9A\u3001\u6570\u636E\u89C4\u8303\u3001\u6A21\u578B\u4E0E\u5730\u56FE\u7248\u672C\u89C4\u8303 | \u53EF\u91CD\u590D\u91C7\u96C6\u540C\u4E00\u6E29\u5BA4 |
-| P1 \u79BB\u7EBF\u5EFA\u56FE | LingBot-Map \u4EFB\u52A1\u3001\u70B9\u4E91\u3001\u8F68\u8FF9\u3001Web \u9884\u89C8 | \u8986\u76D6\u7387\u548C\u5C3A\u5EA6\u8BEF\u5DEE\u8FBE\u6807 |
-| P2 \u5730\u56FE\u8F6C\u6362 | OccupancyGrid\u3001TF\u3001RViz \u6821\u9A8C | \u901A\u9053\u548C\u969C\u788D\u4E0E\u5B9E\u6D4B\u4E00\u81F4 |
-| P3 \u4EFF\u771F\u5BFC\u822A | Nav2 \u914D\u7F6E\u3001rosbag/\u4EFF\u771F\u56DE\u653E | \u89C4\u5212\u6210\u529F\u4E14\u65E0\u78B0\u649E |
-| P4 \u5728\u7EBF\u8BC6\u522B | RTSP\u3001\u8FB9\u7F18 YOLO\u3001\u4E8B\u4EF6\u603B\u7EBF\u3001\u5B9E\u65F6\u53E0\u52A0 | \u5EF6\u8FDF\u3001\u65AD\u7F51\u548C\u8BEF\u62A5\u8FBE\u6807 |
-| P5 \u5F00\u653E\u5B9A\u4F4D | LocateAnything \u5F02\u6B65\u670D\u52A1\u548C\u519C\u4E1A\u57FA\u51C6\u96C6 | \u672C\u5730\u6570\u636E\u6307\u6807\u8FBE\u6807 |
-| P6 \u751F\u4EA7\u5E73\u53F0 | \u591A\u79DF\u6237\u3001\u5BF9\u8C61\u5B58\u50A8\u3001\u53EF\u89C2\u6D4B\u6027\u3001\u9AD8\u53EF\u7528 | \u5B89\u5168\u6D4B\u8BD5\u548C\u707E\u5907\u6F14\u7EC3\u901A\u8FC7 |
-| P7 \u673A\u5668\u4EBA\u8BD5\u8FD0\u884C | \u4F4E\u901F\u5C01\u95ED\u6D4B\u8BD5\u3001\u52A8\u6001\u969C\u788D\u548C\u4EBA\u5DE5\u63A5\u7BA1 | \u5B89\u5168\u8BC4\u5BA1\u6279\u51C6 |
-
-\u5EFA\u8BAE\u6BCF\u9636\u6BB5\u5206\u522B\u63D0\u4EA4\u67B6\u6784\u51B3\u7B56\u8BB0\u5F55\u3001\u6570\u636E\u5B57\u5178\u3001\u90E8\u7F72\u6E05\u5355\u3001\u6D4B\u8BD5\u62A5\u544A\u3001\u98CE\u9669\u6E05\u5355\u548C\u56DE\u6EDA\u65B9\u6848\u3002\u672A\u7ECF\u672C\u9636\u6BB5\u9A8C\u6536\uFF0C\u4E0D\u5E94\u4EC5\u4E3A\u4E86\u6F14\u793A\u8FDB\u5EA6\u63D0\u524D\u5BA3\u79F0\u4E0B\u4E00\u9636\u6BB5\u80FD\u529B\u5DF2\u7ECF\u5B8C\u6210\u3002
-
----
-
-\u672C\u6587\u4EE5\u4ED3\u5E93\u5728 2026-08-05 \u7684\u5B9E\u73B0\u4E3A\u57FA\u51C6\u3002\u6A21\u578B\u3001\u4F9D\u8D56\u548C\u7B2C\u4E09\u65B9\u63A5\u53E3\u4F1A\u53D8\u5316\uFF0C\u5B9E\u9645\u90E8\u7F72\u524D\u5E94\u590D\u6838\u5404\u9879\u76EE\u7684\u5B98\u65B9\u8BF4\u660E\u3001\u8BB8\u53EF\u8BC1\u3001\u786C\u4EF6\u8981\u6C42\u53CA\u9690\u79C1\u5408\u89C4\u8981\u6C42\u3002
-`,Mm="/assets/\u5B98\u7F51.png",$m="/assets/\u767B\u9646.png",jm="/assets/\u4E3B\u754C\u9762.png",Um="/assets/\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png",Wm="/assets/\u95EE\u519C.png",Vm="/assets/\u7B2C\u4E00\u4EBA\u79F0.png",Hm="/assets/3D.png",Qm="/assets/\u5927\u68DA\u5185\u90E8.png";const Gm={"\u5B98\u7F51.png":Mm,"\u767B\u9646.png":$m,"\u4E3B\u754C\u9762.png":jm,"\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png":Um,"\u95EE\u519C.png":Wm,"\u7B2C\u4E00\u4EBA\u79F0.png":Vm,"3D.png":Hm,"\u5927\u68DA\u5185\u90E8.png":Qm},Km={"user-manual":{title:"\u7528\u6237\u4F7F\u7528\u624B\u518C",label:"USER GUIDE",description:"\u9762\u5411\u5E73\u53F0\u4F7F\u7528\u8005\u4E0E\u519C\u573A\u7BA1\u7406\u4EBA\u5458",icon:Rd,source:bm},"technical-manual":{title:"\u6280\u672F\u8BF4\u660E\u624B\u518C",label:"TECHNICAL GUIDE",description:"\u9762\u5411\u5F00\u53D1\u3001\u6D4B\u8BD5\u4E0E\u8FD0\u7EF4\u4EBA\u5458",icon:bd,source:Om}};function Ym(e){const n=new L.Renderer;return n.image=(t,r,u)=>{const l=decodeURIComponent(String(t||"").split("/").pop());return`<img src="${Gm[l]||t}" alt="${u||""}"${r?` title="${r}"`:""} loading="lazy">`},L.parse(e,{renderer:n,headerIds:!0,mangle:!1})}function Jm(){const{slug:e}=Gp(),n=Km[e],t=P.exports.useMemo(()=>n?Ym(n.source):"",[n]);if(!n)return a(Jp,{to:"/docs",replace:!0});const r=n.icon;return a("main",{className:"docs-reader px-6 pb-24 pt-32 md:px-12 md:pt-40 lg:px-16",children:y("div",{className:"mx-auto max-w-5xl",children:[y(on,{to:"/docs",className:"inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-emerald-700",children:[a(Eh,{className:"h-4 w-4"})," \u8FD4\u56DE\u6587\u6863\u8BF4\u660E"]}),y("header",{className:"mt-8 border-b border-slate-200 pb-10",children:[y("div",{className:"flex items-center gap-3 text-emerald-700",children:[a(r,{className:"h-5 w-5",strokeWidth:1.6}),a("span",{className:"text-[11px] font-semibold tracking-[0.2em]",children:n.label})]}),a("h1",{className:"mt-5 font-instrument-serif text-4xl text-ink sm:text-5xl",children:n.title}),y("p",{className:"mt-4 text-sm font-light text-muted",children:[n.description," \xB7 \u5185\u5BB9\u968F\u9879\u76EE\u7248\u672C\u540C\u6B65\u66F4\u65B0"]})]}),a("article",{className:"markdown-body",dangerouslySetInnerHTML:{__html:t}})]})})}function Zm(){const{pathname:e}=Mn(),n=e==="/sign-in"||e==="/sign-up";return y(q,{children:[!n&&a(ph,{}),y(qp,{children:[a(Ie,{path:"/",element:a(is,{})}),a(Ie,{path:"/product",element:a(Vh,{})}),a(Ie,{path:"/solutions",element:a(Kh,{})}),a(Ie,{path:"/digital-twin",element:a(Xh,{})}),a(Ie,{path:"/about",element:a(tm,{})}),a(Ie,{path:"/contact",element:a(um,{})}),a(Ie,{path:"/docs",element:a(Em,{})}),a(Ie,{path:"/docs/:slug",element:a(Jm,{})}),a(Ie,{path:"/sign-in",element:a(mm,{})}),a(Ie,{path:"/sign-up",element:a(ym,{})}),a(Ie,{path:"*",element:a(is,{})})]}),!n&&a(mh,{})]})}function qm(){return y(nh,{children:[a(uh,{}),a("div",{className:"w-full min-h-screen bg-page text-ink",children:a(Zm,{})})]})}Wl.createRoot(document.getElementById("root")).render(a(E0.StrictMode,{children:a(qm,{})}));
+Please report this to https://github.com/markedjs/marked.`,e){const u="<p>An error occurred:</p><pre>"+pe(r.message+"",!0)+"</pre>";if(n)return Promise.resolve(u);if(t){t(null,u);return}return u}if(n)return Promise.reject(r);if(t){t(r);return}throw r}}function e0(e,n){return(t,r,u)=>{typeof r=="function"&&(u=r,r=null);const l={...r};r={...L.defaults,...l};const i=zm(r.silent,r.async,u);if(typeof t=="undefined"||t===null)return i(new Error("marked(): input parameter is undefined or null"));if(typeof t!="string")return i(new Error("marked(): input parameter is of type "+Object.prototype.toString.call(t)+", string expected"));if(Im(r),r.hooks&&(r.hooks.options=r),u){const o=r.highlight;let s;try{r.hooks&&(t=r.hooks.preprocess(t)),s=e(t,r)}catch(m){return i(m)}const c=function(m){let p;if(!m)try{r.walkTokens&&L.walkTokens(s,r.walkTokens),p=n(s,r),r.hooks&&(p=r.hooks.postprocess(p))}catch(v){m=v}return r.highlight=o,m?i(m):u(null,p)};if(!o||o.length<3||(delete r.highlight,!s.length))return c();let h=0;L.walkTokens(s,function(m){m.type==="code"&&(h++,setTimeout(()=>{o(m.text,m.lang,function(p,v){if(p)return c(p);v!=null&&v!==m.text&&(m.text=v,m.escaped=!0),h--,h===0&&c()})},0))}),h===0&&c();return}if(r.async)return Promise.resolve(r.hooks?r.hooks.preprocess(t):t).then(o=>e(o,r)).then(o=>r.walkTokens?Promise.all(L.walkTokens(o,r.walkTokens)).then(()=>o):o).then(o=>n(o,r)).then(o=>r.hooks?r.hooks.postprocess(o):o).catch(i);try{r.hooks&&(t=r.hooks.preprocess(t));const o=e(t,r);r.walkTokens&&L.walkTokens(o,r.walkTokens);let s=n(o,r);return r.hooks&&(s=r.hooks.postprocess(s)),s}catch(o){return i(o)}}}function L(e,n,t){return e0(Ln.lex,Rn.parse)(e,n,t)}L.options=L.setOptions=function(e){return L.defaults={...L.defaults,...e},xm(L.defaults),L};L.getDefaults=Kd;L.defaults=ut;L.use=function(...e){const n=L.defaults.extensions||{renderers:{},childTokens:{}};e.forEach(t=>{const r={...t};if(r.async=L.defaults.async||r.async||!1,t.extensions&&(t.extensions.forEach(u=>{if(!u.name)throw new Error("extension name required");if(u.renderer){const l=n.renderers[u.name];l?n.renderers[u.name]=function(...i){let o=u.renderer.apply(this,i);return o===!1&&(o=l.apply(this,i)),o}:n.renderers[u.name]=u.renderer}if(u.tokenizer){if(!u.level||u.level!=="block"&&u.level!=="inline")throw new Error("extension level must be 'block' or 'inline'");n[u.level]?n[u.level].unshift(u.tokenizer):n[u.level]=[u.tokenizer],u.start&&(u.level==="block"?n.startBlock?n.startBlock.push(u.start):n.startBlock=[u.start]:u.level==="inline"&&(n.startInline?n.startInline.push(u.start):n.startInline=[u.start]))}u.childTokens&&(n.childTokens[u.name]=u.childTokens)}),r.extensions=n),t.renderer){const u=L.defaults.renderer||new Wo;for(const l in t.renderer){const i=u[l];u[l]=(...o)=>{let s=t.renderer[l].apply(u,o);return s===!1&&(s=i.apply(u,o)),s}}r.renderer=u}if(t.tokenizer){const u=L.defaults.tokenizer||new Uo;for(const l in t.tokenizer){const i=u[l];u[l]=(...o)=>{let s=t.tokenizer[l].apply(u,o);return s===!1&&(s=i.apply(u,o)),s}}r.tokenizer=u}if(t.hooks){const u=L.defaults.hooks||new ju;for(const l in t.hooks){const i=u[l];ju.passThroughHooks.has(l)?u[l]=o=>{if(L.defaults.async)return Promise.resolve(t.hooks[l].call(u,o)).then(c=>i.call(u,c));const s=t.hooks[l].call(u,o);return i.call(u,s)}:u[l]=(...o)=>{let s=t.hooks[l].apply(u,o);return s===!1&&(s=i.apply(u,o)),s}}r.hooks=u}if(t.walkTokens){const u=L.defaults.walkTokens;r.walkTokens=function(l){let i=[];return i.push(t.walkTokens.call(this,l)),u&&(i=i.concat(u.call(this,l))),i}}L.setOptions(r)})};L.walkTokens=function(e,n){let t=[];for(const r of e)switch(t=t.concat(n.call(L,r)),r.type){case"table":{for(const u of r.header)t=t.concat(L.walkTokens(u.tokens,n));for(const u of r.rows)for(const l of u)t=t.concat(L.walkTokens(l.tokens,n));break}case"list":{t=t.concat(L.walkTokens(r.items,n));break}default:L.defaults.extensions&&L.defaults.extensions.childTokens&&L.defaults.extensions.childTokens[r.type]?L.defaults.extensions.childTokens[r.type].forEach(function(u){t=t.concat(L.walkTokens(r[u],n))}):r.tokens&&(t=t.concat(L.walkTokens(r.tokens,n)))}return t};L.parseInline=e0(Ln.lexInline,Rn.parseInline);L.Parser=Rn;L.parser=Rn.parse;L.Renderer=Wo;L.TextRenderer=qd;L.Lexer=Ln;L.lexer=Ln.lex;L.Tokenizer=Uo;L.Slugger=Xd;L.Hooks=ju;L.parse=L;L.options;L.setOptions;L.use;L.walkTokens;L.parseInline;Rn.parse;Ln.lex;var bm=`# \u7530\u8A00\u8015\u667A\u7528\u6237\u4F7F\u7528\u624B\u518C\r
+\r
+> \u6587\u6863\u7248\u672C\uFF1AV1.0  \r
+> \u9002\u7528\u9879\u76EE\uFF1A\u7530\u8A00\u8015\u667A \xB7 AI \u539F\u751F\u667A\u6167\u519C\u4E1A\u4E0E\u6570\u5B57\u5B6A\u751F\u5E73\u53F0  \r
+> \u9002\u7528\u89D2\u8272\uFF1A\u519C\u573A\u7BA1\u7406\u4EBA\u5458\u3001\u6E29\u5BA4\u79CD\u690D\u4EBA\u5458\u3001\u8BBE\u5907\u8FD0\u7EF4\u4EBA\u5458\u3001\u5C55\u793A\u8BB2\u89E3\u4EBA\u5458\u3001\u9879\u76EE\u9A8C\u6536\u4EBA\u5458  \r
+> \u9ED8\u8BA4\u6F14\u793A\u5730\u5740\uFF1A\`http://localhost:8081/\`\r
+\r
+---\r
+\r
+## 1. \u624B\u518C\u76EE\u6807\r
+\r
+\u672C\u624B\u518C\u7528\u4E8E\u5E2E\u52A9\u7B2C\u4E00\u6B21\u63A5\u89E6\u7CFB\u7EDF\u7684\u7528\u6237\uFF0C\u4ECE\u6253\u5F00\u5B98\u7F51\u5F00\u59CB\uFF0C\u9010\u6B65\u5B8C\u6210\u4EE5\u4E0B\u5B8C\u6574\u4F53\u9A8C\uFF1A\r
+\r
+1. \u6D4F\u89C8\u5B98\u7F51\u5E76\u4E86\u89E3\u4EA7\u54C1\u80FD\u529B\uFF1B\r
+2. \u6CE8\u518C\u8D26\u53F7\u5E76\u767B\u5F55\u5E73\u53F0\uFF1B\r
+3. \u9009\u62E9\u662F\u5426\u7ED1\u5B9A\u4EBA\u8138\uFF1B\r
+4. \u4F7F\u7528\u5BC6\u7801\u6216\u5B9E\u65F6\u6444\u50CF\u5934\u5237\u8138\u767B\u5F55\uFF1B\r
+5. \u8FDB\u5165\u667A\u6167\u519C\u573A\u6570\u636E\u5DE5\u4F5C\u53F0\uFF1B\r
+6. \u6D4F\u89C8\u822A\u62CD\u5B9E\u666F\u548C 3D \u6570\u5B57\u5B6A\u751F\uFF1B\r
+7. \u67E5\u8BE2\u5730\u5757\u3001\u5927\u68DA\u3001\u8BBE\u5907\u3001\u704C\u6E89\u548C\u544A\u8B66\u4FE1\u606F\uFF1B\r
+8. \u63A7\u5236\u8BBE\u5907\u3001\u6267\u884C\u81EA\u68C0\u3001\u8BBE\u7F6E\u704C\u6E89\u65F6\u957F\u5E76\u5904\u7406\u544A\u8B66\uFF1B\r
+9. \u4F7F\u7528\u201C\u5C0F\u7530\u201D\u52A9\u624B\u548C\u72EC\u7ACB\u201C\u667A\u80FD\u95EE\u519C\u201D\u5DE5\u4F5C\u53F0\uFF1B\r
+10. \u8FDB\u5165\u6BCF\u4E00\u5EA7\u5927\u68DA\uFF0C\u5207\u6362\u68DA\u5185\u5B9E\u666F\u4E0E\u6570\u5B57\u5B6A\u751F\uFF1B\r
+11. \u67E5\u770B\u68DA\u5185\u73AF\u5883\u3001\u8BBE\u5907\u3001\u5206\u533A\u548C\u690D\u682A\u7EA7\u6570\u636E\uFF1B\r
+12. \u5B8C\u6210\u4E00\u6B21\u9002\u5408\u9879\u76EE\u6F14\u793A\u6216\u9A8C\u6536\u7684\u5168\u6D41\u7A0B\u64CD\u4F5C\u3002\r
+\r
+\u672C\u9879\u76EE\u5F53\u524D\u4F7F\u7528\u6F14\u793A\u6570\u636E\u3002\u73AF\u5883\u6307\u6807\u4F1A\u81EA\u52A8\u53D8\u5316\uFF0C\u8BBE\u5907\u5F00\u5173\u3001\u704C\u6E89\u548C\u544A\u8B66\u64CD\u4F5C\u4F1A\u4FDD\u5B58\u5230\u6570\u636E\u5E93\uFF0C\u56E0\u6B64\u5237\u65B0\u9875\u9762\u540E\u4ECD\u53EF\u770B\u5230\u64CD\u4F5C\u7ED3\u679C\u3002\r
+\r
+---\r
+\r
+## 2. \u4F7F\u7528\u524D\u51C6\u5907\r
+\r
+### 2.1 \u63A8\u8350\u8BBE\u5907\r
+\r
+| \u9879\u76EE | \u63A8\u8350\u914D\u7F6E |\r
+|---|---|\r
+| \u6D4F\u89C8\u5668 | \u6700\u65B0\u7248 Chrome\u3001Edge \u6216 Firefox |\r
+| \u5C4F\u5E55 | 1920\xD71080\uFF1B\u6700\u4F4E\u5EFA\u8BAE 1366\xD7768 |\r
+| \u7F51\u7EDC | \u672C\u673A\u8BBF\u95EE\u4E0D\u9700\u8981\u4E92\u8054\u7F51\uFF1BAI \u95EE\u519C\u3001\u4EBA\u8138\u670D\u52A1\u9700\u8981\u8054\u7F51 |\r
+| \u6444\u50CF\u5934 | \u4F7F\u7528\u5237\u8138\u767B\u5F55\u65F6\u5FC5\u987B\u5177\u5907\u53EF\u7528\u6444\u50CF\u5934 |\r
+| \u663E\u5361 | \u822A\u62CD\u6A21\u5F0F\u65E0\u7279\u6B8A\u8981\u6C42\uFF1B3D \u6A21\u5F0F\u5EFA\u8BAE\u4F7F\u7528\u652F\u6301 WebGL 2 \u7684\u72EC\u7ACB\u663E\u5361 |\r
+\r
+### 2.2 \u6D4F\u89C8\u5668\u6743\u9650\r
+\r
+\u9996\u6B21\u4F7F\u7528\u65F6\uFF0C\u6D4F\u89C8\u5668\u53EF\u80FD\u8BE2\u95EE\u4EE5\u4E0B\u6743\u9650\uFF1A\r
+\r
+- **\u6444\u50CF\u5934\u6743\u9650**\uFF1A\u5237\u8138\u767B\u5F55\u9700\u8981\uFF1B\u62D2\u7EDD\u540E\u65E0\u6CD5\u5237\u8138\u767B\u5F55\uFF1B\r
+- **\u9EA6\u514B\u98CE\u6743\u9650**\uFF1A\u667A\u80FD\u95EE\u519C\u8BED\u97F3\u8F93\u5165\u9700\u8981\uFF1B\r
+- **\u5168\u5C4F\u6743\u9650**\uFF1A\u70B9\u51FB\u6570\u636E\u53F0\u5168\u5C4F\u6309\u94AE\u540E\u4F7F\u7528\uFF1B\r
+- **\u81EA\u52A8\u64AD\u653E\u6743\u9650**\uFF1A\u53EF\u80FD\u5F71\u54CD\u5927\u68DA\u5B9E\u666F\u89C6\u9891\u81EA\u52A8\u64AD\u653E\u3002\r
+\r
+### 2.3 \u786E\u8BA4\u7CFB\u7EDF\u5DF2\u7ECF\u542F\u52A8\r
+\r
+\u5728\u6D4F\u89C8\u5668\u8BBF\u95EE\uFF1A\r
+\r
+\`\`\`text\r
+http://localhost:8081/\r
+\`\`\`\r
+\r
+\u5982\u679C\u65E0\u6CD5\u6253\u5F00\uFF0C\u8BF7\u8BA9\u7CFB\u7EDF\u7BA1\u7406\u5458\u786E\u8BA4\uFF1A\r
+\r
+1. MySQL \u5BB9\u5668\u6B63\u5728\u8FD0\u884C\uFF1B\r
+2. Spring Boot \u5DF2\u76D1\u542C \`8081\`\uFF1B\r
+3. \u6CA1\u6709\u7B2C\u4E8C\u4E2A\u7A0B\u5E8F\u5360\u7528 \`8081\`\uFF1B\r
+4. \u5B98\u7F51\u548C\u5E73\u53F0\u524D\u7AEF\u5DF2\u7ECF\u6784\u5EFA\u3002\r
+\r
+---\r
+\r
+## 3. \u5B98\u7F51\u6D4F\u89C8\r
+\r
+\u5B98\u7F51\u7528\u4E8E\u4EA7\u54C1\u4ECB\u7ECD\u548C\u5E73\u53F0\u5165\u53E3\uFF0C\u4E0D\u767B\u5F55\u4E5F\u53EF\u4EE5\u8BBF\u95EE\u3002\r
+\r
+![\u5B98\u7F51\u9996\u9875\u5168\u666F](./\u622A\u56FE/\u5B98\u7F51.png)\r
+\r
+> **\u56FE 3-1\u3000\u5B98\u7F51\u9996\u9875\u3002** \u9876\u90E8\u662F\u4EA7\u54C1\u5BFC\u822A\u548C\u767B\u5F55\u5165\u53E3\uFF1B\u9875\u9762\u4E2D\u592E\u7684\u201C\u8FDB\u5165\u5E73\u53F0\u201D\u7528\u4E8E\u5F00\u59CB\u5B8C\u6574\u4F53\u9A8C\uFF0C\u201C\u4F53\u9A8C\u667A\u80FD\u95EE\u519C\u201D\u7528\u4E8E\u76F4\u63A5\u4E86\u89E3 AI \u52A9\u624B\u80FD\u529B\u3002\r
+\r
+### 3.1 \u9876\u90E8\u5BFC\u822A\r
+\r
+\u5B98\u7F51\u9876\u90E8\u5305\u62EC\uFF1A\r
+\r
+- **\u7530\u8A00\u8015\u667A**\uFF1A\u8FD4\u56DE\u9996\u9875\uFF1B\r
+- **\u4EA7\u54C1**\uFF1A\u67E5\u770B\u5E73\u53F0\u6838\u5FC3\u80FD\u529B\uFF1B\r
+- **\u89E3\u51B3\u65B9\u6848**\uFF1A\u67E5\u770B\u4E0D\u540C\u519C\u4E1A\u573A\u666F\u65B9\u6848\uFF1B\r
+- **\u6570\u5B57\u5B6A\u751F**\uFF1A\u4E86\u89E3\u5B9E\u666F\u4E0E 3D \u519C\u573A\uFF1B\r
+- **\u5173\u4E8E\u6211\u4EEC**\uFF1A\u67E5\u770B\u54C1\u724C\u5B9A\u4F4D\uFF1B\r
+- **\u8054\u7CFB\u6211\u4EEC**\uFF1A\u63D0\u4EA4\u5408\u4F5C\u6216\u54A8\u8BE2\u7559\u8A00\uFF1B\r
+- **\u767B\u5F55**\uFF1A\u8FDB\u5165\u8D26\u53F7\u767B\u5F55\u9875\uFF1B\r
+- **\u8FDB\u5165\u5E73\u53F0**\uFF1A\u5DF2\u6709\u767B\u5F55\u72B6\u6001\u65F6\u76F4\u63A5\u8FDB\u5165\u6570\u636E\u5DE5\u4F5C\u53F0\uFF0C\u5426\u5219\u8F6C\u5230\u767B\u5F55\u9875\u3002\r
+\r
+### 3.2 \u8054\u7CFB\u6211\u4EEC\r
+\r
+1. \u70B9\u51FB\u9876\u90E8\u201C\u8054\u7CFB\u6211\u4EEC\u201D\uFF1B\r
+2. \u586B\u5199\u79F0\u547C\uFF1B\r
+3. \u586B\u5199\u81EA\u5DF1\u7684\u90AE\u7BB1\uFF1B\r
+4. \u586B\u5199\u4E3B\u9898\uFF1B\r
+5. \u586B\u5199\u7559\u8A00\u5185\u5BB9\uFF1B\r
+6. \u70B9\u51FB\u201C\u53D1\u9001\u7559\u8A00\u201D\uFF1B\r
+7. \u9875\u9762\u663E\u793A\u201C\u7559\u8A00\u5DF2\u53D1\u9001\u201D\u540E\u5B8C\u6210\u3002\r
+\r
+\u7559\u8A00\u5C06\u901A\u8FC7 FormSubmit \u53D1\u9001\u81F3\uFF1A\r
+\r
+\`\`\`text\r
+1478838114@qq.com\r
+\`\`\`\r
+\r
+> \u9996\u6B21\u542F\u7528\u8BE5\u90AE\u7BB1\u65F6\uFF0CFormSubmit \u53EF\u80FD\u5411\u6536\u4EF6\u7BB1\u53D1\u9001\u786E\u8BA4\u90AE\u4EF6\u3002\u90AE\u7BB1\u6240\u6709\u8005\u5FC5\u987B\u5148\u70B9\u51FB\u6FC0\u6D3B\u94FE\u63A5\uFF0C\u5426\u5219\u8868\u5355\u53EF\u80FD\u663E\u793A\u5931\u8D25\u6216\u65E0\u6CD5\u9001\u8FBE\u3002\r
+\r
+---\r
+\r
+## 4. \u6CE8\u518C\u8D26\u53F7\r
+\r
+### 4.1 \u6253\u5F00\u6CE8\u518C\u9875\r
+\r
+\u6709\u4E24\u79CD\u8FDB\u5165\u65B9\u5F0F\uFF1A\r
+\r
+1. \u5728\u767B\u5F55\u9875\u70B9\u51FB\u201C\u8FD8\u6CA1\u6709\u8D26\u53F7\uFF1F\u7ACB\u5373\u6CE8\u518C\u201D\uFF1B\r
+2. \u76F4\u63A5\u8BBF\u95EE \`http://localhost:8081/#/sign-up\`\u3002\r
+\r
+### 4.2 \u586B\u5199\u8D26\u53F7\u4FE1\u606F\r
+\r
+\u4F9D\u6B21\u586B\u5199\uFF1A\r
+\r
+1. **Full Name**\uFF1A\u59D3\u540D\u6216\u5E73\u53F0\u663E\u793A\u540D\u79F0\uFF1B\r
+2. **Email Address**\uFF1A\u767B\u5F55\u90AE\u7BB1\uFF0C\u4E0D\u80FD\u548C\u5DF2\u6709\u8D26\u53F7\u91CD\u590D\uFF1B\r
+3. **Password**\uFF1A\u81F3\u5C11 6 \u4E2A\u5B57\u7B26\uFF1B\r
+4. **Confirm Password**\uFF1A\u518D\u6B21\u8F93\u5165\u5B8C\u5168\u76F8\u540C\u7684\u5BC6\u7801\uFF1B\r
+5. \u70B9\u51FB **Create Account**\u3002\r
+\r
+\u6CE8\u518C\u6210\u529F\u540E\uFF0C\u7CFB\u7EDF\u4F1A\u81EA\u52A8\u4FDD\u5B58\u767B\u5F55\u4EE4\u724C\uFF0C\u5E76\u8FDB\u5165\u4EBA\u8138\u7ED1\u5B9A\u6B65\u9AA4\u3002\r
+\r
+### 4.3 \u7ED1\u5B9A\u4EBA\u8138\uFF08\u53EF\u9009\uFF09\r
+\r
+1. \u6D4F\u89C8\u5668\u5F39\u51FA\u6444\u50CF\u5934\u6743\u9650\u65F6\u70B9\u51FB\u201C\u5141\u8BB8\u201D\uFF1B\r
+2. \u4FDD\u6301\u6B63\u8138\u4F4D\u4E8E\u53D6\u666F\u6846\u4E2D\u592E\uFF1B\r
+3. \u907F\u514D\u80CC\u5149\u3001\u906E\u6321\u548C\u591A\u4EBA\u540C\u65F6\u5165\u955C\uFF1B\r
+4. \u70B9\u51FB\u201C\u62CD\u7167\u201D\uFF1B\r
+5. \u68C0\u67E5\u7167\u7247\u662F\u5426\u6E05\u6670\uFF1B\r
+6. \u4E0D\u6EE1\u610F\u65F6\u70B9\u51FB\u201C\u91CD\u62CD\u201D\uFF1B\r
+7. \u6EE1\u610F\u540E\u70B9\u51FB\u201C\u7ED1\u5B9A\u5E76\u8FDB\u5165\u201D\u3002\r
+\r
+\u6CE8\u518C\u7ED1\u5B9A\u573A\u666F\u5141\u8BB8\u4E0A\u4F20\u4E00\u5F20\u6E05\u6670\u6B63\u8138\u7167\u3002\u5982\u679C\u6682\u65F6\u4E0D\u7ED1\u5B9A\uFF0C\u53EF\u4EE5\u70B9\u51FB\u201C\u8DF3\u8FC7\uFF0C\u7A0D\u540E\u5728\u5E73\u53F0\u8BBE\u7F6E\u4E2D\u7ED1\u5B9A\u201D\u3002\r
+\r
+---\r
+\r
+## 5. \u767B\u5F55\u5E73\u53F0\r
+\r
+![\u767B\u5F55\u9875\u9762](./\u622A\u56FE/\u767B\u9646.png)\r
+\r
+> **\u56FE 5-1\u3000\u767B\u5F55\u9875\u9762\u3002** \u5DE6\u4FA7\u4E0A\u65B9\u53EF\u5207\u6362\u201C\u5BC6\u7801\u767B\u5F55/\u5237\u8138\u767B\u5F55\u201D\uFF1B\u8868\u5355\u4E0B\u65B9\u662F\u6CE8\u518C\u5165\u53E3\uFF1B\u201C\u8FD4\u56DE\u5B98\u7F51\u201D\u7528\u4E8E\u9000\u51FA\u767B\u5F55\u6D41\u7A0B\u3002\r
+\r
+### 5.1 \u5BC6\u7801\u767B\u5F55\r
+\r
+1. \u6253\u5F00 \`http://localhost:8081/#/sign-in\`\uFF1B\r
+2. \u4FDD\u6301\u9876\u90E8\u9009\u62E9\u201C\u5BC6\u7801\u767B\u5F55\u201D\uFF1B\r
+3. \u8F93\u5165\u6CE8\u518C\u90AE\u7BB1\uFF1B\r
+4. \u8F93\u5165\u5BC6\u7801\uFF1B\r
+5. \u5982\u9700\u5173\u95ED\u6D4F\u89C8\u5668\u540E\u7EE7\u7EED\u4FDD\u6301\u767B\u5F55\uFF0C\u52FE\u9009 **Keep me signed in**\uFF1B\r
+6. \u70B9\u51FB **Sign In**\uFF1B\r
+7. \u767B\u5F55\u6210\u529F\u540E\u81EA\u52A8\u8FDB\u5165\u667A\u6167\u519C\u573A\u6570\u636E\u5DE5\u4F5C\u53F0\u3002\r
+\r
+\u201CKeep me signed in\u201D\u7684\u533A\u522B\uFF1A\r
+\r
+- \u52FE\u9009\uFF1A\u767B\u5F55\u4FE1\u606F\u4FDD\u5B58\u5230\u6D4F\u89C8\u5668\u672C\u5730\u5B58\u50A8\uFF1B\r
+- \u4E0D\u52FE\u9009\uFF1A\u5173\u95ED\u6D4F\u89C8\u5668\u4F1A\u8BDD\u540E\u9700\u8981\u91CD\u65B0\u767B\u5F55\u3002\r
+\r
+### 5.2 \u5237\u8138\u767B\u5F55\r
+\r
+\u5237\u8138\u767B\u5F55\u53EA\u5141\u8BB8\u4F7F\u7528\u5B9E\u65F6\u6444\u50CF\u5934\uFF0C\u4E0D\u5141\u8BB8\u4E0A\u4F20\u5DF2\u6709\u56FE\u7247\u3002\r
+\r
+1. \u5728\u767B\u5F55\u9875\u9009\u62E9\u201C\u5237\u8138\u767B\u5F55\u201D\uFF1B\r
+2. \u6D4F\u89C8\u5668\u8BE2\u95EE\u6444\u50CF\u5934\u6743\u9650\u65F6\u70B9\u51FB\u201C\u5141\u8BB8\u201D\uFF1B\r
+3. \u5C06\u6B63\u8138\u653E\u5728\u753B\u9762\u4E2D\u592E\uFF1B\r
+4. \u4FDD\u6301\u5149\u7EBF\u5747\u5300\uFF0C\u6458\u4E0B\u53E3\u7F69\u3001\u58A8\u955C\u7B49\u906E\u6321\u7269\uFF1B\r
+5. \u70B9\u51FB\u201C\u62CD\u7167\u201D\uFF1B\r
+6. \u67E5\u770B\u9884\u89C8\uFF0C\u4E0D\u6E05\u6670\u65F6\u70B9\u51FB\u201C\u91CD\u62CD\u201D\uFF1B\r
+7. \u70B9\u51FB\u201C\u767B\u5F55\u201D\uFF1B\r
+8. \u5339\u914D\u901A\u8FC7\u540E\u8FDB\u5165\u6570\u636E\u5DE5\u4F5C\u53F0\u3002\r
+\r
+\u5982\u679C\u6444\u50CF\u5934\u65E0\u6CD5\u6253\u5F00\uFF1A\r
+\r
+1. \u70B9\u51FB\u5730\u5740\u680F\u5DE6\u4FA7\u7684\u7F51\u7AD9\u6743\u9650\u56FE\u6807\uFF1B\r
+2. \u5C06\u201C\u6444\u50CF\u5934\u201D\u6539\u4E3A\u201C\u5141\u8BB8\u201D\uFF1B\r
+3. \u5237\u65B0\u9875\u9762\uFF1B\r
+4. \u91CD\u65B0\u8FDB\u5165\u5237\u8138\u767B\u5F55\u3002\r
+\r
+### 5.3 \u767B\u5F55\u5931\u8D25\u5904\u7406\r
+\r
+| \u63D0\u793A | \u5904\u7406\u65B9\u6CD5 |\r
+|---|---|\r
+| \u90AE\u7BB1\u6216\u5BC6\u7801\u9519\u8BEF | \u68C0\u67E5\u90AE\u7BB1\u62FC\u5199\u3001\u5927\u5C0F\u5199\u548C\u5BC6\u7801 |\r
+| \u8BE5\u90AE\u7BB1\u5DF2\u88AB\u6CE8\u518C | \u8FD4\u56DE\u767B\u5F55\u9875\u76F4\u63A5\u767B\u5F55 |\r
+| \u65E0\u6CD5\u6253\u5F00\u6444\u50CF\u5934 | \u5F00\u542F\u6D4F\u89C8\u5668\u6743\u9650\uFF0C\u786E\u8BA4\u6444\u50CF\u5934\u672A\u88AB\u5176\u4ED6\u8F6F\u4EF6\u5360\u7528 |\r
+| \u4EBA\u8138\u672A\u5339\u914D | \u4F7F\u7528\u7ED1\u5B9A\u8FC7\u4EBA\u8138\u7684\u8D26\u53F7\uFF0C\u6539\u5584\u5149\u7167\u540E\u91CD\u62CD |\r
+| \u8BF7\u6C42\u5931\u8D25\uFF08401\uFF09 | \u767B\u5F55\u5DF2\u8FC7\u671F\uFF0C\u91CD\u65B0\u767B\u5F55 |\r
+\r
+---\r
+\r
+## 6. \u6570\u636E\u5DE5\u4F5C\u53F0\u603B\u89C8\r
+\r
+![\u822A\u62CD\u5B9E\u666F\u6570\u636E\u5DE5\u4F5C\u53F0](./\u622A\u56FE/\u4E3B\u754C\u9762.png)\r
+\r
+> **\u56FE 6-1\u3000\u822A\u62CD\u5B9E\u666F\u6570\u636E\u5DE5\u4F5C\u53F0\u3002** \u9876\u90E8\u4E3A\u5168\u5C40\u64CD\u4F5C\u680F\uFF0C\u5DE6\u4E0A\u89D2\u5207\u6362\u5B9E\u666F\u548C 3D\uFF0C\u4E2D\u592E\u6807\u7B7E\u5BF9\u5E94\u519C\u573A\u5BF9\u8C61\uFF0C\u53F3\u4FA7\u4E3A\u5F53\u524D\u5BF9\u8C61\u8BE6\u60C5\uFF0C\u5E95\u90E8 Dock \u5BF9\u5E94\u4E03\u4E2A\u4E1A\u52A1\u4E2D\u5FC3\u3002\r
+\r
+\u8FDB\u5165\u5E73\u53F0\u540E\u9ED8\u8BA4\u5230\u8FBE\uFF1A\r
+\r
+\`\`\`text\r
+/platform/workspaces/farm-01\r
+\`\`\`\r
+\r
+\u8BF7\u6309\u4EE5\u4E0B\u7F16\u53F7\u8BA4\u8BC6\u754C\u9762\uFF1A\r
+\r
+1. **\u9876\u90E8\u5168\u5C40\u680F**\uFF1A\u54C1\u724C\u3001\u6A21\u5F0F\u5207\u6362\u3001\u519C\u573A\u3001\u641C\u7D22\u3001\u901A\u77E5\u3001\u7528\u6237\u83DC\u5355\u548C\u5168\u5C4F\uFF1B\r
+2. **\u5DE6\u4E0A\u5929\u6C14\u5361**\uFF1A\u5F53\u524D\u6E29\u5EA6\u3001\u6E7F\u5EA6\u3001\u98CE\u901F\u3001\u5149\u7167\uFF1B\r
+3. **\u4E2D\u592E\u519C\u573A\u573A\u666F**\uFF1A\u822A\u62CD\u5B9E\u666F\u6216 3D \u6570\u5B57\u5B6A\u751F\uFF1B\r
+4. **\u573A\u666F\u5BF9\u8C61**\uFF1A\u5927\u68DA\u3001\u5730\u5757\u3001\u6444\u50CF\u5934\u3001\u8BBE\u5907\u3001\u6C34\u6C60\u3001\u6C14\u8C61\u7AD9\u548C\u673A\u5668\u4EBA\uFF1B\r
+5. **\u89C6\u56FE\u5207\u6362**\uFF1A\u5B9E\u666F\u4E0E 3D\uFF1B\r
+6. **\u573A\u666F\u5DE5\u5177**\uFF1A\u7F29\u653E\u3001\u590D\u4F4D\u3001\u56FE\u5C42\u3001\u6D4B\u8DDD\uFF1B\r
+7. **\u5E95\u90E8\u4E1A\u52A1 Dock**\uFF1A\u603B\u89C8\u3001\u76D1\u63A7\u3001\u73AF\u5883\u3001\u8BBE\u5907\u3001\u704C\u6E89\u3001\u4F5C\u7269\u3001\u544A\u8B66\uFF1B\r
+8. **\u53F3\u4FA7\u4E0A\u4E0B\u6587\u62BD\u5C49**\uFF1A\u663E\u793A\u5F53\u524D\u5BF9\u8C61\u6570\u636E\u4E0E\u64CD\u4F5C\uFF1B\r
+9. **\u5C0F\u7530\u52A9\u624B**\uFF1A\u5728\u5F53\u524D\u519C\u573A\u4E0A\u4E0B\u6587\u4E2D\u63D0\u95EE\u3002\r
+\r
+### 6.1 \u641C\u7D22\u5BF9\u8C61\r
+\r
+1. \u70B9\u51FB\u9876\u90E8\u641C\u7D22\u6846\uFF1B\r
+2. \u8F93\u5165\u5BF9\u8C61\u540D\u79F0\uFF0C\u5982\u201C2\u53F7\u6E29\u5BA4\u201D\u201C\u6C34\u80A5\u4E00\u4F53\u673A\u201D\u201C\u84C4\u6C34\u6C60\u201D\uFF1B\r
+3. \u6309 Enter\uFF1B\r
+4. \u7CFB\u7EDF\u81EA\u52A8\u9009\u4E2D\u5E76\u805A\u7126\u5BF9\u8C61\uFF1B\r
+5. \u672A\u627E\u5230\u65F6\u4F1A\u663E\u793A\u63D0\u793A\u6D88\u606F\u3002\r
+\r
+### 6.2 \u901A\u77E5\r
+\r
+1. \u70B9\u51FB\u9876\u90E8\u901A\u77E5\u56FE\u6807\uFF1B\r
+2. \u67E5\u770B\u6700\u8FD1\u4E09\u6761\u544A\u8B66\uFF1B\r
+3. \u70B9\u51FB\u201C\u67E5\u770B\u5168\u90E8\u6D88\u606F\u201D\uFF1B\r
+4. \u7CFB\u7EDF\u5207\u6362\u5230\u544A\u8B66\u4E1A\u52A1\u4E2D\u5FC3\u3002\r
+\r
+### 6.3 \u7528\u6237\u83DC\u5355\r
+\r
+\u70B9\u51FB\u53F3\u4E0A\u89D2\u5934\u50CF\uFF0C\u53EF\u4EE5\uFF1A\r
+\r
+- \u67E5\u770B\u5F53\u524D\u7528\u6237\uFF1B\r
+- \u6253\u5F00\u4EBA\u8138\u7BA1\u7406\uFF1B\r
+- \u7ED1\u5B9A\u6216\u89E3\u7ED1\u4EBA\u8138\uFF1B\r
+- \u9000\u51FA\u767B\u5F55\u3002\r
+\r
+---\r
+\r
+## 7. \u822A\u62CD\u5B9E\u666F\u6A21\u5F0F\r
+\r
+\u822A\u62CD\u5B9E\u666F\u7528\u4E8E\u5FEB\u901F\u7406\u89E3\u6574\u4E2A\u519C\u573A\u7684\u7A7A\u95F4\u5173\u7CFB\u3002\r
+\r
+### 7.1 \u67E5\u770B\u5BF9\u8C61\r
+\r
+- **\u9F20\u6807\u60AC\u505C**\uFF1A\u663E\u793A\u5BF9\u8C61\u8FB9\u754C\u548C\u6458\u8981\uFF1B\r
+- **\u5355\u51FB\u5BF9\u8C61**\uFF1A\u9009\u4E2D\u5BF9\u8C61\u5E76\u6253\u5F00\u53F3\u4FA7\u8BE6\u60C5\uFF1B\r
+- **\u53CC\u51FB\u5BF9\u8C61**\uFF1A\u805A\u7126\u8BE5\u5BF9\u8C61\uFF1B\r
+- **\u70B9\u51FB\u7A7A\u767D\u5904**\uFF1A\u53D6\u6D88\u9009\u62E9\uFF1B\r
+- **\u6EDA\u8F6E\u6216\u5DE5\u5177\u6309\u94AE**\uFF1A\u8C03\u6574\u7F29\u653E\uFF1B\r
+- **\u590D\u4F4D\u6309\u94AE**\uFF1A\u6062\u590D\u519C\u573A\u5168\u666F\u3002\r
+\r
+### 7.2 \u56FE\u5C42\u63A7\u5236\r
+\r
+\u70B9\u51FB\u573A\u666F\u5DE5\u5177\u680F\u4E2D\u7684\u201C\u56FE\u5C42\u201D\uFF0C\u53EF\u6253\u5F00\u6216\u5173\u95ED\uFF1A\r
+\r
+- \u5730\u5757\u8FB9\u754C\uFF1B\r
+- \u8BBE\u5907\uFF1B\r
+- \u6444\u50CF\u5934\uFF1B\r
+- \u704C\u6E89\u7F51\u7EDC\uFF1B\r
+- \u544A\u8B66\u3002\r
+\r
+### 7.3 \u6D4B\u8DDD\r
+\r
+1. \u70B9\u51FB\u201C\u6D4B\u8DDD\u201D\uFF1B\r
+2. \u70B9\u51FB\u7B2C\u4E00\u4E2A\u5730\u56FE\u5BF9\u8C61\u4F5C\u4E3A\u8D77\u70B9\uFF1B\r
+3. \u70B9\u51FB\u7B2C\u4E8C\u4E2A\u5BF9\u8C61\u4F5C\u4E3A\u7EC8\u70B9\uFF1B\r
+4. \u9875\u9762\u63D0\u793A\u4E24\u70B9\u4E4B\u95F4\u7684\u7A7A\u95F4\u8DDD\u79BB\u3002\r
+\r
+---\r
+\r
+## 8. 3D \u6570\u5B57\u5B6A\u751F\u6A21\u5F0F\r
+\r
+![3D \u6570\u5B57\u5B6A\u751F\u9E1F\u77B0](./\u622A\u56FE/3D.png)\r
+\r
+> **\u56FE 8-1\u30003D \u6570\u5B57\u5B6A\u751F\u9E1F\u77B0\u3002** \u5DE6\u4E0A\u89D2\u201C\u5B9E\u666F/3D\u201D\u7528\u4E8E\u5207\u6362\u573A\u666F\uFF1B\u4E2D\u592E\u6E29\u5BA4\u3001\u8BBE\u5907\u3001\u9053\u8DEF\u548C\u79CD\u690D\u533A\u5747\u4E3A\u7A7A\u95F4\u5BF9\u8C61\uFF1B\u53F3\u4FA7\u8BE6\u60C5\u4E2D\u7684\u201C\u8FDB\u5165\u5927\u68DA\u201D\u53EF\u8FDB\u5165\u5BF9\u5E94\u68DA\u5185\u9875\u9762\u3002\r
+\r
+### 8.1 \u8FDB\u5165 3D\r
+\r
+1. \u70B9\u51FB\u573A\u666F\u53F3\u4E0A\u65B9\u201C3D\u201D\u6216\u201C\u6570\u5B57\u5B6A\u751F\u201D\uFF1B\r
+2. \u7B49\u5F85\u6A21\u578B\u52A0\u8F7D\u8FDB\u5EA6\u5B8C\u6210\uFF1B\r
+3. \u52A0\u8F7D\u540E\u53EF\u4EE5\u770B\u5230\u5927\u68DA\u3001\u9053\u8DEF\u3001\u8BBE\u5907\u3001\u673A\u5668\u4EBA\u3001\u6811\u6728\u548C\u79CD\u690D\u533A\u3002\r
+\r
+### 8.2 \u9E1F\u77B0\u64CD\u4F5C\r
+\r
+- \u6309\u4F4F\u9F20\u6807\u5DE6\u952E\u62D6\u52A8\uFF1A\u65CB\u8F6C\u89C6\u89D2\uFF1B\r
+- \u9F20\u6807\u6EDA\u8F6E\uFF1A\u7F29\u653E\uFF1B\r
+- \u5355\u51FB\u5BF9\u8C61\uFF1A\u6253\u5F00\u8BE6\u60C5\uFF1B\r
+- \u53CC\u51FB\u5927\u68DA\uFF1A\u76F4\u63A5\u8FDB\u5165\u5BF9\u5E94\u5927\u68DA\u5185\u90E8\uFF1B\r
+- \u70B9\u51FB\u7A7A\u767D\u533A\u57DF\uFF1A\u5173\u95ED\u9009\u62E9\u3002\r
+\r
+### 8.3 \u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\r
+\r
+![\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A](./\u622A\u56FE/\u7B2C\u4E00\u4EBA\u79F0.png)\r
+\r
+> **\u56FE 8-2\u3000\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u3002** \u753B\u9762\u4E2D\u592E\u51C6\u661F\u7528\u4E8E\u9009\u62E9\u5BF9\u8C61\uFF0C\u5E95\u90E8\u63D0\u793A\u6761\u663E\u793A\u79FB\u52A8\u3001\u89C2\u5BDF\u3001\u52A0\u901F\u548C\u4E1A\u52A1\u5FEB\u6377\u952E\uFF0C\u5DE6\u4E0A\u89D2\u53EF\u6309 \`Esc\` \u9000\u51FA\u5DE1\u573A\u3002\r
+\r
+1. \u70B9\u51FB\u201C\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u201D\uFF1B\r
+2. \u70B9\u51FB\u573A\u666F\u4EE5\u9501\u5B9A\u9F20\u6807\uFF1B\r
+3. \u4F7F\u7528 \`W/A/S/D\` \u524D\u540E\u5DE6\u53F3\u79FB\u52A8\uFF1B\r
+4. \u79FB\u52A8\u9F20\u6807\u89C2\u5BDF\u56DB\u5468\uFF1B\r
+5. \u6309\u4F4F \`Shift\` \u52A0\u901F\uFF1B\r
+6. \u4F7F\u7528\u753B\u9762\u4E2D\u5FC3\u51C6\u661F\u5BF9\u51C6\u5BF9\u8C61\uFF1B\r
+7. \u70B9\u51FB\u5DE6\u952E\u9009\u62E9\u8BBE\u65BD\uFF1B\r
+8. \u6309 \`Esc\` \u91CA\u653E\u9F20\u6807\u6216\u9000\u51FA\u5DE1\u573A\u3002\r
+\r
+\u7B2C\u4E00\u4EBA\u79F0\u5FEB\u6377\u952E\uFF1A\r
+\r
+| \u6309\u952E | \u4E1A\u52A1\u6A21\u5757 |\r
+|---|---|\r
+| 1 | \u603B\u89C8 |\r
+| 2 | \u76D1\u63A7 |\r
+| 3 | \u73AF\u5883 |\r
+| 4 | \u8BBE\u5907 |\r
+| 5 | \u704C\u6E89 |\r
+| 6 | \u4F5C\u7269 |\r
+| 7 | \u544A\u8B66 |\r
+\r
+\u573A\u666F\u5177\u6709\u8BBE\u65BD\u78B0\u649E\u8303\u56F4\uFF0C\u65E0\u6CD5\u76F4\u63A5\u7A7F\u8FC7\u6E29\u5BA4\u3001\u5EFA\u7B51\u3001\u6C34\u6C60\u548C\u8BBE\u5907\u3002\u9760\u8FD1\u969C\u788D\u7269\u65F6\u53EF\u6CBF\u8FB9\u7F18\u6ED1\u52A8\u3002\r
+\r
+---\r
+\r
+## 9. \u4E03\u4E2A\u4E1A\u52A1\u4E2D\u5FC3\r
+\r
+### 9.1 \u603B\u89C8\r
+\r
+\u7528\u4E8E\u67E5\u770B\uFF1A\r
+\r
+- \u519C\u573A\u5065\u5EB7\u5EA6\uFF1B\r
+- \u8BBE\u5907\u603B\u6570\u548C\u5728\u7EBF\u6570\uFF1B\r
+- \u5F53\u524D\u672A\u5904\u7406\u544A\u8B66\uFF1B\r
+- \u6C34\u4F4D\u548C\u4ECA\u65E5\u7528\u6C34\uFF1B\r
+- \u5173\u952E\u7A7A\u95F4\u5BF9\u8C61\u72B6\u6001\u3002\r
+\r
+### 9.2 \u76D1\u63A7\r
+\r
+1. \u70B9\u51FB Dock \u4E2D\u201C\u76D1\u63A7\u201D\uFF1B\r
+2. \u5730\u56FE\u4E0A\u53EF\u76D1\u63A7\u7684\u5927\u68DA\u548C\u5730\u5757\u8FDB\u5165\u53EF\u9009\u72B6\u6001\uFF1B\r
+3. \u70B9\u51FB\u4E00\u4E2A\u5927\u68DA\u6216\u5730\u5757\uFF1B\r
+4. \u6253\u5F00\u76D1\u63A7\u5F39\u7A97\uFF1B\r
+5. \u67E5\u770B\u89C6\u9891\u3001\u6444\u50CF\u5934\u4FE1\u606F\u548C AI \u68C0\u6D4B\u6846\uFF1B\r
+6. \u53EF\u5207\u6362\u6444\u50CF\u5934\u3001\u67E5\u770B AI \u5206\u6790\u6216\u6267\u884C\u5F55\u50CF\u64CD\u4F5C\u3002\r
+\r
+\u5F53\u524D\u6F14\u793A\u89C6\u9891\u91C7\u7528 YOLO \u79BB\u7EBF\u68C0\u6D4B\uFF0C\u5E76\u4F7F\u7528 ByteTrack \u7EF4\u6301\u4EBA\u5458/\u4F5C\u7269\u76EE\u6807 ID\u3002\u68C0\u6D4B\u7ED3\u679C\u4F1A\u6309\u89C6\u9891\u65F6\u95F4\u53E0\u52A0\u663E\u793A\u3002\r
+\r
+### 9.3 \u73AF\u5883\r
+\r
+\u70B9\u51FB\u201C\u73AF\u5883\u201D\u540E\u53EF\u67E5\u770B\uFF1A\r
+\r
+- \u7A7A\u6C14\u6E29\u5EA6\uFF1B\r
+- \u7A7A\u6C14\u6E7F\u5EA6\uFF1B\r
+- \u571F\u58E4\u6E7F\u5EA6\uFF1B\r
+- \u5149\u7167\uFF1B\r
+- CO\u2082\uFF1B\r
+- 24 \u5C0F\u65F6\u8D8B\u52BF\uFF1B\r
+- AI \u8C03\u63A7\u5EFA\u8BAE\u3002\r
+\r
+\u73AF\u5883\u6570\u636E\u6BCF 30 \u79D2\u5237\u65B0\u4E00\u6B21\u3002\u6A59\u8272\u6216\u8B66\u793A\u8272\u8868\u793A\u6307\u6807\u9700\u8981\u5173\u6CE8\u3002\r
+\r
+### 9.4 \u8BBE\u5907\r
+\r
+1. \u70B9\u51FB\u201C\u8BBE\u5907\u201D\uFF1B\r
+2. \u9ED8\u8BA4\u9009\u4E2D\u6C34\u80A5\u4E00\u4F53\u673A\uFF1B\r
+3. \u4ECE\u5730\u56FE\u6216\u8BBE\u5907\u5217\u8868\u9009\u62E9\u76EE\u6807\uFF1B\r
+4. \u67E5\u770B\u5728\u7EBF\u72B6\u6001\u3001\u4F4D\u7F6E\u3001\u5F53\u524D\u6570\u503C\u548C\u6700\u540E\u901A\u4FE1\u65F6\u95F4\uFF1B\r
+5. \u4F7F\u7528\u5F00\u5173\u63A7\u5236\u8BBE\u5907\uFF1B\r
+6. \u70B9\u51FB\u201C\u8BBE\u5907\u81EA\u68C0\u201D\u6267\u884C\u68C0\u67E5\uFF1B\r
+7. \u7B49\u5F85\u6210\u529F\u6216\u5931\u8D25\u63D0\u793A\u3002\r
+\r
+\u5B89\u5168\u9650\u5236\uFF1A\u79BB\u7EBF\u8BBE\u5907\u4E0D\u80FD\u88AB\u5F00\u542F\u3002\u7CFB\u7EDF\u4F1A\u8FD4\u56DE\u201C\u79BB\u7EBF\u8BBE\u5907\u65E0\u6CD5\u5F00\u542F\u201D\uFF0C\u9632\u6B62\u9519\u8BEF\u63A7\u5236\u3002\r
+\r
+### 9.5 \u704C\u6E89\r
+\r
+1. \u70B9\u51FB\u201C\u704C\u6E89\u201D\uFF1B\r
+2. \u67E5\u770B\u84C4\u6C34\u6C60\u3001\u6C34\u80A5\u673A\u3001\u9600\u95E8\u548C\u5404\u704C\u6E89\u5355\u5143\uFF1B\r
+3. \u9009\u62E9\u4E00\u4E2A\u704C\u6E89\u5355\u5143\uFF1B\r
+4. \u8BBE\u7F6E\u704C\u6E89\u65F6\u957F\uFF1B\r
+5. \u6253\u5F00\u6216\u5173\u95ED\u704C\u6E89\uFF1B\r
+6. \u4FDD\u5B58\u8BA1\u5212\uFF1B\r
+7. \u5237\u65B0\u9875\u9762\u786E\u8BA4\u72B6\u6001\u4ECD\u7136\u4FDD\u7559\u3002\r
+\r
+### 9.6 \u4F5C\u7269\r
+\r
+\u9009\u62E9\u201C\u4F5C\u7269\u201D\u540E\u53EF\u67E5\u770B\uFF1A\r
+\r
+- \u4F5C\u7269\u54C1\u79CD\uFF1B\r
+- \u751F\u957F\u9636\u6BB5\uFF1B\r
+- \u5065\u5EB7\u5EA6\uFF1B\r
+- \u73AF\u5883\u6458\u8981\uFF1B\r
+- \u75C5\u866B\u5BB3\u98CE\u9669\uFF1B\r
+- \u5F53\u524D\u519C\u4E8B\u4EFB\u52A1\u3002\r
+\r
+\u9009\u62E9\u5927\u68DA\u540E\uFF0C\u53EF\u901A\u8FC7\u8BE6\u60C5\u4E2D\u7684\u201C\u8FDB\u5165\u5927\u68DA\u201D\u7EE7\u7EED\u67E5\u770B\u68DA\u5185\u690D\u682A\u3002\r
+\r
+### 9.7 \u544A\u8B66\r
+\r
+1. \u70B9\u51FB\u201C\u544A\u8B66\u201D\uFF1B\r
+2. \u67E5\u770B\u544A\u8B66\u6807\u9898\u3001\u65F6\u95F4\u3001\u7B49\u7EA7\u548C\u72B6\u6001\uFF1B\r
+3. \u9009\u62E9\u672A\u5904\u7406\u544A\u8B66\uFF1B\r
+4. \u9605\u8BFB\u5173\u8054\u5BF9\u8C61\u4FE1\u606F\uFF1B\r
+5. \u70B9\u51FB\u201C\u5904\u7406\u544A\u8B66\u201D\uFF1B\r
+6. \u72B6\u6001\u53D8\u4E3A\u201C\u5DF2\u5904\u7406\u201D\uFF1B\r
+7. \u5237\u65B0\u540E\u5904\u7406\u7ED3\u679C\u4ECD\u7136\u4FDD\u7559\u3002\r
+\r
+---\r
+\r
+## 10. \u53F3\u4FA7\u4E0A\u4E0B\u6587\u62BD\u5C49\r
+\r
+\u53F3\u4FA7\u62BD\u5C49\u6839\u636E\u9009\u62E9\u5BF9\u8C61\u81EA\u52A8\u53D8\u5316\u3002\r
+\r
+### 10.1 \u5927\u68DA\u6216\u5730\u5757\r
+\r
+\u663E\u793A\uFF1A\u4F5C\u7269\u3001\u9762\u79EF\u3001\u751F\u957F\u9636\u6BB5\u3001\u73AF\u5883\u3001\u5065\u5EB7\u5EA6\u548C\u4EFB\u52A1\u3002\u5927\u68DA\u8BE6\u60C5\u4E0B\u65B9\u63D0\u4F9B\u201C\u8FDB\u5165\u5927\u68DA\u201D\u3002\r
+\r
+### 10.2 \u8BBE\u5907\r
+\r
+\u663E\u793A\uFF1A\u5728\u7EBF\u72B6\u6001\u3001\u542F\u505C\u72B6\u6001\u3001\u6D4B\u91CF\u503C\u3001\u4F4D\u7F6E\u3001\u6700\u540E\u901A\u4FE1\u65F6\u95F4\u3001\u63A7\u5236\u5F00\u5173\u548C\u81EA\u68C0\u3002\r
+\r
+### 10.3 \u704C\u6E89\u5355\u5143\r
+\r
+\u663E\u793A\uFF1A\u76EE\u6807\u533A\u57DF\u3001\u8FD0\u884C\u72B6\u6001\u3001\u6D41\u91CF\u3001\u65F6\u957F\u8BBE\u7F6E\u548C\u8BA1\u5212\u4FDD\u5B58\u3002\r
+\r
+### 10.4 \u544A\u8B66\r
+\r
+\u663E\u793A\uFF1A\u4E8B\u4EF6\u7B49\u7EA7\u3001\u5173\u8054\u5BF9\u8C61\u3001\u53D1\u751F\u65F6\u95F4\u3001\u5F53\u524D\u72B6\u6001\u548C\u5904\u7406\u64CD\u4F5C\u3002\r
+\r
+\u5173\u95ED\u62BD\u5C49\u540E\uFF0C3D \u7B2C\u4E00\u4EBA\u79F0\u63A7\u5236\u4F1A\u81EA\u52A8\u6062\u590D\u3002\r
+\r
+---\r
+\r
+## 11. \u667A\u80FD\u95EE\u519C\r
+\r
+![\u72EC\u7ACB\u667A\u80FD\u95EE\u519C\u9996\u9875](./\u622A\u56FE/\u95EE\u519C.png)\r
+\r
+> **\u56FE 11-1\u3000\u72EC\u7ACB\u667A\u80FD\u95EE\u519C\u9996\u9875\u3002** \u4E2D\u592E\u8F93\u5165\u6846\u7528\u4E8E\u81EA\u7136\u8BED\u8A00\u63D0\u95EE\uFF0C\u4E0B\u65B9\u63D0\u4F9B\u5E38\u7528\u95EE\u9898\u5FEB\u6377\u5165\u53E3\uFF1B\u5DE6\u4FA7\u4FDD\u5B58\u9879\u76EE\u548C\u6700\u8FD1\u5BF9\u8BDD\uFF0C\u5E95\u90E8 Dock \u53EF\u8FDB\u5165\u9762\u677F\u3001\u6F14\u793A\u53CA\u5176\u4ED6\u5E94\u7528\u3002\r
+\r
+\u7CFB\u7EDF\u63D0\u4F9B\u4E24\u79CD\u95EE\u519C\u5165\u53E3\uFF1A\r
+\r
+1. \u6570\u636E\u5DE5\u4F5C\u53F0\u5DE6\u4FA7\u201C\u5C0F\u7530\u201D\u52A9\u624B\uFF1B\r
+2. \u9876\u90E8\u201C\u667A\u80FD\u95EE\u519C\u201D\u72EC\u7ACB\u9875\u9762\u3002\r
+\r
+### 11.1 \u5728\u6570\u636E\u5DE5\u4F5C\u53F0\u4E2D\u63D0\u95EE\r
+\r
+1. \u70B9\u51FB\u201C\u5C0F\u7530\u201D\u89D2\u8272\uFF1B\r
+2. \u8F93\u5165\u95EE\u9898\uFF1B\r
+3. \u70B9\u51FB\u53D1\u9001\uFF1B\r
+4. \u7CFB\u7EDF\u4F1A\u81EA\u52A8\u643A\u5E26\u5F53\u524D\u89C6\u56FE\u3001\u4E1A\u52A1\u6A21\u5757\u548C\u5DF2\u9009\u5BF9\u8C61\uFF1B\r
+5. \u67E5\u770B\u56DE\u7B54\uFF1B\r
+6. \u7EE7\u7EED\u8FFD\u95EE\u5373\u53EF\u5F62\u6210\u591A\u8F6E\u5BF9\u8BDD\u3002\r
+\r
+\u793A\u4F8B\u95EE\u9898\uFF1A\r
+\r
+- \u201C\u5F53\u524D\u519C\u573A\u6709\u54EA\u4E9B\u5F02\u5E38\uFF1F\u201D\r
+- \u201C2\u53F7\u6E29\u5BA4\u4E3A\u4EC0\u4E48\u9700\u8981\u5173\u6CE8\uFF1F\u201D\r
+- \u201C\u5206\u67904\u53F7\u5730\u5757\u571F\u58E4\u6E7F\u5EA6\u3002\u201D\r
+- \u201C\u7ED9\u6211\u4E00\u4E2A\u4ECA\u5929\u7684\u704C\u6E89\u5EFA\u8BAE\u3002\u201D\r
+- \u201C\u5F53\u524D\u6709\u54EA\u4E9B\u79BB\u7EBF\u8BBE\u5907\uFF1F\u201D\r
+\r
+### 11.2 \u72EC\u7ACB\u667A\u80FD\u95EE\u519C\u9875\u9762\r
+\r
+1. \u70B9\u51FB\u9876\u90E8\u201C\u667A\u80FD\u95EE\u519C\u201D\uFF1B\r
+2. \u70B9\u51FB\u201C\u65B0\u5EFA\u5BF9\u8BDD\u201D\u6216\u9009\u62E9\u5386\u53F2\u5BF9\u8BDD\uFF1B\r
+3. \u8F93\u5165\u81EA\u7136\u8BED\u8A00\u95EE\u9898\uFF1B\r
+4. \u53EF\u4F7F\u7528\u5FEB\u6377\u95EE\u9898\uFF1B\r
+5. \u53EF\u70B9\u51FB\u9EA6\u514B\u98CE\u8FDB\u884C\u8BED\u97F3\u8F93\u5165\uFF1B\r
+6. \u53EF\u6DFB\u52A0\u6587\u672C\u9644\u4EF6\uFF1B\r
+7. \u53D1\u9001\u540E\u67E5\u770B\u6587\u5B57\u56DE\u7B54\u548C\u81EA\u52A8\u751F\u6210\u7684\u6570\u636E\u9762\u677F\uFF1B\r
+8. \u4F7F\u7528\u53F3\u4FA7\u5FEB\u6377 Dock \u6253\u5F00\u5E94\u7528\u3001\u6570\u636E\u6216\u76F8\u5173\u529F\u80FD\uFF1B\r
+9. \u5BF9\u8BDD\u548C\u5DE5\u4F5C\u53F0\u5E03\u5C40\u4F1A\u4FDD\u5B58\u5230\u5F53\u524D\u8D26\u53F7\u3002\r
+\r
+\u4E0D\u540C\u8D26\u53F7\u7684\u95EE\u519C\u8BB0\u5F55\u76F8\u4E92\u9694\u79BB\u3002\r
+\r
+![\u81EA\u5B9A\u4E49\u667A\u80FD\u5DE5\u4F5C\u53F0](./\u622A\u56FE/\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png)\r
+\r
+> **\u56FE 11-2\u3000\u81EA\u5B9A\u4E49\u667A\u80FD\u5DE5\u4F5C\u53F0\u3002** \u5DE5\u4F5C\u53F0\u53EF\u540C\u65F6\u627F\u8F7D\u544A\u8B66\u3001\u704C\u6E89\u8BA1\u5212\u3001\u5927\u68DA\u72B6\u6001\u3001\u519C\u573A\u603B\u89C8\u548C\u5173\u952E\u6307\u6807\u7EC4\u4EF6\uFF1B\u70B9\u51FB\u53F3\u4E0A\u89D2\u201C\u7F16\u8F91\u5DE5\u4F5C\u53F0\u201D\u53EF\u8C03\u6574\u7EC4\u4EF6\uFF0C\u5E95\u90E8\u201C\u5C0F\u7530\u52A9\u624B\u201D\u53EF\u7ED3\u5408\u5F53\u524D\u9762\u677F\u7EE7\u7EED\u63D0\u95EE\u3002\r
+\r
+### 11.3 AI \u4E0D\u53EF\u7528\u65F6\r
+\r
+\u5982\u679C\u63D0\u793A\u672A\u914D\u7F6E\u6216\u8C03\u7528\u5931\u8D25\uFF0C\u8BF7\u7BA1\u7406\u5458\u68C0\u67E5\uFF1A\r
+\r
+- \`DEEPSEEK_API_KEY\`\uFF1B\r
+- \`DEEPSEEK_BASE_URL\`\uFF1B\r
+- \`DEEPSEEK_MODEL\`\uFF1B\r
+- \u670D\u52A1\u5668\u662F\u5426\u80FD\u591F\u8BBF\u95EE\u6A21\u578B\u63A5\u53E3\u3002\r
+\r
+---\r
+\r
+## 12. \u8FDB\u5165\u5927\u68DA\u5185\u90E8\r
+\r
+\u8FDB\u5165\u65B9\u5F0F\u6709\u4E24\u79CD\uFF1A\r
+\r
+### 12.1 \u4ECE\u8BE6\u60C5\u6309\u94AE\u8FDB\u5165\r
+\r
+1. \u5728\u822A\u62CD\u6216 3D \u573A\u666F\u5355\u51FB\u4E00\u5EA7\u5927\u68DA\uFF1B\r
+2. \u6253\u5F00\u53F3\u4FA7\u8BE6\u60C5\uFF1B\r
+3. \u70B9\u51FB\u201C\u8FDB\u5165\u5927\u68DA\u201D\uFF1B\r
+4. \u7CFB\u7EDF\u8FDB\u5165\u5BF9\u5E94\u5927\u68DA\u5185\u90E8\u9875\u9762\u3002\r
+\r
+### 12.2 \u5728 3D \u4E2D\u53CC\u51FB\u8FDB\u5165\r
+\r
+1. \u5207\u6362\u5230 3D\uFF1B\r
+2. \u627E\u5230\u76EE\u6807\u5927\u68DA\uFF1B\r
+3. \u53CC\u51FB\u5927\u68DA\u6A21\u578B\uFF1B\r
+4. \u7CFB\u7EDF\u8FDB\u5165\u5BF9\u5E94\u5927\u68DA\u5185\u90E8\u3002\r
+\r
+\u516D\u5EA7\u5927\u68DA\u5206\u522B\u4F7F\u7528\u72EC\u7ACB\u4F5C\u7269\u548C\u7ED3\u6784\uFF1A\r
+\r
+| \u5927\u68DA | \u4F5C\u7269/\u7528\u9014 | \u6A21\u578B\u7279\u70B9 |\r
+|---|---|---|\r
+| 1\u53F7 | \u756A\u8304 | \u85E4\u8513\u756A\u8304\u4E0E\u683D\u57F9\u67B6 |\r
+| 2\u53F7 | \u8349\u8393 | \u9AD8\u67B6\u57FA\u8D28\u683D\u57F9 |\r
+| 3\u53F7 | \u9EC4\u74DC | \u540A\u8513\u683D\u57F9 |\r
+| 4\u53F7 | \u80B2\u82D7 | \u7A74\u76D8\u4E0E\u6F6E\u6C50\u82D7\u5E8A |\r
+| 5\u53F7 | \u751F\u6001\u756A\u8304 | \u6709\u673A\u9AD8\u5784\u3001\u8986\u8349\u4FDD\u5892 |\r
+| 6\u53F7 | \u6C34\u57F9\u53F6\u83DC | NFT \u6C34\u57F9\u4E0E\u8425\u517B\u6DB2\u5FAA\u73AF |\r
+\r
+---\r
+\r
+## 13. \u5927\u68DA\u5185\u90E8\u64CD\u4F5C\r
+\r
+![\u5927\u68DA\u5185\u90E8\u6570\u5B57\u5B6A\u751F](./\u622A\u56FE/\u5927\u68DA\u5185\u90E8.png)\r
+\r
+> **\u56FE 13-1\u3000\u5927\u68DA\u5185\u90E8\u6570\u5B57\u5B6A\u751F\u3002** \u9876\u90E8\u5207\u6362\u5B9E\u666F/\u6570\u5B57\u5B6A\u751F\uFF1B\u4E2D\u592E\u4E3A\u9AD8\u7CBE\u5EA6\u4F5C\u7269\u548C\u68DA\u5185\u8BBE\u5907\u6A21\u578B\uFF1B\u5E95\u90E8\u663E\u793A\u73AF\u5883\u6307\u6807\uFF1B\u53F3\u4FA7\u6807\u7B7E\u5206\u522B\u8FDB\u5165\u603B\u89C8\u3001\u8BBE\u5907\u548C\u690D\u682A\u6570\u636E\uFF0C\u53F3\u680F\u5185\u90E8\u53EF\u72EC\u7ACB\u5411\u4E0B\u6EDA\u52A8\u3002\r
+\r
+### 13.1 \u9875\u9762\u7ED3\u6784\r
+\r
+1. **\u9876\u90E8\u680F**\uFF1A\u8FD4\u56DE\u519C\u573A\u3001\u5927\u68DA\u540D\u79F0\u3001\u667A\u80FD\u95EE\u519C/\u6570\u636E\u5DE5\u4F5C\u53F0\u3001\u5B9E\u666F/\u6570\u5B57\u5B6A\u751F\uFF1B\r
+2. **\u4E2D\u592E\u4E3B\u753B\u9762**\uFF1A\u68DA\u5185\u5B9E\u666F\u89C6\u9891\u6216 3D \u6A21\u578B\uFF1B\r
+3. **\u5E95\u90E8\u73AF\u5883\u6761**\uFF1A\u6E29\u5EA6\u3001\u6E7F\u5EA6\u3001\u571F\u58E4/\u57FA\u8D28\u542B\u6C34\u3001\u5149\u7167\u3001CO\u2082\uFF1B\r
+4. **\u53F3\u4FA7\u6570\u636E\u680F**\uFF1A\u5927\u68DA\u6982\u51B5\u3001\u8BBE\u5907\u3001\u5206\u533A\u3001\u690D\u682A\u3001\u5EFA\u8BAE\u548C\u544A\u8B66\uFF1B\r
+5. **\u4FA7\u680F\u6536\u8D77\u6309\u94AE**\uFF1A\u6269\u5927\u4E3B\u753B\u9762\uFF1B\r
+6. **\u8FD4\u56DE\u519C\u573A**\uFF1A\u8FD4\u56DE\u56ED\u533A\u6570\u636E\u5DE5\u4F5C\u53F0\u3002\r
+\r
+### 13.2 \u5B9E\u666F\u6A21\u5F0F\r
+\r
+1. \u70B9\u51FB\u9876\u90E8\u201C\u5B9E\u666F\u201D\uFF1B\r
+2. \u7B49\u5F85\u6444\u50CF\u5934/\u6F14\u793A\u89C6\u9891\u8FDE\u63A5\uFF1B\r
+3. \u67E5\u770B\u68DA\u5185\u771F\u5B9E\u753B\u9762\uFF1B\r
+4. \u5982\u679C\u6D4F\u89C8\u5668\u963B\u6B62\u81EA\u52A8\u64AD\u653E\uFF0C\u70B9\u51FB\u201C\u64AD\u653E\u68DA\u5185\u5B9E\u666F\u201D\uFF1B\r
+5. \u89C2\u5BDF\u6444\u50CF\u5934\u8FDE\u63A5\u548C AI \u5728\u7EBF\u72B6\u6001\u3002\r
+\r
+\u5F53\u524D\u7248\u672C\u64AD\u653E\u9884\u7F6E\u68DA\u5185\u89C6\u9891\u3002\u540E\u7EED\u8BA1\u5212\u63A5\u5165 LingBot-Map\uFF0C\u5C06\u5355\u76EE\u6444\u50CF\u5934\u89C6\u9891\u8F6C\u6362\u4E3A\u68DA\u5185\u4E09\u7EF4\u91CD\u5EFA\u7ED3\u679C\uFF0C\u5E76\u670D\u52A1\u4E8E\u519C\u4E1A\u673A\u5668\u4EBA\u5B9A\u4F4D\u548C\u5BFC\u822A\u3002\u8BE5\u89C4\u5212\u4E0D\u4EE3\u8868\u5F53\u524D\u9875\u9762\u5DF2\u7ECF\u5B8C\u6210\u5B9E\u65F6\u5EFA\u56FE\u3002\r
+\r
+### 13.3 \u6570\u5B57\u5B6A\u751F\u6A21\u5F0F\r
+\r
+1. \u70B9\u51FB\u9876\u90E8\u201C\u6570\u5B57\u5B6A\u751F\u201D\uFF1B\r
+2. \u62D6\u52A8\u65CB\u8F6C\u6A21\u578B\uFF1B\r
+3. \u6EDA\u8F6E\u7F29\u653E\uFF1B\r
+4. \u70B9\u51FB\u690D\u682A\uFF0C\u5728\u53F3\u680F\u6253\u5F00\u690D\u682A\u6570\u636E\uFF1B\r
+5. \u67E5\u770B\u68DA\u67B6\u3001\u82D7\u5E8A\u3001\u6EF4\u704C\u3001\u4F20\u611F\u5668\u3001\u98CE\u673A\u3001\u76F8\u673A\u548C\u63A7\u5236\u8BBE\u5907\u3002\r
+\r
+### 13.4 \u53F3\u4FA7\u201C\u603B\u89C8\u201D\r
+\r
+\u5305\u62EC\uFF1A\r
+\r
+- \u5927\u68DA\u9762\u79EF\u3001\u68DA\u578B\u3001\u683D\u57F9\u6A21\u5F0F\u548C\u5065\u5EB7\u5EA6\uFF1B\r
+- \u751F\u4EA7\u753B\u50CF\uFF1B\r
+- \u5E73\u5747\u682A\u9AD8 7 \u65E5\u8D8B\u52BF\uFF1B\r
+- A/B/C \u5206\u533A\u4F5C\u4E1A\uFF1B\r
+- AI \u8C03\u63A7\u5EFA\u8BAE\uFF1B\r
+- \u6700\u8FD1\u544A\u8B66\u3002\r
+\r
+### 13.5 \u53F3\u4FA7\u201C\u8BBE\u5907\u201D\r
+\r
+1. \u70B9\u51FB\u201C\u8BBE\u5907\u201D\uFF1B\r
+2. \u67E5\u770B\u5728\u7EBF\u8BBE\u5907\u6570\u91CF\uFF1B\r
+3. \u9010\u9879\u67E5\u770B\u8BBE\u5907\u540D\u79F0\u3001\u4F4D\u7F6E\u3001\u8D23\u4EFB\u3001\u8FD0\u884C\u72B6\u6001\u548C\u5B9E\u65F6\u503C\uFF1B\r
+4. \u5BF9\u7167\u6570\u5B57\u5B6A\u751F\u4E2D\u7684\u7A7A\u95F4\u4F4D\u7F6E\u7406\u89E3\u8BBE\u5907\u5E03\u5C40\u3002\r
+\r
+### 13.6 \u53F3\u4FA7\u201C\u690D\u682A\u201D\r
+\r
+1. \u70B9\u51FB\u201C\u690D\u682A\u201D\uFF1B\r
+2. \u67E5\u770B\u6837\u672C\u603B\u6570\u548C\u9700\u5173\u6CE8\u6570\u91CF\uFF1B\r
+3. \u70B9\u51FB\u4E00\u4E2A\u690D\u682A\u7F16\u53F7\uFF0C\u5982 \`P-03\`\uFF1B\r
+4. 3D \u6A21\u578B\u5B9A\u4F4D\u5230\u5BF9\u5E94\u690D\u682A\uFF1B\r
+5. \u67E5\u770B\u5065\u5EB7\u5EA6\u3001\u682A\u9AD8\u3001\u57FA\u8D28\u542B\u6C34\u3001\u682A\u9F84\u3001\u53F6\u9762\u79EF\u6307\u6570\u548C\u5EFA\u6A21\u5750\u6807\uFF1B\r
+6. \u70B9\u51FB\u201C\u53D6\u6D88\u5B9A\u4F4D\u201D\u6062\u590D\u666E\u901A\u6D4F\u89C8\uFF1B\r
+7. \u4F7F\u7528\u9F20\u6807\u6EDA\u8F6E\u6216\u62D6\u52A8\u53F3\u680F\u6EDA\u52A8\u6761\u7EE7\u7EED\u67E5\u770B\u4E0B\u65B9\u690D\u682A\u3002\r
+\r
+### 13.7 \u6536\u8D77\u548C\u5C55\u5F00\u6570\u636E\u680F\r
+\r
+- \u70B9\u51FB\u53F3\u680F\u5DE6\u4FA7\u4E2D\u90E8\u7684\u7BAD\u5934\u53EF\u6536\u8D77\uFF1B\r
+- \u518D\u6B21\u70B9\u51FB\u53EF\u5C55\u5F00\uFF1B\r
+- \u53F3\u680F\u5185\u5BB9\u8FC7\u957F\u65F6\uFF0C\u628A\u9F20\u6807\u653E\u5728\u53F3\u680F\u5185\u90E8\u6EDA\u52A8\uFF1B\r
+- \u624B\u673A\u548C\u5E73\u677F\u4E0A\u53EF\u76F4\u63A5\u5728\u53F3\u680F\u4E0A\u4E0B\u6ED1\u52A8\u3002\r
+\r
+---\r
+\r
+## 14. \u4EBA\u8138\u7BA1\u7406\u4E0E\u9000\u51FA\r
+\r
+### 14.1 \u7ED1\u5B9A\u4EBA\u8138\r
+\r
+1. \u70B9\u51FB\u53F3\u4E0A\u89D2\u7528\u6237\u5934\u50CF\uFF1B\r
+2. \u6253\u5F00\u4EBA\u8138\u7BA1\u7406\uFF1B\r
+3. \u70B9\u51FB\u62CD\u7167\u6216\u5728\u7ED1\u5B9A\u573A\u666F\u4E0A\u4F20\u6E05\u6670\u4EBA\u8138\u7167\uFF1B\r
+4. \u786E\u8BA4\u7ED1\u5B9A\uFF1B\r
+5. \u72B6\u6001\u53D8\u4E3A\u201C\u5DF2\u7ED1\u5B9A\u201D\u3002\r
+\r
+### 14.2 \u89E3\u7ED1\u4EBA\u8138\r
+\r
+1. \u6253\u5F00\u4EBA\u8138\u7BA1\u7406\uFF1B\r
+2. \u70B9\u51FB\u201C\u89E3\u7ED1\u4EBA\u8138\u201D\uFF1B\r
+3. \u786E\u8BA4\u64CD\u4F5C\uFF1B\r
+4. \u4E4B\u540E\u4E0D\u80FD\u518D\u4F7F\u7528\u5237\u8138\u767B\u5F55\uFF0C\u5BC6\u7801\u767B\u5F55\u4E0D\u53D7\u5F71\u54CD\u3002\r
+\r
+### 14.3 \u9000\u51FA\u767B\u5F55\r
+\r
+1. \u70B9\u51FB\u7528\u6237\u5934\u50CF\uFF1B\r
+2. \u70B9\u51FB\u201C\u9000\u51FA\u767B\u5F55\u201D\uFF1B\r
+3. \u672C\u5730\u767B\u5F55\u4EE4\u724C\u88AB\u6E05\u9664\uFF1B\r
+4. \u9875\u9762\u8FD4\u56DE\u5B98\u7F51\u767B\u5F55\u3002\r
+\r
+---\r
+\r
+## 15. \u624B\u673A\u548C\u5E73\u677F\u4F7F\u7528\r
+\r
+- \u9876\u90E8\u529F\u80FD\u4F1A\u6839\u636E\u5C4F\u5E55\u5BBD\u5EA6\u81EA\u52A8\u6536\u7F29\uFF1B\r
+- \u53F3\u4FA7\u8BE6\u60C5\u6539\u4E3A\u8986\u76D6\u5F0F\u9762\u677F\uFF1B\r
+- \u4F7F\u7528\u624B\u6307\u4E0A\u4E0B\u6ED1\u52A8\u8BE6\u60C5\u5185\u5BB9\uFF1B\r
+- 3D \u6A21\u5F0F\u5BF9\u624B\u673A\u6027\u80FD\u8981\u6C42\u8F83\u9AD8\uFF0C\u5361\u987F\u65F6\u5207\u56DE\u5B9E\u666F\uFF1B\r
+- \u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u4E3B\u8981\u9762\u5411\u952E\u9F20\u684C\u9762\u7AEF\uFF1B\r
+- \u624B\u673A\u6D4F\u89C8\u5668\u5237\u8138\u767B\u5F55\u65F6\u8BF7\u9009\u62E9\u524D\u7F6E\u6444\u50CF\u5934\u5E76\u4FDD\u6301\u7AD6\u5C4F\u7A33\u5B9A\u3002\r
+\r
+---\r
+\r
+## 16. \u63A8\u8350\u6F14\u793A\u6D41\u7A0B\r
+\r
+\u4EE5\u4E0B\u6D41\u7A0B\u9002\u5408\u7B54\u8FA9\u3001\u5BA2\u6237\u6F14\u793A\u548C\u9A8C\u6536\uFF0C\u7EA6 8\u201412 \u5206\u949F\uFF1A\r
+\r
+1. \u4ECE\u5B98\u7F51\u9996\u9875\u4ECB\u7ECD\u4EA7\u54C1\u5B9A\u4F4D\uFF1B\r
+2. \u6253\u5F00\u4EA7\u54C1\u3001\u89E3\u51B3\u65B9\u6848\u548C\u6570\u5B57\u5B6A\u751F\u9875\u9762\uFF1B\r
+3. \u6CE8\u518C\u4E00\u4E2A\u65B0\u8D26\u53F7\uFF1B\r
+4. \u7ED1\u5B9A\u4EBA\u8138\u5E76\u8FDB\u5165\u5E73\u53F0\uFF1B\r
+5. \u5C55\u793A\u822A\u62CD\u5B9E\u666F\u5BF9\u8C61\u60AC\u505C\u3001\u5355\u51FB\u548C\u53CC\u51FB\uFF1B\r
+6. \u5207\u6362 3D\uFF0C\u5C55\u793A\u516D\u5EA7\u4E0D\u540C\u4F5C\u7269\u6E29\u5BA4\uFF1B\r
+7. \u8FDB\u5165\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u5E76\u7528\u6570\u5B57\u952E\u5207\u6362\u4E1A\u52A1\uFF1B\r
+8. \u6253\u5F00\u8BBE\u5907\u4E2D\u5FC3\uFF0C\u63A7\u5236\u5728\u7EBF\u8BBE\u5907\u5E76\u6267\u884C\u81EA\u68C0\uFF1B\r
+9. \u6253\u5F00\u704C\u6E89\u4E2D\u5FC3\uFF0C\u8C03\u6574\u65F6\u957F\u5E76\u4FDD\u5B58\uFF1B\r
+10. \u6253\u5F00\u544A\u8B66\u4E2D\u5FC3\u5E76\u5904\u7406\u4E00\u6761\u544A\u8B66\uFF1B\r
+11. \u8BA9\u201C\u5C0F\u7530\u201D\u5206\u6790\u5F53\u524D\u5F02\u5E38\uFF1B\r
+12. \u53CC\u51FB 5 \u53F7\u5927\u68DA\u8FDB\u5165\u68DA\u5185\uFF1B\r
+13. \u5207\u6362\u68DA\u5185\u5B9E\u666F\u548C\u6570\u5B57\u5B6A\u751F\uFF1B\r
+14. \u5728\u690D\u682A\u9762\u677F\u9009\u62E9 \`P-03\`\uFF0C\u5C55\u793A\u690D\u682A\u7EA7\u5B9A\u4F4D\u548C\u6307\u6807\uFF1B\r
+15. \u8FD4\u56DE\u519C\u573A\u5E76\u6253\u5F00\u72EC\u7ACB\u667A\u80FD\u95EE\u519C\u5DE5\u4F5C\u53F0\uFF1B\r
+16. \u9000\u51FA\u767B\u5F55\uFF0C\u518D\u4F7F\u7528\u6444\u50CF\u5934\u5237\u8138\u767B\u5F55\u3002\r
+\r
+---\r
+\r
+## 17. \u5E38\u89C1\u95EE\u9898\r
+\r
+### 17.1 \u9875\u9762\u6253\u4E0D\u5F00\r
+\r
+- \u786E\u8BA4\u5730\u5740\u4E3A \`http://localhost:8081/\`\uFF1B\r
+- \u786E\u8BA4\u540E\u7AEF\u5DF2\u7ECF\u542F\u52A8\uFF1B\r
+- \u5982\u679C\u65E5\u5FD7\u51FA\u73B0\u201C\u5730\u5740\u5DF2\u5728\u4F7F\u7528\u201D\uFF0C\u8BF4\u660E\u5DF2\u6709\u5B9E\u4F8B\u5360\u7528 8081\uFF0C\u4E0D\u8981\u91CD\u590D\u542F\u52A8\uFF1B\r
+- \u5F3A\u5236\u5237\u65B0\uFF1AWindows/Linux \u4F7F\u7528 \`Ctrl+F5\`\u3002\r
+\r
+### 17.2 \u9875\u9762\u53EA\u6709\u5B98\u7F51\uFF0C\u8FDB\u5165\u4E0D\u4E86\u5E73\u53F0\r
+\r
+- \u68C0\u67E5\u662F\u5426\u767B\u5F55\uFF1B\r
+- \u68C0\u67E5\u6D4F\u89C8\u5668\u662F\u5426\u7981\u7528\u4E86\u672C\u5730\u5B58\u50A8\uFF1B\r
+- \u91CD\u65B0\u8BBF\u95EE \`/#/sign-in\` \u767B\u5F55\u3002\r
+\r
+### 17.3 3D \u9ED1\u5C4F\u6216\u6A21\u578B\u4E0D\u5B8C\u6574\r
+\r
+- \u66F4\u65B0\u663E\u5361\u9A71\u52A8\uFF1B\r
+- \u786E\u8BA4\u6D4F\u89C8\u5668\u5F00\u542F\u786C\u4EF6\u52A0\u901F\uFF1B\r
+- \u68C0\u67E5\u6D4F\u89C8\u5668\u662F\u5426\u652F\u6301 WebGL 2\uFF1B\r
+- \u5173\u95ED\u5176\u4ED6\u5360\u7528\u663E\u5B58\u7684\u8F6F\u4EF6\uFF1B\r
+- \u5207\u56DE\u822A\u62CD\u5B9E\u666F\u7EE7\u7EED\u64CD\u4F5C\u3002\r
+\r
+### 17.4 \u5927\u68DA\u53F3\u680F\u4E0D\u80FD\u6EDA\u52A8\r
+\r
+- \u5C06\u9F20\u6807\u79FB\u5165\u53F3\u680F\u540E\u518D\u6EDA\u52A8\uFF1B\r
+- \u4E0D\u8981\u5728\u4E2D\u592E 3D \u753B\u9762\u4E0A\u6EDA\u52A8\uFF1B\r
+- \u624B\u673A\u4E0A\u76F4\u63A5\u5728\u53F3\u680F\u533A\u57DF\u4E0A\u4E0B\u6ED1\u52A8\uFF1B\r
+- \u5F3A\u5236\u5237\u65B0\u4EE5\u786E\u4FDD\u52A0\u8F7D\u6700\u65B0 CSS\u3002\r
+\r
+### 17.5 \u5B9E\u666F\u89C6\u9891\u4E0D\u64AD\u653E\r
+\r
+- \u70B9\u51FB\u753B\u9762\u4E2D\u592E\u64AD\u653E\u6309\u94AE\uFF1B\r
+- \u68C0\u67E5\u6D4F\u89C8\u5668\u81EA\u52A8\u64AD\u653E\u8BBE\u7F6E\uFF1B\r
+- \u786E\u8BA4 \`greenhouse-monitor.mp4\` \u9759\u6001\u8D44\u6E90\u5B58\u5728\u3002\r
+\r
+### 17.6 AI \u95EE\u519C\u5931\u8D25\r
+\r
+- \u666E\u901A\u6570\u636E\u53F0\u529F\u80FD\u4E0D\u53D7\u5F71\u54CD\uFF1B\r
+- \u8054\u7CFB\u7BA1\u7406\u5458\u914D\u7F6E DeepSeek Key\uFF1B\r
+- \u68C0\u67E5\u670D\u52A1\u5668\u8054\u7F51\u72B6\u6001\u3002\r
+\r
+### 17.7 \u8054\u7CFB\u8868\u5355\u53D1\u9001\u5931\u8D25\r
+\r
+- \u68C0\u67E5\u7F51\u7EDC\uFF1B\r
+- \u786E\u8BA4 FormSubmit \u5DF2\u5728\u6536\u4EF6\u90AE\u7BB1\u6FC0\u6D3B\uFF1B\r
+- \u76F4\u63A5\u53D1\u9001\u90AE\u4EF6\u5230 \`1478838114@qq.com\`\u3002\r
+\r
+---\r
+\r
+## 18. \u6570\u636E\u548C\u5B89\u5168\u63D0\u793A\r
+\r
+- \u6F14\u793A\u73AF\u5883\u6570\u636E\u4E0D\u4EE3\u8868\u771F\u5B9E\u519C\u4E1A\u751F\u4EA7\u53C2\u6570\uFF1B\r
+- \u6267\u884C\u771F\u5B9E\u8BBE\u5907\u63A7\u5236\u524D\u5FC5\u987B\u589E\u52A0\u6743\u9650\u3001\u5BA1\u8BA1\u3001\u8054\u9501\u548C\u73B0\u573A\u6025\u505C\uFF1B\r
+- \u4E0D\u8981\u5C06\u7BA1\u7406\u5458\u5BC6\u7801\u3001JWT \u5BC6\u94A5\u3001DeepSeek Key \u6216\u767E\u5EA6\u4EBA\u8138 Key \u544A\u8BC9\u666E\u901A\u7528\u6237\uFF1B\r
+- \u5237\u8138\u529F\u80FD\u6D89\u53CA\u751F\u7269\u7279\u5F81\u6570\u636E\uFF0C\u6B63\u5F0F\u90E8\u7F72\u524D\u5E94\u53D6\u5F97\u7528\u6237\u6388\u6743\u5E76\u5236\u5B9A\u5220\u9664\u673A\u5236\uFF1B\r
+- \u751F\u4EA7\u51B3\u7B56\u5E94\u7531\u519C\u4E1A\u4E13\u4E1A\u4EBA\u5458\u7ED3\u5408\u73B0\u573A\u60C5\u51B5\u786E\u8BA4\uFF0CAI \u5EFA\u8BAE\u4E0D\u80FD\u66FF\u4EE3\u4EBA\u5DE5\u8D23\u4EFB\u3002\r
+\r
+---\r
+\r
+## 19. \u622A\u56FE\u7D22\u5F15\r
+\r
+| \u622A\u56FE | \u7528\u9014 |\r
+|---|---|\r
+| [\u5B98\u7F51.png](./\u622A\u56FE/\u5B98\u7F51.png) | \u5B98\u7F51\u9996\u9875\u3001\u4EA7\u54C1\u5BFC\u822A\u548C\u5E73\u53F0\u5165\u53E3 |\r
+| [\u767B\u9646.png](./\u622A\u56FE/\u767B\u9646.png) | \u5BC6\u7801/\u5237\u8138\u767B\u5F55\u5207\u6362\u548C\u6CE8\u518C\u5165\u53E3 |\r
+| [\u4E3B\u754C\u9762.png](./\u622A\u56FE/\u4E3B\u754C\u9762.png) | \u822A\u62CD\u5B9E\u666F\u6570\u636E\u5DE5\u4F5C\u53F0\u4E0E\u5BF9\u8C61\u8BE6\u60C5 |\r
+| [3D.png](./\u622A\u56FE/3D.png) | 3D \u519C\u573A\u9E1F\u77B0\u548C\u5927\u68DA\u5165\u53E3 |\r
+| [\u7B2C\u4E00\u4EBA\u79F0.png](./\u622A\u56FE/\u7B2C\u4E00\u4EBA\u79F0.png) | \u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u548C\u5FEB\u6377\u952E\u63D0\u793A |\r
+| [\u95EE\u519C.png](./\u622A\u56FE/\u95EE\u519C.png) | \u72EC\u7ACB\u667A\u80FD\u95EE\u519C\u9996\u9875 |\r
+| [\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png](./\u622A\u56FE/\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png) | \u53EF\u7F16\u8F91\u7684 AI \u6570\u636E\u5DE5\u4F5C\u53F0 |\r
+| [\u5927\u68DA\u5185\u90E8.png](./\u622A\u56FE/\u5927\u68DA\u5185\u90E8.png) | \u68DA\u5185\u6570\u5B57\u5B6A\u751F\u3001\u73AF\u5883\u6761\u548C\u6570\u636E\u4FA7\u680F |\r
+`,Om=`# \u7530\u8A00\u8015\u667A\u667A\u6167\u519C\u4E1A\u5E73\u53F0\u6280\u672F\u8BF4\u660E\u624B\u518C\r
+\r
+> \u6587\u6863\u7248\u672C\uFF1A1.0  \r
+> \u7F16\u5236\u65E5\u671F\uFF1A2026-08-05  \r
+> \u9002\u7528\u9879\u76EE\uFF1A\u7530\u8A00\u8015\u667A\uFF08ty\uFF09  \r
+> \u8BFB\u8005\uFF1A\u5F00\u53D1\u3001\u6D4B\u8BD5\u3001\u90E8\u7F72\u3001\u8FD0\u7EF4\u3001\u7B97\u6CD5\u4E0E\u673A\u5668\u4EBA\u96C6\u6210\u4EBA\u5458\r
+\r
+## 1. \u6587\u6863\u76EE\u7684\u4E0E\u8FB9\u754C\r
+\r
+\u672C\u6587\u8BF4\u660E\u9879\u76EE\u7684\u7CFB\u7EDF\u67B6\u6784\u3001\u6E90\u7801\u7EC4\u7EC7\u3001\u90E8\u7F72\u914D\u7F6E\u3001\u6570\u636E\u6A21\u578B\u3001\u63A5\u53E3\u3001\u6D4B\u8BD5\u65B9\u6CD5\uFF0C\u4EE5\u53CA\u89C6\u89C9\u8BC6\u522B\u548C\u6E29\u5BA4\u5B9E\u666F\u5EFA\u56FE\u7684\u6F14\u8FDB\u65B9\u6848\u3002\r
+\r
+\u6587\u4E2D\u80FD\u529B\u5206\u4E3A\u4E24\u7C7B\uFF1A\r
+\r
+- **\u5F53\u524D\u5DF2\u5B9E\u73B0**\uFF1A\u4ED3\u5E93\u4E2D\u5DF2\u6709\u4EE3\u7801\u3001\u8D44\u6E90\u6216\u63A5\u53E3\uFF0C\u53EF\u6309\u672C\u6587\u6B65\u9AA4\u8FD0\u884C\u548C\u9A8C\u8BC1\u3002\r
+- **\u89C4\u5212\u63A5\u5165**\uFF1ALingBot-Map\u3001\u673A\u5668\u4EBA\u5BFC\u822A\u3001NVIDIA LocateAnything \u7B49\u540E\u7EED\u65B9\u6848\u3002\u5B83\u4EEC\u5C1A\u4E0D\u80FD\u88AB\u63CF\u8FF0\u4E3A\u5F53\u524D\u751F\u4EA7\u80FD\u529B\u3002\r
+\r
+\u7528\u6237\u64CD\u4F5C\u8BF7\u914D\u5408\u9605\u8BFB[\u300A\u7528\u6237\u4F7F\u7528\u624B\u518C\u300B](./\u7528\u6237\u4F7F\u7528\u624B\u518C.md)\u3002\r
+\r
+## 2. \u7CFB\u7EDF\u6982\u89C8\r
+\r
+\u7530\u8A00\u8015\u667A\u662F\u4E00\u4E2A\u5305\u542B\u5B98\u7F51\u3001\u8EAB\u4EFD\u8BA4\u8BC1\u3001\u519C\u573A\u6570\u5B57\u5B6A\u751F\u3001\u6E29\u5BA4\u5185\u90E8\u53EF\u89C6\u5316\u3001\u8BBE\u5907\u63A7\u5236\u3001\u704C\u6E89\u7BA1\u7406\u3001\u544A\u8B66\u7BA1\u7406\u548C AI \u95EE\u519C\u7684\u5168\u6808\u7CFB\u7EDF\u3002\r
+\r
+\`\`\`mermaid\r
+flowchart LR\r
+    U[\u6D4F\u89C8\u5668\u7528\u6237] --> L[React \u5B98\u7F51\u4E0E\u8BA4\u8BC1]\r
+    U --> V[Vue \u6570\u636E\u5DE5\u4F5C\u53F0]\r
+    L --> B[Spring Boot API]\r
+    V --> B\r
+    V --> T[Three.js \u6570\u5B57\u5B6A\u751F]\r
+    B --> M[(MySQL)]\r
+    B --> D[DeepSeek API]\r
+    B --> F[\u767E\u5EA6\u4EBA\u8138 API]\r
+    Y[YOLO + ByteTrack \u79BB\u7EBF\u5DE5\u5177] --> J[\u9010\u5E27\u68C0\u6D4B JSON]\r
+    J --> V\r
+\`\`\`\r
+\r
+### 2.1 \u6280\u672F\u6808\r
+\r
+| \u5C42\u6B21 | \u6280\u672F | \u4E3B\u8981\u7528\u9014 |\r
+|---|---|---|\r
+| \u5B98\u7F51 | React 18\u3001Vite | \u4EA7\u54C1\u4ECB\u7ECD\u3001\u8054\u7CFB\u3001\u6CE8\u518C\u548C\u767B\u5F55 |\r
+| \u6570\u636E\u5E73\u53F0 | Vue 3\u3001TypeScript\u3001Vite | \u519C\u573A\u5DE5\u4F5C\u53F0\u4E0E\u6E29\u5BA4\u5185\u90E8\u9875\u9762 |\r
+| 3D | Three.js 0.152.x | \u519C\u573A\u53CA\u6E29\u5BA4\u6570\u5B57\u5B6A\u751F\u573A\u666F |\r
+| \u540E\u7AEF | Java 17\u3001Spring Boot 4.1 | REST API\u3001\u4E1A\u52A1\u903B\u8F91\u4E0E\u5B89\u5168\u63A7\u5236 |\r
+| \u6570\u636E\u5E93 | MySQL 8.x\u3001Spring Data JPA | \u7528\u6237\u3001\u8BBE\u5907\u3001\u73AF\u5883\u3001\u544A\u8B66\u548C\u72B6\u6001\u6301\u4E45\u5316 |\r
+| \u9274\u6743 | JWT\u3001Spring Security | \u65E0\u72B6\u6001\u8EAB\u4EFD\u8BA4\u8BC1\u548C\u63A5\u53E3\u4FDD\u62A4 |\r
+| AI \u95EE\u519C | DeepSeek \u517C\u5BB9 API | \u519C\u4E1A\u95EE\u7B54\u548C\u4E0A\u4E0B\u6587\u54CD\u5E94 |\r
+| \u4EBA\u8138\u80FD\u529B | \u767E\u5EA6\u667A\u80FD\u4E91\u4EBA\u8138 API | \u4EBA\u8138\u6CE8\u518C\u3001\u68C0\u7D22\u548C\u767B\u5F55 |\r
+| \u76D1\u63A7\u8BC6\u522B | Ultralytics YOLO\u3001ByteTrack | \u79BB\u7EBF\u89C6\u9891\u68C0\u6D4B\u3001\u8DE8\u5E27\u76EE\u6807 ID |\r
+\r
+## 3. \u5F53\u524D\u80FD\u529B\u6E05\u5355\r
+\r
+### 3.1 \u5DF2\u5B9E\u73B0\r
+\r
+- \u5B98\u7F51\u3001\u4EA7\u54C1\u3001\u89E3\u51B3\u65B9\u6848\u3001\u6570\u5B57\u5B6A\u751F\u3001\u5173\u4E8E\u548C\u8054\u7CFB\u9875\u9762\uFF1B\r
+- \u90AE\u7BB1\u5BC6\u7801\u6CE8\u518C\u4E0E\u767B\u5F55\uFF1B\r
+- \u6CE8\u518C\u540E\u53EF\u9009\u4EBA\u8138\u7ED1\u5B9A\u3001\u6444\u50CF\u5934\u5237\u8138\u767B\u5F55\u3001\u4EBA\u8138\u89E3\u7ED1\uFF1B\r
+- JWT \u4F1A\u8BDD\u53CA\u5F53\u524D\u7528\u6237\u67E5\u8BE2\uFF1B\r
+- \u519C\u573A\u603B\u89C8\u3001\u73AF\u5883\u6570\u636E\u3001\u8BBE\u5907\u72B6\u6001\u3001\u704C\u6E89\u3001\u544A\u8B66\uFF1B\r
+- \u9E1F\u77B0\u30013D \u548C\u7B2C\u4E00\u4EBA\u79F0\u519C\u573A\u573A\u666F\uFF1B\r
+- \u8BBE\u5907\u3001\u704C\u6E89\u548C\u544A\u8B66\u7684\u4EA4\u4E92\u5F0F\u63A7\u5236\uFF1B\r
+- AI \u95EE\u519C\u548C\u7528\u6237\u52A9\u624B\u72B6\u6001\u4FDD\u5B58\uFF1B\r
+- \u5927\u68DA\u8BE6\u60C5\u5165\u53E3\u53CA\u53CC\u51FB 3D \u5927\u68DA\u8FDB\u5165\uFF1B\r
+- \u516D\u5EA7\u5927\u68DA\u7684\u5DEE\u5F02\u5316\u4F5C\u7269\u3001\u6A21\u578B\u3001\u8BBE\u5907\u548C\u533A\u57DF\u4FE1\u606F\uFF1B\r
+- \u6E29\u5BA4\u5185\u90E8\u6570\u5B57\u5B6A\u751F\u4E0E\u5B9E\u666F\u89C6\u9891\u5207\u6362\uFF1B\r
+- YOLO + ByteTrack \u79BB\u7EBF\u76D1\u63A7\u68C0\u6D4B\u7ED3\u679C\u53E0\u52A0\u3002\r
+\r
+### 3.2 \u89C4\u5212\u4E2D\r
+\r
+- LingBot-Map \u5355\u76EE\u89C6\u9891/\u56FE\u7247\u6D41\u4E09\u7EF4\u91CD\u5EFA\uFF1B\r
+- \u91CD\u5EFA\u7ED3\u679C\u5411\u673A\u5668\u4EBA\u5360\u636E\u5730\u56FE\u548C\u5BFC\u822A\u5750\u6807\u7CFB\u8F6C\u6362\uFF1B\r
+- \u5728\u7EBF\u76F8\u673A\u6D41\u3001\u8FB9\u7F18\u63A8\u7406\u670D\u52A1\u548C\u5B9E\u65F6\u68C0\u6D4B\u6D88\u606F\u901A\u9053\uFF1B\r
+- NVIDIA LocateAnything \u5F00\u653E\u8BCD\u6C47\u5B9A\u4F4D\uFF1B\r
+- \u591A\u79DF\u6237\u3001\u751F\u4EA7\u7EA7\u5BF9\u8C61\u5B58\u50A8\u3001\u53EF\u89C2\u6D4B\u6027\u548C\u9AD8\u53EF\u7528\u90E8\u7F72\u3002\r
+\r
+## 4. \u6E90\u7801\u4E0E\u6784\u5EFA\u4EA7\u7269\r
+\r
+\`\`\`text\r
+ty/\r
+\u251C\u2500\u2500 landing/                         React \u5B98\u7F51\u6E90\u7801\r
+\u251C\u2500\u2500 frontend/                        Vue \u6570\u636E\u5E73\u53F0\u6E90\u7801\r
+\u251C\u2500\u2500 src/main/java/com/example/ty/    Spring Boot \u540E\u7AEF\r
+\u2502   \u251C\u2500\u2500 auth/                        \u8BA4\u8BC1\u3001\u4EBA\u8138\u548C JWT\r
+\u2502   \u251C\u2500\u2500 dashboard/                   \u519C\u573A\u4E0E\u6E29\u5BA4\u4E1A\u52A1\r
+\u2502   \u2514\u2500\u2500 assistant/                   AI \u95EE\u519C\u53CA\u72B6\u6001\r
+\u251C\u2500\u2500 src/main/resources/\r
+\u2502   \u251C\u2500\u2500 application.yaml             \u670D\u52A1\u914D\u7F6E\r
+\u2502   \u2514\u2500\u2500 static/                      \u5DF2\u6784\u5EFA\u7684\u524D\u7AEF\u8D44\u6E90\r
+\u2502       \u2514\u2500\u2500 platform/                Vue \u5E73\u53F0\u6784\u5EFA\u4EA7\u7269\r
+\u251C\u2500\u2500 src/test/                         \u540E\u7AEF\u6D4B\u8BD5\r
+\u251C\u2500\u2500 tools/yolo/                       YOLO \u6570\u636E\u3001\u8BAD\u7EC3\u548C\u5BFC\u51FA\u5DE5\u5177\r
+\u251C\u2500\u2500 docs/                             \u56FE\u7247\u3001\u89C6\u9891\u548C\u9879\u76EE\u6587\u6863\r
+\u251C\u2500\u2500 pom.xml                           Maven \u914D\u7F6E\r
+\u251C\u2500\u2500 start.sh                          \u542F\u52A8\u8F85\u52A9\u811A\u672C\r
+\u2514\u2500\u2500 setup-mysql.sh                    MySQL \u521D\u59CB\u5316\u8F85\u52A9\u811A\u672C\r
+\`\`\`\r
+\r
+\u6CE8\u610F\uFF1A\`landing/\` \u548C \`frontend/\` \u662F\u6E90\u4EE3\u7801\uFF1B\`src/main/resources/static/\` \u662F\u6784\u5EFA\u4EA7\u7269\u3002\u4FEE\u6539\u6E90\u4EE3\u7801\u540E\u5FC5\u987B\u91CD\u65B0\u6784\u5EFA\uFF0C\u4E0D\u80FD\u53EA\u7F16\u8F91\u6784\u5EFA\u540E\u7684\u538B\u7F29\u6587\u4EF6\u3002\r
+\r
+## 5. \u73AF\u5883\u51C6\u5907\r
+\r
+### 5.1 \u6700\u4F4E\u8F6F\u4EF6\u8981\u6C42\r
+\r
+- JDK 17\uFF1B\r
+- MySQL 8.x\uFF1B\r
+- Node.js 18 \u6216\u66F4\u9AD8\u7248\u672C\u53CA npm\uFF1B\r
+- Git\uFF1B\r
+- \u652F\u6301 WebGL \u7684\u73B0\u4EE3\u6D4F\u89C8\u5668\u3002\r
+\r
+\u8FD0\u884C YOLO \u5DE5\u5177\u65F6\u8FD8\u9700\u8981 Python 3\u3001\u865A\u62DF\u73AF\u5883\u548C\u5BF9\u5E94\u7684 PyTorch/Ultralytics \u4F9D\u8D56\u3002\u4F7F\u7528 CUDA \u65F6\uFF0C\u5E94\u5148\u786E\u8BA4 NVIDIA \u9A71\u52A8\u548C \`nvidia-smi\` \u6B63\u5E38\u3002\r
+\r
+### 5.2 \u6570\u636E\u5E93\r
+\r
+\u9ED8\u8BA4\u914D\u7F6E\u8FDE\u63A5\uFF1A\r
+\r
+\`\`\`text\r
+jdbc:mysql://localhost:3306/tianyan\r
+\u7528\u6237\u540D\uFF1Aroot\r
+\u5BC6\u7801\uFF1ARoot_123456\r
+\`\`\`\r
+\r
+\u63A8\u8350\u901A\u8FC7\u73AF\u5883\u53D8\u91CF\u8986\u76D6\u9ED8\u8BA4\u503C\uFF1A\r
+\r
+\`\`\`bash\r
+export DB_URL='jdbc:mysql://127.0.0.1:3306/tianyan?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai'\r
+export DB_USERNAME='tianyan_app'\r
+export DB_PASSWORD='\u8BF7\u4F7F\u7528\u72EC\u7ACB\u5F3A\u5BC6\u7801'\r
+\`\`\`\r
+\r
+\u53EF\u6267\u884C\u9879\u76EE\u811A\u672C\u521D\u59CB\u5316\u6570\u636E\u5E93\uFF1A\r
+\r
+\`\`\`bash\r
+./setup-mysql.sh\r
+\`\`\`\r
+\r
+\u751F\u4EA7\u73AF\u5883\u5E94\u4E3A\u5E94\u7528\u5EFA\u7ACB\u6700\u5C0F\u6743\u9650\u6570\u636E\u5E93\u8D26\u53F7\uFF0C\u4E0D\u5E94\u7EE7\u7EED\u4F7F\u7528 \`root\`\u3002\r
+\r
+### 5.3 \u540E\u7AEF\u73AF\u5883\u53D8\u91CF\r
+\r
+| \u53D8\u91CF | \u5FC5\u9700\u6027 | \u8BF4\u660E |\r
+|---|---|---|\r
+| \`SERVER_PORT\` | \u53EF\u9009 | \u9ED8\u8BA4 8081 |\r
+| \`DB_URL\` | \u5EFA\u8BAE\u663E\u5F0F\u8BBE\u7F6E | JDBC \u5730\u5740 |\r
+| \`DB_USERNAME\` | \u5EFA\u8BAE\u663E\u5F0F\u8BBE\u7F6E | \u6570\u636E\u5E93\u7528\u6237 |\r
+| \`DB_PASSWORD\` | \u5EFA\u8BAE\u663E\u5F0F\u8BBE\u7F6E | \u6570\u636E\u5E93\u5BC6\u7801 |\r
+| \`JWT_SECRET\` | \u751F\u4EA7\u5FC5\u9700 | JWT \u7B7E\u540D\u5BC6\u94A5\uFF0C\u81F3\u5C11 32 \u5B57\u8282\u968F\u673A\u503C |\r
+| \`BAIDU_FACE_AK\` | \u4F7F\u7528\u4EBA\u8138\u65F6\u5FC5\u9700 | \u767E\u5EA6\u4EBA\u8138 Access Key |\r
+| \`BAIDU_FACE_SK\` | \u4F7F\u7528\u4EBA\u8138\u65F6\u5FC5\u9700 | \u767E\u5EA6\u4EBA\u8138 Secret Key |\r
+| \`DEEPSEEK_API_KEY\` | \u4F7F\u7528 AI \u65F6\u5FC5\u9700 | \u6A21\u578B API \u5BC6\u94A5 |\r
+| \`DEEPSEEK_BASE_URL\` | \u53EF\u9009 | DeepSeek \u517C\u5BB9\u63A5\u53E3\u5730\u5740 |\r
+| \`DEEPSEEK_MODEL\` | \u53EF\u9009 | \u6A21\u578B\u540D\u79F0 |\r
+\r
+\u4E0D\u8981\u628A\u771F\u5B9E\u5BC6\u94A5\u5199\u5165 Git\u3002\u5F00\u53D1\u73AF\u5883\u53EF\u4F7F\u7528 IDE \u73AF\u5883\u53D8\u91CF\u6216\u672A\u8DDF\u8E2A\u7684\u672C\u5730\u542F\u52A8\u914D\u7F6E\uFF1B\u751F\u4EA7\u73AF\u5883\u4F7F\u7528 Secret \u7BA1\u7406\u670D\u52A1\u3002\r
+\r
+## 6. \u6784\u5EFA\u4E0E\u542F\u52A8\r
+\r
+### 6.1 \u6784\u5EFA\u5B98\u7F51\r
+\r
+\`\`\`bash\r
+cd landing\r
+npm install\r
+npm run build\r
+\`\`\`\r
+\r
+\u6784\u5EFA\u8F93\u51FA\u5E94\u8FDB\u5165 Spring Boot \u9759\u6001\u8D44\u6E90\u76EE\u5F55\u3002\u5B8C\u6210\u540E\u8FD4\u56DE\u4ED3\u5E93\u6839\u76EE\u5F55\u3002\r
+\r
+### 6.2 \u6784\u5EFA Vue \u6570\u636E\u5E73\u53F0\r
+\r
+\`\`\`bash\r
+cd frontend\r
+npm install\r
+npm run build\r
+\`\`\`\r
+\r
+\u8F93\u51FA\u76EE\u6807\u4E3A \`src/main/resources/static/platform/\`\u3002\u6587\u4EF6\u540D\u5E26\u5185\u5BB9\u54C8\u5E0C\uFF0C\u91CD\u65B0\u6784\u5EFA\u540E\u65E7\u6587\u4EF6\u540D\u53D8\u5316\u662F\u6B63\u5E38\u73B0\u8C61\u3002\r
+\r
+### 6.3 \u6D4B\u8BD5\u548C\u542F\u52A8\u540E\u7AEF\r
+\r
+\`\`\`bash\r
+./mvnw test\r
+./mvnw spring-boot:run\r
+\`\`\`\r
+\r
+\u6D4F\u89C8\u5668\u8BBF\u95EE\uFF1A\r
+\r
+\`\`\`text\r
+http://localhost:8081/\r
+\`\`\`\r
+\r
+\u4E5F\u53EF\u4EE5\u4F7F\u7528\u9879\u76EE\u7684\u7EC4\u5408\u542F\u52A8\u811A\u672C\uFF1A\r
+\r
+\`\`\`bash\r
+./start.sh\r
+\`\`\`\r
+\r
+### 6.4 \u63A8\u8350\u6784\u5EFA\u987A\u5E8F\r
+\r
+1. \u68C0\u67E5 MySQL \u662F\u5426\u8FD0\u884C\uFF1B\r
+2. \u914D\u7F6E\u6570\u636E\u5E93\u3001JWT\u3001\u767E\u5EA6\u4EBA\u8138\u548C DeepSeek \u73AF\u5883\u53D8\u91CF\uFF1B\r
+3. \u6784\u5EFA React \u5B98\u7F51\uFF1B\r
+4. \u6784\u5EFA Vue \u6570\u636E\u5E73\u53F0\uFF1B\r
+5. \u6267\u884C Maven \u6D4B\u8BD5\uFF1B\r
+6. \u542F\u52A8 Spring Boot\uFF1B\r
+7. \u5B8C\u6210\u6CE8\u518C\u3001\u767B\u5F55\u3001\u5DE5\u4F5C\u53F0\u3001\u6E29\u5BA4\u548C API \u5192\u70DF\u6D4B\u8BD5\u3002\r
+\r
+## 7. \u524D\u7AEF\u8DEF\u7531\u4E0E\u9875\u9762\u534F\u4F5C\r
+\r
+### 7.1 \u5B98\u7F51\u8DEF\u7531\r
+\r
+\u5B98\u7F51\u4F7F\u7528 HashRouter\uFF0C\u4E3B\u8981\u5730\u5740\u4E3A\uFF1A\r
+\r
+| \u5730\u5740 | \u9875\u9762 |\r
+|---|---|\r
+| \`/#/\` | \u5B98\u7F51\u9996\u9875 |\r
+| \`/#/product\` | \u4EA7\u54C1 |\r
+| \`/#/solutions\` | \u89E3\u51B3\u65B9\u6848 |\r
+| \`/#/digital-twin\` | \u6570\u5B57\u5B6A\u751F\u4ECB\u7ECD |\r
+| \`/#/about\` | \u5173\u4E8E |\r
+| \`/#/contact\` | \u8054\u7CFB\u6211\u4EEC |\r
+| \`/#/sign-in\` | \u767B\u5F55 |\r
+| \`/#/sign-up\` | \u6CE8\u518C |\r
+\r
+### 7.2 \u6570\u636E\u5E73\u53F0\u8DEF\u7531\r
+\r
+| \u5730\u5740 | \u9875\u9762 |\r
+|---|---|\r
+| \`/platform/workspaces/farm-01\` | \u519C\u573A\u6570\u636E\u5DE5\u4F5C\u53F0 |\r
+| \`/platform/assistant\` | AI \u95EE\u519C |\r
+| \`/platform/workspaces/:id/greenhouses/:greenhouseId\` | \u6E29\u5BA4\u5185\u90E8 |\r
+| \`/platform/digital-twin\` | \u6570\u5B57\u5B6A\u751F\u5165\u53E3 |\r
+\r
+Spring Boot \u5FC5\u987B\u5BF9 Vue \u5386\u53F2\u8DEF\u7531\u6267\u884C\u524D\u7AEF\u56DE\u9000\uFF0C\u5426\u5219\u76F4\u63A5\u5237\u65B0\u6DF1\u5C42 URL \u4F1A\u51FA\u73B0 404\u3002\r
+\r
+### 7.3 \u72B6\u6001\u6D41\r
+\r
+1. \u5B98\u7F51\u767B\u5F55\u63A5\u53E3\u8FD4\u56DE JWT \u548C\u7528\u6237\u4FE1\u606F\uFF1B\r
+2. \u6D4F\u89C8\u5668\u4FDD\u5B58\u4F1A\u8BDD\uFF1B\r
+3. Vue \u5E73\u53F0\u8BF7\u6C42\u65F6\u9644\u52A0 \`Authorization: Bearer <token>\`\uFF1B\r
+4. Spring Security \u9A8C\u8BC1 JWT \u540E\u628A\u7528\u6237\u8EAB\u4EFD\u653E\u5165\u5B89\u5168\u4E0A\u4E0B\u6587\uFF1B\r
+5. Dashboard \u548C Assistant \u670D\u52A1\u6839\u636E\u8EAB\u4EFD\u53CA \`farmId\` \u8FD4\u56DE\u6570\u636E\uFF1B\r
+6. Three.js \u53EA\u8D1F\u8D23\u53EF\u89C6\u5316\uFF0C\u4E0D\u5E94\u6210\u4E3A\u4E1A\u52A1\u6570\u636E\u7684\u552F\u4E00\u6765\u6E90\u3002\r
+\r
+### 7.4 \u5F53\u524D\u754C\u9762\u5B9E\u73B0\u57FA\u7EBF\r
+\r
+\u4EE5\u4E0B\u622A\u56FE\u6765\u81EA\u5F53\u524D\u4ED3\u5E93\u5BF9\u5E94\u7248\u672C\uFF0C\u7528\u4E8E\u5F00\u53D1\u8054\u8C03\u3001\u89C6\u89C9\u56DE\u5F52\u548C\u9A8C\u6536\u3002\u540E\u7EED\u4FEE\u6539\u5E03\u5C40\u65F6\uFF0C\u5E94\u786E\u4FDD\u8DEF\u7531\u3001\u6838\u5FC3\u5165\u53E3\u548C\u6570\u636E\u5173\u7CFB\u4FDD\u6301\u4E00\u81F4\u3002\r
+\r
+![\u5B98\u7F51\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u5B98\u7F51.png)\r
+\r
+> **\u56FE 7-1\u3000React \u5B98\u7F51\u57FA\u7EBF\u3002** \u5B98\u7F51\u8D1F\u8D23\u4EA7\u54C1\u4FE1\u606F\u548C\u8EAB\u4EFD\u5165\u53E3\uFF0C\u4E0D\u627F\u8F7D\u767B\u5F55\u540E\u7684\u519C\u573A\u4E1A\u52A1\u72B6\u6001\u3002\r
+\r
+![\u822A\u62CD\u5DE5\u4F5C\u53F0\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u4E3B\u754C\u9762.png)\r
+\r
+> **\u56FE 7-2\u3000Vue \u822A\u62CD\u5DE5\u4F5C\u53F0\u57FA\u7EBF\u3002** \u7A7A\u95F4\u5BF9\u8C61\u3001\u53F3\u4FA7\u4E0A\u4E0B\u6587\u62BD\u5C49\u548C\u5E95\u90E8\u4E1A\u52A1 Dock \u5171\u4EAB\u5DE5\u4F5C\u533A\u72B6\u6001\uFF1B\u9009\u4E2D\u5BF9\u8C61\u540E\uFF0C\u5730\u56FE\u9AD8\u4EAE\u4E0E\u8BE6\u60C5\u6570\u636E\u5FC5\u987B\u6307\u5411\u76F8\u540C\u4E1A\u52A1 ID\u3002\r
+\r
+![\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png)\r
+\r
+> **\u56FE 7-3\u3000AI \u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0\u57FA\u7EBF\u3002** \u544A\u8B66\u3001\u704C\u6E89\u3001\u5927\u68DA\u548C\u6307\u6807\u7EC4\u4EF6\u8BFB\u53D6\u7EDF\u4E00 Dashboard \u6570\u636E\uFF1B\u7528\u6237\u5E03\u5C40\u4E0E\u52A9\u624B\u72B6\u6001\u901A\u8FC7\u5F53\u524D\u8D26\u53F7\u9694\u79BB\u4FDD\u5B58\u3002\r
+\r
+## 8. \u540E\u7AEF\u6A21\u5757\r
+\r
+### 8.1 \u8BA4\u8BC1\u6A21\u5757\r
+\r
+\u8BA4\u8BC1\u6A21\u5757\u8D1F\u8D23\u7528\u6237\u6CE8\u518C\u3001\u5BC6\u7801\u54C8\u5E0C\u3001\u767B\u5F55\u3001JWT \u7B7E\u53D1\u548C\u5F53\u524D\u7528\u6237\u67E5\u8BE2\u3002\u5BC6\u7801\u5FC5\u987B\u53EA\u5B58\u50A8\u54C8\u5E0C\uFF0CAPI \u54CD\u5E94\u4E0D\u5F97\u8FD4\u56DE\u5BC6\u7801\u5B57\u6BB5\u3002\r
+\r
+![\u8BA4\u8BC1\u9875\u9762\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u767B\u9646.png)\r
+\r
+> **\u56FE 8-1\u3000\u8BA4\u8BC1\u9875\u9762\u57FA\u7EBF\u3002** \u5BC6\u7801\u767B\u5F55\u548C\u5237\u8138\u767B\u5F55\u5171\u7528\u9875\u9762\u5BB9\u5668\u4F46\u4F7F\u7528\u72EC\u7ACB\u63D0\u4EA4\u94FE\u8DEF\uFF1B\u6CE8\u518C\u5165\u53E3\u5FC5\u987B\u59CB\u7EC8\u53EF\u89C1\uFF0C\u5237\u8138\u6A21\u5F0F\u4E0D\u5F97\u51FA\u73B0\u672C\u5730\u56FE\u7247\u4E0A\u4F20\u63A7\u4EF6\u3002\r
+\r
+\u4EBA\u8138\u6D41\u7A0B\uFF1A\u6D4F\u89C8\u5668\u6444\u50CF\u5934\u91C7\u96C6\u56FE\u50CF \u2192 \u540E\u7AEF\u6821\u9A8C \u2192 \u767E\u5EA6\u4EBA\u8138\u7EC4\u6CE8\u518C\u6216\u68C0\u7D22 \u2192 \u7ED1\u5B9A\u6216\u7B7E\u53D1\u767B\u5F55\u4EE4\u724C\u3002\u5F53\u524D\u4EA7\u54C1\u5DF2\u7981\u6B62\u4ECE\u672C\u5730\u4E0A\u4F20\u56FE\u7247\u8FDB\u884C\u5237\u8138\u767B\u5F55\uFF0C\u76EE\u7684\u662F\u964D\u4F4E\u7167\u7247\u66FF\u4EE3\u771F\u4EBA\u91C7\u96C6\u7684\u98CE\u9669\u3002\u4F46\u8FD9\u4E0D\u7B49\u540C\u4E8E\u5B8C\u6574\u6D3B\u4F53\u68C0\u6D4B\uFF1B\u751F\u4EA7\u73AF\u5883\u4ECD\u5E94\u589E\u52A0\u52A8\u4F5C\u6D3B\u4F53\u3001\u9759\u9ED8\u6D3B\u4F53\u3001\u91CD\u653E\u9632\u62A4\u3001\u9650\u6D41\u548C\u5BA1\u8BA1\u3002\r
+\r
+### 8.2 Dashboard \u6A21\u5757\r
+\r
+\u8BE5\u6A21\u5757\u805A\u5408\u519C\u573A\u8D44\u4EA7\u3001\u73AF\u5883\u6307\u6807\u3001\u8BBE\u5907\u3001\u704C\u6E89\u5355\u5143\u548C\u544A\u8B66\uFF0C\u5E76\u751F\u6210\u5DEE\u5F02\u5316\u6E29\u5BA4\u8BE6\u60C5\u3002\u5199\u64CD\u4F5C\u7531\u670D\u52A1\u5C42\u6821\u9A8C\u5B9E\u4F53\u662F\u5426\u5C5E\u4E8E\u8BF7\u6C42\u4E2D\u7684\u519C\u573A\uFF0C\u907F\u514D\u8DE8\u519C\u573A\u4FEE\u6539\u3002\r
+\r
+### 8.3 Assistant \u6A21\u5757\r
+\r
+AI \u95EE\u519C\u63A5\u6536\u5386\u53F2\u6D88\u606F\u4E0E\u53EF\u9009\u573A\u666F\u4E0A\u4E0B\u6587\uFF0C\u8C03\u7528\u517C\u5BB9\u7684\u6A21\u578B\u63A5\u53E3\u5E76\u8FD4\u56DE\u6587\u672C\u3002\u7528\u6237\u52A9\u624B\u72B6\u6001\u5355\u72EC\u6301\u4E45\u5316\uFF0C\u7528\u4E8E\u4FDD\u7559\u754C\u9762\u914D\u7F6E\u6216\u4F1A\u8BDD\u76F8\u5173\u72B6\u6001\u3002\r
+\r
+![\u667A\u80FD\u95EE\u519C\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u95EE\u519C.png)\r
+\r
+> **\u56FE 8-2\u3000\u667A\u80FD\u95EE\u519C\u57FA\u7EBF\u3002** \u5BF9\u8BDD\u5217\u8868\u3001\u8F93\u5165\u533A\u3001\u5FEB\u6377\u95EE\u9898\u548C\u5E94\u7528 Dock \u5C5E\u4E8E\u7528\u6237\u72B6\u6001\uFF1B\u6A21\u578B\u56DE\u7B54\u6765\u81EA\u540E\u7AEF\u63A5\u53E3\uFF0C\u524D\u7AEF\u4E0D\u5F97\u7528\u9759\u6001\u6210\u529F\u5185\u5BB9\u63A9\u76D6\u4E0A\u6E38\u8C03\u7528\u5931\u8D25\u3002\r
+\r
+\u751F\u4EA7\u73AF\u5883\u9700\u8981\uFF1A\u8F93\u5165\u957F\u5EA6\u9650\u5236\u3001\u8D85\u65F6\u3001\u91CD\u8BD5\u4E0A\u9650\u3001\u654F\u611F\u4FE1\u606F\u8FC7\u6EE4\u3001\u63D0\u793A\u6CE8\u5165\u9632\u62A4\u3001\u8C03\u7528\u5BA1\u8BA1\u548C\u8D39\u7528\u544A\u8B66\u3002\r
+\r
+## 9. REST API\r
+\r
+\u9664\u6CE8\u518C\u548C\u767B\u5F55\u7C7B\u63A5\u53E3\u5916\uFF0C\u4E1A\u52A1\u63A5\u53E3\u9ED8\u8BA4\u8981\u6C42 JWT\u3002\r
+\r
+### 9.1 \u6CE8\u518C\r
+\r
+\`\`\`http\r
+POST /api/auth/register\r
+Content-Type: application/json\r
+\r
+{\r
+  "name": "\u6F14\u793A\u7528\u6237",\r
+  "email": "user@example.com",\r
+  "password": "StrongPassword_2026!"\r
+}\r
+\`\`\`\r
+\r
+\u6210\u529F\u54CD\u5E94\u5305\u542B \`token\` \u548C \`user\`\u3002\u90AE\u7BB1\u91CD\u590D\u3001\u53C2\u6570\u4E0D\u5408\u6CD5\u6216\u5BC6\u7801\u4E0D\u6EE1\u8DB3\u7EA6\u675F\u65F6\u5E94\u8FD4\u56DE 4xx\u3002\r
+\r
+### 9.2 \u5BC6\u7801\u767B\u5F55\r
+\r
+\`\`\`http\r
+POST /api/auth/login\r
+Content-Type: application/json\r
+\r
+{\r
+  "email": "user@example.com",\r
+  "password": "StrongPassword_2026!"\r
+}\r
+\`\`\`\r
+\r
+### 9.3 \u5F53\u524D\u7528\u6237\r
+\r
+\`\`\`http\r
+GET /api/auth/me\r
+Authorization: Bearer <token>\r
+\`\`\`\r
+\r
+### 9.4 \u4EBA\u8138\u63A5\u53E3\r
+\r
+\`\`\`text\r
+POST /api/auth/face-register   \u7ED1\u5B9A\u5F53\u524D\u8D26\u6237\u7684\u4EBA\u8138\r
+POST /api/auth/face-delete     \u5220\u9664\u5F53\u524D\u8D26\u6237\u7684\u4EBA\u8138\u7ED1\u5B9A\r
+POST /api/auth/face-login      \u901A\u8FC7\u6444\u50CF\u5934\u91C7\u96C6\u7ED3\u679C\u767B\u5F55\r
+\`\`\`\r
+\r
+\u56FE\u7247\u8BF7\u6C42\u53D7 10 MB multipart \u9650\u5236\u3002\u524D\u7AEF\u53EA\u5141\u8BB8\u6444\u50CF\u5934\u91C7\u96C6\uFF0C\u4E0D\u63D0\u4F9B\u672C\u5730\u6587\u4EF6\u4E0A\u4F20\u5165\u53E3\u3002\r
+\r
+### 9.5 Dashboard \u63A5\u53E3\r
+\r
+\`\`\`text\r
+GET   /api/farms/{farmId}/dashboard\r
+GET   /api/farms/{farmId}/greenhouses/{greenhouseId}\r
+PATCH /api/farms/{farmId}/devices/{entityId}\r
+POST  /api/farms/{farmId}/devices/{entityId}/self-test\r
+PATCH /api/farms/{farmId}/irrigation/{unitId}\r
+PATCH /api/farms/{farmId}/alerts/{alertId}/handle\r
+\`\`\`\r
+\r
+\u704C\u6E89\u63A7\u5236\u793A\u4F8B\uFF1A\r
+\r
+\`\`\`http\r
+PATCH /api/farms/farm-01/irrigation/1\r
+Authorization: Bearer <token>\r
+Content-Type: application/json\r
+\r
+{\r
+  "enabled": true,\r
+  "durationMinutes": 20\r
+}\r
+\`\`\`\r
+\r
+\`durationMinutes\` \u7684\u6709\u6548\u8303\u56F4\u4E3A 5\u201360 \u5206\u949F\u3002\u524D\u7AEF\u63A7\u5236\u6210\u529F\u540E\u5E94\u4EE5\u670D\u52A1\u7AEF\u8FD4\u56DE\u503C\u5237\u65B0\u72B6\u6001\uFF0C\u4E0D\u80FD\u53EA\u5728\u672C\u5730\u5207\u6362\u6309\u94AE\u3002\r
+\r
+### 9.6 AI \u63A5\u53E3\r
+\r
+\`\`\`http\r
+POST /api/assistant/chat\r
+Authorization: Bearer <token>\r
+Content-Type: application/json\r
+\r
+{\r
+  "context": "farm-01 1\u53F7\u756A\u8304\u6E29\u5BA4",\r
+  "messages": [\r
+    {"role": "user", "content": "\u5F53\u524D\u6E7F\u5EA6\u504F\u9AD8\u5E94\u8BE5\u600E\u4E48\u5904\u7406\uFF1F"}\r
+  ]\r
+}\r
+\`\`\`\r
+\r
+\u8FD4\u56DE\u7ED3\u6784\uFF1A\r
+\r
+\`\`\`json\r
+{\r
+  "reply": "\u2026\u2026",\r
+  "model": "\u5B9E\u9645\u4F7F\u7528\u7684\u6A21\u578B\u540D\u79F0"\r
+}\r
+\`\`\`\r
+\r
+\u72B6\u6001\u63A5\u53E3\uFF1A\r
+\r
+\`\`\`text\r
+GET /api/assistant/state\r
+PUT /api/assistant/state\r
+\`\`\`\r
+\r
+## 10. \u6570\u636E\u6A21\u578B\r
+\r
+| \u8868 | \u7528\u9014 | \u5173\u952E\u7EA6\u675F |\r
+|---|---|---|\r
+| \`users\` | \u7528\u6237\u3001\u5BC6\u7801\u54C8\u5E0C\u548C\u4EBA\u8138\u7ED1\u5B9A\u4FE1\u606F | \u90AE\u7BB1\u552F\u4E00 |\r
+| \`farm_assets\` | \u5927\u68DA\u3001\u5730\u5757\u7B49\u519C\u573A\u8D44\u4EA7 | \u4EE5\u519C\u573A\u548C\u4E1A\u52A1 ID \u5173\u8054 |\r
+| \`farm_devices\` | \u8BBE\u5907\u3001\u8FD0\u884C\u72B6\u6001\u548C\u63A7\u5236\u6570\u636E | \u5F52\u5C5E\u4E8E\u519C\u573A/\u8D44\u4EA7 |\r
+| \`environment_metrics\` | \u6E29\u6E7F\u5EA6\u3001\u5149\u7167\u3001CO\u2082 \u7B49\u6307\u6807 | \`(farm_id, metric_key)\` \u552F\u4E00 |\r
+| \`irrigation_units\` | \u704C\u6E89\u5206\u533A\u548C\u6267\u884C\u72B6\u6001 | \u8BB0\u5F55\u5F00\u5173\u4E0E\u65F6\u957F |\r
+| \`farm_alerts\` | \u544A\u8B66\u53CA\u5904\u7406\u72B6\u6001 | \u4FDD\u7559\u7EA7\u522B\u3001\u65F6\u95F4\u548C\u5904\u7F6E\u7ED3\u679C |\r
+| \`user_assistant_states\` | \u7528\u6237 AI \u52A9\u624B\u72B6\u6001 | \`user_id\` \u552F\u4E00 |\r
+\r
+\u6B63\u5F0F\u53D8\u66F4\u8868\u7ED3\u6784\u65F6\u5EFA\u8BAE\u5F15\u5165 Flyway \u6216 Liquibase\uFF0C\u4E0D\u8981\u4F9D\u8D56\u751F\u4EA7\u73AF\u5883\u81EA\u52A8\u5EFA\u8868\u3002\u6570\u636E\u5E93\u5907\u4EFD\u81F3\u5C11\u5305\u542B\u6BCF\u65E5\u5168\u91CF\u3001binlog \u589E\u91CF\u548C\u5B9A\u671F\u6062\u590D\u6F14\u7EC3\u3002\r
+\r
+## 11. Three.js \u6570\u5B57\u5B6A\u751F\r
+\r
+### 11.1 \u519C\u573A\u573A\u666F\r
+\r
+\u573A\u666F\u652F\u6301\u9E1F\u77B0\u3001\u8F68\u9053\u5F0F 3D \u548C\u7B2C\u4E00\u4EBA\u79F0\u6A21\u5F0F\u3002\u5927\u68DA\u6A21\u578B\u5FC5\u987B\u643A\u5E26\u7A33\u5B9A\u4E1A\u52A1 ID\uFF1B\u53CC\u51FB\u62FE\u53D6 Three.js \u5BF9\u8C61\u540E\uFF0C\u6839\u636E ID \u8DF3\u8F6C\u5BF9\u5E94\u6E29\u5BA4\u8DEF\u7531\u3002\r
+\r
+![3D \u519C\u573A\u5B9E\u73B0\u573A\u666F](./\u622A\u56FE/3D.png)\r
+\r
+> **\u56FE 11-1\u30003D \u519C\u573A\u573A\u666F\u57FA\u7EBF\u3002** \u573A\u666F\u6E32\u67D3\u3001\u5BF9\u8C61\u62FE\u53D6\u3001\u8BE6\u60C5\u62BD\u5C49\u548C\u201C\u8FDB\u5165\u5927\u68DA\u201D\u8DEF\u7531\u6784\u6210\u4E00\u6761\u5B8C\u6574\u4EA4\u4E92\u94FE\u8DEF\u3002\r
+\r
+![\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u7B2C\u4E00\u4EBA\u79F0.png)\r
+\r
+> **\u56FE 11-2\u3000\u7B2C\u4E00\u4EBA\u79F0\u5DE1\u573A\u57FA\u7EBF\u3002** Pointer Lock\u3001WASD \u79FB\u52A8\u3001\u78B0\u649E\u68C0\u6D4B\u3001\u51C6\u661F\u62FE\u53D6\u3001\`1\u20137\` \u4E1A\u52A1\u5207\u6362\u548C \`Esc\` \u9000\u51FA\u5E94\u4F5C\u4E3A\u540C\u4E00\u5957\u4EA4\u4E92\u72B6\u6001\u673A\u7EF4\u62A4\u3002\r
+\r
+\u6B63\u786E\u6620\u5C04\u94FE\u8DEF\u4E3A\uFF1A\r
+\r
+\`\`\`text\r
+3D Object.userData.greenhouseId\r
+    \u2192 Vue Router greenhouseId\r
+    \u2192 GET greenhouse detail API\r
+    \u2192 \u573A\u666F\u6A21\u578B\u3001\u53F3\u4FA7\u680F\u548C\u8BBE\u5907\u72B6\u6001\r
+\`\`\`\r
+\r
+\u7981\u6B62\u7528\u6570\u7EC4\u4E0B\u6807\u4F5C\u4E3A\u957F\u671F\u4E1A\u52A1\u6807\u8BC6\uFF0C\u5426\u5219\u6392\u5E8F\u53D8\u5316\u540E\u4F1A\u8FDB\u5165\u9519\u8BEF\u5927\u68DA\u3002\r
+\r
+### 11.2 \u6E29\u5BA4\u5185\u90E8\r
+\r
+\u516D\u5EA7\u6E29\u5BA4\u7531\u540E\u7AEF\u8BE6\u60C5\u6570\u636E\u9A71\u52A8\u4F5C\u7269\u54C1\u79CD\u3001\u683D\u57F9\u65B9\u5F0F\u3001\u682A\u6570\u3001\u533A\u57DF\u3001\u8BBE\u5907\u548C\u73AF\u5883\u6307\u6807\u3002\u524D\u7AEF\u6A21\u578B\u751F\u6210\u5668\u6839\u636E\u4F5C\u7269\u7C7B\u578B\u521B\u5EFA\u5DEE\u5F02\u5316\u690D\u682A\u51E0\u4F55\u4F53\uFF0C\u5E76\u4E3A\u6837\u672C\u690D\u682A\u63D0\u4F9B\u53EF\u70B9\u51FB\u5B9A\u4F4D\u3002\r
+\r
+![\u6E29\u5BA4\u5185\u90E8\u5B9E\u73B0\u57FA\u7EBF](./\u622A\u56FE/\u5927\u68DA\u5185\u90E8.png)\r
+\r
+> **\u56FE 11-3\u3000\u6E29\u5BA4\u5185\u90E8\u57FA\u7EBF\u3002** Three.js \u4E3B\u573A\u666F\u3001\u5E95\u90E8\u73AF\u5883\u6307\u6807\u548C\u53F3\u4FA7\u4E1A\u52A1\u6570\u636E\u5FC5\u987B\u6765\u81EA\u540C\u4E00\u6E29\u5BA4\u8BE6\u60C5\u54CD\u5E94\uFF1B\u53F3\u680F\u91C7\u7528\u72EC\u7ACB\u6EDA\u52A8\u5BB9\u5668\uFF0C\u4E0D\u80FD\u7531\u9875\u9762\u6574\u4F53\u9AD8\u5EA6\u88C1\u5207\u5185\u5BB9\u3002\r
+\r
+\u6027\u80FD\u5EFA\u8BAE\uFF1A\r
+\r
+- \u91CD\u590D\u690D\u682A\u4F18\u5148\u4F7F\u7528 \`InstancedMesh\`\uFF1B\r
+- \u5408\u5E76\u9759\u6001\u51E0\u4F55\u4F53\u5E76\u5171\u4EAB\u6750\u8D28\uFF1B\r
+- \u7EB9\u7406\u4F7F\u7528\u538B\u7F29\u683C\u5F0F\u548C\u5408\u7406 mipmap\uFF1B\r
+- \u8FDC\u8DDD\u79BB\u6A21\u578B\u91C7\u7528 LOD\uFF1B\r
+- \u9500\u6BC1\u9875\u9762\u65F6\u91CA\u653E geometry\u3001material\u3001texture \u548C\u4E8B\u4EF6\u76D1\u542C\uFF1B\r
+- \u7528\u771F\u5B9E\u8BBE\u5907\u6D4B\u8BD5\u5E27\u7387\u3001\u663E\u5B58\u548C\u6D4F\u89C8\u5668\u5185\u5B58\uFF0C\u800C\u4E0D\u53EA\u770B\u5F00\u53D1\u673A\u3002\r
+\r
+## 12. \u5F53\u524D YOLO \u76D1\u63A7\u8BC6\u522B\u94FE\u8DEF\r
+\r
+\u5F53\u524D\u7F51\u7AD9\u4E0D\u4F1A\u5728\u6D4F\u89C8\u5668\u4E2D\u5B9E\u65F6\u8FD0\u884C Python\u3002\u5904\u7406\u6D41\u7A0B\u662F\uFF1A\r
+\r
+\`\`\`mermaid\r
+flowchart LR\r
+    A[docs/mo.mp4] --> B[\u62BD\u53D6\u8BAD\u7EC3\u5E27]\r
+    B --> C[YOLO \u683C\u5F0F\u6807\u6CE8]\r
+    C --> D[\u8BAD\u7EC3 YOLO11n]\r
+    D --> E[ByteTrack \u89C6\u9891\u63A8\u7406]\r
+    E --> F[greenhouse-monitor.detections.json]\r
+    F --> G[Vue \u6309\u89C6\u9891\u65F6\u95F4\u7ED8\u5236\u68C0\u6D4B\u6846]\r
+\`\`\`\r
+\r
+\u7C7B\u522B\u76EE\u524D\u4E3A\uFF1A\r
+\r
+- \`person\`\uFF1A\u53EF\u89C1\u4EBA\u5458\uFF1B\r
+- \`crop\`\uFF1A\u4F5C\u7269\u690D\u682A\u6216\u8FDE\u7EED\u51A0\u5C42\u3002\r
+\r
+### 12.1 \u5EFA\u7ACB\u7B97\u6CD5\u73AF\u5883\r
+\r
+\`\`\`bash\r
+python3 -m venv tools/yolo/.venv\r
+source tools/yolo/.venv/bin/activate\r
+python -m pip install -U pip\r
+python -m pip install -r tools/yolo/requirements.txt\r
+\`\`\`\r
+\r
+### 12.2 \u62BD\u5E27\u3001\u6807\u6CE8\u548C\u8BAD\u7EC3\r
+\r
+\`\`\`bash\r
+python tools/yolo/extract_frames.py\r
+python tools/yolo/labelme_to_yolo.py\r
+python tools/yolo/train.py --epochs 80 --batch 8 --imgsz 640\r
+\`\`\`\r
+\r
+\u6700\u4F73\u6743\u91CD\u4F4D\u4E8E\uFF1A\r
+\r
+\`\`\`text\r
+tools/yolo/runs/greenhouse-person-crop/weights/best.pt\r
+\`\`\`\r
+\r
+### 12.3 \u5BFC\u51FA\u68C0\u6D4B\u7ED3\u679C\r
+\r
+\`\`\`bash\r
+python tools/yolo/export_detections.py\r
+\`\`\`\r
+\r
+\u8F93\u51FA\uFF1A\r
+\r
+\`\`\`text\r
+frontend/public/assets/media/greenhouse-monitor.detections.json\r
+\`\`\`\r
+\r
+\u968F\u540E\u91CD\u65B0\u6784\u5EFA Vue \u5E73\u53F0\u3002\u5F53\u524D 38 \u5E27\u9AD8\u5EA6\u76F8\u4F3C\uFF0C\u53EA\u9002\u5408\u6F14\u793A\u89C6\u9891\uFF1B\u7528\u4E8E\u65B0\u6E29\u5BA4\u524D\u5FC5\u987B\u91C7\u96C6\u4E0D\u540C\u8DDD\u79BB\u3001\u65F6\u6BB5\u3001\u5149\u7167\u3001\u906E\u6321\u3001\u4EBA\u5458\u59FF\u6001\u548C\u4F5C\u7269\u751F\u80B2\u671F\u7684\u6570\u636E\uFF0C\u5E76\u91CD\u65B0\u5212\u5206\u8BAD\u7EC3\u3001\u9A8C\u8BC1\u548C\u72EC\u7ACB\u6D4B\u8BD5\u96C6\u3002\r
+\r
+### 12.4 \u5347\u7EA7\u4E3A\u5B9E\u65F6\u670D\u52A1\r
+\r
+\u63A8\u8350\u5C06\u63A8\u7406\u72EC\u7ACB\u4E3A Python/GPU \u670D\u52A1\uFF1A\u6444\u50CF\u5934 RTSP \u2192 \u89E3\u7801\u548C\u62BD\u5E27 \u2192 YOLO/TensorRT \u2192 \u8DDF\u8E2A \u2192 \u4E8B\u4EF6\u89C4\u5219 \u2192 WebSocket/SSE \u2192 \u524D\u7AEF\u53E0\u52A0\u3002Spring Boot \u4FDD\u5B58\u4E8B\u4EF6\u3001\u8BBE\u5907\u548C\u544A\u8B66\uFF0C\u4E0D\u8D1F\u8D23\u9010\u5E27 GPU \u63A8\u7406\u3002\r
+\r
+\u5FC5\u987B\u76D1\u63A7\u7AEF\u5230\u7AEF\u5EF6\u8FDF\u3001FPS\u3001\u961F\u5217\u79EF\u538B\u3001\u6F0F\u68C0\u7387\u3001\u8BEF\u62A5\u7387\u3001GPU \u5229\u7528\u7387\u548C\u6444\u50CF\u5934\u65AD\u6D41\u3002\r
+\r
+## 13. NVIDIA LocateAnything \u5347\u7EA7\u65B9\u6848\r
+\r
+NVIDIA LocateAnything \u662F\u5F00\u653E\u8BCD\u6C47\u89C6\u89C9\u5B9A\u4F4D\u6A21\u578B\uFF0C\u53EF\u4F7F\u7528\u81EA\u7136\u8BED\u8A00\u67E5\u8BE2\u5728\u56FE\u50CF\u4E2D\u5B9A\u4F4D\u5BF9\u8C61\uFF0C\u5E76\u8986\u76D6\u901A\u7528\u76EE\u6807\u68C0\u6D4B\u3001OCR \u548C\u754C\u9762\u5B9A\u4F4D\u7B49\u4EFB\u52A1\u3002\u5B83\u9002\u5408\u5904\u7406\u56FA\u5B9A YOLO \u7C7B\u522B\u4E4B\u5916\u7684\u4E34\u65F6\u67E5\u8BE2\uFF0C\u4F46**\u76EE\u524D\u5C1A\u672A\u63A5\u5165\u672C\u9879\u76EE**\u3002\r
+\r
+\u5B98\u65B9\u8D44\u6599\uFF1A\r
+\r
+- [NVIDIA LocateAnything \u9879\u76EE\u9875](https://research.nvidia.com/labs/lpr/locate-anything/)\r
+- [LocateAnything-3B \u6A21\u578B\u9875](https://huggingface.co/nvidia/LocateAnything-3B)\r
+\r
+### 13.1 \u63A8\u8350\u7684\u5206\u5C42\u67B6\u6784\r
+\r
+| \u5C42\u7EA7 | \u6A21\u578B | \u4EFB\u52A1 | \u539F\u56E0 |\r
+|---|---|---|---|\r
+| \u4E00\u7EA7 | YOLO/TensorRT | 7\xD724 \u5C0F\u65F6\u56FA\u5B9A\u7C7B\u522B\u68C0\u6D4B | \u5FEB\u3001\u6210\u672C\u4F4E\u3001\u6613\u8FB9\u7F18\u90E8\u7F72 |\r
+| \u4E8C\u7EA7 | LocateAnything | \u6309\u9700\u5F00\u653E\u8BCD\u6C47\u5B9A\u4F4D\u3001\u7591\u96BE\u5E27\u590D\u6838 | \u67E5\u8BE2\u7075\u6D3B\u4F46\u8BA1\u7B97\u9700\u6C42\u66F4\u9AD8 |\r
+| \u8BAD\u7EC3\u95ED\u73AF | LocateAnything + \u4EBA\u5DE5\u5BA1\u6838 | \u8F85\u52A9\u751F\u6210\u65B0\u7C7B\u522B\u6807\u6CE8\uFF0C\u518D\u8BAD\u7EC3 YOLO | \u5C06\u5F00\u653E\u80FD\u529B\u6C89\u6DC0\u4E3A\u5B9E\u65F6\u5C0F\u6A21\u578B |\r
+\r
+\u4E0D\u8981\u7B80\u5355\u5730\u7528 LocateAnything \u5168\u91CF\u66FF\u6362 YOLO\u3002\u5B98\u65B9\u6027\u80FD\u6570\u636E\u4F9D\u8D56\u9AD8\u7AEF GPU \u73AF\u5883\uFF1B\u90E8\u7F72\u524D\u5FC5\u987B\u5728\u76EE\u6807\u8BBE\u5907\u548C\u519C\u4E1A\u6570\u636E\u96C6\u4E0A\u5B9E\u6D4B\u3002\r
+\r
+### 13.2 \u519C\u4E1A\u67E5\u8BE2\u793A\u4F8B\r
+\r
+- \u201C\u5B9A\u4F4D\u53F6\u7247\u660E\u663E\u840E\u852B\u7684\u756A\u8304\u690D\u682A\u201D\uFF1B\r
+- \u201C\u5B9A\u4F4D\u901A\u9053\u4E2D\u7684\u79EF\u6C34\u533A\u57DF\u201D\uFF1B\r
+- \u201C\u5B9A\u4F4D\u672A\u4F69\u6234\u9632\u62A4\u88C5\u5907\u7684\u4EBA\u5458\u201D\uFF1B\r
+- \u201C\u5B9A\u4F4D\u7834\u635F\u7684\u6EF4\u704C\u7BA1\u201D\uFF1B\r
+- \u201C\u5B9A\u4F4D\u6E29\u5BA4\u5185\u7684\u4EEA\u8868\u8BFB\u6570\u533A\u57DF\u201D\u3002\r
+\r
+\u8FD9\u4E9B\u8BED\u53E5\u53EA\u4EE3\u8868\u5019\u9009\u5E94\u7528\uFF0C\u4E0D\u80FD\u5728\u672A\u7ECF\u6807\u6CE8\u6570\u636E\u9A8C\u8BC1\u65F6\u627F\u8BFA\u51C6\u786E\u7387\u3002\u5EFA\u8BAE\u5EFA\u7ACB\u542B\u5F3A\u5149\u3001\u9006\u5149\u3001\u591C\u95F4\u3001\u96FE\u6C14\u3001\u906E\u6321\u548C\u76F8\u4F3C\u80CC\u666F\u7684\u4E13\u9879\u6D4B\u8BD5\u96C6\u3002\r
+\r
+## 14. LingBot-Map \u5B9E\u666F\u5EFA\u56FE\u65B9\u6848\r
+\r
+LingBot-Map \u662F\u9762\u5411\u56FE\u50CF\u6216\u89C6\u9891\u6D41\u7684\u524D\u9988\u5F0F\u4E09\u7EF4\u91CD\u5EFA\u9879\u76EE\uFF0C\u652F\u6301\u6D41\u5F0F/\u7A97\u53E3\u5316\u5904\u7406\u5E76\u8F93\u51FA\u76F8\u673A\u548C\u70B9\u4E91\u7B49\u7ED3\u679C\u3002\u5B83\u4E0E\u201C\u5355\u6444\u50CF\u5934\u91C7\u96C6\u6E29\u5BA4\u5B9E\u666F\u3001\u964D\u4F4E\u5BF9\u6FC0\u5149\u96F7\u8FBE\u7684\u4F9D\u8D56\u201D\u7684\u76EE\u6807\u5339\u914D\uFF0C\u4F46**\u5F53\u524D\u5C1A\u672A\u96C6\u6210**\u3002\r
+\r
+\u5B98\u65B9\u4ED3\u5E93\uFF1A[robbyant/lingbot-map](https://github.com/robbyant/lingbot-map)\r
+\r
+### 14.1 \u5FC5\u987B\u6F84\u6E05\u7684\u5DE5\u7A0B\u8FB9\u754C\r
+\r
+LingBot-Map \u89E3\u51B3\u7684\u662F\u89C6\u89C9\u4E09\u7EF4\u91CD\u5EFA\uFF0C\u4E0D\u662F\u5B8C\u6574\u673A\u5668\u4EBA\u5BFC\u822A\u7CFB\u7EDF\u3002\u70B9\u4E91\u4E0D\u80FD\u76F4\u63A5\u7B49\u540C\u4E8E\u53EF\u5BFC\u822A\u5730\u56FE\u3002\u5355\u76EE\u65B9\u6848\u8FD8\u4F1A\u9762\u5BF9\u5C3A\u5EA6\u6F02\u79FB\u3001\u5F31\u7EB9\u7406\u3001\u91CD\u590D\u68DA\u67B6\u3001\u53CD\u5149\u8584\u819C\u3001\u52A8\u6001\u4EBA\u5458\u3001\u5149\u7167\u53D8\u5316\u548C\u8FD0\u52A8\u6A21\u7CCA\u3002\r
+\r
+\u5373\u4F7F\u4E0D\u4F7F\u7528\u6FC0\u5149\u96F7\u8FBE\uFF0C\u751F\u4EA7\u673A\u5668\u4EBA\u4ECD\u5EFA\u8BAE\u5177\u5907\u8F6E\u901F\u91CC\u7A0B\u8BA1\u3001IMU\u3001\u78B0\u649E\u6761/\u6025\u505C\u548C\u8FD1\u8DDD\u79BB\u5B89\u5168\u4F20\u611F\u5668\u3002\u4EBA\u5458\u548C\u4F5C\u7269\u5171\u5B58\u73AF\u5883\u4E2D\uFF0C\u5B89\u5168\u5C42\u4E0D\u80FD\u53EA\u4F9D\u8D56\u5355\u76EE\u91CD\u5EFA\u3002\r
+\r
+### 14.2 \u5EFA\u8BAE\u7684\u6570\u636E\u94FE\u8DEF\r
+\r
+\`\`\`mermaid\r
+flowchart LR\r
+    C[\u5355\u76EE\u6444\u50CF\u5934/\u5F55\u5236\u89C6\u9891] --> S[\u5E27\u91C7\u6837\u4E0E\u8D28\u91CF\u68C0\u67E5]\r
+    S --> L[LingBot-Map \u63A8\u7406]\r
+    L --> P[\u76F8\u673A\u4F4D\u59FF + \u70B9\u4E91]\r
+    P --> F[\u53BB\u566A\u3001\u5C3A\u5EA6\u6807\u5B9A\u3001\u5730\u9762\u5206\u5272]\r
+    F --> O[\u4F53\u7D20/\u5360\u636E\u6805\u683C/OctoMap]\r
+    O --> R[\u5B9A\u4F4D\u4E0E\u5BFC\u822A\u5750\u6807\u7CFB]\r
+    R --> G[\u5168\u5C40\u89C4\u5212]\r
+    G --> Q[\u5C40\u90E8\u907F\u969C\u4E0E\u5B89\u5168\u63A7\u5236]\r
+    Q --> M[\u519C\u4E1A\u673A\u5668\u4EBA]\r
+    P --> W[Web \u7AEF\u5B9E\u666F\u4E09\u7EF4\u5C55\u793A]\r
+\`\`\`\r
+\r
+### 14.3 \u670D\u52A1\u62C6\u5206\r
+\r
+\u5EFA\u8BAE\u5EFA\u7ACB\u72EC\u7ACB \`mapping-service\`\uFF0C\u907F\u514D\u5728 Spring JVM \u5185\u52A0\u8F7D\u5927\u578B PyTorch \u6A21\u578B\uFF1A\r
+\r
+- **\u91C7\u96C6\u7AEF**\uFF1A\u76F8\u673A\u6807\u5B9A\u3001\u89C6\u9891\u5207\u7247\u3001\u65F6\u95F4\u6233\u548C\u6E29\u5BA4 ID\uFF1B\r
+- **\u91CD\u5EFA\u7AEF**\uFF1AGPU \u63A8\u7406\u3001\u4EFB\u52A1\u961F\u5217\u3001\u8FDB\u5EA6\u548C\u5931\u8D25\u91CD\u8BD5\uFF1B\r
+- **\u5730\u56FE\u5904\u7406\u7AEF**\uFF1A\u5C3A\u5EA6\u5BF9\u9F50\u3001\u6EE4\u6CE2\u3001\u5360\u636E\u5730\u56FE\u751F\u6210\uFF1B\r
+- **\u5B58\u50A8\u7AEF**\uFF1A\u539F\u89C6\u9891\u3001PLY/GLB\u3001\u76F8\u673A\u8F68\u8FF9\u3001\u5730\u56FE\u7248\u672C\u548C\u7F29\u7565\u56FE\uFF1B\r
+- **\u4E1A\u52A1\u7AEF**\uFF1ASpring Boot \u7BA1\u7406\u4EFB\u52A1\u5143\u6570\u636E\u3001\u6743\u9650\u548C\u6E29\u5BA4\u5173\u8054\uFF1B\r
+- **\u5C55\u793A\u7AEF**\uFF1AVue/Three.js \u52A0\u8F7D\u8F7B\u91CF GLB \u6216\u5206\u5757\u70B9\u4E91\uFF1B\r
+- **\u673A\u5668\u4EBA\u7AEF**\uFF1AROS 2/\u5BFC\u822A\u6808\u6D88\u8D39\u7ECF\u8FC7\u9A8C\u8BC1\u7684\u5730\u56FE\uFF0C\u800C\u975E\u76F4\u63A5\u6D88\u8D39\u7F51\u9875\u6A21\u578B\u3002\r
+\r
+\u5EFA\u8BAE\u4E1A\u52A1\u63A5\u53E3\uFF1A\r
+\r
+\`\`\`text\r
+POST /api/farms/{farmId}/greenhouses/{id}/mapping-sessions\r
+POST /api/mapping-sessions/{sessionId}/frames\r
+POST /api/mapping-sessions/{sessionId}/complete\r
+GET  /api/mapping-sessions/{sessionId}\r
+GET  /api/mapping-sessions/{sessionId}/artifacts\r
+POST /api/mapping-sessions/{sessionId}/publish\r
+\`\`\`\r
+\r
+\u4EFB\u52A1\u72B6\u6001\u5EFA\u8BAE\u4E3A\uFF1A\`CREATED \u2192 UPLOADING \u2192 QUEUED \u2192 RECONSTRUCTING \u2192 POST_PROCESSING \u2192 REVIEW_REQUIRED \u2192 PUBLISHED\`\uFF0C\u5931\u8D25\u8FDB\u5165 \`FAILED\` \u5E76\u4FDD\u5B58\u53EF\u8BCA\u65AD\u539F\u56E0\u3002\r
+\r
+### 14.4 \u5750\u6807\u4E0E\u6807\u5B9A\r
+\r
+\u81F3\u5C11\u7EF4\u62A4\u4EE5\u4E0B\u5750\u6807\u7CFB\uFF1A\r
+\r
+- \`camera\`\uFF1A\u76F8\u673A\u5750\u6807\uFF1B\r
+- \`reconstruction\`\uFF1ALingBot-Map \u8F93\u51FA\u5750\u6807\uFF1B\r
+- \`greenhouse\`\uFF1A\u6E29\u5BA4\u4E1A\u52A1\u5750\u6807\uFF1B\r
+- \`map\`\uFF1A\u673A\u5668\u4EBA\u5BFC\u822A\u5730\u56FE\u5750\u6807\uFF1B\r
+- \`base_link\`\uFF1A\u673A\u5668\u4EBA\u672C\u4F53\u5750\u6807\u3002\r
+\r
+\u53D1\u5E03\u5730\u56FE\u524D\u9700\u8981\u7528\u5DF2\u77E5\u5C3A\u5BF8\u6807\u5FD7\u7269\u3001\u6E29\u5BA4\u7ED3\u6784\u5C3A\u5BF8\u6216\u878D\u5408\u91CC\u7A0B\u8BA1\u786E\u5B9A\u5C3A\u5EA6\uFF0C\u8BB0\u5F55\u53D8\u6362\u77E9\u9635\u548C\u6807\u5B9A\u7248\u672C\u3002\u6BCF\u6B21\u76F8\u673A\u5B89\u88C5\u4F4D\u7F6E\u3001\u7126\u8DDD\u6216\u88C1\u526A\u7B56\u7565\u53D8\u5316\u540E\u91CD\u65B0\u9A8C\u8BC1\u3002\r
+\r
+### 14.5 \u5206\u9636\u6BB5\u5B9E\u65BD\r
+\r
+1. **\u79BB\u7EBF\u9A8C\u8BC1**\uFF1A\u5BF9\u5355\u5EA7\u6E29\u5BA4\u5F55\u5236\u89C6\u9891\uFF0C\u5F97\u5230\u70B9\u4E91\u548C\u76F8\u673A\u8F68\u8FF9\uFF1B\r
+2. **Web \u5C55\u793A**\uFF1A\u538B\u7F29\u4E3A GLB/\u5206\u5757\u70B9\u4E91\uFF0C\u5728\u5B9E\u666F\u9875\u52A0\u8F7D\uFF1B\r
+3. **\u5C3A\u5EA6\u4E0E\u5730\u9762**\uFF1A\u5EFA\u7ACB\u771F\u5B9E\u7C73\u5236\u5C3A\u5EA6\uFF0C\u8BC6\u522B\u5730\u9762\u548C\u56FA\u5B9A\u969C\u788D\uFF1B\r
+4. **\u5730\u56FE\u8F6C\u6362**\uFF1A\u751F\u6210\u4E8C\u7EF4\u5360\u636E\u6805\u683C\u6216\u4E09\u7EF4\u4F53\u7D20\u5730\u56FE\uFF1B\r
+5. **\u56DE\u653E\u5BFC\u822A**\uFF1A\u4EFF\u771F\u6216\u5F55\u5305\u9A8C\u8BC1\u5B9A\u4F4D\u548C\u89C4\u5212\uFF1B\r
+6. **\u4F4E\u901F\u5C01\u95ED\u6D4B\u8BD5**\uFF1A\u7A7A\u68DA\u3001\u9650\u901F\u3001\u4EBA\u5DE5\u6025\u505C\uFF1B\r
+7. **\u6709\u4EBA\u73AF\u5883\u6D4B\u8BD5**\uFF1A\u52A0\u5165\u52A8\u6001\u969C\u788D\u548C\u72EC\u7ACB\u5B89\u5168\u5C42\uFF1B\r
+8. **\u7248\u672C\u7BA1\u7406**\uFF1A\u68DA\u5185\u5E03\u5C40\u53D8\u5316\u540E\u91CD\u65B0\u5EFA\u56FE\u5E76\u652F\u6301\u56DE\u6EDA\u3002\r
+\r
+### 14.6 \u9A8C\u6536\u6307\u6807\r
+\r
+- \u8F68\u8FF9\u5B8C\u6574\u7387\u548C\u91CD\u5EFA\u6210\u529F\u7387\uFF1B\r
+- \u7C73\u5236\u5C3A\u5EA6\u8BEF\u5DEE\u3001\u95ED\u73AF\u6F02\u79FB\u548C\u91CD\u590D\u5EFA\u56FE\u4E00\u81F4\u6027\uFF1B\r
+- \u5730\u9762/\u969C\u788D\u7269\u5206\u7C7B\u51C6\u786E\u7387\uFF1B\r
+- \u5360\u636E\u5730\u56FE\u7684\u6F0F\u969C\u788D\u7387\u548C\u865A\u5047\u969C\u788D\u7387\uFF1B\r
+- \u5B9A\u4F4D\u6210\u529F\u7387\u3001\u8DEF\u5F84\u6210\u529F\u7387\u548C\u6700\u5C0F\u5B89\u5168\u8DDD\u79BB\uFF1B\r
+- \u4E0D\u540C\u5149\u7167\u3001\u4F5C\u7269\u9AD8\u5EA6\u3001\u901A\u9053\u79EF\u6C34\u548C\u4EBA\u5458\u8D70\u52A8\u6761\u4EF6\u4E0B\u7684\u9C81\u68D2\u6027\uFF1B\r
+- \u5730\u56FE\u52A0\u8F7D\u65F6\u95F4\u3001\u524D\u7AEF\u5E27\u7387\u548C\u4EA7\u7269\u5927\u5C0F\u3002\r
+\r
+## 15. \u5B89\u5168\u8BBE\u8BA1\r
+\r
+### 15.1 Web \u4E0E API\r
+\r
+- \u5168\u7AD9 HTTPS\uFF1B\r
+- JWT \u5BC6\u94A5\u5B9A\u671F\u8F6E\u6362\uFF0C\u8BBE\u7F6E\u5408\u7406\u8FC7\u671F\u65F6\u95F4\uFF1B\r
+- CORS \u53EA\u5141\u8BB8\u53EF\u4FE1\u57DF\u540D\uFF1B\r
+- \u767B\u5F55\u3001\u4EBA\u8138\u548C AI \u63A5\u53E3\u9650\u6D41\uFF1B\r
+- \u8BBE\u5907\u63A7\u5236\u5199\u5165\u64CD\u4F5C\u8005\u3001\u65F6\u95F4\u3001\u65E7\u503C\u3001\u65B0\u503C\u548C\u7ED3\u679C\uFF1B\r
+- \u8F93\u51FA\u7F16\u7801\u5E76\u9650\u5236\u4E0A\u4F20\u7C7B\u578B\u3001\u5927\u5C0F\u548C\u5206\u8FA8\u7387\uFF1B\r
+- \u4F9D\u8D56\u6F0F\u6D1E\u626B\u63CF\u548C\u8F6F\u4EF6\u7269\u6599\u6E05\u5355\uFF1B\r
+- \u670D\u52A1\u9519\u8BEF\u4E0D\u5F97\u6CC4\u9732\u5806\u6808\u3001\u6570\u636E\u5E93\u53E3\u4EE4\u6216\u7B2C\u4E09\u65B9\u5BC6\u94A5\u3002\r
+\r
+### 15.2 \u4EBA\u8138\u6570\u636E\r
+\r
+\u4EBA\u8138\u5C5E\u4E8E\u654F\u611F\u4E2A\u4EBA\u4FE1\u606F\u3002\u4E0A\u7EBF\u524D\u5E94\u83B7\u5F97\u5355\u72EC\u540C\u610F\uFF0C\u8BF4\u660E\u76EE\u7684\u3001\u4FDD\u5B58\u671F\u9650\u3001\u5220\u9664\u65B9\u5F0F\u548C\u7B2C\u4E09\u65B9\u5904\u7406\u65B9\u3002\u63D0\u4F9B\u89E3\u7ED1\u548C\u5220\u9664\u80FD\u529B\uFF0C\u9650\u5236\u7BA1\u7406\u5458\u8BBF\u95EE\u5E76\u4FDD\u7559\u5BA1\u8BA1\u8BB0\u5F55\u3002\u6444\u50CF\u5934\u91C7\u96C6\u53EA\u662F\u8F93\u5165\u9650\u5236\uFF0C\u4E0D\u80FD\u66FF\u4EE3\u6D3B\u4F53\u68C0\u6D4B\u3002\r
+\r
+### 15.3 \u673A\u5668\u4EBA\u5B89\u5168\r
+\r
+\u5730\u56FE\u6216\u8BC6\u522B\u6A21\u578B\u8F93\u51FA\u4E0D\u5F97\u76F4\u63A5\u7ED5\u8FC7\u5B89\u5168\u63A7\u5236\u9A71\u52A8\u6267\u884C\u5668\u3002\u673A\u5668\u4EBA\u5E94\u6709\u72EC\u7ACB\u6025\u505C\u3001\u9650\u901F\u3001\u78B0\u649E\u4FDD\u62A4\u3001\u5931\u8054\u505C\u8F66\u548C\u4EBA\u5DE5\u63A5\u7BA1\uFF1B\u65B0\u5730\u56FE\u53D1\u5E03\u9700\u8981\u5BA1\u6838\u548C\u7B7E\u540D\uFF0C\u5BFC\u822A\u5931\u8D25\u65F6\u8FDB\u5165\u5B89\u5168\u72B6\u6001\u3002\r
+\r
+## 16. \u6D4B\u8BD5\u7B56\u7565\r
+\r
+### 16.1 \u81EA\u52A8\u6D4B\u8BD5\r
+\r
+\`\`\`bash\r
+./mvnw test\r
+cd landing && npm run build\r
+cd ../frontend && npm run build\r
+\`\`\`\r
+\r
+\u540E\u7AEF\u5E94\u8986\u76D6\uFF1A\u6CE8\u518C\u3001\u91CD\u590D\u90AE\u7BB1\u3001\u6B63\u786E/\u9519\u8BEF\u5BC6\u7801\u3001JWT\u3001Dashboard \u67E5\u8BE2\u3001\u6E29\u5BA4\u8BE6\u60C5\u3001\u8BBE\u5907\u66F4\u65B0\u3001\u704C\u6E89\u53C2\u6570\u8FB9\u754C\u3001\u544A\u8B66\u5904\u7F6E\u548C\u7528\u6237\u72B6\u6001\u9694\u79BB\u3002\r
+\r
+### 16.2 \u524D\u7AEF\u4EBA\u5DE5\u56DE\u5F52\r
+\r
+1. \u8BBF\u95EE\u5B98\u7F51\u6240\u6709\u5BFC\u822A\u9875\uFF1B\r
+2. \u63D0\u4EA4\u8054\u7CFB\u8868\u5355\u5E76\u6838\u5BF9\u76EE\u6807\u90AE\u7BB1\uFF1B\r
+3. \u6CE8\u518C\u65B0\u7528\u6237\uFF1B\r
+4. \u767B\u5F55\u3001\u9000\u51FA\u548C\u9519\u8BEF\u5BC6\u7801\u63D0\u793A\uFF1B\r
+5. \u5141\u8BB8/\u62D2\u7EDD\u6444\u50CF\u5934\u6743\u9650\uFF1B\r
+6. \u8FDB\u5165\u5DE5\u4F5C\u53F0\u5E76\u5207\u6362\u4E09\u79CD\u89C6\u89D2\uFF1B\r
+7. \u64CD\u4F5C\u4E03\u4E2A\u529F\u80FD\u6A21\u5757\uFF1B\r
+8. \u53CC\u51FB\u6BCF\u5EA7\u5927\u68DA\u5E76\u786E\u8BA4\u8DEF\u7531\u548C\u4F5C\u7269\u5DEE\u5F02\uFF1B\r
+9. \u5207\u6362\u5B9E\u666F/\u6570\u5B57\u5B6A\u751F\uFF1B\r
+10. \u68C0\u67E5\u53F3\u4FA7\u680F\u6EDA\u52A8\u3001\u8BBE\u5907\u3001\u690D\u682A\u5B9A\u4F4D\uFF1B\r
+11. \u64AD\u653E\u76D1\u63A7\u89C6\u9891\u5E76\u6838\u5BF9\u68C0\u6D4B\u6846\u65F6\u95F4\u540C\u6B65\uFF1B\r
+12. \u68C0\u67E5\u7A84\u5C4F\u3001\u7F29\u653E\u548C\u4F4E\u6027\u80FD\u8BBE\u5907\u8868\u73B0\u3002\r
+\r
+### 16.3 \u7B97\u6CD5\u6D4B\u8BD5\r
+\r
+\u7B97\u6CD5\u8BC4\u4F30\u5FC5\u987B\u6309\u6E29\u5BA4\u3001\u65F6\u6BB5\u6216\u89C6\u9891\u5206\u7EC4\uFF0C\u4E0D\u80FD\u628A\u76F8\u90BB\u5E27\u968F\u673A\u62C6\u5230\u8BAD\u7EC3\u96C6\u4E0E\u6D4B\u8BD5\u96C6\u9020\u6210\u6570\u636E\u6CC4\u6F0F\u3002YOLO \u81F3\u5C11\u8BB0\u5F55 precision\u3001recall\u3001mAP\u3001\u8DDF\u8E2A ID \u5207\u6362\u548C\u5B9E\u65F6\u5EF6\u8FDF\uFF1B\u5EFA\u56FE\u8BB0\u5F55\u5C3A\u5EA6\u3001\u8F68\u8FF9\u3001\u5730\u56FE\u548C\u5BFC\u822A\u6307\u6807\uFF1B\u5F00\u653E\u8BCD\u6C47\u6A21\u578B\u5EFA\u7ACB\u56FA\u5B9A\u67E5\u8BE2\u96C6\u5408\u53CA\u4EBA\u5DE5\u6807\u6CE8\u57FA\u51C6\u3002\r
+\r
+## 17. \u8FD0\u7EF4\u4E0E\u53EF\u89C2\u6D4B\u6027\r
+\r
+\u5EFA\u8BAE\u91C7\u96C6\uFF1A\r
+\r
+- HTTP \u8BF7\u6C42\u6570\u3001P95/P99 \u5EF6\u8FDF\u30014xx/5xx\uFF1B\r
+- \u6570\u636E\u5E93\u8FDE\u63A5\u6C60\u3001\u6162\u67E5\u8BE2\u548C\u78C1\u76D8\u5BB9\u91CF\uFF1B\r
+- \u767B\u5F55\u5931\u8D25\u3001\u4EBA\u8138\u670D\u52A1\u5931\u8D25\u3001AI \u8C03\u7528\u5931\u8D25\uFF1B\r
+- \u8BBE\u5907\u63A7\u5236\u6210\u529F\u7387\u548C\u544A\u8B66\u79EF\u538B\uFF1B\r
+- \u6444\u50CF\u5934\u5728\u7EBF\u7387\u3001\u89C6\u9891\u5E27\u7387\u548C\u63A8\u7406\u961F\u5217\uFF1B\r
+- GPU \u663E\u5B58\u3001\u5229\u7528\u7387\u3001\u6E29\u5EA6\u548C\u6A21\u578B\u8017\u65F6\uFF1B\r
+- \u5EFA\u56FE\u4EFB\u52A1\u8017\u65F6\u3001\u5931\u8D25\u9636\u6BB5\u548C\u4EA7\u7269\u5927\u5C0F\u3002\r
+\r
+\u65E5\u5FD7\u5E94\u5305\u542B\u8BF7\u6C42 ID\u3001\u7528\u6237 ID\u3001\u519C\u573A ID \u548C\u4EFB\u52A1 ID\uFF0C\u4F46\u4E0D\u5F97\u8BB0\u5F55\u5BC6\u7801\u3001JWT \u5168\u6587\u3001\u4EBA\u8138\u539F\u56FE\u6216\u7B2C\u4E09\u65B9\u5BC6\u94A5\u3002\r
+\r
+## 18. \u5E38\u89C1\u6545\u969C\r
+\r
+### 18.1 \u542F\u52A8\u65F6\u62A5\u6570\u636E\u5E93\u9519\u8BEF\r
+\r
+\u786E\u8BA4 MySQL \u8FD0\u884C\u3001\u6570\u636E\u5E93\u5B58\u5728\u3001\u8D26\u53F7\u6709\u6743\u9650\u3001URL \u65F6\u533A\u6B63\u786E\u3002\u4F7F\u7528\u547D\u4EE4\u884C\u5BA2\u6237\u7AEF\u9A8C\u8BC1\u540C\u4E00\u7EC4\u51ED\u636E\uFF0C\u4E0D\u8981\u53EA\u4FEE\u6539\u524D\u7AEF\u914D\u7F6E\u3002\r
+\r
+### 18.2 \u5237\u65B0\u5E73\u53F0\u6DF1\u5C42\u8DEF\u7531\u51FA\u73B0 404\r
+\r
+\u786E\u8BA4\u5DF2\u6784\u5EFA\u5230 \`static/platform\`\uFF0C\u670D\u52A1\u5668\u914D\u7F6E\u4E86 SPA \u56DE\u9000\uFF0C\u5E76\u68C0\u67E5 \`base\` \u8DEF\u5F84\u548C\u8D44\u6E90 URL \u662F\u5426\u4E3A \`/platform/\`\u3002\r
+\r
+### 18.3 \u767B\u5F55\u6210\u529F\u4F46 API \u8FD4\u56DE 401\r
+\r
+\u68C0\u67E5\u8BF7\u6C42\u662F\u5426\u643A\u5E26 Bearer Token\u3001Token \u662F\u5426\u8FC7\u671F\u3001JWT_SECRET \u662F\u5426\u5728\u91CD\u542F\u540E\u53D8\u5316\uFF0C\u4EE5\u53CA\u6D4F\u89C8\u5668\u662F\u5426\u4ECD\u4FDD\u5B58\u65E7\u4F1A\u8BDD\u3002\r
+\r
+### 18.4 \u6444\u50CF\u5934\u4E0D\u53EF\u7528\r
+\r
+\u9664 localhost \u5916\u6D4F\u89C8\u5668\u901A\u5E38\u8981\u6C42 HTTPS\uFF1B\u68C0\u67E5\u6743\u9650\u3001\u8BBE\u5907\u5360\u7528\u3001\u7CFB\u7EDF\u9690\u79C1\u8BBE\u7F6E\u3002\u9879\u76EE\u4E0D\u5141\u8BB8\u901A\u8FC7\u4E0A\u4F20\u56FE\u7247\u66FF\u4EE3\u5237\u8138\u91C7\u96C6\u3002\r
+\r
+### 18.5 3D \u573A\u666F\u7A7A\u767D\u6216\u5361\u987F\r
+\r
+\u68C0\u67E5 WebGL\u3001\u63A7\u5236\u53F0\u8D44\u6E90\u9519\u8BEF\u548C\u663E\u5361\u9A71\u52A8\uFF1B\u964D\u4F4E\u50CF\u7D20\u6BD4\u3001\u9634\u5F71\u3001\u690D\u682A\u5B9E\u4F8B\u6570\u6216\u6A21\u578B\u7EC6\u8282\u3002\u786E\u8BA4\u7EC4\u4EF6\u5378\u8F7D\u65F6\u91CA\u653E\u8D44\u6E90\u3002\r
+\r
+### 18.6 \u68C0\u6D4B\u6846\u4E0E\u89C6\u9891\u9519\u4F4D\r
+\r
+\u786E\u8BA4 JSON \u5BF9\u5E94\u540C\u4E00\u89C6\u9891\u7248\u672C\u3001\u5206\u8FA8\u7387\u548C\u65F6\u95F4\u57FA\u51C6\uFF1B\u91CD\u65B0\u8FD0\u884C\u5BFC\u51FA\u811A\u672C\uFF0C\u907F\u514D\u5BF9\u89C6\u9891\u8F6C\u7801\u540E\u7EE7\u7EED\u4F7F\u7528\u65E7\u7ED3\u679C\u3002\r
+\r
+### 18.7 AI \u95EE\u519C\u5931\u8D25\r
+\r
+\u68C0\u67E5 API Key\u3001Base URL\u3001\u6A21\u578B\u540D\u3001\u7F51\u7EDC\u3001\u4F59\u989D\u3001\u8D85\u65F6\u548C\u4E0A\u6E38\u9650\u6D41\u3002\u524D\u7AEF\u5E94\u663E\u793A\u53EF\u7406\u89E3\u7684\u5931\u8D25\u63D0\u793A\uFF0C\u4E0D\u80FD\u4F2A\u9020\u6A21\u578B\u56DE\u7B54\u3002\r
+\r
+## 19. \u53D1\u5E03\u68C0\u67E5\u6E05\u5355\r
+\r
+- [ ] \u4E24\u4E2A\u524D\u7AEF\u5747\u4ECE\u6E90\u7801\u6210\u529F\u6784\u5EFA\uFF1B\r
+- [ ] Maven \u6D4B\u8BD5\u5168\u90E8\u901A\u8FC7\uFF1B\r
+- [ ] \u6570\u636E\u5E93\u8FC1\u79FB\u3001\u5907\u4EFD\u548C\u6062\u590D\u65B9\u6848\u5DF2\u9A8C\u8BC1\uFF1B\r
+- [ ] \u751F\u4EA7 JWT\u3001\u6570\u636E\u5E93\u548C\u7B2C\u4E09\u65B9\u5BC6\u94A5\u5DF2\u66FF\u6362\uFF1B\r
+- [ ] HTTPS\u3001CORS\u3001\u9650\u6D41\u548C\u5B89\u5168\u54CD\u5E94\u5934\u5DF2\u914D\u7F6E\uFF1B\r
+- [ ] \u6CE8\u518C\u3001\u5BC6\u7801\u767B\u5F55\u3001\u6444\u50CF\u5934\u5237\u8138\u548C\u89E3\u7ED1\u5DF2\u56DE\u5F52\uFF1B\r
+- [ ] \u5DE5\u4F5C\u53F0\u3001\u4E03\u4E2A\u6A21\u5757\u548C\u5168\u90E8\u6E29\u5BA4\u5165\u53E3\u5DF2\u56DE\u5F52\uFF1B\r
+- [ ] \u5B9E\u666F/\u6570\u5B57\u5B6A\u751F\u3001\u53F3\u4FA7\u680F\u6EDA\u52A8\u548C\u68C0\u6D4B\u6846\u5DF2\u56DE\u5F52\uFF1B\r
+- [ ] \u8BBE\u5907\u63A7\u5236\u6709\u6388\u6743\u3001\u5BA1\u8BA1\u548C\u5931\u8D25\u56DE\u6EDA\uFF1B\r
+- [ ] \u76D1\u63A7\u3001\u544A\u8B66\u3001\u65E5\u5FD7\u8131\u654F\u548C\u5BB9\u91CF\u9608\u503C\u5DF2\u914D\u7F6E\uFF1B\r
+- [ ] LingBot-Map \u4E0E LocateAnything \u82E5\u672A\u5B8C\u6210\u9A8C\u6536\uFF0C\u754C\u9762\u660E\u786E\u6807\u6CE8\u4E3A\u89C4\u5212/\u5B9E\u9A8C\u80FD\u529B\uFF1B\r
+- [ ] \u673A\u5668\u4EBA\u5B9E\u673A\u6D4B\u8BD5\u5177\u5907\u6025\u505C\u3001\u9650\u901F\u3001\u9694\u79BB\u533A\u548C\u4EBA\u5DE5\u76D1\u62A4\u3002\r
+\r
+## 20. \u6280\u672F\u6F14\u8FDB\u4F18\u5148\u7EA7\r
+\r
+1. \u5F15\u5165\u6570\u636E\u5E93\u8FC1\u79FB\u3001\u751F\u4EA7\u914D\u7F6E\u6A21\u677F\u548C CI \u6784\u5EFA\uFF1B\r
+2. \u8865\u9F50\u524D\u7AEF\u7EC4\u4EF6\u6D4B\u8BD5\u4E0E\u7AEF\u5230\u7AEF\u56DE\u5F52\uFF1B\r
+3. \u5C06 YOLO \u79BB\u7EBF\u94FE\u8DEF\u5347\u7EA7\u4E3A\u72EC\u7ACB\u5B9E\u65F6\u63A8\u7406\u670D\u52A1\uFF1B\r
+4. \u5B8C\u6210 LingBot-Map \u5355\u68DA\u79BB\u7EBF\u91CD\u5EFA\u548C Web \u5C55\u793A PoC\uFF1B\r
+5. \u5B8C\u6210\u5C3A\u5EA6\u6807\u5B9A\u3001\u5360\u636E\u5730\u56FE\u8F6C\u6362\u548C\u4EFF\u771F\u5BFC\u822A\uFF1B\r
+6. \u5728\u76EE\u6807 GPU \u4E0A\u8BC4\u4F30 LocateAnything\uFF0C\u5F62\u6210 YOLO + \u5F00\u653E\u8BCD\u6C47\u5206\u5C42\u65B9\u6848\uFF1B\r
+7. \u5728\u4E25\u683C\u5B89\u5168\u6761\u4EF6\u4E0B\u5F00\u5C55\u673A\u5668\u4EBA\u5C01\u95ED\u573A\u5730\u6D4B\u8BD5\uFF1B\r
+8. \u5EFA\u7ACB\u6570\u636E\u3001\u6A21\u578B\u3001\u5730\u56FE\u548C\u90E8\u7F72\u7248\u672C\u7684\u7EDF\u4E00\u8FFD\u8E2A\u4F53\u7CFB\u3002\r
+\r
+## 21. \u4E94\u9879\u89C4\u5212\u7684\u5DE5\u7A0B\u5B9E\u65BD\u84DD\u56FE\r
+\r
+\u672C\u7AE0\u5C06 3.2 \u8282\u5217\u51FA\u7684\u89C4\u5212\u80FD\u529B\u5C55\u5F00\u4E3A\u53EF\u6267\u884C\u65B9\u6848\u3002\u5EFA\u8BAE\u9075\u5FAA\u201C\u5148\u79BB\u7EBF\u9A8C\u8BC1\u3001\u518D\u5728\u7EBF\u89C2\u6D4B\u3001\u6700\u540E\u95ED\u73AF\u63A7\u5236\u201D\u7684\u987A\u5E8F\u3002\u4EFB\u4F55\u5B9E\u9A8C\u6A21\u578B\u90FD\u4E0D\u80FD\u672A\u7ECF\u4EBA\u5DE5\u5BA1\u6838\u76F4\u63A5\u63A7\u5236\u704C\u6E89\u8BBE\u5907\u6216\u673A\u5668\u4EBA\u3002\r
+\r
+### 21.1 \u603B\u4F53\u76EE\u6807\u67B6\u6784\r
+\r
+\`\`\`mermaid\r
+flowchart TB\r
+    subgraph Edge[\u519C\u573A\u8FB9\u7F18\u8282\u70B9]\r
+        CAM[\u5355\u76EE\u6444\u50CF\u5934/RTSP]\r
+        ROBOT[\u519C\u4E1A\u673A\u5668\u4EBA ROS 2]\r
+        YOLO[YOLO \u5B9E\u65F6\u63A8\u7406]\r
+        BUFFER[\u65AD\u7F51\u7F13\u51B2]\r
+    end\r
+\r
+    subgraph AI[GPU \u7B97\u6CD5\u670D\u52A1]\r
+        MAP[LingBot-Map \u91CD\u5EFA\u670D\u52A1]\r
+        LOC[LocateAnything \u5F00\u653E\u8BCD\u6C47\u5B9A\u4F4D]\r
+        POST[\u70B9\u4E91\u4E0E\u5730\u56FE\u540E\u5904\u7406]\r
+    end\r
+\r
+    subgraph Platform[\u4E1A\u52A1\u5E73\u53F0]\r
+        API[Spring Boot API]\r
+        MQ[\u4E8B\u4EF6\u603B\u7EBF]\r
+        WS[WebSocket/SSE \u7F51\u5173]\r
+        DB[(MySQL \u5143\u6570\u636E)]\r
+        OBJ[(S3 \u517C\u5BB9\u5BF9\u8C61\u5B58\u50A8)]\r
+        OBS[\u65E5\u5FD7/\u6307\u6807/\u94FE\u8DEF\u8FFD\u8E2A]\r
+    end\r
+\r
+    CAM --> YOLO\r
+    CAM --> BUFFER\r
+    BUFFER --> MAP\r
+    YOLO --> MQ\r
+    YOLO --> LOC\r
+    MAP --> POST\r
+    POST --> OBJ\r
+    POST --> ROBOT\r
+    MQ --> API\r
+    API --> DB\r
+    API --> OBJ\r
+    MQ --> WS\r
+    WS --> WEB[Vue/Three.js]\r
+    Platform --> OBS\r
+    AI --> OBS\r
+    Edge --> OBS\r
+\`\`\`\r
+\r
+\u804C\u8D23\u8FB9\u754C\uFF1ASpring Boot \u7BA1\u7406\u7528\u6237\u3001\u6743\u9650\u3001\u4EFB\u52A1\u548C\u4E1A\u52A1\u72B6\u6001\uFF1BPython/GPU \u670D\u52A1\u8D1F\u8D23\u6A21\u578B\u63A8\u7406\uFF1B\u5BF9\u8C61\u5B58\u50A8\u4FDD\u5B58\u89C6\u9891\u3001\u70B9\u4E91\u548C\u5730\u56FE\u5927\u6587\u4EF6\uFF1BMySQL \u53EA\u4FDD\u5B58\u53EF\u67E5\u8BE2\u5143\u6570\u636E\uFF1BROS 2 \u8D1F\u8D23\u673A\u5668\u4EBA\u5B9A\u4F4D\u3001\u89C4\u5212\u548C\u63A7\u5236\u3002\r
+\r
+## 22. LingBot-Map \u5355\u76EE\u4E09\u7EF4\u91CD\u5EFA\u89C4\u5212\r
+\r
+\u5B98\u65B9\u4ED3\u5E93\uFF1A[robbyant/lingbot-map](https://github.com/robbyant/lingbot-map)\u3002\u9879\u76EE\u652F\u6301\u56FE\u7247\u76EE\u5F55\u6216\u89C6\u9891\u8F93\u5165\uFF0C\u5E76\u63D0\u4F9B \`streaming\` \u4E0E \`windowed\` \u6A21\u5F0F\u3002\u5B98\u65B9\u793A\u4F8B\u5BF9\u957F\u4E8E 500 \u5E27\u7684\u5E8F\u5217\u63A8\u8350\u7A97\u53E3\u6A21\u5F0F\uFF0C\u5173\u952E\u5E27\u3001\u7A97\u53E3\u5927\u5C0F\u3001\u91CD\u53E0\u957F\u5EA6\u3001\u91C7\u6837 FPS \u548C\u76F8\u673A\u4F18\u5316\u6B21\u6570\u5747\u53EF\u914D\u7F6E\u3002\r
+\r
+### 22.1 \u4E1A\u52A1\u76EE\u6807\r
+\r
+1. \u4F7F\u7528\u666E\u901A RGB \u5355\u76EE\u6444\u50CF\u5934\u91C7\u96C6\u68DA\u5185\u901A\u9053\u3001\u68DA\u67B6\u3001\u4F5C\u7269\u548C\u56FA\u5B9A\u8BBE\u65BD\uFF1B\r
+2. \u751F\u6210\u5E26\u989C\u8272\u70B9\u4E91\u3001\u76F8\u673A\u8F68\u8FF9\u548C\u53EF\u4F9B\u7F51\u9875\u5C55\u793A\u7684\u8F7B\u91CF\u4E09\u7EF4\u4EA7\u7269\uFF1B\r
+3. \u5728\u5B8C\u6210\u5C3A\u5EA6\u6807\u5B9A\u4E0E\u5730\u56FE\u540E\u5904\u7406\u540E\uFF0C\u4E3A\u673A\u5668\u4EBA\u63D0\u4F9B\u5019\u9009\u5BFC\u822A\u5E95\u56FE\uFF1B\r
+4. \u901A\u8FC7\u5730\u56FE\u7248\u672C\u5BF9\u6BD4\u8BC6\u522B\u68DA\u5185\u7ED3\u6784\u6216\u79CD\u690D\u5E03\u5C40\u53D8\u5316\u3002\r
+\r
+\u7B2C\u4E00\u9636\u6BB5\u4E0D\u627F\u8BFA\u5B9E\u65F6 SLAM\uFF0C\u4E5F\u4E0D\u627F\u8BFA\u5355\u6B21\u91CD\u5EFA\u7ED3\u679C\u53EF\u76F4\u63A5\u5BFC\u822A\u3002\u76EE\u6807\u5E94\u662F\u201C\u7A33\u5B9A\u79BB\u7EBF\u91CD\u5EFA\u5E76\u53EF\u4EBA\u5DE5\u5BA1\u6838\u201D\u3002\r
+\r
+### 22.2 \u91C7\u96C6\u89C4\u8303\r
+\r
+| \u9879\u76EE | \u5EFA\u8BAE\u89C4\u5219 | \u539F\u56E0 |\r
+|---|---|---|\r
+| \u76F8\u673A | \u56FA\u5B9A\u7126\u8DDD\u3001\u5173\u95ED\u6570\u5B57\u53D8\u7126\uFF0C\u8BB0\u5F55\u5185\u53C2 | \u4FDD\u6301\u6295\u5F71\u6A21\u578B\u4E00\u81F4 |\r
+| \u5206\u8FA8\u7387 | \u539F\u89C6\u9891\u4FDD\u7559\uFF0C\u63A8\u7406\u6309\u6A21\u578B\u8981\u6C42\u7F29\u653E | \u4FBF\u4E8E\u4EE5\u540E\u91CD\u7B97 |\r
+| \u5E27\u7387 | \u539F\u59CB 25/30 FPS\uFF0C\u63A8\u7406\u5148\u8BD5 5\u201310 FPS | \u964D\u4F4E\u76F8\u90BB\u5E27\u5197\u4F59 |\r
+| \u8FD0\u52A8 | \u4F4E\u901F\u3001\u5E73\u7A33\u3001\u907F\u514D\u6025\u8F6C\u548C\u5927\u5E45\u6296\u52A8 | \u51CF\u5C11\u8FD0\u52A8\u6A21\u7CCA |\r
+| \u8DEF\u7EBF | \u901A\u9053\u5F80\u8FD4\u5E76\u5305\u542B\u53EF\u8BC6\u522B\u7684\u4EA4\u53C9\u89C6\u89D2 | \u63D0\u5347\u8986\u76D6\u548C\u5BF9\u9F50\u80FD\u529B |\r
+| \u5149\u7167 | \u5206\u522B\u91C7\u96C6\u767D\u5929\u3001\u80CC\u5149\u548C\u8865\u5149\u6761\u4EF6 | \u68C0\u9A8C\u6E29\u5BA4\u5149\u7167\u9C81\u68D2\u6027 |\r
+| \u6807\u5C3A | \u8BBE\u7F6E\u5DF2\u77E5\u5C3A\u5BF8\u6807\u5FD7\u7269\u6216\u6D4B\u91CF\u63A7\u5236\u70B9 | \u6062\u590D\u7C73\u5236\u5C3A\u5EA6 |\r
+| \u52A8\u6001\u7269\u4F53 | \u9996\u6B21\u5EFA\u56FE\u5C3D\u91CF\u6E05\u573A | \u964D\u4F4E\u4EBA\u5458\u3001\u673A\u5668\u4EBA\u9020\u6210\u7684\u4F2A\u70B9 |\r
+\r
+\u6BCF\u6B21\u91C7\u96C6\u5FC5\u987B\u8BB0\u5F55\uFF1A\`tenantId\`\u3001\`farmId\`\u3001\`greenhouseId\`\u3001\u76F8\u673A ID\u3001\u5185\u53C2\u7248\u672C\u3001\u89C6\u9891\u5F00\u59CB/\u7ED3\u675F\u65F6\u95F4\u3001\u91C7\u96C6\u8DEF\u7EBF\u3001\u64CD\u4F5C\u8005\u548C\u6807\u5C3A\u6570\u636E\u3002\r
+\r
+### 22.3 \u91CD\u5EFA\u4EFB\u52A1\u914D\u7F6E\r
+\r
+\u5EFA\u8BAE\u4FDD\u5B58\u4EE5\u4E0B\u914D\u7F6E\uFF0C\u800C\u4E0D\u662F\u628A\u547D\u4EE4\u53C2\u6570\u6563\u843D\u5728\u811A\u672C\u4E2D\uFF1A\r
+\r
+\`\`\`yaml\r
+mappingJob:\r
+  mode: windowed\r
+  sampleFps: 8\r
+  imageSize: 518\r
+  windowSize: 64\r
+  overlapSize: 16\r
+  keyframeInterval: 2\r
+  cameraIterations: 4\r
+  offloadToCpu: true\r
+  modelVersion: lingbot-map@pinned-commit\r
+\`\`\`\r
+\r
+- \u77ED\u89C6\u9891\u5148\u4F7F\u7528 \`streaming\`\uFF0C\u9010\u5E27\u5904\u7406\u5E76\u5229\u7528 KV cache\uFF1B\r
+- \u957F\u5E8F\u5217\u4F7F\u7528 \`windowed\`\uFF0C\u901A\u8FC7\u91CD\u53E0\u5E27\u8FDB\u884C\u7A97\u53E3\u8854\u63A5\uFF1B\r
+- \`keyframeInterval\` \u8D8A\u5927\uFF0C\u663E\u5B58\u4E0E\u8017\u65F6\u8D8A\u4F4E\uFF0C\u4F46\u53EF\u80FD\u635F\u5931\u5FEB\u901F\u8F6C\u5F2F\u5904\u7684\u4FE1\u606F\uFF1B\r
+- \`cameraIterations=1\` \u53EF\u7528\u4E8E\u5FEB\u901F\u9884\u89C8\uFF0C\u6B63\u5F0F\u53D1\u5E03\u4F7F\u7528\u7ECF\u8FC7\u9A8C\u8BC1\u7684\u914D\u7F6E\uFF1B\r
+- \u6A21\u578B\u4ED3\u5E93\u5FC5\u987B\u56FA\u5B9A commit \u548C\u6743\u91CD\u6821\u9A8C\u548C\uFF0C\u907F\u514D\u540C\u4E00\u4EFB\u52A1\u65E0\u6CD5\u590D\u73B0\u3002\r
+\r
+### 22.4 \u4EFB\u52A1 API \u4E0E\u72B6\u6001\u673A\r
+\r
+\`\`\`http\r
+POST /api/v1/farms/{farmId}/greenhouses/{greenhouseId}/mapping-sessions\r
+Idempotency-Key: <uuid>\r
+Content-Type: application/json\r
+\r
+{\r
+  "cameraId": "cam-gh01-01",\r
+  "captureType": "VIDEO",\r
+  "calibrationVersion": "calib-2026-08-01",\r
+  "requestedMode": "WINDOWED"\r
+}\r
+\`\`\`\r
+\r
+\u670D\u52A1\u8FD4\u56DE \`sessionId\` \u548C\u9884\u7B7E\u540D\u4E0A\u4F20\u5730\u5740\u3002\u5927\u6587\u4EF6\u4E0D\u7ECF\u8FC7 Spring Boot \u8F6C\u53D1\uFF0C\u5E94\u7531\u5BA2\u6237\u7AEF\u76F4\u63A5\u5206\u7247\u4E0A\u4F20\u5BF9\u8C61\u5B58\u50A8\u3002\r
+\r
+\u72B6\u6001\u673A\uFF1A\r
+\r
+\`\`\`text\r
+CREATED \u2192 UPLOADING \u2192 VALIDATING \u2192 QUEUED \u2192 RECONSTRUCTING\r
+        \u2192 POST_PROCESSING \u2192 REVIEW_REQUIRED \u2192 PUBLISHED\r
+\`\`\`\r
+\r
+\u4EFB\u4F55\u9636\u6BB5\u53EF\u8FDB\u5165 \`FAILED\`\uFF1B\u5931\u8D25\u8BB0\u5F55 \`errorCode\`\u3001\u53EF\u91CD\u8BD5\u6027\u3001\u6A21\u578B\u65E5\u5FD7\u4F4D\u7F6E\u548C\u6700\u540E\u6210\u529F\u9636\u6BB5\u3002\`PUBLISHED\` \u5FC5\u987B\u7531\u6709\u6743\u9650\u4EBA\u5458\u5BA1\u6838\u89E6\u53D1\u3002\r
+\r
+### 22.5 \u91CD\u5EFA\u4EA7\u7269\r
+\r
+| \u4EA7\u7269 | \u683C\u5F0F\u5EFA\u8BAE | \u7528\u9014 |\r
+|---|---|---|\r
+| \u539F\u59CB\u89C6\u9891 | MP4 | \u5BA1\u8BA1\u548C\u91CD\u65B0\u8BA1\u7B97 |\r
+| \u62BD\u53D6\u5E27\u6E05\u5355 | JSON/Parquet | \u91CD\u5EFA\u53EF\u590D\u73B0\u6027 |\r
+| \u76F8\u673A\u8F68\u8FF9 | JSON/TUM \u683C\u5F0F | \u8F68\u8FF9\u8BC4\u4F30\u4E0E\u5750\u6807\u8F6C\u6362 |\r
+| \u539F\u59CB\u70B9\u4E91 | PLY/PCD | \u7B97\u6CD5\u540E\u5904\u7406 |\r
+| \u7F51\u9875\u6A21\u578B | GLB \u6216\u5206\u5757\u70B9\u4E91 | Three.js \u5C55\u793A |\r
+| \u5360\u636E\u5730\u56FE | PGM+YAML / OccupancyGrid | ROS 2 \u5BFC\u822A |\r
+| \u914D\u7F6E\u5FEB\u7167 | YAML | \u53C2\u6570\u3001\u7248\u672C\u548C\u6821\u9A8C\u548C |\r
+| \u8D28\u91CF\u62A5\u544A | JSON+HTML | \u4EBA\u5DE5\u5BA1\u6838\u548C\u9A8C\u6536 |\r
+\r
+### 22.6 \u8D28\u91CF\u95E8\u7981\r
+\r
+\u53D1\u5E03\u524D\u81EA\u52A8\u68C0\u67E5\uFF1A\u89C6\u9891\u53EF\u89E3\u7801\u7387\u3001\u6709\u6548\u5E27\u6BD4\u4F8B\u3001\u6A21\u7CCA\u7387\u3001\u8F68\u8FF9\u8DF3\u53D8\u3001\u70B9\u4E91\u79BB\u7FA4\u6BD4\u4F8B\u3001\u5730\u9762\u5E73\u6574\u5EA6\u3001\u5C3A\u5EA6\u8BEF\u5DEE\u3001\u8986\u76D6\u7387\u548C\u4EA7\u7269\u5B8C\u6574\u6027\u3002\u4EFB\u4E00\u5173\u952E\u9879\u8D85\u9608\u503C\u65F6\u8FDB\u5165 \`REVIEW_REQUIRED\`\uFF0C\u4E0D\u80FD\u81EA\u52A8\u6210\u4E3A\u673A\u5668\u4EBA\u5730\u56FE\u3002\r
+\r
+## 23. \u70B9\u4E91\u5230\u673A\u5668\u4EBA\u5360\u636E\u5730\u56FE\u4E0E\u5BFC\u822A\u5750\u6807\u7CFB\r
+\r
+Nav2 \u4F7F\u7528 \`map\`\u3001\`odom\`\u3001\`base_link\` \u7B49\u5750\u6807\u5E27\uFF1B\`map\` \u662F\u5168\u5C40\u4E00\u81F4\u5750\u6807\uFF0C\`odom\` \u63D0\u4F9B\u5C40\u90E8\u8FDE\u7EED\u8FD0\u52A8\uFF0C\`base_link\` \u8868\u793A\u673A\u5668\u4EBA\u672C\u4F53\u3002\u5B98\u65B9 Nav2 \u6587\u6863\u8BF4\u660E\u5176\u4E8C\u7EF4\u4EE3\u4EF7\u5730\u56FE\u7531\u9759\u6001\u5C42\u3001\u969C\u788D\u5C42\u3001\u4F53\u7D20\u5C42\u3001\u81A8\u80C0\u5C42\u7B49\u7EC4\u6210\uFF1A[Nav2 Mapping and Localization](https://docs.nav2.org/setup_guides/sensors/mapping_localization.html)\u3001[Nav2 Transformations](https://docs.nav2.org/setup_guides/transformation/setup_transforms.html)\u3002\r
+\r
+### 23.1 \u8F6C\u6362\u6D41\u6C34\u7EBF\r
+\r
+\`\`\`text\r
+LingBot \u70B9\u4E91\u4E0E\u76F8\u673A\u4F4D\u59FF\r
+ \u2192 \u5750\u6807\u8F74\u7EDF\u4E00\r
+ \u2192 \u7C73\u5236\u5C3A\u5EA6\u6062\u590D\r
+ \u2192 \u7578\u53D8/\u79BB\u7FA4\u70B9\u8FC7\u6EE4\r
+ \u2192 \u5730\u9762\u5E73\u9762\u4F30\u8BA1\r
+ \u2192 \u56FA\u5B9A\u7ED3\u6784\u4E0E\u52A8\u6001\u7269\u4F53\u5206\u79BB\r
+ \u2192 \u4F53\u7D20\u964D\u91C7\u6837\r
+ \u2192 \u673A\u5668\u4EBA\u9AD8\u5EA6\u8303\u56F4\u5207\u7247\r
+ \u2192 \u4E8C\u7EF4\u5360\u636E\u6982\u7387\u6805\u683C\r
+ \u2192 \u4EBA\u5DE5\u7F16\u8F91\u7981\u884C\u533A/\u9650\u901F\u533A\r
+ \u2192 Nav2 \u9759\u6001\u5730\u56FE\u4E0E\u4EE3\u4EF7\u5730\u56FE\r
+\`\`\`\r
+\r
+### 23.2 \u5750\u6807\u94FE\r
+\r
+\`\`\`text\r
+map \u2192 odom \u2192 base_link \u2192 camera_link \u2192 camera_optical_frame\r
+\`\`\`\r
+\r
+- \`map\u2192odom\`\uFF1A\u7531\u5B9A\u4F4D\u7CFB\u7EDF\u4FEE\u6B63\u5168\u5C40\u6F02\u79FB\uFF1B\r
+- \`odom\u2192base_link\`\uFF1A\u7531\u8F6E\u901F\u3001\u89C6\u89C9\u91CC\u7A0B\u8BA1\u6216\u878D\u5408\u5B9A\u4F4D\u8FDE\u7EED\u53D1\u5E03\uFF1B\r
+- \`base_link\u2192camera_link\`\uFF1A\u76F8\u673A\u76F8\u5BF9\u8F66\u4F53\u7684\u5916\u53C2\uFF0C\u901A\u5E38\u7531 URDF/robot_state_publisher \u53D1\u5E03\uFF1B\r
+- \`reconstruction\u2192map\`\uFF1A\u7531\u63A7\u5236\u70B9\u548C\u5C3A\u5EA6\u6807\u5B9A\u8BA1\u7B97\uFF0C\u5FC5\u987B\u968F\u5730\u56FE\u7248\u672C\u4FDD\u5B58\u3002\r
+\r
+\u53D8\u6362\u8BB0\u5F55\u81F3\u5C11\u5305\u542B\u5E73\u79FB\u3001\u56DB\u5143\u6570\u3001\u5C3A\u5EA6\u3001\u7B97\u6CD5\u7248\u672C\u3001\u63A7\u5236\u70B9\u6B8B\u5DEE\u548C\u6807\u5B9A\u65F6\u95F4\u3002\u4E0D\u8981\u5728\u524D\u7AEF\u4EE3\u7801\u4E2D\u786C\u7F16\u7801\u5750\u6807\u504F\u79FB\u3002\r
+\r
+### 23.3 OccupancyGrid \u751F\u6210\r
+\r
+ROS \`nav_msgs/OccupancyGrid\` \u4E2D\u901A\u5E38\u7528 \`-1\` \u8868\u793A\u672A\u77E5\u3001\`0\` \u8868\u793A\u7A7A\u95F2\u3001\`100\` \u8868\u793A\u5360\u7528\u3002\u9879\u76EE\u8F6C\u6362\u5668\u5E94\u914D\u7F6E\uFF1A\r
+\r
+- \u5206\u8FA8\u7387\uFF0C\u4F8B\u5982 0.03\u20130.10 m/cell\uFF0C\u901A\u8FC7\u673A\u5668\u4EBA\u5BBD\u5EA6\u548C\u901A\u9053\u5BBD\u5EA6\u5B9E\u6D4B\u9009\u62E9\uFF1B\r
+- \u5730\u9762\u4E0A\u65B9\u969C\u788D\u5207\u7247\u9AD8\u5EA6\uFF1B\r
+- \u6700\u5C0F\u70B9\u5BC6\u5EA6\u548C\u5360\u7528\u6982\u7387\u9608\u503C\uFF1B\r
+- \u5B54\u6D1E\u586B\u5145\u3001\u8150\u8680/\u81A8\u80C0\u534A\u5F84\uFF1B\r
+- \u673A\u5668\u4EBA footprint \u548C\u5B89\u5168\u81A8\u80C0\u8DDD\u79BB\uFF1B\r
+- \u6E29\u5BA4\u8FB9\u754C\u3001\u7981\u884C\u533A\u3001\u9650\u901F\u533A\u548C\u6389\u843D\u98CE\u9669\u533A\u3002\r
+\r
+Nav2 \u4E2D \`0\u2013254\` \u7684\u4EE3\u4EF7\u503C\u7528\u4E8E\u8868\u793A\u4ECE\u81EA\u7531\u901A\u884C\u5230\u81F4\u547D\u969C\u788D\u7684\u4EE3\u4EF7\u3002\u5EFA\u8BAE\u4FDD\u7559\uFF1A\u9759\u6001\u5730\u56FE\u5C42\u3001\u5B9E\u65F6\u89C6\u89C9\u969C\u788D\u5C42\u3001\u81A8\u80C0\u5C42\u3001\u7981\u884C\u533A\u8FC7\u6EE4\u5668\u548C\u9650\u901F\u533A\u8FC7\u6EE4\u5668\u3002\u9759\u6001 LingBot \u5730\u56FE\u4E0D\u80FD\u66FF\u4EE3\u5B9E\u65F6\u907F\u969C\u3002\r
+\r
+### 23.4 \u5BFC\u822A\u63A5\u5165\u6B65\u9AA4\r
+\r
+1. \u5BFC\u51FA PGM/YAML \u6216\u76F4\u63A5\u53D1\u5E03 \`/map\`\uFF1B\r
+2. \u5728 RViz \u68C0\u67E5\u65B9\u5411\u3001\u6BD4\u4F8B\u3001\u539F\u70B9\u548C\u901A\u9053\u5BBD\u5EA6\uFF1B\r
+3. \u914D\u7F6E URDF\u3001\u673A\u5668\u4EBA footprint \u548C TF\uFF1B\r
+4. \u878D\u5408\u8F6E\u901F\u4E0E IMU\uFF0C\u63D0\u4F9B\u8FDE\u7EED \`odom\u2192base_link\`\uFF1B\r
+5. \u9009\u62E9\u9002\u5408\u89C6\u89C9\u8F93\u5165\u7684\u5B9A\u4F4D\u65B9\u6848\u5E76\u53D1\u5E03 \`map\u2192odom\`\uFF1B\r
+6. \u914D\u7F6E\u5168\u5C40/\u5C40\u90E8 costmap\u3001\u89C4\u5212\u5668\u548C\u63A7\u5236\u5668\uFF1B\r
+7. \u4EFF\u771F\u6216 rosbag \u56DE\u653E\u9A8C\u8BC1\uFF1B\r
+8. \u7A7A\u68DA\u4F4E\u901F\u6D4B\u8BD5\uFF1B\r
+9. \u589E\u52A0\u4EBA\u5458\u3001\u8F66\u8F86\u548C\u79FB\u52A8\u5DE5\u5177\u7B49\u52A8\u6001\u969C\u788D\u6D4B\u8BD5\uFF1B\r
+10. \u901A\u8FC7\u6025\u505C\u3001\u5931\u8054\u505C\u8F66\u548C\u4EBA\u5DE5\u63A5\u7BA1\u9A8C\u6536\u540E\u518D\u8FDB\u5165\u751F\u4EA7\u8BD5\u8FD0\u884C\u3002\r
+\r
+### 23.5 \u5730\u56FE\u7248\u672C\u7BA1\u7406\r
+\r
+\u5730\u56FE\u8BB0\u5F55\u5EFA\u8BAE\u5305\u542B\uFF1A\r
+\r
+\`\`\`text\r
+map_id, tenant_id, farm_id, greenhouse_id, version,\r
+source_session_id, calibration_version, resolution,\r
+origin_x, origin_y, origin_yaw, scale,\r
+artifact_uri, checksum, quality_score,\r
+status, approved_by, approved_at, created_at\r
+\`\`\`\r
+\r
+\u540C\u4E00\u6E29\u5BA4\u53EA\u80FD\u6709\u4E00\u4E2A \`ACTIVE\` \u5BFC\u822A\u5730\u56FE\uFF0C\u4F46\u5FC5\u987B\u4FDD\u7559\u5386\u53F2\u7248\u672C\u548C\u5FEB\u901F\u56DE\u6EDA\u3002\u68DA\u67B6\u79FB\u52A8\u3001\u4F5C\u7269\u663E\u8457\u957F\u9AD8\u3001\u8BBE\u5907\u6362\u4F4D\u6216\u901A\u9053\u6539\u53D8\u65F6\u89E6\u53D1\u91CD\u65B0\u5EFA\u56FE\u8BC4\u4F30\u3002\r
+\r
+## 24. \u5728\u7EBF\u76F8\u673A\u6D41\u3001\u8FB9\u7F18\u63A8\u7406\u4E0E\u5B9E\u65F6\u6D88\u606F\u901A\u9053\r
+\r
+### 24.1 \u89C6\u9891\u63A5\u5165\r
+\r
+\u63A8\u8350\u94FE\u8DEF\uFF1A\r
+\r
+\`\`\`text\r
+RTSP \u6444\u50CF\u5934 \u2192 \u8FB9\u7F18\u7F51\u5173/GStreamer \u2192 \u89E3\u7801 \u2192 \u5E27\u91C7\u6837\r
+  \u251C\u2500 \u4F4E\u5EF6\u8FDF\u5E27 \u2192 YOLO/TensorRT\r
+  \u251C\u2500 \u5173\u952E\u4E8B\u4EF6\u7247\u6BB5 \u2192 \u5BF9\u8C61\u5B58\u50A8\r
+  \u2514\u2500 \u5EFA\u56FE\u7247\u6BB5 \u2192 LingBot-Map \u4EFB\u52A1\r
+\`\`\`\r
+\r
+\u6444\u50CF\u5934\u6CE8\u518C\u4FE1\u606F\u5305\u62EC\u79DF\u6237\u3001\u519C\u573A\u3001\u6E29\u5BA4\u3001RTSP \u5BC6\u6587\u5F15\u7528\u3001\u5B89\u88C5\u4F4D\u7F6E\u3001\u65B9\u5411\u3001\u5185\u53C2\u3001\u5728\u7EBF\u72B6\u6001\u548C\u4FDD\u7559\u7B56\u7565\u3002\u5E73\u53F0\u4E0D\u5F97\u628A RTSP \u5BC6\u7801\u8FD4\u56DE\u6D4F\u89C8\u5668\u3002\r
+\r
+\u6D4F\u89C8\u5668\u89C2\u770B\u4F18\u5148\u7531\u7F51\u5173\u8F6C\u6362\u4E3A WebRTC\uFF1BHLS \u53EF\u4F5C\u4E3A\u9AD8\u5EF6\u8FDF\u517C\u5BB9\u65B9\u6848\u3002\u4E0D\u8981\u8BA9\u6BCF\u4E2A\u6D4F\u89C8\u5668\u76F4\u63A5\u8FDE\u63A5\u76F8\u673A\uFF0C\u5426\u5219\u4F1A\u9020\u6210\u8FDE\u63A5\u6570\u5931\u63A7\u548C\u51ED\u636E\u6CC4\u9732\u3002\r
+\r
+### 24.2 \u8FB9\u7F18\u63A8\u7406\u670D\u52A1\r
+\r
+\u8FB9\u7F18\u8282\u70B9\u8D1F\u8D23\uFF1A\r
+\r
+- \u6444\u50CF\u5934\u65AD\u7EBF\u91CD\u8FDE\u548C\u5FC3\u8DF3\uFF1B\r
+- \u6309\u6A21\u578B\u9700\u8981\u7F29\u653E\u3001\u5F52\u4E00\u5316\u548C\u6279\u5904\u7406\uFF1B\r
+- YOLO \u63A8\u7406\u4E0E ByteTrack \u8DDF\u8E2A\uFF1B\r
+- \u76EE\u6807\u8D8A\u7EBF\u3001\u533A\u57DF\u5165\u4FB5\u3001\u6EDE\u7559\u7B49\u672C\u5730\u89C4\u5219\uFF1B\r
+- \u65AD\u7F51\u671F\u95F4\u4E8B\u4EF6\u7F13\u51B2\u548C\u6062\u590D\u540E\u8865\u4F20\uFF1B\r
+- \u4EC5\u4E0A\u4F20\u4E8B\u4EF6\u622A\u56FE/\u77ED\u7247\uFF0C\u964D\u4F4E\u5E26\u5BBD\u4E0E\u9690\u79C1\u98CE\u9669\u3002\r
+\r
+\u63A8\u8350\u5C06\u6A21\u578B\u6253\u5305\u6210\u7248\u672C\u5316\u5BB9\u5668\u3002\u6A21\u578B\u53D1\u5E03\u91C7\u7528 \`STAGING \u2192 CANARY \u2192 ACTIVE \u2192 RETIRED\`\uFF0C\u652F\u6301\u6309\u6444\u50CF\u5934\u7070\u5EA6\u5207\u6362\u548C\u4E00\u952E\u56DE\u9000\u3002\r
+\r
+### 24.3 \u4E8B\u4EF6\u6D88\u606F\u6A21\u578B\r
+\r
+\`\`\`json\r
+{\r
+  "schemaVersion": "1.0",\r
+  "eventId": "evt_01...",\r
+  "tenantId": "tenant_demo",\r
+  "farmId": "farm-01",\r
+  "greenhouseId": "gh-01",\r
+  "cameraId": "cam-gh01-01",\r
+  "capturedAt": "2026-08-05T15:30:02.123+08:00",\r
+  "model": {"name": "greenhouse-yolo", "version": "1.3.0"},\r
+  "type": "DETECTION",\r
+  "detections": [\r
+    {"trackId": 17, "label": "person", "confidence": 0.91,\r
+     "box": {"x": 0.12, "y": 0.20, "w": 0.18, "h": 0.52}}\r
+  ],\r
+  "snapshotUri": "s3://tenant-demo/events/2026/08/05/evt_01.jpg",\r
+  "traceId": "..."\r
+}\r
+\`\`\`\r
+\r
+\u6846\u5750\u6807\u7EDF\u4E00\u4F7F\u7528\u76F8\u5BF9\u503C \`0\u20131\`\uFF0C\u5E76\u4FDD\u7559\u6E90\u5E27\u5BBD\u9AD8\u3002\u6D88\u606F\u5FC5\u987B\u5305\u542B schema \u548C\u6A21\u578B\u7248\u672C\u3002\u6D88\u8D39\u8005\u6309 \`eventId\` \u5E42\u7B49\u5904\u7406\uFF0C\u907F\u514D\u6D88\u606F\u91CD\u6295\u9020\u6210\u91CD\u590D\u544A\u8B66\u3002\r
+\r
+### 24.4 \u6D88\u606F\u901A\u9053\u9009\u62E9\r
+\r
+| \u901A\u9053 | \u7528\u9014 |\r
+|---|---|\r
+| MQTT | \u8FB9\u7F18\u8BBE\u5907\u5FC3\u8DF3\u3001\u5C0F\u578B\u9065\u6D4B\u548C\u5F31\u7F51\u573A\u666F |\r
+| Kafka/\u517C\u5BB9\u4E8B\u4EF6\u6D41 | \u5927\u89C4\u6A21\u68C0\u6D4B\u4E8B\u4EF6\u3001\u53EF\u56DE\u653E\u6570\u636E\u7BA1\u9053 |\r
+| WebSocket | \u6D4F\u89C8\u5668\u5B9E\u65F6\u68C0\u6D4B\u6846\u548C\u72B6\u6001\u53CC\u5411\u4EA4\u4E92 |\r
+| SSE | \u5355\u5411\u4EFB\u52A1\u8FDB\u5EA6\u3001\u544A\u8B66\u548C\u5EFA\u56FE\u72B6\u6001 |\r
+| REST | \u67E5\u8BE2\u5386\u53F2\u3001\u4E0B\u53D1\u4F4E\u9891\u914D\u7F6E\u548C\u4EBA\u5DE5\u64CD\u4F5C |\r
+\r
+\u5C0F\u89C4\u6A21\u90E8\u7F72\u53EF\u5148\u4F7F\u7528 MQTT + WebSocket\uFF1B\u89C4\u6A21\u6269\u5927\u540E\u518D\u5F15\u5165\u6301\u4E45\u4E8B\u4EF6\u603B\u7EBF\u3002Spring Boot \u6D88\u8D39\u63A8\u7406\u4E8B\u4EF6\uFF0C\u751F\u6210\u4E1A\u52A1\u544A\u8B66\u5E76\u901A\u8FC7 WebSocket/SSE \u63A8\u9001\uFF0C\u4E0D\u8F6C\u53D1\u6BCF\u4E00\u5E27\u539F\u59CB\u56FE\u50CF\u3002\r
+\r
+### 24.5 \u964D\u7EA7\u7B56\u7565\r
+\r
+- GPU \u5FD9\uFF1A\u964D\u4F4E\u91C7\u6837 FPS\uFF0C\u4FDD\u7559\u544A\u8B66\u7C7B\u522B\u4F18\u5148\u7EA7\uFF1B\r
+- \u6D88\u606F\u603B\u7EBF\u4E0D\u53EF\u7528\uFF1A\u8FB9\u7F18\u78C1\u76D8\u6709\u754C\u7F13\u51B2\uFF0C\u8D85\u8FC7\u9608\u503C\u5148\u4E22\u666E\u901A\u5E27\u3001\u4FDD\u7559\u544A\u8B66\uFF1B\r
+- \u5BF9\u8C61\u5B58\u50A8\u4E0D\u53EF\u7528\uFF1A\u4E8B\u4EF6\u5148\u4FDD\u5B58\u672C\u5730\uFF0C\u754C\u9762\u663E\u793A\u201C\u5A92\u4F53\u5F85\u540C\u6B65\u201D\uFF1B\r
+- \u7F51\u7EDC\u4E2D\u65AD\uFF1A\u672C\u5730\u89C4\u5219\u7EE7\u7EED\u62A5\u8B66\uFF0C\u6062\u590D\u540E\u6309\u65F6\u95F4\u987A\u5E8F\u8865\u4F20\uFF1B\r
+- \u6A21\u578B\u5F02\u5E38\uFF1A\u5207\u6362\u4E0A\u4E00\u7A33\u5B9A\u7248\u672C\u5E76\u89E6\u53D1\u8FD0\u7EF4\u544A\u8B66\u3002\r
+\r
+## 25. NVIDIA LocateAnything \u5F00\u653E\u8BCD\u6C47\u5B9A\u4F4D\u89C4\u5212\r
+\r
+\u5B98\u65B9\u9879\u76EE\u9875\uFF1A[NVIDIA LocateAnything](https://research.nvidia.com/labs/lpr/locate-anything/)\u3002\u6A21\u578B\u4EE5\u56FE\u50CF\u548C\u81EA\u7136\u8BED\u8A00\u67E5\u8BE2\u4E3A\u8F93\u5165\uFF0C\u8F93\u51FA\u6846\u6216\u70B9\u3002\u5176 Parallel Box Decoding \u652F\u6301 Fast Mode\uFF0CSlow Mode \u5F3A\u8C03\u7A33\u5B9A\u6027\uFF0CHybrid Mode \u5728\u5E76\u884C\u8F93\u51FA\u4E0D\u53EF\u9760\u65F6\u56DE\u9000\u3002\u5B98\u65B9\u541E\u5410\u6570\u636E\u4F7F\u7528\u5355\u5F20 H100 \u6D4B\u5F97\uFF0C\u56E0\u6B64\u9879\u76EE\u5FC5\u987B\u5728\u5B9E\u9645 GPU \u4E0A\u91CD\u65B0\u6D4B\u8BD5\u3002\r
+\r
+### 25.1 \u5B9A\u4F4D\u89D2\u8272\r
+\r
+LocateAnything \u4E0D\u66FF\u4EE3 YOLO \u7684\u6301\u7EED\u5B9E\u65F6\u68C0\u6D4B\uFF0C\u800C\u4F5C\u4E3A\u4E8C\u7EA7\u6A21\u578B\uFF1A\r
+\r
+1. \u7528\u6237\u4E34\u65F6\u67E5\u8BE2\u672A\u8BAD\u7EC3\u7C7B\u522B\uFF1B\r
+2. \u5BF9 YOLO \u4F4E\u7F6E\u4FE1\u5EA6\u5E27\u505A\u5F02\u6B65\u590D\u6838\uFF1B\r
+3. \u6279\u91CF\u6316\u6398\u65B0\u7C7B\u522B\u8BAD\u7EC3\u6837\u672C\uFF1B\r
+4. \u4E3A\u56FE\u7247\u6807\u6CE8\u63D0\u4F9B\u5019\u9009\u6846\uFF0C\u7ECF\u4EBA\u5DE5\u786E\u8BA4\u540E\u8BAD\u7EC3\u8F7B\u91CF YOLO\uFF1B\r
+5. \u5BF9\u590D\u6742\u63CF\u8FF0\u6267\u884C\u6307\u4EE3\u8868\u8FBE\u5B9A\u4F4D\u3002\r
+\r
+### 25.2 \u63A8\u7406\u63A5\u53E3\r
+\r
+\`\`\`http\r
+POST /api/v1/vision/open-vocabulary-jobs\r
+Content-Type: application/json\r
+\r
+{\r
+  "farmId": "farm-01",\r
+  "greenhouseId": "gh-01",\r
+  "imageUri": "s3://.../frame.jpg",\r
+  "queries": ["\u53F6\u7247\u660E\u663E\u840E\u852B\u7684\u756A\u8304\u690D\u682A", "\u901A\u9053\u4E2D\u7684\u79EF\u6C34\u533A\u57DF"],\r
+  "mode": "HYBRID",\r
+  "maxBoxes": 50\r
+}\r
+\`\`\`\r
+\r
+\u8FD4\u56DE\u5F02\u6B65 \`jobId\`\u3002\u7ED3\u679C\u4FDD\u5B58\u539F\u59CB\u67E5\u8BE2\u3001\u5F52\u4E00\u5316\u6846\u3001\u5206\u6570\u3001\u6A21\u578B\u7248\u672C\u3001\u63A8\u7406\u6A21\u5F0F\u3001\u8017\u65F6\u548C\u4EBA\u5DE5\u5BA1\u6838\u72B6\u6001\u3002\u7528\u6237\u81EA\u7531\u8F93\u5165\u5E94\u505A\u957F\u5EA6\u9650\u5236\u3001\u654F\u611F\u8BCD\u68C0\u67E5\u548C\u67E5\u8BE2\u6A21\u677F\u5316\uFF0C\u9632\u6B62\u65E0\u9650\u7C7B\u522B\u5BFC\u81F4\u8D44\u6E90\u6EE5\u7528\u3002\r
+\r
+### 25.3 \u8C03\u5EA6\u7B56\u7565\r
+\r
+| \u4F18\u5148\u7EA7 | \u573A\u666F | \u6A21\u5F0F |\r
+|---|---|---|\r
+| P0 | \u5B89\u5168\u4E8B\u4EF6\u590D\u6838 | Fast/Hybrid\uFF0C\u72EC\u7ACB\u8D44\u6E90\u6C60 |\r
+| P1 | \u7528\u6237\u4EA4\u4E92\u67E5\u8BE2 | Hybrid\uFF0C\u8BBE\u8D85\u65F6 |\r
+| P2 | \u544A\u8B66\u6279\u91CF\u590D\u6838 | \u5F02\u6B65\u6279\u5904\u7406 |\r
+| P3 | \u6570\u636E\u96C6\u6316\u6398 | Slow\uFF0C\u79BB\u5CF0\u6267\u884C |\r
+\r
+\u8BBE\u7F6E\u6BCF\u79DF\u6237 GPU \u914D\u989D\u3001\u6700\u5927\u5E76\u53D1\u3001\u5355\u56FE\u67E5\u8BE2\u6570\u548C\u65E5\u8C03\u7528\u91CF\u3002\u8D85\u989D\u65F6\u6392\u961F\u6216\u8FD4\u56DE\u660E\u786E\u7684\u9650\u6D41\u54CD\u5E94\uFF0C\u800C\u4E0D\u662F\u62A2\u5360\u5B9E\u65F6 YOLO \u8D44\u6E90\u3002\r
+\r
+### 25.4 \u519C\u4E1A\u6570\u636E\u9A8C\u8BC1\r
+\r
+\u5EFA\u7ACB\u672C\u5730\u57FA\u51C6\u96C6\uFF0C\u8986\u76D6\u4F5C\u7269\u54C1\u79CD\u3001\u751F\u80B2\u671F\u3001\u68DA\u819C\u53CD\u5149\u3001\u53F6\u7247\u906E\u6321\u3001\u75C5\u6591\u3001\u5C0F\u76EE\u6807\u3001\u591C\u95F4\u8865\u5149\u3001\u96FE\u6C14\u548C\u5BC6\u96C6\u690D\u682A\u3002\u6BCF\u6761\u67E5\u8BE2\u7531\u519C\u4E1A\u4EBA\u5458\u5B9A\u4E49\u53EF\u5224\u5B9A\u6807\u51C6\uFF0C\u8BB0\u5F55 Precision\u3001Recall\u3001F1\u3001IoU\u3001\u6F0F\u68C0\u5B89\u5168\u98CE\u9669\u548C\u5355\u56FE\u5EF6\u8FDF\u3002\r
+\r
+\u4E0A\u7EBF\u95E8\u69DB\u4E0D\u80FD\u53EA\u770B\u901A\u7528\u516C\u5F00\u6570\u636E\u96C6\uFF1B\u5E94\u6309\u201C\u4F5C\u7269\u2014\u95EE\u9898\u2014\u5149\u7167\u2014\u6444\u50CF\u5934\u201D\u5206\u5C42\u62A5\u544A\u3002\u6A21\u578B\u7ED9\u51FA\u7684\u75C5\u5BB3\u5B9A\u4F4D\u4EC5\u662F\u89C6\u89C9\u7EBF\u7D22\uFF0C\u4E0D\u80FD\u76F4\u63A5\u4F5C\u4E3A\u519C\u836F\u6216\u704C\u6E89\u5904\u65B9\u3002\r
+\r
+## 26. \u591A\u79DF\u6237\u3001\u5BF9\u8C61\u5B58\u50A8\u3001\u53EF\u89C2\u6D4B\u6027\u548C\u9AD8\u53EF\u7528\u89C4\u5212\r
+\r
+### 26.1 \u591A\u79DF\u6237\u6A21\u578B\r
+\r
+\u79DF\u6237\u5C42\u7EA7\u5EFA\u8BAE\u4E3A\uFF1A\r
+\r
+\`\`\`text\r
+Tenant\uFF08\u7EC4\u7EC7\uFF09\r
+ \u2514\u2500 Farm\uFF08\u519C\u573A\uFF09\r
+     \u2514\u2500 Greenhouse/Field\uFF08\u5927\u68DA/\u5730\u5757\uFF09\r
+         \u251C\u2500 Camera/Device\r
+         \u251C\u2500 MappingSession/MapVersion\r
+         \u2514\u2500 DetectionEvent/Alert\r
+\`\`\`\r
+\r
+\u6240\u6709\u4E1A\u52A1\u8868\u589E\u52A0\u4E0D\u53EF\u4E3A\u7A7A\u7684 \`tenant_id\`\uFF0C\u552F\u4E00\u7EA6\u675F\u5FC5\u987B\u5305\u542B\u79DF\u6237\u5217\u3002JWT \u4E2D\u4FDD\u5B58 \`tenantId\`\u3001\`userId\` \u548C\u89D2\u8272\uFF1B\u670D\u52A1\u7AEF\u4ECE\u8BA4\u8BC1\u4E0A\u4E0B\u6587\u53D6\u5F97\u79DF\u6237\uFF0C\u4E0D\u80FD\u76F8\u4FE1\u8BF7\u6C42\u4F53\u4F20\u5165\u7684\u79DF\u6237\u503C\u3002\r
+\r
+\u63A8\u8350\u89D2\u8272\uFF1A\`TENANT_ADMIN\`\u3001\`FARM_MANAGER\`\u3001\`AGRONOMIST\`\u3001\`OPERATOR\`\u3001\`VIEWER\`\u3001\`ROBOT_SERVICE\`\u3002\u8BBE\u5907\u63A7\u5236\u3001\u5730\u56FE\u53D1\u5E03\u3001\u4EBA\u8138\u7BA1\u7406\u548C\u6A21\u578B\u53D1\u5E03\u5206\u522B\u6388\u6743\u3002\r
+\r
+\u521D\u671F\u53EF\u91C7\u7528\u5171\u4EAB\u6570\u636E\u5E93\u3001\u5171\u4EAB\u8868\u5E76\u4EE5 \`tenant_id\` \u884C\u7EA7\u9694\u79BB\uFF1B\u9AD8\u5408\u89C4\u5BA2\u6237\u53EF\u6F14\u8FDB\u4E3A\u72EC\u7ACB schema \u6216\u72EC\u7ACB\u6570\u636E\u5E93\u3002\u5FC5\u987B\u7F16\u5199\u8DE8\u79DF\u6237\u8BBF\u95EE\u81EA\u52A8\u6D4B\u8BD5\uFF0C\u7F13\u5B58\u952E\u3001\u5BF9\u8C61\u8DEF\u5F84\u3001\u6D88\u606F\u4E3B\u9898\u548C\u65E5\u5FD7\u67E5\u8BE2\u4E5F\u8981\u5305\u542B\u79DF\u6237\u7EF4\u5EA6\u3002\r
+\r
+### 26.2 \u751F\u4EA7\u7EA7\u5BF9\u8C61\u5B58\u50A8\r
+\r
+\u5BF9\u8C61\u5B58\u50A8\u7528\u4E8E\u89C6\u9891\u3001\u622A\u56FE\u3001\u70B9\u4E91\u3001GLB\u3001\u5730\u56FE\u548C\u6A21\u578B\uFF0C\u4E0D\u628A\u5927\u6587\u4EF6\u5B58\u5165 MySQL\u3002\u5EFA\u8BAE\u4F7F\u7528 S3 \u517C\u5BB9\u63A5\u53E3\uFF0C\u5F00\u53D1\u53EF\u7528 MinIO\uFF0C\u751F\u4EA7\u53EF\u9009\u4E91\u5BF9\u8C61\u5B58\u50A8\u6216\u9AD8\u53EF\u7528 MinIO \u96C6\u7FA4\u3002\r
+\r
+\u5BF9\u8C61\u952E\u89C4\u8303\uFF1A\r
+\r
+\`\`\`text\r
+/{tenantId}/{farmId}/{resourceType}/{yyyy}/{mm}/{dd}/{resourceId}/{version}/{file}\r
+\`\`\`\r
+\r
+\u5B89\u5168\u8981\u6C42\uFF1A\r
+\r
+- Bucket \u9ED8\u8BA4\u79C1\u6709\uFF1B\r
+- \u6D4F\u89C8\u5668\u53EA\u83B7\u5F97\u77ED\u65F6\u9884\u7B7E\u540D URL\uFF1B\r
+- \u670D\u52A1\u8D26\u53F7\u6309\u524D\u7F00\u6700\u5C0F\u6743\u9650\u8BBF\u95EE\uFF1B\r
+- \u4E0A\u4F20\u5B8C\u6210\u540E\u6821\u9A8C\u5927\u5C0F\u3001MIME\u3001SHA-256 \u548C\u6076\u610F\u6587\u4EF6\uFF1B\r
+- \u670D\u52A1\u7AEF\u52A0\u5BC6\uFF0C\u654F\u611F\u89C6\u9891\u53EF\u4F7F\u7528\u72EC\u7ACB\u79DF\u6237\u5BC6\u94A5\uFF1B\r
+- \u5F00\u542F\u7248\u672C\u63A7\u5236\u3001\u751F\u547D\u5468\u671F\u3001\u4E0D\u53EF\u53D8\u4FDD\u7559\u548C\u8DE8\u533A\u57DF\u590D\u5236\uFF1B\r
+- \u6570\u636E\u5E93\u53EA\u4FDD\u5B58\u903B\u8F91 URI\u3001\u6821\u9A8C\u548C\u3001\u5927\u5C0F\u3001\u72B6\u6001\u548C\u4FDD\u7559\u622A\u6B62\u65F6\u95F4\u3002\r
+\r
+\u751F\u547D\u5468\u671F\u793A\u4F8B\uFF1A\u4E8B\u4EF6\u7F29\u7565\u56FE\u4FDD\u7559 90 \u5929\uFF0C\u666E\u901A\u89C6\u9891 30 \u5929\uFF0C\u5DF2\u53D1\u5E03\u5730\u56FE\u957F\u671F\u4FDD\u7559\uFF0C\u5931\u8D25\u4EFB\u52A1\u4E2D\u95F4\u6587\u4EF6 7 \u5929\u3002\u771F\u5B9E\u671F\u9650\u5E94\u7531\u4E1A\u52A1\u3001\u9690\u79C1\u548C\u6CD5\u89C4\u5171\u540C\u786E\u5B9A\u3002\r
+\r
+### 26.3 \u53EF\u89C2\u6D4B\u6027\r
+\r
+\u91C7\u7528 OpenTelemetry \u7EDF\u4E00 trace\u3001metric \u548C log\uFF0C\u5E76\u5C06 \`traceId\` \u8D2F\u7A7F\u6D4F\u89C8\u5668\u3001Spring Boot\u3001\u6D88\u606F\u603B\u7EBF\u3001\u63A8\u7406\u670D\u52A1\u548C\u5BF9\u8C61\u5B58\u50A8\u4EFB\u52A1\u3002\r
+\r
+\u6838\u5FC3\u6307\u6807\uFF1A\r
+\r
+| \u57DF | \u6307\u6807 |\r
+|---|---|\r
+| API | QPS\u3001P50/P95/P99\u3001\u9519\u8BEF\u7387\u3001\u9274\u6743\u5931\u8D25\u7387 |\r
+| \u6570\u636E\u5E93 | \u8FDE\u63A5\u6C60\u3001\u6162\u67E5\u8BE2\u3001\u9501\u7B49\u5F85\u3001\u590D\u5236\u5EF6\u8FDF |\r
+| \u89C6\u9891 | \u5728\u7EBF\u7387\u3001\u91CD\u8FDE\u6B21\u6570\u3001\u89E3\u7801 FPS\u3001\u4E22\u5E27\u7387 |\r
+| \u63A8\u7406 | \u961F\u5217\u957F\u5EA6\u3001GPU \u5229\u7528\u7387\u3001\u663E\u5B58\u3001\u5355\u5E27\u5EF6\u8FDF\u3001\u541E\u5410 |\r
+| \u5EFA\u56FE | \u5404\u9636\u6BB5\u8017\u65F6\u3001\u6210\u529F\u7387\u3001\u8D28\u91CF\u5206\u3001\u4EA7\u7269\u5927\u5C0F |\r
+| \u6D88\u606F | \u751F\u4EA7/\u6D88\u8D39\u901F\u7387\u3001\u79EF\u538B\u3001\u91CD\u8BD5\u548C\u6B7B\u4FE1\u6570 |\r
+| \u5B58\u50A8 | \u5BB9\u91CF\u3001\u4E0A\u4F20\u5931\u8D25\u3001\u8BFB\u53D6\u5EF6\u8FDF\u3001\u6821\u9A8C\u5931\u8D25 |\r
+| \u673A\u5668\u4EBA | \u5B9A\u4F4D\u6210\u529F\u7387\u3001\u89C4\u5212\u5931\u8D25\u3001\u6025\u505C\u3001\u6700\u5C0F\u969C\u788D\u8DDD\u79BB |\r
+\r
+\u670D\u52A1\u7B49\u7EA7\u76EE\u6807\u793A\u4F8B\uFF1A\u6838\u5FC3\u67E5\u8BE2\u6708\u53EF\u7528\u6027 99.9%\uFF0CP95 \u5C0F\u4E8E 500 ms\uFF1B\u5B9E\u65F6\u544A\u8B66\u4ECE\u8FB9\u7F18\u4E8B\u4EF6\u5230\u6D4F\u89C8\u5668 P95 \u5C0F\u4E8E 2 s\uFF1B\u5EFA\u56FE\u5C5E\u4E8E\u5F02\u6B65\u4EFB\u52A1\uFF0C\u4E0D\u4EE5 HTTP \u5EF6\u8FDF\u8861\u91CF\uFF0C\u800C\u4EE5\u5B8C\u6210\u65F6\u95F4\u548C\u6210\u529F\u7387\u8861\u91CF\u3002\r
+\r
+\u544A\u8B66\u9700\u5206\u7EA7\u5E76\u5E26\u8FD0\u884C\u624B\u518C\u94FE\u63A5\u3002\u907F\u514D\u53EA\u56E0 CPU \u77ED\u65F6\u5347\u9AD8\u62A5\u8B66\uFF0C\u5E94\u7EC4\u5408\u6301\u7EED\u65F6\u95F4\u3001\u9519\u8BEF\u7387\u548C\u4E1A\u52A1\u5F71\u54CD\u3002\u65E5\u5FD7\u7981\u6B62\u8BB0\u5F55 JWT\u3001\u5BC6\u7801\u3001\u4EBA\u8138\u539F\u56FE\u3001RTSP \u5BC6\u7801\u548C\u9884\u7B7E\u540D URL \u5168\u6587\u3002\r
+\r
+### 26.4 \u9AD8\u53EF\u7528\u90E8\u7F72\r
+\r
+\`\`\`mermaid\r
+flowchart LR\r
+    DNS[DNS/WAF] --> LB[\u8D1F\u8F7D\u5747\u8861]\r
+    LB --> A1[Spring Boot A]\r
+    LB --> A2[Spring Boot B]\r
+    A1 --> DBP[(MySQL Primary)]\r
+    A2 --> DBP\r
+    DBP --> DBR[(Replica/Backup)]\r
+    A1 --> MQC[\u6D88\u606F\u96C6\u7FA4]\r
+    A2 --> MQC\r
+    MQC --> GPU1[GPU Worker A]\r
+    MQC --> GPU2[GPU Worker B]\r
+    A1 --> S3[(\u5BF9\u8C61\u5B58\u50A8\u96C6\u7FA4)]\r
+    A2 --> S3\r
+\`\`\`\r
+\r
+- Spring Boot \u4FDD\u6301\u65E0\u72B6\u6001\uFF0C\u81F3\u5C11\u4E24\u4E2A\u5B9E\u4F8B\uFF0C\u5065\u5EB7\u68C0\u67E5\u533A\u5206\u5B58\u6D3B\u548C\u5C31\u7EEA\uFF1B\r
+- JWT \u4E0D\u4F9D\u8D56\u5355\u673A Session\uFF1BWebSocket \u4F7F\u7528\u5171\u4EAB\u6D88\u606F\u540E\u7AEF\u6216\u4E00\u81F4\u6027\u8DEF\u7531\uFF1B\r
+- MySQL \u4F7F\u7528\u4E3B\u4ECE/\u6258\u7BA1\u9AD8\u53EF\u7528\uFF0C\u5E76\u5B9E\u65BD PITR\uFF1B\r
+- \u6D88\u606F\u603B\u7EBF\u5F00\u542F\u6301\u4E45\u5316\u3001\u526F\u672C\u3001\u91CD\u8BD5\u4E3B\u9898\u548C\u6B7B\u4FE1\u961F\u5217\uFF1B\r
+- GPU Worker \u4ECE\u961F\u5217\u9886\u53D6\u4EFB\u52A1\uFF0C\u4F7F\u7528\u79DF\u7EA6\u548C\u5FC3\u8DF3\u907F\u514D\u4EFB\u52A1\u4E22\u5931\uFF1B\r
+- \u5BF9\u8C61\u5B58\u50A8\u542F\u7528\u591A\u526F\u672C\u548C\u5B9A\u671F\u6062\u590D\u6F14\u7EC3\uFF1B\r
+- \u8FB9\u7F18\u8282\u70B9\u65AD\u7F51\u53EF\u81EA\u6CBB\u5E76\u7F13\u5B58\uFF0C\u4E0D\u56E0\u4E91\u7AEF\u6545\u969C\u505C\u6B62\u5B89\u5168\u544A\u8B66\u3002\r
+\r
+### 26.5 \u707E\u96BE\u6062\u590D\r
+\r
+\u5B9A\u4E49\u5E76\u5B9E\u6D4B\uFF1A\r
+\r
+- RPO\uFF1A\u5141\u8BB8\u4E22\u5931\u7684\u6570\u636E\u65F6\u95F4\u7A97\u53E3\uFF1B\r
+- RTO\uFF1A\u5141\u8BB8\u670D\u52A1\u4E2D\u65AD\u65F6\u957F\uFF1B\r
+- MySQL \u5168\u91CF+\u589E\u91CF\u6062\u590D\uFF1B\r
+- \u5BF9\u8C61\u5B58\u50A8\u7248\u672C\u548C\u8DE8\u533A\u57DF\u526F\u672C\u6062\u590D\uFF1B\r
+- \u6D88\u606F\u79EF\u538B\u91CD\u653E\u548C\u5E42\u7B49\u9A8C\u8BC1\uFF1B\r
+- \u5730\u56FE\u3001\u6A21\u578B\u548C\u914D\u7F6E\u56DE\u6EDA\uFF1B\r
+- \u8FB9\u7F18\u8282\u70B9\u91CD\u65B0\u6CE8\u518C\u4E0E\u5BC6\u94A5\u8F6E\u6362\u3002\r
+\r
+\u6BCF\u5B63\u5EA6\u81F3\u5C11\u8FDB\u884C\u4E00\u6B21\u6062\u590D\u6F14\u7EC3\uFF0C\u5E76\u4FDD\u5B58\u5B9E\u9645\u6062\u590D\u65F6\u95F4\uFF0C\u800C\u4E0D\u662F\u53EA\u786E\u8BA4\u201C\u5B58\u5728\u5907\u4EFD\u201D\u3002\r
+\r
+## 27. \u5206\u9636\u6BB5\u91CC\u7A0B\u7891\u4E0E\u9A8C\u6536\r
+\r
+| \u9636\u6BB5 | \u4E3B\u8981\u4EA4\u4ED8 | \u8FDB\u5165\u4E0B\u4E00\u9636\u6BB5\u7684\u95E8\u69DB |\r
+|---|---|---|\r
+| P0 \u57FA\u7EBF | \u6444\u50CF\u5934\u6807\u5B9A\u3001\u6570\u636E\u89C4\u8303\u3001\u6A21\u578B\u4E0E\u5730\u56FE\u7248\u672C\u89C4\u8303 | \u53EF\u91CD\u590D\u91C7\u96C6\u540C\u4E00\u6E29\u5BA4 |\r
+| P1 \u79BB\u7EBF\u5EFA\u56FE | LingBot-Map \u4EFB\u52A1\u3001\u70B9\u4E91\u3001\u8F68\u8FF9\u3001Web \u9884\u89C8 | \u8986\u76D6\u7387\u548C\u5C3A\u5EA6\u8BEF\u5DEE\u8FBE\u6807 |\r
+| P2 \u5730\u56FE\u8F6C\u6362 | OccupancyGrid\u3001TF\u3001RViz \u6821\u9A8C | \u901A\u9053\u548C\u969C\u788D\u4E0E\u5B9E\u6D4B\u4E00\u81F4 |\r
+| P3 \u4EFF\u771F\u5BFC\u822A | Nav2 \u914D\u7F6E\u3001rosbag/\u4EFF\u771F\u56DE\u653E | \u89C4\u5212\u6210\u529F\u4E14\u65E0\u78B0\u649E |\r
+| P4 \u5728\u7EBF\u8BC6\u522B | RTSP\u3001\u8FB9\u7F18 YOLO\u3001\u4E8B\u4EF6\u603B\u7EBF\u3001\u5B9E\u65F6\u53E0\u52A0 | \u5EF6\u8FDF\u3001\u65AD\u7F51\u548C\u8BEF\u62A5\u8FBE\u6807 |\r
+| P5 \u5F00\u653E\u5B9A\u4F4D | LocateAnything \u5F02\u6B65\u670D\u52A1\u548C\u519C\u4E1A\u57FA\u51C6\u96C6 | \u672C\u5730\u6570\u636E\u6307\u6807\u8FBE\u6807 |\r
+| P6 \u751F\u4EA7\u5E73\u53F0 | \u591A\u79DF\u6237\u3001\u5BF9\u8C61\u5B58\u50A8\u3001\u53EF\u89C2\u6D4B\u6027\u3001\u9AD8\u53EF\u7528 | \u5B89\u5168\u6D4B\u8BD5\u548C\u707E\u5907\u6F14\u7EC3\u901A\u8FC7 |\r
+| P7 \u673A\u5668\u4EBA\u8BD5\u8FD0\u884C | \u4F4E\u901F\u5C01\u95ED\u6D4B\u8BD5\u3001\u52A8\u6001\u969C\u788D\u548C\u4EBA\u5DE5\u63A5\u7BA1 | \u5B89\u5168\u8BC4\u5BA1\u6279\u51C6 |\r
+\r
+\u5EFA\u8BAE\u6BCF\u9636\u6BB5\u5206\u522B\u63D0\u4EA4\u67B6\u6784\u51B3\u7B56\u8BB0\u5F55\u3001\u6570\u636E\u5B57\u5178\u3001\u90E8\u7F72\u6E05\u5355\u3001\u6D4B\u8BD5\u62A5\u544A\u3001\u98CE\u9669\u6E05\u5355\u548C\u56DE\u6EDA\u65B9\u6848\u3002\u672A\u7ECF\u672C\u9636\u6BB5\u9A8C\u6536\uFF0C\u4E0D\u5E94\u4EC5\u4E3A\u4E86\u6F14\u793A\u8FDB\u5EA6\u63D0\u524D\u5BA3\u79F0\u4E0B\u4E00\u9636\u6BB5\u80FD\u529B\u5DF2\u7ECF\u5B8C\u6210\u3002\r
+\r
+---\r
+\r
+\u672C\u6587\u4EE5\u4ED3\u5E93\u5728 2026-08-05 \u7684\u5B9E\u73B0\u4E3A\u57FA\u51C6\u3002\u6A21\u578B\u3001\u4F9D\u8D56\u548C\u7B2C\u4E09\u65B9\u63A5\u53E3\u4F1A\u53D8\u5316\uFF0C\u5B9E\u9645\u90E8\u7F72\u524D\u5E94\u590D\u6838\u5404\u9879\u76EE\u7684\u5B98\u65B9\u8BF4\u660E\u3001\u8BB8\u53EF\u8BC1\u3001\u786C\u4EF6\u8981\u6C42\u53CA\u9690\u79C1\u5408\u89C4\u8981\u6C42\u3002\r
+`,Mm="/assets/media-764c6a69.png",$m="/assets/media-44fb3e72.png",jm="/assets/media-f79aa29d.png",Um="/assets/media-1e5572e7.png",Wm="/assets/media-9f2adea9.png",Vm="/assets/media-310a9d6e.png",Hm="/assets/media-d6b3b6c3.png",Qm="/assets/media-0a1439ce.png";const Gm={"\u5B98\u7F51.png":Mm,"\u767B\u9646.png":$m,"\u4E3B\u754C\u9762.png":jm,"\u81EA\u5B9A\u4E49\u5DE5\u4F5C\u53F0.png":Um,"\u95EE\u519C.png":Wm,"\u7B2C\u4E00\u4EBA\u79F0.png":Vm,"3D.png":Hm,"\u5927\u68DA\u5185\u90E8.png":Qm},Km={"user-manual":{title:"\u7528\u6237\u4F7F\u7528\u624B\u518C",label:"USER GUIDE",description:"\u9762\u5411\u5E73\u53F0\u4F7F\u7528\u8005\u4E0E\u519C\u573A\u7BA1\u7406\u4EBA\u5458",icon:Rd,source:bm},"technical-manual":{title:"\u6280\u672F\u8BF4\u660E\u624B\u518C",label:"TECHNICAL GUIDE",description:"\u9762\u5411\u5F00\u53D1\u3001\u6D4B\u8BD5\u4E0E\u8FD0\u7EF4\u4EBA\u5458",icon:bd,source:Om}};function Ym(e){const n=new L.Renderer;return n.image=(t,r,u)=>{const l=decodeURIComponent(String(t||"").split("/").pop());return`<img src="${Gm[l]||t}" alt="${u||""}"${r?` title="${r}"`:""} loading="lazy">`},L.parse(e,{renderer:n,headerIds:!0,mangle:!1})}function Jm(){const{slug:e}=Gp(),n=Km[e],t=P.exports.useMemo(()=>n?Ym(n.source):"",[n]);if(!n)return a(Jp,{to:"/docs",replace:!0});const r=n.icon;return a("main",{className:"docs-reader px-6 pb-24 pt-32 md:px-12 md:pt-40 lg:px-16",children:y("div",{className:"mx-auto max-w-5xl",children:[y(on,{to:"/docs",className:"inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-emerald-700",children:[a(Eh,{className:"h-4 w-4"})," \u8FD4\u56DE\u6587\u6863\u8BF4\u660E"]}),y("header",{className:"mt-8 border-b border-slate-200 pb-10",children:[y("div",{className:"flex items-center gap-3 text-emerald-700",children:[a(r,{className:"h-5 w-5",strokeWidth:1.6}),a("span",{className:"text-[11px] font-semibold tracking-[0.2em]",children:n.label})]}),a("h1",{className:"mt-5 font-instrument-serif text-4xl text-ink sm:text-5xl",children:n.title}),y("p",{className:"mt-4 text-sm font-light text-muted",children:[n.description," \xB7 \u5185\u5BB9\u968F\u9879\u76EE\u7248\u672C\u540C\u6B65\u66F4\u65B0"]})]}),a("article",{className:"markdown-body",dangerouslySetInnerHTML:{__html:t}})]})})}function Zm(){const{pathname:e}=Mn(),n=e==="/sign-in"||e==="/sign-up";return y(q,{children:[!n&&a(ph,{}),y(qp,{children:[a(Ie,{path:"/",element:a(is,{})}),a(Ie,{path:"/product",element:a(Vh,{})}),a(Ie,{path:"/solutions",element:a(Kh,{})}),a(Ie,{path:"/digital-twin",element:a(Xh,{})}),a(Ie,{path:"/about",element:a(tm,{})}),a(Ie,{path:"/contact",element:a(um,{})}),a(Ie,{path:"/docs",element:a(Em,{})}),a(Ie,{path:"/docs/:slug",element:a(Jm,{})}),a(Ie,{path:"/sign-in",element:a(mm,{})}),a(Ie,{path:"/sign-up",element:a(ym,{})}),a(Ie,{path:"*",element:a(is,{})})]}),!n&&a(mh,{})]})}function qm(){return y(nh,{children:[a(uh,{}),a("div",{className:"w-full min-h-screen bg-page text-ink",children:a(Zm,{})})]})}Wl.createRoot(document.getElementById("root")).render(a(E0.StrictMode,{children:a(qm,{})}));

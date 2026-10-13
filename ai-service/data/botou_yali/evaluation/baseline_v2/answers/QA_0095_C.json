@@ -1,0 +1,274 @@
+{
+  "id": "QA_0095",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0021",
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0005",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0029"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称1.0%—3.0% O2在贮藏150 d（前期）AA显著高于空气对照，并延缓AA下降；E1明确给出贮藏150 d时1.0%—3.0% O2处理果实AA含量显著高于空气对照，E3/E4/E5摘要与结论亦一致表述低氧延缓AA下降，均被实际引用，支持该结论。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis所述E1中贮藏150 d、1.0%—3.0% O2处理TA和AA显著高于空气对照，5.0%和10.0% O2与对照基本持平或略低且差异不显著，均与E1原文一致；E3/E4/E5关于低氧维持较高TA/AA、延缓AA下降的表述也与所引证据一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning对问题限定、E1时间点比较、E3/E4/E5佐证以及E1中210 d货架7 d后10.0% O2和空气对照AA显著高于低氧、270 d各处理差异不显著的说明，均与所引证据原文相符，未补造缺失路径。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice中1.0%—3.0% O2在贮藏前期AA保持优于空气对照有E1/E5支持；1.0% O2增加贮藏末期黑心病风险、建议生产参数3.0%—5.0% O2有E4/E5支持；并明确声明不构成本地生产指导、需结合本地条件验证，未将论文结果直接改为本地普遍建议。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0021",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.2  不同O2浓度处理对内在品质的影响",
+        "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0005",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " Besides that, the lower O2 treatments maintained TA and AA contents at a higher level in the early storage period, and delayed the yellow-turning of peel; ethanol was accumulated much more under the lower O2 concentration, which ranged from 150.89 mg·L-1 to 806.12 mg·L-1 after storage for 150 d; while with the increasing senescence browning of fruit in air, the ethanol content peaking at 1 500 mg·L-1 after storage for 270 d. 5.0% and lower O2 inhibited the ethylene biosynthesis and delayed the peaking time, and 1.0%-3.0% O2 could prohibit the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue significantly.【Conclusion】1.0%—3.0% O2 prohibited the superficial scald occurrence significantly, and delayed the decrease of TA and AA, inhibited the biosynthesis of ethylene and delayed the peaking time, down-regulated the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue, prolonged the storage period of Yali pear significantly.",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0029",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "4  结论",
+        "text": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，能更好地维持果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。因此，建议生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "在本研究中，与空气对照相比，低氧处理（1.0%—3.0% O2）在贮藏前期（贮藏150 d）能延缓果实抗坏血酸（AA）含量的下降，使其AA含量显著高于空气对照  [E1]  [E3]  [E4]  [E5] 。",
+    "basis": "证据显示：贮藏150 d时，1.0%—3.0% O2处理果实TA和AA含量均显著高于空气对照，而5.0% O2和10% O2处理与对照基本持平或略低、差异不显著  [E1] 。摘要与结论亦指出低氧处理在贮藏前期维持了较高水平的TA和AA含量，并延缓了AA下降  [E3]  [E4]  [E5] 。",
+    "reasoning": "问题限定为‘贮藏前期’与‘空气对照’比较。[E1]明确给出贮藏150 d这一时间点的组间比较结果，属于贮藏前期，且直接对比低氧处理与空气对照，故可据此回答。[E3]、[E4]、[E5]为同一研究的摘要与结论，对‘贮藏前期低氧维持较高AA’作一致性表述，可作佐证。需注意：[E1]同时显示贮藏210 d货架7 d后10.0% O2和空气对照AA显著高于低氧处理，贮藏270 d各处理差异不显著，说明低氧对AA的保持优势并非贯穿全贮藏期，仅限贮藏前期  [E1] 。",
+    "advice": "若关注鸭梨贮藏前期AA保持，本研究数据支持1.0%—3.0% O2处理优于空气对照  [E1]  [E5] 。但该研究同时提示1.0% O2增加贮藏末期黑心病风险，建议生产参数为3.0%—5.0% O2  [E4]  [E5] 。上述为研究资料结论，不构成本地生产指导，实际应用需结合本地条件验证。",
+    "citations": [
+      "E1",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 0.75,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接回应了问题，指出与空气对照相比，低氧处理（1.0%—3.0% O2）在贮藏前期（150 d）延缓AA下降、AA含量显著高于空气对照，与参考答案一致；并正确补充了5.0%和10.0% O2处理与对照差异不显著、后期优势消失等限定条件，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "与空气对照相比，低氧处理（1.0%—3.0% O2）在贮藏前期（贮藏150 d）能延缓果实抗坏血酸（AA）含量的下降，使其AA含量显著高于空气对照。",
+          "status": "supported",
+          "reason": "E1明确记载贮藏150 d时1.0%—3.0% O2处理果实AA含量显著高于空气对照；E3、E4、E5摘要/结论也一致指出低氧处理在贮藏前期维持较高AA并延缓AA下降。"
+        },
+        {
+          "claim": "贮藏150 d时，1.0%—3.0% O2处理果实TA和AA含量均显著高于空气对照，而5.0% O2和10% O2处理与对照基本持平或略低、差异不显著。",
+          "status": "supported",
+          "reason": "E1原文直接给出该比较结果。"
+        },
+        {
+          "claim": "摘要与结论亦指出低氧处理在贮藏前期维持了较高水平的TA和AA含量，并延缓了AA下降。",
+          "status": "supported",
+          "reason": "E3、E4、E5均有一致表述，如E3“lower O2 treatments maintained TA and AA contents at a higher level in the early storage period”，E4/E5“延缓了果实TA和AA下降”。"
+        },
+        {
+          "claim": "贮藏210 d货架7 d后10.0% O2和空气对照AA显著高于低氧处理，贮藏270 d各处理差异不显著，说明低氧对AA的保持优势并非贯穿全贮藏期，仅限贮藏前期。",
+          "status": "supported",
+          "reason": "E1明确记载贮藏210 d货架7 d后10.0% O2和空气对照AA含量显著高于低氧处理，贮藏270 d各处理AA含量差异不显著。"
+        },
+        {
+          "claim": "该研究提示1.0% O2增加贮藏末期黑心病风险，建议生产参数为3.0%—5.0% O2。",
+          "status": "supported",
+          "reason": "E4、E5结论均明确记载1.0% O2处理增加贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3219,
+      "completion_tokens": 557,
+      "total_tokens": 3776,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 2067
+    },
+    "model": "deepseek-flash",
+    "response_id": "6fd38d4b-4bce-4b45-8edd-1babb1e54656",
+    "seconds": 7.370737400007783,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在本研究中，与空气对照相比，低氧处理（1.0%—3.0% O2）在贮藏前期（贮藏150 d）能延缓果实抗坏血酸（AA）含量的下降，使其AA含量显著高于空气对照 [E1][E3][E4][E5]。",
+        "basis": "证据显示：贮藏150 d时，1.0%—3.0% O2处理果实TA和AA含量均显著高于空气对照，而5.0% O2和10% O2处理与对照基本持平或略低、差异不显著 [E1]。摘要与结论亦指出低氧处理在贮藏前期维持了较高水平的TA和AA含量，并延缓了AA下降 [E3][E4][E5]。",
+        "reasoning": "问题限定为‘贮藏前期’与‘空气对照’比较。E1明确给出贮藏150 d这一时间点的组间比较结果，属于贮藏前期，且直接对比低氧处理与空气对照，故可据此回答。E3、E4、E5为同一研究的摘要与结论，对‘贮藏前期低氧维持较高AA’作一致性表述，可作佐证。需注意：E1同时显示贮藏210 d货架7 d后10.0% O2和空气对照AA显著高于低氧处理，贮藏270 d各处理差异不显著，说明低氧对AA的保持优势并非贯穿全贮藏期，仅限贮藏前期 [E1]。",
+        "advice": "若关注鸭梨贮藏前期AA保持，本研究数据支持1.0%—3.0% O2处理优于空气对照 [E1][E5]。但该研究同时提示1.0% O2增加贮藏末期黑心病风险，建议生产参数为3.0%—5.0% O2 [E4][E5]。上述为研究资料结论，不构成本地生产指导，实际应用需结合本地条件验证。",
+        "citations": [
+          "E1",
+          "E3",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2234,
+        "completion_tokens": 436,
+        "total_tokens": 2670,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 1594
+      },
+      "model": "deepseek-flash",
+      "response_id": "8db26eae-cc17-463a-a1bb-1064adf8805a",
+      "seconds": 7.137927100004163,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 21.989596600004006
+}

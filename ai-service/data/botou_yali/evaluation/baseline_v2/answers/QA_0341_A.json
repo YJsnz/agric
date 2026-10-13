@@ -1,0 +1,70 @@
+{
+  "id": "QA_0341",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法依据现有证据回答该问题。",
+    "basis": "未提供任何检索证据，且我无法确认《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的具体研究数据。",
+    "reasoning": "问题涉及特定论文中7.0%—10.0% O2处理鸭梨贮藏213 d及10 d货架后早期和晚期黑心病发生率与空气对照的比较结果。此类具体数值和结论必须来自原文，我无法凭已有知识准确回忆或推断，因此不能给出可靠答案。",
+    "advice": "请提供该论文的原文或相关数据段落，或允许我基于可获取的文献进行检索后再作答。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.8,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于早期和晚期黑心病发生率变化的结论，仅表示无法依据现有证据回答，属于拒答；在可回答题中拒答不算正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 876,
+      "completion_tokens": 51,
+      "total_tokens": 927,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 364
+    },
+    "model": "deepseek-flash",
+    "response_id": "5a5f0ab5-45b1-4ca5-98d9-fd6776f7c506",
+    "seconds": 5.725636100003612,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法依据现有证据回答该问题。",
+        "basis": "未提供任何检索证据，且我无法确认《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的具体研究数据。",
+        "reasoning": "问题涉及特定论文中7.0%—10.0% O2处理鸭梨贮藏213 d及10 d货架后早期和晚期黑心病发生率与空气对照的比较结果。此类具体数值和结论必须来自原文，我无法凭已有知识准确回忆或推断，因此不能给出可靠答案。",
+        "advice": "请提供该论文的原文或相关数据段落，或允许我基于可获取的文献进行检索后再作答。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 210,
+        "completion_tokens": 154,
+        "total_tokens": 364,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 210
+      },
+      "model": "deepseek-flash",
+      "response_id": "19e10049-84af-4dc4-8304-2b52f8b74902",
+      "seconds": 6.3756295000057435,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.10350969999854
+}

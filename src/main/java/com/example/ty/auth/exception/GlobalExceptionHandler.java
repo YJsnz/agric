@@ -25,6 +25,8 @@ public class GlobalExceptionHandler {
         return ResponseEntity.badRequest().body(new ApiError("BAD_REQUEST", message));
     }
 
+    @ExceptionHandler(org.springframework.dao.OptimisticLockingFailureException.class)
+    public ResponseEntity<ApiError> concurrentUpdate(Exception e) {return ResponseEntity.status(409).body(new ApiError("RECORD_CHANGED","记录已被其他操作更新，请刷新后继续"));}
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ApiError> handleOther(Exception e) {
         log.error("未处理异常", e);

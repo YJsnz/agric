@@ -1,0 +1,17 @@
+{
+  "tests": 48,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "modules": [
+    "test_entity_extractor",
+    "test_entity_aligner",
+    "test_graph_retriever",
+    "test_dual_retriever",
+    "test_fusion",
+    "test_evidence_fusion",
+    "test_answer_service",
+    "test_reranker",
+    "test_graphrag_v2"
+  ]
+}

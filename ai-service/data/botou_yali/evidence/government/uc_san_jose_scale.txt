@@ -1,0 +1,221 @@
+San Jose Scale / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+San Jose Scale
+Agriculture: Pear Pest Management Guidelines
+San Jose Scale
+Comstockaspis perniciosus
+On This Page
+Description of the Pest
+Damage
+Management
+Important Links
+Description of the Pest
+Female San Jose scales lay eggs that hatch immediately and the young emerge from under the edge of the scale covering. These tiny yellow crawlers wander in a random fashion until they find a suitable place to settle. Immediately upon settling, the crawlers insert their mouthparts into the host plant and begin feeding and secreting a white waxy material (white cap stage); eventually the waxy covering turns black and is known as the black cap stage.
+San Jose scales overwinter predominantly in the black cap stage, although in mild years some adult mated females may also survive. In late January, these nymphs resume their growth, molting two (females) or four (males) times before becoming adults in March. Immature male and female scales are indistinguishable until the first molt. At this time, the male scale covering begins to elongate, while the female's remain circular. Yellow-winged adult males emerge to mate with the females. The adult female remains under the scale covering, which is gray and circular; the body under the shell covering is yellow. After mating, females produce eggs, which are hidden under the covers. Crawlers begin to emerge from the females, usually in April; peak emergence is generally in early May. There are usually four generations a year. Summer generations overlap and crawlers are present throughout summer and fall.
+Damage
+San Jose scales cause injury by feeding on twigs, branches, and fruit. They may also inject a salivary toxin while feeding. Infested fruit and wood develop a reddish purple ring (halo) surrounding each spot where a scale settles. Fruit infested by San Jose scale is often bumpy; in extreme cases, pears may be severely misshapened and stunted. Presence of either the insect or red ring on fruit causes it to be culled from fresh-market shipments. Pears may also be rejected for cannery use because insect feeding often causes sunken areas that cannot be removed by peeling. Heavy population can cause gumming and kill twigs, branches, and entire tree if left uncontrolled. Young trees may be killed before fruiting.
+Management
+San Jose scale has many natural enemies that can frequently keep the pest under control if not disrupted by applications of broad-spectrum insecticides. Many orchards that have not used broad-spectrum sprays for 2 or 3 years do not have San Jose scale problems. The best time to spray is during the dormant season. The scale is monitored as part of the pruned wood sample during the dormant season and with pheromone traps in spring.
+Biological Control
+Natural enemies that feed on San Jose scale include two predaceous beetles: the twicestabbed lady beetle, Chilocorus ortus, and another small beetle, Cybocephalus californicus. A number of small chalcid and aphelinid wasps parasitize this scale. These predators and parasites may be helpful in reducing scale populations, but insecticides used during the growing season for other pests may disrupt this natural control.
+Organically Acceptable Methods
+Organically acceptable methods include biological control and approved oil sprays.
+Monitoring and Treatment Decisions
+Monitor for San Jose scale during the dormant period by checking prunings to make sure scale haven't developed in tree tops (see DORMANT TO DELAYED-DORMANT SAMPLING for details).
+Because of the damage potential of this pest, annual sprays of oil during the dormant or delayed-dormant period are recommended in most areas. Control heavy populations of San Jose scale by applying an insecticide with the oil spray during the delayed-dormant period.
+If inadequate control is achieved with the dormant spray, treatments are also effective when applied soon after the emergence of the crawlers in May. Use pheromone traps in March (place in orchard in mid-March in Delta-growing regions and late March in north coast orchards) to monitor male San Jose scale flights, or double-sided sticky tape wrapped around tree branches for monitoring crawlers in April and May. This is also a good way to monitor effectiveness of a dormant or delayed-dormant treatment. To time treatment, accumulate degree-days using a lower threshold of 51°F and an upper threshold of 90°F. The optimum time for spring spraying is 600–700 after the beginning of the male flight or 200 DD after crawler emergence begins.
+Calculate degree-days for San Jose scale in pears for your location using the San Jose scale pest model. To learn more about using degree-days to time insecticide applications, watch the degree-days video.
+Harvest Fruit Sample
+At harvest, assess your IPM program by monitoring fruit in the bins for presence of San Jose scale or red halo left on fruit. Sample 200 fruit per bin from 5 bins per orchard (or 20-acre block in large orchards). (See HARVEST FRUIT SAMPLE for more information.)
+Common name
+Amount to use**
+REI‡
+PHI‡
+(Example trade name)
+(conc.)
+(dilute)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least harmful to natural enemies, honey bees, and the environment are at the top of the table. When choosing a pesticide, consider information relating to air and water quality, resistance management, and the pesticide's properties and application timing. Always read the label of the product being used.
+DELAYED-DORMANT (Preferred timing)
+A.
+NARROW RANGE OIL#
+6 gal
+2 gal
+4
+0
+. . . or . . .
+DORMANT FLOWABLE EMULSION
+6–8 gal
+2–3 gal
+4
+0
+. . . or . . .
+DORMANT PLUS
+6–8 gal
+3–4 gal
+4
+0
+MODE OF ACTION: Contact, including smothering and barrier effects.
+COMMENTS: Apply oil sprays before February for best results. For narrow range oil, check with your certifier to determine which products are organically acceptable.
+MAY to JUNE
+A.
+BUPROFEZIN
+(Centaur WDG)
+34.5–46.0 oz
+—
+12
+14
+MODE OF ACTION GROUP NUMBER1: 16
+B.
+PYRIPROXYFEN
+(Seize)
+4–5 oz
+1–1.25 oz
+12
+45
+MODE OF ACTION GROUP NUMBER1: 7C
+COMMENTS: Apply when crawlers first emerge. Do not exceed two applications per growing season. Do not skip rows during application or apply more than 32 fl oz/acre per season of Esteem or 10 oz/acre per season of Seize.
+. . . PLUS . . .
+NARROW RANGE OIL
+(Superior)
+4 gal
+1 gal
+4
+0
+MODE OF ACTION: Contact, including smothering and barrier effects.
+C.
+SPIROTETRAMAT
+(Movento)
+6–9 fl oz
+—
+24
+7
+MODE OF ACTION GROUP NUMBER1: 23
+COMMENTS: Allow 1 to 2 weeks for systemic movement through the plant. Must be applied with an adjuvant to improve penetration. Do not apply until after petal fall. Do not apply to blooming plants, including fruit trees and broadleaf weeds. For resistance management, do not apply more than once a year.
+**
+Dilute rate is the rate per 100 gal water; use 400 gal solution/acre. Apply concentrate in 80–100 gal water/acre, or less if the label allows.
+‡
+Restricted entry interval (REI) is the number of hours (unless otherwise noted) from treatment until the treated area can be safely entered without protective clothing. Preharvest interval (PHI) is the number of days from treatment to harvest. In some cases the REI exceeds the PHI. The longer of two intervals is the minimum time that must elapse before harvest.
+#
+Acceptable for organically grown produce.
+*
+Permit required from county agricultural commissioner for purchase or use.
+1
+Rotate chemicals with a different mode of action Group number, and do not use products with the same mode of action Group number more than twice per season to help prevent the development of resistance. For example, the organophosphates have a Group number of 1B; chemicals with a 1B Group number should be alternated with chemicals that have a Group number other than 1B. Mode of action Group numbers are assigned by IRAC (Insecticide Resistance Action Committee).
+NA
+Not applicable.
+Important Links
+Degree-day calculator
+Degree-day table
+Using degree-days to time insecticide applications
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+L.G. Varela (emeritus), UC IPM and UC Cooperative Extension Sonoma County
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+R.A. Van Steenwyk (emeritus), Environmental Science, Policy, and Management, UC Berkeley
+C.A. Ingels, UC Cooperative Extension Sacramento County
+Acknowledgement for Contributions to Invertebrates
+P.W. Weddle, Weddle, Hansen & Associates
+P. Chevalier, United Ag Products, Ukiah
+R. Hansen, Weddle, Hansen & Associates
+M. Hooper, Ag Unlimited, Lakeport
+B. Knispel, Pest Control Adviser, Upper Lake
+T. Lidyoff, Purity Products, Healdsburg
+G. McCosker, Harvey Lyman Ag Services, Walnut Grove
+B. Oldham, Ag Unlimited, Ukiah
+C. Pickel (emeritus), UC IPM and UC Cooperative Extension Sutter and Yuba counties
+J. Sisevich, AgroTech, Kelseyville
+M.J. Smith, UC Cooperative Extension San Luis Obispo County
+B. Zoller, The Pear Doctor, Inc., Kelseyville
+Text Updated: 05/19
+Treatment Table Updated: 11/12
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

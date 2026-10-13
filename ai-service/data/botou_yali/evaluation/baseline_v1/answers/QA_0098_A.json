@@ -1,0 +1,56 @@
+{
+  "id": "QA_0098",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法回答该问题。",
+      "basis": "未提供该论文的具体内容，且我的知识库中不包含《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的全文或相关细节。",
+      "reasoning": "问题要求依据特定论文中作者对货架期鸭梨抗坏血酸含量升高原因的初步推测。由于缺乏该论文的原文或可靠摘要，无法确认作者的具体推测，因此不能编造答案。",
+      "advice": "请提供该论文的相关段落或摘要，或直接查阅原文中讨论部分关于抗坏血酸含量变化的解释。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 175,
+      "completion_tokens": 147,
+      "total_tokens": 322,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 175
+    },
+    "model": "deepseek-flash",
+    "response_id": "9f9adb93-7cb8-4d76-9996-e030ba370eef",
+    "seconds": 5.788965199999893,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于作者推测的内容，仅说明无法获取论文全文，属于没有作答。提供的原文证据明确包含作者初步推测，因此该题可回答，拒答不能视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1044,
+      "completion_tokens": 56,
+      "total_tokens": 1100,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 916
+    },
+    "model": "deepseek-flash",
+    "response_id": "7c969661-6dbd-48d0-8fdd-7130ed2f3a09",
+    "seconds": 5.784530700000232,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

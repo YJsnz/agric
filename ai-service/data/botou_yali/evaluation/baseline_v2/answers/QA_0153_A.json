@@ -1,0 +1,70 @@
+{
+  "id": "QA_0153",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法依据现有证据回答该问题。",
+    "basis": "未提供任何检索证据，且我无法确认《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》一文的具体研究结果。",
+    "reasoning": "该问题涉及特定论文中降温方法对晚采与早采鸭梨果心相变温度影响的比较，属于需要原文数据支持的细节结论。在无证据且不编造论文内容的前提下，不能给出具体比较结果。",
+    "advice": "请提供该论文的原文或相关数据（如不同采收期、降温处理下果心相变温度的测定结果），或允许检索该论文后再作回答。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于降温方法对晚采与早采鸭梨果心相变温度影响比较的结论，仅表示无法依据现有证据回答，属于拒答。在可回答题中拒答不算正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1070,
+      "completion_tokens": 62,
+      "total_tokens": 1132,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 302
+    },
+    "model": "deepseek-flash",
+    "response_id": "28c1cfda-8aa4-4d54-bb76-1ba3ebde5e7f",
+    "seconds": 6.202275899995584,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法依据现有证据回答该问题。",
+        "basis": "未提供任何检索证据，且我无法确认《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》一文的具体研究结果。",
+        "reasoning": "该问题涉及特定论文中降温方法对晚采与早采鸭梨果心相变温度影响的比较，属于需要原文数据支持的细节结论。在无证据且不编造论文内容的前提下，不能给出具体比较结果。",
+        "advice": "请提供该论文的原文或相关数据（如不同采收期、降温处理下果心相变温度的测定结果），或允许检索该论文后再作回答。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 185,
+        "completion_tokens": 152,
+        "total_tokens": 337,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 185
+      },
+      "model": "deepseek-flash",
+      "response_id": "5df1cd55-8a2a-448b-b876-154f8009443a",
+      "seconds": 5.979799799999455,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.183428800010006
+}

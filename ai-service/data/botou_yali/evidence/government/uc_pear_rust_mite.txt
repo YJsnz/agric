@@ -1,0 +1,341 @@
+Pear Rust Mite / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+Pear Rust Mite
+Agriculture: Pear Pest Management Guidelines
+Pear Rust Mite
+Epitrimerus pyri
+On This Page
+Description of the Pest
+Damage
+Management
+Description of the Pest
+Pear rust mite is a sporadic but serious pest of fresh-market
+pears. It may become a pest if pyrethroids are used at any time of the year. An
+increase in pear rust mite populations is seen in orchards that have been under
+mating disruption for several years where miticide use has been reduced. Rust
+mites are so small that you need a 14 to 20X hand lens to see them. They are wedge-shaped, with
+the wider end at the head. Pale brown female mites overwinter in bark crevices
+or behind loose bud scales usually on 2- to 4-year-old wood. As buds open in
+spring they move to developing clusters, leaves, and fruit to feed. During the
+growing season, adults are pale white to cream-colored.
+Damage
+Pear rust mite feeds on the surface of fruit and foliage,
+causing a bronzing of
+the tissue. Injury to leaves may stunt the growth of young trees, but on older
+trees it is of minor importance compared to fruit damage. Soon after petal
+fall, damaging populations may develop on fruit around the calyx or stem end,
+giving a localized russetting to
+those areas. Feeding and russetting may spread over the entire fruit if mites
+are unchecked. Late-season feeding tends to be scattered more uniformly over
+the fruit surface, with the intensity of russetting determined by the number of
+mites and the length of their feeding period. Rust mites are not an economic
+pest of naturally russetted varieties and in these orchards are even considered
+beneficial because they serve as a predator food source.
+Management
+Pear rust mite may increase in orchards where mating
+disruption is used to control codling moth because broad-spectrum insecticides
+are not being used. Dormant or delayed-dormant treatments will help suppress
+populations of this pest but control of pear rust mites is best obtained during
+the postharvest period. In-season treatments are necessary when monitoring
+indicates a need.
+Biological Control
+Rust mites do not come under complete biological control in
+unsprayed orchards, though they are heavily suppressed in most years. Rust
+mites become much more of a problem in sprayed orchards where predaceous mites
+are destroyed by pyrethroids and other materials, especially if high
+populations of rust mite are allowed to overwinter.
+Organically Acceptable Methods
+Biological control and sulfur sprays with or without oil are
+organically acceptable methods.
+Monitoring and Treatment Decisions
+In February as the buds begin to swell, sample one fruiting
+spur from the treetop and one from eye level of 50 trees per 20-acre block for
+a total of 100 spurs. Check under loose bark and in crevices of 2- to
+4-year-old wood and at the base of the bud for the presence of this mite. (Rust
+mites are so small that you need a 14 to 20X hand lens to see them). If two or
+more spurs are infested treat during the green tip to 1% bloom period. For more
+information, see DORMANT TO DELAYED-DORMANT
+SAMPLING.
+At bloom, collect one flower cluster from the treetop and
+one from eye level of 50 trees for a total of 100 clusters. If any pear rust
+mites are present, treat. For more information about this sample, see SAMPLING AT BLOOM.
+During the fruit development period, sample the orchard
+weekly. Examine 40 fruit clusters (as described in SAMPLING
+DURING FRUIT DEVELOPMENT).
+Look at fruit with a hand lens to examine the calyx area for presence of pear
+rust mite. After turn down, when the fruit calyx turns down toward the ground, pear
+rust mites may be located anywhere on the surface of the fruit. Treat if two or
+more pears have rust mites or any pear has more than 30 mites.
+Harvest Fruit Sample
+At harvest, assess your IPM program by monitoring fruit in
+the bins for pear rust mite damage. Sample 200 fruit per bin from 5 bins per
+orchard (or 20-acre block in large orchards) for a total of 1,000 fruit. (See HARVEST FRUIT SAMPLE for
+more information.)
+Postharvest Shoot Sample
+Following harvest, examine 20 top shoots; treat if two or
+more shoots are infested. (See POSTHARVEST
+SURVEY for more details about sampling during this period.)
+Common name
+Amount to use**
+REI‡
+PHI‡
+(Example trade name)
+(conc.)
+(dilute)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least harmful to natural enemies, honey bees, and the environment are at the top of the table. When choosing a pesticide, consider information relating to air and water quality, resistance management, and the pesticide's properties and application timing. Always read the label of the product being used.
+GREEN TIP TO FINGER BUD
+A.
+LIME SULFUR#
+6 gal
+1.5 gal
+48
+0
+MODE OF ACTION: Unknown. An inorganic miticide.
+COMMENTS: Do not use on Anjou or Comice. Do not use within 10
+days of oil. Do not apply when maximum daily temperatures exceed 75°F.
+B.
+LIME SULFUR#
+6 gal
+1.5 gal
+48
+0
+. . . PLUS . . .
+MICRONIZED SULFUR#
+16 lb
+4 lb
+24
+0
+MODE OF ACTION: Unknown. An inorganic miticide.
+COMMENTS: Do not use on Anjou or Comice. Do not use within 10
+days of oil. Do not apply when maximum daily temperatures exceed 75°F.
+FINGER BUD TO 10% BLOOM
+A.
+MICRONIZED SULFUR#
+20 lb
+5 lb
+24
+0
+MODE OF ACTION: Unknown. An inorganic miticide.
+COMMENTS: Can
+be applied when maximum daily temperatures do not exceed 90°F. Do not use
+within 10 days of oil.
+PETAL FALL to HARVEST
+A.
+NARROW RANGE OIL
+4 gal
+1 gal
+4
+0
+MODE OF ACTION: Contact, including smothering and barrier
+effects.
+. . . PLUS . . .
+ABAMECTIN*
+(Agri-Mek 0.15 EC)
+10–20 oz
+2.5–5 fl
+oz
+12
+28
+MODE OF ACTION GROUP NUMBER1: 6
+COMMENTS: Apply early when leaf tissue is tender and good
+coverage is easier. Do not apply to blooming plants, including fruit trees
+and broadleaf weeds.
+B.
+SPIRODICLOFEN
+(Envidor 2SC)
+16–18 fl oz
+—
+12
+7
+MODE OF ACTION GROUP NUMBER1: 23
+COMMENTS: Do not apply to blooming plants, including fruit trees
+and broadleaf weeds.
+C.
+PYRIDABEN
+(Nexter 75WSB)
+5.2–10.67 oz
+—
+12
+7
+MODE OF ACTION GROUP NUMBER1: 21A
+POSTHARVEST (Preferred timing)
+A.
+MICRONIZED SULFUR#
+20 lb
+5 lb
+24
+0
+MODE OF ACTION: Unknown. An inorganic miticide.
+COMMENTS: May be applied earlier in fall than lime sulfur.
+B.
+LIME SULFUR#
+2 gal
+0.5 gal
+48
+0
+. . . PLUS . . .
+MICRONIZED SULFUR#
+16 lb
+4 lb
+24
+0
+MODE OF ACTION: Unknown. An inorganic miticide.
+COMMENTS: Apply during October.
+C.
+LIME SULFUR#
+4 gal
+1 gal
+48
+0
+MODE OF ACTION: Unknown. An inorganic miticide.
+. . . PLUS . . .
+NARROW RANGE OIL#
+(Supreme, Superior)
+4–6 gal
+1.5 gal
+4
+0
+MODE OF ACTION: Contact, including smothering and barrier
+effects.
+COMMENTS: Do not apply lime sulfur and oil spray any sooner
+than November 1 and only on trees not suffering from moisture stress.
+Phytotoxicity may occur any time the weather is hot, so watch weather
+conditions closely. Check with your certifier to determine which products are
+organically acceptable.
+**
+Dilute rate is the rate per 100
+gal water; use 400 gal solution/acre. Apply concentrate in 80–100 gal
+water/acre, or less if the label allows.
+‡
+Restricted entry interval
+(REI) is the number of hours (unless otherwise noted) from treatment until
+the treated area can be safely entered without protective clothing.
+Preharvest interval (PHI) is the number of days from treatment to harvest.
+In some cases the REI exceeds the PHI. The longer of two intervals is the
+minimum time that must elapse before harvest.
+#
+Acceptable for organically grown
+produce.
+*
+Permit required from county
+agricultural commissioner for purchase or use.
+1
+Rotate chemicals with a
+different mode of action Group number, and do not use products with the same mode
+of action Group number more than twice per season to help prevent the
+development of resistance. For example, the organophosphates have a Group
+number of 1B; chemicals with a 1B Group number should be alternated with
+chemicals that have a Group number other than 1B. Mode of action Group
+numbers are assigned by IRAC (Insecticide Resistance Action Committee).
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+L.G. Varela (emeritus), UC IPM and UC Cooperative Extension Sonoma County
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+R.A. Van Steenwyk (emeritus), Environmental Science, Policy, and Management, UC Berkeley
+C.A. Ingels, UC Cooperative Extension Sacramento County
+Acknowledgement for Contributions to Invertebrates
+P.W. Weddle, Weddle, Hansen & Associates
+P. Chevalier, United Ag Products, Ukiah
+R. Hansen, Weddle, Hansen & Associates
+M. Hooper, Ag Unlimited, Lakeport
+B. Knispel, Pest Control Adviser, Upper Lake
+T. Lidyoff, Purity Products, Healdsburg
+G. McCosker, Harvey Lyman Ag Services, Walnut Grove
+B. Oldham, Ag Unlimited, Ukiah
+C. Pickel (emeritus), UC IPM and UC Cooperative Extension Sutter and Yuba counties
+J. Sisevich, AgroTech, Kelseyville
+M.J. Smith, UC Cooperative Extension San Luis Obispo County
+B. Zoller, The Pear Doctor, Inc., Kelseyville
+Text Updated: 11/12
+Treatment Table Updated: 11/12
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

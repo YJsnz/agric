@@ -1,0 +1,18 @@
+{
+  "weights": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\wheat-vision\\yolo11n-cls.pt",
+  "weight_sha256": "c62d41bf9625777760018bf914d2e6cd472420ccd01706d97a61cb6c82502bd7",
+  "cnn": "ImageNet YOLO11n-cls final global average pool; 1280 dimensions; fixed eval, no training",
+  "preprocessing": "EXIF corrected RGB resized 224x224 /255; whole-image feature, not leaf identity",
+  "ssim": "128x128 gray, Gaussian sigma1.5, population covariance, range1; center SSIM is central 50% crop, not leaf segmentation",
+  "sample_strata": {
+    "A_phash_top100": 100,
+    "B_cross_source_all_available": 1,
+    "C_cross_class_top100": 100,
+    "D_largest_group_random100": 100
+  },
+  "unique_review_pairs": 293,
+  "largest_candidate_group": "similarity_004249c84a12bb2b4dee",
+  "candidate_pairs": 14749,
+  "cross_class_candidate_pairs": 8634,
+  "thresholds": "not selected before visual review"
+}

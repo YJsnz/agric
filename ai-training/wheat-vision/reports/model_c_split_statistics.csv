@@ -1,0 +1,42 @@
+﻿metric,value
+raw_images,4698
+usable_images,3422
+raw_annotation_boxes,145411
+total_boxes,145411
+annotated_images,3422
+images_without_boxes,46
+usable_images_without_boxes,46
+missing_annotations,1276
+missing_annotation_images,0
+corrupt_images,0
+invalid_bbox,0
+bbox_out_of_bounds,0
+zero_area_bbox,0
+duplicate_annotations,0
+exact_duplicate_groups,0
+exact_duplicate,0
+pixel_duplicate_groups,0
+pixel_duplicate_redundant,0
+phash_candidate_pairs,0
+confirmed_similar_pairs,0
+cross_split_duplicate,0
+cross_split_similar_candidate,0
+official_split_used,False
+seed,42
+raw_unchanged,True
+annotation_format,"COCO JSON per domain; absolute pixel bbox [x,y,width,height]; category_id1 -> YOLO0"
+raw_path,F:\AIC2026\AIC-SmartAgriculture\agric\ai-training\wheat-vision\raw\global-wheat-codalab-official
+source_url,https://zenodo.org/records/4298502
+source_version,GWHD 2020 CodaLab official V4
+source_components,"{""arvalis_1"": ""train"", ""arvalis_2"": ""train"", ""arvalis_3"": ""val"", ""ethz_1"": ""train"", ""inrae_1"": ""train"", ""rres_1"": ""test"", ""usask_1"": ""train""}"
+ready_for_internal_training,True
+ready_for_official_test_benchmark,False
+train_images,2382
+train_boxes,109323
+train_domains,"[""arvalis_1"", ""arvalis_2"", ""ethz_1"", ""inrae_1"", ""usask_1""]"
+val_images,608
+val_boxes,16878
+val_domains,"[""arvalis_3""]"
+test_images,432
+test_boxes,19210
+test_domains,"[""rres_1""]"

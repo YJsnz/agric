@@ -1,0 +1,24 @@
+{
+  "crop_id": "huanghua_hanjianmai",
+  "index_version": "1.0.0",
+  "documents": 30,
+  "metadata_fields": [
+    "crop",
+    "region",
+    "growth_stage",
+    "scope",
+    "stress",
+    "practice",
+    "source_id",
+    "evidence_level",
+    "source_ids",
+    "evidence_ids",
+    "chunk_id",
+    "title",
+    "text",
+    "char_len"
+  ],
+  "embedding_model": null,
+  "embedding_dim": null,
+  "remark": "metadata 先行；embedding 由外部模型填入，避免误召回跨 stage/region 内容。"
+}

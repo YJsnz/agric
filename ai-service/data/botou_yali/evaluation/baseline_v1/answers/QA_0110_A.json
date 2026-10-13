@@ -1,0 +1,56 @@
+{
+  "id": "QA_0110",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据已有知识回答该具体论文中的结果。",
+      "basis": "未提供该论文的原文或数据，且我的知识库中不包含该论文的具体实验数值。",
+      "reasoning": "问题要求的是特定论文中缓慢降温对早采鸭梨果心亚麻酸和亚油酸相对含量的影响，这属于该论文的具体研究结果。在没有原文证据的情况下，不能编造数值或因果关系。",
+      "advice": "请提供该论文的原文、摘要或相关数据表格，以便准确提取缓慢降温处理下早采鸭梨果心亚麻酸和亚油酸相对含量的变化。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 179,
+      "completion_tokens": 142,
+      "total_tokens": 321,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 179
+    },
+    "model": "deepseek-flash",
+    "response_id": "b09100fa-3eaf-453a-a503-c9c33c228b1a",
+    "seconds": 5.935836999999992,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于缓慢降温对早采鸭梨果心亚麻酸和亚油酸相对含量影响的具体结论，仅表示无法回答并要求提供原文，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1043,
+      "completion_tokens": 55,
+      "total_tokens": 1098,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 915
+    },
+    "model": "deepseek-flash",
+    "response_id": "24550e51-d778-48c4-bc71-446758e6ed41",
+    "seconds": 5.229616000000078,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

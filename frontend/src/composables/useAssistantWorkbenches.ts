@@ -1,7 +1,7 @@
 import { computed, ref } from 'vue'
 import type { AssistantWorkbench, WorkbenchWidget, WorkbenchWidgetType } from '@/types/workbench'
 
-const greenhouseIds = ['gh-01', 'gh-02', 'gh-03', 'gh-04', 'gh-05', 'gh-06']
+const greenhouseIds = ['yt-pear-01','yt-pear-02','yt-pear-03','yt-wheat-01','yt-wheat-02','yt-jujube-01']
 
 const defaultWorkbenches: AssistantWorkbench[] = [
   {
@@ -11,8 +11,8 @@ const defaultWorkbenches: AssistantWorkbench[] = [
     pinned: true,
     updatedAt: new Date().toISOString(),
     widgets: [
-      { id: 'daily-irrigation-grid', type: 'irrigation', title: '01—06号大棚灌溉状态', size: 'wide', entityIds: greenhouseIds, refreshSeconds: 30, accent: 'blue' },
-      { id: 'daily-water', type: 'metric', title: '今日用水', size: 'small', entityIds: [], metricKey: 'todayWaterUsage', refreshSeconds: 30, accent: 'blue', showTrend: true },
+      { id: 'daily-irrigation-grid', type: 'irrigation', title: '鸭梨与旱碱麦灌溉状态', size: 'wide', entityIds: greenhouseIds, refreshSeconds: 30, accent: 'blue' },
+      { id: 'daily-water', type: 'metric', title: '演示用水', size: 'small', entityIds: [], metricKey: 'todayWaterUsage', refreshSeconds: 30, accent: 'blue', showTrend: true },
       { id: 'daily-moisture', type: 'metric', title: '平均土壤湿度', size: 'small', entityIds: greenhouseIds, metricKey: 'soilMoisture', refreshSeconds: 30, accent: 'green', threshold: 40 },
       { id: 'daily-schedule', type: 'irrigation-schedule', title: '今日灌溉计划', size: 'medium', entityIds: greenhouseIds, refreshSeconds: 60, accent: 'blue' },
       { id: 'daily-alerts', type: 'alerts', title: '需要关注', size: 'medium', entityIds: [], refreshSeconds: 30, accent: 'amber', density: 'compact' }
@@ -36,7 +36,7 @@ export function useAssistantWorkbenches() {
     if (workbenches.value.some(item => item.id === id)) activeWorkbenchId.value = id
   }
 
-  function createWorkbench(name = '我的农业工作台') {
+  function createWorkbench(name = '我的盐田工作面板') {
     const id = `workbench-${Date.now()}`
     workbenches.value.push({ id, name, icon: '田', widgets: [], pinned: true, updatedAt: new Date().toISOString() })
     activeWorkbenchId.value = id
@@ -66,7 +66,7 @@ export function useAssistantWorkbenches() {
     if (!target) return
     const defaults: Record<WorkbenchWidgetType, Pick<WorkbenchWidget, 'title' | 'size' | 'entityIds'>> = {
       summary: { title: '农场实时总览', size: 'medium', entityIds: [] },
-      irrigation: { title: '01—06号大棚灌溉状态', size: 'wide', entityIds: greenhouseIds },
+      irrigation: { title: '鸭梨与旱碱麦灌溉状态', size: 'wide', entityIds: greenhouseIds },
       environment: { title: '环境实时指标', size: 'medium', entityIds: [] },
       devices: { title: '设备运行状态', size: 'medium', entityIds: [] },
       alerts: { title: '待处理告警', size: 'medium', entityIds: [] },
@@ -163,5 +163,15 @@ export function useAssistantWorkbenches() {
     activeWorkbenchId.value = id
   }
 
-  return { workbenches, activeWorkbenchId, activeWorkbench, pinnedWorkbenches, replaceWorkbenches, selectWorkbench, createWorkbench, createRoutineWorkbench, renameActiveWorkbench, addWidget, ensureWidget, removeWidget, updateWidget, moveWidget, duplicateActiveWorkbench, deleteWorkbench, deleteActiveWorkbench, clearActiveWorkbench, toggleActivePinned, importWorkbench }
+  function ensureProjectWorkbench() {
+    if(workbenches.value.some(item=>item.id==='yantian-observations'))return
+    workbenches.value.unshift({id:'yantian-observations',name:'鸭梨园观测与核验',icon:'梨',pinned:true,updatedAt:new Date().toISOString(),widgets:[
+      {id:'yt-board-environment',type:'environment',title:'盐碱地演示观测',size:'wide',entityIds:[],refreshSeconds:30,accent:'green'},
+      {id:'yt-board-alerts',type:'alerts',title:'观测与影像待核验',size:'medium',entityIds:[],refreshSeconds:30,accent:'amber'},
+      {id:'yt-board-devices',type:'devices',title:'观测与灌排设施',size:'medium',entityIds:[],refreshSeconds:30,accent:'blue'},
+      {id:'yt-board-irrigation',type:'irrigation',title:'果园与麦田演示灌溉',size:'wide',entityIds:['yt-pear-03','yt-wheat-01'],refreshSeconds:30,accent:'blue'}
+    ]})
+    activeWorkbenchId.value='yantian-observations'
+  }
+  return { ensureProjectWorkbench, workbenches, activeWorkbenchId, activeWorkbench, pinnedWorkbenches, replaceWorkbenches, selectWorkbench, createWorkbench, createRoutineWorkbench, renameActiveWorkbench, addWidget, ensureWidget, removeWidget, updateWidget, moveWidget, duplicateActiveWorkbench, deleteWorkbench, deleteActiveWorkbench, clearActiveWorkbench, toggleActivePinned, importWorkbench }
 }

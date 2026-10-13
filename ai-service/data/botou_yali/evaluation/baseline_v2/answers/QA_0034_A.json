@@ -1,0 +1,96 @@
+{
+  "id": "QA_0034",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法确定该研究中呼吸速率和乙烯产生速率的具体单位。",
+    "basis": "未提供该论文的原文或相关证据，且我无法确认该论文的具体内容。",
+    "reasoning": "问题要求依据特定论文回答单位，但证据列表为空，我也没有该论文的可靠记忆，因此不能给出具体单位，以免编造。",
+    "advice": "请提供该论文的原文、摘要或相关段落，以便准确提取呼吸速率和乙烯产生速率的单位。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出呼吸速率和乙烯产生速率的单位，而是以证据不足为由拒绝作答；但题目提供了原文证据，明确单位应为mg CO2·kg-1·h-1和μL C2H4·kg-1·h-1，因此属于可回答题中的拒答，不计为正确。",
+      "claims": [
+        {
+          "claim": "无法确定该研究中呼吸速率和乙烯产生速率的具体单位。",
+          "status": "contradicted",
+          "reason": "原文证据明确给出单位为mg CO2·kg-1·h-1和μL C2H4·kg-1·h-1。"
+        },
+        {
+          "claim": "未提供该论文的原文或相关证据。",
+          "status": "contradicted",
+          "reason": "输入中提供了original_evidence原文段落，包含单位信息。"
+        },
+        {
+          "claim": "我无法确认该论文的具体内容。",
+          "status": "unverifiable",
+          "reason": "这是对回答者自身知识状态的陈述，无法依据提供文本客观验证。"
+        },
+        {
+          "claim": "证据列表为空。",
+          "status": "contradicted",
+          "reason": "retrieved_evidence为空，但original_evidence提供了原文证据，并非完全没有证据。"
+        },
+        {
+          "claim": "不能给出具体单位，以免编造。",
+          "status": "contradicted",
+          "reason": "原文证据已明确给出具体单位，无需编造。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 576,
+      "completion_tokens": 279,
+      "total_tokens": 855,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 320
+    },
+    "model": "deepseek-flash",
+    "response_id": "260195c8-e4c8-4480-86a0-7db9b555cdd8",
+    "seconds": 7.476418100006413,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法确定该研究中呼吸速率和乙烯产生速率的具体单位。",
+        "basis": "未提供该论文的原文或相关证据，且我无法确认该论文的具体内容。",
+        "reasoning": "问题要求依据特定论文回答单位，但证据列表为空，我也没有该论文的可靠记忆，因此不能给出具体单位，以免编造。",
+        "advice": "请提供该论文的原文、摘要或相关段落，以便准确提取呼吸速率和乙烯产生速率的单位。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 194,
+        "completion_tokens": 122,
+        "total_tokens": 316,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 194
+      },
+      "model": "deepseek-flash",
+      "response_id": "ebfce867-1a46-4d04-99b0-8ad366d28350",
+      "seconds": 5.728893099993002,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 13.207261899995501
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "source_id": "STD_001",
+    "url": "https://std.sacinfo.org.cn/gstdDb/queryInfo?stdId=42312",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_001/detail.json",
+    "attempted_at": "2026-09-15T06:28:06.280168+00:00",
+    "resolved_url": "https://std.sacinfo.org.cn/gstdDb/queryInfo?stdId=42312",
+    "status": "downloaded_pending_review",
+    "bytes": 784,
+    "sha256": "8327a2207b262053828f10b1d9e3ae6b43fd8ddbc9e1cd22f954e6d785c09dda"
+  }
+]

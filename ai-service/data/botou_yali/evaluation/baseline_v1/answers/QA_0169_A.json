@@ -1,0 +1,56 @@
+{
+  "id": "QA_0169",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法回答该具体数值问题",
+      "basis": "未提供该论文的原文或数据，且我的知识库中不包含该论文的具体实验数值",
+      "reasoning": "问题要求引用特定论文中10月20日缓慢降温处理晚采鸭梨果心亚麻酸相对含量的具体变化数值（从多少提高到多少）。由于没有该论文的全文或相关数据，无法确认这些数值，也不能编造。",
+      "advice": "请提供该论文的原文、图表或相关数据，或直接查阅该论文中关于亚麻酸相对含量的结果部分。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 164,
+      "completion_tokens": 132,
+      "total_tokens": 296,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 164
+    },
+    "model": "deepseek-flash",
+    "response_id": "e438df1d-eb0f-4cbb-a390-fe1e369b4334",
+    "seconds": 5.58949819999998,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何数值，明确表示无法回答，属于拒答；而该问题在提供的原文证据中有明确答案（6.01%提高到9.45%），因此不是正确作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1061,
+      "completion_tokens": 56,
+      "total_tokens": 1117,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 933
+    },
+    "model": "deepseek-flash",
+    "response_id": "0e56c2d7-af76-4707-963f-fc502ebdef53",
+    "seconds": 5.514371499999925,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

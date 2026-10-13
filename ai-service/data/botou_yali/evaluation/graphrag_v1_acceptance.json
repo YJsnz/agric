@@ -1,0 +1,117 @@
+{
+  "question": "泊头鸭梨果实膨大期持续高湿有什么风险？",
+  "checks": {
+    "http_200": true,
+    "answer_string": true,
+    "entities_strings": true,
+    "requested_mentions_present": true,
+    "paths_triples": true,
+    "sources_schema": true
+  },
+  "response": {
+    "entities": [
+      "泊头鸭梨",
+      "泊头",
+      "果实膨大期",
+      "持续高湿"
+    ],
+    "extracted_entities": {
+      "crop": "泊头鸭梨",
+      "region": "泊头",
+      "stage": "果实膨大期",
+      "environment": [
+        "持续高湿"
+      ],
+      "disease": [],
+      "intent": "risk_analysis"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "泊头鸭梨",
+        "status": "matched",
+        "entity_id": "v2:7b265c03320d54ee",
+        "canonical_name": "泊头鸭梨",
+        "candidates": [
+          {
+            "id": "v2:7b265c03320d54ee",
+            "name": "泊头鸭梨",
+            "type": "Crop",
+            "crop": [
+              "梨"
+            ],
+            "region": [
+              "泊头市"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "region",
+        "mention": "泊头",
+        "status": "matched",
+        "entity_id": "v2:9a8a610336e9e72c",
+        "canonical_name": "泊头市",
+        "candidates": [
+          {
+            "id": "v2:9a8a610336e9e72c",
+            "name": "泊头市",
+            "type": "Region",
+            "crop": [
+              "梨"
+            ],
+            "region": [
+              "泊头市"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "stage",
+        "mention": "果实膨大期",
+        "status": "matched",
+        "entity_id": "v2:7088cc4ac47fcec8",
+        "canonical_name": "果实膨大期",
+        "candidates": [
+          {
+            "id": "v2:7088cc4ac47fcec8",
+            "name": "果实膨大期",
+            "type": "GrowthStage",
+            "crop": [
+              "梨"
+            ],
+            "region": [
+              "US-CA"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "environment",
+        "mention": "持续高湿",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "blocked_alignment",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "empty",
+        "count": 0
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [],
+    "generation_called": false,
+    "status": "insufficient_evidence",
+    "answer": "1. 结论\n证据不足，当前不能可靠回答该问题。\n2. 依据\n未检索到满足地区、作物、阶段及证据要求的资料。\n3. 推理路径\n无可用证据路径，不补造因果关系。\n4. 建议\n请补充可核验的当地资料或明确问题条件。\n5. 来源\n无符合条件的来源。"
+  }
+}

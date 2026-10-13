@@ -12,7 +12,7 @@ export default {
       output: {
         entryFileNames: 'assets/index.js',
         chunkFileNames: 'assets/[name].js',
-        assetFileNames: 'assets/[name][extname]'
+        assetFileNames: asset => /[^\x00-\x7F]/.test(asset.name || '') ? 'assets/media-[hash][extname]' : 'assets/[name][extname]'
       }
     },
     chunkSizeWarningLimit: 1000
@@ -20,7 +20,7 @@ export default {
   server: {
     port: 5174,
     // 开发环境把 /api 代理到本地后端，与生产同源部署保持一致
-    proxy: { '/api': 'http://localhost:8081' },
+    proxy: { '/api': process.env.VITE_API_TARGET || 'http://localhost:8081' },
     fs: { allow: ['..'] }
   }
 }

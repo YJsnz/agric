@@ -1,0 +1,34 @@
+{
+  "types": [
+    "Crop",
+    "Disease",
+    "EnvironmentFactor",
+    "GrowthStage",
+    "Intervention",
+    "ManagementFactor",
+    "Pest",
+    "PlantOrgan",
+    "Region",
+    "Symptom"
+  ],
+  "relations": [
+    "AFFECTS",
+    "AFFECTS_CROP",
+    "AFFECTS_ORGAN",
+    "APPLIES_AT",
+    "ASSOCIATED_WITH",
+    "CONSIDERS",
+    "CONTROLS",
+    "DECREASES",
+    "DECREASES_RISK_OF",
+    "HAS_INDUSTRY",
+    "HAS_SYMPTOM",
+    "INCLUDES",
+    "INCLUDES_CROP",
+    "PRIORITIZES",
+    "REGULATES",
+    "REMOVES",
+    "USES"
+  ],
+  "causal_policy": "No unverified CAUSES; association remains association; cross-region material only for comparison."
+}

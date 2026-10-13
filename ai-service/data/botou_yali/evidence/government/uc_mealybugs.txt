@@ -1,0 +1,247 @@
+Mealybugs / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+Mealybugs
+Agriculture: Pear Pest Management Guidelines
+Mealybugs
+Grape mealybug: Pseudococcus maritimus
+Obscure mealybug: Pseudococcus viburni
+On This Page
+Description of the Pest
+Damage
+Management
+Description of the Pest
+The grape and
+obscure mealybugs closely resemble each other. Both mealybugs are most damaging
+in old trees with rough bark that shelter overwintering egg masses and crawlers.
+Eggs are yellowish to orange and are laid in a cottony mass. The young
+crawlers are
+orange. Mature mealybugs are about 0.2 inch (5mm) long with dark purple-gray,
+somewhat flattened bodies that are uniformly covered with a white powdery wax.
+Long caudal filaments along the lateral margin of the body become progressively
+shorter toward the head.
+Damage
+Mealybugs
+occasionally feed in the calyx end of maturing fruit, which may become soft as
+the pear ripens. Because mealybugs cannot be removed with present washing
+methods, infested lots of fruit are rejected by both cannery and fresh-market
+handlers. Honeydew is also produced, which may cause russeting on pears and fosters
+the growth of black sooty fungus on the surface, rendering the fruit unfit for
+fresh shipment.
+Management
+Mealybugs are minor
+pests in pear orchards and only occasionally become pests when their predators
+and parasites are unable to keep them below economically damaging levels.
+Mealybugs are most damaging in old trees with rough bark that shelter
+overwintering nymphs and egg clusters.
+Biological Control
+At least five
+species of parasitic wasps attack grape mealybugs in California. Little
+research on these parasites has been conducted, but it is assumed they play a
+prominent role in regulating populations. The impact of the different species
+varies from time to time and place to place. Grape mealybugs that are
+parasitized by two tiny wasps, Acerophagus
+notativentris and Pseudophycus
+angelicus, have multiple emergence holes that are easily seen with a hand
+lens. Ants must be controlled to keep
+them from interfering with these natural enemies. Two parasitic wasps, Pseudophycus flavidulus and Leptomastix epona, have been imported and
+released against obscure mealybugs. To ensure survival of parasites, do not use
+disruptive insecticides during the growing season.
+The most effective
+mealybug predator is a lady beetle called the mealybug
+destroyer, Cryptolaemus montrouzieri, which can be
+found in coastal regions. Cecidomyiid flies prey on mealybug eggs and small
+larvae. These predators plus green lacewings, minute pirate bugs,
+and spiders are important in keeping mealybug populations in check.
+Organically Acceptable Methods
+Biological control and oil sprays are organically acceptable methods.
+Monitoring and Treatment Decisions
+Mealybugs can be
+detected during the dormant season by checking under bark and in protected
+places for overwintering eggs or crawlers. (See DORMANT TO DELAYED-DORMANT
+SAMPLING for
+information about monitoring other pests at this time.)
+The finger
+bud to cluster stage is the
+best time to sample populations to estimate control needs. Collect one fruit
+spur from the top and one from eye level of 50 trees (100 total) in a block and
+count the number infested with mealybug nymphs (see SAMPLING
+AT BLOOM).
+Continue looking for mealybugs in the fruit calyx through harvest during the
+weekly fruit sample. (See SAMPLING DURING FRUIT
+DEVELOPMENT and HARVEST
+FRUIT SAMPLE for
+more information.)
+Dormant and delayed-dormant
+oil applications for other pests reduce mealybug populations but are not
+adequate to control heavy populations. The best time to treat is from cluster
+bud to bloom when crawlers of the first
+generation become active. Because of prolonged emergence during June, crawlers
+of the second generation are more difficult to control. During the cluster bud
+to bloom period, treat when four or more infested spurs are found.
+Common name
+Amount to use**
+REI‡
+PHI‡
+(Example trade name)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least harmful to natural enemies, honey bees, and the environment are at the top of the table. When choosing a pesticide, consider information relating to air and water quality, resistance management, and the pesticide's properties and application timing. Always read the label of the product being used.
+FINGER BUD AND SUMMER
+A.
+SPIROTETRAMAT
+(Movento)
+6–9 fl oz
+24
+7
+MODE-OF-ACTION GROUP NUMBER1: 23
+COMMENTS: Allow 1 to 2 weeks for systemic movement through the plant. Must be applied with an adjuvant to improve penetration. Do not apply until after petal fall. For resistance management, do not apply more than once a year. Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+B.
+BUPROFEZIN
+(Centaur WDG)
+34.5–46.0 oz
+12
+14
+MODE-OF-ACTION GROUP NUMBER1: 16
+COMMENTS: Insect growth regulator. Apply to the crawler stage.
+C.
+THIAMETHOXAM
+(Actara)
+4.5–5.5 oz
+12
+See comments
+MODE-OF-ACTION GROUP NUMBER1: 4A
+COMMENTS: Allow a minimum of 10 days between applications; do not exceed 8 oz/acre per season. Preharvest interval is 14 days when 2.75 oz/acre or less is used and 35 days when more than 2.75 oz/acre is used. Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+Review and follow the California neonicotinoid regulations effective January 1, 2024. Permissible application rates of this insecticide may be lower than label rates if applying more than one neonicotinoid active ingredients or using more than one application method in the same season.
+D.
+CLOTHIANIDIN
+(Belay)
+6 fl oz
+12
+7
+MODE-OF-ACTION GROUP NUMBER1: 4A
+COMMENTS: Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+Review and follow the California neonicotinoid regulations effective January 1, 2024. Permissible application rates of this insecticide may be lower than label rates if applying more than one neonicotinoid active ingredients or using more than one application method in the same season.
+E.
+DIAZINON
+(Diazinon AG600 WBC)
+12.75 fl oz
+96 (4 days)
+21
+MODE-OF-ACTION GROUP NUMBER1: 1B
+COMMENTS: Apply when crawlers become active. Addition of 0.5–1 gal oil/100 gal dilute improves control. Avoid drift and tailwater runoff into surface waters. Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+**
+Dilute rate is the rate per 100 gal water; use 400 gal solution/acre. Apply concentrate in 80–100 gal water/acre, or less if the label allows.
+‡
+Restricted entry interval (REI) is the number of hours (unless otherwise noted) from treatment until the treated area can be safely entered without protective clothing. Preharvest interval (PHI) is the number of days from treatment to harvest. In some cases the REI exceeds the PHI. The longer of two intervals is the minimum time that must elapse before harvest.
+1
+Rotate chemicals with a different mode-of-action group number, and do not use products with the same mode-of-action group number more than twice per season to help prevent the development of resistance. For example, the organophosphates have a Group number of 1B; chemicals with a 1B Group number should be alternated with chemicals that have a Group number other than 1B. Mode-of-action group numbers are assigned by IRAC (Insecticide Resistance Action Committee). For additional information, see their Web site at www.irac-online.org.
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+L.G. Varela (emeritus), UC IPM and UC Cooperative Extension Sonoma County
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+R.A. Van Steenwyk (emeritus), Environmental Science, Policy, and Management, UC Berkeley
+C.A. Ingels, UC Cooperative Extension Sacramento County
+Acknowledgement for Contributions to Invertebrates
+P.W. Weddle, Weddle, Hansen & Associates
+P. Chevalier, United Ag Products, Ukiah
+R. Hansen, Weddle, Hansen & Associates
+M. Hooper, Ag Unlimited, Lakeport
+B. Knispel, Pest Control Adviser, Upper Lake
+T. Lidyoff, Purity Products, Healdsburg
+G. McCosker, Harvey Lyman Ag Services, Walnut Grove
+B. Oldham, Ag Unlimited, Ukiah
+C. Pickel (emeritus), UC IPM and UC Cooperative Extension Sutter and Yuba counties
+J. Sisevich, AgroTech, Kelseyville
+M.J. Smith, UC Cooperative Extension San Luis Obispo County
+B. Zoller, The Pear Doctor, Inc., Kelseyville
+Text Updated: 05/19
+Treatment Table Updated: 02/25
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

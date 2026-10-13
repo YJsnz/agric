@@ -1,0 +1,202 @@
+{
+  "id": "QA_0336",
+  "arm": "C",
+  "generation": {
+    "result": {
+      "sufficient": true,
+      "conclusion": "根据该论文引言，我国鸭梨普通冷藏（环境温度-1℃—0℃）一般可贮藏5—6个月（从9月至翌年3月）[E1]。",
+      "basis": "论文引言明确记载：普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6个月（从9月至翌年3月）[E1]。",
+      "reasoning": "问题询问的是论文引言中关于我国鸭梨普通冷藏一般贮藏时长的表述。证据E1为该论文引言部分，直接给出普通冷藏的贮藏时长及对应月份区间，故可直接引用作答。其余证据涉及气调贮藏参数、生理指标及机理，与普通冷藏时长问题无直接关系，不作为依据。",
+      "advice": "该数据为论文引言中引用的文献综述性表述，反映的是研究背景中的一般性描述，不等同于本地生产指导；实际贮藏时长受品种、栽培管理、采收成熟度及冷库条件等影响，建议结合本地实际情况验证。",
+      "citations": [
+        "E1"
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2868,
+      "completion_tokens": 229,
+      "total_tokens": 3097,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 2100
+    },
+    "model": "deepseek-flash",
+    "response_id": "5ad613b9-2712-45e5-b885-273cf8d7817f",
+    "seconds": 6.633067899999787,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0007",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "0  引言",
+        "text": "【研究意义】鸭梨（Pyrus bretschneideri Rehd.）是我国传统特色主栽梨品种，季产年销，也是我国主要仓储和出口品种[1]。但其对低温和高浓度CO2 敏感，长期贮藏过程中极易发生虎皮病和黑心病等采后生理病害，严重影响果实商品价值，造成巨大经济损失[2-3]。目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6 个月（从9 月至翌年3 月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8 个月（从9 月至翌年4 月）。整体来看，与市场正常供应需求（至翌年6 月）仍有较大差距[4-5]。研究低O2 浓度对鸭梨采后生理代谢及贮藏品质的影响，对进一步延长鸭梨贮藏和货架供应期具有重要意义。【前人研究进展】气调贮藏是目前国内外商业应用最广泛的果品贮藏技术，与普通冷藏相比，气调贮藏可显著延长苹果和梨采后贮藏和货架供应期。其主要原理是在低温的基础上，通过进一步降低环境氧气含量，来进一步抑制果实采后呼吸和乙烯等生理代谢水平，降低营养损耗，延缓衰老，减轻生理病害发生，进而更好地保持果实贮藏品质[6-8]。近年来，随着气体成分精准监测和控制技术的不断发展，果实气调贮藏中的O2浓度不断降低，从传统的静态低氧气调（O2：2.0%—5.0%），发展到静态超低氧气调（O2＜1.5%）及前期超低氧胁迫气调（O2：0.5%，维持2 周），一直到目前的动态气调（O2：0.3%—0.5%），果实贮藏期不断被延长，果实品质得到了更好的维持[9]。但不同品种及不同栽培管理条件下，梨果实采后生物学特性及内在品质差异较大，对贮藏环境O2 敏感性及耐受度不同。研究发现，‘Beurré d’Anjou’经0.5% O2胁迫处理后，于1.0% O2+0.1% CO2 条件下可正常贮藏9.2 个月[10]；‘Abate Fetel’在0.8% O2+0.45% CO2 动态气调条件下可贮藏7 个月，且未发生果心褐变[11-13]；‘Rocha’在0.5% O2 条件下贮藏8.5 个月，7 d 货架（20℃）后仍较好地保持果实品质，未发生黑心病[14]。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0010",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "48 h 后开始阶段缓慢降温，每1 d 降0.5℃，直至环境",
+        "text": "温度降至（0±0.5）℃。稳定2 d 后，封口，开始进行气调贮藏（气调参数为O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%），以空气为对照，气调箱内相对湿度＞95.0%。贮藏150、210 及270 d 后取样，分别于取样次日及货架7 d 或10 d 进行果实组织褐变指数调查与生理品质测定，每个处理每个重复每次取果实50 个，其中15 个果实用于生理病害调查和生理品质测定，9 个果实用于测定呼吸速率和乙烯释放速率；另取5 个果实，用水果刀于果实赤道部位取果皮组织（厚约2—3 mm）并立即用液氮速冻，-80℃超低温冰箱保存备用；剩余果实置于20 ℃恒温箱（SANYO，日本）模拟货架，7 d 或10 d 后进行生理病害调查、生理品质测定及果皮冻样。中试果9—12℃入库，35—40 d 降至（0±0.5）℃，气调贮藏参数为3.0%—5.0% O2+0.5%—0.8% CO2。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0004",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+        "pages": [
+          1,
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0027",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "3.2  环境O2浓度与内在品质变化的关系",
+        "text": "超低氧气调贮藏（O2＜1.5%）是苹果商业生产中常用的一项技术[35]，但在梨商业生产中应用很少，主要原因是多数梨品种对过低O2 敏感，过低的O2 会造成果实发生无氧呼吸进而造成乙醇大量积累，诱发果心组织褐变，果实风味品质下降，例如‘Williams Bon Chretien’在1.0% O2 处理下仅能贮藏4 个月[36]。但同时也有研究表明，适量乙醇作为一种低抗氧化物可明显降低苹果和梨等采后贮藏过程中虎皮病的发生[37-40]。本研究中，5.0%及以下O2 处理果实乙醇含量贮藏前期显著高于10.0%和空气对照，适量乙醇的积累可能一定程度上增强了果实抗性，进而抑制了鸭梨后期虎皮病的发生，但乙醇抗氧化阈值及伤害极值仍需进一步研究确定。CHENG 等[3]研究发现，1-MCP 处理可以显著降低乙烯产量，较好地维持鸭梨果实冷藏期间TA 含量水平，较好地维持果实品质降低黑心指数。杜艳民等[23]研究发现鸭梨贮藏过程中TA 含量与黑心指数显著相关，可作为预测鸭梨黑心病的指标。本研究中，果实可滴定酸（TA）含量随着贮藏时间的延长不断下降，与空气对照相比，2.0%、3.0%、5.0%及10.0% O2处理较好地维持了贮藏后期（270 d）TA 含量，并显著高于空气对照和1.0% O2，且TA 含量越低，黑心指数越高，该结论与前人研究结果一致。抗坏血酸（AA）作为一种抗氧化物质，可与谷胱甘肽等其他抗氧化物质协同清除活性氧分子。前人研究发现，低氧气调处理果实AA 含量显著低于普通冷藏；同时，梨的研究发现，不同黑心病诱导处理下，AA 含量与果实黑心病敏感性显著相关，当AA 含量低于特定阈值时，果实黑心病敏感性增强[41]。本研究中，与空气对照相比，低氧处理更好地维持了贮藏前期果实AA 含量，但随着贮藏期的推迟，低氧处理和对照AA 含量均进一步降低，且处理与对照间差异变小且不显著；但货架7 d 或10 d 后，低氧处理和空气对照AA 含量均显著升高，初步推测与货架期间果实进一步衰老后，活性氧等衰老相关组分含量增加有关，但其生物学功能和作用机制仍需进一步研究。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    }
+  ],
+  "candidate_ids": [
+    "chunk:PAPER_001_C0007",
+    "chunk:PAPER_001_C0010",
+    "chunk:PAPER_001_C0004",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0027"
+  ],
+  "citation_gold_chunk_hit": 1,
+  "citation_gold_source_hit": 1,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出论文引言中我国鸭梨普通冷藏的贮藏时长：环境温度-1℃—0℃，一般可贮藏5—6个月（从9月至翌年3月），与参考答案及原文E1完全一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "我国鸭梨普通冷藏（环境温度-1℃—0℃）一般可贮藏5—6个月（从9月至翌年3月）。",
+          "status": "supported",
+          "reason": "论文引言E1原文明确记载：普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6个月（从9月至翌年3月）。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3808,
+      "completion_tokens": 144,
+      "total_tokens": 3952,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 2272
+    },
+    "model": "deepseek-flash",
+    "response_id": "c62b89de-dbf5-47f6-a72d-badf30a1f5fc",
+    "seconds": 5.669501400000172,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

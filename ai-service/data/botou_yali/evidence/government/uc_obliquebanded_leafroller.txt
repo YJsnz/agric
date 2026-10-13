@@ -1,0 +1,354 @@
+Obliquebanded Leafroller / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+Obliquebanded Leafroller
+Agriculture: Pear Pest Management Guidelines
+Obliquebanded Leafroller
+Choristoneura rosaceana
+On This Page
+Description of the Pest
+Damage
+Management
+Important Links
+Description of the Pest
+Obliquebanded leafroller overwinters as immature larvae under bud scales. Larvae are yellowish green
+with brown to black heads. As they mature, larvae construct tubular shelters from
+a single leaf. Moths of obliquebanded leafrollers have alternating light and
+dark brown bands across their forewings. They begin emerging in mid-May in
+warmer districts to early June in cooler areas. There are usually two
+generations a year. The larvae of the summer generation are found feeding between
+the fruit in a cluster.
+Damage
+Damage is caused by larvae feeding on fruit. Early in the
+season, larvae feed on flower parts and fruit. When they feed on young fruit,
+they cause deep depressions that become rough and russetted by harvest. The
+summer generation causes extensive superficial
+skin tunnels (giving rise to the name "skin worms") when insects feed between two
+pears in a cluster.
+Management
+Obliquebanded leafroller is an occasional pest in spring and
+summer. Summer damage is most commonly seen in orchards where highly selective
+codling moth insecticides are used, including mating disruption, that do not
+control obliquebanded leafrollers. Treat only if monitoring indicates need.
+Biological Control
+The parasitic wasp Macrocentrus
+iridescens has been observed attacking obliquebanded leafroller larvae in
+the Central Valley, and Central and North Coast apple orchards.
+Organically Acceptable Methods
+Sprays of Bacillus
+thuringiensis or the Entrust formulation of spinosad are organically
+acceptable.
+Monitoring and Treatment Decisions
+Bloom
+Check the orchard at cluster bud for the presence of larvae
+and feeding damage on flowers. From 50 trees, collect one fruit spur from the
+top and one at eye level, for a total of 100 spurs.
+If
+more than one larva is found, treat immediately. A number of insecticides that
+don't create problems with water-quality issues are effective in controlling
+this pest, including Bacillus
+thuringiensis, spinosad (Entrust, Success), and methoxyfenozide (Intrepid).
+The best timing for control of overwintering larvae is at full bloom or early
+petal fall.
+If only one larva was found at cluster bud, use pheromone traps to monitor the first summer flight (see PHEROMONE TRAPS). Place pheromone traps in the orchard in mid-April. Begin accumulating degree-days as soon as traps begin to catch moths (this is the biofix) using a lower threshold of 43°F and an upper threshold of 85°F. Calculate degree-days for obliquebanded leafroller in pears for your location using the obliquebanded leafroller pest model. To learn more about using degree-days to time insecticide applications, watch the degree-days video.
+For more information about monitoring at this time, see SAMPLING AT BLOOM.
+Fruit development
+To determine if a treatment is needed for the summer
+generation, monitor fruit where it touches other fruit in 20 trees in a block.
+Collect one fruit cluster from the treetop and one from eye level for a total
+of 40 clusters. If more than two clusters contain leafrollers, treat at about
+600–700 DD from the biofix (i.e. from first moth catch). For information
+on monitoring other pests at this time, see SAMPLING
+DURING FRUIT DEVELOPMENT.
+Harvest Fruit Sample
+At harvest, assess your IPM program by monitoring fruit in
+the bins for obliquebanded leafroller damage. Sample 200 fruit from 5 bins per orchard
+(or 20-acre block in large orchards) for a total of 1,000 fruit. For more
+information about monitoring at this time, see HARVEST
+FRUIT SAMPLE.
+Common name
+Amount to use**
+REI‡
+PHI‡
+(Example trade name)
+(conc.)
+(dilute)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least harmful to natural enemies, honey bees, and the environment are at the top of the table. When choosing a pesticide, consider information relating to air and water quality, resistance management, and the pesticide's properties and application timing. Always read the label of the product being used.
+CLUSTER BUD to PETAL
+FALL
+A.
+BACILLUS THURINGIENSIS ssp. KURSTAKI#
+(various products)
+Label rates
+—
+4
+0
+MODE OF ACTION GROUP NUMBER1: 11A
+COMMENTS: Least harmful to beneficials. Bt is a stomach poison
+and must be consumed by the leafroller; therefore it is most effective when
+applied during warm, dry weather when larvae are actively feeding. Most
+effective against young larvae. Apply starting at cluster bud. Requires more
+than 1 treatment; apply second application 7–10 days after the first.
+Most effective if applied when weather forecasts predict 3 to 4 days of warm,
+dry weather.
+B.
+METHOXYFENOZIDE
+(Intrepid 2F)
+16 fl oz
+—
+4
+14
+MODE OF ACTION GROUP NUMBER1: 18A
+COMMENTS: Functions both as an ovicide and as a larvicide.
+Larvae must ingest it for it to be effective. Treat overwintered larvae at
+petal fall before webbing and sheltering begin. Spray coverage is extremely
+important. Ground application should use 200 gal water/acre with a sprayer
+speed of 1.5 mph. The addition of a spray adjuvant is recommended to enhance
+spray coverage.
+C.
+SPINOSAD
+(Entrust)#
+2–3 oz
+0.5–0.75 oz
+4
+7
+(Success)
+6–10 fl oz
+2–3.3 fl oz
+4
+7
+MODE OF ACTION GROUP NUMBER1: 5
+COMMENTS: Apply with oil. Most effective when applied at
+petal fall. Do not apply more than 3 sprays per season directed at
+leafrollers. Do not apply more than 9 oz/acre per crop of Entrust or 29 fl oz
+of Success/acre per crop. Residual efficacy is affected by pH but initial
+efficacy is not; verify that water pH is greater than 6 and less than 8.
+D.
+CHLORANTRANILIPROLE
+(Altacor)
+3–4.5 oz
+—
+4
+5
+MODE OF ACTION GROUP NUMBER1: 28
+COMMENTS: Larvicide with some ovicidal activity. Do not apply
+dilute applications of more than 200 gal/acre; use 100–150 gal/acre for
+best results.
+E.
+SPINETORAM
+(Delegate WG)
+4.5–7 oz
+—
+4
+7
+MODE OF ACTION GROUP NUMBER1: 5
+COMMENTS: Residual efficacy is affected by pH but initial
+efficacy is not; verify that water pH is greater than 6 and less than 8.
+SUMMER
+A.
+BACILLUS THURINGIENSIS ssp. KURSTAKI#
+(various products)
+Label rates
+4
+0
+MODE OF ACTION GROUP NUMBER1: 11A
+COMMENTS: Least harmful to beneficials. Bt is a stomach poison
+and must be consumed by the leafroller; therefore it is most effective when
+applied during warm, dry weather when larvae are actively feeding. Most
+effective against young larvae. For summer generation, begin applications at
+600 to 700 DD from biofix. Requires more than 1 treatment; apply second
+application 7–10 days after the first. Most effective if applied when
+weather forecasts predict 3 to 4 days of warm, dry weather. Larvae are more
+active and feed more in warm weather than in cooler or rainy weather.
+B.
+METHOXYFENOZIDE
+(Intrepid 2F)
+16 fl oz
+—
+4
+14
+MODE OF ACTION GROUP NUMBER1: 18A
+COMMENTS: Functions both as an ovicide (when applied to eggs
+and when eggs are laid on residues) and as a larvicide. Larvae must ingest it
+for it to be effective. For summer generation, begin applications at 500 to
+600 DD from biofix. Spray coverage is extremely important. Ground application
+should use 200 gal water/acre with a sprayer speed of 1.5 mph. The addition
+of a spray adjuvant is recommended to enhance spray coverage.
+C.
+SPINOSAD
+(Entrust)#
+2–3 oz
+0.5–0.75 oz
+4
+7
+(Success)
+6–10 fl oz
+2–3.3 fl oz
+4
+7
+MODE OF ACTION GROUP NUMBER1: 5
+COMMENTS: For the summer generation, apply at 600 to 700 DD
+from biofix. Residual efficacy is affected by pH but initial efficacy is not;
+verify that water pH is greater than 6 and less than 8.
+D.
+CHLORANTRANILIPROLE
+(Altacor)
+3–4.5 oz
+—
+4
+5
+MODE OF ACTION GROUP NUMBER1: 28
+COMMENTS: Do not apply dilute applications of more than 200
+gal/acre; use 100–150 gal/acre for best results.
+E.
+SPINETORAM
+(Delegate WG)
+4.5–7 oz
+—
+4
+7
+MODE OF ACTION GROUP NUMBER1: 5
+COMMENTS: Residual efficacy is affected by pH but initial efficacy
+is not; verify that water pH is greater than 6 and less than 8.
+**
+Dilute rate is the rate per 100 gal water; use 400 gal
+solution/acre. Apply concentrate in 80–100 gal water/acre, or less if
+the label allows.
+‡
+Restricted entry interval (REI) is the number of hours
+(unless otherwise noted) from treatment until the treated area can be safely
+entered without protective clothing. Preharvest interval (PHI) is the
+number of days from treatment to harvest. In some cases the REI exceeds the
+PHI. The longer of two intervals is the minimum time that must elapse before
+harvest.
+*
+Permit required from county agricultural commissioner for
+purchase or use.
+NA
+Not applicable.
+1
+Rotate chemicals with a different mode of action Group number,
+and do not use products with the same mode of action Group number more than
+twice per season to help prevent the development of resistance. For example,
+the organophosphates have a Group number of 1B; chemicals with a 1B Group
+number should be alternated with chemicals that have a Group number other
+than 1B. Mode of action Group numbers are assigned by IRAC (Insecticide
+Resistance Action Committee).
+—
+Not recommended or not on label.
+#
+Acceptable for organically grown produce.
+Important Links
+Calculate degree-days
+Degree-days video
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+L.G. Varela (emeritus), UC IPM and UC Cooperative Extension Sonoma County
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+R.A. Van Steenwyk (emeritus), Environmental Science, Policy, and Management, UC Berkeley
+C.A. Ingels, UC Cooperative Extension Sacramento County
+Acknowledgement for Contributions to Invertebrates
+P.W. Weddle, Weddle, Hansen & Associates
+P. Chevalier, United Ag Products, Ukiah
+R. Hansen, Weddle, Hansen & Associates
+M. Hooper, Ag Unlimited, Lakeport
+B. Knispel, Pest Control Adviser, Upper Lake
+T. Lidyoff, Purity Products, Healdsburg
+G. McCosker, Harvey Lyman Ag Services, Walnut Grove
+B. Oldham, Ag Unlimited, Ukiah
+C. Pickel (emeritus), UC IPM and UC Cooperative Extension Sutter and Yuba counties
+J. Sisevich, AgroTech, Kelseyville
+M.J. Smith, UC Cooperative Extension San Luis Obispo County
+B. Zoller, The Pear Doctor, Inc., Kelseyville
+Text Updated: 05/19
+Treatment Table Updated: 11/12
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

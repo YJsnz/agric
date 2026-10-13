@@ -1,0 +1,622 @@
+{
+  "http_status": 200,
+  "result": {
+    "crop_id": "huanghua_hanjianmai",
+    "question": "黄骅旱碱麦收获后，原粮质量主要应该关注哪些指标？",
+    "entities": {
+      "crop": "huanghua_hanjianmai",
+      "region": "黄骅",
+      "growth_stage": "采后",
+      "soil_salinity": null,
+      "soil_moisture": null,
+      "temperature": null,
+      "rainfall": null,
+      "variety": null,
+      "quality_intent": "grain",
+      "stress": [],
+      "practice": [],
+      "intent": "quality_query"
+    },
+    "generation_called": true,
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 11,
+      "vector_evidence_count": 2,
+      "fused_count": 2
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "HH-E047",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:bb356e351e9dbeb8",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E048",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:cf3cc391ad6b4aef",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E049",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:b51000f7cddcb848",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E050",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:90d144a881d04d0a",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E051",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:833d9bda20dab5fa",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E052",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:8984668a6bbedef0",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E053",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:9fa4b613b8d6042e",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E054",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:961cb317b8d81303",
+          "relation": "HAS_INDICATOR",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C029",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E055",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:e5b987282181db37",
+          "relation": "REFERENCES_STANDARD",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C030",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E056",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:786931143842ba8b",
+          "relation": "REFERENCES_STANDARD",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C030",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        },
+        {
+          "id": "HH-E057",
+          "source": "huanghua_hanjianmai:58500962a98317fa",
+          "target": "huanghua_hanjianmai:a34ba27cf0334d46",
+          "relation": "REFERENCES_STANDARD",
+          "kind": "fact",
+          "source_id": "W015",
+          "evidence_ids": [
+            "W015"
+          ],
+          "chunk_id": "HH-C030",
+          "crop_id": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "stage_ids": [
+            "huanghua_hanjianmai:7493a9ebae4977e4"
+          ],
+          "growth_stage": "采后",
+          "scope": "grain",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "evidence_text": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "conditions": [
+            "原文地区：黄骅",
+            "生育阶段：采后"
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮指标",
+          "stress": [],
+          "practice": [
+            "原粮指标"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "4 表1 质量要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        }
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮卫生",
+          "stress": [],
+          "practice": [
+            "原粮卫生"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5 卫生要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮指标",
+          "stress": [],
+          "practice": [
+            "原粮指标"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "4 表1 质量要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮卫生",
+          "stress": [],
+          "practice": [
+            "原粮卫生"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5 卫生要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论所列质量指标（色泽、容重、杂质、不完善粒、水分、硬度指数、降落数值、蛋白质含量）与E1表1逐项一致；卫生要求（真菌毒素按GB 2761、污染物按GB 2762、农药残留按GB 2763）与E2第5章一致；结论明确说明无用户地块实测值、不能判断达标，未超出证据范围。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中所有数值和引用标准均与E1、E2原文一致：容重≥750 g/L、杂质≤1.0%、不完善粒≤8.0%、水分≤12.5%、硬度指数≥60%、降落数值≥450 s、蛋白质（干基）≥13.5%，以及GB 2761/2762/2763的对应关系均逐字可核。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning仅说明指标来自黄骅旱碱麦原粮地方标准、证据未提供用户地块数据、无法评估达标情况，并指出GB 2761/2762/2763具体限量值未在证据中给出，均与E1、E2的证据范围一致，未补造缺失路径或数值。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议按DB1309/T 333-2025表1项目取样检测并对应GB 2761/2762/2763检测卫生指标，均直接源于E1、E2；同时明确缺少实测数据、需与标准限值逐项比对，未推荐药名、剂量或生产操作，符合research模式。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实地块具体适用条件；此回答为文献依据及候选建议，不是现场确定性结论。"
+    },
+    "status": "insufficient_evidence",
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "content": "表1质量要求项目指标色泽种皮微黄容重，g/L≥750杂质含量，%≤1.0不完善粒含量，%≤8.0水分，%≤12.5硬度指数，%≥60降落数值，s≥450蛋白质含量（干基），%≥13.5",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮指标",
+          "stress": [],
+          "practice": [
+            "原粮指标"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "4 表1 质量要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 17,
+            "end": 109
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "content": "5卫生要求5.1真菌毒素限量指标按GB2761执行。5.2污染物限量按GB2762执行。5.3农药最大残留限量按GB2763执行。",
+        "source_id": "W015",
+        "title": "DB1309/T 333-2025 黄骅旱碱麦原粮",
+        "metadata": {
+          "crop": "huanghua_hanjianmai",
+          "region": "黄骅",
+          "growth_stage": "采后",
+          "scope": "grain",
+          "topic": "原粮卫生",
+          "stress": [],
+          "practice": [
+            "原粮卫生"
+          ],
+          "source_id": "W015",
+          "evidence_level": "official_standard",
+          "review_status": "verbatim_verified",
+          "page": 4,
+          "section": "5 卫生要求",
+          "locator": {
+            "file": "evidence\\raw\\W015_fulltext.pages.json",
+            "page": 4,
+            "start": 109,
+            "end": 174
+          },
+          "source_sha256": "3c9d9ad002582e1163a76ce90d93e43900ff34e72d80dd3c10b961de5c6e6829",
+          "limitations": []
+        },
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A"
+      }
+    ],
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "针对黄骅旱碱麦收获后的原粮质量，依据现行地方标准，主要应关注两类指标：一是质量要求，包括色泽、容重、杂质含量、不完善粒含量、水分、硬度指数、降落数值和蛋白质含量（干基） [E1] ；二是卫生要求，包括真菌毒素限量、污染物限量和农药最大残留限量，分别按GB 2761、GB 2762、GB 2763执行 [E2] 。当前证据未提供用户地块的实测值，无法判断其原粮是否达标，也不代表适用于用户地块。",
+      "supporting_points": [
+        "DB1309/T 333-2025《黄骅旱碱麦原粮》表1质量要求规定：色泽种皮微黄，容重≥750 g/L，杂质含量≤1.0%，不完善粒含量≤8.0%，水分≤12.5%，硬度指数≥60%，降落数值≥450 s，蛋白质含量（干基）≥13.5% [E1] 。该标准第5章卫生要求规定：真菌毒素限量按GB 2761执行，污染物限量按GB 2762执行，农药最大残留限量按GB 2763执行 [E2] 。"
+      ],
+      "uncertainties": [
+        "上述指标来自黄骅旱碱麦原粮的地方标准，适用于该标准定义的原粮质量评价 [E1]  [E2] 。但证据仅给出标准条款，未提供用户地块的品种、土壤盐分、水分、天气及实际检测数据，因此无法评估用户原粮是否满足这些指标，也不能将标准限值直接推断为用户地块的实测结果。此外，卫生要求引用的GB 2761、GB 2762、GB 2763具体限量值未在证据中提供，无法列出具体数值。"
+      ]
+    },
+    "answer": "针对黄骅旱碱麦收获后的原粮质量，依据现行地方标准，主要应关注两类指标：一是质量要求，包括色泽、容重、杂质含量、不完善粒含量、水分、硬度指数、降落数值和蛋白质含量（干基） [E1] ；二是卫生要求，包括真菌毒素限量、污染物限量和农药最大残留限量，分别按GB 2761、GB 2762、GB 2763执行 [E2] 。当前证据未提供用户地块的实测值，无法判断其原粮是否达标，也不代表适用于用户地块。\n\nDB1309/T 333-2025《黄骅旱碱麦原粮》表1质量要求规定：色泽种皮微黄，容重≥750 g/L，杂质含量≤1.0%，不完善粒含量≤8.0%，水分≤12.5%，硬度指数≥60%，降落数值≥450 s，蛋白质含量（干基）≥13.5% [E1] 。该标准第5章卫生要求规定：真菌毒素限量按GB 2761执行，污染物限量按GB 2762执行，农药最大残留限量按GB 2763执行 [E2] 。\n\n上述指标来自黄骅旱碱麦原粮的地方标准，适用于该标准定义的原粮质量评价 [E1]  [E2] 。但证据仅给出标准条款，未提供用户地块的品种、土壤盐分、水分、天气及实际检测数据，因此无法评估用户原粮是否满足这些指标，也不能将标准限值直接推断为用户地块的实测结果。此外，卫生要求引用的GB 2761、GB 2762、GB 2763具体限量值未在证据中提供，无法列出具体数值。\n\n建议在收获后按DB1309/T 333-2025表1项目对原粮进行取样检测，重点关注容重、杂质、不完善粒、水分、硬度指数、降落数值和蛋白质含量 [E1] ；同时按该标准第5章要求，对应GB 2761、GB 2762、GB 2763检测真菌毒素、污染物和农药残留 [E2] 。因缺少用户地块实测数据，检测结果需与标准限值逐项比对后方可判断是否达标。"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0291",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，总RNA经DNase清除DNA后，使用哪个反转录试剂盒进行反转录？",
+      "answer_quote": "总RNA 经DNase 清除DNA 后，用反转录试剂盒Primescript TM RT Reagent Kit（宝生物工程（大连）有限公司）进行反转录",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0292",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，本研究的定量PCR分析使用了哪个试剂盒和哪种仪器？",
+      "answer_quote": "按照定量PCR 反应试剂盒TB GreenTM Premix Ex Taq II（宝生物工程（大连）有限公司）说明书进行定量分析。定量PCR仪为美国Applied BiosystemsTM ABI 7500 型。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0293",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，本研究以哪个基因作为内参基因，并采用什么方法计算待测基因相对表达量？",
+      "answer_quote": "以PbActin2 为内参基因[22]，通过2-∆∆CT 法计算待测基因相对表达量。",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

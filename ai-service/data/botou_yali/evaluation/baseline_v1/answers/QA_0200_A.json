@@ -1,0 +1,72 @@
+{
+  "id": "QA_0200",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法确认该论文的具体内容，但根据论文标题可推断其研究的两种贮藏方式为窖藏和冷藏。",
+      "basis": "仅依据问题中给出的论文标题《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》进行推断，未获取论文全文或摘要。",
+      "reasoning": "标题明确包含“窖藏”和“冷藏”两个关键词，且问题询问“哪两种贮藏方式”，因此从标题字面可推断为窖藏与冷藏。但未阅读论文原文，不能确认论文中是否还涉及其他贮藏方式或具体处理细节。",
+      "advice": "如需准确答案，请查阅该论文的摘要或方法部分，确认其实际设置的贮藏处理。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 163,
+      "completion_tokens": 162,
+      "total_tokens": 325,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 163
+    },
+    "model": "deepseek-flash",
+    "response_id": "6e651916-d625-4996-9ac8-a069a27b4b42",
+    "seconds": 6.037120500000128,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答正确指出鸭梨采收后采用窖藏和冷藏两种贮藏方式，与参考答案一致；虽声明未获取全文，但核心答案正确，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "根据论文标题可推断其研究的两种贮藏方式为窖藏和冷藏。",
+          "status": "supported",
+          "reason": "论文标题明确包含“窖藏”和“冷藏”，且原文摘要方法部分也写明“鸭梨采收后以窖藏和冷藏两种方式贮藏”。"
+        },
+        {
+          "claim": "未获取论文全文或摘要。",
+          "status": "unverifiable",
+          "reason": "该声明涉及回答者自身获取资料的情况，提供的论文原文和检索上下文无法验证。"
+        },
+        {
+          "claim": "不能确认论文中是否还涉及其他贮藏方式或具体处理细节。",
+          "status": "unverifiable",
+          "reason": "提供资料未显示论文是否还涉及其他贮藏方式或处理细节，无法验证该保留性声明。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 1020,
+      "completion_tokens": 195,
+      "total_tokens": 1215,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 892
+    },
+    "model": "deepseek-flash",
+    "response_id": "c890d9d0-930a-436d-aa41-aa5a8365d97e",
+    "seconds": 5.900025099999766,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

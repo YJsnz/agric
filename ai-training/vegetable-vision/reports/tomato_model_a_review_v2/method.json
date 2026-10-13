@@ -1,0 +1,15 @@
+{
+  "scored_pairs": 209738,
+  "local_feature_pairs": 1200,
+  "tier_counts": {
+    "C": 200152,
+    "B": 3286,
+    "A": 329
+  },
+  "review_pairs": 409,
+  "review_tier_counts": {
+    "A": 329,
+    "B": 80
+  },
+  "candidate_only": true
+}

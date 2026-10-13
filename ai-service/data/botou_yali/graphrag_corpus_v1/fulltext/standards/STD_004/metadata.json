@@ -1,0 +1,78 @@
+{
+  "source_id": "STD_004",
+  "title": "DB13/T 5390-2021 梨货架期品质维持技术规范",
+  "source_type": "standard",
+  "crop": [
+    "梨"
+  ],
+  "region": [
+    "河北省"
+  ],
+  "region_note": "河北省",
+  "year": 2021,
+  "evidence_level": "A",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [
+    "储藏期",
+    "出库期",
+    "运输期",
+    "货架期"
+  ],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=C3B0BB05E84D4F89E05397BE0A0A81E3",
+  "authors": [],
+  "doi": null,
+  "availability": "fulltext_pdf_available",
+  "review_status": "fulltext_acquired_content_review_pending",
+  "fulltext_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_004/original.pdf",
+  "text_path": "data/botou_yali/graphrag_corpus_v1/processed/STD_004/text.txt",
+  "pages_path": "data/botou_yali/graphrag_corpus_v1/processed/STD_004/pages.json",
+  "page_count": 6,
+  "ready_for_chunking": true,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "当前公开页面没有完整技术条款，因此本文件不提供未经核验的温湿度或处理参数。",
+  "kg_source_ids": [
+    "5390"
+  ],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_004/landing.html",
+      "sha256": "7b43c0100d701da707d88b8bef1502d00713759f0c19e7a5381e30e2bfca22c4",
+      "bytes": 23843,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_004/original.pdf",
+      "sha256": "64b3c0db0c947772251d5b0305ddfb03e2fa0efdf94f2cac32dff16dfbfe52d0",
+      "bytes": 256732,
+      "role": "fulltext"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_004/summary.md",
+      "sha256": "03228989907ab18e26721a8e876a76507af82780652d0f204da30ec8574ee1eb",
+      "bytes": 1073,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": {
+    "url": "https://dbba.sacinfo.org.cn/portal/download/db3700c9cd141a9f3ce0465a6d447b2e4bd872d6b02380657fc51abad44b99af",
+    "status": "downloaded_not_reviewed",
+    "file": "standards\\pear\\DB13_T_5390_2021.pdf",
+    "sha256": "64b3c0db0c947772251d5b0305ddfb03e2fa0efdf94f2cac32dff16dfbfe52d0",
+    "bytes": 256732
+  },
+  "acquisition_attempts": [
+    {
+      "source_id": "STD_004",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=C3B0BB05E84D4F89E05397BE0A0A81E3",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_004/landing.html",
+      "attempted_at": "2026-09-15T06:21:23.099840+00:00",
+      "resolved_url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=C3B0BB05E84D4F89E05397BE0A0A81E3",
+      "status": "downloaded_pending_review",
+      "bytes": 23843,
+      "sha256": "7b43c0100d701da707d88b8bef1502d00713759f0c19e7a5381e30e2bfca22c4"
+    }
+  ],
+  "extraction_status": "text_available_review_pending"
+}

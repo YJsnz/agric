@@ -1,0 +1,214 @@
+Armillaria Root and Crown Rot (Oak Root Fungus) / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+Armillaria Root and Crown Rot (Oak Root Fungus)
+Agriculture: Pear Pest Management Guidelines
+Armillaria Root and Crown Rot (Oak Root Fungus)
+Armillaria mellea
+On This Page
+Symptoms and Signs
+Comments on the Disease
+Management
+Symptoms and Signs
+Affected trees
+usually show a general decline in vigor over many years. Sometimes trees that
+look healthy will suddenly wilt and die in a matter of weeks. The aboveground
+symptoms are similar to other root problems, including too much water,
+Phytopthora root rot, gophers, etc. The key symptom to look for is trees that
+are declining in infection centers (patches of diseased trees with the earliest
+infected trees typically in the middle) that potentially can expand annually.
+To confirm the
+presence of Armillaria, dig around
+the crown of the tree and scrape off the bark on small sections of the crown
+and main roots. It should be easy to see the dense, felty, creamy-white-colored
+plaques of mycelium between the bark and the wood. Infected wood will have a strong mushroom smell
+and feel slightly spongy. Sometimes it may be difficult to locate the mycelial
+plaques in the earlier stages if the infection has not yet moved up to the
+crown. Dark brown to black rhizomorphs (structures that resemble
+shoestrings) sometimes can be seen on the root surface. Sometimes, large,
+densely packed, honey-colored mushrooms form at the base of infected trees in
+late fall to early winter after rains. Be sure to check for signs of Armillaria
+root and crown rot before removing dead or declining trees with a backhoe.
+There are other wood-rotting fungi that also have dense white mycelium, so
+submitting samples to a lab may be necessary for positive diagnosis.
+Comments on the Disease
+Armillaria root and
+crown rot most often occurs when the soil is cool and moist. The pathogen
+survives in the soil on the roots of infected hosts from one year to the next.
+In the absence of a living host, it can survive for several years on old
+infected roots or other woody material buried in the soil; inoculum in North
+Coast pear orchards has been estimated to be over 100 years old. In pear
+orchards, Armillaria rhizomorphs
+infect healthy trees by penetrating into roots. The mycelium of the fungus
+grows up and down the root under the bark from the point of infection; it
+eventually reaches the crown where it girdles and kills the tree. Tree-to-tree
+infection is less important than previously thought, but is more likely in
+severely infected and high-density orchards.
+The fungus can be
+spread on infected woody material carried by farm machinery or flood water.
+However, if an orchard is planted on a site where oak, black walnut, or willow
+trees once grew, chances are very high that the inoculum already exists in the
+soil on old decaying roots. When these roots or rhizomorphs come in contact
+with the roots of a healthy, susceptible host, they infect the healthy roots.
+Most pear orchards along waterways probably have some level of Armillaria present in the soil. Infected
+pear trees may tolerate the fungus for years without noticeable symptoms. Most
+pears are listed as immune or highly resistant to Armillaria, including Pyrus
+betulaefolia, P. calleryana,
+French pear, Bartlett-rooted cuttings, and Old Home x Farmingdale. Old
+Home-rooted cuttings and Winter Nelis are listed as moderately resistant.
+Native hosts, such as oak, willow, cottonwood, and black walnut are tolerant of
+Armillaria under normal soil moisture
+conditions.
+Recent infections of
+Armillaria root rot in pear orchards may have been caused by a switch in
+irrigation practices from flood or furrow irrigation to permanent undertree
+sprinklers where water is applied more frequently and the soil layer close to
+the upper roots and tree crown is kept fairly moist through the entire growing
+season. Most infected orchards have been found in the North Coast with fewer in
+the Sacramento Delta. Most affected orchards are on sandy loam to loam soils
+along streams or rivers originally lined with native oaks.
+Management
+There is no truly
+effective control for Armillaria root rot. The effectiveness of soil fumigation
+depends greatly on soil type and moisture.
+Cultural Control
+Exposing an infected
+crown and upper root area of a tree infected with Armillaria mellea has been found to stop the development of the
+fungus into the crown area and allow the tree to regrow. In spring, remove soil
+from around the base of the tree to a depth of 9 to 12 inches. Leave the trunk
+exposed for the remainder of the growing season. Do not allow soil and debris
+to build up around the exposed crown and upper roots or the pathogen will
+resume growth. During the spring, summer, and fall, keep the upper roots and
+crown area as dry as possible.
+Treatment Decisions
+It may be helpful to
+fumigate the soil before replanting infected areas. Before fumigation, remove
+all infected trees, stumps, and as many roots greater than 1 inch in diameter
+as possible. Healthy-appearing trees adjacent to those showing symptoms are
+often infected also. Removal of these adjacent trees and inclusion of that
+ground in the soil fumigation may be advisable. Infected trees, stumps, and
+roots should be burned at the site or disposed of in areas where flood waters
+cannot wash them to agricultural lands. Complete eradication is rarely
+achieved, and re-treatment may be necessary in localized areas. If the soil is
+wet or if it has extensive clay layers to the depths reached by the roots,
+fumigant treatment with metam sodium is preferable. The greatest opportunity
+for eradication is on shallow soils less than 5 feet in depth.
+Common name
+Amount to use
+REI‡
+PHI‡
+(Example trade name)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least likely to cause resistance are at the top of the table. When choosing a pesticide, consider information relating to the pesticide's properties and application timing, honey bees, and environmental impact. Always read the label of the product being used.
+A.
+METAM SODIUM*
+(Vapam)
+Label rates
+60 (5 days)
+NA
+COMMENTS: Apply in
+winter when soil moisture is high. Fumigants such as methyl bromide and metam
+sodium are a prime source of volatile organic compounds (VOCs), which are a
+major air quality issue. Fumigate only as a last resort when other management
+strategies have not been successful or are not available.
+‡
+Restricted entry interval (REI) is the number of hours (unless otherwise noted) from treatment until the treated area can be safely entered without protective clothing. Preharvest interval (PHI) is the number of days from treatment to harvest. In some cases the REI exceeds the PHI. The longer of two intervals is the minimum time that must elapse before harvest.
+*
+Permit
+required from county agricultural commissioner for purchase or use.
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+W.D. Gubler, Plant Pathology, UC Davis
+J.E. Adaskaveg, Plant Pathology, UC Riverside
+Text Updated: 11/12
+Treatment Table Updated: 11/12
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

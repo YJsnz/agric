@@ -1,0 +1,44 @@
+[
+  {
+    "question": "本研究中，1.0%—3.0% O2 处理对鸭梨采后虎皮病的发生有何影响？",
+    "type": "factual",
+    "answer_quote": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生",
+    "gold_entities": [
+      "1.0%—3.0% O2",
+      "鸭梨",
+      "虎皮病"
+    ]
+  },
+  {
+    "question": "本研究中，1.0%—3.0% O2 处理对鸭梨乙烯释放高峰有何影响？",
+    "type": "factual",
+    "answer_quote": "推迟乙烯释放高峰",
+    "gold_entities": [
+      "1.0%—3.0% O2",
+      "鸭梨",
+      "乙烯释放高峰"
+    ]
+  },
+  {
+    "question": "本研究中，1.0%—3.0% O2 处理对鸭梨果皮组织中哪些基因的表达有显著抑制作用？",
+    "type": "factual",
+    "answer_quote": "显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达",
+    "gold_entities": [
+      "1.0%—3.0% O2",
+      "鸭梨",
+      "PbACO1",
+      "PbACO3",
+      "PbACS1"
+    ]
+  },
+  {
+    "question": "本研究中，1.0% O2 处理对鸭梨贮藏末期有何风险？",
+    "type": "factual",
+    "answer_quote": "但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。",
+    "gold_entities": [
+      "1.0% O2",
+      "鸭梨",
+      "黑心病"
+    ]
+  }
+]

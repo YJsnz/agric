@@ -1,0 +1,56 @@
+{
+  "id": "QA_0190",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法回答该具体问题。",
+      "basis": "未提供该论文的原文或研究记录，且我的知识库中不包含该论文的具体试验数据。",
+      "reasoning": "问题要求依据《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》的研究记录，比较降温方法对早采和晚采鸭梨果心相变温度的影响。由于没有该论文的原文内容，无法获取其试验设计、测定结果和结论，因此不能给出准确答案。",
+      "advice": "请提供该论文的原文或相关试验数据（如不同降温处理下早采和晚采鸭梨果心相变温度的具体数值或结论），以便进一步分析。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 181,
+      "completion_tokens": 160,
+      "total_tokens": 341,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 181
+    },
+    "model": "deepseek-flash",
+    "response_id": "3e4a029a-06fc-4ad6-9375-54a3fc235f78",
+    "seconds": 6.287722499999745,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.75,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何实质答案，仅以缺乏原文为由拒绝作答；而提供的原文证据明确包含答案（降温方法对晚采鸭梨果心相变温度的影响没有早采果那样明显），因此属于可回答题中的拒答，不能判为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1104,
+      "completion_tokens": 72,
+      "total_tokens": 1176,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 976
+    },
+    "model": "deepseek-flash",
+    "response_id": "703f5c22-ad19-43e6-9f34-285cc65e865b",
+    "seconds": 6.0196351999998114,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

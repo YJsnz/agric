@@ -1,0 +1,56 @@
+{
+  "id": "QA_0253",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法确定该论文窖藏试验中鸭梨果实SSC的具体变化趋势。",
+      "basis": "当前未提供该论文的原文内容或相关数据，且依据已有知识无法确认该论文中窖藏条件下SSC的具体变化。",
+      "reasoning": "问题要求依据特定论文回答，但证据列表为空，无法获取该论文中关于窖藏试验SSC变化的数据，因此不能给出具体趋势，也不应编造。",
+      "advice": "请提供该论文的原文、摘要或相关数据图表，以便准确提取窖藏条件下鸭梨果实SSC的变化趋势。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 166,
+      "completion_tokens": 136,
+      "total_tokens": 302,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 166
+    },
+    "model": "deepseek-flash",
+    "response_id": "20fca74d-9d89-4ddd-9469-9651f89e3f07",
+    "seconds": 5.921312299999954,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何趋势判断，仅说明证据不足而拒答；在可回答题中拒答不算正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 40,
+      "total_tokens": 610,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 442
+    },
+    "model": "deepseek-flash",
+    "response_id": "4a1ee52f-c772-4dcc-a6f2-91919765c02b",
+    "seconds": 5.5989990999996735,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

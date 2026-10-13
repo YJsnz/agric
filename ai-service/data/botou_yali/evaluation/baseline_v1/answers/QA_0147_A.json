@@ -1,0 +1,56 @@
+{
+  "id": "QA_0147",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法确定该研究中缓慢降温对早采和晚采鸭梨果心褐变的具体影响。",
+      "basis": "未提供该论文的原文或具体数据，且我的知识库中不包含该论文的详细结果。",
+      "reasoning": "问题要求依据特定论文回答，但证据列表为空，无法获取论文中关于缓慢降温与不同采收期鸭梨果心褐变关系的结论。",
+      "advice": "请提供该论文的摘要、结果部分或相关数据，以便准确回答。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 156,
+      "completion_tokens": 119,
+      "total_tokens": 275,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 156
+    },
+    "model": "deepseek-flash",
+    "response_id": "a6ef52af-cc0c-412b-92a3-7400a00f015c",
+    "seconds": 5.830404700000145,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于缓慢降温对早采和晚采鸭梨果心褐变影响的具体结论，仅表示无法确定并要求提供资料，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1035,
+      "completion_tokens": 50,
+      "total_tokens": 1085,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 907
+    },
+    "model": "deepseek-flash",
+    "response_id": "67e1cbc6-30b6-4702-9647-80127d1e00bd",
+    "seconds": 5.5545695999999225,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

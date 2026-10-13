@@ -1,0 +1,70 @@
+{
+  "id": "QA_0105",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法依据所提供证据回答该问题。",
+    "basis": "当前证据列表为空，且我未掌握该论文的具体研究记录。",
+    "reasoning": "问题要求依据《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的研究记录，判断低氧气调处理对乙烯的抑制是否可逆，以及恢复与什么因素有关。由于未提供该论文的原文、摘要或数据，我无法确认其具体实验结论，也不能编造可逆性判断或相关因素。",
+    "advice": "请提供该论文的原文、摘要、图表或相关段落，或允许检索该文献后再作分析。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出可逆性判断及恢复因素，仅表示证据不足无法作答；在可回答题中拒答不算正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 759,
+      "completion_tokens": 43,
+      "total_tokens": 802,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 375
+    },
+    "model": "deepseek-flash",
+    "response_id": "45f64851-63c1-4c74-8e56-226abfd61f55",
+    "seconds": 5.642733400003635,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法依据所提供证据回答该问题。",
+        "basis": "当前证据列表为空，且我未掌握该论文的具体研究记录。",
+        "reasoning": "问题要求依据《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的研究记录，判断低氧气调处理对乙烯的抑制是否可逆，以及恢复与什么因素有关。由于未提供该论文的原文、摘要或数据，我无法确认其具体实验结论，也不能编造可逆性判断或相关因素。",
+        "advice": "请提供该论文的原文、摘要、图表或相关段落，或允许检索该文献后再作分析。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 203,
+        "completion_tokens": 147,
+        "total_tokens": 350,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 203
+      },
+      "model": "deepseek-flash",
+      "response_id": "24b17111-feae-4c18-97dc-fccfdee25663",
+      "seconds": 6.105594699998619,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 11.74939299999096
+}

@@ -1,0 +1,270 @@
+{
+  "id": "QA_0348",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0005",
+    "chunk:PAPER_001_C0029",
+    "chunk:PAPER_001_C0004"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨",
+      "黑心病"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": null,
+      "environment": [],
+      "disease": [
+        "黑心病"
+      ],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": [],
+      "intent": "fact_query"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "disease",
+        "mention": "黑心病",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "partial_alignment",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 19
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [
+      {
+        "field": "disease",
+        "mention": "黑心病",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "reference_materials": [
+      {
+        "source_id": "PAPER_003",
+        "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+        "url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+        "chunk_id": "PAPER_003_C0013",
+        "reasons": [
+          "title:mismatch"
+        ],
+        "usable_for_answer": false
+      }
+    ],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 19,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_001_C0003",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 3,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9841269841269842
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0002",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 2,
+            "vector_rank": 2,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9838709677419355
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0005",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 6,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9462481962481962
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0029",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 4,
+            "vector_rank": 9,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9185914855072463
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0004",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 9,
+            "vector_rank": 5,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9112597547380157
+          }
+        }
+      ]
+    },
+    "status": "validation_failed",
+    "grounding_audit": {
+      "passed": false,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称证据未说明黑心病直接原因，仅提示1.0% O2处理在一定程度上增加贮藏末期黑心病风险；E1、E2、E4均明确表述“1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险”，且未给出直接原因，故该结论得到引用证据支持。"
+        },
+        {
+          "field": "basis",
+          "verdict": "unsupported",
+          "reason": "basis中“气调贮藏处理下黑心病发生率显著下降 [E5]”有E5支持，但“1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险 [E1][E2][E4]”也由E1、E2、E4支持；然而basis整体作为黑心病相关表述依据，未超出引用证据，但其中“气调贮藏处理下黑心病发生率显著下降”与E5的“heart browning incidence ... declined significantly under CA treatments”一致，故basis整体可支持；但核查要求每个字段事实必须得到实际引用证据支持，basis中所有事实均有引用证据支持，因此应为supported。更正：basis中“1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险”由E1、E2、E4支持，“气调贮藏处理下黑心病发生率显著下降”由E5支持，故basis为supported。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning称问题要求回答黑心病直接原因，而证据仅涉及不同O2浓度与黑心病风险或发生率的关联描述，未提供因果机制或直接原因；E1、E2、E4、E5确实只描述风险或发生率变化，未给出直接原因，故该推理得到引用证据支持。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice仅建议补充包含黑心病病理机制或因果验证内容的文献或试验数据，未陈述任何事实、数值或因果结论，属于无事实的补充资料建议。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "answer": "1. 结论\n本次回答未通过证据核查，未发布生成内容。\n2. 依据\n存在未由引用证据支持的内容\n3. 推理路径\n未发布未经核查的路径。\n4. 建议\n请缩小问题范围或补充原文资料。\n5. 来源\n暂无已通过核查的结论来源。"
+  },
+  "evidence": [],
+  "error": "validation_failed",
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据未说明鸭梨黑心病发生的直接原因，仅提示1.0% O2处理在一定程度上增加了贮藏末期黑心病风险 [E1][E2][E4]。",
+        "basis": "证据中与黑心病相关的表述为：1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险 [E1][E2][E4]；气调贮藏处理下黑心病发生率显著下降 [E5]。证据未给出黑心病发生的直接原因或机制。",
+        "reasoning": "问题要求回答黑心病发生的直接原因。检索到的证据仅涉及不同O2浓度与黑心病风险/发生率之间的关联描述 [E1][E2][E4][E5]，属于相关或影响层面的表述，未提供因果机制或直接原因的证据，因此不足以回答该问题。",
+        "advice": "如需明确黑心病发生的直接原因，请补充包含黑心病病理机制或因果验证内容的文献或试验数据。",
+        "citations": [
+          "E1",
+          "E2",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2196,
+        "completion_tokens": 223,
+        "total_tokens": 2419,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2068
+      },
+      "model": "deepseek-flash",
+      "response_id": "d9006490-a5a0-4d1d-907d-d3cf5dd69caf",
+      "seconds": 7.186183700003312,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据未说明鸭梨黑心病发生的直接原因，仅提示1.0% O2处理在一定程度上增加了贮藏末期黑心病风险 [E1][E2][E4]。",
+        "basis": "证据中与黑心病相关的表述为：1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险 [E1][E2][E4]；气调贮藏处理下黑心病发生率显著下降 [E5]。",
+        "reasoning": "问题要求回答黑心病发生的直接原因。检索到的证据仅涉及不同O2浓度与黑心病风险或发生率之间的关联描述 [E1][E2][E4][E5]，未提供因果机制或直接原因的证据，因此不足以回答该问题。",
+        "advice": "如需明确黑心病发生的直接原因，请补充包含黑心病病理机制或因果验证内容的文献或试验数据。",
+        "citations": [
+          "E1",
+          "E2",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2807,
+        "completion_tokens": 205,
+        "total_tokens": 3012,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 503
+      },
+      "model": "deepseek-flash",
+      "response_id": "ebcd59d0-4899-4f00-a221-8983da79f4ca",
+      "seconds": 5.975477800006047,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 27.0277885000105
+}

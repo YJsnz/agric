@@ -1,0 +1,145 @@
+[
+  {
+    "question": "在电子鼻检测数据的PCA分析中，主成分1（PC1）的贡献率是多少？",
+    "type": "factual",
+    "answer_quote": "PC1 贡献率97.75%，为影响各样品的主要因素。",
+    "gold_entities": [
+      "PC1",
+      "97.75%"
+    ]
+  },
+  {
+    "question": "根据电子鼻PCA图形分布，坐标图被分为两个区域，其中贮藏初期和冷藏鸭梨处于PC1值的哪个方向？",
+    "type": "factual",
+    "answer_quote": "贮藏初期、冷藏鸭梨处于PC1 值较",
+    "gold_entities": [
+      "贮藏初期",
+      "冷藏鸭梨",
+      "PC1"
+    ]
+  },
+  {
+    "question": "在鸭梨窖藏和冷藏条件下，贮藏0个月时，硬度的数值是多少？",
+    "type": "factual",
+    "answer_quote": "6.25±0.28bc",
+    "gold_entities": [
+      "硬度",
+      "0个月"
+    ]
+  },
+  {
+    "question": "在鸭梨窖藏和冷藏条件下，贮藏0个月时，可溶性固形物（SSC）的数值是多少？",
+    "type": "factual",
+    "answer_quote": "12.81±0.40d",
+    "gold_entities": [
+      "可溶性固形物",
+      "SSC",
+      "0个月"
+    ]
+  },
+  {
+    "question": "在鸭梨窖藏和冷藏条件下，贮藏0个月时，可滴定酸（TA）的数值是多少？",
+    "type": "factual",
+    "answer_quote": "1.32±0.03c",
+    "gold_entities": [
+      "可滴定酸",
+      "TA",
+      "0个月"
+    ]
+  },
+  {
+    "question": "在鸭梨窖藏条件下，贮藏1个月时，硬度的数值是多少？",
+    "type": "factual",
+    "answer_quote": "6.81±0.05a",
+    "gold_entities": [
+      "窖藏",
+      "硬度",
+      "1个月"
+    ]
+  },
+  {
+    "question": "在鸭梨冷藏条件下，贮藏1个月时，硬度的数值是多少？",
+    "type": "factual",
+    "answer_quote": "6.21±0.24bc",
+    "gold_entities": [
+      "冷藏",
+      "硬度",
+      "1个月"
+    ]
+  },
+  {
+    "question": "在鸭梨窖藏条件下，贮藏1个月时，可溶性固形物（SSC）的数值是多少？",
+    "type": "factual",
+    "answer_quote": "13.73±0.22abc",
+    "gold_entities": [
+      "窖藏",
+      "可溶性固形物",
+      "SSC",
+      "1个月"
+    ]
+  },
+  {
+    "question": "在鸭梨冷藏条件下，贮藏1个月时，可溶性固形物（SSC）的数值是多少？",
+    "type": "factual",
+    "answer_quote": "13.35±0.09bcd",
+    "gold_entities": [
+      "冷藏",
+      "可溶性固形物",
+      "SSC",
+      "1个月"
+    ]
+  },
+  {
+    "question": "在鸭梨窖藏条件下，贮藏1个月时，可滴定酸（TA）的数值是多少？",
+    "type": "factual",
+    "answer_quote": "1.50±0.02a",
+    "gold_entities": [
+      "窖藏",
+      "可滴定酸",
+      "TA",
+      "1个月"
+    ]
+  },
+  {
+    "question": "在鸭梨冷藏条件下，贮藏1个月时，可滴定酸（TA）的数值是多少？",
+    "type": "factual",
+    "answer_quote": "1.14±0.02d",
+    "gold_entities": [
+      "冷藏",
+      "可滴定酸",
+      "TA",
+      "1个月"
+    ]
+  },
+  {
+    "question": "在鸭梨窖藏条件下，贮藏2个月时，硬度的数值是多少？",
+    "type": "factual",
+    "answer_quote": "6.49±0.13ab",
+    "gold_entities": [
+      "窖藏",
+      "硬度",
+      "2个月"
+    ]
+  },
+  {
+    "question": "在鸭梨冷藏条件下，贮藏2个月时，硬度的数值是多少？",
+    "type": "factual",
+    "answer_quote": "6.17±0.26bc",
+    "gold_entities": [
+      "冷藏",
+      "硬度",
+      "2个月"
+    ]
+  },
+  {
+    "question": "在鸭梨窖藏条件下，贮藏2个月时，可溶性固形物（SSC）的数值是多少？",
+    "type": "factual",
+    "answer_quote": "13.15±0.31cd",
+    "gold_entities": [
+      "窖藏",
+      "可溶性固形物",
+      "SSC",
+      "2个月"
+    ]
+  }
+]

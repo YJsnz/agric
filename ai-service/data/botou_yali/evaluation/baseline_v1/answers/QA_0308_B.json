@@ -1,0 +1,201 @@
+{
+  "id": "QA_0308",
+  "arm": "B",
+  "generation": {
+    "result": {
+      "sufficient": true,
+      "conclusion": "与PbAAT1表达量呈显著正相关的基因有PbLOX1、PbLOX6和PbLOX8 [E2]。",
+      "basis": "证据E2（第2.7节 基因表达量之间的相关性分析）明确记载：相关性分析表明（表6），与PbAAT1表达量呈显著正相关的基因有PbLOX1、PbLOX6和PbLOX8 [E2]。",
+      "reasoning": "问题直接询问与PbAAT1表达量呈显著正相关的基因，E2为同一论文中专门报告基因表达量相关性分析的章节，直接给出该问题的答案，故证据充分。E1、E4涉及果实品质（TA、SSC），E3为引言背景，E5为摘要，均不涉及该相关性结果，未作为结论依据。",
+      "advice": "该结论为研究文献中报道的相关性分析结果，属于相关性证据，不等同于已验证的因果关系，也不构成本地生产指导；如需应用，应结合本地贮藏条件进一步验证。",
+      "citations": [
+        "E2"
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2100,
+      "completion_tokens": 237,
+      "total_tokens": 2337,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2100
+    },
+    "model": "deepseek-flash",
+    "response_id": "8bbd37bc-2ee3-4188-89db-55615fb15ea8",
+    "seconds": 7.174245199999859,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0020",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0035",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.7  基因表达量之间的相关性分析",
+        "text": "根据果实挥发性香气物质测定结果，PbAAT1、PbLOX1 表达量与香气变化模式呈相似变化规律。因此，其表达可能是影响香气物质合成的主要原因。相关性分析表明（表6），与PbAAT1 表达量呈显著正相关的基因有PbLOX1、PbLOX6 和PbLOX8，与PbAAT1 表达量呈显著负相关的基因有PbEIN3、PbADH2、PbADH3 和PbADH5；与PbLOX1 表达量呈显著正相关的基因有PbACO2、PbETR2、PbAAT1 和PbLOX8；与PbLOX1 的表达量呈显著负相关的基因有PbEIN3、PbADH2 和PbADH3。因此，上述这些基因的表达在不同程度上影响香气的合成。",
+        "pages": [
+          12
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0019",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.1  果实品质变化",
+        "text": "窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "中国农业科学  2021,54(21):4635-4649 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2021.21.013收稿日期：2021-01-11；接受日期：2021-04-30基金项目：财政部和农业农村部：国家现代农业产业技术体系（CARS-28-23）、河北省农林科学院创新工程（2019-2-1）联系方式：岳盈肖，E-mail：yyingxiao@163.com。何近刚，E-mail：hejingang2000@163.com。岳盈肖和何近刚为同等贡献作者。通信作者王永霞，E-mail：wyxhd2004@126.com。通信作者关军锋，E-mail：junfeng-guan@263.net开放科学（资源服务）标识码（OSID）：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析岳盈肖1,2，何近刚2，赵江丽2，闫子茹2，程玉豆2，武肖琦2，王永霞，关军锋1 河北工程大学生命科学与食品工程学院，河北邯郸 056038；2 河北省农林科学院生物技术与食品科学研究所/河北省植物转基因中心，石家庄 050051摘要：【目的】比较窖藏和冷藏过程中，鸭梨果实品质、呼吸速率、乙烯释放速率、电子鼻特征、挥发性物质及其相关基因表达的差异，进一步解析两种贮藏方式对鸭梨香气物质形成的影响及其机制。【方法】鸭梨采收后以窖藏和冷藏两种方式贮藏，测定贮藏期间果实硬度、可溶性固形物含量（SSC）、可滴定酸（TA）含量、呼吸速率和乙烯释放速率，使用电子鼻检测挥发性物质变化，利用气质联用色谱（GC-MS）测定挥发性物质成分及含量，利用荧光定量PCR（Real-time PCR）技术分析乙烯生成（PbACS1、PbACO2）及其信号转导（PbETR1、PbETR2、PbERS1a、PbERS1b、PbEIN3、PbERF）、挥发性物质合成（PbAAT1、PbADH2、PbADH3、PbADH5、PbHPL、PbLOX1、PbLOX8）相关基因的表达量变化情况。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    }
+  ],
+  "candidate_ids": [
+    "chunk:PAPER_005_C0020",
+    "chunk:PAPER_005_C0035",
+    "chunk:PAPER_005_C0008",
+    "chunk:PAPER_005_C0019",
+    "chunk:PAPER_005_C0001"
+  ],
+  "citation_gold_chunk_hit": 1,
+  "citation_gold_source_hit": 1,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出与PbAAT1表达量呈显著正相关的基因PbLOX1、PbLOX6和PbLOX8，与参考答案及原文E2完全一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "与PbAAT1表达量呈显著正相关的基因有PbLOX1、PbLOX6和PbLOX8。",
+          "status": "supported",
+          "reason": "E2原文明确记载该相关性分析结果。"
+        },
+        {
+          "claim": "E2为同一论文中专门报告基因表达量相关性分析的章节。",
+          "status": "supported",
+          "reason": "E2标题为“2.7 基因表达量之间的相关性分析”，内容为相关性分析结果。"
+        },
+        {
+          "claim": "E1、E4涉及果实品质（TA、SSC）。",
+          "status": "supported",
+          "reason": "E1、E4均位于“2.1 果实品质变化”，内容涉及TA、SSC。"
+        },
+        {
+          "claim": "E3为引言背景。",
+          "status": "supported",
+          "reason": "E3标题为“0 引言”，内容为研究背景。"
+        },
+        {
+          "claim": "E5为摘要。",
+          "status": "supported",
+          "reason": "E5内容包含论文摘要信息。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2641,
+      "completion_tokens": 251,
+      "total_tokens": 2892,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2257
+    },
+    "model": "deepseek-flash",
+    "response_id": "7455aac7-fc30-426a-ba78-832856e1ee8c",
+    "seconds": 6.5806532000001425,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

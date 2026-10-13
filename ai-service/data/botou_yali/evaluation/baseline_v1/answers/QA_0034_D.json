@@ -1,0 +1,44 @@
+{
+  "id": "QA_0034",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出呼吸速率和乙烯产生速率的单位，而是以证据不足为由拒绝作答；但提供的原文证据已明确包含单位信息，因此属于可回答题中的拒答，不能判为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 507,
+      "completion_tokens": 59,
+      "total_tokens": 566,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 251
+    },
+    "model": "deepseek-flash",
+    "response_id": "ca851527-6d65-4110-ac92-e02495ddb08e",
+    "seconds": 5.440047200000208,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

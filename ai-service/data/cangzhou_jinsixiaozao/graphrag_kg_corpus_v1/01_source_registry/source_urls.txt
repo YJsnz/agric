@@ -1,0 +1,19 @@
+J001	DB13/T 5680-2023 地理标志产品 沧州金丝小枣	https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356
+J002	DB13/T 1522-2012 微咸水灌溉金丝小枣技术规程	https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=91D99E4D8C852E24E05397BE0A0A3A10
+J003	DB13/T 1313-2010 地理标志产品 沧州金丝小枣	https://www.bzxz.net/bzxz/155037.html
+J004	DB1309/T 56-2019 沧州金丝小枣栽培技术规程	https://std.samr.gov.cn/db/search/stdDBDetailed?id=02A2B8A3D722AC3FE06397BE0A0AE14F
+J005	DB1309/T 225-2019 金丝小枣黑疔病防控技术规程	https://std.sacinfo.org.cn/gnocDb/queryInfo?id=0AB40C3F65E9FA7B3E5CB3A962D980A7280C6C59F188DAA1C1E28D20E34A3B73
+J006	DB1309/T 226-2019 金丝小枣树体改造修剪技术规程	https://std.sacinfo.org.cn/gnocDb/queryInfo?id=0AB40C3F65E9FA7B3E5CB3A962D980A7280C6C59F188DAA1C1E28D20E34A3B73
+J007	河北沧州金丝小枣成熟期浆烂裂果灾害风险评估	https://zgnyqx.ieda.org.cn/CN/abstract/abstract2883.shtml
+J008	金丝小枣果实病害病原菌研究	https://html.rhhz.net/linyekexue/html/20040634.htm
+J009	金丝小枣浆烂果病症状、危害及病原菌鉴定	https://a.xueshu.baidu.com/scholarID/CN-BX75KALJ
+J010	金丝小枣浆烂果病侵染循环研究	https://a.xueshu.baidu.com/scholarID/CN-BX75KALJ
+J011	金丝小枣生长期主要气象灾害变化特征及影响权重检验分析	https://m.fx361.com/news/2021/0628/12785230.html
+J012	沧州金丝小枣的产量及品质预报	https://cnki.istiz.org.cn/kcms/detail/detail.aspx?dbcode=CJFQ&dbname=CJFD1993&filename=HBLY199301008
+J013	抗裂果枣新品种‘曙光7号’	https://www.ahs.ac.cn/CN/abstract/abstract5649.shtml
+J014	金丝小枣新品种‘曙光5号’和‘曙光6号’的选育	https://www.aeeisp.com/bfyy/article/id/3aa3be38-d5d4-491a-abb6-3e11a3da146a
+J015	不同处理对枣果贮藏效果的影响	https://www.spkx.net.cn/CN/Y2004/V25/I10/319
+J016	金丝小枣烘干技术总结	https://cnki.istiz.org.cn/kcms/detail/detailall.aspx?dbcode=CPFD&dbname=CPFD2008&filename=egyp200709001105
+J017	粘虫胶的应用技术（含沧州金丝小枣产区绿盲蝽）	https://html.rhhz.net/linyekexue/html/20070907.htm
+J018	枣病虫害防治	https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml
+J019	基于改进YOLOv3模型在沧州金丝小枣病虫害检测中的应用研究	https://cnki.istiz.org.cn/kcms/detail/detailall.aspx?dbcode=CJFQ&dbname=CJFD2025&filename=ljmg202511011

@@ -1,0 +1,56 @@
+{
+  "id": "QA_0099",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文的具体内容回答适量乙醇积累影响鸭梨后期虎皮病发生的方式。",
+      "basis": "当前未提供该论文的原文、摘要或相关数据，且我的知识库中不包含该论文的具体研究结论。",
+      "reasoning": "问题要求基于特定论文《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》回答，但未提供任何证据片段，因此无法确认该论文是否涉及乙醇积累与虎皮病的关系及其机制。",
+      "advice": "请提供该论文的相关段落或数据，或查阅原文中关于乙醇代谢、虎皮病发生的讨论部分。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 171,
+      "completion_tokens": 153,
+      "total_tokens": 324,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 171
+    },
+    "model": "deepseek-flash",
+    "response_id": "62ae00cd-9877-4c63-b3d6-592c0f4ad757",
+    "seconds": 5.943664799999624,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.75,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于适量乙醇积累影响鸭梨后期虎皮病发生方式的结论，仅表示无法依据论文回答，属于没有作答。提供的原文证据明确支持参考答案，因此该题可回答，拒答不能视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1047,
+      "completion_tokens": 64,
+      "total_tokens": 1111,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 919
+    },
+    "model": "deepseek-flash",
+    "response_id": "c9bd10c3-b9a9-43ba-bb7b-e7b2766a1932",
+    "seconds": 5.444155000000137,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

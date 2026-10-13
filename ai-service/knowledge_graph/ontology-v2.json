@@ -1,0 +1,110 @@
+{
+  "version": "2.1.0",
+  "title": "面向沧州特色农业生产—采后的时空因果知识图谱",
+  "domain_types": [
+    "Crop",
+    "Variety",
+    "Region",
+    "GrowthStage",
+    "Stage",
+    "Disease",
+    "Pest",
+    "Pathogen",
+    "Symptom",
+    "EnvironmentFactor",
+    "AgriculturalPractice",
+    "PreventionMeasure",
+    "QualityIndicator",
+    "HarvestProcess",
+    "StorageCondition",
+    "PostharvestRisk",
+    "Intervention",
+    "Requirement",
+    "State",
+    "Metric",
+    "PhysiologicalDisorder"
+  ],
+  "evidence_types": [
+    "Source",
+    "KGStatement"
+  ],
+  "statement_fields": [
+    "id",
+    "source",
+    "relation",
+    "target",
+    "kind",
+    "evidence_ids",
+    "locator",
+    "crop",
+    "region",
+    "stage_ids",
+    "conditions",
+    "valid_from",
+    "valid_to",
+    "review_status",
+    "confidence",
+    "effect_size"
+  ],
+  "semantics": {
+    "fact": "原文支持的分类、症状等事实，不等于本地发生率",
+    "normative": "标准或技术指导的要求、建议；不是试验因果效应",
+    "mechanism": "有原文条件的定性机制或风险方向；不提供效应量",
+    "association": "相关性信息，禁止自动升级为因果",
+    "CAUSES": "保留关系类型，当前禁止入图；需额外因果识别审核"
+  },
+  "provenance_relations": [
+    "SUBJECT",
+    "OBJECT",
+    "SUPPORTED_BY",
+    "APPLICABLE_CROP",
+    "APPLICABLE_STAGE"
+  ],
+  "rules": [
+    "来源权威等级与因果证据强度独立",
+    "资料只有目录时禁止支撑农业条款",
+    "异地证据不自动迁移到泊头",
+    "未标定阶段不能当作全部阶段",
+    "成熟度、品种和温度测量部位必须保留",
+    "没有校准数据时 confidence 和 effect_size 为 null",
+    "多跳知识路径不能替代结构因果模型",
+    "保留关系类型没有证据时不强行实例化；节点作物/地区为关联知识摘要，不替代关系级约束"
+  ],
+  "node_fields": [
+    "id",
+    "name",
+    "type",
+    "aliases",
+    "crop",
+    "region",
+    "description",
+    "source_count",
+    "source_ids"
+  ],
+  "relation_types": [
+    "LOCATED_IN",
+    "HAS_DISEASE",
+    "HAS_PEST",
+    "HAS_DISORDER",
+    "HAS_PATHOGEN",
+    "HAS_SYMPTOM",
+    "HAS_PROCESS",
+    "OCCURS_AT_STAGE",
+    "PROMOTES",
+    "INHIBITS",
+    "AFFECTS",
+    "INCREASES_RISK",
+    "REDUCES_RISK",
+    "CONTROLLED_BY",
+    "INTERVENTION_FOR",
+    "REQUIRES",
+    "RECOMMENDS",
+    "HAS_PARAMETER",
+    "ASSOCIATED_WITH"
+  ],
+  "reserved_relations": [
+    "INHIBITS",
+    "AFFECTS",
+    "REDUCES_RISK"
+  ]
+}

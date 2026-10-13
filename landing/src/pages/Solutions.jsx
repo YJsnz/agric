@@ -157,7 +157,7 @@ export default function Solutions() {
         <div className="mx-auto max-w-6xl">
           <SectionTitle
             eyebrow="Why Us"
-            title="为什么选择田言耕智"
+            title="为什么选择盐田丰语"
             subtitle="不是又一个农业报表系统，而是一套以空间和自然语言为中心的 AI 工作空间。"
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2">

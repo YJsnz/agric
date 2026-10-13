@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+    <!--手机端自适应-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="病虫害常识" />
+<meta name="description" content="" />
+<meta content="三金网络" name="author" />
+<title>病虫害常识-河北农业大学（实验实训中心） </title>
+<link href="../style/style.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]><script type="text/javascript" src="../script/H5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+<script type="text/javascript">var channelid='3';</script>
+<link rel="stylesheet" href="../header/header/indexnav.css">
+<link rel="stylesheet" href="..//style/kefu.css">
+<div class="allbox">
+<link rel="stylesheet" type="text/css" href="../header/header/bootstrap.min.css">
+<!--<script type="text/javascript" src="./script/jquery.min.js"></script>-->
+<script type="text/javascript" src="../header/header/bootstrap.min.js"></script>
+<script type="text/javascript" src="../header/header/jquery.js"></script>
+<script type="text/javascript">
+    var T_P='./';
+    if (typeof(channelid)=='undefined')channelid=0;
+</script>
+<script type="text/javascript" src="../header/header/nav.js"></script>
+<link href="../style/mediastyle.css" rel="stylesheet" type="text/css">
+<link href="../style/nav.css" rel="stylesheet" type="text/css">
+<link href="../header/header/navwap.css" rel="stylesheet" type="text/css">
+<link href="./style/kefu.css" rel="stylesheet" type="text/css">
+<script>
+new WOW().init();
+</script>
+<!--电脑站头部-->
+<div class="headerpage" >
+    <header>
+        <div class="head">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../pictures/logo_cn.png" title="河北农业大学（实验实训中心） "/>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="headerright">
+    </div>
+</div>
+<!--电脑站头部 end-->
+<!--手机站头部-->
+    <div class="headerpagewap">
+        <header>
+            <div class="headbgwap">
+                <div class="headwap">
+                    <div id="header" class="">
+                        <div class="head_nav_btn"><span></span></div>
+                        <div class="head_nav_bg">
+                            <div class="head_bg"></div>
+                            <div class="head_nav">
+                                <div class="slogan">
+                                </div>
+                                <ul class="nav_list">
+                                                                            <li ><a href="../index.html" id="channelid1" title="网站首页">网站首页</a>
+                                           
+                                        </li>
+                                                                            <li ><a href="../about/view_1.html" id="channelid2" title="课题介绍">课题介绍</a>
+                                           
+                                        </li>
+                                                                            <li ><a href="../bingchonghai/index_20.html" id="channelid20" title="作物病虫害">作物病虫害</a>
+                                           
+                                        </li>
+                                                                            <li ><a href="../changshi/index_3.html" id="channelid3" title="病虫害常识">病虫害常识</a>
+                                           
+                                        </li>
+                                                                            <li ><a href="../message/add_22.html" id="channelid22" title="留言反馈">留言反馈</a>
+                                           
+                                        </li>
+                                                                            <li ><a href="../contact/view_16.html" id="channelid21" title="联系我们">联系我们</a>
+                                           
+                                        </li>
+                                                                    </ul>
+                                <script>
+                                    //点击弹出导航
+                                    $('.head_nav_btn').click(function () {
+                                        $('#header').toggleClass('btn_click');
+                                        $("body").toggleClass("ovfHiden");
+                                    });
+                                    //点击弹出子导航
+                                    /* $(".nav_list>li").has('ul')*/
+
+                                    $(".nav_list>li>a").click(function (e) {
+
+                                        if($(this).siblings('ul.ul_nei_nav').length>=1){
+                                            if ( e && e.stopPropagation ){
+                                                // 因此它支持W3C的stopPropagation()方法
+                                                e.preventDefault()
+                                                e.stopPropagation();
+                                            }
+                                            else{
+                                                //否则，我们需要使用IE的方式来取消事件冒泡
+                                                window.event.cancelBubble = true;
+                                                return false;
+                                            }
+                                        }
+                                        var ul_nei_nav = $(this).siblings(".ul_nei_nav");
+                                        if (ul_nei_nav.css("display") === "none") {
+                                            $(this).siblings(".ul_nei_nav").slideDown();
+                                            $(this).parents("li").siblings().find(".ul_nei_nav").slideUp();
+                                            $(this).addClass("on");
+                                            $(this).parents("li").siblings().find("p").removeClass("on");
+                                        } else {
+                                            $(this).siblings(".ul_nei_nav").slideUp();
+                                            $(this).removeClass("on");
+                                        }
+                                    });
+                                    showNav()
+                                    // 导航栏定位
+                                    function showNav() {
+                                        var urlstr = location.href;
+                                        var urlstatus = false;
+                                        $(".nav_list li a").each(function () {
+                                            if ((urlstr + '/').indexOf($(this).attr('href')) > -1 && $(this).attr('href') != '') {
+                                                $(this).parent().addClass('curr').siblings('li').removeClass('curr');
+                                                $(this).addClass("on");
+                                                $(this).parents(".ul_nei_nav").show();
+                                                $(this).parents("li").children("p").addClass("on");
+                                                $(this).parents(".ul_nei_nav").siblings("li").addClass("on");
+                                                urlstatus = true;
+                                            } else {
+                                                $(this).parent().removeClass('curr');
+                                                urlstatus = false;
+                                            }
+                                        });
+                                    };
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    </div>
+<!--手机站头部 end-->
+
+<link rel="stylesheet" type="text/css" href="../texiao/003/banner1.css">
+<script type="text/javascript" src="../texiao/jquery.min.js"></script>
+<script type="text/javascript" src="../texiao/003/banner1.js"></script>
+<div class="bannerwrap">
+    <div class="focus">
+        <ul class="rslides f426x240">
+                            <li class="bannerheight" style="width:100%;background:url(../pictures/20230529034708710.jpg) center; background-size:cover;"><a style="display:block; height:100%; width:100%;"></a></li>
+                                <li class="bannerheight" style="width:100%;background:url(../pictures/20230529034659980.jpg) center; background-size:cover;"><a style="display:block; height:100%; width:100%;"></a></li>
+                                <li class="bannerheight" style="width:100%;background:url(../pictures/20230529034636270.jpg) center; background-size:cover;"><a style="display:block; height:100%; width:100%;"></a></li>
+                
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    NavOn(channelid);
+</script>
+<script type="text/javascript">NavOn(channelid);</script>
+<div class="mainpage">
+<div class="positioninfobox">
+  <div class="posbox">
+	<div class="position">您的位置：<a href="../index.html">首页</a> > 病虫害常识 > <font class="active">病虫害常识</font></div>
+		<div class="positioninfo">病虫害常识</div>
+  </div>
+</div>
+	<div class="left">
+		    <!--一级分类-->
+    <div class="menu3">
+                    <h3><a href="../changshi/mid_2.html" id="infocatid2">病虫害常识</a></h3>
+
+            </div>
+
+    <!--二级分类-->
+    <div class="menu4">
+        <ul>
+                    </ul>
+    </div>
+
+    <!--三级分类-->
+    <div class="menu5">
+        <ul>
+                    </ul>
+    </div>
+
+<script type="text/javascript">
+    var cat_chain= '["2"]';
+    if(cat_chain != ''){
+        cat_chain = JSON.parse(cat_chain);
+
+        for (j=0;j<cat_chain.length;j++){
+            var os = document.getElementById("infocatid"+cat_chain[j]);
+            if(os!=null)os.className="active";
+        }
+    }
+
+</script>	</div>
+	<div class="right">
+		<div class="mainarea">
+			<div class="info_view">
+								<h1 class="title">梨树9大病害全方面分析，高清图谱展示</h1>
+				<h2 class="subtitle">
+					添加时间：2023-06-02 17:39:26&nbsp;&nbsp;
+					浏览次数：1125&nbsp;&nbsp;
+				</h2>
+								<div class="cl"></div>
+				<div class="content">
+                    <!--形象图-->
+                    
+					<p>01黑星病</p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics6.baidu.com/feed/63d9f2d3572c11df226a92fa55af2dd5f603c239.jpeg@f_auto?token=49464ead420cfe0cc9455d3df98cc3e4&s=B1983AD156525FC6028DA67B03007057"/></p><p>梨黑星病是一种检疫性病害，病原为子囊菌亚门黑星菌属的纳雪星菌，可危害梨树地上部大部分幼嫩组织，并以叶片、果实为主。</p><p>叶片受害，先在叶背面的主脉两侧与支脉之间产生多角形或圆形的淡黄色病斑，没有明显的边缘，随后病斑会遍布整个叶片；在叶背面产生辐射状霉层，病情严重时造成大量落叶。</p><p>幼果发病为畸形果，会形成不规则的淡黄色至褐色病斑，且病斑上会长出黑色的霉层；成长期果实发病不畸形，但病斑部会凹陷并产生星状龟裂。</p><p>叶柄、果梗症状相似，出现黑色椭圆形的凹陷斑，病部覆盖黑霉、缢缩、失水干枯，致叶片或果实早落。</p><p>防治时注意加强冬季清园，对病叶、病枝、病果等集中处理，并喷广谱性杀菌剂降低病原菌。早春梨芽膨大期起开始结合药剂防治，花前花后是关键期，可选用苯醚甲环唑、已唑醇、氟硅唑、异菌脲等药剂。</p><p>02轮纹病</p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics3.baidu.com/feed/a8014c086e061d95e1eeb3de4e7c45d463d9ca3e.jpeg@f_auto?token=4199764323f0edfc919c4afd47c93568&s=B2002EE15483FF531E39CF3E03006047"/></p><p>梨树轮纹病菌是弱寄生菌，具有发病快、危害大等特点，主要侵害枝干、果实，在叶片上也偶有发生。</p><p>枝干受害，逐步形成马鞍状病斑，树皮变得粗糙；果实受害，初产生水渍状、圆形、浅褐色小斑，后扩大成浅褐色至红褐色的同心轮纹斑；叶片受害，生成较大褐色近圆形病斑，常伴有轮纹。</p><p>由于是弱寄生病害，在预防上提升树势，压低病原是关键。可增施有机肥、活土君复合菌剂，生长期淋施海精灵生物刺激剂，冬季清园时应刮除枝干老翘皮，剪除病枯枝，集中烧毁。药剂防治掌握在落花后至套袋前，特别是雨前雨后，药剂可选择代森锰锌、戊唑·多菌灵、代森联、吡唑·代森联等。</p><p>03锈病</p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics3.baidu.com/feed/2934349b033b5bb550cd2d9a005b9a3cb700bccd.jpeg@f_auto?token=0a250d030aad4ab98abd01fc05ab8d9a&s=814A2EF15C52B2C4088C8A2203002055"/></p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics3.baidu.com/feed/e7cd7b899e510fb37c2fadf0ecbb8790d1430c34.jpeg@f_auto?token=420c6c4e595105b5ba9c0927c1890b0c&s=F7A99043C66A471D0E9CBA3A0300C065"/></p><p>梨锈病主要对植株叶片、新梢和幼果有较大危害。</p><p>叶片受害，起初在叶面上出现淡黄色且带有光泽的小斑点，后扩展为近圆形病斑。</p><p>幼果受害，初期病斑大体与叶片上的相似，病部稍凹陷，病斑上密生橙黄色的小粒点。后期在同一部位产生灰黄色毛状物，即锈子器。病果生长停滞，往往畸形早落。</p><p>防治时要注意清除转主寄主如松、柏等；高温天气，要适时浇水，增加湿度，破坏发病条件；在萌芽至展叶的25天内进行喷药保护，药剂可选择三唑醇、苯醚甲环唑、嘧菌酯等。</p><p>04黑斑病</p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics0.baidu.com/feed/79f0f736afc37931d2042ea0de4cf84042a9115c.jpeg@f_auto?token=985cf9784a75d0e7c937790992651ef5&s=6C9436D10083F9574AB933150300E0D4"/></p><p>该病主要危害果实、叶和新梢。</p><p>叶片受害，叶面和叶背生成黑色圆形小斑，随着病情加重病斑逐步扩大，中部灰白色。</p><p>新梢受害，症状与叶片相似，但凹陷较明显，病斑欠规则，病斑集中处易断裂。</p><p>果实受害，初生成黑色斑点，后期易裂果。</p><p>防治时注意提升树势，提早套袋，保护果实。幼果期防控，药剂可选择代森铵、醚菌酯、苯甲嘧菌酯等。</p><p>05炭疽病</p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics2.baidu.com/feed/55e736d12f2eb938ef59c481e0eaca30e5dd6f1e.jpeg@f_auto?token=fd613fa7decb23f0bac7d18b47e355eb&s=D2103EC5421617D61CE0EF2E03005047"/></p><p>主要危害果实，多在生长中后期发病。病斑发黑凹陷，有轮纹，湿度大时有粉红色黏质物。</p><p>药剂可选择甲硫·戊唑醇、咪鲜胺、溴菌腈等，要注意前期的清园及初侵染期的防治，否则进入雨季后，病害传播极快，难以控制。</p><p>06褐斑病</p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics0.baidu.com/feed/b8014a90f603738da0a540b18693ff54fa19ecc7.jpeg@f_auto?token=54d93237e996383fa35eda25dd696e45&s=6CB16ED9884276477AA5335E03008055"/></p><p>主要危害叶片，症状分同心轮纹型、针芒型、混合型等多种类型，一般为害树冠下部或内膛的叶片，新叶很少发病，病叶极易脱落。</p><p>多雨高温会诱发该病的大发生，5月中旬开始防控。药剂可选择氟环唑、戊唑醇等，发病重的园子可配伍多抗锰锌。同时注意合理修剪，改善光照条件；秋、冬季清扫果园内落叶，树上残留的病枝、病叶要深埋或烧毁。</p><p>07腐烂病</p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics4.baidu.com/feed/d52a2834349b033b24ab9bba204679d6d539bd38.jpeg@f_auto?token=9fdffe767228050138b4c9a2d6a623ce&s=7B422AD10C13C6D6C608AB2D03006057"/></p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics5.baidu.com/feed/0eb30f2442a7d9330a76727898c39e1672f00168.jpeg@f_auto?token=6091fda07ba93950e388aaabbbb44215&s=61AA62F94A1110C04A851E3403002057"/></p><p>有溃疡、枝枯和表面溃病3种类型。</p><p>溃疡型在早春树干、枝树皮上出现红褐色、水渍状、微隆起、圆至长圆形病斑；用手压凹陷，流出黄褐色汁液, 有酒糟味，后病皮长出小黑点。</p><p>枝枯型在春季2~5年生枝上出现病斑，边缘不清晰，不呈水渍状，后失水干枯，密生小黑点。</p><p>表面溃疡型在夏秋落皮层上出现稍带红褐色、稍湿润的小溃疡斑。边缘不整齐, 腐烂, 后干缩呈饼状。</p><p>三类中溃疡型发生多，此类应及时刮除病部，涂抹氟硅唑、戊唑醇等药剂保护，降低复发率。同时注意提升树势，科学用肥，增施有机肥、活土君复合菌剂、科学控产等。</p><p>08褐腐病</p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics7.baidu.com/feed/0df431adcbef7609c619ce631855ecc97dd99e4d.jpeg@f_auto?token=ba3cdaddb5b5f62f32cf125be00cf3ef&s=24812AF9E0557FC65834C42103006053"/></p><p>只危害梨树果实，一般近成熟期发病，初为暗褐色病斑，逐步扩大，病情发展迅速，几天全果腐烂，病斑上还着生黄褐色绒毛。</p><p>落花后、成熟前注意用药预防保护，可选择噻菌灵、腈苯唑、嘧菌酯等药剂。</p><p>09干腐病</p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics4.baidu.com/feed/3b292df5e0fe9925d445f1f7012011da8cb1715d.jpeg@f_auto?token=9f36ba6b4b2de6d97d34386f63f8a9aa&s=7DBB22D1DA35F4DEC69588090300E055"/></p><p><img referrerpolicy="no-referrer" class="formatImage" src="https://pics6.baidu.com/feed/0b46f21fbe096b63df8ff19c38bbc841e9f8acf1.jpeg@f_auto?token=8da1ea18ebc8e589dad93f7192c6c79a&s=A4C22AF58650727D8A18586E0300B074"/></p><p>主要危害其果实、枝条。</p><p>枝条感病时皮层出现长条形的黑褐色病斑，略凹陷，质地较硬，一般病斑不会扩展到木质部；当病斑扩展至枝干半圈以上时, 其上部枯死。</p><p>果实染病，果面产生轮纹斑，随后果实腐烂。</p><p>由于枝条徒长、土壤黏重、排水不良的园子该病发生较重，因此加强园区管理如科学修剪、合理挂果、加强肥水等是预防的关键。枝干感病的刮除后用溃腐灵涂抹，发芽前可喷施多菌灵、福美双等减少病原。</p>					<div class="cl"></div>
+				</div>
+								<div class="cl"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mainnav">
+            <div class="div2"> <span class="a_closed"><img src="../images/close.png" width="22"></span> </div>
+            <ul>
+                                    <li class="fmenu"><a href="../index.html" id="channelid1" title="网站首页">网站首页</a>
+                                            </li>
+                                    <li class="fmenu"><a href="../about/view_1.html" id="channelid2" title="课题介绍">课题介绍</a>
+                                            </li>
+                                    <li class="fmenu"><a href="../bingchonghai/index_20.html" id="channelid20" title="作物病虫害">作物病虫害</a>
+                        <ul class="sec ul_nei_nav">            <li><a href="../bingchonghai/list_8.html">粮油作物</a>
+                <ul><li><a href="../bingchonghai/list_8.html">小麦</a><ul><li><a href="../bingchonghai/list_11.html">小麦病害</a><ul><li><a href="../bingchonghai/list_21.html">小麦条锈病</a></li><li><a href="../bingchonghai/list_22.html">小麦白粉病</a></li><li><a href="../bingchonghai/list_24.html">小麦赤霉病</a></li></ul></li><li><a href="../bingchonghai/list_12.html">小麦虫害</a></li></ul></li><li><a href="../bingchonghai/list_9.html">玉米</a><ul><li><a href="../bingchonghai/list_19.html">玉米病害</a><ul><li><a href="../bingchonghai/list_25.html">玉米瘤黑粉病（天穗）</a></li><li><a href="../bingchonghai/list_132.html">玉米大斑病</a></li><li><a href="../bingchonghai/list_133.html">玉米小斑病</a></li><li><a href="../bingchonghai/list_134.html">玉米黄斑病</a></li><li><a href="../bingchonghai/list_135.html">玉米茎基腐病</a></li><li><a href="../bingchonghai/list_136.html">玉米丝黑穗病</a></li><li><a href="../bingchonghai/list_137.html">玉米纹枯病</a></li><li><a href="../bingchonghai/list_138.html"> 玉米褐斑病</a></li><li><a href="../bingchonghai/list_139.html">玉米灰斑病</a></li><li><a href="../bingchonghai/list_140.html">玉米粗缩病</a></li><li><a href="../bingchonghai/list_143.html">玉米疯顶病</a></li><li><a href="../bingchonghai/list_311.html">玉米南方锈病</a></li></ul></li><li><a href="../bingchonghai/list_20.html">玉米虫害</a></li></ul></li><li><a href="../bingchonghai/list_10.html">大豆</a><ul><li><a href="../bingchonghai/list_98.html">大豆病害</a><ul><li><a href="../bingchonghai/list_183.html">大豆细菌性斑点病</a></li><li><a href="../bingchonghai/list_240.html">大豆紫斑病</a></li><li><a href="../bingchonghai/list_243.html">大豆菟丝子</a></li><li><a href="../bingchonghai/list_244.html">大豆霜霉病</a></li></ul></li><li><a href="../bingchonghai/list_99.html">大豆虫害</a></li></ul></li><li><a href="../bingchonghai/list_29.html">甘薯</a><ul><li><a href="../bingchonghai/list_100.html">甘薯病害</a><ul><li><a href="../bingchonghai/list_181.html">甘薯黑痣病</a></li><li><a href="../bingchonghai/list_182.html">甘薯茎线虫病</a></li><li><a href="../bingchonghai/list_255.html">甘薯软腐病</a></li><li><a href="../bingchonghai/list_256.html">甘薯干腐病</a></li><li><a href="../bingchonghai/list_312.html">甘薯黑斑病</a></li></ul></li><li><a href="../bingchonghai/list_101.html">甘薯虫害</a></li></ul></li><li><a href="../bingchonghai/list_30.html">马铃薯</a><ul><li><a href="../bingchonghai/list_109.html">马铃薯病害</a><ul><li><a href="../bingchonghai/list_246.html">马铃薯晚疫病</a></li><li><a href="../bingchonghai/list_248.html">马铃薯环腐病</a></li><li><a href="../bingchonghai/list_250.html">马铃薯早疫病</a></li><li><a href="../bingchonghai/list_251.html">马铃薯黑胫病</a></li><li><a href="../bingchonghai/list_252.html">马铃薯黑痣病</a></li><li><a href="../bingchonghai/list_253.html">马铃薯干腐病</a></li></ul></li><li><a href="../bingchonghai/list_110.html">马铃薯虫害</a></li></ul></li><li><a href="../bingchonghai/list_31.html">花生</a><ul><li><a href="../bingchonghai/list_270.html">花生病害</a><ul><li><a href="../bingchonghai/list_277.html">花生黑斑病</a></li><li><a href="../bingchonghai/list_278.html">花生褐斑病</a></li></ul></li><li><a href="../bingchonghai/list_306.html">花生虫害</a></li></ul></li><li><a href="../bingchonghai/list_32.html">棉花</a><ul><li><a href="../bingchonghai/list_111.html">棉花病害</a><ul><li><a href="../bingchonghai/list_258.html">棉花枯萎病</a></li><li><a href="../bingchonghai/list_259.html">棉花黄萎病</a></li><li><a href="../bingchonghai/list_260.html">棉花细菌性角斑病</a></li><li><a href="../bingchonghai/list_261.html">棉苗立枯病</a></li><li><a href="../bingchonghai/list_266.html">棉铃黑果病</a></li><li><a href="../bingchonghai/list_267.html">棉花褐斑病</a></li></ul></li><li><a href="../bingchonghai/list_112.html">棉花虫害</a></li></ul></li><li><a href="../bingchonghai/list_33.html">水稻</a><ul><li><a href="../bingchonghai/list_107.html">水稻病害</a><ul><li><a href="../bingchonghai/list_145.html">稻瘟病</a></li><li><a href="../bingchonghai/list_146.html">水稻白叶枯病</a></li><li><a href="../bingchonghai/list_147.html">水稻纹枯病</a></li><li><a href="../bingchonghai/list_151.html">稻曲病</a></li><li><a href="../bingchonghai/list_154.html">水稻恶苗病</a></li></ul></li><li><a href="../bingchonghai/list_108.html">水稻虫害</a></li></ul></li><li><a href="../bingchonghai/list_97.html">山药</a><ul><li><a href="../bingchonghai/list_105.html">山药病害</a></li><li><a href="../bingchonghai/list_106.html">山药虫害</a></li></ul></li><li><a href="../bingchonghai/list_102.html">高粱</a><ul><li><a href="../bingchonghai/list_103.html">高粱病害</a><ul><li><a href="../bingchonghai/list_155.html">高粱炭疽病</a></li><li><a href="../bingchonghai/list_156.html">高粱丝黑穗病</a></li><li><a href="../bingchonghai/list_159.html">高粱紫斑病</a></li><li><a href="../bingchonghai/list_161.html">高粱粗斑病</a></li><li><a href="../bingchonghai/list_167.html">高粱长粒黑穗病</a></li></ul></li><li><a href="../bingchonghai/list_104.html">高粱虫害</a></li></ul></li><li><a href="../bingchonghai/list_113.html">谷子</a><ul><li><a href="../bingchonghai/list_114.html">谷子病害</a><ul><li><a href="../bingchonghai/list_229.html">谷子白发病</a></li><li><a href="../bingchonghai/list_232.html">谷子瘟病</a></li><li><a href="../bingchonghai/list_233.html">谷子粒黑穗病</a></li><li><a href="../bingchonghai/list_234.html">谷子锈病</a></li><li><a href="../bingchonghai/list_236.html">谷子纹枯病</a></li><li><a href="../bingchonghai/list_237.html">谷子细菌性褐条病</a></li></ul></li><li><a href="../bingchonghai/list_115.html">谷子虫害</a></li></ul></li><li><a href="../bingchonghai/list_281.html">向日葵</a><ul><li><a href="../bingchonghai/list_282.html">向日葵病害</a><ul><li><a href="../bingchonghai/list_283.html">向日葵菌核病</a></li><li><a href="../bingchonghai/list_284.html">向日葵霜霉病</a></li><li><a href="../bingchonghai/list_285.html">向日葵列当</a></li><li><a href="../bingchonghai/list_286.html">向日葵锈病</a></li><li><a href="../bingchonghai/list_287.html">向日葵黄萎病</a></li></ul></li><li><a href="../bingchonghai/list_300.html">向日葵虫害</a></li></ul></li></ul>            </li>
+                        <li><a href="../bingchonghai/list_76.html">蔬菜瓜果</a>
+                <ul><li><a href="../bingchonghai/list_76.html">菠菜</a><ul><li><a href="../bingchonghai/list_313.html">菠菜病害</a><ul><li><a href="../bingchonghai/list_314.html">菠菜霜霉病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_77.html">大白菜</a><ul><li><a href="../bingchonghai/list_360.html">大白菜病害</a><ul><li><a href="../bingchonghai/list_361.html">大白菜软腐病</a></li><li><a href="../bingchonghai/list_362.html">大白菜霜霉病</a></li><li><a href="../bingchonghai/list_363.html">大白菜黑腐病</a></li><li><a href="../bingchonghai/list_364.html">大白菜白斑病</a></li><li><a href="../bingchonghai/list_365.html">大白菜病毒病</a></li><li><a href="../bingchonghai/list_366.html">大白菜炭疽病</a></li><li><a href="../bingchonghai/list_367.html">大白菜根肿病</a></li><li><a href="../bingchonghai/list_368.html">大白菜黑斑病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_79.html">番茄</a><ul><li><a href="../bingchonghai/list_322.html">番茄病害</a><ul><li><a href="../bingchonghai/list_323.html">番茄灰霉病</a></li><li><a href="../bingchonghai/list_324.html">番茄叶霉病</a></li><li><a href="../bingchonghai/list_325.html">番茄晚疫病</a></li><li><a href="../bingchonghai/list_326.html">番茄黄化曲叶病毒病</a></li><li><a href="../bingchonghai/list_327.html">番茄病毒病</a></li><li><a href="../bingchonghai/list_328.html">番茄早疫病</a></li><li><a href="../bingchonghai/list_329.html">番茄灰叶斑病</a></li><li><a href="../bingchonghai/list_330.html">番茄细菌性髓腐病</a></li><li><a href="../bingchonghai/list_331.html">番茄溃疡病</a></li><li><a href="../bingchonghai/list_332.html">番茄绵疫病</a></li><li><a href="../bingchonghai/list_333.html">番茄菌核病</a></li><li><a href="../bingchonghai/list_334.html">番茄筋腐病</a></li><li><a href="../bingchonghai/list_335.html">番茄茎基腐病</a></li><li><a href="../bingchonghai/list_336.html">番茄斑枯病</a></li><li><a href="../bingchonghai/list_337.html">番茄脐腐病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_82.html">黄瓜</a><ul><li><a href="../bingchonghai/list_341.html">黄瓜病害</a><ul><li><a href="../bingchonghai/list_342.html">黄瓜霜霉病</a></li><li><a href="../bingchonghai/list_343.html">黄瓜细菌性角斑病</a></li><li><a href="../bingchonghai/list_344.html">黄瓜蔓枯病</a></li><li><a href="../bingchonghai/list_345.html">黄瓜根结线虫病</a></li><li><a href="../bingchonghai/list_346.html">黄瓜白粉病</a></li><li><a href="../bingchonghai/list_347.html">黄瓜炭疽病</a></li><li><a href="../bingchonghai/list_348.html">黄瓜灰霉病</a></li><li><a href="../bingchonghai/list_349.html">黄瓜靶斑病</a></li><li><a href="../bingchonghai/list_350.html">黄瓜黑星病</a></li><li><a href="../bingchonghai/list_351.html">黄瓜枯萎病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_83.html">豇豆</a><ul><li><a href="../bingchonghai/list_369.html">豇豆病害</a><ul><li><a href="../bingchonghai/list_370.html">豇豆锈病</a></li><li><a href="../bingchonghai/list_371.html">豇豆白粉病</a></li><li><a href="../bingchonghai/list_372.html">豇豆灰霉病</a></li><li><a href="../bingchonghai/list_373.html">豇豆轮纹病</a></li><li><a href="../bingchonghai/list_374.html">豇豆白纹羽病</a></li><li><a href="../bingchonghai/list_375.html">豇豆紫纹羽病</a></li><li><a href="../bingchonghai/list_376.html">豇豆根结线虫病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_84.html">韭菜</a><ul><li><a href="../bingchonghai/list_420.html">韭菜病害</a><ul><li><a href="../bingchonghai/list_421.html">韭菜灰霉病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_85.html">苦瓜</a><ul><li><a href="../bingchonghai/list_431.html">苦瓜病害</a><ul><li><a href="../bingchonghai/list_432.html">苦瓜白粉病</a></li><li><a href="../bingchonghai/list_433.html">苦瓜病毒病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_86.html">辣椒</a><ul><li><a href="../bingchonghai/list_392.html">辣椒病害</a><ul><li><a href="../bingchonghai/list_393.html">辣椒病毒病</a></li><li><a href="../bingchonghai/list_394.html">辣椒疮痂病</a></li><li><a href="../bingchonghai/list_395.html">辣椒灰霉病</a></li><li><a href="../bingchonghai/list_396.html">辣椒枯萎病</a></li><li><a href="../bingchonghai/list_397.html">辣椒炭疽病</a></li><li><a href="../bingchonghai/list_398.html">辣椒细菌性软腐病</a></li><li><a href="../bingchonghai/list_399.html">辣椒疫病</a></li><li><a href="../bingchonghai/list_400.html">辣椒青枯病</a></li><li><a href="../bingchonghai/list_401.html">辣椒茎基腐病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_88.html">萝卜</a><ul><li><a href="../bingchonghai/list_402.html">萝卜病害</a><ul><li><a href="../bingchonghai/list_403.html">萝卜病毒病</a></li><li><a href="../bingchonghai/list_404.html">萝卜黑腐病</a></li><li><a href="../bingchonghai/list_405.html">萝卜软腐病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_89.html">茄子</a><ul><li><a href="../bingchonghai/list_383.html">茄子虫害</a><ul><li><a href="../bingchonghai/list_384.html">茄子白粉病</a></li><li><a href="../bingchonghai/list_385.html">茄子腐霉烂果病</a></li><li><a href="../bingchonghai/list_386.html">茄子褐色圆星病</a></li><li><a href="../bingchonghai/list_387.html">茄子褐纹病</a></li><li><a href="../bingchonghai/list_388.html">茄子黄萎病</a></li><li><a href="../bingchonghai/list_389.html">茄子灰霉病</a></li><li><a href="../bingchonghai/list_390.html">茄子绵疫病</a></li><li><a href="../bingchonghai/list_391.html">茄子线虫病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_90.html">芹菜</a><ul><li><a href="../bingchonghai/list_424.html">芹菜病害</a><ul><li><a href="../bingchonghai/list_425.html">芹菜斑枯病</a></li><li><a href="../bingchonghai/list_426.html">芹菜早疫病</a></li><li><a href="../bingchonghai/list_427.html">芹菜软腐病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_91.html">丝瓜</a><ul><li><a href="../bingchonghai/list_377.html">丝瓜病害</a><ul><li><a href="../bingchonghai/list_378.html">丝瓜白粉病</a></li><li><a href="../bingchonghai/list_379.html">丝瓜黄萎病</a></li><li><a href="../bingchonghai/list_380.html">丝瓜绵腐病</a></li><li><a href="../bingchonghai/list_381.html">丝瓜霜霉病</a></li><li><a href="../bingchonghai/list_382.html">丝瓜炭疽病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_94.html">莴苣</a><ul><li><a href="../bingchonghai/list_422.html">莴苣病害</a><ul><li><a href="../bingchonghai/list_423.html">莴苣霜霉病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_95.html">西瓜</a></li><li><a href="../bingchonghai/list_96.html">油菜</a><ul><li><a href="../bingchonghai/list_352.html">油菜病害</a><ul><li><a href="../bingchonghai/list_353.html">油菜病毒病</a></li><li><a href="../bingchonghai/list_354.html">油菜霜霉病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_315.html">菜豆</a><ul><li><a href="../bingchonghai/list_316.html">菜豆病害</a><ul><li><a href="../bingchonghai/list_317.html">菜豆锈病</a></li><li><a href="../bingchonghai/list_318.html">菜豆白粉病</a></li><li><a href="../bingchonghai/list_319.html">菜豆炭疽病</a></li><li><a href="../bingchonghai/list_320.html">菜豆灰霉病</a></li><li><a href="../bingchonghai/list_321.html">菜豆角斑病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_338.html">甘蓝</a><ul><li><a href="../bingchonghai/list_339.html">甘蓝病害</a><ul><li><a href="../bingchonghai/list_340.html">甘蓝软腐病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_355.html">西葫芦</a><ul><li><a href="../bingchonghai/list_356.html">西葫芦病害</a><ul><li><a href="../bingchonghai/list_357.html">西葫芦白粉病</a></li><li><a href="../bingchonghai/list_358.html">西葫芦病毒病</a></li><li><a href="../bingchonghai/list_359.html">西葫芦笄霉果腐</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_406.html">花椰菜</a><ul><li><a href="../bingchonghai/list_407.html">花椰菜病害</a><ul><li><a href="../bingchonghai/list_408.html">花椰菜黑斑病</a></li><li><a href="../bingchonghai/list_409.html">花椰菜黑腐病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_410.html">大葱</a><ul><li><a href="../bingchonghai/list_411.html">大葱病害</a><ul><li><a href="../bingchonghai/list_412.html">大葱灰霉病</a></li><li><a href="../bingchonghai/list_413.html">大葱紫斑病</a></li><li><a href="../bingchonghai/list_414.html">大葱叶枯病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_415.html">大蒜</a><ul><li><a href="../bingchonghai/list_417.html">大蒜病害</a><ul><li><a href="../bingchonghai/list_418.html">大蒜锈病</a></li><li><a href="../bingchonghai/list_419.html">大蒜灰霉病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_428.html">南瓜</a><ul><li><a href="../bingchonghai/list_429.html">南瓜病害</a><ul><li><a href="../bingchonghai/list_430.html">南瓜病毒病</a></li></ul></li></ul></li></ul>            </li>
+                        <li><a href="../bingchonghai/list_55.html">花卉</a>
+                <ul><li><a href="../bingchonghai/list_55.html">凤仙花</a><ul><li><a href="../bingchonghai/list_59.html">凤仙花病害</a><ul><li><a href="../bingchonghai/list_116.html">凤仙花白粉病</a></li></ul></li><li><a href="../bingchonghai/list_60.html">凤仙花虫害</a></li></ul></li><li><a href="../bingchonghai/list_56.html">菊花</a><ul><li><a href="../bingchonghai/list_61.html">菊花病害</a><ul><li><a href="../bingchonghai/list_289.html">菊花白锈病</a></li></ul></li><li><a href="../bingchonghai/list_62.html">菊花虫害</a></li></ul></li><li><a href="../bingchonghai/list_57.html">牡丹</a><ul><li><a href="../bingchonghai/list_63.html">牡丹病害</a><ul><li><a href="../bingchonghai/list_288.html">牡丹黑斑病</a></li></ul></li><li><a href="../bingchonghai/list_64.html">牡丹虫害</a></li></ul></li><li><a href="../bingchonghai/list_58.html">月季</a><ul><li><a href="../bingchonghai/list_65.html">月季病害</a></li><li><a href="../bingchonghai/list_66.html">月季虫害</a></li></ul></li></ul>            </li>
+                        <li><a href="../bingchonghai/list_67.html">药材</a>
+                <ul><li><a href="../bingchonghai/list_67.html">牛膝</a><ul><li><a href="../bingchonghai/list_70.html">牛膝病害</a><ul><li><a href="../bingchonghai/list_117.html">牛膝白锈病</a></li></ul></li><li><a href="../bingchonghai/list_71.html">牛膝虫害</a></li></ul></li><li><a href="../bingchonghai/list_68.html">射干</a><ul><li><a href="../bingchonghai/list_72.html">射干病害</a><ul><li><a href="../bingchonghai/list_297.html">射干锈病</a></li></ul></li><li><a href="../bingchonghai/list_73.html">射干虫害</a></li></ul></li><li><a href="../bingchonghai/list_69.html">紫堇</a><ul><li><a href="../bingchonghai/list_74.html">紫堇病害</a><ul><li><a href="../bingchonghai/list_172.html">紫堇锈病</a></li></ul></li><li><a href="../bingchonghai/list_75.html">紫堇虫害</a></li></ul></li><li><a href="../bingchonghai/list_129.html">枸杞</a><ul><li><a href="../bingchonghai/list_130.html">枸杞病害</a><ul><li><a href="../bingchonghai/list_131.html">枸杞白粉病</a></li></ul></li><li><a href="../bingchonghai/list_301.html">枸杞虫害</a></li></ul></li><li><a href="../bingchonghai/list_291.html">药用菊花</a><ul><li><a href="../bingchonghai/list_292.html">药用菊花病害</a><ul><li><a href="../bingchonghai/list_293.html">药用菊花白锈病</a></li></ul></li><li><a href="../bingchonghai/list_302.html">药用菊花虫害</a></li></ul></li><li><a href="../bingchonghai/list_294.html">玫瑰</a><ul><li><a href="../bingchonghai/list_295.html">玫瑰病害</a><ul><li><a href="../bingchonghai/list_296.html">玫瑰锈病</a></li></ul></li></ul></li></ul>            </li>
+                        <li><a href="../bingchonghai/list_36.html">果树作物</a>
+                <ul><li><a href="../bingchonghai/list_36.html">草莓</a><ul><li><a href="../bingchonghai/list_49.html">草莓病害</a><ul><li><a href="../bingchonghai/list_51.html">草莓白粉病</a></li><li><a href="../bingchonghai/list_52.html">草莓灰霉病</a></li><li><a href="../bingchonghai/list_53.html">草莓断头病</a></li><li><a href="../bingchonghai/list_54.html">草莓炭疽病</a></li></ul></li><li><a href="../bingchonghai/list_50.html">草莓虫害</a></li></ul></li><li><a href="../bingchonghai/list_38.html">核桃</a><ul><li><a href="../bingchonghai/list_224.html">核桃病害</a><ul><li><a href="../bingchonghai/list_225.html">核桃黑斑病</a></li><li><a href="../bingchonghai/list_226.html">核桃枝枯病</a></li><li><a href="../bingchonghai/list_227.html">核桃炭疽病</a></li><li><a href="../bingchonghai/list_228.html">核桃溃疡病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_39.html">梨树</a><ul><li><a href="../bingchonghai/list_184.html">梨树病害</a><ul><li><a href="../bingchonghai/list_185.html">梨树黑星病</a></li><li><a href="../bingchonghai/list_186.html">梨黑斑病</a></li><li><a href="../bingchonghai/list_187.html">梨锈病</a></li><li><a href="../bingchonghai/list_188.html">梨树腐烂病</a></li><li><a href="../bingchonghai/list_189.html">梨轮纹病</a></li><li><a href="../bingchonghai/list_190.html">梨树白粉病</a></li><li><a href="../bingchonghai/list_191.html">梨树灰斑病</a></li><li><a href="../bingchonghai/list_193.html">梨褐腐病</a></li></ul></li><li><a href="../bingchonghai/list_305.html">梨树虫害</a></li></ul></li><li><a href="../bingchonghai/list_40.html">李子</a></li><li><a href="../bingchonghai/list_41.html">苹果</a><ul><li><a href="../bingchonghai/list_168.html">苹果病害</a><ul><li><a href="../bingchonghai/list_169.html">苹果树腐烂病</a></li><li><a href="../bingchonghai/list_170.html">苹果轮纹病</a></li><li><a href="../bingchonghai/list_173.html">苹果炭疽病</a></li><li><a href="../bingchonghai/list_174.html">苹果斑点落叶病</a></li><li><a href="../bingchonghai/list_175.html">苹果褐斑病</a></li><li><a href="../bingchonghai/list_176.html">苹果锈病</a></li></ul></li><li><a href="../bingchonghai/list_307.html">苹果虫害</a></li></ul></li><li><a href="../bingchonghai/list_43.html">桑葚</a><ul><li><a href="../bingchonghai/list_127.html">桑葚病害</a><ul><li><a href="../bingchonghai/list_128.html">桑葚菌核病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_44.html">山楂</a><ul><li><a href="../bingchonghai/list_119.html">山楂病害</a><ul><li><a href="../bingchonghai/list_120.html">山楂白粉病</a></li><li><a href="../bingchonghai/list_121.html">山楂锈病</a></li><li><a href="../bingchonghai/list_122.html">山楂梢枯病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_45.html">柿子</a><ul><li><a href="../bingchonghai/list_123.html">柿子病害</a><ul><li><a href="../bingchonghai/list_124.html">柿子角斑病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_46.html">桃树</a><ul><li><a href="../bingchonghai/list_194.html">桃树病害</a><ul><li><a href="../bingchonghai/list_200.html">桃果腐病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_47.html">杏儿</a><ul><li><a href="../bingchonghai/list_204.html">杏树病害</a><ul><li><a href="../bingchonghai/list_205.html">杏疔病</a></li><li><a href="../bingchonghai/list_206.html">杏黑星病</a></li></ul></li></ul></li><li><a href="../bingchonghai/list_48.html">枣树</a><ul><li><a href="../bingchonghai/list_220.html">枣树病害</a><ul><li><a href="../bingchonghai/list_221.html">枣疯病</a></li><li><a href="../bingchonghai/list_222.html">枣锈病</a></li><li><a href="../bingchonghai/list_223.html">枣缩果病</a></li></ul></li><li><a href="../bingchonghai/list_304.html">枣树虫害</a></li></ul></li><li><a href="../bingchonghai/list_208.html">葡萄</a><ul><li><a href="../bingchonghai/list_209.html">葡萄病害</a><ul><li><a href="../bingchonghai/list_210.html">葡萄白腐病</a></li><li><a href="../bingchonghai/list_211.html">葡萄炭疽病</a></li></ul></li><li><a href="../bingchonghai/list_303.html">葡萄虫害</a></li></ul></li></ul>            </li>
+            </ul>                    </li>
+                                    <li class="fmenu"><a href="../changshi/index_3.html" id="channelid3" title="病虫害常识">病虫害常识</a>
+                                            </li>
+                                    <li class="fmenu"><a href="../message/add_22.html" id="channelid22" title="留言反馈">留言反馈</a>
+                                            </li>
+                                    <li class="fmenu"><a href="../contact/view_16.html" id="channelid21" title="联系我们">联系我们</a>
+                                            </li>
+                            </ul>
+        </div>
+
+<div class="fnav2">
+	<a href="../index.html"><img src="../images/nav01.png" title="首页" />首页</a><a href="tel:"><img src="../images/nav02.png" title="电话" />电话</a><a href="../product/index_20.html" target="_blank"><img src="../images/nav03.png" title="病虫害" />病虫害</a>
+</div>
+<!--右侧客服---开始-->
+
+<!--右侧客服---结束-->
+<div class="footerbottom">
+Copyright&nbsp;<a href="../back/login/login.html" target="_blank">©</a>&nbsp;河北农业大学（实验实训中心） &nbsp;All
+    Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sanjin.net">网站制作</a>：<a href="http://www.sanjin.net">三金网络</a>&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="../sitemap.php">网站地图</a>
+</div>
+
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            //导航
+            $(".wapnav").click(function () {
+                var objmainnav = $('.mainnav');
+                objmainnav.animate({height: "100%"});
+            });
+
+            $(window).resize(function () {
+                if ($(window).width() >= 1024) {
+                    $('.mainnav').css("display", "");
+                }
+            });
+            $(".a_closed").click(function () {
+                var objmain = $('.mainnav');
+                objmain.animate({height: "0"})
+            })
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

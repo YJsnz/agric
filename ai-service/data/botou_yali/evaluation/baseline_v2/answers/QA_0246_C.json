@@ -1,0 +1,216 @@
+{
+  "id": "QA_0246",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0002",
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0025",
+    "chunk:PAPER_005_C0008",
+    "chunk:PAPER_005_C0035"
+  ],
+  "service_response": {
+    "status": "validation_failed",
+    "grounding_audit": {
+      "passed": false,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "unsupported",
+          "reason": "事实字段没有实际引用证据。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis准确陈述证据[E3]仅列出W1W（硫化物、萜烯类）、W5S（氮氧化合物）、W2W（有机硫化物、芳香成分）、W1S（甲烷）四种传感器，未提及W3S；并说明其余证据涉及挥发性物质成分、基因表达及贮藏条件比较，均未涉及W3S传感器。该描述与所引证据内容相符。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning基于证据[E3]只覆盖W1W、W5S、W2W、W1S四种传感器且未包含W3S，其他证据不涉及传感器敏感类别，推出无证据支持回答W3S传感器敏感类别。推理未超出引用证据范围，未补造缺失路径。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice为请用户补充W3S传感器具体描述或完整传感器阵列列表的操作建议，未陈述任何事实、数值或因果结论，因此无事实性声明。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "failure": "存在未由引用证据支持的内容"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0025",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "3 个月时，交叉叠加分布，然后窖藏1 个月、3 个月、",
+        "text": "2 个月，逐步外延。就传感器的变化而言，W1W（代表硫化物、萜烯类）、W5S（代表氮氧化合物）、W2W（代表有机硫化物、芳香成分）、W1S（代表甲烷）变化程度较大。因此，这4 种传感器对挥发性物质的区分起主要作用（图4）。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0035",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.7  基因表达量之间的相关性分析",
+        "text": "根据果实挥发性香气物质测定结果，PbAAT1、PbLOX1 表达量与香气变化模式呈相似变化规律。因此，其表达可能是影响香气物质合成的主要原因。相关性分析表明（表6），与PbAAT1 表达量呈显著正相关的基因有PbLOX1、PbLOX6 和PbLOX8，与PbAAT1 表达量呈显著负相关的基因有PbEIN3、PbADH2、PbADH3 和PbADH5；与PbLOX1 表达量呈显著正相关的基因有PbACO2、PbETR2、PbAAT1 和PbLOX8；与PbLOX1 的表达量呈显著负相关的基因有PbEIN3、PbADH2 和PbADH3。因此，上述这些基因的表达在不同程度上影响香气的合成。",
+        "pages": [
+          12
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "error": "validation_failed",
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在PEN3型电子鼻传感器阵列中，W5S传感器代表氮氧化合物，即对氮氧化合物类化合物敏感 [E3]。",
+        "basis": "证据E3明确列出：W1W（代表硫化物、萜烯类）、W5S（代表氮氧化合物）、W2W（代表有机硫化物、芳香成分）、W1S（代表甲烷）变化程度较大，这4种传感器对挥发性物质的区分起主要作用 [E3]。",
+        "reasoning": "问题询问W5S传感器对哪类化合物敏感。证据E3直接给出W5S代表氮氧化合物，属于对传感器敏感类别的直接描述，无需跨阶段或因果串联即可回答 [E3]。",
+        "advice": "该结论仅说明该研究中PEN3电子鼻W5S传感器的敏感类别，不构成对鸭梨贮藏或生产的直接指导；如需用于实际检测，请结合具体仪器说明与本地条件另行验证。",
+        "citations": [
+          "E3"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2210,
+        "completion_tokens": 219,
+        "total_tokens": 2429,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1954
+      },
+      "model": "deepseek-flash",
+      "response_id": "fb7b82aa-984e-4b02-8922-c9a4ddf5eba5",
+      "seconds": 6.519836999999825,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "现有证据未提供PEN3型电子鼻传感器阵列中W3S传感器对哪类化合物敏感的信息，无法回答该问题。",
+        "basis": "证据E3仅列出W1W（代表硫化物、萜烯类）、W5S（代表氮氧化合物）、W2W（代表有机硫化物、芳香成分）、W1S（代表甲烷）四种传感器的敏感类别，未提及W3S传感器 [E3]。其余证据涉及挥发性物质成分、基因表达及贮藏条件比较，均未涉及W3S传感器 [E1][E2][E4][E5]。",
+        "reasoning": "问题询问W3S传感器的敏感化合物类别。检索证据中唯一描述电子鼻传感器敏感类别的证据E3只覆盖W1W、W5S、W2W、W1S四种传感器，未包含W3S [E3]；其他证据不涉及传感器敏感类别 [E1][E2][E4][E5]。因此无证据支持对W3S传感器敏感类别的回答，应判定证据不足。",
+        "advice": "请补充该研究中关于W3S传感器的具体描述或传感器阵列完整列表，以便确认其敏感化合物类别。",
+        "citations": [
+          "E3"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2723,
+        "completion_tokens": 271,
+        "total_tokens": 2994,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 419
+      },
+      "model": "deepseek-flash",
+      "response_id": "e4e7bd83-4fa8-412d-a5e7-d420517a03da",
+      "seconds": 6.6185601000033785,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 25.99385469999106
+}

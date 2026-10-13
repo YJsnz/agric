@@ -1,0 +1,34 @@
+[
+  {
+    "file": "Output of phenotyping models/Canopy CCGR/1stS_155DAS_20150425/Results.csv",
+    "headers": [
+      "Image_name,CC,GR,CCGR,Num_Total,Num_Veg,Num_Soil,Mean_Overall_Red,Mean_Veg_Red,Mean_Soil_Red,Mean_Overall_Green,Mean_Veg_Green,Mean_Soil_Green,Mean_Overall_Blue,Mean_Veg_Blue,Mean_Soil_Blue,Var_Overall_Red,Var_Veg_Red,Var_Soil_Red,Var_Overall_Green,Var_Veg_Green,Var_Soil_Green,Var_Overall_Blue,Var_Veg_Blue,Var_Soil_Blue",
+      "10r1.jpg,0.700538354639241,0.224424484733215,0.157217959275766,7990272,5597492,2392780,110.102991737953,109.19356365315,112.230440324643,127.784513218073,140.790369865647,101.356970451463,65.537866170263,70.1691268160812,57.3855946231198,2758.83183621807,3008.26170888093,2161.43783099843,3639.30556764047,3601.54880469911,2406.25283520951,2643.83806020776,3022.86923730523,1589.61011131502"
+    ],
+    "contains_irrigation_terms": false
+  },
+  {
+    "file": "Output of phenotyping models/Canopy CCGR/1stS_192DAS_20150601/Results.csv",
+    "headers": [
+      "Image_name,CC,GR,CCGR,Num_Total,Num_Veg,Num_Soil,Mean_Overall_Red,Mean_Veg_Red,Mean_Soil_Red,Mean_Overall_Green,Mean_Veg_Green,Mean_Soil_Green,Mean_Overall_Blue,Mean_Veg_Blue,Mean_Soil_Blue,Var_Overall_Red,Var_Veg_Red,Var_Soil_Red,Var_Overall_Green,Var_Veg_Green,Var_Soil_Green,Var_Overall_Blue,Var_Veg_Blue,Var_Soil_Blue",
+      "10r1.jpg,0.393074478565936,0.0994877172324359,0.0391060825748551,7990272,3140772,4849500,132.997457032752,128.829693782293,135.696703165275,127.561548843393,143.062672489439,117.526714901648,71.9538025739299,78.331493021461,69.1901456316909,2369.86670481239,2042.80720088012,2562.3136372422,2550.5053897143,2149.47011467784,2553.82846443047,1907.05602465027,1782.63604701827,1944.23271080668"
+    ],
+    "contains_irrigation_terms": false
+  },
+  {
+    "file": "Output of phenotyping models/Canopy GSM/1stS_175DAS_20150515/Results/Total GSM Exp.csv",
+    "headers": [
+      "Image,R2_exp_Red,RMSE_exp_Red,Exp_a_Red,Exp_b_Red,R2_exp_Blue,RMSE_exp_Blue,Exp_a_Blue,Exp_b_Blue",
+      "10r1.jpg,0.966272583830043,12.0574665660852,30.8153409349987,0.00821726191531942,0.975020131581276,9.3906565811925,16.513209104578,0.0101391183582742"
+    ],
+    "contains_irrigation_terms": false
+  },
+  {
+    "file": "Output of phenotyping models/Canopy GSM/2ndS_188DAS_20160511/Results/Total GSM Exp.csv",
+    "headers": [
+      "Image,R2_exp_Red,RMSE_exp_Red,Exp_a_Red,Exp_b_Red,R2_exp_Blue,RMSE_exp_Blue,Exp_a_Blue,Exp_b_Blue",
+      "10r1.JPG,0.975289526447715,10.0748266172988,27.5314188861614,0.00856692397434515,0.986568941137354,6.99573762236633,17.582797617,0.0100303558743695"
+    ],
+    "contains_irrigation_terms": false
+  }
+]

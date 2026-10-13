@@ -3,10 +3,10 @@ import { PageHero, StatBand, CtaBand, SectionTitle, PrimaryButton, OutlineButton
 import { PLATFORM_URL, ASSISTANT_URL } from '../links'
 
 const BRAND_WORDS = [
-  { char: '田', title: '以农场、地块和大棚为核心空间', tone: 'bg-emerald-100 text-emerald-700' },
-  { char: '言', title: '以自然语言作为系统入口', tone: 'bg-sky-100 text-sky-700' },
-  { char: '耕', title: '覆盖种植、灌溉、巡检和农事执行', tone: 'bg-amber-100 text-amber-700' },
-  { char: '智', title: '通过数据、视觉识别和 AI 辅助决策', tone: 'bg-violet-100 text-violet-700' }
+  { char: '盐', title: '关注盐碱地环境与特色农业观测', tone: 'bg-emerald-100 text-emerald-700' },
+  { char: '田', title: '以农场和地块作为管理空间', tone: 'bg-sky-100 text-sky-700' },
+  { char: '丰', title: '围绕特色作物组织种植管理与核验', tone: 'bg-amber-100 text-amber-700' },
+  { char: '语', title: '以自然语言查询数据、视觉结果与农技资料', tone: 'bg-violet-100 text-violet-700' }
 ]
 
 const TEAM = [
@@ -50,7 +50,7 @@ export default function About() {
         eyebrow="About"
         title={
           <>
-            田言耕智<br />为现代农业而生的 AI 平台
+            盐田丰语<br />为现代农业而生的 AI 平台
           </>
         }
         subtitle="我们相信农业的数据不该被藏在报表里。让自然语言成为入口，让农场空间成为界面。"
@@ -64,7 +64,7 @@ export default function About() {
         <div className="mx-auto max-w-6xl">
           <SectionTitle
             eyebrow="Brand"
-            title="「田言耕智」四个字"
+            title="「盐田丰语」四个字"
             subtitle="每一个字，都是一层产品哲学。"
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

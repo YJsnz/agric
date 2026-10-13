@@ -1,0 +1,210 @@
+[
+  {
+    "id": "moa_storage",
+    "url": "https://scs.moa.gov.cn/ccll/jszn/202302/t20230203_6419771.htm",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\moa_storage.html",
+    "sha256": "0414d1fffac28343c51f5e5fadd9e24ce67ebf42c5a21da61db18526a611f921",
+    "bytes": 74213
+  },
+  {
+    "id": "moa_botou",
+    "url": "https://nmfsj.moa.gov.cn/dfzt/heibei/zxzx_25728/202109/t20210923_6377404.htm",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\moa_botou.html",
+    "sha256": "e24403e37374ce2cf61e20c3a3421e556a2a908174282a9bedc2ca35c7f802d1",
+    "bytes": 15723
+  },
+  {
+    "id": "vic_scab",
+    "url": "https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/pear-scab",
+    "status": "download_failed",
+    "error": "curl: (22) The requested URL returned error: 403\r\n"
+  },
+  {
+    "id": "paper_lac",
+    "url": "https://www.chinaagrisci.com/CN/10.3864/j.issn.0578-1752.2020.24.010",
+    "status": "download_failed",
+    "error": "curl: (22) The requested URL returned error: 403\r\n"
+  },
+  {
+    "id": "paper_aroma",
+    "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+    "status": "download_failed",
+    "error": "curl: (22) The requested URL returned error: 403\r\n"
+  },
+  {
+    "id": "paper_mcp",
+    "url": "https://www.spgykj.com/article/doi/10.13386/j.issn1002-0306.2014.02.057",
+    "status": "downloaded_not_reviewed",
+    "file": "papers\\pear\\paper_mcp.html",
+    "sha256": "fd930656f946c1b29e5dd6b38cea7c1f1e4d61fb1f4d6a213f0789dd43edaf77",
+    "bytes": 254168
+  },
+  {
+    "id": "paper_cooling",
+    "url": "https://www.spkx.net.cn/CN/abstract/abstract30419.shtml",
+    "status": "download_failed",
+    "error": "curl: (22) The requested URL returned error: 403\r\n"
+  },
+  {
+    "id": "uc_pear_scab",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/pear-scab/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_pear_scab.html",
+    "sha256": "c3642ef4c2b2085f347edbc8df57e20739f8cdc7d56b3b4f4410ba29bc6c72e8",
+    "bytes": 54174
+  },
+  {
+    "id": "uc_fire_blight",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/fire-blight/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_fire_blight.html",
+    "sha256": "2fb6b6411defd212fe64e988787a46a4881b53350d6a296264e199848243efb4",
+    "bytes": 43608
+  },
+  {
+    "id": "uc_blossom_blast",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/blossom-blast/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_blossom_blast.html",
+    "sha256": "9c485f1d0862bd840d3d6b72ea3b3b1f45601e656e1a237163630ad5fa883076",
+    "bytes": 25546
+  },
+  {
+    "id": "uc_pear_decline",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/pear-decline/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_pear_decline.html",
+    "sha256": "076fc413fe5b2b93c31f2a1fc07f6c9a46ec88f032a4a5ba56c884a88e626728",
+    "bytes": 26160
+  },
+  {
+    "id": "uc_armillaria_root_and_crown_rot_oak_root_fungus",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/armillaria-root-and-crown-rot-oak-root-fungus/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_armillaria_root_and_crown_rot_oak_root_fungus.html",
+    "sha256": "9aa98415d3e9568df6f09594713f72c84b70f06106cca5588cfb9aac3fcb4c9e",
+    "bytes": 32702
+  },
+  {
+    "id": "uc_pear_psylla",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/pear-psylla/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_pear_psylla.html",
+    "sha256": "966f7350b0639c730ac4482da2cfc20d20133fd0545f69ead601a53924fc4e7a",
+    "bytes": 51916
+  },
+  {
+    "id": "uc_codling_moth",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/codling-moth/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_codling_moth.html",
+    "sha256": "b633ce30ff538ef0cc2c284c1f863265ba1e6f14fa0397d7e16a528d43aba2bf",
+    "bytes": 60764
+  },
+  {
+    "id": "uc_pear_rust_mite",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/pear-rust-mite/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_pear_rust_mite.html",
+    "sha256": "1d824a6ff29674cca97c7bcc5bdccce1e036cf06cfecd909c26afa0e5a17b070",
+    "bytes": 38939
+  },
+  {
+    "id": "uc_pearleaf_blister_mite",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/pearleaf-blister-mite/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_pearleaf_blister_mite.html",
+    "sha256": "ac2538112fedd91a492c43dbd26cacec7c6f9dda0c6b25019af6555bba02db1b",
+    "bytes": 37858
+  },
+  {
+    "id": "uc_san_jose_scale",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/san-jose-scale/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_san_jose_scale.html",
+    "sha256": "4862b02226dccbe1906fc1c8a03b074720c82f30c154d1e74774c2588ed2ec4a",
+    "bytes": 37709
+  },
+  {
+    "id": "uc_aphids",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/aphids/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_aphids.html",
+    "sha256": "1181961b0d14e4f47650f28c53c92fdc66cc1ec164d31108aedc7a90138bda0f",
+    "bytes": 37250
+  },
+  {
+    "id": "uc_mealybugs",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/mealybugs/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_mealybugs.html",
+    "sha256": "7c84740f2591d5b6bbdb2b9a571d640bbe38481e60f4942eab8b0d4f9d3efdb4",
+    "bytes": 36251
+  },
+  {
+    "id": "uc_webspinning_spider_mites",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/webspinning-spider-mites/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_webspinning_spider_mites.html",
+    "sha256": "9a9788a88d1a03481d3b49a945ca4bc2b642c1f18014a9c84beb97eb6bc7550a",
+    "bytes": 39592
+  },
+  {
+    "id": "uc_european_red_mite",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/european-red-mite/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_european_red_mite.html",
+    "sha256": "460eb07aecb6b1987692cfd75ff207c0082e8c111fcbe16a093071861214c417",
+    "bytes": 41429
+  },
+  {
+    "id": "uc_thrips",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/thrips/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_thrips.html",
+    "sha256": "caae85988f3d8f51eac6103221e380777d51fe5247168ba5d75e815bfd34f79e",
+    "bytes": 31152
+  },
+  {
+    "id": "uc_harvest_fruit_sample",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/harvest-fruit-sample/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_harvest_fruit_sample.html",
+    "sha256": "6a0d67cc1510f969f1808862008549ad8932172746d54accf7fd2b6d5e8ff203",
+    "bytes": 26521
+  },
+  {
+    "id": "uc_postharvest_survey",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/postharvest-survey/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_postharvest_survey.html",
+    "sha256": "bd9ad02459e6271d0a51ef03cee318b30e606ac1a41bd28e51feb1eb3df8b040",
+    "bytes": 27524
+  },
+  {
+    "id": "uc_sampling_at_bloom",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/sampling-at-bloom/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_sampling_at_bloom.html",
+    "sha256": "244476bb5fd66b95178b4e87185f0edaf8500742eeeffc74e3f1b0f48e804e11",
+    "bytes": 27138
+  },
+  {
+    "id": "uc_sampling_during_fruit_development",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/sampling-during-fruit-development/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_sampling_during_fruit_development.html",
+    "sha256": "4af669c4bf3214662a42104037d1e7ea747d5a6308c56d5ef6e68ac2468cedb9",
+    "bytes": 29545
+  },
+  {
+    "id": "uc_dormant_to_delayed_dormant_sampling",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/dormant-to-delayed-dormant-sampling/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_dormant_to_delayed_dormant_sampling.html",
+    "sha256": "c9c10598dc965291f999976c3315a500e123941bbbb1e902d9676e2683300996",
+    "bytes": 28362
+  }
+]

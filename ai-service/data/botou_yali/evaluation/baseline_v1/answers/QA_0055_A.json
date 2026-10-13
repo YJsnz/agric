@@ -1,0 +1,67 @@
+{
+  "id": "QA_0055",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法给出具体数值",
+      "basis": "未提供该论文原文，且我的知识库中不包含《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的具体数据。",
+      "reasoning": "问题要求引用特定论文中3年中试库跟踪调查的黑心病平均发生率和货架期数据。由于无法获取该论文全文，不能编造数字或结论。",
+      "advice": "建议查阅该论文原文或相关中试报告，获取3.0%—5.0% O2+0.5%—0.8% CO2处理下贮藏至翌年6月中下旬的黑心病平均发生率和货架期具体数据。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 154,
+      "total_tokens": 361,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 207
+    },
+    "model": "deepseek-flash",
+    "response_id": "522d885a-0956-45ac-b189-5931bf648856",
+    "seconds": 6.132778199999848,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出问题所要求的黑心病平均发生率和货架期具体数值，仅表示无法获取论文数据，属于没有作答。",
+      "claims": [
+        {
+          "claim": "未提供该论文原文，且知识库中不包含《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的具体数据。",
+          "status": "unverifiable",
+          "reason": "该断言涉及回答系统自身知识库与资料获取状态，提供的论文原文和检索上下文无法验证。"
+        },
+        {
+          "claim": "无法获取该论文全文，不能编造数字或结论。",
+          "status": "unverifiable",
+          "reason": "该断言涉及回答系统能否获取全文，提供资料不足以验证。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 810,
+      "completion_tokens": 148,
+      "total_tokens": 958,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 682
+    },
+    "model": "deepseek-flash",
+    "response_id": "032662da-4b60-4d98-b99f-b20dcfee01ba",
+    "seconds": 6.017699999999877,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

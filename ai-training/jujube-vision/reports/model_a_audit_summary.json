@@ -1,0 +1,85 @@
+{
+  "raw_total": 3220,
+  "sources": {
+    "yxmf3cd865": 1009,
+    "58py9f3nsy": 2211
+  },
+  "excluded": {
+    "augmented": 0,
+    "duplicate_same_label": 4,
+    "label_conflict": 8,
+    "corrupt": 8,
+    "unknown_class": 1
+  },
+  "clean_total": 3201,
+  "classes": {
+    "anthracnose": 716,
+    "healthy": 1164,
+    "insect_damage": 394,
+    "powdery_mildew": 217,
+    "yellow_leaf": 710
+  },
+  "splits": {
+    "train": {
+      "total": 2289,
+      "classes": {
+        "anthracnose": 501,
+        "healthy": 815,
+        "insect_damage": 276,
+        "powdery_mildew": 160,
+        "yellow_leaf": 537
+      },
+      "sources": {
+        "yxmf3cd865": 706,
+        "58py9f3nsy": 1583
+      }
+    },
+    "val": {
+      "total": 458,
+      "classes": {
+        "anthracnose": 108,
+        "healthy": 175,
+        "insect_damage": 59,
+        "powdery_mildew": 29,
+        "yellow_leaf": 87
+      },
+      "sources": {
+        "yxmf3cd865": 152,
+        "58py9f3nsy": 306
+      }
+    },
+    "test": {
+      "total": 454,
+      "classes": {
+        "anthracnose": 107,
+        "healthy": 174,
+        "insect_damage": 59,
+        "powdery_mildew": 28,
+        "yellow_leaf": 86
+      },
+      "sources": {
+        "yxmf3cd865": 151,
+        "58py9f3nsy": 303
+      }
+    }
+  },
+  "near_duplicate_pairs": 14749,
+  "cross_source_near_pairs": 7,
+  "cross_class_near_pairs": 8634,
+  "leakage_groups": 1499,
+  "largest_group": 1434,
+  "checks": {
+    "cross_split_sha256": 0,
+    "cross_split_duplicate_group": 0,
+    "raw_changes": 0,
+    "target_filename_duplicate": 0,
+    "actual_output_images": 3201,
+    "expected_output_images": 3201,
+    "label_conflict_entered": 0,
+    "augmented_entered": 0,
+    "corrupt_entered": 0,
+    "unknown_class_entered": 0,
+    "duplicate_same_label_entered": 0
+  },
+  "training_readiness": "not_ready_for_final_training: cross-class near candidates and conservative large components require review"
+}

@@ -1,0 +1,74 @@
+{
+  "source_id": "UNI_001",
+  "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+  "source_type": "university_material",
+  "crop": [
+    "梨"
+  ],
+  "region": [],
+  "region_note": "河北",
+  "year": 2023,
+  "evidence_level": "B",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://www.zwbch.com/changshi/view_14.html",
+  "authors": [],
+  "doi": null,
+  "availability": "fulltext_html_available",
+  "review_status": "fulltext_acquired_content_review_pending",
+  "fulltext_path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+  "text_path": "data/botou_yali/graphrag_corpus_v1/processed/UNI_001/text.txt",
+  "pages_path": "data/botou_yali/graphrag_corpus_v1/processed/UNI_001/pages.json",
+  "page_count": null,
+  "ready_for_chunking": true,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "适合做症状与基础防治知识的补充来源；若与正式标准或同行评议论文冲突，以更高等级证据为先。",
+  "kg_source_ids": [],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+      "sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39",
+      "bytes": 45537,
+      "role": "fulltext"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/summary.md",
+      "sha256": "e1de4d7b5a24ed3c611f1e51d7fdcdec774b22b1fa55ef2ada1daba63b1f6177",
+      "bytes": 1111,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": null,
+  "acquisition_attempts": [
+    {
+      "source_id": "UNI_001",
+      "status": "navigation_failed",
+      "url": "chrome-error://chromewebdata/",
+      "title": "隐私错误",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID",
+      "characters": 95
+    },
+    {
+      "source_id": "UNI_001",
+      "url": "https://www.zwbch.com/changshi/view_14.html",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/landing.html",
+      "attempted_at": "2026-09-15T06:21:34.724174+00:00",
+      "status": "failed",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>"
+    },
+    {
+      "source_id": "UNI_001",
+      "url": "http://www.zwbch.com/changshi/view_14.html",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+      "attempted_at": "2026-09-15T06:25:05.649565+00:00",
+      "resolved_url": "http://www.zwbch.com/changshi/view_14.html",
+      "status": "downloaded_pending_review",
+      "bytes": 45537,
+      "sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39"
+    }
+  ],
+  "metadata_note": "通过公开 HTTP 页面取得全文；HTTPS 证书错误，站点机构归属尚未独立核验，不可仅凭标题认定为大学正式出版物。",
+  "extraction_status": "text_available_review_pending"
+}

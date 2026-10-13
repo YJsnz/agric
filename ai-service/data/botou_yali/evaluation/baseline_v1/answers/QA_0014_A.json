@@ -1,0 +1,56 @@
+{
+  "id": "QA_0014",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据该论文的具体结论作答。",
+      "basis": "未提供该论文的原文或结论内容，我的知识库中也没有该论文的确切数据。",
+      "reasoning": "问题要求引用《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的结论，但未给出该文献的结论，且我无法确认该论文的具体数值与因果结论，因此不能编造1.0% O2处理的风险或最佳O2浓度参数。",
+      "advice": "请提供该论文的摘要、结论或相关数据页；或查阅原文后，依据其结论判断1.0% O2处理在贮藏末期的风险及推荐的最佳O2浓度。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 180,
+      "completion_tokens": 167,
+      "total_tokens": 347,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 180
+    },
+    "model": "deepseek-flash",
+    "response_id": "258006bb-c801-42eb-b2c2-04db738a2598",
+    "seconds": 7.299131400000078,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关键点，声称无法依据论文结论作答，属于拒答；在可回答题中拒答不算正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 795,
+      "completion_tokens": 43,
+      "total_tokens": 838,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 795
+    },
+    "model": "deepseek-flash",
+    "response_id": "e90dde32-5eaa-46d2-bd5f-d7f2b675081a",
+    "seconds": 5.73451249999971,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

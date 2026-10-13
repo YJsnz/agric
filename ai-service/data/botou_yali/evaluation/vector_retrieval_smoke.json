@@ -1,0 +1,411 @@
+{
+  "created_at": "2026-09-18T15:06:41.389176+00:00",
+  "kind": "retrieval_smoke_not_accuracy_evaluation",
+  "model": "BAAI/bge-small-zh-v1.5",
+  "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+  "index_sha256": "028377282e32fb093be97aab96ca486fa39e5333b06e0248ff50500fb1c6eee8",
+  "llm_used": false,
+  "graph_used": false,
+  "cases": [
+    {
+      "question": "泊头鸭梨黑星病在什么条件下容易发生？",
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.659534215927124,
+          "chunk_id": "GOV_001_C0001",
+          "source_id": "GOV_001",
+          "title": "鸭梨黑星病夏季如何防治（农业农村局公开科普）",
+          "section": "网页正文",
+          "section_id": "GOV_001_S001",
+          "page": null,
+          "page_end": null,
+          "pages": [],
+          "page_basis": "web article; no page number",
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [],
+          "evidence_level": "B",
+          "source_type": "government",
+          "year": 2017,
+          "source_file_sha256": "939dfb9a817b8ac62d0dcd82534fd95a10b3da7daa8c532c45c44e327f00c9d7",
+          "source_url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+          "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_001/browser.html",
+          "text": "梨黑星病又叫梨疮痂病，是梨树的主要病害。当前正值夏季，高温高湿有利于梨黑星病的发生。梨黑星病病原菌借雨水在梨园中扩散侵染，主要危害叶片、果实。叶片染病后，在叶背面产生圆形、椭圆形或不规则形病斑，病斑沿叶脉扩展，产生辐射状黑色霉状物，严重时整个叶背面布满黑霉，引起早期落叶。果实感病后，在果实表面产生一些大小不等的圆形病斑，病斑硬化后，表面粗糙，凹陷龟裂，呈疮痂状，病部伤口遇雨水极易被霉菌感染而腐烂。防治方法 1.农业防治。发现病叶、病果及时摘除，集中烧毁或深埋，防止病菌的扩散和蔓延。雨后及时排除积水，铲除果园内杂草，降低果园内潮湿度。结合夏剪，及时把直立枝、徒长枝、交叉枝从基部剪除，增加果园内通风透光性，改善果园小气候。2.药剂防治。雨前及时喷药预防，雨后及时喷药防治，喷药后遇雨及时补喷。用药可选用40%杜邦福星10000倍，10%苯醚甲环唑3000倍，80%汉邦多菌灵2000倍，可杀得叁仟2000倍，以上农药7-10天喷1次，连喷3-4次。各种杀菌剂要交替使用，以免产生抗药性。喷药时要注意喷布均匀，树冠上下，树膛内外，都要沾药，特别注意叶片的背面要喷上药。",
+          "char_count": 485,
+          "start_offset": 0,
+          "end_offset": 485,
+          "overlap_chars": 0,
+          "text_sha256": "0298c7349bc8166ef957d2095eb0318dec6c6e1454c617d646cc13e6769df0a2",
+          "size_exception": "short_section_or_tail",
+          "review_status": "layout_tables_and_agronomic_context_review_pending",
+          "needs_layout_review": false,
+          "production_retrieval_approved": false,
+          "matched_window": {
+            "start": 0,
+            "end": 350
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6151795387268066,
+          "chunk_id": "PAPER_001_C0026",
+          "source_id": "PAPER_001",
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "3.1  环境O2浓度与虎皮病和黑心病发生的关系",
+          "section_id": "PAPER_001_S018",
+          "page": 8,
+          "page_end": 9,
+          "pages": [
+            8,
+            9
+          ],
+          "page_basis": "PDF physical page, 1-based",
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "source_type": "paper",
+          "year": 2020,
+          "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+          "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+          "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+          "text": "虎皮病是梨采后贮藏过程中一种主要的生理病害[26]。低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累，降低乙烯释放量，有效降低α-法尼烯及其氧化产物共轭三烯醇的积累，进而抑制虎皮病的发生[27-28]。近年来，超低氧气调贮藏技术（O2＜1.0%）和动态气调贮藏技术（O2＜0.6%）快速发展，与传统气调贮藏相比，更低的贮藏环境O2 浓度能更好地控制苹果和梨采后虎皮病的发生[29-30]。本研究中，5.0%及以下O2处理显著降低了鸭梨长期贮藏过程中虎皮病的发生，货架期显著延长，其中1.0%—3.0% O2 处理防控虎皮病效果最佳。可见，进一步降低贮藏环境氧气浓度可更好地维持鸭梨果实外观品质，延长货架期，这与前人研究结论一致。黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变[31-32]。低氧胁迫处理可通过调控氧化代谢平衡进而降低衰老相关生理病害的发生[33-34]。本研究中，采用阶段降温结合延迟气调贮藏均显著降低了贮藏和货架期间果实黑心病的发生，相对更低的O2浓度更好地控制了贮藏后期（270 d）果心褐变指数，但过低的氧气浓度处理（1.0% O2）一定程度上增加了鸭梨果实贮藏末期黑心病风险。",
+          "char_count": 537,
+          "start_offset": 0,
+          "end_offset": 537,
+          "overlap_chars": 0,
+          "text_sha256": "b4f0a52e6d6b72704339213d899d8d2bf8471117660696f2990935fe228d0913",
+          "size_exception": null,
+          "review_status": "layout_tables_and_agronomic_context_review_pending",
+          "needs_layout_review": false,
+          "production_retrieval_approved": false,
+          "matched_window": {
+            "start": 300,
+            "end": 537
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5938423871994019,
+          "chunk_id": "UNI_001_C0001",
+          "source_id": "UNI_001",
+          "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+          "section": "网页正文",
+          "section_id": "UNI_001_S001",
+          "page": null,
+          "page_end": null,
+          "pages": [],
+          "page_basis": "web article; no page number",
+          "crop": [
+            "梨"
+          ],
+          "region": [],
+          "applicable_stages": [],
+          "evidence_level": "B",
+          "source_type": "university_material",
+          "year": 2023,
+          "source_file_sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39",
+          "source_url": "https://www.zwbch.com/changshi/view_14.html",
+          "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+          "text": "01黑星病梨黑星病是一种检疫性病害，病原为子囊菌亚门黑星菌属的纳雪星菌，可危害梨树地上部大部分幼嫩组织，并以叶片、果实为主。叶片受害，先在叶背面的主脉两侧与支脉之间产生多角形或圆形的淡黄色病斑，没有明显的边缘，随后病斑会遍布整个叶片；在叶背面产生辐射状霉层，病情严重时造成大量落叶。幼果发病为畸形果，会形成不规则的淡黄色至褐色病斑，且病斑上会长出黑色的霉层；成长期果实发病不畸形，但病斑部会凹陷并产生星状龟裂。叶柄、果梗症状相似，出现黑色椭圆形的凹陷斑，病部覆盖黑霉、缢缩、失水干枯，致叶片或果实早落。防治时注意加强冬季清园，对病叶、病枝、病果等集中处理，并喷广谱性杀菌剂降低病原菌。早春梨芽膨大期起开始结合药剂防治，花前花后是关键期，可选用苯醚甲环唑、已唑醇、氟硅唑、异菌脲等药剂。02轮纹病梨树轮纹病菌是弱寄生菌，具有发病快、危害大等特点，主要侵害枝干、果实，在叶片上也偶有发生。枝干受害，逐步形成马鞍状病斑，树皮变得粗糙；果实受害，初产生水渍状、圆形、浅褐色小斑，后扩大成浅褐色至红褐色的同心轮纹斑；叶片受害，生成较大褐色近圆形病斑，常伴有轮纹。由于是弱寄生病害，在预防上提升树势，压低病原是关键。可增施有机肥、活土君复合菌剂，生长期淋施海精灵生物刺激剂，冬季清园时应刮除枝干老翘皮，剪除病枯枝，集中烧毁。药剂防治掌握在落花后至套袋前，特别是雨前雨后，药剂可选择代森锰锌、戊唑·多菌灵、代森联、吡唑·代森联等。03锈病梨锈病主要对植株叶片、新梢和幼果有较大危害。叶片受害，起初在叶面上出现淡黄色且带有光泽的小斑点，后扩展为近圆形病斑。幼果受害，初期病斑大体与叶片上的相似，病部稍凹陷，病斑上密生橙黄色的小粒点。后期在同一部位产生灰黄色毛状物，即锈子器。病果生长停滞，往往畸形早落。防治时要注意清除转主寄主如松、柏等；高温天气，要适时浇水，增加湿度，破坏发病条件；在萌芽至展叶的25天内进行喷药保护，药剂可选择三唑醇、苯醚甲环唑、嘧菌酯等。",
+          "char_count": 822,
+          "start_offset": 0,
+          "end_offset": 822,
+          "overlap_chars": 0,
+          "text_sha256": "329ce4393f558a8cb1f0a866b36458abc5a57aa84a7c547bc1b903d3a4a0dc50",
+          "size_exception": null,
+          "review_status": "layout_tables_and_agronomic_context_review_pending",
+          "needs_layout_review": false,
+          "production_retrieval_approved": false,
+          "matched_window": {
+            "start": 0,
+            "end": 350
+          }
+        }
+      ]
+    },
+    {
+      "question": "梨采收时如何避免机械损伤？",
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.6292919516563416,
+          "chunk_id": "STD_002_C0012",
+          "source_id": "STD_002",
+          "title": "DB13/T 6276-2026 梨产业链质量控制技术规程",
+          "section": "11 采收",
+          "section_id": "STD_002_S012",
+          "page": 6,
+          "page_end": 6,
+          "pages": [
+            6
+          ],
+          "page_basis": "PDF physical page, 1-based",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "河北省"
+          ],
+          "applicable_stages": [],
+          "evidence_level": "A",
+          "source_type": "standard",
+          "year": 2026,
+          "source_file_sha256": "02b10a7ddcd05efd5af3ff3e6e408db01b347fa5d1f007da092521d9dd805bcd",
+          "source_url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+          "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/original.pdf",
+          "text": "采收时间应根据品种特性、果实成熟度及采后用途确定。采收事项采前15 d内，果园应停止施肥、浇水、打药，避免带雨水、露水采收；宜分批适时采收，选择晴天气温凉爽，按先外后内、先上后下的顺序分批采收；采摘过程要轻拿、轻放，尽量不拉拽果柄，防止造成内伤和果柄基部腐烂。",
+          "char_count": 130,
+          "start_offset": 0,
+          "end_offset": 130,
+          "overlap_chars": 0,
+          "text_sha256": "dd542d555046b0e1167c652425474302fbd03b75077194b6e2cd79373ce0a373",
+          "size_exception": "short_section_or_tail",
+          "review_status": "layout_tables_and_agronomic_context_review_pending",
+          "needs_layout_review": false,
+          "production_retrieval_approved": false,
+          "matched_window": {
+            "start": 0,
+            "end": 130
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6009148359298706,
+          "chunk_id": "STD_002_C0014",
+          "source_id": "STD_002",
+          "title": "DB13/T 6276-2026 梨产业链质量控制技术规程",
+          "section": "13 运输管理",
+          "section_id": "STD_002_S014",
+          "page": 7,
+          "page_end": 7,
+          "pages": [
+            7
+          ],
+          "page_basis": "PDF physical page, 1-based",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "河北省"
+          ],
+          "applicable_stages": [],
+          "evidence_level": "A",
+          "source_type": "standard",
+          "year": 2026,
+          "source_file_sha256": "02b10a7ddcd05efd5af3ff3e6e408db01b347fa5d1f007da092521d9dd805bcd",
+          "source_url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+          "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/original.pdf",
+          "text": "出库时梨果表面温度与外界气温的温差应<10 ºC。运输期间应避免机械伤害。长距离运输温度以2 ºC～5 ºC为宜，相对湿度不低于85%。",
+          "char_count": 68,
+          "start_offset": 0,
+          "end_offset": 68,
+          "overlap_chars": 0,
+          "text_sha256": "0ef076544c1fb54cbd67d8a271f4d6fbf461d4b0016d332e30d2e9cc4e98757c",
+          "size_exception": "short_section_or_tail",
+          "review_status": "layout_tables_and_agronomic_context_review_pending",
+          "needs_layout_review": false,
+          "production_retrieval_approved": false,
+          "matched_window": {
+            "start": 0,
+            "end": 68
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.561747133731842,
+          "chunk_id": "GOV_002_C0004",
+          "source_id": "GOV_002",
+          "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+          "section": "四、贮藏中的主要问题及防止措施",
+          "section_id": "GOV_002_S004",
+          "page": null,
+          "page_end": null,
+          "pages": [],
+          "page_basis": "web article; no page number",
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "采收期",
+            "储藏期"
+          ],
+          "evidence_level": "C",
+          "source_type": "government",
+          "year": 2004,
+          "source_file_sha256": "c58d87e3c5cff96112300e941b68df90ff5ec312c8b8363b4b36f0b9c87daef6",
+          "source_url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+          "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/browser.html",
+          "text": "1、梨的干耗与库房湿度。梨果水分含量高，贮期失水是主要问题之一。为减少失水需增加贮藏库内湿度。可采用地面洒水或库壁四周及通风道等处挂湿草帘等方法。2、二氧化碳积累与通风换气。库房内二氧化碳高于2%时会出现果心、果肉褐变等病害。因此，加强库房通风换气，减少二氧化碳积累，以及减少乙烯等有害气体的积累，是梨果贮藏的技术关键。所以，要在贮藏的前期和后期每天通风换气1-2小时，中期2-3天换气一次，每次1-2小时；或置于风扇、冷气机下，通过库内气体和循环吸收二氧化碳。该法可减少通风换气带来的干耗。",
+          "char_count": 246,
+          "start_offset": 0,
+          "end_offset": 246,
+          "overlap_chars": 0,
+          "text_sha256": "98cd93252d27d9db6960de74fd4a37ff76a7df0cfd244ae9307d46966f40a55f",
+          "size_exception": "short_section_or_tail",
+          "review_status": "layout_tables_and_agronomic_context_review_pending",
+          "needs_layout_review": false,
+          "production_retrieval_approved": false,
+          "matched_window": {
+            "start": 0,
+            "end": 246
+          }
+        }
+      ]
+    },
+    {
+      "question": "梨货架期如何控制温湿度？",
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7134681940078735,
+          "chunk_id": "STD_002_C0014",
+          "source_id": "STD_002",
+          "title": "DB13/T 6276-2026 梨产业链质量控制技术规程",
+          "section": "13 运输管理",
+          "section_id": "STD_002_S014",
+          "page": 7,
+          "page_end": 7,
+          "pages": [
+            7
+          ],
+          "page_basis": "PDF physical page, 1-based",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "河北省"
+          ],
+          "applicable_stages": [],
+          "evidence_level": "A",
+          "source_type": "standard",
+          "year": 2026,
+          "source_file_sha256": "02b10a7ddcd05efd5af3ff3e6e408db01b347fa5d1f007da092521d9dd805bcd",
+          "source_url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+          "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/original.pdf",
+          "text": "出库时梨果表面温度与外界气温的温差应<10 ºC。运输期间应避免机械伤害。长距离运输温度以2 ºC～5 ºC为宜，相对湿度不低于85%。",
+          "char_count": 68,
+          "start_offset": 0,
+          "end_offset": 68,
+          "overlap_chars": 0,
+          "text_sha256": "0ef076544c1fb54cbd67d8a271f4d6fbf461d4b0016d332e30d2e9cc4e98757c",
+          "size_exception": "short_section_or_tail",
+          "review_status": "layout_tables_and_agronomic_context_review_pending",
+          "needs_layout_review": false,
+          "production_retrieval_approved": false,
+          "matched_window": {
+            "start": 0,
+            "end": 68
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7127403616905212,
+          "chunk_id": "STD_004_C0007",
+          "source_id": "STD_004",
+          "title": "DB13/T 5390-2021 梨货架期品质维持技术规范",
+          "section": "5 货架期技术要求",
+          "section_id": "STD_004_S007",
+          "page": 6,
+          "page_end": 6,
+          "pages": [
+            6
+          ],
+          "page_basis": "PDF physical page, 1-based",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "河北省"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "出库期",
+            "运输期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "source_type": "standard",
+          "year": 2021,
+          "source_file_sha256": "64b3c0db0c947772251d5b0305ddfb03e2fa0efdf94f2cac32dff16dfbfe52d0",
+          "source_url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=C3B0BB05E84D4F89E05397BE0A0A81E3",
+          "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_004/original.pdf",
+          "text": "5.1 货架场所应彻底清扫、消毒。消毒剂应符合GB 14930.2 的规定，卫生要求应符合GB 14881 的规定。5.2 低温货架适宜温度0 ℃～5 ºC，相对湿度85%～95%。5.3 常温货架期应少于10 d，低温货架期应少于30 d。_________________________________",
+          "char_count": 154,
+          "start_offset": 0,
+          "end_offset": 154,
+          "overlap_chars": 0,
+          "text_sha256": "0fcc4850eb16477f9ce69c62f9642f43992eb2ec4ad8bad4437e85f576b82d74",
+          "size_exception": "short_section_or_tail",
+          "review_status": "layout_tables_and_agronomic_context_review_pending",
+          "needs_layout_review": false,
+          "production_retrieval_approved": false,
+          "matched_window": {
+            "start": 0,
+            "end": 154
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6989006996154785,
+          "chunk_id": "STD_004_C0006",
+          "source_id": "STD_004",
+          "title": "DB13/T 5390-2021 梨货架期品质维持技术规范",
+          "section": "4 货架前技术要求",
+          "section_id": "STD_004_S006",
+          "page": 5,
+          "page_end": 6,
+          "pages": [
+            5,
+            6
+          ],
+          "page_basis": "PDF physical page, 1-based",
+          "crop": [
+            "梨"
+          ],
+          "region": [
+            "河北省"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "出库期",
+            "运输期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "source_type": "standard",
+          "year": 2021,
+          "source_file_sha256": "64b3c0db0c947772251d5b0305ddfb03e2fa0efdf94f2cac32dff16dfbfe52d0",
+          "source_url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=C3B0BB05E84D4F89E05397BE0A0A81E3",
+          "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_004/original.pdf",
+          "text": "4.1 质量应符合GB/T 10650 规定要求。4.2 保鲜剂宜用1-甲基环丙烯（1-MCP）。4.3 采后48  h 内在密闭空间进行1-MCP 熏蒸，白梨、砂梨、新疆梨处理浓度为0.5 μ L/L～1.0 μ l/L，西洋梨和秋子梨处理浓度0.2 μ L/L～0.5μ L/L，处理时间12 h～24 h。4.4 外包装宜用木箱、瓦楞纸箱、塑料箱等，箱体坚固耐用，无异味，内侧无尖突物。内包装宜采用保鲜纸+网套+箱内垫衬+二氧化碳高通透PE 保鲜膜或打孔膜、微孔膜。4.5 冷藏温度应符合表1 规定，相对湿度90%～95%。表1 梨适宜冷藏温度品种推荐温度（℃）品种推荐温度（℃）黄冠10～15→0鸭梨10～12→0雪花梨红香酥0～1京白梨-1～0玉露香-1～0表1 梨适宜冷藏温度(续)品种推荐温度（℃）品种推荐温度（℃）雪青10～12→0南果梨苹果梨-1～0黄金0～1丰水0～1新高0～1蜜梨砀山酥梨-1～0巴梨早酥0～2香水梨花盖梨-1～0库尔勒香梨-1～0注：梯度降温品种为鸭梨、黄冠、雪青。4.6 果实出冷库后应采取缓慢回温方式，果心温度与外界气温的温差应<10 ºC。4.7 长距离运输温度以 2 ºC～5 ºC 为宜，相对湿度不低于85%。",
+          "char_count": 530,
+          "start_offset": 0,
+          "end_offset": 530,
+          "overlap_chars": 0,
+          "text_sha256": "13526a12f920b07be9529763e55faf3c4e520aca31b1e3f9b59974c1e290d358",
+          "size_exception": null,
+          "review_status": "layout_tables_and_agronomic_context_review_pending",
+          "needs_layout_review": false,
+          "production_retrieval_approved": false,
+          "matched_window": {
+            "start": 300,
+            "end": 530
+          }
+        }
+      ]
+    }
+  ]
+}

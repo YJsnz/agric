@@ -1,0 +1,332 @@
+Codling Moth / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+Codling Moth
+Agriculture: Pear Pest Management Guidelines
+Codling Moth
+Cydia pomonella
+On This Page
+Description of the Pest
+Damage
+Management
+Important Links
+Description of the Pest
+Codling moth has a 0.5 to 0.75 inch wingspan. The tip of each forewing has a coppery-tinged dark brown band that distinguishes codling moth from other moths found in pear orchards. Females lay eggs singly on leaves and on fruit. Eggs are disk-shaped, smaller than a pinhead, and opaque white when first laid. Just before hatching, the black head of the larvae becomes visible. Newly hatched larvae are white with black heads. Mature larvae are 0.5 to 0.75 inch long, pinkish white, with mottled brown heads. Depending on climatic conditions and location in the state, there are two to three generations of codling moth each year. Overwintering moths emerge in two distinct peaks: 1A and 1B. The two flight peaks cause a ripple effect in the second flight, which also has two distinct peaks: 2A and 2B.
+Damage
+Codling moth has the greatest potential for damage of any pear pest, yet it can be effectively controlled with properly timed treatments. It causes two types of fruit damage: stings and deep entries. Stings are entries where larvae bore into the flesh a short distance before dying. Deep entries occur when larvae penetrate the fruit skin, bore to the core, and feed in the seed cavity. Larvae may enter through the sides, stem end, or calyx (flower) end of the fruit. One or more holes plugged with frass on the fruit's surface is a characteristic sign of codling moth infestation. Calyx entries are difficult to detect without cutting the fruit.
+Management
+A variety of tools are available for codling moth management, including insecticides, mating disruption, and cultural controls. An IPM program uses a combination of these strategies. Mating disruption is the preferred tool for codling moth control because of its low toxicity to humans, natural enemies, and the environment. Mating disruption may need to be supplemented with insecticide sprays, especially during the first few years, or in orchards with moderate-to-high codling moth populations. Alternate insecticides with different mode of action Group numbers in order to avoid the development of insecticide-resistant populations. Supplement all codling moth management programs with cultural controls.
+Biological Control
+Alone, natural enemies are not able to keep codling moth populations below economic levels. An important parasite of codling moth is Trichogramma platneri, which parasitizes its eggs.
+Cultural Control
+Remove host trees in nearby abandoned orchards (apple, pear, and walnut) to destroy reservoirs of codling moth. Also remove props, picking bins, and fruit piles from the orchard. Proper pruning and orchard sprayer calibration will improve spray coverage. An option for small, organic orchards is hand thinning to remove all infested fruit during each generation, before worms leave fruit, and removal of dropped fruit. Trunk banding to provide places for the larvae to pupate can also be used to help control population levels, provided the bands are placed before pupation and removed before adult emergence.
+Organically Acceptable Methods
+Organically acceptable tools for the control of codling moth include cultural control in conjunction with mating disruption, sprays of certain oils, codling moth granulovirus (Cyd-X, etc.), the Entrust formulations of spinosad, and kaolin clay (Surround). Currently for mating disruption, hand-applied pheromone dispensers and puffers are acceptable; however, flowable formulations for spray rig application are not. Check with your certifier about the exact status of all materials.
+Monitoring and Treatment Decisions in a Mating Disruption Orchard
+Mating disruption has become the primary method of codling moth control in most pear orchards. In orchards with moderate-to-high populations or in the first year of mating disruption, insecticides or other supplemental controls will likely be needed in addition to the mating-disruption program. Using mating disruption successively over a number of years can effectively lower the codling moth population so that alternative, reduced-risk chemical treatments can be effectively used to supplement control when needed.
+Mating disruption works best in larger, uniform orchards that are relatively square. It is not recommended in orchards that are less than 3 to 5 acres in size. The larger the contiguous block of mating disruption, the more effective it will be. Effectiveness will also decline if there are high levels of mated females flying from neighboring orchards or abandoned trees.
+Establishing Biofix and Accumulation of Degree-Days
+To determine biofix, hang 1 mg pheromone traps in the orchard in early March in the Sacramento Valley and San Joaquin-Sacramento Delta growing areas, and in late March in North Coast and Sierra Foothill orchards. Place traps on the southeast side of the tree, about 6 to 8 feet high, with one trap every 5 acres or at least two traps per orchard. Check traps one to two times a week until biofix is set and once a week thereafter until biofix is confirmed. The first date that moths are consistently found in traps for three consecutive days and sunset temperatures have reached 62°F is the biofix. Replace lures at intervals specified by the manufacturer. For more information, see PHEROMONE TRAPS.
+To follow codling moth development and time fruit sampling, begin accumulating degree-days from the spring biofix using a lower threshold of 50°F and an upper threshold of 88°F. Calculate degree-days for codling moth in pears for your location using the codling moth pest model. To learn more about using degree-days to time insecticide applications,
+watch the degree-days video.
+Setting Out Pheromone Dispensers
+Pheromones are primarily deployed as either hand-applied dispensers or in an aerosol canister (puffer). The pheromone is also available as a flowable formulation for spraying, but this is seldom recommended because of its very short residual.
+Place pheromone dispensers in the upper third of the tree canopy at biofix in mid-March to early April. It is important for pheromone products to be hung early enough to disrupt overwintering moths as soon as they emerge. A late pheromone application will require supplemental treatment.
+When placing puffers, put them on the inside of the canopy of edge trees or on the outside of trees in the second row. Upwind placement is one puffer every 50 to 65 feet, and downwind placement is one every 100 to 130 feet, or an average of 200 units per quarter square mile, or 1 to 2 puffers per acre. Also, place a few puffers towards the middle of the orchard on the upwind side. Check puffers every other week to make sure they are emitting properly.
+Pheromone dispensers should be actively releasing pheromone throughout the third flight, which may extend into early September. A second application of pheromone may be needed if earlier applications expire before summer codling moth flights are over. This varies depending on the product used; follow manufacturer's guidelines.
+Monitoring Orchards Under Mating Disruption with Traps
+Monitor pheromone-treated orchards carefully to help assure that mated moths have not moved in from adjacent orchards and that the pheromone is successfully disrupting mating. At biofix deploy the following monitoring traps:
+Supercharged (10 mg) pheromone traps
+Pheromone traps with supercharged (10 mg) pheromone lures are put in the top third of the tree canopy, at the same level as the dispensers. Use at least one trap per 5 acres distributed uniformly throughout the orchard and a minimum of 2 traps in small orchards. Check traps weekly and replace lures at the frequency recommended by the manufacturer. These traps serve to assist in calculating degree-days (DD) (see "Spray Timing" below) and monitoring the development of the codling moth population; they also signal when fruit should be monitored. Do not rely completely on traps, however, because fruit damage has been known to occur even when traps have not caught moths.
+Supercharged traps do not attract moths from far, so additional traps may be needed in areas that are known hot spots (spots with a history of damage) and in areas vulnerable to wind where pheromone concentration is likely to be reduced. Examples include high spots and orchard edges; five to six rows inside the orchard is a good location.
+If the supercharged traps consistently catch moths (more than a total of 5 moths per week in 2 consecutive weeks or 10 moths in 1 week in orchards that have hand-applied dispensers), monitor fruit in the surrounding area for eggs or damage to determine if a supplemental treatment is necessary. In orchards where puffers are used, if trap catches appear high (more than 3) or if moths are caught in the same trap for more than 1 week in a row, monitor for eggs to determine if a treatment is necessary.
+Regular (1 mg) pheromone traps
+An additional monitoring tool in a mating-disruption program is the use of pheromone traps with 1 mg lures to verify the effectiveness of the mating disruption dispensers. Hang these traps at biofix 6 to 8 feet high in the trees. Traps with 1 mg lures can also be used in upwind, border trees (placed in second row trees) to monitor the influx of codling moth. Check traps weekly and replace lures at the frequency recommended by the manufacturer. These traps should not catch moths if the dispensers are working. If moths are caught, check the fruit in the surrounding area. If eggs or damage are found, a supplemental treatment should be employed to prevent further damage.
+DA lures
+A plant-derived chemical (kairomone) lure has been developed to assist in monitoring codling moth populations. This lure is sold commercially as the "DA" lure and is available alone and in combination with pheromone ("combo lure"). The DA lure has been shown to catch both female and male moths, whereas pheromone lures catch only male moths. The sex of moths caught in traps using the DA lure can be determined by looking at the genitalia at the tip of the abdomen. If the moth is female, the abdomen can be squeezed to eject the bursa pouch to determine if the moth is unmated, mated, or mated more than once. Generally, if the female's abdomen feels hard to the touch, the moth is most likely mated.
+The DA lure appears to work best in mating-disrupted pear orchards early in the season. The DA and DA/pheromone combo lure may also be used to assess the success of mating disruption in an orchard. Use DA lures in conjunction with standard 10X and 1X pheromone lures.
+Fruit Sampling
+Fruit damage can occur even when no moths are caught in traps, so always check fruit clusters for damage towards the end of the generation (800–900 DD from biofix) or when moths are being caught in traps. Examine one cluster from the top and one cluster from the bottom of 20 trees in a transect that extends from orchard edge to orchard edge. Females are attracted to wounded fruit for oviposition. Cut fruit weekly at the edge of the orchard next to unmanaged or alternate hosts. If any eggs or larval entries are found, plan to treat at 250 DD from the second biofix when the second generation emerges. For information about monitoring other pests at the same time, see SAMPLING DURING FRUIT DEVELOPMENT.
+If fruit sampling shows that damage is limited to an orchard border, especially borders that are upwind from the dispensers, adjacent to open areas, or on the upper side of an incline, spot-treating six to ten rows along the problem border may be adequate.
+Harvest Fruit Sample
+At harvest, assess your IPM program by monitoring fruit in the bins for codling moth damage. Sample 200 fruit per bin from 5 bins per orchard (or per 20-acre block in large orchards) for a total of 1,000 fruit. For more information on this sample, see HARVEST FRUIT SAMPLE. For guidelines on monitoring fruit after harvest, see Postharvest Fruit Sample below.
+Supplemental Treatments
+If codling moth populations are very high, such as in the case of abandoned orchards, supplement mating disruption with spinetoram (Delegate). If codling moth populations are moderate to high, supplement with chlorantraniliprole (Altacor), or spinetoram (Delegate). If codling moth populations are moderate or in the first year of a mating-disruption program, use a supplemental treatment of acetamiprid (Assail), or phosmet (Imidan). For low populations, a reduced-risk material such as an IGR (methoxyfenozide-Intrepid) may be sufficient. In organic orchards, if supplemental treatments are needed, use spinosad (Entrust), codling moth granulovirus (Cyd-X), and oil. Adding low rates of oil with the supplemental insecticide increases coverage and aids in suppression of mites and pear psylla.
+First generation
+Monitor with traps to determine if supplemental insecticide treatment is needed for the first peak, the second peak or for both. Depending on trap catches, treatment may be needed at 250 DD after the biofix to target larvae hatching after the first adult peak flight (1A) egg deposition, and/or at 600 to 700 DD from the biofix to suppress larvae hatching after the second flight peak (1B) of the overwintering moths. The 600 to 700 DD timing may also coincide with the timing for control of obliquebanded leafroller, katydids, and pearslug. The choice of chemical depends on population numbers, insecticide rotation, and other insects to be targeted.
+For low populations, applying a supplemental spray to the first generation may not be necessary. Use trap catch information and monitor fruit to determine if a spray is needed.
+Second generation
+To determine if treatment is needed, careful trap and fruit monitoring is essential. Treat at 200 to 250 DD after the 2nd biofix if the 10 mg traps are still catching moths or if damage appeared in the fruit sample. Keep monitoring traps after treatment. If trap catches exceed the threshold (more than a total of 5 moths in 2 consecutive weeks or 10 moths in 1 week in orchards that have hand-applied dispensers), treat at the "stop drop" application timing or earlier if needed. In mating-disruption orchards where puffers are used, if any moths are trapped, monitor fruit in the area of the puffer for eggs and treat if they are found.
+Monitoring and Treatment Decisions in a Conventional Orchard
+In orchards where codling moth is managed primarily with insecticides, pheromone traps are used, in conjunction with degree-days and sunset temperatures, to determine egg hatch and proper spray timing. When using pheromone traps, keep in mind the many factors, such as tree size, trap density, type of trap, trap placement, brand of pheromone, as well as climatic conditions, that can affect trap counts.
+Establishing Biofix
+Hang 1 mg pheromone traps in the orchard in early March in the Sacramento and San Joaquin-Sacramento Delta growing areas and in late March in North Coast and Sierra Foothill orchards, on the southeast side of the tree, about 6 to 8 feet high, with one trap every 10 acres and at least two traps per orchard. Service traps one to two times a week until biofix is set and once a week thereafter. The first date that moths are consistently found in traps for three consecutive days and sunset temperatures have reached 62°F is the biofix. Replace lures at intervals specified by the manufacturer.
+Spray Timing
+Begin accumulating degree-days from the spring biofix using a lower threshold of 50°F and an upper threshold of 88°F. Calculate degree-days for codling moth in pears for your location using the codling moth pest model. To learn more about using degree-days to time insecticide applications,
+watch the degree-days video.
+The most effective spray timing for each generation is outlined below. Codling moth has two generations, and maybe a partial third generation, each season in the pear-growing regions of California. Pears are exposed to only one and a half to two and a half generations before harvest. Continue to monitor the generations with traps and accumulate degree-days until mid-September.
+First generation egg hatch
+Time the first spray to the beginning of egg hatch to kill emerging larvae 250 to 300 DD after the biofix. In most orchards, more than one spray may be necessary to adequately control first generation codling moth, particularly if the orchard has a history of codling moth damage or the population is high. If significant moth catches continue after the first treatment, make a second application at 650 DD for the second peak (1B) of the first generation. If trap catches are low or the weather turns too cool for moth activity, you can delay treatment, but continue to monitor. Adding low rates of oil with the insecticide, except when using granulovirus (Cyd-X), increases coverage and aids in mite and psylla control.
+Second generation egg hatch
+Near the end of the overwintered generation moth flight, trap catches may not be a reliable guide in determining the need for another spray. Females may have completed egg laying, even though males are still being trapped. When 800 to 900 DD have accumulated from the first biofix, inspect fruit for larval entries and fruit clusters for eggs on leaves, fruit, and cluster bases. Examine one cluster from the top and one cluster from the bottom of 20 trees in a transect that extends from orchard edge to orchard edge. If any eggs or larval entries are found, treat. Infested fruit usually drops from the tree around 1200 DD (early July) and can be monitored on the ground at this time.
+Use pheromone trap catches to detect an increase in flight activity between 900–1100 DD from the first biofix, which signals the start of the next moth flight—this is the second biofix. For low moth populations, a single application may be sufficient; make this application when 200 to 250 DD have accumulated from the second biofix. For high moth populations, two treatments are usually necessary. Make the first application at 200 to 250 DD. The 2B peak occurs 600 to 700 DD from the second biofix. In late districts this often occurs right before harvest. If degree-day accumulations indicate a late second generation in late districts and traps continue to catch, treat at the "stop drop" application timing or earlier if needed.
+Harvest Fruit Sample
+At harvest, assess your IPM program by monitoring fruit in the bins for codling moth damage. Sample 200 fruit per bin from 5 bins per orchard (or per 20-acre block) for a total of 1,000 fruit. For more information on this sample, see HARVEST FRUIT SAMPLE.
+Third generation egg hatch
+A third generation of codling moth eggs does not occur every year in every location. Codling moth larvae normally go into diapause (winter dormant state) around mid-August, but in warm years and warm locations they will have already started pupation before mid-August, and these pupae will soon emerge as adults to produce a third flight. This usually occurs shortly after harvest.
+Postharvest Fruit Sample
+Regardless of the IPM program (mating disruption or conventional) used in the orchard, evaluate 300 fruit left on trees after harvest to assess its effectiveness and to assess overwintering population levels. If 1 to 2% of the fruit (3 to 6 fruit) are infested, reevaluate your IPM program for the following year and be prepared to treat at first egg hatch of the overwintering generation. (For more information on sampling at this time, see POSTHARVEST SURVEY).
+Common name
+Amount to use**
+REI‡
+PHI‡
+(Example trade name)
+(conc.)
+(dilute)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least harmful to natural enemies, honey bees, and the environment are at the top of the table. When choosing a pesticide, consider information relating to air and water quality, resistance management, and the pesticide's properties and application timing. Always read the label of the product being used.
+MATING DISRUPTION
+A.
+MATING DISRUPTANTS
+(Isomate-C, Isomate-CTT)#
+(CheckMate CM)#
+(Suterra Puffer)#
+(flowable formulations)
+Label rates
+NA
+NA
+COMMENTS: Apply at biofix just before moth emergence in spring. Hang dispensers high in the tree canopy, about 2 to 4 feet from treetop. If necessary, reapply once depending on the interval recommended on the label. Most effective on larger blocks of at least 5 to 10 acres with trees of uniform size. In sites with medium-to-high population levels of codling moth, supplement mating disruption with insecticide treatments. Hand-applied dispensers and puffers are allowable for use on organically certified produce. The flowable formulation has a very short residual; use only for short-term needs such as high numbers in abandoned orchards late in the season or as a supplement at the end of the season if dispensers expire before summer codling moth flights are over.
+INSECTICIDE CONTROLS
+High Populations Only
+A.
+SPINETORAM
+(Delegate)
+6–7 oz
+—
+4
+7
+MODE OF ACTION GROUP NUMBER1: 5
+COMMENTS: May cause outbreaks of pear rust mite. Addition of oil at 1% improves coverage and aids in suppressing mites. Residual efficacy is affected by pH but initial efficacy is not; verify that water pH is greater than 6 and less than 8. Spinetoram applications for codling moth also control pear psylla.
+Moderate to High Populations
+B.
+SPINETORAM
+(Delegate)
+6–7 oz
+—
+4
+7
+MODE OF ACTION GROUP NUMBER1: 5
+COMMENTS: May cause outbreaks of pear rust mite. Addition of oil at 1% improves coverage and aids in suppressing mites. Residual efficacy is affected by pH but initial efficacy is not; verify that water pH is greater than 6 and less than 8. Spinetoram applications for codling moth also control pear psylla.
+C.
+CHLORANTRANILIPROLE
+(Altacor)
+4–4.5 oz
+—
+4
+5
+MODE OF ACTION GROUP NUMBER1: 28
+COMMENTS: Larvicide with some ovicidal activity when applied before egg deposition.
+D.
+LAMBDA-CYHALOTHRIN*
+(Warrior with Zeon)
+2.56–5.12 fl oz
+—
+24
+21
+MODE OF ACTION GROUP NUMBER1: 3A
+COMMENTS: Do not apply to blooming plants, including fruit trees and broadleaf weeds. May cause outbreaks of pear rust mite. Addition of oil improves coverage and aids in suppressing mites and psylla. During the first codling moth generation, add oil at 1% at 250 DD and 0.5% at 650 DD. During the second generation add oil at 0.25% at 250 DD and 650 DD.
+Moderate Populations
+E.
+ACETAMIPRID
+(Assail 70WP)
+1.7–3.4 oz
+—
+12
+7
+MODE OF ACTION GROUP NUMBER1: 4A
+COMMENTS: Do not apply to blooming plants, including fruit trees and broadleaf weeds. Addition of oil and limiting applications to a single application may help mitigate mite problems. During the first codling moth generation, add oil at 1% at 250 DD and 0.5% at 650 DD. During the second generation add oil at 0.25% at 250 DD and 650 DD. To help prevent the development of insect resistance, limit applications of this product to one generation per year.
+F.
+PHOSMET
+(Imidan 70W)
+3.5–5.33 lb
+0.875–1.33 lb
+168 (7 days)
+7
+MODE OF ACTION GROUP NUMBER1: 1B
+COMMENTS: Addition of oil improves coverage and aids in suppressing mites and psylla. During the first codling moth generation, add oil at 1% at 250 DD and 0.5% at 650 DD. During the second generation add oil at 0.25% at 250 DD and 650 DD. Reduce pH of water to 5. Do not apply to blooming plants, including fruit trees and broadleaf weeds.
+Low Populations
+G.
+METHOXYFENOZIDE
+(Intrepid 2F)
+16 fl oz
+—
+4
+14
+MODE OF ACTION GROUP NUMBER1: 18A
+COMMENTS: Functions both as an ovicide (when applied to eggs and when eggs are laid on residues) and as a larvicide; larvae must ingest it for it to be effective. Apply at 100 DD from first biofix and again at the B peak if monitoring indicates a need. Apply with oil. During the first codling moth generation, add oil at 1% at 100 DD and 0.5% at 500 DD. During the second generation add oil at 0.25% at 100 DD and 500 DD.
+Supplemental Treatments in Organic Orchards
+H.
+SPINOSAD
+(Entrust)#
+2–3 oz
+0.5–0.75 oz
+4
+7
+MODE OF ACTION GROUP NUMBER1: 5
+COMMENTS: Tank mixing with oil increases efficacy: oil suppresses egg hatch and spinosad kills young larvae that ingest it. During the first codling moth generation, add oil at 1% at 200 DD and 0.5% at 650 DD. During the second generation add oil at 0.25% at 250 DD and 650 DD. Apply 200 DD from first biofix and reapply at 10-day intervals if continued coverage is needed. Residual efficacy is affected by pH but initial efficacy is not; verify that water pH is greater than 6 and less than 8.
+I.
+CYDIA POMONELLA GRANULOVIRUS#
+(Cyd-X)
+1–6 fl oz
+—
+4
+0
+COMMENTS: A larvicide; time to egg hatch at 200 to 250 DD; larvae must ingest to become infected by this virus. Make a second application 7 to 10 days later, a third application at 600 DD, and a fourth 7 days later for a total of 4 applications per flight.
+J.
+NARROW RANGE OIL#
+—
+1–1.5 gal
+4
+0
+MODE OF ACTION: Contact, including smothering and barrier
+effects.
+COMMENTS: Use only in orchards with low populations. Oils are mildly effective against codling moth eggs and work by smothering them; they need to be reapplied frequently during egg-laying period, which is anytime moths are flying. Begin oil applications at 100 to 200 DD after the biofix. Reapply every 7 to 10 days as long as significant flight is occurring. Good coverage is essential. Effectiveness may be enhanced with more dilute applications (i.e., 200–400 gal water/acre). Oils may be phytotoxic if used within a few weeks of a sulfur spray or if applied at higher rates during hot weather (above 90°F). May cause a greasy appearance to some fruit if applied close to harvest or with high seasonal volumes. Check with certifier to determine which products are organically acceptable.
+K.
+KAOLIN CLAY#
+(Surround)
+25–50 lb
+—
+4
+0
+MODE OF ACTION: Unknown. An inorganic insecticide.
+COMMENTS: Serves primarily as a barrier to oviposition and to prevent larvae from entering the fruit, so early application and good coverage are important. Make the first application at 100 DD after the biofix, and reapply in 7 to 14 days in 100–200 gal water/acre or sufficient water for complete coverage. A total of 3 treatments per generation may be required to keep fruit completely covered during the egg-laying period. Because of potential for interfering with fruit finish in some varieties, this material may not be the best choice for later generations. May cause outbreaks of European red mites.
+**
+Dilute rate is the rate per 100 gal water; use 400 gal solution/acre. Apply concentrate in 80–100 gal water/acre, or less if the label allows.
+‡
+Restricted entry interval (REI) is the number of hours (unless otherwise noted) from treatment until the treated area can be safely entered without protective clothing. Preharvest interval (PHI) is the number of days from treatment to harvest. In some cases the REI exceeds the PHI. The longer of two intervals is the minimum time that must elapse before harvest.
+#
+Acceptable for use on
+organically grown produce.
+NA
+Not applicable.
+*
+Permit required from county agricultural commissioner for purchase or use.
+1
+Rotate chemicals with a different mode of action Group number, and do not use products with the same mode of action Group number more than twice per season to help prevent the development of resistance. For example, the organophosphates have a Group number of 1B; chemicals with a 1B Group number should be alternated with chemicals that have a Group number other than 1B. Mode of action Group numbers are assigned by IRAC (Insecticide Resistance Action Committee).
+—
+Not recommended or not on label.
+Important Links
+Degree-day calculator
+Degree-day table
+Sunset temperatures
+Using degree-days to time insecticide applications
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+L.G. Varela (emeritus), UC IPM and UC Cooperative Extension Sonoma County
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+R.A. Van Steenwyk (emeritus), Environmental Science, Policy, and Management, UC Berkeley
+C.A. Ingels, UC Cooperative Extension Sacramento County
+Acknowledgement for Contributions to Invertebrates
+P.W. Weddle, Weddle, Hansen & Associates
+P. Chevalier, United Ag Products, Ukiah
+R. Hansen, Weddle, Hansen & Associates
+M. Hooper, Ag Unlimited, Lakeport
+B. Knispel, Pest Control Adviser, Upper Lake
+T. Lidyoff, Purity Products, Healdsburg
+G. McCosker, Harvey Lyman Ag Services, Walnut Grove
+B. Oldham, Ag Unlimited, Ukiah
+C. Pickel (emeritus), UC IPM and UC Cooperative Extension Sutter and Yuba counties
+J. Sisevich, AgroTech, Kelseyville
+M.J. Smith, UC Cooperative Extension San Luis Obispo County
+B. Zoller, The Pear Doctor, Inc., Kelseyville
+Text Updated: 05/19
+Treatment Table Updated: 11/12
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

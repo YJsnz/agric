@@ -12,6 +12,7 @@
   "dependencies": {
     "echarts": "5.4.3",
     "pinia": "2.0.36",
+    "qrcode": "^1.5.4",
     "three": "0.152.2",
     "vue": "3.2.47",
     "vue-router": "4.1.6"

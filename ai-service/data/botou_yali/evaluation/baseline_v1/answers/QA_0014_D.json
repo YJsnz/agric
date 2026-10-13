@@ -1,0 +1,44 @@
+{
+  "id": "QA_0014",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关键点，直接以证据不足拒答；但题目所依据的论文结论明确可回答，因此属于可回答题中的拒答，不能判为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 681,
+      "completion_tokens": 54,
+      "total_tokens": 735,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 169
+    },
+    "model": "deepseek-flash",
+    "response_id": "88630acd-5802-49fe-adf8-41f430cf3c96",
+    "seconds": 5.415477099999862,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

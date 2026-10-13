@@ -1,0 +1,22 @@
+[Unit]
+Description=Qwen local CUDA model server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=agric
+Group=agric
+WorkingDirectory=/opt/agric/current
+EnvironmentFile=/etc/agric/edge.env
+ExecStart=/bin/bash /opt/agric/current/deploy/jetson/run-llama.sh
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=30
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

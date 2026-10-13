@@ -1,0 +1,307 @@
+{
+  "id": "QA_0079",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0021",
+    "chunk:PAPER_001_C0001",
+    "chunk:PAPER_001_C0017",
+    "chunk:PAPER_001_C0004",
+    "chunk:PAPER_001_C0007"
+  ],
+  "service_response": {
+    "status": "insufficient_evidence",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称证据未包含PbACO1和PbACO3相对表达量具体数据、无法回答比较问题。所引E2和E4仅说明测定了PbACO基因表达，未报告PbACO1/PbACO3具体结果或与空气对照的比较，因此该否定性结论与引用证据一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据称E2和E4仅说明测定了PbACS和PbACO表达变化但未给出PbACO1、PbACO3具体表达量或与空气对照比较数据，并称E1、E3、E5也未涉及相关数据。核对所引证据：E2/E4确无PbACO1、PbACO3结果；E1为品质指标，E3为数据处理方法，E5为研究背景，均无相关基因表达数据。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理称问题要求比较PbACO1和PbACO3相对表达量与空气对照差异，而E2/E4仅提及测定PbACO基因表达、未报告PbACO1和PbACO3具体结果，其余证据无相关数据，故证据不足无法得出结论。该推理与所引证据一致，未补造缺失路径或数值。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "建议为请补充包含PbACO1和PbACO3相对表达量具体数据的证据或提供原文，属于资料补充请求，未陈述事实性主张，且未引用证据。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0021",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.2  不同O2浓度处理对内在品质的影响",
+        "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "中国农业科学  2020,53(23):4918-4928 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2020.23.016收稿日期：2020-03-30；接受日期：2020-06-09基金项目：国家现代梨产业技术体系（CARS-28）、国家自然科学基金（32001761）联系方式：杜艳民，E-mail：duyanmin@caas.cn。通信作者王文辉，E-mail：wangwenhui@caas.cn开放科学（资源服务）标识码（OSID）：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响杜艳民，王文辉，贾晓辉，佟伟，王阳，张鑫楠（中国农业科学院果树研究所/辽宁省果品贮藏与加工重点实验室，辽宁兴城 125100）摘要：【目的】明确环境氧气（O2）浓度对鸭梨采后贮藏品质及生理代谢的影响，为鸭梨采后生理病害防控，延长贮藏期提供理论依据。【方法】将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱，设置1.0%、2.0%、3.0%、5.0%及10.0%等不同O2浓度梯度，CO2浓度为0.5%，以空气处理为对照，分别于贮藏150、210 和270 d 及货架7 或10 d，调查鸭梨虎皮指数和黑心指数，测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血酸（AA）及色泽变化情况，利用气相色谱分析测定果肉和果心组织乙醇含量变化情况，监测果实呼吸速率和乙烯产量；利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS 和PbACO 表达变化情况进行测定。【结果】低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数，贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2；同时，延缓了贮藏早期果实TA 和AA 下降，推迟了果实果面转黄。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0017",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "1.3  数据处理与分析",
+        "text": "应用Excel 和SPSS 13.0 进行作图和方差分析。",
+        "pages": [
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0004",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+        "pages": [
+          1,
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0007",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "0  引言",
+        "text": "【研究意义】鸭梨（Pyrus bretschneideri Rehd.）是我国传统特色主栽梨品种，季产年销，也是我国主要仓储和出口品种[1]。但其对低温和高浓度CO2 敏感，长期贮藏过程中极易发生虎皮病和黑心病等采后生理病害，严重影响果实商品价值，造成巨大经济损失[2-3]。目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6 个月（从9 月至翌年3 月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8 个月（从9 月至翌年4 月）。整体来看，与市场正常供应需求（至翌年6 月）仍有较大差距[4-5]。研究低O2 浓度对鸭梨采后生理代谢及贮藏品质的影响，对进一步延长鸭梨贮藏和货架供应期具有重要意义。【前人研究进展】气调贮藏是目前国内外商业应用最广泛的果品贮藏技术，与普通冷藏相比，气调贮藏可显著延长苹果和梨采后贮藏和货架供应期。其主要原理是在低温的基础上，通过进一步降低环境氧气含量，来进一步抑制果实采后呼吸和乙烯等生理代谢水平，降低营养损耗，延缓衰老，减轻生理病害发生，进而更好地保持果实贮藏品质[6-8]。近年来，随着气体成分精准监测和控制技术的不断发展，果实气调贮藏中的O2浓度不断降低，从传统的静态低氧气调（O2：2.0%—5.0%），发展到静态超低氧气调（O2＜1.5%）及前期超低氧胁迫气调（O2：0.5%，维持2 周），一直到目前的动态气调（O2：0.3%—0.5%），果实贮藏期不断被延长，果实品质得到了更好的维持[9]。但不同品种及不同栽培管理条件下，梨果实采后生物学特性及内在品质差异较大，对贮藏环境O2 敏感性及耐受度不同。研究发现，‘Beurré d’Anjou’经0.5% O2胁迫处理后，于1.0% O2+0.1% CO2 条件下可正常贮藏9.2 个月[10]；‘Abate Fetel’在0.8% O2+0.45% CO2 动态气调条件下可贮藏7 个月，且未发生果心褐变[11-13]；‘Rocha’在0.5% O2 条件下贮藏8.5 个月，7 d 货架（20℃）后仍较好地保持果实品质，未发生黑心病[14]。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "所提供的证据未包含PbACO1和PbACO3相对表达量的具体数据，无法回答气调贮藏鸭梨果实中这两个基因相对表达量与空气对照相比如何 [E2]  [E4] 。",
+    "basis": "证据[E2]和[E4]仅说明研究测定了鸭梨乙烯合成关键基因PbACS和PbACO的表达变化，但未给出PbACO1、PbACO3的具体表达量结果或与空气对照的比较数据 [E2]  [E4] 。[E1]、[E3]、[E5]也未涉及PbACO1和PbACO3的表达量数据 [E1]  [E3]  [E5] 。",
+    "reasoning": "问题要求比较气调贮藏鸭梨果实中PbACO1和PbACO3相对表达量与空气对照的差异。检索到的证据中，[E2]和[E4]提及测定了PbACO基因表达，但未报告PbACO1和PbACO3的具体结果 [E2]  [E4] ；其余证据涉及品质指标、数据处理方法或研究背景，均无相关基因表达数据 [E1]  [E3]  [E5] 。因此证据不足，无法得出比较结论。",
+    "advice": "请补充包含PbACO1和PbACO3相对表达量具体数据（如柱状图数值、统计结果或文字描述）的证据，或提供该论文中基因表达结果部分的原文。",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "incorrect",
+      "reason": "参考答案明确给出气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照，且该结论在提供的原文证据中有直接文字支持。回答却声称证据未包含具体数据、无法回答，属于对可回答问题错误拒答，未给出关键结论。",
+      "claims": [
+        {
+          "claim": "所提供的证据未包含PbACO1和PbACO3相对表达量的具体数据，无法回答气调贮藏鸭梨果实中这两个基因相对表达量与空气对照相比如何。",
+          "status": "contradicted",
+          "reason": "原文证据明确写明“气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照”，直接给出了比较结论。"
+        },
+        {
+          "claim": "证据[E2]和[E4]仅说明研究测定了鸭梨乙烯合成关键基因PbACS和PbACO的表达变化，但未给出PbACO1、PbACO3的具体表达量结果或与空气对照的比较数据。",
+          "status": "contradicted",
+          "reason": "虽然E2、E4本身未给出具体比较，但提供的original_evidence中已明确给出PbACO1和PbACO3相对表达量显著低于空气对照，因此“未给出”的断言与整体提供证据不符。"
+        },
+        {
+          "claim": "[E1]、[E3]、[E5]也未涉及PbACO1和PbACO3的表达量数据。",
+          "status": "supported",
+          "reason": "E1涉及品质指标，E3为数据处理方法，E5为研究背景，均未涉及PbACO1和PbACO3表达量数据。"
+        },
+        {
+          "claim": "检索到的证据中，[E2]和[E4]提及测定了PbACO基因表达，但未报告PbACO1和PbACO3的具体结果。",
+          "status": "contradicted",
+          "reason": "E2、E4确实只提及测定PbACO，但original_evidence中已报告PbACO1和PbACO3相对表达量显著低于空气对照，因此不能据此得出整体证据未报告具体结果。"
+        },
+        {
+          "claim": "其余证据涉及品质指标、数据处理方法或研究背景，均无相关基因表达数据。",
+          "status": "supported",
+          "reason": "E1为品质指标，E3为数据处理方法，E5为研究背景，均无PbACO1和PbACO3表达量数据。"
+        },
+        {
+          "claim": "因此证据不足，无法得出比较结论。",
+          "status": "contradicted",
+          "reason": "提供证据中已有明确结论：气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照，因此可以得出比较结论。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3610,
+      "completion_tokens": 561,
+      "total_tokens": 4171,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 2842
+    },
+    "model": "deepseek-flash",
+    "response_id": "e238491d-85e0-41ed-b44b-869d98c1ba91",
+    "seconds": 7.639423500004341,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据未包含PbACO1和PbACO3相对表达量的具体数据，无法回答气调贮藏鸭梨果实中这两个基因相对表达量与空气对照相比如何。",
+        "basis": "证据E2和E4仅说明研究测定了鸭梨乙烯合成关键基因PbACS和PbACO的表达变化，但未给出PbACO1、PbACO3的具体表达量结果或与空气对照的比较数据[E2][E4]。E1、E3、E5也未涉及PbACO1和PbACO3的表达量数据[E1][E3][E5]。",
+        "reasoning": "问题要求比较气调贮藏鸭梨果实中PbACO1和PbACO3相对表达量与空气对照的差异。检索到的证据中，E2和E4提及测定了PbACO基因表达，但未报告PbACO1和PbACO3的具体结果；其余证据涉及品质指标、数据处理方法或研究背景，均无相关基因表达数据。因此证据不足，无法得出比较结论。",
+        "advice": "请补充包含PbACO1和PbACO3相对表达量具体数据（如柱状图数值、统计结果或文字描述）的证据，或提供该论文中基因表达结果部分的原文。",
+        "citations": [
+          "E2",
+          "E4"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2789,
+        "completion_tokens": 299,
+        "total_tokens": 3088,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2661
+      },
+      "model": "deepseek-flash",
+      "response_id": "275d6b65-b014-4abd-b63d-84bd8b1d1728",
+      "seconds": 6.710904499996104,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "所提供的证据未包含PbACO1和PbACO3相对表达量的具体数据，无法回答气调贮藏鸭梨果实中这两个基因相对表达量与空气对照相比如何[E2][E4]。",
+        "basis": "证据E2和E4仅说明研究测定了鸭梨乙烯合成关键基因PbACS和PbACO的表达变化，但未给出PbACO1、PbACO3的具体表达量结果或与空气对照的比较数据[E2][E4]。E1、E3、E5也未涉及PbACO1和PbACO3的表达量数据[E1][E3][E5]。",
+        "reasoning": "问题要求比较气调贮藏鸭梨果实中PbACO1和PbACO3相对表达量与空气对照的差异。检索到的证据中，E2和E4提及测定了PbACO基因表达，但未报告PbACO1和PbACO3的具体结果[E2][E4]；其余证据涉及品质指标、数据处理方法或研究背景，均无相关基因表达数据[E1][E3][E5]。因此证据不足，无法得出比较结论。",
+        "advice": "请补充包含PbACO1和PbACO3相对表达量具体数据（如柱状图数值、统计结果或文字描述）的证据，或提供该论文中基因表达结果部分的原文。",
+        "citations": [
+          "E2",
+          "E4"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 3460,
+        "completion_tokens": 311,
+        "total_tokens": 3771,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 772
+      },
+      "model": "deepseek-flash",
+      "response_id": "098dff52-0aca-4823-93e7-becd832f9f64",
+      "seconds": 6.847641800006386,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 36.39644930000941
+}

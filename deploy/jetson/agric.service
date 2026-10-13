@@ -1,0 +1,22 @@
+[Unit]
+Description=Saltfield agriculture software demonstration
+After=network-online.target docker.service agric-llama.service
+Wants=network-online.target agric-llama.service
+
+[Service]
+Type=simple
+User=agric
+Group=agric
+WorkingDirectory=/opt/agric/current
+EnvironmentFile=/etc/agric/edge.env
+ExecStart=/bin/bash /opt/agric/current/deploy/jetson/run-app.sh
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

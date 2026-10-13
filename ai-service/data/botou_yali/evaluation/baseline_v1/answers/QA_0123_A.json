@@ -1,0 +1,56 @@
+{
+  "id": "QA_0123",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法根据该论文标题给出确切结论。",
+      "basis": "未提供该论文的具体内容，且我的知识库中不包含该论文的详细数据。",
+      "reasoning": "问题要求依据特定论文回答，但证据列表为空，无法获取论文中的实验处理、观测指标和结果。",
+      "advice": "建议查阅该论文原文，重点关注0℃直接入库处理组与对照或梯度降温组在采后生理指标（如褐变指数、膜脂组分、膜透性等）上的差异。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 148,
+      "completion_tokens": 130,
+      "total_tokens": 278,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 148
+    },
+    "model": "deepseek-flash",
+    "response_id": "f3d84c3b-9aba-47d6-8bfa-afcc646f59e7",
+    "seconds": 5.834338300000127,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何关于鸭梨直接进入0℃库后生理变化的具体信息，仅说明无法根据论文标题得出结论并建议查阅原文，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 889,
+      "completion_tokens": 49,
+      "total_tokens": 938,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 761
+    },
+    "model": "deepseek-flash",
+    "response_id": "3a1154a2-7bc7-4abc-b847-92e2ddba0202",
+    "seconds": 5.422117699999944,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,210 @@
+Thrips / Pear / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)
+Home, Garden, Turf and Landscape
+Home and Garden
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture
+Pest Management Guidelines
+Decision Support Tool
+Weather, Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environments
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Video Gallery
+Weed Gallery
+Natural Enemies Gallery
+Glossary
+Links
+Publications and Newsletters
+Pesticide Information
+Tools
+Bee precaution pesticide ratings
+Decision Support Tool
+Plant Problem Diagnostic Tool
+Seasonal Landscape IPM Checklist
+Weather, models, & degree-days
+Trainings and Events
+What is IPM
+Recursos en español
+×Close
+Image information and credit
+Feedback
+×
+UC IPM
+Agriculture
+Pear
+Thrips
+Agriculture: Pear Pest Management Guidelines
+Thrips
+Pear thrips: Taeniothrips inconsequens
+Western flower thrips: Frankliniella occidentalis
+On This Page
+Description of the Pest
+Damage
+Management
+Description of the Pest
+Thrips are minute, slender-bodied insects about 0.04 inch (1 mm) long. Some species of thrips are attracted to the blossoms of flowering plants, including apple and pear trees. Adult western flower thrips range from clear lemon yellow to yellow brown to dark brown in color. Adult pear thrips are dark brown to black in color. The wings are lighter, especially at their bases. The eyes are dark reddish brown. The larvae of pear thrips are white and possess a ring of dark spines on the underside toward the posterior end.
+Damage
+Western flower
+thrips may damage pears grown in northern California. The primary damage is
+from egg
+punctures in
+newly formed fruit. Each puncture results in a slightly depressed russetted
+spot, between 0.125 and 0.25 inch (3 to 6 mm) in diameter. They also feed on
+the growing tips of newly planted trees, deforming tree growth.
+The major damage
+seen with pear thrips in the past occurred during the period from green
+tip until bloom, when adults fed on fruit
+buds. This caused the buds to dry and die or to develop abnormally. Damaged
+buds produced droplets of gum, which help pinpoint a pear thrips infestation.
+In addition, pear thrips larvae fed on fruit causing russetting or scabbing of
+the surface; this resulted in deformed fruit.
+Management
+Once a common pear
+pest in California, the pear thrips is now rarely encountered, but western
+flower thrips can still be a problem.
+Organically Acceptable Methods
+Sprays of the
+Entrust formulation of spinosad are acceptable in an organically certified
+orchard.
+Monitoring and Management Decisions
+Inspect for adult
+western flower thrips at 10% bloom. If several thrips, on the average, can be
+dislodged onto a sheet of paper by tapping individual flower clusters, a
+treatment may be needed to prevent damage. For more information about
+monitoring at this time, see SAMPLING AT BLOOM.
+Harvest Fruit Sample
+At harvest, assess
+program by monitoring fruit in the bins for thrips. Sample 200 fruit per bin
+from 5 bins per orchard (or 20-acre block in large orchards). For more
+information regarding this sample, see HARVEST FRUIT SAMPLE.
+Common name
+Amount to use
+REI‡
+PHI‡
+(Example trade name)
+(hours)
+(days)
+Pesticide precautions
+Protect water
+Calculate VOCs
+Protect bees
+Not all registered pesticides are listed. The following are ranked with the pesticides having the greatest IPM value listed first—the most effective and least harmful to natural enemies, honey bees, and the environment are at the top of the table. When choosing a pesticide, consider information relating to air and water quality, resistance management, and the pesticide's properties and application timing. Always read the label of the product being used.
+BLOOM
+A.
+SPINOSAD
+(Entrust)#
+1 oz/acre
+4
+7
+(Success)
+3.5 oz/acre
+4
+7
+MODE OF ACTION GROUP
+NUMBER1: 5
+COMMENTS: Control may
+be improved by addition of an adjuvant to the spray mixture. Do not apply
+more than 29 oz/acre per year of Success or 9 oz/acre per year of Entrust.
+Residual efficacy is affected by pH but initial efficacy is not; verify that
+water pH is greater than 6 and less than 8.
+B.
+SPINETORAM
+(Delegate)
+4.5–7 oz/acre
+4
+7
+MODE OF ACTION GROUP
+NUMBER1: 5
+‡
+Restricted
+entry interval (REI) is the number of hours (unless otherwise noted) from
+treatment until the treated area can be safely entered without protective
+clothing. Preharvest interval (PHI) is the number of days from treatment
+to harvest. In some cases the REI exceeds the PHI. The longer of two
+intervals is the minimum time that must elapse before harvest.
+#
+Acceptable
+for organically grown produce.
+1
+Rotate
+chemicals with a different mode of action Group number, and do not use
+products with the same mode of action Group number more than twice per season
+to help prevent the development of resistance. For example, the
+organophosphates have a Group number of 1B; chemicals with a 1B Group number
+should be alternated with chemicals that have a Group number other than 1B.
+Mode of action Group numbers are assigned by IRAC (Insecticide Resistance
+Action Committee).
+UC IPM Pest Management Guidelines: Pear
+UC ANR Publication 3455
+L.G. Varela (emeritus), UC IPM and UC Cooperative Extension Sonoma County
+R.B. Elkins (emeritus), UC Cooperative Extension Lake County
+R.A. Van Steenwyk (emeritus), Environmental Science, Policy, and Management, UC Berkeley
+C.A. Ingels, UC Cooperative Extension Sacramento County
+Acknowledgement for Contributions to Invertebrates
+P.W. Weddle, Weddle, Hansen & Associates
+P. Chevalier, United Ag Products, Ukiah
+R. Hansen, Weddle, Hansen & Associates
+M. Hooper, Ag Unlimited, Lakeport
+B. Knispel, Pest Control Adviser, Upper Lake
+T. Lidyoff, Purity Products, Healdsburg
+G. McCosker, Harvey Lyman Ag Services, Walnut Grove
+B. Oldham, Ag Unlimited, Ukiah
+C. Pickel (emeritus), UC IPM and UC Cooperative Extension Sutter and Yuba counties
+J. Sisevich, AgroTech, Kelseyville
+M.J. Smith, UC Cooperative Extension San Luis Obispo County
+B. Zoller, The Pear Doctor, Inc., Kelseyville
+Text Updated: 11/12
+Treatment Table Updated: 11/12
+Feedback
+Home, Garden, Turf, and Landscape
+Plant Pest Diagnostic Tool
+Retail Nurseries & Garden Centers
+Landscape Professionals
+UC Master Gardeners
+Agriculture Pest Management Guidelines
+PestManage Decision Support Tool
+Weather Models & Degree-Days
+Invasive and Exotic Pests
+Natural Environment
+About UC IPM
+What We Do
+Strategic Plan 2015–2025
+Annual Report
+UC IPM Programs
+Program Review
+Galleries
+Videos
+Weeds
+Natural Enemies
+Glossary
+Links
+Publications & Newsletters
+Pesticide Information
+Training & Events
+What is IPM?
+Recursos en español
+Statewide Integrated Pest Management Program
+University of California Agriculture and Natural Resources
+Follow Us
+Home and Landscape: Twitter
+Facebook
+Instagram
+©1996—2026 Statewide IPM Program, Agriculture and Natural Resources, University of California Regents of the University of California unless otherwise noted.
+Find Your Local Cooperative Extension Office
+Use Permissions & Citation
+Nondiscrimination Statement
+Acknowledgements
+Accessibility
+Privacy
+Staff-Only Pages
+Contact UC IPM
+Contact Webmaster

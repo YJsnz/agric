@@ -1,0 +1,399 @@
+{
+  "case": "bruised",
+  "sample": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\data\\jujube_fruit_bruise_classifier_v2\\test\\bruised\\bruise_105.jpg",
+  "response": {
+    "success": true,
+    "crop": "jujube",
+    "task": "fruit_bruise",
+    "visual": {
+      "class": "bruised",
+      "label_zh": "碰伤/机械损伤类视觉表现",
+      "confidence": 1.0,
+      "topk": [
+        {
+          "class": "bruised",
+          "label_zh": "碰伤/机械损伤类视觉表现",
+          "confidence": 1.0
+        },
+        {
+          "class": "healthy",
+          "label_zh": "正常果实外观",
+          "confidence": 9.284182866942103e-10
+        }
+      ],
+      "model_name": "jujube_fruit_bruise_yolo11n_cls_v1",
+      "model_version": "v1",
+      "task": "fruit_bruise",
+      "is_diagnosis": false,
+      "confidence_level": "high"
+    },
+    "visual_confidence_level": "high",
+    "mapped_entity": {
+      "id": "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+      "name": "碰伤/机械损伤类视觉表现",
+      "type": "FruitCondition",
+      "is_diagnosis": false
+    },
+    "context": {
+      "temperature": null,
+      "humidity": null,
+      "storage_temperature": null,
+      "storage_humidity": null,
+      "storage_days": null,
+      "harvest_method": null,
+      "transport_condition": null,
+      "notes": null
+    },
+    "reasoning": {
+      "crop_id": "cangzhou_jinsixiaozao",
+      "question": "当前检测到碰伤/机械损伤类视觉表现，现有证据支持哪些采后风险？证据强度如何？",
+      "entities": {
+        "region": null,
+        "growth_stage": null,
+        "organ": null,
+        "symptom": null,
+        "disease_or_pest": null,
+        "weather": null,
+        "rainfall": null,
+        "humidity": null,
+        "irrigation": null,
+        "crop": "cangzhou_jinsixiaozao",
+        "region_source": null,
+        "harvest_intent": false,
+        "storage_intent": true,
+        "scope": "postharvest",
+        "intent": "information",
+        "damage_query": true,
+        "cross_stage_query": false,
+        "uncovered_symptom": false,
+        "visual_boundary": true,
+        "provided_context": {
+          "user_context": {},
+          "visual_entity": {
+            "id": "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+            "name": "碰伤/机械损伤类视觉表现",
+            "type": "FruitCondition",
+            "is_diagnosis": false
+          },
+          "visual_class": "bruised",
+          "visual_evidence_only": true,
+          "visual_confidence_level": "high"
+        },
+        "visual_label": "bruised"
+      },
+      "generation_called": true,
+      "status": "preliminary",
+      "retrieval": {
+        "graph_status": "ok",
+        "graph_evidence_count": 1,
+        "vector_evidence_count": 1,
+        "fused_count": 1
+      },
+      "knowledge_graph": {
+        "edges": [
+          {
+            "id": "JJE_AUDIT_001",
+            "source": "cangzhou_jinsixiaozao:e7c9863b0135cbd2",
+            "target": "cangzhou_jinsixiaozao:3dfd0b9f29a8c31e",
+            "relation": "INCREASES_RISK_OF",
+            "kind": "semantic",
+            "source_id": "J008",
+            "source_ids": [
+              "J008"
+            ],
+            "title": "金丝小枣果实病害病原菌研究",
+            "region": "河北沧州、山东乐陵、天津静海",
+            "crop": [
+              "沧州金丝小枣"
+            ],
+            "crop_id": "cangzhou_jinsixiaozao",
+            "growth_stage": null,
+            "stage_ids": [],
+            "subject": "刺伤接种（室内离体试验）",
+            "object": "接种发病风险（离体果实）",
+            "evidence_text": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+            "page": null,
+            "section": "2.3 分离物对枣果致病性的测定",
+            "evidence_level": "peer_reviewed_regional",
+            "review_status": "verbatim_verified",
+            "chunk_id": "JJC_AUDIT_001",
+            "conditions": [
+              "仅室内离体接种试验，不代表自然碰伤或仓储腐败"
+            ],
+            "evidence_ids": [
+              "J008",
+              "JJC_AUDIT_001"
+            ],
+            "evidence": [
+              {
+                "id": "JJC_AUDIT_001",
+                "source_id": "J008",
+                "quote": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+                "locator": {
+                  "page": null,
+                  "section": "2.3 分离物对枣果致病性的测定",
+                  "file": "evidence/raw/J008.txt"
+                }
+              }
+            ],
+            "locator": {
+              "page": null,
+              "section": "2.3 分离物对枣果致病性的测定",
+              "file": "evidence/raw/J008.txt"
+            },
+            "standard_status": "not_a_standard",
+            "cross_stage": true,
+            "cross_stage_kind": "production_to_detached_experiment_not_storage_validation",
+            "source_type": "同行评议期刊",
+            "year": 2004,
+            "original_text": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+            "normalized_claim": "刺伤接种（室内离体试验） INCREASES_RISK_OF 接种发病风险（离体果实）",
+            "evidence_level_compat": "L3"
+          }
+        ]
+      },
+      "paths": [
+        {
+          "node_ids": [
+            "cangzhou_jinsixiaozao:e7c9863b0135cbd2",
+            "cangzhou_jinsixiaozao:3dfd0b9f29a8c31e"
+          ],
+          "edge_ids": [
+            "JJE_AUDIT_001"
+          ],
+          "relations": [
+            "INCREASES_RISK_OF"
+          ],
+          "evidence_ids": [
+            "JJC_AUDIT_001"
+          ],
+          "source_ids": [
+            "J008"
+          ]
+        }
+      ],
+      "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+      "evidence": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "J008",
+          "title": "金丝小枣果实病害病原菌研究",
+          "content": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "河北沧州、山东乐陵、天津静海",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "cross_stage",
+            "organ": "fruit",
+            "topic": "机械损伤相关刺伤接种离体试验",
+            "source_id": "J008",
+            "locator": {
+              "page": null,
+              "section": "2.3 分离物对枣果致病性的测定",
+              "file": "evidence/raw/J008.txt"
+            },
+            "evidence_level": "peer_reviewed_regional",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+            "risk": [],
+            "purpose": "candidate_assessment",
+            "applicability": "室内离体接种；不是实际碰伤或储藏场景验证",
+            "scope_origin": "production fruit sampled into detached-fruit experiment",
+            "evidence_level_compat": "L3"
+          },
+          "evidence_level": "L3",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "original_text": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+          "source_type": "同行评议期刊",
+          "year": 2004,
+          "url": "https://html.rhhz.net/linyekexue/html/20040634.htm",
+          "chunk_id": "JJC_AUDIT_001",
+          "edge_ids": [
+            "JJE_AUDIT_001"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:e7c9863b0135cbd2",
+            "cangzhou_jinsixiaozao:3dfd0b9f29a8c31e"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "J008",
+          "title": "金丝小枣果实病害病原菌研究",
+          "content": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "河北沧州、山东乐陵、天津静海",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "cross_stage",
+            "organ": "fruit",
+            "topic": "机械损伤相关刺伤接种离体试验",
+            "source_id": "J008",
+            "locator": {
+              "page": null,
+              "section": "2.3 分离物对枣果致病性的测定",
+              "file": "evidence/raw/J008.txt"
+            },
+            "evidence_level": "peer_reviewed_regional",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+            "risk": [],
+            "purpose": "candidate_assessment",
+            "applicability": "室内离体接种；不是实际碰伤或储藏场景验证",
+            "scope_origin": "production fruit sampled into detached-fruit experiment",
+            "evidence_level_compat": "L3"
+          },
+          "evidence_level": "L3",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "original_text": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+          "source_type": "同行评议期刊",
+          "year": 2004,
+          "url": "https://html.rhhz.net/linyekexue/html/20040634.htm",
+          "chunk_id": "JJC_AUDIT_001",
+          "edge_ids": [
+            "JJE_AUDIT_001"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:e7c9863b0135cbd2",
+            "cangzhou_jinsixiaozao:3dfd0b9f29a8c31e"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "evidence_id": "E1",
+          "kind": "document_chunk",
+          "source_id": "J008",
+          "title": "金丝小枣果实病害病原菌研究",
+          "content": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+          "metadata": {
+            "crop": "cangzhou_jinsixiaozao",
+            "region": "河北沧州、山东乐陵、天津静海",
+            "growth_stage": null,
+            "stage_unknown": true,
+            "scope": "cross_stage",
+            "organ": "fruit",
+            "topic": "机械损伤相关刺伤接种离体试验",
+            "source_id": "J008",
+            "locator": {
+              "page": null,
+              "section": "2.3 分离物对枣果致病性的测定",
+              "file": "evidence/raw/J008.txt"
+            },
+            "evidence_level": "peer_reviewed_regional",
+            "standard_status": "not_a_standard",
+            "review_status": "verbatim_verified",
+            "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+            "risk": [],
+            "purpose": "candidate_assessment",
+            "applicability": "室内离体接种；不是实际碰伤或储藏场景验证",
+            "scope_origin": "production fruit sampled into detached-fruit experiment",
+            "evidence_level_compat": "L3"
+          },
+          "evidence_level": "L3",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "original_text": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+          "source_type": "同行评议期刊",
+          "year": 2004,
+          "url": "https://html.rhhz.net/linyekexue/html/20040634.htm",
+          "chunk_id": "JJC_AUDIT_001",
+          "edge_ids": [
+            "JJE_AUDIT_001"
+          ],
+          "node_ids": [
+            "cangzhou_jinsixiaozao:e7c9863b0135cbd2",
+            "cangzhou_jinsixiaozao:3dfd0b9f29a8c31e"
+          ]
+        }
+      ],
+      "grounding": {
+        "passed": true,
+        "checks": [
+          {
+            "field": "conclusion",
+            "verdict": "supported",
+            "reason": "结论所述内容与E1原文一致：室内离体条件下菌1、菌2、菌3单接和混接均可导致金丝小枣病果发病并表现典型症状，刺伤接种发病率高于无伤接种；结论同时明确限定不能外推为自然碰伤一定导致腐败或估计实际发病率，符合E1的适用边界（室内离体接种，非实际碰伤或储藏场景验证）。"
+          },
+          {
+            "field": "basis",
+            "verdict": "supported",
+            "reason": "basis对证据类型（同行评议室内离体试验）、研究对象（金丝小枣果实）、处理方式（菌1、菌2、菌3单接或混接）、观察指标（发病率、典型症状）及结果（刺伤接种发病率高于无伤接种）的描述均与E1原文一致，且适用边界表述与E1 metadata中的applicability一致。"
+          },
+          {
+            "field": "reasoning",
+            "verdict": "supported",
+            "reason": "reasoning指出刺伤接种为人工离体条件、不能等同于自然碰伤、不能推断实际储藏发病率或特定病害概率，并指出E1未提供采后储藏环境、时间、温度、湿度等条件，这些均为对E1内容与适用边界的合理限定，未引入E1之外的事实。"
+          },
+          {
+            "field": "advice",
+            "verdict": "supported",
+            "reason": "advice未给出具体操作、阈值或用药建议，仅说明当前不能确定碰伤后是否腐败及何种病害，并指出可核验方向（损伤是否自然碰伤、损伤程度、储藏条件）且明确这些无现有证据支持具体操作或阈值，符合candidate_assessment范围限制。"
+          }
+        ],
+        "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+      },
+      "local_conclusion": {
+        "available": false,
+        "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+      },
+      "differential_assessment": {
+        "available": false,
+        "kind": "reviewed_evidence_lookup_not_image_diagnosis",
+        "directions": [],
+        "questions": [],
+        "local_verified": false,
+        "notice": "按原文症状提供核验方向，不代表照片已具备这些特征；外地/一般果树资料不等于沧州本地验证。"
+      },
+      "preliminary_assessment": {
+        "available": true,
+        "summary": "现有证据仅来自一项室内离体接种试验：在离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，单接和混接均可导致枣果发病并表现典型症状，且刺伤接种的发病率高于无伤接种 [E1] 。这提示在给定接种条件下，刺伤（机械损伤）与枣果发病风险存在关联，但该证据不能外推为自然碰伤一定导致腐败，也不能用于估计当前果实或实际储藏中的发病率 [E1] 。",
+        "supporting_points": [
+          "唯一可用证据为同行评议的室内离体试验，研究对象为金丝小枣果实，处理方式为菌1、菌2、菌3单接或混接，观察指标为发病率和典型症状；结果显示刺伤接种发病率高于无伤接种 [E1] 。该证据的适用边界明确为室内离体接种，并非实际碰伤或储藏场景验证 [E1] 。"
+        ],
+        "uncertainties": [
+          "证据中的刺伤接种是人工离体接种条件，不能等同于自然碰伤，也不能据此推断实际储藏发病率或特定病害概率 [E1] 。此外，该证据未提供采后储藏环境、时间、温度、湿度等条件，无法支持对当前采后风险的定量判断 [E1] 。"
+        ]
+      },
+      "answer": "现有证据仅来自一项室内离体接种试验：在离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，单接和混接均可导致枣果发病并表现典型症状，且刺伤接种的发病率高于无伤接种 [E1] 。这提示在给定接种条件下，刺伤（机械损伤）与枣果发病风险存在关联，但该证据不能外推为自然碰伤一定导致腐败，也不能用于估计当前果实或实际储藏中的发病率 [E1] 。\n\n目前不能确定当前果实碰伤后是否会发生腐败或发生何种病害。可核验的方向是：该证据仅支持在室内离体刺伤接种条件下，机械损伤与枣果发病风险存在关联 [E1] ；需核实实际果实损伤是否由自然碰伤造成、损伤程度及所处储藏条件，但这些均无现有证据支持具体操作或阈值 [E1] 。\n现有损伤相关证据主要为室内离体刺伤接种试验，不能证明自然碰伤在实际仓储中必然导致腐败。",
+      "grounded_answer": {
+        "sufficient": false,
+        "conclusion": "现有证据仅来自一项室内离体接种试验：在离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，单接和混接均可导致枣果发病并表现典型症状，且刺伤接种的发病率高于无伤接种 [E1] 。这提示在给定接种条件下，刺伤（机械损伤）与枣果发病风险存在关联，但该证据不能外推为自然碰伤一定导致腐败，也不能用于估计当前果实或实际储藏中的发病率 [E1] 。",
+        "basis": "唯一可用证据为同行评议的室内离体试验，研究对象为金丝小枣果实，处理方式为菌1、菌2、菌3单接或混接，观察指标为发病率和典型症状；结果显示刺伤接种发病率高于无伤接种 [E1] 。该证据的适用边界明确为室内离体接种，并非实际碰伤或储藏场景验证 [E1] 。",
+        "reasoning": "证据中的刺伤接种是人工离体接种条件，不能等同于自然碰伤，也不能据此推断实际储藏发病率或特定病害概率 [E1] 。此外，该证据未提供采后储藏环境、时间、温度、湿度等条件，无法支持对当前采后风险的定量判断 [E1] 。",
+        "advice": "目前不能确定当前果实碰伤后是否会发生腐败或发生何种病害。可核验的方向是：该证据仅支持在室内离体刺伤接种条件下，机械损伤与枣果发病风险存在关联 [E1] ；需核实实际果实损伤是否由自然碰伤造成、损伤程度及所处储藏条件，但这些均无现有证据支持具体操作或阈值 [E1] 。",
+        "citations": [
+          "E1"
+        ],
+        "candidate_assessments": [
+          {
+            "candidate_name": "机械损伤（刺伤）与枣果发病风险关联",
+            "assessment": "室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，单接和混接均可导致枣果发病并表现典型症状，刺伤接种发病率高于无伤接种[E1]。该结果仅支持给定接种条件下的风险关联，不能外推为自然碰伤一定腐败或实际储藏发病率[E1]。",
+            "evidence_ids": [
+              "E1"
+            ]
+          }
+        ]
+      }
+    },
+    "risk": {
+      "stage": "postharvest",
+      "type": "postharvest visual risk evidence",
+      "level": null
+    },
+    "limitations": [
+      "仅为视觉证据，不是食品安全、是否可食用、储藏寿命、疾病最终确诊或腐败原因诊断；分类得分不是确诊概率。黄化不能直接解释为缺氮、缺铁或盐害。",
+      "视觉展示级别不是风险等级；risk.level 未评分。",
+      "现有损伤相关证据主要为室内离体刺伤接种试验，不能证明自然碰伤在实际仓储中必然导致腐败。"
+    ],
+    "degraded": false,
+    "degraded_mode": null
+  }
+}

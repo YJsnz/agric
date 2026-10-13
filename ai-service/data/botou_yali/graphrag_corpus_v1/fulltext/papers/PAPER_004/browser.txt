@@ -1,0 +1,45 @@
+Toggle navigation
+
+食品科学 ›› 2010, Vol. 31 ›› Issue (10): 292-295.doi: 10.7506/spkx1002-6630-201010064
+
+• 包装贮运 •
+ 上一篇    下一篇 
+
+不同采收期对鸭梨采后贮藏香气成分的影响
+
+刘向平1，寇晓虹2 ,* ，张 平3，李江阔3，黄艳凤3，王一州2，吴彩娥4    
+
+Effect of Harvesting Time on Volatile Composition of Ya Pears during Postharvst Storage
+
+LIU Xiang-ping1，KOU Xiao-hong2,*，ZHANG Ping3，LI Jiang-kuo3，HUANG Yan-feng3，WANG Yi-zhou2，WU Cai-e4    
+
+RichHTML
+0
+PDF (PC)
+497
+摘要/Abstract
+
+摘要：
+
+香气成分的损失是梨果实贮藏期间风味裂变的主要表现之一，掌握不同成熟度梨果实香气变化规律对建立基于风味品质变化的梨果实采收和贮藏技术有重要意义。采用SPME-GC 的方法，对不同采收期(早、中、晚)鸭梨果实贮藏期间的主要香气成分进行分析，结果表明，鸭梨果实的主要香气成分为乙酸乙酯、己醛、己醇、丁酸乙酯、己酸乙酯等。采收期不同对鸭梨果实贮藏期间香气成分变化有明显的影响。早采鸭梨香气成分的产生受到抑制，贮藏期间含量一直较低；在贮藏初期，晚采梨果实采收后香气成分总含量高于早采和中采果实，但贮藏过程中香气容易散失，贮藏后期下降较快；中期采收的梨果实贮藏期间香气成分逐渐积累，贮藏6 个月时大部分香气成分含量显著高于早采和晚采果实(P ＜ 0.05)。
+
+关键词: 鸭梨, 采收期, 香气成分, 顶空固相微萃取, 气相色谱仪
+
+Abstract:
+
+The loss of volatile components is partially attributed to the flavor changes of pears during postharvest storage. As a consequence, the understanding of changing patterns of volatile composition of pears with different degree of maturity will make a vital contribution to the development of pear harvesting and storage techniques. The main volatile components of Ya pears harvested at different times (early, middle and late) were measured by SPME-GC every 2 months during 6 months of storage. The results showed that the main volatile components in Ya pears were ethyl acetate, hexanal, 1-hexanol, butanoic acid, ethyl ester, hexanoic acid and ethyl ester. A significant effect of harvesting time was observed on the volatile composition of Ya pears. Lower contents of volatile components found in early harvested pears were kept over the whole storage period. Higher contents of volatile components were observed in late harvested pears. However, there was a significant decrease in them with the extended storage period and a dramatic loss of volatiles was seen during the later stage of storage. In middle harvested pears, volatile components were gradually accumulated and exhibited a significantly higher content than those in early and late harvested pears after 6 months of storage (P ＜ 0.05).
+
+Key words: Ya pear, harvest time, volatile component, HS-SPME, GC
+
+中图分类号: 
+
+TS255.3
+
+参考文献
+相关文章 15
+Metrics
+本文评价
+京ICP备14027880号-3　京公网安备 11010202009729号
+地址：北京市丰台区洋桥70号 中国食品杂志社《食品科学》编辑部　邮编：100068
+电话：010-83155446/47/48/49/50　 传真：010-83155436　 Email：foodsci@126.com
+本系统由北京玛格泰克科技发展有限公司设计开发　技术支持：support@magtech.com.cn

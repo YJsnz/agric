@@ -1,0 +1,70 @@
+{
+  "id": "QA_0143",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法确定该研究中早采缓慢降温和急速降温处理的鸭梨果实果心褐变的具体开始时间。",
+    "basis": "当前未提供该论文的原文或具体数据，且我的知识库中不包含该论文的详细结果。",
+    "reasoning": "问题要求依据特定论文回答果心褐变开始时间，但证据列表为空，无法获取论文中的实验观测数据，因此不能给出具体时间。",
+    "advice": "建议查阅《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》原文，在结果部分查找早采缓慢降温和急速降温处理组果心褐变开始出现的贮藏天数或日期。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.75,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出果心褐变开始时间，仅说明无法确定并建议查阅原文，属于没有作答。提供的原文证据明确支持早采缓慢降温和急速降温处理果实从12月20日（采后100 d）后开始出现果心褐变，因此该题可回答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1077,
+      "completion_tokens": 78,
+      "total_tokens": 1155,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 309
+    },
+    "model": "deepseek-flash",
+    "response_id": "22a4d4bc-52dd-4ff9-ad92-0f22ffd8b689",
+    "seconds": 5.768078199995216,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法确定该研究中早采缓慢降温和急速降温处理的鸭梨果实果心褐变的具体开始时间。",
+        "basis": "当前未提供该论文的原文或具体数据，且我的知识库中不包含该论文的详细结果。",
+        "reasoning": "问题要求依据特定论文回答果心褐变开始时间，但证据列表为空，无法获取论文中的实验观测数据，因此不能给出具体时间。",
+        "advice": "建议查阅《降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响》原文，在结果部分查找早采缓慢降温和急速降温处理组果心褐变开始出现的贮藏天数或日期。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 188,
+        "completion_tokens": 152,
+        "total_tokens": 340,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 188
+      },
+      "model": "deepseek-flash",
+      "response_id": "657489ba-0dc8-40b8-9260-6215d6941b23",
+      "seconds": 6.276978699999745,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.04612939999788
+}

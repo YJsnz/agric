@@ -1,0 +1,44 @@
+{
+  "id": "QA_0178",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何实质内容，仅表示证据不足并请求补充资料，未回答晚采鸭梨果心U/S值提高与什么相对应。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 922,
+      "completion_tokens": 47,
+      "total_tokens": 969,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 282
+    },
+    "model": "deepseek-flash",
+    "response_id": "765b25b2-caba-4735-ae1f-bf4a251087fd",
+    "seconds": 5.36055529999976,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "id": "QA_0233",
+  "arm": "C",
+  "generation": {
+    "result": {
+      "sufficient": true,
+      "conclusion": "该研究GC-MS测定使用的毛细管柱为SH-Rxi-5Sil MS毛细管柱，规格为30 m×0.25 mm，膜厚0.25 μm [E1]。",
+      "basis": "E1记载：GC条件为SH-Rxi-5Sil MS毛细管柱（30 m×0.25 mm，0.25 μm），并给出相应升温程序、进样口温度、载气及柱流量等参数。",
+      "reasoning": "问题询问该论文GC-MS测定所用毛细管柱型号与规格。E1为该论文方法部分，直接列出毛细管柱型号SH-Rxi-5Sil MS及其尺寸30 m×0.25 mm、0.25 μm，故可直接回答。其余证据涉及香气物质、基因表达与贮藏比较，与色谱柱型号规格无关。",
+      "advice": "如需复现该测定，应以原文方法部分为准，并注意柱长、内径、膜厚及升温程序需配套使用；本回答仅转述文献记载，不构成本地检测操作指导。",
+      "citations": [
+        "E1"
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2503,
+      "completion_tokens": 238,
+      "total_tokens": 2741,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 2375
+    },
+    "model": "deepseek-flash",
+    "response_id": "db377a84-b05e-4a52-9f0e-32d490faa275",
+    "seconds": 6.459031700000196,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0014",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+        "text": "联用（GC-MS）（日本岛津公司）测定挥发性物质成分[20]。GC 条件：SH-Rxi-5Sil MS 毛细管柱（30 m×0.25 mm，0.25 μm）；升温程序：40℃下保持1 min；2℃·min-1 升温至100℃，保持2 min；5℃·min-1 升温至250℃，保持5 min。进样口温度250℃，载气：高纯氦，柱流量1 mL·min-1。MS 条件：电离方式为电子电离源，电子能量70 eV，接口温度250℃，离子源温度200℃，溶剂延迟时间3 min，m/z 35—500 下进行质量扫描，测定时加入200 ng 2-辛酮作为内标物，通过匹配质谱数据库NIST17 及保留指数对挥发性物质进行定性分析，计算各成分的含量，并进行差异显著性表1  PEN3 型电子鼻传感器阵列Table 1  PEN3 type electronic nose sensor array序列号Order number传感器名称Sensor name敏感化合物Sensitive compound W1C芳香成分 Aromatic components W5S灵敏度大，氮氧化合物 Broad range, oxynitride W3C氨类、芳香成分 Ammonia, aromatic components W6S氢化物 Hydrogen W5C短链烷烃、芳香成分Short chain alkanes, aromatic components W1S甲烷 Methane W1W硫化物、萜烯类 Sulphur-organic compound, terpenes W2S醇类、醛酮Alcohol, aldehyde ketone W2W有机硫化物、芳香成分 Organic sulfur compounds, aromatic components W3S长链烷烃 Long chain alkanes分析。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0007",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": " The analysis on expression of genes related to ethylene and aroma compound synthesis showed that the expression of ACC oxidase (PbACO2), lipoxygenase (PbLOX1) and alcohol acyltransferase (PbAAT1) genes were significantly increased, and the expression of ethylene insensitive transcriptional regulator gene (PbEIN3) was down regulated in cellar storage in contrast to cold storage. 【Conclusion】Compared with cold storage, cellar storage condition promoted ethylene production and the expression of genes related to ethylene biosynthesis (PbACO2) and aroma compound synthesis (PbLOX1 and PbAAT1), thus, made more kinds and contents of aroma substances, and exhibited more rich aroma in Yali pear. Key words: Yali pear; quality; volatile compound; electronic nose; ethylene; gene expression",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0036",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "3  讨论",
+        "text": "本研究表明，与冷藏相比，窖藏鸭梨果实的SSC变化较小，TA 含量有所增加，但贮藏3 个月时硬度明显下降，反映出窖藏鸭梨后熟衰老进程快于冷藏。因此，窖藏时间不宜太长。研究表明，低温抑制梨果实香气物质的生成与积累[4,8-10,13,17]。本研究证明，窖藏温度始终高于冷藏。电子鼻分析结果表明，窖藏2 个月时果实挥发性物质较多，其信号明显区别于其他时间，与GC-MS 测得的挥发性物质总量变化相一致。窖藏鸭梨果实的挥发性物质种类和含量较多，其含量高峰出现在贮藏2 个月时，尤其是代表性香气物质—酯类化合物的表现更为明显（表4、表5），其中主要酯类物质有己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯，这些是鸭梨果实的特征性香气成分，与前人的报道相近[18]。相对来说，冷藏鸭梨酯类香气物质较少，这是窖藏果实果香味浓郁的物质基础。果实香气物质的形成与乙烯生成及作用有密切关系[2-3,5-6,16]。如‘苹香’梨酯类物质合成途径中的PuLOX1、PuLOX8、PuADH2 及PuAAT 与乙烯合成途径中的PuACS1、PuACO1、PuACO6 表达密切相关[3]。冷藏抑制‘南果’梨乙烯生物合成和信号转导能力，降低LOX、HPL、AAT 活性及其基因表达，减少香气物质生成[10]。本研究发现，窖藏鸭梨乙烯释放高峰早于冷藏果实，且峰值高于冷藏果实（图1），此时期果实乙烯的大量生成，与PbACO2 表达量上调（图5）有关；同时，窖藏还刺激乙烯受体PbETR2 表达上调，但下调PbEIN3、PbERF 的表达。这说明，窖藏和冷藏影响果实乙烯生成与信号转导过程。果实挥发性物质生成与AAT、LOX、HPL 等基因的表达有关[2]。本研究结果表明，乙酯是鸭梨窖藏过程中生成较多的酯类，并且鸭梨挥发性物质变化模式与PbAAT1、PbLOX1 的基因表达规律类似（图5）。基于鸭梨的酯类总量与醇类物质总量呈显著正相关关系，由此推测，鸭梨果实的香气生成与脂肪酸代谢途径密切相关，经过脂肪酸酰基-CoA的作用，转化为短链酰基-CoAs，继而与醇在AAT催化作用下生成乙酯类等短链酯类[1,23]。",
+        "pages": [
+          12
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    }
+  ],
+  "candidate_ids": [
+    "chunk:PAPER_005_C0014",
+    "chunk:PAPER_005_C0007",
+    "chunk:PAPER_005_C0008",
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0036"
+  ],
+  "citation_gold_chunk_hit": 1,
+  "citation_gold_source_hit": 1,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出毛细管柱型号SH-Rxi-5Sil MS及规格30 m×0.25 mm、0.25 μm，与参考答案和原文证据完全一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "该研究GC-MS测定使用的毛细管柱为SH-Rxi-5Sil MS毛细管柱。",
+          "status": "supported",
+          "reason": "原文证据明确记载GC条件为SH-Rxi-5Sil MS毛细管柱。"
+        },
+        {
+          "claim": "该毛细管柱规格为30 m×0.25 mm，膜厚0.25 μm。",
+          "status": "supported",
+          "reason": "原文证据明确记载规格为（30 m×0.25 mm，0.25 μm）。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3213,
+      "completion_tokens": 155,
+      "total_tokens": 3368,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2701
+    },
+    "model": "deepseek-flash",
+    "response_id": "6b5630bf-31c7-4e2b-9271-581c04f82918",
+    "seconds": 5.643025299999863,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

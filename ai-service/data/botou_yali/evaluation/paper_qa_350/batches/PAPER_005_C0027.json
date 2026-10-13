@@ -1,0 +1,137 @@
+[
+  {
+    "question": "在贮藏期内，鸭梨果皮中挥发性物质总量呈现怎样的变化规律？",
+    "type": "factual",
+    "answer_quote": "贮藏期内，鸭梨果皮中挥发性物质总量呈现先升高后降低的规律",
+    "gold_entities": [
+      "鸭梨果皮",
+      "挥发性物质总量"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果皮与同期冷藏鸭梨果皮相比，挥发性物质总量有何差异？",
+    "type": "factual",
+    "answer_quote": "窖藏果皮明显高于同期冷藏果皮",
+    "gold_entities": [
+      "窖藏果皮",
+      "冷藏果皮"
+    ]
+  },
+  {
+    "question": "在鸭梨果皮中，差别比较明显的香气物质是哪两类化合物？",
+    "type": "factual",
+    "answer_quote": "差别比较明显的香气物质为酯类、醇类化合物",
+    "gold_entities": [
+      "酯类",
+      "醇类"
+    ]
+  },
+  {
+    "question": "鸭梨果皮中酯类和醇类化合物的含量高峰出现在贮藏几个月？",
+    "type": "factual",
+    "answer_quote": "其含量高峰出现在贮藏2 个月",
+    "gold_entities": [
+      "酯类",
+      "醇类",
+      "贮藏2 个月"
+    ]
+  },
+  {
+    "question": "在含量高峰时，窖藏鸭梨果皮中酯类和醇类化合物分别高于冷藏果实多少倍？",
+    "type": "factual",
+    "answer_quote": "分别高于冷藏果实53.11、56.22 倍",
+    "gold_entities": [
+      "酯类",
+      "醇类",
+      "冷藏果实"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果皮中检出多少种挥发性成分？",
+    "type": "factual",
+    "answer_quote": "窖藏鸭梨果皮中检出36 种成分",
+    "gold_entities": [
+      "窖藏鸭梨果皮",
+      "36 种成分"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果皮中含量较高的挥发性物质包括哪几类？",
+    "type": "factual",
+    "answer_quote": "含量较高的物质为酯类、醛类、醇类、萜类",
+    "gold_entities": [
+      "酯类",
+      "醛类",
+      "醇类",
+      "萜类"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果皮中主要的香气物质是哪一类？",
+    "type": "factual",
+    "answer_quote": "其中酯类为主要香气物质",
+    "gold_entities": [
+      "酯类"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果皮中酯类主要包括哪两类？",
+    "type": "factual",
+    "answer_quote": "酯类主要是乙酯和甲酯类",
+    "gold_entities": [
+      "乙酯",
+      "甲酯"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果皮中酯类的主要成分包括哪些？",
+    "type": "factual",
+    "answer_quote": "己酸乙酯、辛酸乙酯、丁酸乙酯、乙酸己酯、乙酸辛酯为主要成分",
+    "gold_entities": [
+      "己酸乙酯",
+      "辛酸乙酯",
+      "丁酸乙酯",
+      "乙酸己酯",
+      "乙酸辛酯"
+    ]
+  },
+  {
+    "question": "窖藏过程中特有的酯类物质有哪些？",
+    "type": "factual",
+    "answer_quote": "2-己烯酸乙酯、庚酸乙酯和(E, Z)-2,4-癸二烯酸乙酯等为窖藏过程中特有的酯类物质",
+    "gold_entities": [
+      "2-己烯酸乙酯",
+      "庚酸乙酯",
+      "(E, Z)-2,4-癸二烯酸乙酯"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果皮中醛类主要是什么？",
+    "type": "factual",
+    "answer_quote": "醛类主要为E-2-己烯醛，以及新生成的(E, Z)-2,4-癸二烯醛",
+    "gold_entities": [
+      "E-2-己烯醛",
+      "(E, Z)-2,4-癸二烯醛"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果皮中醇类主要是什么？",
+    "type": "factual",
+    "answer_quote": "醇类主要为Z-4-癸烯醇、正辛醇和正癸醇",
+    "gold_entities": [
+      "Z-4-癸烯醇",
+      "正辛醇",
+      "正癸醇"
+    ]
+  },
+  {
+    "question": "窖藏鸭梨果皮中萜类主要是什么？",
+    "type": "factual",
+    "answer_quote": "萜类主要是α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）",
+    "gold_entities": [
+      "α-法尼烯",
+      "6-甲基-5-庚烯-2-酮",
+      "MHO"
+    ]
+  }
+]

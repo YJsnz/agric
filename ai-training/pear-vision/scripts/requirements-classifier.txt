@@ -1,0 +1,6 @@
+# Install the matching torch/torchvision CUDA wheels for the server first.
+torch==2.5.1
+torchvision==0.20.1
+ultralytics==8.3.40
+numpy<2
+Pillow>=10,<12

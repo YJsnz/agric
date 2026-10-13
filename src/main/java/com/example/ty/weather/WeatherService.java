@@ -19,8 +19,8 @@ public class WeatherService {
     private final ObjectMapper objectMapper;
     private final HttpClient httpClient = HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(5)).build();
 
-    @Value("${weather.latitude:39.9042}") private double latitude;
-    @Value("${weather.longitude:116.4074}") private double longitude;
+    @Value("${weather.latitude:38.07366}") private double latitude;
+    @Value("${weather.longitude:116.56667}") private double longitude;
 
     public WeatherCurrentResponse current() {
         String url = "https://api.open-meteo.com/v1/forecast?latitude=" + latitude

@@ -1,0 +1,70 @@
+{
+  "id": "QA_0014",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法依据该论文回答，因为未提供论文内容，且我无法确认该论文的具体结论。",
+    "basis": "证据列表为空，我也没有该论文的可靠记忆，不能编造其结论、数据或参数。",
+    "reasoning": "问题要求引用《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的结论，但未给出原文或摘要。在缺乏可核实信息的情况下，不能推断1.0% O2处理在贮藏末期的风险，也不能给出最佳O2浓度参数。",
+    "advice": "请提供该论文的摘要、结论或相关数据段落；或允许我基于一般气调贮藏知识给出原则性说明（需明确非该论文结论）。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出问题所要求的任何关键点（1.0% O2处理增加贮藏末期黑心病风险；最佳O2浓度参数为3.0%—5.0%），而是以未提供论文内容为由拒绝作答。虽然检索上下文为空，但题目附有原文证据，属于可回答题，因此该拒答不计为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 800,
+      "completion_tokens": 90,
+      "total_tokens": 890,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 288
+    },
+    "model": "deepseek-flash",
+    "response_id": "beed03ee-ce19-4027-baf9-fa033d7a4204",
+    "seconds": 7.809176300012041,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法依据该论文回答，因为未提供论文内容，且我无法确认该论文的具体结论。",
+        "basis": "证据列表为空，我也没有该论文的可靠记忆，不能编造其结论、数据或参数。",
+        "reasoning": "问题要求引用《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的结论，但未给出原文或摘要。在缺乏可核实信息的情况下，不能推断1.0% O2处理在贮藏末期的风险，也不能给出最佳O2浓度参数。",
+        "advice": "请提供该论文的摘要、结论或相关数据段落；或允许我基于一般气调贮藏知识给出原则性说明（需明确非该论文结论）。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 210,
+        "completion_tokens": 163,
+        "total_tokens": 373,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 210
+      },
+      "model": "deepseek-flash",
+      "response_id": "0d372575-0408-4078-8e25-c9339d89280d",
+      "seconds": 6.505010799999582,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 14.316262599997572
+}

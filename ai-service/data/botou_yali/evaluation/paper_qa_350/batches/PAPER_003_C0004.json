@@ -1,0 +1,48 @@
+[
+  {
+    "question": "本研究中测定果心相变温度时采用的降温程序是什么？",
+    "type": "factual",
+    "answer_quote": "平衡温度至0℃，以1℃/min 的速率降温至-25℃，然后以1℃/min 加热至5℃，记录DSC 曲线，测定果心的相变温度。",
+    "gold_entities": [
+      "DSC曲线",
+      "相变温度",
+      "0℃",
+      "-25℃",
+      "5℃"
+    ]
+  },
+  {
+    "question": "本研究中LOX酶活性测定时，称取冻样的量和加入LOX酶提取液的体积分别是多少？",
+    "type": "factual",
+    "answer_quote": "称取4.0 g 冻样，加3 mL LOX 酶提取液",
+    "gold_entities": [
+      "4.0 g",
+      "3 mL",
+      "LOX酶提取液"
+    ]
+  },
+  {
+    "question": "本研究中LOX酶提取的条件是什么？",
+    "type": "factual",
+    "answer_quote": "于0℃下提取 1 h，于0～4℃下10 000×g离心25min，放0℃备用。",
+    "gold_entities": [
+      "0℃",
+      "1 h",
+      "0～4℃",
+      "10 000×g",
+      "25min"
+    ]
+  },
+  {
+    "question": "本研究中测定LOX酶活性时，加入的磷酸缓冲液浓度、pH和体积以及底物体积和保温温度分别是多少？",
+    "type": "factual",
+    "answer_quote": "取50 mmol/L磷酸缓冲液（pH 6.8）2.7 mL，底物200 μL，25℃下保温",
+    "gold_entities": [
+      "50 mmol/L",
+      "pH 6.8",
+      "2.7 mL",
+      "200 μL",
+      "25℃"
+    ]
+  }
+]

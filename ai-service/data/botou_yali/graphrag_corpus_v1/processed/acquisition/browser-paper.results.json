@@ -1,0 +1,15 @@
+[
+  {
+    "source_id": "PAPER_004",
+    "status": "pdf_unavailable",
+    "http_status": 403
+  },
+  {
+    "source_id": "PAPER_004",
+    "status": "downloaded_pending_review",
+    "url": "https://www.spkx.net.cn/CN/10.7506/spkx1002-6630-201010064",
+    "title": "不同采收期对鸭梨采后贮藏香气成分的影响",
+    "error": null,
+    "characters": 2411
+  }
+]

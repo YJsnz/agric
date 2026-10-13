@@ -1,0 +1,9 @@
+{
+  "sources": 12,
+  "fulltext": 10,
+  "missing_fulltext": [
+    "STD_001",
+    "PAPER_004"
+  ],
+  "chunking_ready": 9
+}

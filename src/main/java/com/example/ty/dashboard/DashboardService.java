@@ -31,6 +31,25 @@ public class DashboardService {
     private final FarmAlertRepository alerts;
     private final MetricThresholdRepository thresholds;
     private final ObjectMapper objectMapper;
+    private final ObservationRepository observations;
+    private final com.example.ty.operations.OperationService operations;
+
+    @Transactional(readOnly = true)
+    public ObservationHistory observationHistory(String farmId,String metricKey) {
+        if (assets.findByFarmIdOrderById(farmId).isEmpty()) throw BizException.notFound("农场不存在");
+        if (metrics.findByFarmIdOrderById(farmId).stream().noneMatch(m->m.getMetricKey().equals(metricKey)))
+            throw BizException.notFound("观测指标不存在");
+        var rows=new java.util.ArrayList<>(observations.findTop240ByFarmIdAndMetricKeyOrderByMeasuredAtDescIdDesc(farmId,metricKey));
+        java.util.Collections.reverse(rows);
+        return new ObservationHistory(farmId,metricKey,"farm",true,240,rows.stream().map(m->
+            new ObservationHistory.Point(m.getId(),m.getLabel(),m.getValue(),m.getUnit(),m.getSource(),m.getMeasuredAt())).toList());
+    }
+
+    private void recordObservation(EnvironmentMetric metric,String source) {
+        observations.save(Observation.builder().farmId(metric.getFarmId()).metricKey(metric.getMetricKey())
+            .label(metric.getLabel()).value(metric.getValue()).unit(metric.getUnit()).source(source)
+            .measuredAt(metric.getMeasuredAt()).build());
+    }
 
     @Transactional(readOnly = true)
     public DashboardSnapshot snapshot(String farmId) {
@@ -47,7 +66,7 @@ public class DashboardService {
         int openAlerts = (int) alertRows.stream().filter(item -> !"已恢复".equals(item.getStatus()) && !"已处理".equals(item.getStatus())).count();
         int health = (int) Math.round(assetRows.stream().filter(item -> item.getHealth() != null).mapToInt(FarmAsset::getHealth).average().orElse(92));
 
-        return new DashboardSnapshot(farmId, "智慧农场01", LocalDateTime.now(), true,
+        return new DashboardSnapshot(farmId, YantianDemoInitializer.FARM_ID.equals(farmId) ? "沧州盐碱地示范基地" : "原温室演示园", LocalDateTime.now(), true,
                 new DashboardSnapshot.Summary(health, deviceRows.size(), online, running, openAlerts, 82, 38.2),
                 assetRows.stream().map(item -> assetDto(item, activeAlertEntityIds)).toList(),
                 assetRows.stream().filter(item -> item.getZoneId() != null).map(this::zoneDto).toList(),
@@ -161,6 +180,7 @@ public class DashboardService {
         device.setEnabled(request.enabled());
         device.setLastSeenAt(LocalDateTime.now());
         if ("valve-02".equals(entityId)) device.setCurrentValue(request.enabled() ? "开启 · 12.6m³/h" : "关闭 · 0m³/h");
+        operations.receipt(farmId,entityId,"DEVICE_RECEIPT",device.getName()+"模拟控制",request.enabled()?"软件执行器已开启；模拟回执已确认":"软件执行器已关闭；模拟回执已确认");
         return deviceDto(devices.save(device));
     }
 
@@ -256,10 +276,11 @@ public class DashboardService {
         unit.setFlowRate(request.enabled() ? defaultFlow(unit.getKind()) : 0);
         unit.setUpdatedAt(LocalDateTime.now());
         IrrigationUnitEntity saved = irrigation.save(unit);
-        if (request.enabled() && unit.getEntityId() != null && unit.getEntityId().startsWith("field-")) {
-            if ("field-04".equals(unit.getEntityId())) setSoilMoisture(farmId, 90, true);
+        if (request.enabled() && unit.getEntityId() != null && ("zone".equals(unit.getKind()) || unit.getEntityId().startsWith("field-"))) {
+            if (defaultSoilPlot(farmId).equals(unit.getEntityId())) setSoilMoisture(farmId, 90, true);
             else setZoneSoilMoisture(farmId, unit.getEntityId(), 90);
         }
+        operations.receipt(farmId,unit.getEntityId(),"IRRIGATION_RECEIPT",unit.getName()+"模拟灌排",(request.enabled()?"启动":"停止")+"；计划时长 "+unit.getDurationMinutes()+" 分钟；流量 "+unit.getFlowRate()+" m³/h；软件回执已确认");
         return irrigationDto(saved);
     }
 
@@ -281,7 +302,7 @@ public class DashboardService {
     public DashboardSnapshot.Alert handleAlert(String farmId, Long alertId) {
         FarmAlert alert = alerts.findById(alertId).filter(item -> farmId.equals(item.getFarmId()))
                 .orElseThrow(() -> BizException.notFound("告警不存在"));
-        if ("field-04".equals(alert.getEntityId()) && alert.getTitle().contains("土壤湿度")
+        if (defaultSoilPlot(farmId).equals(alert.getEntityId()) && alert.getTitle().contains("土壤湿度")
                 && !List.of("已处理", "已恢复").contains(alert.getStatus())) {
             MetricThreshold threshold = thresholds.findByFarmIdAndMetricKey(farmId, "soilMoisture").orElse(null);
             EnvironmentMetric metric = metrics.findByFarmIdOrderById(farmId).stream()
@@ -291,6 +312,7 @@ public class DashboardService {
                         "土壤湿度仍为 %.0f%%，低于 %.0f%% 阈值，请先完成灌溉处理", metric.getValue(), threshold.getMinimumValue()));
             }
         }
+        if ("已处理".equals(alert.getStatus())) return alertDto(alert);
         alert.setStatus("已处理");
         FarmAlert saved = alerts.save(alert);
         boolean hasActiveAlert = alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
@@ -304,6 +326,7 @@ public class DashboardService {
                 assets.save(item);
             });
         }
+        operations.receipt(farmId,alert.getEntityId(),"ALERT_RECEIPT",alert.getTitle(),"告警 #"+alert.getId()+" 已人工标记处理；演示处置记录已保存");
         return alertDto(saved);
     }
 
@@ -311,7 +334,7 @@ public class DashboardService {
     @Transactional
     public void generateVirtualReadings() {
         LocalDateTime now = LocalDateTime.now();
-        for (EnvironmentMetric metric : metrics.findByFarmIdOrderById(DashboardDataInitializer.FARM_ID)) {
+        for (EnvironmentMetric metric : metrics.findAll()) {
             metric.setPreviousValue(metric.getValue());
             double drift = switch (metric.getMetricKey()) {
                 case "temperature" -> random(-0.18, 0.18);
@@ -322,11 +345,13 @@ public class DashboardService {
             };
             metric.setValue(clamp(metric.getMetricKey(), metric.getValue() + drift));
             metric.setMeasuredAt(now);
+            recordObservation(metric,"demo_generator");
         }
-        for (FarmDevice device : devices.findByFarmIdOrderById(DashboardDataInitializer.FARM_ID)) {
+        for (FarmDevice device : devices.findAll()) {
             if (device.isOnline()) device.setLastSeenAt(now.minusSeconds(ThreadLocalRandom.current().nextInt(0, 13)));
         }
         evaluateSoilMoisture(DashboardDataInitializer.FARM_ID);
+        evaluateSoilMoisture(YantianDemoInitializer.FARM_ID);
     }
 
     private void evaluateSoilMoisture(String farmId) {
@@ -338,20 +363,20 @@ public class DashboardService {
         alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
                 .filter(item -> item.getTitle().startsWith("土壤湿度低于 ") && !title.equals(item.getTitle())
                         && !List.of("已处理", "已恢复").contains(item.getStatus()))
-                .forEach(item -> { item.setStatus("已恢复"); alerts.save(item); });
+                .forEach(item -> { item.setStatus("已恢复"); alerts.save(item); operations.receipt(farmId,item.getEntityId(),"ALERT_RECEIPT",item.getTitle(),"告警 #"+item.getId()+" 已随模拟观测恢复；软件自动解除记录"); });
         if (metric.getValue() < threshold.getMinimumValue()) {
             boolean hasActiveSoilAlert = alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
-                    .anyMatch(item -> "field-04".equals(item.getEntityId()) && item.getTitle().contains("土壤湿度")
+                    .anyMatch(item -> defaultSoilPlot(farmId).equals(item.getEntityId()) && item.getTitle().contains("土壤湿度")
                             && !List.of("已处理", "已恢复").contains(item.getStatus()));
             if (!hasActiveSoilAlert) {
-                alerts.save(FarmAlert.builder().farmId(farmId).entityId("field-04").title(title).level("预警")
+                alerts.save(FarmAlert.builder().farmId(farmId).entityId(defaultSoilPlot(farmId)).title(title).level("预警")
                         .status("未处理").occurredAt(LocalDateTime.now()).build());
             }
         } else {
             alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
-                    .filter(item -> "field-04".equals(item.getEntityId()) && item.getTitle().contains("土壤湿度")
+                    .filter(item -> defaultSoilPlot(farmId).equals(item.getEntityId()) && item.getTitle().contains("土壤湿度")
                             && !List.of("已处理", "已恢复").contains(item.getStatus()))
-                    .forEach(item -> { item.setStatus("已恢复"); alerts.save(item); });
+                    .forEach(item -> { item.setStatus("已恢复"); alerts.save(item); operations.receipt(farmId,item.getEntityId(),"ALERT_RECEIPT",item.getTitle(),"告警 #"+item.getId()+" 已随模拟观测恢复；软件自动解除记录"); });
         }
     }
 
@@ -367,7 +392,8 @@ public class DashboardService {
         boolean belowThreshold = value < minimum;
         metric.setTone(belowThreshold ? "warning" : "success");
         EnvironmentMetric saved = metrics.save(metric);
-        assets.findByFarmIdAndId(farmId, "field-04").ifPresent(asset -> {
+        recordObservation(saved,irrigationCompleted ? "demo_irrigation" : "demo_manual");
+        assets.findByFarmIdAndId(farmId, defaultSoilPlot(farmId)).ifPresent(asset -> {
             asset.setMetric(String.format(Locale.ROOT, "土壤湿度 %.0f%%", value));
             asset.setEnvironmentSummary(String.format(Locale.ROOT, "土壤湿度 %.0f%%", value));
             asset.setStatus(belowThreshold ? "warning" : "normal");
@@ -390,7 +416,7 @@ public class DashboardService {
         alerts.findTop20ByFarmIdOrderByOccurredAtDesc(farmId).stream()
                 .filter(item -> entityId.equals(item.getEntityId()) && item.getTitle().contains("土壤湿度")
                         && !List.of("已处理", "已恢复").contains(item.getStatus()))
-                .forEach(item -> { item.setStatus("已恢复"); alerts.save(item); });
+                .forEach(item -> { item.setStatus("已恢复"); alerts.save(item); operations.receipt(farmId,item.getEntityId(),"ALERT_RECEIPT",item.getTitle(),"告警 #"+item.getId()+" 已随模拟观测恢复；软件自动解除记录"); });
     }
 
     private void applyDevice(FarmDevice device, String farmId, DeviceUpsertRequest request) {
@@ -435,6 +461,7 @@ public class DashboardService {
         String status = item.getStatus();
         if (("warning".equals(status) || "attention".equals(status) || "danger".equals(status))
                 && !activeAlertEntityIds.contains(item.getId())) status = "normal";
+        if(activeAlertEntityIds.contains(item.getId()) && "normal".equals(status)) status="attention";
         return new DashboardSnapshot.Asset(item.getId(),item.getName(),item.getType(),status,item.getMetric(),item.getMapX(),item.getMapY(),item.getHealth(),new DashboardSnapshot.Position(item.getPositionX(),item.getPositionY(),item.getPositionZ()));
     }
     private DashboardSnapshot.Zone zoneDto(FarmAsset item) {
@@ -453,6 +480,7 @@ public class DashboardService {
     private String lastSeen(LocalDateTime at) { long seconds=Math.max(0,Duration.between(at,LocalDateTime.now()).getSeconds()); if(seconds<5)return "刚刚"; if(seconds<60)return seconds+" 秒前"; return seconds/60+" 分钟前"; }
     private String format(double value,String key) { return ("temperature".equals(key)||"co2".equals(key)||"light".equals(key))?String.format(Locale.ROOT,"%.1f",value):String.format(Locale.ROOT,"%.0f",value); }
     private double defaultFlow(String kind) { return switch(kind){case "fertigation"->12.6;case "valve"->10.2;case "zone"->8.4;default->0;}; }
+    private String defaultSoilPlot(String farmId) { return YantianDemoInitializer.FARM_ID.equals(farmId) ? "yt-pear-03" : "field-04"; }
     private double random(double min,double max){return ThreadLocalRandom.current().nextDouble(min,max);}
     private double clamp(String key,double value){return switch(key){case "temperature"->Math.max(20,Math.min(34,value));case "airHumidity"->Math.max(35,Math.min(85,value));case "soilMoisture"->Math.max(25,Math.min(75,value));case "light"->Math.max(0,Math.min(1200,value));case "co2"->Math.max(350,Math.min(1000,value));default->value;};}
     private int greenhouseIndex(String id) { try { return Integer.parseInt(id.substring(id.length() - 2)); } catch (Exception ignored) { return 1; } }

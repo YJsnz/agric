@@ -1,0 +1,345 @@
+{
+  "results": [
+    {
+      "chunk": {
+        "chunk_id": "GOV_001_C0001",
+        "source_id": "GOV_001",
+        "title": "鸭梨黑星病夏季如何防治（农业农村局公开科普）",
+        "section": "网页正文",
+        "section_id": "GOV_001_S001",
+        "page": null,
+        "page_end": null,
+        "pages": [],
+        "page_basis": "web article; no page number",
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [],
+        "evidence_level": "B",
+        "source_type": "government",
+        "year": 2017,
+        "source_file_sha256": "939dfb9a817b8ac62d0dcd82534fd95a10b3da7daa8c532c45c44e327f00c9d7",
+        "source_url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+        "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_001/browser.html",
+        "text": "梨黑星病又叫梨疮痂病，是梨树的主要病害。当前正值夏季，高温高湿有利于梨黑星病的发生。梨黑星病病原菌借雨水在梨园中扩散侵染，主要危害叶片、果实。叶片染病后，在叶背面产生圆形、椭圆形或不规则形病斑，病斑沿叶脉扩展，产生辐射状黑色霉状物，严重时整个叶背面布满黑霉，引起早期落叶。果实感病后，在果实表面产生一些大小不等的圆形病斑，病斑硬化后，表面粗糙，凹陷龟裂，呈疮痂状，病部伤口遇雨水极易被霉菌感染而腐烂。防治方法 1.农业防治。发现病叶、病果及时摘除，集中烧毁或深埋，防止病菌的扩散和蔓延。雨后及时排除积水，铲除果园内杂草，降低果园内潮湿度。结合夏剪，及时把直立枝、徒长枝、交叉枝从基部剪除，增加果园内通风透光性，改善果园小气候。2.药剂防治。雨前及时喷药预防，雨后及时喷药防治，喷药后遇雨及时补喷。用药可选用40%杜邦福星10000倍，10%苯醚甲环唑3000倍，80%汉邦多菌灵2000倍，可杀得叁仟2000倍，以上农药7-10天喷1次，连喷3-4次。各种杀菌剂要交替使用，以免产生抗药性。喷药时要注意喷布均匀，树冠上下，树膛内外，都要沾药，特别注意叶片的背面要喷上药。",
+        "char_count": 485,
+        "start_offset": 0,
+        "end_offset": 485,
+        "overlap_chars": 0,
+        "text_sha256": "0298c7349bc8166ef957d2095eb0318dec6c6e1454c617d646cc13e6769df0a2",
+        "size_exception": "short_section_or_tail",
+        "review_status": "layout_tables_and_agronomic_context_review_pending",
+        "needs_layout_review": false,
+        "production_retrieval_approved": false
+      },
+      "features": {
+        "crop": 0.7,
+        "region": 0,
+        "stage": null,
+        "evidence": 0.7
+      },
+      "warnings": [
+        "region:unknown"
+      ],
+      "edge_ids": [],
+      "graph_score": 0,
+      "chunk_id": "GOV_001_C0001",
+      "score": 1.0,
+      "semantic_rank": 1,
+      "semantic_cosine": 0.659534215927124,
+      "graph_rank": null,
+      "rrf_score": 1.0,
+      "metadata_score": 0.3,
+      "rank": 1
+    },
+    {
+      "chunk": {
+        "chunk_id": "PAPER_001_C0026",
+        "source_id": "PAPER_001",
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "3.1  环境O2浓度与虎皮病和黑心病发生的关系",
+        "section_id": "PAPER_001_S018",
+        "page": 8,
+        "page_end": 9,
+        "pages": [
+          8,
+          9
+        ],
+        "page_basis": "PDF physical page, 1-based",
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "source_type": "paper",
+        "year": 2020,
+        "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+        "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+        "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+        "text": "虎皮病是梨采后贮藏过程中一种主要的生理病害[26]。低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累，降低乙烯释放量，有效降低α-法尼烯及其氧化产物共轭三烯醇的积累，进而抑制虎皮病的发生[27-28]。近年来，超低氧气调贮藏技术（O2＜1.0%）和动态气调贮藏技术（O2＜0.6%）快速发展，与传统气调贮藏相比，更低的贮藏环境O2 浓度能更好地控制苹果和梨采后虎皮病的发生[29-30]。本研究中，5.0%及以下O2处理显著降低了鸭梨长期贮藏过程中虎皮病的发生，货架期显著延长，其中1.0%—3.0% O2 处理防控虎皮病效果最佳。可见，进一步降低贮藏环境氧气浓度可更好地维持鸭梨果实外观品质，延长货架期，这与前人研究结论一致。黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变[31-32]。低氧胁迫处理可通过调控氧化代谢平衡进而降低衰老相关生理病害的发生[33-34]。本研究中，采用阶段降温结合延迟气调贮藏均显著降低了贮藏和货架期间果实黑心病的发生，相对更低的O2浓度更好地控制了贮藏后期（270 d）果心褐变指数，但过低的氧气浓度处理（1.0% O2）一定程度上增加了鸭梨果实贮藏末期黑心病风险。",
+        "char_count": 537,
+        "start_offset": 0,
+        "end_offset": 537,
+        "overlap_chars": 0,
+        "text_sha256": "b4f0a52e6d6b72704339213d899d8d2bf8471117660696f2990935fe228d0913",
+        "size_exception": null,
+        "review_status": "layout_tables_and_agronomic_context_review_pending",
+        "needs_layout_review": false,
+        "production_retrieval_approved": false
+      },
+      "features": {
+        "crop": 0.7,
+        "region": 0.7,
+        "stage": null,
+        "evidence": 1
+      },
+      "warnings": [],
+      "edge_ids": [],
+      "graph_score": 0,
+      "chunk_id": "PAPER_001_C0026",
+      "score": 0.9838709677419355,
+      "semantic_rank": 2,
+      "semantic_cosine": 0.6151795387268066,
+      "graph_rank": null,
+      "rrf_score": 0.9838709677419355,
+      "metadata_score": 0.8285714285714285,
+      "rank": 2
+    },
+    {
+      "chunk": {
+        "chunk_id": "UNI_001_C0001",
+        "source_id": "UNI_001",
+        "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+        "section": "网页正文",
+        "section_id": "UNI_001_S001",
+        "page": null,
+        "page_end": null,
+        "pages": [],
+        "page_basis": "web article; no page number",
+        "crop": [
+          "梨"
+        ],
+        "region": [],
+        "applicable_stages": [],
+        "evidence_level": "B",
+        "source_type": "university_material",
+        "year": 2023,
+        "source_file_sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39",
+        "source_url": "https://www.zwbch.com/changshi/view_14.html",
+        "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+        "text": "01黑星病梨黑星病是一种检疫性病害，病原为子囊菌亚门黑星菌属的纳雪星菌，可危害梨树地上部大部分幼嫩组织，并以叶片、果实为主。叶片受害，先在叶背面的主脉两侧与支脉之间产生多角形或圆形的淡黄色病斑，没有明显的边缘，随后病斑会遍布整个叶片；在叶背面产生辐射状霉层，病情严重时造成大量落叶。幼果发病为畸形果，会形成不规则的淡黄色至褐色病斑，且病斑上会长出黑色的霉层；成长期果实发病不畸形，但病斑部会凹陷并产生星状龟裂。叶柄、果梗症状相似，出现黑色椭圆形的凹陷斑，病部覆盖黑霉、缢缩、失水干枯，致叶片或果实早落。防治时注意加强冬季清园，对病叶、病枝、病果等集中处理，并喷广谱性杀菌剂降低病原菌。早春梨芽膨大期起开始结合药剂防治，花前花后是关键期，可选用苯醚甲环唑、已唑醇、氟硅唑、异菌脲等药剂。02轮纹病梨树轮纹病菌是弱寄生菌，具有发病快、危害大等特点，主要侵害枝干、果实，在叶片上也偶有发生。枝干受害，逐步形成马鞍状病斑，树皮变得粗糙；果实受害，初产生水渍状、圆形、浅褐色小斑，后扩大成浅褐色至红褐色的同心轮纹斑；叶片受害，生成较大褐色近圆形病斑，常伴有轮纹。由于是弱寄生病害，在预防上提升树势，压低病原是关键。可增施有机肥、活土君复合菌剂，生长期淋施海精灵生物刺激剂，冬季清园时应刮除枝干老翘皮，剪除病枯枝，集中烧毁。药剂防治掌握在落花后至套袋前，特别是雨前雨后，药剂可选择代森锰锌、戊唑·多菌灵、代森联、吡唑·代森联等。03锈病梨锈病主要对植株叶片、新梢和幼果有较大危害。叶片受害，起初在叶面上出现淡黄色且带有光泽的小斑点，后扩展为近圆形病斑。幼果受害，初期病斑大体与叶片上的相似，病部稍凹陷，病斑上密生橙黄色的小粒点。后期在同一部位产生灰黄色毛状物，即锈子器。病果生长停滞，往往畸形早落。防治时要注意清除转主寄主如松、柏等；高温天气，要适时浇水，增加湿度，破坏发病条件；在萌芽至展叶的25天内进行喷药保护，药剂可选择三唑醇、苯醚甲环唑、嘧菌酯等。",
+        "char_count": 822,
+        "start_offset": 0,
+        "end_offset": 822,
+        "overlap_chars": 0,
+        "text_sha256": "329ce4393f558a8cb1f0a866b36458abc5a57aa84a7c547bc1b903d3a4a0dc50",
+        "size_exception": null,
+        "review_status": "layout_tables_and_agronomic_context_review_pending",
+        "needs_layout_review": false,
+        "production_retrieval_approved": false
+      },
+      "features": {
+        "crop": 0.7,
+        "region": 0,
+        "stage": null,
+        "evidence": 0.7
+      },
+      "warnings": [
+        "region:unknown"
+      ],
+      "edge_ids": [],
+      "graph_score": 0,
+      "chunk_id": "UNI_001_C0001",
+      "score": 0.9682539682539683,
+      "semantic_rank": 3,
+      "semantic_cosine": 0.5938423871994019,
+      "graph_rank": null,
+      "rrf_score": 0.9682539682539683,
+      "metadata_score": 0.3,
+      "rank": 3
+    },
+    {
+      "chunk": {
+        "chunk_id": "PAPER_005_C0038",
+        "source_id": "PAPER_005",
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "3  讨论",
+        "section_id": "PAPER_005_S019",
+        "page": 12,
+        "page_end": 12,
+        "pages": [
+          12
+        ],
+        "page_basis": "PDF physical page, 1-based",
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "source_type": "paper",
+        "year": 2021,
+        "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+        "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+        "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+        "text": "尽管这两种物质参与了苹果和梨果皮的虎皮病发生[28-30]，而本研究尚未发现虎皮病现象，但至少说明，窖藏条件刺激了α-法尼烯和MHO 的生成与积累。这种现象可能与窖藏时果皮衰老较快有关。",
+        "char_count": 93,
+        "start_offset": 1240,
+        "end_offset": 1333,
+        "overlap_chars": 93,
+        "text_sha256": "6d29dc1dd56579b7e5f834760cc9b488c1fd9ae214f2e82cbb138ce189e38eea",
+        "size_exception": "short_section_or_tail",
+        "review_status": "layout_tables_and_agronomic_context_review_pending",
+        "needs_layout_review": false,
+        "production_retrieval_approved": false
+      },
+      "features": {
+        "crop": 0.7,
+        "region": 0,
+        "stage": null,
+        "evidence": 1
+      },
+      "warnings": [
+        "region:unknown"
+      ],
+      "edge_ids": [],
+      "graph_score": 0,
+      "chunk_id": "PAPER_005_C0038",
+      "score": 0.953125,
+      "semantic_rank": 4,
+      "semantic_cosine": 0.5619291067123413,
+      "graph_rank": null,
+      "rrf_score": 0.953125,
+      "metadata_score": 0.4285714285714286,
+      "rank": 4
+    },
+    {
+      "chunk": {
+        "chunk_id": "PAPER_001_C0020",
+        "source_id": "PAPER_001",
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.1.2  黑心指数发生情况  气调处理可显著降低鸭",
+        "section_id": "PAPER_001_S013",
+        "page": 5,
+        "page_end": 5,
+        "pages": [
+          5
+        ],
+        "page_basis": "PDF physical page, 1-based",
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "source_type": "paper",
+        "year": 2020,
+        "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+        "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+        "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+        "text": "梨贮藏150 d 和210 d 后果实黑心指数（P＜0.05）；贮藏270 d 及货架7 d，各处理果实黑心指数快速上升，从高到低依次为：CK（40%）＞10.0% O2（30.63%）＞5.0% O2（30.51%）＞1.0% O2（26.87%）＞3.0% O2（20.17%）＞2.0% O2（19.34%），其中，1.0% O2 处理果实黑心指数显著高于2.0% O2 和3.0% O2。3 年的中试库黑心病跟踪调查表明，缓慢降温结合延迟气调（降温后30—35 d），采用3.0%—5.0% O2+0.5%—0.8% CO2 处理，贮藏至翌年6 月中下旬，黑心病平均发生率＜3.0%，且货架期≥7 d。",
+        "char_count": 305,
+        "start_offset": 0,
+        "end_offset": 305,
+        "overlap_chars": 0,
+        "text_sha256": "de6e9ab6cc422d69a3d36574594dc8cb0002467b87e6c25010d8cad91f44f6e2",
+        "size_exception": "short_section_or_tail",
+        "review_status": "layout_tables_and_agronomic_context_review_pending",
+        "needs_layout_review": false,
+        "production_retrieval_approved": false
+      },
+      "features": {
+        "crop": 0.7,
+        "region": 0.7,
+        "stage": null,
+        "evidence": 1
+      },
+      "warnings": [],
+      "edge_ids": [],
+      "graph_score": 0,
+      "chunk_id": "PAPER_001_C0020",
+      "score": 0.9384615384615385,
+      "semantic_rank": 5,
+      "semantic_cosine": 0.5612252950668335,
+      "graph_rank": null,
+      "rrf_score": 0.9384615384615385,
+      "metadata_score": 0.8285714285714285,
+      "rank": 5
+    }
+  ],
+  "excluded": [],
+  "candidate_count": 20,
+  "graph_channel_active": false,
+  "effective_metadata_strength": 0,
+  "config": {
+    "rrf_k": 60,
+    "semantic_weight": 1,
+    "graph_weight": 1,
+    "metadata_strength": 0.15,
+    "region_weight": 0.4,
+    "stage_weight": 0.3,
+    "evidence_weight": 0.3,
+    "per_source": 2
+  },
+  "mode": "research",
+  "status": "ok",
+  "notice": "实验性检索排序分，不是事实置信度或风险概率；权重尚未由验证集选择。",
+  "graph_retrieval": {
+    "nodes": [
+      {
+        "source_ids": [
+          "uc_pear_scab",
+          "vic"
+        ],
+        "aliases": [
+          "黑星病"
+        ],
+        "source_count": 2,
+        "classification_basis": "原始知识条目语义分类；不改变证据适用范围",
+        "name": "梨黑星病",
+        "description": "由 Venturia pirina 引起的梨病害，可在果实、叶片和枝梢出现病斑；此条描述来自 UC IPM 加州梨资料，尚待本地适用性审核。",
+        "id": "v2:435c70a2381d781d",
+        "region": [
+          "AU-VIC",
+          "US-CA"
+        ],
+        "type": "Disease",
+        "dataset": "pear_evidence_v2",
+        "crop": [
+          "梨"
+        ]
+      }
+    ],
+    "edges": [],
+    "triples": [],
+    "sources": [],
+    "seed_ids": [
+      "v2:435c70a2381d781d"
+    ],
+    "max_hops": 3,
+    "direction": "both",
+    "filters": {
+      "region": "泊头市",
+      "crop": "泊头鸭梨"
+    },
+    "truncated": false,
+    "notice": "入边用于发现原因和干预，关系保持原方向；邻域不代表完整因果链或量化因果效应。"
+  },
+  "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939"
+}

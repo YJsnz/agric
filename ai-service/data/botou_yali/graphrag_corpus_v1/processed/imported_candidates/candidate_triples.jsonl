@@ -1,0 +1,10 @@
+{"source_id": "STD_001", "s": "泊头鸭梨", "r": "HAS_REGION", "o": "泊头", "status": "candidate"}
+{"source_id": "PAPER_001", "s": "储藏氧气浓度", "r": "AFFECTS", "o": "鸭梨采后生理病害", "status": "candidate"}
+{"source_id": "PAPER_001", "s": "储藏氧气浓度", "r": "AFFECTS", "o": "鸭梨贮藏品质", "status": "candidate"}
+{"source_id": "PAPER_002", "s": "自发气调处理", "r": "AFFECTS", "o": "鸭梨黑心病风险", "status": "candidate"}
+{"source_id": "PAPER_003", "s": "降温方式", "r": "AFFECTS", "o": "鸭梨果心褐变", "status": "candidate"}
+{"source_id": "PAPER_003", "s": "采收期", "r": "MODIFIES_EFFECT_OF", "o": "降温方式", "status": "candidate"}
+{"source_id": "PAPER_004", "s": "采收期", "r": "AFFECTS", "o": "鸭梨贮藏香气品质", "status": "candidate"}
+{"source_id": "PAPER_005", "s": "贮藏方式", "r": "AFFECTS", "o": "鸭梨生理代谢与挥发性物质", "status": "candidate"}
+{"source_id": "GOV_001", "s": "高湿/降雨环境", "r": "PROMOTES", "o": "梨黑星病发生与传播", "status": "candidate"}
+{"source_id": "UNI_001", "s": "梨黑星病", "r": "HAS_SYMPTOM", "o": "果实病斑/凹陷/龟裂", "status": "candidate"}

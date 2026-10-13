@@ -1,0 +1,210 @@
+[
+  {
+    "case": "anthracnose",
+    "class": "anthracnose",
+    "status": "preliminary",
+    "degraded": false,
+    "generation_called": true,
+    "citations": 2,
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称仅有低置信度炭疽病类视觉线索不能确诊，与问题假设一致；引用E1确认炭疽病可侵染叶片，并明确其具体病斑描述为果实症状、不能转写为叶片鉴别特征；提出需与枣锈病等其他叶片方向区分，E2提供了枣锈病叶片表现作为鉴别线索。未出现未引用的确诊、剂量或本地普遍建议。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对E1的转述与原文一致：确认可侵染叶片，具体症状为果实症状，不能转写为叶片鉴别特征；对E2的转述与原文一致：枣锈病叶片上发生、叶背淡绿色小点后凸起呈暗黄褐色、失去光泽、干枯脱落，并明确这是原文描述而非照片已检测特征；同时说明两条证据均为待转移文献资料，不等于当前果园实际表现，符合证据等级与用途。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning中低置信度视觉线索不是疾病概率或风险等级、用户未提供地区/生育期/症状细节/天气/湿度/灌溉等背景、E1来源地区为北京不能直接当作沧州金丝小枣已验证结论、E2同为待转移资料、资料症状不是照片已检测症状、不能把果实症状改写成叶片症状等，均与所引证据及政策范围一致，未补造缺失路径或本地确诊。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅提出候选方向排查与现场复核：方向一炭疽病核对叶片表现并注意E1具体描述属果实症状，方向二枣锈病核对叶背淡绿色小点后凸起呈暗黄褐色等表现；同时说明仅凭低置信度视觉线索无法确诊、不能判断是否由炭疽病引起，需补充症状细节、生育期、天气湿度并请当地植保人员复核。未推荐药名、剂量、施药周期或生产操作，符合candidate_assessment范围。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  {
+    "case": "yellow_leaf",
+    "class": "yellow_leaf",
+    "status": "insufficient_evidence",
+    "degraded": false,
+    "generation_called": true,
+    "citations": 4,
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论仅将E1-E4所述症状作为候选方向排查线索，并明确声明不是现场确诊、不能当作疾病概率或风险等级，与各证据的purpose=candidate_assessment_only、transfer_review=symptom_comparison_only及applicability一致，未超出引用证据范围。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对E1-E4的转述与原文一致：E1为一般果树缺铁性黄叶症状且注明非金丝小枣确诊依据，E2强调黄绿相间斑驳、单纯黄化不能确定病毒病，E3为枣锈病叶背鉴别线索，E4为枣疯病伴随症状且不能从一张黄叶图推断，均未补造缺失事实。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning所述低置信度视觉线索、用户未提供现场信息、视觉分类分数不等于疾病概率、证据均为transfer_pending/symptom_comparison_only、不能用于本地确诊或用药指导，均与policy.answer_scope=candidate_assessment及证据metadata一致，未将候选方向写成确诊或概率。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅给出按E1-E4症状特征进行观察核验的方向，并明确不能据此确诊或用药、需结合现场复核，未推荐药名、剂量、施药周期或生产操作，符合candidate_assessment模式限制。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  {
+    "case": "bruised",
+    "class": "bruised",
+    "status": "preliminary",
+    "degraded": false,
+    "generation_called": true,
+    "citations": 1,
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论所述内容与E1原文一致：室内离体条件下菌1、菌2、菌3单接和混接均可导致金丝小枣病果发病并表现典型症状，刺伤接种发病率高于无伤接种；结论同时明确限定不能外推为自然碰伤一定导致腐败或估计实际发病率，符合E1的适用边界（室内离体接种，非实际碰伤或储藏场景验证）。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对证据类型（同行评议室内离体试验）、研究对象（金丝小枣果实）、处理方式（菌1、菌2、菌3单接或混接）、观察指标（发病率、典型症状）及结果（刺伤接种发病率高于无伤接种）的描述均与E1原文一致，且适用边界表述与E1 metadata中的applicability一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning指出刺伤接种为人工离体条件、不能等同于自然碰伤、不能推断实际储藏发病率或特定病害概率，并指出E1未提供采后储藏环境、时间、温度、湿度等条件，这些均为对E1内容与适用边界的合理限定，未引入E1之外的事实。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice未给出具体操作、阈值或用药建议，仅说明当前不能确定碰伤后是否腐败及何种病害，并指出可核验方向（损伤是否自然碰伤、损伤程度、储藏条件）且明确这些无现有证据支持具体操作或阈值，符合candidate_assessment范围限制。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  {
+    "case": "rotten",
+    "class": "rotten",
+    "status": "preliminary",
+    "degraded": false,
+    "generation_called": true,
+    "citations": 4,
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论所述证据来源（沧州金丝小枣地理标志保护区地方标准，涉及干枣采收成熟度、露天存放、待运贮存和运输条件）与E1-E4原文一致；结论明确指出现有证据未提供病原鉴定、自然发病条件或采后腐败因果证据，且仅支持在标准保护区内按干枣采后环节核对条件符合性，不能据此诊断或防治当前果实腐败，均与E1-E4的conditional_standard_guidance用途及证据范围相符，未超出引用证据。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对E1-E4的转述均忠实于原文：E1为干制红枣完熟期采收、鲜食枣脆熟期采收；E2为干枣待运和贮存要求；E3为运输工具清洁干燥、防晒防雨、不得与异味有毒有害物品混运；E4为干枣露天存放选择阴凉通风地点并覆盖。basis同时声明这些是标准保护区内干枣采后环节的条件性要求，不是对果实腐败的病因解释或防治方案，与证据用途一致。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning指出用户视觉分类rotten不是疾病概率或风险等级，现有证据未提供病原、自然发病或采后腐败因果数据，E1-E4均来自DB13/T 5680-2023且保护范围为沧州金丝小枣地理标志保护区，需核实适用性，不能直接作为生产操作指令，也不能解释当前果实腐败原因或替代现场确诊。这些判断均基于E1-E4的原文和元数据，未补造缺失路径或因果。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅说明已引原文的适用边界：E1采收成熟度要求适用于标准保护区内干制红枣或鲜食枣采收环节，E2待运和贮存要求适用于标准保护区内干枣待运和贮存环节，E3运输要求适用于标准保护区内干枣运输环节，E4露天存放要求适用于标准保护区内干枣露天存放环节；并指出需先核实是否位于标准保护区内，现有证据不能据此给出针对当前果实腐败的核验方向或处置建议。未推荐药名、剂量、施药周期或生产操作，符合research模式及证据范围。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  {
+    "case": "fresh",
+    "class": "fresh",
+    "status": "insufficient_evidence",
+    "degraded": true,
+    "generation_called": true,
+    "citations": 4,
+    "grounding": {
+      "passed": null,
+      "method": "verbatim_retrieval_fallback_no_generated_claims",
+      "upstream": {
+        "passed": false,
+        "checks": [
+          {
+            "field": "conclusion",
+            "verdict": "supported",
+            "reason": "结论称现有证据仅来自DB13/T 5680-2023对采后环节的标准要求，未提供新鲜果实外观检测结果或品质判定依据，不能由外观推断采后风险或品质结论；E1为采收成熟度，E2为干枣待运和贮存要求，E3为干枣露天存放要求，E4为运输要求，均未涉及新鲜果实外观与采后风险或品质的关联，且结论明确这些是标准适用范围内的生产管理要求，不能外推为当前新鲜果实已存在风险或品质问题，与引用证据一致。"
+          },
+          {
+            "field": "basis",
+            "verdict": "supported",
+            "reason": "basis逐条准确转述E1至E4内容：E1仅说明采收成熟度，E2为干枣待运和贮存要求，E3为干枣露天存放要求，E4为运输要求，并指出以上证据均未提供新鲜果实外观与采后风险之间的因果或预测关系，未超出引用证据范围。"
+          },
+          {
+            "field": "reasoning",
+            "verdict": "unsupported",
+            "reason": "事实字段没有实际引用证据。"
+          },
+          {
+            "field": "advice",
+            "verdict": "supported",
+            "reason": "advice仅建议在标准适用范围内核对干枣贮存、露天存放和运输要求，并先核实果园是否位于沧州金丝小枣地理标志保护区内；对新鲜果实外观本身明确现有证据不能给出采后风险判断或品质结论，建议结合现场复核和补充信息进一步确认。未推荐农药、剂量、施药周期或生产操作，未将标准要求外推为本地已验证结论，符合证据范围。"
+          }
+        ],
+        "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+      }
+    }
+  },
+  {
+    "case": "low_leaf",
+    "class": "anthracnose",
+    "status": "preliminary",
+    "degraded": false,
+    "generation_called": true,
+    "citations": 2,
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论仅将E1用于确认炭疽病可侵染叶片、明确其病斑描述属果实且不外推，并将E2作为枣锈病叶片候选方向；E1、E2原文分别支持这些表述，且未作本地确诊或用药建议。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对E1、E2的来源、内容、用途限制和地域局限的描述均与所引证据一致；E1确为政府推广资料且标注symptom_comparison_only、transfer_pending，E2确描述叶背淡绿色小点后凸起呈暗黄褐色，且两条均来自北京地区枣树资料。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning中关于视觉分类置信度低、E1果实症状不得转写为叶片症状、E2叶背表现只是鉴别线索、现有证据未覆盖沧州金丝小枣叶片炭疽病具体表现和本地发生情况的判断，均与所引证据及policy的candidate_assessment限制一致。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅提出候选方向排查、核对伴随症状、补充照片信息和请当地植保人员现场复核，未推荐药名、剂量、施药周期或生产操作；对E1、E2的引用限制与证据一致。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  }
+]

@@ -1,0 +1,3052 @@
+[
+  {
+    "request": {
+      "question": "持续高湿会不会影响泊头鸭梨后期储藏？"
+    },
+    "response": {
+      "question": "持续高湿会不会影响泊头鸭梨后期储藏？",
+      "entities": {
+        "crop": "泊头鸭梨",
+        "region": "泊头",
+        "stage": null,
+        "environment": [
+          "持续高湿"
+        ],
+        "disease": [],
+        "intent": "storage"
+      },
+      "canonical_entities": {
+        "crop": "泊头鸭梨",
+        "region": "泊头市",
+        "stage": null,
+        "environment": [],
+        "disease": [],
+        "intent": "storage"
+      },
+      "alignments": [
+        {
+          "field": "crop",
+          "mention": "泊头鸭梨",
+          "status": "matched",
+          "entity_id": "v2:7b265c03320d54ee",
+          "canonical_name": "泊头鸭梨",
+          "candidates": [
+            {
+              "id": "v2:7b265c03320d54ee",
+              "name": "泊头鸭梨",
+              "type": "Crop",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "泊头市"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "region",
+          "mention": "泊头",
+          "status": "matched",
+          "entity_id": "v2:9a8a610336e9e72c",
+          "canonical_name": "泊头市",
+          "candidates": [
+            {
+              "id": "v2:9a8a610336e9e72c",
+              "name": "泊头市",
+              "type": "Region",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "泊头市"
+              ]
+            }
+          ]
+        },
+        {
+          "field": "environment",
+          "mention": "持续高湿",
+          "status": "unmatched",
+          "entity_id": null,
+          "canonical_name": null,
+          "candidates": []
+        }
+      ],
+      "entity_ids": [
+        "v2:7b265c03320d54ee",
+        "v2:9a8a610336e9e72c"
+      ],
+      "requires_clarification": true,
+      "candidate_set": [
+        {
+          "candidate_id": "chunk:PAPER_005_C0018",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 1,
+            "score": 0.6817011833190918,
+            "chunk_id": "PAPER_005_C0018",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "2.1  果实品质变化",
+            "section_id": "PAPER_005_S011",
+            "page": 3,
+            "page_end": 3,
+            "pages": [
+              3
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "窖藏条件下，鸭梨贮藏1 个月时硬度有所增加，此后缓慢降低，至3 个月时最小。窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+            "char_count": 117,
+            "start_offset": 0,
+            "end_offset": 117,
+            "overlap_chars": 0,
+            "text_sha256": "f0aa7485a590138716cba873d482f9d52278f683269967b50d588432fa72cb3a",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 117
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0019",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 2,
+            "score": 0.6408894062042236,
+            "chunk_id": "PAPER_005_C0019",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "2.1  果实品质变化",
+            "section_id": "PAPER_005_S011",
+            "page": 3,
+            "page_end": 3,
+            "pages": [
+              3
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+            "char_count": 79,
+            "start_offset": 38,
+            "end_offset": 117,
+            "overlap_chars": 79,
+            "text_sha256": "02a8cb40ef320fd2cf2ec97dbee33304cd6aae7cff866aef6a683a2bfe9ffd9e",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 79
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:GOV_002_C0004",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 3,
+            "score": 0.6405559778213501,
+            "chunk_id": "GOV_002_C0004",
+            "source_id": "GOV_002",
+            "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+            "section": "四、贮藏中的主要问题及防止措施",
+            "section_id": "GOV_002_S004",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "采收期",
+              "储藏期"
+            ],
+            "evidence_level": "C",
+            "source_type": "government",
+            "year": 2004,
+            "source_file_sha256": "c58d87e3c5cff96112300e941b68df90ff5ec312c8b8363b4b36f0b9c87daef6",
+            "source_url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/browser.html",
+            "text": "1、梨的干耗与库房湿度。梨果水分含量高，贮期失水是主要问题之一。为减少失水需增加贮藏库内湿度。可采用地面洒水或库壁四周及通风道等处挂湿草帘等方法。2、二氧化碳积累与通风换气。库房内二氧化碳高于2%时会出现果心、果肉褐变等病害。因此，加强库房通风换气，减少二氧化碳积累，以及减少乙烯等有害气体的积累，是梨果贮藏的技术关键。所以，要在贮藏的前期和后期每天通风换气1-2小时，中期2-3天换气一次，每次1-2小时；或置于风扇、冷气机下，通过库内气体和循环吸收二氧化碳。该法可减少通风换气带来的干耗。",
+            "char_count": 246,
+            "start_offset": 0,
+            "end_offset": 246,
+            "overlap_chars": 0,
+            "text_sha256": "98cd93252d27d9db6960de74fd4a37ff76a7df0cfd244ae9307d46966f40a55f",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 246
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0020",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 4,
+            "score": 0.63949054479599,
+            "chunk_id": "PAPER_005_C0020",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "2.1  果实品质变化",
+            "section_id": "PAPER_005_S011",
+            "page": 3,
+            "page_end": 3,
+            "pages": [
+              3
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "冷藏时，TA 含量逐渐下降，而窖藏保持较高的TA 含量（表3）。",
+            "char_count": 32,
+            "start_offset": 85,
+            "end_offset": 117,
+            "overlap_chars": 32,
+            "text_sha256": "bbc41272594b3835dcbbe5c1389002729387c40d195008466d1cce270e6b377f",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 32
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:GOV_002_C0003",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 5,
+            "score": 0.6284159421920776,
+            "chunk_id": "GOV_002_C0003",
+            "source_id": "GOV_002",
+            "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+            "section": "三、贮藏方法",
+            "section_id": "GOV_002_S003",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "采收期",
+              "储藏期"
+            ],
+            "evidence_level": "C",
+            "source_type": "government",
+            "year": 2004,
+            "source_file_sha256": "c58d87e3c5cff96112300e941b68df90ff5ec312c8b8363b4b36f0b9c87daef6",
+            "source_url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/browser.html",
+            "text": "1、冷藏。鸭梨冷藏时要注意采用缓慢降温措施，降温过快会引起黑心病，开始库温保持10-12℃，一周后每5-7天降1℃，以后改为每3天降1℃，在35-40天内将库温降到0℃，并保持0℃，不要低于-1℃，鸭梨可贮藏8个月，好果率达80%以上。2、纸箱码垛贮藏。将挑选分级后地果实垫板隔开分屋装入纸箱，每箱装果10千克；也可将每个果用有光纸包好装箱。如果是套袋梨，可直接入箱内。纸箱码垛时留出通风道和作业道，使垛内外温度和气体浓度接近。此法简单易行，效果较好，应用较多。3、塑料袋小包装贮藏。贮藏量较小时可采用0.04-0.06毫米厚的聚乙烯薄膜袋，将果实直接入袋，每袋装15千克，装后不扎口，只是互相交叠，留一定空隙，直立排放在一起即可。4、气调贮藏。用于气调贮藏的酥梨应适当早采，并贮于逐步降温的冷库内，气体成分氧气保持12-13%，二氧化碳应低于1%。",
+            "char_count": 375,
+            "start_offset": 0,
+            "end_offset": 375,
+            "overlap_chars": 0,
+            "text_sha256": "2f928ab9ab196a4f2483a171f72b7182f15256c5f6a813d5c717c680515dda2c",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 375
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0003",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 6,
+            "score": 0.6235016584396362,
+            "chunk_id": "PAPER_005_C0003",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "正文（未识别章节）",
+            "section_id": "PAPER_005_S001",
+            "page": 1,
+            "page_end": 1,
+            "pages": [
+              1
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+            "char_count": 100,
+            "start_offset": 1378,
+            "end_offset": 1478,
+            "overlap_chars": 100,
+            "text_sha256": "7a1afa2b5037e5d64dcc875b1a6a57512bbb760d366b22dadec1cba0eaf0d7ce",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 100
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0008",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 7,
+            "score": 0.6205046772956848,
+            "chunk_id": "PAPER_005_C0008",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "0  引言",
+            "section_id": "PAPER_005_S002",
+            "page": 2,
+            "page_end": 2,
+            "pages": [
+              2
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+            "char_count": 750,
+            "start_offset": 0,
+            "end_offset": 750,
+            "overlap_chars": 0,
+            "text_sha256": "eb01a2981628bfdd4b2a452ce696b59288ab04124d1515f4db8fd001440e244f",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 600,
+              "end": 750
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0041",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 8,
+            "score": 0.6204565763473511,
+            "chunk_id": "PAPER_005_C0041",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "4  结论",
+            "section_id": "PAPER_005_S020",
+            "page": 14,
+            "page_end": 14,
+            "pages": [
+              14
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "冷藏能更好地维持鸭梨果实硬度，保持较高的SSC，适合长期贮藏，以保持果实口感，但挥发性物质较少。相对冷藏而言，窖藏过程中，鸭梨容易软化，但生成更多酯类、醇类等香气物质，拥有较多的香气成分，香味浓郁。相关基因表达分析表明，鸭梨果实香气物质的生成与PbACO2、PbAAT1、PbLOX1 的表达呈正相关关系，而与PbEIN3 呈负相关关系。",
+            "char_count": 169,
+            "start_offset": 0,
+            "end_offset": 169,
+            "overlap_chars": 0,
+            "text_sha256": "c2be3f2494ade3b0af19bf1791b2a6b6aa4f7ad7bc59b785b883ab1319f9a3e4",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 169
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0039",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 9,
+            "score": 0.6192300319671631,
+            "chunk_id": "PAPER_005_C0039",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "3  讨论",
+            "section_id": "PAPER_005_S019",
+            "page": 12,
+            "page_end": 12,
+            "pages": [
+              12
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "这种现象可能与窖藏时果皮衰老较快有关。",
+            "char_count": 19,
+            "start_offset": 1314,
+            "end_offset": 1333,
+            "overlap_chars": 19,
+            "text_sha256": "1470dbe3824f5d49afc44a2208c10c5745944a234562865ca2a0d922ccac821b",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 19
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0007",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 10,
+            "score": 0.6188414096832275,
+            "chunk_id": "PAPER_001_C0007",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "0  引言",
+            "section_id": "PAPER_001_S002",
+            "page": 2,
+            "page_end": 2,
+            "pages": [
+              2
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "【研究意义】鸭梨（Pyrus bretschneideri Rehd.）是我国传统特色主栽梨品种，季产年销，也是我国主要仓储和出口品种[1]。但其对低温和高浓度CO2 敏感，长期贮藏过程中极易发生虎皮病和黑心病等采后生理病害，严重影响果实商品价值，造成巨大经济损失[2-3]。目前，我国鸭梨贮藏主要采用普通冷藏和气调贮藏两种方式，其中普通冷藏（环境温度：-1℃—0℃）一般可贮藏5—6 个月（从9 月至翌年3 月），气调贮藏（商业应用参数：10% O2+1% CO2）一般可贮藏6—8 个月（从9 月至翌年4 月）。整体来看，与市场正常供应需求（至翌年6 月）仍有较大差距[4-5]。研究低O2 浓度对鸭梨采后生理代谢及贮藏品质的影响，对进一步延长鸭梨贮藏和货架供应期具有重要意义。【前人研究进展】气调贮藏是目前国内外商业应用最广泛的果品贮藏技术，与普通冷藏相比，气调贮藏可显著延长苹果和梨采后贮藏和货架供应期。其主要原理是在低温的基础上，通过进一步降低环境氧气含量，来进一步抑制果实采后呼吸和乙烯等生理代谢水平，降低营养损耗，延缓衰老，减轻生理病害发生，进而更好地保持果实贮藏品质[6-8]。近年来，随着气体成分精准监测和控制技术的不断发展，果实气调贮藏中的O2浓度不断降低，从传统的静态低氧气调（O2：2.0%—5.0%），发展到静态超低氧气调（O2＜1.5%）及前期超低氧胁迫气调（O2：0.5%，维持2 周），一直到目前的动态气调（O2：0.3%—0.5%），果实贮藏期不断被延长，果实品质得到了更好的维持[9]。但不同品种及不同栽培管理条件下，梨果实采后生物学特性及内在品质差异较大，对贮藏环境O2 敏感性及耐受度不同。研究发现，‘Beurré d’Anjou’经0.5% O2胁迫处理后，于1.0% O2+0.1% CO2 条件下可正常贮藏9.2 个月[10]；‘Abate Fetel’在0.8% O2+0.45% CO2 动态气调条件下可贮藏7 个月，且未发生果心褐变[11-13]；‘Rocha’在0.5% O2 条件下贮藏8.5 个月，7 d 货架（20℃）后仍较好地保持果实品质，未发生黑心病[14]。",
+            "char_count": 912,
+            "start_offset": 0,
+            "end_offset": 912,
+            "overlap_chars": 0,
+            "text_sha256": "1b527b6e49543e2c76025c62ae614a1458e3a558d83e42c075b6e775b0f9cebd",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 650
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": 0.7,
+            "region": 0.7,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0036",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 11,
+            "score": 0.618367075920105,
+            "chunk_id": "PAPER_005_C0036",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "3  讨论",
+            "section_id": "PAPER_005_S019",
+            "page": 12,
+            "page_end": 12,
+            "pages": [
+              12
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "本研究表明，与冷藏相比，窖藏鸭梨果实的SSC变化较小，TA 含量有所增加，但贮藏3 个月时硬度明显下降，反映出窖藏鸭梨后熟衰老进程快于冷藏。因此，窖藏时间不宜太长。研究表明，低温抑制梨果实香气物质的生成与积累[4,8-10,13,17]。本研究证明，窖藏温度始终高于冷藏。电子鼻分析结果表明，窖藏2 个月时果实挥发性物质较多，其信号明显区别于其他时间，与GC-MS 测得的挥发性物质总量变化相一致。窖藏鸭梨果实的挥发性物质种类和含量较多，其含量高峰出现在贮藏2 个月时，尤其是代表性香气物质—酯类化合物的表现更为明显（表4、表5），其中主要酯类物质有己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯，这些是鸭梨果实的特征性香气成分，与前人的报道相近[18]。相对来说，冷藏鸭梨酯类香气物质较少，这是窖藏果实果香味浓郁的物质基础。果实香气物质的形成与乙烯生成及作用有密切关系[2-3,5-6,16]。如‘苹香’梨酯类物质合成途径中的PuLOX1、PuLOX8、PuADH2 及PuAAT 与乙烯合成途径中的PuACS1、PuACO1、PuACO6 表达密切相关[3]。冷藏抑制‘南果’梨乙烯生物合成和信号转导能力，降低LOX、HPL、AAT 活性及其基因表达，减少香气物质生成[10]。本研究发现，窖藏鸭梨乙烯释放高峰早于冷藏果实，且峰值高于冷藏果实（图1），此时期果实乙烯的大量生成，与PbACO2 表达量上调（图5）有关；同时，窖藏还刺激乙烯受体PbETR2 表达上调，但下调PbEIN3、PbERF 的表达。这说明，窖藏和冷藏影响果实乙烯生成与信号转导过程。果实挥发性物质生成与AAT、LOX、HPL 等基因的表达有关[2]。本研究结果表明，乙酯是鸭梨窖藏过程中生成较多的酯类，并且鸭梨挥发性物质变化模式与PbAAT1、PbLOX1 的基因表达规律类似（图5）。基于鸭梨的酯类总量与醇类物质总量呈显著正相关关系，由此推测，鸭梨果实的香气生成与脂肪酸代谢途径密切相关，经过脂肪酸酰基-CoA的作用，转化为短链酰基-CoAs，继而与醇在AAT催化作用下生成乙酯类等短链酯类[1,23]。",
+            "char_count": 899,
+            "start_offset": 0,
+            "end_offset": 899,
+            "overlap_chars": 0,
+            "text_sha256": "3d9a9b58c619a2aea10a682e4934124a4bfddf52a08f10297d43db2a5d9d2138",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 350
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0013",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 12,
+            "score": 0.6129434108734131,
+            "chunk_id": "PAPER_005_C0013",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "1.2.4  挥发性物质含量测定  准确称取果皮和果肉",
+            "section_id": "PAPER_005_S007",
+            "page": 3,
+            "page_end": 3,
+            "pages": [
+              3
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "粉末冻样，加入适量饱和氯化钠，磁力搅拌，40℃水浴中预热30 min 后，经固相微萃取柱（PDMS/DVB，",
+            "char_count": 54,
+            "start_offset": 0,
+            "end_offset": 54,
+            "overlap_chars": 0,
+            "text_sha256": "9600f92ab312bc051ca2c6cc480044212136fb97a4dec55f43675ed932673dd2",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 54
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:GOV_002_C0002",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 13,
+            "score": 0.6085411906242371,
+            "chunk_id": "GOV_002_C0002",
+            "source_id": "GOV_002",
+            "title": "鸭梨的贮藏保鲜技术（政府林业科普资料）",
+            "section": "二、贮藏保鲜条件",
+            "section_id": "GOV_002_S002",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "采收期",
+              "储藏期"
+            ],
+            "evidence_level": "C",
+            "source_type": "government",
+            "year": 2004,
+            "source_file_sha256": "c58d87e3c5cff96112300e941b68df90ff5ec312c8b8363b4b36f0b9c87daef6",
+            "source_url": "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2616936.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_002/browser.html",
+            "text": "1、温度。不同梨品种要求的贮藏温度有所差异，长期贮藏保鲜的温度大致在-1℃至2℃之间。鸭梨对温度比较敏感，采后需在10-12℃温度下预冷并缓慢降温至0-3℃贮藏，如果采后立即放在0℃条件下贮藏，则会发生生理伤害，导致果心、果肉褐变。2、湿度。影响梨在贮藏期间失水的环境因素主要是湿度，贮藏库的相对湿度应保持在90-95%；梨的失水也与自身因素有关，如果实气孔的多少和张度、蜡质层厚薄、果胶的多少等。3、气体成分。总的来说梨对二氧化碳比较敏感，高二氧化碳会引起梨的生理代谢失调而发生生理病害，使果肉褐变。鸭梨在5-7%的氧气和无二氧化碳的环境下，能有效抑制、降低黑心病的发病率。",
+            "char_count": 288,
+            "start_offset": 0,
+            "end_offset": 288,
+            "overlap_chars": 0,
+            "text_sha256": "33c573a5565c5074f4b18a10db2b5478135434232377f0aea7e1220c05c481d5",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 288
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0019",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 14,
+            "score": 0.6038130521774292,
+            "chunk_id": "PAPER_001_C0019",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "2.1.1  虎皮指数  气调处理可显著降低贮藏和货架",
+            "section_id": "PAPER_001_S012",
+            "page": 4,
+            "page_end": 5,
+            "pages": [
+              4,
+              5
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "下同 Different lowercase letters indicate significant difference at 5% level. The same as below图1  不同O2浓度处理对鸭梨果实贮藏及货架期间黑心指数和虎皮指数的影响Fig. 1  Effects of different oxygen concentrations on browning heart incidence and superficial scald incidence during storage and shelf-life period of Yali pear的中试库跟踪调查，采用3.0%—5.0% O2+0.5%—0.8% CO2参数，鸭梨贮藏期可延长至翌年6 月中下旬，虎皮病平均发生率＜5.0%，且货架期≥7 d。",
+            "char_count": 370,
+            "start_offset": 728,
+            "end_offset": 1098,
+            "overlap_chars": 75,
+            "text_sha256": "2d9af05e2ccf9e14e8e3522b8c5c7a3e9a563012b64ef3bd19b65d7cbc65a65d",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 370
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": 0.7,
+            "region": 0.7,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0024",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 15,
+            "score": 0.6011413931846619,
+            "chunk_id": "PAPER_005_C0024",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "2.3   电子鼻检测结果",
+            "section_id": "PAPER_005_S013",
+            "page": 5,
+            "page_end": 5,
+            "pages": [
+              5
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "下同Different lowercase letters indicate significant difference (P＜0.05). The same as below图1  鸭梨窖藏和冷藏期间呼吸速率和乙烯释放速率变化Fig. 1  Changes of respiration rate and ethylene production rate of Yali pear during cellar and cold storage小的区域。贮藏初期鸭梨气味对应的PC1 特征值最小，冷藏鸭梨试样呈相互交叉分布，位于贮藏初期和窖藏1 月之间，与贮藏初期位置更相近。窖藏鸭梨在PC1上变化范围大，相对应PC1 值由小到大排列分别是：窖藏1 月、窖藏3 月、窖藏2 月（图2）。表明冷藏期间鸭梨气味较初始时变化较小，挥发性成分性质相近；窖藏鸭梨挥发性物质成分变化大，其含量较高，并以贮藏2 月时最高。进一步采用线性判别分析（LDA）表明，不同贮藏时期鸭梨样品均能集中独立分布且不存在相互交叉现象，并且窖藏2 个月时的距离最远，说明此时分离程度最大（图3），这表明电子鼻可有效区分窖藏、冷藏鸭梨的挥发性物质，反映出贮藏方式显著影响果实的挥发性物质含量。电子鼻传感器响应雷达图分析表明，由雷达图中心向外扩展始于贮藏初期，之后冷藏1 个月、2 个月、",
+            "char_count": 577,
+            "start_offset": 938,
+            "end_offset": 1515,
+            "overlap_chars": 0,
+            "text_sha256": "3f33291f9105897cfbc050172f9f61e6ff372c70fb33c2255e13c97a2e1b3650",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 577
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0022",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 16,
+            "score": 0.5980077981948853,
+            "chunk_id": "PAPER_005_C0022",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "2.2  呼吸速率和乙烯释放速率变化",
+            "section_id": "PAPER_005_S012",
+            "page": 4,
+            "page_end": 4,
+            "pages": [
+              4
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "两种贮藏方式下，鸭梨果实呼吸速率均表现为逐渐上升趋势，且同期窖藏果实显著高于冷藏果实；果实乙烯释放速率均呈现先上升后下降的趋势，其中果实窖藏1 个月时达到高峰，且峰值明显高于同期冷藏果实，果实冷藏2 个月时达到峰值；贮藏3 个月时，二者的乙烯释放速率差异不显著（图1）。",
+            "char_count": 135,
+            "start_offset": 0,
+            "end_offset": 135,
+            "overlap_chars": 0,
+            "text_sha256": "c73d71cb55c0f1ff8b47c3299f67958c3672157972be36e4f818b30bfc020193",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 135
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0002",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 17,
+            "score": 0.5972868204116821,
+            "chunk_id": "PAPER_001_C0002",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "正文（未识别章节）",
+            "section_id": "PAPER_001_S001",
+            "page": 1,
+            "page_end": 1,
+            "pages": [
+              1
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+            "char_count": 368,
+            "start_offset": 863,
+            "end_offset": 1231,
+            "overlap_chars": 0,
+            "text_sha256": "27d144ff00bf76edc72cbb385bc7f30c4f0aa9356adcb575d51fcb9e7b17172c",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 368
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": 0.7,
+            "region": 0.7,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0023",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 18,
+            "score": 0.5969796180725098,
+            "chunk_id": "PAPER_005_C0023",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "2.3   电子鼻检测结果",
+            "section_id": "PAPER_005_S013",
+            "page": 4,
+            "page_end": 5,
+            "pages": [
+              4,
+              5
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "PCA 结果表明，电子鼻检测数据可降维成主成分1（PC1）和主成分2（PC2）。其中PC1 贡献率97.75%，为影响各样品的主要因素。根据图形分布将坐标图分为两个区域，其中贮藏初期、冷藏鸭梨处于PC1 值较21 期岳盈肖等：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析表3  鸭梨窖藏、冷藏期硬度、可溶性固形物和可滴定酸含量变化Table 3  Changes of firmness, SSC and TA content of Yali pear during cellar and cold storage condition硬度 Firmness (kg·cm-2)可溶性固形物 SSC (%)可滴定酸 TA (%)贮藏时间（月）Storage time (Month)窖藏Cellar storage冷藏Cold storage窖藏Cellar storage冷藏Cold storage窖藏Cellar storage冷藏Cold storage 6.25±0.28bc 6.25±0.28bc 12.81±0.40d 12.81±0.40d 1.32±0.03c 1.32±0.03c 6.81±0.05a 6.21±0.24bc 13.73±0.22abc 13.35±0.09bcd 1.50±0.02a 1.14±0.02d 6.49±0.13ab 6.17±0.26bc 13.15±0.31cd 13.86±0.37ab 1.38±0.01b 1.10±0.02de 5.75±0.25c 6.53±0.12ab 13.80±0.52abc 14.24±0.31a 1.49±0.03a 1.09±0.03f不同小写字母表示差异显著（P＜0.05）。下同Different lowercase letters indicate significant difference (P＜0.05). The same as below呼吸速率Respiration rate (mg CO2·kg-1 FW·h-1)乙烯释放速率Ehylene production rate (μL·kg-1 FW·h-1)不同小写字母表示差异显著（P＜0.05）。",
+            "char_count": 938,
+            "start_offset": 0,
+            "end_offset": 938,
+            "overlap_chars": 0,
+            "text_sha256": "4fea8528d64c3b7b4fab49aa69ded318e39728f9c72bef134003849dbbac757b",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 350
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0002",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 19,
+            "score": 0.5943279266357422,
+            "chunk_id": "PAPER_005_C0002",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "正文（未识别章节）",
+            "section_id": "PAPER_005_S001",
+            "page": 1,
+            "page_end": 1,
+            "pages": [
+              1
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+            "char_count": 558,
+            "start_offset": 920,
+            "end_offset": 1478,
+            "overlap_chars": 0,
+            "text_sha256": "7d5507b9eb4a1d121eddaaae49e3889bde1c90e7924cb0f9caed6c9ffdb27851",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 350
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0027",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 20,
+            "score": 0.5934756994247437,
+            "chunk_id": "PAPER_005_C0027",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "2.4  挥发性物质组分变化",
+            "section_id": "PAPER_005_S015",
+            "page": 6,
+            "page_end": 6,
+            "pages": [
+              6
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": " The same as below图2  基于电子鼻的窖藏及冷藏鸭梨挥发性成分PCA 结果Fig. 2  PCA result of volatile components based on electronic nose in Yali pear during cellar and cold storage主成分1 Main axis (Variance: 65.40%)冷藏-3 Cold storage-3冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3 -460 -450 -440 -430 -420 -410 -400 -390 -1.130 -1.135 -1.140 -1.145 -1.150 -1.155 -1.160 -1.165 -1.170图3  基于电子鼻窖藏及冷藏鸭梨挥发性成分LDA 分析Fig. 3  LDA analysis of volatile components based on electronic nose in Yali pear during cellar and cold storage condition就鸭梨果皮而言，贮藏期内，鸭梨果皮中挥发性物质总量呈现先升高后降低的规律，且窖藏果皮明显高于同期冷藏果皮，其中差别比较明显的香气物质为酯类、醇类化合物，其含量高峰出现在贮藏2 个月，分别高于冷藏果实53.11、56.22 倍。具体成分表现为，窖藏鸭梨果皮中检出36 种成分，含量较高的物质为酯类、醛类、醇类、萜类，其中酯类为主要香气物质。酯类主要是乙酯和甲酯类，其中己酸乙酯、辛酸乙酯、丁酸乙酯、乙酸己酯、乙酸辛酯为主要成分，并且2-己烯酸乙酯、庚酸乙酯和(E, Z)-2,4-癸二烯酸乙酯等为窖藏过程中特有的酯类物质；醛类主要为E-2-己烯醛，以及新生成的(E, Z)-2,4-癸二烯醛；醇类主要为Z-4-癸烯醇、正辛醇和正癸醇；萜类主要是α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）。",
+            "char_count": 907,
+            "start_offset": 783,
+            "end_offset": 1690,
+            "overlap_chars": 0,
+            "text_sha256": "ed4bd5916234ca8077d4560a62869f454db85edb473c1cc2b543d18b1748bca7",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 650
+            }
+          },
+          "warnings": [
+            "region:unknown"
+          ],
+          "features": {
+            "crop": 0.7,
+            "region": 0,
+            "stage": null
+          }
+        }
+      ],
+      "channels": {
+        "neo4j": {
+          "status": "blocked_alignment",
+          "count": 0,
+          "truncated": false
+        },
+        "faiss": {
+          "status": "ok",
+          "count": 20
+        }
+      },
+      "graph_sources": [],
+      "excluded_documents": [],
+      "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+      "mode": "research",
+      "notice": "候选集尚未排序或生成答案；知识路径保持原方向，不等于已证实的因果链。"
+    }
+  },
+  {
+    "request": {
+      "question": "黑星病的影响和防控",
+      "entities": {
+        "crop": null,
+        "region": null,
+        "stage": null,
+        "environment": [],
+        "disease": [
+          "黑星病"
+        ],
+        "intent": "risk_analysis"
+      }
+    },
+    "response": {
+      "question": "黑星病的影响和防控",
+      "entities": {
+        "crop": null,
+        "region": null,
+        "stage": null,
+        "environment": [],
+        "disease": [
+          "黑星病"
+        ],
+        "intent": "risk_analysis"
+      },
+      "canonical_entities": {
+        "crop": null,
+        "region": null,
+        "stage": null,
+        "environment": [],
+        "disease": [
+          "梨黑星病"
+        ],
+        "intent": "risk_analysis"
+      },
+      "alignments": [
+        {
+          "field": "disease",
+          "mention": "黑星病",
+          "status": "matched",
+          "entity_id": "v2:435c70a2381d781d",
+          "canonical_name": "梨黑星病",
+          "candidates": [
+            {
+              "id": "v2:435c70a2381d781d",
+              "name": "梨黑星病",
+              "type": "Disease",
+              "crop": [
+                "梨"
+              ],
+              "region": [
+                "AU-VIC",
+                "US-CA"
+              ]
+            }
+          ]
+        }
+      ],
+      "entity_ids": [
+        "v2:435c70a2381d781d"
+      ],
+      "requires_clarification": false,
+      "candidate_set": [
+        {
+          "candidate_id": "path:v2:e0301",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0301",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Comments on the Disease",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:e690009b65b14799",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:e690009b65b14799"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "梨黑星病初侵染"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1
+        },
+        {
+          "candidate_id": "path:v2:e0302",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 梨黑星病二次传播",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0302",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Comments on the Disease",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:d4c36f9a428de9eb",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:d4c36f9a428de9eb"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "梨黑星病二次传播"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1
+        },
+        {
+          "candidate_id": "path:v2:e0306",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:588027983c17920f",
+                "v2:1df599bacfb4d6d5"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 采前晚期黑星病感染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "vic"
+              ],
+              "id": "v2:e0306",
+              "region": "AU-VIC",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "locator": "Symptoms",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:5f530239fadc2164",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:5f530239fadc2164"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "采前晚期黑星病感染"
+          ],
+          "source_ids": [
+            "vic"
+          ],
+          "hop_count": 1
+        },
+        {
+          "candidate_id": "path:v2:e0192",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 果面橄榄黑色绒状病斑",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0192",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:b1c159f2cd457052",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:b1c159f2cd457052"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "果面橄榄黑色绒状病斑"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1
+        },
+        {
+          "candidate_id": "path:v2:e0193",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 叶片皱缩扭曲",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0193",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:371918a8ef1d8ec5",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:371918a8ef1d8ec5"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "叶片皱缩扭曲"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1
+        },
+        {
+          "candidate_id": "path:v2:e0194",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 早期侵染后果实畸形",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0194",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:ac1b0c11cd15b965",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:ac1b0c11cd15b965"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "早期侵染后果实畸形"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1
+        },
+        {
+          "candidate_id": "path:v2:e0195",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_SYMPTOM → 晚期针尖状黑斑",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0195",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "locator": "Symptoms and Signs / Damage",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:1c3120df3c1800d1",
+              "relation": "HAS_SYMPTOM",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:1c3120df3c1800d1"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "晚期针尖状黑斑"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1
+        },
+        {
+          "candidate_id": "path:v2:e0303",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0303",
+              "conditions": [
+                "仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:341ded85dd07d276",
+              "relation": "CONTROLLED_BY",
+              "hop": 1
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:341ded85dd07d276"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "黑星病初侵染预防"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 1
+        },
+        {
+          "candidate_id": "path:v2:e0301/v2:e0273",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — HAS_PROCESS → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0301",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Comments on the Disease",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:e690009b65b14799",
+              "relation": "HAS_PROCESS",
+              "hop": 1
+            },
+            {
+              "kind": "mechanism",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病初侵染 — PROMOTES → 梨黑星病二次传播",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0273",
+              "region": "US-CA",
+              "conditions": [
+                "初侵染产生次生孢子，并再次遇到湿润条件；不是储藏腐烂结论"
+              ],
+              "locator": "Comments on the Disease",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:e690009b65b14799",
+              "target": "v2:d4c36f9a428de9eb",
+              "relation": "PROMOTES",
+              "hop": 2
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:e690009b65b14799",
+            "v2:d4c36f9a428de9eb"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "梨黑星病初侵染",
+            "梨黑星病二次传播"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2
+        },
+        {
+          "candidate_id": "path:v2:e0303/v2:e0304",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0303",
+              "conditions": [
+                "仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:341ded85dd07d276",
+              "relation": "CONTROLLED_BY",
+              "hop": 1
+            },
+            {
+              "kind": "normative",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "黑星病初侵染预防 — INTERVENTION_FOR → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0304",
+              "region": "US-CA",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:341ded85dd07d276",
+              "target": "v2:e690009b65b14799",
+              "relation": "INTERVENTION_FOR",
+              "hop": 2
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:341ded85dd07d276",
+            "v2:e690009b65b14799"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "黑星病初侵染预防",
+            "梨黑星病初侵染"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 2
+        },
+        {
+          "candidate_id": "path:v2:e0303/v2:e0304/v2:e0273",
+          "kind": "graph_path",
+          "channel": "neo4j",
+          "edges": [
+            {
+              "kind": "fact",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病 — CONTROLLED_BY → 黑星病初侵染预防",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0303",
+              "conditions": [
+                "仅表示预防初侵染的管理目标；不迁移国外农药品种、剂量或登记结论"
+              ],
+              "region": "US-CA",
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:435c70a2381d781d",
+              "target": "v2:341ded85dd07d276",
+              "relation": "CONTROLLED_BY",
+              "hop": 1
+            },
+            {
+              "kind": "normative",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "黑星病初侵染预防 — INTERVENTION_FOR → 梨黑星病初侵染",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0304",
+              "region": "US-CA",
+              "conditions": [
+                "仅限原资料适用范围；需要结合品种、批次及实际条件复核"
+              ],
+              "evidence_level": "B",
+              "locator": "Management",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:341ded85dd07d276",
+              "target": "v2:e690009b65b14799",
+              "relation": "INTERVENTION_FOR",
+              "hop": 2
+            },
+            {
+              "kind": "mechanism",
+              "valid_from": "",
+              "stage_ids": [
+                "v2:a8677216bc774e82"
+              ],
+              "scope": "general_pear",
+              "valid_to": "",
+              "claim": "梨黑星病初侵染 — PROMOTES → 梨黑星病二次传播",
+              "review_status": "transfer_pending",
+              "evidence_ids": [
+                "uc_pear_scab"
+              ],
+              "id": "v2:e0273",
+              "region": "US-CA",
+              "conditions": [
+                "初侵染产生次生孢子，并再次遇到湿润条件；不是储藏腐烂结论"
+              ],
+              "locator": "Comments on the Disease",
+              "evidence_level": "B",
+              "dataset": "pear_evidence_v2",
+              "crop": "v2:10c1ff756bbf8954",
+              "source": "v2:e690009b65b14799",
+              "target": "v2:d4c36f9a428de9eb",
+              "relation": "PROMOTES",
+              "hop": 2
+            }
+          ],
+          "node_ids": [
+            "v2:435c70a2381d781d",
+            "v2:341ded85dd07d276",
+            "v2:e690009b65b14799",
+            "v2:d4c36f9a428de9eb"
+          ],
+          "node_names": [
+            "梨黑星病",
+            "黑星病初侵染预防",
+            "梨黑星病初侵染",
+            "梨黑星病二次传播"
+          ],
+          "source_ids": [
+            "uc_pear_scab"
+          ],
+          "hop_count": 3
+        },
+        {
+          "candidate_id": "chunk:GOV_001_C0001",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 1,
+            "score": 0.5152307748794556,
+            "chunk_id": "GOV_001_C0001",
+            "source_id": "GOV_001",
+            "title": "鸭梨黑星病夏季如何防治（农业农村局公开科普）",
+            "section": "网页正文",
+            "section_id": "GOV_001_S001",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [],
+            "evidence_level": "B",
+            "source_type": "government",
+            "year": 2017,
+            "source_file_sha256": "939dfb9a817b8ac62d0dcd82534fd95a10b3da7daa8c532c45c44e327f00c9d7",
+            "source_url": "https://www.huaihua.gov.cn/nyncj/c108787/201701/42df409e86984028bf763bd70bccab13.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/government/GOV_001/browser.html",
+            "text": "梨黑星病又叫梨疮痂病，是梨树的主要病害。当前正值夏季，高温高湿有利于梨黑星病的发生。梨黑星病病原菌借雨水在梨园中扩散侵染，主要危害叶片、果实。叶片染病后，在叶背面产生圆形、椭圆形或不规则形病斑，病斑沿叶脉扩展，产生辐射状黑色霉状物，严重时整个叶背面布满黑霉，引起早期落叶。果实感病后，在果实表面产生一些大小不等的圆形病斑，病斑硬化后，表面粗糙，凹陷龟裂，呈疮痂状，病部伤口遇雨水极易被霉菌感染而腐烂。防治方法 1.农业防治。发现病叶、病果及时摘除，集中烧毁或深埋，防止病菌的扩散和蔓延。雨后及时排除积水，铲除果园内杂草，降低果园内潮湿度。结合夏剪，及时把直立枝、徒长枝、交叉枝从基部剪除，增加果园内通风透光性，改善果园小气候。2.药剂防治。雨前及时喷药预防，雨后及时喷药防治，喷药后遇雨及时补喷。用药可选用40%杜邦福星10000倍，10%苯醚甲环唑3000倍，80%汉邦多菌灵2000倍，可杀得叁仟2000倍，以上农药7-10天喷1次，连喷3-4次。各种杀菌剂要交替使用，以免产生抗药性。喷药时要注意喷布均匀，树冠上下，树膛内外，都要沾药，特别注意叶片的背面要喷上药。",
+            "char_count": 485,
+            "start_offset": 0,
+            "end_offset": 485,
+            "overlap_chars": 0,
+            "text_sha256": "0298c7349bc8166ef957d2095eb0318dec6c6e1454c617d646cc13e6769df0a2",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 485
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:UNI_001_C0001",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 2,
+            "score": 0.4738953411579132,
+            "chunk_id": "UNI_001_C0001",
+            "source_id": "UNI_001",
+            "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+            "section": "网页正文",
+            "section_id": "UNI_001_S001",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "梨"
+            ],
+            "region": [],
+            "applicable_stages": [],
+            "evidence_level": "B",
+            "source_type": "university_material",
+            "year": 2023,
+            "source_file_sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39",
+            "source_url": "https://www.zwbch.com/changshi/view_14.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+            "text": "01黑星病梨黑星病是一种检疫性病害，病原为子囊菌亚门黑星菌属的纳雪星菌，可危害梨树地上部大部分幼嫩组织，并以叶片、果实为主。叶片受害，先在叶背面的主脉两侧与支脉之间产生多角形或圆形的淡黄色病斑，没有明显的边缘，随后病斑会遍布整个叶片；在叶背面产生辐射状霉层，病情严重时造成大量落叶。幼果发病为畸形果，会形成不规则的淡黄色至褐色病斑，且病斑上会长出黑色的霉层；成长期果实发病不畸形，但病斑部会凹陷并产生星状龟裂。叶柄、果梗症状相似，出现黑色椭圆形的凹陷斑，病部覆盖黑霉、缢缩、失水干枯，致叶片或果实早落。防治时注意加强冬季清园，对病叶、病枝、病果等集中处理，并喷广谱性杀菌剂降低病原菌。早春梨芽膨大期起开始结合药剂防治，花前花后是关键期，可选用苯醚甲环唑、已唑醇、氟硅唑、异菌脲等药剂。02轮纹病梨树轮纹病菌是弱寄生菌，具有发病快、危害大等特点，主要侵害枝干、果实，在叶片上也偶有发生。枝干受害，逐步形成马鞍状病斑，树皮变得粗糙；果实受害，初产生水渍状、圆形、浅褐色小斑，后扩大成浅褐色至红褐色的同心轮纹斑；叶片受害，生成较大褐色近圆形病斑，常伴有轮纹。由于是弱寄生病害，在预防上提升树势，压低病原是关键。可增施有机肥、活土君复合菌剂，生长期淋施海精灵生物刺激剂，冬季清园时应刮除枝干老翘皮，剪除病枯枝，集中烧毁。药剂防治掌握在落花后至套袋前，特别是雨前雨后，药剂可选择代森锰锌、戊唑·多菌灵、代森联、吡唑·代森联等。03锈病梨锈病主要对植株叶片、新梢和幼果有较大危害。叶片受害，起初在叶面上出现淡黄色且带有光泽的小斑点，后扩展为近圆形病斑。幼果受害，初期病斑大体与叶片上的相似，病部稍凹陷，病斑上密生橙黄色的小粒点。后期在同一部位产生灰黄色毛状物，即锈子器。病果生长停滞，往往畸形早落。防治时要注意清除转主寄主如松、柏等；高温天气，要适时浇水，增加湿度，破坏发病条件；在萌芽至展叶的25天内进行喷药保护，药剂可选择三唑醇、苯醚甲环唑、嘧菌酯等。",
+            "char_count": 822,
+            "start_offset": 0,
+            "end_offset": 822,
+            "overlap_chars": 0,
+            "text_sha256": "329ce4393f558a8cb1f0a866b36458abc5a57aa84a7c547bc1b903d3a4a0dc50",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 350
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0026",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 3,
+            "score": 0.4351702928543091,
+            "chunk_id": "PAPER_001_C0026",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "3.1  环境O2浓度与虎皮病和黑心病发生的关系",
+            "section_id": "PAPER_001_S018",
+            "page": 8,
+            "page_end": 9,
+            "pages": [
+              8,
+              9
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "虎皮病是梨采后贮藏过程中一种主要的生理病害[26]。低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累，降低乙烯释放量，有效降低α-法尼烯及其氧化产物共轭三烯醇的积累，进而抑制虎皮病的发生[27-28]。近年来，超低氧气调贮藏技术（O2＜1.0%）和动态气调贮藏技术（O2＜0.6%）快速发展，与传统气调贮藏相比，更低的贮藏环境O2 浓度能更好地控制苹果和梨采后虎皮病的发生[29-30]。本研究中，5.0%及以下O2处理显著降低了鸭梨长期贮藏过程中虎皮病的发生，货架期显著延长，其中1.0%—3.0% O2 处理防控虎皮病效果最佳。可见，进一步降低贮藏环境氧气浓度可更好地维持鸭梨果实外观品质，延长货架期，这与前人研究结论一致。黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变[31-32]。低氧胁迫处理可通过调控氧化代谢平衡进而降低衰老相关生理病害的发生[33-34]。本研究中，采用阶段降温结合延迟气调贮藏均显著降低了贮藏和货架期间果实黑心病的发生，相对更低的O2浓度更好地控制了贮藏后期（270 d）果心褐变指数，但过低的氧气浓度处理（1.0% O2）一定程度上增加了鸭梨果实贮藏末期黑心病风险。",
+            "char_count": 537,
+            "start_offset": 0,
+            "end_offset": 537,
+            "overlap_chars": 0,
+            "text_sha256": "b4f0a52e6d6b72704339213d899d8d2bf8471117660696f2990935fe228d0913",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 537
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:UNI_001_C0002",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 4,
+            "score": 0.41332435607910156,
+            "chunk_id": "UNI_001_C0002",
+            "source_id": "UNI_001",
+            "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+            "section": "网页正文",
+            "section_id": "UNI_001_S001",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "梨"
+            ],
+            "region": [],
+            "applicable_stages": [],
+            "evidence_level": "B",
+            "source_type": "university_material",
+            "year": 2023,
+            "source_file_sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39",
+            "source_url": "https://www.zwbch.com/changshi/view_14.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+            "text": "病果生长停滞，往往畸形早落。防治时要注意清除转主寄主如松、柏等；高温天气，要适时浇水，增加湿度，破坏发病条件；在萌芽至展叶的25天内进行喷药保护，药剂可选择三唑醇、苯醚甲环唑、嘧菌酯等。04黑斑病该病主要危害果实、叶和新梢。叶片受害，叶面和叶背生成黑色圆形小斑，随着病情加重病斑逐步扩大，中部灰白色。新梢受害，症状与叶片相似，但凹陷较明显，病斑欠规则，病斑集中处易断裂。果实受害，初生成黑色斑点，后期易裂果。防治时注意提升树势，提早套袋，保护果实。幼果期防控，药剂可选择代森铵、醚菌酯、苯甲嘧菌酯等。05炭疽病主要危害果实，多在生长中后期发病。病斑发黑凹陷，有轮纹，湿度大时有粉红色黏质物。药剂可选择甲硫·戊唑醇、咪鲜胺、溴菌腈等，要注意前期的清园及初侵染期的防治，否则进入雨季后，病害传播极快，难以控制。06褐斑病主要危害叶片，症状分同心轮纹型、针芒型、混合型等多种类型，一般为害树冠下部或内膛的叶片，新叶很少发病，病叶极易脱落。多雨高温会诱发该病的大发生，5月中旬开始防控。药剂可选择氟环唑、戊唑醇等，发病重的园子可配伍多抗锰锌。同时注意合理修剪，改善光照条件；秋、冬季清扫果园内落叶，树上残留的病枝、病叶要深埋或烧毁。07腐烂病有溃疡、枝枯和表面溃病3种类型。溃疡型在早春树干、枝树皮上出现红褐色、水渍状、微隆起、圆至长圆形病斑；用手压凹陷，流出黄褐色汁液, 有酒糟味，后病皮长出小黑点。枝枯型在春季2~5年生枝上出现病斑，边缘不清晰，不呈水渍状，后失水干枯，密生小黑点。表面溃疡型在夏秋落皮层上出现稍带红褐色、稍湿润的小溃疡斑。边缘不整齐, 腐烂, 后干缩呈饼状。三类中溃疡型发生多，此类应及时刮除病部，涂抹氟硅唑、戊唑醇等药剂保护，降低复发率。同时注意提升树势，科学用肥，增施有机肥、活土君复合菌剂、科学控产等。08褐腐病只危害梨树果实，一般近成熟期发病，初为暗褐色病斑，逐步扩大，病情发展迅速，几天全果腐烂，病斑上还着生黄褐色绒毛。",
+            "char_count": 822,
+            "start_offset": 729,
+            "end_offset": 1551,
+            "overlap_chars": 93,
+            "text_sha256": "1696ea3979aebf0fb9931a2f3b476c2355e88c8cafc0e9ef88624acaaa8e3d98",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 350
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:UNI_001_C0003",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 5,
+            "score": 0.3948717713356018,
+            "chunk_id": "UNI_001_C0003",
+            "source_id": "UNI_001",
+            "title": "梨树9大病害全方面分析：黑星病（河北农业大学相关教学站点）",
+            "section": "网页正文",
+            "section_id": "UNI_001_S001",
+            "page": null,
+            "page_end": null,
+            "pages": [],
+            "page_basis": "web article; no page number",
+            "crop": [
+              "梨"
+            ],
+            "region": [],
+            "applicable_stages": [],
+            "evidence_level": "B",
+            "source_type": "university_material",
+            "year": 2023,
+            "source_file_sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39",
+            "source_url": "https://www.zwbch.com/changshi/view_14.html",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+            "text": "同时注意提升树势，科学用肥，增施有机肥、活土君复合菌剂、科学控产等。08褐腐病只危害梨树果实，一般近成熟期发病，初为暗褐色病斑，逐步扩大，病情发展迅速，几天全果腐烂，病斑上还着生黄褐色绒毛。落花后、成熟前注意用药预防保护，可选择噻菌灵、腈苯唑、嘧菌酯等药剂。09干腐病主要危害其果实、枝条。枝条感病时皮层出现长条形的黑褐色病斑，略凹陷，质地较硬，一般病斑不会扩展到木质部；当病斑扩展至枝干半圈以上时, 其上部枯死。果实染病，果面产生轮纹斑，随后果实腐烂。由于枝条徒长、土壤黏重、排水不良的园子该病发生较重，因此加强园区管理如科学修剪、合理挂果、加强肥水等是预防的关键。枝干感病的刮除后用溃腐灵涂抹，发芽前可喷施多菌灵、福美双等减少病原。",
+            "char_count": 318,
+            "start_offset": 1456,
+            "end_offset": 1774,
+            "overlap_chars": 95,
+            "text_sha256": "bbdc9850c855a273d5a0953b114b1f174d9364f0e9bbe8b6234520afabf0e113",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 318
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:STD_002_C0011",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 6,
+            "score": 0.3850736618041992,
+            "chunk_id": "STD_002_C0011",
+            "source_id": "STD_002",
+            "title": "DB13/T 6276-2026 梨产业链质量控制技术规程",
+            "section": "10 病虫害综合防治",
+            "section_id": "STD_002_S011",
+            "page": 6,
+            "page_end": 6,
+            "pages": [
+              6
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "梨"
+            ],
+            "region": [
+              "河北省"
+            ],
+            "applicable_stages": [],
+            "evidence_level": "A",
+            "source_type": "standard",
+            "year": 2026,
+            "source_file_sha256": "02b10a7ddcd05efd5af3ff3e6e408db01b347fa5d1f007da092521d9dd805bcd",
+            "source_url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=52F0BA672F168C39E06397BE0A0A9584",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_002/original.pdf",
+            "text": "按照NY/T 2157的规定执行。",
+            "char_count": 17,
+            "start_offset": 0,
+            "end_offset": 17,
+            "overlap_chars": 0,
+            "text_sha256": "98a14d8b56a53182e3f802d626164edf9999eba07926e3d5e7a5329b0b74bcd5",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 17
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0020",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 7,
+            "score": 0.37047088146209717,
+            "chunk_id": "PAPER_001_C0020",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "2.1.2  黑心指数发生情况  气调处理可显著降低鸭",
+            "section_id": "PAPER_001_S013",
+            "page": 5,
+            "page_end": 5,
+            "pages": [
+              5
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "梨贮藏150 d 和210 d 后果实黑心指数（P＜0.05）；贮藏270 d 及货架7 d，各处理果实黑心指数快速上升，从高到低依次为：CK（40%）＞10.0% O2（30.63%）＞5.0% O2（30.51%）＞1.0% O2（26.87%）＞3.0% O2（20.17%）＞2.0% O2（19.34%），其中，1.0% O2 处理果实黑心指数显著高于2.0% O2 和3.0% O2。3 年的中试库黑心病跟踪调查表明，缓慢降温结合延迟气调（降温后30—35 d），采用3.0%—5.0% O2+0.5%—0.8% CO2 处理，贮藏至翌年6 月中下旬，黑心病平均发生率＜3.0%，且货架期≥7 d。",
+            "char_count": 305,
+            "start_offset": 0,
+            "end_offset": 305,
+            "overlap_chars": 0,
+            "text_sha256": "de6e9ab6cc422d69a3d36574594dc8cb0002467b87e6c25010d8cad91f44f6e2",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 305
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_003_C0013",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 8,
+            "score": 0.3488306999206543,
+            "chunk_id": "PAPER_003_C0013",
+            "source_id": "PAPER_003",
+            "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+            "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+            "section_id": "PAPER_003_S004",
+            "page": 5,
+            "page_end": 5,
+            "pages": [
+              5
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "采收期",
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2010,
+            "source_file_sha256": "5821f452a5924deb1670e66cc7d03f1e7287e9c91f999b388dbd1c675460a55c",
+            "source_url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/original.pdf",
+            "text": "陈昆松等[7]研究发现，在猕猴桃果实后熟软化过程中的LOX 活性与膜脂脂肪酸组分的变化一致，随着LOX活性的增高，底物亚油酸和亚麻酸被消耗，并启动膜脂过氧化作用。本试验结果表明鸭梨果实贮藏前期，LOX活性与呼吸、乙烯高峰同步，与褐变规律相似，说明了LOX 与鸭梨的成熟衰老及褐变有一定关系。结论1）缓慢降温提高了早采鸭梨果心的亚麻酸和亚油酸含量及U/S 值，降低了果心的膜相变温度，抑制了LOX活性的升高，明显抑制了鸭梨果心不饱和脂肪酸的降解和膜脂过氧化，从而抑制了果心褐变。2）推迟采收提高了鸭梨果心的U/S 值，降低了膜相变温度，但降温方法对相变温度影响不明显。缓慢降温也提高了晚采鸭梨果心的亚麻酸和亚油酸含量，但由于采收成熟度较高，采后衰老较快，贮藏后期LOX 活性快速升高，氧化了更多的不饱和脂肪酸，从而使得膜脂过氧化加剧，导致了晚采果更容易褐变。[参考文献] [1]中国科学院北京植物研究所．鸭梨黑心病的研究Ⅰ：温度对黑心病的影响[J]．植物学报，1974，16(2)：140－143．Peking Institute of Botany of Academia Sinica. Studies on the brown core of the pear fruitⅠ: The effect of temperature on the brown core[J]. Acta Botanica Scinca, 1974, 16(2): 140－143. (in Chinese with English abstract) [2]梁丽雅，闫师杰，陈计峦，等．鸭梨采后果实褐变的主要因素研究[J]．食品与机械，2008，24(3)：48－51．Liang Liya, Yan Shijie, Chen Jiluan, et al.",
+            "char_count": 770,
+            "start_offset": 4543,
+            "end_offset": 5313,
+            "overlap_chars": 0,
+            "text_sha256": "b4c6ff7ab22ecbf97a12379b4ef6cbb0abdcf2777d5f5055785a372910e664a0",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 650
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:STD_003_C0017",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 9,
+            "score": 0.3451085686683655,
+            "chunk_id": "STD_003_C0017",
+            "source_id": "STD_003",
+            "title": "DB13/T 6338-2026 盐碱地梨栽培技术规程",
+            "section": "10 病虫害综合防控",
+            "section_id": "STD_003_S017",
+            "page": 7,
+            "page_end": 7,
+            "pages": [
+              7
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "梨"
+            ],
+            "region": [
+              "河北省"
+            ],
+            "applicable_stages": [],
+            "evidence_level": "A",
+            "source_type": "standard",
+            "year": 2026,
+            "source_file_sha256": "a369ec07fcb5b82a9c8bd46ddffc72856c1218f06e10b5a655efa1169fae5335",
+            "source_url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=598B66F9F87DC97DE06397BE0A0A7EC3",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_003/original.pdf",
+            "text": "按NY/T 2157的规定执行。",
+            "char_count": 16,
+            "start_offset": 0,
+            "end_offset": 16,
+            "overlap_chars": 0,
+            "text_sha256": "9081177fa0c1a888f86154f18498191d8a0179ef7663a146adc0c7c5486b031a",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 16
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0011",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 10,
+            "score": 0.3347623944282532,
+            "chunk_id": "PAPER_001_C0011",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "1.2.1  虎皮指数和黑心指数  参照杜艳民等[23]方法",
+            "section_id": "PAPER_001_S005",
+            "page": 3,
+            "page_end": 3,
+            "pages": [
+              3
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "计算鸭梨虎皮病和黑心病发生指数，具体方法如下。虎皮指数：按褐变面积占果皮面积的百分比，共分为5 级：果皮无褐变为0 级；褐变面积≤25%为1级；25%＜褐变面积≤50%为2 级；50%＜褐变面积≤75%为3 级；褐变面积＞75%为4 级。虎皮指数 = [∑（虎皮级数×该级果数）/（调查总果数×4）]×100%。黑心指数：沿果实赤道线作横切，按褐变面积占果心面积的百分比，共分为5 级：果心无褐变为0 级；褐变面积≤25%为1 级；25%＜褐变面积≤50%为2级；50%＜褐变面积≤75%为3 级；褐变面积＞75%为4 级。黑心指数=[∑（黑心级数×该级果数）/（调查总果数×4）]×100%。",
+            "char_count": 297,
+            "start_offset": 0,
+            "end_offset": 297,
+            "overlap_chars": 0,
+            "text_sha256": "09c69d70f2c576e1799bfec832cc6948e9fc219853158f3985b9d8cdb359a854",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 297
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0002",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 11,
+            "score": 0.32947152853012085,
+            "chunk_id": "PAPER_001_C0002",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "正文（未识别章节）",
+            "section_id": "PAPER_001_S001",
+            "page": 1,
+            "page_end": 1,
+            "pages": [
+              1
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+            "char_count": 368,
+            "start_offset": 863,
+            "end_offset": 1231,
+            "overlap_chars": 0,
+            "text_sha256": "27d144ff00bf76edc72cbb385bc7f30c4f0aa9356adcb575d51fcb9e7b17172c",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 368
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0003",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 12,
+            "score": 0.32359084486961365,
+            "chunk_id": "PAPER_001_C0003",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "正文（未识别章节）",
+            "section_id": "PAPER_001_S001",
+            "page": 1,
+            "page_end": 1,
+            "pages": [
+              1
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+            "char_count": 897,
+            "start_offset": 1174,
+            "end_offset": 2071,
+            "overlap_chars": 57,
+            "text_sha256": "24a77e7f790db2fe32fde6f13a87d8d61363a63633a1443fa85f54e84e476961",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 350
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0029",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 13,
+            "score": 0.3139358162879944,
+            "chunk_id": "PAPER_001_C0029",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "4  结论",
+            "section_id": "PAPER_001_S021",
+            "page": 9,
+            "page_end": 9,
+            "pages": [
+              9
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，能更好地维持果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。因此，建议生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。",
+            "char_count": 182,
+            "start_offset": 0,
+            "end_offset": 182,
+            "overlap_chars": 0,
+            "text_sha256": "1f2681a871f95e37a6d7492e750570540ce932d1feb587206974988c323406fa",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 182
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0027",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 14,
+            "score": 0.31140387058258057,
+            "chunk_id": "PAPER_001_C0027",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "3.2  环境O2浓度与内在品质变化的关系",
+            "section_id": "PAPER_001_S019",
+            "page": 9,
+            "page_end": 9,
+            "pages": [
+              9
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "超低氧气调贮藏（O2＜1.5%）是苹果商业生产中常用的一项技术[35]，但在梨商业生产中应用很少，主要原因是多数梨品种对过低O2 敏感，过低的O2 会造成果实发生无氧呼吸进而造成乙醇大量积累，诱发果心组织褐变，果实风味品质下降，例如‘Williams Bon Chretien’在1.0% O2 处理下仅能贮藏4 个月[36]。但同时也有研究表明，适量乙醇作为一种低抗氧化物可明显降低苹果和梨等采后贮藏过程中虎皮病的发生[37-40]。本研究中，5.0%及以下O2 处理果实乙醇含量贮藏前期显著高于10.0%和空气对照，适量乙醇的积累可能一定程度上增强了果实抗性，进而抑制了鸭梨后期虎皮病的发生，但乙醇抗氧化阈值及伤害极值仍需进一步研究确定。CHENG 等[3]研究发现，1-MCP 处理可以显著降低乙烯产量，较好地维持鸭梨果实冷藏期间TA 含量水平，较好地维持果实品质降低黑心指数。杜艳民等[23]研究发现鸭梨贮藏过程中TA 含量与黑心指数显著相关，可作为预测鸭梨黑心病的指标。本研究中，果实可滴定酸（TA）含量随着贮藏时间的延长不断下降，与空气对照相比，2.0%、3.0%、5.0%及10.0% O2处理较好地维持了贮藏后期（270 d）TA 含量，并显著高于空气对照和1.0% O2，且TA 含量越低，黑心指数越高，该结论与前人研究结果一致。抗坏血酸（AA）作为一种抗氧化物质，可与谷胱甘肽等其他抗氧化物质协同清除活性氧分子。前人研究发现，低氧气调处理果实AA 含量显著低于普通冷藏；同时，梨的研究发现，不同黑心病诱导处理下，AA 含量与果实黑心病敏感性显著相关，当AA 含量低于特定阈值时，果实黑心病敏感性增强[41]。本研究中，与空气对照相比，低氧处理更好地维持了贮藏前期果实AA 含量，但随着贮藏期的推迟，低氧处理和对照AA 含量均进一步降低，且处理与对照间差异变小且不显著；但货架7 d 或10 d 后，低氧处理和空气对照AA 含量均显著升高，初步推测与货架期间果实进一步衰老后，活性氧等衰老相关组分含量增加有关，但其生物学功能和作用机制仍需进一步研究。",
+            "char_count": 884,
+            "start_offset": 0,
+            "end_offset": 884,
+            "overlap_chars": 0,
+            "text_sha256": "c21c213a170e67a7a978fd80bad81dc06872d5d7f4819983ab31f3121e49713b",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 600,
+              "end": 884
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0008",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 15,
+            "score": 0.3101631700992584,
+            "chunk_id": "PAPER_001_C0008",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "0  引言",
+            "section_id": "PAPER_001_S002",
+            "page": 2,
+            "page_end": 2,
+            "pages": [
+              2
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": "相比而言，‘Conference’一般在O2＞2.0%条件下贮藏，过低的氧气浓度会加重贮藏初期黑心病的发生[15-17]。关于鸭梨气调贮藏的研究最早可追溯到20世纪90 年代，研究发现采用7.0%—10.0% O2 可显著延长鸭梨贮藏期，贮藏213 d 及10 d 货架后（15℃），与空气对照相比，早期和晚期黑心病发生率降低，较好地保持了梨果绿色和硬度；同时发现O2 浓度一定，黑心褐变程度随CO2 浓度升高而显著加重，生产上建议CO2＜1.0%；CO2 浓度一定，O2 下降至5.0%时，也使果心褐变程度加重[18-20]。西洋梨采后气调贮藏研究发现，与果实预冷后直接开始气调相比，推迟气调贮藏建立时间可显著降低长期贮藏过程中梨果心褐变的发生[21-22]。【本研究切入点】低氧及超低氧气调处理作为防控果实采后生理病害发生，延长果实贮藏及货架供应期的关键技术在西方梨品种上广泛应用，而关于低氧处理对我国主要白梨品种采后生理代谢及品质维持的影响鲜有研究报道。【拟解决的关键问题】明确不同O2 浓度处理下鸭梨采后生理代谢和品质变化规律，探讨其对生理病害发生的影响，初步阐明低氧防控鸭梨采后生理病害发生的作用机制。",
+            "char_count": 506,
+            "start_offset": 912,
+            "end_offset": 1418,
+            "overlap_chars": 0,
+            "text_sha256": "36071dfb07906cae0069c04795c27b6c18d120603b606fac0629bd3259040a50",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 300,
+              "end": 506
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_003_C0016",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 16,
+            "score": 0.3036777675151825,
+            "chunk_id": "PAPER_003_C0016",
+            "source_id": "PAPER_003",
+            "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+            "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+            "section_id": "PAPER_003_S004",
+            "page": 6,
+            "page_end": 6,
+            "pages": [
+              6
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "采收期",
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2010,
+            "source_file_sha256": "5821f452a5924deb1670e66cc7d03f1e7287e9c91f999b388dbd1c675460a55c",
+            "source_url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/original.pdf",
+            "text": " Changes of lipoxygenase activity and membrane fatty acid composition in postharvest longan (Dimocarpus longan Lour.) fruit[J]. Chinese Journal of Tropical Crops, 2010, 31(3): 381－386. (in Chinese with English abstract) [10] 罗云波．脂氧合酶与番茄采后成熟的关系[J]．园艺学报，1994，21(4)：357－360．Luo Yunbo. Effects of lipoxygenase on the postharvest physiology of tomato[J]. Acta Horticulturae Sinica, 1994, 21(4): 357－360. (in Chinese with English abstract) [11] Bligh E G, Dyer W J. A rapid method of total lipid extraction and purification[J]. Can J Biochem Physiol, 1959, 37(8): 911－917. [12] 苏维埃，王文英，李锦树．植物类脂及其脂肪酸的分析技术— TLC-GLC 技术[J]．植物生理学通讯，1980，(3)：54－60．Su Weiai, Wang Wenying, Li Jinshu. Analysis technique of plant lipid and fatty acids— TLC-GLC technology[J]. Plant physiology communications, 1980, (3): 54－60. (in Chinese with English abstract) [13] Saquet A A, Streif J, Bangerth F.",
+            "char_count": 870,
+            "start_offset": 7113,
+            "end_offset": 7983,
+            "overlap_chars": 0,
+            "text_sha256": "7b41a9eb7cb017dd210095900410c6d8f104892ccd8eec211e145458068826dd",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 350
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0004",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 17,
+            "score": 0.30328452587127686,
+            "chunk_id": "PAPER_001_C0004",
+            "source_id": "PAPER_001",
+            "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+            "section": "正文（未识别章节）",
+            "section_id": "PAPER_001_S001",
+            "page": 1,
+            "page_end": 2,
+            "pages": [
+              1,
+              2
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "河北省",
+              "石家庄市"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2020,
+            "source_file_sha256": "47bb180737b8ee420f332d96ef5e0c6449d8af9a4f84ec36d1b66cad1b8ed3b7",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf",
+            "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+            "char_count": 971,
+            "start_offset": 2071,
+            "end_offset": 3042,
+            "overlap_chars": 0,
+            "text_sha256": "736074cf3c13712faa7784f46a5deb4e2039cac4a8744f0c0186cf25d9dc3661",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 350
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_003_C0014",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 18,
+            "score": 0.3020032048225403,
+            "chunk_id": "PAPER_003_C0014",
+            "source_id": "PAPER_003",
+            "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+            "section": "0.25 μm，美国Agilent 公司），采用程序升温方式，柱初",
+            "section_id": "PAPER_003_S004",
+            "page": 5,
+            "page_end": 6,
+            "pages": [
+              5,
+              6
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "采收期",
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2010,
+            "source_file_sha256": "5821f452a5924deb1670e66cc7d03f1e7287e9c91f999b388dbd1c675460a55c",
+            "source_url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/original.pdf",
+            "text": " Study on the mi portant factors of browning of Yali pear fruit after harvest[J]. Food and Machinery, 2008, 24(3): 48－51. (in Chinese with English abstract) [3]田梅生，盛其潮，李钰．低温贮藏对鸭梨乙烯释放、膜通透性及多酚氧化酶活性的影响[J]．植物学报，1987，29(6)：614－619．Tian Meisheng, Sheng Qichao, Li Yu. Relationship between ethylene release, membrane permeability and activity of polyphenol oxidase changes of duck pears during low temperature storage[J]. Acta Botanica Scinca, 1987, 29(6): 614－619. (in Chinese with English abstract) [4]闫师杰，陈计峦，梁丽雅，等．降温方法对不同采收成熟度鸭梨某些生理指标的影响[J]．中国食品学报，2008，8(4)：96－101．Yan Shijie, Chen Jiluan, Liang Liya, et al. Effects of different cooling methods on some physiological indexes of different maturity Yali pear after harvest[J]. Journal of Chinese Institute of Food Science and Technology, 2008, 8(4): 96－101. (in Chinese with English abstract) [5]王阳光，茅林春，陆胜明，等．热处理对桃果实的酶活性变化及膜脂肪酸的影响[J]．食品科学，2001，22(4)：72－74．Wang Yangguang, Mao Linchun, Lu Shengming, et al.",
+            "char_count": 952,
+            "start_offset": 5313,
+            "end_offset": 6265,
+            "overlap_chars": 0,
+            "text_sha256": "1ae83022b988e0fbec3222a2814363faf6d62d807c5de24854cc3b72bf3afbfb",
+            "size_exception": null,
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 600,
+              "end": 950
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0038",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 19,
+            "score": 0.30153775215148926,
+            "chunk_id": "PAPER_005_C0038",
+            "source_id": "PAPER_005",
+            "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+            "section": "3  讨论",
+            "section_id": "PAPER_005_S019",
+            "page": 12,
+            "page_end": 12,
+            "pages": [
+              12
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [],
+            "applicable_stages": [
+              "储藏期"
+            ],
+            "evidence_level": "A",
+            "source_type": "paper",
+            "year": 2021,
+            "source_file_sha256": "491ff1948a82ff4e416e53d6463f4c51753dbf756a844b7795177747e2d9f923",
+            "source_url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf",
+            "text": "尽管这两种物质参与了苹果和梨果皮的虎皮病发生[28-30]，而本研究尚未发现虎皮病现象，但至少说明，窖藏条件刺激了α-法尼烯和MHO 的生成与积累。这种现象可能与窖藏时果皮衰老较快有关。",
+            "char_count": 93,
+            "start_offset": 1240,
+            "end_offset": 1333,
+            "overlap_chars": 93,
+            "text_sha256": "6d29dc1dd56579b7e5f834760cc9b488c1fd9ae214f2e82cbb138ce189e38eea",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 93
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        },
+        {
+          "candidate_id": "chunk:STD_004_C0007",
+          "kind": "document_chunk",
+          "channel": "faiss",
+          "chunk": {
+            "rank": 20,
+            "score": 0.2991362512111664,
+            "chunk_id": "STD_004_C0007",
+            "source_id": "STD_004",
+            "title": "DB13/T 5390-2021 梨货架期品质维持技术规范",
+            "section": "5 货架期技术要求",
+            "section_id": "STD_004_S007",
+            "page": 6,
+            "page_end": 6,
+            "pages": [
+              6
+            ],
+            "page_basis": "PDF physical page, 1-based",
+            "crop": [
+              "梨"
+            ],
+            "region": [
+              "河北省"
+            ],
+            "applicable_stages": [
+              "储藏期",
+              "出库期",
+              "运输期",
+              "货架期"
+            ],
+            "evidence_level": "A",
+            "source_type": "standard",
+            "year": 2021,
+            "source_file_sha256": "64b3c0db0c947772251d5b0305ddfb03e2fa0efdf94f2cac32dff16dfbfe52d0",
+            "source_url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=C3B0BB05E84D4F89E05397BE0A0A81E3",
+            "original_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_004/original.pdf",
+            "text": "5.1 货架场所应彻底清扫、消毒。消毒剂应符合GB 14930.2 的规定，卫生要求应符合GB 14881 的规定。5.2 低温货架适宜温度0 ℃～5 ºC，相对湿度85%～95%。5.3 常温货架期应少于10 d，低温货架期应少于30 d。_________________________________",
+            "char_count": 154,
+            "start_offset": 0,
+            "end_offset": 154,
+            "overlap_chars": 0,
+            "text_sha256": "0fcc4850eb16477f9ce69c62f9642f43992eb2ec4ad8bad4437e85f576b82d74",
+            "size_exception": "short_section_or_tail",
+            "review_status": "layout_tables_and_agronomic_context_review_pending",
+            "needs_layout_review": false,
+            "production_retrieval_approved": false,
+            "matched_window": {
+              "start": 0,
+              "end": 154
+            }
+          },
+          "warnings": [],
+          "features": {
+            "crop": null,
+            "region": null,
+            "stage": null
+          }
+        }
+      ],
+      "channels": {
+        "neo4j": {
+          "status": "ok",
+          "count": 11,
+          "truncated": false
+        },
+        "faiss": {
+          "status": "ok",
+          "count": 20
+        }
+      },
+      "graph_sources": [
+        {
+          "sha256": "c3642ef4c2b2085f347edbc8df57e20739f8cdc7d56b3b4f4410ba29bc6c72e8",
+          "source_count": 1,
+          "publication_group": "UC ANR 3455",
+          "author": "加州大学州级IPM计划；具体署名见原文",
+          "reviewed_at": "2026-09-12",
+          "description": "原文核对；尚未经农业专家复核",
+          "source_type": "university_extension",
+          "title": "UC IPM 梨：梨黑星病",
+          "type": "Source",
+          "url": "https://ipm.ucanr.edu/agriculture/pear/pear-scab/",
+          "review_method": "原文核对；尚未经农业专家复核",
+          "file": "government\\uc_pear_scab.html",
+          "scope": "US-CA",
+          "name": "UC IPM 梨：梨黑星病",
+          "source_id": "uc_pear_scab",
+          "id": "uc_pear_scab",
+          "region": "US-CA",
+          "published_at": "",
+          "evidence_level": "B",
+          "dataset": "pear_evidence_v2",
+          "crop": "梨；具体品种以知识条目为准",
+          "status": "read"
+        },
+        {
+          "sha256": "",
+          "source_count": 1,
+          "publication_group": "vic",
+          "author": "原文署名待结构化",
+          "reviewed_at": "2026-09-12",
+          "description": "官方网页正文已阅读；本地下载未成功，保留原始链接",
+          "source_type": "government_guidance",
+          "title": "维多利亚州农业部门：梨黑星病",
+          "type": "Source",
+          "url": "https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/pear-scab",
+          "review_method": "官方网页正文已阅读；本地下载未成功，保留原始链接",
+          "file": "",
+          "scope": "AU-VIC",
+          "name": "维多利亚州农业部门：梨黑星病",
+          "source_id": "vic",
+          "id": "vic",
+          "region": "AU-VIC",
+          "published_at": "",
+          "evidence_level": "B",
+          "dataset": "pear_evidence_v2",
+          "crop": "梨；具体品种以知识条目为准",
+          "status": "read"
+        }
+      ],
+      "excluded_documents": [],
+      "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+      "mode": "research",
+      "notice": "候选集尚未排序或生成答案；知识路径保持原方向，不等于已证实的因果链。"
+    }
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "classes": [
+    {
+      "mapped_label": "healthy",
+      "verified_unique_count": 792,
+      "group_count": 683,
+      "source_dataset_count": 3
+    },
+    {
+      "mapped_label": "rust",
+      "verified_unique_count": 472,
+      "group_count": 459,
+      "source_dataset_count": 2
+    },
+    {
+      "mapped_label": "leaf_spot_blight",
+      "verified_unique_count": 461,
+      "group_count": 308,
+      "source_dataset_count": 2
+    },
+    {
+      "mapped_label": "nitrogen_deficiency",
+      "verified_unique_count": 100,
+      "group_count": 94,
+      "source_dataset_count": 1
+    }
+  ],
+  "source_variant_counts": {
+    "original_source_partition": 1866,
+    "augmented_or_split": 10000,
+    "original": 1603,
+    "auxiliary_unlabeled": 1081
+  },
+  "excluded_reasons": {
+    "unusable_conflict": 620,
+    "unusable_duplicate": 71,
+    "augmented_or_split": 10000,
+    "excluded_class": 953,
+    "auxiliary_unlabeled": 1081
+  },
+  "nitrogen_rust_counts": {
+    "nitrogen/control": 300,
+    "nitrogen/deficiency": 300,
+    "rust/control": 491,
+    "rust/diseased": 368
+  },
+  "conflict_pairs": 3555,
+  "conflict_sha256_count": 626,
+  "pair_counts": {
+    "exact_pairs": 5996,
+    "near_pairs": 43826
+  },
+  "usable_groups": 1542,
+  "largest_usable_group": 98,
+  "mixed_label_usable_groups": 1,
+  "winter_metadata_candidates": [],
+  "conflict_types": {
+    "near": 3555
+  },
+  "nitrogen_deficiency_exclusions": {
+    "unusable_conflict": 172,
+    "usable": 100,
+    "unusable_duplicate": 28
+  }
+}

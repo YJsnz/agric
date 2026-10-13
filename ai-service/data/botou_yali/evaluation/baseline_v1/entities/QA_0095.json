@@ -1,0 +1,12 @@
+{
+  "entities": {
+    "crop": "鸭梨",
+    "region": null,
+    "stage": "贮藏前期",
+    "environment": [
+      "低氧"
+    ],
+    "disease": [],
+    "intent": "fact_query"
+  }
+}

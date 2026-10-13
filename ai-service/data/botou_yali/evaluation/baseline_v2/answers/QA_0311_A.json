@@ -1,0 +1,70 @@
+{
+  "id": "QA_0311",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法确定窖藏与冷藏鸭梨果实SSC和TA含量的具体变化。",
+    "basis": "未提供该论文的检索证据，且我无法确认该论文的具体研究数据。",
+    "reasoning": "问题要求依据特定论文回答，但证据列表为空，我也没有该论文的可靠记忆，因此不能给出具体变化结论。",
+    "advice": "请提供该论文的原文或相关数据，或允许检索该论文后再作分析。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于窖藏与冷藏鸭梨SSC和TA含量变化的具体结论，仅表示无法确定并要求提供原文或数据，属于没有作答。提供的原文证据明确支持参考答案，但回答未利用该证据。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1060,
+      "completion_tokens": 63,
+      "total_tokens": 1123,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 292
+    },
+    "model": "deepseek-flash",
+    "response_id": "e84d627e-01fa-4aeb-b6f8-3875bdc1718c",
+    "seconds": 5.930863300003693,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法确定窖藏与冷藏鸭梨果实SSC和TA含量的具体变化。",
+        "basis": "未提供该论文的检索证据，且我无法确认该论文的具体研究数据。",
+        "reasoning": "问题要求依据特定论文回答，但证据列表为空，我也没有该论文的可靠记忆，因此不能给出具体变化结论。",
+        "advice": "请提供该论文的原文或相关数据，或允许检索该论文后再作分析。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 202,
+        "completion_tokens": 116,
+        "total_tokens": 318,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 202
+      },
+      "model": "deepseek-flash",
+      "response_id": "85f35b46-fe7e-4b9a-9a82-98d43bd05f66",
+      "seconds": 6.140959900003509,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.073731299999054
+}

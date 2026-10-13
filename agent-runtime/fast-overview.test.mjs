@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {fastOverview,renderOverview} from './fast-overview.mjs';
+test('only bounded overview queries use fast path',()=>{assert.equal(fastOverview('分析农场当前环境与异常，列出依据和缺少的数据'),true);assert.equal(fastOverview('分析农场当前环境与异常，并执行灌溉'),false);assert.equal(fastOverview('诊断叶片病害'),false)});
+test('fast summary preserves observations and threshold direction',()=>{const answer=renderOverview({environmentMetrics:[{label:'土壤湿度',numericValue:28,unit:'%',measuredAt:'today'}],alerts:[]},{checks:[{metric:'土壤湿度',value:28,unit:'%',minimum:35,below_minimum:true}]},{evidence:[]});assert.match(answer,/28 %/);assert.match(answer,/低于下限，需核查/);assert.match(answer,/未检索到相关资料/)});

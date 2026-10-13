@@ -1,0 +1,21 @@
+{
+  "review_date": "2026-09-25",
+  "scope": "结构全量检查；四份原文重点核对，不是307条旧关系逐条专家复审",
+  "before": {
+    "nodes": 356,
+    "edges": 307,
+    "sources": 30
+  },
+  "after": {
+    "nodes": 365,
+    "edges": 315,
+    "sources": 32
+  },
+  "live_matches_disk": true,
+  "edge_review_status": {
+    "source_checked": 193,
+    "transfer_pending": 122
+  },
+  "missing_evidence": [],
+  "unverified_causal_probability": []
+}

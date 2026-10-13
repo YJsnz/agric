@@ -1,0 +1,44 @@
+[
+  {
+    "question": "本研究提取鸭梨果皮组织总RNA时使用了哪个试剂盒？",
+    "type": "factual",
+    "answer_quote": "RNA 抽提纯化试剂盒SK8661（上海生工）说明书提取果皮组织总RNA",
+    "gold_entities": [
+      "SK8661",
+      "上海生工",
+      "果皮组织",
+      "总RNA"
+    ]
+  },
+  {
+    "question": "本研究用什么方法检测提取的总RNA质量？",
+    "type": "factual",
+    "answer_quote": "紫外分光光度计和1.5%琼脂糖凝胶电泳检测质量合格的总RNA",
+    "gold_entities": [
+      "紫外分光光度计",
+      "1.5%琼脂糖凝胶电泳",
+      "总RNA"
+    ]
+  },
+  {
+    "question": "本研究将总RNA反转录为cDNA使用了哪个试剂盒？",
+    "type": "factual",
+    "answer_quote": "采用RevertAid Premium Reverse Transcriptase （Thermo Scientific™EP0733，USA）试剂盒反转录为cDNA",
+    "gold_entities": [
+      "RevertAid Premium Reverse Transcriptase",
+      "Thermo Scientific™EP0733",
+      "cDNA"
+    ]
+  },
+  {
+    "question": "本研究合成的cDNA用于分析哪些方面的关键基因表达？",
+    "type": "factual",
+    "answer_quote": "作为乙烯合成与信号转导途径关键基因的表达分析",
+    "gold_entities": [
+      "乙烯合成",
+      "信号转导途径",
+      "关键基因",
+      "表达分析"
+    ]
+  }
+]

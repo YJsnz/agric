@@ -1,0 +1,635 @@
+{
+  "id": "QA_0347",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0029",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0019",
+    "chunk:PAPER_001_C0005",
+    "chunk:PAPER_001_C0026"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨",
+      "虎皮病",
+      "低氧处理"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": null,
+      "environment": [],
+      "disease": [
+        "虎皮病"
+      ],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [
+        "低氧处理"
+      ],
+      "risk": [],
+      "intent": "prevention"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      },
+      {
+        "field": "disease",
+        "mention": "虎皮病",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      },
+      {
+        "field": "intervention",
+        "mention": "低氧处理",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "partial_alignment",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [
+      {
+        "source_id": "PAPER_001",
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "PAPER_001_C0029",
+            "section": "4  结论",
+            "pages": [
+              9
+            ]
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "PAPER_001_C0002",
+            "section": "正文（未识别章节）",
+            "pages": [
+              1
+            ]
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "PAPER_001_C0005",
+            "section": "正文（未识别章节）",
+            "pages": [
+              2
+            ]
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "PAPER_001_C0026",
+            "section": "3.1  环境O2浓度与虎皮病和黑心病发生的关系",
+            "pages": [
+              8,
+              9
+            ]
+          }
+        ]
+      }
+    ],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [
+      {
+        "field": "disease",
+        "mention": "虎皮病",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      },
+      {
+        "field": "intervention",
+        "mention": "低氧处理",
+        "status": "unmatched",
+        "entity_id": null,
+        "canonical_name": null,
+        "candidates": []
+      }
+    ],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_001_C0029",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 4,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9765625
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0002",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 2,
+            "vector_rank": 9,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9339644693782141
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0019",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 8,
+            "vector_rank": 3,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.93265639589169
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0005",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 10,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9198412698412699
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0026",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 9,
+            "vector_rank": 4,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9185914855072463
+          }
+        }
+      ]
+    },
+    "status": "answered",
+    "answer": "1. 结论\n低氧处理通过降低活性氧（ROS）、乙烯释放量以及α-法尼烯及其氧化产物共轭三烯醇的积累来抑制鸭梨虎皮病的发生  [E5] 。\n2. 依据\n证据[E5]指出：低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累，降低乙烯释放量，有效降低α-法尼烯及其氧化产物共轭三烯醇的积累，进而抑制虎皮病的发生  [E5] 。[E1]、[E2]、[E4]亦支持低氧处理抑制虎皮病发生并抑制乙烯生物合成相关基因表达  [E1]  [E2]  [E4] 。\n3. 推理路径\n问题询问低氧处理通过降低哪些物质积累来抑制虎皮病。[E5]明确列出低氧处理降低的三类物质：ROS、乙烯释放量、α-法尼烯及其氧化产物共轭三烯醇，并说明这些降低进而抑制虎皮病发生  [E5] 。[E1]、[E2]、[E4]从结论层面支持低氧抑制虎皮病及乙烯相关过程，但未逐一列出上述物质，故以[E5]为主要依据  [E1]  [E2]  [E4] 。\n4. 建议\n该结论来自论文特定试验条件（鸭梨，1.0%—3.0% O2处理防控虎皮病效果最佳），不构成当地生产指导；如需生产参数，请结合本地条件另行评估  [E1]  [E5] 。\n5. 来源\n[E1] [E2] [E4] [E5] PAPER_001：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响 https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "candidate_id": "chunk:PAPER_001_C0029",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "4  结论",
+          "text": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，能更好地维持果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。因此，建议生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。",
+          "pages": [
+            9
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E2",
+        "candidate_id": "chunk:PAPER_001_C0002",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "正文（未识别章节）",
+          "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+          "pages": [
+            1
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E3",
+        "candidate_id": "chunk:PAPER_001_C0019",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "2.1.1  虎皮指数  气调处理可显著降低贮藏和货架",
+          "text": "下同 Different lowercase letters indicate significant difference at 5% level. The same as below图1  不同O2浓度处理对鸭梨果实贮藏及货架期间黑心指数和虎皮指数的影响Fig. 1  Effects of different oxygen concentrations on browning heart incidence and superficial scald incidence during storage and shelf-life period of Yali pear的中试库跟踪调查，采用3.0%—5.0% O2+0.5%—0.8% CO2参数，鸭梨贮藏期可延长至翌年6 月中下旬，虎皮病平均发生率＜5.0%，且货架期≥7 d。",
+          "pages": [
+            4,
+            5
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E4",
+        "candidate_id": "chunk:PAPER_001_C0005",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "正文（未识别章节）",
+          "text": " Besides that, the lower O2 treatments maintained TA and AA contents at a higher level in the early storage period, and delayed the yellow-turning of peel; ethanol was accumulated much more under the lower O2 concentration, which ranged from 150.89 mg·L-1 to 806.12 mg·L-1 after storage for 150 d; while with the increasing senescence browning of fruit in air, the ethanol content peaking at 1 500 mg·L-1 after storage for 270 d. 5.0% and lower O2 inhibited the ethylene biosynthesis and delayed the peaking time, and 1.0%-3.0% O2 could prohibit the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue significantly.【Conclusion】1.0%—3.0% O2 prohibited the superficial scald occurrence significantly, and delayed the decrease of TA and AA, inhibited the biosynthesis of ethylene and delayed the peaking time, down-regulated the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue, prolonged the storage period of Yali pear significantly.",
+          "pages": [
+            2
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E5",
+        "candidate_id": "chunk:PAPER_001_C0026",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "3.1  环境O2浓度与虎皮病和黑心病发生的关系",
+          "text": "虎皮病是梨采后贮藏过程中一种主要的生理病害[26]。低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累，降低乙烯释放量，有效降低α-法尼烯及其氧化产物共轭三烯醇的积累，进而抑制虎皮病的发生[27-28]。近年来，超低氧气调贮藏技术（O2＜1.0%）和动态气调贮藏技术（O2＜0.6%）快速发展，与传统气调贮藏相比，更低的贮藏环境O2 浓度能更好地控制苹果和梨采后虎皮病的发生[29-30]。本研究中，5.0%及以下O2处理显著降低了鸭梨长期贮藏过程中虎皮病的发生，货架期显著延长，其中1.0%—3.0% O2 处理防控虎皮病效果最佳。可见，进一步降低贮藏环境氧气浓度可更好地维持鸭梨果实外观品质，延长货架期，这与前人研究结论一致。黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变[31-32]。低氧胁迫处理可通过调控氧化代谢平衡进而降低衰老相关生理病害的发生[33-34]。本研究中，采用阶段降温结合延迟气调贮藏均显著降低了贮藏和货架期间果实黑心病的发生，相对更低的O2浓度更好地控制了贮藏后期（270 d）果心褐变指数，但过低的氧气浓度处理（1.0% O2）一定程度上增加了鸭梨果实贮藏末期黑心病风险。",
+          "pages": [
+            8,
+            9
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      }
+    ],
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称低氧处理通过降低ROS、乙烯释放量以及α-法尼烯及其氧化产物共轭三烯醇的积累来抑制鸭梨虎皮病，所引E5原文明确列出这三类物质并说明进而抑制虎皮病发生，事实与引用证据一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis准确复述E5中低氧降低ROS、乙烯释放量、α-法尼烯及其氧化产物共轭三烯醇并抑制虎皮病的内容；E1、E2、E4确实支持低氧抑制鸭梨虎皮病发生及抑制乙烯生物合成相关基因表达，未超出引用证据范围。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning说明问题询问低氧降低哪些物质，E5明确列出ROS、乙烯释放量、α-法尼烯及其氧化产物共轭三烯醇，并说明E1、E2、E4从结论层面支持但未逐一列出上述物质，符合引用证据内容。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅说明该结论来自论文特定试验条件，不构成当地生产指导，并引用E1、E5；E1给出1.0%—3.0% O2处理防控虎皮病效果最佳，E5给出5.0%及以下O2处理显著降低虎皮病且1.0%—3.0% O2效果最佳，未将论文结果转为普遍生产建议。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0029",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "4  结论",
+        "text": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，能更好地维持果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。因此，建议生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0019",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.1.1  虎皮指数  气调处理可显著降低贮藏和货架",
+        "text": "下同 Different lowercase letters indicate significant difference at 5% level. The same as below图1  不同O2浓度处理对鸭梨果实贮藏及货架期间黑心指数和虎皮指数的影响Fig. 1  Effects of different oxygen concentrations on browning heart incidence and superficial scald incidence during storage and shelf-life period of Yali pear的中试库跟踪调查，采用3.0%—5.0% O2+0.5%—0.8% CO2参数，鸭梨贮藏期可延长至翌年6 月中下旬，虎皮病平均发生率＜5.0%，且货架期≥7 d。",
+        "pages": [
+          4,
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0005",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " Besides that, the lower O2 treatments maintained TA and AA contents at a higher level in the early storage period, and delayed the yellow-turning of peel; ethanol was accumulated much more under the lower O2 concentration, which ranged from 150.89 mg·L-1 to 806.12 mg·L-1 after storage for 150 d; while with the increasing senescence browning of fruit in air, the ethanol content peaking at 1 500 mg·L-1 after storage for 270 d. 5.0% and lower O2 inhibited the ethylene biosynthesis and delayed the peaking time, and 1.0%-3.0% O2 could prohibit the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue significantly.【Conclusion】1.0%—3.0% O2 prohibited the superficial scald occurrence significantly, and delayed the decrease of TA and AA, inhibited the biosynthesis of ethylene and delayed the peaking time, down-regulated the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue, prolonged the storage period of Yali pear significantly.",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0026",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "3.1  环境O2浓度与虎皮病和黑心病发生的关系",
+        "text": "虎皮病是梨采后贮藏过程中一种主要的生理病害[26]。低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累，降低乙烯释放量，有效降低α-法尼烯及其氧化产物共轭三烯醇的积累，进而抑制虎皮病的发生[27-28]。近年来，超低氧气调贮藏技术（O2＜1.0%）和动态气调贮藏技术（O2＜0.6%）快速发展，与传统气调贮藏相比，更低的贮藏环境O2 浓度能更好地控制苹果和梨采后虎皮病的发生[29-30]。本研究中，5.0%及以下O2处理显著降低了鸭梨长期贮藏过程中虎皮病的发生，货架期显著延长，其中1.0%—3.0% O2 处理防控虎皮病效果最佳。可见，进一步降低贮藏环境氧气浓度可更好地维持鸭梨果实外观品质，延长货架期，这与前人研究结论一致。黑心病发生的直接原因是细胞膜发生过氧化反应，细胞膜完整性被打破，多酚氧化酶（PPO）催化酚类底物形成醌，进而诱发褐变[31-32]。低氧胁迫处理可通过调控氧化代谢平衡进而降低衰老相关生理病害的发生[33-34]。本研究中，采用阶段降温结合延迟气调贮藏均显著降低了贮藏和货架期间果实黑心病的发生，相对更低的O2浓度更好地控制了贮藏后期（270 d）果心褐变指数，但过低的氧气浓度处理（1.0% O2）一定程度上增加了鸭梨果实贮藏末期黑心病风险。",
+        "pages": [
+          8,
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "低氧处理通过降低活性氧（ROS）、乙烯释放量以及α-法尼烯及其氧化产物共轭三烯醇的积累来抑制鸭梨虎皮病的发生  [E5] 。",
+    "basis": "证据[E5]指出：低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累，降低乙烯释放量，有效降低α-法尼烯及其氧化产物共轭三烯醇的积累，进而抑制虎皮病的发生  [E5] 。[E1]、[E2]、[E4]亦支持低氧处理抑制虎皮病发生并抑制乙烯生物合成相关基因表达  [E1]  [E2]  [E4] 。",
+    "reasoning": "问题询问低氧处理通过降低哪些物质积累来抑制虎皮病。[E5]明确列出低氧处理降低的三类物质：ROS、乙烯释放量、α-法尼烯及其氧化产物共轭三烯醇，并说明这些降低进而抑制虎皮病发生  [E5] 。[E1]、[E2]、[E4]从结论层面支持低氧抑制虎皮病及乙烯相关过程，但未逐一列出上述物质，故以[E5]为主要依据  [E1]  [E2]  [E4] 。",
+    "advice": "该结论来自论文特定试验条件（鸭梨，1.0%—3.0% O2处理防控虎皮病效果最佳），不构成当地生产指导；如需生产参数，请结合本地条件另行评估  [E1]  [E5] 。",
+    "citations": [
+      "E1",
+      "E2",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答完整列出低氧处理降低的三类物质：活性氧（ROS）、乙烯释放量、α-法尼烯及其氧化产物共轭三烯醇，与参考答案及原文E5一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累",
+          "status": "supported",
+          "reason": "E5原文明确支持。"
+        },
+        {
+          "claim": "低氧处理可降低乙烯释放量",
+          "status": "supported",
+          "reason": "E5原文明确支持。"
+        },
+        {
+          "claim": "低氧处理可有效降低α-法尼烯及其氧化产物共轭三烯醇的积累",
+          "status": "supported",
+          "reason": "E5原文明确支持。"
+        },
+        {
+          "claim": "低氧处理通过降低ROS、乙烯释放量、α-法尼烯及其氧化产物共轭三烯醇的积累来抑制鸭梨虎皮病的发生",
+          "status": "supported",
+          "reason": "E5原文明确支持该因果表述。"
+        },
+        {
+          "claim": "[E1]、[E2]、[E4]亦支持低氧处理抑制虎皮病发生并抑制乙烯生物合成相关基因表达",
+          "status": "supported",
+          "reason": "E1、E2、E4均提及低氧抑制虎皮病及抑制PbACO1、PbACO3、PbACS1表达。"
+        },
+        {
+          "claim": "1.0%—3.0% O2处理防控虎皮病效果最佳",
+          "status": "supported",
+          "reason": "E5原文明确支持。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2932,
+      "completion_tokens": 315,
+      "total_tokens": 3247,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 2036
+    },
+    "model": "deepseek-flash",
+    "response_id": "a6fb080e-7a00-49ef-b277-8986b65abf99",
+    "seconds": 7.592315599991707,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "低氧处理通过降低活性氧（ROS）、乙烯释放量以及α-法尼烯及其氧化产物共轭三烯醇的积累来抑制鸭梨虎皮病的发生 [E5]。",
+        "basis": "证据E5指出：低氧处理可有效降低果实贮藏期间活性氧（ROS）的积累，降低乙烯释放量，有效降低α-法尼烯及其氧化产物共轭三烯醇的积累，进而抑制虎皮病的发生 [E5]。E1、E2、E4亦支持低氧处理抑制虎皮病发生并抑制乙烯生物合成相关基因表达 [E1][E2][E4]。",
+        "reasoning": "问题询问低氧处理通过降低哪些物质积累来抑制虎皮病。E5明确列出低氧处理降低的三类物质：ROS、乙烯释放量、α-法尼烯及其氧化产物共轭三烯醇，并说明这些降低进而抑制虎皮病发生 [E5]。E1、E2、E4从结论层面支持低氧抑制虎皮病及乙烯相关过程，但未逐一列出上述物质，故以E5为主要依据 [E1][E2][E4]。",
+        "advice": "该结论来自论文特定试验条件（鸭梨，1.0%—3.0% O2处理防控虎皮病效果最佳），不构成当地生产指导；如需生产参数，请结合本地条件另行评估 [E1][E5]。",
+        "citations": [
+          "E5",
+          "E1",
+          "E2",
+          "E4"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2226,
+        "completion_tokens": 334,
+        "total_tokens": 2560,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2098
+      },
+      "model": "deepseek-flash",
+      "response_id": "41cbcd32-7ac9-4b9f-b026-d0caa323057c",
+      "seconds": 6.915625100009493,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 24.358363499995903
+}

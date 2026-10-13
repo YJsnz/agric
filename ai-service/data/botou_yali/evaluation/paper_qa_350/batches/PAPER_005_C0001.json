@@ -1,0 +1,116 @@
+[
+  {
+    "question": "本研究中鸭梨采后采用了哪两种贮藏方式？",
+    "type": "cultivation_management",
+    "answer_quote": "鸭梨采收后以窖藏和冷藏两种方式贮藏",
+    "gold_entities": [
+      "鸭梨",
+      "窖藏",
+      "冷藏"
+    ]
+  },
+  {
+    "question": "本研究测定了鸭梨贮藏期间的哪些果实品质指标？",
+    "type": "factual",
+    "answer_quote": "测定贮藏期间果实硬度、可溶性固形物含量（SSC）、可滴定酸（TA）含量、呼吸速率和乙烯释放速率",
+    "gold_entities": [
+      "果实硬度",
+      "可溶性固形物含量",
+      "SSC",
+      "可滴定酸",
+      "TA",
+      "呼吸速率",
+      "乙烯释放速率"
+    ]
+  },
+  {
+    "question": "本研究使用什么仪器检测鸭梨挥发性物质变化？",
+    "type": "factual",
+    "answer_quote": "使用电子鼻检测挥发性物质变化",
+    "gold_entities": [
+      "电子鼻",
+      "挥发性物质"
+    ]
+  },
+  {
+    "question": "本研究利用什么技术测定鸭梨挥发性物质成分及含量？",
+    "type": "factual",
+    "answer_quote": "利用气质联用色谱（GC-MS）测定挥发性物质成分及含量",
+    "gold_entities": [
+      "气质联用色谱",
+      "GC-MS",
+      "挥发性物质"
+    ]
+  },
+  {
+    "question": "本研究利用什么技术分析鸭梨相关基因的表达量变化？",
+    "type": "factual",
+    "answer_quote": "利用荧光定量PCR（Real-time PCR）技术分析",
+    "gold_entities": [
+      "荧光定量PCR",
+      "Real-time PCR"
+    ]
+  },
+  {
+    "question": "本研究分析了哪些乙烯生成相关基因的表达量变化？",
+    "type": "factual",
+    "answer_quote": "乙烯生成（PbACS1、PbACO2）",
+    "gold_entities": [
+      "PbACS1",
+      "PbACO2"
+    ]
+  },
+  {
+    "question": "本研究分析了哪些乙烯信号转导相关基因的表达量变化？",
+    "type": "factual",
+    "answer_quote": "信号转导（PbETR1、PbETR2、PbERS1a、PbERS1b、PbEIN3、PbERF）",
+    "gold_entities": [
+      "PbETR1",
+      "PbETR2",
+      "PbERS1a",
+      "PbERS1b",
+      "PbEIN3",
+      "PbERF"
+    ]
+  },
+  {
+    "question": "本研究分析了哪些挥发性物质合成相关基因的表达量变化？",
+    "type": "factual",
+    "answer_quote": "挥发性物质合成（PbAAT1、PbADH2、PbADH3、PbADH5、PbHPL、PbLOX1、PbLOX8）",
+    "gold_entities": [
+      "PbAAT1",
+      "PbADH2",
+      "PbADH3",
+      "PbADH5",
+      "PbHPL",
+      "PbLOX1",
+      "PbLOX8"
+    ]
+  },
+  {
+    "question": "本研究的目的是比较窖藏和冷藏过程中鸭梨的哪些方面的差异？",
+    "type": "factual",
+    "answer_quote": "比较窖藏和冷藏过程中，鸭梨果实品质、呼吸速率、乙烯释放速率、电子鼻特征、挥发性物质及其相关基因表达的差异",
+    "gold_entities": [
+      "窖藏",
+      "冷藏",
+      "鸭梨",
+      "果实品质",
+      "呼吸速率",
+      "乙烯释放速率",
+      "电子鼻特征",
+      "挥发性物质",
+      "相关基因表达"
+    ]
+  },
+  {
+    "question": "本研究进一步解析两种贮藏方式对鸭梨香气物质形成的什么影响？",
+    "type": "factual",
+    "answer_quote": "进一步解析两种贮藏方式对鸭梨香气物质形成的影响及其机制",
+    "gold_entities": [
+      "贮藏方式",
+      "鸭梨",
+      "香气物质"
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "entities": {
+    "crop": "鸭梨",
+    "region": null,
+    "stage": "贮藏末期",
+    "environment": [
+      "1.0% O2"
+    ],
+    "disease": [],
+    "intent": "storage"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "QA_0334",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法依据给定证据回答该论文引言中提到的具体采后生理病害名称。",
+    "basis": "当前未提供该论文的引言内容或任何检索证据，无法确认论文原文表述。",
+    "reasoning": "问题要求依据《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的引言作答，但证据列表为空，且不应编造论文内容、标准或因果关系，因此不能给出具体病害名称。",
+    "advice": "请提供该论文引言原文或相关检索证据；若需一般性知识，可另行说明，但不应作为该论文引言的引用依据。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.3333333333333333,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何具体采后生理病害名称，仅说明证据不足而拒绝作答；但该题在提供的论文原文中有明确答案（虎皮病和黑心病），属于可回答题，因此按规则拒答不计为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1110,
+      "completion_tokens": 66,
+      "total_tokens": 1176,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 342
+    },
+    "model": "deepseek-flash",
+    "response_id": "ffb52e56-f5a2-4083-9ab2-62a464659e46",
+    "seconds": 5.977433599997312,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法依据给定证据回答该论文引言中提到的具体采后生理病害名称。",
+        "basis": "当前未提供该论文的引言内容或任何检索证据，无法确认论文原文表述。",
+        "reasoning": "问题要求依据《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的引言作答，但证据列表为空，且不应编造论文内容、标准或因果关系，因此不能给出具体病害名称。",
+        "advice": "请提供该论文引言原文或相关检索证据；若需一般性知识，可另行说明，但不应作为该论文引言的引用依据。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 189,
+        "completion_tokens": 149,
+        "total_tokens": 338,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 189
+      },
+      "model": "deepseek-flash",
+      "response_id": "8061090c-3f75-464d-a6db-ef71f4d7918c",
+      "seconds": 5.908594799999264,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 11.887474299990572
+}

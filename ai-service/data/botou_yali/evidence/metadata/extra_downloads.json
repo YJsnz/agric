@@ -1,0 +1,42 @@
+[
+  {
+    "id": "uc_obliquebanded_leafroller",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/obliquebanded-leafroller/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_obliquebanded_leafroller.html",
+    "sha256": "ad3f8eb181bf0f28def06de07f5a05e900fb6ab6017678abc4dee5d829fc1fe3",
+    "bytes": 40817
+  },
+  {
+    "id": "uc_pearslug_pear_sawfly",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/pearslug-pear-sawfly/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_pearslug_pear_sawfly.html",
+    "sha256": "7efb119ba4dd501e8dd26b7f83adcf39ab41b7c5c63dc4ac79b105a2e377922b",
+    "bytes": 10938
+  },
+  {
+    "id": "uc_katydids",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/katydids/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_katydids.html",
+    "sha256": "cb4588d4949d4816c04edcb58575a253011f2154d7321bc9191bb8a8bbfab64f",
+    "bytes": 35182
+  },
+  {
+    "id": "uc_consperse_stink_bug",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/consperse-stink-bug/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_consperse_stink_bug.html",
+    "sha256": "1d8c4c92bd80fbe58b7bb0ac669154b41bd03a9c2b54acf87943a4db686bfa8b",
+    "bytes": 10937
+  },
+  {
+    "id": "uc_western_boxelder_bug",
+    "url": "https://ipm.ucanr.edu/agriculture/pear/western-boxelder-bug/",
+    "status": "downloaded_not_reviewed",
+    "file": "government\\uc_western_boxelder_bug.html",
+    "sha256": "1c7ece9a4e1a02bef697cb424c3afa80deedbd8d23846fd311add26d6004ca51",
+    "bytes": 36994
+  }
+]

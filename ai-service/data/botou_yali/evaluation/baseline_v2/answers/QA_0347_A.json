@@ -1,0 +1,70 @@
+{
+  "id": "QA_0347",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法依据现有证据回答该问题。",
+    "basis": "未提供任何检索证据，且我无法确认《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的具体内容。",
+    "reasoning": "问题要求依据该论文指出低氧处理通过降低哪些物质积累来抑制虎皮病。由于证据列表为空，且我无法准确回忆该论文的具体数据与结论，不能编造物质名称或因果关系。",
+    "advice": "请提供该论文的原文、摘要或相关段落，或允许检索该论文后再作答。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.3333333333333333,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关键点，仅表示无法依据现有证据作答，属于拒答；在可回答题中拒答不算正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 869,
+      "completion_tokens": 44,
+      "total_tokens": 913,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 357
+    },
+    "model": "deepseek-flash",
+    "response_id": "8160c8d4-287a-49d7-b6ab-690886d68c3e",
+    "seconds": 5.590030100007425,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法依据现有证据回答该问题。",
+        "basis": "未提供任何检索证据，且我无法确认《不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响》的具体内容。",
+        "reasoning": "问题要求依据该论文指出低氧处理通过降低哪些物质积累来抑制虎皮病。由于证据列表为空，且我无法准确回忆该论文的具体数据与结论，不能编造物质名称或因果关系。",
+        "advice": "请提供该论文的原文、摘要或相关段落，或允许检索该论文后再作答。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 198,
+        "completion_tokens": 129,
+        "total_tokens": 327,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 198
+      },
+      "model": "deepseek-flash",
+      "response_id": "4182ba5d-40d6-43f0-aeae-5d616d658c9b",
+      "seconds": 6.183691400001408,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 11.77611180000531
+}

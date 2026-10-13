@@ -1,0 +1,2356 @@
+[
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "金丝小枣叶片出现黄化可能有哪些原因？",
+    "entities": {
+      "region": null,
+      "growth_stage": null,
+      "organ": "leaf",
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": null,
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": null,
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": null,
+      "harvest_intent": false,
+      "storage_intent": false,
+      "scope": "production",
+      "intent": "information",
+      "damage_query": false,
+      "cross_stage_query": false,
+      "uncovered_symptom": true,
+      "visual_boundary": false
+    },
+    "generation_called": false,
+    "status": "insufficient_evidence",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 0,
+      "vector_evidence_count": 0,
+      "fused_count": 0
+    },
+    "knowledge_graph": {
+      "edges": []
+    },
+    "paths": [],
+    "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+    "evidence": [],
+    "citations": [],
+    "sources": [],
+    "grounding": {
+      "passed": true,
+      "method": "no_factual_claims",
+      "evidence_sufficient": false
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "answer": "当前主题缺少审核证据，不能据此归因；请补充现场症状和环境信息。"
+  },
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "检测到炭疽病类视觉表现，可以直接确认炭疽病吗？",
+    "entities": {
+      "region": null,
+      "growth_stage": null,
+      "organ": null,
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": null,
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": null,
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": null,
+      "harvest_intent": false,
+      "storage_intent": false,
+      "scope": "production",
+      "intent": "information",
+      "damage_query": false,
+      "cross_stage_query": false,
+      "uncovered_symptom": false,
+      "visual_boundary": true
+    },
+    "generation_called": false,
+    "status": "preliminary",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 0,
+      "vector_evidence_count": 6,
+      "fused_count": 6
+    },
+    "knowledge_graph": {
+      "edges": []
+    },
+    "paths": [],
+    "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+    "evidence": [
+      {
+        "evidence_id": "P1",
+        "source_id": "MODEL_A_CARD",
+        "title": "JUJUBE_LEAF_MODEL_A_V1_CARD.md",
+        "evidence_level": "L4",
+        "region": null,
+        "original_text": "# 金丝小枣视觉 Model A v1 — Model Card\n\n冻结日期：2026-10-08。正式 baseline，仅用于叶片视觉症状分类，不是沧州本地田间确诊模型。\n## 来源与可追溯性\n- 正式训练 run：`runs\\jujube_leaf_yolo11n_cls_v13`。未使用 v1/v12 run。\n- 正式副本：`models\\jujube\\jujube_leaf_yolo11n_cls_v1.pt`；仅文件复制，不重新保存 checkpoint。\n- SHA256：`57531b0b9e57b5714602cb79717148442ba662309df0e9bb1c3d2e092779c5a2`。\n- 公开数据来源：Mendeley `yxmf3cd865`、`58py9f3nsy`。两个来源可能共享采集机构/贡献者，不等于独立本地田间样本。\n- 正式评估数据版本：`jujube_leaf_classifier_v3_final`；Train 2288 / Val 456 / Test 452。\n- 数据按清单保留既有划分；冲突已排除、已确认近重复按组绑定。仍有 14614 对未确认近重复候选风险，不宣称全部同源风险已消除。\n- 本地正式评估时历史 JPEG 规范化清单缺失；实际测试输入哈希记录于 model_a_test_input_integrity.csv。该限制随版本保留。\n## 训练与固定推理\n- YOLO11n-cls，参数量 1,532,429，Ultralytics 8.3.40，imgsz=224。\n- optimizer=AdamW，batch=32，lr0=0.001，seed=0。\n- max epochs=80，actual epochs=49，best epoch=29，patience=20，best Val Top-1=82.675%。\n- early stopping=true：依据 results.csv 与 args.yaml 推断，未读取服务器终止日志。完整训练配置保留在原 run。\n- 固定 argmax 分类，不调阈值。评估采用 OpenCV cv2.imread 与官方 ClassificationDataset 相同读取方式，224 Resize + CenterCrop、crop_fraction=1.0、无推理增强。\n- 后端必须读取 checkpoint.names 获取输出索引，不得把配置 classes 列表次序当模型 logit 索引。\n## 正式 Test\n| 指标 | 值 |\n|---|---:|\n| accuracy | 0.811947 |\n| macro_precision | 0.795888 |\n| macro_recall | 0.750284 |\n| macro_f1 | 0.768390 |\n| balanced_accuracy | 0.750284 |\n| weighted_f1 | 0.811090 |\n\n| 类别 | support | P | R | F1 |\n|---|---:|---:|---:|---:|\n| healthy | 173 | 0.8466 | 0.9249 | 0.8840 |\n| anthracnose | 106 | 0.7203 | 0.8019 | 0.7589 |\n| powdery_mildew | 28 | 0.5769 | 0.5357 | 0.5556 |\n| insect_damage | 59 | 1.0000 | 0.7797 | 0.8762 |\n| yellow_leaf | 86 | 0.8356 | 0.7093 | 0.7673 |\n\nTop-5=1.0，因总类别数为5，无实际区分意义。\n## 已知限制\n- powdery_mildew 是主要弱类：Test support=28，Recall=53.57%，F1=0.5556。\n- 最大混淆：yellow_leaf → anthracnose=17张，不能将黄化直接解释为炭疽病。\n- 来源间性能差异/domain gap：yxmf3cd865 Accuracy=86.75%（151张），58py9f3nsy=78.41%（301张）。该差异不构成因果解释。\n- 高置信度错误≥0.8：25张；≥0.9：9张。模型得分不是确诊概率。\n- 当前模型不是沧州本地田间确诊模型；尚不能证明跨品种、光照、拍摄背景和生育期泛化能力。\n## 固定类别语义\n- `healthy`：健康叶片视觉状态。\n- `anthracnose`：炭疽病类视觉表现。\n- `powdery_mildew`：白粉病类视觉表现。\n- `insect_damage`：虫害损伤视觉表现。\n- `yellow_leaf`：黄化视觉表现。\n\nyellow_leaf 禁止直接翻译为缺氮、缺铁、盐害或具体病害。healthy 也不证明没有潜在病害。\n## 后续 KG / GraphRAG 接入原则\n仅传递 visual observation / visual candidate、分类得分及模型版本；结合环境、生育阶段、管理信息和 KG/GraphRAG 检索证据生成风险研判。缺失上下文保持未知，不从作物名推断地区，不把视觉标签作为病害事实写入 KG。\n保留证据来源及适用范围；候选与确诊分离。不得凭视觉类别直接给出缺素、盐害或具体病害确诊，亦不得把模型分数转换成诊断概率。\n本阶段未接入后端、未启动 v2 实验、未训练、未调参。完整逐图结果、置信度错误和混淆矩阵保留在 reports。\n",
+        "source_type": "model_card",
+        "purpose": "model_usage_boundary_not_agronomic_evidence",
+        "sha256": "a34cd830047e3d555654c8a9b4259f94a31ceda134a93cdcd70405c52f8b4743"
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "P1",
+        "source_id": "MODEL_A_CARD",
+        "title": "JUJUBE_LEAF_MODEL_A_V1_CARD.md",
+        "evidence_level": "L4",
+        "region": null,
+        "original_text": "# 金丝小枣视觉 Model A v1 — Model Card\n\n冻结日期：2026-10-08。正式 baseline，仅用于叶片视觉症状分类，不是沧州本地田间确诊模型。\n## 来源与可追溯性\n- 正式训练 run：`runs\\jujube_leaf_yolo11n_cls_v13`。未使用 v1/v12 run。\n- 正式副本：`models\\jujube\\jujube_leaf_yolo11n_cls_v1.pt`；仅文件复制，不重新保存 checkpoint。\n- SHA256：`57531b0b9e57b5714602cb79717148442ba662309df0e9bb1c3d2e092779c5a2`。\n- 公开数据来源：Mendeley `yxmf3cd865`、`58py9f3nsy`。两个来源可能共享采集机构/贡献者，不等于独立本地田间样本。\n- 正式评估数据版本：`jujube_leaf_classifier_v3_final`；Train 2288 / Val 456 / Test 452。\n- 数据按清单保留既有划分；冲突已排除、已确认近重复按组绑定。仍有 14614 对未确认近重复候选风险，不宣称全部同源风险已消除。\n- 本地正式评估时历史 JPEG 规范化清单缺失；实际测试输入哈希记录于 model_a_test_input_integrity.csv。该限制随版本保留。\n## 训练与固定推理\n- YOLO11n-cls，参数量 1,532,429，Ultralytics 8.3.40，imgsz=224。\n- optimizer=AdamW，batch=32，lr0=0.001，seed=0。\n- max epochs=80，actual epochs=49，best epoch=29，patience=20，best Val Top-1=82.675%。\n- early stopping=true：依据 results.csv 与 args.yaml 推断，未读取服务器终止日志。完整训练配置保留在原 run。\n- 固定 argmax 分类，不调阈值。评估采用 OpenCV cv2.imread 与官方 ClassificationDataset 相同读取方式，224 Resize + CenterCrop、crop_fraction=1.0、无推理增强。\n- 后端必须读取 checkpoint.names 获取输出索引，不得把配置 classes 列表次序当模型 logit 索引。\n## 正式 Test\n| 指标 | 值 |\n|---|---:|\n| accuracy | 0.811947 |\n| macro_precision | 0.795888 |\n| macro_recall | 0.750284 |\n| macro_f1 | 0.768390 |\n| balanced_accuracy | 0.750284 |\n| weighted_f1 | 0.811090 |\n\n| 类别 | support | P | R | F1 |\n|---|---:|---:|---:|---:|\n| healthy | 173 | 0.8466 | 0.9249 | 0.8840 |\n| anthracnose | 106 | 0.7203 | 0.8019 | 0.7589 |\n| powdery_mildew | 28 | 0.5769 | 0.5357 | 0.5556 |\n| insect_damage | 59 | 1.0000 | 0.7797 | 0.8762 |\n| yellow_leaf | 86 | 0.8356 | 0.7093 | 0.7673 |\n\nTop-5=1.0，因总类别数为5，无实际区分意义。\n## 已知限制\n- powdery_mildew 是主要弱类：Test support=28，Recall=53.57%，F1=0.5556。\n- 最大混淆：yellow_leaf → anthracnose=17张，不能将黄化直接解释为炭疽病。\n- 来源间性能差异/domain gap：yxmf3cd865 Accuracy=86.75%（151张），58py9f3nsy=78.41%（301张）。该差异不构成因果解释。\n- 高置信度错误≥0.8：25张；≥0.9：9张。模型得分不是确诊概率。\n- 当前模型不是沧州本地田间确诊模型；尚不能证明跨品种、光照、拍摄背景和生育期泛化能力。\n## 固定类别语义\n- `healthy`：健康叶片视觉状态。\n- `anthracnose`：炭疽病类视觉表现。\n- `powdery_mildew`：白粉病类视觉表现。\n- `insect_damage`：虫害损伤视觉表现。\n- `yellow_leaf`：黄化视觉表现。\n\nyellow_leaf 禁止直接翻译为缺氮、缺铁、盐害或具体病害。healthy 也不证明没有潜在病害。\n## 后续 KG / GraphRAG 接入原则\n仅传递 visual observation / visual candidate、分类得分及模型版本；结合环境、生育阶段、管理信息和 KG/GraphRAG 检索证据生成风险研判。缺失上下文保持未知，不从作物名推断地区，不把视觉标签作为病害事实写入 KG。\n保留证据来源及适用范围；候选与确诊分离。不得凭视觉类别直接给出缺素、盐害或具体病害确诊，亦不得把模型分数转换成诊断概率。\n本阶段未接入后端、未启动 v2 实验、未训练、未调参。完整逐图结果、置信度错误和混淆矩阵保留在 reports。\n",
+        "source_type": "model_card",
+        "purpose": "model_usage_boundary_not_agronomic_evidence",
+        "sha256": "a34cd830047e3d555654c8a9b4259f94a31ceda134a93cdcd70405c52f8b4743"
+      }
+    ],
+    "sources": [
+      {
+        "evidence_id": "P1",
+        "source_id": "MODEL_A_CARD",
+        "title": "JUJUBE_LEAF_MODEL_A_V1_CARD.md",
+        "evidence_level": "L4",
+        "region": null,
+        "original_text": "# 金丝小枣视觉 Model A v1 — Model Card\n\n冻结日期：2026-10-08。正式 baseline，仅用于叶片视觉症状分类，不是沧州本地田间确诊模型。\n## 来源与可追溯性\n- 正式训练 run：`runs\\jujube_leaf_yolo11n_cls_v13`。未使用 v1/v12 run。\n- 正式副本：`models\\jujube\\jujube_leaf_yolo11n_cls_v1.pt`；仅文件复制，不重新保存 checkpoint。\n- SHA256：`57531b0b9e57b5714602cb79717148442ba662309df0e9bb1c3d2e092779c5a2`。\n- 公开数据来源：Mendeley `yxmf3cd865`、`58py9f3nsy`。两个来源可能共享采集机构/贡献者，不等于独立本地田间样本。\n- 正式评估数据版本：`jujube_leaf_classifier_v3_final`；Train 2288 / Val 456 / Test 452。\n- 数据按清单保留既有划分；冲突已排除、已确认近重复按组绑定。仍有 14614 对未确认近重复候选风险，不宣称全部同源风险已消除。\n- 本地正式评估时历史 JPEG 规范化清单缺失；实际测试输入哈希记录于 model_a_test_input_integrity.csv。该限制随版本保留。\n## 训练与固定推理\n- YOLO11n-cls，参数量 1,532,429，Ultralytics 8.3.40，imgsz=224。\n- optimizer=AdamW，batch=32，lr0=0.001，seed=0。\n- max epochs=80，actual epochs=49，best epoch=29，patience=20，best Val Top-1=82.675%。\n- early stopping=true：依据 results.csv 与 args.yaml 推断，未读取服务器终止日志。完整训练配置保留在原 run。\n- 固定 argmax 分类，不调阈值。评估采用 OpenCV cv2.imread 与官方 ClassificationDataset 相同读取方式，224 Resize + CenterCrop、crop_fraction=1.0、无推理增强。\n- 后端必须读取 checkpoint.names 获取输出索引，不得把配置 classes 列表次序当模型 logit 索引。\n## 正式 Test\n| 指标 | 值 |\n|---|---:|\n| accuracy | 0.811947 |\n| macro_precision | 0.795888 |\n| macro_recall | 0.750284 |\n| macro_f1 | 0.768390 |\n| balanced_accuracy | 0.750284 |\n| weighted_f1 | 0.811090 |\n\n| 类别 | support | P | R | F1 |\n|---|---:|---:|---:|---:|\n| healthy | 173 | 0.8466 | 0.9249 | 0.8840 |\n| anthracnose | 106 | 0.7203 | 0.8019 | 0.7589 |\n| powdery_mildew | 28 | 0.5769 | 0.5357 | 0.5556 |\n| insect_damage | 59 | 1.0000 | 0.7797 | 0.8762 |\n| yellow_leaf | 86 | 0.8356 | 0.7093 | 0.7673 |\n\nTop-5=1.0，因总类别数为5，无实际区分意义。\n## 已知限制\n- powdery_mildew 是主要弱类：Test support=28，Recall=53.57%，F1=0.5556。\n- 最大混淆：yellow_leaf → anthracnose=17张，不能将黄化直接解释为炭疽病。\n- 来源间性能差异/domain gap：yxmf3cd865 Accuracy=86.75%（151张），58py9f3nsy=78.41%（301张）。该差异不构成因果解释。\n- 高置信度错误≥0.8：25张；≥0.9：9张。模型得分不是确诊概率。\n- 当前模型不是沧州本地田间确诊模型；尚不能证明跨品种、光照、拍摄背景和生育期泛化能力。\n## 固定类别语义\n- `healthy`：健康叶片视觉状态。\n- `anthracnose`：炭疽病类视觉表现。\n- `powdery_mildew`：白粉病类视觉表现。\n- `insect_damage`：虫害损伤视觉表现。\n- `yellow_leaf`：黄化视觉表现。\n\nyellow_leaf 禁止直接翻译为缺氮、缺铁、盐害或具体病害。healthy 也不证明没有潜在病害。\n## 后续 KG / GraphRAG 接入原则\n仅传递 visual observation / visual candidate、分类得分及模型版本；结合环境、生育阶段、管理信息和 KG/GraphRAG 检索证据生成风险研判。缺失上下文保持未知，不从作物名推断地区，不把视觉标签作为病害事实写入 KG。\n保留证据来源及适用范围；候选与确诊分离。不得凭视觉类别直接给出缺素、盐害或具体病害确诊，亦不得把模型分数转换成诊断概率。\n本阶段未接入后端、未启动 v2 实验、未训练、未调参。完整逐图结果、置信度错误和混淆矩阵保留在 reports。\n",
+        "source_type": "model_card",
+        "purpose": "model_usage_boundary_not_agronomic_evidence",
+        "sha256": "a34cd830047e3d555654c8a9b4259f94a31ceda134a93cdcd70405c52f8b4743"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "method": "verified_model_card_usage_policy",
+      "agronomic_claims": false
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "answer": "不能直接确认炭疽病。模型只提供叶片视觉症状候选证据，不能替代疾病最终确诊。[P1]",
+    "claim_scope": "model_usage_boundary_not_agronomic_claim",
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "不能直接确认炭疽病。模型只提供叶片视觉症状候选证据，不能替代疾病最终确诊。[P1]",
+      "supporting_points": [
+        "模型使用边界 [P1]"
+      ],
+      "uncertainties": [
+        "不涉及病因或食品安全检测结论"
+      ]
+    }
+  },
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "果实发生碰伤后，采后可能有什么风险？",
+    "entities": {
+      "region": null,
+      "growth_stage": null,
+      "organ": "fruit",
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": null,
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": null,
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": null,
+      "harvest_intent": false,
+      "storage_intent": true,
+      "scope": "postharvest",
+      "intent": "information",
+      "damage_query": true,
+      "cross_stage_query": false,
+      "uncovered_symptom": false,
+      "visual_boundary": false
+    },
+    "generation_called": true,
+    "status": "preliminary",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 1,
+      "vector_evidence_count": 1,
+      "fused_count": 1
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "JJE_AUDIT_001",
+          "source": "cangzhou_jinsixiaozao:e7c9863b0135cbd2",
+          "target": "cangzhou_jinsixiaozao:3dfd0b9f29a8c31e",
+          "relation": "INCREASES_RISK_OF",
+          "kind": "semantic",
+          "source_id": "J008",
+          "source_ids": [
+            "J008"
+          ],
+          "title": "金丝小枣果实病害病原菌研究",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": null,
+          "stage_ids": [],
+          "subject": "刺伤接种（室内离体试验）",
+          "object": "接种发病风险（离体果实）",
+          "evidence_text": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+          "page": null,
+          "section": "2.3 分离物对枣果致病性的测定",
+          "evidence_level": "peer_reviewed_regional",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC_AUDIT_001",
+          "conditions": [
+            "仅室内离体接种试验，不代表自然碰伤或仓储腐败"
+          ],
+          "evidence_ids": [
+            "J008",
+            "JJC_AUDIT_001"
+          ],
+          "evidence": [
+            {
+              "id": "JJC_AUDIT_001",
+              "source_id": "J008",
+              "quote": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+              "locator": {
+                "page": null,
+                "section": "2.3 分离物对枣果致病性的测定",
+                "file": "evidence/raw/J008.txt"
+              }
+            }
+          ],
+          "locator": {
+            "page": null,
+            "section": "2.3 分离物对枣果致病性的测定",
+            "file": "evidence/raw/J008.txt"
+          },
+          "standard_status": "not_a_standard",
+          "cross_stage": true,
+          "cross_stage_kind": "production_to_detached_experiment_not_storage_validation",
+          "source_type": "同行评议期刊",
+          "year": 2004,
+          "original_text": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+          "normalized_claim": "刺伤接种（室内离体试验） INCREASES_RISK_OF 接种发病风险（离体果实）",
+          "evidence_level_compat": "L3"
+        }
+      ]
+    },
+    "paths": [
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e7c9863b0135cbd2",
+          "cangzhou_jinsixiaozao:3dfd0b9f29a8c31e"
+        ],
+        "edge_ids": [
+          "JJE_AUDIT_001"
+        ],
+        "relations": [
+          "INCREASES_RISK_OF"
+        ],
+        "evidence_ids": [
+          "JJC_AUDIT_001"
+        ],
+        "source_ids": [
+          "J008"
+        ]
+      }
+    ],
+    "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "cross_stage",
+          "organ": "fruit",
+          "topic": "机械损伤相关刺伤接种离体试验",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.3 分离物对枣果致病性的测定",
+            "file": "evidence/raw/J008.txt"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment",
+          "applicability": "室内离体接种；不是实际碰伤或储藏场景验证",
+          "scope_origin": "production fruit sampled into detached-fruit experiment",
+          "evidence_level_compat": "L3"
+        },
+        "evidence_level": "L3",
+        "region": "河北沧州、山东乐陵、天津静海",
+        "original_text": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+        "source_type": "同行评议期刊",
+        "year": 2004,
+        "chunk_id": "JJC_AUDIT_001",
+        "edge_ids": [
+          "JJE_AUDIT_001"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e7c9863b0135cbd2",
+          "cangzhou_jinsixiaozao:3dfd0b9f29a8c31e"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "cross_stage",
+          "organ": "fruit",
+          "topic": "机械损伤相关刺伤接种离体试验",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.3 分离物对枣果致病性的测定",
+            "file": "evidence/raw/J008.txt"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment",
+          "applicability": "室内离体接种；不是实际碰伤或储藏场景验证",
+          "scope_origin": "production fruit sampled into detached-fruit experiment",
+          "evidence_level_compat": "L3"
+        },
+        "evidence_level": "L3",
+        "region": "河北沧州、山东乐陵、天津静海",
+        "original_text": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+        "source_type": "同行评议期刊",
+        "year": 2004,
+        "chunk_id": "JJC_AUDIT_001",
+        "edge_ids": [
+          "JJE_AUDIT_001"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e7c9863b0135cbd2",
+          "cangzhou_jinsixiaozao:3dfd0b9f29a8c31e"
+        ],
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      }
+    ],
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J008",
+        "title": "金丝小枣果实病害病原菌研究",
+        "content": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "河北沧州、山东乐陵、天津静海",
+          "growth_stage": null,
+          "stage_unknown": true,
+          "scope": "cross_stage",
+          "organ": "fruit",
+          "topic": "机械损伤相关刺伤接种离体试验",
+          "source_id": "J008",
+          "locator": {
+            "page": null,
+            "section": "2.3 分离物对枣果致病性的测定",
+            "file": "evidence/raw/J008.txt"
+          },
+          "evidence_level": "peer_reviewed_regional",
+          "standard_status": "not_a_standard",
+          "review_status": "verbatim_verified",
+          "source_sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+          "risk": [],
+          "purpose": "candidate_assessment",
+          "applicability": "室内离体接种；不是实际碰伤或储藏场景验证",
+          "scope_origin": "production fruit sampled into detached-fruit experiment",
+          "evidence_level_compat": "L3"
+        },
+        "evidence_level": "L3",
+        "region": "河北沧州、山东乐陵、天津静海",
+        "original_text": "表明，室内离体条件下，菌1、菌2、菌3接种到金丝小枣病果上，无论是单接和混接均可导致枣果发病，并表现典型症状，其中刺伤接种发病率高于无伤接种。",
+        "source_type": "同行评议期刊",
+        "year": 2004,
+        "chunk_id": "JJC_AUDIT_001",
+        "edge_ids": [
+          "JJE_AUDIT_001"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e7c9863b0135cbd2",
+          "cangzhou_jinsixiaozao:3dfd0b9f29a8c31e"
+        ],
+        "url": "https://html.rhhz.net/linyekexue/html/20040634.htm"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论严格限定为室内离体刺伤接种条件下菌1、菌2、菌3单接或混接均可致病、刺伤接种发病率高于无伤接种，并明确不能外推自然碰伤或实际储藏发病率，与E1内容及applicability一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对E1试验条件、处理方式和结果的描述与E1原文一致，且正确说明该证据为离体刺伤接种试验、非自然碰伤或实际储藏场景验证。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning基于E1的离体刺伤接种结果，仅承认刺伤与发病的关联，并指出不能外推自然碰伤腐败或实际储藏发病率，未补造E1未提供的病原种类、发病进程或储藏条件影响。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice未推荐药名、剂量、施药周期或生产操作，仅说明现有证据不足以给出自然碰伤采后处理措施，并建议现场症状与病原学复核，符合candidate_assessment范围。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "现有证据只能提示：在室内离体接种条件下，金丝小枣果实经刺伤接种后，菌1、菌2、菌3无论单接还是混接均可导致枣果发病并表现典型症状，且刺伤接种的发病率高于无伤接种 [E1] 。这仅说明在给定接种条件下，机械损伤（刺伤）与枣果发病风险存在关联，不能据此推断自然碰伤一定导致腐败，也不能给出实际储藏中的发病率 [E1] 。",
+      "supporting_points": [
+        "证据[E1]来自金丝小枣果实病害病原菌研究，描述的是室内离体条件下将菌1、菌2、菌3接种到金丝小枣病果上的试验结果：单接和混接均可致病并表现典型症状，刺伤接种发病率高于无伤接种 [E1] 。该证据的适用场景为离体刺伤接种试验，不是自然碰伤或实际储藏场景验证 [E1] 。"
+      ],
+      "uncertainties": [
+        "用户询问果实碰伤后的采后风险，属于采后机械损伤相关问题。现有唯一证据[E1]是室内离体刺伤接种试验，其结论只支持在给定接种条件下刺伤与发病的关联，不能外推为自然碰伤一定腐败或实际储藏发病率 [E1] 。证据未提供自然碰伤后的具体病原种类、发病进程、储藏条件影响等信息，因此无法给出更具体的采后风险判断。"
+      ]
+    },
+    "answer": "现有证据只能提示：在室内离体接种条件下，金丝小枣果实经刺伤接种后，菌1、菌2、菌3无论单接还是混接均可导致枣果发病并表现典型症状，且刺伤接种的发病率高于无伤接种 [E1] 。这仅说明在给定接种条件下，机械损伤（刺伤）与枣果发病风险存在关联，不能据此推断自然碰伤一定导致腐败，也不能给出实际储藏中的发病率 [E1] 。\n\n现有证据仅支持在室内离体刺伤接种条件下刺伤与枣果发病风险的关联 [E1] ，不足以给出针对自然碰伤的采后观察或处理措施。建议结合现场果实症状和病原学复核进一步判断，而非仅依据离体接种试验推断 [E1] 。",
+    "grounded_answer": {
+      "sufficient": false,
+      "conclusion": "现有证据只能提示：在室内离体接种条件下，金丝小枣果实经刺伤接种后，菌1、菌2、菌3无论单接还是混接均可导致枣果发病并表现典型症状，且刺伤接种的发病率高于无伤接种 [E1] 。这仅说明在给定接种条件下，机械损伤（刺伤）与枣果发病风险存在关联，不能据此推断自然碰伤一定导致腐败，也不能给出实际储藏中的发病率 [E1] 。",
+      "basis": "证据[E1]来自金丝小枣果实病害病原菌研究，描述的是室内离体条件下将菌1、菌2、菌3接种到金丝小枣病果上的试验结果：单接和混接均可致病并表现典型症状，刺伤接种发病率高于无伤接种 [E1] 。该证据的适用场景为离体刺伤接种试验，不是自然碰伤或实际储藏场景验证 [E1] 。",
+      "reasoning": "用户询问果实碰伤后的采后风险，属于采后机械损伤相关问题。现有唯一证据[E1]是室内离体刺伤接种试验，其结论只支持在给定接种条件下刺伤与发病的关联，不能外推为自然碰伤一定腐败或实际储藏发病率 [E1] 。证据未提供自然碰伤后的具体病原种类、发病进程、储藏条件影响等信息，因此无法给出更具体的采后风险判断。",
+      "advice": "现有证据仅支持在室内离体刺伤接种条件下刺伤与枣果发病风险的关联 [E1] ，不足以给出针对自然碰伤的采后观察或处理措施。建议结合现场果实症状和病原学复核进一步判断，而非仅依据离体接种试验推断 [E1] 。",
+      "citations": [
+        "E1"
+      ],
+      "candidate_assessments": [
+        {
+          "candidate_name": "机械损伤（刺伤）相关发病风险",
+          "assessment": "在室内离体条件下，金丝小枣果实经刺伤接种菌1、菌2、菌3后，无论单接还是混接均可导致枣果发病并表现典型症状，且刺伤接种发病率高于无伤接种[E1]。该结果仅支持给定接种条件下刺伤与发病风险的关联，不能外推为自然碰伤一定腐败或实际储藏发病率[E1]。",
+          "evidence_ids": [
+            "E1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "储藏温度过高会带来哪些采后风险？",
+    "entities": {
+      "region": null,
+      "growth_stage": "贮藏期",
+      "organ": null,
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": null,
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": null,
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": null,
+      "harvest_intent": false,
+      "storage_intent": true,
+      "scope": "postharvest",
+      "intent": "information",
+      "damage_query": false,
+      "cross_stage_query": false,
+      "uncovered_symptom": false,
+      "visual_boundary": false
+    },
+    "generation_called": true,
+    "status": "preliminary",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 13,
+      "vector_evidence_count": 4,
+      "fused_count": 4
+    },
+    "knowledge_graph": {
+      "edges": [
+        {
+          "id": "JJE030",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:583f0c2b36ff6f64",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "批次分明",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 REQUIRES 批次分明",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE031",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:f4228b965a477170",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "堆码整齐",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 REQUIRES 堆码整齐",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE032",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:e99154e42df2c2b2",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "环境整洁",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 REQUIRES 环境整洁",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE033",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:4185485fbefc2466",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "通风良好",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 REQUIRES 通风良好",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE034",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:0e735df0b8fb7a45",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "防潮",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 REQUIRES 防潮",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE035",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:374c255bf1a2e816",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "防虫",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 REQUIRES 防虫",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE036",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:2ea5369f4e1d600b",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "防鼠",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 REQUIRES 防鼠",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE037",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:77c996eed384313b",
+          "relation": "REQUIRES",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "温湿度适宜",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 REQUIRES 温湿度适宜",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE038",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:def5130a3d02386c",
+          "relation": "AVOIDS",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "烈日暴晒",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 AVOIDS 烈日暴晒",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE039",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:b2e151c714014fc4",
+          "relation": "AVOIDS",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "雨淋",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 AVOIDS 雨淋",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE040",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:447f51651f071882",
+          "relation": "AVOIDS",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "冻害",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 AVOIDS 冻害",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE041",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:d6330f37006ad6f6",
+          "relation": "AVOIDS",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "热害",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 AVOIDS 热害",
+          "evidence_level_compat": "L1"
+        },
+        {
+          "id": "JJE042",
+          "source": "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "target": "cangzhou_jinsixiaozao:c557149a3018b9ed",
+          "relation": "AVOIDS",
+          "kind": "semantic",
+          "source_id": "J001",
+          "source_ids": [
+            "J001"
+          ],
+          "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+          "region": "沧州金丝小枣地理标志保护区",
+          "crop": [
+            "沧州金丝小枣"
+          ],
+          "crop_id": "cangzhou_jinsixiaozao",
+          "growth_stage": "贮藏期",
+          "stage_ids": [
+            "cangzhou_jinsixiaozao:a6aa6d2f5fb95bcf"
+          ],
+          "subject": "干枣贮存",
+          "object": "异味有毒有害物品混放",
+          "evidence_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "page": 8,
+          "section": "9.3.3",
+          "evidence_level": "local_verified",
+          "review_status": "verbatim_verified",
+          "chunk_id": "JJC007",
+          "conditions": [
+            "用途：postharvest",
+            "器官：fruit",
+            "阶段：贮藏期"
+          ],
+          "evidence_ids": [
+            "J001",
+            "JJC007"
+          ],
+          "evidence": [
+            {
+              "id": "JJC007",
+              "source_id": "J001",
+              "quote": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+              "locator": {
+                "page": 8,
+                "section": "9.3.3",
+                "file": "evidence/raw/J001_fulltext.pdf"
+              }
+            }
+          ],
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "standard_status": "current",
+          "source_type": "地方标准",
+          "year": 2023,
+          "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+          "normalized_claim": "干枣贮存 AVOIDS 异味有毒有害物品混放",
+          "evidence_level_compat": "L1"
+        }
+      ]
+    },
+    "paths": [
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:583f0c2b36ff6f64"
+        ],
+        "edge_ids": [
+          "JJE030"
+        ],
+        "relations": [
+          "REQUIRES"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:f4228b965a477170"
+        ],
+        "edge_ids": [
+          "JJE031"
+        ],
+        "relations": [
+          "REQUIRES"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:e99154e42df2c2b2"
+        ],
+        "edge_ids": [
+          "JJE032"
+        ],
+        "relations": [
+          "REQUIRES"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:4185485fbefc2466"
+        ],
+        "edge_ids": [
+          "JJE033"
+        ],
+        "relations": [
+          "REQUIRES"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:0e735df0b8fb7a45"
+        ],
+        "edge_ids": [
+          "JJE034"
+        ],
+        "relations": [
+          "REQUIRES"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:374c255bf1a2e816"
+        ],
+        "edge_ids": [
+          "JJE035"
+        ],
+        "relations": [
+          "REQUIRES"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:2ea5369f4e1d600b"
+        ],
+        "edge_ids": [
+          "JJE036"
+        ],
+        "relations": [
+          "REQUIRES"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:77c996eed384313b"
+        ],
+        "edge_ids": [
+          "JJE037"
+        ],
+        "relations": [
+          "REQUIRES"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:def5130a3d02386c"
+        ],
+        "edge_ids": [
+          "JJE038"
+        ],
+        "relations": [
+          "AVOIDS"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:b2e151c714014fc4"
+        ],
+        "edge_ids": [
+          "JJE039"
+        ],
+        "relations": [
+          "AVOIDS"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:447f51651f071882"
+        ],
+        "edge_ids": [
+          "JJE040"
+        ],
+        "relations": [
+          "AVOIDS"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:d6330f37006ad6f6"
+        ],
+        "edge_ids": [
+          "JJE041"
+        ],
+        "relations": [
+          "AVOIDS"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      },
+      {
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:c557149a3018b9ed"
+        ],
+        "edge_ids": [
+          "JJE042"
+        ],
+        "relations": [
+          "AVOIDS"
+        ],
+        "evidence_ids": [
+          "JJC007"
+        ],
+        "source_ids": [
+          "J001"
+        ]
+      }
+    ],
+    "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "运输期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "运输条件",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.4",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC008",
+        "edge_ids": [
+          "JJE043",
+          "JJE044",
+          "JJE045"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:10632a43ef7c4b9d",
+          "cangzhou_jinsixiaozao:8fbac3743b37bc0d",
+          "cangzhou_jinsixiaozao:a4fd430bb71201dd",
+          "cangzhou_jinsixiaozao:e971db6e48fb41a1"
+        ]
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣露天存放",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.2",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC006",
+        "edge_ids": [
+          "JJE028",
+          "JJE029"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:1aeea52814da0277",
+          "cangzhou_jinsixiaozao:93ca5b0a4c2e6f8d",
+          "cangzhou_jinsixiaozao:a48bfec5e01e53de"
+        ]
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "采收期",
+          "stage_unknown": false,
+          "scope": "harvest",
+          "organ": "fruit",
+          "topic": "采收成熟度",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 果实采收",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC005",
+        "edge_ids": [
+          "JJE026",
+          "JJE027"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:0d30194c402d63a5",
+          "cangzhou_jinsixiaozao:fb7639d9c1294312",
+          "cangzhou_jinsixiaozao:efe18b9df4dc824d",
+          "cangzhou_jinsixiaozao:c81f6763ed1764b3"
+        ]
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣待运贮存",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC007",
+        "edge_ids": [
+          "JJE030",
+          "JJE031",
+          "JJE032",
+          "JJE033",
+          "JJE034",
+          "JJE035",
+          "JJE036",
+          "JJE037",
+          "JJE038",
+          "JJE039",
+          "JJE040",
+          "JJE041",
+          "JJE042"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:583f0c2b36ff6f64",
+          "cangzhou_jinsixiaozao:f4228b965a477170",
+          "cangzhou_jinsixiaozao:e99154e42df2c2b2",
+          "cangzhou_jinsixiaozao:4185485fbefc2466",
+          "cangzhou_jinsixiaozao:0e735df0b8fb7a45",
+          "cangzhou_jinsixiaozao:374c255bf1a2e816",
+          "cangzhou_jinsixiaozao:2ea5369f4e1d600b",
+          "cangzhou_jinsixiaozao:77c996eed384313b",
+          "cangzhou_jinsixiaozao:def5130a3d02386c",
+          "cangzhou_jinsixiaozao:b2e151c714014fc4",
+          "cangzhou_jinsixiaozao:447f51651f071882",
+          "cangzhou_jinsixiaozao:d6330f37006ad6f6",
+          "cangzhou_jinsixiaozao:c557149a3018b9ed"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "运输期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "运输条件",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.4",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC008",
+        "edge_ids": [
+          "JJE043",
+          "JJE044",
+          "JJE045"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:10632a43ef7c4b9d",
+          "cangzhou_jinsixiaozao:8fbac3743b37bc0d",
+          "cangzhou_jinsixiaozao:a4fd430bb71201dd",
+          "cangzhou_jinsixiaozao:e971db6e48fb41a1"
+        ],
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣露天存放",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.2",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC006",
+        "edge_ids": [
+          "JJE028",
+          "JJE029"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:1aeea52814da0277",
+          "cangzhou_jinsixiaozao:93ca5b0a4c2e6f8d",
+          "cangzhou_jinsixiaozao:a48bfec5e01e53de"
+        ],
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "采收期",
+          "stage_unknown": false,
+          "scope": "harvest",
+          "organ": "fruit",
+          "topic": "采收成熟度",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 果实采收",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC005",
+        "edge_ids": [
+          "JJE026",
+          "JJE027"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:0d30194c402d63a5",
+          "cangzhou_jinsixiaozao:fb7639d9c1294312",
+          "cangzhou_jinsixiaozao:efe18b9df4dc824d",
+          "cangzhou_jinsixiaozao:c81f6763ed1764b3"
+        ],
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣待运贮存",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC007",
+        "edge_ids": [
+          "JJE030",
+          "JJE031",
+          "JJE032",
+          "JJE033",
+          "JJE034",
+          "JJE035",
+          "JJE036",
+          "JJE037",
+          "JJE038",
+          "JJE039",
+          "JJE040",
+          "JJE041",
+          "JJE042"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:583f0c2b36ff6f64",
+          "cangzhou_jinsixiaozao:f4228b965a477170",
+          "cangzhou_jinsixiaozao:e99154e42df2c2b2",
+          "cangzhou_jinsixiaozao:4185485fbefc2466",
+          "cangzhou_jinsixiaozao:0e735df0b8fb7a45",
+          "cangzhou_jinsixiaozao:374c255bf1a2e816",
+          "cangzhou_jinsixiaozao:2ea5369f4e1d600b",
+          "cangzhou_jinsixiaozao:77c996eed384313b",
+          "cangzhou_jinsixiaozao:def5130a3d02386c",
+          "cangzhou_jinsixiaozao:b2e151c714014fc4",
+          "cangzhou_jinsixiaozao:447f51651f071882",
+          "cangzhou_jinsixiaozao:d6330f37006ad6f6",
+          "cangzhou_jinsixiaozao:c557149a3018b9ed"
+        ],
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      }
+    ],
+    "sources": [
+      {
+        "evidence_id": "E1",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "运输期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "运输条件",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.4",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "9.3.4 运输 \n运输工具应清洁、干燥，有防晒、防雨设施，不得与有异味、有毒、有害物品混合运输。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC008",
+        "edge_ids": [
+          "JJE043",
+          "JJE044",
+          "JJE045"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:10632a43ef7c4b9d",
+          "cangzhou_jinsixiaozao:8fbac3743b37bc0d",
+          "cangzhou_jinsixiaozao:a4fd430bb71201dd",
+          "cangzhou_jinsixiaozao:e971db6e48fb41a1"
+        ],
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E2",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣露天存放",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.2",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "9.3.2 干枣露天存放 \n应选择阴凉通风地点，根据气候条件，用适宜覆盖物覆盖。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC006",
+        "edge_ids": [
+          "JJE028",
+          "JJE029"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:1aeea52814da0277",
+          "cangzhou_jinsixiaozao:93ca5b0a4c2e6f8d",
+          "cangzhou_jinsixiaozao:a48bfec5e01e53de"
+        ],
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E3",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "采收期",
+          "stage_unknown": false,
+          "scope": "harvest",
+          "organ": "fruit",
+          "topic": "采收成熟度",
+          "source_id": "J001",
+          "locator": {
+            "page": 5,
+            "section": "5 果实采收",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "果实采收 \n用于干制红枣的在完熟期采收，用于鲜食枣的在脆熟期采收。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC005",
+        "edge_ids": [
+          "JJE026",
+          "JJE027"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:0d30194c402d63a5",
+          "cangzhou_jinsixiaozao:fb7639d9c1294312",
+          "cangzhou_jinsixiaozao:efe18b9df4dc824d",
+          "cangzhou_jinsixiaozao:c81f6763ed1764b3"
+        ],
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      },
+      {
+        "evidence_id": "E4",
+        "kind": "document_chunk",
+        "source_id": "J001",
+        "title": "DB13/T 5680-2023 地理标志产品 沧州金丝小枣",
+        "content": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+        "metadata": {
+          "crop": "cangzhou_jinsixiaozao",
+          "region": "沧州金丝小枣地理标志保护区",
+          "growth_stage": "贮藏期",
+          "stage_unknown": false,
+          "scope": "postharvest",
+          "organ": "fruit",
+          "topic": "干枣待运贮存",
+          "source_id": "J001",
+          "locator": {
+            "page": 8,
+            "section": "9.3.3",
+            "file": "evidence/raw/J001_fulltext.pdf"
+          },
+          "evidence_level": "local_verified",
+          "standard_status": "current",
+          "review_status": "verbatim_verified",
+          "source_sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+          "risk": [],
+          "purpose": "conditional_standard_guidance",
+          "evidence_level_compat": "L1"
+        },
+        "evidence_level": "L1",
+        "region": "沧州金丝小枣地理标志保护区",
+        "original_text": "9.3.3 干枣的待运和贮存 \n贮存必须批次分明，堆码整齐，环境整洁，通风良好。严禁烈日暴晒和雨淋。注意防冻防热，尽\n量缩短待运时间。贮存枣果不得与有异味、有毒、有害物品混合存放，注意防潮、防虫、防鼠，温湿\n度要控制适宜。",
+        "source_type": "地方标准",
+        "year": 2023,
+        "chunk_id": "JJC007",
+        "edge_ids": [
+          "JJE030",
+          "JJE031",
+          "JJE032",
+          "JJE033",
+          "JJE034",
+          "JJE035",
+          "JJE036",
+          "JJE037",
+          "JJE038",
+          "JJE039",
+          "JJE040",
+          "JJE041",
+          "JJE042"
+        ],
+        "node_ids": [
+          "cangzhou_jinsixiaozao:e533bf358a15a118",
+          "cangzhou_jinsixiaozao:583f0c2b36ff6f64",
+          "cangzhou_jinsixiaozao:f4228b965a477170",
+          "cangzhou_jinsixiaozao:e99154e42df2c2b2",
+          "cangzhou_jinsixiaozao:4185485fbefc2466",
+          "cangzhou_jinsixiaozao:0e735df0b8fb7a45",
+          "cangzhou_jinsixiaozao:374c255bf1a2e816",
+          "cangzhou_jinsixiaozao:2ea5369f4e1d600b",
+          "cangzhou_jinsixiaozao:77c996eed384313b",
+          "cangzhou_jinsixiaozao:def5130a3d02386c",
+          "cangzhou_jinsixiaozao:b2e151c714014fc4",
+          "cangzhou_jinsixiaozao:447f51651f071882",
+          "cangzhou_jinsixiaozao:d6330f37006ad6f6",
+          "cangzhou_jinsixiaozao:c557149a3018b9ed"
+        ],
+        "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论仅陈述E2/E4标准条款中“注意防冻防热”“温湿度要控制适宜”“阴凉通风”等要求，并明确说明证据未给出具体病害名称、症状或量化温度阈值，未超出引用证据范围，也未将标准要求推断为具体因果效应。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis对E2（9.3.2阴凉通风、覆盖物）和E4（9.3.3通风良好、严禁烈日暴晒雨淋、防冻防热、温湿度适宜）的转述与原文一致，且明确说明两条均未描述高温引起的具体采后病害或品质变化，符合证据实际内容。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning正确指出标准条款仅适用于沧州金丝小枣地理标志保护区，需核实果园位置；并说明“防热”“温湿度适宜”属管理性要求，不能推断特定病害、温度阈值或发病率；对E1运输、E3采收成熟度与储藏温度主题无直接关联的判断也与证据内容相符。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议限于核实储藏场所是否位于地理标志保护区内、观察记录温湿度及防潮防虫防鼠相关异常、必要时咨询当地农业技术部门，均属观察与现场复核建议，未推荐药名、剂量、施药周期或生产操作，符合research模式及证据范围。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "现有证据只能说明：在沧州金丝小枣地理标志保护区内，干枣贮存标准要求“注意防冻防热”“温湿度要控制适宜”，并应选择阴凉通风地点存放 [E2]  [E4] 。因此，储藏温度过高属于标准明确要求防范的情形，可能带来与“防热”要求相违背的采后风险；但现有证据没有给出高温导致的具体病害名称、症状表现或量化温度阈值，无法据此判断具体风险种类或发生概率。",
+      "supporting_points": [
+        "[E2]（DB13/T 5680-2023 第9.3.2条）规定干枣露天存放应选择阴凉通风地点，根据气候条件用适宜覆盖物覆盖 [E2] 。[E4]（第9.3.3条）规定干枣待运和贮存应通风良好，严禁烈日暴晒和雨淋，注意防冻防热，尽量缩短待运时间，注意防潮、防虫、防鼠，温湿度要控制适宜 [E4] 。这两条共同支持“高温是需要防范的储藏风险因素”，但均未描述高温引起的具体采后病害或品质变化。"
+      ],
+      "uncertainties": [
+        "上述标准条款仅在其保护区内适用，需核实果园是否位于沧州金丝小枣地理标志保护区内 [E2]  [E4] 。标准要求“防热”“温湿度适宜”属于管理性要求，不能据此推断高温必然导致某一特定病害，也不能给出具体温度阈值或发病率。[E1]涉及运输条件、[E3]涉及采收成熟度，与储藏温度过高这一主题无直接关联，故不作为主要依据。"
+      ]
+    },
+    "answer": "现有证据只能说明：在沧州金丝小枣地理标志保护区内，干枣贮存标准要求“注意防冻防热”“温湿度要控制适宜”，并应选择阴凉通风地点存放 [E2]  [E4] 。因此，储藏温度过高属于标准明确要求防范的情形，可能带来与“防热”要求相违背的采后风险；但现有证据没有给出高温导致的具体病害名称、症状表现或量化温度阈值，无法据此判断具体风险种类或发生概率。\n\n建议先核实储藏场所是否位于沧州金丝小枣地理标志保护区内，以确认上述标准要求是否适用 [E2]  [E4] 。同时观察并记录储藏环境的温度、湿度变化，以及枣果是否出现与防潮、防虫、防鼠相关的异常表现，为后续现场复核提供依据 [E4] 。如出现明显异常，建议结合现场情况进一步咨询当地农业技术部门。",
+    "grounded_answer": {
+      "sufficient": false,
+      "conclusion": "现有证据只能说明：在沧州金丝小枣地理标志保护区内，干枣贮存标准要求“注意防冻防热”“温湿度要控制适宜”，并应选择阴凉通风地点存放 [E2]  [E4] 。因此，储藏温度过高属于标准明确要求防范的情形，可能带来与“防热”要求相违背的采后风险；但现有证据没有给出高温导致的具体病害名称、症状表现或量化温度阈值，无法据此判断具体风险种类或发生概率。",
+      "basis": "[E2]（DB13/T 5680-2023 第9.3.2条）规定干枣露天存放应选择阴凉通风地点，根据气候条件用适宜覆盖物覆盖 [E2] 。[E4]（第9.3.3条）规定干枣待运和贮存应通风良好，严禁烈日暴晒和雨淋，注意防冻防热，尽量缩短待运时间，注意防潮、防虫、防鼠，温湿度要控制适宜 [E4] 。这两条共同支持“高温是需要防范的储藏风险因素”，但均未描述高温引起的具体采后病害或品质变化。",
+      "reasoning": "上述标准条款仅在其保护区内适用，需核实果园是否位于沧州金丝小枣地理标志保护区内 [E2]  [E4] 。标准要求“防热”“温湿度适宜”属于管理性要求，不能据此推断高温必然导致某一特定病害，也不能给出具体温度阈值或发病率。[E1]涉及运输条件、[E3]涉及采收成熟度，与储藏温度过高这一主题无直接关联，故不作为主要依据。",
+      "advice": "建议先核实储藏场所是否位于沧州金丝小枣地理标志保护区内，以确认上述标准要求是否适用 [E2]  [E4] 。同时观察并记录储藏环境的温度、湿度变化，以及枣果是否出现与防潮、防虫、防鼠相关的异常表现，为后续现场复核提供依据 [E4] 。如出现明显异常，建议结合现场情况进一步咨询当地农业技术部门。",
+      "citations": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "candidate_assessments": []
+    }
+  },
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "果实检测为 rotten 是否代表不能食用？",
+    "entities": {
+      "region": null,
+      "growth_stage": null,
+      "organ": "fruit",
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": null,
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": null,
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": null,
+      "harvest_intent": false,
+      "storage_intent": true,
+      "scope": "postharvest",
+      "intent": "information",
+      "damage_query": false,
+      "cross_stage_query": false,
+      "uncovered_symptom": false,
+      "visual_boundary": true
+    },
+    "generation_called": false,
+    "status": "preliminary",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 0,
+      "vector_evidence_count": 4,
+      "fused_count": 4
+    },
+    "knowledge_graph": {
+      "edges": []
+    },
+    "paths": [],
+    "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+    "evidence": [
+      {
+        "evidence_id": "P1",
+        "source_id": "MODEL_B2_CARD",
+        "title": "JUJUBE_FRUIT_FRESHNESS_MODEL_B2_V1_CARD.md",
+        "evidence_level": "L4",
+        "region": null,
+        "original_text": "# Jujube Model B2 v1 — 枣果实新鲜 / 腐败视觉分类模型\n\nstatus=frozen；YOLO11n-cls；binary image classification；Ultralytics 8.3.40；imgsz=224。\n模型：F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\models\\jujube\\jujube_fruit_freshness_yolo11n_cls_v1.pt\n来源：F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\runs\\jujube_fruit_freshness_yolo11n_cls_v1\\weights\\best.pt\nSHA256：f5554560e60df3a61ed78848c56087cd33a18fb29c0cfc3cf1b8091f681f844b\n仅按字节复制，未重新保存、导出或修改state_dict。推理沿用argmax，类别索引读取模型names。\n\n## 用途与类别语义\n对枣果实图像进行新鲜外观与腐败 / 变质类外观的视觉分类。\nfresh → 新鲜果实外观；rotten → 腐败 / 变质类视觉表现。\n不得解释为食品安全判定、是否可食用判断、微生物检测、腐败原因诊断、储藏寿命预测或质量等级最终认定。\n分类得分不是食品安全概率。rotten仅作为视觉风险证据，不能单独作为最终采后品质结论；fresh不保证安全或可食用。\n\n## 数据与评估边界\nTrain 280（fresh 140 / rotten 140）；Val 60（30 / 30）；Test 60（30 / 30）。\ntraining_ready_image_level = true\ntraining_ready_fruit_independent = false\nfruit_independent_verified = false\n当前为 image-level internal evaluation（配置值image_level_internal），不得称为 strict fruit-independent evaluation。\n正式评估已确认跨split SHA256重复=0、像素完全重复=0。此前正式数据审计确认已确认同果实组和已确认同场景组不跨split。\n本地正式评估时缺少完整分组清单，组隔离结论沿用此前正式数据审计报告。本轮冻结没有重新评估或重新验证全部fruit group。\n公开数据没有完整fruit identity映射，仍有大量图片果实身份未验证，因此无法证明全部Train/Val/Test在果实个体层面独立。\n仅60张内部测试图，不能外推为沧州金丝小枣实际田间/仓储环境准确率。\n\n## 腐败漏检：主要已知短板\nRotten Recall = 86.67%。30张rotten中26张正确，4张被误判为fresh。\n高置信度错误confidence >= 0.8为1张，>=0.9为1张。\n\n## 已归档正式测试结果\nTest=60；correct=56。混淆矩阵行为真实、列为预测，顺序fresh、rotten：\n```text\n[[30, 0],\n [4, 26]]\n```\nfresh -> rotten = 0；rotten -> fresh = 4。\n\n| 指标 | 数值 |\n|---|---:|\n| accuracy | 0.9333 |\n| macro_precision | 0.9412 |\n| macro_recall | 0.9333 |\n| macro_f1 | 0.9330 |\n| balanced_accuracy | 0.9333 |\n| weighted_f1 | 0.9330 |\n| roc_auc | 0.9856 |\n\n| 类别 | support | precision | recall | f1 |\n|---|---:|---:|---:|---:|\n| fresh | 30 | 0.8824 | 1.0000 | 0.9375 |\n| rotten | 30 | 1.0000 | 0.8667 | 0.9286 |\n",
+        "source_type": "model_card",
+        "purpose": "model_usage_boundary_not_agronomic_evidence",
+        "sha256": "f9c092a103caceb14cf2ff83f748f5d343af6585953a96eb50e3b6d9b642f9f1"
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "P1",
+        "source_id": "MODEL_B2_CARD",
+        "title": "JUJUBE_FRUIT_FRESHNESS_MODEL_B2_V1_CARD.md",
+        "evidence_level": "L4",
+        "region": null,
+        "original_text": "# Jujube Model B2 v1 — 枣果实新鲜 / 腐败视觉分类模型\n\nstatus=frozen；YOLO11n-cls；binary image classification；Ultralytics 8.3.40；imgsz=224。\n模型：F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\models\\jujube\\jujube_fruit_freshness_yolo11n_cls_v1.pt\n来源：F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\runs\\jujube_fruit_freshness_yolo11n_cls_v1\\weights\\best.pt\nSHA256：f5554560e60df3a61ed78848c56087cd33a18fb29c0cfc3cf1b8091f681f844b\n仅按字节复制，未重新保存、导出或修改state_dict。推理沿用argmax，类别索引读取模型names。\n\n## 用途与类别语义\n对枣果实图像进行新鲜外观与腐败 / 变质类外观的视觉分类。\nfresh → 新鲜果实外观；rotten → 腐败 / 变质类视觉表现。\n不得解释为食品安全判定、是否可食用判断、微生物检测、腐败原因诊断、储藏寿命预测或质量等级最终认定。\n分类得分不是食品安全概率。rotten仅作为视觉风险证据，不能单独作为最终采后品质结论；fresh不保证安全或可食用。\n\n## 数据与评估边界\nTrain 280（fresh 140 / rotten 140）；Val 60（30 / 30）；Test 60（30 / 30）。\ntraining_ready_image_level = true\ntraining_ready_fruit_independent = false\nfruit_independent_verified = false\n当前为 image-level internal evaluation（配置值image_level_internal），不得称为 strict fruit-independent evaluation。\n正式评估已确认跨split SHA256重复=0、像素完全重复=0。此前正式数据审计确认已确认同果实组和已确认同场景组不跨split。\n本地正式评估时缺少完整分组清单，组隔离结论沿用此前正式数据审计报告。本轮冻结没有重新评估或重新验证全部fruit group。\n公开数据没有完整fruit identity映射，仍有大量图片果实身份未验证，因此无法证明全部Train/Val/Test在果实个体层面独立。\n仅60张内部测试图，不能外推为沧州金丝小枣实际田间/仓储环境准确率。\n\n## 腐败漏检：主要已知短板\nRotten Recall = 86.67%。30张rotten中26张正确，4张被误判为fresh。\n高置信度错误confidence >= 0.8为1张，>=0.9为1张。\n\n## 已归档正式测试结果\nTest=60；correct=56。混淆矩阵行为真实、列为预测，顺序fresh、rotten：\n```text\n[[30, 0],\n [4, 26]]\n```\nfresh -> rotten = 0；rotten -> fresh = 4。\n\n| 指标 | 数值 |\n|---|---:|\n| accuracy | 0.9333 |\n| macro_precision | 0.9412 |\n| macro_recall | 0.9333 |\n| macro_f1 | 0.9330 |\n| balanced_accuracy | 0.9333 |\n| weighted_f1 | 0.9330 |\n| roc_auc | 0.9856 |\n\n| 类别 | support | precision | recall | f1 |\n|---|---:|---:|---:|---:|\n| fresh | 30 | 0.8824 | 1.0000 | 0.9375 |\n| rotten | 30 | 1.0000 | 0.8667 | 0.9286 |\n",
+        "source_type": "model_card",
+        "purpose": "model_usage_boundary_not_agronomic_evidence",
+        "sha256": "f9c092a103caceb14cf2ff83f748f5d343af6585953a96eb50e3b6d9b642f9f1"
+      }
+    ],
+    "sources": [
+      {
+        "evidence_id": "P1",
+        "source_id": "MODEL_B2_CARD",
+        "title": "JUJUBE_FRUIT_FRESHNESS_MODEL_B2_V1_CARD.md",
+        "evidence_level": "L4",
+        "region": null,
+        "original_text": "# Jujube Model B2 v1 — 枣果实新鲜 / 腐败视觉分类模型\n\nstatus=frozen；YOLO11n-cls；binary image classification；Ultralytics 8.3.40；imgsz=224。\n模型：F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\models\\jujube\\jujube_fruit_freshness_yolo11n_cls_v1.pt\n来源：F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\jujube-vision\\runs\\jujube_fruit_freshness_yolo11n_cls_v1\\weights\\best.pt\nSHA256：f5554560e60df3a61ed78848c56087cd33a18fb29c0cfc3cf1b8091f681f844b\n仅按字节复制，未重新保存、导出或修改state_dict。推理沿用argmax，类别索引读取模型names。\n\n## 用途与类别语义\n对枣果实图像进行新鲜外观与腐败 / 变质类外观的视觉分类。\nfresh → 新鲜果实外观；rotten → 腐败 / 变质类视觉表现。\n不得解释为食品安全判定、是否可食用判断、微生物检测、腐败原因诊断、储藏寿命预测或质量等级最终认定。\n分类得分不是食品安全概率。rotten仅作为视觉风险证据，不能单独作为最终采后品质结论；fresh不保证安全或可食用。\n\n## 数据与评估边界\nTrain 280（fresh 140 / rotten 140）；Val 60（30 / 30）；Test 60（30 / 30）。\ntraining_ready_image_level = true\ntraining_ready_fruit_independent = false\nfruit_independent_verified = false\n当前为 image-level internal evaluation（配置值image_level_internal），不得称为 strict fruit-independent evaluation。\n正式评估已确认跨split SHA256重复=0、像素完全重复=0。此前正式数据审计确认已确认同果实组和已确认同场景组不跨split。\n本地正式评估时缺少完整分组清单，组隔离结论沿用此前正式数据审计报告。本轮冻结没有重新评估或重新验证全部fruit group。\n公开数据没有完整fruit identity映射，仍有大量图片果实身份未验证，因此无法证明全部Train/Val/Test在果实个体层面独立。\n仅60张内部测试图，不能外推为沧州金丝小枣实际田间/仓储环境准确率。\n\n## 腐败漏检：主要已知短板\nRotten Recall = 86.67%。30张rotten中26张正确，4张被误判为fresh。\n高置信度错误confidence >= 0.8为1张，>=0.9为1张。\n\n## 已归档正式测试结果\nTest=60；correct=56。混淆矩阵行为真实、列为预测，顺序fresh、rotten：\n```text\n[[30, 0],\n [4, 26]]\n```\nfresh -> rotten = 0；rotten -> fresh = 4。\n\n| 指标 | 数值 |\n|---|---:|\n| accuracy | 0.9333 |\n| macro_precision | 0.9412 |\n| macro_recall | 0.9333 |\n| macro_f1 | 0.9330 |\n| balanced_accuracy | 0.9333 |\n| weighted_f1 | 0.9330 |\n| roc_auc | 0.9856 |\n\n| 类别 | support | precision | recall | f1 |\n|---|---:|---:|---:|---:|\n| fresh | 30 | 0.8824 | 1.0000 | 0.9375 |\n| rotten | 30 | 1.0000 | 0.8667 | 0.9286 |\n",
+        "source_type": "model_card",
+        "purpose": "model_usage_boundary_not_agronomic_evidence",
+        "sha256": "f9c092a103caceb14cf2ff83f748f5d343af6585953a96eb50e3b6d9b642f9f1"
+      }
+    ],
+    "grounding": {
+      "passed": true,
+      "method": "verified_model_card_usage_policy",
+      "agronomic_claims": false
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "answer": "不能由 rotten 视觉分类直接判断是否可食用。它只表示腐败/变质类视觉表现，不是食品安全或可食用性判定。[P1]",
+    "claim_scope": "model_usage_boundary_not_agronomic_claim",
+    "preliminary_assessment": {
+      "available": true,
+      "summary": "不能由 rotten 视觉分类直接判断是否可食用。它只表示腐败/变质类视觉表现，不是食品安全或可食用性判定。[P1]",
+      "supporting_points": [
+        "模型使用边界 [P1]"
+      ],
+      "uncertainties": [
+        "不涉及病因或食品安全检测结论"
+      ]
+    }
+  },
+  {
+    "crop_id": "cangzhou_jinsixiaozao",
+    "question": "生产期水分胁迫是否可能影响采后品质？",
+    "entities": {
+      "region": null,
+      "growth_stage": null,
+      "organ": null,
+      "symptom": null,
+      "disease_or_pest": null,
+      "weather": null,
+      "rainfall": null,
+      "humidity": null,
+      "irrigation": null,
+      "crop": "cangzhou_jinsixiaozao",
+      "region_source": null,
+      "harvest_intent": false,
+      "storage_intent": true,
+      "scope": "postharvest",
+      "intent": "information",
+      "damage_query": false,
+      "cross_stage_query": true,
+      "uncovered_symptom": false,
+      "visual_boundary": false
+    },
+    "generation_called": false,
+    "status": "insufficient_evidence",
+    "retrieval": {
+      "graph_status": "ok",
+      "graph_evidence_count": 0,
+      "vector_evidence_count": 0,
+      "fused_count": 0
+    },
+    "knowledge_graph": {
+      "edges": []
+    },
+    "paths": [],
+    "graph_origin": "local reviewed graph-v1.json (explicit file backend)",
+    "evidence": [],
+    "citations": [],
+    "sources": [],
+    "grounding": {
+      "passed": true,
+      "method": "no_factual_claims",
+      "evidence_sufficient": false
+    },
+    "local_conclusion": {
+      "available": false,
+      "reason": "未核实具体地块及全部适用条件；文献研判不是病害确诊。"
+    },
+    "answer": "当前主题缺少审核证据，不能据此归因；请补充现场症状和环境信息。"
+  }
+]

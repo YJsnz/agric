@@ -1,0 +1,23 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0389",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》研究中，对数据进行统计处理使用的是哪个软件？",
+      "answer_quote": "采用Excel 2007 软件对数据进行统计处理",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0390",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》研究中，采用哪个软件及何种方法进行差异显著性分析？",
+      "answer_quote": "利用SPSS 20.0 软件Duncan 多重比较法进行差异显著性分析",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0391",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》研究中，电子鼻信号采用什么软件进行主成分分析（PCA）和线性判别分析（LDA）？",
+      "answer_quote": "电子鼻信号采用系统自带的Winmuster 软件进行主成分分析（PCA）和线性判别分析（LDA）",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

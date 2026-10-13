@@ -1,0 +1,260 @@
+{
+  "id": "QA_0299",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0031",
+    "chunk:PAPER_005_C0032",
+    "chunk:PAPER_005_C0002",
+    "chunk:PAPER_005_C0034"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称PbETR1和PbERS1b表达量均先上调后下降，冷藏果肉中PbERS1b表达量相对较高；E2原文明确记载“PbETR1、PbERS1b 表达量上调后下降，相对来说，冷藏果肉具有较高的PbERS1b 表达量”，与结论一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据字段直接复述E2中“PbETR1、PbERS1b表达量上调后下降，相对来说，冷藏果肉具有较高的PbERS1b表达量”，引用证据支持其陈述。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理说明问题询问两个基因表达趋势及冷藏果肉中较高表达的基因，并指出E2直接给出相应描述，未引入未引用证据或跨阶段串联，符合E2内容。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "建议仅说明该结论来自文献贮藏试验结果、属于研究资料、不等同于本地生产指导，未添加E2未给出的剂量、收益或本地普遍建议，属于对证据性质的合理限定。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0031",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.5  乙烯合成及其信号转导相关基因的表达",
+        "text": "贮藏时，鸭梨果皮和果肉PbACS1、PbACO2、PbETR2 表达量明显上调，其中果肉的上调幅度显著大于果皮，并以窖藏果肉表现更为明显。在贮藏后期，窖藏果皮PbACS1、PbACO2、PbETR2 表达量低于冷藏果皮。此外，PbETR1、PbERS1b 表达量上调后下降，相对来说，冷藏果肉具有较高的PbERS1b 表达量；PbEIN3 表达量相对较小，窖藏果皮与果肉的PbEIN3表达量低于冷藏果实。PbERF 在果皮中的表达量高于果肉，果皮和果肉的变化趋势不同，并且窖藏的果肉表达量明显低于冷藏果肉（图5）。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0032",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.5  乙烯合成及其信号转导相关基因的表达",
+        "text": "PbERF 在果皮中的表达量高于果肉，果皮和果肉的变化趋势不同，并且窖藏的果肉表达量明显低于冷藏果肉（图5）。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0034",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.6  香气物质合成相关基因的表达",
+        "text": "贮藏初期，果皮中PbAAT1 表达量高于果肉。随着贮藏时间延长，果皮中PbAAT1 表达量呈下降趋势。同时，窖藏果肉的PbAAT1 表达迅速提高，明显高于冷藏果肉。PbADH2、PbADH3 表达量呈下降趋势。与冷藏相比，窖藏果实的PbADH2 表达量下调更为迅速。PbADH5 表达量在贮藏期呈升高趋势，并且以冷藏果肉的基因表达上调较为明显。贮藏过程中，PbLOX1 表达量以窖藏果肉上调表现明显。PbLOX8 表达量与之不同，贮藏初期，窖藏果肉的PbLOX8 表达量高于冷藏果肉；而贮藏后期，窖藏果皮PbLOX8 的表达量高于冷藏的果皮。相对来说，鸭梨PbHPL 表达量变化较小。与冷藏相比，窖藏果皮PbHPL 的差别较小，但果肉的表达量低于果皮（图5）。",
+        "pages": [
+          12
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "在贮藏试验中，PbETR1和PbERS1b的表达量均表现为先上调后下降；冷藏果肉中PbERS1b的表达量相对较高。 [E2] ",
+    "basis": "证据[E2]记载：PbETR1、PbERS1b表达量上调后下降，相对来说，冷藏果肉具有较高的PbERS1b表达量。 [E2] ",
+    "reasoning": "问题询问两个基因的表达趋势及冷藏果肉中较高的基因。[E2]直接给出PbETR1、PbERS1b表达量上调后下降的趋势描述，并明确指出冷藏果肉具有较高的PbERS1b表达量，故可直接回答，无需跨阶段串联。 [E2] ",
+    "advice": "该结论来自文献的贮藏试验结果，属于研究资料，不等同于本地生产指导。 [E2] ",
+    "citations": [
+      "E2"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答完整覆盖两个关键点：PbETR1和PbERS1b表达量均先上调后下降；冷藏果肉中PbERS1b表达量较高。与参考答案及原文证据一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "在贮藏试验中，PbETR1和PbERS1b的表达量均表现为先上调后下降。",
+          "status": "supported",
+          "reason": "原文E2明确记载“PbETR1、PbERS1b 表达量上调后下降”。"
+        },
+        {
+          "claim": "冷藏果肉中PbERS1b的表达量相对较高。",
+          "status": "supported",
+          "reason": "原文E2明确记载“相对来说，冷藏果肉具有较高的PbERS1b 表达量”。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2338,
+      "completion_tokens": 161,
+      "total_tokens": 2499,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1954
+    },
+    "model": "deepseek-flash",
+    "response_id": "75db1a39-cecd-49e9-8330-e6918e22665c",
+    "seconds": 6.071374200007995,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在贮藏试验中，PbETR1和PbERS1b的表达量均表现为先上调后下降；冷藏果肉中PbERS1b的表达量相对较高。[E2]",
+        "basis": "证据E2记载：PbETR1、PbERS1b表达量上调后下降，相对来说，冷藏果肉具有较高的PbERS1b表达量。[E2]",
+        "reasoning": "问题询问两个基因的表达趋势及冷藏果肉中较高的基因。E2直接给出PbETR1、PbERS1b表达量上调后下降的趋势描述，并明确指出冷藏果肉具有较高的PbERS1b表达量，故可直接回答，无需跨阶段串联。[E2]",
+        "advice": "该结论来自单一文献的贮藏试验结果，属于研究资料，不等同于本地生产指导；如需用于实际贮藏管理，应结合本地鸭梨品种、贮藏条件与重复验证。[E2]",
+        "citations": [
+          "E2"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 1958,
+        "completion_tokens": 209,
+        "total_tokens": 2167,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1702
+      },
+      "model": "deepseek-flash",
+      "response_id": "e750aecb-3ce7-496c-b5cf-7fcaf1b31c89",
+      "seconds": 6.817356800005655,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在贮藏试验中，PbETR1和PbERS1b的表达量均表现为先上调后下降；冷藏果肉中PbERS1b的表达量相对较高。[E2]",
+        "basis": "证据E2记载：PbETR1、PbERS1b表达量上调后下降，相对来说，冷藏果肉具有较高的PbERS1b表达量。[E2]",
+        "reasoning": "问题询问两个基因的表达趋势及冷藏果肉中较高的基因。E2直接给出PbETR1、PbERS1b表达量上调后下降的趋势描述，并明确指出冷藏果肉具有较高的PbERS1b表达量，故可直接回答，无需跨阶段串联。[E2]",
+        "advice": "该结论来自文献的贮藏试验结果，属于研究资料，不等同于本地生产指导。[E2]",
+        "citations": [
+          "E2"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2446,
+        "completion_tokens": 189,
+        "total_tokens": 2635,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 398
+      },
+      "model": "deepseek-flash",
+      "response_id": "6d708b8f-1d5a-43f6-a139-8624d53bb3c7",
+      "seconds": 6.301165299999411,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 32.01212430000305
+}

@@ -1,0 +1,102 @@
+{
+  "source_id": "PAPER_004",
+  "title": "不同采收期对鸭梨采后贮藏香气成分的影响",
+  "source_type": "paper",
+  "crop": [
+    "鸭梨"
+  ],
+  "region": [],
+  "region_note": "未在当前摘要中确认",
+  "year": 2010,
+  "evidence_level": "A",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [
+    "采收期",
+    "储藏期"
+  ],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://www.spkx.net.cn/CN/10.7506/spkx1002-6630-201010064",
+  "authors": [],
+  "doi": "10.7506/spkx1002-6630-201010064",
+  "availability": "summary_only",
+  "review_status": "original_fulltext_missing",
+  "fulltext_path": null,
+  "text_path": null,
+  "pages_path": null,
+  "page_count": null,
+  "ready_for_chunking": false,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "香气品质不等同于病害风险，建图时不要直接把“采收期→腐烂”作为因果边。",
+  "kg_source_ids": [],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/browser.html",
+      "sha256": "89d65ab3f3c332d801f63919fff340a6dc566d8dd1aad58adfb9aa2812287cc6",
+      "bytes": 76267,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/browser.txt",
+      "sha256": "040e7a83f719d9b419c13e294d8daf2e44bfbfe90fe2b2a22cacd6842f7d6703",
+      "bytes": 3417,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/landing.html",
+      "sha256": "63fbccb47d441e1b6c529b1e3861ccf5de40329ddbfdfa93bde243118fdc273a",
+      "bytes": 63892,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/summary.md",
+      "sha256": "e3b88b3b82b476b63ccec596ee3eeb58662b1ed4bf8613c5ff5d20d9bb44104c",
+      "bytes": 1096,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": null,
+  "acquisition_attempts": [
+    {
+      "source_id": "PAPER_004",
+      "status": "pdf_unavailable",
+      "http_status": 403
+    },
+    {
+      "source_id": "PAPER_004",
+      "status": "downloaded_pending_review",
+      "url": "https://www.spkx.net.cn/CN/10.7506/spkx1002-6630-201010064",
+      "title": "不同采收期对鸭梨采后贮藏香气成分的影响",
+      "error": null,
+      "characters": 2411
+    },
+    {
+      "source_id": "PAPER_004",
+      "url": "https://www.spkx.net.cn/CN/10.7506/spkx1002-6630-201010064",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/landing.html",
+      "attempted_at": "2026-09-15T06:21:28.550605+00:00",
+      "resolved_url": "https://www.spkx.net.cn/CN/10.7506/spkx1002-6630-201010064",
+      "status": "downloaded_pending_review",
+      "bytes": 63892,
+      "sha256": "63fbccb47d441e1b6c529b1e3861ccf5de40329ddbfdfa93bde243118fdc273a"
+    },
+    {
+      "source_id": "PAPER_004",
+      "url": "https://www.spkx.net.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=9726",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/original.pdf",
+      "attempted_at": "2026-09-15T06:22:21.910165+00:00",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source_id": "PAPER_004",
+      "url": "https://www.spkx.net.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=9726",
+      "referer": "https://www.spkx.net.cn/CN/10.7506/spkx1002-6630-201010064",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/original.pdf",
+      "attempted_at": "2026-09-15T06:25:05.648491+00:00",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "extraction_status": "no_fulltext"
+}

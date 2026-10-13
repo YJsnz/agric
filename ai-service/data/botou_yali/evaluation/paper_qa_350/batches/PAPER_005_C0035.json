@@ -1,0 +1,46 @@
+[
+  {
+    "question": "根据果实挥发性香气物质测定结果，哪些基因的表达量与香气变化模式呈相似变化规律？",
+    "type": "factual",
+    "answer_quote": "PbAAT1、PbLOX1 表达量与香气变化模式呈相似变化规律。",
+    "gold_entities": [
+      "PbAAT1",
+      "PbLOX1"
+    ]
+  },
+  {
+    "question": "与PbAAT1表达量呈显著正相关的基因有哪些？",
+    "type": "factual",
+    "answer_quote": "与PbAAT1 表达量呈显著正相关的基因有PbLOX1、PbLOX6 和PbLOX8",
+    "gold_entities": [
+      "PbAAT1",
+      "PbLOX1",
+      "PbLOX6",
+      "PbLOX8"
+    ]
+  },
+  {
+    "question": "与PbAAT1表达量呈显著负相关的基因有哪些？",
+    "type": "factual",
+    "answer_quote": "与PbAAT1 表达量呈显著负相关的基因有PbEIN3、PbADH2、PbADH3 和PbADH5",
+    "gold_entities": [
+      "PbAAT1",
+      "PbEIN3",
+      "PbADH2",
+      "PbADH3",
+      "PbADH5"
+    ]
+  },
+  {
+    "question": "与PbLOX1表达量呈显著正相关的基因有哪些？",
+    "type": "factual",
+    "answer_quote": "与PbLOX1 表达量呈显著正相关的基因有PbACO2、PbETR2、PbAAT1 和PbLOX8",
+    "gold_entities": [
+      "PbLOX1",
+      "PbACO2",
+      "PbETR2",
+      "PbAAT1",
+      "PbLOX8"
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+﻿split,class,images
+train,healthy,513
+train,bruised,509
+val,healthy,109
+val,bruised,110
+test,healthy,110
+test,bruised,113

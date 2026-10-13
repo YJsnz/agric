@@ -1,0 +1,9 @@
+<script setup lang="ts">
+import {onMounted,ref} from 'vue'
+import {getToken} from '@/api/auth'
+const status=ref<{agent:{ready:boolean;engine:string;model:string;message:string};vision:{ready:boolean};database:{ready:boolean}}>(),error=ref(''),busy=ref(false)
+async function load(){if(busy.value)return;busy.value=true;error.value='';try{const response=await fetch('/api/system/status',{headers:{Authorization:`Bearer ${getToken()}`}});const data=await response.json();if(!response.ok)throw Error(data.message||'诊断失败');status.value=data}catch(e){error.value=(e as Error).message}finally{busy.value=false}}
+onMounted(load)
+</script>
+<template><section class="software-status"><div><h2>软件环境诊断</h2><button :disabled="busy" @click="load">{{ busy?'检查中…':'重新检查' }}</button></div><p v-if="error" role="alert">{{ error }}</p><template v-if="status"><article><span>演示数据库</span><b>{{ status.database.ready?'已连接':'未连接' }}</b></article><article><span>Agent · {{ status.agent.engine }}</span><b :class="{pending:!status.agent.ready}">{{ status.agent.ready?'就绪':'待启动' }}</b></article><p>{{ status.agent.model }} · {{ status.agent.message }}</p><article><span>本地梨叶模型</span><b :class="{pending:!status.vision.ready}">{{ status.vision.ready?'就绪':'待安装' }}</b></article><p>纯软件演示。农事、批次、设备回执和视觉复核可持久保存；无需真实硬件。</p></template></section></template>
+<style scoped>.software-status{padding:14px;border:1px solid var(--ui-border);border-radius:12px;margin-bottom:18px}.software-status>div,article{display:flex;align-items:center;justify-content:space-between;gap:10px}h2{font-size:12px;margin:0}button{border:0;background:var(--ui-brand-soft);color:var(--ui-brand);font:inherit;font-size:10px;padding:7px 9px;border-radius:8px;cursor:pointer}article{padding:10px 0;font-size:11px;border-bottom:1px solid var(--ui-border)}b{font-size:10px;color:var(--ui-success);font-weight:500}b.pending{color:var(--ui-warning)}p{font-size:10px;line-height:1.8;color:var(--ui-muted)}</style>

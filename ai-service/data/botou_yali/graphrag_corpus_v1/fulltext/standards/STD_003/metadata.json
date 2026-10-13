@@ -1,0 +1,73 @@
+{
+  "source_id": "STD_003",
+  "title": "DB13/T 6338-2026 盐碱地梨栽培技术规程",
+  "source_type": "standard",
+  "crop": [
+    "梨"
+  ],
+  "region": [
+    "河北省"
+  ],
+  "region_note": "河北省",
+  "year": 2026,
+  "evidence_level": "A",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=598B66F9F87DC97DE06397BE0A0A7EC3",
+  "authors": [],
+  "doi": null,
+  "availability": "fulltext_pdf_available",
+  "review_status": "fulltext_acquired_content_review_pending",
+  "fulltext_path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_003/original.pdf",
+  "text_path": "data/botou_yali/graphrag_corpus_v1/processed/STD_003/text.txt",
+  "pages_path": "data/botou_yali/graphrag_corpus_v1/processed/STD_003/pages.json",
+  "page_count": 7,
+  "ready_for_chunking": true,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "当前仅使用官方元数据；具体盐度阈值、施肥灌溉参数等必须从标准正文提取，不能由模型补写。",
+  "kg_source_ids": [
+    "6338"
+  ],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_003/landing.html",
+      "sha256": "98c2c9bda62c48bf4a54f04992401fb9b993deed4683e05d718d0f509ec5210d",
+      "bytes": 63871,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_003/original.pdf",
+      "sha256": "a369ec07fcb5b82a9c8bd46ddffc72856c1218f06e10b5a655efa1169fae5335",
+      "bytes": 484786,
+      "role": "fulltext"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_003/summary.md",
+      "sha256": "f290953a7f385d3593f594dab13e2f1753819ad9964cb084e665c3d5850066a0",
+      "bytes": 1133,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": {
+    "url": "https://dbba.sacinfo.org.cn/portal/download/beae1def21790821c485705b165a4927a705e863fe4982941f226f80bd25466c",
+    "status": "downloaded_not_reviewed",
+    "file": "standards\\pear\\DB13_T_6338_2026.pdf",
+    "sha256": "a369ec07fcb5b82a9c8bd46ddffc72856c1218f06e10b5a655efa1169fae5335",
+    "bytes": 484786
+  },
+  "acquisition_attempts": [
+    {
+      "source_id": "STD_003",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=598B66F9F87DC97DE06397BE0A0A7EC3",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/standards/STD_003/landing.html",
+      "attempted_at": "2026-09-15T06:21:23.099840+00:00",
+      "resolved_url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=598B66F9F87DC97DE06397BE0A0A7EC3",
+      "status": "downloaded_pending_review",
+      "bytes": 63871,
+      "sha256": "98c2c9bda62c48bf4a54f04992401fb9b993deed4683e05d718d0f509ec5210d"
+    }
+  ],
+  "extraction_status": "text_available_review_pending"
+}

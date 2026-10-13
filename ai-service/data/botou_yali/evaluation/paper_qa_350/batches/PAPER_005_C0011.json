@@ -1,0 +1,37 @@
+[
+  {
+    "question": "本研究测定呼吸速率时，果实被置于密闭容器中密封多长时间后抽取气体？",
+    "type": "factual",
+    "answer_quote": "将果实置于密闭容器中，密封30 min 抽取气体10 mL",
+    "gold_entities": [
+      "密闭容器",
+      "30 min"
+    ]
+  },
+  {
+    "question": "本研究测定呼吸速率时抽取多少体积的气体？",
+    "type": "factual",
+    "answer_quote": "密封30 min 抽取气体10 mL",
+    "gold_entities": [
+      "10 mL"
+    ]
+  },
+  {
+    "question": "本研究测定乙烯释放速率时，果实密封多长时间后抽取气体？",
+    "type": "factual",
+    "answer_quote": "果实密封3 h 后，抽取气体1 mL",
+    "gold_entities": [
+      "3 h",
+      "1 mL"
+    ]
+  },
+  {
+    "question": "本研究呼吸速率和乙烯释放速率测定中，每次重复多少个果实？",
+    "type": "factual",
+    "answer_quote": "每次重复3 次，每重复10 个果实。",
+    "gold_entities": [
+      "3 次",
+      "10 个果实"
+    ]
+  }
+]

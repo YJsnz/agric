@@ -1,0 +1,2 @@
+﻿a,b,class_a,class_b,same_class,cosine,phash_distance,dhash_distance,filename_gap,tier,split_a,split_b,sift_matches,sift_inliers,sift_inlier_ratio,spatial_coverage,aligned_correlation,review_id,decision,group_type,review_note,reviewer
+12227,14954,bacterial_spot_and_leaf_miner,whitefly,False,0.9911189675331116,0,0,693,post_split_high_risk,train,test,46,46,1.0,0.2099282846854406,0.9996144145606258,S001,confirmed_cross_label_source_conflict,same_source_transform,pHash0/对齐corr=1.000确认同源却跨标签；双方隔离，不猜正确标签,assistant_visual_review_not_human_expert

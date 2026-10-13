@@ -1,0 +1,20 @@
+[Unit]
+Description=Optional multi-crop AI service
+After=network-online.target docker.service
+
+[Service]
+Type=simple
+User=agric
+Group=agric
+WorkingDirectory=/opt/agric/current
+EnvironmentFile=/etc/agric/edge.env
+Environment=YOLO_CONFIG_DIR=/var/lib/agric/logs/yolo
+ExecStart=/opt/agric/current/vision-runtime/jetson-venv/bin/python /opt/agric/current/ai-service/launch_integration.py
+Restart=on-failure
+RestartSec=10
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,59 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0139",
+      "question": "论文中提到的鸭梨品种学名是什么？",
+      "answer_quote": "鸭梨（Pyrus bretschneideri Rehd cv. Yali）",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0140",
+      "question": "鸭梨贮藏中的主要问题是什么？",
+      "answer_quote": "贮藏中主要问题是近果心部位的组织褐变",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0141",
+      "question": "鸭梨果实褐变时首先表现在哪个部位？",
+      "answer_quote": "果实发生褐变时首先表现在果心局部变褐",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0142",
+      "question": "根据发生时间早晚，鸭梨黑心可分为哪两类？",
+      "answer_quote": "根据其发生时间早晚可分为早期黑心和晚期黑心",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0143",
+      "question": "早期黑心多发生于鸭梨果实入库后的什么时间？",
+      "answer_quote": "早期黑心多发生于鸭梨果实入库后的30～50 d",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0144",
+      "question": "晚期黑心多发生在果实入库后第2年的什么时间？",
+      "answer_quote": "晚期黑心多发生在果实入库后第2 年的l－2 月份",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0145",
+      "question": "普遍认为早期黑心是什么原因引起的？",
+      "answer_quote": "普遍认为是一种由于突然降温引起低温伤害",
+      "type": "causal"
+    },
+    {
+      "original_id": "PQA_0146",
+      "question": "影响鸭梨采后果实褐变的主要因素有哪些？",
+      "answer_quote": "采收成熟度和降温速度是影响鸭梨采后果实褐变的主要因素",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0147",
+      "question": "鸭梨直接进入到0℃库中会导致哪些生理变化？",
+      "answer_quote": "直接进入到0℃库中，多酚氧化酶活性升高，细胞膜透性增加，使底物和酶接触发生褐变反应",
+      "type": "causal"
+    }
+  ],
+  "rejected": []
+}

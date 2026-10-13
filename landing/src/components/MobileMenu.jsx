@@ -23,7 +23,7 @@ export default function MobileMenu({ open, onClose }) {
 
       <div className="relative z-10 flex h-full flex-col px-6 py-5">
         <div className="flex items-center justify-between">
-          <NavLink to="/" onClick={onClose} aria-label="田言耕智首页">
+          <NavLink to="/" onClick={onClose} aria-label="盐田丰语首页">
             <BrandLogo compact />
           </NavLink>
           <button

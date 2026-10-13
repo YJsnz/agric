@@ -1,0 +1,25 @@
+{
+  "selected": 350,
+  "machine_reviewed_pool": 360,
+  "human_approved": false,
+  "exact_quote_checks_passed": 350,
+  "unique_questions": 350,
+  "types": {
+    "factual": 323,
+    "multi_hop": 5,
+    "cultivation_management": 3,
+    "postharvest_storage": 5,
+    "causal": 13,
+    "disease": 1
+  },
+  "sources": {
+    "PAPER_001": 122,
+    "PAPER_003": 93,
+    "PAPER_005": 135
+  },
+  "evidence_kinds": {
+    "reported_study_record": 333,
+    "background_or_cited_discussion": 17
+  },
+  "sha256": "00f491b63fa1c15666f7ebfb9e4de25571a8cf25a91ec6bfb422164af436fcc4"
+}

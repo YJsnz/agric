@@ -15,7 +15,7 @@ export default function BrandLogo({ inverse = false, compact = false }) {
       </span>
       <span className="flex flex-col leading-none">
         <strong className={`${compact ? 'text-base' : 'text-lg'} font-semibold tracking-tight ${inverse ? 'text-white' : 'text-ink'}`}>
-          田言耕智
+          盐田丰语
         </strong>
         {!compact && (
           <small className={`mt-1.5 text-[10px] font-light tracking-[0.12em] ${inverse ? 'text-white/65' : 'text-muted'}`}>

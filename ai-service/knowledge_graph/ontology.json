@@ -1,0 +1,174 @@
+{
+  "version": "1.0.0",
+  "node_types": [
+    "Crop",
+    "Region",
+    "Stage",
+    "Disease",
+    "Organ",
+    "Symptom",
+    "State",
+    "Condition",
+    "Risk",
+    "Intervention",
+    "Metric",
+    "Batch",
+    "Observation"
+  ],
+  "relations": {
+    "PRODUCED_IN": {
+      "kind": "fact",
+      "domain": [
+        "Crop"
+      ],
+      "range": [
+        "Region"
+      ]
+    },
+    "IS_A": {
+      "kind": "fact",
+      "domain": [
+        "Crop"
+      ],
+      "range": [
+        "Crop"
+      ]
+    },
+    "HAS_STAGE": {
+      "kind": "fact",
+      "domain": [
+        "Crop"
+      ],
+      "range": [
+        "Stage"
+      ]
+    },
+    "NEXT_STAGE": {
+      "kind": "workflow",
+      "domain": [
+        "Stage"
+      ],
+      "range": [
+        "Stage"
+      ]
+    },
+    "HAS_DISEASE": {
+      "kind": "fact",
+      "domain": [
+        "Crop"
+      ],
+      "range": [
+        "Disease"
+      ]
+    },
+    "AFFECTS": {
+      "kind": "fact",
+      "domain": [
+        "Disease"
+      ],
+      "range": [
+        "Organ"
+      ]
+    },
+    "HAS_SYMPTOM": {
+      "kind": "fact",
+      "domain": [
+        "Disease"
+      ],
+      "range": [
+        "Symptom"
+      ]
+    },
+    "PROMOTES": {
+      "kind": "mechanism",
+      "domain": [
+        "Condition",
+        "State"
+      ],
+      "range": [
+        "State"
+      ]
+    },
+    "MAY_LEAD_TO": {
+      "kind": "hypothesis",
+      "domain": [
+        "State",
+        "Risk"
+      ],
+      "range": [
+        "State",
+        "Risk"
+      ]
+    },
+    "MAY_REDUCE": {
+      "kind": "hypothesis",
+      "domain": [
+        "Intervention"
+      ],
+      "range": [
+        "Risk",
+        "State"
+      ]
+    },
+    "APPLIES_AT": {
+      "kind": "workflow",
+      "domain": [
+        "Intervention"
+      ],
+      "range": [
+        "Stage"
+      ]
+    },
+    "MONITORED_BY": {
+      "kind": "workflow",
+      "domain": [
+        "Stage"
+      ],
+      "range": [
+        "Metric"
+      ]
+    },
+    "INSTANCE_OF": {
+      "kind": "workflow",
+      "domain": [
+        "Batch"
+      ],
+      "range": [
+        "Crop"
+      ]
+    },
+    "OBSERVED_ON": {
+      "kind": "observation",
+      "domain": [
+        "Observation"
+      ],
+      "range": [
+        "Batch"
+      ]
+    },
+    "CANDIDATE_DISEASE": {
+      "kind": "observation",
+      "domain": [
+        "Observation"
+      ],
+      "range": [
+        "Disease"
+      ]
+    }
+  },
+  "causal_kinds": [
+    "mechanism",
+    "hypothesis"
+  ],
+  "review_statuses": [
+    "draft",
+    "transfer_pending",
+    "source_checked",
+    "local_expert_reviewed"
+  ],
+  "scopes": [
+    "design",
+    "general_pear",
+    "local"
+  ]
+}

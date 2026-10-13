@@ -1,0 +1,154 @@
+{
+  "seed": 42,
+  "raw_total": 1676,
+  "candidate_post_anthesis_images": 1226,
+  "confirmed_pre_stress_excluded": 450,
+  "clean_total": 1226,
+  "normal": 617,
+  "water_stress": 609,
+  "control_plots_used": 45,
+  "water_stress_plots_used": 45,
+  "exclusions": {
+    "confirmed_pre_stress": 450
+  },
+  "duplicates": {
+    "exact_duplicate_groups": 0,
+    "exact_duplicate_redundant": 0,
+    "cross_label_exact_duplicate_groups": 0
+  },
+  "leakage": {
+    "cross_split_plot": 0,
+    "cross_split_sha256": 0,
+    "cross_split_exact_duplicate": 0,
+    "confirmed_pre_stress_entered": 0,
+    "label_conflict_entered": 0,
+    "corrupt_entered": 0,
+    "confirmed_stress_true_entered": 0,
+    "missing_plot_id_entered": 0,
+    "target_filename_duplicate": 0,
+    "raw_modified_deleted_added": 0
+  },
+  "stress_start": {
+    "season1": "unknown",
+    "season2": "unknown"
+  },
+  "cross_season_physical_identity": "unknown; identical numbered replicates are conservatively bound",
+  "label_strength": "weak",
+  "disclaimer": "This dataset uses treatment-derived weak labels.\nThe water_stress class represents canopy images from plots assigned to\npost-anthesis deficit irrigation treatment.\nBecause the exact first post-anthesis deficit-irrigation date is unavailable,\nthe class must not be interpreted as image-level confirmation of actual\nsoil-water deficit.",
+  "splits": {
+    "train": {
+      "total": 848,
+      "normal": 426,
+      "water_stress": 422,
+      "plots": 62,
+      "control_plots": 31,
+      "water_stress_plots": 31,
+      "mixtures": [
+        "Chamran",
+        "Chamran+Pishtaz",
+        "Chamran+Pishtaz+Shiraz",
+        "Chamran+Shiraz",
+        "Chamran+Sirvan",
+        "Chamran+Sirvan+Pishtaz",
+        "Chamran+Sirvan+Pishtaz+Shiraz",
+        "Chamran+Sirvan+Shiraz",
+        "Pishtaz",
+        "Pishtaz+Shiraz",
+        "Shiraz",
+        "Sirvan",
+        "Sirvan+Pishtaz",
+        "Sirvan+Pishtaz+Shiraz",
+        "Sirvan+Shiraz"
+      ],
+      "season1": 290,
+      "season2": 558,
+      "dates": [
+        "2015-05-15",
+        "2015-05-29",
+        "2015-06-01",
+        "2015-06-06",
+        "2015-06-14",
+        "2016-05-11",
+        "2016-05-14",
+        "2016-05-17",
+        "2016-05-20",
+        "2016-05-23",
+        "2016-05-31",
+        "2016-06-03",
+        "2016-06-06",
+        "2016-06-20"
+      ]
+    },
+    "val": {
+      "total": 189,
+      "normal": 95,
+      "water_stress": 94,
+      "plots": 14,
+      "control_plots": 7,
+      "water_stress_plots": 7,
+      "mixtures": [
+        "Chamran+Pishtaz",
+        "Chamran+Sirvan",
+        "Chamran+Sirvan+Pishtaz",
+        "Chamran+Sirvan+Pishtaz+Shiraz",
+        "Pishtaz",
+        "Shiraz",
+        "Sirvan+Pishtaz+Shiraz"
+      ],
+      "season1": 63,
+      "season2": 126,
+      "dates": [
+        "2015-05-15",
+        "2015-05-29",
+        "2015-06-01",
+        "2015-06-06",
+        "2015-06-14",
+        "2016-05-11",
+        "2016-05-14",
+        "2016-05-17",
+        "2016-05-20",
+        "2016-05-23",
+        "2016-05-31",
+        "2016-06-03",
+        "2016-06-06",
+        "2016-06-20"
+      ]
+    },
+    "test": {
+      "total": 189,
+      "normal": 96,
+      "water_stress": 93,
+      "plots": 14,
+      "control_plots": 7,
+      "water_stress_plots": 7,
+      "mixtures": [
+        "Chamran+Pishtaz+Shiraz",
+        "Chamran+Shiraz",
+        "Chamran+Sirvan+Shiraz",
+        "Pishtaz+Shiraz",
+        "Sirvan",
+        "Sirvan+Pishtaz",
+        "Sirvan+Shiraz"
+      ],
+      "season1": 63,
+      "season2": 126,
+      "dates": [
+        "2015-05-15",
+        "2015-05-29",
+        "2015-06-01",
+        "2015-06-06",
+        "2015-06-14",
+        "2016-05-11",
+        "2016-05-14",
+        "2016-05-17",
+        "2016-05-20",
+        "2016-05-23",
+        "2016-05-31",
+        "2016-06-03",
+        "2016-06-06",
+        "2016-06-20"
+      ]
+    }
+  },
+  "training_ready_weak_baseline": true
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "visual_key": "leaf:healthy",
+    "node_id": "cangzhou_jinsixiaozao:475ca65a29977d60",
+    "node_type": "VisualSymptom",
+    "name": "健康叶片视觉状态",
+    "is_diagnosis": false,
+    "mapping_kind": "observation_vocabulary_not_agronomic_fact",
+    "scope": "production"
+  },
+  {
+    "visual_key": "leaf:anthracnose",
+    "node_id": "cangzhou_jinsixiaozao:64ab661a761abd86",
+    "node_type": "VisualSymptom",
+    "name": "炭疽病类视觉表现",
+    "is_diagnosis": false,
+    "mapping_kind": "observation_vocabulary_not_agronomic_fact",
+    "scope": "production"
+  },
+  {
+    "visual_key": "leaf:powdery_mildew",
+    "node_id": "cangzhou_jinsixiaozao:ffcc00970162694d",
+    "node_type": "VisualSymptom",
+    "name": "白粉病类视觉表现",
+    "is_diagnosis": false,
+    "mapping_kind": "observation_vocabulary_not_agronomic_fact",
+    "scope": "production"
+  },
+  {
+    "visual_key": "leaf:insect_damage",
+    "node_id": "cangzhou_jinsixiaozao:70129974727b20cb",
+    "node_type": "VisualSymptom",
+    "name": "虫害损伤视觉表现",
+    "is_diagnosis": false,
+    "mapping_kind": "observation_vocabulary_not_agronomic_fact",
+    "scope": "production"
+  },
+  {
+    "visual_key": "leaf:yellow_leaf",
+    "node_id": "cangzhou_jinsixiaozao:a5e740fa9c590561",
+    "node_type": "VisualSymptom",
+    "name": "黄化视觉表现",
+    "is_diagnosis": false,
+    "mapping_kind": "observation_vocabulary_not_agronomic_fact",
+    "scope": "production"
+  },
+  {
+    "visual_key": "fruit_bruise:healthy",
+    "node_id": "cangzhou_jinsixiaozao:bfb948f23de021c1",
+    "node_type": "FruitCondition",
+    "name": "正常果实外观",
+    "is_diagnosis": false,
+    "mapping_kind": "observation_vocabulary_not_agronomic_fact",
+    "scope": "postharvest"
+  },
+  {
+    "visual_key": "fruit_bruise:bruised",
+    "node_id": "cangzhou_jinsixiaozao:b9c8d4d9bfdbca0a",
+    "node_type": "FruitCondition",
+    "name": "碰伤/机械损伤类视觉表现",
+    "is_diagnosis": false,
+    "mapping_kind": "observation_vocabulary_not_agronomic_fact",
+    "scope": "postharvest"
+  },
+  {
+    "visual_key": "fruit_freshness:fresh",
+    "node_id": "cangzhou_jinsixiaozao:c274370a0f75adc1",
+    "node_type": "FruitCondition",
+    "name": "新鲜果实外观",
+    "is_diagnosis": false,
+    "mapping_kind": "observation_vocabulary_not_agronomic_fact",
+    "scope": "postharvest"
+  },
+  {
+    "visual_key": "fruit_freshness:rotten",
+    "node_id": "cangzhou_jinsixiaozao:404970fc962670ff",
+    "node_type": "FruitCondition",
+    "name": "腐败/变质类视觉表现",
+    "is_diagnosis": false,
+    "mapping_kind": "observation_vocabulary_not_agronomic_fact",
+    "scope": "postharvest"
+  }
+]

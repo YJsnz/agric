@@ -1,0 +1,235 @@
+{
+  "id": "QA_0200",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0008",
+    "chunk:PAPER_005_C0001",
+    "chunk:PAPER_005_C0003",
+    "chunk:PAPER_005_C0007",
+    "chunk:PAPER_005_C0015"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "E2摘要方法部分明确写明“鸭梨采收后以窖藏和冷藏两种方式贮藏”，直接支持结论所述两种贮藏方式为窖藏和冷藏；E1引言中“窖藏和冷藏期间”“这两种贮藏方式”亦一致。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "E2原文“鸭梨采收后以窖藏和冷藏两种方式贮藏”支持basis第一句；E1原文“本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况……进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制”支持basis第二句。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "E2摘要方法部分直接给出“鸭梨采收后以窖藏和冷藏两种方式贮藏”，E1引言中“窖藏和冷藏期间”“这两种贮藏方式”与之一致，推理仅复述证据内容，无额外补造。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅建议进一步查阅该研究结果部分以了解两种贮藏方式对鸭梨品质、挥发性物质及相关基因表达的具体影响；E1和E2均表明该研究涉及这些内容，未给出未经证据支持的剂量、百分比或干预收益。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "0  引言",
+        "text": "【研究意义】挥发性芳香物质是水果风味物质的重要组成部分，浓郁的果香气味深受消费者喜欢。鸭梨是我国主栽梨品种之一，但目前对鸭梨挥发性物质生成的调控机理研究较少。深入研究鸭梨果实的挥发性物质，尤其是探讨香味物质的生成规律，对阐明鸭梨风味品质的形成具有重要意义。【前人研究进展】果实的香气是由多种挥发性化合物组成的复杂混合物，其中包括酯类、醛类、萜类、醇类、羰基化合物及硫化物等。根据果实挥发性物质合成前体不同，其合成分为脂肪酸途径、氨基酸途径、萜类合成途径，其中脂肪酸代谢中的脂氧合酶（LOX）途径、β-氧化途径是芳香化合物合成的主要方式，由此生成的己酯及乙酯类化合物促成了果实的果香味[1-2]。LOX 是脂肪酸代谢途径中的关键酶，其他如乙醇脱氢酶（ADH）、氢过氧化物裂解酶（HPL）、醇酰基转移酶（AAT）等在果实香气物质形成过程中也发挥重要作用，这些酶的相关基因表达发生显著变化[3-10]。就梨果实而言，低温、乙烯、采收期和贮藏条件等均会影响挥发性物质的生成[8-15]，其中低温会减少果实贮藏过程中香气物质的形成[8-10]，在其他水果中也存在类似情况[16-17]。【本研究切入点】在我国，地下通风窖藏是一种传统的水果贮藏方式，不仅具有节能环保的优势，而且贮藏后果实香味浓郁，但果实容易衰老，不宜长期贮藏。相对来说，冷藏仍是当前商业贮藏的主要形式，但冷藏果实的香气物质明显减少[8-10]。鸭梨贮藏期间挥发性物质变化很大[18]。但目前为止，尚未见鸭梨在窖藏、冷藏过程中挥发性物质成分变化的报道。【拟解决的关键问题】本研究通过分析窖藏和冷藏期间，鸭梨品质、挥发性物质成分和电子鼻信号响应情况，检测香气物质形成相关基因的表达，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "中国农业科学  2021,54(21):4635-4649 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2021.21.013收稿日期：2021-01-11；接受日期：2021-04-30基金项目：财政部和农业农村部：国家现代农业产业技术体系（CARS-28-23）、河北省农林科学院创新工程（2019-2-1）联系方式：岳盈肖，E-mail：yyingxiao@163.com。何近刚，E-mail：hejingang2000@163.com。岳盈肖和何近刚为同等贡献作者。通信作者王永霞，E-mail：wyxhd2004@126.com。通信作者关军锋，E-mail：junfeng-guan@263.net开放科学（资源服务）标识码（OSID）：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析岳盈肖1,2，何近刚2，赵江丽2，闫子茹2，程玉豆2，武肖琦2，王永霞，关军锋1 河北工程大学生命科学与食品工程学院，河北邯郸 056038；2 河北省农林科学院生物技术与食品科学研究所/河北省植物转基因中心，石家庄 050051摘要：【目的】比较窖藏和冷藏过程中，鸭梨果实品质、呼吸速率、乙烯释放速率、电子鼻特征、挥发性物质及其相关基因表达的差异，进一步解析两种贮藏方式对鸭梨香气物质形成的影响及其机制。【方法】鸭梨采收后以窖藏和冷藏两种方式贮藏，测定贮藏期间果实硬度、可溶性固形物含量（SSC）、可滴定酸（TA）含量、呼吸速率和乙烯释放速率，使用电子鼻检测挥发性物质变化，利用气质联用色谱（GC-MS）测定挥发性物质成分及含量，利用荧光定量PCR（Real-time PCR）技术分析乙烯生成（PbACS1、PbACO2）及其信号转导（PbETR1、PbETR2、PbERS1a、PbERS1b、PbEIN3、PbERF）、挥发性物质合成（PbAAT1、PbADH2、PbADH3、PbADH5、PbHPL、PbLOX1、PbLOX8）相关基因的表达量变化情况。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0007",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": " The analysis on expression of genes related to ethylene and aroma compound synthesis showed that the expression of ACC oxidase (PbACO2), lipoxygenase (PbLOX1) and alcohol acyltransferase (PbAAT1) genes were significantly increased, and the expression of ethylene insensitive transcriptional regulator gene (PbEIN3) was down regulated in cellar storage in contrast to cold storage. 【Conclusion】Compared with cold storage, cellar storage condition promoted ethylene production and the expression of genes related to ethylene biosynthesis (PbACO2) and aroma compound synthesis (PbLOX1 and PbAAT1), thus, made more kinds and contents of aroma substances, and exhibited more rich aroma in Yali pear. Key words: Yali pear; quality; volatile compound; electronic nose; ethylene; gene expression",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0015",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "65 μm）吸附30 min，采用TQ-8040 型气相色谱-质谱",
+        "text": "重复3 次。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "该研究中鸭梨采收后采用的两种贮藏方式为窖藏和冷藏。 [E1]  [E2] ",
+    "basis": "证据显示：鸭梨采收后以窖藏和冷藏两种方式贮藏。 [E2]  引言亦指出本研究通过分析窖藏和冷藏期间鸭梨品质、挥发性物质成分和电子鼻信号响应情况，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。 [E1] ",
+    "reasoning": "问题询问该研究采用的两种贮藏方式。[E2]摘要方法部分明确写明“鸭梨采收后以窖藏和冷藏两种方式贮藏”，直接给出答案；[E1]引言中“窖藏和冷藏期间”及“这两种贮藏方式”的表述与之一致，可相互印证。 [E1]  [E2] ",
+    "advice": "如需了解两种贮藏方式对鸭梨品质、挥发性物质及相关基因表达的具体影响，可进一步查阅该研究结果部分。 [E1]  [E2] ",
+    "citations": [
+      "E1",
+      "E2"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出两种贮藏方式为窖藏和冷藏，与参考答案及原文摘要方法部分一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "该研究中鸭梨采收后采用的两种贮藏方式为窖藏和冷藏。",
+          "status": "supported",
+          "reason": "原文摘要方法部分明确写明“鸭梨采收后以窖藏和冷藏两种方式贮藏”，E1和E2均提供支持。"
+        },
+        {
+          "claim": "引言指出本研究通过分析窖藏和冷藏期间鸭梨品质、挥发性物质成分和电子鼻信号响应情况，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。",
+          "status": "supported",
+          "reason": "E1引言部分有相同表述，支持该断言。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2934,
+      "completion_tokens": 157,
+      "total_tokens": 3091,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 2294
+    },
+    "model": "deepseek-flash",
+    "response_id": "322419ca-b708-434f-a33f-d776bf166843",
+    "seconds": 5.986797799996566,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "该研究中鸭梨采收后采用的两种贮藏方式为窖藏和冷藏。[E1][E2]",
+        "basis": "证据显示：鸭梨采收后以窖藏和冷藏两种方式贮藏。[E2] 引言亦指出本研究通过分析窖藏和冷藏期间鸭梨品质、挥发性物质成分和电子鼻信号响应情况，进一步阐明这两种贮藏方式对鸭梨果实香气物质形成的影响及其调控机制。[E1]",
+        "reasoning": "问题询问该研究采用的两种贮藏方式。E2摘要方法部分明确写明“鸭梨采收后以窖藏和冷藏两种方式贮藏”，直接给出答案；E1引言中“窖藏和冷藏期间”及“这两种贮藏方式”的表述与之一致，可相互印证。[E1][E2]",
+        "advice": "如需了解两种贮藏方式对鸭梨品质、挥发性物质及相关基因表达的具体影响，可进一步查阅该研究结果部分。[E1][E2]",
+        "citations": [
+          "E1",
+          "E2"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2208,
+        "completion_tokens": 220,
+        "total_tokens": 2428,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2080
+      },
+      "model": "deepseek-flash",
+      "response_id": "fa8031d0-8be0-4f65-a30f-fbafe5ea4508",
+      "seconds": 6.237088099995162,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 18.76984540000558
+}

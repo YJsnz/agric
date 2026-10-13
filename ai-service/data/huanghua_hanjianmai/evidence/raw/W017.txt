@@ -1,0 +1,196 @@
+农机化研究
+nav
+emailalert
+searchbtn
+searchbox
+tablepage
+yinyongbenwen
+piczone
+journalimg
+journalInfo
+journalinfonormal
+searchdiv
+searchzone
+qikanlogo
+popupnotification
+Your browser does not support the video tag.
+请选择需要下载的pdf数据
+中文数据
+英文数据
+正在翻译英文数据
+...
+paper
+paperNew
+农机化研究
+中文核心期刊
+首页
+期刊介绍
+投稿指南
+投稿须知
+期刊与作者许可协议
+编委会
+联系我们
+期刊征订
+|
+Email-Alert
+盐碱地改良和旱碱麦种植技术及其配套装备研究现状
+谢怡娇
+1
+赵晓顺
+1
+边双印
+2
+侯壮壮
+1
+宋小颖
+3
+赵建国
+1
+1.河北农业大学机电工程学院
+2.河北峥嵘农机有限公司
+3.石家庄市农业技术推广中心
+基金项目(Foundation):
+河北省高等学校科学研究项目(CXZX2025008);
+河北省农业科技成果转化资金项目(2025JNZ-J01);
+沧州市重点研发"揭榜挂帅"项目(23242201001D);
+河北省现代农业产业技术体系旱碱麦创新团队建设项目(HBCT2024030207)
+邮箱(Email):
+35348322@qq.com;
+DOI:
+发布时间：
+2026-08-07
+出版时间：
+2026-08-07
+网络发布时间：
+2026-08-07
+移动端阅读
+114
+0
+38
+下载次数
+被引频次
+阅读次数
+引用本文
+下载本文
+PDF
+引用导出
+GB/T 7714-2015
+MLA
+APA
+Refworks
+EndNote
+NoteExpress
+NoteFirst
+分享
+摘要
+全文
+参考文献
+出版信息
+相关文章
+摘要：
+盐碱地是我国重要的后备耕地资源,其开发利用对保障粮食安全和促进农业可持续发展具有重要意义。旱碱麦作为适宜盐碱旱作区种植的特色粮食作物,具有耐盐碱、抗旱、适应性强等特点,是推进盐碱地农业化利用的核心作物。本文围绕盐碱地改良与旱碱麦生产需求,系统梳理了盐碱地改良技术、旱碱麦种植技术及其配套机械装备的研究现状。重点分析了化学改良、生物改良和物理改良等盐碱地治理技术及其配套装备,以及起垄覆膜、沟播避盐、节水保墒、水肥调控等旱碱麦关键种植技术,并总结了改良剂施用、秸秆还田、深松整地、覆膜播种、沟播施肥、水肥一体化和田间管理装备的发展进展。研究发现:盐碱地改良仍存在机理研究匮乏、协同治理水平偏低和装备适应性较差等问题;旱碱麦生产存在播种质量稳定性不足、农机农艺融合不深和智能化程度较低等难题。未来应加强盐碱地综合治理与旱碱麦适生栽培研究,推进专用化、集成化、智能化装备研发,促进现代信息技术与农机装备深度融合,为盐碱地高效利用和旱碱麦产业发展提供参考。
+关键词：
+旱碱麦种植技术;
+盐碱地治理技术;
+智能装备;
+发展趋势;
+Abstract：
+Saline-alkali land represented an important reserve cultivated land resource in China, and its development and utilization were of great significance for safeguarding food security and promoting sustainable agricultural development. Dryland saline-alkali wheat, as a characteristic grain crop suitable for cultivation in saline-alkali dry farming regions, exhibited strong salt-alkali tolerance, drought resistance, and environmental adaptability, making it a core crop type to promote the agricultural utilization of saline-alkali land. Focusing on the requirements of saline-alkali land amelioration and dryland saline-alkali wheat production, this paper systematically reviewed the research progress in saline-alkali land improvement technologies, dryland saline-alkali wheat cultivation techniques, and associated agricultural machinery and equipment. EmpHasis was placed on saline-alkali land reclamation technologies and supporting equipment, including chemical amelioration, biological amelioration, and physical amelioration, as well as key cultivation techniques for dryland saline-alkali wheat, such as ridge formation and plastic-film mulching, furrow sowing for salt avoidance, water-saving and moisture-conservation cultivation, and water-fertilizer regulation. The development progress of machinery and equipment for soil amendment application, straw returning, subsoiling and land preparation, film-mulched seeding, furrow sowing and fertilization, integrated water-fertilizer management, and field management was also summarized. The review indicated that saline-alkali land amelioration still faces several challenges, including insufficient mechanistic research, li-mited synergistic remediation capacity, and poor equipment adaptability. Dryland saline-alkali wheat production was constrained by insufficient stability of seeding quality, insufficient integration of agronomic practices and agricultural machi-nery, and a relatively low level of intelligentization. Future research should strengthen integrated saline-alkali land ma-nagement and adaptive cultivation of dryland saline-alkali wheat, promote the development of specialized, integrated, and intelligent agricultural machinery and equipment, and facilitate the deep integration of modern information technologies with agricultural machinery, thereby providing a reference for the efficient utilization of saline-alkali land and the indust-rial development of dryland saline-alkali wheat.
+KeyWords：
+dry-alkali wheat planting techniques;
+saline-alkali land remdiation technology;
+intelligent equipment;
+development trends;
+如需获取全文，请访问cnki.net
+如需获取全文，请访问cnki.net
+参考文献
+[1] Wang Nan,Yu Dietian,Chen Songchao,et al.Mapping 25 years of global soil salinity:Hydrothermal conditions drive widespread desalinization amid regional salinization hotspots[J].One Earth,2026,9(5):101658.
+[2] Cheng Yu,Zhang Tibin,Tong Jiankang,et al.Organic substitution improves saline-sodic soils:Field evidence linking soil sodicity,structure and water status[J].Agricultural Water Management,2026,331:110434.
+[3] Shokri N,Hassani A,Sahimi M.Multi-scale soil salinization dynamics from global to pore scale:a review[J].Reviews of Geophysics,2024,62(4):e2023RG000804.
+[4] Li Kesheng,Li Quanxin,Geng Yuhan,et al.An evaluation of the effects of microstructural characteristics and frost heave on the remediation of saline-alkali soils in the Yellow River Delta,China[J].Land Degradation & Development,2021,32(3):1325-1337.
+[5] 秦俊灵,索春男,任妙春,等.河北旱碱麦不同生育时期气候变化及对产量影响的双重量化分析[J].麦类作物学报,2025,45(1):130-137.Qin Junling,Suo Chunnan,Ren Miaochun,et al.Double quantitative analysis of climate change and its effect on yield of drought-alkali-resistant wheat in Hebei Province[J].Journal of Triticeae Crops,2025,45(1):130-137.
+[6] 孙永珍,曹洁洁,李思言,等.沧州市盐碱地综合利用创新实践与路径探索[J].中国农业资源与区划,2026,47(3):235-244.Sun Yongzhen,Cao Jiejie,Li Siyan,et al.Innovative practice and pathway exploration of comprehensive utilization of saline-alkali land in coastal area:based on Cangzhou city[J].Chinese Journal of Agricultural Resources and Regional Planning,2026,47(3):235-244.
+[7] 刘震,吴佳璇,刘媛媛,等.滨海盐碱地区土壤真菌对轮作种植制度的响应[J].江苏农业科学,2025,53(16):264-270.Liu Zhen,Wu Jiaxuan,Liu Yuanyuan,et al.Respanse of soil fungi to rotation cropping system in coastal saline-alkali area[J].Jiangsu Agricultural Sciences,2025,53(16):264-270.
+[8] 刘效朋,白艳梅.黄骅旱碱麦品种特点与利用[J].农家参谋,2020(10):88.
+[9] 魏秀梅,秦俊灵,任妙春,等.1994—2023年度河北沧州滨海旱碱麦生长季气候资源变化特征[J].麦类作物学报,2026,46(5):686-695.Wei Xiumei,Qin Junling,Ren Miaochun,et al.Variation characteristics of climatic resources during the growth season of coastal drought-saline wheat in Cangzhou,Hebei Province from 1994 to 2023[J].Journal of Triticeae Crops,2026,46(5):686-695.
+[10] Daba A W.Rehabilitation of soil salinity and sodicity using diverse amendments and plants:a critical review[J].Discover Environment,2025,3(1):53.
+[11] 杨劲松,姚荣江,王相平,等.中国盐渍土研究:历程、现状与展望[J].土壤学报,2022,59(1):10-27.Yang Jinsong,Yao Rongjiang,Wang Xiangping,et al.Research on salt-affected soils in China:history,status quo and prospect[J].Acta Pedologica Sinica,2022,59(1):10-27.
+[12] 田荣荣,王淑娟,刘嘉,等.根区施用生物炭和脱硫石膏提高盐碱土壤质量及向日葵产量[J].农业工程学报,2024,40(5):148-157.Tian Rongrong,Wang Shujuan,Liu Jia,et al.Applying biochar and flue gas desulfurization gypsum in the root zone to improve saline-alkali soil quality and sunflower yield[J].Transactions of the Chinese Society of Agricultural Engineering,2024,40(5):148-157.
+[13] Li Zhengkun,Kekeli M A,Jiang Yaqi,et al.Progress and prospect of saline-alkaline soil management technology:a review[J].Applied Sciences,2025,15(8):4567.
+[14] Kari A,Nagymáté Z,Romsics C,et al.Evaluating the combined effect of biochar and PGPR inoculants on the bacterial community in acidic sandy soil[J].Applied Soil Ecology,2021,160:103856.
+[15] Cui Liqiang,Liu Yuming,Yan Jinlong,et al.Revitalizing coastal saline-alkali soil with biochar application for improved crop growth[J].Ecological Engineering,2022,179:106594.
+[16] Yang Binbin,Li Dongdong,Yuan Shichong,et al.Role of biochar from corn straw in influencing crack propagation and evaporation in sodic soils[J].Catena,2021,204:105457.
+[17] Liang Jiaping,Li Yi,Si Bingcheng,et al.Optimizing biochar application to improve soil physical and hydraulic pro-perties in saline-alkali soils[J].Science of the Total Environment,2021,771:144802.
+[18] ZhangPeng,Bing Xue,Jiao Le,et al.Amelioration effects of coastal saline-alkali soil by ball-milled red phosphorus-loaded biochar[J].Chemical Engineering Journal,2022,431:133904.
+[19] Gao Guang,Yan Lei,Tong Kaiqing,et al.The potential and prospects of modified biochar for comprehensive ma-nagement of salt-affected soils and plants:a critical review[J].Science of the Total Environment,2024,912:169618.
+[20] 李正仁.固体有机肥撒肥机设计[J].农机使用与维修,2023(1):25-27.Li Zhengren.Design of solid organic fertilizer spreader[J].Agricultural Machinery Using & Maintenance,2023(1):25-27.
+[21] Kweon G,Grift T E.Feed gate adaptation of a spinner spreader for uniformity control[J].Biosystems Engineering,2006,95(1):19-34.
+[22] 张睿,王秀,赵春江,等.链条输送式变量施肥抛撒机的设计与试验[J].农业工程学报,2012,28(6):20-25.Zhang Rui,Wang Xiu,Zhao Chunjiang,et al.Design and experiment of variable rate fertilizer spreader with conveyor chain[J].Transactions of the Chinese Society of Agricultu-ral Engineering,2012,28(6):20-25.
+[23] 马伟,房华玉,肖平.基于ANSYS的肥料喷洒设备设计与分析[J].机械管理开发,2022,37(12):1-2,7.Ma Wei,Fang Huayu,Xiao Ping.Design and analysis of fertilizer spraying equipment based on ANSYS[J].Mecha-nical Management and Development,2022,37(12):1-2,7.
+[24] 刘旋峰,张学军,周欣,等.二次抛送式棉秆粉碎还田装置优化设计与试验[J].农业机械学报,2026,57(4):246-256.Liu Xuanfeng,Zhang Xuejun,Zhou Xin,et al.Optimized design and experiment of secondary tossing cotton stalk crushing and returning device[J].Transactions of the Chinese Society for Agricultural Machinery,2026,57(4):246-256.
+[25] 王春雷,刘冲,林东洪,等.东北黑土地保护性用养技术与装备研究进展[J].农业机械学报,2025,56(4):1-21.Wang Chunlei,Liu Chong,Lin Donghong,et al.Research progress of protective utilization and maintenance technology and machine in northeast black land of China[J].Transactions of the Chinese Society for Agricultural Machinery,2025,56(4):1-21.
+[26] Hao Xiangxiang,Han Xiaozeng,Wang Cui,et al.Temporal dynamics of density separated soil organic carbon pools as revealed by δ13C changes under 17 years of straw return[J].Agriculture,Ecosystems & Environment,2023,356:108656.
+[27] 王宇星,王晓燕,李洪文,等.苏打盐碱土秸秆深埋机设计与试验[J].农业机械学报,2025,56(5):202-212.Wang Yuxing,Wang Xiaoyan,Li Hongwen,et al.Design and experiment of deep burial machine on sodic saline-alkali soil[J].Transactions of the Chinese Society for Agricultural Machinery,2025,56(5):202-212.
+[28] Ezenwanne B C,Okoye C O,Jiang Huifang,et al.Microbial strategies for soda saline-alkali soil remediation:The role of haloalkaliphilic bacteria[J].Microbiological Research,2026,304:128410.
+[29] 沈景新,焦伟,孙永佳,等.1SZL-420型智能深松整地联合作业机的设计与试验[J].农机化研究,2020,42(2):85-90.Shen Jingxin,Jiao Wei,Sun Yongjia,et al.Design and experiment of intelligent control system of spray bar sprayer[J].Journal of Agricultural Mechanization Research,2020,42(2):85-90.
+[30] 赵大勇,李连豪,许春林,等.1ZQHF-350/5型前后分置悬挂式联合整地机[J].农业机械学报,2014,45(10):92-96.Zhao Dayong,Li Lianhao,Xu Chunlin,et al.1ZQHF-350/5 Hang combined cultivating machine with front-stubble-breaking,post-subsoil and rotary-tilling equipment[J].Transactions of the Chinese Society for Agricultural Machinery,2014,45(10):92-96.
+[31] 王晨平,谢洪昌,张晓伟,等.1SZL-440深松联合整地机的设计与试验[J].农机化研究,2026,48(12):78-87.Wang Chenping,Xie Hongchang,Zhang Xiaowei,et al.Design and experiment of 1SZL-440 subsoiling combined soil preparationmachine[J].Journal of Agricultural Mechanization Research,2026,48(12):78-87.
+[32] Zheng Shuai,Lu Tong,Liu Jie,et al.Discrete element-based design of a high-speed rotary tiller for saline-alkali land and verification of optimal tillage parameters[J].Agriculture,2025,15(3):269.
+[33] Varani M,Mattetti M,Molari G,et al.Correlation between power harrow energy demand and tilled soil aggregate dimensions[J].Biosystems Engineering,2023,225:54-68.
+[34] Xu Nan,Xin Zhenbo,Yuan Jin,et al.Design and optimization of power harrow soil crushing components for coastal saline–alkali land[J].Agriculture,2025,15(2):206.
+[35] Zhao Zhuang,Wang Dongwei,Shang Shuqi,et al.Design and test of a dual-axis layered rotary tillage stubble exterminator in saline-alkali land based on discrete elements[J].International Journal of Agricultural and Biological Enginee-ring,2024,17(5):163-175.
+[36] 尹功超.旱碱麦高产栽培技术及病虫害防治策略[J].河北农业,2025(9):37-38.
+[37] 田增鹏.黄骅地区旱碱麦高产高效生产技术研究[J].河北农业,2024(9):41-42.
+[38] 弋孝科.谷子不同覆膜播种方式效益对比试验研究[J].农民致富之友,2015(24):186.
+[39] 闵文江,吕军海.雨养旱作春玉米起垄覆膜侧播种植技术[J].现代农村科技,2019(2):107.
+[40] 赵晓顺,侯壮壮,史文琴,等.正负压气吸式精量排种器设计与试验[J].河北农业大学学报,2024,47(2):97-103.Zhao Xaoshun,Hou Zhuangzhuanh,Shi Wenqin,et al.Design and Experiment of Positive-Negative Pressure Air-suction Precision Seed-Metering Device[J].Journal of Hebei Agricultural University,2024,47(2):97-103.
+[41] SahbeniG,Ngabire M,Musyimi P K,et al.Challenges and opportunities in remote sensing for soil salinization mapping and monitoring:a review[J].Remote Sensing,2023,15(10):2540.
+[42] Wang Fei,Han Lili,Liu Lulu,et al.Advancements and perspective in the quantitative assessment of soil salinity utilizing remote sensing and machine learning algorithms:a review[J].Remote Sensing,2024,16(24):4812.
+[43] Jiang Zhuohan,Ding Jianli,Li Zhihui,et al.Present knowledge and future challenges in remote sensing for soil salinization monitoring:a review of bibliometric analysis[J].International Journal of Remote Sensing,2025,46(1):247-272.
+[44] Soussi A,Zero E,Sacile R,et al.Smart sensors and smart data for precision agriculture:a review[J].Sensors,2024,24(8):2647.
+[45] Petsetidi P A,Kargas G,Sotirakoglou K.Investigation of topsoil salinity and soil texture using the EM38-MK2 and the WET-2 sensors in Greece[J].AgriEngineering,2025,7(10):347.
+[46] Ding Zhihao,Wang Dongwei,Salem A,et al.Optimal design and simulation of double-disk furrow opener for a precision corn planter in saline-alkali soil[J].INMATEH Agricultural Engineering,2025:147-157.
+[47] 史艳红.旱地冬小麦膜侧宽幅匀播抗旱增产机理试验[J].农业科技与信息,2023,20(1):17-20.
+[48] 佚名.大豆玉米带状复合种植全程机械化技术方案(四川):根据张黎骅教授在四川省大豆玉米带状复合种植机具保障工作会上培训PPT整理编辑[J].四川农业与农机,2022(2):9-12.
+[49] 范雷雷,史海滨,李瑞平,等.秸秆覆盖对沟灌水盐迁移与玉米水分利用效率的影响[J].农业机械学报,2021,52(2):283-293,319.Fan Leilei,Shi Haibin,Li Ruiping,et al.Effects of straw mulching on soil water-salt transportation and water use efficiency of maize under furrow irrigation[J].Transactions of the Chinese Society for Agricultural Machinery,2021,52(2):283-293,319.
+[50] 熊建,王忠波,张忠学,等.保墒措施和调亏灌溉对寒区春玉米生长及产量和水分利用效率的影响[J].灌溉排水学报,2018,37(2):6-15.Xiong Jian,Wang Zhongbo,Zhang Zhongxue,et al.Effects of soil moisture conservation measures and regulated deficit irrigation on growth,physiology,yield and water use efficiency of spring maize in cold regions[J].Journal of Irrigation and Drainage,2018,37(2):6-15.
+[51] 王婧,逄焕成,任天志,等.地膜覆盖与秸秆深埋对河套灌区盐渍土水盐运动的影响[J].农业工程学报,2012,28(15):52-59.Wang Jing,Pang Huancheng,Ren Tianzhi,et al.Effect of plastic film mulching and straw buried on soil water-salt dynamic in Hetao plain[J].Transactions of the Chinese Society of Agricultural Engineering,2012,28(15):52-59.
+[52] 徐宇东,李海洋,杨建明,等.宁夏干旱区双垄全膜沟播马铃薯种植密度的产量影响试验研究[J].中国农学通报,2026,42(8):11-16.Xu Yudong,Li Haiyang,Yang Jianming,et al.Experimental study on yield impact of potato planting density under double ridge full film furrow sowing in arid area of Ningxia[J].Chinese Agricultural Science Bulletin,2026,42(8):11-16.
+[53] 米俊珍,张兰英,徐忠山,等.黄土丘陵旱作区全膜微垄沟穴播对土壤水热及谷子产量的影响[J].中国农业大学学报,2026,31(6):64-75.Mi Junzhen,Zhang Lanying,Xu Zhongshan,et al.Effects of full film mulching combined with micro ridge-furrow and hill-drop sowing on soil hydrothermal conditions and foxtail millet yield in dry-land farming area of hilly loess region[J].Journal of China Agricultural University,2026,31(6):64-75.
+[54] 咸青林,肖鉴珂,高阿庆,等.种植方式结合测墒补灌下冬小麦产量及水分利用效率[J].中国农业科学,2026,59(3):589-601.Xian Qinglin,Xiao Jianke,Gao Aqing,et al.Effects of planting patterns combined with soil moisture measurement and supplementary irrigation on the yield and water use efficiency of winter wheat[J].Scientia Agricultura Sinica,2026,59(3):589-601.
+[55] 张仕林,黄玉祥,赵宏波,等.切抛组合式小麦宽幅沟播破茬清秸防堵装置设计与试验[J].农业机械学报,2024,55(5):40-52.Zhang Shilin,Huang Yuxiang,Zhao Hongbo,et al.Design and experiment of cutting and throwing combined anti-blocking device for wide-seedbed seeding of wheat[J].Transactions of the Chinese Society for Agricultural Machinery,2024,55(5):40-52.
+[56] 常甜,谷晓博,蔡文璟,等.适宜种植密度和施氮量对提高冬小麦产量和水氮利用效率的影响[J].农业工程学报,2023,39(24):56-68.Chang Tian,Gu Xiaobo,Cai Wenjing,et al.Effects of suitable fertilizer-N application rate and planting density on increasing yield,water and nitrogen use efficiency of winter wheat[J].Transactions of the Chinese Society of Agricultural Engineering,2023,39(24):56-68.
+[57] 邓欢,戴飞,史瑞杰,等.基于HYDRUS-2D/3D的玉米全膜双垄沟水肥运移规律与根系响应[J].农业机械学报,2022,53(增刊2):100-108.Deng Huan,Dai Fei,Shi Ruijie,et al.Water and fertilizer transport law and root response of maize in full-film double furrows based on HYDRUS-2D/3D[J].Transactions of the Chinese Society for Agricultural Machinery,2022,53(S2):100-108.
+[58] 艾武,杨玉梅,顾春文,等.水肥一体化技术发展与应用现状[J].四川农业与农机,2025(4):72-75.
+[59] 龚时宏,王建东,黄兴法,等.滴灌系统灌水器水力性能与抗堵塞研究进展[J].农业工程学报,2018,34(20):1-14.Gong Shihong,Wang Jiandong,Huang Xingfa,et al.Research Progress on Hydraulic Performance and Anti-clogging of Emitters in Drip Irrigation Systems[J].Transactions of the Chinese Society of Agricultural Engineering,2018,34(20):1-14.
+[60] Guangzhou Wang,Gang Ni,Gu Feng,et al.Saline-alkali soil reclamation and utilization in China:progress and prospects[J].Frontiers of Agricultural Science and Enginee-ring,2024,11(2):216-228.
+[61] 赵春江.农业遥感研究与应用进展[J].农业机械学报,2014,45(12):277-293.Zhao Chunjiang.Advances of research and application in remote sensing for agriculture[J].Transactions of the Chinese Society for Agricultural Machinery,2014,45(12):277-293.
+[62] 傅梁起,王龙龙,毛恩荣,等.高地隙喷雾机全液压多轮转向控制系统设计与试验[J].农业机械学报,2025,56(10):746-757.Fu Liangqi,Wang Longlong,Mao Enrong,et al.Design and test of full hydraulic multi-wheel steering control system for high ground clearance sprayer[J].Transactions of the Chinese Society for Agricultural Machinery,2025,56(10):746-757.
+[63] 万欢,欧媛珍,管宪鲁,等.无人农机作业环境感知技术综述[J].农业工程学报,2024,40(8):1-18.Wan Huan,Ou Yuanzhen,Guan Xianlu,et al.Review of the perception technologies for unmanned agricultural machinery operating environment[J].Transactions of the Chinese Society of Agricultural Engineering,2024,40(8):1-18.
+基本信息:
+中图分类号:
+S156.4;S512.1
+引用信息:
+[1]谢怡娇,赵晓顺,边双印,等.盐碱地改良和旱碱麦种植技术及其配套装备研究现状[J].农机化研究().
+基金信息:
+河北省高等学校科学研究项目(CXZX2025008);
+河北省农业科技成果转化资金项目(2025JNZ-J01);
+沧州市重点研发"揭榜挂帅"项目(23242201001D);
+河北省现代农业产业技术体系旱碱麦创新团队建设项目(HBCT2024030207)
+发布时间：
+2026-08-07
+出版时间：
+2026-08-07
+网络发布时间：
+2026-08-07
+扫码分享到微信或朋友圈
+使用微信“扫一扫”功能。
+将此内容分享给您的微信好友或者朋友圈
+该系统由中国知网提供技术支持。技术支持使用说明：cb@cnki.net http://find.cb.cnki.net
+建议使用分辨率为1024*768的IE 10.0或更高版本浏览此页面
+检 索
+高级检索
+引用
+GB/T 7714-2015 格式引文
+MLA格式引文
+APA格式引文

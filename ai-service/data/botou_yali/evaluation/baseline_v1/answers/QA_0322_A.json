@@ -1,0 +1,56 @@
+{
+  "id": "QA_0322",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法依据所给信息确定该研究的具体推测结论。",
+      "basis": "未提供该论文的原文内容，且我无法确认该论文中酯类总量与醇类物质总量的具体数据及作者据此作出的代谢途径推测。",
+      "reasoning": "问题要求基于特定论文中酯类与醇类总量的关系推测香气生成相关的代谢途径。由于缺乏论文原文证据，不能编造数据或因果关系，因此无法给出确定结论。",
+      "advice": "请提供该论文的相关段落或数据（如酯类与醇类总量的变化趋势及作者讨论部分），以便进一步分析。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 179,
+      "completion_tokens": 137,
+      "total_tokens": 316,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 179
+    },
+    "model": "deepseek-flash",
+    "response_id": "ff407c61-b8b8-4f9d-936a-2c6200ea6cb0",
+    "seconds": 5.954612600000019,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.6,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何关于鸭梨香气生成与何种代谢途径相关的推测结论，仅以缺乏原文为由拒绝作答；而该问题在提供的论文原文中有明确答案（脂肪酸代谢途径），因此属于可回答题中的拒答，不能判为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1109,
+      "completion_tokens": 69,
+      "total_tokens": 1178,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 981
+    },
+    "model": "deepseek-flash",
+    "response_id": "15857cac-b2c3-4685-9619-4383f35476b0",
+    "seconds": 6.391563000000133,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,4 @@
+# Ubuntu 22.04 Python 3.10 on JetPack 6.2.1. TensorRT is supplied by JetPack apt.
+numpy==1.26.4
+Pillow==10.4.0
+onnxruntime==1.20.1

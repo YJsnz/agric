@@ -1,0 +1,21 @@
+[
+  {
+    "source_id": "PAPER_004",
+    "url": "https://www.spkx.net.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=9726",
+    "referer": "https://www.spkx.net.cn/CN/10.7506/spkx1002-6630-201010064",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/original.pdf",
+    "attempted_at": "2026-09-15T06:25:05.648491+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "source_id": "UNI_001",
+    "url": "http://www.zwbch.com/changshi/view_14.html",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/university/UNI_001/http-original.html",
+    "attempted_at": "2026-09-15T06:25:05.649565+00:00",
+    "resolved_url": "http://www.zwbch.com/changshi/view_14.html",
+    "status": "downloaded_pending_review",
+    "bytes": 45537,
+    "sha256": "28151677f603aab0b54cef1a1a5f0ebfc177523bd95e15fc78dd74653dee3f39"
+  }
+]

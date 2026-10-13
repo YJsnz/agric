@@ -1,0 +1,107 @@
+[
+  {
+    "id": "fruit_surface",
+    "chunk_id": "JFC_surface",
+    "candidate": "先检查果皮和果柄",
+    "applicability": "鲜枣外观核验：查看果皮完整性、碰伤、黑斑、虫眼及果柄处是否软烂；不是食品安全检测。",
+    "question": "这是鲜枣还是干枣？果皮或果柄处是否破损、黑斑或软烂？",
+    "visual_keys": [
+      "fruit_bruise:bruised",
+      "fruit_bruise:healthy",
+      "fruit_freshness:fresh",
+      "fruit_freshness:rotten"
+    ],
+    "action": null,
+    "relation_kind": "conditional_handling_not_diagnosis"
+  },
+  {
+    "id": "fruit_sort",
+    "chunk_id": "JFC_sort",
+    "candidate": "确认伤果后再分选",
+    "applicability": "拟入库贮藏的鲜枣，人工确认有机械伤或病虫损伤时，按原文从入贮果中剔除；不能仅凭模型分数判废或判定能否食用。",
+    "question": "是否准备入库贮藏？异常是单果还是同一批多果？",
+    "visual_keys": [
+      "fruit_bruise:bruised",
+      "fruit_bruise:healthy",
+      "fruit_freshness:fresh",
+      "fruit_freshness:rotten"
+    ],
+    "action": "若人工确认是拟入库鲜枣中的机械伤果或病虫果，将其从入贮果中分选出来；不要仅按图片分数决定可食用性。",
+    "relation_kind": "conditional_handling_not_diagnosis"
+  },
+  {
+    "id": "fruit_handling",
+    "chunk_id": "JFC_handling",
+    "candidate": "减少再次碰压",
+    "applicability": "用于鲜枣分级搬运；已有碰伤不代表腐败已经发生。",
+    "question": "采收、分级或运输时是否发生跌落、碰撞或挤压？",
+    "visual_keys": [
+      "fruit_bruise:bruised",
+      "fruit_bruise:healthy",
+      "fruit_freshness:fresh",
+      "fruit_freshness:rotten"
+    ],
+    "action": "分级搬运鲜枣时轻拿轻放，减少新增机械损伤。",
+    "relation_kind": "conditional_handling_not_diagnosis"
+  },
+  {
+    "id": "fruit_stack",
+    "chunk_id": "JFC_stack",
+    "candidate": "检查箱体承重和堆码",
+    "applicability": "用于箱装鲜枣堆码；照片无法提供箱体承重和受压情况。",
+    "question": "是否箱装堆码？下层箱体有无变形或受压？",
+    "visual_keys": [
+      "fruit_bruise:bruised",
+      "fruit_bruise:healthy",
+      "fruit_freshness:fresh",
+      "fruit_freshness:rotten"
+    ],
+    "action": "箱装鲜枣堆码时核对纸箱承重，防止下层果实被压伤或塌垛。",
+    "relation_kind": "conditional_handling_not_diagnosis"
+  },
+  {
+    "id": "fruit_softening",
+    "chunk_id": "JFC_softening",
+    "candidate": "区分软化褐变与损伤",
+    "applicability": "资料列出发酵软化、褐变及微生物侵染等采后问题；不能由 rotten 标签识别具体病原或判定食用安全。",
+    "question": "是否发生软化、果肉褐变？采后经过多久，储藏温度和包装方式是什么？",
+    "visual_keys": [
+      "fruit_bruise:bruised",
+      "fruit_bruise:healthy",
+      "fruit_freshness:fresh",
+      "fruit_freshness:rotten"
+    ],
+    "action": null,
+    "relation_kind": "conditional_handling_not_diagnosis"
+  },
+  {
+    "id": "fruit_maturity",
+    "chunk_id": "JFC_maturity",
+    "candidate": "核对成熟变化",
+    "applicability": "鲜枣成熟时颜色和软度也会变化；不能将变红或单一颜色变化直接等同腐败。",
+    "question": "颜色变化是逐渐均匀变红，还是局部异常斑块并伴随软化？",
+    "visual_keys": [
+      "fruit_bruise:bruised",
+      "fruit_bruise:healthy",
+      "fruit_freshness:fresh",
+      "fruit_freshness:rotten"
+    ],
+    "action": null,
+    "relation_kind": "conditional_handling_not_diagnosis"
+  },
+  {
+    "id": "fruit_precool",
+    "chunk_id": "JFC_precool",
+    "candidate": "核对采后时间与冷链",
+    "applicability": "适用于计划贮藏的鲜枣，不适用于任意干枣或家庭环境；本轮不输出温度阈值与储藏期限。",
+    "question": "当天采收后是否已预冷或入库？",
+    "visual_keys": [
+      "fruit_bruise:bruised",
+      "fruit_bruise:healthy",
+      "fruit_freshness:fresh",
+      "fruit_freshness:rotten"
+    ],
+    "action": "若为计划贮藏的当天采收鲜枣，按鲜枣保鲜规程安排当天预冷或入库，并核实品种与设施条件。",
+    "relation_kind": "conditional_handling_not_diagnosis"
+  }
+]

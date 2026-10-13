@@ -1,0 +1,81 @@
+{
+  "id": "QA_0235",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法确定该论文GC-MS升温程序中100℃至250℃的升温速率。",
+    "basis": "未提供该论文的原文或具体方法学内容，检索证据为空。",
+    "reasoning": "问题要求的是特定论文中GC-MS升温程序的具体参数，属于原文方法细节。在没有原文或可靠证据的情况下，不能凭已有知识编造该速率。",
+    "advice": "请提供该论文的方法部分原文或相关截图，以便准确提取升温速率；也可查阅该论文的'材料与方法'中GC-MS条件部分。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出升温速率，仅说明无法确定并要求提供原文，属于拒答；在可回答题中拒答不算正确。",
+      "claims": [
+        {
+          "claim": "无法确定该论文GC-MS升温程序中100℃至250℃的升温速率。",
+          "status": "contradicted",
+          "reason": "原文明确给出升温程序：2℃·min-1升温至100℃，保持2 min；5℃·min-1升温至250℃，保持5 min，因此该速率可确定。"
+        },
+        {
+          "claim": "未提供该论文的原文或具体方法学内容，检索证据为空。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence包含该论文GC-MS条件的方法学原文，并非未提供。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 860,
+      "completion_tokens": 158,
+      "total_tokens": 1018,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 348
+    },
+    "model": "deepseek-flash",
+    "response_id": "8ff2332a-3bb5-42bb-9fe9-efff3a7ebdf9",
+    "seconds": 6.140263900000718,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法确定该论文GC-MS升温程序中100℃至250℃的升温速率。",
+        "basis": "未提供该论文的原文或具体方法学内容，检索证据为空。",
+        "reasoning": "问题要求的是特定论文中GC-MS升温程序的具体参数，属于原文方法细节。在没有原文或可靠证据的情况下，不能凭已有知识编造该速率。",
+        "advice": "请提供该论文的方法部分原文或相关截图，以便准确提取升温速率；也可查阅该论文的'材料与方法'中GC-MS条件部分。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 198,
+        "completion_tokens": 125,
+        "total_tokens": 323,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 198
+      },
+      "model": "deepseek-flash",
+      "response_id": "c7a50153-d56b-451c-9b80-6d2670123676",
+      "seconds": 5.972452199988766,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.11449989999528
+}

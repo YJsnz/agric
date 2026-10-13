@@ -1,0 +1,70 @@
+{
+  "id": "QA_0308",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法回答与PbAAT1表达量呈显著正相关的基因有哪些。",
+    "basis": "未提供该论文的具体研究记录或数据，且我的知识库中不包含该论文的详细内容。",
+    "reasoning": "问题要求依据特定论文《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，找出与PbAAT1表达量显著正相关的基因。由于未提供该论文的原文或相关数据，且我无法访问外部数据库，因此无法确定具体基因。",
+    "advice": "建议查阅该论文原文或相关数据库，获取PbAAT1表达量与其它基因表达量的相关性分析结果。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.25,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何基因，明确表示无法回答，属于拒答；在可回答题中不视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 714,
+      "completion_tokens": 39,
+      "total_tokens": 753,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 330
+    },
+    "model": "deepseek-flash",
+    "response_id": "e03c0a8a-552a-4784-af0b-ce22509bf5f8",
+    "seconds": 6.050158300000476,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法回答与PbAAT1表达量呈显著正相关的基因有哪些。",
+        "basis": "未提供该论文的具体研究记录或数据，且我的知识库中不包含该论文的详细内容。",
+        "reasoning": "问题要求依据特定论文《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，找出与PbAAT1表达量显著正相关的基因。由于未提供该论文的原文或相关数据，且我无法访问外部数据库，因此无法确定具体基因。",
+        "advice": "建议查阅该论文原文或相关数据库，获取PbAAT1表达量与其它基因表达量的相关性分析结果。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 198,
+        "completion_tokens": 151,
+        "total_tokens": 349,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 198
+      },
+      "model": "deepseek-flash",
+      "response_id": "e887dd98-d3ef-4f23-944d-bd8ff194432b",
+      "seconds": 6.618678300001193,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.670618899996043
+}

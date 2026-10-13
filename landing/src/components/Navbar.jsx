@@ -26,7 +26,7 @@ export default function Navbar() {
               to="/"
               className={`font-semibold text-lg tracking-tight ${onDark ? 'text-white' : 'text-ink'}`}
             >
-              田言耕智
+              盐田丰语
             </Link>
             <div className="hidden items-center gap-8 md:flex">
               {NAV_LINKS.map(link => (

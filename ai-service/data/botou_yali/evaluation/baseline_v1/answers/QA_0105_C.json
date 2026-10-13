@@ -1,0 +1,230 @@
+{
+  "id": "QA_0105",
+  "arm": "C",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "所提供的证据不足以判定低氧气调处理对乙烯的抑制是否可逆，也未说明其恢复与何种因素有关。",
+      "basis": "证据仅显示：5.0%及以下O2显著抑制了贮藏后乙烯产量并推迟乙烯释放高峰[E4]；1.0%—3.0% O2显著抑制果皮组织中PbACO1、PbACO3及PbACS1表达[E4]；低氧处理可推迟货架期间果皮组织中乙烯合成相关基因表达高峰[E3]。但证据未涉及抑制解除后乙烯合成是否恢复、恢复程度或恢复所依赖的因素。",
+      "reasoning": "问题包含两个子问题：(1)低氧对乙烯的抑制是否可逆；(2)其恢复与什么因素有关。现有证据只描述了低氧条件下乙烯产量受抑、释放高峰推迟以及相关基因表达受抑和高峰推迟[E3][E4]，属于抑制效应的观察，未提供撤除低氧后乙烯恢复情况的直接数据，也未给出恢复与何种因素相关的结论。因此无法回答可逆性及恢复因素，判定证据不足。",
+      "advice": "如需回答该问题，应补充撤除低氧后（如出库货架期）乙烯产量与PbACS1、PbACO1、PbACO3表达随时间恢复的定量数据，以及可能影响恢复的因素（如贮藏时长、O2浓度、温度等）的对照分析。现有证据仅支持低氧可抑制乙烯生物合成并推迟其高峰[E3][E4]，不能据此推断可逆性。",
+      "citations": [
+        "E3",
+        "E4"
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2666,
+      "completion_tokens": 364,
+      "total_tokens": 3030,
+      "prompt_tokens_details": {
+        "cached_tokens": 2432
+      },
+      "prompt_cache_hit_tokens": 2432,
+      "prompt_cache_miss_tokens": 234
+    },
+    "model": "deepseek-flash",
+    "response_id": "388783d5-c0df-451b-b569-67aa9f3c1166",
+    "seconds": 16.83797760000016,
+    "attempts": 2,
+    "prior_errors": [
+      "ExtractionError"
+    ]
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0005",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " Besides that, the lower O2 treatments maintained TA and AA contents at a higher level in the early storage period, and delayed the yellow-turning of peel; ethanol was accumulated much more under the lower O2 concentration, which ranged from 150.89 mg·L-1 to 806.12 mg·L-1 after storage for 150 d; while with the increasing senescence browning of fruit in air, the ethanol content peaking at 1 500 mg·L-1 after storage for 270 d. 5.0% and lower O2 inhibited the ethylene biosynthesis and delayed the peaking time, and 1.0%-3.0% O2 could prohibit the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue significantly.【Conclusion】1.0%—3.0% O2 prohibited the superficial scald occurrence significantly, and delayed the decrease of TA and AA, inhibited the biosynthesis of ethylene and delayed the peaking time, down-regulated the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue, prolonged the storage period of Yali pear significantly.",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0025",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.5  不同O2 浓度处理对乙烯生物合成关键基因相对",
+        "text": "表达量的影响整体来看，与对照相比，采用低氧气调处理可显著抑制鸭梨货架初期果皮组织中PbACS1、PbACO1及PbACO3 表达，推迟货架期间果皮组织中乙烯合成相关基因表达高峰，但不同O2 处理下PbACS2、PbACS3 及PbACO2 表达无明显规律（数据未列出）。具体来看，贮藏150 d，1.0%—3.0% O2 处理PbACS1相对表达量极低，但5.0%和10.0% O2 处理及空气对照PbACS1 相对表达量较高；气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照；贮藏150 d 后货架10 d，1.0%— 3.0% O2 处理PbACS1 相对表达量较出库时增长近45 倍，各处理PbACO1 和PbACO3相对表达量快速上升，且5.0%及以下O2 处理基因表达量均显著高于10.0%及空气对照；随着贮藏期的延长，乙烯合成相关基因表达水平上升，贮藏210 d 及货架7 d，空气处理PbACS1 相对表达量达到峰值，10% O2 处理PbACO1 和PbACO3 达到峰值；贮藏270 d 后货架7 d，1.0—3.0% O2 处理PbACS1 和PbACO1 仍保持相对较高水平（图4）。PbACO1相对表达量Relative expression of PbACO1 PbACO1相对表达量Relative expression of PbACO1 PbACS1相对表达量Relative expression of PbACS1 PbACO3相对表达量Relative expression of PbACO3 PbACO3相对表达量Relative expression of PbACO3 PbACS1相对表达量Relative expression of PbACS1图4  不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况Fig. 4  The relative expression of PbACO1, PbACO3 and PbACS1 under different oxygen concentrations during storage and shelf-life period of Yali pear",
+        "pages": [
+          7,
+          8
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0001",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "中国农业科学  2020,53(23):4918-4928 Scientia Agricultura Sinica                                                   doi: 10.3864/j.issn.0578-1752.2020.23.016收稿日期：2020-03-30；接受日期：2020-06-09基金项目：国家现代梨产业技术体系（CARS-28）、国家自然科学基金（32001761）联系方式：杜艳民，E-mail：duyanmin@caas.cn。通信作者王文辉，E-mail：wangwenhui@caas.cn开放科学（资源服务）标识码（OSID）：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响杜艳民，王文辉，贾晓辉，佟伟，王阳，张鑫楠（中国农业科学院果树研究所/辽宁省果品贮藏与加工重点实验室，辽宁兴城 125100）摘要：【目的】明确环境氧气（O2）浓度对鸭梨采后贮藏品质及生理代谢的影响，为鸭梨采后生理病害防控，延长贮藏期提供理论依据。【方法】将采自河北石家庄地区的鸭梨经缓慢降温后置于气调试验箱，设置1.0%、2.0%、3.0%、5.0%及10.0%等不同O2浓度梯度，CO2浓度为0.5%，以空气处理为对照，分别于贮藏150、210 和270 d 及货架7 或10 d，调查鸭梨虎皮指数和黑心指数，测定果实硬度、可溶性固形物（SSC）、可滴定酸（TA）、抗坏血酸（AA）及色泽变化情况，利用气相色谱分析测定果肉和果心组织乙醇含量变化情况，监测果实呼吸速率和乙烯产量；利用实时荧光定量PCR 对鸭梨乙烯合成关键基因PbACS 和PbACO 表达变化情况进行测定。【结果】低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数，贮藏270 d 及货架7 d，鸭梨采后生理病害发病程度由高到低依次为：CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2；同时，延缓了贮藏早期果实TA 和AA 下降，推迟了果实果面转黄。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    }
+  ],
+  "candidate_ids": [
+    "chunk:PAPER_001_C0005",
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0025",
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0001"
+  ],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 1,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "incorrect",
+      "reason": "参考答案明确指出低氧气调处理对乙烯的抑制是可逆的，且恢复与环境温度和氧气浓度回升有关。回答却判定证据不足、无法回答，与原文证据直接矛盾。原文明确记载：随着货架期延长，乙烯合成相关基因表达量快速升高，贮藏后期及货架后低氧气调贮藏乙烯释放速率显著高于空气对照，因此低氧气调处理对乙烯的抑制是可逆的，乙烯合成代谢会随着环境温度和氧气浓度回升而恢复。回答遗漏了这些关键结论，属于答错。",
+      "claims": [
+        {
+          "claim": "所提供的证据不足以判定低氧气调处理对乙烯的抑制是否可逆",
+          "status": "contradicted",
+          "reason": "原文明确记载低氧气调处理对乙烯的抑制是可逆的，乙烯合成代谢会随着环境温度和氧气浓度回升而恢复。"
+        },
+        {
+          "claim": "证据未说明其恢复与何种因素有关",
+          "status": "contradicted",
+          "reason": "原文明确指出恢复与环境温度和氧气浓度回升有关。"
+        },
+        {
+          "claim": "5.0%及以下O2显著抑制了贮藏后乙烯产量并推迟乙烯释放高峰",
+          "status": "supported",
+          "reason": "E4原文记载5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰。"
+        },
+        {
+          "claim": "1.0%—3.0% O2显著抑制果皮组织中PbACO1、PbACO3及PbACS1表达",
+          "status": "supported",
+          "reason": "E4原文记载1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3及PbACS1的表达。"
+        },
+        {
+          "claim": "低氧处理可推迟货架期间果皮组织中乙烯合成相关基因表达高峰",
+          "status": "supported",
+          "reason": "E3原文记载低氧气调处理可推迟货架期间果皮组织中乙烯合成相关基因表达高峰。"
+        },
+        {
+          "claim": "证据未涉及抑制解除后乙烯合成是否恢复、恢复程度或恢复所依赖的因素",
+          "status": "contradicted",
+          "reason": "原文明确记载随着货架期延长乙烯合成相关基因表达量快速升高，贮藏后期及货架后低氧气调贮藏乙烯释放速率显著高于空气对照，并指出恢复与环境温度和氧气浓度回升有关。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3365,
+      "completion_tokens": 470,
+      "total_tokens": 3835,
+      "prompt_tokens_details": {
+        "cached_tokens": 2944
+      },
+      "prompt_cache_hit_tokens": 2944,
+      "prompt_cache_miss_tokens": 421
+    },
+    "model": "deepseek-flash",
+    "response_id": "ff7020f0-3598-4283-ac68-0ad4802fe3e6",
+    "seconds": 6.911375599999701,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

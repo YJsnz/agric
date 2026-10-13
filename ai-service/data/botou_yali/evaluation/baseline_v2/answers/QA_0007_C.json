@@ -1,0 +1,302 @@
+{
+  "id": "QA_0007",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0019",
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0029",
+    "chunk:PAPER_001_C0018",
+    "chunk:PAPER_001_C0002"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中“低氧处理对虎皮指数有显著抑制作用”由E3/E5的“1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生”及E4的虎皮指数数据支持；“过低氧（1.0% O2）会增加贮藏末期黑心病风险”由E1/E2/E3/E5的“1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险”支持。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中引用的虎皮病抑制结论、210 d与270 d+货架7 d的虎皮指数数值、以及1.0% O2增加贮藏末期黑心病风险，均可在E3/E5和E4中找到对应原文。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning所述低氧处理虎皮指数低于高氧和对照、1.0% O2与贮藏末期黑心病风险增加相关，以及证据未提供黑心指数与虎皮指数因果链，均与E4和E1/E2/E3/E5内容一致。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice中“最佳O2浓度参数为3.0%—5.0%”由E1/E2/E3/E5支持；“3.0%—5.0% O2+0.5%—0.8% CO2、贮藏期延长至翌年6月中下旬、虎皮病平均发生率＜5.0%、货架期≥7 d”由E1支持。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0019",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.1.1  虎皮指数  气调处理可显著降低贮藏和货架",
+        "text": "下同 Different lowercase letters indicate significant difference at 5% level. The same as below图1  不同O2浓度处理对鸭梨果实贮藏及货架期间黑心指数和虎皮指数的影响Fig. 1  Effects of different oxygen concentrations on browning heart incidence and superficial scald incidence during storage and shelf-life period of Yali pear的中试库跟踪调查，采用3.0%—5.0% O2+0.5%—0.8% CO2参数，鸭梨贮藏期可延长至翌年6 月中下旬，虎皮病平均发生率＜5.0%，且货架期≥7 d。",
+        "pages": [
+          4,
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0029",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "4  结论",
+        "text": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，能更好地维持果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。因此，建议生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0018",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.1.1  虎皮指数  气调处理可显著降低贮藏和货架",
+        "text": "期间鸭梨虎皮病的发生，但不同O2 浓度处理对虎皮病的防控效果差异显著。具体来看，贮藏150 d，对照果实即发生虎皮病，气调果实均未发病；货架7 d，10% O2 处理果实的虎皮症状快速发展，虎皮指数达30.56%，与空气对照水平接近；贮藏210 d，5.0%及以下O2 处理平均虎皮指数为3.26%，10% O2 和空气对照虎皮指数分别为12.5%和38.56%；货架7 d，1.0%—3.0% O2 处理平均虎皮指数为5.99%，5.0% O2 处理虎皮指数快速升高，达27.78%；贮藏270 d 及货架7 d，1.0%—3.0% O2 平均虎皮指数18.86%，5.0% O2 平均虎皮指数35.0%，10.0% O2 平均虎皮指数54.95%，空气对照平均虎皮指数64.29%（图1）。另外，通过3 年贮藏时间 Storage time (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d)贮藏时间 Storage time (d)贮藏货架 Shelf-life period (d) 150+10 210+7 270+7 a a b c c c c a b c c d d a b c d d d a b b c c a b b c c c a b c c d d a a b b b c a a a a b c a a a b b b a a b c c c b c d d e 1.0% O2+0.5% CO2 2.0% O2+0.5% CO2 3.0% O2+0.5% CO2 5.0% O2+0.5% CO2 10.0% O2+0.5% CO2对照 CK不同小写字母表示0.05 水平差异显著。下同 Different lowercase letters indicate significant difference at 5% level.",
+        "pages": [
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "低氧处理对鸭梨贮藏期间虎皮指数有显著抑制作用，但过低氧（1.0% O2）会增加贮藏末期黑心病风险  [E1]  [E2]  [E3]  [E4]  [E5] 。",
+    "basis": "1.0%—3.0% O2处理能更好地抑制鸭梨采后虎皮病的发生  [E3]  [E5] ；贮藏210 d时5.0%及以下O2处理平均虎皮指数为3.26%，10% O2和空气对照分别为12.5%和38.56%  [E4] ；贮藏270 d及货架7 d时1.0%—3.0% O2平均虎皮指数18.86%，5.0% O2为35.0%，10.0% O2为54.95%，空气对照为64.29%  [E4] ；但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险  [E1]  [E2]  [E3]  [E5] 。",
+    "reasoning": "证据显示不同O2浓度处理对虎皮病防控效果差异显著，低氧（1.0%—3.0% O2）处理虎皮指数低于高氧和对照  [E4] ；同时1.0% O2处理与贮藏末期黑心病风险增加相关  [E1]  [E2]  [E3]  [E5] 。证据未提供黑心指数与虎皮指数之间的因果链，仅分别报告两者与O2浓度的关系。",
+    "advice": "建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%  [E1]  [E2]  [E3]  [E5] ；采用3.0%—5.0% O2+0.5%—0.8% CO2参数，鸭梨贮藏期可延长至翌年6月中下旬，虎皮病平均发生率＜5.0%，且货架期≥7 d  [E1] 。",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "partial",
+      "reason": "参考答案为‘低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数’，回答正确覆盖了低氧对虎皮指数的显著抑制，但未直接说明低氧处理对黑心指数的影响，仅提及1.0% O2增加贮藏末期黑心病风险，遗漏了‘低氧处理显著降低黑心指数’这一关键点，因此部分正确。",
+      "claims": [
+        {
+          "claim": "低氧处理对鸭梨贮藏期间虎皮指数有显著抑制作用",
+          "status": "supported",
+          "reason": "原文摘要明确‘低氧处理显著降低了鸭梨贮藏期间果实黑心指数和虎皮指数’，E4也显示低氧处理虎皮指数低于高氧和对照。"
+        },
+        {
+          "claim": "过低氧（1.0% O2）会增加贮藏末期黑心病风险",
+          "status": "supported",
+          "reason": "E1、E2、E3、E5均明确‘1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险’。"
+        },
+        {
+          "claim": "1.0%—3.0% O2处理能更好地抑制鸭梨采后虎皮病的发生",
+          "status": "supported",
+          "reason": "E3和E5结论均明确‘1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生’。"
+        },
+        {
+          "claim": "贮藏210 d时5.0%及以下O2处理平均虎皮指数为3.26%，10% O2和空气对照分别为12.5%和38.56%",
+          "status": "supported",
+          "reason": "E4原文明确‘贮藏210 d，5.0%及以下O2处理平均虎皮指数为3.26%，10% O2和空气对照虎皮指数分别为12.5%和38.56%’。"
+        },
+        {
+          "claim": "贮藏270 d及货架7 d时1.0%—3.0% O2平均虎皮指数18.86%，5.0% O2为35.0%，10.0% O2为54.95%，空气对照为64.29%",
+          "status": "supported",
+          "reason": "E4原文明确‘贮藏270 d及货架7 d，1.0%—3.0% O2平均虎皮指数18.86%，5.0% O2平均虎皮指数35.0%，10.0% O2平均虎皮指数54.95%，空气对照平均虎皮指数64.29%’。"
+        },
+        {
+          "claim": "不同O2浓度处理对虎皮病防控效果差异显著，低氧（1.0%—3.0% O2）处理虎皮指数低于高氧和对照",
+          "status": "supported",
+          "reason": "E4显示不同O2浓度处理对虎皮病防控效果差异显著，且1.0%—3.0% O2处理虎皮指数低于5.0%、10.0% O2和空气对照。"
+        },
+        {
+          "claim": "1.0% O2处理与贮藏末期黑心病风险增加相关",
+          "status": "supported",
+          "reason": "E1、E2、E3、E5均明确1.0% O2处理增加贮藏末期黑心病风险。"
+        },
+        {
+          "claim": "证据未提供黑心指数与虎皮指数之间的因果链，仅分别报告两者与O2浓度的关系",
+          "status": "supported",
+          "reason": "提供的检索证据中未出现黑心指数与虎皮指数之间因果关系的论述，仅分别报告两者与O2浓度的关系。"
+        },
+        {
+          "claim": "建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%",
+          "status": "supported",
+          "reason": "E1、E2、E3、E5均明确建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。"
+        },
+        {
+          "claim": "采用3.0%—5.0% O2+0.5%—0.8% CO2参数，鸭梨贮藏期可延长至翌年6月中下旬，虎皮病平均发生率＜5.0%，且货架期≥7 d",
+          "status": "supported",
+          "reason": "E1原文明确‘采用3.0%—5.0% O2+0.5%—0.8% CO2参数，鸭梨贮藏期可延长至翌年6月中下旬，虎皮病平均发生率＜5.0%，且货架期≥7 d’。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3288,
+      "completion_tokens": 920,
+      "total_tokens": 4208,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 2264
+    },
+    "model": "deepseek-flash",
+    "response_id": "3c46ff49-ae6c-45b4-997b-b7bfe1fbbd9a",
+    "seconds": 8.279831599997124,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "低氧处理对鸭梨贮藏期间虎皮指数有显著抑制作用，但过低氧（1.0% O2）会增加贮藏末期黑心病风险 [E1][E2][E3][E4][E5]。",
+        "basis": "1.0%—3.0% O2处理能更好地抑制鸭梨采后虎皮病的发生 [E3][E5]；贮藏210 d时5.0%及以下O2处理平均虎皮指数为3.26%，10% O2和空气对照分别为12.5%和38.56% [E4]；贮藏270 d及货架7 d时1.0%—3.0% O2平均虎皮指数18.86%，5.0% O2为35.0%，10.0% O2为54.95%，空气对照为64.29% [E4]；但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险 [E1][E2][E3][E5]。",
+        "reasoning": "证据显示不同O2浓度处理对虎皮病防控效果差异显著，低氧（1.0%—3.0% O2）处理虎皮指数低于高氧和对照 [E4]；同时1.0% O2处理与贮藏末期黑心病风险增加相关 [E1][E2][E3][E5]。证据未提供黑心指数与虎皮指数之间的因果链，仅分别报告两者与O2浓度的关系。",
+        "advice": "建议生产中鸭梨最佳O2浓度参数为3.0%—5.0% [E1][E2][E3][E5]；采用3.0%—5.0% O2+0.5%—0.8% CO2参数，鸭梨贮藏期可延长至翌年6月中下旬，虎皮病平均发生率＜5.0%，且货架期≥7 d [E1]。",
+        "citations": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2311,
+        "completion_tokens": 447,
+        "total_tokens": 2758,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 2055
+      },
+      "model": "deepseek-flash",
+      "response_id": "a145979e-1515-426d-9f70-508aba34c9ed",
+      "seconds": 6.710466699994868,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 21.90086359999259
+}

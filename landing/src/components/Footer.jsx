@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-meta">
-          <span>© 2026 田言耕智</span>
+          <span>© 2026 盐田丰语</span>
           <span className="footer-status"><i></i>所有服务运行正常</span>
           <span>智慧农业 · AI 原生</span>
         </div>

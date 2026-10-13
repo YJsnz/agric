@@ -58,7 +58,7 @@ public class AuthInterceptor implements HandlerInterceptor {
     }
 
     private boolean isPublic(String path) {
-        return path.startsWith("/api/auth/login")
+        return path.equals("/api/health") || path.startsWith("/api/auth/login")
                 || path.startsWith("/api/auth/register")
                 || path.startsWith("/api/auth/face-login");
         // 后续公共接口（作物字典、公开数据等）在此追加

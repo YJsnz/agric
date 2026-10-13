@@ -1,0 +1,639 @@
+{
+  "synthetic_example_not_agronomic_evidence": {
+    "accepted": [
+      "A"
+    ],
+    "rejected": [
+      {
+        "candidate_id": "B",
+        "reasons": [
+          "crop:mismatch"
+        ]
+      }
+    ]
+  },
+  "real_corpus": {
+    "context": {
+      "region": "泊头市",
+      "crop": "泊头鸭梨",
+      "stage": "储藏期"
+    },
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "input_count": 129,
+    "accepted_count": 33,
+    "rejected_count": 96,
+    "accepted_ids": [
+      "STD_004_C0003",
+      "STD_004_C0004",
+      "STD_004_C0005",
+      "STD_004_C0006",
+      "STD_004_C0007",
+      "PAPER_001_C0001",
+      "PAPER_001_C0002",
+      "PAPER_001_C0003",
+      "PAPER_001_C0004",
+      "PAPER_001_C0005",
+      "PAPER_001_C0006",
+      "PAPER_001_C0007",
+      "PAPER_001_C0008",
+      "PAPER_001_C0009",
+      "PAPER_001_C0010",
+      "PAPER_001_C0011",
+      "PAPER_001_C0012",
+      "PAPER_001_C0013",
+      "PAPER_001_C0014",
+      "PAPER_001_C0015",
+      "PAPER_001_C0016",
+      "PAPER_001_C0017",
+      "PAPER_001_C0018",
+      "PAPER_001_C0019",
+      "PAPER_001_C0020",
+      "PAPER_001_C0021",
+      "PAPER_001_C0022",
+      "PAPER_001_C0024",
+      "PAPER_001_C0025",
+      "PAPER_001_C0026",
+      "PAPER_001_C0027",
+      "PAPER_001_C0028",
+      "PAPER_001_C0029"
+    ],
+    "rejected": [
+      {
+        "candidate_id": "STD_002_C0002",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0003",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0004",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0005",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0006",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0007",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0008",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0009",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0010",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0011",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0012",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0013",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_002_C0014",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0002",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0003",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0004",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0005",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0006",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0007",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0008",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0009",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0010",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0011",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0012",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0013",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0014",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0015",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0016",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0017",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0018",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "STD_003_C0019",
+        "reasons": [
+          "stage:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0001",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0002",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0003",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0004",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0005",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0006",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0007",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0008",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0009",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0010",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0011",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0012",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0013",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0014",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0015",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0016",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0017",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0018",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0019",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0020",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_003_C0021",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0001",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0002",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0003",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0005",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0006",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0007",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0008",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0009",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0010",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0011",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0012",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0013",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0014",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0015",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0016",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0017",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0018",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0019",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0020",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0022",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0023",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0024",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0025",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0026",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0027",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0028",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0030",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0031",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0032",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0034",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0035",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0036",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0037",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0038",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0039",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "PAPER_005_C0041",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "GOV_001_C0001",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "UNI_001_C0001",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "UNI_001_C0002",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "UNI_001_C0003",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "GOV_002_C0001",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "GOV_002_C0002",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "GOV_002_C0003",
+        "reasons": [
+          "region:unknown"
+        ]
+      },
+      {
+        "candidate_id": "GOV_002_C0004",
+        "reasons": [
+          "region:unknown"
+        ]
+      }
+    ]
+  }
+}

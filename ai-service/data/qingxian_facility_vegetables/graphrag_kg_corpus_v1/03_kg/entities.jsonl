@@ -1,0 +1,10 @@
+{"entity_id": "crop_qx_facility_veg", "type": "Crop", "name": "青县设施蔬菜", "aliases": ["设施蔬菜"]}
+{"entity_id": "crop_cucumber", "type": "Crop", "name": "黄瓜", "aliases": ["设施黄瓜"]}
+{"entity_id": "crop_tomato", "type": "Crop", "name": "番茄", "aliases": ["设施番茄", "口感番茄"]}
+{"entity_id": "crop_melon", "type": "Crop", "name": "甜瓜", "aliases": ["羊角脆", "博洋9号甜瓜"]}
+{"entity_id": "region_qingxian", "type": "Region", "name": "青县", "aliases": ["河北省沧州市青县"]}
+{"entity_id": "facility_solar_greenhouse", "type": "Facility", "name": "日光温室", "aliases": ["温室", "设施大棚"]}
+{"entity_id": "management_fert", "type": "ManagementFactor", "name": "施肥管理", "aliases": ["施肥"]}
+{"entity_id": "management_irrig", "type": "ManagementFactor", "name": "灌溉管理", "aliases": ["滴灌", "水肥一体化"]}
+{"entity_id": "management_pesticide", "type": "ManagementFactor", "name": "农药管理", "aliases": ["农药减施", "农药控施"]}
+{"entity_id": "management_biocontrol", "type": "Intervention", "name": "生物防控", "aliases": ["生物防治"]}

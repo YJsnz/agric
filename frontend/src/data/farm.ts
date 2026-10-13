@@ -31,12 +31,12 @@ export const farmZones = reactive<FarmZone[]>([
 ])
 
 export const dockModules = reactive<DockModuleDefinition[]>([
-  { key: 'overview', label: '总览', icon: '⌂', description: '完整农场与关键状态', subLayers: [{ key: 'health', label: '农场健康', value: '92' }, { key: 'weather', label: '今日天气', value: '28°C' }, { key: 'online', label: '设备在线', value: '96%' }] },
-  { key: 'monitoring', label: '监控', icon: '◉', description: '摄像头与 AI 覆盖范围', badge: 3, subLayers: [{ key: 'all-cameras', label: '全部摄像头', value: '12' }, { key: 'ai-events', label: 'AI 事件', value: '3' }, { key: 'coverage', label: '覆盖范围' }] },
-  { key: 'environment', label: '环境', icon: '♨', description: '空间环境与热力分布', subLayers: [{ key: 'temperature', label: '温度' }, { key: 'airHumidity', label: '空气湿度' }, { key: 'soilMoisture', label: '土壤湿度' }, { key: 'light', label: '光照' }, { key: 'co2', label: 'CO₂' }] },
-  { key: 'devices', label: '设备', icon: '⚙', description: '设备空间位置和运行状态', badge: 1, subLayers: [{ key: 'all-devices', label: '全部设备', value: '28' }, { key: 'sensors', label: '传感器', value: '16' }, { key: 'actuators', label: '执行设备', value: '12' }, { key: 'offline', label: '离线', value: '1' }] },
-  { key: 'irrigation', label: '灌溉', icon: '◒', description: '水源、管线、阀门与水流', subLayers: [{ key: 'network', label: '灌溉管网' }, { key: 'flow', label: '实时水流', value: '12.6m³/h' }, { key: 'plans', label: '今日计划', value: '4' }] },
-  { key: 'crops', label: '作物', icon: '⌁', description: '品种、生长阶段和健康度', subLayers: [{ key: 'health', label: '健康度' }, { key: 'stage', label: '生长阶段' }, { key: 'maturity', label: '成熟度' }, { key: 'risk', label: '异常区域', value: '1' }] },
+  { key: 'overview', label: '数据', icon: '⌂', description: '观测、地块、告警与业务接入', subLayers: [{ key: 'health', label: '农场健康', value: '92' }, { key: 'weather', label: '今日天气', value: '28°C' }, { key: 'online', label: '设备在线', value: '96%' }] },
+  { key: 'monitoring', label: '监控', icon: '◉', description: '地块监控、多视角画面、截图录像与回放', badge: 3, subLayers: [{ key: 'all-cameras', label: '全部摄像头', value: '12' }, { key: 'ai-events', label: 'AI 事件', value: '3' }, { key: 'coverage', label: '覆盖范围' }] },
+  { key: 'environment', label: '墒情', icon: '♨', description: '当前环境观测与配置阈值', subLayers: [{ key: 'temperature', label: '温度' }, { key: 'airHumidity', label: '空气湿度' }, { key: 'soilMoisture', label: '土壤湿度' }, { key: 'light', label: '光照' }, { key: 'co2', label: 'CO₂' }] },
+  { key: 'devices', label: '设施', icon: '⚙', description: '设备空间位置和运行状态', badge: 1, subLayers: [{ key: 'all-devices', label: '全部设备', value: '28' }, { key: 'sensors', label: '传感器', value: '16' }, { key: 'actuators', label: '执行设备', value: '12' }, { key: 'offline', label: '离线', value: '1' }] },
+  { key: 'irrigation', label: '灌排', icon: '◒', description: '水源、管线、阀门与水流', subLayers: [{ key: 'network', label: '灌溉管网' }, { key: 'flow', label: '实时水流', value: '12.6m³/h' }, { key: 'plans', label: '今日计划', value: '4' }] },
+  { key: 'crops', label: '种植', icon: '⌁', description: '品种、生长阶段和健康度', subLayers: [{ key: 'health', label: '健康度' }, { key: 'stage', label: '生长阶段' }, { key: 'maturity', label: '成熟度' }, { key: 'risk', label: '异常区域', value: '1' }] },
   { key: 'alerts', label: '告警', icon: '△', description: '只显示异常对象和风险等级', badge: 3, subLayers: [{ key: 'all-alerts', label: '全部', value: '3' }, { key: 'attention', label: '关注', value: '1' }, { key: 'warning', label: '预警', value: '2' }, { key: 'offline', label: '离线', value: '1' }] }
 ])
 
@@ -84,6 +84,8 @@ export function applyDashboard(snapshot: DashboardSnapshot) {
   irrigationUnits.splice(0, irrigationUnits.length, ...snapshot.irrigationUnits)
   alerts.splice(0, alerts.length, ...snapshot.alerts)
   Object.assign(dashboardSummary, snapshot.summary)
+  const monitoring = dockModules.find(item=>item.key==='monitoring')
+  if(monitoring) monitoring.badge = snapshot.farmId === 'yantian-01' ? undefined : 3
   const overview = dockModules.find(item => item.key === 'overview')
   if (overview) {
     overview.subLayers.find(item => item.key === 'health')!.value = String(snapshot.summary.health)

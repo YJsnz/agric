@@ -1,0 +1,5 @@
+﻿mapped_label,total_count,unique_count,source_dataset_count,conflict_free_exact_unique_count,non_augmented_candidate_unique_count
+healthy,2352,1351,2,1336,351
+rust,208,208,1,208,208
+leaf_spot_blight,2497,1433,2,1433,461
+nitrogen_deficiency,0,0,0,0,0

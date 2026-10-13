@@ -1,0 +1,280 @@
+{
+  "id": "QA_0104",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0025",
+    "chunk:PAPER_001_C0021",
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0005",
+    "chunk:PAPER_001_C0024"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中贮藏后期（150、210、270 d）5.0%及以下O2处理乙烯释放速率显著低于10.0% O2和空气对照、1.0% O2最低及具体数值46.83、88.04、76.65 μL·kg-1·h-1、2.0%—3.0% O2次之、货架10 d或7 d后低氧处理乙烯释放量快速上升，均直接来自所引证据[E5]原文，未超出引用证据范围。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中关于[E5]的表述与[E5]原文一致；关于[E4]的表述“5.0%及更低O2抑制乙烯生物合成并推迟峰值出现时间”与[E4]原文“5.0% and lower O2 inhibited the ethylene biosynthesis and delayed the peaking time”一致，均有实际引用证据支持。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning对[E5]的引用与原文一致，对[E4]的引用与原文一致；对[E1]仅说明其涉及基因表达层面、未直接给出乙烯释放速率数值，未将其作为速率比较依据，未补造缺失路径或因果。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice中低氧气调在贮藏150—270 d降低乙烯释放速率、货架期后乙烯释放量快速上升来自[E5]；1.0% O2增加贮藏末期黑心病风险及建议最佳O2浓度3.0%—5.0%来自[E3]原文；并明确本研究结果不等同于本地生产指导，未将论文结果改造成本地普遍建议。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0025",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.5  不同O2 浓度处理对乙烯生物合成关键基因相对",
+        "text": "表达量的影响整体来看，与对照相比，采用低氧气调处理可显著抑制鸭梨货架初期果皮组织中PbACS1、PbACO1及PbACO3 表达，推迟货架期间果皮组织中乙烯合成相关基因表达高峰，但不同O2 处理下PbACS2、PbACS3 及PbACO2 表达无明显规律（数据未列出）。具体来看，贮藏150 d，1.0%—3.0% O2 处理PbACS1相对表达量极低，但5.0%和10.0% O2 处理及空气对照PbACS1 相对表达量较高；气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照；贮藏150 d 后货架10 d，1.0%— 3.0% O2 处理PbACS1 相对表达量较出库时增长近45 倍，各处理PbACO1 和PbACO3相对表达量快速上升，且5.0%及以下O2 处理基因表达量均显著高于10.0%及空气对照；随着贮藏期的延长，乙烯合成相关基因表达水平上升，贮藏210 d 及货架7 d，空气处理PbACS1 相对表达量达到峰值，10% O2 处理PbACO1 和PbACO3 达到峰值；贮藏270 d 后货架7 d，1.0—3.0% O2 处理PbACS1 和PbACO1 仍保持相对较高水平（图4）。PbACO1相对表达量Relative expression of PbACO1 PbACO1相对表达量Relative expression of PbACO1 PbACS1相对表达量Relative expression of PbACS1 PbACO3相对表达量Relative expression of PbACO3 PbACO3相对表达量Relative expression of PbACO3 PbACS1相对表达量Relative expression of PbACS1图4  不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况Fig. 4  The relative expression of PbACO1, PbACO3 and PbACS1 under different oxygen concentrations during storage and shelf-life period of Yali pear",
+        "pages": [
+          7,
+          8
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0021",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.2  不同O2浓度处理对内在品质的影响",
+        "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0005",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " Besides that, the lower O2 treatments maintained TA and AA contents at a higher level in the early storage period, and delayed the yellow-turning of peel; ethanol was accumulated much more under the lower O2 concentration, which ranged from 150.89 mg·L-1 to 806.12 mg·L-1 after storage for 150 d; while with the increasing senescence browning of fruit in air, the ethanol content peaking at 1 500 mg·L-1 after storage for 270 d. 5.0% and lower O2 inhibited the ethylene biosynthesis and delayed the peaking time, and 1.0%-3.0% O2 could prohibit the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue significantly.【Conclusion】1.0%—3.0% O2 prohibited the superficial scald occurrence significantly, and delayed the decrease of TA and AA, inhibited the biosynthesis of ethylene and delayed the peaking time, down-regulated the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue, prolonged the storage period of Yali pear significantly.",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0024",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.4  不同O2浓度处理对呼吸速率和乙烯的影响",
+        "text": "5.0%及以下O2 处理果实贮藏150、210 及270 d后，其乙烯产量均显著低于10.0% O2 和空气对照，其中1.0% O2 乙烯释放量最低，贮藏150、210 及270 d，温度平衡后（回升到20℃），其乙烯释放速率分别为46.83、88.04 和76.65 μL·kg-1·h -1；2.0%—3.0% O2 释放量次之；货架10 d 或7 d 后，低氧处理乙烯释放量快速上升。贮藏150 和210 d，低氧气调贮藏果实呼吸速率均显著低于空气对照，但不同O2 浓度处理间差异不显著；贮藏270 d 及货架7 d，低氧气调处理与对照果实呼吸速率差异不显著（图3）。贮藏时间 Storage time (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d)贮藏时间 Storage time (d) a a b c c d a b c d e e a b b c d e a a b b abc c a b b b bc c a b b b c c a b b c c c a a b b b c a a a a a b a b b b b b a a a a a a a a a a a a 1.0% O2+0.5% CO2 2.0% O2+0.5% CO2 3.0% O2+0.5% CO2 5.0% O2+0.5% CO2 10.0% O2+0.5% CO2对照 CK图3  不同O2浓度贮藏及货架期间鸭梨呼吸和乙烯变化情况Fig. 3  Effects of different oxygen concentrations on respiration rate and ethylene production during storage and shelf-life period of Yali pear",
+        "pages": [
+          7
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "贮藏后期（150、210、270 d）5.0%及以下O2处理的鸭梨乙烯释放速率均显著低于10.0% O2和空气对照，其中1.0% O2最低（150、210、270 d分别为46.83、88.04和76.65 μL·kg-1·h-1），2.0%—3.0% O2次之；但货架10 d或7 d后，低氧处理乙烯释放量快速上升  [E5] 。",
+    "basis": "证据[E5]记载：5.0%及以下O2处理果实贮藏150、210及270 d后，其乙烯产量均显著低于10.0% O2和空气对照，其中1.0% O2乙烯释放量最低，贮藏150、210及270 d温度平衡后（回升到20℃）其乙烯释放速率分别为46.83、88.04和76.65 μL·kg-1·h-1；2.0%—3.0% O2释放量次之；货架10 d或7 d后，低氧处理乙烯释放量快速上升  [E5] 。[E4]亦指出5.0%及更低O2抑制乙烯生物合成并推迟峰值出现时间  [E4] 。",
+    "reasoning": "问题针对贮藏后期及货架后低氧气调贮藏与空气对照的乙烯释放速率比较。[E5]直接给出贮藏150、210、270 d三个时间点低氧处理（5.0%及以下O2）乙烯产量显著低于10.0% O2和空气对照，并给出1.0% O2的具体数值，同时说明货架10 d或7 d后低氧处理乙烯释放量快速上升  [E5] 。[E4]从结论层面支持低氧抑制乙烯生物合成、推迟峰值  [E4] 。[E1]涉及乙烯合成关键基因表达，属于基因表达层面，未直接给出乙烯释放速率数值，故不作为速率比较的直接依据  [E1] 。因此可依据[E5]回答贮藏后期低氧处理乙烯释放速率低于空气对照，货架后低氧处理乙烯释放量快速上升。",
+    "advice": "依据现有证据，低氧气调（5.0%及以下O2）在贮藏150—270 d期间可显著降低鸭梨乙烯释放速率，但货架期后乙烯释放量会快速上升，需关注货架期乙烯回升对品质的影响  [E5] 。1.0% O2虽乙烯释放量最低，但[E3]提示1.0% O2在一定程度上增加贮藏末期黑心病风险，建议生产中最佳O2浓度参数为3.0%—5.0%  [E3] 。具体气调参数应结合本地实际条件另行验证，本研究结果不直接等同于本地生产指导。",
+    "citations": [
+      "E1",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 1,
+  "entity_recall": 0.6666666666666666,
+  "judge": {
+    "result": {
+      "correctness": "incorrect",
+      "reason": "参考答案指出贮藏后期及货架后低氧气调贮藏乙烯释放速率显著高于空气对照处理，而回答仅说明贮藏后期低氧处理乙烯释放速率低于对照、货架后快速上升，未给出‘显著高于空气对照’这一关键结论，方向性错误。",
+      "claims": [
+        {
+          "claim": "贮藏后期（150、210、270 d）5.0%及以下O2处理的鸭梨乙烯释放速率均显著低于10.0% O2和空气对照",
+          "status": "supported",
+          "reason": "E5明确记载5.0%及以下O2处理果实贮藏150、210及270 d后乙烯产量均显著低于10.0% O2和空气对照。"
+        },
+        {
+          "claim": "1.0% O2处理乙烯释放量最低，贮藏150、210、270 d温度平衡后（回升到20℃）乙烯释放速率分别为46.83、88.04和76.65 μL·kg-1·h-1",
+          "status": "supported",
+          "reason": "E5直接给出1.0% O2乙烯释放量最低及三个时间点的具体数值。"
+        },
+        {
+          "claim": "2.0%—3.0% O2处理乙烯释放量次之",
+          "status": "supported",
+          "reason": "E5记载2.0%—3.0% O2释放量次之。"
+        },
+        {
+          "claim": "货架10 d或7 d后，低氧处理乙烯释放量快速上升",
+          "status": "supported",
+          "reason": "E5记载货架10 d或7 d后，低氧处理乙烯释放量快速上升。"
+        },
+        {
+          "claim": "5.0%及更低O2抑制乙烯生物合成并推迟峰值出现时间",
+          "status": "supported",
+          "reason": "E4结论指出5.0%及更低O2抑制乙烯生物合成并推迟峰值出现时间。"
+        },
+        {
+          "claim": "1.0% O2在一定程度上增加贮藏末期黑心病风险，建议生产中最佳O2浓度参数为3.0%—5.0%",
+          "status": "supported",
+          "reason": "E3明确记载1.0% O2处理在一定程度上增加鸭梨贮藏末期黑心病风险，建议生产中最佳O2浓度参数为3.0%—5.0%。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3677,
+      "completion_tokens": 461,
+      "total_tokens": 4138,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 2141
+    },
+    "model": "deepseek-flash",
+    "response_id": "0ee793f4-d46e-4627-ab07-61b9183cf5c1",
+    "seconds": 7.087347199994838,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "贮藏后期（150、210、270 d）5.0%及以下O2处理的鸭梨乙烯释放速率均显著低于10.0% O2和空气对照，其中1.0% O2最低（150、210、270 d分别为46.83、88.04和76.65 μL·kg-1·h-1），2.0%—3.0% O2次之；但货架10 d或7 d后，低氧处理乙烯释放量快速上升 [E5]。",
+        "basis": "证据E5记载：5.0%及以下O2处理果实贮藏150、210及270 d后，其乙烯产量均显著低于10.0% O2和空气对照，其中1.0% O2乙烯释放量最低，贮藏150、210及270 d温度平衡后（回升到20℃）其乙烯释放速率分别为46.83、88.04和76.65 μL·kg-1·h-1；2.0%—3.0% O2释放量次之；货架10 d或7 d后，低氧处理乙烯释放量快速上升 [E5]。E4亦指出5.0%及更低O2抑制乙烯生物合成并推迟峰值出现时间 [E4]。",
+        "reasoning": "问题针对贮藏后期及货架后低氧气调贮藏与空气对照的乙烯释放速率比较。E5直接给出贮藏150、210、270 d三个时间点低氧处理（5.0%及以下O2）乙烯产量显著低于10.0% O2和空气对照，并给出1.0% O2的具体数值，同时说明货架10 d或7 d后低氧处理乙烯释放量快速上升 [E5]。E4从结论层面支持低氧抑制乙烯生物合成、推迟峰值 [E4]。E1涉及乙烯合成关键基因表达，属于基因表达层面，未直接给出乙烯释放速率数值，故不作为速率比较的直接依据 [E1]。因此可依据E5回答贮藏后期低氧处理乙烯释放速率低于空气对照，货架后低氧处理乙烯释放量快速上升。",
+        "advice": "依据现有证据，低氧气调（5.0%及以下O2）在贮藏150—270 d期间可显著降低鸭梨乙烯释放速率，但货架期后乙烯释放量会快速上升，需关注货架期乙烯回升对品质的影响 [E5]。1.0% O2虽乙烯释放量最低，但E3提示1.0% O2在一定程度上增加贮藏末期黑心病风险，建议生产中最佳O2浓度参数为3.0%—5.0% [E3]。具体气调参数应结合本地实际条件另行验证，本研究结果不直接等同于本地生产指导。",
+        "citations": [
+          "E5",
+          "E4",
+          "E1",
+          "E3"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2813,
+        "completion_tokens": 611,
+        "total_tokens": 3424,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 2557
+      },
+      "model": "deepseek-flash",
+      "response_id": "d9948787-dd74-4d6e-89ec-3f6bb0f85322",
+      "seconds": 7.929761599996709,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 21.907422200005385
+}

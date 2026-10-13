@@ -1,0 +1,293 @@
+[
+  {
+    "id": "QX_LOCAL_2023",
+    "title": "青县：紧抓“菜篮子” 五彩果蔬绘就“致富图”",
+    "type": "government_reprint",
+    "authority": "南宫市人民政府（内容来源为河北相关农业报道）",
+    "year": 2023,
+    "url": "https://info.nangong.gov.cn/content/11076/41720.html",
+    "scope": [
+      "青县",
+      "设施蔬菜",
+      "产业",
+      "黄瓜",
+      "口感番茄",
+      "甜瓜"
+    ],
+    "verified_facts": [
+      "青县形成以特色蔬菜为主导产业，推进标准化、园区化、品牌化、智慧化、融合化发展。",
+      "2023年青县瓜菜播种面积28.6万亩、产量158万吨、产值48亿元。",
+      "报道明确列出羊角脆、博洋9号甜瓜、黄瓜、口感番茄等特色果蔬。"
+    ],
+    "fulltext_available": false,
+    "review_status": "fulltext_required",
+    "error": "HTTPSConnectionPool(host='info.nangong.gov.cn', port=443): Max retries exceeded with url: /content/11076/41720.html (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'info.nangong.gov.cn'. (_ssl.c:1000)\")))"
+  },
+  {
+    "id": "QX_LOCAL_2024",
+    "title": "青县蔬菜何以热销京津",
+    "type": "authoritative_media",
+    "authority": "河北日报（人民网河北频道转载）",
+    "year": 2024,
+    "url": "https://he.people.com.cn/n2/2024/1204/c192235-41063943.html",
+    "scope": [
+      "青县",
+      "设施蔬菜",
+      "产业",
+      "黄瓜"
+    ],
+    "verified_facts": [
+      "青县是京津市场重要“菜篮子”，与多家大型蔬菜批发市场建立长期合作。",
+      "曹寺镇被报道为“华北黄瓜第一乡”，可作为青县黄瓜子图的地方产业依据。"
+    ],
+    "fulltext_available": false,
+    "review_status": "fulltext_required",
+    "error": "HTTPSConnectionPool(host='he.people.com.cn', port=443): Max retries exceeded with url: /n2/2024/1204/c192235-41063943.html (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'he.people.com.cn'. (_ssl.c:1000)\")))"
+  },
+  {
+    "id": "QX_LOCAL_2018",
+    "title": "河北青县：从追高产到重“口感” 蔬菜卖出好价钱",
+    "type": "authoritative_media",
+    "authority": "新华社/新华网",
+    "year": 2018,
+    "url": "https://www.xinhuanet.com/politics/2018-07/25/c_1123175856.htm",
+    "scope": [
+      "青县",
+      "设施蔬菜",
+      "甜瓜",
+      "黄瓜",
+      "番茄",
+      "绿色防控"
+    ],
+    "verified_facts": [
+      "报道明确提到青县设施生产中的甜瓜、黄瓜、韭菜、番茄。",
+      "甜瓜试验棚采用太阳能杀虫灯和丽蚜小蜂等病虫害防控手段，并通过改善通风透光等方式提升品质。"
+    ],
+    "fulltext_available": false,
+    "review_status": "web_content_requires_review",
+    "landing_path": "evidence\\raw\\government\\QX_LOCAL_2018.html",
+    "local_path": "evidence\\raw\\government\\QX_LOCAL_2018.html",
+    "sha256": "8198a01b556f69ddac1e0d6329772855ba95e12feb708c85cb006b7a1913a0c7"
+  },
+  {
+    "id": "DB13_T5574_2022",
+    "title": "日光温室蔬菜安全高效生产技术规程",
+    "type": "local_standard",
+    "authority": "河北省市场监督管理局",
+    "year": 2022,
+    "standard_no": "DB13/T 5574-2022",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=E3BC3892F373E7C0E05397BE0A0AEE87",
+    "scope": [
+      "河北",
+      "日光温室",
+      "设施蔬菜",
+      "生产技术"
+    ],
+    "verified_facts": [
+      "河北省现行推荐性地方标准；发布日期2022-05-31，实施日期2022-07-01。"
+    ],
+    "fulltext_available": true,
+    "review_status": "fulltext_requires_review",
+    "landing_path": "evidence\\raw\\standards\\DB13_T5574_2022.html",
+    "local_path": "evidence\\raw\\standards\\DB13_T5574_2022.pdf",
+    "sha256": "bab48012f9b4492252d7fb6fe0fc25ad4f578b04ec0dcbfae901e6e72daccffe",
+    "pages": 9,
+    "download_url": "https://dbba.sacinfo.org.cn/portal/download/1d11853d637ed148dc6972913a206696e8b36fa54baacec066afa52eac3e7267"
+  },
+  {
+    "id": "DB13_T2603_2017",
+    "title": "日光温室番茄安全高效施肥技术规程",
+    "type": "local_standard",
+    "authority": "河北省质量技术监督局",
+    "year": 2017,
+    "standard_no": "DB13/T 2603-2017",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=91D99E4D12BF2E24E05397BE0A0A3A10",
+    "scope": [
+      "河北",
+      "设施番茄",
+      "施肥",
+      "营养管理"
+    ],
+    "verified_facts": [
+      "河北省现行推荐性地方标准；规定日光温室番茄施肥相关技术要求。"
+    ],
+    "fulltext_available": false,
+    "review_status": "fulltext_required",
+    "landing_path": "evidence\\raw\\standards\\DB13_T2603_2017.html"
+  },
+  {
+    "id": "DB13_T2993_2019",
+    "title": "日光温室秋冬茬番茄滴灌水肥一体化技术规程",
+    "type": "local_standard",
+    "authority": "河北省市场监督管理局",
+    "year": 2019,
+    "standard_no": "DB13/T 2993-2019",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=998CD9170D4D7BDCE05397BE0A0A3A74",
+    "scope": [
+      "河北",
+      "设施番茄",
+      "滴灌",
+      "水肥一体化"
+    ],
+    "verified_facts": [
+      "河北省现行推荐性地方标准；发布日期2019-07-04，实施日期2019-08-01。"
+    ],
+    "fulltext_available": true,
+    "review_status": "fulltext_requires_review",
+    "landing_path": "evidence\\raw\\standards\\DB13_T2993_2019.html",
+    "local_path": "evidence\\raw\\standards\\DB13_T2993_2019.pdf",
+    "sha256": "ceaf2670701b028979be2143d48b6a06eb9c55961cda44d4f3223e6efc79bb3f",
+    "pages": 7,
+    "download_url": "https://dbba.sacinfo.org.cn/portal/download/c583d0e929617fc370b22863aae7ad857ea2cfc1761d93571be4caff0ed180a5"
+  },
+  {
+    "id": "DB13_T2980_2019",
+    "title": "日光温室越冬茬番茄化肥农药控施技术规程",
+    "type": "local_standard",
+    "authority": "河北省市场监督管理局",
+    "year": 2019,
+    "standard_no": "DB13/T 2980-2019",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=998CD9170D367BDCE05397BE0A0A3A74",
+    "scope": [
+      "河北",
+      "设施番茄",
+      "越冬茬",
+      "化肥",
+      "农药",
+      "减施"
+    ],
+    "verified_facts": [
+      "河北省现行推荐性地方标准；适合作为番茄投入品管理和干预措施来源。"
+    ],
+    "fulltext_available": true,
+    "review_status": "fulltext_requires_review",
+    "landing_path": "evidence\\raw\\standards\\DB13_T2980_2019.html",
+    "local_path": "evidence\\raw\\standards\\DB13_T2980_2019.pdf",
+    "sha256": "4f83e9d03887de13e5ff6f8065a44d89ba6860b2f05468e273aedac0116d9cb8",
+    "pages": 9,
+    "download_url": "https://dbba.sacinfo.org.cn/portal/download/3866a9f1c23dff3de2da59d5395db560c86e930b07e8117a6e3aa19b417b7a52"
+  },
+  {
+    "id": "DB13_T5197_2020",
+    "title": "日光温室越冬长季节黄瓜化肥农药减施技术规程",
+    "type": "local_standard",
+    "authority": "河北省市场监督管理局",
+    "year": 2020,
+    "standard_no": "DB13/T 5197-2020",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=B01C34C54C14ED69E05397BE0A0AF49A",
+    "scope": [
+      "河北",
+      "设施黄瓜",
+      "越冬长季节",
+      "化肥",
+      "农药",
+      "减施"
+    ],
+    "verified_facts": [
+      "河北省现行推荐性地方标准；发布日期2020-06-28，实施日期2020-07-28。"
+    ],
+    "fulltext_available": true,
+    "review_status": "fulltext_requires_review",
+    "landing_path": "evidence\\raw\\standards\\DB13_T5197_2020.html",
+    "local_path": "evidence\\raw\\standards\\DB13_T5197_2020.pdf",
+    "sha256": "ef67a9d9f2ee81bebe5101abfaed73b4b3e306d94157ffd76062ca09246c240f",
+    "pages": 10,
+    "download_url": "https://dbba.sacinfo.org.cn/portal/download/e6b594f33bb0a1a8b8951c5c92536f2d80b887b9ff20edf64b5c76b6c637cc0f"
+  },
+  {
+    "id": "DB13_T5463_2021",
+    "title": "设施黄瓜主要病虫害生物防控技术规程",
+    "type": "local_standard",
+    "authority": "河北省市场监督管理局",
+    "year": 2021,
+    "standard_no": "DB13/T 5463-2021",
+    "url": "https://dbba.sacinfo.org.cn/stdDetail/c0b155e42c74ef0d05dcd4f48e181010e33c546b6899f4efa573634dcf9cee71",
+    "scope": [
+      "河北",
+      "设施黄瓜",
+      "病害",
+      "虫害",
+      "生物防控"
+    ],
+    "verified_facts": [
+      "河北省现行地方标准；发布日期2021-12-13，实施日期2022-01-13。"
+    ],
+    "fulltext_available": true,
+    "review_status": "fulltext_requires_review",
+    "landing_path": "evidence\\raw\\standards\\DB13_T5463_2021.html",
+    "local_path": "evidence\\raw\\standards\\DB13_T5463_2021.pdf",
+    "sha256": "532a34be20ad7417a8f55386e158f9924f6e3b163847ccd87ad54484a051140d",
+    "pages": 10,
+    "download_url": "https://dbba.sacinfo.org.cn/portal/download/c0b155e42c74ef0d05dcd4f48e181010e33c546b6899f4efa573634dcf9cee71"
+  },
+  {
+    "id": "DB13_T5532_2022",
+    "title": "日光温室春黄瓜-秋黄瓜-越冬蒜苗栽培技术规程",
+    "type": "local_standard",
+    "authority": "河北省市场监督管理局",
+    "year": 2022,
+    "standard_no": "DB13/T 5532-2022",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=DB94746D085AA27BE05397BE0A0AF49A",
+    "scope": [
+      "河北",
+      "设施黄瓜",
+      "春黄瓜",
+      "秋黄瓜",
+      "栽培"
+    ],
+    "verified_facts": [
+      "河北省现行推荐性地方标准；规定春黄瓜、秋黄瓜等日光温室栽培模式相关要求。"
+    ],
+    "fulltext_available": true,
+    "review_status": "fulltext_requires_review",
+    "landing_path": "evidence\\raw\\standards\\DB13_T5532_2022.html",
+    "local_path": "evidence\\raw\\standards\\DB13_T5532_2022.pdf",
+    "sha256": "0f1afcec35ca8982034955b34b3c3028c987e843658b5e01e57ac57c685bfc0d",
+    "pages": 8,
+    "download_url": "https://dbba.sacinfo.org.cn/portal/download/f58b32699fbe02a83fbc297f1c4395d75153ebfa59b74b50a7716c0ee091a258"
+  },
+  {
+    "id": "DB13_T6100_2025",
+    "title": "氮磷面源污染防控 设施番茄施肥技术规程",
+    "type": "local_standard",
+    "authority": "河北省市场监督管理局",
+    "year": 2025,
+    "standard_no": "DB13/T 6100-2025",
+    "url": "https://m.bzxz.net/bzxz/747f3811c255ad093.html",
+    "scope": [
+      "河北",
+      "设施番茄",
+      "施肥",
+      "氮磷",
+      "灌溉"
+    ],
+    "verified_facts": [
+      "标准针对设施日光温室、冷棚番茄生产中的施肥与灌溉管理，目标包括控制肥料过量及氮磷累积风险。"
+    ],
+    "fulltext_available": false,
+    "review_status": "fulltext_required",
+    "landing_path": "evidence\\raw\\standards\\DB13_T6100_2025.html"
+  },
+  {
+    "id": "DB13_T6294_2026",
+    "title": "盐碱地设施番茄咸水灌溉栽培技术规程",
+    "type": "local_standard",
+    "authority": "河北省市场监督管理局",
+    "year": 2026,
+    "standard_no": "DB13/T 6294-2026",
+    "url": "https://dbba.sacinfo.org.cn/rnDetail/c6572220635870d0c31fc0e4569fbd4b2f180f4930fc379a11767642003e5219",
+    "scope": [
+      "河北",
+      "盐碱地",
+      "设施番茄",
+      "咸水灌溉"
+    ],
+    "verified_facts": [
+      "2026-04-09发布、2026-05-09实施；可作为沧州盐碱区设施番茄扩展知识来源。"
+    ],
+    "fulltext_available": false,
+    "review_status": "fulltext_required",
+    "landing_path": "evidence\\raw\\standards\\DB13_T6294_2026.html",
+    "error": "Official download did not return a PDF"
+  }
+]

@@ -1,0 +1,563 @@
+{
+  "id": "QA_0034",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0014",
+    "chunk:PAPER_001_C0024",
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0025",
+    "chunk:PAPER_001_C0028"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": null,
+      "environment": [],
+      "disease": [],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": [],
+      "intent": "fact_query"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "empty",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [
+      {
+        "source_id": "PAPER_001",
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "url": "https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "PAPER_001_C0014",
+            "section": "1.2.4  呼吸速率和乙烯产生速率  果实呼吸速率和",
+            "pages": [
+              3
+            ]
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "PAPER_001_C0024",
+            "section": "2.4  不同O2浓度处理对呼吸速率和乙烯的影响",
+            "pages": [
+              7
+            ]
+          }
+        ]
+      }
+    ],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_001_C0014",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 2,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9760624679979519
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0024",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 5,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9692307692307692
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0003",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 1,
+            "vector_rank": 7,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9552238805970149
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0025",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 4,
+            "vector_rank": 8,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9250919117647058
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_001_C0028",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 11,
+            "vector_rank": 3,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9137044489157164
+          }
+        }
+      ]
+    },
+    "status": "answered",
+    "answer": "1. 结论\n该研究中呼吸速率的单位为 mg CO2·kg-1·h-1，乙烯产生速率（乙烯释放速率）的单位为 μL C2H4·kg-1·h-1  [E1] 。\n2. 依据\n证据[E1]明确记载：果实呼吸速率和乙烯产生速率测定均采用SP—9890气相色谱仪测定，以mg CO2·kg-1·h-1 和μL C2H4·kg-1·h-1 计  [E1] 。[E2]中乙烯释放速率数据亦以μL·kg-1·h-1 表述  [E2] 。\n3. 推理路径\n问题仅询问该论文中两个指标的单位，属于文献事实性信息。[E1]在方法部分直接给出呼吸速率与乙烯产生速率的计量单位，[E2]的结果表述与[E1]单位一致，故可直接回答，无需推断因果或阶段转换。\n4. 建议\n如需引用该单位进行数据比较，请注意[E1]为方法学描述、[E2]为结果数据，二者单位一致  [E1]  [E2] ；本回答仅解释该论文特定试验，不作为生产指导。\n5. 来源\n[E1] [E2] PAPER_001：不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响 https://www.chinaagrisci.com/CN/abstract/abstract21248.shtml",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "candidate_id": "chunk:PAPER_001_C0014",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "1.2.4  呼吸速率和乙烯产生速率  果实呼吸速率和",
+          "text": "乙烯产生速率测定均采用SP—9890 气相色谱仪（山东，鲁南瑞虹仪器公司）测定，以mg CO2·kg-1·h-1 和μL C2H4·kg-1·h-1 计，色谱参数为进样器80℃，柱炉100℃，检测器160℃，转化炉360℃。每个处理3 次重复，每个重复用果9 个。",
+          "pages": [
+            3
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E2",
+        "candidate_id": "chunk:PAPER_001_C0024",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "2.4  不同O2浓度处理对呼吸速率和乙烯的影响",
+          "text": "5.0%及以下O2 处理果实贮藏150、210 及270 d后，其乙烯产量均显著低于10.0% O2 和空气对照，其中1.0% O2 乙烯释放量最低，贮藏150、210 及270 d，温度平衡后（回升到20℃），其乙烯释放速率分别为46.83、88.04 和76.65 μL·kg-1·h -1；2.0%—3.0% O2 释放量次之；货架10 d 或7 d 后，低氧处理乙烯释放量快速上升。贮藏150 和210 d，低氧气调贮藏果实呼吸速率均显著低于空气对照，但不同O2 浓度处理间差异不显著；贮藏270 d 及货架7 d，低氧气调处理与对照果实呼吸速率差异不显著（图3）。贮藏时间 Storage time (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d)贮藏时间 Storage time (d) a a b c c d a b c d e e a b b c d e a a b b abc c a b b b bc c a b b b c c a b b c c c a a b b b c a a a a a b a b b b b b a a a a a a a a a a a a 1.0% O2+0.5% CO2 2.0% O2+0.5% CO2 3.0% O2+0.5% CO2 5.0% O2+0.5% CO2 10.0% O2+0.5% CO2对照 CK图3  不同O2浓度贮藏及货架期间鸭梨呼吸和乙烯变化情况Fig. 3  Effects of different oxygen concentrations on respiration rate and ethylene production during storage and shelf-life period of Yali pear",
+          "pages": [
+            7
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E3",
+        "candidate_id": "chunk:PAPER_001_C0003",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "正文（未识别章节）",
+          "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+          "pages": [
+            1
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E4",
+        "candidate_id": "chunk:PAPER_001_C0025",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "2.5  不同O2 浓度处理对乙烯生物合成关键基因相对",
+          "text": "表达量的影响整体来看，与对照相比，采用低氧气调处理可显著抑制鸭梨货架初期果皮组织中PbACS1、PbACO1及PbACO3 表达，推迟货架期间果皮组织中乙烯合成相关基因表达高峰，但不同O2 处理下PbACS2、PbACS3 及PbACO2 表达无明显规律（数据未列出）。具体来看，贮藏150 d，1.0%—3.0% O2 处理PbACS1相对表达量极低，但5.0%和10.0% O2 处理及空气对照PbACS1 相对表达量较高；气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照；贮藏150 d 后货架10 d，1.0%— 3.0% O2 处理PbACS1 相对表达量较出库时增长近45 倍，各处理PbACO1 和PbACO3相对表达量快速上升，且5.0%及以下O2 处理基因表达量均显著高于10.0%及空气对照；随着贮藏期的延长，乙烯合成相关基因表达水平上升，贮藏210 d 及货架7 d，空气处理PbACS1 相对表达量达到峰值，10% O2 处理PbACO1 和PbACO3 达到峰值；贮藏270 d 后货架7 d，1.0—3.0% O2 处理PbACS1 和PbACO1 仍保持相对较高水平（图4）。PbACO1相对表达量Relative expression of PbACO1 PbACO1相对表达量Relative expression of PbACO1 PbACS1相对表达量Relative expression of PbACS1 PbACO3相对表达量Relative expression of PbACO3 PbACO3相对表达量Relative expression of PbACO3 PbACS1相对表达量Relative expression of PbACS1图4  不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况Fig. 4  The relative expression of PbACO1, PbACO3 and PbACS1 under different oxygen concentrations during storage and shelf-life period of Yali pear",
+          "pages": [
+            7,
+            8
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E5",
+        "candidate_id": "chunk:PAPER_001_C0028",
+        "kind": "document_chunk",
+        "content": {
+          "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+          "section": "3.3  环境O2浓度与乙烯生物合成的关系",
+          "text": "鸭梨是一种典型的采后呼吸跃变型果实，贮藏过程及货架期间释放大量的乙烯；ACS 和ACO 是乙烯生物合成途径中的关键限速酶，且在番茄和梨中均由多家族基因控制[42-43]。本研究结合前人研究基础及检索梨基因组，初步获得PbACO1、PbACO2、PbACO3、PbACS1、 PbACS2 及PbACS3 等6 个乙烯合成关键基因；其中PbACO1、PbACO3 及PbACS1 在低氧处理下相对表达量显著降低，基因表达高峰与10.0% O2及对照相比明显推迟。但随着货架期的延长，乙烯合成相关基因表达量快速升高，而且贮藏后期及货架后，低氧气调贮藏乙烯释放速率显著高于空气对照处理，因此，低氧气调处理对乙烯的抑制是可逆的，乙烯合成代谢会随着环境温度和氧气浓度回升而恢复，该发现与前人研究结果一致[18]，但更低的O2 浓度会进一步推迟货架期间乙烯的合成，延缓衰老。",
+          "pages": [
+            9
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [
+            "河北省",
+            "石家庄市"
+          ],
+          "applicable_stages": [
+            "储藏期",
+            "货架期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      }
+    ],
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称呼吸速率单位为 mg CO2·kg-1·h-1、乙烯产生速率单位为 μL C2H4·kg-1·h-1，所引证据[E1]原文明确记载“以mg CO2·kg-1·h-1 和μL C2H4·kg-1·h-1 计”，直接支持两个单位。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中关于[E1]的表述与原文一致，直接支持；关于[E2]称“乙烯释放速率数据亦以μL·kg-1·h-1 表述”，[E2]原文确有“46.83、88.04 和76.65 μL·kg-1·h -1”，虽未带C2H4下标，但作为乙烯释放速率单位表述基本一致，可支持。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning仅说明问题为文献事实性单位询问，[E1]方法部分给出单位、[E2]结果表述与之一致，未作因果推断或阶段转换，符合所引证据内容。"
+        },
+        {
+          "field": "advice",
+          "verdict": "supported",
+          "reason": "advice仅提示引用单位时注意[E1]为方法学描述、[E2]为结果数据且单位一致，并声明仅解释该论文特定试验、不作为生产指导，均有[E1][E2]支持且符合政策要求。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0014",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "1.2.4  呼吸速率和乙烯产生速率  果实呼吸速率和",
+        "text": "乙烯产生速率测定均采用SP—9890 气相色谱仪（山东，鲁南瑞虹仪器公司）测定，以mg CO2·kg-1·h-1 和μL C2H4·kg-1·h-1 计，色谱参数为进样器80℃，柱炉100℃，检测器160℃，转化炉360℃。每个处理3 次重复，每个重复用果9 个。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0024",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.4  不同O2浓度处理对呼吸速率和乙烯的影响",
+        "text": "5.0%及以下O2 处理果实贮藏150、210 及270 d后，其乙烯产量均显著低于10.0% O2 和空气对照，其中1.0% O2 乙烯释放量最低，贮藏150、210 及270 d，温度平衡后（回升到20℃），其乙烯释放速率分别为46.83、88.04 和76.65 μL·kg-1·h -1；2.0%—3.0% O2 释放量次之；货架10 d 或7 d 后，低氧处理乙烯释放量快速上升。贮藏150 和210 d，低氧气调贮藏果实呼吸速率均显著低于空气对照，但不同O2 浓度处理间差异不显著；贮藏270 d 及货架7 d，低氧气调处理与对照果实呼吸速率差异不显著（图3）。贮藏时间 Storage time (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d) 150+10 210+7 270+7贮藏货架 Shelf-life period (d)贮藏时间 Storage time (d) a a b c c d a b c d e e a b b c d e a a b b abc c a b b b bc c a b b b c c a b b c c c a a b b b c a a a a a b a b b b b b a a a a a a a a a a a a 1.0% O2+0.5% CO2 2.0% O2+0.5% CO2 3.0% O2+0.5% CO2 5.0% O2+0.5% CO2 10.0% O2+0.5% CO2对照 CK图3  不同O2浓度贮藏及货架期间鸭梨呼吸和乙烯变化情况Fig. 3  Effects of different oxygen concentrations on respiration rate and ethylene production during storage and shelf-life period of Yali pear",
+        "pages": [
+          7
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0025",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.5  不同O2 浓度处理对乙烯生物合成关键基因相对",
+        "text": "表达量的影响整体来看，与对照相比，采用低氧气调处理可显著抑制鸭梨货架初期果皮组织中PbACS1、PbACO1及PbACO3 表达，推迟货架期间果皮组织中乙烯合成相关基因表达高峰，但不同O2 处理下PbACS2、PbACS3 及PbACO2 表达无明显规律（数据未列出）。具体来看，贮藏150 d，1.0%—3.0% O2 处理PbACS1相对表达量极低，但5.0%和10.0% O2 处理及空气对照PbACS1 相对表达量较高；气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照；贮藏150 d 后货架10 d，1.0%— 3.0% O2 处理PbACS1 相对表达量较出库时增长近45 倍，各处理PbACO1 和PbACO3相对表达量快速上升，且5.0%及以下O2 处理基因表达量均显著高于10.0%及空气对照；随着贮藏期的延长，乙烯合成相关基因表达水平上升，贮藏210 d 及货架7 d，空气处理PbACS1 相对表达量达到峰值，10% O2 处理PbACO1 和PbACO3 达到峰值；贮藏270 d 后货架7 d，1.0—3.0% O2 处理PbACS1 和PbACO1 仍保持相对较高水平（图4）。PbACO1相对表达量Relative expression of PbACO1 PbACO1相对表达量Relative expression of PbACO1 PbACS1相对表达量Relative expression of PbACS1 PbACO3相对表达量Relative expression of PbACO3 PbACO3相对表达量Relative expression of PbACO3 PbACS1相对表达量Relative expression of PbACS1图4  不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况Fig. 4  The relative expression of PbACO1, PbACO3 and PbACS1 under different oxygen concentrations during storage and shelf-life period of Yali pear",
+        "pages": [
+          7,
+          8
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0028",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "3.3  环境O2浓度与乙烯生物合成的关系",
+        "text": "鸭梨是一种典型的采后呼吸跃变型果实，贮藏过程及货架期间释放大量的乙烯；ACS 和ACO 是乙烯生物合成途径中的关键限速酶，且在番茄和梨中均由多家族基因控制[42-43]。本研究结合前人研究基础及检索梨基因组，初步获得PbACO1、PbACO2、PbACO3、PbACS1、 PbACS2 及PbACS3 等6 个乙烯合成关键基因；其中PbACO1、PbACO3 及PbACS1 在低氧处理下相对表达量显著降低，基因表达高峰与10.0% O2及对照相比明显推迟。但随着货架期的延长，乙烯合成相关基因表达量快速升高，而且贮藏后期及货架后，低氧气调贮藏乙烯释放速率显著高于空气对照处理，因此，低氧气调处理对乙烯的抑制是可逆的，乙烯合成代谢会随着环境温度和氧气浓度回升而恢复，该发现与前人研究结果一致[18]，但更低的O2 浓度会进一步推迟货架期间乙烯的合成，延缓衰老。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "该研究中呼吸速率的单位为 mg CO2·kg-1·h-1，乙烯产生速率（乙烯释放速率）的单位为 μL C2H4·kg-1·h-1  [E1] 。",
+    "basis": "证据[E1]明确记载：果实呼吸速率和乙烯产生速率测定均采用SP—9890气相色谱仪测定，以mg CO2·kg-1·h-1 和μL C2H4·kg-1·h-1 计  [E1] 。[E2]中乙烯释放速率数据亦以μL·kg-1·h-1 表述  [E2] 。",
+    "reasoning": "问题仅询问该论文中两个指标的单位，属于文献事实性信息。[E1]在方法部分直接给出呼吸速率与乙烯产生速率的计量单位，[E2]的结果表述与[E1]单位一致，故可直接回答，无需推断因果或阶段转换。",
+    "advice": "如需引用该单位进行数据比较，请注意[E1]为方法学描述、[E2]为结果数据，二者单位一致  [E1]  [E2] ；本回答仅解释该论文特定试验，不作为生产指导。",
+    "citations": [
+      "E1",
+      "E2"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出呼吸速率单位为mg CO2·kg-1·h-1、乙烯产生速率单位为μL C2H4·kg-1·h-1，与参考答案及原文方法部分一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "该研究中呼吸速率的单位为 mg CO2·kg-1·h-1",
+          "status": "supported",
+          "reason": "原文E1明确记载呼吸速率和乙烯产生速率以mg CO2·kg-1·h-1和μL C2H4·kg-1·h-1计。"
+        },
+        {
+          "claim": "乙烯产生速率（乙烯释放速率）的单位为 μL C2H4·kg-1·h-1",
+          "status": "supported",
+          "reason": "原文E1明确给出μL C2H4·kg-1·h-1；E2中乙烯释放速率数据也以μL·kg-1·h-1表述。"
+        },
+        {
+          "claim": "[E1]明确记载：果实呼吸速率和乙烯产生速率测定均采用SP—9890气相色谱仪测定，以mg CO2·kg-1·h-1 和μL C2H4·kg-1·h-1 计",
+          "status": "supported",
+          "reason": "E1原文包含该表述。"
+        },
+        {
+          "claim": "[E2]中乙烯释放速率数据亦以μL·kg-1·h-1 表述",
+          "status": "supported",
+          "reason": "E2中乙烯释放速率数据如46.83、88.04和76.65 μL·kg-1·h-1，单位一致。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2976,
+      "completion_tokens": 341,
+      "total_tokens": 3317,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 2720
+    },
+    "model": "deepseek-flash",
+    "response_id": "67ff887d-9ed8-44ce-9a3b-406c13cce4d1",
+    "seconds": 6.618944100002409,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "该研究中呼吸速率的单位为 mg CO2·kg-1·h-1，乙烯产生速率（乙烯释放速率）的单位为 μL C2H4·kg-1·h-1 [E1]。",
+        "basis": "证据E1明确记载：果实呼吸速率和乙烯产生速率测定均采用SP—9890气相色谱仪测定，以mg CO2·kg-1·h-1 和μL C2H4·kg-1·h-1 计 [E1]。E2中乙烯释放速率数据亦以μL·kg-1·h-1 表述 [E2]。",
+        "reasoning": "问题仅询问该论文中两个指标的单位，属于文献事实性信息。E1在方法部分直接给出呼吸速率与乙烯产生速率的计量单位，E2的结果表述与E1单位一致，故可直接回答，无需推断因果或阶段转换。",
+        "advice": "如需引用该单位进行数据比较，请注意E1为方法学描述、E2为结果数据，二者单位一致 [E1][E2]；本回答仅解释该论文特定试验，不作为生产指导。",
+        "citations": [
+          "E1",
+          "E2"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2623,
+        "completion_tokens": 261,
+        "total_tokens": 2884,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2495
+      },
+      "model": "deepseek-flash",
+      "response_id": "b2213cf5-7dfa-42ca-a270-cb3eb6b360cc",
+      "seconds": 7.095605400012573,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 20.536618900005124
+}

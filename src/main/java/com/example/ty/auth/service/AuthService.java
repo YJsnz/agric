@@ -11,6 +11,7 @@ import com.example.ty.auth.security.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
@@ -20,9 +21,11 @@ public class AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
+    @Value("${AUTH_REGISTRATION_ENABLED:true}") private boolean registrationEnabled;
 
     @Transactional
     public AuthResponse register(RegisterRequest req) {
+        if (!registrationEnabled) throw new BizException("REGISTRATION_DISABLED","当前展示设备已关闭公开注册",403);
         String email = req.getEmail().trim().toLowerCase();
         if (userRepository.existsByEmail(email)) {
             throw BizException.badRequest("该邮箱已被注册");

@@ -1,0 +1,21 @@
+{
+  "modelId": "diamos-pear-leaf-yolov8s-v1",
+  "task": "pear_leaf_symptom_detection",
+  "inputSize": 640,
+  "classes": {
+    "0": "curl",
+    "1": "slug",
+    "2": "spot"
+  },
+  "source": "https://github.com/Wb-az/yolov8-disease-detection-agriculture",
+  "commit": "a435fd29d197dd7bcab016cd86e30f87c1f3ce7c",
+  "dataset": "DiaMOS Plant",
+  "checkpointSha256": "ffd36dc94e3d242d6f88954a67da73db73fcb038f7500cc01486316148cbf866",
+  "sha256": "a1d49eac74bdb384a6fa7dbcac37fb5a521c37a996c4d0730abe5300d2dbd6bf",
+  "limitations": [
+    "公开梨叶模型，未经泊头鸭梨独立验证",
+    "不适用于果实外观质检或整园航拍",
+    "检测置信度不是病害概率；未检出不代表健康",
+    "没有病斑分割，不计算病斑面积或农药剂量"
+  ]
+}

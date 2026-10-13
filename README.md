@@ -537,7 +537,15 @@ ty/
 
 项目当前前端依赖已固定到兼容版本，可在 Node 12 环境构建；新部署建议优先使用维护中的 Node LTS，并在升级依赖前执行完整回归。
 
-### 一键启动完整 Demo
+### Windows 一键启动
+
+盐田丰语首期改造已新增本地 Agent 问农入口 `/platform/assistant`。默认模型为 Ollama 的 `qwen2.5:7b`，支持真实工具调用、任务历史、执行记录、取消和证据展示。原问农工作台保留在 `/platform/assistant/legacy`。当前工具使用共享演示农场、关键词检索及环境阈值核验；后续算法模块尚未接入。开发决策见 [Agent 运行时 ADR](docs/adr/0001-agent-runtime.md)。
+
+安装 JDK 17+、Node.js LTS 和 Docker Desktop（Linux 容器），启动 Docker Desktop 后双击根目录 `start.cmd`，或在 PowerShell 执行 `.\start.cmd`。脚本自动初始化独立 MySQL、安装并构建两套前端，然后启动后端。默认数据库端口为 3307，访问地址为 `http://localhost:8081/`。
+
+已有前端产物可执行 `.\start.cmd -SkipBuild`；已有数据库可配置 `.env.local` 后执行 `.\start.cmd -ExternalDatabase`。完整配置、开发、测试及排障见 [Windows 启动指南](docs/windows.md)。
+
+### Linux/macOS 一键启动完整 Demo
 
 首次部署：
 
@@ -817,6 +825,9 @@ RTSP 摄像头 → 边缘解码 → YOLO/TensorRT → ByteTrack
 - [Windows + Docker Desktop 部署手册](docs/Windows_DockerDesktop部署手册.md)；
 - [Git 团队协作手册（Windows）](docs/Git团队协作手册_Windows.md)；
 - [YOLO 接入说明](tools/yolo/README.md)。
+- [鸭梨视觉与果园 3D](docs/鸭梨视觉与3D.md)：本地梨叶模型安装、检测记录、Agent 核验与 3D 联动。
+
+沧州基地的数据工作台中，“监控”保留原监控窗口、截图、录像与回放设计；独立的“病虫害”支持上传梨叶近照、公开样例以及本机摄像头单帧 / 连续采样推理。模型在本机 CPU 执行；结果和原图按登录用户保存。首次启动需要 Python 3.11，正常启动脚本会执行 `setup-vision.ps1`。切换“3D”可选择地块、缓动聚焦并进入对应地块的视觉记录。
 
 ## 演示建议
 
@@ -833,3 +844,11 @@ RTSP 摄像头 → 边缘解码 → YOLO/TensorRT → ByteTrack
 9. 打开自定义工作台组合业务面板。
 
 更完整的操作步骤和截图说明请阅读[用户使用手册](docs/用户使用手册.md)。
+
+## 软件演示闭环
+
+农事、生长观察、采后批次流转、模拟灌排/告警回执、视觉复核与 Agent 任务追溯已接入。使用方法与备份恢复见 [软件演示交付检查](docs/软件演示交付检查.md)。
+
+## Jetson 展示部署
+
+边缘版选型与部署见 [Jetson部署与验收](docs/Jetson部署与验收.md)，产品定位和验收范围见 [产品文档](docs/盐田丰语产品文档.md)，维护边界见 [代码结构与维护](docs/代码结构与维护.md)。Jetson TensorRT 与 Qwen3 仍需实机验证，不把 Windows CPU 回归作为板端性能承诺。

@@ -1,0 +1,286 @@
+{
+  "id": "QA_0054",
+  "arm": "B",
+  "candidate_ids": [
+    "chunk:PAPER_001_C0002",
+    "chunk:PAPER_001_C0020",
+    "chunk:PAPER_001_C0010",
+    "chunk:PAPER_001_C0008",
+    "chunk:PAPER_001_C0029"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称3年中试库黑心病跟踪调查中缓慢降温结合延迟气调时降温后延迟气调时间为30—35 d，并引用E2；E2原文明确写有“3 年的中试库黑心病跟踪调查表明，缓慢降温结合延迟气调（降温后30—35 d）”，直接支持该数值。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据字段复述E2中关于3年中试库黑心病跟踪调查、缓慢降温结合延迟气调（降温后30—35 d）、3.0%—5.0% O2+0.5%—0.8% CO2处理、黑心病平均发生率＜3.0%、货架期≥7 d等内容，均可在E2原文中找到对应表述。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理称问题直接询问该论文3年中试库黑心病跟踪调查中降温后延迟气调时间，E2明确给出“降温后30—35 d”，该判断与E2原文一致；同时称E3未给出延迟气调具体天数，E3原文只提到中试果9—12℃入库、35—40 d降至0±0.5℃及气调参数，未给出延迟气调天数，因此该排除性说明也成立。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "建议字段为空，未提出任何事实、数值、因果或操作建议，因此无事实性主张可核查。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "气调贮藏150 d，果肉和果心乙醇含量显著升高，O2浓度与乙醇含量呈负相关，乙醇含量范围为150.89—806.12 mg·L -1，货架后乙醇含量下降；对照果实贮藏270 d，果实乙醇含量快速积累，衰老褐变加剧；同时，5.0%及以下O2显著抑制了贮藏后乙烯产量，推迟了乙烯释放高峰；1.0%—3.0% O2处理显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 的表达。【结论】1.0%—3.0% O2处理更好地抑制了鸭梨采后虎皮病的发生，推迟了乙烯释放高峰，延缓了果实TA 和AA 下降，显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，更好地维持了果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0020",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.1.2  黑心指数发生情况  气调处理可显著降低鸭",
+        "text": "梨贮藏150 d 和210 d 后果实黑心指数（P＜0.05）；贮藏270 d 及货架7 d，各处理果实黑心指数快速上升，从高到低依次为：CK（40%）＞10.0% O2（30.63%）＞5.0% O2（30.51%）＞1.0% O2（26.87%）＞3.0% O2（20.17%）＞2.0% O2（19.34%），其中，1.0% O2 处理果实黑心指数显著高于2.0% O2 和3.0% O2。3 年的中试库黑心病跟踪调查表明，缓慢降温结合延迟气调（降温后30—35 d），采用3.0%—5.0% O2+0.5%—0.8% CO2 处理，贮藏至翌年6 月中下旬，黑心病平均发生率＜3.0%，且货架期≥7 d。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0010",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "48 h 后开始阶段缓慢降温，每1 d 降0.5℃，直至环境",
+        "text": "温度降至（0±0.5）℃。稳定2 d 后，封口，开始进行气调贮藏（气调参数为O2：1.0%、2.0%、3.0%、5.0%和10.0%；CO2：0.5%），以空气为对照，气调箱内相对湿度＞95.0%。贮藏150、210 及270 d 后取样，分别于取样次日及货架7 d 或10 d 进行果实组织褐变指数调查与生理品质测定，每个处理每个重复每次取果实50 个，其中15 个果实用于生理病害调查和生理品质测定，9 个果实用于测定呼吸速率和乙烯释放速率；另取5 个果实，用水果刀于果实赤道部位取果皮组织（厚约2—3 mm）并立即用液氮速冻，-80℃超低温冰箱保存备用；剩余果实置于20 ℃恒温箱（SANYO，日本）模拟货架，7 d 或10 d 后进行生理病害调查、生理品质测定及果皮冻样。中试果9—12℃入库，35—40 d 降至（0±0.5）℃，气调贮藏参数为3.0%—5.0% O2+0.5%—0.8% CO2。",
+        "pages": [
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0008",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "0  引言",
+        "text": "相比而言，‘Conference’一般在O2＞2.0%条件下贮藏，过低的氧气浓度会加重贮藏初期黑心病的发生[15-17]。关于鸭梨气调贮藏的研究最早可追溯到20世纪90 年代，研究发现采用7.0%—10.0% O2 可显著延长鸭梨贮藏期，贮藏213 d 及10 d 货架后（15℃），与空气对照相比，早期和晚期黑心病发生率降低，较好地保持了梨果绿色和硬度；同时发现O2 浓度一定，黑心褐变程度随CO2 浓度升高而显著加重，生产上建议CO2＜1.0%；CO2 浓度一定，O2 下降至5.0%时，也使果心褐变程度加重[18-20]。西洋梨采后气调贮藏研究发现，与果实预冷后直接开始气调相比，推迟气调贮藏建立时间可显著降低长期贮藏过程中梨果心褐变的发生[21-22]。【本研究切入点】低氧及超低氧气调处理作为防控果实采后生理病害发生，延长果实贮藏及货架供应期的关键技术在西方梨品种上广泛应用，而关于低氧处理对我国主要白梨品种采后生理代谢及品质维持的影响鲜有研究报道。【拟解决的关键问题】明确不同O2 浓度处理下鸭梨采后生理代谢和品质变化规律，探讨其对生理病害发生的影响，初步阐明低氧防控鸭梨采后生理病害发生的作用机制。",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0029",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "4  结论",
+        "text": "1.0%—3.0% O2 处理能更好地抑制鸭梨采后虎皮病的发生，推迟乙烯释放高峰，延缓果实可滴定酸和抗坏血酸含量下降；显著抑制了果皮组织中PbACO1、PbACO3 及PbACS1 表达，能更好地维持果皮亮度及白度，鸭梨贮藏期明显延长。但1.0% O2 处理在一定程度上增加了鸭梨贮藏末期黑心病风险。因此，建议生产中鸭梨储藏最佳O2 浓度参数为3.0%—5.0%。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "在3年中试库黑心病跟踪调查中，缓慢降温结合延迟气调时，降温后延迟气调的时间为30—35 d  [E2] 。",
+    "basis": "证据[E2]记载：3年的中试库黑心病跟踪调查表明，缓慢降温结合延迟气调（降温后30—35 d），采用3.0%—5.0% O2+0.5%—0.8% CO2处理，贮藏至翌年6月中下旬，黑心病平均发生率＜3.0%，且货架期≥7 d  [E2] 。",
+    "reasoning": "问题直接询问该论文3年中试库黑心病跟踪调查中缓慢降温结合延迟气调时降温后延迟气调的时间。[E2]明确给出该调查条件下“降温后30—35 d”这一时间参数，故可直接作答  [E2] 。[E3]虽涉及中试果降温与气调参数，但未给出延迟气调的具体天数，不能替代[E2]作为该问题的直接依据  [E3] 。",
+    "advice": "",
+    "citations": [
+      "E2",
+      "E3"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出关键点“降温后30—35 d”，与参考答案及原文证据E2一致，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "在3年中试库黑心病跟踪调查中，缓慢降温结合延迟气调时，降温后延迟气调的时间为30—35 d。",
+          "status": "supported",
+          "reason": "证据E2原文明确记载“缓慢降温结合延迟气调（降温后30—35 d）”。"
+        },
+        {
+          "claim": "证据E2记载：3年的中试库黑心病跟踪调查表明，缓慢降温结合延迟气调（降温后30—35 d），采用3.0%—5.0% O2+0.5%—0.8% CO2处理，贮藏至翌年6月中下旬，黑心病平均发生率＜3.0%，且货架期≥7 d。",
+          "status": "supported",
+          "reason": "该表述与证据E2原文一致。"
+        },
+        {
+          "claim": "证据E3虽涉及中试果降温与气调参数，但未给出延迟气调的具体天数。",
+          "status": "supported",
+          "reason": "证据E3提到中试果9—12℃入库，35—40 d降至（0±0.5）℃，气调贮藏参数为3.0%—5.0% O2+0.5%—0.8% CO2，但未给出延迟气调的具体天数。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2786,
+      "completion_tokens": 300,
+      "total_tokens": 3086,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 2018
+    },
+    "model": "deepseek-flash",
+    "response_id": "05b8ef76-3cb6-4b94-b485-1015c6f2042d",
+    "seconds": 6.961747200009995,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在3年中试库黑心病跟踪调查中，缓慢降温结合延迟气调时，降温后延迟气调的时间为30—35 d [E2]。",
+        "basis": "证据E2记载：3年的中试库黑心病跟踪调查表明，缓慢降温结合延迟气调（降温后30—35 d），采用3.0%—5.0% O2+0.5%—0.8% CO2处理，贮藏至翌年6月中下旬，黑心病平均发生率＜3.0%，且货架期≥7 d [E2]。",
+        "reasoning": "问题直接询问该论文3年中试库黑心病跟踪调查中缓慢降温结合延迟气调时降温后延迟气调的时间。E2明确给出该调查条件下“降温后30—35 d”这一时间参数，故可直接作答 [E2]。E3虽涉及中试果降温与气调参数，但未给出延迟气调的具体天数，不能替代E2作为该问题的直接依据 [E3]。",
+        "advice": "如需在生产中参考该延迟气调时间，应结合本地库体降温能力、果实成熟度与病害监测结果进行验证，不可直接照搬试验参数 [E2]。",
+        "citations": [
+          "E2"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2312,
+        "completion_tokens": 274,
+        "total_tokens": 2586,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2184
+      },
+      "model": "deepseek-flash",
+      "response_id": "6d96ba04-7d88-4775-937f-494e44912d4a",
+      "seconds": 7.596113599996897,
+      "attempts": 1,
+      "prior_errors": []
+    },
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在3年中试库黑心病跟踪调查中，缓慢降温结合延迟气调时，降温后延迟气调的时间为30—35 d [E2]。",
+        "basis": "证据E2记载：3年的中试库黑心病跟踪调查表明，缓慢降温结合延迟气调（降温后30—35 d），采用3.0%—5.0% O2+0.5%—0.8% CO2处理，贮藏至翌年6月中下旬，黑心病平均发生率＜3.0%，且货架期≥7 d [E2]。",
+        "reasoning": "问题直接询问该论文3年中试库黑心病跟踪调查中缓慢降温结合延迟气调时降温后延迟气调的时间。E2明确给出该调查条件下“降温后30—35 d”这一时间参数，故可直接作答 [E2]。E3虽涉及中试果降温与气调参数，但未给出延迟气调的具体天数，不能替代E2作为该问题的直接依据 [E3]。",
+        "advice": "",
+        "citations": [
+          "E2"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 3039,
+        "completion_tokens": 236,
+        "total_tokens": 3275,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 479
+      },
+      "model": "deepseek-flash",
+      "response_id": "48e15e71-1006-44ad-ba27-36d7cc5af602",
+      "seconds": 6.8619956000038655,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 34.722888699994655
+}

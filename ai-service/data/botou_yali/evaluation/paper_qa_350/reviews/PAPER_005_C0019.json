@@ -1,0 +1,17 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0397",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，窖藏条件下鸭梨果实的SSC随时间如何变化？",
+      "answer_quote": "窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0398",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，冷藏和窖藏条件下鸭梨果实后期SSC有何差异？",
+      "answer_quote": "窖藏时果实的SSC先明显增加，之后下降；冷藏果实后期具有较高的SSC，窖藏果实的SSC 较低。",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

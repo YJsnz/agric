@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Component
+@org.springframework.core.annotation.Order(100)
 @RequiredArgsConstructor
 public class DashboardDataInitializer implements ApplicationRunner {
     public static final String FARM_ID = "farm-01";

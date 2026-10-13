@@ -1,0 +1,32 @@
+:root {
+  --ui-font: "HarmonyOS Sans SC", "MiSans", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --ui-font-display: var(--ui-font);
+  --ui-font-mono: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  --ui-brand: #2f6f5c;
+  --ui-brand-rgb: 47 111 92;
+  --ui-brand-hover: #245746;
+  --ui-brand-deep: #173c30;
+  --ui-brand-soft: #e8f1ec;
+  --ui-brand-border: #c5dace;
+  --ui-page: #f3f6f4;
+  --ui-panel: #ffffff;
+  --ui-subtle: #f6f8f7;
+  --ui-hover: #edf2ef;
+  --ui-ink: #20392d;
+  --ui-secondary: #52695e;
+  --ui-muted: #72857c;
+  --ui-border: #dce6e0;
+  --ui-glass: rgba(248,251,249,.92);
+  --ui-context: rgba(18,43,33,.92);
+  --ui-success: #388467;
+  --ui-warning: #ad7a36;
+  --ui-danger: #b65c4f;
+  --ui-radius-control: 9px;
+  --ui-radius-card: 14px;
+  --ui-radius-panel: 20px;
+  --ui-shadow-card: 0 4px 18px rgba(23,54,39,.06);
+  --ui-shadow-panel: 0 20px 60px rgba(23,54,39,.16);
+  --ui-shadow-modal: 0 28px 90px rgba(12,35,25,.25);
+  --ui-duration: 180ms;
+  --ui-ease: cubic-bezier(.22,1,.36,1);
+}

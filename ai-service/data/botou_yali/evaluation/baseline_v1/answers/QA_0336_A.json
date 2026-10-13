@@ -1,0 +1,56 @@
+{
+  "id": "QA_0336",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法确定该论文引言中提到的具体贮藏时间。",
+      "basis": "未提供论文原文或引言内容，且我无法确认该论文的具体表述。",
+      "reasoning": "问题要求依据特定论文的引言回答，但当前没有该论文的文本证据，因此不能给出具体数字。",
+      "advice": "请提供该论文引言的原文或相关段落，以便准确提取信息。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 147,
+      "completion_tokens": 94,
+      "total_tokens": 241,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 147
+    },
+    "model": "deepseek-flash",
+    "response_id": "2f5674c2-8f37-4247-b0a2-1553cede7f36",
+    "seconds": 5.798120100000233,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何具体贮藏时间，仅表示无法确定，属于没有作答；而提供的原文证据明确包含普通冷藏可贮藏5—6个月（从9月至翌年3月），因此该题可回答，拒答不能视为正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 1043,
+      "completion_tokens": 67,
+      "total_tokens": 1110,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 915
+    },
+    "model": "deepseek-flash",
+    "response_id": "4add5fd2-a0c9-4ed9-a0f5-f2b280e8fa24",
+    "seconds": 5.817096499999934,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "id": "QA_0220",
+  "arm": "C",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0009",
+    "chunk:PAPER_005_C0030",
+    "chunk:PAPER_005_C0028",
+    "chunk:PAPER_005_C0026",
+    "chunk:PAPER_005_C0003"
+  ],
+  "service_response": {
+    "status": "answered",
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论称每箱装40个果实，直接得到所引证据E1原文“装入纸箱内，每箱40 个果实”的支持，且问题针对该论文试验，证据匹配。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "依据字段引用E1并复述“选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40个果实”，与E1原文一致，数值和表述均有证据支持。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "推理仅说明问题属于试验材料描述性事实，并依据E1直接给出的每箱40个果实作答，未引入未引用证据或额外因果推断。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "建议字段仅说明该信息为文献试验方法描述、不构成生产操作指导，未提出可核查的事实性数值、因果或操作建议。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0009",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "1.1  试验材料",
+        "text": "供试套袋（外灰内黑单层纸袋）鸭梨于2019 年9月27 日采于赵县基地果园，果实采后当天解袋，进行分拣，除去病虫害和残次果。选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40 个果实。次日存放于当地冷库（库容量：175 t；（0±0.5）℃，21 期岳盈肖等：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析空气湿度（79.47±4.16）%）和地下通风窖（库容量：150 t；温度从入库初期的20℃逐渐下降至12 月的7℃，空气湿度（78.70±8.35）%）。在贮藏初期（入库当天）、1 个月、2 个月、3 个月时，将贮藏的果实（每次每处理3 箱）运回实验室，经室温（25±1℃℃）过夜后进行品质和生理指标检测，并对果皮和果肉分别进行取样，经液氮速冻后，于-80℃冻藏备用。",
+        "pages": [
+          2,
+          3
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0030",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "窖藏鸭梨果肉中检出33 种挥发性物质成分，主要为酯类和萜类，未检出烷烃类物质，酯类主要为己酸乙酯、丁酸乙酯，萜类以α-法尼烯为主。冷藏鸭梨果肉中检出24 种挥发性物质成分，主要为烷烃类和醛类。烷烃类以癸烷为主，醛类以己醛为主（表5）。进一步相关分析表明，鸭梨果皮、果肉中醇类物质与酯类物质总量之间呈极显著正相关（r=0.9902、0.9599），说明酯类物质的生成与醇类物质向酯类的转化有密切关系。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0028",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "冷藏鸭梨果皮中检出28 种挥发性物质成分，含量较高的物质为醛类、烷烃、萜类等，其中醛类主要为己醛、反-2-己烯醛；酯类物质（主要是丁酯类）相对较少，而此时出现较多的烷烃类物质，且主要是癸烷，而窖藏却未检出烷烃类物质（表4）。",
+        "pages": [
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0026",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "GC-MS 分析表明，鸭梨中挥发性物质主要为醛类、酯类、醇类、烷烃类、萜类化合物等。将两种贮藏方式同期果皮、果肉中挥发性物质进行比较表明，果肉中挥发性成分种类及同类别物质含量均少于同期果皮。贮藏期鸭梨酯类含量增加，香气物质增多。果皮、果肉酯类物质含量依次为：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1）（表4、表5）。中  国  农  业  科  学54 卷3.5 3.0 2.5 2.0 1.5 1.0 0.5冷藏-3 Cold storage-3主成分1 Main axis (Variance: 97.75%)冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3冷藏-1、冷藏-2、冷藏-3 分别为冷藏1 个月、2 个月、3 个月；窖藏-1、窖藏-2、窖藏-3 分别为窖藏1 个月、2 个月、3 个月。0 为贮藏初期。下同Cold storage-1, cold storage-2 and cold storage-3 indicate 1, 2 and 3 months after cold storage, respectively; Cellar storage-1, cellar storage-2 and cellar storage-3 indicate 1, 2 and 3 months after cellar storage, respectively. 0 indicates initial storage.",
+        "pages": [
+          5,
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的试验中，鸭梨果实装入纸箱时每箱装40个果实。 [E1] ",
+    "basis": "证据[E1]（1.1 试验材料）记载：选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40个果实。 [E1] ",
+    "reasoning": "问题询问的是该论文试验中装纸箱时每箱的果实数量，属于试验材料描述性事实。[E1]的试验材料部分直接给出了每箱40个果实的明确数值，故证据充分，可直接回答。 [E1] ",
+    "advice": "该信息为文献试验方法描述，仅供了解该研究的分装方式，不构成生产操作指导。",
+    "citations": [
+      "E1"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出每箱40个果实，与参考答案及原文证据一致，关键数值正确，无矛盾。",
+      "claims": [
+        {
+          "claim": "鸭梨果实装入纸箱时每箱装40个果实。",
+          "status": "supported",
+          "reason": "原文1.1试验材料明确记载“装入纸箱内，每箱40个果实”。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2416,
+      "completion_tokens": 81,
+      "total_tokens": 2497,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 1904
+    },
+    "model": "deepseek-flash",
+    "response_id": "4fe9d278-e1d5-4e40-8b63-7bc46c24ccdb",
+    "seconds": 5.819872099993518,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的试验中，鸭梨果实装入纸箱时每箱装40个果实。[E1]",
+        "basis": "证据E1（1.1 试验材料）记载：选取大小一致的果实（平均单果重238 g），装入纸箱内，每箱40个果实。[E1]",
+        "reasoning": "问题询问的是该论文试验中装纸箱时每箱的果实数量，属于试验材料描述性事实。E1的试验材料部分直接给出了每箱40个果实的明确数值，故证据充分，可直接回答。[E1]",
+        "advice": "该信息为文献试验方法描述，仅供了解该研究的分装方式，不构成生产操作指导。",
+        "citations": [
+          "E1"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 1995,
+        "completion_tokens": 180,
+        "total_tokens": 2175,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1739
+      },
+      "model": "deepseek-flash",
+      "response_id": "1da7c33b-5b19-42ed-aa8b-c8d4f5353b4e",
+      "seconds": 6.306430900003761,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 18.56704219999665
+}

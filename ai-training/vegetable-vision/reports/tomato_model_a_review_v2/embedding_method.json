@@ -1,0 +1,8 @@
+{
+  "model": "Fixed ImageNet-pretrained YOLO11n-cls pooled backbone",
+  "weights": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\wheat-vision\\yolo11n-cls.pt",
+  "sha256": "c62d41bf9625777760018bf914d2e6cd472420ccd01706d97a61cb6c82502bd7",
+  "dimensions": 1280,
+  "input": "RGB resize 224x224 bilinear /255; no random transforms",
+  "training": false
+}

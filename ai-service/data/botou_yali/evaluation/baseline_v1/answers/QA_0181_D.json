@@ -1,0 +1,44 @@
+{
+  "id": "QA_0181",
+  "arm": "D",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "证据不足，无法可靠回答。",
+      "basis": "没有通过检索及准入的证据。",
+      "reasoning": "",
+      "advice": "请补充原始资料。",
+      "citations": []
+    },
+    "usage": {},
+    "seconds": 0,
+    "skipped": "empty_evidence"
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.0,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未提供任何实质内容，仅表示证据不足并请求补充资料，未回答不饱和膜脂含量高时膜流动性和相变温度如何变化，属于没有作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 998,
+      "completion_tokens": 53,
+      "total_tokens": 1051,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 230
+    },
+    "model": "deepseek-flash",
+    "response_id": "d1c75be0-d8b2-4db4-bb41-b6fe8a70340b",
+    "seconds": 5.444402900000114,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

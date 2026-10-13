@@ -1,0 +1,89 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0277",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的GC-MS测定中，使用的毛细管柱型号和规格是什么？",
+      "answer_quote": "SH-Rxi-5Sil MS 毛细管柱（30 m×0.25 mm，0.25 μm）",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0278",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的GC-MS升温程序中，从40℃升温至100℃的速率是多少？",
+      "answer_quote": "40℃下保持1 min；2℃·min-1 升温至100℃，保持2 min",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0279",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的GC-MS升温程序中，从100℃升温至250℃的速率是多少？",
+      "answer_quote": "2℃·min-1 升温至100℃，保持2 min；5℃·min-1 升温至250℃，保持5 min",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0280",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的GC-MS MS条件中，质量扫描范围是多少？",
+      "answer_quote": "m/z 35—500 下进行质量扫描",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0281",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的GC-MS测定中，加入的内标物是什么？",
+      "answer_quote": "测定时加入200 ng 2-辛酮作为内标物",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0282",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的PEN3型电子鼻传感器阵列中，W1C传感器对哪类化合物敏感？",
+      "answer_quote": "W1C芳香成分 Aromatic components",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0283",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的PEN3型电子鼻传感器阵列中，W5S传感器对哪类化合物敏感？",
+      "answer_quote": "W5S灵敏度大，氮氧化合物 Broad range, oxynitride",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0284",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的PEN3型电子鼻传感器阵列中，W3C传感器对哪类化合物敏感？",
+      "answer_quote": "W3C氨类、芳香成分 Ammonia, aromatic components",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0285",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的PEN3型电子鼻传感器阵列中，W6S传感器对哪类化合物敏感？",
+      "answer_quote": "W6S氢化物 Hydrogen",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0286",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的PEN3型电子鼻传感器阵列中，W5C传感器对哪类化合物敏感？",
+      "answer_quote": "W5C短链烷烃、芳香成分Short chain alkanes, aromatic components",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0287",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的PEN3型电子鼻传感器阵列中，W1W传感器对哪类化合物敏感？",
+      "answer_quote": "W1W硫化物、萜烯类 Sulphur-organic compound, terpenes",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0288",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的PEN3型电子鼻传感器阵列中，W2S传感器对哪类化合物敏感？",
+      "answer_quote": "W2S醇类、醛酮Alcohol, aldehyde ketone",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0289",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的PEN3型电子鼻传感器阵列中，W2W传感器对哪类化合物敏感？",
+      "answer_quote": "W2W有机硫化物、芳香成分 Organic sulfur compounds, aromatic components",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0290",
+      "question": "在《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的PEN3型电子鼻传感器阵列中，W3S传感器对哪类化合物敏感？",
+      "answer_quote": "W3S长链烷烃 Long chain alkanes",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

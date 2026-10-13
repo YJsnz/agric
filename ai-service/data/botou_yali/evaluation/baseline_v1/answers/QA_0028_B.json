@@ -1,0 +1,224 @@
+{
+  "id": "QA_0028",
+  "arm": "B",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "所提供的证据未对L*值的定义或其数值范围与果实变化的对应关系作出说明，无法据此回答该问题。",
+      "basis": "证据E2仅提及5.0%及以下O2处理更好地保持了果实亮度及白度，贮藏270 d及货架7 d的L*值和b*值均显著高于10.0% O2及空气对照[E2]；但未给出L*值的定义，也未给出其数值范围与果实变化的对应关系。其余证据（E1、E3、E4、E5）均未涉及L*值的定义或数值范围。",
+      "reasoning": "问题要求说明L*值的含义及其数值范围如何对应果实变化。检索全部证据：E2只报告了L*值在不同O2处理间的相对高低（与亮度、白度相关联），属于结果性描述，未定义L*值，也未提供数值区间与果实状态的对应关系；E1、E3、E4、E5不涉及L*值。因此证据不足以回答该问题。",
+      "advice": "如需明确L*值的定义及数值范围与果实变化的对应关系，应查阅该研究中包含色差测定方法（如色差仪参数说明）或表2具体数值的原文内容；在获得该部分证据前，不应推断L*值的具体含义或数值区间。",
+      "citations": [
+        "E2"
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2005,
+      "completion_tokens": 308,
+      "total_tokens": 2313,
+      "prompt_tokens_details": {
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 213
+    },
+    "model": "deepseek-flash",
+    "response_id": "97424f11-a0fc-4b5d-81d6-825224e78818",
+    "seconds": 15.315748900000017,
+    "attempts": 2,
+    "prior_errors": [
+      "ExtractionError"
+    ]
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_001_C0004",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " The selected fruits were put into controlled atmosphere chambers, and precooling at 8℃ for 48 h, and then declined by 1℃ for every 2 days, and finally storage at (0±0.5) (RH℃＞95%). Then the controlled atmosphere (CA) was established under different O2 concentrations (1.0%, 2.0%, 3.0%, 5.0% and 10.0%) plus 0.5% CO2, and taking air as control. Fruit firmness (FF), soluble solids content (SSC), titratable acidity (TA), ascorbic acid (AA), ethanol, respiration rate, ethylene production and the relative expression of ethylene biosynthesis genes PbACS and PbACO were determined after the fruits storage for 150 d, 210 d and 270 d, respectively.【Result】The heart browning incidence and superficial scald incidence were both declined significantly under CA treatments during long period storage. More specifically, after storage for 270 d and shelf-life for 7 d, the disorder prevention efficiency were followed by the order of CK＞10.0% O2＞5.0% O2＞1.0% O2＞3.0% O2＞2.0% O2.",
+        "pages": [
+          1,
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_001_C0021",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "2.2  不同O2浓度处理对内在品质的影响",
+        "text": "与采收时相比，各处理贮藏期间可滴定酸（TA）和抗坏血酸（AA）含量均显著下降。贮藏150 d，1.0%—3.0% O2处理果实TA 和AA 含量均显著高于空气对照，5.0% O2 和10% O2 处理TA 和AA 含量与对照基本持平或略低，差异不显著；贮藏210 d，AA 含量进一步降低，但货架7 d 后，10.0% O2 和空气对照AA 含量均显著高于低氧处理；贮藏270 d，各处理AA 含量差异不显著，货架7 d 后AA 显著升高；贮藏270 d，2.0%、3.0%、5.0%及10.0% O2 处理TA 含量均显著高于空气对照和1.0% O2。同时，5.0%及以下O2 处理更好地保持了果实亮度及白度，贮藏270 d 及货架7 d，L*值和b*值均显著高于10.0% O2 及空气对照（表2）。另外，贮藏150 d 时，各处理及对照果实硬度均快速下降，可溶性固形物含量上升；贮藏210 d 和270 d，所有处理及对照果实硬度和可溶性固形物含量相对稳定，且不同处理及对照间无显著差异。",
+        "pages": [
+          5
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_001_C0017",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "1.3  数据处理与分析",
+        "text": "应用Excel 和SPSS 13.0 进行作图和方差分析。",
+        "pages": [
+          4
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_001_C0003",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": "但1.0% O2处理在一定程度上增加了鸭梨贮藏末期黑心病风险，建议生产中鸭梨最佳O2浓度参数为3.0%—5.0%。关键词：鸭梨；O2；生理病害；品质；乙烯The Effects of Different Oxygen Concentration on Postharvest Physiology and Storage Quality of Yali Pear DU YanMin, WANG WenHui, JIA XiaoHui, TONG Wei, WANG Yang, ZHANG XinNan (Institute of Pomology, Chinese Academy of Agricultureal Sciences/Key Laboratory of Fruit Storage and Processing of Liaoning Province, Xingcheng 125100, Liaoning) Abstract:【Objective】The aim of this study was to clarify the effects of environment oxygen concentration on postharvest physiology and storage quality, affording the theory basis to prevent the postharvest disorders and prolong the storage period of Yali fruit.【Method】Pear samples were harvested from the commercial orchard in Shijiazhuang city, Hebei province. The fruits of uniform size and ripeness without insect pests or mechanical injury were selected as research materials.",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_001_C0005",
+      "kind": "document_chunk",
+      "content": {
+        "title": "不同O2浓度对鸭梨采后生理代谢及贮藏品质的影响",
+        "section": "正文（未识别章节）",
+        "text": " Besides that, the lower O2 treatments maintained TA and AA contents at a higher level in the early storage period, and delayed the yellow-turning of peel; ethanol was accumulated much more under the lower O2 concentration, which ranged from 150.89 mg·L-1 to 806.12 mg·L-1 after storage for 150 d; while with the increasing senescence browning of fruit in air, the ethanol content peaking at 1 500 mg·L-1 after storage for 270 d. 5.0% and lower O2 inhibited the ethylene biosynthesis and delayed the peaking time, and 1.0%-3.0% O2 could prohibit the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue significantly.【Conclusion】1.0%—3.0% O2 prohibited the superficial scald occurrence significantly, and delayed the decrease of TA and AA, inhibited the biosynthesis of ethylene and delayed the peaking time, down-regulated the relative expression of PbACO1, PbACO3 and PbACS1 genes in pericarp tissue, prolonged the storage period of Yali pear significantly.",
+        "pages": [
+          2
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [
+          "河北省",
+          "石家庄市"
+        ],
+        "applicable_stages": [
+          "储藏期",
+          "货架期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      }
+    }
+  ],
+  "candidate_ids": [
+    "chunk:PAPER_001_C0004",
+    "chunk:PAPER_001_C0021",
+    "chunk:PAPER_001_C0017",
+    "chunk:PAPER_001_C0003",
+    "chunk:PAPER_001_C0005"
+  ],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 1,
+  "answer_entity_surface_recall": 0.6666666666666666,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出L*值的定义或数值范围对应关系，仅说明检索证据不足，属于拒答；但该问题在提供的原文证据中有明确答案（L*值表示果实亮度，0—100分别表示果实由暗到亮变化），因此证据不足的拒答在可回答题中不是正确。",
+      "claims": [
+        {
+          "claim": "所提供的证据未对L*值的定义或其数值范围与果实变化的对应关系作出说明。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence明确说明L*值表示果实亮度，0—100分别表示果实由暗到亮变化，因此该断言与提供证据相反。"
+        },
+        {
+          "claim": "证据E2仅提及5.0%及以下O2处理更好地保持了果实亮度及白度，贮藏270 d及货架7 d的L*值和b*值均显著高于10.0% O2及空气对照。",
+          "status": "supported",
+          "reason": "E2原文包含该结果性描述。"
+        },
+        {
+          "claim": "E2未给出L*值的定义，也未给出其数值范围与果实变化的对应关系。",
+          "status": "supported",
+          "reason": "E2文本确实只报告L*值相对高低，未定义L*值或给出0—100对应关系。"
+        },
+        {
+          "claim": "其余证据（E1、E3、E4、E5）均未涉及L*值的定义或数值范围。",
+          "status": "supported",
+          "reason": "E1、E3、E4、E5的提供文本中均未出现L*值定义或数值范围说明。"
+        },
+        {
+          "claim": "证据不足以回答该问题。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence已直接给出L*值定义及0—100对应果实由暗到亮变化，足以回答该问题。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2451,
+      "completion_tokens": 379,
+      "total_tokens": 2830,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 2195
+    },
+    "model": "deepseek-flash",
+    "response_id": "c4b7a441-3129-4159-9c49-ab848ce039a7",
+    "seconds": 6.976710699999785,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

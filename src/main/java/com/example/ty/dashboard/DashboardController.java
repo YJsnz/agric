@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.*;
 public class DashboardController {
     private final DashboardService service;
 
+    @GetMapping("/observations")
+    public ObservationHistory observations(@PathVariable String farmId,@RequestParam String metricKey) {
+        return service.observationHistory(farmId,metricKey);
+    }
+
     @GetMapping("/dashboard")
     public DashboardSnapshot dashboard(@PathVariable String farmId) { return service.snapshot(farmId); }
 

@@ -1,0 +1,52 @@
+[
+  {
+    "question": "贮藏初期，鸭梨果皮和果肉中PbAAT1的表达量有何差异？",
+    "type": "factual",
+    "answer_quote": "贮藏初期，果皮中PbAAT1 表达量高于果肉。",
+    "gold_entities": [
+      "PbAAT1",
+      "果皮",
+      "果肉"
+    ]
+  },
+  {
+    "question": "随着贮藏时间延长，鸭梨果皮中PbAAT1表达量呈现什么变化趋势？",
+    "type": "factual",
+    "answer_quote": "随着贮藏时间延长，果皮中PbAAT1 表达量呈下降趋势。",
+    "gold_entities": [
+      "PbAAT1",
+      "果皮"
+    ]
+  },
+  {
+    "question": "在贮藏过程中，窖藏和冷藏鸭梨果肉的PbAAT1表达量有何不同？",
+    "type": "factual",
+    "answer_quote": "同时，窖藏果肉的PbAAT1 表达迅速提高，明显高于冷藏果肉。",
+    "gold_entities": [
+      "PbAAT1",
+      "窖藏",
+      "冷藏",
+      "果肉"
+    ]
+  },
+  {
+    "question": "与冷藏相比，窖藏鸭梨果实的PbADH2表达量下调速度如何？",
+    "type": "factual",
+    "answer_quote": "与冷藏相比，窖藏果实的PbADH2 表达量下调更为迅速。",
+    "gold_entities": [
+      "PbADH2",
+      "窖藏",
+      "冷藏"
+    ]
+  },
+  {
+    "question": "贮藏过程中，鸭梨PbLOX1表达量在哪种贮藏条件下、哪个部位上调表现明显？",
+    "type": "factual",
+    "answer_quote": "贮藏过程中，PbLOX1 表达量以窖藏果肉上调表现明显。",
+    "gold_entities": [
+      "PbLOX1",
+      "窖藏",
+      "果肉"
+    ]
+  }
+]

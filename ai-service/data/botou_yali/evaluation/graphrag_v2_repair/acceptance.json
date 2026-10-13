@@ -1,0 +1,69 @@
+{
+  "pipeline_version": "agricultural-v2",
+  "tests": {
+    "tests": 48,
+    "passed": true,
+    "failures": 0,
+    "errors": 0,
+    "modules": [
+      "test_entity_extractor",
+      "test_entity_aligner",
+      "test_graph_retriever",
+      "test_dual_retriever",
+      "test_fusion",
+      "test_evidence_fusion",
+      "test_answer_service",
+      "test_reranker",
+      "test_graphrag_v2"
+    ]
+  },
+  "http_cases": {
+    "paper": {
+      "http_200": true,
+      "v2": true,
+      "paper_policy": true,
+      "answered": true,
+      "source": true,
+      "correct_location": true
+    },
+    "graph": {
+      "http_200": true,
+      "v2": true,
+      "answered": true,
+      "graph_evidence": true,
+      "grounded": true
+    },
+    "clarification": {
+      "http_200": true,
+      "v2": true,
+      "clarify": true,
+      "no_generation": true
+    },
+    "local_gap": {
+      "http_200": true,
+      "v2": true,
+      "strict": true,
+      "safe": true
+    }
+  },
+  "source_hashes": {
+    "app\\graphrag\\answer_service.py": "28824beee7886730d64c30ccb4776b572ddcdefbed3c1e094fdc1846832d1f0a",
+    "app\\graphrag\\dual_retriever.py": "080834bad212139eeb57b0d21659497e74eef049155b70cd0c3d300734b06a3a",
+    "app\\graphrag\\entity_aligner.py": "474699d6ce1f789262807f5b0fa506953b5cf88cc38bdd41298165d0624a68d9",
+    "app\\graphrag\\entity_extractor.py": "9e465fe982263ac6ebede4966aeedf7c51162a7354313b854ed1d8b35972b4e2",
+    "app\\graphrag\\evidence_fusion.py": "7bc9c0602ddc23bca23d60e1377caf2259c14b1856f3b3a7b76ad4ca2f285c03",
+    "app\\graphrag\\fusion.py": "51082197706f2d02542a373b7427559b60f7415f777c2918b3b766f6f9ce865b",
+    "app\\graphrag\\graph_retriever.py": "ae1ea76f7902ad26d15034e650400402afdbfd7fbc9175fc9232eb9625b1136b",
+    "app\\graphrag\\grounding.py": "85678d7dcdf8a3a16792d01460beec5ef7e0e7c28804b0396de251a2f2e017f0",
+    "app\\graphrag\\pipeline.py": "28e284460fe648a8932052bcd2c534460efbea915cd6425a9df6009a626b9a22",
+    "app\\graphrag\\prompt_builder.py": "99cfaa40847a0d1667c0b94eb988523bf625f218f5fde03cdbaf9ee970ad6811",
+    "app\\graphrag\\query_policy.py": "b75314ba071b935dc3a6159bd138465b2b66532ec2bac6ba5b6b94c0b3aafe64",
+    "app\\graphrag\\ranking.py": "658020ad6a4e2dc0379b15bcda676c2194a694962802dd2f1aeb9b7df436d2d8",
+    "app\\graphrag\\reranker.py": "15e129397a9037e08d8ab4232125aec105ddc5eed2216f1d982f86665f4f96cf",
+    "app\\graphrag\\vector_retriever.py": "1a0a54940f55c354173b78b6de19a25d073bcb88a0a57aef3016e5878f4e20ea",
+    "app\\graphrag\\__init__.py": "1c2df3bc75a0d86e4bb6bc9fc0915fb06fd1e20d50aca6562f691a85947e7148",
+    "graph_web\\api.py": "047594ecc89cad90124b96c7d694d90965800074c8c0868be0a495f00ed5745f"
+  },
+  "baseline_qa_and_index_unchanged": true,
+  "performance_claim": false
+}

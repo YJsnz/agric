@@ -1,0 +1,56 @@
+{
+  "id": "QA_0072",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法确定该论文中鸭梨贮藏150和210 d时不同O2浓度处理间呼吸速率差异是否显著。",
+      "basis": "未提供该论文的具体内容，且我的知识库中不包含该论文的详细数据。",
+      "reasoning": "问题要求依据特定论文回答，但证据为空，无法获取论文中关于150和210 d呼吸速率差异显著性的统计结果，因此不能给出肯定或否定的结论。",
+      "advice": "请提供该论文的相关段落或数据表格，或直接查阅原文中呼吸速率的方差分析/显著性检验结果。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 155,
+      "completion_tokens": 133,
+      "total_tokens": 288,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 155
+    },
+    "model": "deepseek-flash",
+    "response_id": "99821423-9fae-4ef9-8b5f-13cc211f861a",
+    "seconds": 5.944511599999714,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.5,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何结论，仅说明无法确定，属于拒答；而该题在提供的原文证据中可直接回答（贮藏150和210 d低氧处理呼吸速率显著低于空气对照，但不同O2浓度处理间差异不显著），因此证据不足的拒答在可回答题中不算正确。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 911,
+      "completion_tokens": 81,
+      "total_tokens": 992,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 783
+    },
+    "model": "deepseek-flash",
+    "response_id": "520da8b7-7c34-414d-b33d-259574197452",
+    "seconds": 5.740459499999815,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "source_id": "PAPER_003",
+  "title": "降温方法对不同采收期鸭梨采后果心褐变和膜脂组分的影响",
+  "source_type": "paper",
+  "crop": [
+    "鸭梨"
+  ],
+  "region": [],
+  "region_note": "未在当前摘要中确认",
+  "year": 2010,
+  "evidence_level": "A",
+  "evidence_level_basis": "继承用户来源清单的分级，尚不代表因果证据强度",
+  "applicable_stages": [
+    "采收期",
+    "储藏期"
+  ],
+  "stage_basis": "文档主题标签；不是每条农业规则的阶段约束",
+  "url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+  "authors": [],
+  "doi": null,
+  "availability": "fulltext_pdf_available",
+  "review_status": "fulltext_acquired_content_review_pending",
+  "fulltext_path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/original.pdf",
+  "text_path": "data/botou_yali/graphrag_corpus_v1/processed/PAPER_003/text.txt",
+  "pages_path": "data/botou_yali/graphrag_corpus_v1/processed/PAPER_003/pages.json",
+  "page_count": 7,
+  "ready_for_chunking": true,
+  "production_retrieval_approved": false,
+  "project_focus": "泊头鸭梨",
+  "scope_note": "具体温度程序、样本条件和统计显著性应以论文全文为准。",
+  "kg_source_ids": [],
+  "artifacts": [
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/landing.html",
+      "sha256": "eccc20b65f641454fde63a4540d12f89214fc89a0a8674ae41f1933bab878604",
+      "bytes": 175,
+      "role": "landing_or_capture"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/original.pdf",
+      "sha256": "5821f452a5924deb1670e66cc7d03f1e7287e9c91f999b388dbd1c675460a55c",
+      "bytes": 503470,
+      "role": "fulltext"
+    },
+    {
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/summary.md",
+      "sha256": "3e59b68e31738634d43efffe13ed57d89033b4ba70b7e83b99d30aef85514e5f",
+      "bytes": 1111,
+      "role": "user_summary"
+    }
+  ],
+  "acquisition": {
+    "source_id": "PAPER_003",
+    "url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/20100860.pdf",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/original.pdf",
+    "attempted_at": "2026-09-15T06:21:40.316537+00:00",
+    "resolved_url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/20100860.pdf",
+    "status": "downloaded_pending_review",
+    "bytes": 503470,
+    "sha256": "5821f452a5924deb1670e66cc7d03f1e7287e9c91f999b388dbd1c675460a55c"
+  },
+  "acquisition_attempts": [
+    {
+      "source_id": "PAPER_003",
+      "url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/landing.html",
+      "attempted_at": "2026-09-15T06:21:28.463961+00:00",
+      "resolved_url": "https://nygcxb.ijournals.cn/nygcxb/article/html/20100860",
+      "status": "downloaded_pending_review",
+      "bytes": 175,
+      "sha256": "eccc20b65f641454fde63a4540d12f89214fc89a0a8674ae41f1933bab878604"
+    },
+    {
+      "source_id": "PAPER_003",
+      "url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/20100860.pdf",
+      "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_003/original.pdf",
+      "attempted_at": "2026-09-15T06:21:40.316537+00:00",
+      "resolved_url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/20100860.pdf",
+      "status": "downloaded_pending_review",
+      "bytes": 503470,
+      "sha256": "5821f452a5924deb1670e66cc7d03f1e7287e9c91f999b388dbd1c675460a55c"
+    }
+  ],
+  "extraction_status": "text_available_review_pending"
+}

@@ -7,7 +7,7 @@ defineProps<{ compact?: boolean; inverse?: boolean }>()
 <template>
   <div class="brand" :class="{ compact, inverse }">
     <span class="mark" aria-hidden="true"><img :src="brandLogo" alt="" /></span>
-    <span v-if="!compact" class="copy"><strong>田言耕智</strong><small>智慧农业 AI 平台</small></span>
+    <span v-if="!compact" class="copy"><strong>盐田丰语</strong><small>农业智能工作空间</small></span>
   </div>
 </template>
 

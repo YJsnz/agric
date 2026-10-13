@@ -1,0 +1,566 @@
+{
+  "id": "QA_0279",
+  "arm": "D",
+  "candidate_ids": [
+    "chunk:PAPER_005_C0002",
+    "chunk:PAPER_005_C0030",
+    "chunk:PAPER_005_C0028",
+    "chunk:PAPER_005_C0026",
+    "chunk:PAPER_005_C0027"
+  ],
+  "service_response": {
+    "entities": [
+      "鸭梨"
+    ],
+    "extracted_entities": {
+      "crop": "鸭梨",
+      "region": null,
+      "stage": null,
+      "environment": [],
+      "disease": [],
+      "pest": [],
+      "symptom": [],
+      "quality": [],
+      "intervention": [],
+      "risk": [],
+      "intent": "fact_query"
+    },
+    "alignments": [
+      {
+        "field": "crop",
+        "mention": "鸭梨",
+        "status": "matched",
+        "entity_id": "v2:ea3447edac86e42f",
+        "canonical_name": "鸭梨",
+        "candidates": [
+          {
+            "id": "v2:ea3447edac86e42f",
+            "name": "鸭梨",
+            "type": "Variety",
+            "crop": [
+              "鸭梨"
+            ],
+            "region": [
+              "全国",
+              "河北省",
+              "研究试验范围"
+            ]
+          }
+        ]
+      }
+    ],
+    "channels": {
+      "neo4j": {
+        "status": "empty",
+        "count": 0,
+        "truncated": false
+      },
+      "faiss": {
+        "status": "ok",
+        "count": 20
+      }
+    },
+    "evidence_rejections": [],
+    "corpus_sha256": "a2bdc50c30f205c1eed9e5669655ed720a6aac2798825cdbfd22c1eb35ae3939",
+    "reasoning_paths": [],
+    "sources": [
+      {
+        "source_id": "PAPER_005",
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "url": "https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+        "citations": [
+          {
+            "evidence_id": "E1",
+            "chunk_id": "PAPER_005_C0002",
+            "section": "正文（未识别章节）",
+            "pages": [
+              1
+            ]
+          },
+          {
+            "evidence_id": "E2",
+            "chunk_id": "PAPER_005_C0030",
+            "section": "2.4  挥发性物质组分变化",
+            "pages": [
+              9
+            ]
+          },
+          {
+            "evidence_id": "E3",
+            "chunk_id": "PAPER_005_C0028",
+            "section": "2.4  挥发性物质组分变化",
+            "pages": [
+              6
+            ]
+          },
+          {
+            "evidence_id": "E4",
+            "chunk_id": "PAPER_005_C0026",
+            "section": "2.4  挥发性物质组分变化",
+            "pages": [
+              5,
+              6
+            ]
+          },
+          {
+            "evidence_id": "E5",
+            "chunk_id": "PAPER_005_C0027",
+            "section": "2.4  挥发性物质组分变化",
+            "pages": [
+              6
+            ]
+          }
+        ]
+      }
+    ],
+    "generation_called": true,
+    "policy": {
+      "purpose": "literature",
+      "mode": "research",
+      "titles": [
+        "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析"
+      ],
+      "notice": "仅解释论文特定试验，不转为当地生产建议。"
+    },
+    "extraction_notice": null,
+    "pipeline_version": "agricultural-v2",
+    "unresolved_entities": [],
+    "reference_materials": [],
+    "ranking": {
+      "fusion_config": {
+        "rrf_k": 60,
+        "metadata_strength": 0.1,
+        "calibrated": false
+      },
+      "candidate_count": 20,
+      "selected": [
+        {
+          "candidate_id": "chunk:PAPER_005_C0002",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 2,
+            "vector_rank": 5,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.961166253101737
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0030",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 8,
+            "vector_rank": 2,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9404648956356736
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0028",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 12,
+            "vector_rank": 1,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9236111111111112
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0026",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 3,
+            "vector_rank": 10,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.9198412698412699
+          }
+        },
+        {
+          "candidate_id": "chunk:PAPER_005_C0027",
+          "kind": "document_chunk",
+          "features": {
+            "neural_rank": 7,
+            "vector_rank": 6,
+            "scope_match": 1.0,
+            "evidence_quality": 1.0,
+            "relevance_rrf": 0.917345092718227
+          }
+        }
+      ]
+    },
+    "status": "answered",
+    "answer": "1. 结论\n该研究记录中，鸭梨果皮、果肉酯类物质含量从高到低依次为：窖藏下果皮＞窖藏下果肉＞冷藏下果皮＞冷藏下果肉  [E4] 。\n2. 依据\n[E4]明确记载：果皮、果肉酯类物质含量依次为：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1） [E4] 。[E1]亦指出果皮中挥发性物质含量较高，窖藏鸭梨较冷藏时生成更多的乙酯类化合物  [E1] 。\n3. 推理路径\n问题要求的是果皮、果肉酯类物质含量的高低顺序。[E4]直接给出了四种贮藏方式与部位组合的酯类含量区间，并已按从高到低排列，可直接引用  [E4] 。[E1]、[E2]、[E3]、[E5]分别涉及挥发性物质种类、主要成分及相关基因表达，未提供果皮与果肉酯类含量的完整排序，故不作为排序依据  [E1]  [E2]  [E3]  [E5] 。\n4. 建议\n该结论仅适用于该论文所述窖藏与冷藏试验条件，不构成当地生产指导。如需了解具体贮藏条件参数或品种差异，请补充相关信息。\n5. 来源\n[E1] [E2] [E3] [E4] [E5] PAPER_005：窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析 https://www.chinaagrisci.com/CN/abstract/abstract21870.shtml",
+    "evidence": [
+      {
+        "evidence_id": "E1",
+        "candidate_id": "chunk:PAPER_005_C0002",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "正文（未识别章节）",
+          "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+          "pages": [
+            1
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E2",
+        "candidate_id": "chunk:PAPER_005_C0030",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "2.4  挥发性物质组分变化",
+          "text": "窖藏鸭梨果肉中检出33 种挥发性物质成分，主要为酯类和萜类，未检出烷烃类物质，酯类主要为己酸乙酯、丁酸乙酯，萜类以α-法尼烯为主。冷藏鸭梨果肉中检出24 种挥发性物质成分，主要为烷烃类和醛类。烷烃类以癸烷为主，醛类以己醛为主（表5）。进一步相关分析表明，鸭梨果皮、果肉中醇类物质与酯类物质总量之间呈极显著正相关（r=0.9902、0.9599），说明酯类物质的生成与醇类物质向酯类的转化有密切关系。",
+          "pages": [
+            9
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E3",
+        "candidate_id": "chunk:PAPER_005_C0028",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "2.4  挥发性物质组分变化",
+          "text": "冷藏鸭梨果皮中检出28 种挥发性物质成分，含量较高的物质为醛类、烷烃、萜类等，其中醛类主要为己醛、反-2-己烯醛；酯类物质（主要是丁酯类）相对较少，而此时出现较多的烷烃类物质，且主要是癸烷，而窖藏却未检出烷烃类物质（表4）。",
+          "pages": [
+            6
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E4",
+        "candidate_id": "chunk:PAPER_005_C0026",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "2.4  挥发性物质组分变化",
+          "text": "GC-MS 分析表明，鸭梨中挥发性物质主要为醛类、酯类、醇类、烷烃类、萜类化合物等。将两种贮藏方式同期果皮、果肉中挥发性物质进行比较表明，果肉中挥发性成分种类及同类别物质含量均少于同期果皮。贮藏期鸭梨酯类含量增加，香气物质增多。果皮、果肉酯类物质含量依次为：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1）（表4、表5）。中  国  农  业  科  学54 卷3.5 3.0 2.5 2.0 1.5 1.0 0.5冷藏-3 Cold storage-3主成分1 Main axis (Variance: 97.75%)冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3冷藏-1、冷藏-2、冷藏-3 分别为冷藏1 个月、2 个月、3 个月；窖藏-1、窖藏-2、窖藏-3 分别为窖藏1 个月、2 个月、3 个月。0 为贮藏初期。下同Cold storage-1, cold storage-2 and cold storage-3 indicate 1, 2 and 3 months after cold storage, respectively; Cellar storage-1, cellar storage-2 and cellar storage-3 indicate 1, 2 and 3 months after cellar storage, respectively. 0 indicates initial storage.",
+          "pages": [
+            5,
+            6
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      },
+      {
+        "evidence_id": "E5",
+        "candidate_id": "chunk:PAPER_005_C0027",
+        "kind": "document_chunk",
+        "content": {
+          "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+          "section": "2.4  挥发性物质组分变化",
+          "text": " The same as below图2  基于电子鼻的窖藏及冷藏鸭梨挥发性成分PCA 结果Fig. 2  PCA result of volatile components based on electronic nose in Yali pear during cellar and cold storage主成分1 Main axis (Variance: 65.40%)冷藏-3 Cold storage-3冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3 -460 -450 -440 -430 -420 -410 -400 -390 -1.130 -1.135 -1.140 -1.145 -1.150 -1.155 -1.160 -1.165 -1.170图3  基于电子鼻窖藏及冷藏鸭梨挥发性成分LDA 分析Fig. 3  LDA analysis of volatile components based on electronic nose in Yali pear during cellar and cold storage condition就鸭梨果皮而言，贮藏期内，鸭梨果皮中挥发性物质总量呈现先升高后降低的规律，且窖藏果皮明显高于同期冷藏果皮，其中差别比较明显的香气物质为酯类、醇类化合物，其含量高峰出现在贮藏2 个月，分别高于冷藏果实53.11、56.22 倍。具体成分表现为，窖藏鸭梨果皮中检出36 种成分，含量较高的物质为酯类、醛类、醇类、萜类，其中酯类为主要香气物质。酯类主要是乙酯和甲酯类，其中己酸乙酯、辛酸乙酯、丁酸乙酯、乙酸己酯、乙酸辛酯为主要成分，并且2-己烯酸乙酯、庚酸乙酯和(E, Z)-2,4-癸二烯酸乙酯等为窖藏过程中特有的酯类物质；醛类主要为E-2-己烯醛，以及新生成的(E, Z)-2,4-癸二烯醛；醇类主要为Z-4-癸烯醇、正辛醇和正癸醇；萜类主要是α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）。",
+          "pages": [
+            6
+          ],
+          "crop": [
+            "鸭梨"
+          ],
+          "region": [],
+          "applicable_stages": [
+            "储藏期"
+          ],
+          "evidence_level": "A",
+          "review_status": "layout_tables_and_agronomic_context_review_pending"
+        },
+        "scope_warnings": []
+      }
+    ],
+    "grounding_audit": {
+      "passed": true,
+      "checks": [
+        {
+          "field": "conclusion",
+          "verdict": "supported",
+          "reason": "结论中的排序与含量区间均直接来自所引用的E4：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1），且E4明确为鸭梨果皮、果肉酯类物质含量依次排序。"
+        },
+        {
+          "field": "basis",
+          "verdict": "supported",
+          "reason": "basis中关于E4的排序和数值区间与E4原文一致；关于E1的“果皮中挥发性物质含量较高”“窖藏鸭梨较冷藏时生成更多的乙酯类化合物”也直接见于E1原文，未超出引用证据。"
+        },
+        {
+          "field": "reasoning",
+          "verdict": "supported",
+          "reason": "reasoning说明问题要求果皮、果肉酯类物质含量高低顺序，E4直接给出完整排序，E1/E2/E3/E5未提供完整排序故不作为排序依据；该判断与各引用证据内容相符，未补造缺失路径。"
+        },
+        {
+          "field": "advice",
+          "verdict": "no_factual_claims",
+          "reason": "advice仅声明结论适用范围并建议补充信息，未提出可核查的事实、数值或操作建议，且无引用证据。"
+        }
+      ],
+      "method": "DeepSeek逐字段证据核查，非形式化证明或专家审定"
+    },
+    "validation": "引用格式规范化、编号校验及模型辅助证据核查；不是形式化蕴含证明"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E1",
+      "candidate_id": "chunk:PAPER_005_C0002",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "正文（未识别章节）",
+        "text": "【结果】冷藏期间，鸭梨果实硬度变化较小，SSC 上升，TA 含量下降。窖藏时，果实硬度下降比较明显，但对SSC 的影响较小，而TA 含量增加。与冷藏相比，窖藏下果实呼吸速率较高，乙烯释放高峰提前1 个月出现，且其峰值较高。电子鼻可有效区分两种贮藏方式下的挥发性物质，其中W1W、W5S、W2W、W1S 这4 种传感器对挥发性物质区分起主要作用；窖藏期间果实挥发性物质较多。鸭梨果皮和果肉的挥发性物质包含醛类、酯类、醇类、萜类、烷烃类等，且果皮中含量较高；窖藏果皮和果肉、冷藏果皮和果肉中分别检出36种和33 种、28 种和24 种挥发性物质，窖藏鸭梨较冷藏时生成更多的乙酯类化合物，其中己酸乙酯、辛酸乙酯、丁酸乙酯、（E,Z）2,4-癸二烯酸乙酯等为果皮主要香味物质，己酸乙酯、丁酸乙酯为果肉主要香味物质。相关基因的表达分析表明，与冷藏相比，窖藏明显上调鸭梨果皮和果肉ACC 氧化酶（PbACO2）、脂氧合酶（PbLOX1）和醇酰基转移酶（PbAAT1）相关基因的表达，下调乙烯不敏感转录因子（PbEIN3）的表达。【结论】在贮藏3 个月内，与冷藏鸭梨相比，窖藏条件明显促进乙烯生成（PbACO2）和香气合成（PbLOX1、PbAAT1）等基因的表达，此时果实具有较多的香气物质种类和较高含量，表现出香味浓郁的特点。",
+        "pages": [
+          1
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E2",
+      "candidate_id": "chunk:PAPER_005_C0030",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "窖藏鸭梨果肉中检出33 种挥发性物质成分，主要为酯类和萜类，未检出烷烃类物质，酯类主要为己酸乙酯、丁酸乙酯，萜类以α-法尼烯为主。冷藏鸭梨果肉中检出24 种挥发性物质成分，主要为烷烃类和醛类。烷烃类以癸烷为主，醛类以己醛为主（表5）。进一步相关分析表明，鸭梨果皮、果肉中醇类物质与酯类物质总量之间呈极显著正相关（r=0.9902、0.9599），说明酯类物质的生成与醇类物质向酯类的转化有密切关系。",
+        "pages": [
+          9
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E3",
+      "candidate_id": "chunk:PAPER_005_C0028",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "冷藏鸭梨果皮中检出28 种挥发性物质成分，含量较高的物质为醛类、烷烃、萜类等，其中醛类主要为己醛、反-2-己烯醛；酯类物质（主要是丁酯类）相对较少，而此时出现较多的烷烃类物质，且主要是癸烷，而窖藏却未检出烷烃类物质（表4）。",
+        "pages": [
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E4",
+      "candidate_id": "chunk:PAPER_005_C0026",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": "GC-MS 分析表明，鸭梨中挥发性物质主要为醛类、酯类、醇类、烷烃类、萜类化合物等。将两种贮藏方式同期果皮、果肉中挥发性物质进行比较表明，果肉中挥发性成分种类及同类别物质含量均少于同期果皮。贮藏期鸭梨酯类含量增加，香气物质增多。果皮、果肉酯类物质含量依次为：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1）（表4、表5）。中  国  农  业  科  学54 卷3.5 3.0 2.5 2.0 1.5 1.0 0.5冷藏-3 Cold storage-3主成分1 Main axis (Variance: 97.75%)冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3冷藏-1、冷藏-2、冷藏-3 分别为冷藏1 个月、2 个月、3 个月；窖藏-1、窖藏-2、窖藏-3 分别为窖藏1 个月、2 个月、3 个月。0 为贮藏初期。下同Cold storage-1, cold storage-2 and cold storage-3 indicate 1, 2 and 3 months after cold storage, respectively; Cellar storage-1, cellar storage-2 and cellar storage-3 indicate 1, 2 and 3 months after cellar storage, respectively. 0 indicates initial storage.",
+        "pages": [
+          5,
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    },
+    {
+      "evidence_id": "E5",
+      "candidate_id": "chunk:PAPER_005_C0027",
+      "kind": "document_chunk",
+      "content": {
+        "title": "窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析",
+        "section": "2.4  挥发性物质组分变化",
+        "text": " The same as below图2  基于电子鼻的窖藏及冷藏鸭梨挥发性成分PCA 结果Fig. 2  PCA result of volatile components based on electronic nose in Yali pear during cellar and cold storage主成分1 Main axis (Variance: 65.40%)冷藏-3 Cold storage-3冷藏-2 Cold storage-2冷藏-1 Cold storage-1窖藏-1 Cellar storage-1窖藏-2 Cellar storage-2窖藏-3 Cellar storage-3 -460 -450 -440 -430 -420 -410 -400 -390 -1.130 -1.135 -1.140 -1.145 -1.150 -1.155 -1.160 -1.165 -1.170图3  基于电子鼻窖藏及冷藏鸭梨挥发性成分LDA 分析Fig. 3  LDA analysis of volatile components based on electronic nose in Yali pear during cellar and cold storage condition就鸭梨果皮而言，贮藏期内，鸭梨果皮中挥发性物质总量呈现先升高后降低的规律，且窖藏果皮明显高于同期冷藏果皮，其中差别比较明显的香气物质为酯类、醇类化合物，其含量高峰出现在贮藏2 个月，分别高于冷藏果实53.11、56.22 倍。具体成分表现为，窖藏鸭梨果皮中检出36 种成分，含量较高的物质为酯类、醛类、醇类、萜类，其中酯类为主要香气物质。酯类主要是乙酯和甲酯类，其中己酸乙酯、辛酸乙酯、丁酸乙酯、乙酸己酯、乙酸辛酯为主要成分，并且2-己烯酸乙酯、庚酸乙酯和(E, Z)-2,4-癸二烯酸乙酯等为窖藏过程中特有的酯类物质；醛类主要为E-2-己烯醛，以及新生成的(E, Z)-2,4-癸二烯醛；醇类主要为Z-4-癸烯醇、正辛醇和正癸醇；萜类主要是α-法尼烯和6-甲基-5-庚烯-2-酮（MHO）。",
+        "pages": [
+          6
+        ],
+        "crop": [
+          "鸭梨"
+        ],
+        "region": [],
+        "applicable_stages": [
+          "储藏期"
+        ],
+        "evidence_level": "A",
+        "review_status": "layout_tables_and_agronomic_context_review_pending"
+      },
+      "scope_warnings": []
+    }
+  ],
+  "answer": {
+    "sufficient": true,
+    "conclusion": "该研究记录中，鸭梨果皮、果肉酯类物质含量从高到低依次为：窖藏下果皮＞窖藏下果肉＞冷藏下果皮＞冷藏下果肉  [E4] 。",
+    "basis": "[E4]明确记载：果皮、果肉酯类物质含量依次为：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1） [E4] 。[E1]亦指出果皮中挥发性物质含量较高，窖藏鸭梨较冷藏时生成更多的乙酯类化合物  [E1] 。",
+    "reasoning": "问题要求的是果皮、果肉酯类物质含量的高低顺序。[E4]直接给出了四种贮藏方式与部位组合的酯类含量区间，并已按从高到低排列，可直接引用  [E4] 。[E1]、[E2]、[E3]、[E5]分别涉及挥发性物质种类、主要成分及相关基因表达，未提供果皮与果肉酯类含量的完整排序，故不作为排序依据  [E1]  [E2]  [E3]  [E5] 。",
+    "advice": "该结论仅适用于该论文所述窖藏与冷藏试验条件，不构成当地生产指导。如需了解具体贮藏条件参数或品种差异，请补充相关信息。",
+    "citations": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ]
+  },
+  "citation_hit": 1,
+  "citation_source_hit": 1,
+  "entity_recall": 1.0,
+  "judge": {
+    "result": {
+      "correctness": "correct",
+      "reason": "回答直接给出果皮、果肉酯类物质含量从高到低的完整顺序，并附有与原文一致的数值区间，条件、方向均正确，无关键矛盾。",
+      "claims": [
+        {
+          "claim": "鸭梨果皮、果肉酯类物质含量从高到低依次为：窖藏下果皮＞窖藏下果肉＞冷藏下果皮＞冷藏下果肉。",
+          "status": "supported",
+          "reason": "E4原文明确记载该排序。"
+        },
+        {
+          "claim": "窖藏下果皮酯类物质含量为8.696—16.336 mg·kg-1。",
+          "status": "supported",
+          "reason": "E4原文明确给出该数值区间。"
+        },
+        {
+          "claim": "窖藏下果肉酯类物质含量为1.188—6.149 mg·kg-1。",
+          "status": "supported",
+          "reason": "E4原文明确给出该数值区间。"
+        },
+        {
+          "claim": "冷藏下果皮酯类物质含量为0.148—0.308 mg·kg-1。",
+          "status": "supported",
+          "reason": "E4原文明确给出该数值区间。"
+        },
+        {
+          "claim": "冷藏下果肉酯类物质含量为0.015—0.039 mg·kg-1。",
+          "status": "supported",
+          "reason": "E4原文明确给出该数值区间。"
+        },
+        {
+          "claim": "果皮中挥发性物质含量较高。",
+          "status": "supported",
+          "reason": "E1原文指出果皮中含量较高。"
+        },
+        {
+          "claim": "窖藏鸭梨较冷藏时生成更多的乙酯类化合物。",
+          "status": "supported",
+          "reason": "E1原文明确记载。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3385,
+      "completion_tokens": 334,
+      "total_tokens": 3719,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 2745
+    },
+    "model": "deepseek-flash",
+    "response_id": "f0d26e9d-83f9-4b78-9a5a-dfa6e46c94c0",
+    "seconds": 7.303535099999863,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": true,
+        "conclusion": "该研究记录中，鸭梨果皮、果肉酯类物质含量从高到低依次为：窖藏下果皮＞窖藏下果肉＞冷藏下果皮＞冷藏下果肉 [E4]。",
+        "basis": "E4明确记载：果皮、果肉酯类物质含量依次为：窖藏下果皮（8.696—16.336 mg·kg-1）＞窖藏下果肉（1.188—6.149 mg·kg-1）＞冷藏下果皮（0.148—0.308 mg·kg-1）＞冷藏下果肉（0.015—0.039 mg·kg-1）[E4]。E1亦指出果皮中挥发性物质含量较高，窖藏鸭梨较冷藏时生成更多的乙酯类化合物 [E1]。",
+        "reasoning": "问题要求的是果皮、果肉酯类物质含量的高低顺序。E4直接给出了四种贮藏方式与部位组合的酯类含量区间，并已按从高到低排列，可直接引用 [E4]。E1、E2、E3、E5分别涉及挥发性物质种类、主要成分及相关基因表达，未提供果皮与果肉酯类含量的完整排序，故不作为排序依据 [E1][E2][E3][E5]。",
+        "advice": "该结论仅适用于该论文所述窖藏与冷藏试验条件，不构成当地生产指导。如需了解具体贮藏条件参数或品种差异，请补充相关信息。",
+        "citations": [
+          "E4",
+          "E1"
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 2574,
+        "completion_tokens": 342,
+        "total_tokens": 2916,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2446
+      },
+      "model": "deepseek-flash",
+      "response_id": "486564b0-6da8-4344-a2dc-fc2be54a194c",
+      "seconds": 7.2647044000041205,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 20.95181460000458
+}

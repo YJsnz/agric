@@ -1,0 +1,151 @@
+[
+  {
+    "question": "与空气对照相比，低氧气调处理对鸭梨货架初期果皮组织中哪些乙烯合成关键基因的表达有显著抑制作用？",
+    "type": "factual",
+    "answer_quote": "与对照相比，采用低氧气调处理可显著抑制鸭梨货架初期果皮组织中PbACS1、PbACO1及PbACO3 表达",
+    "gold_entities": [
+      "鸭梨",
+      "PbACS1",
+      "PbACO1",
+      "PbACO3"
+    ]
+  },
+  {
+    "question": "低氧气调处理对鸭梨货架期间果皮组织中乙烯合成相关基因表达高峰的出现时间有何影响？",
+    "type": "factual",
+    "answer_quote": "推迟货架期间果皮组织中乙烯合成相关基因表达高峰",
+    "gold_entities": [
+      "鸭梨",
+      "乙烯合成相关基因"
+    ]
+  },
+  {
+    "question": "在鸭梨采后贮藏中，哪些乙烯合成相关基因的表达在不同O2处理下无明显规律？",
+    "type": "factual",
+    "answer_quote": "不同O2 处理下PbACS2、PbACS3 及PbACO2 表达无明显规律",
+    "gold_entities": [
+      "O2",
+      "PbACS2",
+      "PbACS3",
+      "PbACO2"
+    ]
+  },
+  {
+    "question": "贮藏150天时，鸭梨果皮组织中PbACS1相对表达量在哪些O2浓度处理下极低？",
+    "type": "factual",
+    "answer_quote": "贮藏150 d，1.0%—3.0% O2 处理PbACS1相对表达量极低",
+    "gold_entities": [
+      "贮藏150 d",
+      "1.0%—3.0% O2",
+      "PbACS1"
+    ]
+  },
+  {
+    "question": "贮藏150天时，鸭梨果皮组织中PbACS1相对表达量在哪些处理下较高？",
+    "type": "factual",
+    "answer_quote": "5.0%和10.0% O2 处理及空气对照PbACS1 相对表达量较高",
+    "gold_entities": [
+      "5.0% O2",
+      "10.0% O2",
+      "空气对照",
+      "PbACS1"
+    ]
+  },
+  {
+    "question": "气调贮藏的鸭梨果实中，PbACO1和PbACO3相对表达量与空气对照相比如何？",
+    "type": "factual",
+    "answer_quote": "气调贮藏果实PbACO1和PbACO3相对表达量均显著低于空气对照",
+    "gold_entities": [
+      "气调贮藏",
+      "PbACO1",
+      "PbACO3",
+      "空气对照"
+    ]
+  },
+  {
+    "question": "贮藏150天后货架10天，1.0%—3.0% O2处理的鸭梨果皮PbACS1相对表达量较出库时增长了多少倍？",
+    "type": "factual",
+    "answer_quote": "贮藏150 d 后货架10 d，1.0%— 3.0% O2 处理PbACS1 相对表达量较出库时增长近45 倍",
+    "gold_entities": [
+      "贮藏150 d",
+      "货架10 d",
+      "1.0%—3.0% O2",
+      "PbACS1"
+    ]
+  },
+  {
+    "question": "贮藏150天后货架10天，鸭梨果皮中PbACO1和PbACO3相对表达量有何变化？",
+    "type": "factual",
+    "answer_quote": "各处理PbACO1 和PbACO3相对表达量快速上升",
+    "gold_entities": [
+      "货架10 d",
+      "PbACO1",
+      "PbACO3"
+    ]
+  },
+  {
+    "question": "贮藏150天后货架10天，哪些O2处理的鸭梨果皮基因表达量显著高于10.0%及空气对照？",
+    "type": "factual",
+    "answer_quote": "5.0%及以下O2 处理基因表达量均显著高于10.0%及空气对照",
+    "gold_entities": [
+      "5.0% O2",
+      "10.0% O2",
+      "空气对照"
+    ]
+  },
+  {
+    "question": "随着贮藏期的延长，鸭梨果皮中乙烯合成相关基因表达水平如何变化？",
+    "type": "factual",
+    "answer_quote": "随着贮藏期的延长，乙烯合成相关基因表达水平上升",
+    "gold_entities": [
+      "贮藏期",
+      "乙烯合成相关基因"
+    ]
+  },
+  {
+    "question": "贮藏210天及货架7天时，空气处理的鸭梨果皮中哪个基因相对表达量达到峰值？",
+    "type": "factual",
+    "answer_quote": "贮藏210 d 及货架7 d，空气处理PbACS1 相对表达量达到峰值",
+    "gold_entities": [
+      "贮藏210 d",
+      "货架7 d",
+      "空气处理",
+      "PbACS1"
+    ]
+  },
+  {
+    "question": "贮藏210天及货架7天时，10% O2处理的鸭梨果皮中哪些基因相对表达量达到峰值？",
+    "type": "factual",
+    "answer_quote": "10% O2 处理PbACO1 和PbACO3 达到峰值",
+    "gold_entities": [
+      "10% O2",
+      "PbACO1",
+      "PbACO3"
+    ]
+  },
+  {
+    "question": "贮藏270天后货架7天，1.0—3.0% O2处理的鸭梨果皮中哪些基因仍保持相对较高水平？",
+    "type": "factual",
+    "answer_quote": "贮藏270 d 后货架7 d，1.0—3.0% O2 处理PbACS1 和PbACO1 仍保持相对较高水平",
+    "gold_entities": [
+      "贮藏270 d",
+      "货架7 d",
+      "1.0—3.0% O2",
+      "PbACS1",
+      "PbACO1"
+    ]
+  },
+  {
+    "question": "在鸭梨采后贮藏及货架期间，图4展示了不同O2浓度下哪些基因的表达情况？",
+    "type": "factual",
+    "answer_quote": "图4  不同O2浓度贮藏及货架期间PbACO1、PbACO3 及PbACS1 表达情况",
+    "gold_entities": [
+      "O2浓度",
+      "贮藏",
+      "货架",
+      "PbACO1",
+      "PbACO3",
+      "PbACS1"
+    ]
+  }
+]

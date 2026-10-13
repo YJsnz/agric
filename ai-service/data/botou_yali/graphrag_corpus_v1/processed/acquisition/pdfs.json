@@ -1,0 +1,22 @@
+[
+  {
+    "source_id": "PAPER_001",
+    "url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21248",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_001/original.pdf"
+  },
+  {
+    "source_id": "PAPER_002",
+    "url": "https://www.spgykj.com/cn/article/pdf/preview/10.13386/j.issn1002-0306.2013.15.074.pdf",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_002/original.pdf"
+  },
+  {
+    "source_id": "PAPER_004",
+    "url": "https://www.spkx.net.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=9726",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_004/original.pdf"
+  },
+  {
+    "source_id": "PAPER_005",
+    "url": "https://www.chinaagrisci.com/CN/article/downloadArticleFile.do?attachType=PDF&id=21870",
+    "path": "data/botou_yali/graphrag_corpus_v1/fulltext/papers/PAPER_005/original.pdf"
+  }
+]

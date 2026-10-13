@@ -14,7 +14,7 @@ defineEmits<{ select: []; focus: [] }>()
       <svg v-else-if="entity.type === 'field'" viewBox="0 0 24 24"><path d="M4 18c4-7 9-10 16-11M5 13c3 0 5 1 7 4M12 9c2 0 4 .8 6 3"/></svg>
       <svg v-else viewBox="0 0 24 24"><path d="M4 18V9l8-5 8 5v9M8 18v-6h8v6M7 8V5h3"/></svg>
     </span>
-    <span><strong>{{ entity.name }}</strong><small>{{ entity.metric }}</small><em><i></i>{{ entity.status === 'warning' ? '预警' : entity.status === 'attention' ? '关注' : '正常' }}</em></span>
+    <span><strong>{{ entity.name }}</strong><small>{{ entity.metric }}</small><em><i></i>{{ entity.status === 'warning' ? '预警' : entity.status === 'attention' ? '待核验' : entity.status === 'offline' ? '离线' : entity.status === 'danger' ? '异常' : '演示对象' }}</em></span>
   </button>
 </template>
 

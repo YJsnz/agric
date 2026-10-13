@@ -1,0 +1,60 @@
+{
+  "model_path": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-training\\wheat-vision\\runs\\wheat_head_yolo11n_v12\\weights\\best.pt",
+  "model_sha256": "be670bf83a377689fa6f82bde0cb545be2101d6868142a00e5560c2c2f4bdbea",
+  "best_epoch": 53,
+  "best_epoch_user_reported": 54,
+  "best_epoch_note": "CSV epoch is authoritative; user supplied 54 is retained separately.",
+  "val_metrics_from_training_csv": {
+    "precision": 0.90433,
+    "recall": 0.84388,
+    "map50": 0.92081,
+    "map50_95": 0.49065
+  },
+  "test_images": 432,
+  "test_instances": 19210,
+  "precision": 0.9372729238133554,
+  "recall": 0.8711675385076266,
+  "map50": 0.9420716607866151,
+  "map50_95": 0.5874689360017177,
+  "count_mae": 3.0787037037037037,
+  "count_rmse": 4.079079416840139,
+  "count_bias": -1.7083333333333333,
+  "count_pearson_r": 0.9510910974589155,
+  "count_r2": 0.884242905832544,
+  "count_confidence_threshold": 0.25,
+  "nms_iou": 0.7,
+  "max_det": 300,
+  "image_size": 640,
+  "ap_min_confidence": 0.001,
+  "ultralytics_version": "8.3.40",
+  "reference_absolute_differences": {
+    "precision": 0.000272923813355308,
+    "recall": 0.00016753850762663003,
+    "map50": 7.166078661513531e-05,
+    "map50_95": 0.00046893600171771244
+  },
+  "domain_metrics": [
+    {
+      "source_domain": "rres_1",
+      "image_count": 432,
+      "gt_boxes": 19210,
+      "pred_boxes": 18472,
+      "count_mae": 3.0787037037037037,
+      "count_rmse": 4.079079416840139,
+      "count_bias": -1.7083333333333333,
+      "count_pearson_r": 0.9510910974589155,
+      "count_r2": 0.884242905832544,
+      "precision": 0.9372729238133554,
+      "recall": 0.8711675385076266,
+      "map50": 0.9420716607866151,
+      "map50_95": 0.5874689360017177
+    }
+  ],
+  "worst_over_count": 10,
+  "worst_under_count": -17,
+  "count_mae_divided_by_mean_gt": 0.06923477355543987,
+  "recommend_freeze_v1": true,
+  "source_domain_comparison": "Not assessable: test contains rres_1 only.",
+  "evaluation_scope": "internal source-domain-separated test; not official GWHD test",
+  "input_integrity_verified": true
+}

@@ -186,3 +186,11 @@ body {
   border-color: #7c3aed;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.7 5.3a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 1 1 1.4-1.4L9 11.6l6.3-6.3a1 1 0 0 1 1.4 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
 }
+/* Website, authentication and documentation share the application typography. */
+body{font-family:var(--ui-font);background:var(--ui-page);color:var(--ui-ink)}
+.markdown-body h2,.markdown-body h3{font-family:var(--ui-font-display);font-weight:650;color:var(--ui-ink)}
+button,input,select,textarea{font-family:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--ui-brand);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+/* Entrance motion uses the same brief settling time as the workspaces. */
+.animate-element,.animate-testimonial{animation-duration:.38s}.animate-slide-right{animation-duration:.45s}
+.animate-delay-100{animation-delay:.03s}.animate-delay-200{animation-delay:.06s}.animate-delay-300{animation-delay:.09s}.animate-delay-400{animation-delay:.12s}.animate-delay-500{animation-delay:.15s}.animate-delay-600{animation-delay:.18s}.animate-delay-700{animation-delay:.21s}.animate-delay-800{animation-delay:.24s}.animate-delay-900{animation-delay:.27s}.animate-delay-1000{animation-delay:.3s}.animate-delay-1200,.animate-delay-1400{animation-delay:.32s}

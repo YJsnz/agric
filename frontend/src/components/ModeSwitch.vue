@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-defineProps<{ mode: 'assistant' | 'workspace'; dark?: boolean }>()
+defineProps<{ mode: 'assistant' | 'workspace' | 'knowledge'; dark?: boolean }>()
 const router = useRouter()
 </script>
 
 <template>
-  <div class="mode-switch" :class="{ dark }" aria-label="主模式切换">
-    <button :class="{ active: mode === 'assistant' }" @click="router.push('/assistant')"><svg viewBox="0 0 20 20"><path d="M10 2.5 11.4 7 16 8.5 11.4 10 10 14.5 8.6 10 4 8.5 8.6 7 10 2.5Z"/><path d="m15.5 13 .6 1.8 1.9.7-1.9.6-.6 1.9-.6-1.9-1.9-.6 1.9-.7.6-1.8Z"/></svg>智能问农</button>
-    <button :class="{ active: mode === 'workspace' }" @click="router.push('/workspaces/farm-01')"><svg viewBox="0 0 20 20"><rect x="2.5" y="3" width="6" height="6" rx="1"/><rect x="11.5" y="3" width="6" height="6" rx="1"/><rect x="2.5" y="12" width="6" height="5" rx="1"/><rect x="11.5" y="12" width="6" height="5" rx="1"/></svg>数据工作台</button>
+  <div class="mode-switch" :class="{ dark }" :style="{ '--mode-index': mode === 'assistant' ? 0 : mode === 'workspace' ? 1 : 2 }" aria-label="主模式切换">
+    <button :aria-pressed="mode === 'assistant'" :class="{ active: mode === 'assistant' }" @click="router.push('/assistant')"><svg viewBox="0 0 20 20"><path d="M10 2.5 11.4 7 16 8.5 11.4 10 10 14.5 8.6 10 4 8.5 8.6 7 10 2.5Z"/><path d="m15.5 13 .6 1.8 1.9.7-1.9.6-.6 1.9-.6-1.9-1.9-.6 1.9-.7.6-1.8Z"/></svg>智能问农</button>
+    <button :aria-pressed="mode === 'workspace'" :class="{ active: mode === 'workspace' }" @click="router.push('/workspaces/farm-01')"><svg viewBox="0 0 20 20"><rect x="2.5" y="3" width="6" height="6" rx="1"/><rect x="11.5" y="3" width="6" height="6" rx="1"/><rect x="2.5" y="12" width="6" height="5" rx="1"/><rect x="11.5" y="12" width="6" height="5" rx="1"/></svg>数据工作台</button>
+    <button :aria-pressed="mode === 'knowledge'" :class="{ active: mode === 'knowledge' }" @click="router.push('/multicrop?mode=knowledge')"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="2.5"/><circle cx="4" cy="4" r="1.5"/><circle cx="16" cy="4" r="1.5"/><circle cx="4" cy="16" r="1.5"/><circle cx="16" cy="16" r="1.5"/><path d="m5 5 3 3m4 0 3-3M5 15l3-3m4 0 3 3"/></svg>知识图谱</button>
   </div>
 </template>
 
@@ -16,8 +17,11 @@ const router = useRouter()
 button { border:0; padding:10px 22px; border-radius:999px; display:flex;align-items:center;gap:7px;background:transparent; cursor:pointer; font-family:var(--font-sans); font-size:13px; line-height:1.4; font-weight:650; letter-spacing:.1px; color:var(--text-secondary); transition:.2s ease; }
 button svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}
 button:first-child svg{fill:currentColor;stroke:none}
-button.active { color:white; background:linear-gradient(135deg,#4f6746,#267643); box-shadow:0 7px 18px rgba(44,93,55,.25); }
+button.active { color:white; }
+.mode-switch{position:relative;isolation:isolate;gap:0;background:var(--ui-brand-soft)}.mode-switch:before{content:"";position:absolute;z-index:-1;left:5px;top:5px;bottom:5px;width:calc(50% - 5px);border-radius:999px;background:var(--ui-brand);box-shadow:0 3px 9px #4d65f52b;transition:transform .38s cubic-bezier(.22,1,.36,1)}.workspace-active:before{transform:translateX(100%)}button{flex:1;justify-content:center;min-width:132px;white-space:nowrap;padding:9px 15px;transition:color .25s,transform .2s}button:active{transform:scale(.96)}button:focus-visible{outline:2px solid var(--ui-brand);outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.mode-switch:before,button{transition:none}}
 .dark { background:rgba(255,255,255,.11); border:1px solid rgba(255,255,255,.12); }
 .dark button { color:rgba(255,255,255,.72); }.dark button.active{color:white}
 @media(max-width:700px){ button{padding:9px 13px;font-size:12px} }
 </style>
+<style scoped>.mode-switch:before{width:calc((100% - 10px)/3);transform:translateX(calc(var(--mode-index)*100%))}button{min-width:116px}@media(max-width:700px){.mode-switch{width:min(300px,calc(100vw - 120px))}button{min-width:0;padding:8px 4px;font-size:11px;gap:0}button svg{display:none}}</style>

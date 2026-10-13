@@ -1,0 +1,178 @@
+[
+  {
+    "source_id": "J001",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=FD82CEB40F01CD82E05397BE0A0AC356",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J001.html",
+    "sha256": "c000d7b007f8120e39418a122d840db79d0a61fc809c843f341b3070f92e3cdc",
+    "links": [],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J002",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=91D99E4D8C852E24E05397BE0A0A3A10",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J002.html",
+    "sha256": "cac4cfe2d96bc330a0fef3a958cbba07c1cbe3342443de4ccb0b5a36a3b958e9",
+    "links": [],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J004",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=02A2B8A3D722AC3FE06397BE0A0AE14F",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J004.html",
+    "sha256": "c7c6dca512c1d8e0a41cc1cf8873a611f29450bf07ca4a1fd62658cf9f653830",
+    "links": [],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J005",
+    "url": "https://std.sacinfo.org.cn/gnocDb/queryInfo?id=0AB40C3F65E9FA7B3E5CB3A962D980A7280C6C59F188DAA1C1E28D20E34A3B73",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J005.html",
+    "sha256": "202a3c70b7ee782efb7f7006d3158ca9718501de13eb0d002af173586313a498",
+    "links": [],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J006",
+    "url": "https://std.sacinfo.org.cn/gnocDb/queryInfo?id=0AB40C3F65E9FA7B3E5CB3A962D980A7280C6C59F188DAA1C1E28D20E34A3B73",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J006.html",
+    "sha256": "202a3c70b7ee782efb7f7006d3158ca9718501de13eb0d002af173586313a498",
+    "links": [],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J007",
+    "url": "https://zgnyqx.ieda.org.cn/CN/abstract/abstract2883.shtml",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J007.html",
+    "sha256": "2910c7e1e8af43cc7d5bcd0d2ec56f558b50c8f891833067732827357c466898",
+    "links": [],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J008",
+    "url": "https://html.rhhz.net/linyekexue/html/20040634.htm",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J008.html",
+    "sha256": "4735595fe34b3913dbb202641081f2623790b1bb487fa73f8ff982b64570e2f0",
+    "links": [
+      "http://www.linyekexue.net/CN/article/downloadArticleFile.do?attachType=PDF&id=5742"
+    ],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J009",
+    "url": "https://a.xueshu.baidu.com/scholarID/CN-BX75KALJ",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J009.html",
+    "sha256": "ce0dea037d38289e433b50a378e795f739fc9ae7695ed21849e7e84ae5d6291e",
+    "links": [
+      "https://bj.bcebos.com/v1/ps-scholar-amis-standard/archived/2021-4/1617263148292/BaiduScholar-20210401.pdf"
+    ],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J010",
+    "url": "https://a.xueshu.baidu.com/scholarID/CN-BX75KALJ",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J010.html",
+    "sha256": "2a11edf482500e3577d97daef8a8ded06af0f458a876af63ec8d9fa0e5d712f4",
+    "links": [
+      "https://bj.bcebos.com/v1/ps-scholar-amis-standard/archived/2021-4/1617263148292/BaiduScholar-20210401.pdf"
+    ],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J011",
+    "url": "https://m.fx361.com/news/2021/0628/12785230.html",
+    "fulltext_available": false,
+    "error": "403 Client Error: Forbidden for url: https://m.fx361.com/news/2021/0628/12785230.html"
+  },
+  {
+    "source_id": "J012",
+    "url": "https://cnki.istiz.org.cn/kcms/detail/detail.aspx?dbcode=CJFQ&dbname=CJFD1993&filename=HBLY199301008",
+    "fulltext_available": false,
+    "error": "403 Client Error: Forbidden for url: https://cnki.istiz.org.cn/kcms/detail/detail.aspx?dbcode=CJFQ&dbname=CJFD1993&filename=HBLY199301008"
+  },
+  {
+    "source_id": "J015",
+    "url": "https://www.spkx.net.cn/CN/Y2004/V25/I10/319",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J015.html",
+    "sha256": "942c1c5e9135894d8ab2bacb26a74ff9eafe50687fec9b27f9f713773c3553d9",
+    "links": [],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J017",
+    "url": "https://html.rhhz.net/linyekexue/html/20070907.htm",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J017.html",
+    "sha256": "fd748f109e44c40bddbbcb051d2cb6dba9ea2311dcf8670705ae245c40ddcb25",
+    "links": [
+      "http://www.linyekexue.net/CN/article/downloadArticleFile.do?attachType=PDF&id=5567"
+    ],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J018",
+    "url": "https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml",
+    "fulltext_available": false,
+    "error": "403 Client Error: Forbidden for url: https://yllhj.beijing.gov.cn/ztxx/bjssylcpzlaqjdgl/jsyd/lg/201510/t20151013_120293.shtml"
+  },
+  {
+    "source_id": "J019",
+    "url": "https://cnki.istiz.org.cn/kcms/detail/detailall.aspx?dbcode=CJFQ&dbname=CJFD2025&filename=ljmg202511011",
+    "fulltext_available": false,
+    "error": "403 Client Error: Forbidden for url: https://cnki.istiz.org.cn/kcms/detail/detailall.aspx?dbcode=CJFQ&dbname=CJFD2025&filename=ljmg202511011"
+  },
+  {
+    "source_id": "J001_fulltext",
+    "url": "https://dbba.sacinfo.org.cn/portal/download/123819f8f0d791d91c4aee22232a0ca43871038e81d9152d8f9c182b8ddd8df0",
+    "fulltext_available": true,
+    "local_path": "evidence\\raw\\J001_fulltext.pdf",
+    "sha256": "33756509af58a1dc413914543cae4597a5ecf0924380771da90e2719319f6b4e",
+    "pages": 10,
+    "review_status": "fulltext_requires_review"
+  },
+  {
+    "source_id": "J007_fulltext",
+    "url": "https://zgnyqx.ieda.org.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=2883",
+    "fulltext_available": true,
+    "local_path": "evidence\\raw\\J007_fulltext.pdf",
+    "sha256": "e0ba797bd5088be25e9a1c296e1ee720556a8691c96c99e3b44a8100de64b2b5",
+    "pages": 3,
+    "review_status": "fulltext_requires_review"
+  },
+  {
+    "source_id": "J002_cas",
+    "url": "https://sjziam.cas.cn/sourcedb/zw/bz/202212/t20221202_6559084.html",
+    "fulltext_available": false,
+    "local_path": "evidence\\raw\\J002_cas.html",
+    "sha256": "937aaeb62a256297b8492d1246a0cd156af03446439b30004e8156c9d6e7948f",
+    "links": [],
+    "review_status": "landing_page_requires_review"
+  },
+  {
+    "source_id": "J008_pdf",
+    "url": "https://www.linyekexue.net/CN/article/downloadArticleFile.do?attachType=PDF&id=5742",
+    "fulltext_available": true,
+    "local_path": "evidence\\raw\\J008_pdf.pdf",
+    "sha256": "a85f3dcf0d8f85209730548ed910dcd0b50ae7633096fa7392d113255cf6b824",
+    "pages": 4,
+    "review_status": "fulltext_requires_review"
+  },
+  {
+    "source_id": "J017_pdf",
+    "url": "https://www.linyekexue.net/CN/article/downloadArticleFile.do?attachType=PDF&id=5567",
+    "fulltext_available": true,
+    "local_path": "evidence\\raw\\J017_pdf.pdf",
+    "sha256": "145e66b394ecdc2b7bfd8edad033725589e74f4bda3cbeb50384a12eeb81008d",
+    "pages": 7,
+    "review_status": "fulltext_requires_review"
+  }
+]

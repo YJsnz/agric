@@ -1,0 +1,250 @@
+[
+  {
+    "source_id": "W001",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=F9350671CBC8B511E05397BE0A0AE4A7",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W001.html",
+    "sha256": "179b88eb3a73656f74335400ddc506aef0b61e10fc03dc57262c326f22d9e37d",
+    "links": []
+  },
+  {
+    "source_id": "W002",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39A5186C58B95ACAE06397BE0A0ADABE",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W002.html",
+    "sha256": "89ef828aa52fdca013a5e56cfe86231c3e9252b9ee81fd1db8953c6ba4b356cd",
+    "links": []
+  },
+  {
+    "source_id": "W003",
+    "url": "https://dbba.sacinfo.org.cn/rnDetail/0d310eea2e6bb62171fec978faedf7ef47409f9eaa2296c6c908616c299cf68c",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W003.html",
+    "sha256": "2e601ed253de62790108ffffb379ebe8e78b4c5d59d86a2743ee738013716b62",
+    "links": [
+      "/rndownload/0d310eea2e6bb62171fec978faedf7ef47409f9eaa2296c6c908616c299cf68c"
+    ]
+  },
+  {
+    "source_id": "W004",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A12F625E06397BE0A0A538A",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W004.html",
+    "sha256": "9e7e267eb5662980e4472d96ef16dd40e397d4c2b1650fbfbd3811f5b1d86b53",
+    "links": []
+  },
+  {
+    "source_id": "W005",
+    "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W005.html",
+    "sha256": "9d74316eb5e2e91b37f09a305caf73f3a29adc75ed51806ef56288fad68cfa80",
+    "links": [
+      "/rndownload/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+    ]
+  },
+  {
+    "source_id": "W006",
+    "url": "https://dbba.sacinfo.org.cn/rnDetail/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W006.html",
+    "sha256": "9d74316eb5e2e91b37f09a305caf73f3a29adc75ed51806ef56288fad68cfa80",
+    "links": [
+      "/rndownload/be5ca3aa379a9767481274cb5f0077bc946601316422946b1fc3b58827f6d18c"
+    ]
+  },
+  {
+    "source_id": "W007",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=108A4A5041587A0CE06397BE0A0A9183",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W007.html",
+    "sha256": "367845e67579e71be06a12b1d30626fc3b920b5700ca0119075da6c3c136dda3",
+    "links": []
+  },
+  {
+    "source_id": "W008",
+    "url": "https://www.casb.org.cn/CN/abstract/abstract31429.shtml",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W008.html",
+    "sha256": "605e906c493e46b3a82ed37182688e60841a144d74cea692b43036d749523812",
+    "links": [
+      "https://www.casb.org.cn/CN/article/showDownloadTopList.do",
+      "https://www.casb.org.cn/CN/article/showDownloadTopList.do"
+    ]
+  },
+  {
+    "source_id": "W009",
+    "url": "https://jcnj.cbpt.cnki.net/portal/journal/portal/client/paper/e277469f354b0eb5d2edaec045997e38",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W009.html",
+    "sha256": "4a887448b628cc7d6de76b7ea8b57c55a9309a28983e6d7e5e2683bad994d822",
+    "links": [],
+    "review_note": "公开期刊页提示“如需获取全文，请访问cnki.net”；未取得全文，不入已核验图谱或向量索引。"
+  },
+  {
+    "source_id": "W010",
+    "url": "https://xdnckj.cbpt.cnki.net/portal/journal/portal/client/paper/1b7651fc5f528d3c5d39128a5d597ea6",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W010.html",
+    "sha256": "be8e03e27d8175e2ada2b037213ef0bab0c934f22bc67979a10fb5914e6ab829",
+    "links": [
+      "https://xdnckj.cbpt.cnki.net/portal/journal/portal/client/download/HBNK_54253c13-816a-4cda-85b4-048f7444fa78?title=下载中心"
+    ],
+    "review_note": "公开期刊页提示“如需获取全文，请访问cnki.net”；未取得全文，不入已核验图谱或向量索引。"
+  },
+  {
+    "source_id": "W011",
+    "url": "https://doi.org/10.12357/cjea.20250732",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W011.html",
+    "sha256": "49809e43dfddcd6a599feed82b3f371089603f10f310360e831c8759d5582765",
+    "links": [
+      "/supplement/3c111e29-6abf-48ae-8bb2-bf3aa1344879/《中国生态农业学报（中英文）》论文模版2020.pdf",
+      "/supplement/3c111e29-6abf-48ae-8bb2-bf3aa1344879/《中国生态农业学报（中英文）》论文模版2020.pdf"
+    ]
+  },
+  {
+    "source_id": "W012",
+    "url": "https://www.agri.cn/zx/xxlb/202403/t20240306_8613636.htm",
+    "status": "fulltext_required",
+    "error": "403 Client Error: Forbidden for url: https://www.agri.cn/zx/xxlb/202403/t20240306_8613636.htm"
+  },
+  {
+    "source_id": "W013",
+    "url": "https://www.cas.cn/cm/202305/t20230524_4889471.shtml",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W013.html",
+    "sha256": "c3864ebbc2c29e23a03e01134491cf3b3adb113357a5400d2449e132d94b0470",
+    "links": []
+  },
+  {
+    "source_id": "W014",
+    "url": "https://ifst.caas.cn/pub/iappst/xwzx/mtbd/37812bb40dc6445c88da99ccb6289841.htm",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W014.html",
+    "sha256": "3b96037addf4f1f926ab0b46b4a60d4d20f70be02b4fa73db382b3585f0732d0",
+    "links": []
+  },
+  {
+    "source_id": "W015",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailedCNF?id=39CDD3157A20F625E06397BE0A0A538A",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W015.html",
+    "sha256": "59a231d82bde9f3f5580e6219f5ca4184aa9d93ca339a0ddac4cca2ea2c2f32c",
+    "links": []
+  },
+  {
+    "source_id": "W016",
+    "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=39CDD3157A1FF625E06397BE0A0A538A",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W016.html",
+    "sha256": "0318e8ef4dca06b8ab106e588e790d8c275e4acf73db2abf0f8d36c7f073d4ff",
+    "links": []
+  },
+  {
+    "source_id": "W017",
+    "url": "https://njyj.cbpt.cnki.net/portal/journal/portal/client/paper/c3487720ec2ed1f0e14e056858fdc388",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W017.html",
+    "sha256": "909c1f4d4ded1f1a9c0082c3a2e7f140c7988375e402c3ba73208624e1fce187",
+    "links": []
+  },
+  {
+    "source_id": "W018",
+    "url": "https://njyj.cbpt.cnki.net/portal/journal/portal/client/paper/41be5e98ceab236878a2f4a884dac792",
+    "status": "fulltext_required",
+    "file": "evidence\\raw\\W018.html",
+    "sha256": "6a73ec29d9249bc23c380f27232ee2bbf58bf2884fb639e65809f3e09a96d258",
+    "links": []
+  },
+  {
+    "source_id": "W008_fulltext",
+    "url": "https://www.casb.org.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=31429",
+    "status": "fulltext_downloaded_requires_content_review",
+    "file": "evidence\\raw\\W008_fulltext.pdf",
+    "sha256": "ccd8568ea80a08c88aea6a66a76f88fba99fc7f2727a1524651639d5de624066",
+    "pages": 5,
+    "review_note": "已核对PDF题名与编号；仅reviewed_chunks内逐页定位片段参与当前版本，不自动审核整份资料。"
+  },
+  {
+    "source_id": "W001_fulltext",
+    "url": "https://dbba.sacinfo.org.cn/portal/download/5293320e1807a0243891b46c07eb24f1d2a752250e957014c796211a3edb537c",
+    "status": "fulltext_downloaded_requires_content_review",
+    "file": "evidence\\raw\\W001_fulltext.pdf",
+    "sha256": "9893ee68a22e6e93fd43eb57f0294a869da1256891fd282fd483903becb2a306",
+    "pages": 7,
+    "review_note": "已核对PDF题名与编号；仅reviewed_chunks内逐页定位片段参与当前版本，不自动审核整份资料。"
+  },
+  {
+    "source_id": "W002_fulltext",
+    "url": "https://dbba.sacinfo.org.cn/portal/download/d6983fd942b294ef9edddb534e01ee8f8f9ddab9831a6e76ce22c94455b3e300",
+    "status": "fulltext_downloaded_requires_content_review",
+    "file": "evidence\\raw\\W002_fulltext.pdf",
+    "sha256": "56d7e9f8a0e5715573e0b39a29fdee4fcd8bd5bbd8cb50a17b5a0f08ad1b7f21",
+    "pages": 6,
+    "review_note": "已核对PDF题名与编号；仅reviewed_chunks内逐页定位片段参与当前版本，不自动审核整份资料。"
+  },
+  {
+    "source_id": "W003_fulltext",
+    "url": "https://dbba.sacinfo.org.cn/portal/download/d6983fd942b294ef9edddb534e01ee8fd95a5b452db9abb79b1e64e60a5da305",
+    "status": "fulltext_downloaded_requires_content_review",
+    "file": "evidence\\raw\\W003_fulltext.pdf",
+    "sha256": "ebafb4eacec82641350574f79c98cbf6f94d34766f2cd8fa150354c6b744626b",
+    "pages": 6,
+    "review_note": "已核对PDF题名与编号；仅reviewed_chunks内逐页定位片段参与当前版本，不自动审核整份资料。"
+  },
+  {
+    "source_id": "W004_fulltext",
+    "url": "https://dbba.sacinfo.org.cn/portal/download/5afa733b733a10cb929ce2cfa6117a2c93a000d935b3ea44bde4dab1fa12fcb2",
+    "status": "fulltext_downloaded_requires_content_review",
+    "file": "evidence\\raw\\W004_fulltext.pdf",
+    "sha256": "3558c751f3f002c44d79068d4a17a7befe9c65a5527907b8f1f24f63a37a182b",
+    "pages": 5,
+    "review_note": "已核对PDF题名与编号；仅reviewed_chunks内逐页定位片段参与当前版本，不自动审核整份资料。"
+  },
+  {
+    "source_id": "W005_fulltext",
+    "url": "https://dbba.sacinfo.org.cn/portal/download/5afa733b733a10cb929ce2cfa6117a2c32527753425b78967f2ff90e6b2aaa84",
+    "status": "fulltext_downloaded_requires_content_review",
+    "file": "evidence\\raw\\W005_fulltext.pdf",
+    "sha256": "bf79887b41951cc509f283faf820712abb5ac77c095d3af7fc6486d358d46992",
+    "pages": 5,
+    "review_note": "已核对PDF题名与编号；仅reviewed_chunks内逐页定位片段参与当前版本，不自动审核整份资料。"
+  },
+  {
+    "source_id": "W006_fulltext",
+    "url": "https://dbba.sacinfo.org.cn/portal/download/95858e46abe261f0bce5dbfb06a51c57e7eedaa20d4bb0cb3ee371faf013cc8d",
+    "status": "fulltext_downloaded_requires_content_review",
+    "file": "evidence\\raw\\W006_fulltext.pdf",
+    "sha256": "1694577506a5cd6563623bf6ca53c8e3523a4cf61aad72bc20bf2b7df62a58e4",
+    "pages": 4,
+    "review_note": "已核对PDF题名与编号；仅reviewed_chunks内逐页定位片段参与当前版本，不自动审核整份资料。"
+  },
+  {
+    "source_id": "W015_fulltext",
+    "url": "https://dbba.sacinfo.org.cn/portal/download/95858e46abe261f0bce5dbfb06a51c5786a3ee9222a8691656f647ab0a249d0d",
+    "status": "fulltext_downloaded_requires_content_review",
+    "file": "evidence\\raw\\W015_fulltext.pdf",
+    "sha256": "0eb4d46fbee6f530eab339002339459900b8e1b7f3b62f93c81cd28ba1f1758e",
+    "pages": 5,
+    "review_note": "已核对PDF题名与编号；仅reviewed_chunks内逐页定位片段参与当前版本，不自动审核整份资料。"
+  },
+  {
+    "source_id": "W016_fulltext",
+    "url": "https://dbba.sacinfo.org.cn/portal/download/95858e46abe261f0bce5dbfb06a51c5714aada6518a7b31e91c021843b26fcea",
+    "status": "fulltext_downloaded_requires_content_review",
+    "file": "evidence\\raw\\W016_fulltext.pdf",
+    "sha256": "e196c2fb953a74154fbeed0d3e217eb1989e328be0c08617b2e30722db0eea38",
+    "pages": 5,
+    "review_note": "已核对PDF题名与编号；仅reviewed_chunks内逐页定位片段参与当前版本，不自动审核整份资料。"
+  },
+  {
+    "source_id": "W011_fulltext",
+    "url": "https://www.ecoagri.ac.cn/cn/article/pdf/preview/10.12357/cjea.20250732.pdf",
+    "status": "fulltext_downloaded_requires_content_review",
+    "file": "evidence\\raw\\W011_fulltext.pdf",
+    "sha256": "7fc229ccbba9611e825b37baff02ad3284e72b91fcf931f78ca02278dec08e16",
+    "pages": 14,
+    "review_note": "已核对PDF题名与编号；仅reviewed_chunks内逐页定位片段参与当前版本，不自动审核整份资料。"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "approved": [
+    {
+      "original_id": "PQA_0347",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，根据果实挥发性香气物质测定结果，哪些基因的表达量与香气变化模式呈相似变化规律？",
+      "answer_quote": "根据果实挥发性香气物质测定结果，PbAAT1、PbLOX1 表达量与香气变化模式呈相似变化规律。",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0348",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，与PbAAT1表达量呈显著正相关的基因有哪些？",
+      "answer_quote": "与PbAAT1 表达量呈显著正相关的基因有PbLOX1、PbLOX6 和PbLOX8",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0349",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，与PbAAT1表达量呈显著负相关的基因有哪些？",
+      "answer_quote": "与PbAAT1 表达量呈显著负相关的基因有PbEIN3、PbADH2、PbADH3 和PbADH5",
+      "type": "factual"
+    },
+    {
+      "original_id": "PQA_0350",
+      "question": "根据《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》的研究记录，与PbLOX1表达量呈显著正相关的基因有哪些？",
+      "answer_quote": "与PbLOX1 表达量呈显著正相关的基因有PbACO2、PbETR2、PbAAT1 和PbLOX8",
+      "type": "factual"
+    }
+  ],
+  "rejected": []
+}

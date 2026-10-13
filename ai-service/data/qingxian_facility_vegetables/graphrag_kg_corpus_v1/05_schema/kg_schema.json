@@ -1,0 +1,32 @@
+{
+  "node_types": [
+    "Region",
+    "Crop",
+    "Facility",
+    "GrowthStage",
+    "Organ",
+    "Symptom",
+    "Disease",
+    "Pest",
+    "EnvironmentalFactor",
+    "ManagementFactor",
+    "Intervention",
+    "Source"
+  ],
+  "relation_types": [
+    "HAS_INDUSTRY",
+    "INCLUDES_CROP",
+    "GROWN_IN",
+    "HAS_SYMPTOM",
+    "AFFECTS_ORGAN",
+    "AFFECTS_CROP",
+    "INCREASES_RISK_OF",
+    "DECREASES_RISK_OF",
+    "HAS_MANAGEMENT_DOMAIN",
+    "HAS_INTERVENTION_DOMAIN",
+    "CONTROLS",
+    "REGULATES",
+    "SUPPORTED_BY"
+  ],
+  "rule": "任何 Disease/Pest 风险、症状、环境因果、干预效果边必须绑定 source_id 和 evidence_text；没有原文证据不得创建强因果边。"
+}

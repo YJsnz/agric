@@ -1,0 +1,86 @@
+{
+  "id": "QA_0054",
+  "arm": "A",
+  "candidate_ids": [],
+  "service_response": {
+    "status": "insufficient_evidence"
+  },
+  "evidence": [],
+  "answer": {
+    "sufficient": false,
+    "conclusion": "无法确定具体延迟气调时间",
+    "basis": "未提供该论文的原文或检索证据，我无法确认其中试库黑心病跟踪调查中缓慢降温结合延迟气调的具体时间参数。",
+    "reasoning": "问题要求引用特定论文中的具体实验参数，但证据列表为空，且我自身知识中不包含该论文的详细数据，因此不能给出确切数字。",
+    "advice": "请提供该论文原文或相关段落，或通过文献数据库检索该论文以获取准确信息。",
+    "citations": []
+  },
+  "citation_hit": 0,
+  "citation_source_hit": 0,
+  "entity_recall": 0.6666666666666666,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出具体延迟气调时间，仅表示无法确定；而参考答案明确为降温后30—35 d，因此属于未作答。",
+      "claims": [
+        {
+          "claim": "未提供该论文的原文或检索证据，无法确认其中试库黑心病跟踪调查中缓慢降温结合延迟气调的具体时间参数。",
+          "status": "contradicted",
+          "reason": "提供的original_evidence中明确包含该论文原文段落，写明缓慢降温结合延迟气调（降温后30—35 d），因此并非无证据。"
+        },
+        {
+          "claim": "证据列表为空。",
+          "status": "contradicted",
+          "reason": "original_evidence字段提供了相关论文原文段落，并非空证据列表。"
+        },
+        {
+          "claim": "我自身知识中不包含该论文的详细数据，因此不能给出确切数字。",
+          "status": "unverifiable",
+          "reason": "该断言涉及回答系统自身知识范围，提供资料无法验证；但即使如此，所给原文证据已足以回答。"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 720,
+      "completion_tokens": 206,
+      "total_tokens": 926,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 336
+    },
+    "model": "deepseek-flash",
+    "response_id": "895ca59a-337f-46cc-91d5-a8fafc8d45d7",
+    "seconds": 6.232812600006582,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "generation_calls": [
+    {
+      "result": {
+        "sufficient": false,
+        "conclusion": "无法确定具体延迟气调时间",
+        "basis": "未提供该论文的原文或检索证据，我无法确认其中试库黑心病跟踪调查中缓慢降温结合延迟气调的具体时间参数。",
+        "reasoning": "问题要求引用特定论文中的具体实验参数，但证据列表为空，且我自身知识中不包含该论文的详细数据，因此不能给出确切数字。",
+        "advice": "请提供该论文原文或相关段落，或通过文献数据库检索该论文以获取准确信息。",
+        "citations": []
+      },
+      "usage": {
+        "prompt_tokens": 208,
+        "completion_tokens": 119,
+        "total_tokens": 327,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 208
+      },
+      "model": "deepseek-flash",
+      "response_id": "0a4e6ec5-8c79-4015-a46e-cf5e6f6aed23",
+      "seconds": 5.8352387999912025,
+      "attempts": 1,
+      "prior_errors": []
+    }
+  ],
+  "seconds": 12.070042799998191
+}

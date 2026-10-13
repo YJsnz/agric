@@ -1,0 +1,56 @@
+{
+  "id": "QA_0219",
+  "arm": "A",
+  "generation": {
+    "result": {
+      "sufficient": false,
+      "conclusion": "无法确定该试验中鸭梨果实采后当天进行了什么处理。",
+      "basis": "未提供该论文的具体内容，且我的知识库中不包含该论文的详细试验步骤。",
+      "reasoning": "问题要求依据特定论文的试验细节作答，但证据列表为空，我无法获取或回忆该论文中关于采后当天处理的信息，因此不能给出确切答案。",
+      "advice": "请查阅《窖藏和冷藏条件下鸭梨挥发性物质及其相关基因表达分析》原文的‘材料与方法’部分，以获取采后当天处理的准确描述。",
+      "citations": []
+    },
+    "usage": {
+      "prompt_tokens": 165,
+      "completion_tokens": 143,
+      "total_tokens": 308,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 165
+    },
+    "model": "deepseek-flash",
+    "response_id": "e7215c2f-25df-4efb-bc98-a6c0d1394993",
+    "seconds": 5.604606800000056,
+    "attempts": 1,
+    "prior_errors": []
+  },
+  "evidence": [],
+  "candidate_ids": [],
+  "citation_gold_chunk_hit": 0,
+  "citation_gold_source_hit": 0,
+  "answer_entity_surface_recall": 0.3333333333333333,
+  "judge": {
+    "result": {
+      "correctness": "abstain",
+      "reason": "回答未给出任何处理信息，明确表示无法确定，属于拒答；而该题有明确可回答的参考答案（解袋、分拣、除去病虫害和残次果），因此不是正确作答。",
+      "claims": []
+    },
+    "usage": {
+      "prompt_tokens": 741,
+      "completion_tokens": 59,
+      "total_tokens": 800,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 613
+    },
+    "model": "deepseek-flash",
+    "response_id": "65db13d0-21e4-449b-a716-926a3f57605e",
+    "seconds": 5.719723199999862,
+    "attempts": 1,
+    "prior_errors": []
+  }
+}

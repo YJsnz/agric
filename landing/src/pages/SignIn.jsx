@@ -65,7 +65,7 @@ export default function SignIn() {
     <SignInPage
       mode="sign-in"
       title="欢迎回来"
-      description="登录你的田言耕智账号，继续查看你的农场。"
+      description="登录你的盐田丰语账号，继续查看你的农场。"
       heroImageSrc="/assets/uc.png"
       testimonials={TESTIMONIALS}
       error={error}
@@ -74,7 +74,7 @@ export default function SignIn() {
       faceBusy={faceBusy}
       onFaceLogin={handleFaceLogin}
       onSignIn={handleSignIn}
-      onResetPassword={() => { window.location.href = 'mailto:support@tianyan.agri?subject=田言耕智账号密码重置' }}
+      onResetPassword={() => { window.location.href = 'mailto:support@tianyan.agri?subject=盐田丰语账号密码重置' }}
       onCreateAccount={() => navigate('/sign-up')}
       backHref="/#/"
       backLabel="返回官网"
