@@ -1,11 +1,12 @@
 <script setup>
-import {ref,computed,watch} from 'vue'
+import {ref,computed,watch,onBeforeUnmount} from 'vue'
 import client from '../api/client'
 const props=defineProps({crop:String})
 const graph=ref(null),selected=ref(''),filter=ref(''),question=ref(''),answer=ref(null),error=ref(''),busy=ref(false)
 const params=new URLSearchParams(location.search)
 question.value=(params.get('question')||'').slice(0,500)
-let generation=0
+let generation=0,controller,graphCrop=''
+const loading=ref(false)
 const nodes=computed(()=>(graph.value?.nodes||[]).filter(n=>String(n.name||n.id).includes(filter.value.trim())))
 const nodeMap=computed(()=>Object.fromEntries((graph.value?.nodes||[]).map(n=>[n.id,n.name||n.id])))
 const edges=computed(()=>(graph.value?.edges||[]).filter(e=>e.source===selected.value||e.target===selected.value).slice(0,30))
@@ -18,11 +19,26 @@ const answerText=computed(()=>{
  const value=answer.value?.user_answer||answer.value?.answer||answer.value?.graphrag?.answer||answer.value?.message
  return typeof value==='string'?value:value?JSON.stringify(value,null,2):''
 })
+function pause(ms,signal){return new Promise(resolve=>{const done=()=>{clearTimeout(timer);signal.removeEventListener('abort',done);resolve()};const timer=setTimeout(done,ms);signal.addEventListener('abort',done,{once:true})})}
 async function load(){
- const current=++generation;graph.value=null;answer.value=null;selected.value='';error.value=''
- try{const data=(await client.get('/api/graph',{params:{crop:props.crop}})).data;if(current===generation){graph.value=data;selected.value=data.nodes?.some(n=>n.id===params.get('entity'))?params.get('entity'):data.edges?.[0]?.source||data.nodes?.[0]?.id||''}}
- catch(e){if(current===generation)error.value=requestError(e,'图谱服务暂不可用，请检查 AI 服务与图谱数据库后重试。')}
+ controller?.abort();controller=new AbortController();const signal=controller.signal,current=++generation,crop=props.crop,deadline=Date.now()+75000
+ if(graphCrop!==crop){graph.value=null;selected.value=''}answer.value=null;error.value='';loading.value=true
+ try{
+  for(let attempt=0;attempt<6;attempt++){
+   try{
+    const data=(await client.get('/api/graph',{params:{crop},signal,timeout:Math.max(1000,Math.min(60000,deadline-Date.now()))})).data
+    if(current===generation){graph.value=data;graphCrop=crop;selected.value=data.nodes?.some(n=>n.id===selected.value)?selected.value:data.nodes?.some(n=>n.id===params.get('entity'))?params.get('entity'):data.edges?.[0]?.source||data.nodes?.[0]?.id||''}
+    return
+   }catch(e){
+    if(signal.aborted||current!==generation)return
+    if(Date.now()>=deadline||attempt===5||[400,401,403,404].includes(e.response?.status)){error.value=requestError(e,'知识服务暂不可用，请检查服务日志后重试。');return}
+    await pause(Math.max(0,Math.min(6000,2000*(attempt+1),deadline-Date.now())),signal)
+    if(signal.aborted)return
+   }
+  }
+ }finally{if(current===generation)loading.value=false}
 }
+onBeforeUnmount(()=>{generation++;controller?.abort()})
 function requestError(e,fallback){
  if(e.response?.status===401)return '登录已失效，请返回平台重新登录后加载图谱。'
  const detail=e.response?.data?.error||e.response?.data?.message
@@ -40,8 +56,8 @@ watch(()=>props.crop,load,{immediate:true})
 </script>
 <template>
 <main class="knowledge">
-<section class="hero"><div><div class="eyebrow">农业知识 / {{cropName}}</div><h1>多作物知识工作台</h1><p>从症状找到关联，让每一条建议有据可循。</p></div><button class="refresh" @click="load">↻ 刷新图谱</button></section>
-<div class="graph-summary"><span class="status-dot"></span><span>{{graph?'图谱已连接':'正在连接图谱'}}</span><span class="summary-divider"></span><strong>{{graph?.nodes?.length||0}}</strong><span>知识实体</span><strong>{{graph?.edges?.length||0}}</strong><span>关联关系</span><span class="summary-caption">{{cropName}} · 独立作物知识库</span></div>
+<section class="hero"><div><div class="eyebrow">农业知识 / {{cropName}}</div><h1>多作物知识工作台</h1><p>从症状找到关联，让每一条建议有据可循。</p></div><button class="refresh" :disabled="loading" @click="load">{{loading?'正在连接…':'↻ 刷新图谱'}}</button></section>
+<div class="graph-summary"><span class="status-dot"></span><span>{{loading?'正在启动并连接图谱':graph?'图谱已连接':'图谱连接失败'}}</span><span class="summary-divider"></span><strong>{{graph?.nodes?.length||0}}</strong><span>知识实体</span><strong>{{graph?.edges?.length||0}}</strong><span>关联关系</span><span class="summary-caption">{{cropName}} · 独立作物知识库</span></div>
 <p v-if="crop==='vegetable'" class="note">青县设施蔬菜当前支持知识查询。番茄视觉仍处于数据准备阶段，尚无已上线模型。</p>
 <p v-if="error" role="alert" class="error">{{error}}</p>
 <div class="knowledge-grid">

@@ -22,6 +22,10 @@ try {
         Invoke-Checked npm.cmd @('ci','--prefix','agent-runtime','--no-audit','--no-fund')
     }
     & "$PSScriptRoot/setup-vision.ps1"
+    if(Test-Path "$PSScriptRoot/ai-service/integration_app.py"){
+        if(Test-Path "$PSScriptRoot/ai-service/.integration-runtime/runtime.json"){ & "$PSScriptRoot/setup-multicrop.ps1" }
+        else{ & "$PSScriptRoot/setup-multicrop.ps1" -InitializeKnowledge }
+    }
     Write-Host "Open http://localhost:$(Get-Setting SERVER_PORT '8081')/"
     Invoke-Checked java.exe @('-jar',$jar)
 } finally { Pop-Location }

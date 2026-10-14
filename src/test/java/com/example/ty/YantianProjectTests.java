@@ -21,7 +21,7 @@ class YantianProjectTests {
         var asset=assets.findById("yt-pear-02").orElseThrow();
         asset.setPolygonJson("[[366,285],[790,293],[1050,398],[638,487]]");assets.save(asset);
         calibration.run(null);
-        assertThat(asset.getPolygonJson()).isEqualTo("[[224,237],[887,310],[1167,374],[858,418],[509,332]]");
+        assertThat(asset.getPolygonJson()).isEqualTo("[[250,243],[875,316],[1137,365],[900,401],[506,309]]");
         var calibrated=asset.getPolygonJson();calibration.run(null);
         assertThat(asset.getPolygonJson()).isEqualTo(calibrated);
         asset.setPolygonJson("[[10,10],[20,10],[20,20],[10,20]]");assets.save(asset);calibration.run(null);

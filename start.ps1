@@ -24,6 +24,11 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Agent model setup failed.' }
     if (!$SkipBuild) {
         & "$PSScriptRoot/setup-vision.ps1"
+        if(Test-Path "$PSScriptRoot/ai-service/integration_app.py"){
+            if(Test-Path "$PSScriptRoot/ai-service/.integration-runtime/runtime.json"){ & "$PSScriptRoot/setup-multicrop.ps1" }
+            else{ & "$PSScriptRoot/setup-multicrop.ps1" -InitializeKnowledge }
+            if($LASTEXITCODE -ne 0){throw 'Multi-crop runtime setup failed.'}
+        }
         Invoke-Checked npm.cmd @('ci', '--prefix', 'agent-runtime', '--no-audit', '--no-fund')
         foreach ($app in @('landing', 'frontend','vision-frontend')) {
             Push-Location (Join-Path $PSScriptRoot $app)

@@ -13,6 +13,7 @@ import java.util.*;
 @Component
 public class MultiCropClient {
     private final URI base;
+    private MultiCropRuntime runtime;
     private final ObjectMapper json;
     private final HttpClient http=HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(3)).build();
     private static final Set<String> GETS=Set.of("/api/integration/health","/api/graph","/api/wheat/models/status","/api/jujube/health");
@@ -23,18 +24,21 @@ public class MultiCropClient {
         if(!Set.of("http","https").contains(this.base.getScheme())||this.base.getHost()==null||this.base.getRawQuery()!=null)
             throw new IllegalArgumentException("Invalid MULTICROP_BASE_URL");
     }
+    @org.springframework.beans.factory.annotation.Autowired
+    public MultiCropClient(@Value("${MULTICROP_BASE_URL:http://127.0.0.1:8090}") String base,ObjectMapper json,MultiCropRuntime runtime){this(base,json);this.runtime=runtime;}
     public static boolean allowed(String method,String path){return method.equals("GET")?GETS.contains(path):method.equals("POST")&&POSTS.contains(path);}
     public HttpResponse<byte[]> forward(String method,String path,String query,String type,byte[] body) {
         if(!allowed(method,path))throw BizException.notFound("多作物接口不存在");
         if(body.length>8*1024*1024)throw new BizException("UPLOAD_TOO_LARGE","多作物请求总大小不能超过 8 MB",413);
         if(query!=null&&query.length()>2000)throw BizException.badRequest("查询参数过长");
+        if(runtime!=null)runtime.ensureReady();
         String route=path.startsWith("/api/jujube/")&&!path.endsWith("/ask")?"/jujube"+path:path;
-        var builder=HttpRequest.newBuilder(URI.create(base+route+(query==null?"":"?"+query))).timeout(Duration.ofSeconds(540)).version(HttpClient.Version.HTTP_1_1);
+        var builder=HttpRequest.newBuilder(URI.create(base+route+(query==null?"":"?"+query))).timeout(Duration.ofSeconds(method.equals("GET")?30:540)).version(HttpClient.Version.HTTP_1_1);
         builder.header("Content-Type",type);
         try {
             return http.send(builder.method(method,body.length==0?HttpRequest.BodyPublishers.noBody():HttpRequest.BodyPublishers.ofByteArray(body)).build(),HttpResponse.BodyHandlers.ofByteArray());
         }catch(InterruptedException e){Thread.currentThread().interrupt();throw new BizException("MULTICROP_INTERRUPTED","多作物请求已中断",503);}
-        catch(Exception e){throw new BizException("MULTICROP_UNAVAILABLE","多作物服务尚未就绪，请启动 AI 服务并检查依赖",503);}
+        catch(Exception e){throw new BizException("MULTICROP_UNAVAILABLE","知识服务暂不可用，请稍候自动恢复；持续失败请检查服务日志",503);}
     }
     public Object ask(String crop,String question) {
         if(question==null||question.isBlank()||question.length()>500)throw BizException.badRequest("多作物问题须为 1–500 字");

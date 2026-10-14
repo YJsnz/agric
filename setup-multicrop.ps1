@@ -11,11 +11,23 @@ if($InitializeKnowledge) {
     New-Item -ItemType Directory -Path $folder -Force | Out-Null
     $configuration=Join-Path $folder 'runtime.json'
     if(!(Test-Path -LiteralPath $configuration)) {
-        $bytes=New-Object byte[] 32
-        $random=[Security.Cryptography.RandomNumberGenerator]::Create()
-        try{$random.GetBytes($bytes)}finally{$random.Dispose()}
-        @{password=([BitConverter]::ToString($bytes).Replace('-','').ToLower())} | ConvertTo-Json |
-            Set-Content -LiteralPath $configuration -Encoding UTF8
+        # A new release folder can share the existing persistent Neo4j container.
+        # Recover its configured credential without printing it or resetting the database.
+        $knowledgePassword=$env:NEO4J_PASSWORD
+        if(!$knowledgePassword){
+            try{
+                $priorEnvironment=(& docker.exe inspect agric-multicrop-neo4j --format '{{json .Config.Env}}' 2>$null) | ConvertFrom-Json
+                $priorAuth=$priorEnvironment | Where-Object { $_ -like 'NEO4J_AUTH=neo4j/*' } | Select-Object -First 1
+                if($priorAuth){$knowledgePassword=$priorAuth.Substring('NEO4J_AUTH=neo4j/'.Length)}
+            }catch{}
+        }
+        if(!$knowledgePassword){
+            $bytes=New-Object byte[] 32
+            $random=[Security.Cryptography.RandomNumberGenerator]::Create()
+            try{$random.GetBytes($bytes)}finally{$random.Dispose()}
+            $knowledgePassword=[BitConverter]::ToString($bytes).Replace('-','').ToLower()
+        }
+        @{password=$knowledgePassword} | ConvertTo-Json | Set-Content -LiteralPath $configuration -Encoding UTF8
     }
     $settings=Get-Content -LiteralPath $configuration -Raw -Encoding UTF8 | ConvertFrom-Json
     $env:NEO4J_PASSWORD=$settings.password
