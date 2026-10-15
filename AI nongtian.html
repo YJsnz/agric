@@ -1,0 +1,2796 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1号番茄温室 · 田言智耕</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Three.js 核心库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-page: #0a0f0a;
+            --glass-bg: rgba(10, 15, 12, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.06);
+            --green-brand: #2d7a3a;
+            --green-bright: #4caf50;
+            --green-muted: #a5d684;
+            --orange: #e88d2a;
+            --orange-light: #f5b85a;
+            --red: #c9443a;
+            --red-light: #e0746a;
+            --blue: #3a8fc9;
+            --text-white: rgba(255, 255, 255, 0.85);
+            --text-muted: rgba(255, 255, 255, 0.35);
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-page);
+            color: #fff;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .app {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: #f0f6fa;
+        }
+
+        /* 顶部栏 */
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 28px;
+            flex-shrink: 0;
+            z-index: 20;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(180, 210, 235, 0.2);
+        }
+
+        .topbar .left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .topbar .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: rgba(40, 70, 100, 0.6);
+            font-size: 13px;
+            cursor: pointer;
+            transition: var(--transition);
+            padding: 4px 12px;
+            border-radius: 40px;
+            border: 1px solid transparent;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .topbar .back-btn:hover {
+            background: rgba(255, 255, 255, 0.6);
+            border-color: rgba(180, 210, 235, 0.3);
+            color: #2a4a6a;
+        }
+
+        .topbar .back-btn i {
+            font-size: 14px;
+        }
+
+        .topbar .title {
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #1a3a5a;
+        }
+
+        .topbar .title .status {
+            font-size: 12px;
+            font-weight: 500;
+            padding: 2px 14px;
+            border-radius: 40px;
+            background: rgba(76, 175, 80, 0.12);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(76, 175, 80, 0.08);
+            color: #2d7a3a;
+        }
+
+        .topbar .right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .topbar .view-toggle {
+            display: flex;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 40px;
+            padding: 3px;
+            border: 1px solid rgba(180, 210, 235, 0.15);
+        }
+
+        .topbar .view-toggle button {
+            padding: 4px 16px;
+            border: none;
+            background: transparent;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(40, 70, 100, 0.4);
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .topbar .view-toggle button.active {
+            background: rgba(76, 175, 80, 0.15);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #2d7a3a;
+        }
+
+        .topbar .view-toggle button:hover:not(.active) {
+            color: rgba(40, 70, 100, 0.7);
+        }
+
+        .topbar .ai-btn {
+            background: rgba(76, 175, 80, 0.1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #2d7a3a;
+            border: 1px solid rgba(76, 175, 80, 0.08);
+            padding: 5px 16px;
+            border-radius: 40px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .topbar .ai-btn:hover {
+            background: rgba(76, 175, 80, 0.2);
+        }
+
+        .topbar .icon-btn {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 1px solid rgba(180, 210, 235, 0.15);
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(40, 70, 100, 0.35);
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .topbar .icon-btn:hover {
+            border-color: rgba(180, 210, 235, 0.3);
+            color: #2a4a6a;
+        }
+
+        .topbar .icon-btn .dot {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            width: 6px;
+            height: 6px;
+            background: var(--red);
+            border-radius: 50%;
+        }
+
+        /* 主体 */
+        .main-body {
+            flex: 1;
+            display: flex;
+            min-height: 0;
+            position: relative;
+        }
+
+        .scene-area {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            background: #e8eff5;
+        }
+
+        .scene-area video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            background: #e8eff5;
+        }
+
+        .scene-3d {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            transition: opacity 0.6s ease;
+        }
+
+        .scene-3d.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #threeCanvas {
+            width: 100% !important;
+            height: 100% !important;
+            display: block;
+        }
+
+        .scene-real {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .env-panel {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            z-index: 12;
+            background: rgba(255, 255, 255, 0.94);
+            border-radius: 14px;
+            padding: 10px;
+            width: min(360px, calc(100% - 32px));
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(40, 70, 100, 0.08);
+            color: #1a3a5a;
+            font-size: 12px;
+            cursor: grab;
+            touch-action: none;
+        }
+
+        .env-panel:active {
+            cursor: grabbing;
+        }
+
+        .env-panel .panel-title {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-weight: 700;
+            color: #16344c;
+        }
+
+        .env-panel .panel-title span:last-child {
+            color: rgba(40, 70, 100, 0.55);
+            font-size: 10px;
+            margin-top: 1px;
+            white-space: nowrap;
+        }
+
+        .env-panel .panel-title i {
+            color: #4caf50;
+        }
+
+        .env-panel .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .env-panel .metric-card {
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(40, 70, 100, 0.08);
+            border-radius: 12px;
+            padding: 10px 10px 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .env-panel .metric-label {
+            color: rgba(40, 70, 100, 0.55);
+            font-size: 10px;
+        }
+
+        .env-panel .metric-value {
+            font-weight: 700;
+            color: #1a3a5a;
+        }
+
+        .env-panel .metric-note {
+            color: rgba(40, 70, 100, 0.45);
+            font-size: 10px;
+        }
+
+        @media (max-width:860px) {
+            .env-panel {
+                width: calc(100% - 30px);
+                top: 14px;
+                left: 14px;
+            }
+
+            .env-panel .metrics-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        .scene-real.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+
+
+        .tag {
+            position: absolute;
+            z-index: 5;
+            padding: 5px 14px;
+            border-radius: 40px;
+            font-size: 11px;
+            font-weight: 500;
+            backdrop-filter: blur(16px) saturate(1.4);
+            -webkit-backdrop-filter: blur(16px) saturate(1.4);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .tag .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .tag .dot.green {
+            background: var(--green-bright);
+            box-shadow: 0 0 12px rgba(76, 175, 80, 0.3);
+        }
+
+        .tag .dot.orange {
+            background: var(--orange);
+            box-shadow: 0 0 12px rgba(232, 141, 42, 0.3);
+        }
+
+        .tag .dot.blue {
+            background: var(--blue);
+            box-shadow: 0 0 12px rgba(58, 143, 201, 0.3);
+        }
+
+        .tag-temp {
+            top: 10%;
+            left: 5%;
+            background: rgba(255, 255, 255, 0.3);
+            color: #2a4a6a;
+        }
+
+        .tag-humid {
+            top: 10%;
+            left: 20%;
+            background: rgba(255, 255, 255, 0.3);
+            color: #2a4a6a;
+        }
+
+        .tag-co2 {
+            top: 10%;
+            left: 35%;
+            background: rgba(255, 255, 255, 0.3);
+            color: #2a4a6a;
+        }
+
+        .tag-light {
+            top: 10%;
+            left: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            color: #2a4a6a;
+        }
+
+        .tag-soil {
+            bottom: 25%;
+            left: 5%;
+            background: rgba(255, 255, 255, 0.3);
+            color: #2a4a6a;
+        }
+
+        .tag-ec {
+            bottom: 25%;
+            left: 20%;
+            background: rgba(255, 255, 255, 0.3);
+            color: #2a4a6a;
+        }
+
+        .tag-device {
+            bottom: 8%;
+            left: 5%;
+            background: rgba(255, 255, 255, 0.3);
+            color: rgba(40, 70, 100, 0.6);
+            font-size: 10px;
+        }
+
+        .tag-device strong {
+            color: #2d7a3a;
+        }
+
+        .soil-overlay {
+            position: absolute;
+            z-index: 2;
+            border-radius: var(--radius-sm);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            pointer-events: none;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 4px;
+            font-size: 8px;
+            color: rgba(40, 70, 100, 0.4);
+            letter-spacing: 0.3px;
+        }
+
+        .soil-normal {
+            background: rgba(76, 175, 80, 0.1);
+            border-color: rgba(76, 175, 80, 0.08);
+        }
+
+        .soil-warning {
+            background: rgba(232, 141, 42, 0.1);
+            border-color: rgba(232, 141, 42, 0.08);
+        }
+
+        .soil-moist {
+            background: rgba(58, 143, 201, 0.1);
+            border-color: rgba(58, 143, 201, 0.08);
+        }
+
+        .scene-legend {
+            position: absolute;
+            left: 50%;
+            bottom: 16px;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(10, 18, 30, 0.78);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #eef5ff;
+            font-size: 11px;
+            z-index: 12;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .scene-legend .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .scene-legend .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 4px;
+            display: inline-block;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+        }
+
+        .scene-legend .legend-color.blue {
+            background: #3a8fd0;
+        }
+
+        .scene-legend .legend-color.yellow {
+            background: #f4c130;
+        }
+
+        .scene-legend .legend-color.red {
+            background: #e65e51;
+        }
+
+        .scene-legend.hidden {
+            display: none;
+        }
+
+        .plant-actions {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -100%);
+            z-index: 13;
+            display: none;
+            gap: 10px;
+            padding: 10px 12px;
+            border-radius: 18px;
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            pointer-events: auto;
+            white-space: nowrap;
+        }
+
+        .plant-actions.visible {
+            display: flex;
+        }
+
+        .plant-actions button {
+            pointer-events: auto;
+            border: none;
+            background: rgba(255, 255, 255, 0.15);
+            color: #1b3b57;
+            padding: 10px 14px;
+            border-radius: 14px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.2s ease, transform 0.2s ease;
+            backdrop-filter: blur(18px);
+        }
+
+        .plant-actions button:hover {
+            background: rgba(255, 255, 255, 0.32);
+            transform: translateY(-1px);
+        }
+
+        .watering-overlay {
+            position: absolute;
+            z-index: 12;
+            display: none;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            border-radius: 16px;
+            background: rgba(15, 76, 129, 0.92);
+            color: #eef5ff;
+            font-size: 13px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.16);
+            transform: translate(-50%, -20%);
+            pointer-events: none;
+        }
+
+        .watering-overlay.visible {
+            display: flex;
+        }
+
+        .watering-overlay i {
+            font-size: 16px;
+            color: #8bd7ff;
+            animation: drip 1.2s infinite ease-in-out;
+        }
+
+        @keyframes drip {
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            80% {
+                transform: translateY(3px);
+                opacity: 0.7;
+            }
+        }
+
+        .plant-dialog {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 15;
+            width: 180px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            display: none;
+            overflow: hidden;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            color: #fff;
+        }
+
+        .plant-dialog.visible {
+            display: block;
+        }
+
+        .plant-dialog .dialog-close {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 1;
+            z-index: 5;
+            transition: background 0.2s ease;
+        }
+
+        .plant-dialog .dialog-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .plant-dialog .dialog-body {
+            padding: 12px 10px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .plant-dialog .dialog-body video {
+            width: 100%;
+            height: 280px;
+            border-radius: 8px;
+            object-fit: cover;
+            background: #1a2a1a;
+        }
+
+        .plant-dialog .dialog-body .dialog-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            padding: 0 2px;
+        }
+
+        .plant-dialog .dialog-body .dialog-info .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .plant-dialog .dialog-body .dialog-info strong {
+            color: #fff;
+        }
+
+        .plant-dialog .dialog-body .dialog-info .status-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 10px;
+            border-radius: 10px;
+            font-size: 11px;
+            background: rgba(76, 175, 80, 0.15);
+            color: #4caf50;
+        }
+
+        .plant-dialog .dialog-body .dialog-info .status-tag.warning {
+            background: rgba(232, 141, 42, 0.15);
+            color: #e88d2a;
+        }
+
+        .plant-dialog .dialog-body .dialog-info .status-tag.danger {
+            background: rgba(201, 68, 58, 0.15);
+            color: #e0746a;
+        }
+
+        .sidebar-right {
+            width: 340px;
+            flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-left: 1px solid rgba(180, 210, 235, 0.15);
+            padding: 16px 18px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            z-index: 5;
+            color: #1a3a5a;
+            transition: width 0.35s ease, padding 0.35s ease, border-color 0.35s ease, opacity 0.35s ease;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .sidebar-right.collapsed {
+            width: 0;
+            padding: 0;
+            border-left: none;
+            opacity: 0.0;
+            overflow: hidden;
+            min-width: 0;
+        }
+
+        .sidebar-right.collapsed .sidebar-header,
+        .sidebar-right.collapsed .section-title,
+        .sidebar-right.collapsed .info-grid,
+        .sidebar-right.collapsed .health-row,
+        .sidebar-right.collapsed .trend-chart,
+        .sidebar-right.collapsed .device-grid,
+        .sidebar-right.collapsed .alert-list,
+        .sidebar-right.collapsed .ai-suggestion-box,
+        .sidebar-right.collapsed .action-link {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .sidebar-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .sidebar-toggle {
+            position: absolute;
+            top: 18px;
+            right: 346px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 1px solid rgba(180, 210, 235, 0.35);
+            background: rgba(255, 255, 255, 0.9);
+            color: #2a4a6a;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 22px rgba(35, 58, 86, 0.12);
+            transition: right 0.35s ease, transform 0.3s ease, background 0.2s ease;
+            z-index: 15;
+        }
+
+        .sidebar-right.collapsed+.sidebar-toggle {
+            right: 10px;
+        }
+
+        .sidebar-toggle:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .sidebar-right .section-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: rgba(40, 70, 100, 0.5);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sidebar-right .section-title i {
+            font-size: 14px;
+            color: #5a8aaa;
+        }
+
+        .sidebar-right .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 12px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: var(--radius-sm);
+            padding: 10px 12px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(180, 210, 235, 0.08);
+        }
+
+        .sidebar-right .info-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            padding: 3px 0;
+        }
+
+        .sidebar-right .info-item .label {
+            color: rgba(40, 70, 100, 0.4);
+        }
+
+        .sidebar-right .info-item .value {
+            color: #1a3a5a;
+            font-weight: 500;
+        }
+
+        .sidebar-right .info-item .value.green {
+            color: #2d7a3a;
+        }
+
+        .sidebar-right .health-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: var(--radius-sm);
+            padding: 10px 14px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(180, 210, 235, 0.08);
+        }
+
+        .sidebar-right .health-ring {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: conic-gradient(#4caf50 0deg 331deg, rgba(180, 210, 235, 0.2) 331deg 360deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .sidebar-right .health-ring .inner {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: #2d7a3a;
+        }
+
+        .sidebar-right .health-info .score {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a3a5a;
+        }
+
+        .sidebar-right .health-info .desc {
+            font-size: 12px;
+            color: rgba(40, 70, 100, 0.4);
+        }
+
+        .sidebar-right .health-info .tag {
+            display: inline-block;
+            padding: 1px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 500;
+            background: rgba(76, 175, 80, 0.08);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(76, 175, 80, 0.06);
+            color: #2d7a3a;
+            margin-top: 2px;
+            cursor: pointer;
+        }
+
+        /* 右侧边栏 - 平均株高折线图 */
+        .sidebar-right .trend-chart {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: var(--radius-sm);
+            padding: 10px 12px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(180, 210, 235, 0.08);
+        }
+
+        .sidebar-right .trend-chart .chart-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: rgba(40, 70, 100, 0.5);
+            margin-bottom: 8px;
+        }
+
+        .sidebar-right .trend-chart .chart-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 9px;
+            color: rgba(40, 70, 100, 0.2);
+        }
+
+        .sidebar-right .trend-chart .chart-bars {
+            display: flex;
+            align-items: flex-end;
+            gap: 4px;
+            height: 44px;
+            margin-top: 4px;
+        }
+
+        .sidebar-right .trend-chart .chart-bars .bar {
+            flex: 1;
+            border-radius: 3px 3px 0 0;
+            background: rgba(76, 175, 80, 0.1);
+            transition: var(--transition);
+            min-height: 4px;
+        }
+
+        .sidebar-right .trend-chart .chart-bars .bar.active {
+            background: #4caf50;
+        }
+
+        .sidebar-right .trend-chart .chart-label {
+            text-align: center;
+            font-size: 9px;
+            color: rgba(40, 70, 100, 0.15);
+            margin-top: 4px;
+        }
+
+        .sidebar-right .device-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            margin-bottom: 12px;
+        }
+
+        .sidebar-right .device-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(180, 210, 235, 0.06);
+            font-size: 12px;
+            cursor: pointer;
+            transition: var(--transition);
+            color: #1a3a5a;
+        }
+
+        .sidebar-right .device-item:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .sidebar-right .device-item .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .sidebar-right .device-item .dot.green {
+            background: #4caf50;
+        }
+
+        .sidebar-right .device-item .info {
+            flex: 1;
+        }
+
+        .sidebar-right .device-item .info .name {
+            color: #1a3a5a;
+            font-weight: 500;
+        }
+
+        .sidebar-right .device-item .info .status {
+            font-size: 10px;
+            color: rgba(40, 70, 100, 0.3);
+        }
+
+        .sidebar-right .device-item .badge {
+            font-size: 9px;
+            padding: 1px 8px;
+            border-radius: 20px;
+            background: rgba(76, 175, 80, 0.08);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(76, 175, 80, 0.04);
+            color: #2d7a3a;
+        }
+
+        .sidebar-right .action-link {
+            font-size: 11px;
+            color: #5a8aaa;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: right;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .sidebar-right .action-link:hover {
+            color: #2a6a8a;
+        }
+
+        .sidebar-right .alert-list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 12px;
+        }
+
+        .sidebar-right .alert-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 10px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(180, 210, 235, 0.06);
+            font-size: 12px;
+            cursor: pointer;
+            color: #1a3a5a;
+        }
+
+        .sidebar-right .alert-item:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .sidebar-right .alert-item .icon {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .sidebar-right .alert-item .icon.orange {
+            background: rgba(232, 141, 42, 0.08);
+            color: #c97d1a;
+        }
+
+        .sidebar-right .alert-item .icon.red {
+            background: rgba(201, 68, 58, 0.08);
+            color: #a8322a;
+        }
+
+        .sidebar-right .alert-item .content {
+            flex: 1;
+        }
+
+        .sidebar-right .alert-item .content .title {
+            color: #1a3a5a;
+            font-weight: 500;
+        }
+
+        .sidebar-right .alert-item .content .desc {
+            font-size: 10px;
+            color: rgba(40, 70, 100, 0.3);
+        }
+
+        .sidebar-right .alert-item .badge-status {
+            font-size: 9px;
+            padding: 1px 10px;
+            border-radius: 20px;
+            font-weight: 500;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .sidebar-right .alert-item .badge-status.warn {
+            background: rgba(232, 141, 42, 0.08);
+            color: #c97d1a;
+        }
+
+        .sidebar-right .alert-item .badge-status.done {
+            background: rgba(76, 175, 80, 0.08);
+            color: #2d7a3a;
+        }
+
+        .sidebar-right .alert-item .time {
+            font-size: 10px;
+            color: rgba(40, 70, 100, 0.2);
+            flex-shrink: 0;
+        }
+
+        .sidebar-right .ai-suggestion-box {
+            margin-top: 4px;
+            padding: 10px 12px;
+            background: rgba(76, 175, 80, 0.04);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(76, 175, 80, 0.04);
+        }
+
+        .sidebar-right .ai-suggestion-box .suggestion-btn {
+            background: rgba(76, 175, 80, 0.08);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: none;
+            color: #2d7a3a;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 9px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: var(--transition);
+        }
+
+        .sidebar-right .ai-suggestion-box .suggestion-btn:hover {
+            background: rgba(76, 175, 80, 0.15);
+        }
+
+        .sidebar-right .ai-suggestion-box .suggestion-btn-ignore {
+            background: transparent;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: none;
+            color: rgba(40, 70, 100, 0.15);
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 9px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: var(--transition);
+        }
+
+        .sidebar-right .ai-suggestion-box .suggestion-btn-ignore:hover {
+            color: rgba(40, 70, 100, 0.3);
+        }
+
+        @media (max-width:1024px) {
+            .sidebar-right {
+                width: 280px;
+                padding: 12px 14px;
+            }
+
+            .tag {
+                font-size: 9px;
+                padding: 3px 10px;
+            }
+
+            .tag-temp {
+                top: 8%;
+                left: 4%;
+            }
+
+            .tag-humid {
+                top: 8%;
+                left: 18%;
+            }
+
+            .tag-co2 {
+                top: 8%;
+                left: 32%;
+            }
+
+            .tag-light {
+                top: 8%;
+                left: 46%;
+            }
+
+            .tag-soil {
+                bottom: 22%;
+                left: 4%;
+            }
+
+            .tag-ec {
+                bottom: 22%;
+                left: 18%;
+            }
+
+            .tag-device {
+                bottom: 6%;
+                left: 4%;
+                font-size: 9px;
+            }
+
+            .soil-overlay {
+                display: none;
+            }
+        }
+
+        @media (max-width:768px) {
+            .sidebar-right {
+                width: 220px;
+                padding: 10px 10px;
+            }
+
+            .topbar {
+                padding: 8px 16px;
+                flex-wrap: wrap;
+                gap: 4px;
+            }
+
+            .topbar .title {
+                font-size: 14px;
+            }
+
+            .topbar .title .status {
+                font-size: 10px;
+                padding: 1px 10px;
+            }
+
+            .topbar .view-toggle button {
+                font-size: 10px;
+                padding: 3px 10px;
+            }
+
+            .topbar .ai-btn {
+                font-size: 10px;
+                padding: 4px 12px;
+            }
+
+            .sidebar-right .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar-right .device-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tag {
+                font-size: 8px;
+                padding: 2px 8px;
+            }
+
+            .tag-temp {
+                top: 6%;
+                left: 3%;
+            }
+
+            .tag-humid {
+                top: 6%;
+                left: 16%;
+            }
+
+            .tag-co2 {
+                top: 6%;
+                left: 29%;
+            }
+
+            .tag-light {
+                top: 6%;
+                left: 42%;
+            }
+
+            .tag-soil {
+                bottom: 18%;
+                left: 3%;
+            }
+
+            .tag-ec {
+                bottom: 18%;
+                left: 16%;
+            }
+
+            .tag-device {
+                bottom: 4%;
+                left: 3%;
+                font-size: 7px;
+                padding: 1px 6px;
+            }
+
+            .cam-status {
+                bottom: 10%;
+                font-size: 8px;
+                padding: 2px 10px;
+            }
+        }
+
+        @media (max-width:480px) {
+            .sidebar-right {
+                width: 180px;
+                padding: 6px 6px;
+            }
+
+            .topbar .right .icon-btn:not(:first-child) {
+                display: none;
+            }
+
+            .topbar .right .view-toggle {
+                display: none;
+            }
+
+            .topbar .ai-btn {
+                font-size: 9px;
+                padding: 3px 10px;
+            }
+
+            .sidebar-right .info-grid {
+                padding: 6px 8px;
+            }
+
+            .sidebar-right .info-item {
+                font-size: 10px;
+            }
+
+            .sidebar-right .health-row {
+                padding: 6px 8px;
+            }
+
+            .sidebar-right .health-ring {
+                width: 40px;
+                height: 40px;
+            }
+
+            .sidebar-right .health-ring .inner {
+                width: 30px;
+                height: 30px;
+                font-size: 12px;
+            }
+
+            .sidebar-right .device-item {
+                padding: 4px 6px;
+                font-size: 10px;
+            }
+
+            .sidebar-right .alert-item {
+                padding: 4px 6px;
+                font-size: 10px;
+            }
+
+            .tag-temp {
+                top: 4%;
+                left: 2%;
+            }
+
+            .tag-humid {
+                top: 4%;
+                left: 14%;
+            }
+
+            .tag-co2 {
+                top: 4%;
+                left: 26%;
+            }
+
+            .tag-light {
+                top: 4%;
+                left: 38%;
+            }
+
+            .tag-soil {
+                bottom: 14%;
+                left: 2%;
+            }
+
+            .tag-ec {
+                bottom: 14%;
+                left: 14%;
+            }
+
+            .tag-device {
+                bottom: 2%;
+                left: 2%;
+                font-size: 6px;
+                padding: 1px 4px;
+            }
+
+            .cam-status {
+                bottom: 8%;
+                right: 3%;
+                font-size: 7px;
+                padding: 2px 8px;
+            }
+        }
+
+        /* 生长趋势对话框 - 缩小版 */
+        .growth-dialog {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 440px;
+            max-width: 92%;
+            padding: 20px 22px 22px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+            border: 1px solid rgba(180, 210, 235, 0.25);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+            display: none;
+            z-index: 40;
+            color: #1a3a5a;
+        }
+
+        .growth-dialog.visible {
+            display: block;
+        }
+
+        .growth-close {
+            position: absolute;
+            right: 14px;
+            top: 12px;
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            color: #456;
+            background: rgba(255, 255, 255, 0.65);
+            transition: .25s;
+            font-size: 14px;
+        }
+
+        .growth-close:hover {
+            background: white;
+        }
+
+        .growth-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .growth-header h3 {
+            font-size: 18px;
+            margin: 0;
+            color: #17395c;
+        }
+
+        .growth-header span {
+            font-size: 11px;
+            color: #7a90a7;
+        }
+
+        .growth-tag {
+            padding: 4px 14px;
+            border-radius: 30px;
+            background: rgba(76, 175, 80, 0.15);
+            color: #2d7a3a;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .growth-info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .growth-card {
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(180, 210, 235, 0.18);
+            border-radius: 12px;
+            padding: 10px 12px;
+        }
+
+        .growth-card .label {
+            font-size: 10px;
+            color: #789;
+            margin-bottom: 4px;
+        }
+
+        .growth-card .value {
+            font-size: 16px;
+            font-weight: 700;
+            color: #17395c;
+        }
+
+        .growth-card .green {
+            color: #2d7a3a;
+        }
+
+        .growth-summary {
+            padding: 14px 16px;
+            border-radius: 12px;
+            background: rgba(76, 175, 80, 0.06);
+            border: 1px solid rgba(76, 175, 80, 0.1);
+            margin-bottom: 16px;
+        }
+
+        .summary-title {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+            color: #2d7a3a;
+            margin-bottom: 6px;
+            font-size: 13px;
+        }
+
+        .growth-summary p {
+            line-height: 1.6;
+            color: #49627c;
+            font-size: 13px;
+            margin: 0;
+        }
+
+        .growth-chart {
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(180, 210, 235, 0.18);
+            padding: 12px 14px;
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .chart-header span {
+            font-weight: 600;
+            color: #17395c;
+            font-size: 13px;
+        }
+
+        .chart-header .unit {
+            font-size: 10px;
+            color: #8ca0b3;
+        }
+
+        #heightChart {
+            width: 100%;
+            height: 180px;
+        }
+
+        @media (max-width:540px) {
+            .growth-dialog {
+                width: 94%;
+                padding: 16px;
+            }
+
+            .growth-info-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+        }
+
+        @media (max-width:400px) {
+            .growth-info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <!-- 顶部栏 -->
+        <header class="topbar">
+            <div class="left">
+                <a class="back-btn"><i class="fas fa-arrow-left"></i> 返回农场</a>
+                <div class="title">1号番茄温室 <span class="status"><i class="fas fa-check-circle"></i> 运行正常</span></div>
+            </div>
+            <div class="right">
+                <div class="view-toggle" id="viewToggle">
+                    <button class="active" data-mode="real">实景</button>
+                    <button data-mode="3d">数字孪生</button>
+                </div>
+                <button class="ai-btn"><i class="fas fa-robot"></i> AI诊断</button>
+                <div class="icon-btn"><i class="fas fa-bell"></i><span class="dot"></span></div>
+            </div>
+        </header>
+        <!-- 主体 -->
+        <div class="main-body">
+            <!-- 场景区 -->
+            <div class="scene-area" id="sceneArea">
+                <!-- 3D -->
+                <div class="scene-3d hidden" id="scene3d"><canvas id="threeCanvas"></canvas></div>
+                <div class="scene-legend hidden">
+                    <div class="legend-item"><span class="legend-color blue"></span><span>湿润</span></div>
+                    <div class="legend-item"><span class="legend-color yellow"></span><span>注意</span></div>
+                    <div class="legend-item"><span class="legend-color red"></span><span>警告</span></div>
+                </div>
+                <div class="plant-actions" id="plantActions">
+                    <button data-action="monitor">监控</button>
+                    <button data-action="irrigate">灌溉</button>
+                    <button data-action="trend">生长趋势</button>
+                </div>
+                <div class="watering-overlay" id="wateringOverlay">
+                    <i class="fas fa-tint"></i>
+                    <span id="wateringText">正在灌溉植株...</span>
+                </div>
+                <!-- 生长趋势对话框 (缩小版) -->
+                <div class="growth-dialog" id="growthDialog">
+                    <button class="growth-close"><i class="fas fa-times"></i></button>
+                    <div class="growth-header">
+                        <div>
+                            <h3>植株生长状态</h3><span>Plant Growth Report</span>
+                        </div>
+                        <div class="growth-tag">健康</div>
+                    </div>
+                    <div class="growth-info-grid">
+                        <div class="growth-card">
+                            <div class="label">植株编号</div>
+                            <div class="value">A-01</div>
+                        </div>
+                        <div class="growth-card">
+                            <div class="label">生长阶段</div>
+                            <div class="value green">开花期</div>
+                        </div>
+                        <div class="growth-card">
+                            <div class="label">株高</div>
+                            <div class="value">86 cm</div>
+                        </div>
+                        <div class="growth-card">
+                            <div class="label">茎粗</div>
+                            <div class="value">1.8 cm</div>
+                        </div>
+                        <div class="growth-card">
+                            <div class="label">叶片数量</div>
+                            <div class="value">24 片</div>
+                        </div>
+                        <div class="growth-card">
+                            <div class="label">健康评分</div>
+                            <div class="value green">92%</div>
+                        </div>
+                    </div>
+                    <div class="growth-summary">
+                        <div class="summary-title"><i class="fas fa-seedling"></i>当前生长状态</div>
+                        <p>当前植株生长状态良好，株高持续增长，茎秆粗壮，叶色浓绿，无明显病虫害，各项指标均处于正常范围。</p>
+                    </div>
+                    <div class="growth-chart">
+                        <div class="chart-header"><span>近一周株高变化</span><span class="unit">单位：cm</span></div>
+                        <canvas id="heightChart"></canvas>
+                    </div>
+                </div>
+                <!-- 瘦长摄像头对话框 -->
+                <div class="plant-dialog" id="plantDialog">
+                    <button class="dialog-close" id="closeDialog">×</button>
+                    <div class="dialog-body">
+                        <video id="monitorVideo" autoplay playsinline muted></video>
+                        <div class="dialog-info">
+                            <div class="info-row"><strong>位置</strong><span id="plantLocation">-</span></div>
+                            <div class="info-row"><strong>土壤状态</strong><span id="plantSoilState" class="status-tag">●
+                                    正常</span></div>
+                            <div class="info-row"><strong>温湿度</strong><span>26.5°C · 62%</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 环境面板 -->
+                <div class="env-panel" id="envPanel">
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-label">温度</div>
+                            <div class="metric-value">26.5°C</div>
+                            <div class="metric-note">正常范围</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">湿度</div>
+                            <div class="metric-value">62%</div>
+                            <div class="metric-note">舒适</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">CO₂</div>
+                            <div class="metric-value">580 ppm</div>
+                            <div class="metric-note">良好</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">光照</div>
+                            <div class="metric-value">380 µmol/s</div>
+                            <div class="metric-note">适中</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">VPD</div>
+                            <div class="metric-value">0.72 kPa</div>
+                            <div class="metric-note">稳定</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">风速</div>
+                            <div class="metric-value">0.6 m/s</div>
+                            <div class="metric-note">轻风</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">土壤温度</div>
+                            <div class="metric-value">24.1°C</div>
+                            <div class="metric-note">正常</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">土壤湿度</div>
+                            <div class="metric-value">58%</div>
+                            <div class="metric-note">偏低</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">土壤 EC</div>
+                            <div class="metric-value">1.82 mS/cm</div>
+                            <div class="metric-note">适宜</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 实景 -->
+                <div class="scene-real" id="sceneReal">
+                    <video id="cameraFeed" autoplay playsinline muted
+                        style="width:100%;height:100%;object-fit:cover;background:#e8eff5;"></video>
+                    <div class="cam-status" id="camStatus"><span class="dot green"></span> 摄像头在线</div>
+                </div>
+            </div>
+            <!-- 右侧边栏 -->
+            <div class="sidebar-right" id="sidebarRight">
+                <div class="sidebar-header">
+                    <div style="font-size:16px;font-weight:600;color:#1a3a5a;display:flex;align-items:center;gap:8px;">
+                        <i class="fas fa-map-pin" style="color:#5a8aaa;"></i>A区番茄种植区
+                    </div>
+                </div>
+                <div class="section-title"><i class="fas fa-info-circle"></i> 基本信息</div>
+                <div class="info-grid">
+                    <div class="info-item"><span class="label">品种</span><span class="value">樱桃番茄</span></div>
+                    <div class="info-item"><span class="label">种植面积</span><span class="value">120 m²</span></div>
+                    <div class="info-item"><span class="label">定植日期</span><span class="value">2026-05-10</span></div>
+                    <div class="info-item"><span class="label">生长阶段</span><span class="value green">开花期</span></div>
+                    <div class="info-item"><span class="label">预计采收</span><span class="value">2026-09-15</span></div>
+                </div>
+                <div class="section-title"><i class="fas fa-heartbeat"></i> 健康指数</div>
+                <div class="health-row">
+                    <div class="health-ring">
+                        <div class="inner">92</div>
+                    </div>
+                    <div class="health-info">
+                        <div class="score">总体健康状况</div>
+                        <div class="desc">良好 · 较昨日 +2</div><span class="tag"><i class="fas fa-check-circle"></i>
+                            良好</span>
+                    </div>
+                    <div
+                        style="margin-left:auto;font-size:11px;color:#5a8aaa;cursor:pointer;background:rgba(255,255,255,0.2);padding:4px 12px;border-radius:20px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(180,210,235,0.08);">
+                        AI诊断 →</div>
+                </div>
+                <!-- 平均株高 - 折线图 -->
+                <!-- 平均株高 - 折线图 -->
+                <div class="section-title"><i class="fas fa-chart-line"></i> 平均株高</div>
+                <div class="trend-chart" id="avgHeightChart"
+                    style="padding:10px 12px;background:rgba(255,255,255,0.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:var(--radius-sm);border:1px solid rgba(180,210,235,0.08);margin-bottom:12px;">
+                    <canvas id="heightLineChart" style="width:100%;height:80px;display:block;"></canvas>
+                    <div
+                        style="display:flex;justify-content:space-between;font-size:9px;color:rgba(40,70,100,0.2);margin-top:4px;">
+                        <span>07-26</span><span>07-27</span><span>07-28</span><span>07-29</span><span>07-30</span><span>07-31</span><span>08-01</span>
+                    </div>
+                    <div style="text-align:center;font-size:9px;color:rgba(40,70,100,0.15);margin-top:2px;">株高 (cm)
+                    </div>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                    <div class="section-title" style="margin-bottom:0;"><i class="fas fa-microchip"></i> 关键设备</div><span
+                        class="action-link" style="margin-bottom:0;">查看全部 →</span>
+                </div>
+                <div class="device-grid">
+                    <div class="device-item"><span class="dot green"></span>
+                        <div class="info">
+                            <div class="name">水肥一体机01</div>
+                            <div class="status">运行中</div>
+                        </div><span class="badge">正常</span>
+                    </div>
+                    <div class="device-item"><span class="dot green"></span>
+                        <div class="info">
+                            <div class="name">滴灌阀门组02</div>
+                            <div class="status">运行中</div>
+                        </div><span class="badge">正常</span>
+                    </div>
+                    <div class="device-item"><span class="dot green"></span>
+                        <div class="info">
+                            <div class="name">环流风机01</div>
+                            <div class="status">运行中</div>
+                        </div><span class="badge">正常</span>
+                    </div>
+                    <div class="device-item"><span class="dot green"></span>
+                        <div class="info">
+                            <div class="name">温湿度传感器05</div>
+                            <div class="status">运行中</div>
+                        </div><span class="badge">正常</span>
+                    </div>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                    <div class="section-title" style="margin-bottom:0;"><i class="fas fa-bell"
+                            style="color:#c97d1a;"></i> 最近告警</div><span class="action-link"
+                        style="margin-bottom:0;color:#c97d1a;">查看全部 →</span>
+                </div>
+                <div class="alert-list">
+                    <div class="alert-item">
+                        <div class="icon orange"><i class="fas fa-tint"></i></div>
+                        <div class="content">
+                            <div class="title">A区 土壤湿度偏低</div>
+                            <div class="desc">当前 52% · 阈值 55%</div>
+                        </div><span class="badge-status warn">预警</span><span class="time">10:25</span>
+                    </div>
+                    <div class="alert-item">
+                        <div class="icon orange"><i class="fas fa-leaf"></i></div>
+                        <div class="content">
+                            <div class="title">B区 叶片温度偏高</div>
+                            <div class="desc">当前 32°C · 阈值 30°C</div>
+                        </div><span class="badge-status warn">预警</span><span class="time">09:48</span>
+                    </div>
+                    <div class="alert-item">
+                        <div class="icon red"><i class="fas fa-flask"></i></div>
+                        <div class="content">
+                            <div class="title">水肥一体机 EC偏高</div>
+                            <div class="desc">当前 2.8 mS/cm</div>
+                        </div><span class="badge-status done">已处理</span><span class="time">08:12</span>
+                    </div>
+                </div>
+                <div class="ai-suggestion-box">
+                    <div style="font-size:10px;color:rgba(40,70,100,0.3);display:flex;align-items:center;gap:6px;"><i
+                            class="fas fa-robot" style="color:#5a8aaa;"></i> AI 建议</div>
+                    <div style="font-size:11px;color:rgba(40,70,100,0.6);margin-top:2px;line-height:1.5;">
+                        A区土壤湿度偏低，建议今日16:00启动滴灌15分钟。</div>
+                    <div style="display:flex;gap:6px;margin-top:4px;"><button class="suggestion-btn">采纳</button><button
+                            class="suggestion-btn-ignore">忽略</button></div>
+                </div>
+            </div>
+            <button id="sidebarToggle" class="sidebar-toggle" aria-label="收起侧边栏"><i
+                    class="fas fa-chevron-left"></i></button>
+        </div>
+    </div>
+
+    <script>
+        // ============================================================
+        // 摄像头
+        // ============================================================
+        const video = document.getElementById('cameraFeed');
+        const camStatus = document.getElementById('camStatus');
+        async function startCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment', width: { ideal: 1280 }, height: { ideal: 720 } }, audio: false });
+                video.srcObject = stream;
+                camStatus.innerHTML = '<span class="dot green"></span> 摄像头在线';
+                camStatus.style.color = 'rgba(40,70,100,0.6)';
+            } catch (err) {
+                console.warn('摄像头启动失败:', err);
+                camStatus.innerHTML = '<span class="dot" style="background:var(--orange);"></span> 摄像头未连接';
+                camStatus.style.color = 'rgba(40,70,100,0.6)';
+                video.style.display = 'none';
+                const img = document.createElement('img');
+                img.src = 'https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=1400&q=80';
+                img.style.width = '100%';
+                img.style.height = '100%';
+                img.style.objectFit = 'cover';
+                img.alt = '大棚占位图';
+                const parent = video.parentElement;
+                parent.insertBefore(img, video);
+                video.style.display = 'none';
+            }
+        }
+        startCamera();
+
+        // ============================================================
+        // 实景 / 3D 切换
+        // ============================================================
+        const viewBtns = document.querySelectorAll('#viewToggle button');
+        const scene3d = document.getElementById('scene3d');
+        const sceneReal = document.getElementById('sceneReal');
+        const sceneLegend = document.querySelector('.scene-legend');
+        viewBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                viewBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const mode = this.dataset.mode;
+                if (mode === '3d') {
+                    scene3d.classList.remove('hidden');
+                    sceneReal.classList.add('hidden');
+                    sceneLegend.classList.remove('hidden');
+                    if (!window._threeInitialized) { init3DScene(); window._threeInitialized = true; }
+                    setTimeout(() => {
+                        if (window._threeRenderer && window._threeCamera) {
+                            const container = scene3d;
+                            const w = container.clientWidth, h = container.clientHeight;
+                            window._threeRenderer.setSize(w, h);
+                            window._threeCamera.aspect = w / h;
+                            window._threeCamera.updateProjectionMatrix();
+                        }
+                    }, 100);
+                } else {
+                    scene3d.classList.add('hidden');
+                    sceneReal.classList.remove('hidden');
+                    sceneLegend.classList.add('hidden');
+                }
+            });
+        });
+
+        // ============================================================
+        // 绘制右侧边栏平均株高折线图
+        // ============================================================
+        function renderAvgHeightChart() {
+            const canvas = document.getElementById('heightLineChart');
+            if (!canvas) return;
+            const rect = canvas.parentElement.getBoundingClientRect();
+            const dpr = window.devicePixelRatio || 1;
+            const w = rect.width - 24;
+            const h = 80;
+            canvas.width = w * dpr;
+            canvas.height = h * dpr;
+            canvas.style.width = w + 'px';
+            canvas.style.height = h + 'px';
+            const ctx = canvas.getContext('2d');
+            ctx.scale(dpr, dpr);
+
+            // 数据：日期和对应株高 (cm)
+            const data = [20, 30, 40, 45, 50, 55, 60];
+            const labels = ['07-26', '07-27', '07-28', '07-29', '07-30', '07-31', '08-01'];
+            const padding = { top: 8, bottom: 8, left: 6, right: 6 };
+            const chartW = w - padding.left - padding.right;
+            const chartH = h - padding.top - padding.bottom;
+            const maxVal = 70;
+            const minVal = 10;
+
+            ctx.clearRect(0, 0, w, h);
+
+            // 计算点坐标
+            const points = data.map((val, idx) => {
+                const x = padding.left + (idx / (data.length - 1)) * chartW;
+                const y = padding.top + chartH - ((val - minVal) / (maxVal - minVal)) * chartH;
+                return { x, y, val };
+            });
+
+            // 绘制填充区域（渐变）
+            ctx.beginPath();
+            points.forEach((p, i) => {
+                if (i === 0) ctx.moveTo(p.x, p.y);
+                else ctx.lineTo(p.x, p.y);
+            });
+            const last = points[points.length - 1];
+            ctx.lineTo(last.x, padding.top + chartH);
+            ctx.lineTo(points[0].x, padding.top + chartH);
+            ctx.closePath();
+            const grad = ctx.createLinearGradient(0, padding.top, 0, padding.top + chartH);
+            grad.addColorStop(0, 'rgba(45, 122, 58, 0.25)');
+            grad.addColorStop(1, 'rgba(45, 122, 58, 0.02)');
+            ctx.fillStyle = grad;
+            ctx.fill();
+
+            // 绘制折线
+            ctx.beginPath();
+            ctx.strokeStyle = '#2d7a3a';
+            ctx.lineWidth = 2;
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+            points.forEach((p, i) => {
+                if (i === 0) ctx.moveTo(p.x, p.y);
+                else ctx.lineTo(p.x, p.y);
+            });
+            ctx.stroke();
+
+            // 绘制数据点
+            points.forEach((p) => {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+                ctx.fillStyle = '#2d7a3a';
+                ctx.fill();
+                ctx.strokeStyle = '#fff';
+                ctx.lineWidth = 1.2;
+                ctx.stroke();
+            });
+        }
+
+        // 页面加载和窗口变化时重绘
+        window.addEventListener('load', function () {
+            setTimeout(renderAvgHeightChart, 100);
+        });
+        window.addEventListener('resize', renderAvgHeightChart);
+
+        // ============================================================
+        // 3D 场景
+        // ============================================================
+        let scene = null, camera = null, renderer = null, controls = null, modelLoaded = false;
+        let plantData = [], plantPickMeshes = [], hoverHighlight = null, selectedPlant = null;
+        const raycaster = new THREE.Raycaster(), pointer = new THREE.Vector2();
+        const plantActions = document.getElementById('plantActions');
+        const wateringOverlay = document.getElementById('wateringOverlay');
+        const plantDialog = document.getElementById('plantDialog');
+        const monitorVideo = document.getElementById('monitorVideo');
+        const dialogLocation = document.getElementById('plantLocation');
+        const dialogSoilState = document.getElementById('plantSoilState');
+        const closeDialogBtn = document.getElementById('closeDialog');
+
+        // 生长趋势对话框元素
+        const growthDialog = document.getElementById('growthDialog');
+        const growthClose = document.querySelector('.growth-close');
+
+        function createHoverHighlight() {
+            const points = [new THREE.Vector3(-0.46, 0, -0.46), new THREE.Vector3(0.46, 0, -0.46), new THREE.Vector3(0.46, 0, 0.46), new THREE.Vector3(-0.46, 0, 0.46)];
+            const geometry = new THREE.BufferGeometry().setFromPoints(points);
+            const material = new THREE.LineBasicMaterial({ color: 0xff4d4d, transparent: true, opacity: 1 });
+            const line = new THREE.LineLoop(geometry, material);
+            const group = new THREE.Group();
+            const ringGeo = new THREE.RingGeometry(0.34, 0.46, 32);
+            const ringMat = new THREE.MeshBasicMaterial({ color: 0xff4d4d, transparent: true, opacity: 0.18, side: THREE.DoubleSide });
+            const ring = new THREE.Mesh(ringGeo, ringMat);
+            ring.rotation.x = -Math.PI / 2;
+            ring.position.y = 0.02;
+            group.add(ring);
+            group.add(line);
+            group.position.y = 0.02;
+            group.visible = false;
+            return group;
+        }
+
+        function updateHoverHighlight(index) {
+            if (index === null || index === undefined || !plantData[index]) { if (hoverHighlight) hoverHighlight.visible = false; return; }
+            const plant = plantData[index];
+            if (!plant) return;
+            hoverHighlight.position.set(plant.x, 0.02, plant.z);
+            hoverHighlight.visible = true;
+        }
+
+        function showPlantActions(index) {
+            if (index === null || index === undefined || !plantData[index]) return;
+            selectedPlant = index;
+            const plant = plantData[index];
+            hoverHighlight.position.set(plant.x, 0.02, plant.z);
+            hoverHighlight.visible = true;
+            plantActions.classList.add('visible');
+            positionOverlayElement(plantActions, plant);
+            plantDialog.classList.remove('visible');
+            growthDialog.classList.remove('visible');
+        }
+
+        function hidePlantActions() {
+            selectedPlant = null;
+            plantActions.classList.remove('visible');
+            wateringOverlay.classList.remove('visible');
+            plantDialog.classList.remove('visible');
+            if (monitorVideo && monitorVideo.srcObject) {
+                monitorVideo.srcObject.getTracks().forEach(track => track.stop());
+                monitorVideo.srcObject = null;
+            }
+        }
+
+        function positionOverlayElement(element, plant, offsetY = 24, ground = false) {
+            const container = document.getElementById('scene3d');
+            if (!container || !camera) return;
+            const height = ground ? 0.05 : 0.8;
+            const vector = new THREE.Vector3(plant.x, height, plant.z);
+            vector.project(camera);
+            const rect = container.getBoundingClientRect();
+            const x = (vector.x * 0.5 + 0.5) * rect.width;
+            const y = (-vector.y * 0.5 + 0.5) * rect.height;
+            element.style.left = `${x}px`;
+            if (ground) { element.style.top = `${y}px`; } else { element.style.top = `${y - offsetY}px`; }
+        }
+
+        function init3DScene() {
+            const container = document.getElementById('scene3d');
+            const canvas = document.getElementById('threeCanvas');
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0xe5e7eb);
+            scene.fog = new THREE.Fog(0xe5e7eb, 12, 40);
+            camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 100);
+            camera.position.set(7.4, 5, 6.2);
+            camera.lookAt(0, 1, 0);
+            window._threeCamera = camera;
+            renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            renderer.shadowMap.enabled = true;
+            renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+            renderer.toneMapping = THREE.ACESFilmicToneMapping;
+            renderer.toneMappingExposure = 1.0;
+            window._threeRenderer = renderer;
+            controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.target.set(0, 1.5, 0);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.08;
+            controls.enableRotate = true;
+            controls.enablePan = false;
+            controls.enableZoom = true;
+            controls.zoomSpeed = 0.6;
+            controls.minDistance = 3;
+            controls.maxDistance = 25;
+            controls.minPolarAngle = 0.15;
+            controls.maxPolarAngle = Math.PI / 2.4;
+            controls.minAzimuthAngle = -Math.PI / 3;
+            controls.maxAzimuthAngle = Math.PI / 3;
+            controls.update();
+            window._threeControls = controls;
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+            scene.add(ambientLight);
+            const hemiLight = new THREE.HemisphereLight(0xffffff, 0xd1d5db, 0.55);
+            scene.add(hemiLight);
+            const sunLight = new THREE.DirectionalLight(0xf9fafb, 1.2);
+            sunLight.position.set(8, 14, 5);
+            sunLight.castShadow = true;
+            sunLight.shadow.mapSize.width = 2048;
+            sunLight.shadow.mapSize.height = 2048;
+            sunLight.shadow.camera.near = 0.5;
+            sunLight.shadow.camera.far = 40;
+            sunLight.shadow.camera.left = -15;
+            sunLight.shadow.camera.right = 15;
+            sunLight.shadow.camera.top = 15;
+            sunLight.shadow.camera.bottom = -15;
+            scene.add(sunLight);
+            const fillLight = new THREE.DirectionalLight(0xf8fafc, 0.25);
+            fillLight.position.set(-4, 3, -6);
+            scene.add(fillLight);
+            createGreenhouse(scene);
+            const groundGeo = new THREE.PlaneGeometry(16, 16);
+            const groundMat = new THREE.MeshStandardMaterial({ color: 0x3a5a3a, roughness: 0.9, metalness: 0 });
+            const ground = new THREE.Mesh(groundGeo, groundMat);
+            ground.rotation.x = -Math.PI / 2;
+            ground.position.y = -0.02;
+            ground.receiveShadow = true;
+            scene.add(ground);
+            hoverHighlight = createHoverHighlight();
+            scene.add(hoverHighlight);
+            canvas.addEventListener('pointermove', onPointerMove);
+            canvas.addEventListener('pointerdown', onPointerDown);
+            const sceneArea = document.getElementById('sceneArea');
+            if (sceneArea) {
+                sceneArea.addEventListener('pointerleave', function () {
+                    if (selectedPlant === null && hoverHighlight) hoverHighlight.visible = false;
+                });
+            }
+            const loader = new THREE.GLTFLoader();
+            const loadingDiv = document.createElement('div');
+            loadingDiv.style.position = 'absolute';
+            loadingDiv.style.top = '50%';
+            loadingDiv.style.left = '50%';
+            loadingDiv.style.transform = 'translate(-50%,-50%)';
+            loadingDiv.style.color = 'rgba(40,70,100,0.5)';
+            loadingDiv.style.fontSize = '14px';
+            loadingDiv.style.fontFamily = 'Inter, sans-serif';
+            loadingDiv.style.pointerEvents = 'none';
+            loadingDiv.style.zIndex = '5';
+            loadingDiv.style.textShadow = '0 2px 12px rgba(255,255,255,0.3)';
+            loadingDiv.textContent = '⏳ 加载模型中...';
+            container.appendChild(loadingDiv);
+            loader.load('potted_plant_02_1k.glb', function (gltf) {
+                loadingDiv.remove();
+                const model = gltf.scene;
+                model.scale.set(0.4, 0.4, 0.4);
+                window._originalModel = model.clone();
+                createCropRowsWithPlots(scene);
+                modelLoaded = true;
+                bindPlantActionButtons();
+                console.log('✅ 模型加载成功！');
+            }, undefined, function (error) {
+                loadingDiv.textContent = '❌ 模型加载失败，请检查文件名';
+                console.warn('模型加载失败:', error);
+                createFallbackCrops(scene);
+                bindPlantActionButtons();
+            });
+
+            function onPointerMove(event) {
+                if (!scene3d || scene3d.classList.contains('hidden')) return;
+                const rect = canvas.getBoundingClientRect();
+                const xClient = event.clientX, yClient = event.clientY;
+                const insideCanvas = xClient >= rect.left && xClient <= rect.right && yClient >= rect.top && yClient <= rect.bottom;
+                if (!insideCanvas) { if (selectedPlant === null && hoverHighlight) hoverHighlight.visible = false; return; }
+                pointer.x = ((xClient - rect.left) / rect.width) * 2 - 1;
+                pointer.y = -((yClient - rect.top) / rect.height) * 2 + 1;
+                raycaster.setFromCamera(pointer, camera);
+                const intersects = raycaster.intersectObjects(plantPickMeshes, true);
+                if (intersects.length > 0) {
+                    const plantIndex = intersects[0].object.userData.plantIndex;
+                    if (selectedPlant !== null && selectedPlant !== plantIndex) return;
+                    if (selectedPlant === null) updateHoverHighlight(plantIndex);
+                } else {
+                    if (selectedPlant === null && hoverHighlight) hoverHighlight.visible = false;
+                }
+            }
+
+            function onPointerDown(event) {
+                if (!scene3d || scene3d.classList.contains('hidden')) return;
+                const rect = canvas.getBoundingClientRect();
+                const xClient = event.clientX, yClient = event.clientY;
+                const insideCanvas = xClient >= rect.left && xClient <= rect.right && yClient >= rect.top && yClient <= rect.bottom;
+                if (!insideCanvas) return;
+                pointer.x = ((xClient - rect.left) / rect.width) * 2 - 1;
+                pointer.y = -((yClient - rect.top) / rect.height) * 2 + 1;
+                raycaster.setFromCamera(pointer, camera);
+                const intersects = raycaster.intersectObjects(plantPickMeshes, true);
+                if (intersects.length > 0) {
+                    const plantIndex = intersects[0].object.userData.plantIndex;
+                    if (selectedPlant === plantIndex) return;
+                    showPlantActions(plantIndex);
+                    const plant = plantData[plantIndex];
+                    dialogLocation.textContent = `${plant.zone} · ${plant.row + 1}行${plant.col + 1}列`;
+                    const statusMap = ['正常', '注意', '警告'];
+                    const statusClassMap = ['', 'warning', 'danger'];
+                    dialogSoilState.textContent = '● ' + statusMap[plant.status];
+                    dialogSoilState.className = 'status-tag ' + statusClassMap[plant.status];
+                } else {
+                    hidePlantActions();
+                    if (hoverHighlight) hoverHighlight.visible = false;
+                }
+            }
+
+            function handleResize() {
+                const w = container.clientWidth, h = container.clientHeight;
+                if (w > 0 && h > 0) { renderer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+            }
+            window.addEventListener('resize', handleResize);
+
+            function animate() {
+                requestAnimationFrame(animate);
+                controls.update();
+                if (selectedPlant !== null && plantActions && plantActions.classList.contains('visible')) {
+                    positionOverlayElement(plantActions, plantData[selectedPlant]);
+                }
+                if (selectedPlant !== null && wateringOverlay && wateringOverlay.classList.contains('visible')) {
+                    positionOverlayElement(wateringOverlay, plantData[selectedPlant], 10);
+                }
+                renderer.render(scene, camera);
+            }
+            animate();
+            window._threeScene = scene;
+        }
+
+        function createGreenhouse(scene) {
+            const group = new THREE.Group();
+            const width = 16, depth = 16, height = 4.5;
+            const strips = 20;
+            for (let i = 0; i < strips; i++) {
+                const t1 = i / strips, t2 = (i + 1) / strips;
+                const angle1 = t1 * Math.PI, angle2 = t2 * Math.PI;
+                const x1 = -width / 2 + t1 * width, y1 = height * Math.sin(angle1);
+                const x2 = -width / 2 + t2 * width, y2 = height * Math.sin(angle2);
+                const midX = (x1 + x2) / 2, midY = (y1 + y2) / 2;
+                const dx = x2 - x1, dy = y2 - y1;
+                const len = Math.sqrt(dx * dx + dy * dy);
+                const geo = new THREE.PlaneGeometry(len, depth);
+                const mat = new THREE.MeshPhysicalMaterial({ color: 0xd1d5db, transparent: true, opacity: 0.12, roughness: 0.25, metalness: 0.1, side: THREE.DoubleSide, reflectivity: 0.6 });
+                const mesh = new THREE.Mesh(geo, mat);
+                mesh.position.set(midX, midY, 0);
+                const angle = Math.atan2(dy, dx);
+                mesh.rotation.z = angle;
+                group.add(mesh);
+            }
+            const wallMat = new THREE.MeshPhysicalMaterial({ color: 0xe5e7eb, transparent: true, opacity: 0.08, roughness: 0.3, metalness: 0.08, side: THREE.DoubleSide, reflectivity: 0.4 });
+            const wallGeo = new THREE.PlaneGeometry(width, height);
+            const wallFront = new THREE.Mesh(wallGeo, wallMat);
+            wallFront.position.set(0, height / 2, depth / 2);
+            group.add(wallFront);
+            const wallBack = new THREE.Mesh(wallGeo, wallMat);
+            wallBack.position.set(0, height / 2, -depth / 2);
+            group.add(wallBack);
+            const sideShape = new THREE.Shape();
+            sideShape.moveTo(-width / 2, 0);
+            for (let i = 0; i <= 20; i++) { const t = i / 20; const x = -width / 2 + t * width; const y = height * Math.sin(t * Math.PI); sideShape.lineTo(x, y); }
+            sideShape.lineTo(width / 2, 0);
+            sideShape.closePath();
+            const sideGeo = new THREE.ShapeGeometry(sideShape);
+            const sideMat = new THREE.MeshPhysicalMaterial({ color: 0xe5e7eb, transparent: true, opacity: 0.08, roughness: 0.3, metalness: 0.08, side: THREE.DoubleSide, reflectivity: 0.4 });
+            const sideLeft = new THREE.Mesh(sideGeo, sideMat);
+            sideLeft.rotation.y = Math.PI / 2;
+            sideLeft.position.set(-width / 2, 0, 0);
+            group.add(sideLeft);
+            const sideRight = new THREE.Mesh(sideGeo, sideMat);
+            sideRight.rotation.y = -Math.PI / 2;
+            sideRight.position.set(width / 2, 0, 0);
+            group.add(sideRight);
+            const ribMat = new THREE.MeshStandardMaterial({ color: 0x9ca3af, roughness: 0.35, metalness: 0.5 });
+            for (let z = -depth / 2; z <= depth / 2; z += depth / 4) {
+                const ribGeo = new THREE.BoxGeometry(0.08, height + 0.2, 0.08);
+                const rib = new THREE.Mesh(ribGeo, ribMat);
+                rib.position.set(-width / 2 + 0.08, height / 2, z);
+                group.add(rib);
+                const rib2 = rib.clone();
+                rib2.position.set(width / 2 - 0.08, height / 2, z);
+                group.add(rib2);
+            }
+            for (let x = -width / 2; x <= width / 2; x += width / 4) {
+                const ribGeo = new THREE.BoxGeometry(0.08, 0.08, depth);
+                const rib = new THREE.Mesh(ribGeo, ribMat);
+                rib.position.set(x, 0.15, 0);
+                group.add(rib);
+            }
+            scene.add(group);
+        }
+
+        function createCropRowsWithPlots(scene) {
+            if (!window._originalModel) return;
+            const totalWidth = 12, totalDepth = 10, zoneCount = 4, zoneWidth = totalWidth / zoneCount;
+            const colsPerZone = 2, rowsPerZone = 8, spacingX = 1.1, spacingZ = 1.1;
+            const originX = -totalWidth / 2, originZ = -totalDepth / 2;
+            const zoneNames = ['A区', 'B区', 'C区', 'D区'];
+            const plotStatuses = [];
+            for (let z = 0; z < zoneCount; z++) {
+                plotStatuses[z] = [];
+                for (let r = 0; r < rowsPerZone; r++) {
+                    plotStatuses[z][r] = [];
+                    for (let c = 0; c < colsPerZone; c++) {
+                        const rand = Math.random();
+                        let status = rand < 0.6 ? 0 : rand < 0.85 ? 1 : 2;
+                        plotStatuses[z][r][c] = status;
+                    }
+                }
+            }
+            const cropGroup = new THREE.Group();
+            cropGroup.name = 'cropGroup';
+            plantData.length = 0;
+            plantPickMeshes.length = 0;
+            const boundaryMat = new THREE.LineBasicMaterial({ color: 0x4a5a4a, opacity: 0.35 });
+            for (let i = 1; i < zoneCount; i++) {
+                const x = originX + i * zoneWidth;
+                const pts = [new THREE.Vector3(x, 0.015, originZ - 0.15), new THREE.Vector3(x, 0.015, originZ + totalDepth + 0.15)];
+                const geo = new THREE.BufferGeometry().setFromPoints(pts);
+                const line = new THREE.Line(geo, boundaryMat);
+                cropGroup.add(line);
+            }
+            const edgeMat = new THREE.LineBasicMaterial({ color: 0x4a5a4a, opacity: 0.25 });
+            const topPts = [new THREE.Vector3(originX - 0.15, 0.015, originZ - 0.15), new THREE.Vector3(originX + totalWidth + 0.15, 0.015, originZ - 0.15)];
+            const bottomPts = [new THREE.Vector3(originX - 0.15, 0.015, originZ + totalDepth + 0.15), new THREE.Vector3(originX + totalWidth + 0.15, 0.015, originZ + totalDepth + 0.15)];
+            cropGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(topPts), edgeMat));
+            cropGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(bottomPts), edgeMat));
+            zoneNames.forEach((name, zoneIndex) => {
+                const zoneX = originX + zoneIndex * zoneWidth;
+                const zoneZ = originZ;
+                addZoneLabel(scene, name, zoneX + zoneWidth / 2, zoneZ + totalDepth / 2, zoneIndex);
+                for (let r = 0; r < rowsPerZone; r++) {
+                    for (let c = 0; c < colsPerZone; c++) {
+                        const offsetX = zoneX + (c + 0.5) * (zoneWidth / colsPerZone);
+                        const offsetZ = zoneZ + (r + 0.5) * (totalDepth / rowsPerZone);
+                        const status = plotStatuses[zoneIndex][r][c];
+                        const plantIndex = plantData.length;
+                        createPlantPlot(scene, cropGroup, offsetX, offsetZ, status, plantIndex, r, c, name);
+                    }
+                }
+            });
+            scene.add(cropGroup);
+        }
+
+        function addZoneLabel(scene, text, x, z, zoneIndex) {
+            const labelCanvas = document.createElement('canvas');
+            labelCanvas.width = 200;
+            labelCanvas.height = 120;
+            const ctx = labelCanvas.getContext('2d');
+            ctx.fillStyle = 'rgba(30, 100, 50, 0.8)';
+            ctx.shadowColor = 'rgba(0,0,0,0.3)';
+            ctx.shadowBlur = 20;
+            ctx.beginPath();
+            ctx.roundRect(10, 10, 180, 100, 20);
+            ctx.fill();
+            ctx.shadowBlur = 0;
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 48px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(text, 100, 68);
+            const texture = new THREE.CanvasTexture(labelCanvas);
+            const material = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false, depthWrite: false });
+            const sprite = new THREE.Sprite(material);
+            sprite.scale.set(1.6, 1.0, 1);
+            sprite.position.set(x, 0.5, z);
+            scene.add(sprite);
+        }
+        if (!CanvasRenderingContext2D.prototype.roundRect) {
+            CanvasRenderingContext2D.prototype.roundRect = function (x, y, w, h, r) {
+                if (typeof r === 'number') r = [r];
+                const radii = r.map(v => Math.min(v, Math.min(w, h) / 2));
+                this.moveTo(x + radii[0], y);
+                this.lineTo(x + w - radii[0], y);
+                this.quadraticCurveTo(x + w, y, x + w, y + radii[0]);
+                this.lineTo(x + w, y + h - radii[0]);
+                this.quadraticCurveTo(x + w, y + h, x + w - radii[0], y + h);
+                this.lineTo(x + radii[0], y + h);
+                this.quadraticCurveTo(x, y + h, x, y + h - radii[0]);
+                this.lineTo(x, y + radii[0]);
+                this.quadraticCurveTo(x, y, x + radii[0], y);
+                return this;
+            };
+        }
+
+        function createPlantPlot(scene, cropGroup, x, z, status, plantIndex, row, col, zoneName) {
+            const plotSize = 0.55;
+            let landColor = 0x3A8BEB;
+            if (status === 1) landColor = 0xFFCC33;
+            else if (status === 2) landColor = 0xCC3333;
+            const plotMat = new THREE.MeshStandardMaterial({ color: landColor, roughness: 0.9, metalness: 0 });
+            const plot = new THREE.Mesh(new THREE.PlaneGeometry(plotSize, plotSize), plotMat);
+            plot.rotation.x = -Math.PI / 2;
+            plot.position.set(x, 0.01, z);
+            plot.userData = { plantIndex };
+            plot.receiveShadow = true;
+            plantPickMeshes.push(plot);
+            cropGroup.add(plot);
+            const borderMat = new THREE.LineBasicMaterial({ color: 0x4a3a2a, transparent: true, opacity: 0.15 });
+            const borderPts = [new THREE.Vector3(-plotSize / 2, 0.015, -plotSize / 2), new THREE.Vector3(plotSize / 2, 0.015, -plotSize / 2), new THREE.Vector3(plotSize / 2, 0.015, plotSize / 2), new THREE.Vector3(-plotSize / 2, 0.015, plotSize / 2), new THREE.Vector3(-plotSize / 2, 0.015, -plotSize / 2)];
+            const borderGeo = new THREE.BufferGeometry().setFromPoints(borderPts);
+            const borderLine = new THREE.Line(borderGeo, borderMat);
+            cropGroup.add(borderLine);
+            const clone = window._originalModel.clone();
+            const scaleVar = 0.45 + Math.random() * 0.12;
+            clone.scale.set(scaleVar, scaleVar, scaleVar);
+            clone.rotation.y = Math.random() * Math.PI * 2;
+            clone.position.set(x, 0.05, z);
+            cropGroup.add(clone);
+            if (status === 2) {
+                const warnCanvas = document.createElement('canvas');
+                warnCanvas.width = 64;
+                warnCanvas.height = 64;
+                const wctx = warnCanvas.getContext('2d');
+                wctx.beginPath();
+                wctx.arc(32, 32, 28, 0, Math.PI * 2);
+                wctx.fillStyle = '#FFCC00';
+                wctx.fill();
+                wctx.strokeStyle = '#CC9900';
+                wctx.lineWidth = 2;
+                wctx.stroke();
+                wctx.fillStyle = '#CC3300';
+                wctx.font = 'bold 36px Arial';
+                wctx.textAlign = 'center';
+                wctx.textBaseline = 'middle';
+                wctx.fillText('!', 32, 34);
+                const warnTexture = new THREE.CanvasTexture(warnCanvas);
+                const warnMat = new THREE.SpriteMaterial({ map: warnTexture, transparent: true, depthWrite: false });
+                const warnSprite = new THREE.Sprite(warnMat);
+                warnSprite.scale.set(0.5, 0.5, 1);
+                warnSprite.position.set(x, 0.7, z);
+                cropGroup.add(warnSprite);
+            }
+            plantData.push({ x, z, status, row, col, zone: zoneName });
+        }
+
+        function createFallbackCrops(scene) {
+            const totalWidth = 12, totalDepth = 10, zoneCount = 4, zoneWidth = totalWidth / zoneCount;
+            const colsPerZone = 2, rowsPerZone = 8;
+            const originX = -totalWidth / 2, originZ = -totalDepth / 2;
+            const zoneNames = ['A区', 'B区', 'C区', 'D区'];
+            const cropGroup = new THREE.Group();
+            cropGroup.name = 'cropGroup';
+            plantData.length = 0;
+            plantPickMeshes.length = 0;
+            for (let z = 0; z < zoneCount; z++) {
+                const zoneX = originX + z * zoneWidth;
+                const zoneZ = originZ;
+                addZoneLabel(scene, zoneNames[z], zoneX + zoneWidth / 2, zoneZ + totalDepth / 2, z);
+                for (let r = 0; r < rowsPerZone; r++) {
+                    for (let c = 0; c < colsPerZone; c++) {
+                        const x = zoneX + (c + 0.5) * (zoneWidth / colsPerZone);
+                        const z = zoneZ + (r + 0.5) * (totalDepth / rowsPerZone);
+                        const rand = Math.random();
+                        let status = rand < 0.6 ? 0 : rand < 0.85 ? 1 : 2;
+                        let landColor = 0x3A8BEB;
+                        if (status === 1) landColor = 0xFFCC33;
+                        else if (status === 2) landColor = 0xCC3333;
+                        const plotMat = new THREE.MeshStandardMaterial({ color: landColor, roughness: 0.9, metalness: 0 });
+                        const plot = new THREE.Mesh(new THREE.PlaneGeometry(0.55, 0.55), plotMat);
+                        plot.rotation.x = -Math.PI / 2;
+                        plot.position.set(x, 0.01, z);
+                        const plantIndex = plantData.length;
+                        plot.userData = { plantIndex };
+                        plantPickMeshes.push(plot);
+                        cropGroup.add(plot);
+                        const stemMat = new THREE.MeshStandardMaterial({ color: 0x3a7a3a });
+                        const stem = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.05, 0.5, 6), stemMat);
+                        stem.position.set(x, 0.3, z);
+                        cropGroup.add(stem);
+                        const leafMat = new THREE.MeshStandardMaterial({ color: status === 2 ? 0xcc6633 : 0x4caf50, roughness: 0.7 });
+                        const crown = new THREE.Mesh(new THREE.SphereGeometry(0.25, 6, 6), leafMat);
+                        crown.position.set(x, 0.6, z);
+                        cropGroup.add(crown);
+                        if (status === 2) {
+                            const warnCanvas = document.createElement('canvas');
+                            warnCanvas.width = 64; warnCanvas.height = 64;
+                            const wctx = warnCanvas.getContext('2d');
+                            wctx.beginPath(); wctx.arc(32, 32, 28, 0, Math.PI * 2);
+                            wctx.fillStyle = '#FFCC00'; wctx.fill();
+                            wctx.fillStyle = '#CC3300';
+                            wctx.font = 'bold 36px Arial';
+                            wctx.textAlign = 'center';
+                            wctx.textBaseline = 'middle';
+                            wctx.fillText('!', 32, 34);
+                            const warnTexture = new THREE.CanvasTexture(warnCanvas);
+                            const warnMat = new THREE.SpriteMaterial({ map: warnTexture, transparent: true, depthWrite: false });
+                            const warnSprite = new THREE.Sprite(warnMat);
+                            warnSprite.scale.set(0.5, 0.5, 1);
+                            warnSprite.position.set(x, 0.9, z);
+                            cropGroup.add(warnSprite);
+                        }
+                        plantData.push({ x, z, status, row: r, col: c, zone: zoneNames[z] });
+                    }
+                }
+            }
+            scene.add(cropGroup);
+        }
+
+        // ============================================================
+        // 绑定按钮操作 (包含生长趋势)
+        // ============================================================
+        function bindPlantActionButtons() {
+            if (!plantActions) return;
+            plantActions.querySelectorAll('button').forEach(button => {
+                button.addEventListener('click', async (event) => {
+                    event.stopPropagation();
+                    if (selectedPlant === null) return;
+                    const plant = plantData[selectedPlant];
+                    const action = button.dataset.action;
+
+                    if (action === 'monitor') {
+                        dialogLocation.textContent = `${plant.zone} · ${plant.row + 1}行${plant.col + 1}列`;
+                        const statusMap = ['正常', '注意', '警告'];
+                        const statusClassMap = ['', 'warning', 'danger'];
+                        dialogSoilState.textContent = '● ' + statusMap[plant.status];
+                        dialogSoilState.className = 'status-tag ' + statusClassMap[plant.status];
+                        plantDialog.classList.add('visible');
+                        if (monitorVideo && !monitorVideo.srcObject) {
+                            try {
+                                const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment', width: { ideal: 360 }, height: { ideal: 640 } }, audio: false });
+                                monitorVideo.srcObject = stream;
+                            } catch (err) {
+                                monitorVideo.poster = 'https://images.unsplash.com/photo-1516912483221-d367d3e7be99?w=900&q=80';
+                                monitorVideo.style.objectFit = 'cover';
+                            }
+                        }
+                    } else if (action === 'irrigate') {
+                        if (wateringOverlay) {
+                            const plantLabel = `第${plant.col + 1}列第${plant.row + 1}行植株 (${plant.zone})`;
+                            wateringOverlay.querySelector('#wateringText').textContent = `${plantLabel} 正在灌溉中...`;
+                            wateringOverlay.classList.add('visible');
+                            positionOverlayElement(wateringOverlay, plant, 0, true);
+                            setTimeout(() => { wateringOverlay.classList.remove('visible'); }, 3000);
+                        }
+                    } else if (action === 'trend') {
+                        growthDialog.classList.add('visible');
+                        renderHeightChart();
+                    }
+                });
+            });
+
+            if (growthClose) {
+                growthClose.addEventListener('click', () => {
+                    growthDialog.classList.remove('visible');
+                });
+            }
+            document.addEventListener('click', function (e) {
+                if (growthDialog.classList.contains('visible') && !growthDialog.contains(e.target) && !e.target.closest('.plant-actions')) {
+                    growthDialog.classList.remove('visible');
+                }
+            });
+
+            if (closeDialogBtn) {
+                closeDialogBtn.addEventListener('click', () => {
+                    plantDialog.classList.remove('visible');
+                    if (monitorVideo && monitorVideo.srcObject) {
+                        monitorVideo.srcObject.getTracks().forEach(track => track.stop());
+                        monitorVideo.srcObject = null;
+                    }
+                });
+            }
+        }
+
+        // ============================================================
+        // 绘制株高折线图 (canvas) - 适配缩小版
+        // ============================================================
+        function renderHeightChart() {
+            const canvas = document.getElementById('heightChart');
+            if (!canvas) return;
+            const rect = canvas.parentElement.getBoundingClientRect();
+            const dpr = window.devicePixelRatio || 1;
+            const w = rect.width - 20;
+            const h = 180;
+            canvas.width = w * dpr;
+            canvas.height = h * dpr;
+            canvas.style.width = w + 'px';
+            canvas.style.height = h + 'px';
+            const ctx = canvas.getContext('2d');
+            ctx.scale(dpr, dpr);
+
+            const data = [72, 74, 77, 79, 82, 84, 86];
+            const padding = { top: 14, bottom: 14, left: 14, right: 14 };
+            const chartW = w - padding.left - padding.right;
+            const chartH = h - padding.top - padding.bottom;
+            const maxVal = 100;
+            const minVal = 60;
+
+            ctx.clearRect(0, 0, w, h);
+
+            // 网格线
+            ctx.strokeStyle = 'rgba(0,0,0,0.04)';
+            ctx.lineWidth = 1;
+            for (let i = 0; i < 4; i++) {
+                const y = padding.top + (chartH / 4) * i;
+                ctx.beginPath();
+                ctx.moveTo(padding.left, y);
+                ctx.lineTo(w - padding.right, y);
+                ctx.stroke();
+            }
+
+            // 折线
+            ctx.beginPath();
+            ctx.strokeStyle = '#2d7a3a';
+            ctx.lineWidth = 2.5;
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+
+            const points = data.map((val, idx) => {
+                const x = padding.left + (idx / (data.length - 1)) * chartW;
+                const y = padding.top + chartH - ((val - minVal) / (maxVal - minVal)) * chartH;
+                return { x, y };
+            });
+
+            points.forEach((p, i) => {
+                if (i === 0) ctx.moveTo(p.x, p.y);
+                else ctx.lineTo(p.x, p.y);
+            });
+            ctx.stroke();
+
+            // 填充
+            const last = points[points.length - 1];
+            ctx.lineTo(last.x, padding.top + chartH);
+            ctx.lineTo(points[0].x, padding.top + chartH);
+            ctx.closePath();
+            const grad = ctx.createLinearGradient(0, padding.top, 0, padding.top + chartH);
+            grad.addColorStop(0, 'rgba(45, 122, 58, 0.2)');
+            grad.addColorStop(1, 'rgba(45, 122, 58, 0.02)');
+            ctx.fillStyle = grad;
+            ctx.fill();
+
+            // 数据点
+            points.forEach((p, i) => {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 3.5, 0, Math.PI * 2);
+                ctx.fillStyle = '#2d7a3a';
+                ctx.fill();
+                ctx.strokeStyle = '#fff';
+                ctx.lineWidth = 1.5;
+                ctx.stroke();
+                ctx.fillStyle = 'rgba(40,70,100,0.5)';
+                ctx.font = '9px Inter, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText(data[i] + 'cm', p.x, p.y - 8);
+            });
+
+            // X轴标签
+            const labels = ['07-26', '07-27', '07-28', '07-29', '07-30', '07-31', '08-01'];
+            ctx.fillStyle = 'rgba(40,70,100,0.25)';
+            ctx.font = '8px Inter, sans-serif';
+            ctx.textAlign = 'center';
+            labels.forEach((label, i) => {
+                const x = padding.left + (i / (labels.length - 1)) * chartW;
+                ctx.fillText(label, x, padding.top + chartH + 12);
+            });
+        }
+
+        // ============================================================
+        // 全局点击空白取消选中
+        // ============================================================
+        document.addEventListener('click', function (event) {
+            const target = event.target;
+            if (target.closest('#scene3d') || target.closest('.plant-actions') || target.closest('.plant-dialog') ||
+                target.closest('.env-panel') || target.closest('.sidebar-right') || target.closest('.topbar') ||
+                target.closest('.bottom-nav') || target.closest('.growth-dialog')) {
+                return;
+            }
+            if (selectedPlant !== null) {
+                hidePlantActions();
+                if (hoverHighlight) hoverHighlight.visible = false;
+            }
+        });
+
+        if (plantActions) {
+            plantActions.addEventListener('click', function (e) { e.stopPropagation(); });
+        }
+        if (plantDialog) {
+            plantDialog.addEventListener('click', function (e) { e.stopPropagation(); });
+        }
+        if (growthDialog) {
+            growthDialog.addEventListener('click', function (e) { e.stopPropagation(); });
+        }
+
+        // ============================================================
+        // 右侧边栏折叠
+        // ============================================================
+        const sidebarToggleBtn = document.getElementById('sidebarToggle');
+        const sidebarRight = document.getElementById('sidebarRight');
+        function toggleSidebar() {
+            const collapsed = sidebarRight.classList.toggle('collapsed');
+            sidebarToggleBtn.innerHTML = collapsed ? '<i class="fas fa-chevron-right"></i>' : '<i class="fas fa-chevron-left"></i>';
+            sidebarToggleBtn.setAttribute('aria-label', collapsed ? '展开侧边栏' : '收起侧边栏');
+            localStorage.setItem('sidebarCollapsed', collapsed ? 'true' : 'false');
+        }
+        sidebarToggleBtn.addEventListener('click', toggleSidebar);
+        try {
+            const saved = localStorage.getItem('sidebarCollapsed');
+            if (saved === 'true') {
+                sidebarRight.classList.add('collapsed');
+                sidebarToggleBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+                sidebarToggleBtn.setAttribute('aria-label', '展开侧边栏');
+            }
+        } catch (_) { }
+
+        // ============================================================
+        // 环境面板拖拽
+        // ============================================================
+        const envPanel = document.getElementById('envPanel');
+        let isDragging = false, dragStartX = 0, dragStartY = 0, panelStartX = 0, panelStartY = 0;
+        function clampPanelPosition() {
+            const parent = envPanel.parentElement;
+            if (!parent) return;
+            const margin = 20;
+            let left = envPanel.offsetLeft, top = envPanel.offsetTop;
+            const maxLeft = parent.clientWidth - envPanel.offsetWidth - margin;
+            const maxTop = parent.clientHeight - envPanel.offsetHeight - margin;
+            if (left < margin) left = margin;
+            if (top < margin) top = margin;
+            if (left > maxLeft) left = maxLeft;
+            if (top > maxTop) top = maxTop;
+            envPanel.style.left = left + 'px';
+            envPanel.style.top = top + 'px';
+            try { localStorage.setItem('envPanelLeft', String(left)); localStorage.setItem('envPanelTop', String(top)); } catch (_) { }
+        }
+        function onPointerDown(e) {
+            isDragging = true;
+            const touch = e.touches ? e.touches[0] : e;
+            dragStartX = touch.clientX; dragStartY = touch.clientY;
+            const rect = envPanel.getBoundingClientRect();
+            const parentRect = envPanel.parentElement.getBoundingClientRect();
+            panelStartX = rect.left - parentRect.left;
+            panelStartY = rect.top - parentRect.top;
+            envPanel.setPointerCapture(e.pointerId);
+            envPanel.style.cursor = 'grabbing';
+            e.preventDefault();
+        }
+        function onPointerMove(e) {
+            if (!isDragging) return;
+            const touch = e.touches ? e.touches[0] : e;
+            const dx = touch.clientX - dragStartX, dy = touch.clientY - dragStartY;
+            let left = panelStartX + dx, top = panelStartY + dy;
+            const parentRect = envPanel.parentElement.getBoundingClientRect();
+            const panelRect = envPanel.getBoundingClientRect();
+            const margin = 10;
+            const maxLeft = parentRect.width - panelRect.width - margin;
+            const maxTop = parentRect.height - panelRect.height - margin;
+            if (left < -panelRect.width + 20) left = -panelRect.width + 20;
+            if (top < -panelRect.height + 20) top = -panelRect.height + 20;
+            if (left > maxLeft + 20) left = maxLeft + 20;
+            if (top > maxTop + 20) top = maxTop + 20;
+            envPanel.style.left = left + 'px';
+            envPanel.style.top = top + 'px';
+            e.preventDefault();
+        }
+        function onPointerUp(e) {
+            if (!isDragging) return;
+            isDragging = false;
+            envPanel.style.cursor = 'grab';
+            try { localStorage.setItem('envPanelLeft', String(envPanel.offsetLeft)); localStorage.setItem('envPanelTop', String(envPanel.offsetTop)); } catch (_) { }
+        }
+        envPanel.addEventListener('pointerdown', onPointerDown);
+        document.addEventListener('pointermove', onPointerMove);
+        document.addEventListener('pointerup', onPointerUp);
+        try {
+            const savedLeft = localStorage.getItem('envPanelLeft');
+            const savedTop = localStorage.getItem('envPanelTop');
+            if (savedLeft !== null && savedTop !== null) {
+                const left = parseFloat(savedLeft), top = parseFloat(savedTop);
+                if (!isNaN(left) && !isNaN(top)) { envPanel.style.left = left + 'px'; envPanel.style.top = top + 'px'; requestAnimationFrame(clampPanelPosition); }
+            }
+        } catch (_) { }
+        window.addEventListener('resize', clampPanelPosition);
+        window.addEventListener('scroll', clampPanelPosition);
+
+        // ============================================================
+        // 其他交互
+        // ============================================================
+        document.querySelector('.back-btn').addEventListener('click', function () { alert('返回农场列表'); });
+        document.querySelector('.ai-btn').addEventListener('click', function () { alert('🤖 AI诊断分析中...\n\nA区土壤湿度偏低（52%），建议今日16:00启动滴灌15分钟。'); });
+        document.querySelectorAll('.device-item').forEach(item => { item.addEventListener('click', function () { alert('进入设备详情: ' + (this.querySelector('.name')?.textContent || '设备')); }); });
+        document.querySelectorAll('.alert-item').forEach(item => { item.addEventListener('click', function () { alert('查看告警详情'); }); });
+        document.querySelectorAll('.suggestion-btn').forEach(btn => { btn.addEventListener('click', function () { alert('✅ 已采纳AI建议：今日16:00启动滴灌15分钟。'); }); });
+        document.querySelectorAll('.suggestion-btn-ignore').forEach(btn => { btn.addEventListener('click', function () { alert('已忽略该建议'); }); });
+    </script>
+</body>
+
+</html>
