@@ -10,7 +10,7 @@ import type { GreenhouseDetail } from '@/types'
 
 const route = useRoute(); const router = useRouter()
 const detail = ref<GreenhouseDetail>(); const loading = ref(true); const error = ref('')
-const mode = ref<'real' | 'twin'>('real'); const selectedPlantId = ref<string | null>(null); const sidebarOpen = ref(true)
+const mode = ref<'real' | 'twin'>(route.params.greenhouseId === 'yt-pear-02' ? 'twin' : 'real'); const selectedPlantId = ref<string | null>(null); const sidebarOpen = ref(true)
 const activePanel = ref<'overview' | 'devices' | 'plants'>('overview')
 const realVideo = ref<HTMLVideoElement>(); const videoState = ref<'loading' | 'playing' | 'paused' | 'error'>('loading')
 let timer = 0

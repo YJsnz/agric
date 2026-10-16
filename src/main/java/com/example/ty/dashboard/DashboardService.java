@@ -81,8 +81,10 @@ public class DashboardService {
         FarmAsset greenhouse = assets.findByFarmIdAndId(farmId, greenhouseId)
                 .filter(item -> "greenhouse".equals(item.getType()))
                 .orElseThrow(() -> BizException.notFound("大棚不存在"));
-        int index = greenhouseIndex(greenhouseId);
-        GreenhouseDetail.SceneProfile sceneProfile = greenhouseScene(index);
+        int index = greenhouseId.equals("yt-pear-02") ? 1 : greenhouseIndex(greenhouseId);
+        GreenhouseDetail.SceneProfile sceneProfile = greenhouseId.equals("yt-pear-02")
+                ? new GreenhouseDetail.SceneProfile("双拱薄膜棚", "高垄土培", "tomato-vine", 4, 8, 32, "压力补偿滴灌")
+                : greenhouseScene(index);
         List<EnvironmentMetric> readings = metrics.findByFarmIdOrderById(farmId);
         List<GreenhouseDetail.Metric> detailMetrics = readings.stream().map(item -> {
             double value = item.getValue() + switch (item.getMetricKey()) {
@@ -100,10 +102,11 @@ public class DashboardService {
         List<GreenhouseDetail.Device> greenhouseDevices = greenhouseDevices(greenhouseId, index, sceneProfile);
         int baseHealth = greenhouse.getHealth() == null ? 92 : greenhouse.getHealth();
         int columns = sceneProfile.bedCount();
-        int sampleRows = (int) Math.ceil(12.0 / columns);
+        int plantCount = greenhouseId.equals("yt-pear-02") ? 32 : 12;
+        int sampleRows = (int) Math.ceil((double) plantCount / columns);
         double baseHeight = switch (index) { case 1 -> 148; case 2 -> 24; case 3 -> 172; case 4 -> 12; case 5 -> 68; case 6 -> 29; default -> 60; };
         String cultivar = switch (index) { case 1 -> "千禧红"; case 2 -> "红颜"; case 3 -> "津优 35"; case 4 -> "砧木苗"; case 5 -> "普罗旺斯"; case 6 -> "奶油生菜"; default -> greenhouse.getCrop(); };
-        List<GreenhouseDetail.Plant> plantRows = java.util.stream.IntStream.range(0, 12).mapToObj(i -> {
+        List<GreenhouseDetail.Plant> plantRows = java.util.stream.IntStream.range(0, plantCount).mapToObj(i -> {
             int column = i % columns;
             int row = i / columns;
             double x = columns == 1 ? 0 : -6.2 + column * (12.4 / (columns - 1));

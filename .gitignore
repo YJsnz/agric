@@ -88,3 +88,15 @@ ai-service/.integration-runtime/
 **/.pytest_cache/
 
 ai-service/models/reranker/
+
+# Serial gateway runtime and local scene verification
+embedded/__pycache__/
+ai-service/Ultralytics/
+ai-service/tomato_diagnosis/.runtime/
+/tmp/greenhouse-review/
+var/serial-*.sqlite*
+var/serial-*.json
+vision-runtime/cuda/build/
+
+# JVM native crash diagnostics
+hs_err_pid*.log

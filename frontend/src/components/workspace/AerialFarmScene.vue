@@ -19,7 +19,22 @@ const emit = defineEmits<{
   (event: 'select', id: string | null): void
   (event: 'focus', id: string): void
   (event: 'transport'): void
+  (event: 'pan', x: number, y: number): void
+  (event: 'zoom', factor: number): void
 }>()
+const dragging = ref(false)
+let drag: {id:number;x:number;y:number;startX:number;startY:number;moved:boolean} | null = null
+function pointerDown(e:PointerEvent) {
+  if(e.button!==0 || (e.target as HTMLElement).closest('button,.entity'))return
+  drag={id:e.pointerId,x:e.clientX,y:e.clientY,startX:props.offsetX,startY:props.offsetY,moved:false}
+}
+function pointerMove(e:PointerEvent) {
+  if(!drag || e.pointerId!==drag.id)return
+  const dx=e.clientX-drag.x,dy=e.clientY-drag.y
+  if(Math.hypot(dx,dy)>5) { drag.moved=true;dragging.value=true;(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId) }
+  if(drag.moved) emit('pan',constrain(drag.startX+dx,drag.startY+dy).x,constrain(drag.startX+dx,drag.startY+dy).y)
+}
+function pointerUp() { drag=null;setTimeout(()=>dragging.value=false,0) }
 const hoveredId = ref<string | null>(null)
 const plane = ref<HTMLElement>()
 const dimensions = ref({width:1536,height:1024})
@@ -42,10 +57,17 @@ function focusOffset(id:string,scale:number) {
   const factor=Math.max(width/1536,height/1024)
   return {x:(.5-entity.x/100)*1536*factor*scale,y:(.5-entity.y/100)*1024*factor*scale}
 }
+function constrain(x:number,y:number){
+  const {width,height}=dimensions.value,factor=Math.max(width/1536,height/1024)
+  const maxX=Math.max(0,(1536*factor*(props.projectMode?2:1)*props.scale-width)/2-4)
+  const maxY=Math.max(0,(1024*factor*props.scale-height)/2-4)
+  return {x:Math.max(-maxX,Math.min(maxX,x)),y:Math.max(-maxY,Math.min(maxY,y))}
+}
+const safeOffset=computed(()=>constrain(props.offsetX,props.offsetY))
 defineExpose({focusOffset})
 
 // 场景底图：跟随部署基址（/platform/）的公共资源 URL，避免编译期被当作模块导入解析
-const PROJECT_AERIAL_URL = `${import.meta.env.BASE_URL}assets/yantian-orchard-aerial.png`
+const PROJECT_AERIAL_URL = `${import.meta.env.BASE_URL}assets/yantian-greenhouse-expanded.png`
 const LEGACY_AERIAL_URL = `${import.meta.env.BASE_URL}assets/farm-aerial.png`
 
 const hoveredZone = computed(() => farmZones.find(zone => zone.entityId === hoveredId.value))
@@ -69,7 +91,7 @@ const visibleEntities = computed(() => {
   if (props.activeModule === 'irrigation') return []
   if (props.activeModule === 'crops') return sceneEntities.filter(entity => ['field','greenhouse'].includes(entity.type))
   if (props.activeModule === 'alerts') return sceneEntities.filter(entity => entity.status !== 'normal')
-  return props.projectMode ? sceneEntities.filter(e => e.type === 'field' || ['yt-sorting','yt-coldstore','yt-soil','yt-water','yt-weather'].includes(e.id)) : sceneEntities
+  return props.projectMode ? sceneEntities.filter(e => ['field','greenhouse'].includes(e.type) || ['yt-sorting','yt-coldstore','yt-soil','yt-water','yt-weather'].includes(e.id)) : sceneEntities
 })
 
 function zonePoints(points: Array<[number, number]>) { return points.map(point => point.join(',')).join(' ') }
@@ -80,11 +102,11 @@ function setHover(id: string | null) {
 </script>
 
 <template>
-  <div class="aerial" :class="{ project:projectMode }" @click="$emit('select', null)">
-    <div ref="plane" class="scene-plane" :style="{ transform: `translate(${offsetX}px, ${offsetY}px) scale(${scale})` }">
+  <div class="aerial" :class="{ project:projectMode, dragging }" @pointerdown="pointerDown" @pointermove="pointerMove" @pointerup="pointerUp" @pointercancel="pointerUp" @click.capture="dragging && $event.stopImmediatePropagation()" @wheel.prevent="$emit('zoom', $event.deltaY < 0 ? 1.1 : 1/1.1)" @click="$emit('select', null)">
+    <div ref="plane" class="scene-plane" :style="{ transform: `translate(${safeOffset.x}px, ${safeOffset.y}px) scale(${scale})` }">
     <div class="map-content" :style="canvasStyle">
       <svg class="scene-image" :viewBox="projectMode ? '0 0 1536 1024' : '0 0 1535 1024'" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <image :href="projectMode ? PROJECT_AERIAL_URL : LEGACY_AERIAL_URL" :width="projectMode ? 1536 : 1535" height="1024" />
+        <image :href="projectMode ? PROJECT_AERIAL_URL : LEGACY_AERIAL_URL" :x="projectMode ? -768 : 0" :width="projectMode ? 3072 : 1535" height="1024" />
       </svg>
 
       <TransportMap v-if="projectMode" @open="$emit('transport')"/>
@@ -163,3 +185,7 @@ function setHover(id: string | null) {
 .camera-coverage{position:absolute;z-index:6;left:59%;top:59%;width:22%;aspect-ratio:1;border:2px dashed rgba(90,220,255,.8);border-radius:50%;background:radial-gradient(circle,rgba(64,190,224,.2),transparent 68%);pointer-events:none;animation:pulse 2s infinite}.camera-coverage i{position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;background:#63dcfa}.camera-coverage span{position:absolute;left:50%;top:53%;transform:translateX(-50%);padding:4px 7px;border-radius:6px;background:rgba(4,29,35,.8);color:white;font-size:10px;white-space:nowrap}
 </style>
 <style scoped>.map-content{position:absolute}.project .zones g .zone-shape{stroke:#a8c29599;stroke-width:.85;stroke-dasharray:3 4;fill:transparent}.project .zones g.selected .zone-shape,.project .zones g.hovered .zone-shape{stroke:#d3f7bd;stroke-width:2;stroke-dasharray:none;fill:#c5e4a71c}.project .zone-hit{stroke-width:4}</style>
+
+<style scoped>.aerial{touch-action:none;cursor:grab}.aerial.dragging{cursor:grabbing}.dragging .scene-plane{transition:none}</style>
+
+<style scoped>.scene-image{overflow:visible}.project .zones{overflow:visible}</style>

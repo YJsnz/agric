@@ -11,6 +11,6 @@ public record ZoneUpsertRequest(
         @NotBlank @Size(max = 60) String stage,
         @NotBlank @Size(max = 100) String environment,
         @Min(0) @Max(100) Integer health,
-        @DecimalMin("2") @DecimalMax("98") double mapX,
+        @DecimalMin("-48") @DecimalMax("148") double mapX,
         @DecimalMin("2") @DecimalMax("98") double mapY,
         @NotNull @Size(min = 3, max = 12) List<@Size(min = 2, max = 2) List<@NotNull Double>> polygon) {}

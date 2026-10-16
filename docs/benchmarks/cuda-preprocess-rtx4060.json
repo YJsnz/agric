@@ -1,0 +1,31 @@
+{
+  "architecture": "AMD64",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "inputShape": [
+    416,
+    416,
+    3
+  ],
+  "size": 640,
+  "iterations": 30,
+  "maxAbsError": 0.0,
+  "timings": {
+    "cpu_reference_host_output": {
+      "medianMs": 47.07504999987577,
+      "p95Ms": 48.35613000045669
+    },
+    "pillow_production_host_output": {
+      "medianMs": 10.162250000121276,
+      "p95Ms": 10.669539999707922
+    },
+    "cuda_pinned_upload_device_output": {
+      "medianMs": 0.23735000013402896,
+      "p95Ms": 0.4951850002726129
+    }
+  },
+  "scope": "preprocessing only; CUDA includes upload, quality reduction and synchronization; excludes TensorRT, camera, image decode and serial; CPU reference is not the original Pillow implementation",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU (not Jetson)",
+  "cudaToolkit": "12.0",
+  "date": "2026-10-16",
+  "compiler": "MSVC 14.44; local validation used --allow-unsupported-compiler and _ALLOW_COMPILER_AND_STL_VERSION_MISMATCH; Jetson must rebuild with its supported JetPack compiler"
+}

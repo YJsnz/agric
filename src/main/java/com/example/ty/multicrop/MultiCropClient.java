@@ -16,9 +16,9 @@ public class MultiCropClient {
     private MultiCropRuntime runtime;
     private final ObjectMapper json;
     private final HttpClient http=HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(3)).build();
-    private static final Set<String> GETS=Set.of("/api/integration/health","/api/graph","/api/wheat/models/status","/api/jujube/health");
+    private static final Set<String> GETS=Set.of("/api/integration/health","/api/graph","/api/wheat/models/status","/api/jujube/health","/api/tomato/health");
     private static final Set<String> POSTS=Set.of("/api/vision/pear","/api/pear/diagnose","/api/wheat/diagnose","/api/jujube/diagnose","/api/jujube/vision/analyze",
-        "/api/graphrag/ask","/api/wheat/ask","/api/jujube/ask","/api/qingxian/ask");
+        "/api/tomato/vision/analyze","/api/tomato/diagnose","/api/graphrag/ask","/api/wheat/ask","/api/jujube/ask","/api/qingxian/ask");
     public MultiCropClient(@Value("${MULTICROP_BASE_URL:http://127.0.0.1:8090}") String base,ObjectMapper json) {
         this.base=URI.create(base.replaceAll("/+$",""));this.json=json;
         if(!Set.of("http","https").contains(this.base.getScheme())||this.base.getHost()==null||this.base.getRawQuery()!=null)

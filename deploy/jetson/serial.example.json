@@ -1,0 +1,8 @@
+{
+  "api": "http://127.0.0.1:8081",
+  "farm": "yantian-01",
+  "port": "/dev/serial/by-id/REPLACE_WITH_YOUR_USB_UART",
+  "baudrate": 115200,
+  "maxSpoolRows": 100000,
+  "devices": [{"address": 1, "entityId": "yt-weather"}]
+}

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SerialDevicePanel from './SerialDevicePanel.vue'
 import OperationJournal from './OperationJournal.vue'
 import ObservationHistory from './ObservationHistory.vue'
 import {useWorkspaceStore} from '@/stores/workspace'
@@ -99,7 +100,13 @@ async function saveZone() {
   if (!zoneForm.id.trim() || !zoneForm.name.trim() || !zoneForm.crop.trim() || !zoneForm.area.trim() || !zoneForm.stage.trim() || !zoneForm.environment.trim()) { emit('action','请完整填写种植区资料'); return }
   zoneSaving.value = true
   try {
-    const payload: ZoneInput = { ...zoneForm, polygon: polygonAt(Number(zoneForm.mapX), Number(zoneForm.mapY)) }
+    const previous = sceneEntities.find(item => item.id === editingZoneId.value)
+    const dx = previous ? (Number(zoneForm.mapX) - previous.x) * 1536 / 100 : 0
+    const dy = previous ? (Number(zoneForm.mapY) - previous.y) * 1024 / 100 : 0
+    const polygon: Array<[number, number]> = previous && zoneForm.polygon.length
+      ? zoneForm.polygon.map(([x,y]) => [x + dx, y + dy])
+      : polygonAt(Number(zoneForm.mapX), Number(zoneForm.mapY))
+    const payload: ZoneInput = { ...zoneForm, polygon }
     const saved = editingZoneId.value ? await updateFarmZone(editingZoneId.value, payload) : await createFarmZone(payload)
     const zoneIndex = farmZones.findIndex(item => item.entityId === editingZoneId.value)
     if (zoneIndex >= 0) farmZones.splice(zoneIndex, 1, saved); else farmZones.push(saved)
@@ -282,6 +289,7 @@ function processAlert(item: (typeof alerts)[number]) {
       <div class="source-strip"><span><i></i>共享演示数据</span><button @click="$emit('refresh')">刷新观测</button></div><p class="sync-time">农场观测与业务档案 · 每 30 秒同步</p>
       <div v-if="entity?.type === 'greenhouse'" class="greenhouse-entry"><button @click="$emit('enter-greenhouse', entity?.id || '')"><span><b>进入大棚</b><small>实景监控 · 数字孪生 · 植株数据</small></span><strong>→</strong></button></div>
 
+      <SerialDevicePanel v-if="module==='devices' && workspace.snapshot" :farm-id="workspace.snapshot.farmId" :devices="deviceRecords" />
       <div v-if="module === 'environment'" class="content environment-panel">
         <section class="hero-card"><span>环境观测与配置核验</span><strong>{{ environmentMetrics.length }}<small>项</small></strong><em>当前值快照 · 不计算综合风险评分</em></section>
         <section><div class="section-title"><h3>实时环境</h3><small>虚拟数据 · 30秒更新</small></div><div class="metric-grid"><article v-for="(item,index) in environmentMetrics" :key="item.label" :class="item.tone"><span class="metric-icon"><svg viewBox="0 0 24 24"><path :d="metricIcons[index % metricIcons.length]"/></svg></span><div><small>{{ item.label }}</small><b>{{ item.value }}</b><em>{{ item.delta }}</em></div></article></div></section>
@@ -309,7 +317,7 @@ function processAlert(item: (typeof alerts)[number]) {
       <div v-else-if="module === 'crops'" class="content crop-panel">
         <OperationJournal kind="crops" :entity-id="entity?.id" />
         <section class="zone-management"><div class="section-title"><h3>种植区管理</h3><button @click="openNewZone">＋ 新增种植区</button></div><p>选择地图中的露天种植区后可修改资料和位置。</p><button v-if="entity?.type === 'field' && !zoneEditorOpen" class="manage-device" @click="openZoneEditor">编辑当前种植区</button></section>
-        <section v-if="zoneEditorOpen" class="device-editor zone-editor"><div class="section-title"><h3>{{ editingZoneId ? '编辑种植区' : '新增种植区' }}</h3><button @click="zoneEditorOpen=false">收起</button></div><div class="form-grid"><label><span>种植区编号</span><input v-model.trim="zoneForm.id" :disabled="!!editingZoneId" maxlength="40"></label><label><span>健康度</span><input v-model.number="zoneForm.health" type="number" min="0" max="100"></label><label class="wide"><span>种植区名称</span><input v-model.trim="zoneForm.name" maxlength="100"></label><label><span>种植作物</span><input v-model.trim="zoneForm.crop" maxlength="100"></label><label><span>面积</span><input v-model.trim="zoneForm.area" maxlength="50" placeholder="2.6 亩"></label><label><span>生长阶段</span><input v-model.trim="zoneForm.stage" maxlength="60"></label><label><span>环境摘要</span><input v-model.trim="zoneForm.environment" maxlength="100"></label><label><span>地图横坐标 (%)</span><input v-model.number="zoneForm.mapX" type="number" min="2" max="98"></label><label><span>地图纵坐标 (%)</span><input v-model.number="zoneForm.mapY" type="number" min="2" max="98"></label></div><p class="zone-position-tip">保存后将以坐标为中心生成地图边界；可再次调整位置。</p><div class="editor-actions"><button v-if="editingZoneId" class="danger-action" :disabled="zoneSaving" @click="removeZone">{{ zoneDeleteArmed ? '再次点击确认删除' : '删除种植区' }}</button><button class="save-action" :disabled="zoneSaving" @click="saveZone">{{ zoneSaving ? '保存中…' : '保存种植区' }}</button></div></section>
+        <section v-if="zoneEditorOpen" class="device-editor zone-editor"><div class="section-title"><h3>{{ editingZoneId ? '编辑种植区' : '新增种植区' }}</h3><button @click="zoneEditorOpen=false">收起</button></div><div class="form-grid"><label><span>种植区编号</span><input v-model.trim="zoneForm.id" :disabled="!!editingZoneId" maxlength="40"></label><label><span>健康度</span><input v-model.number="zoneForm.health" type="number" min="0" max="100"></label><label class="wide"><span>种植区名称</span><input v-model.trim="zoneForm.name" maxlength="100"></label><label><span>种植作物</span><input v-model.trim="zoneForm.crop" maxlength="100"></label><label><span>面积</span><input v-model.trim="zoneForm.area" maxlength="50" placeholder="2.6 亩"></label><label><span>生长阶段</span><input v-model.trim="zoneForm.stage" maxlength="60"></label><label><span>环境摘要</span><input v-model.trim="zoneForm.environment" maxlength="100"></label><label><span>地图横坐标 (%)</span><input v-model.number="zoneForm.mapX" type="number" min="-48" max="148"></label><label><span>地图纵坐标 (%)</span><input v-model.number="zoneForm.mapY" type="number" min="2" max="98"></label></div><p class="zone-position-tip">编辑资料保留现有边界；修改坐标将整体平移边界，新增分区生成初始矩形。</p><div class="editor-actions"><button v-if="editingZoneId" class="danger-action" :disabled="zoneSaving" @click="removeZone">{{ zoneDeleteArmed ? '再次点击确认删除' : '删除种植区' }}</button><button class="save-action" :disabled="zoneSaving" @click="saveZone">{{ zoneSaving ? '保存中…' : '保存种植区' }}</button></div></section>
         <section class="crop-hero"><div class="leaf"><svg viewBox="0 0 24 24"><path d="M19.5 4.5C13 4.5 8.6 7.2 7 11.6c-.8 2.4-.3 5.3 1.4 7.9 1-5.7 3.8-9.5 8.4-12M7.4 13C5.2 12.6 3.6 13.4 2.5 15c2.3-.8 4.2-.5 5.6.8"/></svg></div><div><small>{{ cropZone.area }}</small><h3>{{ cropZone.crop }}</h3><span>{{ cropZone.stage }}</span></div><div class="score"><b>{{ entity?.health ?? '—' }}</b><small>演示评分</small></div></section>
         <section><div class="section-title"><h3>鸭梨专项观测</h3><small>软件演示</small></div><div class="growth"><article><span>土壤 EC</span><b>{{ soilEC }}</b><em>{{ soilEC === '—' ? '缺少土壤测量' : '农场级演示样本' }}</em></article><article><span>土壤 pH</span><b>{{ soilPH }}</b><em>{{ soilPH === '—' ? '缺少土壤测量' : '农场级演示样本' }}</em></article><article><span>病虫害检测</span><b>候选复核</b><em>独立入口采样与保存意见</em></article><article><span>采后批次</span><b>软件追溯</b><em>上方登记批次与流转</em></article></div></section>
         <section><div class="section-title"><h3>地块记录范围</h3><small>当前档案</small></div><p class="zone-position-tip">已登记生育期：{{ cropZone.stage }}。农事、生长观察与采后批次在上方登记与追溯；地图评分为原演示指标，不作为病害概率。</p></section>

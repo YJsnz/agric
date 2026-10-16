@@ -7,7 +7,7 @@ import {TransportMotion} from './transportMotion'
 const animator=new TransportMotion(),heading=ref(0),motion=ref({leftRoll:0,rightRoll:0,steering:0,bob:0,moving:false,turning:false}),reduced=ref(false)
 const props=defineProps<{overview?:boolean;preview?:string[]}>()
 const emit=defineEmits<{(e:'open'):void}>()
-const aerial=`${import.meta.env.BASE_URL}assets/yantian-orchard-aerial.png`
+const aerial=`${import.meta.env.BASE_URL}assets/yantian-greenhouse-expanded.png`
 const position=ref({x:1320,y:348});let frame=0
 onMounted(()=>{const tick=(now:number)=>{position.value=transportPosition(now);heading.value=transportHeading(now);const s=state.value;reduced.value=matchMedia('(prefers-reduced-motion:reduce)').matches;motion.value=animator.update(position.value.x,position.value.y,heading.value,now,!!s&&!s.emergency&&transportAnimating(now),s?.mapVersion||0);frame=requestAnimationFrame(tick)};frame=requestAnimationFrame(tick)})
 onBeforeUnmount(()=>cancelAnimationFrame(frame))
@@ -17,7 +17,7 @@ const markerOffset=computed(()=>Math.max(0,Math.min(90,(position.value.x-1240)*.
 const point=(id:string)=>state.value?.stops.find(n=>n.id===id)||{x:0,y:0,id,name:id}
 const roadLegal=(id:string)=>transportRoadStatus.value.find(r=>r.id===id)?.legal===true
 const roads=computed(()=>state.value?.roads.filter(r=>roadLegal(r.id))||[])
-const active=computed(()=>state.value?.tasks.find(t=>['RUNNING','BLOCKED','PAUSED','WAIT_LOAD','WAIT_UNLOAD'].includes(t.status)))
+const active=computed(()=>state.value?.tasks.find(t=>['RUNNING','BLOCKED','PAUSED','WAIT_LOAD','WAIT_UNLOAD','WAIT_ARRIVAL'].includes(t.status)))
 const route=computed(()=>props.preview?.length?props.preview:active.value?.route||[])
 const validRoute=computed(()=>route.value.every((id,i)=>i===0||roads.value.some(r=>!r.blocked&&((r.a===id&&r.b===route.value[i-1])||(r.b===id&&r.a===route.value[i-1])))))
 const routePoints=computed(()=>validRoute.value?route.value.map(id=>`${point(id).x},${point(id).y}`).join(' '):'')
@@ -26,8 +26,8 @@ const dockStops=computed(()=>state.value?.stops.filter(s=>docks.includes(s.id))|
 </script>
 <template>
  <div v-if="state" class="transport-layer" :class="{overview}">
-  <svg class="transport-map" :viewBox="overview?'0 220 1536 804':'0 0 1536 1024'" preserveAspectRatio="xMidYMid meet" aria-label="道路标定地图与自动运输车">
-   <template v-if="overview"><image :href="aerial" width="1536" height="1024"/><rect x="0" y="220" width="1536" height="804" fill="#f4f8f3" opacity=".32"/><g class="parcels"><polygon v-for="zone in farmZones" :key="zone.id" :points="zone.polygon.map(p=>p.join(',')).join(' ')"/></g></template>
+  <svg class="transport-map" :viewBox="overview?'-768 220 3072 804':'0 0 1536 1024'" preserveAspectRatio="xMidYMid meet" aria-label="道路标定地图与自动运输车">
+   <template v-if="overview"><image :href="aerial" x="-768" width="3072" height="1024"/><rect x="-768" y="220" width="3072" height="804" fill="#f4f8f3" opacity=".32"/><g class="parcels"><polygon v-for="zone in farmZones" :key="zone.id" :points="zone.polygon.map(p=>p.join(',')).join(' ')"/></g></template>
    <g class="roads"><line v-for="road in roads" :key="road.id" :class="{closed:road.blocked}" :x1="point(road.a).x" :y1="point(road.a).y" :x2="point(road.b).x" :y2="point(road.b).y"><title>{{point(road.a).id}} → {{point(road.b).id}}</title></line></g>
    <polyline v-if="routePoints" :points="routePoints" class="route-underlay"/>
    <polyline v-if="routePoints" :points="routePoints" class="planned-route" :class="{moving:active?.status==='RUNNING'&&!preview?.length}"/>

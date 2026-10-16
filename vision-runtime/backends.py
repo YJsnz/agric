@@ -22,6 +22,11 @@ class OnnxCpu:
 
 def create_backend(model, manifest):
     backend = os.getenv("VISION_BACKEND", "onnx-cpu").lower()
+    preprocess = os.getenv('VISION_PREPROCESS', 'pillow')
+    if preprocess not in ('pillow', 'cuda-fused'):
+        raise ValueError('VISION_PREPROCESS must be pillow or cuda-fused')
+    if preprocess == 'cuda-fused' and backend != 'tensorrt':
+        raise ValueError('cuda-fused requires the TensorRT backend; use pillow for CPU')
     if backend == "onnx-cpu":
         return OnnxCpu(model)
     if backend == "tensorrt":

@@ -8,6 +8,19 @@ import type { GreenhouseDetail } from '@/types'
 const props = defineProps<{ detail: GreenhouseDetail; selectedId?: string | null }>()
 const emit = defineEmits<{ (event: 'select', id: string): void }>()
 const host = ref<HTMLDivElement>()
+const walking = ref(false)
+const keys = new Set<string>()
+function walkKey(event:KeyboardEvent) {
+  if((event.target as HTMLElement)?.closest('input,textarea,select'))return
+  if(['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(event.code)) {event.preventDefault();keys.add(event.code)}
+  if(event.code==='Escape') walking.value=false
+}
+function releaseKey(event:KeyboardEvent){keys.delete(event.code)}
+function clearKeys(){keys.clear()}
+function toggleWalk(){
+  walking.value=!walking.value;keys.clear();focusTarget=undefined;focusCamera=undefined
+  if(walking.value&&camera&&controls){camera.position.set(0,1.65,5.8);controls.target.set(0,1.65,0)}
+}
 const loading = ref(true)
 const loadError = ref('')
 let scene: THREE.Scene | undefined
@@ -103,7 +116,7 @@ function plantBaseY() {
 async function addPlants() {
   if (!scene || !renderer) return
   try {
-    const foliage = await loadDetailedFoliage(`${import.meta.env.BASE_URL}assets/models/potted-plant-02.glb`)
+    const foliage = props.detail.scene.cropModel === 'tomato-vine' ? new THREE.Group() : await loadDetailedFoliage(`${import.meta.env.BASE_URL}assets/models/potted-plant-02.glb`)
     const maxAnisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy())
     foliage.traverse(item => {
       const rendered = item as THREE.Mesh
@@ -124,6 +137,7 @@ async function addPlants() {
       scene!.add(group)
     })
 
+    if(props.detail.greenhouse.id === 'yt-pear-02') { loading.value=false;updateSelection(false);return }
     const samplePositions = props.detail.plants.map(plant => new THREE.Vector2(plant.positionX, plant.positionZ))
     const bedCount = props.detail.scene.bedCount
     const fillerRows = bedCount > 4 ? [-3.1, -1.55, 0, 1.55, 3.1] : [-3.15, -1.55, 1.55, 3.15]
@@ -257,10 +271,10 @@ function init() {
   controls.enableDamping = true
   controls.target.set(0, 1.45, 0)
   controls.maxPolarAngle = Math.PI / 2.03
-  controls.minDistance = 7
+  controls.minDistance = .6
   controls.maxDistance = 30
-  scene.add(new THREE.HemisphereLight(0xf4fff8, 0x354b32, 2.2))
-  const sun = new THREE.DirectionalLight(0xfff4dc, 3.1)
+  scene.add(new THREE.HemisphereLight(0xf4fff8, 0x354b32, 1.25))
+  const sun = new THREE.DirectionalLight(0xfff4dc, 2.0)
   sun.position.set(-8, 15, 8); sun.castShadow = true; sun.shadow.mapSize.set(1024, 1024); scene.add(sun)
   addGreenhouseStructure(); addPlants(); addDevices()
 
@@ -285,7 +299,23 @@ function init() {
     camera.updateProjectionMatrix()
   })
   resizeObserver.observe(host.value)
+  let lastTime=performance.now()
+  window.addEventListener('keydown',walkKey);window.addEventListener('keyup',releaseKey);window.addEventListener('blur',clearKeys)
   const animate = () => {
+    const now=performance.now(),delta=Math.min(.05,(now-lastTime)/1000);lastTime=now
+    if(walking.value&&camera&&controls) {
+      const direction=controls.target.clone().sub(camera.position);direction.y=0;direction.normalize()
+      const right=new THREE.Vector3(-direction.z,0,direction.x),move=new THREE.Vector3()
+      if(keys.has('KeyW')||keys.has('ArrowUp'))move.add(direction)
+      if(keys.has('KeyS')||keys.has('ArrowDown'))move.sub(direction)
+      if(keys.has('KeyD')||keys.has('ArrowRight'))move.add(right)
+      if(keys.has('KeyA')||keys.has('ArrowLeft'))move.sub(right)
+      if(move.lengthSq()){
+        move.normalize().multiplyScalar(delta*2);const next=camera.position.clone().add(move)
+        const bedXs=Array.from({length:props.detail.scene.bedCount},(_,i)=>-6.2+i*12.4/(props.detail.scene.bedCount-1))
+        if(Math.abs(next.x)<7.7&&Math.abs(next.z)<6.3&&!(Math.abs(next.z)<5.65&&bedXs.some(x=>Math.abs(x-next.x)<.98))){camera.position.copy(next);controls.target.add(move)}
+      }
+    }
     frame = requestAnimationFrame(animate)
     if (!reduceMotion) rotors.forEach(rotor => { rotor.rotation.x += .025 })
     if (focusTarget && focusCamera && camera && controls) {
@@ -303,6 +333,7 @@ function init() {
 watch(() => props.selectedId, () => updateSelection(true))
 onMounted(init)
 onBeforeUnmount(() => {
+  window.removeEventListener('keydown',walkKey);window.removeEventListener('keyup',releaseKey);window.removeEventListener('blur',clearKeys)
   cancelAnimationFrame(frame); resizeObserver?.disconnect(); controls?.dispose(); renderer?.dispose(); renderer?.domElement.remove()
   scene?.traverse(item => { const rendered = item as THREE.Mesh; rendered.geometry?.dispose?.(); if (Array.isArray(rendered.material)) rendered.material.forEach(material => material.dispose()); else rendered.material?.dispose?.() })
 })
@@ -313,10 +344,12 @@ onBeforeUnmount(() => {
     <div v-if="loading" class="loading"><i></i><span>正在载入万面级 PBR 作物资产</span></div>
     <div v-else-if="loadError" class="loading error"><span>{{ loadError }}</span></div>
     <div class="scene-meta"><b>{{ detail.scene.structure }}</b><span>高精度 PBR / {{ detail.scene.bedCount }} 床位 / {{ detail.scene.nominalPlantCount.toLocaleString() }} 株</span></div>
-    <div class="hint">拖拽旋转　滚轮缩放　点击植株查看档案</div>
+    <button class="walk-button" @click="toggleWalk">{{walking ? '退出棚内巡检' : '进入棚内巡检'}}</button><div class="hint">WASD 移动 · Esc 退出巡检　拖拽旋转　滚轮缩放　点击植株查看档案</div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .twin-host{position:absolute;inset:0;overflow:hidden;background:#accbc2}.twin-host canvas{display:block}.loading{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid rgba(255,255,255,.65);border-radius:12px;background:rgba(240,250,244,.82);color:#345940;font-size:11px;backdrop-filter:blur(20px)}.loading.error{border-color:rgba(193,92,65,.28);background:rgba(252,242,237,.9);color:#8a4938}.loading i{width:9px;height:9px;border:2px solid #4c9c63;border-top-color:transparent;border-radius:50%;animation:spin .8s linear infinite}.scene-meta{position:absolute;left:18px;top:18px;display:flex;flex-direction:column;padding-left:10px;border-left:2px solid #398b55;color:#244c36}.scene-meta b{font-size:11px}.scene-meta span{margin-top:3px;color:rgba(28,67,46,.62);font:8px ui-monospace,monospace}.hint{position:absolute;left:18px;bottom:18px;padding:8px 11px;border:1px solid rgba(255,255,255,.28);border-radius:8px;background:rgba(9,39,28,.58);color:rgba(255,255,255,.78);font-size:10px;backdrop-filter:blur(14px)}@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.loading i{animation:none}}
 </style>
+
+<style scoped>.walk-button{position:absolute;right:20px;top:20px;padding:11px 16px;border:1px solid #b9ddc4;border-radius:12px;background:#244c36;color:white;cursor:pointer}</style>

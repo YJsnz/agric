@@ -14,6 +14,6 @@ public class Observation {
     @Column(nullable=false,length=60) private String label;
     private double value;
     @Column(nullable=false,length=20) private String unit;
-    @Column(nullable=false,length=40) private String source;
+    @Column(nullable=false,length=60) private String source;
     @Column(name="measured_at",nullable=false) private LocalDateTime measuredAt;
 }

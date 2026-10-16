@@ -11,10 +11,12 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("images",nargs="+")
     parser.add_argument("--output",required=True)
+    parser.add_argument('--gpu-preprocess',choices=['pillow','cuda-fused'],default=os.getenv('VISION_PREPROCESS','pillow'))
     args=parser.parse_args()
     results={}
     for backend in ("onnx-cpu","tensorrt"):
         os.environ["VISION_BACKEND"]=backend
+        os.environ['VISION_PREPROCESS']='pillow' if backend == 'onnx-cpu' else args.gpu_preprocess
         with PearPipeline() as pipeline:
             results[backend]=[pipeline.infer(path) for path in args.images]
     report=[]
@@ -32,7 +34,7 @@ def main():
         if unmatched: accepted=False
         report.append({"image":Path(path).name,"passed":accepted,
                        "cpuDetections":len(cpu["detections"]),"gpuDetections":len(gpu["detections"])})
-    value={"passed":all(row["passed"] for row in report),"iouMinimum":.9,"confidenceTolerance":.03,"images":report}
+    value={"passed":all(row["passed"] for row in report),"cpuPreprocess":"pillow","gpuPreprocess":args.gpu_preprocess,"iouMinimum":.9,"confidenceTolerance":.03,"images":report}
     Path(args.output).write_text(json.dumps(value,indent=2),encoding="utf-8")
     print(json.dumps(value))
     if not value["passed"]: raise SystemExit(1)

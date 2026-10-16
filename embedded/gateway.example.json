@@ -1,0 +1,14 @@
+{
+  "api": "http://127.0.0.1:8081",
+  "farm": "yantian-01",
+  "port": "COM3",
+  "baudrate": 115200,
+  "maxSpoolRows": 100000,
+  "devices": [
+    {"address": 1, "entityId": "yt-weather"},
+    {"address": 2, "entityId": "yt-soil"},
+    {"address": 3, "entityId": "yt-valve"},
+    {"address": 4, "entityId": "yt-water"},
+    {"address": 5, "entityId": "cart-01", "role": "vehicle"}
+  ]
+}

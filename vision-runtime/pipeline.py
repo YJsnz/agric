@@ -62,6 +62,7 @@ class PearPipeline:
             raise ValueError("VISION_CONFIDENCE must be between 0 and 1")
         self.backend = create_backend(model, self.manifest)
         self.runtime = self.backend.info
+        self.runtime['preprocess'] = os.getenv('VISION_PREPROCESS', 'pillow')
 
     def __enter__(self):
         return self
@@ -77,14 +78,21 @@ class PearPipeline:
             image = ImageOps.exif_transpose(original).convert("RGB")
             image.load()
         width, height = image.size
-        gray = np.asarray(image).mean(axis=2)
-        quality = {"brightness": round(float(gray.mean()), 2), "width": width, "height": height}
+        gpu = self.runtime['preprocess'] == 'cuda-fused'
+        prep_start = time.perf_counter()
+        if gpu:
+            tensor, (ratio,left,top), quality, std = self.backend.prepare_image(np.asarray(image))
+        else:
+            gray = np.asarray(image).mean(axis=2)
+            quality = {"brightness": round(float(gray.mean()), 2), "width": width, "height": height}
+            std = float(gray.std())
+        prep_ms = (time.perf_counter()-prep_start)*1000
         warnings = []
         if min(width, height) < 128:
             warnings.append("图像分辨率不足，请上传清晰的叶片近照")
         if quality["brightness"] < 15 or quality["brightness"] > 245:
             warnings.append("图像过暗或过曝，请重新采集")
-        if gray.std() < 5:
+        if std < 5:
             warnings.append("图像缺少可辨认细节，请重新采集")
         base = {"modelId": self.manifest["modelId"], "modelSha256": self.manifest["sha256"],
                 "pipelineVersion": "pear-leaf-resident-2.0", "task": self.manifest["task"],
@@ -93,14 +101,17 @@ class PearPipeline:
                 "detections": [], "warnings": warnings, "runtime": self.runtime}
         timings = {}
         if not warnings:
-            size = self.manifest["inputSize"]
-            ratio = min(size / width, size / height)
-            resized = image.resize((round(width * ratio), round(height * ratio)), Image.Resampling.BILINEAR)
-            left, top = (size - resized.width) // 2, (size - resized.height) // 2
-            padded = Image.new("RGB", (size, size), (114, 114, 114))
-            padded.paste(resized, (left, top))
-            tensor = np.ascontiguousarray(np.asarray(padded, dtype=np.float32).transpose(2, 0, 1)[None] / 255)
-            timings["preprocessMs"] = round((time.perf_counter() - started) * 1000, 2)
+            if not gpu:
+                resize_start = time.perf_counter()
+                size = self.manifest["inputSize"]
+                ratio = min(size / width, size / height)
+                resized = image.resize((max(1,round(width * ratio)), max(1,round(height * ratio))), Image.Resampling.BILINEAR)
+                left, top = (size - resized.width) // 2, (size - resized.height) // 2
+                padded = Image.new("RGB", (size, size), (114, 114, 114))
+                padded.paste(resized, (left, top))
+                tensor = np.ascontiguousarray(np.asarray(padded, dtype=np.float32).transpose(2, 0, 1)[None] / 255)
+                prep_ms += (time.perf_counter()-resize_start)*1000
+            timings["preprocessMs"] = round(prep_ms, 2)
             infer_start = time.perf_counter()
             output = self.backend.run(tensor)
             timings["inferenceMs"] = round((time.perf_counter() - infer_start) * 1000, 2)

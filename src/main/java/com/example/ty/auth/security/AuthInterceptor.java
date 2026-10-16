@@ -58,6 +58,7 @@ public class AuthInterceptor implements HandlerInterceptor {
     }
 
     private boolean isPublic(String path) {
+        if ("/api/public/batch-trace".equals(path)) return true;
         return path.equals("/api/health") || path.startsWith("/api/auth/login")
                 || path.startsWith("/api/auth/register")
                 || path.startsWith("/api/auth/face-login");

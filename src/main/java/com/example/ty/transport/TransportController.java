@@ -8,6 +8,8 @@ public class TransportController {
  @GetMapping public Map<String,Object> state(@PathVariable String farmId){return Map.of("state",service.state(farmId),"roadStatus",service.roadStatus(farmId));}
  @GetMapping("/plan") public Object plan(@PathVariable String farmId,@RequestParam String source,@RequestParam String destination){return service.preview(farmId,source,destination);}
  @PostMapping("/tasks") public Object create(@PathVariable String farmId,@RequestBody TransportService.Create input){return service.create(farmId,input);}
+ @PostMapping("/vehicles/{vehicleId}/events") public Object vehicleEvent(@PathVariable String farmId,@PathVariable String vehicleId,@RequestBody TransportService.VehicleSignal input){return service.vehicleSignal(farmId,vehicleId,input);}
+ @PostMapping("/tasks/{id}/simulate-arrival") public Object simulateArrival(@PathVariable String farmId,@PathVariable String id){return service.simulateArrival(farmId,id);}
  public record Control(String action){}
  @PostMapping("/tasks/{id}/control") public Object control(@PathVariable String farmId,@PathVariable String id,@RequestBody Control input){return service.control(farmId,id,input.action());}
  public record RoadInput(boolean blocked){}

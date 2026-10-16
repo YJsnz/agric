@@ -8,6 +8,7 @@ import { fetchMe, getToken, saveUser } from '@/api/auth'
 const router = createRouter({
   history: createWebHistory('/platform/'),
   routes: [
+    { path: '/trace', component: () => import('@/views/BatchTraceView.vue'), meta: { title: '产品批次追溯', public: true } },
     { path: '/crops', component: () => import('@/views/CropCenterView.vue'), meta: { title: '作物中心' } },
     { path: '/multicrop', component: () => import('@/views/MultiCropWorkspaceView.vue'), meta: { title: '多作物研判' } },
     { path: '/wheat-diagnosis', redirect: '/multicrop?crop=wheat' },
@@ -21,7 +22,8 @@ const router = createRouter({
   ]
 })
 
-router.beforeEach(async () => {
+router.beforeEach(async to => {
+  if (to.meta.public) return true
   const token = getToken()
   if (!token) {
     window.location.replace('/#/sign-in')

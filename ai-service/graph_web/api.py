@@ -53,6 +53,9 @@ app.include_router(wheat_diagnosis_router)
 app.include_router(jujube_router)
 from qingxian_diagnosis.router import router as qingxian_router
 app.include_router(qingxian_router)
+# Reuse the unified service process; load frozen tomato models lazily per worker.
+from tomato_diagnosis.app import app as tomato_app
+app.include_router(tomato_app.router)
 
 @app.post('/api/graphrag/ask')
 def answer_question(body: ExtractionRequest):

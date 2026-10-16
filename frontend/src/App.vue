@@ -9,7 +9,7 @@ const modeInsideTopbar = computed(() => route.path.includes('/greenhouses/'))
 </script>
 
 <template>
-  <div class="platform-mode-anchor" :class="{ 'in-topbar': modeInsideTopbar, 'agent-topbar': route.path === '/assistant', 'knowledge-topbar': route.path === '/multicrop' }">
+  <div v-if="!route.meta.public" class="platform-mode-anchor" :class="{ 'in-topbar': modeInsideTopbar, 'agent-topbar': route.path === '/assistant', 'knowledge-topbar': route.path === '/multicrop' }">
     <ModeSwitch :mode="platformMode" />
   </div>
   <RouterView v-slot="{ Component, route }">

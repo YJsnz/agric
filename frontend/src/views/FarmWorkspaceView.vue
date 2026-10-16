@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import FarmTopBar from '@/components/workspace/FarmTopBar.vue'
 import WeatherCard from '@/components/workspace/WeatherCard.vue'
@@ -8,7 +8,7 @@ import OrchardThreeScene from '@/components/workspace/OrchardDigitalTwin.vue'
 import {imageToGround} from '@/components/workspace/orchardGeometry'
 import {visionList} from '@/api/vision'
 import TransportCenter from '@/components/workspace/TransportCenter.vue'
-import {useTransport} from '@/api/transport'
+import {useTransport,transportState,stopName} from '@/api/transport'
 import PostHarvestCenter from '@/components/workspace/PostHarvestCenter.vue'
 import PearVisionPanel from '@/components/workspace/PearVisionPanel.vue'
 import ThreeFarmScene from '@/components/workspace/ThreeFarmScene.vue'
@@ -81,6 +81,14 @@ function showToast(message: string) {
   toast.value = message; toastVisible.value = true; window.clearTimeout(toastTimer)
   toastTimer = window.setTimeout(() => toastVisible.value = false, 2200)
 }
+let completedTasks:Set<string>|null=null
+let confirmedArrivals:Set<string>|null=null
+watch(()=>transportState.value?.tasks,tasks=>{
+ if(!tasks)return
+ if(completedTasks){const task=tasks.find(t=>t.status==='COMPLETED'&&!completedTasks!.has(t.id));const arrived=tasks.find(t=>t.arrivalConfirmed&&!confirmedArrivals?.has(t.id));if(task)showToast(`${task.confirmationSource==='SIMULATED'?'模拟回报：':''}运输车已完成任务，到达${stopName(task.destination)}`);else if(arrived)showToast(`${arrived.confirmationSource==='SIMULATED'?'模拟回报：':''}运输车已到达${stopName(arrived.destination)}，等待卸货确认`)}
+ confirmedArrivals=new Set(tasks.filter(t=>t.arrivalConfirmed).map(t=>t.id))
+ completedTasks=new Set(tasks.filter(t=>t.status==='COMPLETED').map(t=>t.id))
+})
 function resetView(){orchardScene.value?.resetView();scale.value=1;offsetX.value=0;offsetY.value=0;showToast('已恢复农场全景视角')}
 function focusEntity(id:string){
   store.selectEntity(id);orchardScene.value?.focusEntity(id);scale.value=1.18
@@ -103,6 +111,7 @@ function selectEntity(id:string|null){
   if (store.activeModule === 'monitoring' && id && farmZones.some(zone => zone.entityId === id)) {
     store.selectedEntityId = id; store.drawerOpen = false; monitorOpen.value = true; return
   }
+  if(id==='yt-pear-02' && store.activeModule==='overview')store.selectModule('crops')
   store.selectEntity(id)
 }
 function searchEntity(query:string) {
@@ -149,7 +158,7 @@ function handleModule(module: BusinessModule){
 }
 function closeDrawer(){store.drawerOpen=false;resetView();threeScene.value?.resumeAfterOverlay()}
 function closeMonitor(){monitorOpen.value=false;threeScene.value?.resumeAfterOverlay()}
-function enterGreenhouse(id:string){router.push(`/workspaces/${String(route.params.id || 'farm-01')}/greenhouses/${id}`)}
+function enterGreenhouse(id:string){router.push(`/workspaces/${farmId.value}/greenhouses/${id}`)}
 function handleAssistantOpen(open:boolean){assistantOpen.value=open;if(!open)threeScene.value?.resumeAfterOverlay()}
 function askAgent(prompt:string){router.push({path:'/assistant',query:{prompt,farmId:farmId.value}})}
 </script>
@@ -157,7 +166,7 @@ function askAgent(prompt:string){router.push({path:'/assistant',query:{prompt,fa
 <template>
   <main class="workspace" :class="{ 'drawer-open': store.drawerOpen }">
     <Transition name="scene" mode="out-in">
-      <AerialFarmScene @transport="transportOpen=true" ref="aerialScene" :project-mode="!legacy" v-if="store.viewMode === 'aerial'" key="aerial" :selected-id="store.selectedEntityId" :active-module="store.activeModule" :active-sub-layer="store.activeSubLayer" :scale="scale" :offset-x="offsetX" :offset-y="offsetY" :layers="store.snapshot?.farmId === farmId ? layerVisibility : { zones:false,devices:false,cameras:false,irrigation:false,alerts:false }" @select="selectEntity" @focus="focusEntity" />
+      <AerialFarmScene @pan="(x,y)=>{offsetX=x;offsetY=y}" @zoom="factor=>scale=Math.max(1,Math.min(3,scale*factor))" @transport="transportOpen=true" ref="aerialScene" :project-mode="!legacy" v-if="store.viewMode === 'aerial'" key="aerial" :selected-id="store.selectedEntityId" :active-module="store.activeModule" :active-sub-layer="store.activeSubLayer" :scale="scale" :offset-x="offsetX" :offset-y="offsetY" :layers="store.snapshot?.farmId === farmId ? layerVisibility : { zones:false,devices:false,cameras:false,irrigation:false,alerts:false }" @select="selectEntity" @focus="focusEntity" />
       <ThreeFarmScene v-else-if="legacy" ref="threeScene" key="three" :active-module="store.activeModule" :active-sub-layer="store.activeSubLayer" :selected-id="store.selectedEntityId" :drawer-open="store.drawerOpen" :overlay-open="store.drawerOpen || monitorOpen || assistantOpen" @select="selectEntity" @module="handleModule" @walk="firstPersonActive=$event" @enter-greenhouse="enterGreenhouse" />
       <OrchardThreeScene @transport="transportOpen=true" @walk="firstPersonActive=$event" @module="handleModule" :layers="layerVisibility" :overlay-open="store.drawerOpen || monitorOpen || assistantOpen || visionOpen || postharvestOpen || transportOpen" :vision-counts="visionCounts" @vision="openVision" ref="orchardScene" v-else-if="store.snapshot?.farmId === farmId" :selected-id="store.selectedEntityId" @select="selectEntity" />
     </Transition>
@@ -177,7 +186,7 @@ function askAgent(prompt:string){router.push({path:'/assistant',query:{prompt,fa
 
     <ViewSwitcher v-model="store.viewMode" :drawer-open="store.drawerOpen" />
     <button v-if="scale !== 1 || offsetX !== 0 || offsetY !== 0" class="return-overview" @click="resetView">↶ 返回全景</button>
-    <SceneToolbar :class="{ 'drawer-closed': !store.drawerOpen }" @zoom-in="store.viewMode === 'digital-twin' && !legacy ? orchardScene?.zoomBy(.9) : scale=Math.min(1.4,scale+.1)" @zoom-out="store.viewMode === 'digital-twin' && !legacy ? orchardScene?.zoomBy(1.1) : scale=Math.max(.85,scale-.1)" @reset="resetView" @layers="store.layersOpen=!store.layersOpen" @measure="startMeasure" />
+    <SceneToolbar :class="{ 'drawer-closed': !store.drawerOpen }" @zoom-in="store.viewMode === 'digital-twin' && !legacy ? orchardScene?.zoomBy(.9) : scale=Math.min(3,scale+.1)" @zoom-out="store.viewMode === 'digital-twin' && !legacy ? orchardScene?.zoomBy(1.1) : scale=Math.max(1,scale-.1)" @reset="resetView" @layers="store.layersOpen=!store.layersOpen" @measure="startMeasure" />
     <LayerPopover :open="store.layersOpen" @change="(key,on)=>layerVisibility[key]=on" />
 
     <Transition name="notice-panel">

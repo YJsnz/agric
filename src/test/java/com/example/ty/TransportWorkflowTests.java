@@ -36,7 +36,8 @@ class TransportWorkflowTests {
   var t=s.tasks.get(s.tasks.size()-1);t.status="WAIT_LOAD";
   persist(s);s=service.control("yantian-01",t.id,"LOAD");
   assertThat(s.tasks.get(s.tasks.size()-1).loaded).isTrue();
-  t=s.tasks.get(s.tasks.size()-1);t.status="WAIT_UNLOAD";persist(s);
+  t=s.tasks.get(s.tasks.size()-1);t.status="WAIT_ARRIVAL";persist(s);
+  s=service.vehicleSignal("yantian-01","cart-01",new TransportService.VehicleSignal("test-arrival",t.id,t.destination,"DELIVERY","ARRIVED",java.time.Instant.now().toString()));
   s=service.control("yantian-01",t.id,"UNLOAD");
   assertThat(s.inventory.stream().filter(i->i.location.equals("warehouse")&&i.goods.equals("肥料")).findFirst().orElseThrow().available).isEqualTo(10);
   String completedId=t.id;assertThatThrownBy(()->service.control("yantian-01",completedId,"UNLOAD")).isInstanceOf(BizException.class);
@@ -45,14 +46,15 @@ class TransportWorkflowTests {
  @Test void shortRemainingDistanceReachesRoadCheckpointWithoutDeadlock(){
   var s=service.create("yantian-01",new TransportService.Create("supply","warehouse","肥料",10,"kg"));
   var t=s.tasks.get(s.tasks.size()-1);t.status="RUNNING";t.route=new java.util.ArrayList<>(java.util.List.of("charge","parking-road","warehouse","supply"));t.waypoint=1;
-  s.vehicle=new TransportService.Point(1320,377.5);s.heading=Math.PI/2;s.speed=0;s.lastTick=System.currentTimeMillis()-500;persist(s);
+  var start=s.stops.stream().filter(n->n.id.equals("charge")).findFirst().orElseThrow();var goal=s.stops.stream().filter(n->n.id.equals("parking-road")).findFirst().orElseThrow();double length=Math.hypot(goal.x-start.x,goal.y-start.y);
+  s.vehicle=new TransportService.Point(goal.x-(goal.x-start.x)/length*2.5,goal.y-(goal.y-start.y)/length*2.5);s.heading=Math.atan2(goal.y-start.y,goal.x-start.x);s.speed=0;s.lastTick=System.currentTimeMillis()-500;persist(s);
   service.tick();var result=service.state("yantian-01");
-  assertThat(result.vehicle.y).isBetween(379.5,380.1);
-  assertThat(result.vehicle.x).isEqualTo(1320);
+  assertThat(Math.hypot(result.vehicle.x-goal.x,result.vehicle.y-goal.y)).isLessThan(.3);
+  assertThat(result.tasks.get(result.tasks.size()-1).waypoint).isEqualTo(2);
  }
  @Test void changingParcelBoundaryCannotCreateRouteThroughField(){
   service.state("yantian-01");
-  dashboard.createZone("yantian-01",new com.example.ty.dashboard.dto.ZoneUpsertRequest("transport-test-field","测试禁行地块","鸭梨","1 亩","测试","演示",90,84,38,java.util.List.of(java.util.List.of(1270d,345d),java.util.List.of(1330d,345d),java.util.List.of(1330d,415d),java.util.List.of(1270d,415d))));
+  dashboard.createZone("yantian-01",new com.example.ty.dashboard.dto.ZoneUpsertRequest("transport-test-field","测试禁行地块","鸭梨","1 亩","测试","演示",90,84,38,java.util.List.of(java.util.List.of(1257d,408d),java.util.List.of(1317d,408d),java.util.List.of(1317d,468d),java.util.List.of(1257d,468d))));
   assertThatThrownBy(()->service.preview("yantian-01","supply","warehouse")).isInstanceOf(BizException.class);
  }
  private void persist(TransportService.State s){var row=repository.findById("yantian-01").orElseThrow();row.setPayload(json.writeValueAsString(s));repository.saveAndFlush(row);}

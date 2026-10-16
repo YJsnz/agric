@@ -14,6 +14,7 @@ class CudaRuntime:
         self.lib = ct.CDLL(os.getenv("CUDART_LIBRARY") or ctypes.util.find_library("cudart") or "libcudart.so")
         signatures = {
             "cudaMalloc": [ct.POINTER(ct.c_void_p), ct.c_size_t], "cudaFree": [ct.c_void_p],
+            "cudaMallocHost": [ct.POINTER(ct.c_void_p), ct.c_size_t], "cudaFreeHost": [ct.c_void_p],
             "cudaStreamCreate": [ct.POINTER(ct.c_void_p)], "cudaStreamDestroy": [ct.c_void_p],
             "cudaStreamSynchronize": [ct.c_void_p],
             "cudaMemcpyAsync": [ct.c_void_p, ct.c_void_p, ct.c_size_t, ct.c_int, ct.c_void_p],
@@ -72,16 +73,27 @@ class TensorRtBackend:
                 raise ValueError("Unexpected TensorRT input shape")
             self.info = {"backend": "tensorrt", "version": trt.__version__, "precision": metadata["precision"],
                          "engineSha256": metadata["engineSha256"]}
+            self.preprocessor = None
+            if os.getenv('VISION_PREPROCESS', 'pillow') == 'cuda-fused':
+                from cuda_preprocess import CudaPreprocessor
+                if self.buffers[self.inputs[0]][0].dtype != np.float32:
+                    raise ValueError('CUDA preprocessing requires FP32 input IO (internal TensorRT FP16 is supported)')
+                self.preprocessor = CudaPreprocessor(self.cuda, self.stream, manifest['inputSize'])
         except Exception:
             self.close()
             raise
 
     def run(self, tensor):
+        from cuda_preprocess import DeviceTensor
         host, device = self.buffers[self.inputs[0]]
         if tensor.shape != host.shape:
             raise ValueError("Input shape mismatch")
-        np.copyto(host, tensor, casting="same_kind")
-        self.cuda.call("cudaMemcpyAsync", device, ct.c_void_p(host.ctypes.data), host.nbytes, 1, self.stream)
+        if isinstance(tensor, DeviceTensor):
+            if tensor.pointer != device.value or tensor.stream != self.stream.value:
+                raise ValueError('Device tensor must belong to this backend and stream')
+        else:
+            np.copyto(host, tensor, casting="same_kind")
+            self.cuda.call("cudaMemcpyAsync", device, ct.c_void_p(host.ctypes.data), host.nbytes, 1, self.stream)
         if not self.context.execute_async_v3(self.stream.value):
             raise RuntimeError("TensorRT enqueue failed")
         result, output_device = self.buffers[self.outputs[0]]
@@ -89,7 +101,15 @@ class TensorRtBackend:
         self.cuda.call("cudaStreamSynchronize", self.stream)
         return result
 
+    def prepare_image(self, rgb):
+        if self.preprocessor is None:
+            raise RuntimeError('CUDA preprocessor not enabled')
+        return self.preprocessor.prepare(rgb, self.buffers[self.inputs[0]][1])
+
     def close(self):
+        if getattr(self, 'preprocessor', None) is not None:
+            self.preprocessor.close()
+            self.preprocessor = None
         if getattr(self, "stream", None) and self.stream.value:
             self.cuda.call("cudaStreamSynchronize", self.stream)
         for _, pointer in getattr(self, "buffers", {}).values():

@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js'
 
 const materials = {
   stem: new THREE.MeshStandardMaterial({ color: 0x356a3c, roughness: .82 }),
@@ -21,6 +22,33 @@ const calyxGeometry = new THREE.ConeGeometry(.078, .045, 5)
 const cucumberGeometry = new THREE.CapsuleGeometry(.062, .36, 8, 16)
 const petalGeometry = new THREE.SphereGeometry(.055, 10, 6)
 const seedlingCellGeometry = new THREE.CylinderGeometry(.055, .045, .055, 10)
+const tomatoLeafMaterial = new THREE.MeshStandardMaterial({ color: 0x39723c, roughness: .87, side: THREE.DoubleSide })
+
+// Serrated, gently folded leaflets with a raised midrib; merge each compound leaf for fewer draws.
+const tomatoLeafletGeometry = (() => {
+  const points: number[] = [], indices: number[] = [], uv:number[]=[]
+  for(let i=0;i<=16;i++) {
+    const t=i/16, width=Math.sin(Math.PI*t)*.065*(i%2 ? .77 : 1)
+    points.push(-width,-.012*Math.sin(Math.PI*t),t*.24, 0,.009*Math.sin(Math.PI*t),t*.24, width,-.012*Math.sin(Math.PI*t),t*.24)
+    uv.push(0,t,.5,t,1,t)
+    if(i<16)for(let side=0;side<2;side++){const a=i*3+side;indices.push(a,a+3,a+1,a+1,a+3,a+4)}
+  }
+  const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(points,3));geometry.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));geometry.setIndex(indices);geometry.computeVertexNormals();return geometry
+})()
+function compoundTomatoLeaf(angle:number, scale:number) {
+  const parts:THREE.BufferGeometry[]=[]
+  const stalk=tube([new THREE.Vector3(),new THREE.Vector3(0,.035,.2),new THREE.Vector3(0,.02,.43)],.005,materials.youngStem)
+  parts.push(stalk.geometry)
+  for(let pair=0;pair<3;pair++) for(const side of [-1,1]) {
+    const leaflet=new THREE.Mesh(tomatoLeafletGeometry)
+    leaflet.position.set(0,.025,.09+pair*.11);leaflet.rotation.y=side*(1.08-pair*.16);leaflet.rotation.z=side*.16
+    leaflet.scale.setScalar(.82+pair*.05);leaflet.updateMatrix()
+    parts.push(tomatoLeafletGeometry.clone().applyMatrix4(leaflet.matrix))
+  }
+  parts.push(tomatoLeafletGeometry.clone().translate(0,.02,.36))
+  const geometry=mergeGeometries(parts,false)!;parts.forEach(part=>part.dispose())
+  const leaf=new THREE.Mesh(geometry,tomatoLeafMaterial);leaf.rotation.y=angle;leaf.scale.setScalar(scale);leaf.castShadow=true;leaf.receiveShadow=true;return leaf
+}
 
 function seeded(seed: number) {
   let value = seed >>> 0
@@ -135,9 +163,17 @@ function tomatoVine(source: THREE.Object3D, random: () => number, status: string
     new THREE.Vector3(0, 0, 0), new THREE.Vector3(lean * .35, height * .34, 0),
     new THREE.Vector3(-lean * .4, height * .7, .04), new THREE.Vector3(lean, height, 0)
   ], bush ? .032 : .025))
-  const foliage = canopy(source, bush ? new THREE.Vector3(.9, 1.15, .9) : new THREE.Vector3(.66, 2.05, .66), random() * Math.PI * 2, status)
-  foliage.position.y = bush ? .1 : .12
-  group.add(foliage)
+  if(bush){
+    const foliage=canopy(source,new THREE.Vector3(.9,1.15,.9),random()*Math.PI*2,status)
+    foliage.position.y=.1;group.add(foliage)
+  }
+  else {
+    for(let node=0;node<10;node++) {
+      const leaf=compoundTomatoLeaf(node*2.4+random()*.3,.85+random()*.3)
+      leaf.position.set(lean*node/10,.3+node*.21,0);leaf.rotation.x=(random()-.5)*.3;group.add(leaf)
+    }
+    if(status!=='normal')tintAttention(group)
+  }
   const clusters = bush ? 4 : 5
   for (let clusterIndex = 0; clusterIndex < clusters; clusterIndex++) {
     const side = clusterIndex % 2 ? 1 : -1

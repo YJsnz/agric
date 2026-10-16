@@ -1,0 +1,23 @@
+[Unit]
+Description=Agric durable serial gateway
+After=network-online.target agric.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=agric
+Group=agric
+SupplementaryGroups=dialout
+WorkingDirectory=/opt/agric/current
+EnvironmentFile=/etc/agric/serial.env
+ExecStart=/opt/agric/current/vision-runtime/jetson-venv/bin/python -u embedded/gateway.py --config /etc/agric/serial.json --spool /var/lib/agric/serial/gateway.sqlite
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target
