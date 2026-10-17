@@ -11,7 +11,7 @@
   "commit": "a435fd29d197dd7bcab016cd86e30f87c1f3ce7c",
   "dataset": "DiaMOS Plant",
   "checkpointSha256": "ffd36dc94e3d242d6f88954a67da73db73fcb038f7500cc01486316148cbf866",
-  "sha256": "a1d49eac74bdb384a6fa7dbcac37fb5a521c37a996c4d0730abe5300d2dbd6bf",
+  "sha256": "3174344886528d58ee0e12ce48875bac47015d31a3c80119aa5273eb1ebcdba0",
   "limitations": [
     "公开梨叶模型，未经泊头鸭梨独立验证",
     "不适用于果实外观质检或整园航拍",

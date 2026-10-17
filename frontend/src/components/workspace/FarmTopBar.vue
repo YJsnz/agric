@@ -13,6 +13,16 @@ const emit = defineEmits<{
 const router = useRouter()
 const query = ref('')
 const currentTime = ref('--:--:--')
+const searchForm = ref<HTMLFormElement | null>(null)
+const searchWidth = ref(160)
+let layoutObserver: ResizeObserver | undefined
+function fitSearch() {
+  const nav = document.querySelector('.platform-mode-anchor')
+  const time = searchForm.value?.nextElementSibling
+  if (!nav || !time) return
+  const available = time.getBoundingClientRect().left - nav.getBoundingClientRect().right - 26
+  searchWidth.value = available >= 60 ? Math.min(180, Math.floor(available)) : 0
+}
 let clockTimer = 0
 
 function updateClock(){currentTime.value=new Date().toLocaleTimeString('zh-CN',{hour12:false,hour:'2-digit',minute:'2-digit',second:'2-digit'})}
@@ -21,8 +31,14 @@ function onSearch() {
   if (query.value.trim()) emit('search', query.value.trim())
 }
 function openFullscreen() { document.documentElement.requestFullscreen?.() }
-onMounted(()=>{updateClock();clockTimer=window.setInterval(updateClock,1000)})
-onBeforeUnmount(()=>window.clearInterval(clockTimer))
+onMounted(()=>{
+  updateClock();clockTimer=window.setInterval(updateClock,1000)
+  layoutObserver=new ResizeObserver(fitSearch)
+  for(const el of [document.querySelector('.platform-mode-anchor'),searchForm.value?.parentElement]) if(el) layoutObserver.observe(el)
+  window.addEventListener('resize',fitSearch)
+  fitSearch()
+})
+onBeforeUnmount(()=>{window.clearInterval(clockTimer);layoutObserver?.disconnect();window.removeEventListener('resize',fitSearch)})
 </script>
 
 <template>
@@ -32,7 +48,7 @@ onBeforeUnmount(()=>window.clearInterval(clockTimer))
       <select class="farm-select" aria-label="选择示范基地" :value="legacy ? 'farm-01' : 'yantian-01'" @change="emit('farm', ($event.target as HTMLSelectElement).value)"><option value="yantian-01">沧州盐碱地示范基地</option><option value="farm-01">原温室演示园</option></select><button class="multi-entry" @click="router.push('/multicrop')">多作物研判</button>
     </div>
     <div class="right">
-      <form class="search" @submit.prevent="onSearch">
+      <form ref="searchForm" class="search" :style="{width:searchWidth+'px',visibility:searchWidth?'visible':'hidden'}" @submit.prevent="onSearch">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg><input v-model="query" aria-label="全局搜索" placeholder="搜索设备、地块、数据…" />
       </form>
       <button class="time"><span>今天</span> {{ currentTime }} <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 10h18"/></svg></button>
@@ -53,6 +69,10 @@ onBeforeUnmount(()=>window.clearInterval(clockTimer))
 .dark{background:rgba(255,255,255,.9);color:#15251c}.dark .farm-select,.dark .time,.dark .search{background:#f5f7f2;border-color:rgba(42,70,47,.1)}
 @media(max-width:700px){.topbar{height:58px;inset:8px 10px auto;padding:7px 10px;border-radius:16px}}
 .farm-select{cursor:pointer;font-size:11px;max-width:190px}.farm-select small{font-size:10px;color:#8c7956;border:1px solid #e9dfc9;border-radius:5px;padding:2px 4px;font-weight:400}
+/* Size only the search field against the actual centered navigation boundary. */
+.search{position:static;flex:none;min-width:0;box-sizing:border-box;overflow:hidden}
+.right>.time,.right>.top-icon,.right>:deep(.user-menu){flex-shrink:0}
+.search input{min-width:0}
 </style>
 
 <style scoped>.multi-entry{font:inherit;font-size:11px;border:1px solid #dce5de;border-radius:10px;padding:9px 12px;background:#f5f7f2;color:#40634f;cursor:pointer;white-space:nowrap}</style>
