@@ -1,7 +1,8 @@
-﻿[CmdletBinding()]
+[CmdletBinding()]
 param([string]$JarFile='target/ty-0.0.1-SNAPSHOT.jar',[switch]$IncludeMultiCrop)
 $ErrorActionPreference='Stop'
-$project=Split-Path $PSScriptRoot -Parent
+. (Join-Path $PSScriptRoot 'windows-common.ps1')
+$project=$script:ProjectRoot
 $destination=Join-Path $project ('target/jetson-release-'+(Get-Date -Format 'yyyyMMdd-HHmmss'))
 New-Item -ItemType Directory -Path $destination | Out-Null
 Copy-Item -LiteralPath (Join-Path $project $JarFile) -Destination (Join-Path $destination 'application.jar')
@@ -38,7 +39,7 @@ New-Item -ItemType Directory -Path (Join-Path $destination 'docs/benchmarks') -F
 Copy-Item -LiteralPath (Join-Path $project 'docs/benchmarks/cuda-preprocess-rtx4060.json') -Destination (Join-Path $destination 'docs/benchmarks')
 $files=Get-ChildItem -LiteralPath $destination -Recurse -File -Force
 if($IncludeMultiCrop) {
-    & "$PSScriptRoot/package-multicrop.ps1" -Destination $destination
+    & "$script:ProjectRoot/package-multicrop.ps1" -Destination $destination
     $files=Get-ChildItem -LiteralPath $destination -Recurse -File -Force
 }
 $manifest=$files | ForEach-Object {

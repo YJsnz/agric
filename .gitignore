@@ -1,5 +1,8 @@
 HELP.md
 target/
+!/scripts/
+!/scripts/*.ps1
+!/scripts/*.mjs
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/

@@ -23,11 +23,11 @@ Windows 默认容器 `agric-mysql`、数据卷 `agric-mysql-data`、数据库 `t
 ```powershell
 .\start.cmd -SkipBuild       # 已有前端产物时仅启动后端
 .\start.cmd -Check           # 检查工具、初始化数据库和检查后端端口
-.\setup-mysql.cmd            # 单独初始化数据库
+ .\start.cmd -Task Check     # 单独检查并准备数据库
 docker stop agric-mysql      # 停止数据库，数据保留
 ```
 
-这些 CMD 入口为本次脚本进程设置 ExecutionPolicy Bypass，不修改系统执行策略。也可直接执行 `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\start.ps1`。
+管理任务通过唯一的 `start.cmd -Task ...` 入口调用，底层实现位于 `scripts/`。入口为本次脚本进程设置 ExecutionPolicy Bypass，不修改系统执行策略。
 
 ## 本机配置与已有数据库
 
@@ -51,11 +51,11 @@ docker stop agric-mysql      # 停止数据库，数据保留
 . .\scripts\windows-common.ps1
 Import-LocalEnvironment
 Initialize-MySql
-.\test.ps1
+.\start.cmd -Task Test
 .\mvnw.cmd package
 ```
 
-`test.ps1` 自动创建独立 `tianyan_test` 数据库，并通过 TEST_DB_URL 运行测试，避免测试上下文影响正在运行的 Agent。使用外部数据库时填写 TEST_DB_URL、TEST_DB_USERNAME 和 TEST_DB_PASSWORD。直接执行 Maven 测试也使用独立测试地址，须提前创建对应数据库。
+`scripts/test.ps1` 自动创建独立 `tianyan_test` 数据库，并通过 TEST_DB_URL 运行测试，避免测试上下文影响正在运行的 Agent。使用外部数据库时填写 TEST_DB_URL、TEST_DB_USERNAME 和 TEST_DB_PASSWORD。直接执行 Maven 测试也使用独立测试地址，须提前创建对应数据库。
 
 ## 本地农业 Agent
 
@@ -73,11 +73,11 @@ Initialize-MySql
 - 下载失败：检查网络和 npm/Maven 仓库连通性；修复网络后重新启动。安装或构建失败时脚本立即停止。
 - 项目目录含空格、中文：从 CMD 入口或 PowerShell 入口启动，脚本按自己的位置定位项目，无需先切换目录。
 
-Linux/macOS 继续使用原有 `setup-mysql.sh` 和 `start.sh`，其默认数据库端口仍为 3306。
+Jetson 系统部署按[Jetson 部署手册](Jetson部署与验收.md)操作。主开发入口面向 Windows；其他环境可以在 PowerShell Core 下运行 `pwsh -File scripts/main.ps1`。
 
 ## 鸭梨视觉
 
-安装 Python 3.11 后，正常 Windows 启动会执行 `setup-vision.ps1`，首次下载固定梨叶权重并转换为本地 ONNX。也可单独双击 `setup-vision.cmd`。推理在 CPU 执行，不依赖 Ollama；Agent 解读仍需要配置的语言模型服务。数据工作台的独立「病虫害」支持上传叶片、公开样例和内置 / USB 摄像头采样，「监控」保留原窗口设计，「3D」支持地块联动。摄像头要求 localhost 或 HTTPS，并由用户主动开启。配置与模型许可见 [鸭梨视觉与3D](鸭梨视觉与3D.md)。
+安装 Python 3.11 后，正常启动会准备梨叶视觉依赖，首次下载固定梨叶权重并转换为本地 ONNX。也可运行 `start.cmd -Task VisionSetup`。推理在 CPU 执行，不依赖 Ollama；Agent 解读仍需要配置的语言模型服务。数据工作台的独立「病虫害」支持上传叶片、公开样例和内置 / USB 摄像头采样，「监控」保留原窗口设计，「3D」支持地块联动。摄像头要求 localhost 或 HTTPS，并由用户主动开启。配置与模型许可见 [鸭梨视觉与3D](鸭梨视觉与3D.md)。
 
 ## 观测历史
 

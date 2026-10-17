@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param([Parameter(Mandatory=$true)][string]$BackupFile,[Parameter(Mandatory=$true)][string]$TargetDatabase,[string]$VisionOutput)
-. "$PSScriptRoot/scripts/windows-common.ps1"
+. "$PSScriptRoot/windows-common.ps1"
 Import-LocalEnvironment
 Require-Command docker.exe
 if ($TargetDatabase -notmatch '^[A-Za-z0-9_]+$') { throw 'TargetDatabase must contain only letters, numbers and underscores.' }
@@ -8,9 +8,9 @@ $container = Get-Setting MYSQL_CONTAINER 'agric-mysql'
 $password = Get-Setting DB_PASSWORD 'Root_123456'
 $backupPath = (Resolve-Path -LiteralPath $BackupFile).Path
 $restoreId = [Guid]::NewGuid().ToString('N')
-$stage = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot "target/restore-staging/$restoreId"))
+$stage = [IO.Path]::GetFullPath((Join-Path $script:ProjectRoot "target/restore-staging/$restoreId"))
 $remote = "/tmp/agric-restore-$restoreId.sql"
-if (!$VisionOutput) { $VisionOutput = Join-Path $PSScriptRoot "var/restored-vision-$restoreId" }
+if (!$VisionOutput) { $VisionOutput = Join-Path $script:ProjectRoot "var/restored-vision-$restoreId" }
 $visionTarget = [IO.Path]::GetFullPath($VisionOutput)
 if (Test-Path -LiteralPath $visionTarget) { throw 'VisionOutput must be a new directory to preserve existing files.' }
 Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -42,3 +42,6 @@ else { New-Item -ItemType Directory -Path $visionTarget -Force | Out-Null }
 Write-Host "Restore complete. Database: $TargetDatabase"
 Write-Host "Vision files: $visionTarget"
 Write-Host 'Stop the app, set DB_NAME/DB_URL and VISION_STORAGE to the restored locations in .env.local, then restart.'
+
+
+

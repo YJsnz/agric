@@ -1,13 +1,13 @@
 [CmdletBinding()]
 param([switch]$InitializeKnowledge)
-. "$PSScriptRoot/scripts/windows-common.ps1"
+. "$PSScriptRoot/windows-common.ps1"
 Import-LocalEnvironment
-$python=Get-Setting MULTICROP_PYTHON (Join-Path $PSScriptRoot 'vision-runtime/.venv/Scripts/python.exe')
+$python=Get-Setting MULTICROP_PYTHON (Join-Path $script:ProjectRoot 'vision-runtime/.venv/Scripts/python.exe')
 if(!(Test-Path -LiteralPath $python)){throw 'Run setup-vision.ps1 first, or set MULTICROP_PYTHON.'}
-Invoke-Checked $python @('-m','pip','install','-r',(Join-Path $PSScriptRoot 'ai-service/integration-requirements.txt'),'--disable-pip-version-check')
+Invoke-Checked $python @('-m','pip','install','-r',(Join-Path $script:ProjectRoot 'ai-service/integration-requirements.txt'),'--disable-pip-version-check')
 if($InitializeKnowledge) {
     Require-Command docker.exe
-    $folder=Join-Path $PSScriptRoot 'ai-service/.integration-runtime'
+    $folder=Join-Path $script:ProjectRoot 'ai-service/.integration-runtime'
     New-Item -ItemType Directory -Path $folder -Force | Out-Null
     $configuration=Join-Path $folder 'runtime.json'
     if(!(Test-Path -LiteralPath $configuration)) {
@@ -45,7 +45,7 @@ if($InitializeKnowledge) {
         try{Invoke-WebRequest 'http://127.0.0.1:7474' -UseBasicParsing -TimeoutSec 2 | Out-Null;$ready=$true;break}catch{Start-Sleep -Seconds 2}
     }
     if(!$ready){throw 'Neo4j startup timeout.'}
-    Push-Location $PSScriptRoot
+    Push-Location $script:ProjectRoot
     try{
         if(!(Get-ChildItem 'ai-service/models/embedding' -Filter model_optimized.onnx -Recurse -ErrorAction SilentlyContinue)){
             Invoke-Checked $python @('ai-service/scripts/download_embedding.py')
@@ -57,4 +57,6 @@ if($InitializeKnowledge) {
         Invoke-Checked $python @('ai-service/initialize_integration.py')
     }finally{Pop-Location}
 }
-Write-Host 'Multi-crop runtime installed. Start with start-multicrop.ps1.'
+Write-Host 'Multi-crop runtime installed. Run start.cmd -Task MultiCrop.'
+
+

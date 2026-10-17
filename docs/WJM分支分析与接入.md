@@ -21,24 +21,24 @@
 
 ## 安装与运行
 
-先完成原 setup-vision.ps1，然后执行：
+先完成start.cmd，然后执行：
 
 ```powershell
-.\setup-multicrop.ps1 -InitializeKnowledge
-.\start.ps1 -SkipBuild
+.\start.cmd -Task MultiCropSetup -InitializeKnowledge
+.\start.cmd -SkipBuild
 ```
 
 首次初始化建立独立 agric-multicrop-neo4j 容器和数据卷，生成未提交的随机密码，下载 BGE 并导入四作物快照。7474 只映射回环；图谱按数据集管理，无数据库清空操作，原 MySQL 不受影响。
 
 BGE 的 Google 归档在本机返回 403。下载器增加 FastEmbed 登记的 Qdrant/bge-small-zh-v1.5 来源，固定 revision 46fbe35fd4374a00fee7de77dfddaeb6dd6a2c59 并记录文件哈希。已有 FAISS 数据保留。
 
-在另一终端启动主应用。正常 start.ps1 构建包含 vision-frontend；SkipBuild 要求已构建。AI 服务保持独立启动与停止，可单独调试。
+在另一终端启动主应用。正常 start.cmd 构建包含 vision-frontend；SkipBuild 要求已构建。AI 服务保持独立启动与停止，可单独调试。
 
 配置包括 MULTICROP_BASE_URL、MULTICROP_PYTHON、MULTICROP_LLM_BASE_URL/MODEL/API_KEY。启动脚本默认使用 AGENT 模型配置，密钥只在服务器。原 branch GraphRAG 的引用和证据核查仍保留。
 
 ```powershell
-.\create-release.ps1 -IncludeMultiCrop
-.\scripts\create-jetson-release.ps1 -IncludeMultiCrop
+.\start.cmd -Task Release -IncludeMultiCrop
+.\start.cmd -Task JetsonRelease -IncludeMultiCrop
 ```
 
 发行 helper 只复制运行代码、知识快照、索引和模型配置及权重，排除训练报告、历史评估、虚拟环境、BGE 缓存和本机密钥。首次部署仍需初始化图谱和安装依赖。
@@ -66,9 +66,9 @@ BGE 的 Google 归档在本机返回 403。下载器增加 FastEmbed 登记的 Q
 
 ## 知识图谱自动启动修复（2026-10-14）
 
-主程序的启动事件现在会带起已安装的多作物 Python 服务，按本地配置连接 Neo4j；本地 Neo4j 容器未运行时自动启动。服务异常退出后由主程序监督恢复，进入知识页面的请求也会等待服务就绪。现有服务可复用，仅关闭主程序自己创建的进程。远程服务不会被自动启动/停止；独立部署可设置 `MULTICROP_AUTO_START=false`。独立 `start-multicrop.ps1` 保留用于排查，已运行时不重复占用端口。
+主程序的启动事件现在会带起已安装的多作物 Python 服务，按本地配置连接 Neo4j；本地 Neo4j 容器未运行时自动启动。服务异常退出后由主程序监督恢复，进入知识页面的请求也会等待服务就绪。现有服务可复用，仅关闭主程序自己创建的进程。远程服务不会被自动启动/停止；独立部署可设置 `MULTICROP_AUTO_START=false`。需要单独调试时使用统一入口 `start.cmd -Task MultiCrop`，服务已运行时不会重复占用端口。
 
-完整版 Windows 启动及发布版启动会安装多作物依赖，首次初始化知识数据库；新发布目录复用现有 Neo4j 容器时，安全读取既有配置的凭据，不重置数据库。Python及图谱数据首次安装仍需完整启动或 `setup-multicrop.ps1 -InitializeKnowledge`，随后 `start.ps1 -SkipBuild` 或直接启动 Java 均可自动带起服务。日志为 `var/logs/multicrop-runtime.log`。
+完整版 Windows 启动及发布版启动会安装多作物依赖，首次初始化知识数据库；新发布目录复用现有 Neo4j 容器时，安全读取既有配置的凭据，不重置数据库。Python及图谱数据首次安装仍需完整启动或 `start.cmd -Task MultiCropSetup -InitializeKnowledge`，随后 `start.cmd -SkipBuild` 或直接启动 Java 均可自动带起服务。日志为 `var/logs/multicrop-runtime.log`。
 
 知识页面等待和重试临时503，切换作物会取消旧请求；等待有75秒总上限，连接失败不再一直显示“正在连接”。图二的返回数据工作台、智能问农、视觉与融合研判、知识图谱与问答整组导航已删除，保留主平台导航和作物选择。未使用静态或虚构图谱代替数据库。
 

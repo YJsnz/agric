@@ -47,7 +47,7 @@ ai-service/.venv/Scripts/python.exe -m unittest discover -s ai-service/scripts -
 
 ## 服务
 
-首次部署先在 `.venv` 安装 `graph_web/requirements.txt`。确认 8090 空闲后，在本目录运行 `.venv/Scripts/python.exe main.py`，或继续使用 `graph_web/start.ps1`。文档整理不需要重启现有服务。
+首次部署由主项目的 `start.cmd` 准备 Python 运行时、Neo4j 与知识初始化。Multi-crop 服务由 Spring Boot 自动管理；需要单独运行时，在主项目根目录执行 `start.cmd -Task MultiCropSetup` 和 `start.cmd -Task MultiCrop`。独立调试服务可先在 `.venv` 安装 `graph_web/requirements.txt`，然后从 `ai-service` 运行 `.venv/Scripts/python.exe main.py`。文档整理不需要重启现有服务。
 
 参见 [知识图谱 V2.1](knowledge_graph/README-V2.md) 和 [第一阶段验收](knowledge_graph/audit/README.md)。
 全文解析和候选切块已实现，见 [第三阶段切块说明](data/botou_yali/graphrag_corpus_v1/processed/chunks/README.md)。

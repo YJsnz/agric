@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param()
-. "$PSScriptRoot/scripts/windows-common.ps1"
+. "$PSScriptRoot/windows-common.ps1"
 try {
     Import-LocalEnvironment
     if (!$env:TEST_DB_URL) {
@@ -12,6 +12,9 @@ try {
         $env:TEST_DB_URL = "jdbc:mysql://127.0.0.1:${port}/tianyan_test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true"
         $env:TEST_DB_PASSWORD = $password
     }
-    Push-Location $PSScriptRoot
-    try { Invoke-Checked "$PSScriptRoot/mvnw.cmd" @('test') } finally { Pop-Location }
+    Push-Location $script:ProjectRoot
+    try { Invoke-Checked "$script:ProjectRoot/mvnw.cmd" @('test') } finally { Pop-Location }
 } catch { Write-Host "ERROR: $($_.Exception.Message)" -ForegroundColor Red; exit 1 }
+
+
+

@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param([switch]$CheckOnly,[switch]$Cpu)
-. "$PSScriptRoot/scripts/windows-common.ps1"
+. "$PSScriptRoot/windows-common.ps1"
 Import-LocalEnvironment
 $baseUrl = (Get-Setting AGENT_BASE_URL 'http://127.0.0.1:11434/v1').TrimEnd('/')
 $model = Get-Setting AGENT_MODEL 'qwen2.5:7b'
@@ -23,8 +23,8 @@ if ($baseUrl -notin @('http://127.0.0.1:11434/v1','http://localhost:11434/v1')) 
 Require-Command ollama.exe
 try { Invoke-RestMethod -Uri 'http://127.0.0.1:11434/api/tags' -TimeoutSec 2 | Out-Null }
 catch {
-    New-Item -ItemType Directory -Path (Join-Path $PSScriptRoot 'target') -Force | Out-Null
-    Start-Process -FilePath (Get-Command ollama.exe).Source -ArgumentList 'serve' -WindowStyle Hidden -RedirectStandardOutput (Join-Path $PSScriptRoot 'target/ollama-start.log') -RedirectStandardError (Join-Path $PSScriptRoot 'target/ollama-start-error.log') | Out-Null
+    New-Item -ItemType Directory -Path (Join-Path $script:ProjectRoot 'target') -Force | Out-Null
+    Start-Process -FilePath (Get-Command ollama.exe).Source -ArgumentList 'serve' -WindowStyle Hidden -RedirectStandardOutput (Join-Path $script:ProjectRoot 'target/ollama-start.log') -RedirectStandardError (Join-Path $script:ProjectRoot 'target/ollama-start-error.log') | Out-Null
     $ready = $false
     for ($attempt=0;$attempt -lt 30;$attempt++) {
         try { Invoke-RestMethod -Uri 'http://127.0.0.1:11434/api/tags' -TimeoutSec 1 | Out-Null; $ready=$true; break }
@@ -36,8 +36,8 @@ $models = @(Get-ConfiguredModels)
 if ($models -notcontains $model) {
     if ($model -eq 'agric-qwen2.5:7b-cpu') {
         if ($models -notcontains 'qwen2.5:7b') { Invoke-Checked ollama.exe @('pull','qwen2.5:7b') }
-        New-Item -ItemType Directory -Path (Join-Path $PSScriptRoot 'target') -Force | Out-Null
-        $cpuFile = Join-Path $PSScriptRoot 'target/Modelfile.cpu'
+        New-Item -ItemType Directory -Path (Join-Path $script:ProjectRoot 'target') -Force | Out-Null
+        $cpuFile = Join-Path $script:ProjectRoot 'target/Modelfile.cpu'
         @('FROM qwen2.5:7b','PARAMETER num_gpu 0','PARAMETER num_ctx 8192') | Set-Content -LiteralPath $cpuFile -Encoding ASCII
         Invoke-Checked ollama.exe @('create',$model,'-f',$cpuFile)
     } else {
@@ -47,3 +47,6 @@ if ($models -notcontains $model) {
 }
 if (@(Get-ConfiguredModels) -notcontains $model) { throw 'Model installation did not produce the configured model.' }
 Write-Host "Agent model ready: $model"
+
+
+

@@ -1,854 +1,544 @@
-# 田言耕智 · AI 原生智慧农业与数字孪生平台
+# 盐田丰语｜智慧农业与数字化农场平台
 
-田言耕智是一套面向智慧农场、设施农业和农业机器人场景的全栈平台。项目将农场官网、账号认证、航拍实景、Three.js 数字孪生、温室内部建模、设备与灌溉控制、告警处理、监控识别和 AI 问农整合在同一套系统中。
+盐田丰语是面向农业展示、业务记录和本地 AI 验证的全栈项目。仓库包含 React 官网、Vue 农业工作台、Three.js 数字孪生、作物视觉、农业 Agent、多作物知识服务、串口网关示例和 Jetson 部署工具。
 
-当前仓库可以运行完整演示：用户从官网注册或登录后进入“智慧农场01”，在航拍和 3D 场景中查看农场对象，进入六座差异化温室，操作设备和灌溉，并使用 DeepSeek 驱动的农业助手。项目目前使用虚拟传感器数据和演示视频；LingBot-Map 单目建图、机器人导航、在线边缘推理和 NVIDIA LocateAnything 属于后续规划。
+项目定位是**可运行的软件演示版与工程验证平台**。农场观测与设备状态包含演示数据，控制操作保存的是软件回执；梨叶模型给出的是待复核视觉候选；知识和 Agent 输出用于信息检索与任务展示。这些结果都不等同于真实农事测量、专业植保诊断或硬件已经执行。
 
-> 默认访问地址：`http://localhost:8081/`
+## 目录
 
-## 项目界面
+- [项目预览](#项目预览)
+- [功能与实现状态](#功能与实现状态)
+- [系统架构](#系统架构)
+- [技术栈](#技术栈)
+- [快速开始](#快速开始)
+- [配置说明](#配置说明)
+- [开发与构建](#开发与构建)
+- [主要 API](#主要-api)
+- [数据与持久化](#数据与持久化)
+- [仓库结构](#仓库结构)
+- [安全边界与已知限制](#安全边界与已知限制)
+- [部署与项目文档](#部署与项目文档)
+- [许可证与外部服务](#许可证与外部服务)
 
-### 官网与平台入口
+## 项目预览
 
-![田言耕智官网](docs/截图/官网.png)
+### 官网
 
-官网提供产品、解决方案、数字孪生、关于我们、联系我们、登录和平台入口。
+![盐田丰语官网](docs/截图/官网.png)
 
-### 航拍实景数据工作台
+官网提供产品介绍、解决方案、数字孪生介绍、登录注册和平台入口。
 
-![航拍实景数据工作台](docs/截图/主界面.png)
+### 农业工作台
 
-航拍场景将温室、地块、设备、水池、气象站、摄像头和农业机器人映射为可交互空间对象。选中对象后，右侧抽屉展示对应详情和业务操作。
+![农业工作台](docs/截图/主界面.png)
 
-### Three.js 数字孪生
+工作台以基地为上下文，呈现地块、温室、设备、气象和告警。地图对象与详情面板联动，可进入农事、环境、设施、灌排、告警和采后追溯等业务。
 
-![3D 数字孪生](docs/截图/3D.png)
+### 数字孪生
 
-3D 场景支持鸟瞰、对象拾取、详情联动和第一人称巡场。单击大棚打开详情，点击“进入大棚”或双击大棚模型可进入对应温室内部。
-
-### 大棚内部数字孪生
-
-![大棚内部数字孪生](docs/截图/大棚内部.png)
-
-六座温室分别使用番茄、草莓、黄瓜、育苗、生态番茄和水培叶菜模型，并具有独立栽培方式、植株、区域、设备和环境数据。
-
-### AI 问农与自定义工作台
-
-![智能问农](docs/截图/问农.png)
-
-![自定义智能工作台](docs/截图/自定义工作台.png)
-
-智能问农支持多轮对话、快捷问题和农场上下文；自定义工作台可组合告警、灌溉计划、大棚状态、农场总览和关键指标组件。
-
-## 当前实现状态
-
-| 能力 | 状态 | 说明 |
-|---|---|---|
-| 官网与联系表单 | 已实现 | React 官网，联系信息发送至项目邮箱 |
-| 邮箱密码注册和登录 | 已实现 | BCrypt 密码散列、JWT 会话 |
-| 摄像头刷脸登录 | 已实现 | 对接百度人脸服务；登录仅允许实时摄像头采集，不允许上传图片 |
-| 航拍实景工作台 | 已实现 | 可交互热区、空间标签、搜索、测距和图层控制 |
-| 3D 数字孪生 | 已实现 | Three.js 鸟瞰、第一人称、碰撞和对象拾取 |
-| 七个业务中心 | 已实现 | 总览、监控、环境、设备、灌溉、作物、告警 |
-| 设备与灌溉控制 | 已实现 | 后端接口和 MySQL 持久化 |
-| AI 问农 | 已实现 | Spring Boot 代理 DeepSeek，密钥不进入浏览器 |
-| 温室内部 | 已实现 | 六座差异化大棚、设备、分区、植株和右侧数据栏 |
-| 监控识别 | 已实现演示链路 | YOLO + ByteTrack 离线推理，逐帧 JSON 与视频同步展示 |
-| LingBot-Map 单目建图 | 规划中 | 视频/图片流三维重建、点云和相机轨迹 |
-| 农业机器人导航 | 规划中 | 点云转 OccupancyGrid、TF、Nav2 和安全控制 |
-| 在线视觉推理 | 规划中 | RTSP、边缘 YOLO、消息总线和 WebSocket/SSE |
-| NVIDIA LocateAnything | 规划中 | 开放词汇定位和疑难帧复核 |
-| 多租户与生产高可用 | 规划中 | 租户隔离、对象存储、可观测性、灾备和高可用 |
-
-## 核心功能
-
-### 官网和身份认证
-
-- 响应式产品官网与独立营销页面；
-- 联系表单；
-- 邮箱注册、密码登录和登录保持；
-- 注册后可选人脸绑定；
-- 摄像头刷脸登录和人脸解绑；
-- 未登录或 JWT 失效时自动返回登录页。
-
-![登录页面](docs/截图/登陆.png)
-
-### 农场数据工作台
-
-- 实景与 3D 模式共享对象 ID 和选中状态；
-- 搜索温室、地块、摄像头、设备和水利设施；
-- 对象 Hover、单击、双击和详情抽屉；
-- 总览、监控、环境、设备、灌溉、作物和告警 Dock；
-- 环境趋势、设备开关、自检、灌溉时长和告警处理；
-- 桌面、平板和移动端响应式布局。
-
-### 3D 与第一人称巡场
-
-- 本地加载 GLB 模型，不依赖运行时第三方模型 CDN；
-- 温室、道路、地块、水池、风机、控制柜、机器人等场景对象；
-- 重复作物使用 `InstancedMesh` 批量渲染；
-- 昼夜光照、晨昏色温、星空和云层；
-- `W/A/S/D` 移动、鼠标观察、`Shift` 加速、准星选择；
-- `1–7` 切换七个业务模块，`Esc` 退出；
-- 温室、建筑、设备、种植区和水池碰撞范围。
+![农场数字孪生](docs/截图/3D.png)
 
 ![第一人称巡场](docs/截图/第一人称.png)
 
-### 大棚内部
+场景支持鸟瞰、对象选择、业务定位和漫游。不同基地有相应场景；部分地块、道路和作物模型是程序化或概念表达，不是测绘成果。
 
-- 从详情按钮或双击 3D 大棚进入；
-- 实景视频与数字孪生切换；
-- 温室骨架、苗床/高垄、灌溉管、传感器、风机和控制设备；
-- 六种差异化作物和栽培结构；
-- 温度、湿度、基质含水、光照和 CO₂；
-- 总览、设备和植株三级数据；
-- 样本植株点击定位与健康指标；
-- 可收起、可独立滚动的右侧数据栏。
+### 作物与采后业务
 
-### AI 问农
+![番茄大棚巡检](docs/截图/番茄大棚巡检.png)
 
-- 数据工作台中的“小田”助手；
-- 独立智能问农页面；
-- 当前农场、业务模块和选中对象上下文；
-- 多轮对话与快捷农业问题；
-- 用户独立的聊天和工作台状态；
-- DeepSeek API 由后端调用，前端不保存模型密钥。
+工作台可登记农事、生长观察和采收批次。批次沿采收、分选、入库、出库顺序追加事件，可在详情中查看完整轨迹和二维码分享摘要。
 
-### YOLO 监控识别
+### 智能问农与工作台
 
-当前监控链路不是浏览器实时推理：
+![智能问农](docs/截图/问农.png)
 
-```text
-演示视频 → 抽帧与标注 → YOLO11n 训练
-        → YOLO + ByteTrack 离线分析
-        → 逐帧 detections.json
-        → Vue 按视频时间绘制检测框
-```
+![自定义工作台](docs/截图/自定义工作台.png)
 
-目前类别为 `person` 和 `crop`。现有 38 帧主要用于演示视频拟合，不能代表对任意温室的泛化能力。训练、标注和导出流程见 [YOLO 接入说明](tools/yolo/README.md)。
+智能问农保留原对话工作台；新 Agent 工作流会展示任务状态、调用工具、事件、来源和结果，并支持继续追问、重试、取消和导出。
+
+## 功能与实现状态
+
+| 模块 | 当前实现 | 运行方式与边界 |
+|---|---|---|
+| 官网与账号 | 产品页面、注册、密码登录、JWT 会话、人脸绑定与解绑界面 | React；百度人脸 API 密钥可选，未配置时不提供有效云端人脸服务 |
+| 农场数据工作台 | 基地概览、地块与温室、环境指标、设备、灌排、告警、观测历史 | Vue；初始化数据和周期更新是演示数据，控制写入数据库但不连接真实执行器 |
+| 农事与生长 | 新增农事记录、生长观察，按基地和地块查看业务记录 | 保存于 MySQL，属于演示基地的共享业务记录 |
+| 采后批次追溯 | 采收批次登记、分选/入库/出库逐步流转、版本约束、二维码只读摘要 | 每一步记录为新的业务事件；数量和流转是人工录入的演示数据 |
+| 数字孪生 | 农场、果园和温室场景，地图/对象联动、对象详情和漫游 | Three.js；场景几何和概念坐标不代表实测 GIS 或导航地图 |
+| 农业 Agent | Harness 运行时、工具白名单、任务历史、事件、取消、重试、追问和导出 | Node.js 子进程连接 Ollama 或兼容 API；工具读取共享演示农场及已保存记录 |
+| 农业知识与旧问答 | 关键词资料检索、上下文组装和 DeepSeek 服务端代理 | 不是向量检索或 GraphRAG；在线 DeepSeek Key 仅放服务端环境变量 |
+| 梨叶视觉 | 上传 PNG/JPEG、ONNX 推理、检测历史、原图查看与人工复核 | Python 子进程在本机 CPU 推理；模型未通过泊头鸭梨独立诊断精度验收 |
+| 多作物研判 | 小麦、梨、小枣和设施蔬菜知识/研判服务与前端 | FastAPI、Neo4j 及作物专属流程；不同作物的模型/证据成熟度不同，番茄视觉未完成 |
+| 串口网关 | TY Serial v1 报文、SQLite 缓存、去重与命令/回执接口示例 | `embedded/` 下的固件及网关属于集成示例，尚未完成真实厂家设备联调 |
+| Jetson 部署 | Orin Nano 目标环境安装、TensorRT 构建及 systemd 脚本 | 需目标板单独验证 JetPack、模型、内存、性能和服务组合 |
+
+### Agent 当前工具
+
+当前 Harness 工具包括：
+
+- `get_farm_context`：读取共享演示农场当前指标、地块、设备和告警；
+- `get_business_records`：读取农事、生长、批次、灌排和告警模拟回执摘要；
+- `retrieve_evidence`：按关键词检索资料并返回来源；
+- `analyze_environment`：按已配置阈值核对当前指标和已保存观测；不计算病害概率；
+- `query_crop_knowledge`：请求多作物知识服务；
+- `get_vision_records`：读取当前用户已保存的梨叶视觉记录；不触发新推理。
+
+任务和工具事件保存到 MySQL。视觉记录按当前登录用户隔离；农场业务记录为演示基地共享记录。模型回答不代替现场核验或农业专业意见。
 
 ## 系统架构
 
 ```mermaid
 flowchart TB
-    USER([农场管理人员 / 运维人员 / 访客])
-
-    subgraph CLIENT[浏览器客户端]
-        direction LR
-        subgraph LANDING[React 官网]
-            HOME[产品与解决方案]
-            ACCOUNT[注册 / 密码登录 / 人脸登录]
-            DOCS[用户手册 / 技术手册]
-            CONTACT[联系表单]
-        end
-
-        subgraph PLATFORM[Vue 智慧农业平台]
-            WORKSPACE[航拍实景工作台]
-            MODULES[总览 / 监控 / 环境 / 设备<br/>灌溉 / 作物 / 告警]
-            ASSISTANT[智能问农 / 自定义工作台]
-            GREENHOUSE[六座温室内部]
-        end
-
-        subgraph DIGITAL_TWIN[Three.js 数字孪生]
-            FARM3D[农场 3D 鸟瞰]
-            FPS[第一人称巡场]
-            GH3D[温室内部建模]
-        end
+    User[浏览器用户]
+    subgraph Web[浏览器页面]
+        Landing[React 官网与认证 /]
+        Platform[Vue 农业工作台 /platform/]
+        MultiCropUI[Vue 多作物工作台 /multicrop/]
+        Twin[Three.js 场景]
     end
-
-    USER --> HOME
-    USER --> WORKSPACE
-    WORKSPACE <--> FARM3D
-    FARM3D <--> FPS
-    GREENHOUSE <--> GH3D
-    WORKSPACE --> MODULES
-
-    subgraph SERVER[Java 17 / Spring Boot 4.1]
-        direction LR
-        STATIC[静态资源托管<br/>官网与 platform]
-        AUTH[认证服务<br/>JWT / BCrypt / 人脸]
-        DASHBOARD[农场业务服务<br/>资产 / 种植区 / 设备 / 灌溉 / 告警]
-        SIMULATOR[虚拟传感器<br/>30 秒定时更新 / 阈值判断]
-        AI[AI 助手服务<br/>上下文组装 / DeepSeek 代理]
-        RAG[RAG 知识检索<br/>文档切片 / 关键词与双字词召回]
-        STATE[用户状态服务<br/>对话 / 自定义工作台]
-        JPA[Spring Data JPA<br/>事务与数据访问]
+    subgraph Java[Spring Boot 4.1 API 与静态资源]
+        Auth[认证与 JWT]
+        Farm[农场与业务 API]
+        AgentAPI[Agent 任务与事件]
+        VisionAPI[视觉任务与复核]
+        Runtime[运行时监督与代理]
     end
-
-    HOME -->|HTTP / HTTPS| STATIC
-    ACCOUNT -->|REST API| AUTH
-    WORKSPACE -->|REST API + Bearer JWT| AUTH
-    WORKSPACE --> DASHBOARD
-    ASSISTANT --> AI
-    ASSISTANT --> STATE
-    DASHBOARD <--> SIMULATOR
-    AI <--> RAG
-    AUTH --> JPA
-    DASHBOARD --> JPA
-    RAG --> JPA
-    STATE --> JPA
-
-    subgraph DATA[MySQL 8.4]
-        USERS[(users)]
-        FARM[(farm_assets<br/>farm_devices<br/>environment_metrics)]
-        CONTROL[(irrigation_units<br/>farm_alerts<br/>metric_thresholds)]
-        KNOWLEDGE[(knowledge_documents<br/>user_assistant_states)]
-    end
-
-    JPA --> USERS
-    JPA --> FARM
-    JPA --> CONTROL
-    JPA --> KNOWLEDGE
-
-    subgraph EXTERNAL[外部服务]
-        DEEPSEEK[DeepSeek Chat API]
-        FACE[百度智能云人脸 API]
-        FORMSUBMIT[FormSubmit 邮件服务]
-    end
-
-    AI --> DEEPSEEK
-    AUTH --> FACE
-    CONTACT --> FORMSUBMIT
-
-    subgraph VISION[当前离线视觉演示链路]
-        VIDEO[温室演示视频]
-        YOLO[Python / Ultralytics YOLO11n]
-        TRACK[ByteTrack 目标跟踪]
-        JSON[逐帧 detections.json]
-    end
-
-    VIDEO --> YOLO --> TRACK --> JSON --> MODULES
-
-    subgraph PLANNED[规划中的边缘与机器人能力]
-        CAMERA[RTSP / 单目摄像头]
-        EDGE[边缘 YOLO / TensorRT]
-        MAP[LingBot-Map 三维重建]
-        MQ[MQTT / 事件总线 / WebSocket]
-        ROS[ROS 2 / Nav2 / 农业机器人]
-        OBJECT[(S3 对象存储)]
-    end
-
-    CAMERA -.规划.-> EDGE
-    CAMERA -.规划.-> MAP
-    EDGE -.规划.-> MQ
-    MAP -.规划.-> OBJECT
-    MAP -.审核后发布.-> ROS
-    MQ -.规划.-> DASHBOARD
-
-    classDef client fill:#e8f5ec,stroke:#31834b,color:#173b24
-    classDef service fill:#e8f2f5,stroke:#347d91,color:#153943
-    classDef database fill:#fff5dc,stroke:#ad7921,color:#4d350d
-    classDef external fill:#f3edff,stroke:#7854ad,color:#382655
-    classDef planned fill:#f5f5f5,stroke:#8b8b8b,color:#555,stroke-dasharray:5 4
-    class HOME,ACCOUNT,DOCS,CONTACT,WORKSPACE,MODULES,ASSISTANT,GREENHOUSE,FARM3D,FPS,GH3D client
-    class STATIC,AUTH,DASHBOARD,SIMULATOR,AI,RAG,STATE,JPA,VIDEO,YOLO,TRACK,JSON service
-    class USERS,FARM,CONTROL,KNOWLEDGE database
-    class DEEPSEEK,FACE,FORMSUBMIT external
-    class CAMERA,EDGE,MAP,MQ,ROS,OBJECT planned
+    MySQL[(MySQL 8.4)]
+    Node[Node.js DeepSeek Harness]
+    LLM[Ollama / OpenAI 兼容模型]
+    PyVision[Python + ONNX Runtime]
+    MultiCrop[FastAPI 作物知识服务]
+    Neo4j[(Neo4j)]
+    User --> Landing
+    User --> Platform
+    User --> MultiCropUI
+    Platform --> Twin
+    Landing --> Auth
+    Platform --> Farm
+    Platform --> AgentAPI
+    Platform --> VisionAPI
+    MultiCropUI --> Runtime
+    Auth --> MySQL
+    Farm --> MySQL
+    AgentAPI --> MySQL
+    VisionAPI --> MySQL
+    Runtime --> Node --> LLM
+    Runtime --> PyVision
+    Runtime --> MultiCrop --> Neo4j
 ```
 
-图中实线表示当前仓库已经实现并可运行的链路，虚线表示规划接入能力。当前监控识别采用离线推理结果与视频同步展示；LingBot-Map、实时边缘推理、消息总线和 ROS 2/Nav2 尚未接入生产链路。
+### 页面与后端的挂载关系
 
-### 核心业务数据流
+| 页面或服务 | 地址 | 源码 | 构建输出 |
+|---|---|---|---|
+| React 官网、账号页 | `/` | `landing/` | `src/main/resources/static/` |
+| Vue 农业工作台 | `/platform/` | `frontend/` | `src/main/resources/static/platform/` |
+| Vue 多作物工作台 | `/multicrop/` | `vision-frontend/` | `src/main/resources/static/multicrop/` |
+| REST API | `/api/**` | `src/main/java/com/example/ty/` | Spring Boot 应用 |
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor U as 用户
-    participant W as React / Vue 前端
-    participant A as JWT 认证拦截器
-    participant S as Spring Boot 业务服务
-    participant R as Spring Data JPA
-    participant M as MySQL
-    participant K as RAG 知识检索
-    participant D as DeepSeek API
+Spring Boot 同源托管页面和 API。作物视觉工作台位于农业平台业务流程内，使用 `/api/vision/**`；`vision-runtime/` 是 Python 推理运行时，不是单独的 Web 前端。
 
-    U->>W: 登录并进入智慧农场
-    W->>A: 携带 Bearer JWT 请求业务接口
-    A->>M: 查询并确认当前用户
-    A-->>S: 放行业务请求
-    S->>R: 查询农场、种植区、设备、灌溉与告警
-    R->>M: 执行事务和持久化
-    M-->>W: 经业务服务返回 Dashboard 快照
+### 运行时调用链
 
-    U->>W: 新增/修改种植区或控制设备
-    W->>S: POST / PUT / PATCH / DELETE
-    S->>R: 参数校验、关联检查、状态更新
-    R->>M: 写入数据库
-    M-->>W: 返回服务端最终状态并刷新地图
-
-    U->>W: 向小田提出农业问题
-    W->>S: 提交对话、农场和选中对象上下文
-    S->>K: 检索最相关知识片段
-    K->>M: 读取 knowledge_documents
-    K-->>S: 返回 Top-K 文档片段和来源
-    S->>D: 发送系统提示、上下文和知识片段
-    D-->>W: 返回回答、模型名称和知识来源
+```text
+浏览器 ──同源 HTTP──> Spring Boot ──JPA/JDBC──> MySQL
+                         ├──本地进程协议──> Node.js Harness ──HTTP──> 模型服务
+                         ├──本地 JSON/进程──> Python 梨叶 ONNX 推理
+                         └──HTTP 代理/监督──> FastAPI Multi-crop ──> Neo4j
 ```
 
-Spring Boot 单进程托管两套前端：
-
-| 应用 | 路径 | 技术 | 源码 | 构建输出 |
-|---|---|---|---|---|
-| 官网和认证 | `/`、`/#/...` | React 18、Vite、Tailwind | `landing/` | `src/main/resources/static/` |
-| 智慧农业平台 | `/platform/` | Vue 3、TypeScript、Three.js | `frontend/` | `src/main/resources/static/platform/` |
-| REST API | `/api/...` | Java 17、Spring Boot 4.1 | `src/main/java/` | Spring Boot 应用 |
+主应用监督本地 Multi-crop worker；若配置的是远程 URL，则复用远程服务，不会启动或停止该服务。Neo4j 和 Python 依赖由初始化任务准备，首次完整启动会根据本机配置安装。
 
 ## 技术栈
 
-### 官网与文档
-
-| 技术 | 版本 | 项目用途 |
-|---|---:|---|
-| React | 18.2.0 | 官网、登录注册、联系表单和在线文档页面 |
-| React DOM | 18.2.0 | React 页面挂载与浏览器渲染 |
-| React Router DOM | 6.3.0 | 官网 Hash 路由、认证页和文档动态路由 |
-| Tailwind CSS | 3.2.4 | 官网响应式布局、颜色、间距和组件样式 |
-| Lucide React | 0.263.1 | 官网统一线性图标 |
-| Marked | 4.3.x | 将用户手册和技术手册 Markdown 渲染为在线文档 |
-| Vite / React Plugin | 2.9.16 / 1.3.2 | 官网开发服务器、资源处理和生产构建 |
-| PostCSS / Autoprefixer | 8.4.21 / 10.4.13 | CSS 转换和浏览器前缀兼容 |
-| FormSubmit | 外部服务 | 将官网联系表单转发到指定邮箱 |
-
-### 智慧农业平台
-
-| 技术 | 版本 | 项目用途 |
-|---|---:|---|
-| Vue | 3.2.47 | 数据工作台、智能问农、温室内部和业务抽屉 |
-| TypeScript | 4.9.5 | 前端类型约束、API DTO 和场景对象建模 |
-| Pinia | 2.0.36 | 当前农场、选择对象、业务模块、图层和同步状态管理 |
-| Vue Router | 4.1.6 | 工作台、智能问农和温室详情路由 |
-| ECharts | 5.4.3 | 环境趋势和业务数据图表 |
-| Sass / SCSS | 1.58.3 | 平台组件样式、响应式布局和视觉效果 |
-| Tailwind CSS / DaisyUI | 3.2.x / 2.51.x | 通用工具类和基础 UI 组件 |
-| Vue TSC | 1.2.0 | Vue 单文件组件 TypeScript 类型检查 |
-| Vite / Vue Plugin | 2.9.16 / 2.3.4 | 平台开发服务器和生产资源构建 |
-
-### 三维数字孪生与媒体
-
-| 技术 | 版本 | 项目用途 |
-|---|---:|---|
-| Three.js | 0.152.2 | 农场鸟瞰、第一人称巡场和温室内部数字孪生 |
-| WebGL | 浏览器能力 | GPU 实时三维渲染 |
-| GLTF / GLB | 3D 资源格式 | 本地加载温室、设备、车辆和农业场景模型 |
-| OrbitControls | Three.js 扩展 | 三维鸟瞰旋转、缩放和平移 |
-| PointerLockControls | Three.js 扩展 | 第一人称鼠标视角和巡场控制 |
-| Raycaster | Three.js 核心 | 三维对象拾取、悬停、单击和双击交互 |
-| InstancedMesh | Three.js 核心 | 批量渲染重复植株和树木，减少 Draw Call |
-| HTML5 Video / Canvas | 浏览器能力 | 温室实景视频播放和 YOLO 检测框同步叠加 |
-
-### 后端与 API
-
-| 技术 | 版本 | 项目用途 |
-|---|---:|---|
-| Java | 17 | 后端主要编程语言和 Java HTTP Client 运行环境 |
-| Spring Boot | 4.1.0 | 应用启动、配置管理、依赖装配和静态资源托管 |
-| Spring Web MVC | 随 Spring Boot | REST Controller、JSON API、拦截器和异常响应 |
-| Spring Data JPA | 随 Spring Boot | Repository 数据访问、实体映射和事务持久化 |
-| Hibernate ORM | 随 Spring Boot | JPA 实现和本地演示环境自动建表更新 |
-| Jakarta Validation | 随 Spring Boot | 注册、设备、种植区、阈值和控制参数校验 |
-| Jakarta Persistence | 随 Spring Boot | `@Entity`、`@Table` 和字段约束映射 |
-| Java HttpClient | JDK 17 | 服务端调用 DeepSeek 和百度人脸 HTTP API |
-| Spring Scheduling | 随 Spring Boot | 每 30 秒生成虚拟传感器数据并执行阈值判断 |
-| Lombok | 随 Spring Boot 依赖管理 | Entity、Service 和 DTO 样板代码生成 |
-| Maven Wrapper | 项目内置 | 后端依赖、编译、测试、打包和启动 |
-
-### 数据库与持久化
-
-| 技术 | 版本 | 项目用途 |
-|---|---:|---|
-| MySQL | 8.4 | 用户、农场资产、种植区、设备、环境、灌溉、告警和知识库 |
-| MySQL Connector/J | 随 Spring Boot | JDBC 数据库连接驱动 |
-| HikariCP | 随 Spring Boot | JDBC 数据库连接池 |
-| Hibernate `ddl-auto=update` | 当前 Demo 配置 | 开发环境根据实体自动补充表结构；生产建议改用 Flyway/Liquibase |
-| Docker Volume | Docker 能力 | 保存 MySQL 数据，容器重建或服务重启后数据仍保留 |
-
-当前主要数据表：
-
-```text
-users                      用户、密码哈希与人脸绑定
-farm_assets                温室、地块和种植区空间资产
-farm_devices               设备资料、在线状态与控制状态
-environment_metrics        温度、湿度、光照和 CO₂ 指标
-irrigation_units           灌溉单元、时长与流量
-farm_alerts                告警、级别、状态和处置结果
-metric_thresholds          土壤湿度等指标阈值
-knowledge_documents        RAG 知识文档
-user_assistant_states      用户对话与自定义工作台状态
-```
-
-### 身份认证与安全
-
-| 技术 | 版本 | 项目用途 |
-|---|---:|---|
-| JJWT | 0.12.6 | 生成、解析和校验 Bearer JWT |
-| BCrypt | Spring Security Crypto | 密码单向散列和登录密码验证 |
-| Spring MVC HandlerInterceptor | 随 Spring Boot | 保护 `/api/**` 业务接口并注入当前用户 |
-| 百度智能云人脸 API | 外部服务 | 人脸注册、人脸库检索、刷脸登录和解绑 |
-| MediaDevices API | 浏览器能力 | 从实时摄像头采集登录人脸，不开放图片上传入口 |
-| `.env.local` / 环境变量 | 运行配置 | 隔离数据库密码、JWT、DeepSeek Key 和百度 AK/SK |
-
-项目只引入 `spring-security-crypto` 进行 BCrypt 散列，没有启用完整 Spring Security Filter Chain；JWT 认证由项目自己的 MVC 拦截器完成。
-
-### AI 智能问农与 RAG
-
-| 技术 | 状态 | 项目用途 |
+| 层 | 主要技术 | 目录 |
 |---|---|---|
-| DeepSeek 兼容 Chat API | 已接入 | 多轮农业问答、农场上下文分析和管理建议 |
-| 服务端 Prompt 组装 | 已实现 | 注入当前农场、业务模块、选择对象和知识片段 |
-| 文档分块 | 已实现 | 约 520 字切片、80 字重叠，保持上下文连续性 |
-| 中文双字词与关键词召回 | 已实现 | 对知识片段进行轻量相关度评分并选择 Top-K |
-| MySQL 知识库 | 已实现 | 保存、更新、查询和删除 `knowledge_documents` |
-| 向量 Embedding / 向量数据库 | 未接入 | 文档规模扩大后可升级为 pgvector、Milvus 或 Elasticsearch |
+| 官网 | React 18、React Router、Vite、Tailwind CSS | `landing/` |
+| 农业平台 | Vue 3、TypeScript、Pinia、Vue Router、ECharts、Sass、Vite | `frontend/` |
+| 多作物工作台 | Vue 3、Axios、Vite | `vision-frontend/` |
+| 三维图形 | Three.js、WebGL、GLTF/GLB、本地资源 | `frontend/`、`frontend/public/assets/` |
+| 后端 | Java 17、Spring Boot 4.1、Spring MVC、Spring Data JPA、Hibernate | `src/main/java/` |
+| 登录 | JWT（JJWT）、BCrypt（Spring Security Crypto）、自定义 MVC 拦截器 | `src/main/java/com/example/ty/auth/` |
+| Agent | Node.js 24+、DeepSeek Harness SDK、农业白名单插件 | `agent-runtime/`、`src/main/java/.../agent/` |
+| 视觉 | Python 3.11、NumPy、Pillow、ONNX Runtime CPU | `vision-runtime/`、`src/main/java/.../vision/` |
+| 多作物知识服务 | Python、FastAPI、Neo4j；各诊断流程有独立依赖 | `ai-service/` |
+| 数据库 | MySQL 8.4、MySQL Connector/J、HikariCP | Docker、本地环境配置 |
+| 边缘 | Docker Compose、systemd、TensorRT/Jetson 脚本 | `deploy/jetson/` |
 
-### 计算机视觉与算法工具
-
-| 技术 | 版本/状态 | 项目用途 |
-|---|---:|---|
-| Python | 算法运行环境 | 抽帧、数据转换、模型训练和检测结果导出 |
-| Ultralytics YOLO | 8.3～8.x | `person`、`crop` 类别训练和离线视频检测 |
-| ByteTrack | Ultralytics 集成 | 跨帧目标 ID 跟踪 |
-| OpenCV Python | 4.8～4.x | 视频读取、抽帧和图像处理 |
-| PyYAML | 6.x | YOLO 数据集和训练配置解析 |
-| LAP | 0.5.x | ByteTrack 线性分配依赖 |
-| LabelMe → YOLO 工具 | 项目脚本 | 将标注转换为 YOLO 数据集格式 |
-| detections.json | 项目数据格式 | 将逐帧框、类别、置信度和跟踪 ID 提供给 Vue |
-| TensorRT | 规划中 | 后续边缘 GPU 实时推理加速 |
-| NVIDIA LocateAnything | 规划中 | 开放词汇定位和低置信度疑难帧复核 |
-| LingBot-Map | 规划中 | 单目视频三维重建、相机轨迹和点云生成 |
-| ROS 2 / Nav2 | 规划中 | 农业机器人定位、路径规划和安全控制 |
-
-### 测试、构建与部署
-
-| 技术 | 项目用途 |
-|---|---|
-| JUnit 5 | Java 单元测试和集成测试执行 |
-| Spring Boot Test | 启动真实 Spring 上下文验证服务、JPA 和配置 |
-| MockMvc | 测试注册登录、Dashboard、设备、灌溉、告警、RAG 和种植区 API |
-| Maven Surefire | 汇总并执行后端测试 |
-| Vue TSC | 在构建前拦截 Vue/TypeScript 类型错误 |
-| Vite Production Build | 分别构建 React 官网与 Vue 平台 |
-| Docker / MySQL 8.4 Image | 创建本地 MySQL 服务和持久化数据卷 |
-| Bash | `setup-mysql.sh` 初始化数据库，`start.sh` 构建并启动完整系统 |
-| Spring Boot Static Resources | 同一进程托管 `/` 官网和 `/platform/` 数据平台 |
-| Git / GitHub | 版本管理、分支协作、推送和 Pull Request |
-
-### 规划中的生产基础设施
-
-以下技术已经写入演进方案，但当前仓库尚未形成可运行生产链路：
-
-| 技术 | 计划用途 |
-|---|---|
-| MQTT / 事件总线 | 接收真实传感器、设备和边缘识别事件 |
-| WebSocket / SSE | 向浏览器实时推送环境、告警和识别结果 |
-| S3 兼容对象存储 | 保存视频、模型、点云、地图和大文件产物 |
-| Redis | 会话、缓存、限流和短期任务状态 |
-| Flyway / Liquibase | 生产数据库版本迁移和回滚 |
-| OpenTelemetry | 日志、指标和分布式链路追踪 |
-| CI/CD | 自动执行测试、前端构建、镜像发布和部署 |
-| Kubernetes / 高可用 MySQL | 多实例部署、扩缩容、故障恢复和灾备 |
-
-## 使用的开源项目与资源
-
-下表汇总当前代码、构建链路和算法工具直接使用的主要开源项目。许可证名称用于快速审计，正式发布或商用前仍应以锁定版本随附的 `LICENSE`、模型权重条款和数据集授权为准。
-
-| 开源项目 | 许可证/授权 | 在本项目中的用途 | 项目地址 |
-|---|---|---|---|
-| React / React DOM | MIT | 官网、认证页和在线文档 | [facebook/react](https://github.com/facebook/react) |
-| React Router | MIT | 官网与文档路由 | [remix-run/react-router](https://github.com/remix-run/react-router) |
-| Vue.js | MIT | 智慧农业平台界面 | [vuejs/core](https://github.com/vuejs/core) |
-| Vue Router | MIT | 平台页面路由 | [vuejs/router](https://github.com/vuejs/router) |
-| Pinia | MIT | Vue 全局业务状态 | [vuejs/pinia](https://github.com/vuejs/pinia) |
-| Apache ECharts | Apache-2.0 | 环境和业务数据图表 | [apache/echarts](https://github.com/apache/echarts) |
-| Three.js | MIT | 农场和温室数字孪生 | [mrdoob/three.js](https://github.com/mrdoob/three.js) |
-| Vite | MIT | React/Vue 开发服务器和构建 | [vitejs/vite](https://github.com/vitejs/vite) |
-| TypeScript | Apache-2.0 | Vue 平台静态类型检查 | [microsoft/TypeScript](https://github.com/microsoft/TypeScript) |
-| Tailwind CSS | MIT | 官网和平台工具样式 | [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss) |
-| DaisyUI | MIT | Vue 平台基础组件样式 | [saadeghi/daisyui](https://github.com/saadeghi/daisyui) |
-| Sass | MIT | Vue 组件 SCSS 编译 | [sass/dart-sass](https://github.com/sass/dart-sass) |
-| Lucide | ISC | 官网统一图标 | [lucide-icons/lucide](https://github.com/lucide-icons/lucide) |
-| Marked | MIT | 官网 Markdown 文档渲染 | [markedjs/marked](https://github.com/markedjs/marked) |
-| Spring Boot / Spring Framework | Apache-2.0 | 后端应用、Web MVC、JPA 和测试基础 | [spring-projects/spring-boot](https://github.com/spring-projects/spring-boot) |
-| Hibernate ORM | LGPL-2.1 | JPA 实现、实体映射和 SQL 生成 | [hibernate/hibernate-orm](https://github.com/hibernate/hibernate-orm) |
-| JJWT | Apache-2.0 | JWT 签发、解析和校验 | [jwtk/jjwt](https://github.com/jwtk/jjwt) |
-| Project Lombok | MIT | Java 构造器、Getter/Setter 和 Builder 生成 | [projectlombok/lombok](https://github.com/projectlombok/lombok) |
-| MySQL Community Server | GPL-2.0 | 本地 Demo 关系型数据库 | [mysql/mysql-server](https://github.com/mysql/mysql-server) |
-| MySQL Connector/J | GPL-2.0 with FOSS Exception | Spring Boot JDBC 驱动 | [mysql/mysql-connector-j](https://github.com/mysql/mysql-connector-j) |
-| Ultralytics | AGPL-3.0 / 企业许可双轨 | YOLO11n 训练、检测和 ByteTrack 调用 | [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) |
-| OpenCV | Apache-2.0 | 视频读取、抽帧和图像处理 | [opencv/opencv](https://github.com/opencv/opencv) |
-| PyYAML | MIT | YOLO 数据集和训练配置解析 | [yaml/pyyaml](https://github.com/yaml/pyyaml) |
-| LAP | BSD-2-Clause | ByteTrack 目标匹配计算 | [gatagat/lap](https://github.com/gatagat/lap) |
-| Quaternius 农业 3D 模型 | CC0 1.0 | 农场建筑、作物、筒仓和车辆模型 | [模型许可清单](frontend/public/assets/models/LICENSES.md) |
-
-### 外部服务与开源项目的边界
-
-- DeepSeek Chat API、百度智能云人脸 API 和 FormSubmit 是外部服务，不等同于本仓库的开源依赖；使用时需分别遵守服务协议、隐私政策和计费规则。
-- Ultralytics 默认开源许可证为 AGPL-3.0；闭源商用、SaaS 或设备交付前应评估其传染性条款或取得合适的企业许可。
-- 当前 GLB 农业模型为 CC0 资源，详细文件、原作者和来源记录在[模型许可清单](frontend/public/assets/models/LICENSES.md)中。
-- LingBot-Map、NVIDIA LocateAnything、ROS 2/Nav2、TensorRT 等仍为规划能力；正式引入前必须分别审核代码许可证、模型权重许可证、数据集授权和商用限制。
-
-## 开发过程中使用的 Codex Skills
-
-Skill 是 Codex 开发环境中的任务工作流说明，用于规范分析、设计、验证和发布过程。它们不是应用运行依赖，不会被 Spring Boot、React 或 Vue 加载，也不会随生产包运行。
-
-| Skill | 来源 | 本项目中的作用 | 是否属于运行依赖 |
-|---|---|---|---|
-| `impeccable` 4.0.4 | 项目本地开发 Skill | 官网导航、文档中心、设备/种植区表单、错误状态、响应式和可访问性检查 | 否 |
-| `github:yeet` | Codex GitHub 插件 | 核对提交范围、排除本地工具目录、提交、推送和创建 PR | 否 |
-| Codex 文件与终端工作流 | Codex 开发环境 | 检查仓库、修改代码、运行 Maven/npm 构建和测试 | 否 |
-
-其中 `.agents/` 保存本地 Skill 与设计辅助文件，当前被明确排除在业务代码提交之外。团队成员即使没有安装这些 Skill，也可以正常构建、运行和部署本项目；只需要 README 中列出的 Java、Node.js、Docker 和可选第三方 API 配置。
-
-## 项目目录
-
-```text
-ty/
-├── landing/                         React 官网与认证源码
-├── frontend/                        Vue 数据平台与 Three.js 场景
-│   ├── public/assets/models/        本地 3D 模型
-│   └── public/assets/media/         视频和检测结果
-├── src/main/java/com/example/ty/
-│   ├── auth/                        用户、JWT 和人脸认证
-│   ├── dashboard/                   农场、温室、设备和告警
-│   └── assistant/                   AI 问农与用户状态
-├── src/main/resources/
-│   ├── application.yaml             后端配置
-│   └── static/                      两套前端构建产物
-├── src/test/                        后端集成测试
-├── tools/yolo/                      数据、训练和检测导出工具
-├── docs/
-│   ├── 截图/                        当前版本截图
-│   ├── 用户使用手册.md
-│   └── 技术说明手册.md
-├── setup-mysql.sh                   初始化 Docker MySQL
-├── start.sh                         构建并启动完整系统
-└── pom.xml
-```
+官网和两个 Vue 应用各有 npm lockfile。请在正常依赖安装时用 `npm ci`，不要只复制 `node_modules`。
 
 ## 快速开始
 
 ### 环境要求
 
-- JDK 17；
-- Docker 与 Docker Engine/Docker Desktop；
-- Node.js 和 npm；
-- 支持 WebGL 的现代浏览器；
-- 可选：DeepSeek API Key、百度人脸 API Key。
+主项目启动脚本面向 Windows 10/11，支持 Windows PowerShell 5.1 和 PowerShell 7。
 
-项目当前前端依赖已固定到兼容版本，可在 Node 12 环境构建；新部署建议优先使用维护中的 Node LTS，并在升级依赖前执行完整回归。
+| 依赖 | 版本/用途 | 必需情况 |
+|---|---|---|
+| JDK（含 `javac`） | 17+，运行 Spring Boot 与 Maven Wrapper | 必需 |
+| Node.js 与 npm | Node 24+，构建三套前端及运行 Harness | 必需 |
+| Docker Desktop | Linux 容器模式，运行 MySQL 与 Neo4j | 默认本地数据库必需；外部数据库可不使用 Docker |
+| Python | 3.11，梨叶模型及 Multi-crop 服务依赖 | 首次完整准备需要 |
+| Ollama 或兼容模型 API | 提供 Agent 模型推理 | Agent 功能需要；本地 Ollama 是默认配置 |
+| 网络 | 下载 Maven/npm/Python 包、容器镜像和首次模型权重 | 首次部署需要 |
 
-### Windows 一键启动
+首次安装可能下载较大的语言模型、梨叶训练权重、Neo4j 镜像和多作物检索资源。请为模型文件和 Docker 数据卷预留空间。
 
-盐田丰语首期改造已新增本地 Agent 问农入口 `/platform/assistant`。默认模型为 Ollama 的 `qwen2.5:7b`，支持真实工具调用、任务历史、执行记录、取消和证据展示。原问农工作台保留在 `/platform/assistant/legacy`。当前工具使用共享演示农场、关键词检索及环境阈值核验；后续算法模块尚未接入。开发决策见 [Agent 运行时 ADR](docs/adr/0001-agent-runtime.md)。
+### 启动完整开发环境
 
-安装 JDK 17+、Node.js LTS 和 Docker Desktop（Linux 容器），启动 Docker Desktop 后双击根目录 `start.cmd`，或在 PowerShell 执行 `.\start.cmd`。脚本自动初始化独立 MySQL、安装并构建两套前端，然后启动后端。默认数据库端口为 3307，访问地址为 `http://localhost:8081/`。
+1. 启动 Docker Desktop，并确认 Docker 使用 Linux 容器。
+2. 在项目根目录执行：
 
-已有前端产物可执行 `.\start.cmd -SkipBuild`；已有数据库可配置 `.env.local` 后执行 `.\start.cmd -ExternalDatabase`。完整配置、开发、测试及排障见 [Windows 启动指南](docs/windows.md)。
-
-### Linux/macOS 一键启动完整 Demo
-
-首次部署：
-
-```bash
-chmod +x setup-mysql.sh start.sh mvnw
-./setup-mysql.sh
-./start.sh
+```powershell
+.\start.cmd
 ```
 
-脚本将：
+也可以双击根目录的 `start.cmd`。入口依次检查 JDK/Node/Docker，准备 MySQL，检查或安装 Agent 模型，准备梨叶视觉及 Multi-crop Python 环境，构建 `landing`、`frontend` 和 `vision-frontend`，再通过 Maven Wrapper 启动 Spring Boot。
 
-1. 创建或启动 `mysql:8.4` 容器；
-2. 创建 `tianyan` 数据库和持久化卷；
-3. 安装缺失的前端依赖；
-4. 构建 React 官网；
-5. 构建 Vue 平台；
-6. 启动 Spring Boot。
+启动后的常用地址：
 
-启动完成后访问：
+| 页面/接口 | 地址 |
+|---|---|
+| 官网 | `http://localhost:8081/` |
+| 农业工作台 | `http://localhost:8081/platform/` |
+| 多作物工作台 | `http://localhost:8081/multicrop/` |
+| 系统健康 | `http://localhost:8081/api/health` |
+| 运行能力状态 | `http://localhost:8081/api/system/status` |
+| Multi-crop 本地 API | `http://127.0.0.1:8090/` |
+| Neo4j HTTP | `http://127.0.0.1:7474/` |
 
-```text
-http://localhost:8081/
+按 `Ctrl+C` 停止 Spring Boot。Docker 数据库与图数据库容器按 restart policy 运行；停止主应用不会删除数据库或卷。首次启动后可在官网注册账号，再进入工作台。
+
+### 单一入口与维护命令
+
+根目录的 `start.cmd` 是主项目唯一启动和运维命令入口。底层脚本集中在 `scripts/`，请通过入口选择任务：
+
+```powershell
+.\start.cmd -Help
+
+# 主应用
+.\start.cmd                         # 检查依赖、准备环境、构建并启动
+.\start.cmd -SkipBuild              # 使用现有前端构建和依赖启动
+.\start.cmd -ExternalDatabase       # 连接已有数据库（需 DB_URL）
+.\start.cmd -Check                  # 启动前检查并准备本地数据库
+.\start.cmd -Cpu                    # 以本地 Ollama CPU 模式准备默认 Agent 模型
+
+# 数据与质量检查
+.\start.cmd -Task Backup
+.\start.cmd -Task Restore -BackupFile 'D:\u005cbackups\snapshot.zip' -TargetDatabase agric_restore
+.\start.cmd -Task Test
+
+# 模型与独立服务
+.\start.cmd -Task AgentSetup -CheckOnly
+.\start.cmd -Task AgentSetup -Cpu
+.\start.cmd -Task VisionSetup -RebuildModel
+.\start.cmd -Task MultiCropSetup -InitializeKnowledge
+.\start.cmd -Task MultiCrop
+
+# 发行包（使用已有 JAR；不会替你重建 JAR）
+.\start.cmd -Task Release
+.\start.cmd -Task Release -IncludeMultiCrop
+.\start.cmd -Task JetsonRelease
+.\start.cmd -Task JetsonRelease -IncludeMultiCrop
 ```
 
-按 `Ctrl+C` 停止 Spring Boot。MySQL 容器会继续运行。后续启动只需要：
+`-SkipBuild` 适用于源码和依赖已准备好的环境，不会为全新环境补装前端依赖、模型和构建产物。发行任务打包 `target/ty-0.0.1-SNAPSHOT.jar`，执行前应自行完成需要的构建。
 
-```bash
-./start.sh
+### 首次运行数据库
+
+Windows 启动器默认创建或启动 MySQL 8.4 容器：
+
+| 设置 | 默认值 |
+|---|---|
+| 容器 | `agric-mysql` |
+| 宿主机端口 | `3307`，只绑定本机 |
+| 数据库 | `tianyan` |
+| 用户 | `root` |
+| 本地演示密码 | `Root_123456` |
+| Docker 数据卷 | `agric-mysql-data` |
+
+这些默认密码只适合本机演示。脚本不会删除或重置同名数据库卷；已有容器的端口映射和 MySQL 密码必须与本机配置一致。
+
+连接已经准备好的数据库：在 `.env.local` 设置 `DB_URL`、`DB_USERNAME`、`DB_PASSWORD`，然后执行 `start.cmd -ExternalDatabase`。此模式不创建 Docker MySQL；数据库须预先创建并允许应用账号连接。
+
+## 配置说明
+
+### 创建本地配置
+
+首次配置可复制示例：
+
+```powershell
+Copy-Item .env.example .env.local
 ```
 
-已构建前端且只修改 Java 时：
+`.env.local` 已被 Git 忽略。配置读取支持注释、空行、`KEY=VALUE` 和成对引号。密钥、数据库密码和实际个人数据不要提交到仓库。
 
-```bash
-./start.sh --skip-build
-```
+### 常用环境变量
 
-### 本机私密配置
+| 变量 | 默认/用途 | 说明 |
+|---|---|---|
+| `SERVER_PORT` | `8081` | Spring Boot HTTP 端口 |
+| `SERVER_ADDRESS` | `0.0.0.0` | 服务绑定地址；如需仅本机开放，可配置为 `127.0.0.1` |
+| `DB_URL` | Windows 启动器自动生成 3307 JDBC URL | 外部数据库模式必须设置 |
+| `DB_USERNAME` / `DB_PASSWORD` | `root` / 演示值 | 生产或共享环境应使用最小权限账号和强密码 |
+| `DB_NAME` | `tianyan` | 本地数据库名，仅允许字母、数字和下划线 |
+| `MYSQL_CONTAINER` | `agric-mysql` | Docker MySQL 容器名 |
+| `MYSQL_PORT` | `3307` | MySQL 映射到宿主机的端口 |
+| `MYSQL_IMAGE` | `mysql:8.4` | MySQL 容器镜像 |
+| `MYSQL_VOLUME` | `agric-mysql-data` | MySQL 持久化卷 |
+| `JWT_SECRET` | 本地演示默认值 | 部署环境设置独立且至少 32 字节的随机值 |
+| `AGENT_BASE_URL` | `http://127.0.0.1:11434/v1` | Ollama 或其他 OpenAI 兼容接口 |
+| `AGENT_MODEL` | `qwen2.5:7b` | 必须与模型服务可用模型名称相同 |
+| `AGENT_API_KEY` | 空 | 远程兼容服务可在此配置；留空时本地 Ollama 不带密钥 |
+| `AGENT_ENGINE` | `harness` | Agent 引擎选择；legacy 仅作兼容路径 |
+| `AGENT_WORKERS` / `AGENT_CAPACITY` | `2` / `4` | Agent 并发工作线程和总容量 |
+| `AGENT_CONTEXT_TOKENS` / `AGENT_MAX_TOKENS` | `8192` / `768` | Agent 上下文和单次生成预算 |
+| `DEEPSEEK_API_KEY` | 空 | 旧问农 DeepSeek 服务端调用密钥，可选 |
+| `DEEPSEEK_BASE_URL` / `DEEPSEEK_MODEL` | 官方兼容地址 / 项目默认模型 | 在线问农的服务端模型配置 |
+| `BAIDU_FACE_AK` / `BAIDU_FACE_SK` | 空 | 百度人脸识别服务密钥，可选 |
+| `VISION_STORAGE` | `var/vision` | 用户视觉原图及运行记录文件目录 |
+| `VISION_BACKEND` | `onnx-cpu` | 当前 Windows/桌面默认 ONNX CPU 后端 |
+| `VISION_TIMEOUT_SECONDS` | `120` | Java 到 Python 推理请求等待上限 |
+| `MULTICROP_BASE_URL` | `http://127.0.0.1:8090` | 本地或远程 Multi-crop API 地址 |
+| `MULTICROP_AUTO_START` | `true` | 主应用管理本地 worker 时是否自动启动和监督 |
+| `MULTICROP_PYTHON` | 项目内视觉 Python 虚拟环境 | 可指定 Python 解释器路径 |
+| `NEO4J_HTTP_URL` / `NEO4J_PASSWORD` | 本机 Neo4j / 初始化配置 | Multi-crop 图谱服务连接配置 |
+| `WEATHER_LATITUDE` / `WEATHER_LONGITUDE` | 泊头区域坐标 | 区域天气参考坐标，不是演示地块测绘位置 |
+| `AUTH_REGISTRATION_ENABLED` | `true` | 是否开放账号注册 |
 
-```bash
-cp .env.example .env.local
-```
+完整模板和额外参数见 [`.env.example`](.env.example)、[Windows 启动指南](docs/windows.md) 与 [Jetson 环境示例](deploy/jetson/.env.example)（若发行包中未包含则查看 `deploy/jetson/` 配置模板）。
 
-编辑 `.env.local`：
+## 开发与构建
 
-```dotenv
-JWT_SECRET=至少32字节的随机密钥
-DEEPSEEK_API_KEY=你的DeepSeekKey
-DEEPSEEK_BASE_URL=https://api.deepseek.com
-DEEPSEEK_MODEL=deepseek-v4-flash
-BAIDU_FACE_AK=你的百度人脸AccessKey
-BAIDU_FACE_SK=你的百度人脸SecretKey
-```
+### 前端单独开发
 
-`.env.local` 已被 Git 忽略。不要把真实数据库密码、JWT、模型 Key 或人脸 Key 写进仓库。
+三套前端各自安装依赖并启动 Vite。每个服务在独立终端运行：
 
-### 数据库配置
-
-默认值：
-
-```text
-容器名：mysql
-镜像：mysql:8.4
-数据库：tianyan
-地址：localhost:3306
-用户名：root
-密码：Root_123456
-数据卷：tianyan-mysql-data
-```
-
-可通过以下变量覆盖：
-
-```text
-MYSQL_CONTAINER  MYSQL_IMAGE  MYSQL_VOLUME
-DB_URL           DB_NAME      DB_USERNAME      DB_PASSWORD
-SERVER_PORT
-```
-
-默认凭据只适合本地演示。生产环境必须建立最小权限数据库账号并使用 Secret 管理。
-
-## 分别开发前端
-
-### Vue 数据平台
-
-```bash
-cd frontend
-npm install
+```powershell
+# 官网，默认 http://localhost:5174/
+cd landing
+npm ci
 npm run dev
-```
 
-开发地址：`http://localhost:5173/platform/`
-
-类型检查和正式构建：
-
-```bash
+# 农业工作台，默认 http://localhost:5173/platform/
+cd frontend
+npm ci
+npm run dev
 npm run typecheck
 npm run build
-```
 
-构建输出写入 `src/main/resources/static/platform/`。
-
-### React 官网
-
-```bash
-cd landing
-npm install
+# 多作物工作台，Vite 端口 5175，页面 base 为 /multicrop/
+cd vision-frontend
+npm ci
 npm run dev
-```
-
-开发地址：`http://localhost:5174/`
-
-正式构建：
-
-```bash
 npm run build
 ```
 
-构建输出写入 `src/main/resources/static/` 根目录。
+`landing` 开发服务器端口为 5174，`frontend` 为 5173，`vision-frontend` 为 5175。三个服务需在不同终端启动。官网和农业平台的 `/api` 代理默认指向 `http://localhost:8081`。若后端改端口，前端可设置 `VITE_API_TARGET`。
 
-## 后端运行与测试
+React 官网构建到 `src/main/resources/static/` 根目录，不会清空相邻平台资源；农业平台输出到 `static/platform/`，多作物应用输出到 `static/multicrop/`。这些目录是生成物，请编辑各自源码而非手改构建产物。
 
-仅启动后端：
+### 后端构建与运行
 
-```bash
-./mvnw spring-boot:run
+```powershell
+# 仅运行 Spring Boot 测试（建议使用 start.cmd 以创建隔离测试库）
+.\start.cmd -Task Test
+
+# Maven Wrapper 打包
+.\mvnw.cmd package
+
+# 使用 start.cmd 正常准备运行时并启动整个应用
+.\start.cmd
 ```
 
-运行测试：
+独立执行 `mvnw.cmd spring-boot:run` 需要自行准备 MySQL、Node Agent 依赖、Python 视觉环境以及可选 Multi-crop 服务。测试脚本会创建/使用独立 `tianyan_test`，避免写入演示库；外部测试库可由 `TEST_DB_URL`、`TEST_DB_USERNAME` 和 `TEST_DB_PASSWORD` 配置。
 
-```bash
-./mvnw test
+### Python 作物服务
+
+`ai-service/` 包含多个作物诊断、知识图谱、向量资料和评估子项目，依赖因子项目而异。主项目的 `start.cmd` 会为集成 Multi-crop worker 使用视觉虚拟环境，并按需要运行 `setup-multicrop` 初始化。独立开发或研究某个作物时，应先阅读该目录自己的 README 和 requirements 文件，不建议把所有 Python 依赖混装到一个全局解释器。
+
+### 本地梨叶模型
+
+Windows 首次启动会使用 Python 3.11 创建 `vision-runtime/.venv`，安装运行依赖；如果本地 ONNX 模型/清单不存在，会下载固定上游权重并导出 ONNX。单独准备或重建：
+
+```powershell
+.\start.cmd -Task VisionSetup
+.\start.cmd -Task VisionSetup -RebuildModel
 ```
 
-集成测试需要 MySQL 正常运行。若出现 `Communications link failure`，请先执行：
+上传仅接受 PNG/JPEG，最大 8 MB、2000 万像素。任务进入有界队列，原图放到 `VISION_STORAGE`，识别结果和复核记录保存在数据库。模型训练来源和转换许可需参见视觉文档与模型许可证文件。
 
-```bash
-./setup-mysql.sh
+### Agent 模型
+
+本地默认模型为 Ollama 中的 `qwen2.5:7b`。正常启动会检查模型服务，并在配置指向本地 Ollama 且模型缺失时拉取模型。机器显存或资源不适合 GPU 推理时：
+
+```powershell
+.\start.cmd -Task AgentSetup -Cpu
 ```
 
-## 主要接口
+然后在 `.env.local` 设置：
 
-### 认证
-
-```text
-POST /api/auth/register
-POST /api/auth/login
-GET  /api/auth/me
-POST /api/auth/face-register
-POST /api/auth/face-delete
-POST /api/auth/face-login
+```dotenv
+AGENT_MODEL=agric-qwen2.5:7b-cpu
 ```
 
-### 农场与温室
+也可设置 `AGENT_BASE_URL`、`AGENT_MODEL` 和 `AGENT_API_KEY` 接入兼容 OpenAI API 的远程模型。服务端需能访问该地址，密钥不会传入浏览器构建产物。
 
-```text
-GET   /api/farms/{farmId}/dashboard
-GET   /api/farms/{farmId}/greenhouses/{greenhouseId}
-PATCH /api/farms/{farmId}/devices/{entityId}
-POST  /api/farms/{farmId}/devices/{entityId}/self-test
-PATCH /api/farms/{farmId}/irrigation/{unitId}
-PATCH /api/farms/{farmId}/alerts/{alertId}/handle
-```
+## 主要 API
 
-### AI 助手
-
-```text
-POST /api/assistant/chat
-GET  /api/assistant/state
-PUT  /api/assistant/state
-```
-
-除公开认证接口外，业务接口需要：
+所有非公开业务 API 通过 JWT 认证，请求头形式为：
 
 ```http
 Authorization: Bearer <JWT>
 ```
 
-详细请求、响应和数据模型见[技术说明手册](docs/技术说明手册.md)。
+### 认证与状态
 
-## 数据持久化
+| 方法 | 路径 | 说明 |
+|---|---|---|
+| `POST` | `/api/auth/register` | 注册 |
+| `POST` | `/api/auth/login` | 邮箱密码登录 |
+| `GET` | `/api/auth/me` | 当前会话用户 |
+| `POST` | `/api/auth/face-register` | 登录用户绑定人脸（multipart `photo`） |
+| `POST` | `/api/auth/face-delete` | 解绑人脸 |
+| `POST` | `/api/auth/face-login` | 人脸识别登录（multipart `photo`） |
+| `GET` | `/api/health` | Spring Boot 存活状态 |
+| `GET` | `/api/system/status` | 模型、视觉和演示业务能力状态 |
 
-主要数据表：
+### 农场工作台与业务
+
+| 方法 | 路径 | 说明 |
+|---|---|---|
+| `GET` | `/api/farms/{farmId}/dashboard` | 基地仪表盘快照 |
+| `GET` | `/api/farms/{farmId}/greenhouses/{greenhouseId}` | 温室详情 |
+| `GET` | `/api/farms/{farmId}/observations?metricKey=soilMoisture` | 指标历史，最多返回最近 240 个点 |
+| `POST` / `PUT` / `DELETE` | `/api/farms/{farmId}/devices[/{entityId}]` | 设备资料维护 |
+| `PATCH` | `/api/farms/{farmId}/devices/{entityId}` | 设备模拟控制 |
+| `POST` | `/api/farms/{farmId}/devices/{entityId}/self-test` | 设备模拟自检 |
+| `POST` / `PUT` / `DELETE` | `/api/farms/{farmId}/zones[/{entityId}]` | 地块/区域资料维护 |
+| `GET` / `PUT` | `/api/farms/{farmId}/thresholds` | 环境阈值查询与土壤湿度阈值设置 |
+| `PATCH` | `/api/farms/{farmId}/irrigation/{unitId}` | 灌溉模拟操作 |
+| `PATCH` | `/api/farms/{farmId}/alerts/{alertId}/handle` | 记录告警处置 |
+| `GET` / `POST` | `/api/farms/{farmId}/operations` | 查询或新增农事、生长和批次记录 |
+| `POST` | `/api/farms/{farmId}/operations/{id}/advance` | 推进批次流转 |
+| `GET` | `/api/farms/{farmId}/operations/{id}/trace` | 查询批次完整轨迹 |
+| `GET` | `/api/farms/{farmId}/operations/{id}/share` | 生成只读分享签名 |
+| `GET` | `/api/public/batch-trace` | 校验签名并读取公开追溯摘要 |
+
+设备、阈值、操作和告警路由保存软件状态。除特别标明的公开分享接口外，业务数据需要认证。
+
+### Agent、问农、视觉与多作物
+
+| 方法 | 路径 | 说明 |
+|---|---|---|
+| `POST` | `/api/agent/runs` | 创建异步 Agent 任务 |
+| `GET` | `/api/agent/runs`、`/api/agent/runs/{id}` | 当前用户任务列表和详情 |
+| `GET` | `/api/agent/runs/{id}/events?after_seq=0` | 增量读取任务事件 |
+| `POST` | `/api/agent/runs/{id}/followup` | 对已完成任务继续追问 |
+| `POST` | `/api/agent/runs/{id}/retry` | 基于原任务新建重试 |
+| `POST` | `/api/agent/runs/{id}/cancel` | 取消运行任务 |
+| `POST` | `/api/assistant/chat` | 兼容问农聊天接口 |
+| `GET` / `PUT` | `/api/assistant/state` | 用户问农对话/工作台状态 |
+| `GET` | `/api/vision/model` | 本地模型与 worker 状态 |
+| `POST` | `/api/vision/jobs` | 上传图像并排队识别（multipart `farmId`、`plotId`、`file`） |
+| `GET` | `/api/vision/jobs?farmId=...` | 当前用户的视觉记录 |
+| `GET` | `/api/vision/jobs/{id}`、`/image`、`/reviews` | 任务、原图和人工复核历史 |
+| `POST` | `/api/vision/jobs/{id}/reviews` | 新增人工复核记录 |
+| `GET` / `POST` | `/api/multicrop/{path}` | 认证后的 Multi-crop 代理（只开放配置的服务路由） |
+
+串口接口位于 `/api/farms/{farm}/embedded/{device}`，提供 `/telemetry`、`/commands`、`/commands/pending`、`/acks` 和 `/messages`。运输演示接口位于 `/api/farms/{farmId}/transport/**`，其路线和车辆模拟不构成真实自动驾驶能力。
+
+接口 DTO、校验条件和错误响应以 `src/main/java/com/example/ty/` 中 Controller 与 DTO 为准。接口协议持续演进，本文仅列常用路径。
+
+## 数据与持久化
+
+### MySQL 主要实体
+
+| 表 | 内容 |
+|---|---|
+| `users` | 邮箱、密码哈希、账号及可选人脸绑定信息 |
+| `farm_assets` | 基地中的温室、地块及场景对象 |
+| `farm_devices` | 设备资料和演示状态 |
+| `environment_metrics` | 当前环境指标快照 |
+| `farm_observations` | 带来源和时间戳的环境观测历史 |
+| `irrigation_units` | 灌溉单元和软件控制状态 |
+| `farm_alerts` | 告警及处置状态 |
+| `metric_thresholds` | 农场指标阈值 |
+| `operation_records` | 农事、生长、批次和批次流转事件 |
+| `agent_runs`、`agent_events` | Agent 任务与按序工具/状态事件 |
+| `vision_records`、`vision_reviews` | 用户梨叶视觉结果和人工复核 |
+| `knowledge_documents` | 旧问农关键词检索资料 |
+| `user_assistant_states` | 用户问农/工作台状态 |
+| `embedded_messages` | 串口消息和命令幂等记录 |
+| `transport_states` | 运输演示任务状态 |
+
+### 文件和图谱数据
+
+- `var/vision/`：视觉上传原图，默认路径可用 `VISION_STORAGE` 修改；数据库保存结果元数据。
+- `vision-runtime/models/`：梨叶 ONNX 权重和 manifest；权重由本地初始化取得，默认不进入 Git。
+- `ai-service/.integration-runtime/`：Multi-crop 本机运行配置，含 Neo4j 连接秘密，不提交到 Git。
+- Docker Volume `agric-mysql-data`：本地 MySQL 持久数据。
+- Docker Volume `agric-multicrop-neo4j-data`：Multi-crop 图数据库持久数据。
+- `var/logs/multicrop-runtime.log`：主应用管理的 Multi-crop worker 输出日志。
+
+Spring 配置目前使用 Hibernate `ddl-auto: update`，用于演示环境自动更新表结构。正式部署应迁移到版本化数据库迁移、备份策略和经过验证的恢复流程。
+
+## 仓库结构
 
 ```text
-users
-farm_assets
-farm_devices
-environment_metrics
-irrigation_units
-farm_alerts
-user_assistant_states
+.
+├── start.cmd                     主项目唯一启动/维护入口
+├── scripts/                      PowerShell 调度、初始化、备份及发行实现
+├── pom.xml                       Spring Boot/Maven 项目
+├── mvnw / mvnw.cmd               Maven Wrapper
+├── landing/                      React 官网和登录注册页面
+├── frontend/                     Vue 农业工作台、业务视图和 Three.js 场景
+├── vision-frontend/              Vue 多作物工作台（base /multicrop/）
+├── src/main/java/com/example/ty/ Spring Boot 认证、业务、Agent、视觉与边缘 API
+├── src/main/resources/
+│   ├── application.yaml          服务、JPA 和外部服务默认配置
+│   └── static/                   三套前端生产构建输出
+├── agent-runtime/                Node DeepSeek Harness 运行时、工具和资源预算
+├── vision-runtime/               Python ONNX 推理、模型导出及后端实现
+├── ai-service/                   作物诊断、检索、Neo4j 与 FastAPI 服务
+├── ai-training/                  模型训练和数据准备相关资产
+├── embedded/                     串口网关协议实现与固件示例
+├── deploy/jetson/                Jetson 运行依赖、容器、systemd 与备份
+├── docs/                         部署、产品、验收、维护和截图文档
+└── tools/                        YOLO 等算法辅助工具
 ```
 
-系统首次启动会初始化“智慧农场01”演示数据。环境指标会周期更新；设备、灌溉和告警操作写入 MySQL，刷新页面后仍保留。
+维护时优先修改源码，再构建页面和 JAR。`target/`、`node_modules/`、Python 虚拟环境、模型权重、Neo4j 密码和本地数据均属于生成物或运行数据，不应当作源码提交。
 
-## 后续规划
+## 安全边界与已知限制
 
-### 1. LingBot-Map 单目实景建图
+- **演示数据**：环境指标按软件规则模拟更新；默认农场、设备、告警和地块不是实时生产数据。`simulated` 标记和页面说明应随数据展示。
+- **设备控制**：网页控制和回执只保存应用状态。串口网关代码示例不代表已接入现场执行器；真实硬件接入需要协议、电气、超时、急停、看门狗和现场验收。
+- **作物视觉**：固定梨叶模型给出模型候选，不是确诊。上传图像和摄像头采样应取得必要授权；限制仅接受 PNG/JPEG、8 MB 及 2000 万像素。
+- **Agent 与模型**：工具白名单允许读取项目提供的业务上下文、知识和用户视觉记录，不允许把 Agent 当作自动农事或设备控制器。模型服务可访问性、容量和输出质量由外部模型及本机资源决定。
+- **农业知识**：关键词检索及多作物证据库成熟度不同。检索结果需看来源、适用作物和地区；知识片段不自动等同于已经审核的生产规范。
+- **身份与隐私**：BCrypt 用于密码散列，JWT 由应用自有拦截器校验。人脸识别需要百度云密钥并处理敏感生物信息；摄像头权限或图像采集并不等同活体检测。
+- **多租户**：目前共享演示基地业务数据，尚未实现企业级租户隔离和完整成员/角色授权。不要将多个客户私有数据放入同一实例。
+- **生产部署**：正式运行前应配置 HTTPS、强随机 JWT、最小权限数据库账号、限制注册、审计日志、密钥轮换、备份恢复、限流和监控。
+- **Jetson**：文档提供的是目标环境和验收方法。TensorRT 引擎、模型性能、长时间稳定性和整机安全需要在具体 Jetson 板卡测试。
 
-计划使用 [LingBot-Map](https://github.com/robbyant/lingbot-map) 处理单目摄像头视频或图片流，输出相机轨迹和带颜色点云。目标是在不依赖激光雷达的前提下完成温室实景三维重建，并向网页实景模型和机器人地图提供基础数据。
+## 部署与项目文档
 
-规划链路：
+| 文档 | 内容 |
+|---|---|
+| [Windows 启动指南](docs/windows.md) | Windows 工具安装、配置、数据库、开发和排障 |
+| [Windows + Docker Desktop 部署手册](docs/Windows_DockerDesktop部署手册.md) | Windows 单机部署入口和常见步骤 |
+| [用户使用手册](docs/用户使用手册.md) | 官网、工作台、农事、视觉和演示操作 |
+| [软件演示交付检查](docs/软件演示交付检查.md) | 演示验收、发行包、备份与恢复 |
+| [代码结构与维护](docs/代码结构与维护.md) | 运行时职责、模型边界和修改约定 |
+| [产品文档](docs/盐田丰语产品文档.md) | 产品定位、能力和限制 |
+| [Jetson 部署与验收](docs/Jetson部署与验收.md) | JetPack 目标版本、安装、验收及未完成项 |
+| [梨视觉与果园 3D](docs/鸭梨视觉与3D.md) | 梨叶识别、模型来源和果园场景说明 |
+| [多作物分支接入记录](docs/WJM分支分析与接入.md) | 作物服务接入路径和证据边界 |
+| [Python AI 服务说明](ai-service/README.md) | 资料库、图谱、子项目和本地服务 |
+| [YOLO 工具说明](tools/yolo/README.md) | 数据准备、训练及离线检测工具 |
+| [模型与 3D 资源清单](frontend/public/assets/models/LICENSES.md) | 本地 GLB 资源来源和许可 |
 
-```text
-单目摄像头 → 视频采集与相机标定 → LingBot-Map
-           → 相机轨迹与点云 → 去噪、尺度恢复、地面分割
-           → GLB/分块点云网页展示
-```
+## 许可证与外部服务
 
-LingBot-Map 是三维重建模型，不是完整导航栈。单目方案仍会受到尺度漂移、弱纹理、棚膜反光、重复棚架、人员移动和光照变化影响。
-
-### 2. 机器人占据地图与导航
-
-经过审核的重建点云将转换为二维占据栅格或三维体素地图，并建立：
-
-```text
-map → odom → base_link → camera_link
-```
-
-计划接入 ROS 2/Nav2 的静态层、实时障碍层、体素层、膨胀层、禁行区和限速区。视觉重建不能替代实时避障；机器人仍需轮速/视觉里程计、IMU、碰撞保护、急停、失联停车和人工接管。
-
-### 3. 在线视觉识别
-
-```text
-RTSP 摄像头 → 边缘解码 → YOLO/TensorRT → ByteTrack
-           → MQTT/事件总线 → Spring Boot
-           → WebSocket/SSE → 浏览器实时叠加与告警
-```
-
-边缘节点在断网期间继续执行本地规则并缓存事件，网络恢复后补传。视频流、推理和业务服务分离，避免在 Spring JVM 内执行逐帧 GPU 推理。
-
-### 4. NVIDIA LocateAnything
-
-设备条件允许时，计划引入 [NVIDIA LocateAnything](https://research.nvidia.com/labs/lpr/locate-anything/) 进行开放词汇定位。它作为 YOLO 的二级模型，用于临时自然语言查询、低置信度复核和新类别数据挖掘，而不是直接替换 7×24 小时实时 YOLO。
-
-例如：
-
-- 定位叶片明显萎蔫的番茄植株；
-- 定位通道积水区域；
-- 定位破损的滴灌管；
-- 定位未佩戴防护装备的人员。
-
-任何农业查询都需要本地标注数据验证，不能直接沿用通用数据集指标。
-
-### 5. 生产化平台
-
-- `tenant_id` 全链路多租户隔离；
-- S3 兼容对象存储保存视频、点云、地图和模型；
-- OpenTelemetry 日志、指标和链路追踪；
-- Spring Boot 多实例、MySQL 高可用、持久消息集群；
-- GPU Worker 任务队列、灰度模型发布和失败回滚；
-- RPO/RTO、跨区域备份和恢复演练。
-
-完整实施步骤、API、消息格式、坐标转换、验收指标和阶段里程碑见[技术说明手册第21—27章](docs/技术说明手册.md#21-五项规划的工程实施蓝图)。
-
-## 安全与使用边界
-
-- 当前项目用于开发、展示和方案验证，不应未经安全改造直接控制真实生产设备；
-- 刷脸涉及敏感个人信息，正式部署前需取得单独授权并提供删除机制；
-- 摄像头采集限制不能替代活体检测；
-- AI 农业建议需要专业人员结合现场确认；
-- 地图和视觉模型输出不得绕过安全控制直接驱动机器人；
-- 生产环境必须启用 HTTPS、限流、审计、密钥轮换和最小权限。
-
-## 3D 模型和许可证
-
-本地公模位于 `frontend/public/assets/models/`。当前部分模型来自 Quaternius，经 Poly Pizza 提供 GLTF 下载，使用 CC0 1.0。完整来源与许可见：
-
-[frontend/public/assets/models/LICENSES.md](frontend/public/assets/models/LICENSES.md)
-
-引入 LingBot-Map、LocateAnything、模型权重或其他数据集前，应分别复核代码、权重、数据和商用许可证。
-
-## 项目文档
-
-- [用户使用手册](docs/用户使用手册.md)：从官网、注册登录到工作台、温室、设备、灌溉和问农的逐步操作；
-- [技术说明手册](docs/技术说明手册.md)：架构、配置、API、数据模型、算法、建图、导航和生产化规划；
-- [完整方案 V3.1](docs/田言耕智_AI原生智慧农业平台完整方案_V3.1_大棚数字孪生升级版.md)：产品与业务整体方案；
-- [Windows + Docker Desktop 部署手册](docs/Windows_DockerDesktop部署手册.md)；
-- [Git 团队协作手册（Windows）](docs/Git团队协作手册_Windows.md)；
-- [YOLO 接入说明](tools/yolo/README.md)。
-- [鸭梨视觉与果园 3D](docs/鸭梨视觉与3D.md)：本地梨叶模型安装、检测记录、Agent 核验与 3D 联动。
-
-沧州基地的数据工作台中，“监控”保留原监控窗口、截图、录像与回放设计；独立的“病虫害”支持上传梨叶近照、公开样例以及本机摄像头单帧 / 连续采样推理。模型在本机 CPU 执行；结果和原图按登录用户保存。首次启动需要 Python 3.11，正常启动脚本会执行 `setup-vision.ps1`。切换“3D”可选择地块、缓动聚焦并进入对应地块的视觉记录。
-
-## 演示建议
-
-推荐按以下顺序体验：
-
-1. 打开官网并进入登录页；
-2. 注册账号或使用密码登录；
-3. 在航拍实景中选择温室并查看右侧详情；
-4. 切换 3D 并进入第一人称巡场；
-5. 使用数字键切换七个业务模块；
-6. 双击大棚进入棚内数字孪生；
-7. 查看设备、分区和样本植株；
-8. 返回“智能问农”，查询当前农场异常和灌溉建议；
-9. 打开自定义工作台组合业务面板。
-
-更完整的操作步骤和截图说明请阅读[用户使用手册](docs/用户使用手册.md)。
-
-## 软件演示闭环
-
-农事、生长观察、采后批次流转、模拟灌排/告警回执、视觉复核与 Agent 任务追溯已接入。使用方法与备份恢复见 [软件演示交付检查](docs/软件演示交付检查.md)。
-
-## Jetson 展示部署
-
-边缘版选型与部署见 [Jetson部署与验收](docs/Jetson部署与验收.md)，产品定位和验收范围见 [产品文档](docs/盐田丰语产品文档.md)，维护边界见 [代码结构与维护](docs/代码结构与维护.md)。Jetson TensorRT 与 Qwen3 仍需实机验证，不把 Windows CPU 回归作为板端性能承诺。
+仓库当前没有一个覆盖全部代码、数据、模型和素材的统一根许可证。使用或分发前请核对对应依赖与资源许可证，尤其是 Ultralytics、公开模型权重、训练数据、图像和 3D 资产。项目调用的 DeepSeek、百度人脸 API、Ollama 模型与其他兼容模型服务各自遵守其服务及模型条款。外部服务不是本仓库随附的运行能力保证。

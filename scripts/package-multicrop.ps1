@@ -1,6 +1,7 @@
 param([Parameter(Mandatory=$true)][string]$Destination)
 $ErrorActionPreference='Stop'
-$project=Split-Path $PSScriptRoot -Parent
+. (Join-Path $PSScriptRoot 'windows-common.ps1')
+$project=$script:ProjectRoot
 foreach($folder in @('ai-service','ai-training')) {
     $source=Join-Path $project $folder
     Get-ChildItem -LiteralPath $source -Recurse -File | ForEach-Object {
@@ -13,7 +14,7 @@ foreach($folder in @('ai-service','ai-training')) {
         Copy-Item -LiteralPath $_.FullName -Destination $target
     }
 }
-foreach($file in @('setup-multicrop.ps1','start-multicrop.ps1','start-multicrop.cmd')){
+foreach($file in @('setup-multicrop.ps1','start-multicrop.ps1')){
     Copy-Item -LiteralPath (Join-Path $project $file) -Destination $Destination
 }
 New-Item -ItemType Directory -Path (Join-Path $Destination 'docs') -Force | Out-Null

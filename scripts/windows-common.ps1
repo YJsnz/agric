@@ -1,5 +1,9 @@
 $ErrorActionPreference = 'Stop'
-$script:ProjectRoot = Split-Path $PSScriptRoot -Parent
+$script:ProjectRoot = if ((Split-Path (Resolve-Path $PSScriptRoot).Path -Leaf) -eq 'scripts') {
+    Split-Path $PSScriptRoot -Parent
+} else {
+    $PSScriptRoot
+}
 
 function Import-LocalEnvironment {
     $path = Join-Path $script:ProjectRoot '.env.local'
