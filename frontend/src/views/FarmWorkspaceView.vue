@@ -111,7 +111,6 @@ function selectEntity(id:string|null){
   if (store.activeModule === 'monitoring' && id && farmZones.some(zone => zone.entityId === id)) {
     store.selectedEntityId = id; store.drawerOpen = false; monitorOpen.value = true; return
   }
-  if(id==='yt-pear-02' && store.activeModule==='overview')store.selectModule('crops')
   store.selectEntity(id)
 }
 function searchEntity(query:string) {

@@ -16,7 +16,15 @@ export default defineConfig({
   },
   server: {
     port: 5173,
-    proxy: { '/api': process.env.VITE_API_TARGET || 'http://localhost:8081' },
+    proxy: {
+      '/api': process.env.VITE_API_TARGET || 'http://127.0.0.1:8081',
+      '/multicrop': { target: 'http://127.0.0.1:5175', ws: true },
+      // Keep the landing login and platform on one origin so auth storage is shared.
+      '^/(?!platform(?:/|$)|api(?:/|$)|multicrop(?:/|$))': {
+        target: 'http://127.0.0.1:5174',
+        ws: true
+      }
+    },
     fs: { allow: ['..'] }
   }
 })
