@@ -1,0 +1,250 @@
+{
+  "audit_date": "2026-10-19",
+  "tool": "audit_pear_dataset_independence.py + deep_near_dup_audit.py + verify_pear_eval.py",
+  "dataset_root": "ai-training/pear-vision/data/prepared",
+  "source_dataset": "DiaMOS Plant (Pear subset), file names u<number>.jpg; see Pear/annotation/csv/diaMOSPlant.csv (3006 rows)",
+  "classes": [
+    "curl",
+    "healthy",
+    "slug",
+    "spot"
+  ],
+  "class_mapping": {
+    "curl": 0,
+    "healthy": 1,
+    "slug": 2,
+    "spot": 3
+  },
+  "counts": {
+    "train": {
+      "curl": 43,
+      "total": 2405,
+      "healthy": 35,
+      "slug": 1620,
+      "spot": 707
+    },
+    "val": {
+      "curl": 6,
+      "total": 302,
+      "healthy": 4,
+      "slug": 203,
+      "spot": 89
+    },
+    "test": {
+      "curl": 5,
+      "total": 299,
+      "healthy": 4,
+      "slug": 202,
+      "spot": 88
+    }
+  },
+  "grand_total": 3006,
+  "corrupt_count": 0,
+  "filename_pixel_hash_rule": "prepared file stem == sha256(str(rgb.size)+rgb.tobytes()) after exif_transpose+RGB",
+  "filename_pixel_hash_verification": {
+    "train": {
+      "checked": 60,
+      "matched": 60,
+      "mismatched": 0
+    },
+    "val": {
+      "checked": 40,
+      "matched": 40,
+      "mismatched": 0
+    },
+    "test": {
+      "checked": 39,
+      "matched": 39,
+      "mismatched": 0
+    }
+  },
+  "exact_duplicates_file_sha256": {
+    "within_split": 0,
+    "cross_split": 0,
+    "cross_split_detail": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    }
+  },
+  "exact_duplicates_pixel_hash_by_name": {
+    "within_split": 0,
+    "cross_split": 0,
+    "cross_split_detail": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    }
+  },
+  "near_duplicate": {
+    "method": "dHash 64-bit, cross-split only",
+    "hamming_threshold_detailed": 12,
+    "threshold_counts": {
+      "0": 0,
+      "2": 2,
+      "4": 3,
+      "6": 4,
+      "8": 6,
+      "10": 8,
+      "12": 16
+    },
+    "threshold_same_class": {
+      "0": 0,
+      "2": 2,
+      "4": 3,
+      "6": 4,
+      "8": 6,
+      "10": 8,
+      "12": 14
+    },
+    "threshold_cross_class": {
+      "0": 0,
+      "2": 0,
+      "4": 0,
+      "6": 0,
+      "8": 0,
+      "10": 0,
+      "12": 2
+    },
+    "strong_candidates_le_6": 4,
+    "candidates_le_12_count": 16,
+    "hamming_histogram_head": {
+      "1": 2,
+      "3": 1,
+      "5": 1,
+      "7": 1,
+      "8": 1,
+      "9": 2,
+      "11": 3,
+      "12": 5,
+      "13": 10,
+      "14": 40,
+      "15": 94,
+      "16": 198,
+      "17": 446,
+      "18": 1064,
+      "19": 2119,
+      "20": 4057,
+      "21": 7185
+    },
+    "strongest_examples": [
+      {
+        "distance": 1,
+        "same_class": true,
+        "a": "classification/train/slug/6fee1966bbcf9224d5b8a9c45d719d2c26a8372f372d70ad24a3827c6ee608df.jpg",
+        "b": "classification/val/slug/7496487b2898bf775a4bc803a5c220d93ca4b1724b84d6ce208c8c02da659e53.jpg",
+        "origin_a": "slug/u767.jpg",
+        "origin_b": "slug/u768.jpg"
+      },
+      {
+        "distance": 1,
+        "same_class": true,
+        "a": "classification/train/slug/dadcabaefe3629f9d9c8a100fc815f4fa031d243998ad67cac2e1707473129a5.jpg",
+        "b": "classification/test/slug/05ea63b1f42fab87402d175479ba142e590eebe0104a0120601b71a88b597822.jpg",
+        "origin_a": "slug/u2936.jpg",
+        "origin_b": "slug/u2935.jpg"
+      },
+      {
+        "distance": 3,
+        "same_class": true,
+        "a": "classification/train/slug/57bf34664a446cf74acb8b1ed9d04fe5501f7ab3718231f74c79a64c7a469370.jpg",
+        "b": "classification/test/slug/5bd227ee27876a09cde11684f3bc1499a5946d38e2f10f7935acf36ad7c41cdc.jpg",
+        "origin_a": "slug/u2367.jpg",
+        "origin_b": "slug/u2366.jpg"
+      },
+      {
+        "distance": 5,
+        "same_class": true,
+        "a": "classification/train/curl/80d5d5180fa0caf7547e2962d52860002421552f1d56b64a7a36cf9009ffe577.jpg",
+        "b": "classification/test/curl/f9c2a58f9c12075a649a57c6d212775cff3de6c59e6d4d2b268fa16969932b69.jpg",
+        "origin_a": "curl/u3061.jpg",
+        "origin_b": "curl/u3063.jpg"
+      },
+      {
+        "distance": 7,
+        "same_class": true,
+        "a": "classification/train/spot/0b06e282eb32e28852cf66beb9697faa8ea607f6cfdeb169ab755f74a99cc707.jpg",
+        "b": "classification/val/spot/632f3e04400af7cba0b830f6d2b1a4a6b03c1074ffbe41e4f685508b8e4f1713.jpg",
+        "origin_a": "spot/u412.jpg",
+        "origin_b": "spot/u402.jpg"
+      },
+      {
+        "distance": 8,
+        "same_class": true,
+        "a": "classification/train/slug/2aea447cc74b5d80144bce562c3d77f40c71ee72c816ffd7f898d4df2b51dec9.jpg",
+        "b": "classification/test/slug/b6d9e0692a6735182572907d8653466cb8650f728b5b091f24266b76c37682b0.jpg",
+        "origin_a": "slug/u1001.jpg",
+        "origin_b": "slug/u1002.jpg"
+      }
+    ]
+  },
+  "provenance": {
+    "manifest_entries": 3006,
+    "origin_linked": 3006,
+    "distinct_origins": 3006,
+    "exif_images": 3006,
+    "original_dir": "Pear/leaves/{curl,healthy,slug,spot}",
+    "plant_or_orchard_or_batch_metadata_present": false,
+    "prepared_report_counts": {
+      "raw_image_counts": {
+        "curl": 54,
+        "healthy": 43,
+        "slug": 2025,
+        "spot": 884
+      },
+      "issue_counts": {
+        "macos_metadata_file": 2920
+      }
+    }
+  },
+  "split_rule": {
+    "script": "ai-training/pear-vision/scripts/prepare_dataset.py",
+    "rule": "per class: random.Random(f'{seed}:{class}').shuffle then 8:1:1",
+    "seed": 42,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "grouped_by_plant_or_batch": false,
+    "description_note": "README: exact decoded-pixel duplicates removed; near duplicates and same-plant consecutive shots must be grouped separately (not done)."
+  },
+  "evaluation_verification": {
+    "predictions_rows": 299,
+    "disk_test_files": 299,
+    "prediction_set_equals_disk_set": true,
+    "true_label_matches_directory": true,
+    "recomputed": {
+      "test_images": 299,
+      "accuracy": 0.8862876254,
+      "macro_f1": 0.8259626399,
+      "balanced_accuracy": 0.7754106661
+    },
+    "stored": {
+      "test_images": 299,
+      "accuracy": 0.8862876254180602,
+      "macro_f1": 0.8259627500000001,
+      "balanced_accuracy": 0.77541075
+    },
+    "abs_delta_vs_stored": {
+      "accuracy": 1.8060219986182346e-11,
+      "macro_f1": 1.1010000011690835e-07,
+      "balanced_accuracy": 8.390000005853437e-08
+    },
+    "class_order_matches_metrics_json": true,
+    "model_sha256_in_metrics": "a7fba665a0db3bf0d533bae3725716f3690bbf8a94ded4bc2f78c8ca40954dce",
+    "matches_within_rounding_tolerance": true
+  },
+  "conclusions": {
+    "exact_cross_split_duplicates": "none (0)",
+    "near_duplicate_cross_split": "candidates found (>=4 at Hamming<=6; 3 at <=3 with adjacent original ids)",
+    "sample_level_independence": "exact-duplicate level verified; near-duplicate level has candidates pending review",
+    "plant_or_farm_level_independence": "not verifiable - no plant/orchard/batch metadata, random per-class split"
+  },
+  "limitations": [
+    "No plant id, orchard id or capture-batch metadata exists; the split is per-class random with seed 42, so plant-level independence cannot be established from the prepared set.",
+    "Near-duplicate hits are perceptual-hash candidates only, not confirmed duplicates.",
+    "The deployed weight lives in another working tree (AIC-SmartAgriculture/agric/ai-service/models/pear); no training log or freeze manifest is present in the repo, so it cannot be proven that this weight was trained on this split.",
+    "report.json records source/labels paths from the AIC-SmartAgriculture working tree, which differs from the pear-vision/Pear layout used here."
+  ]
+}
