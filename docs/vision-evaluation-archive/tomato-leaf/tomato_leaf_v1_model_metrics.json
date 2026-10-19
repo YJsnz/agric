@@ -1,0 +1,133 @@
+{
+  "model_path": "F:/AIC2026/AIC-SmartAgriculture/agric/ai-training/vegetable-vision/models/tomato/tomato_leaf_yolo11n_cls_v1.pt",
+  "model_sha256": "564ff6bff3fb69f7165816682a1e24e2241f66642f5e0d083a725f28dbf886c6",
+  "classes": [
+    "bacterial_spot",
+    "bacterial_spot_and_leaf_miner",
+    "healthy",
+    "leaf_miner",
+    "powdery_mildew",
+    "powdery_mildew_and_leaf_miner",
+    "whitefly"
+  ],
+  "test_source": "F:/AIC2026/AIC-SmartAgriculture_PART/agric/ai-training/vegetable-vision/data/tomato_leaf_classifier_v1/test",
+  "official_split": "official directory split",
+  "decision": "argmax, imgsz=224, CPU, no augment",
+  "metrics": {
+    "test_images": 2101,
+    "accuracy": 0.8714897667777249,
+    "macro_f1": 0.8473191428571428,
+    "balanced_accuracy": 0.8422552857142858,
+    "weighted_f1": 0.8708595411708709,
+    "per_class": {
+      "bacterial_spot": {
+        "precision": 0.840909,
+        "recall": 0.840909,
+        "f1": 0.840909,
+        "support": 352
+      },
+      "bacterial_spot_and_leaf_miner": {
+        "precision": 0.862259,
+        "recall": 0.836898,
+        "f1": 0.849389,
+        "support": 374
+      },
+      "healthy": {
+        "precision": 0.908397,
+        "recall": 0.949468,
+        "f1": 0.928479,
+        "support": 376
+      },
+      "leaf_miner": {
+        "precision": 0.885196,
+        "recall": 0.901538,
+        "f1": 0.893293,
+        "support": 325
+      },
+      "powdery_mildew": {
+        "precision": 0.853659,
+        "recall": 0.881295,
+        "f1": 0.867257,
+        "support": 278
+      },
+      "powdery_mildew_and_leaf_miner": {
+        "precision": 0.888889,
+        "recall": 0.853026,
+        "f1": 0.870588,
+        "support": 347
+      },
+      "whitefly": {
+        "precision": 0.738095,
+        "recall": 0.632653,
+        "f1": 0.681319,
+        "support": 49
+      }
+    },
+    "confusion_matrix": [
+      [
+        296,
+        35,
+        7,
+        2,
+        7,
+        3,
+        2
+      ],
+      [
+        49,
+        313,
+        0,
+        6,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        357,
+        11,
+        7,
+        0,
+        1
+      ],
+      [
+        2,
+        7,
+        10,
+        293,
+        1,
+        10,
+        2
+      ],
+      [
+        1,
+        0,
+        12,
+        3,
+        245,
+        15,
+        2
+      ],
+      [
+        3,
+        7,
+        0,
+        11,
+        26,
+        296,
+        4
+      ],
+      [
+        1,
+        1,
+        7,
+        5,
+        1,
+        3,
+        31
+      ]
+    ],
+    "confusion_matrix_axes": "rows=true, columns=predicted"
+  }
+}

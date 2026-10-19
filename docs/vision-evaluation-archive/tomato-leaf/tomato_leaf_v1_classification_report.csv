@@ -1,0 +1,8 @@
+﻿class,precision,recall,f1,support
+bacterial_spot,0.840909,0.840909,0.840909,352
+bacterial_spot_and_leaf_miner,0.862259,0.836898,0.849389,374
+healthy,0.908397,0.949468,0.928479,376
+leaf_miner,0.885196,0.901538,0.893293,325
+powdery_mildew,0.853659,0.881295,0.867257,278
+powdery_mildew_and_leaf_miner,0.888889,0.853026,0.870588,347
+whitefly,0.738095,0.632653,0.681319,49

@@ -1,0 +1,73 @@
+{
+  "model_path": "F:\\AIC2026\\AIC-SmartAgriculture\\agric\\ai-service\\models\\pear\\pear_symptom_yolo11n_cls_v1.pt",
+  "model_sha256": "a7fba665a0db3bf0d533bae3725716f3690bbf8a94ded4bc2f78c8ca40954dce",
+  "model_task": "image classification",
+  "classes": [
+    "curl",
+    "healthy",
+    "slug",
+    "spot"
+  ],
+  "test_source": "F:\\AIC2026\\AIC-SmartAgriculture_PART\\agric\\ai-training\\pear-vision\\data\\prepared\\classification\\test",
+  "metrics": {
+    "test_images": 299,
+    "accuracy": 0.8862876254180602,
+    "macro_f1": 0.8259627500000001,
+    "balanced_accuracy": 0.77541075,
+    "per_class": {
+      "curl": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888889,
+        "support": 5
+      },
+      "healthy": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.666667,
+        "support": 4
+      },
+      "slug": {
+        "precision": 0.956989,
+        "recall": 0.881188,
+        "f1": 0.917526,
+        "support": 202
+      },
+      "spot": {
+        "precision": 0.757009,
+        "recall": 0.920455,
+        "f1": 0.830769,
+        "support": 88
+      }
+    },
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        178,
+        24
+      ],
+      [
+        0,
+        0,
+        7,
+        81
+      ]
+    ],
+    "confusion_matrix_axes": "rows=true, columns=predicted"
+  },
+  "decision": "argmax, imgsz=224, CPU, no augment",
+  "official_split": "seed=42 80/10/10 from prepare_dataset.py"
+}

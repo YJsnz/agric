@@ -1,0 +1,150 @@
+{
+  "evaluation_date": "2026-10-19T18:51:23.670467+08:00",
+  "model_name": "tomato_leaf_yolo11n_cls_v1",
+  "model_path": "..\\agric\\ai-training\\vegetable-vision\\models\\tomato\\tomato_leaf_yolo11n_cls_v1.pt",
+  "model_sha256": "564ff6bff3fb69f7165816682a1e24e2241f66642f5e0d083a725f28dbf886c6",
+  "test_source": "F:\\AIC2026\\AIC-SmartAgriculture_PART\\agric\\ai-training\\vegetable-vision\\data\\tomato_leaf_classifier_v1\\test",
+  "test_images": 2101,
+  "classes": [
+    "bacterial_spot",
+    "bacterial_spot_and_leaf_miner",
+    "healthy",
+    "leaf_miner",
+    "powdery_mildew",
+    "powdery_mildew_and_leaf_miner",
+    "whitefly"
+  ],
+  "metrics": {
+    "accuracy": 0.8705378391242266,
+    "balanced_accuracy": 0.8436225109619288,
+    "macro_precision": 0.8498455166227732,
+    "macro_recall": 0.8436225109619288,
+    "macro_f1": 0.8464744898813577,
+    "weighted_precision": 0.8700749988709701,
+    "weighted_recall": 0.8705378391242266,
+    "weighted_f1": 0.8701823636685247,
+    "macro_roc_auc_ovr": 0.9817735390948442,
+    "per_class": {
+      "bacterial_spot": {
+        "precision": 0.8409090909090909,
+        "recall": 0.8409090909090909,
+        "f1": 0.8409090909090909,
+        "support": 352
+      },
+      "bacterial_spot_and_leaf_miner": {
+        "precision": 0.8559782608695652,
+        "recall": 0.8422459893048129,
+        "f1": 0.8490566037735849,
+        "support": 374
+      },
+      "healthy": {
+        "precision": 0.9168831168831169,
+        "recall": 0.9388297872340425,
+        "f1": 0.9277266754270697,
+        "support": 376
+      },
+      "leaf_miner": {
+        "precision": 0.8855421686746988,
+        "recall": 0.9046153846153846,
+        "f1": 0.8949771689497716,
+        "support": 325
+      },
+      "powdery_mildew": {
+        "precision": 0.8515901060070671,
+        "recall": 0.8669064748201439,
+        "f1": 0.8591800356506238,
+        "support": 278
+      },
+      "powdery_mildew_and_leaf_miner": {
+        "precision": 0.8869047619047619,
+        "recall": 0.8587896253602305,
+        "f1": 0.8726207906295754,
+        "support": 347
+      },
+      "whitefly": {
+        "precision": 0.7111111111111111,
+        "recall": 0.6530612244897959,
+        "f1": 0.6808510638297872,
+        "support": 49
+      }
+    }
+  },
+  "source_dataset": "TLID DOI 10.17632/kt64b2kh89.2",
+  "method": "Ultralytics native predict preprocessing, imgsz=224, CPU, argmax, no augmentation; one image per call",
+  "torch_version": "2.14.1+cpu",
+  "ultralytics_version": "8.3.40",
+  "test_unchanged": true,
+  "model_unchanged": true,
+  "training_ready_image_level": true,
+  "training_ready_leaf_independent": false,
+  "local_qingxian_validated": false,
+  "high_confidence_errors": {
+    "0.8": 127,
+    "0.9": 84
+  },
+  "confusion_matrix": [
+    [
+      296,
+      36,
+      6,
+      2,
+      7,
+      3,
+      2
+    ],
+    [
+      48,
+      315,
+      0,
+      5,
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      353,
+      13,
+      9,
+      0,
+      1
+    ],
+    [
+      2,
+      8,
+      8,
+      294,
+      1,
+      10,
+      2
+    ],
+    [
+      2,
+      1,
+      12,
+      2,
+      241,
+      16,
+      4
+    ],
+    [
+      3,
+      7,
+      0,
+      11,
+      24,
+      298,
+      4
+    ],
+    [
+      1,
+      1,
+      6,
+      5,
+      1,
+      3,
+      32
+    ]
+  ]
+}

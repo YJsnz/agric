@@ -1,0 +1,43 @@
+{
+  "model_path": "F:/AIC2026/AIC-SmartAgriculture/agric/ai-training/jujube-vision/models/jujube/jujube_fruit_bruise_yolo11n_cls_v1.pt",
+  "model_sha256": "ad52101dca33fe9eb642994ee7246bb21522cada3dd0bf89b98ecacf164608c7",
+  "classes": [
+    "bruised",
+    "healthy"
+  ],
+  "test_source": "F:/AIC2026/AIC-SmartAgriculture_PART/agric/ai-training/jujube-vision/data/jujube_fruit_bruise_classifier_v2/test",
+  "official_split": "official directory split",
+  "decision": "argmax, imgsz=224, CPU, no augment",
+  "metrics": {
+    "test_images": 223,
+    "accuracy": 0.9775784753363229,
+    "macro_f1": 0.977578,
+    "balanced_accuracy": 0.9777555,
+    "weighted_f1": 0.977578,
+    "per_class": {
+      "bruised": {
+        "precision": 0.990909,
+        "recall": 0.964602,
+        "f1": 0.977578,
+        "support": 113
+      },
+      "healthy": {
+        "precision": 0.964602,
+        "recall": 0.990909,
+        "f1": 0.977578,
+        "support": 110
+      }
+    },
+    "confusion_matrix": [
+      [
+        109,
+        4
+      ],
+      [
+        1,
+        109
+      ]
+    ],
+    "confusion_matrix_axes": "rows=true, columns=predicted"
+  }
+}

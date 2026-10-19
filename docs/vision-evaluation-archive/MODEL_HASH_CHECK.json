@@ -1,0 +1,23 @@
+[
+  {
+    "path": "ai-training/vegetable-vision/models/tomato/tomato_leaf_yolo11n_cls_v1.pt",
+    "exists": true,
+    "sha256": "564ff6bff3fb69f7165816682a1e24e2241f66642f5e0d083a725f28dbf886c6",
+    "tracked": true,
+    "cached_origin_main": true
+  },
+  {
+    "path": "ai-training/vegetable-vision/models/tomato/tomato_ripeness_yolo11n_cls_v1.pt",
+    "exists": true,
+    "sha256": "09d0c0d8d75e9c1c25a8ba59e015594000cc1169dc234bf1098cbf02f78b8b75",
+    "tracked": true,
+    "cached_origin_main": true
+  },
+  {
+    "path": "ai-service/models/pear/pear_symptom_yolo11n_cls_v1.pt",
+    "exists": true,
+    "sha256": "a7fba665a0db3bf0d533bae3725716f3690bbf8a94ded4bc2f78c8ca40954dce",
+    "tracked": true,
+    "cached_origin_main": true
+  }
+]
