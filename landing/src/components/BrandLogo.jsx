@@ -1,4 +1,4 @@
-import brandLogo from '../brand-logo.png'
+import brandLogo from '../brand-logo.jpg'
 
 export default function BrandLogo({ inverse = false, compact = false }) {
   return (
@@ -10,7 +10,7 @@ export default function BrandLogo({ inverse = false, compact = false }) {
           src={brandLogo}
           alt=""
           aria-hidden="true"
-          className="absolute left-1/2 top-0 w-[138%] max-w-none -translate-x-1/2"
+          className="absolute left-1/2 top-0 w-[146%] max-w-none -translate-x-1/2"
         />
       </span>
       <span className="flex flex-col leading-none">
