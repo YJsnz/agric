@@ -292,7 +292,7 @@ Copy-Item .env.example .env.local
 | `AGENT_API_KEY` | 空 | 远程兼容服务可在此配置；留空时本地 Ollama 不带密钥 |
 | `AGENT_ENGINE` | `harness` | Agent 引擎选择；legacy 仅作兼容路径 |
 | `AGENT_WORKERS` / `AGENT_CAPACITY` | `2` / `4` | Agent 并发工作线程和总容量 |
-| `AGENT_CONTEXT_TOKENS` / `AGENT_MAX_TOKENS` | `4096` / `768` | Agent 上下文和单次生成预算；本地 GPU 推理默认使用 4K 上下文以控制显存 |
+| `AGENT_CONTEXT_TOKENS` / `AGENT_MAX_TOKENS` | `4096` / `768` | Agent 上下文和单次生成预算；云端示例使用 16K 上下文和 1K 输出预算，并投影长工具结果以避免上下文溢出 |
 | `DEEPSEEK_API_KEY` | 空 | 旧问农 DeepSeek 服务端调用密钥，可选 |
 | `DEEPSEEK_BASE_URL` / `DEEPSEEK_MODEL` | 官方兼容地址 / 项目默认模型 | 在线问农的服务端模型配置 |
 | `BAIDU_FACE_AK` / `BAIDU_FACE_SK` | 空 | 百度人脸识别服务密钥，可选 |

@@ -40,6 +40,51 @@ public class AgentContextProjection {
             output.put("contextProjection","edge-source-preserving-excerpts");
             return output;
         }
+        if(tool.equals("analyze_environment")) {
+            var output=pick(root,"rule_version","virtual_data","limitations");
+            output.put("checks",json.convertValue(root.path("checks"),Object.class));
+            var history=root.path("soil_moisture_history");
+            var points=history.path("points");
+            var recent=new ArrayList<JsonNode>();
+            for(var point:points)recent.add(point);
+            int start=Math.max(0,recent.size()-8);
+            var historySummary=pick(history,"farmId","metricKey","scope","virtualData","limit");
+            historySummary.put("totalPoints",recent.size());
+            historySummary.put("points",rows(recent.subList(start,recent.size()),"label","value","unit","source","measuredAt"));
+            historySummary.put("pointsTruncated",start>0);
+            output.put("soil_moisture_history",historySummary);
+            output.put("contextProjection","recent-eight-observations");
+            return output;
+        }
+        if(tool.equals("query_crop_knowledge")) {
+            var output=pick(root,"domain","crop","status","retrieval_query","disclaimer","context");
+            var answer=root.path("grounded_answer");
+            if(answer.isObject()) {
+                var concise=pick(answer,"sufficient","conclusion","basis","reasoning","advice","citations");
+                output.put("grounded_answer",concise);
+            } else if(root.has("answer")) {
+                output.put("answer",truncate(root.path("answer").asString(),2400));
+            }
+            var citations=new ArrayList<Map<String,Object>>();
+            for(var citation:root.path("citations")) {
+                if(citations.size()==3)break;
+                var row=pick(citation,"evidence_id","source_id","title","authority","page","url");
+                String content=citation.path("content").asString();
+                if(!content.isBlank())row.put("content",truncate(content,500));
+                citations.add(row);
+            }
+            if(!citations.isEmpty())output.put("citations",citations);
+            var preliminary=root.path("preliminary_assessment");
+            if(preliminary.isObject()) {
+                var summary=pick(preliminary,"available");
+                if(preliminary.has("summary"))summary.put("summary",truncate(preliminary.path("summary").asString(),900));
+                summary.put("supporting_points",limitedText(preliminary.path("supporting_points"),3,700));
+                summary.put("uncertainties",limitedText(preliminary.path("uncertainties"),3,700));
+                output.put("preliminary_assessment",summary);
+            }
+            output.put("contextProjection","grounded-answer-and-citations");
+            return output;
+        }
         return result;
     }
 
@@ -52,5 +97,18 @@ public class AgentContextProjection {
         var output=new ArrayList<Map<String,Object>>();
         for(var node:nodes)output.add(pick(node,fields));
         return output;
+    }
+    private List<Map<String,Object>> rows(List<JsonNode> nodes,String... fields) {
+        var output=new ArrayList<Map<String,Object>>();
+        for(var node:nodes)output.add(pick(node,fields));
+        return output;
+    }
+    private List<String> limitedText(JsonNode values,int limit,int maxLength) {
+        var output=new ArrayList<String>();
+        if(values.isArray())for(var value:values) { if(output.size()==limit)break;output.add(truncate(value.asString(),maxLength)); }
+        return output;
+    }
+    private String truncate(String value,int maxLength) {
+        return value.length()<=maxLength?value:value.substring(0,maxLength)+"…";
     }
 }
