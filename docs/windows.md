@@ -59,7 +59,7 @@ Initialize-MySql
 
 ## 本地农业 Agent
 
-新问农入口为 `/platform/assistant`，原工作台保留在 `/platform/assistant/legacy`。安装并启动 Ollama，执行 `ollama pull qwen2.5:7b` 下载默认模型；已有模型无需重复下载。可通过 AGENT_BASE_URL、AGENT_MODEL 和 AGENT_API_KEY 配置兼容的本地服务。
+新问农入口为 `/platform/assistant`，原工作台保留在 `/platform/assistant/legacy`。安装并启动 Ollama，执行 `ollama pull qwen2.5:7b` 下载默认模型；已有模型无需重复下载。NVIDIA GPU 可用时 Ollama 自动将模型卸载到显卡，Agent 上下文默认 4096 tokens；显存不足时可改用 `start.cmd -Task AgentSetup -Cpu` 和 `AGENT_MODEL=agric-qwen2.5:7b-cpu`。可通过 AGENT_BASE_URL、AGENT_MODEL 和 AGENT_API_KEY 配置兼容的本地服务。
 
 任务真实调用农场查询、关键词资料检索和环境阈值核验三个工具。任务与过程存入 MySQL，可刷新后读取、取消和查看失败记录。当前任务事件采用增量轮询，服务重启后的未完成任务标记失败，保留记录供重新发起。这里使用原项目共享演示数据，尚未实现 GraphRAG、病害概率、采后执行或真实设备控制。
 

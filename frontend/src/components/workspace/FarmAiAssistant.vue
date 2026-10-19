@@ -3,6 +3,7 @@ import { nextTick, onBeforeUnmount, ref, watch } from 'vue'
 import { type ChatMessage } from '@/api/assistant'
 import { createRun, getRun, cancelRun } from '@/api/agent'
 import AgentIcon from '@/components/assistant/AgentIcon.vue'
+import AssistantAnswer from '@/components/assistant/AssistantAnswer.vue'
 import ProgressBar from '@/components/ui/ProgressBar.vue'
 
 const props = defineProps<{ open: boolean; context: string; compact?:boolean; farmId?:string }>()
@@ -90,7 +91,8 @@ onBeforeUnmount(() => controller?.abort())
           <div class="context-chip"><i></i>{{ context }}</div>
           <article v-for="(message,index) in messages" :key="index" :class="message.role">
             <span v-if="message.role === 'assistant'" class="message-avatar">田</span>
-            <p>{{ message.content }}</p>
+            <div v-if="message.role === 'assistant'" class="message-bubble"><AssistantAnswer :content="message.content" /></div>
+            <p v-else>{{ message.content }}</p>
           </article>
           <article v-if="loading" class="assistant progress-reply"><span class="message-avatar">田</span><ProgressBar :value="null" label="分析当前场景" pending-label="生成回答" tone="dark" compact /></article>
         </div>
@@ -126,4 +128,11 @@ onBeforeUnmount(() => controller?.abort())
 @media(max-width:760px){.farm-ai{bottom:128px;transform:scale(.86);transform-origin:left bottom}.assistant-panel{position:fixed;left:10px;right:10px;bottom:74px;width:auto;height:min(520px,calc(100vh - 150px));transform-origin:left bottom}.assistant-panel-enter-from,.assistant-panel-leave-to{transform:translateY(12px) scale(.97)}}
 .progress-reply{align-items:center!important}.progress-reply>:deep(.progress-bar){width:210px;padding:9px 11px;border:1px solid rgba(255,255,255,.08);border-radius:12px;background:rgba(255,255,255,.06)}
 .farm-ai.compact{left:22px;bottom:115px;width:140px;height:42px;z-index:26}.compact .assistant-trigger{width:140px;height:42px;filter:none;overflow:visible}.compact-trigger{display:flex;align-items:center;justify-content:center;gap:8px;height:42px;border:1px solid #ffffff77;border-radius:12px;background:#f5f8f5eb;color:#386954;font-size:12px;box-shadow:0 6px 22px #18352820}.compact .assistant-panel{left:0;bottom:55px;width:400px;height:min(560px,calc(100dvh - 210px))}.compact.opened{z-index:42}@media(max-width:700px){.farm-ai.compact{left:12px;bottom:92px;width:120px}.compact .assistant-trigger{width:120px}.compact .assistant-panel{width:calc(100vw - 24px)}}
+</style>
+
+<style scoped lang="scss">
+.message-bubble{max-width:82%;min-width:0;margin:0;padding:10px 12px;border:1px solid rgba(255,255,255,.08);border-bottom-left-radius:4px;background:rgba(255,255,255,.065);color:rgba(255,255,255,.86);font-size:11px;line-height:1.65;word-break:break-word}
+.message-bubble :deep(.assistant-answer){line-height:1.65}
+.message-bubble :deep(.assistant-answer p:last-child){margin-bottom:0}
+.message-bubble :deep(.assistant-answer ul),.message-bubble :deep(.assistant-answer ol){padding-left:1.3em}
 </style>

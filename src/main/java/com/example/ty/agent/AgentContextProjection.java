@@ -13,7 +13,9 @@ public class AgentContextProjection {
     private final AgentRuntimeSettings settings;
 
     public Object project(String tool,Object result) {
-        if(settings.contextTokens()>4096)return result;
+        // Keep tool payloads bounded even when the remote model supports a larger
+        // context window. Larger contexts should prevent truncation, not reintroduce
+        // geometry and long evidence passages into every model turn.
         JsonNode root=json.valueToTree(result);
         if(tool.equals("get_farm_context")) {
             var output=pick(root,"farmId","farmName","generatedAt","virtualData","summary","environmentMetrics","alerts");

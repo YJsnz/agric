@@ -1,0 +1,23 @@
+[Unit]
+Description=Saltfield agriculture demonstration
+After=network-online.target docker.service agric-cloud-stack.service
+Wants=network-online.target
+Requires=agric-cloud-stack.service
+
+[Service]
+Type=simple
+User=agric
+Group=agric
+WorkingDirectory=/opt/agric/current
+EnvironmentFile=/etc/agric/cloud.env
+ExecStart=/usr/bin/java -Xms256m -Xmx1536m -XX:MaxMetaspaceSize=384m -XX:+UseG1GC -jar /opt/agric/current/application.jar
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=40
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

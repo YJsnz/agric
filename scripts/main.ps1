@@ -87,7 +87,7 @@ try {
             if ($LASTEXITCODE -ne 0 -or $version -notmatch '(?:openjdk|java)\s+(\d+)' -or [int]$Matches[1] -lt 17) { throw 'Java 17 or newer is required.' }
             if ([int]((& node.exe -p 'parseInt(process.versions.node)') | Select-Object -First 1) -lt 24) { throw 'Node.js 24 or newer is required.' }
             Initialize-MySql
-            if (!$env:AGENT_MODEL) { $env:AGENT_MODEL = 'agric-qwen2.5:7b-cpu' }
+            if (!$env:AGENT_MODEL) { $env:AGENT_MODEL = 'qwen2.5:7b' }
             Invoke-ProjectScript 'setup-agent.ps1' @{}
             if (!(Test-Path (Join-Path $projectRoot 'agent-runtime/node_modules/@deepseek-ai/dsh-sdk-client/lib/index.js'))) {
                 Invoke-Checked npm.cmd @('ci', '--prefix', 'agent-runtime', '--no-audit', '--no-fund')

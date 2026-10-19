@@ -40,7 +40,15 @@ def main():
         return
     partial.replace(target)
     with tarfile.open(target) as archive:
-        archive.extractall(ROOT, filter='data')
+        if hasattr(tarfile, 'data_filter'):
+            archive.extractall(ROOT, filter='data')
+        else:
+            destination = ROOT.resolve()
+            for member in archive.getmembers():
+                target_path = (ROOT / member.name).resolve()
+                if not target_path.is_relative_to(destination) or not (member.isdir() or member.isfile()):
+                    raise ValueError(f'Unsafe embedding archive entry: {member.name}')
+                archive.extract(member, ROOT)
     (ROOT / 'download.json').write_text(json.dumps({
         'model': 'BAAI/bge-small-zh-v1.5', 'url': URL,
         'archive_sha256': hashlib.sha256(target.read_bytes()).hexdigest(),

@@ -15,7 +15,7 @@ def validate(graph):
         if e.get('effect_size') is not None and not e.get('effect_unit'):reasons.append('numeric_unit')
         if not c:reasons.append('missing_chunk')
         else:
-            m=c['metadata'];loc=m['locator'];p=(ROOT/loc['file']).resolve()
+            m=c['metadata'];loc=m['locator'];relative_path=loc['file'].replace('\\','/');p=(ROOT/relative_path).resolve()
             if not p.is_relative_to(ROOT.resolve()):reasons.append('invalid_locator')
             else:
                 pages=json.loads(p.read_text(encoding='utf-8'));text=compact(pages[loc['page']-1]['text'])

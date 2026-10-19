@@ -1,0 +1,16 @@
+[Unit]
+Description=Saltfield agriculture cloud databases
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/opt/agric/current
+EnvironmentFile=/etc/agric/cloud.env
+ExecStart=/usr/bin/docker compose --env-file /etc/agric/cloud.env -f /opt/agric/current/deploy/cloud/compose.yaml up -d --wait
+ExecStop=/usr/bin/docker compose --env-file /etc/agric/cloud.env -f /opt/agric/current/deploy/cloud/compose.yaml stop
+TimeoutStartSec=180
+
+[Install]
+WantedBy=multi-user.target

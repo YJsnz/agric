@@ -70,6 +70,8 @@ public class HarnessRuntime {
                         writer.write(json.writeValueAsString(response));writer.newLine();writer.flush();
                     } else if(type.equals("completed")) {
                         String answer=message.path("answer").asString("");
+                        String substantive=answer.replaceAll("[\\s#*_`~>-]+","");
+                        if(substantive.isBlank())throw new IllegalStateException("模型返回内容不完整，可能触发上下文长度限制；请重试或缩小问题范围");
                         boolean needsEnvironment=run.getQuestion().matches("(?s).*(环境|湿度|灌溉|阈值|历史|趋势).*");
                         boolean needsBusiness=run.getQuestion().matches("(?s).*(农事|生长记录|批次|回执|处置记录).*");
                         boolean needsVision=run.getQuestion().matches("(?s).*(视觉|图像|检测记录|叶片).*");
@@ -80,7 +82,13 @@ public class HarnessRuntime {
                         if(!checked.equals(answer))store.append(run.getId(),"answer.corrected",Map.of("message","模型遗漏批次事实，已改用保存记录摘要"));
                         answer=checked;
                         store.transition(run.getId(),"COMPLETED","【软件演示】以下基于演示观测、保存记录与检索资料。\n\n"+answer,null);return;
-                    } else if(type.equals("failed"))throw new IllegalStateException("Harness 执行失败，请检查本地模型、Node 版本与运行时日志");
+                    } else if(type.equals("failed")) {
+                        String detail=message.path("message").asString("").trim();
+                        if(detail.length()>400)detail=detail.substring(0,400);
+                        throw new IllegalStateException(detail.isBlank()
+                            ? "Harness 执行失败，请检查本地模型、Node 版本与运行时日志"
+                            : "Harness 执行失败："+detail);
+                    }
                 }
                 throw new IllegalStateException("Harness 运行时已退出或超时，请重新发起任务");
             }

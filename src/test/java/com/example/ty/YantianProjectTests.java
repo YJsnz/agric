@@ -21,7 +21,7 @@ class YantianProjectTests {
         var asset=assets.findById("yt-pear-02").orElseThrow();
         asset.setPolygonJson("[[366,285],[790,293],[1050,398],[638,487]]");assets.save(asset);
         calibration.run(null);
-        assertThat(asset.getPolygonJson()).isEqualTo("[[250,243],[875,316],[1137,365],[900,401],[506,309]]");
+        assertThat(asset.getPolygonJson()).isEqualTo("[[123,328],[441,290],[994,411],[994,465],[639,537],[123,374]]");
         var calibrated=asset.getPolygonJson();calibration.run(null);
         assertThat(asset.getPolygonJson()).isEqualTo(calibrated);
         asset.setPolygonJson("[[10,10],[20,10],[20,20],[10,20]]");assets.save(asset);calibration.run(null);
@@ -59,9 +59,9 @@ class YantianProjectTests {
         var project=dashboard.snapshot("yantian-01");
         assertThat(project.farmName()).isEqualTo("沧州盐碱地示范基地");
         assertThat(project.virtualData()).isTrue();
-        assertThat(project.zones()).hasSize(6);
+        assertThat(project.zones()).hasSize(7);
         assertThat(project.zones()).extracting(z->z.crop()).contains("泊头鸭梨","旱碱麦","金丝小枣");
-        assertThat(project.entities()).noneMatch(e->e.type().equals("greenhouse"));
+        assertThat(project.entities()).anyMatch(e->"yt-pear-02".equals(e.id()) && e.type().equals("greenhouse"));
         assertThat(project.entities()).extracting(e->e.name()).contains("鸭梨分选包装中心","冷链暂存仓");
         assertThat(project.environmentMetrics()).extracting(m->m.key()).contains("soilEC","soilPH");
         initializer.run(null);

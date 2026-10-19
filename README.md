@@ -292,7 +292,7 @@ Copy-Item .env.example .env.local
 | `AGENT_API_KEY` | 空 | 远程兼容服务可在此配置；留空时本地 Ollama 不带密钥 |
 | `AGENT_ENGINE` | `harness` | Agent 引擎选择；legacy 仅作兼容路径 |
 | `AGENT_WORKERS` / `AGENT_CAPACITY` | `2` / `4` | Agent 并发工作线程和总容量 |
-| `AGENT_CONTEXT_TOKENS` / `AGENT_MAX_TOKENS` | `8192` / `768` | Agent 上下文和单次生成预算 |
+| `AGENT_CONTEXT_TOKENS` / `AGENT_MAX_TOKENS` | `4096` / `768` | Agent 上下文和单次生成预算；本地 GPU 推理默认使用 4K 上下文以控制显存 |
 | `DEEPSEEK_API_KEY` | 空 | 旧问农 DeepSeek 服务端调用密钥，可选 |
 | `DEEPSEEK_BASE_URL` / `DEEPSEEK_MODEL` | 官方兼容地址 / 项目默认模型 | 在线问农的服务端模型配置 |
 | `BAIDU_FACE_AK` / `BAIDU_FACE_SK` | 空 | 百度人脸识别服务密钥，可选 |
@@ -503,6 +503,7 @@ Spring 配置目前使用 Hibernate `ddl-auto: update`，用于演示环境自�
 ├── ai-service/                   作物诊断、检索、Neo4j 与 FastAPI 服务
 ├── ai-training/                  模型训练和数据准备相关资产
 ├── embedded/                     串口网关协议实现与固件示例
+├── deploy/cloud/                 Ubuntu 云主机打包、安装、systemd 与 Nginx
 ├── deploy/jetson/                Jetson 运行依赖、容器、systemd 与备份
 ├── docs/                         部署、产品、验收、维护和截图文档
 └── tools/                        YOLO 等算法辅助工具
@@ -530,6 +531,7 @@ Spring 配置目前使用 Hibernate `ddl-auto: update`，用于演示环境自�
 | [Windows + Docker Desktop 部署手册](docs/Windows_DockerDesktop部署手册.md) | Windows 单机部署入口和常见步骤 |
 | [用户使用手册](docs/用户使用手册.md) | 官网、工作台、农事、视觉和演示操作 |
 | [软件演示交付检查](docs/软件演示交付检查.md) | 演示验收、发行包、备份与恢复 |
+| [Ubuntu 云主机部署](deploy/cloud/README.md) | 生成通用部署包、安装服务、配置模型 API 与 HTTPS |
 | [代码结构与维护](docs/代码结构与维护.md) | 运行时职责、模型边界和修改约定 |
 | [产品文档](docs/盐田丰语产品文档.md) | 产品定位、能力和限制 |
 | [Jetson 部署与验收](docs/Jetson部署与验收.md) | JetPack 目标版本、安装、验收及未完成项 |
