@@ -1,0 +1,3 @@
+# Optional JPEG decode acceleration. Install into the Jetson runtime venv only
+# when VISION_IMAGE_DECODE=nvimgcodec will be enabled.
+nvidia-nvimgcodec-tegra-cu12[nvjpeg]

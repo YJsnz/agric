@@ -1,6 +1,6 @@
 # Jetson 部署与验收
 
-2026-10-16：补充了可选串口网关服务及自定义 CUDA 图像算子，构建、开启与验证步骤见 [Jetson串口与CUDA实现及创新点](Jetson串口与CUDA实现及创新点.md)。默认仍用 Pillow 预处理，CUDA 模式需先在板端完成数值与模型回归验收。
+2026-10-19：视觉实现扩展为可选 nvImageCodec JPEG GPU 解码、CUDA fused 预处理、TensorRT 推理及 CUDA NMS；选项、矩阵基准与逐框门槛见 [Jetson串口与CUDA实现及创新点](Jetson串口与CUDA实现及创新点.md)、[CUDA 核函数工作原理与量化效果](CUDA核函数工作原理与量化效果.md)。默认仍为 Pillow/CPU 后处理；新 CUDA 路径尚未在 Jetson 编译和实测。
 
 ## 选型与基线
 
@@ -89,7 +89,9 @@ VISION_BACKEND=tensorrt "$VISION_PYTHON" vision-runtime/benchmark.py sample.jpg 
 sudo tegrastats --interval 1000
 ```
 
-比较脚本要求相同类别、框 IoU 至少 0.9、置信度差不超过 0.03；阈值附近出现差异必须人工分析，不能用调整检测阈值掩盖。还应使用覆盖正常、模糊、低光与各种症状的固定样本集进行专项验证。数值一致性不证明病害诊断准确性。INT8 没有校准数据，当前不启用；前后处理仍在 CPU，CUDA/TensorRT 负责神经网络计算。
+比较脚本要求相同类别、框 IoU 至少 0.9、置信度差不超过 0.03；阈值附近出现差异必须人工分析，不能用调整检测阈值掩盖。还应使用覆盖正常、模糊、低光与各种症状的固定样本集进行专项验证。数值一致性不证明病害诊断准确性。INT8 没有校准数据，当前不启用。默认前后处理仍在 CPU；Jetson TensorRT 路径可选择 CUDA 预处理与 NMS、nvImageCodec JPEG 解码，全部为 opt-in，启用前必须完成逐框回归。
+
+板端视觉扩展矩阵可运行 `bash deploy/jetson/benchmark-vision-matrix.sh target/vision-matrix sample1.jpg sample2.jpg`。脚本对 FP16/FP32 和 Pillow/CUDA 组合逐一先做 CPU/Pillow 对照验证，只有通过后才记录 benchmark；默认 100 次迭代，可用 `AGRIC_BENCH_ITERATIONS` 调整。nvImageCodec 额外依赖需按 `deploy/jetson/requirements-vision-gpu.txt` 安装。计时结果覆盖解码、预处理、推理、后处理与总耗时，需保存目标板型号、JetPack、样本集和 engine 哈希后再用于性能结论。当前仓库没有 Jetson 实测数据。
 
 展示验收目标为连续两小时无 OOM、界面与任务队列可用，GPU 与 CPU 输出比较通过，三次重复基准保存 p50/p95 和环境版本。建议视觉暖机 p95 不超过 500ms、单任务 Agent 在 180 秒内完成；这些是待验收目标，不是已有实测承诺。使用 tegrastats 记录共享内存、温度、功耗和频率。模型同时运行不稳时先停用板端浏览器、降低 GPU offload 或切换远程模型，不要增加并发。
 
@@ -103,4 +105,4 @@ sudo tegrastats --interval 1000
 
 CUDA 编译和服务参数依据 [llama.cpp 构建说明](https://github.com/ggml-org/llama.cpp/blob/4762ad7316dcdec20016ab5985fb46a27902204d/docs/build.md) 与 [固定版本服务说明](https://github.com/ggml-org/llama.cpp/blob/4762ad7316dcdec20016ab5985fb46a27902204d/tools/server/README.md)。固定提交保证可重复，不表示它是最新的安全版本，商业发行需评估升级。Qwen 文件使用 [官方 GGUF 仓库](https://huggingface.co/Qwen/Qwen3-4B-GGUF)，按固定 revision 和 SHA-256 下载。
 
-TensorRT 调用参考 [NVIDIA Python API](https://docs.nvidia.com/deeplearning/tensorrt/latest/inference-library/python-api-docs.html)。此实现采用固定批量与显式 IO、复用缓冲区和流，尚未实现零拷贝摄像头解码、手写 CUDA 预处理、CUDA Graph 或 DLA 路径。Windows CPU 回归不能代替 Jetson CUDA 实测。
+TensorRT 调用参考 [NVIDIA Python API](https://docs.nvidia.com/deeplearning/tensorrt/latest/inference-library/python-api-docs.html)。此实现采用固定批量与显式 IO、复用缓冲区和流；GPU JPEG 解码仅适用于配置的 nvImageCodec JPEG 路径，不包含 CSI/摄像头零拷贝接入。CUDA Graph、DLA 和 INT8 校准仍未实现。Windows CPU 回归不能代替 Jetson CUDA 实测。

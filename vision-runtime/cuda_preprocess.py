@@ -46,21 +46,23 @@ class CudaPreprocessor:
         path = os.getenv('VISION_CUDA_LIBRARY') or str(Path(__file__).parent/'cuda/build/libagric_cuda.so')
         self.lib = ct.CDLL(path)
         self.lib.agric_cuda_abi.restype = ct.c_int
-        if self.lib.agric_cuda_abi() != 1:
-            raise RuntimeError('CUDA operator ABI mismatch')
+        if self.lib.agric_cuda_abi() != 2:
+            raise RuntimeError('CUDA operator ABI mismatch; rebuild the CUDA library')
         self.lib.agric_prepare.argtypes = [ct.c_void_p,ct.c_int,ct.c_int,ct.c_void_p,ct.c_int,
                                           ct.c_int,ct.c_int,ct.c_int,ct.c_int,ct.c_void_p,ct.c_void_p]
         self.lib.agric_prepare.restype = ct.c_int
 
-    def reserve(self, pixels):
-        if pixels <= self.capacity:
+    def reserve(self, pixels, upload=True):
+        if pixels <= self.capacity and (not upload or self.source.value):
             return
         self.close()
         self.source, self.staging, self.partial, self.host_partial = [ct.c_void_p() for _ in range(4)]
         blocks = (pixels+255)//256
         try:
-            for name, pointer, count in [('cudaMalloc',self.source,pixels*3), ('cudaMallocHost',self.staging,pixels*3),
-                                         ('cudaMalloc',self.partial,blocks*8), ('cudaMallocHost',self.host_partial,blocks*8)]:
+            allocations = [('cudaMalloc',self.partial,blocks*8), ('cudaMallocHost',self.host_partial,blocks*8)]
+            if upload:
+                allocations[:0] = [('cudaMalloc',self.source,pixels*3), ('cudaMallocHost',self.staging,pixels*3)]
+            for name, pointer, count in allocations:
                 self.cuda.call(name,ct.byref(pointer),count)
             self.capacity = pixels
         except Exception:
@@ -73,10 +75,32 @@ class CudaPreprocessor:
         h,w,_ = rgb.shape
         ratio,left,top,rw,rh = geometry(w,h,self.size)
         rgb = np.ascontiguousarray(rgb)
-        self.reserve(w*h)
+        self.reserve(w*h, upload=True)
         ct.memmove(self.staging,rgb.ctypes.data,rgb.nbytes)
         self.cuda.call('cudaMemcpyAsync',self.source,self.staging,rgb.nbytes,1,self.stream)
-        status = self.lib.agric_prepare(self.source,w,h,output,self.size,rw,rh,left,top,self.partial,self.stream)
+        return self._prepare(self.source,w,h,output,ratio,left,top,rw,rh)
+
+    def prepare_device_image(self, image, output):
+        """Consume a contiguous HWC uint8 CUDA Array Interface image in place."""
+        interface = image.__cuda_array_interface__
+        shape = interface.get('shape')
+        if len(shape) != 3 or shape[2] != 3 or interface.get('typestr') != '|u1':
+            raise ValueError('Expected a device uint8 HWC RGB image')
+        h,w,_ = shape
+        strides = interface.get('strides')
+        if strides not in (None,(w*3,3,1)):
+            raise ValueError('CUDA JPEG decoder must provide contiguous RGB output')
+        pointer = int(interface['data'][0])
+        if not pointer:
+            raise ValueError('CUDA image has a null device pointer')
+        ratio,left,top,rw,rh = geometry(w,h,self.size)
+        self.reserve(w*h, upload=False)
+        if interface.get('stream') not in (None, 0):
+            raise ValueError('Device image producer must synchronize before preprocessing')
+        return self._prepare(ct.c_void_p(pointer),w,h,output,ratio,left,top,rw,rh)
+
+    def _prepare(self, source, w, h, output, ratio, left, top, rw, rh):
+        status = self.lib.agric_prepare(source,w,h,output,self.size,rw,rh,left,top,self.partial,self.stream)
         if status:
             raise RuntimeError(f'agric_prepare failed with CUDA status {status}')
         blocks = (w*h+255)//256

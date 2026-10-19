@@ -50,6 +50,19 @@ def decode(output, manifest, width, height, ratio, left, top, threshold):
     return detections
 
 
+def format_device_detections(rows, manifest):
+    """Convert compact CUDA NMS rows to the public detection schema."""
+    detections = []
+    for class_id, score, x1, y1, x2, y2 in rows:
+        class_id = int(class_id)
+        name = manifest["classes"][str(class_id)]
+        detections.append({"classId": class_id, "className": name,
+                           "label": LABELS.get(name.lower().replace(" ", "_"), name),
+                           "confidence": round(float(score), 4),
+                           "box": [round(float(v), 2) for v in (x1, y1, x2, y2)]})
+    return detections
+
+
 class PearPipeline:
     def __init__(self):
         self.manifest = json.loads((ROOT / "models/manifest.json").read_text(encoding="utf-8"))
@@ -63,24 +76,53 @@ class PearPipeline:
         self.backend = create_backend(model, self.manifest)
         self.runtime = self.backend.info
         self.runtime['preprocess'] = os.getenv('VISION_PREPROCESS', 'pillow')
+        self.runtime['postprocess'] = os.getenv('VISION_POSTPROCESS', 'cpu').lower()
+        self.runtime['imageDecode'] = os.getenv('VISION_IMAGE_DECODE', 'pillow').lower()
+        self.image_decoder = None
+        if self.runtime['imageDecode'] == 'nvimgcodec':
+            try:
+                from nvimgcodec_decoder import NvImageCodecDecoder
+                self.image_decoder = NvImageCodecDecoder()
+            except Exception:
+                self.backend.close()
+                raise
 
     def __enter__(self):
         return self
 
     def __exit__(self, *_):
+        if self.image_decoder is not None:
+            self.image_decoder.close()
+            self.image_decoder = None
         self.backend.close()
 
     def infer(self, path):
         started = time.perf_counter()
+        decode_start = time.perf_counter()
+        gpu_image = None
+        image_decode_fallback = None
         with Image.open(path) as original:
             if original.width * original.height > 20_000_000:
                 raise ValueError("Image exceeds 20 megapixels")
-            image = ImageOps.exif_transpose(original).convert("RGB")
-            image.load()
-        width, height = image.size
+            if self.image_decoder is not None and original.format == 'JPEG':
+                gpu_image, image_decode_fallback = self.image_decoder.decode(path)
+            if gpu_image is not None:
+                height, width, _ = gpu_image.shape
+                if width * height > 20_000_000:
+                    raise ValueError("Image exceeds 20 megapixels")
+                image = None
+                image_decoder = 'nvimgcodec-gpu'
+            else:
+                image = ImageOps.exif_transpose(original).convert("RGB")
+                image.load()
+                width, height = image.size
+                image_decoder = 'pillow-fallback' if image_decode_fallback else 'pillow'
+        image_decode_ms = (time.perf_counter()-decode_start)*1000
         gpu = self.runtime['preprocess'] == 'cuda-fused'
         prep_start = time.perf_counter()
-        if gpu:
+        if gpu_image is not None:
+            tensor, (ratio,left,top), quality, std = self.backend.prepare_device_image(gpu_image)
+        elif gpu:
             tensor, (ratio,left,top), quality, std = self.backend.prepare_image(np.asarray(image))
         else:
             gray = np.asarray(image).mean(axis=2)
@@ -98,8 +140,10 @@ class PearPipeline:
                 "pipelineVersion": "pear-leaf-resident-2.0", "task": self.manifest["task"],
                 "imageWidth": width, "imageHeight": height, "quality": quality,
                 "limitations": self.manifest["limitations"], "confidenceThreshold": self.threshold,
-                "detections": [], "warnings": warnings, "runtime": self.runtime}
-        timings = {}
+                "detections": [], "warnings": warnings,
+                "runtime": dict(self.runtime, imageDecoderUsed=image_decoder,
+                                 imageDecoderFallbackReason=image_decode_fallback)}
+        timings = {"imageDecodeMs": round(image_decode_ms, 3)}
         if not warnings:
             if not gpu:
                 resize_start = time.perf_counter()
@@ -111,14 +155,18 @@ class PearPipeline:
                 padded.paste(resized, (left, top))
                 tensor = np.ascontiguousarray(np.asarray(padded, dtype=np.float32).transpose(2, 0, 1)[None] / 255)
                 prep_ms += (time.perf_counter()-resize_start)*1000
-            timings["preprocessMs"] = round(prep_ms, 2)
+            timings["preprocessMs"] = round(prep_ms, 3)
             infer_start = time.perf_counter()
             output = self.backend.run(tensor)
-            timings["inferenceMs"] = round((time.perf_counter() - infer_start) * 1000, 2)
+            timings["inferenceMs"] = round((time.perf_counter() - infer_start) * 1000, 3)
             decode_start = time.perf_counter()
-            base["detections"] = decode(output, self.manifest, width, height, ratio, left, top, self.threshold)
-            timings["postprocessMs"] = round((time.perf_counter() - decode_start) * 1000, 2)
+            if self.runtime['postprocess'] == 'cuda-nms':
+                rows = self.backend.postprocess(output, width, height, ratio, left, top, self.threshold)
+                base["detections"] = format_device_detections(rows, self.manifest)
+            else:
+                base["detections"] = decode(output, self.manifest, width, height, ratio, left, top, self.threshold)
+            timings["postprocessMs"] = round((time.perf_counter() - decode_start) * 1000, 3)
             if not base["detections"]:
                 warnings.append("没有可靠检出；请确认是梨叶近照，未检出不能判定健康")
         return dict(base, status="COMPLETED" if base["detections"] else "NEEDS_REVIEW",
-                    timings=timings, durationMs=round((time.perf_counter() - started) * 1000))
+                    timings=timings, durationMs=round((time.perf_counter() - started) * 1000, 3))

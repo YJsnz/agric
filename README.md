@@ -67,7 +67,7 @@
 | 数字孪生 | 农场、果园和温室场景，地图/对象联动、对象详情和漫游 | Three.js；场景几何和概念坐标不代表实测 GIS 或导航地图 |
 | 农业 Agent | Harness 运行时、工具白名单、任务历史、事件、取消、重试、追问和导出 | Node.js 子进程连接 Ollama 或兼容 API；工具读取共享演示农场及已保存记录 |
 | 农业知识与旧问答 | 关键词资料检索、上下文组装和 DeepSeek 服务端代理 | 不是向量检索或 GraphRAG；在线 DeepSeek Key 仅放服务端环境变量 |
-| 梨叶视觉 | 上传 PNG/JPEG、ONNX 推理、检测历史、原图查看与人工复核 | Python 子进程在本机 CPU 推理；模型未通过泊头鸭梨独立诊断精度验收 |
+| 梨叶视觉 | 上传 PNG/JPEG、ONNX/TensorRT 推理、检测历史、原图查看与人工复核 | Windows 默认 ONNX CPU；Jetson TensorRT 可选 CUDA 预处理/NMS 与 nvImageCodec JPEG 解码，均须逐机型验收；模型未通过泊头鸭梨独立诊断精度验收 |
 | 多作物研判 | 小麦、梨、小枣和设施蔬菜知识/研判服务与前端 | FastAPI、Neo4j 及作物专属流程；不同作物的模型/证据成熟度不同，番茄视觉未完成 |
 | 串口网关 | TY Serial v1 报文、SQLite 缓存、去重与命令/回执接口示例 | `embedded/` 下的固件及网关属于集成示例，尚未完成真实厂家设备联调 |
 | Jetson 部署 | Orin Nano 目标环境安装、TensorRT 构建及 systemd 脚本 | 需目标板单独验证 JetPack、模型、内存、性能和服务组合 |
@@ -160,7 +160,7 @@ Spring Boot 同源托管页面和 API。作物视觉工作台位于农业平台�
 | 后端 | Java 17、Spring Boot 4.1、Spring MVC、Spring Data JPA、Hibernate | `src/main/java/` |
 | 登录 | JWT（JJWT）、BCrypt（Spring Security Crypto）、自定义 MVC 拦截器 | `src/main/java/com/example/ty/auth/` |
 | Agent | Node.js 24+、DeepSeek Harness SDK、农业白名单插件 | `agent-runtime/`、`src/main/java/.../agent/` |
-| 视觉 | Python 3.11、NumPy、Pillow、ONNX Runtime CPU | `vision-runtime/`、`src/main/java/.../vision/` |
+| 视觉 | Python 3.11、NumPy、Pillow、ONNX Runtime CPU；Jetson 可选 TensorRT、CUDA 和 nvImageCodec | `vision-runtime/`、`src/main/java/.../vision/` |
 | 多作物知识服务 | Python、FastAPI、Neo4j；各诊断流程有独立依赖 | `ai-service/` |
 | 数据库 | MySQL 8.4、MySQL Connector/J、HikariCP | Docker、本地环境配置 |
 | 边缘 | Docker Compose、systemd、TensorRT/Jetson 脚本 | `deploy/jetson/` |
@@ -533,6 +533,7 @@ Spring 配置目前使用 Hibernate `ddl-auto: update`，用于演示环境自�
 | [代码结构与维护](docs/代码结构与维护.md) | 运行时职责、模型边界和修改约定 |
 | [产品文档](docs/盐田丰语产品文档.md) | 产品定位、能力和限制 |
 | [Jetson 部署与验收](docs/Jetson部署与验收.md) | JetPack 目标版本、安装、验收及未完成项 |
+| [CUDA 核函数原理与量化效果](docs/CUDA核函数工作原理与量化效果.md) | 四个 CUDA kernel 的执行方式、预处理基准、可选 GPU 后处理和 Jetson 验收边界 |
 | [梨视觉与果园 3D](docs/鸭梨视觉与3D.md) | 梨叶识别、模型来源和果园场景说明 |
 | [多作物分支接入记录](docs/WJM分支分析与接入.md) | 作物服务接入路径和证据边界 |
 | [Python AI 服务说明](ai-service/README.md) | 资料库、图谱、子项目和本地服务 |

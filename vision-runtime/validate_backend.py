@@ -12,11 +12,17 @@ def main():
     parser.add_argument("images",nargs="+")
     parser.add_argument("--output",required=True)
     parser.add_argument('--gpu-preprocess',choices=['pillow','cuda-fused'],default=os.getenv('VISION_PREPROCESS','pillow'))
+    parser.add_argument('--gpu-postprocess',choices=['cpu','cuda-nms'],default=os.getenv('VISION_POSTPROCESS','cpu'))
+    parser.add_argument('--gpu-image-decode',choices=['pillow','nvimgcodec'],default=os.getenv('VISION_IMAGE_DECODE','pillow'))
     args=parser.parse_args()
+    if args.gpu_image_decode == 'nvimgcodec' and args.gpu_preprocess != 'cuda-fused':
+        parser.error('--gpu-image-decode nvimgcodec requires --gpu-preprocess cuda-fused')
     results={}
     for backend in ("onnx-cpu","tensorrt"):
         os.environ["VISION_BACKEND"]=backend
         os.environ['VISION_PREPROCESS']='pillow' if backend == 'onnx-cpu' else args.gpu_preprocess
+        os.environ['VISION_POSTPROCESS']='cpu' if backend == 'onnx-cpu' else args.gpu_postprocess
+        os.environ['VISION_IMAGE_DECODE']='pillow' if backend == 'onnx-cpu' else args.gpu_image_decode
         with PearPipeline() as pipeline:
             results[backend]=[pipeline.infer(path) for path in args.images]
     report=[]
@@ -34,7 +40,7 @@ def main():
         if unmatched: accepted=False
         report.append({"image":Path(path).name,"passed":accepted,
                        "cpuDetections":len(cpu["detections"]),"gpuDetections":len(gpu["detections"])})
-    value={"passed":all(row["passed"] for row in report),"cpuPreprocess":"pillow","gpuPreprocess":args.gpu_preprocess,"iouMinimum":.9,"confidenceTolerance":.03,"images":report}
+    value={"passed":all(row["passed"] for row in report),"cpuPreprocess":"pillow","gpuImageDecode":args.gpu_image_decode,"gpuPreprocess":args.gpu_preprocess,"gpuPostprocess":args.gpu_postprocess,"iouMinimum":.9,"confidenceTolerance":.03,"images":report}
     Path(args.output).write_text(json.dumps(value,indent=2),encoding="utf-8")
     print(json.dumps(value))
     if not value["passed"]: raise SystemExit(1)

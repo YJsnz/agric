@@ -29,6 +29,7 @@ class CudaRuntime:
             raise RuntimeError(f"{name} failed with CUDA status {code}")
 
 
+
 class TensorRtBackend:
     def __init__(self, manifest):
         import tensorrt as trt
@@ -50,6 +51,7 @@ class TensorRtBackend:
             raise RuntimeError("Cannot create execution context")
         self.cuda, self.stream, self.buffers = CudaRuntime(), ct.c_void_p(), {}
         self.inputs, self.outputs = [], []
+        self.postprocessor = None
         try:
             self.cuda.call("cudaStreamCreate", ct.byref(self.stream))
             for index in range(self.engine.num_io_tensors):
@@ -72,7 +74,17 @@ class TensorRtBackend:
             if self.buffers[self.inputs[0]][0].shape != (1, 3, manifest["inputSize"], manifest["inputSize"]):
                 raise ValueError("Unexpected TensorRT input shape")
             self.info = {"backend": "tensorrt", "version": trt.__version__, "precision": metadata["precision"],
-                         "engineSha256": metadata["engineSha256"]}
+                         "engineSha256": metadata["engineSha256"],
+                         "postprocess": os.getenv('VISION_POSTPROCESS', 'cpu').lower()}
+            if self.info['postprocess'] == 'cuda-nms':
+                output_host = self.buffers[self.outputs[0]][0]
+                expected_channels = 4 + len(manifest['classes'])
+                if output_host.dtype != np.float32 or len(output_host.shape) != 3 or \
+                        output_host.shape[0] != 1 or output_host.shape[1] != expected_channels:
+                    raise ValueError('CUDA NMS requires FP32 YOLO output with shape [1, 4+classes, candidates]')
+                from cuda_postprocess import CudaPostprocessor
+                self.postprocessor = CudaPostprocessor(self.cuda, self.stream, len(manifest['classes']),
+                                                       output_host.shape[2])
             self.preprocessor = None
             if os.getenv('VISION_PREPROCESS', 'pillow') == 'cuda-fused':
                 from cuda_preprocess import CudaPreprocessor
@@ -97,19 +109,41 @@ class TensorRtBackend:
         if not self.context.execute_async_v3(self.stream.value):
             raise RuntimeError("TensorRT enqueue failed")
         result, output_device = self.buffers[self.outputs[0]]
+        if self.postprocessor is not None:
+            # Keep stage timings meaningful: inferenceMs includes completion
+            # of TensorRT, while postprocessMs measures CUDA NMS and compact D2H.
+            self.cuda.call("cudaStreamSynchronize", self.stream)
+            from cuda_preprocess import DeviceTensor
+            return DeviceTensor(output_device.value, result.shape, self.stream.value)
         self.cuda.call("cudaMemcpyAsync", ct.c_void_p(result.ctypes.data), output_device, result.nbytes, 2, self.stream)
         self.cuda.call("cudaStreamSynchronize", self.stream)
         return result
+
+    def postprocess(self, output, width, height, ratio, left, top, threshold):
+        if self.postprocessor is None:
+            raise RuntimeError('CUDA NMS is not enabled')
+        expected = self.buffers[self.outputs[0]][1].value
+        if output.pointer != expected:
+            raise ValueError('TensorRT output buffer does not belong to this backend')
+        return self.postprocessor.process(output, width, height, ratio, left, top, threshold)
 
     def prepare_image(self, rgb):
         if self.preprocessor is None:
             raise RuntimeError('CUDA preprocessor not enabled')
         return self.preprocessor.prepare(rgb, self.buffers[self.inputs[0]][1])
 
+    def prepare_device_image(self, image):
+        if self.preprocessor is None:
+            raise RuntimeError('CUDA preprocessor not enabled')
+        return self.preprocessor.prepare_device_image(image, self.buffers[self.inputs[0]][1])
+
     def close(self):
         if getattr(self, 'preprocessor', None) is not None:
             self.preprocessor.close()
             self.preprocessor = None
+        if getattr(self, 'postprocessor', None) is not None:
+            self.postprocessor.close()
+            self.postprocessor = None
         if getattr(self, "stream", None) and self.stream.value:
             self.cuda.call("cudaStreamSynchronize", self.stream)
         for _, pointer in getattr(self, "buffers", {}).values():
