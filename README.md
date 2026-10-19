@@ -68,7 +68,7 @@
 | 农业 Agent | Harness 运行时、工具白名单、任务历史、事件、取消、重试、追问和导出 | Node.js 子进程连接 Ollama 或兼容 API；工具读取共享演示农场及已保存记录 |
 | 农业知识与旧问答 | 关键词资料检索、上下文组装和 DeepSeek 服务端代理 | 不是向量检索或 GraphRAG；在线 DeepSeek Key 仅放服务端环境变量 |
 | 梨叶视觉 | 上传 PNG/JPEG、ONNX/TensorRT 推理、检测历史、原图查看与人工复核 | Windows 默认 ONNX CPU；Jetson TensorRT 可选 CUDA 预处理/NMS 与 nvImageCodec JPEG 解码，均须逐机型验收；模型未通过泊头鸭梨独立诊断精度验收 |
-| 多作物研判 | 小麦、梨、小枣和设施蔬菜知识/研判服务与前端 | FastAPI、Neo4j 及作物专属流程；不同作物的模型/证据成熟度不同，番茄视觉未完成 |
+| 多作物研判 | 小麦、梨、小枣和设施作物知识/研判服务与前端 | 番茄工作台视觉已接入叶片症状分类和果实成熟度 V1；其他设施作物的视觉权重按作物分别提供 |
 | 串口网关 | TY Serial v1 报文、SQLite 缓存、去重与命令/回执接口示例 | `embedded/` 下的固件及网关属于集成示例，尚未完成真实厂家设备联调 |
 | Jetson 部署 | Orin Nano 目标环境安装、TensorRT 构建及 systemd 脚本 | 需目标板单独验证 JetPack、模型、内存、性能和服务组合 |
 
